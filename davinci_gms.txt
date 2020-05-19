@@ -1,248 +1,274 @@
 ====================
+     2020-05-19    
+====================
+
+* build/make
+60cfa59  Allow overriding platform SPL  [dianlujitao]
+483a5a7  [DNM] Always use release-keys  [Arian]
+
+* device/lineage/sepolicy
+0173c35  Label lineage platform SPL prop  [dianlujitao]
+
+* device/xiaomi/davinci
+ff162ca  davinci: rootdir: Drop zram  [Arian]
+ec30dad  davinci: overlay: Add support for doze auto brightness  [TheScarastic]
+bf711cd  davinci: Add nosdcard characteristic to device  [Patrick Tjin]
+8ed819f  davinci: parts: Add StarWars popup sounds  [Arian]
+427d225  davinci: Remove android.hidl.base@1.0 shims  [Michael Bestas]
+8029045  davinci: light: Disable both LEDs  [Arian]
+58fc54a  davinci: parts: Take use of both LEDs for notifications when opened  [Arian]
+72f8f01  davinci: parts: Restore the LED's previous state after popup  [Arian]
+230b0a1  davinci: parts: Disable raise to wake toggle when AOD is on  [Arian]
+5376a06  davinci: parts: Allow to wake the screen instead of pulsing  [Nauval Rizky]
+141f02a  davinci: parts: Implement dc dimming  [Nauval Rizky]
+4df70d1  davinci: Use stock fingerprint  [Arian]
+fea3b7f  davinci: init: Workaround safetynet  [Arian]
+ed7df78  davinci: Define vendor security patch level  [Arian]
+549e868  davinci: Build Trust HAL  [Joey]
+b04bcaa  davinci: Build livedisplay  [Arian]
+800b632  davinci: Add assert for davinci & davinciin  [Fabian Leutenegger]
+aa510e7  davinci: init: Use variables for the region specific properties  [Arian]
+084f17b  davinci: init: Always set the ro.build props  [Arian]
+48a27ee  davinci: init: Override everything ^.^  [LuK1337]
+4fd5941  davinci: Add custom init to set proper variants  [AbhiShek Aggarwal]
+ac28ca4  davinci: Switch to enforcing  [Arian]
+20ba52c  davinci: sepolicy: Label properties to avoid denials  [Arian]
+f223ed8  davinci: sepolicy: Silence harmless QCOM denials  [Michael Bestas]
+cc3cfdc  davinci: sepolicy: Label hwc and hwversion properties  [Arian]
+e6dec33  davinci: sepolicy: Label property used by ril  [Demon000]
+0e87168  davinci: sepolicy: Label manufacturer prop used by camera hal  [Demon000]
+3c946ac  davinci: sepolicy: Fix OTA auto-flashing with encrypted f2fs.  [Nvertigo]
+1da4c7a  davinci: sepolicy: Add motor rules  [Arian]
+c0c6228  davinci: sepolicy: Allow adsprpcd to read sysfs_graphics  [Arian]
+b77a7ef  davinci: sepolicy: Allow power hal to write to input event  [Arian]
+0934d28  davinci: sepolicy: Allow bluetooth HAL to read the mac address  [Arian]
+ea62d46  davinci: sepolicy: Allow sensors HAL to set persist sensors properties  [Arian]
+f62cae8  davinci: sepolicy: Add sensors rules  [Demon000]
+48e74f8  davinci: sepolicy: Create mi_thermald sepolicy  [Demon000]
+1fd7e6e  davinci: sepolicy: Give NFC full access to NFC data files  [Demon000]
+a0f750d  davinci: sepolicy: Allow radio to read vendor audio prop  [Demon000]
+85f182a  davinci: sepolicy: Add fingerprint rules  [Demon000]
+6fbb987  davinci: sepolicy: Label used camera props  [Demon000]
+3ccedbd  davinci: sepolicy: Add camera rules  [Demon000]
+0f82c2c  davinci: sepolicy: Add audio rules  [Demon000]
+13828fe  davinci: sepolicy: Allow nv_mac to create mac files  [Demon000]
+f827b90  davinci: sepolicy: Label nv_mac  [Demon000]
+5462930  davinci: sepolicy: Label lights HAL  [Arian]
+49c4eba  davinci: Include local sepolicy  [Arian]
+6749321  davinci: Add init.recovery.qcom.rc  [Arian]
+8caf859  davinci: rootdir: Remove unsupported stuff from qcom post boot script  [Arian]
+1868b32  davinci: rootdir: Remove sleep_disabled switch during boot  [Demon000]
+35cca5a  davinci: rootdir: Cleanup qcom post boot script  [Demon000]
+ef3b212  davinci: rootdir: Cleanup init.qcom.sh  [Arian]
+3357178  davinci: rootdir: Cleanup init.qcom.usb.rc  [Demon000]
+f322cb6  davinci: rootdir: Add supplicant 1.2 to init.qcom.rc  [Hai Shalom]
+5edc7f9  davinci: Drop SSR blobs and set SSR restart_level in init.qcom.rc  [LuK1337]
+200154d  davinci: rootdir: Cleanup init.qcom.rc  [Demon000]
+68d30be  davinci: rootdir: Import camera motor to init.target.rc  [Arian]
+79456b4  davinci: rootdir: Remove unused panel info script  [Demon000]
+c88eff7  davinci: rootdir: Cleanup on charger  [Arian]
+dabd0ce  davinci: rootdir: Import coral fs tuning  [Demon000]
+7a8b519  davinci: rootdir: Increase background blkio cgroup weight to 200  [Jake Weinstein]
+e137090  davinci: rootdir: Apply runtime blkio settings  [Rick Yiu]
+731d158  davinci: rootdir: Move configurations to their proper group  [Demon000]
+686608a  davinci: rootdir: Start nv_mac on main class  [Demon000]
+1d6c06c  davinci: rootdir: Cleanup init.target.rc  [Arian]
+b31a8ab  davinci: rootdir: Enable hvdcp_opti  [Arian]
+a6eed87  davinci: rootdir: Move nv_mac service declaration to init.target.rc  [Arian]
+fc0ec62  davinci: rootdir: Add required fstab entries  [Arian]
+d360b3e  davinci: rootdir: Import uevent  [Arian]
+daffd22  davinci: rootdir: Import scripts  [Arian]
+0c87602  davinci: keylayout: Add button mapping for headphone control  [GuaiYiHu]
+8ce96ce  davinci: fm: Import blobs  [Arian]
+dedf284  davinci: fm: Disable loading of firmware  [Arian]
+334dfeb  davinci: fm: Build FM2  [Arian]
+85ce4ba  davinci: soter: Import blobs  [Arian]
+efd840b  davinci: ant: Build ANT+ HAL  [Fabian Leutenegger]
+13e6876  davinci: charger: Import blobs  [Arian]
+ffd1015  davinci: charger: Enable offline charger suspend  [Michael Bestas]
+8e23143  davinci: network: Copy hardware permissions from frameworks/native  [Arian]
+afc4714  davinci: vndk: Build framework detect modules  [shoudil]
+8c64dee  davinci: vibrator: Build HAL  [Arian]
+604a5c2  davinci: usb: Copy hardware permissions from frameworks/native  [Arian]
+dece886  davinci: usb: Build service  [Arian]
+e84e901  davinci: wfd: Add QCOM's implementation  [Artem Borisov]
+dce3865  davinci: wfd: Add QTI privapp permissions  [Arian]
+ca872a8  davinci: sensors: Import blobs  [Arian]
+8a02d78  davinci: sensors: Copy hardware permissions from frameworks/native  [Arian]
+e316c97  davinci: sensors: Build HAL  [Arian]
+d5b9320  davinci: health: Build HAL  [Arian]
+cbfa4ef  davinci: textclassifier: Build smart selection models  [Bruno Martins]
+c1e2386  davinci: thermal: Add mi_thermald  [Arian]
+74dc9f7  davinci: thermal: Import blobs  [Arian]
+1d4840e  davinci: thermal: Build HAL  [Arian]
+d9363c1  davinci: handheld: Copy hardware permissions from frameworks/native  [Arian]
+b2442ea  davinci: gps: Copy hardware permissions from frameworks/native  [Arian]
+c64e8a8  davinci: gps: Import blobs  [Arian]
+4569771  davinci: timeservices: Import blobs  [Arian]
+33a9783  davinci: wifi: Enable 2.4GHz channel bonding  [Demon000]
+069dba3  davinci: wifi: Import blobs  [Arian]
+f075f9e  davinci: wifi: Copy hardware permissions from frameworks/native  [Arian]
+9cc228b  davinci: wifi: Import configs  [Arian]
+22bbed6  davinci: wifi: Build IPACM from source  [Arian]
+897e244  davinci: wifi: Build HAL  [Demon000]
+aebb8f4  davinci: configstore: Import blobs  [Arian]
+63c818d  davinci: gatekeeper: Import blobs  [Arian]
+9c2ec8a  davinci: keymaster: Import blobs  [Arian]
+6dc8294  davinci: drm: Use widevine blobs from raphael  [Arian]
+ea85eac  davinci: drm: Build HAL  [Arian]
+8815734  davinci: nfc: Correct autonomous mode property name  [Demon000]
+a8ba28f  davinci: nfc: Remove duplicate props  [Demon000]
+a4c8899  davinci: nfc: Import firmware  [Arian]
+459742a  davinci: nfc: Copy hardware permissions from frameworks/native  [Arian]
+d2aee74  davinci: nfc: Import configs  [Arian]
+52620a9  davinci: nfc: Compile NQ stack  [Demon000]
+2c93a48  davinci: media: Remove unsupported profiles  [LuK1337]
+01565ba  davinci: Copy common media configs from the media HAL  [Arian]
+f5b13e2  davinci: media: Import configs  [Arian]
+a7b434b  davinci: media: Import blobs  [Arian]
+be40d73  davinci: media: Disable UBWC  [PIPIPIG233666]
+cd43a1c  davinci: media: Build OSS stack  [Demon000]
+d66fe49  davinci: perf: Import blobs  [Arian]
+a1cda05  davinci: touchscreen: Copy hardware permissions from frameworks/native  [Arian]
+e7f808e  davinci: touchscreen: Import blobs  [Arian]
+bae6fca  davinci: graphics: Build libtinyxml from source  [Arian]
+b83a5ee  davinci: graphics: Copy hardware permissions from frameworks/native  [Arian]
+d77e838  davinci: graphics: Build libvulkan  [Arian]
+522e021  davinci: graphics: Build renderscript stack  [Demon000]
+f2fce95  davinci: graphics: Import blobs  [Arian]
+09a9d3b  davinci: display: Copy hardware permissions from frameworks/native  [Arian]
+8e06368  davinci: display: Import calibration blobs  [Arian]
+48fbb65  davinci: graphics: Import display blobs from def_reteu  [Demon000]
+324f455  davinci: Convert configstore settings to props  [LuK1337]
+c10c37d  davinci: display: Build stack from source  [Demon000]
+9716702  davinci: Disable ssr runtime features  [Volodymyr Zhdanov]
+38b5f9b  davinci: audio: Use default ACDB ID for HEADSET_MIC usecases  [TheScarastic]
+9b993f4  davinci: audio: Use USB audio policy configuration from AOSP  [notsyncing]
+f7f12c7  davinci: audio: Enable AOSP bluetooth audio HAL v2  [dianlujitao]
+7ec67cb  davinci: audio: Add libmisound  [Arian]
+8bf6084  davinci: audio: Import configs  [Arian]
+40dd72d  davinci: audio: Import blobs  [Arian]
+a061856  davinci: audio: Build HAL  [Demon000]
+b20a0fc  davinci: Enable EGL Image Tracking on SF  [Ady Abraham]
+d018b46  davinci: Latch unsignaled buffers  [Luca Stefani]
+ab679c3  davinci: Import coral offsets for GPU composition  [Lucas Dupin]
+b08cac5  davinci: Add debug IMS props to workaround CarrierConfig restrictions  [LuK1337]
+76b1474  davinci: Force enable mobile network settings v2  [dianlujitao]
+d9e005b  davinci: Import and sort vendor and odm properties  [Arian]
+a91a3c2  davinci: Add vertical margin in recovery to avoid the rounded corners  [Richard Hansen]
+62db00a  davinci: Import stock system properties  [Arian]
+e3159b3  davinci: telephony: Define vendor ril service usage  [Demon000]
+bf8bff6  davinci: telephony: Set TARGET_PROVIDES_QTI_TELEPHONY_JAR  [Michael Bestas]
+336a164  davinci: telephony: Add inject support for MultiSimSettingController  [Sandeep Gutta]
+00397e7  davinci: telephony: Move qti-telephony-common to product  [Sandeep Gutta]
+6a1973a  davinci: telephony: Add telephony_injection file  [Sandeep Gutta]
+66b6b94  davinci: telephony: Add stock CarrierConfig  [Arian]
+ebe9bf5  davinci: telephony: Copy hardware permissions from frameworks/native  [Arian]
+8e40ae7  davinci: telephony: Import privapp-permissions  [Arian]
+8f0c640  davinci: Patch qti-telephony-common.jar to work on AOSP  [Demon000]
+eb07440  davinci: telephony: Import blobs  [Arian]
+32291fe  davinci: telephony: Build required packages  [Arian]
+10d3cfb  davinci: power: Import sub system restart blob  [Arian]
+cce5c69  davinci: power: Import poweroff alarm blobs  [Arian]
+325b4b2  davinci: power: Scan input devices for eligible DT2W node  [Bruno Martins]
+154d5db  davinci: power: Support event-based dt2w node  [TheScarastic]
+679e3a0  davinci: power: Prepare HAL extension  [Arian]
+dcfd1ad  davinci: power: Build HAL  [Arian]
+716d500  davinci: light: Detect maximum brightness dynamically  [vasishath]
+1578cf0  davinci: light: Simplify alpha scaling logic  [Demon000]
+f5aa67b  davinci: light: Do not turn on breathing for unlit hardware states  [Demon000]
+987b272  davinci: light: Avoid resetting state  [Demon000]
+b72b9f7  davinci: light: Avoid uint32_t underflow  [Demon000]
+f28ae09  davinci: light: Properly scale brightness range  [Demon000]
+c30874c  davinci: lights: Adjust for davincis LEDs  [Arian]
+92b4f60  davinci: light: Import HAL from Xiaomi msm8998-common  [Demon000]
+3b3bb45  davinci: fod: Use 630nit fod value  [Demon000]
+b50d5cd  davinci: fod: Improve semantics  [Demon000]
+57e6683  davinci: fod: Remove onRelase calls duplication  [Demon000]
+21bd4cf  davinci: fod: Calculate dim amount based on real brightness  [Demon000]
+3999ca4  davinci: fod: Copy hardware permissions from frameworks/native  [Arian]
+c0dc368  davinci: fod: Implement in-screen fingerprint HAL  [Demon000]
+284528b  davinci: fod: Import blobs  [Arian]
+549ac1b  davinci: parts: Add icons for popup settings  [Arian]
+43cd49c  davinci: parts: Try to take the motor back on boot when opened  [jhenrique09]
+e5b9c70  davinci: parts: Check if motor is busy before doing any operation  [jhenrique09]
+ca5ef87  davinci: parts: Add popup camera sound effects and LED toggle  [jhenrique09]
+df0a3c0  davinci: parts: Add support for camera popup light  [TheScarastic]
+26d4058  raphael: Initial popup camera impl  [TheScarastic]
+450c4cb  davinci: parts: Add icons for doze  [arian]
+5e34ed4  davinci: parts: Import from xiaomi_sdm845-common  [Arian]
+069783a  davinci: bluetooth: Switch to a map based BT name  [LuK1337]
+e485710  davinci: bluetooth: Add builcfg  [Arian]
+94e1513  davinci: bluetooth: Copy hardware permissions from frameworks/native  [Arian]
+f6bb231  davinci: bluetooth: Import blobs  [Arian]
+2d5985c  davinci: camera: overlay: Enable AUX camera for snap  [LuK1337]
+0653749  davinci: camera: overlay: Import relevant snap overlays  [GuaiYiHu]
+b066c57  davinci: camera: Build Snap  [Arian]
+6db6c9d  davinci: camera: Copy hardware permissions from frameworks/native  [Arian]
+6f3cb3a  davinci: camera: Build libdng_sdk.vendor  [Arian]
+7a9d2a0  davinci: camera: Build camera provider  [Arian]
+e11ed23  davinci: camera: Import motor blobs  [Arian]
+9743217  davinci: camera: Import blobs  [Arian]
+02ae453  davinci: overlay: Declare STATE_DOZE support  [Bruno Martins]
+4b7e7b0  davinci: overlay: Configure proper rounded corners  [yankarinRG]
+656daa3  davinci: overlay: Add 2 more notification icons  [eray orçunus]
+308ba6a  davinci: overlay: Leave space for FOD while bouncer is requesting Pattern on PIN  [Demon000]
+79084b9  davinci: overlay: Adjust Biometric dialog for fod  [TheScarastic]
+c29a9cf  davinci: overlay: Configure light capabilities  [Arian]
+a77b3b7  davinci: overlay: Enable option for full screen aspect ratio  [Jesse Chan]
+2b55bb9  davinci: overlay: Define fingerprint position  [Arian]
+1ff0437  davinci: overlay: Hide sRGB toggle in developer options  [maxwen]
+ae802f0  davinci: overlay: Adjust vibration strength  [Arian]
+c409d02  davinci: overlay: Enable suspend when screen off due to proximity  [Arian]
+
+* frameworks/av
+9c12a9d  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+
+* frameworks/base
+e95b26a  DeviceInfoUtils: Prefer lineage platform SPL  [dianlujitao]
+6cf21f7  DozeSensors: do not use binned brightness sensor for proximity if not supported  [Demon000]
+9ad484f  base: Redo expanded volume panel for 10.x  [HrX03]
+7558dde  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
+37d8e7e  SystemUI: get rid of build text in qs  [Joey]
+14c9137  PackageManagerService: Drop caches according to incremental version  [Arian]
+ba570bc  theme: Introduce support for primary color overlays  [Marko Man]
+50468f6  SystemUI: Initialize proper visibility for notification icons container  [LuK1337]
+
+* hardware/qcom-caf/common
+3b586a8  Don't BUILD_WITHOUT_VENDOR  [Chirayu Desai]
+
+* hardware/qcom-caf/sm8150/audio
+12480be  a2dp: Add a null check before iterating over a2dp.adev->usecase_list  [Scott Warner]
+
+* lineage-sdk
+cbc2b8d  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
+
+* packages/apps/Settings
+e57a62f  hardwareinfo: Hide hardware revision if empty  [Arian]
+48a8a13  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+
+* packages/apps/ThemePicker
+c21107c  ThemePicker: Fix theming issues  [maxwen]
+e3ccec2  ThemePicker: Don't ignore white accent or primary colors  [Christian Oder]
+ad79abf  ThemePicker: Add support for primary color overlays  [maxwen]
+ecd3dcc  ThemePicker: Show item name under the category name  [El Dainosor]
+
+* packages/apps/Updater
+bb09c53  Updater: Use accent_device_default_{dark,light} for colorAccent values  [LuK1337]
+
+* packages/overlays/Lineage
+eaa51c6  overlays: Add black primary theme  [Marko Man]
+
+* vendor/lineage
+68ab0b9  lineage: build black primary theme  [Demon000]
+====================
      2020-05-18    
 ====================
 
-* bootable/recovery
-d5a889c  recovery: Print the active slot  [Richard Hansen]
-1a9274a  recovery: Display LineageOS and Android versions  [Richard Hansen]
-00ee86c  recovery: Draw the help message below the menu on non-touch devices  [Richard Hansen]
-05931f2  recovery: Clarify help text  [Richard Hansen]
-799b33a  recovery: Set the INFO color to 'recovery light'  [Richard Hansen]
-
-* build/make
-db0f669  Allow overriding platform SPL  [dianlujitao]
-
-* device/lineage/sepolicy
-ec37a16  Label lineage platform SPL prop  [dianlujitao]
-
 * device/xiaomi/davinci
-cd73ac5  davinci: rootdir: Drop zram  [Arian]
-fc034b7  davinci: overlay: Add support for doze auto brightness  [TheScarastic]
-d215f20  davinci: Add nosdcard characteristic to device  [Patrick Tjin]
-0f62b23  davinci: parts: Add StarWars popup sounds  [Arian]
-80268d5  davinci: overlay: Decrease doze brightness  [Arian]
-ac74c9d  davinci: overlay: Increase the lcdbrightness level to 2  [Arian]
-c0ab659  davinci: Remove android.hidl.base@1.0 shims  [Michael Bestas]
-e333b11  davinci: light: Disable both LEDs  [Arian]
-c5becb2  davinci: parts: Take use of both LEDs for notifications when opened  [Arian]
-f5f471f  davinci: parts: Restore the LED's previous state after popup  [Arian]
-8dca481  davinci: parts: Disable raise to wake toggle when AOD is on  [Arian]
-4390b19  davinci: parts: Allow to wake the screen instead of pulsing  [Nauval Rizky]
-4ea5182  davinci: parts: Implement dc dimming  [Nauval Rizky]
-a249274  davinci: Use stock fingerprint  [Arian]
-2347cde  davinci: init: Workaround safetynet  [Arian]
-1549a2e  davinci: Define vendor security patch level  [Arian]
-2783e0a  davinci: Build Trust HAL  [Joey]
-3718ba7  davinci: Build livedisplay  [Arian]
-fa3acde  davinci: Add assert for davinci & davinciin  [Fabian Leutenegger]
-2718c83  davinci: init: Use variables for the region specific properties  [Arian]
-cd1b563  davinci: init: Always set the ro.build props  [Arian]
-0835427  davinci: init: Override everything ^.^  [LuK1337]
-f09e69f  davinci: Add custom init to set proper variants  [AbhiShek Aggarwal]
-e7bc4ba  davinci: Switch to enforcing  [Arian]
-182f228  davinci: sepolicy: Label properties to avoid denials  [Arian]
-945b7db  davinci: sepolicy: Silence harmless QCOM denials  [Michael Bestas]
-f4aeb0a  davinci: sepolicy: Label hwc and hwversion properties  [Arian]
-04c9b17  davinci: sepolicy: Label property used by ril  [Demon000]
-66cc9a5  davinci: sepolicy: Label manufacturer prop used by camera hal  [Demon000]
-fe2280b  davinci: sepolicy: Fix OTA auto-flashing with encrypted f2fs.  [Nvertigo]
-394c02f  davinci: sepolicy: Add motor rules  [Arian]
-5f3fc73  davinci: sepolicy: Allow adsprpcd to read sysfs_graphics  [Arian]
-9c31e07  davinci: sepolicy: Allow power hal to write to input event  [Arian]
-1889b84  davinci: sepolicy: Allow bluetooth HAL to read the mac address  [Arian]
-9a0eeae  davinci: sepolicy: Allow sensors HAL to set persist sensors properties  [Arian]
-d54fd4c  davinci: sepolicy: Add sensors rules  [Demon000]
-e7c08bc  davinci: sepolicy: Create mi_thermald sepolicy  [Demon000]
-1be8952  davinci: sepolicy: Give NFC full access to NFC data files  [Demon000]
-9336e39  davinci: sepolicy: Allow radio to read vendor audio prop  [Demon000]
-8051142  davinci: sepolicy: Add fingerprint rules  [Demon000]
-1468dbd  davinci: sepolicy: Label used camera props  [Demon000]
-da1a5db  davinci: sepolicy: Add camera rules  [Demon000]
-7b05795  davinci: sepolicy: Add audio rules  [Demon000]
-e9e1bdb  davinci: sepolicy: Allow nv_mac to create mac files  [Demon000]
-c3d1f70  davinci: sepolicy: Label nv_mac  [Demon000]
-1344355  davinci: sepolicy: Label lights HAL  [Arian]
-02a563a  davinci: Include local sepolicy  [Arian]
-8bf0018  davinci: Add init.recovery.qcom.rc  [Arian]
-3517396  davinci: rootdir: Remove unsupported stuff from qcom post boot script  [Arian]
-79ce0e4  davinci: rootdir: Remove sleep_disabled switch during boot  [Demon000]
-e73b57e  davinci: rootdir: Cleanup qcom post boot script  [Demon000]
-b1e1392  davinci: rootdir: Cleanup init.qcom.sh  [Arian]
-8f0aca4  davinci: rootdir: Cleanup init.qcom.usb.rc  [Demon000]
-5d88f1d  davinci: rootdir: Add supplicant 1.2 to init.qcom.rc  [Hai Shalom]
-dfb2651  davinci: Drop SSR blobs and set SSR restart_level in init.qcom.rc  [LuK1337]
-a12a7db  davinci: rootdir: Cleanup init.qcom.rc  [Demon000]
-749f5ec  davinci: rootdir: Import camera motor to init.target.rc  [Arian]
-a1d87c1  davinci: rootdir: Remove unused panel info script  [Demon000]
-e8377be  davinci: rootdir: Cleanup on charger  [Arian]
-be40754  davinci: rootdir: Import coral fs tuning  [Demon000]
-44ce95e  davinci: rootdir: Increase background blkio cgroup weight to 200  [Jake Weinstein]
-cc7e324  davinci: rootdir: Apply runtime blkio settings  [Rick Yiu]
-c675f3a  davinci: rootdir: Move configurations to their proper group  [Demon000]
-b5659c7  davinci: rootdir: Start nv_mac on main class  [Demon000]
-92ea717  davinci: rootdir: Cleanup init.target.rc  [Arian]
-7df0a71  davinci: rootdir: Enable hvdcp_opti  [Arian]
-d9256ea  davinci: rootdir: Move nv_mac service declaration to init.target.rc  [Arian]
-9cfb994  davinci: rootdir: Add required fstab entries  [Arian]
-848c745  davinci: rootdir: Import uevent  [Arian]
-6a82a23  davinci: rootdir: Import scripts  [Arian]
-17a23c3  davinci: keylayout: Add button mapping for headphone control  [GuaiYiHu]
-f6e16c3  davinci: fm: Import blobs  [Arian]
-affaff9  davinci: fm: Disable loading of firmware  [Arian]
-aeede03  davinci: fm: Build FM2  [Arian]
-9955dc8  davinci: soter: Import blobs  [Arian]
-be1f7bd  davinci: ant: Build ANT+ HAL  [Fabian Leutenegger]
-405962d  davinci: charger: Import blobs  [Arian]
-fe896d1  davinci: charger: Enable offline charger suspend  [Michael Bestas]
-c622e8a  davinci: network: Copy hardware permissions from frameworks/native  [Arian]
-eb60ac1  davinci: vndk: Build framework detect modules  [shoudil]
-4c6c473  davinci: vibrator: Build HAL  [Arian]
-e8ffbbd  davinci: usb: Copy hardware permissions from frameworks/native  [Arian]
-d02fc04  davinci: usb: Build service  [Arian]
-28b45f0  davinci: wfd: Add QCOM's implementation  [Artem Borisov]
-4272b23  davinci: wfd: Add QTI privapp permissions  [Arian]
-d7f0e0a  davinci: sensors: Import blobs  [Arian]
-2a41631  davinci: sensors: Copy hardware permissions from frameworks/native  [Arian]
-2dbcf5e  davinci: sensors: Build HAL  [Arian]
-f8e1985  davinci: health: Build HAL  [Arian]
-ea94deb  davinci: textclassifier: Build smart selection models  [Bruno Martins]
-fc8412e  davinci: thermal: Add mi_thermald  [Arian]
-f72fe2a  davinci: thermal: Import blobs  [Arian]
-5a27255  davinci: thermal: Build HAL  [Arian]
-3bd2bc8  davinci: handheld: Copy hardware permissions from frameworks/native  [Arian]
-832a029  davinci: gps: Copy hardware permissions from frameworks/native  [Arian]
-535281a  davinci: gps: Import blobs  [Arian]
-572cacf  davinci: timeservices: Import blobs  [Arian]
-a9ea10d  davinci: wifi: Enable 2.4GHz channel bonding  [Demon000]
-755073c  davinci: wifi: Import blobs  [Arian]
-f396e47  davinci: wifi: Copy hardware permissions from frameworks/native  [Arian]
-7abda38  davinci: wifi: Import configs  [Arian]
-d582b94  davinci: wifi: Build IPACM from source  [Arian]
-d9f5e2d  davinci: wifi: Build HAL  [Demon000]
-2def6cb  davinci: configstore: Import blobs  [Arian]
-ca39ab4  davinci: gatekeeper: Import blobs  [Arian]
-d3d66f8  davinci: keymaster: Import blobs  [Arian]
-15d455c  davinci: drm: Use widevine blobs from raphael  [Arian]
-0895bac  davinci: drm: Build HAL  [Arian]
-6be8d8a  davinci: nfc: Correct autonomous mode property name  [Demon000]
-509e678  davinci: nfc: Remove duplicate props  [Demon000]
-0803be0  davinci: nfc: Import firmware  [Arian]
-44e42eb  davinci: nfc: Copy hardware permissions from frameworks/native  [Arian]
-5af0d64  davinci: nfc: Import configs  [Arian]
-d8b49a3  davinci: nfc: Compile NQ stack  [Demon000]
-632a889  davinci: media: Remove unsupported profiles  [LuK1337]
-e466d87  davinci: Copy common media configs from the media HAL  [Arian]
-dd5586a  davinci: media: Import configs  [Arian]
-44b65b7  davinci: media: Import blobs  [Arian]
-6b214b3  davinci: media: Disable UBWC  [PIPIPIG233666]
-55df5ab  davinci: media: Build OSS stack  [Demon000]
-8ddefea  davinci: perf: Import blobs  [Arian]
-ec082cf  davinci: touchscreen: Copy hardware permissions from frameworks/native  [Arian]
-609d4cf  davinci: touchscreen: Import blobs  [Arian]
-e378540  davinci: graphics: Build libtinyxml from source  [Arian]
-a383f15  davinci: graphics: Copy hardware permissions from frameworks/native  [Arian]
-f85990d  davinci: graphics: Build libvulkan  [Arian]
-82f909a  davinci: graphics: Build renderscript stack  [Demon000]
-972a676  davinci: graphics: Import blobs  [Arian]
-3531ecd  davinci: display: Copy hardware permissions from frameworks/native  [Arian]
-d14cedf  davinci: display: Import calibration blobs  [Arian]
-14daf84  davinci: graphics: Import display blobs from def_reteu  [Demon000]
-df2c7a8  davinci: Convert configstore settings to props  [LuK1337]
-7c62cff  davinci: display: Build stack from source  [Demon000]
-ca94916  davinci: Disable ssr runtime features  [Volodymyr Zhdanov]
-a1fa633  davinci: audio: Use default ACDB ID for HEADSET_MIC usecases  [TheScarastic]
-d0607df  davinci: audio: Use USB audio policy configuration from AOSP  [notsyncing]
-b159965  davinci: audio: Enable AOSP bluetooth audio HAL v2  [dianlujitao]
-60b73c6  davinci: audio: Add libmisound  [Arian]
-4accc36  davinci: audio: Import configs  [Arian]
-9ce3eaf  davinci: audio: Import blobs  [Arian]
-809bd9b  davinci: audio: Build HAL  [Demon000]
-0217198  davinci: Enable EGL Image Tracking on SF  [Ady Abraham]
-0ca870a  davinci: Latch unsignaled buffers  [Luca Stefani]
-adfe9b3  davinci: Import coral offsets for GPU composition  [Lucas Dupin]
-200fbed  davinci: Add debug IMS props to workaround CarrierConfig restrictions  [LuK1337]
-992e11e  davinci: Force enable mobile network settings v2  [dianlujitao]
-914e345  davinci: Import and sort vendor and odm properties  [Arian]
-e714b0c  davinci: Import stock system properties  [Arian]
-f7eedbf  davinci: telephony: Define vendor ril service usage  [Demon000]
-40aa164  davinci: telephony: Set TARGET_PROVIDES_QTI_TELEPHONY_JAR  [Michael Bestas]
-0db3437  davinci: telephony: Add inject support for MultiSimSettingController  [Sandeep Gutta]
-f150c7f  davinci: telephony: Move qti-telephony-common to product  [Sandeep Gutta]
-b65c3cf  davinci: telephony: Add telephony_injection file  [Sandeep Gutta]
-4221882  davinci: telephony: Add stock CarrierConfig  [Arian]
-ea134bd  davinci: telephony: Copy hardware permissions from frameworks/native  [Arian]
-d20a671  davinci: telephony: Import privapp-permissions  [Arian]
-43258ce  davinci: Patch qti-telephony-common.jar to work on AOSP  [Demon000]
-dac1ee7  davinci: telephony: Import blobs  [Arian]
-9ecfd17  davinci: telephony: Build required packages  [Arian]
-2d42be5  davinci: power: Import sub system restart blob  [Arian]
-55d6b7a  davinci: power: Import poweroff alarm blobs  [Arian]
-c465599  davinci: power: Scan input devices for eligible DT2W node  [Bruno Martins]
-50fd5d6  davinci: power: Support event-based dt2w node  [TheScarastic]
-44cdc52  davinci: power: Prepare HAL extension  [Arian]
-bb61b55  davinci: power: Build HAL  [Arian]
-bd3f417  davinci: light: Detect maximum brightness dynamically  [vasishath]
-1f2d6ce  davinci: light: Simplify alpha scaling logic  [Demon000]
-175afb6  davinci: light: Do not turn on breathing for unlit hardware states  [Demon000]
-5dd3f76  davinci: light: Avoid resetting state  [Demon000]
-d13dd9a  davinci: light: Avoid uint32_t underflow  [Demon000]
-5945120  davinci: light: Properly scale brightness range  [Demon000]
-b867c53  davinci: lights: Adjust for davincis LEDs  [Arian]
-6030753  davinci: light: Import HAL from Xiaomi msm8998-common  [Demon000]
-764f260  davinci: fod: Use 630nit fod value  [Demon000]
-61fa2be  davinci: fod: Improve semantics  [Demon000]
-22e2030  davinci: fod: Remove onRelase calls duplication  [Demon000]
-4a32b92  davinci: fod: Calculate dim amount based on real brightness  [Demon000]
-ccdfa22  davinci: fod: Copy hardware permissions from frameworks/native  [Arian]
-f461726  davinci: fod: Implement in-screen fingerprint HAL  [Demon000]
-46d1430  davinci: fod: Import blobs  [Arian]
-8c0d29d  davinci: parts: Add icons for popup settings  [Arian]
-b59b4ec  davinci: parts: Try to take the motor back on boot when opened  [jhenrique09]
-ebd87de  davinci: parts: Check if motor is busy before doing any operation  [jhenrique09]
-b1a40b4  davinci: parts: Add popup camera sound effects and LED toggle  [jhenrique09]
-c151e41  davinci: parts: Add support for camera popup light  [TheScarastic]
-2acde67  raphael: Initial popup camera impl  [TheScarastic]
-8ca0d9b  davinci: parts: Add icons for doze  [arian]
-ddaf23e  davinci: parts: Import from xiaomi_sdm845-common  [Arian]
-ac75951  davinci: bluetooth: Switch to a map based BT name  [LuK1337]
-e767c0b  davinci: bluetooth: Add builcfg  [Arian]
-db9efbe  davinci: bluetooth: Copy hardware permissions from frameworks/native  [Arian]
-c3e45ef  davinci: bluetooth: Import blobs  [Arian]
-8eabb64  davinci: camera: overlay: Enable AUX camera for snap  [LuK1337]
-f8fc6f9  davinci: camera: overlay: Import relevant snap overlays  [GuaiYiHu]
-a676543  davinci: camera: Build Snap  [Arian]
-40da5f0  davinci: camera: Copy hardware permissions from frameworks/native  [Arian]
-54aa49e  davinci: camera: Build libdng_sdk.vendor  [Arian]
-ed19108  davinci: camera: Build camera provider  [Arian]
-2939db0  davinci: camera: Import motor blobs  [Arian]
-6247845  davinci: camera: Import blobs  [Arian]
-3745631  davinci: overlay: Declare STATE_DOZE support  [Bruno Martins]
-e694b00  davinci: overlay: Configure proper rounded corners  [yankarinRG]
-214b3dd  davinci: overlay: Add 2 more notification icons  [eray orçunus]
-98c0a46  davinci: overlay: Leave space for FOD while bouncer is requesting Pattern on PIN  [Demon000]
-56e6ede  davinci: overlay: Adjust Biometric dialog for fod  [TheScarastic]
-1ffd4e3  davinci: overlay: Configure light capabilities  [Arian]
-ce9db22  davinci: overlay: Enable option for full screen aspect ratio  [Jesse Chan]
-2652cc3  davinci: overlay: Define fingerprint position  [Arian]
-7c33d70  davinci: overlay: Hide sRGB toggle in developer options  [maxwen]
-edd2fde  davinci: overlay: Adjust vibration strength  [Arian]
-8516104  davinci: overlay: Enable suspend when screen off due to proximity  [Arian]
-c05bc7e  davinci: overlay: Increase minimal brightness to 2  [Arian]
 e3ece42  davinci: overlay: Import brightness overlays from MIUI  [TheScarastic]
 a8c405a  davinci: overlay: Enable burn in protection  [Arian]
 3e7615c  davinci: Add frameworks-res overlay  [Arian]
-
-* frameworks/av
-984cc8e  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
-
-* frameworks/base
-f155d6b  DozeSensors: do not use binned brightness sensor for proximity if not supported  [Demon000]
-ac865d3  DeviceInfoUtils: Prefer lineage platform SPL  [dianlujitao]
-07ac1a6  base: Redo expanded volume panel for 10.x  [HrX03]
-3cdad1e  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
-7bd9644  SystemUI: get rid of build text in qs  [Joey]
-9a08b8f  PackageManagerService: Drop caches according to incremental version  [Arian]
-5f10845  theme: Introduce support for primary color overlays  [Marko Man]
 
 * kernel/xiaomi/sm6150
 92a6504  arm64: defconfig: enable exposure adjustment  [Nauval Rizky]
@@ -252,33 +278,6 @@ ea0566a  drm: msm: temporary disable DC dimming when in fod_hbm mode  [Nauval Ri
 d43a7fc  drm: add get_main_display  [DevriesL]
 a870f0f  drm: Let exposure adjustment switchable via sysfs  [XiNGRZ]
 3d85830  drm: Introduce exposure adjustment driver  [DevriesL]
-
-* lineage-sdk
-af1c02e  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
-
-* lineage/wiki
-3907184  wiki: templates: Describe Sony's unlocking process better  [Mathis Dirksen-Thedens]
-
-* packages/apps/Settings
-d2db26f  hardwareinfo: Hide hardware revision if empty  [Arian]
-190ad1e  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
-
-* packages/apps/ThemePicker
-da4a050  ThemePicker: Show items name under the title  [El Dainosor]
-
-* packages/overlays/Lineage
-16fb53a  overlays: Add black primary theme  [Marko Man]
-
-* vendor/lineage
-2449509  lineage: build black primary theme  [Demon000]
-
-* vendor/xiaomi/davinci
-f866705  davinci: Add back tcmclient  [Arian]
-====================
-     2020-05-17    
-====================
-
-* kernel/xiaomi/sm6150
 3ccf48b6  sched: Improve the scheduler  [Pavankumar Kondeti]
 e5b62b3  sched/core: Fix use after free issue in is_sched_lib_based_app()  [Pavankumar Kondeti]
 e577760  sched/core: fix userspace affining threads incorrectly  [Abhijeet Dharmapurikar]
@@ -598,16 +597,17 @@ cde7ae8  Revert "msm: camera: Add Support for Multiple SOF sources"  [vantoman]
 6951958  ARM64: dts: Reserve space for ramoops  [Yaroslav Furman]
 0432872  ARM64: dts: Import overlayed Xiaomi SDMMAGPIE-based device tree sources  [PIPIPIG233666]
 
-* vendor/extra
-6ac219f  add Yellow FOD overlay  [Arian]
+* lineage/wiki
+3907184  wiki: templates: Describe Sony's unlocking process better  [Mathis Dirksen-Thedens]
 
 * vendor/gms
 1a78e8b  fonts_customization: Add lato and rubik fonts  [Arian]
 
 * vendor/xiaomi/davinci
+f866705  davinci: Add back tcmclient  [Arian]
 75726fa  davinci: Drop unneded telephony jars and remove android.hidl.base@1.0 shim  [Arian]
 ====================
-     2020-05-16    
+     2020-05-17    
 ====================
 
 * kernel/xiaomi/sm6150
@@ -665,13 +665,37 @@ f728f8a  Merge tag 'LA.UM.8.9.r1-09200-SM6xx.0' of https://source.codeaurora.org
 
 * tools/repohooks
 ed81c35  hooks: rustfmt: fix pylint warning  [Mike Frysinger]
+====================
+     2020-05-16    
+====================
+
+* tools/repohooks
 da09d40  pylint: find Python 3 version better  [Mike Frysinger]
 ====================
      2020-05-15    
 ====================
 
+* android
+d2ca8ae  Fetch our fork of build-tools  [Chirayu Desai]
+
 * bootable/recovery
 c2bd647  recovery: Remove the "Format system partition" menu on A/B devices  [Richard Hansen]
+
+* build/make
+d041222  releasetools: Use du -b  [Chirayu Desai]
+
+* device/lineage/sepolicy
+f96e6b6  common: Expose aux camera {black,white}list props  [dianlujitao]
+e2d01a8  Revert "Label lineage.service.adb.root as system prop"  [Bruno Martins]
+
+* lineage/hudson
+3c789eb  hudson: 'b' is cool too  [LuK1337]
+
+* lineage/wiki
+0a7dcf4  wiki: Add OnePlus 7 (guacamoleb)  [Ashwin R C]
+
+* packages/apps/LineageParts
+cbb89a9  LineageParts: Fix animation for search results  [Michael W]
 
 * packages/apps/Messaging
 24bb01e  Messaging: Fix sysconfig whitelist filename  [Michael Bestas]
@@ -685,58 +709,30 @@ c2bd647  recovery: Remove the "Format system partition" menu on A/B devices  [Ri
      2020-05-14    
 ====================
 
-* android
-d2ca8ae  Fetch our fork of build-tools  [Chirayu Desai]
-
-* build/make
-d041222  releasetools: Use du -b  [Chirayu Desai]
-
-* device/lineage/sepolicy
-f96e6b6  common: Expose aux camera {black,white}list props  [dianlujitao]
-e2d01a8  Revert "Label lineage.service.adb.root as system prop"  [Bruno Martins]
-
 * device/qcom/sepolicy
 ea29bfd  sepolicy: Unlabel aux camera whitelist prop  [dianlujitao]
 
 * device/qcom/sepolicy-legacy-um
 efef994  sepolicy: Unlabel aux camera whitelist prop  [dianlujitao]
 
-* device/sony/msm8974-common
-276b8da  msm8974-common: Remove config_disable_TelephonyManager_network_scan  [Arne Coucheron]
-88a8962  msm8974-common: gps: Use http XTRA and XTRA2 servers  [KhabarlakKonstantin]
-
-* device/sony/shinano-common
-02f8f99  shinano-common: Make use of gps_debug.conf to set xtra servers  [Alessandro Astone]
-
 * frameworks/base
 d65af6e  camera: Support exposing aux camera to apps  [Sauhard Pande]
 
 * lineage/hudson
-3c789eb  hudson: 'b' is cool too  [LuK1337]
 ee7bcdd  hudson: (moto) X gon give it to ya  [Nolen Johnson]
 
 * lineage/wiki
-0a7dcf4  wiki: Add OnePlus 7 (guacamoleb)  [Ashwin R C]
 09c659e  wiki: devices: mata: Update bootloader unlock command  [Nolen Johnson]
 688d284  wiki: templates: Don't tell users to format system on A/B devices  [Richard Hansen]
 976caa3  wiki: devices: Promote victara to 17.1  [Nolen Johnson]
 
-* packages/apps/LineageParts
-cbb89a9  LineageParts: Fix animation for search results  [Michael W]
+* packages/apps/Settings
+827334a  LanguageAndInputSettings: Hide touch hovering from search if needed  [Bruno Martins]
 
 * vendor/lineage
 2057f50  config: Install {Lato,Rubik} fonts and their overlay packages  [LuK1337]
 ====================
      2020-05-13    
-====================
-
-* packages/apps/Settings
-827334a  LanguageAndInputSettings: Hide touch hovering from search if needed  [Bruno Martins]
-
-* packages/overlays/Lineage
-2b8dc1b  Introduce {Lato,Rubik} font overlay packages  [LuK1337]
-====================
-     2020-05-12    
 ====================
 
 * frameworks/base
@@ -751,3 +747,6 @@ e145f0c  LTE+ indicator not shown when attached to CA network  [Rambo Wang]
 
 * packages/apps/Recorder
 b0f788c  Revert "ScreenService: start recording on a background Thread"  [Han Wang]
+
+* packages/overlays/Lineage
+2b8dc1b  Introduce {Lato,Rubik} font overlay packages  [LuK1337]
