@@ -1,13 +1,52 @@
 ====================
-     2020-05-19    
+     2020-05-20    
 ====================
 
 * build/make
-60cfa59  Allow overriding platform SPL  [dianlujitao]
-483a5a7  [DNM] Always use release-keys  [Arian]
+41aabb4  Allow overriding platform SPL  [dianlujitao]
+6acc443  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-0173c35  Label lineage platform SPL prop  [dianlujitao]
+869b9b1  Label lineage platform SPL prop  [dianlujitao]
+
+* device/xiaomi/davinci
+d23cdfd  Revert "davinci: overlay: Add support for doze auto brightness"  [Arian]
+aa20a01  davinci: Add CNE configs for VoWifi  [Arian]
+
+* frameworks/av
+1fcfd7b  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+
+* frameworks/base
+09fdf06  DeviceInfoUtils: Prefer lineage platform SPL  [dianlujitao]
+3e4029b  base: Redo expanded volume panel for 10.x  [HrX03]
+2730b90  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
+f4650b0  SystemUI: get rid of build text in qs  [Joey]
+5e033a1  PackageManagerService: Drop caches according to incremental version  [Arian]
+b63e196  theme: Introduce support for primary color overlays  [Marko Man]
+
+* lineage-sdk
+0e79d71  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
+
+* packages/apps/Settings
+73e29b0  hardwareinfo: Hide hardware revision if empty  [Arian]
+bc386dd  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+
+* packages/apps/ThemePicker
+0ca87d8  ThemePicker: Fix theming issues  [maxwen]
+7e7cbff  ThemePicker: Don't ignore white accent or primary colors  [Christian Oder]
+6488908  ThemePicker: Add support for primary color overlays  [maxwen]
+
+* packages/overlays/Lineage
+7c0980d  overlays: Add black primary theme  [Marko Man]
+
+* vendor/lineage
+0d51141  lineage: build black primary theme  [Demon000]
+
+* vendor/xiaomi/davinci
+e18def9  davinci: Add CNE configs for VoWifi  [Arian]
+====================
+     2020-05-19    
+====================
 
 * device/xiaomi/davinci
 ff162ca  davinci: rootdir: Drop zram  [Arian]
@@ -221,17 +260,7 @@ a77b3b7  davinci: overlay: Enable option for full screen aspect ratio  [Jesse Ch
 ae802f0  davinci: overlay: Adjust vibration strength  [Arian]
 c409d02  davinci: overlay: Enable suspend when screen off due to proximity  [Arian]
 
-* frameworks/av
-9c12a9d  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
-
 * frameworks/base
-e95b26a  DeviceInfoUtils: Prefer lineage platform SPL  [dianlujitao]
-6cf21f7  DozeSensors: do not use binned brightness sensor for proximity if not supported  [Demon000]
-9ad484f  base: Redo expanded volume panel for 10.x  [HrX03]
-7558dde  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
-37d8e7e  SystemUI: get rid of build text in qs  [Joey]
-14c9137  PackageManagerService: Drop caches according to incremental version  [Arian]
-ba570bc  theme: Introduce support for primary color overlays  [Marko Man]
 50468f6  SystemUI: Initialize proper visibility for notification icons container  [LuK1337]
 
 * hardware/qcom-caf/common
@@ -240,27 +269,11 @@ ba570bc  theme: Introduce support for primary color overlays  [Marko Man]
 * hardware/qcom-caf/sm8150/audio
 12480be  a2dp: Add a null check before iterating over a2dp.adev->usecase_list  [Scott Warner]
 
-* lineage-sdk
-cbc2b8d  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
-
-* packages/apps/Settings
-e57a62f  hardwareinfo: Hide hardware revision if empty  [Arian]
-48a8a13  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
-
 * packages/apps/ThemePicker
-c21107c  ThemePicker: Fix theming issues  [maxwen]
-e3ccec2  ThemePicker: Don't ignore white accent or primary colors  [Christian Oder]
-ad79abf  ThemePicker: Add support for primary color overlays  [maxwen]
 ecd3dcc  ThemePicker: Show item name under the category name  [El Dainosor]
 
 * packages/apps/Updater
 bb09c53  Updater: Use accent_device_default_{dark,light} for colorAccent values  [LuK1337]
-
-* packages/overlays/Lineage
-eaa51c6  overlays: Add black primary theme  [Marko Man]
-
-* vendor/lineage
-68ab0b9  lineage: build black primary theme  [Demon000]
 ====================
      2020-05-18    
 ====================
@@ -731,22 +744,3 @@ ee7bcdd  hudson: (moto) X gon give it to ya  [Nolen Johnson]
 
 * vendor/lineage
 2057f50  config: Install {Lato,Rubik} fonts and their overlay packages  [LuK1337]
-====================
-     2020-05-13    
-====================
-
-* frameworks/base
-e145f0c  LTE+ indicator not shown when attached to CA network  [Rambo Wang]
-
-* lineage/hudson
-388de0b  hudson: Promote crackling to 17.1  [115ek]
-
-* lineage/wiki
-6cd6593  wiki: Promote crackling to 17.1  [115ek]
-3763741  wiki: Promote wt88047 to 17.1  [Nicholas Lim]
-
-* packages/apps/Recorder
-b0f788c  Revert "ScreenService: start recording on a background Thread"  [Han Wang]
-
-* packages/overlays/Lineage
-2b8dc1b  Introduce {Lato,Rubik} font overlay packages  [LuK1337]
