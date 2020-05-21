@@ -1,46 +1,53 @@
 ====================
-     2020-05-20    
+     2020-05-21    
 ====================
 
 * build/make
-f0b9308  Allow overriding platform SPL  [dianlujitao]
-da5c34c  [DNM] Always use release-keys  [Arian]
+b31ced6  Allow overriding platform SPL  [dianlujitao]
+8e7789e  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-08052fd  Label lineage platform SPL prop  [dianlujitao]
+88ec150  Label lineage platform SPL prop  [dianlujitao]
+
+* frameworks/av
+a4d76c1  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+
+* frameworks/base
+015ec30  DeviceInfoUtils: Prefer lineage platform SPL  [dianlujitao]
+1911423  base: Redo expanded volume panel for 10.x  [HrX03]
+c79dfad  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
+43bbb67  SystemUI: get rid of build text in qs  [Joey]
+037bd3e  PackageManagerService: Drop caches according to incremental version  [Arian]
+f548153  theme: Introduce support for primary color overlays  [Marko Man]
+
+* lineage-sdk
+aa9df63  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
+
+* packages/apps/Settings
+77b8098  hardwareinfo: Hide hardware revision if empty  [Arian]
+c6a8551  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+
+* packages/apps/ThemePicker
+2ee7e0d  ThemePicker: Fix theming issues  [maxwen]
+d5acebd  ThemePicker: Don't ignore white accent or primary colors  [Christian Oder]
+86c83ad  ThemePicker: Add support for primary color overlays  [maxwen]
+fcadc14  Fix preview tile in grid option picker  [Marc K]
+
+* packages/overlays/Lineage
+7b7b43b  overlays: Add black primary theme  [Marko Man]
+
+* tools/repohooks
+5664c11  utils: run: fix stderr set as str instead of bytes  [Mike Frysinger]
+
+* vendor/lineage
+6491cdd  lineage: build black primary theme  [Demon000]
+====================
+     2020-05-20    
+====================
 
 * device/xiaomi/davinci
 d23cdfd  Revert "davinci: overlay: Add support for doze auto brightness"  [Arian]
 aa20a01  davinci: Add CNE configs for VoWifi  [Arian]
-
-* frameworks/av
-7ac51e9  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
-
-* frameworks/base
-8d09676  DeviceInfoUtils: Prefer lineage platform SPL  [dianlujitao]
-84465d2  base: Redo expanded volume panel for 10.x  [HrX03]
-57b940d  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
-945db51  SystemUI: get rid of build text in qs  [Joey]
-7d163dc  PackageManagerService: Drop caches according to incremental version  [Arian]
-fb149bc  theme: Introduce support for primary color overlays  [Marko Man]
-
-* lineage-sdk
-2d1f370  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
-
-* packages/apps/Settings
-846e0a3  hardwareinfo: Hide hardware revision if empty  [Arian]
-38dfd19  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
-
-* packages/apps/ThemePicker
-14e100a  ThemePicker: Fix theming issues  [maxwen]
-4a1ec17  ThemePicker: Don't ignore white accent or primary colors  [Christian Oder]
-27f145f  ThemePicker: Add support for primary color overlays  [maxwen]
-
-* packages/overlays/Lineage
-2ee2d78  overlays: Add black primary theme  [Marko Man]
-
-* vendor/lineage
-fd11c0a  lineage: build black primary theme  [Demon000]
 
 * vendor/xiaomi/davinci
 e18def9  davinci: Add CNE configs for VoWifi  [Arian]
@@ -716,29 +723,3 @@ cbb89a9  LineageParts: Fix animation for search results  [Michael W]
 
 * vendor/xiaomi/davinci
 3fb19c7  davinci: OSS camera provider  [Arian]
-====================
-     2020-05-14    
-====================
-
-* device/qcom/sepolicy
-ea29bfd  sepolicy: Unlabel aux camera whitelist prop  [dianlujitao]
-
-* device/qcom/sepolicy-legacy-um
-efef994  sepolicy: Unlabel aux camera whitelist prop  [dianlujitao]
-
-* frameworks/base
-d65af6e  camera: Support exposing aux camera to apps  [Sauhard Pande]
-
-* lineage/hudson
-ee7bcdd  hudson: (moto) X gon give it to ya  [Nolen Johnson]
-
-* lineage/wiki
-09c659e  wiki: devices: mata: Update bootloader unlock command  [Nolen Johnson]
-688d284  wiki: templates: Don't tell users to format system on A/B devices  [Richard Hansen]
-976caa3  wiki: devices: Promote victara to 17.1  [Nolen Johnson]
-
-* packages/apps/Settings
-827334a  LanguageAndInputSettings: Hide touch hovering from search if needed  [Bruno Martins]
-
-* vendor/lineage
-2057f50  config: Install {Lato,Rubik} fonts and their overlay packages  [LuK1337]
