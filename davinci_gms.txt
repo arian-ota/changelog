@@ -1,46 +1,54 @@
 ====================
-     2020-05-21    
+     2020-05-22    
 ====================
 
 * build/make
-f9f5fd0  Allow overriding platform SPL  [dianlujitao]
-238167b  [DNM] Always use release-keys  [Arian]
+6b60cef  Allow overriding platform SPL  [dianlujitao]
+95c6514  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-4229630  Label lineage platform SPL prop  [dianlujitao]
+c5e868e  Label lineage platform SPL prop  [dianlujitao]
 
 * frameworks/av
-0a2264b  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+646a769  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
 
 * frameworks/base
-4a040f0  DeviceInfoUtils: Prefer lineage platform SPL  [dianlujitao]
-fdd992c  base: Redo expanded volume panel for 10.x  [HrX03]
-3d39573  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
-f3c13df  SystemUI: get rid of build text in qs  [Joey]
-a0c860f  PackageManagerService: Drop caches according to incremental version  [Arian]
-45c922a  theme: Introduce support for primary color overlays  [Marko Man]
+59dd5dd  DeviceInfoUtils: Prefer lineage platform SPL  [dianlujitao]
+b2ca326  base: Redo expanded volume panel for 10.x  [HrX03]
+3269610  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
+4fed61c  SystemUI: get rid of build text in qs  [Joey]
+cbad2be  PackageManagerService: Drop caches according to incremental version  [Arian]
+a33992c  theme: Introduce support for primary color overlays  [Marko Man]
 
 * lineage-sdk
-8228434  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
+231fb74  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
 
 * packages/apps/Settings
-4e956c6  hardwareinfo: Hide hardware revision if empty  [Arian]
-d02031c  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+31a17e6  hardwareinfo: Hide hardware revision if empty  [Arian]
+62971c9  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
 
 * packages/apps/ThemePicker
-c87857e  ThemePicker: Fix theming issues  [maxwen]
-d803259  ThemePicker: Don't ignore white accent or primary colors  [Christian Oder]
-c865961  ThemePicker: Add support for primary color overlays  [maxwen]
-fcadc14  Fix preview tile in grid option picker  [Marc K]
+11a5704  ThemePicker: Fix theming issues  [maxwen]
+8cfaa91  ThemePicker: Don't ignore white accent or primary colors  [Christian Oder]
+9f3298e  ThemePicker: Add support for primary color overlays  [maxwen]
 
 * packages/overlays/Lineage
-ed31af3  overlays: Add black primary theme  [Marko Man]
+329cb0a  overlays: Add black primary theme  [Marko Man]
+
+* tools/repohooks
+bf70aed  hooks: require a Relnote field when changing current.txt  [Nick Anthony]
+
+* vendor/lineage
+c889fb8  lineage: build black primary theme  [Demon000]
+====================
+     2020-05-21    
+====================
+
+* packages/apps/ThemePicker
+fcadc14  Fix preview tile in grid option picker  [Marc K]
 
 * tools/repohooks
 5664c11  utils: run: fix stderr set as str instead of bytes  [Mike Frysinger]
-
-* vendor/lineage
-f1c414a  lineage: build black primary theme  [Demon000]
 ====================
      2020-05-20    
 ====================
@@ -281,6 +289,11 @@ ecd3dcc  ThemePicker: Show item name under the category name  [El Dainosor]
 
 * packages/apps/Updater
 bb09c53  Updater: Use accent_device_default_{dark,light} for colorAccent values  [LuK1337]
+
+* packages/inputmethods/LatinIME
+0598a8a  LatinIME: Remove divider lines  [Michael W]
+13764c7  LatinIME: Do we really still want Holo?  [Michael W]
+ec563a2  LatinIME: Add setting for theme to follow system setting  [Michael W]
 ====================
      2020-05-18    
 ====================
@@ -691,37 +704,3 @@ ed81c35  hooks: rustfmt: fix pylint warning  [Mike Frysinger]
 
 * tools/repohooks
 da09d40  pylint: find Python 3 version better  [Mike Frysinger]
-====================
-     2020-05-15    
-====================
-
-* android
-d2ca8ae  Fetch our fork of build-tools  [Chirayu Desai]
-
-* bootable/recovery
-c2bd647  recovery: Remove the "Format system partition" menu on A/B devices  [Richard Hansen]
-
-* build/make
-d041222  releasetools: Use du -b  [Chirayu Desai]
-
-* device/lineage/sepolicy
-f96e6b6  common: Expose aux camera {black,white}list props  [dianlujitao]
-e2d01a8  Revert "Label lineage.service.adb.root as system prop"  [Bruno Martins]
-
-* lineage/hudson
-3c789eb  hudson: 'b' is cool too  [LuK1337]
-
-* lineage/wiki
-0a7dcf4  wiki: Add OnePlus 7 (guacamoleb)  [Ashwin R C]
-
-* packages/apps/LineageParts
-cbb89a9  LineageParts: Fix animation for search results  [Michael W]
-
-* packages/apps/Messaging
-24bb01e  Messaging: Fix sysconfig whitelist filename  [Michael Bestas]
-
-* vendor/lineage
-8d08a5f  BoardConfigQcom: Allow a device to opt-out hardset of PRODUCT_SOONG_NAMESPACES  [Andrew Hexen]
-
-* vendor/xiaomi/davinci
-3fb19c7  davinci: OSS camera provider  [Arian]
