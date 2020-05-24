@@ -1,13 +1,58 @@
 ====================
-     2020-05-23    
+     2020-05-24    
 ====================
 
 * build/make
-bbabee2  Allow overriding platform SPL  [dianlujitao]
-6fe7895  [DNM] Always use release-keys  [Arian]
+1e05a8e  Allow overriding platform SPL  [dianlujitao]
+bb1505f  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-fd81c5a  Label lineage platform SPL prop  [dianlujitao]
+a8e8212  Label lineage platform SPL prop  [dianlujitao]
+
+* frameworks/av
+71a61ab  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+
+* frameworks/base
+43c6569  DeviceInfoUtils: Prefer lineage platform SPL  [dianlujitao]
+dd6eeef  base: Redo expanded volume panel for 10.x  [HrX03]
+60affeb  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
+883edf3  SystemUI: get rid of build text in qs  [Joey]
+69fb6af  PackageManagerService: Drop caches according to incremental version  [Arian]
+1bfc6a8  theme: Introduce support for primary color overlays  [Marko Man]
+9776943  Tuner: Remove most keys from blacklist  [Michael W]
+d359088b  TunerServiceImpl: Prevent Lineage keys from tuner reset  [Wang Han]
+71c8538  SystemUI: Prevent loop with display timeout  [Sam Mortimer]
+
+* lineage-sdk
+32e5012  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
+
+* lineage/mirror
+51a2a30  Updated to 23-May-2020 16:24 UTC  [Kevin F. Haggerty]
+
+* lineage/wiki
+de4d74a  wiki: Improve copy-partitions explanation  [LuK1337]
+
+* packages/apps/Settings
+4d35deb  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+176d2e1  hardwareinfo: Hide hardware revision if empty  [Arian]
+
+* packages/apps/ThemePicker
+dceb84d  ThemePicker: Fix theming issues  [maxwen]
+d15a824  ThemePicker: Don't ignore white accent or primary colors  [Christian Oder]
+8643e1d  ThemePicker: Add support for primary color overlays  [maxwen]
+
+* packages/overlays/Lineage
+9c68b33  overlays: Add black primary theme  [Marko Man]
+
+* vendor/lineage
+938105d  lineage: build black primary theme  [Demon000]
+a7e400c  extract_utils: Fix vendor Android.bp creation with subdirectory  [Andreas Schneider]
+
+* vendor/xiaomi/davinci
+4622b96  updated from tree  [Arian]
+====================
+     2020-05-23    
+====================
 
 * device/xiaomi/davinci
 1df18ad  davinci: overlay: Keep minimal brightness at least 2 in auto brightness mode  [Arian]
@@ -172,21 +217,9 @@ d942896  davinci: telephony: Copy hardware permissions from frameworks/native  [
 eab5b82  davinci: Patch qti-telephony-common.jar to work on AOSP  [Demon000]
 dd2f684  davinci: telephony: Import blobs  [Arian]
 
-* frameworks/av
-240c8ee  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
-
 * frameworks/base
-661b698e4  DeviceInfoUtils: Prefer lineage platform SPL  [dianlujitao]
-73216a3  base: Redo expanded volume panel for 10.x  [HrX03]
-c9d9801  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
-e7eaa77  SystemUI: get rid of build text in qs  [Joey]
-ea26441  PackageManagerService: Drop caches according to incremental version  [Arian]
-befe271  theme: Introduce support for primary color overlays  [Marko Man]
 688435f  fixup! fixup! lockscreen: Add support for showing unlock screen directly  [LuK1337]
 3e7e3cd  Allow screen unpinning on devices without navbar  [Utkarsh Gupta]
-
-* lineage-sdk
-df514d1  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
 
 * lineage/wiki
 62a5122  wiki: Unify 'needs Android X FW' before_install templates  [LuK1337]
@@ -194,23 +227,7 @@ df514d1  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
 2d89835  wiki: Make {evert,payton} `before_install` filename less generic  [LuK1337]
 
 * packages/apps/Settings
-8a4a9e4  hardwareinfo: Hide hardware revision if empty  [Arian]
-8b084c0  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
 6b7b8e9  Preserve icon for "manage space"  [Wang Han]
-
-* packages/apps/ThemePicker
-d2f76e9  ThemePicker: Fix theming issues  [maxwen]
-9bf4b42  ThemePicker: Don't ignore white accent or primary colors  [Christian Oder]
-31267b3  ThemePicker: Add support for primary color overlays  [maxwen]
-
-* packages/overlays/Lineage
-5be016b  overlays: Add black primary theme  [Marko Man]
-
-* vendor/lineage
-e3799f4  lineage: build black primary theme  [Demon000]
-
-* vendor/xiaomi/davinci
-d2072f1  updated from tree  [Arian]
 ====================
      2020-05-22    
 ====================
@@ -655,63 +672,3 @@ cde7ae8  Revert "msm: camera: Add Support for Multiple SOF sources"  [vantoman]
 * vendor/xiaomi/davinci
 f866705  davinci: Add back tcmclient  [Arian]
 75726fa  davinci: Drop unneded telephony jars and remove android.hidl.base@1.0 shim  [Arian]
-====================
-     2020-05-17    
-====================
-
-* kernel/xiaomi/sm6150
-f6dcaf9  ARM64: dts: Build specific Xiaomi board variant  [Bruno Martins]
-98ca08c  ARM64: Add Xiaomi board selection  [Bruno Martins]
-47894ef  techpack: audio: Remove build timestamp injection  [Danny Lin]
-1c2528a   techpack: audio: Construct and add audio techpack Kconfig to build  [Angelo G. Del Regno]
-ef38c73  techpack/pinctrl-lpi: initialise at late_initcall  [Yaroslav Furman]
-bc5c9cf  techpack: build everything inline  [Yaroslav Furman]
-84648ad  techpack: fix a build error/warning  [Yaroslav Furman]
-315934c  techpack: Include tfa98xx  [PIPIPIG233666]
-f1dc128  techpack: Include bolero  [GuaiYiHu]
-717c029  techpack: audio: remove Android.mk files  [Demon000]
-d1a300b  techpack: audio: Fix header path  [GuaiYiHu]
-f7b8ce0  techpack: audio: Import Xiaomi changes  [vantoman]
-8c7673a  techpack: audio: Import elliptic  [vantoman]
-013beee  techpack: Import tfa98xx  [vantoman]
-cbf5d4b  Set correct techpack header install directory  [Rashed Abdel-Tawab]
-4a0237b  techpack: Hardcode modules list  [Luca Stefani]
-a44baa7  techpack: Remove .gitignore  [Luca Stefani]
-f69f7b6  techpack: Gitignore all subdirs except stub  [Neeraj Upadhyay]
-069571d  techpack: add tech package support  [Bryan Huntsman]
-a754d3f  qcacld-3.0: ini: Disable gEnableConcurrentSTA for Android Q targets  [Sourav Mohapatra]
-310ac8f7  qcacld: free wlan_cfg_buf after loading  [Park Ju Hyung]
-d0173d0b  qcacld: read config file from wlan_cfg_ini.h  [Park Ju Hyung]
-5b64a8b  qcacld-3.0: wlan_hdd_cfg: Enable Auto BMPS feature  [Sunil Ravi]
-8cb33ee  qcacld-3.0: wlan_hdd_cfg: Remove TxPower2g and 5g from config file  [Ashish Kumar Dhanotiya]
-ec9a4e8  qcacld-3.0: wlan_hdd_cfg: Remove drop_bcn_on_chan_mismatch ini  [sheenam monga]
-cfedd5e  qcacld: Disable build timestamp  [Luca Stefani]
-ad8d462  qcacld-3.0: add wlan_hdd_cfg.h  [Park Ju Hyung]
-f7e5a91  qcacld-3.0: nuke Kconfig-based configuration entirely  [Park Ju Hyung]
-6ac600d  qcacld-3.0: defer hdd initialization and rely on userspace writing to /dev/wlan  [Park Ju Hyung]
-35a1f08  qcacld-3.0: discard wlan_boot sysfs code on !CONFIG_MODULES  [Park Ju Hyung]
-081383a  drivers: staging: Include qcacld-3.0 source  [LuK1337]
-1e83fef  qcacld-3.0: Import Xiaomi changes  [PIPIPIG233666]
-cdc53fe  Revert "ALSA: pcm: Avoid possible info leaks from PCM stream buffers"  [Yaroslav Furman]
-114c0e9  crypto: msm: qce50: Fix warning -Wbool-operation  [Angelo G. Del Regno]
-245ce90  scripts: mod: Silence the warning of gsi_write_channel_scratch()  [msdx321]
-39aab5e  scripts: Silent all dtc warnings by default  [Bruno Martins]
-1142282  scripts: Disable some noisy dtc warnings  [Nathan Chancellor]
-c5b4cea  scripts/dtc: Update to upstream version v1.4.6-21-g84e414b0b5bc  [Rob Herring]
-186fd50  dtc: checks: drop warning for missing PCI bridge bus-range  [Rob Herring]
-d8396ea  scripts/dtc: Update to upstream version v1.4.6-9-gaadd0b65c987  [Rob Herring]
-35049c3  scripts/dtc: Update to upstream version v1.4.5-3-gb1a60033c110  [Rob Herring]
-e3d70e9  dtc: update warning settings for new bus and node/property name checks  [Rob Herring]
-47b5697  scripts/dtc: add fdt_overlay.c and fdt_addresses.c to sync script  [Rob Herring]
-f2bb655  Android: Add empty Android.mk file  [LuK1337]
-2eb925d  Revert "Android.bp: Initial header export bp for Android (qseecom only)"  [Ethan Chen]
-a9180e2  Revert "msm: kgsl: Update A618 GMU firmware to v1.08"  [vantoman]
-65be981  Merge tag 'LA.UM.8.9.r1-09200-SM6xx.0' of https://source.codeaurora.org/quic/la/platform/vendor/opensource/audio-kernel into VantomKernel  [vantoman]
-4235a9a  Merge tag 'LA.UM.8.9.r1-09200-SM6xx.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn into VantomKernel  [vantoman]
-3ab0996  Merge tag 'LA.UM.8.9.r1-09200-SM6xx.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/fw-api into VantomKernel  [vantoman]
-e998d26  Merge tag 'LA.UM.8.9.r1-09200-SM6xx.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into VantomKernel  [vantoman]
-f728f8a  Merge tag 'LA.UM.8.9.r1-09200-SM6xx.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.14 into VantomKernel  [vantoman]
-
-* tools/repohooks
-ed81c35  hooks: rustfmt: fix pylint warning  [Mike Frysinger]
-da09d40  pylint: find Python 3 version better  [Mike Frysinger]
