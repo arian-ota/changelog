@@ -1,30 +1,82 @@
 ====================
-     2020-05-24    
+     2020-05-25    
 ====================
 
 * build/make
-1e05a8e  Allow overriding platform SPL  [dianlujitao]
-bb1505f  [DNM] Always use release-keys  [Arian]
+5e70283  Allow overriding platform SPL  [dianlujitao]
+077a9d9  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-a8e8212  Label lineage platform SPL prop  [dianlujitao]
+91d8e8f  Label lineage platform SPL prop  [dianlujitao]
 
 * frameworks/av
-71a61ab  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+b44665a  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
 
 * frameworks/base
-43c6569  DeviceInfoUtils: Prefer lineage platform SPL  [dianlujitao]
-dd6eeef  base: Redo expanded volume panel for 10.x  [HrX03]
-60affeb  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
-883edf3  SystemUI: get rid of build text in qs  [Joey]
-69fb6af  PackageManagerService: Drop caches according to incremental version  [Arian]
-1bfc6a8  theme: Introduce support for primary color overlays  [Marko Man]
+9addaf2  DeviceInfoUtils: Prefer lineage platform SPL  [dianlujitao]
+15d9b15  base: Redo expanded volume panel for 10.x  [HrX03]
+aba894c  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
+12aca74  SystemUI: get rid of build text in qs  [Joey]
+f73a91d  PackageManagerService: Drop caches according to incremental version  [Arian]
+f04d002  theme: Introduce support for primary color overlays  [Marko Man]
+5a3899b  SystemUI: Fix alignment glitch with brightness mirror  [Umang96]
+955996a  Automatic translation import  [Michael Bestas]
+
+* lineage-sdk
+b7f4e1d  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
+
+* lineage/hudson
+bfcfff6  hudson: add Samsung Galaxy Grand 2 (ms013g)  [Daniel Jacob Chittoor]
+
+* lineage/mirror
+ba03637  Updated to 24-May-2020 22:13 UTC  [Kevin F. Haggerty]
+3d5fbf7  Updated to 24-May-2020 13:56 UTC  [Kevin F. Haggerty]
+
+* lineage/wiki
+7b5b8d0  wiki: Update whyred informations  [Sebastiano Barezzi]
+c6e0278  wiki: add Samsung Galaxy Grand 2 (ms013g)  [Daniel Jacob Chittoor]
+71bee15  wiki: Promote exynos7580 devices to 17.1  [Danny Wood]
+
+* packages/apps/Contacts
+f4b3f27  Contacts: manually configure dark theme for list  [Jesse Chan]
+81ebd00  Contacts: allow framework to do dark theming automatically  [Jesse Chan]
+991dae2  AOSP/Contacts - Updated to sdkVersion 29.  [Raman Tenneti]
+
+* packages/apps/Dialer
+64c1fc6  Dialer: allow framework to do dark theming automatically  [Jesse Chan]
+097bf00  Updated target SDK from 28 to 29.  [Raman Tenneti]
+
+* packages/apps/Settings
+91745b5  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+36fff84  Automatic translation import  [Michael Bestas]
+
+* packages/apps/ThemePicker
+3af8b6e  ThemePicker: Fix theming issues  [maxwen]
+32e2712  ThemePicker: Don't ignore white accent or primary colors  [Christian Oder]
+e019216  ThemePicker: Add support for primary color overlays  [maxwen]
+
+* packages/overlays/Lineage
+1d8c14e  overlays: Add black primary theme  [Marko Man]
+
+* vendor/lineage
+3540cba  lineage: build black primary theme  [Demon000]
+====================
+     2020-05-24    
+====================
+
+* external/bash
+5f857b9  bashrc: Use full current working directory path for root as well  [LuK1337]
+
+* frameworks/base
 9776943  Tuner: Remove most keys from blacklist  [Michael W]
 d359088b  TunerServiceImpl: Prevent Lineage keys from tuner reset  [Wang Han]
 71c8538  SystemUI: Prevent loop with display timeout  [Sam Mortimer]
 
 * lineage-sdk
-32e5012  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
+d4444dd  Automatic translation import  [Michael Bestas]
+
+* lineage/hudson
+cda7f91  hudson: Promote exynos7580 devices to 17.1  [Danny Wood]
 
 * lineage/mirror
 51a2a30  Updated to 23-May-2020 16:24 UTC  [Kevin F. Haggerty]
@@ -32,21 +84,68 @@ d359088b  TunerServiceImpl: Prevent Lineage keys from tuner reset  [Wang Han]
 * lineage/wiki
 de4d74a  wiki: Improve copy-partitions explanation  [LuK1337]
 
+* packages/apps/AudioFX
+9e0dcdc  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Calendar
+6c28e8d  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Contacts
+6819879  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Dialer
+5e8cb15  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Eleven
+5946f79  Automatic translation import  [Michael Bestas]
+
+* packages/apps/FlipFlap
+33b579e  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Gallery2
+66132be  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Jelly
+00e64bf  Automatic translation import  [Michael Bestas]
+
+* packages/apps/LineageParts
+d86541b  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Recorder
+a2e9b40  Automatic translation import  [Michael Bestas]
+
 * packages/apps/Settings
-4d35deb  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
 176d2e1  hardwareinfo: Hide hardware revision if empty  [Arian]
 
-* packages/apps/ThemePicker
-dceb84d  ThemePicker: Fix theming issues  [maxwen]
-d15a824  ThemePicker: Don't ignore white accent or primary colors  [Christian Oder]
-8643e1d  ThemePicker: Add support for primary color overlays  [maxwen]
+* packages/apps/SetupWizard
+dd5da5e  Automatic translation import  [Michael Bestas]
 
-* packages/overlays/Lineage
-9c68b33  overlays: Add black primary theme  [Marko Man]
+* packages/apps/Snap
+31f7b4d  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Trebuchet
+30ebe3b  Automatic translation import  [Michael Bestas]
+
+* packages/apps/TvSettings
+dcdd09a  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Updater
+4f8f001  Automatic translation import  [Michael Bestas]
+
+* packages/inputmethods/LatinIME
+69a70a2  Automatic translation import  [Michael Bestas]
+
+* packages/resources/devicesettings
+fe24103  Automatic translation import  [Michael Bestas]
+
+* packages/services/BuiltInPrintService
+9597252  Automatic translation import  [Michael Bestas]
 
 * vendor/lineage
-938105d  lineage: build black primary theme  [Demon000]
 a7e400c  extract_utils: Fix vendor Android.bp creation with subdirectory  [Andreas Schneider]
+
+* vendor/qcom/opensource/fm-commonsys
+11158ac  Automatic translation import  [Michael Bestas]
 
 * vendor/xiaomi/davinci
 4622b96  updated from tree  [Arian]
@@ -317,6 +416,11 @@ c409d02  davinci: overlay: Enable suspend when screen off due to proximity  [Ari
 * hardware/qcom-caf/sm8150/audio
 12480be  a2dp: Add a null check before iterating over a2dp.adev->usecase_list  [Scott Warner]
 
+* packages/apps/Messaging
+3aa027c  Messaging: disable auto dark theming on message bubble  [Jesse Chan]
+7f855cc  Messaging: allow framework to do dark theming automatically  [Jesse Chan]
+924731e  Messaging: bump target SDK version to 29  [Jesse Chan]
+
 * packages/apps/ThemePicker
 ecd3dcc  ThemePicker: Show item name under the category name  [El Dainosor]
 
@@ -327,348 +431,3 @@ bb09c53  Updater: Use accent_device_default_{dark,light} for colorAccent values 
 0598a8a  LatinIME: Remove divider lines  [Michael W]
 13764c7  LatinIME: Do we really still want Holo?  [Michael W]
 ec563a2  LatinIME: Add setting for theme to follow system setting  [Michael W]
-====================
-     2020-05-18    
-====================
-
-* device/xiaomi/davinci
-e3ece42  davinci: overlay: Import brightness overlays from MIUI  [TheScarastic]
-a8c405a  davinci: overlay: Enable burn in protection  [Arian]
-3e7615c  davinci: Add frameworks-res overlay  [Arian]
-
-* kernel/xiaomi/sm6150
-92a6504  arm64: defconfig: enable exposure adjustment  [Nauval Rizky]
-d2440d2  drm: exposure_adjustment: reduce usage of ifdef  [Nauval Rizky]
-ea0566a  drm: msm: temporary disable DC dimming when in fod_hbm mode  [Nauval Rizky]
-919038f  drm: msm: adapt exposure adjustment methods to davinci  [Nauval Rizky]
-d43a7fc  drm: add get_main_display  [DevriesL]
-a870f0f  drm: Let exposure adjustment switchable via sysfs  [XiNGRZ]
-3d85830  drm: Introduce exposure adjustment driver  [DevriesL]
-3ccf48b6  sched: Improve the scheduler  [Pavankumar Kondeti]
-e5b62b3  sched/core: Fix use after free issue in is_sched_lib_based_app()  [Pavankumar Kondeti]
-e577760  sched/core: fix userspace affining threads incorrectly  [Abhijeet Dharmapurikar]
-8580323  sched/fair: Fix unnecessary increase of balance interval  [Vincent Guittot]
-da25dbe  sched/fair: Fix rounding bug for asym packing  [Vincent Guittot]
-3881f2d  sched/fair: Trigger asym_packing during idle load balance  [Vincent Guittot]
-c352778  sched/wait: Deduplicate code with do-while  [Pavel Begunkov]
-6396a6c  input: touchscreen: gt9886: Rip out touchscreen wrapper code  [Fabian Leutenegger]
-5495446  goodix_ta: increase reset delays  [Yaroslav Furman]
-6f97870  goodix_ta: platform: optimize tdelays in hw_reset function  [Yaroslav Furman]
-9675c8d  fingerprint: goodix_ta: remove DEBUG prints  [UtsavisGreat]
-77c7e1c  cpufreq: record CPUFREQ stat for fast switch path  [yonghaih]
-efd30ff  goodix_ts: convert milliseconds to jiffies properly  [Nanda Oktavera]
-eeed401  power: supply: Classify Battery Monitor Systems as batteries  [Danny Lin]
-6eeb502  arm64: Avoid watchdog during dump wlan firmware after panic  [Jianmin Zhu]
-4d62e57  FROMLIST: arm64: kernel: implement fast refcount checking  [Ard Biesheuvel]
-29e9742  arm64: debug: Separate debug hooks based on target exception level  [Will Deacon]
-8a1da07  arm64/kernel: jump_label: Switch to relative references  [Ard Biesheuvel]
-8fb41b6  locking/static_key: Don't take sleeping locks in __static_key_slow_dec_deferred()  [Jakub Kicinski]
-b34e0e5  locking/static_key: Factor out the fast path of static_key_slow_dec()  [Jakub Kicinski]
-577d0d6  locking/static_key: Add support for deferred static branches  [Jakub Kicinski]
-84d760f  jump_label: Add branch hints to static_branch_{un,}likely()  [Peter Zijlstra]
-acf3474  locking/static_key: Fix false positive warnings on concurrent dec/inc  [Peter Zijlstra]
-43eab10  jump_label: Fix NULL dereference bug in __jump_label_mod_update()  [Ard Biesheuvel]
-b5f01f6  jump_label: Annotate entries that operate on __init code earlier  [Ard Biesheuvel]
-2356891  jump_label: Implement generic support for relative references  [Ard Biesheuvel]
-f9a2540  jump_label: Abstract jump_entry member accessors  [Ard Biesheuvel]
-c54cb72  jump_label/lockdep: Assert we hold the hotplug lock for _cpuslocked() operations  [Peter Zijlstra]
-ec1de9a  jump_label: Fix typo in warning message  [Borislav Petkov]
-6a0e88a  jump_label: Use static_key_linked() accessor  [Borislav Petkov]
-43169b6  jump_label: Disable jump labels in __exit code  [Josh Poimboeuf]
-9b6cde8  jump_label: Fix sparc64 warning  [Josh Poimboeuf]
-cf21009e  extable: Make init_kernel_text() global  [Josh Poimboeuf]
-86aa5c8  jump_label: Warn on failed jump_label patching attempt  [Josh Poimboeuf]
-2c667ca  jump_label: Explicitly disable jump labels in __init code  [Josh Poimboeuf]
-72d0c19  rcu: Speed up calling of RCU tasks callbacks  [Steven Rostedt (VMware)]
-1a6167b  drivers: msm: Don't copy fence names by default  [Yaroslav Furman]
-bd32469  CHROMIUM: selinux: Do not log permissive denials  [Daniel Kurtz]
-984604c  cpu: Silence log spam when a CPU is brought up  [Sultan Alsawaf]
-c7ebc6e  msm: kgsl: Turn debugfs off  [msdx321]
-fa06061  qcom: hyp_core_ctl: add a missing header  [Yaroslav Furman]
-6dba269  diag: Add timer to make sure wakelock no stuck  [Jie Song]
-16f5d87  sched/debug: Remove SCHED_DEBUG dependency on DEBUG_KERNEL  [Danny Lin]
-6b7f109  sched: provide a no-op sched_boost node  [Yaroslav Furman]
-4b8be11  Revert "sched/fair: honor sync only if CPU is about to goto idle"  [Yaroslav Furman]
-2d5a20c  FORWARDPORT: sched/fair: Skip frequency updates if CPU about to idle  [Joel Fernandes]
-c47c4ce  Revert "sched/fair: Drop always true parameter of update_cfs_rq_load_avg()"  [Yaroslav Furman]
-9b94f5a  kernel: schedtune: use a more agressive boosting preset  [Yaroslav Furman]
-73a5884  Revert "UPSTREAM: sched/topology: Add SD_ASYM_CPUCAPACITY flag detection"  [Yaroslav Furman]
-bb88ff3  sysctl: promote sched_migration_cost_ns out of CONFIG_SCHED_DEBUG  [Park Ju Hyung]
-5016d9d  psi: Fix a division error in psi poll()  [Johannes Weiner]
-6ecffef  sched/psi: Fix sampling error and rare div0 crashes with cgroups and high uptime  [Johannes Weiner]
-8d0041d  sched/psi: Correct overly pessimistic size calculation  [Miles Chen]
-a4cfd3e  UPSTREAM: psi: get poll_work to run when calling poll syscall next time  [Jason Xing]
-dca08cf  UPSTREAM: sched/psi: Do not require setsched permission from the trigger creator  [Suren Baghdasaryan]
-6f370de  UPSTREAM: sched/psi: Reduce psimon FIFO priority  [Peter Zijlstra]
-862258d  workqueue: Implement delayed_work_busy()  [Alex Naidis]
-e570a22  random: prevent add_input from doing anything  [imoseyon]
-8afc978  treewide: Resolve some warnings  [PrimoDev23]
-8a52da0  msm: kgsl: run kgsl-workqueue as a high prio wq  [Francisco Franco]
-61ed400  PM: devfreq: Use high priority workqueue  [myfluxi]
-7baeb1f  msm: kgsl: Report correct GPU frequency in sysfs  [myfluxi]
-cafb308  sched/topology: Add lowest CPU asymmetry sched_domain level pointer  [Quentin Perret]
-11d94f7  sched/fair: Always place boosted tasks over big clusters  [Panchajanya1999]
-54a6789  sched/fair: Add cluster support for maximum capacity CPU  [Panchajanya1999]
-8211728  FIX: sched/fair: prefer exclusive max cluster for top-app task 03837e8dd54fee148dccd2f6cbdfa339e32333f3 used to place ta on mid clusters, which is suitable for a tri-clusterred platform. Adapt it for bi-clusterred platform.  [Panchajanya1999]
-0be90ce2  FIX: sched/fair: if sync flag is ignored, try to place in big cluster 0f944db42a98781fdab4de3befb46cd455eb8b7c introduced placement of ignored synced flagged tasks in mid clusters, which is suitable in tri-clusterred platforms. We are adopting it to a bi-clusterred platform.  [Panchajanya1999]
-61bedc6  msm: kgsl: Relax CPU latency requirements to save power  [Sultan Alsawaf]
-8451972  cpuidle: lpm-levels: Allow exit latencies equal to target latencies  [Sultan Alsawaf]
-e2aa9cb  msm: kgsl: Increase worker thread priority  [Sultan Alsawaf]
-812c9b9  msm: kgsl: do not wake up GPU on ioctl  [Demon000]
-e263b1f  msm: kgsl: Wake GPU upon receiving an ioctl rather than upon touch input  [Sultan Alsawaf]
-c0cc881  msm: kgsl: Stop slab shrinker when no more pages can be reclaimed  [Suren Baghdasaryan]
-73fdd047  msm: kgsl: adreno: Properly set GPU timeout  [celtare21]
-dde682f  ARM64: dts: Set GPU idle timeout to 64 ms  [Danny Lin]
-a5751d6  drm/msm/sde: Wait for ctl_start asynchronously on cmd mode panels  [Sultan Alsawaf]
-bf2e8d0  drivers: msm: Don't copy fence names by default  [Yaroslav Furman]
-26a0022  qos: Execute notifier callbacks atomically  [Sultan Alsawaf]
-ed5b8818  qos: Don't disable interrupts while holding pm_qos_lock  [Sultan Alsawaf]
-980c19c  cpuidle: don't disable cpuidle when entering suspend  [Tim Murray]
-a8ec122  Revert "Revert "select: use freezable blocking call""  [Tim Murray]
-548387c  rcu: fix a performance regression  [Yaroslav Furman]
-c589ad4  Disable Adreno Driver Logging  [mady51]
-22d79ed  ARM64: configs: davinci: Enable CONFIG_ION_SYSTEM_HEAP  [Jorge E. Moreira]
-93054f1  msm:sde:rotator Async suspend/resume callbacks.  [Vincent Palomares]
-a1a2826  scsi:ufs Async suspend/resume callbacks.  [Vincent Palomares]
-a605aadf  soc: qcom: smp2p_sleepstate: Add suspend delay  [Chris Lew]
-c396a3d  kgsl: add low_prio_worker thread  [Tim Murray]
-90350dc  Revert "msm: kgsl: Use event workqueue for event work instead of RT Kthread worker"  [Yaroslav Furman]
-60ba696f  PM / sleep: Skip OOM killer toggles when kernel is compiled for Android  [Yaroslav Furman]
-d5b4a97  sched/fair: Reduce latency  [acuicultor]
-be0e434  cfq: Annotate fall-through in a switch statement  [Bart Van Assche]
-71fc70a  BACKPORT: block: use ktime_get_ns() instead of sched_clock() for cfq  [Omar Sandoval]
-ed8f695  sysctl: promote sched_migration_cost_ns out of CONFIG_SCHED_DEBUG  [Park Ju Hyung]
-beefbd3  workqueue: Schedule workers on CPU0 or 0-5 by default  [Sultanxda]
-2a85677  msm: performance: prevent the driver from handling userspace boosts  [Francisco Franco]
-b5af385  kernel: Boost to the max for when zygote forks  [Sultan Alsawaf]
-7ad289a  add task_is_zygote from https://github.com/kerneltoast/android_kernel_google_wahoo/commit/d18aaea360446f1e02993acba05ec05023407ec2  [idkwhoiam322]
-bbe87a6  drm: msm: sde: Boost CPU and DDR when a new frame is ready to be committed  [Francisco Franco]
-a08f996  drm/atomic: Boost CPU and DDR when committing a new frame  [Sultan Alsawaf]
-6a12f1f  defconfig: enable CPU INPUT BOOST  [Mustafa]
-74cd444  cpu_input_boost: add support for boost freqs lower than min freq  [Yaroslav Furman]
-bb45ea05  cpu_input_boost: Introduce driver for event-based CPU boosting  [Sultan Alsawaf]
-b055ab5  mm/slab_common: Align all caches' objects to hardware cachelines  [Sultan Alsawaf]
-58e5545  scatterlist: Don't allocate sg lists using __get_free_page  [Sultan Alsawaf]
-51f6252  fs: drop_caches: expose mm_drop_caches()  [Park Ju Hyung]
-fd5b983  printk: Add sleep time to timestamps  [Sultanxda]
-291edd5  seq_file: allocate seq_file from kmem_cache  [Alexey Dobriyan]
-98c36ee  dma_buf: try to use kmem_cache pool for dmabuf allocations  [Park Ju Hyung]
-0e72db1  dma_buf: use kmem_cache pool for struct sync_file  [Park Ju Hyung]
-ebb96f5  dma_buf: use kmem_cache pool for struct dma_buf_attachment  [Park Ju Hyung]
-181e37f  ion: remove references to dmabuf->name  [Park Ju Hyung]
-e550475  Revert "dma-buf: Make dma-buf anon file name unique"  [Park Ju Hyung]
-6923063  Revert "dma-buf: Display buffer name in debugfs"  [Park Ju Hyung]
-a4d490e  Revert "dma-buf: Print dma-buf files associated with each process"  [Park Ju Hyung]
-383e871  Revert "dma-buf: Use monotonic clock for buffer time tracking"  [Park Ju Hyung]
-d37c4cc  Revert "dma-buf: use hashtable to store dmabufs in dmaprocs"  [Park Ju Hyung]
-76cd551  quota_tree: Avoid dynamic memory allocations  [Park Ju Hyung]
-904b117  dcache: increase DNAME_INLINE_LEN  [Park Ju Hyung]
-21a0d6e  drm/msm/sde: use kmem_cache pool for struct sde_fence  [Park Ju Hyung]
-23c8e2f  drm/msm: use kmem_cache pool for struct vblank_work  [Park Ju Hyung]
-61281e8  msm: kgsl: use kmem_cache pool for draw objects  [Park Ju Hyung]
-e114503  msm: camera: use kmem_cache pool for struct sync_user_payload  [Park Ju Hyung]
-ba6bb43  msm: vidc: Avoid dynamic memory allocation for small voting data  [Park Ju Hyung]
-4d05d23  msm: vidc: use kmem_cache pool for struct msm_vidc_buffer  [Park Ju Hyung]
-4617657  kernfs: use kmem_cache pool for struct kernfs_open_node/file  [Park Ju Hyung]
-bcec809  sdcardfs: use kmem_cache pool for struct sdcardfs_file_info  [Park Ju Hyung]
-542792f  cgroup: use kmem_cache pool for struct cgrp_cset_link  [Park Ju Hyung]
-670e931  selinux: reduce calls to context_struct_to_string()  [Park Ju Hyung]
-4112336  sde_crtc: Don't allocate memory dynamically in sde_crtc_atomic_check()  [Park Ju Hyung]
-09c593d  dma-buf: Avoid dynamic memory allocation for small info buffers  [Park Ju Hyung]
-6744cdd  msm: kgsl: Avoid dynamically allocating small command buffers  [Sultan Alsawaf]
-de699f9  msm: kgsl: Don't allocate memory dynamically for temp command buffers  [Sultan Alsawaf]
-4744ccc  msm: kgsl: Don't try to wait for fences that have been signaled  [Sultan Alsawaf]
-f1e3f29  clk: qcom: clk-cpu-osm: Set min freq to 576MHz  [msdx321]
-9b891f2  defconfig: enable Devfreq Boost  [Mustafa]
-de58c83  devbw: Correctly set DDR node  [Panchajanya1999]
-20a4114  devfreq_boost: convert to drm screen state notifier  [Yaroslav Furman]
-de64024  devfreq_boost: Introduce devfreq boost driver  [Sultan Alsawaf]
-e5f6735  Revert "cpufreq: schedutil: Expose default configuration options and apply init protection"  [Yaroslav Furman]
-1c86671  msm: kgsl: Don't allocate memory dynamically for drawobj sync structs  [Sultan Alsawaf]
-bb06679  cpufreq: Kill userspace CPU boosting entirely  [Sultan Alsawaf]
-ff9c98f  defconfig: Declare cpu masks  [Mustafa]
-f7e57e3  cpumask: Add cpumasks for big and LITTLE CPU clusters  [Sultan Alsawaf]
-12a400f  clk: qcom: clk-cpu-osm: Use CLK_GET_RATE_NOCACHE  [Sultan Alsawaf]
-30d9eeb  init: Kconfig: Don't force DEBUG_KERNEL when EXPERT is enabled  [Sultan Alsawaf]
-db3da6a  selinux: Remove audit dependency  [Sultan Alsawaf]
-b1deb49  mm: Reduce VM_MAX_READAHEAD to 128KB and apply init protection  [0ctobot]
-0a20b59  defconfig: Disable SCHED_WALT  [Adam W. Willis]
-6f3471e  defconfig: Enable PELT_UTIL_HALFLIFE_16  [Adam W. Willis]
-5330612  defconfig: Disable SCHED_CORE_CTL  [0ctobot]
-8256993  defconfig: Enable SCHEDUTIL_(UP|DOWN)_RATE_LIMIT  [0ctobot]
-aa55ffa  defconfig: Enable CPUSET_ASSIST  [0ctobot]
-bf05a3a  defconfig: Enable STUNE_ASSIST  [0ctobot]
-bc1bd8c  sched/walt: Disable WALT and use PELT by default  [0ctobot]
-d41663e  sched: Properly guard when SCHED_WALT is disabled  [0ctobot]
-4d3c5c7  cpuset: Refactor cpuset assist code  [Danny Lin]
-ace5735  sched/tune: Refactor SchedTune Assist code  [Danny Lin]
-861dfe0  kernel: introduce CPUSets Assist  [Yaroslav Furman]
-5e6b17b  sched/tune: Introduce SchedTune Assist[v3]  [Yaroslav Furman]
-d550efbc9  cpufreq: schedutil: Expose default rate-limits as config options  [Danny Lin]
-4dbd139  exec: Add node tampering blacklist function  [Danny Lin]
-d3fcabf  sched/fair: Make active balance CPU reservations independent of WALT  [Danny Lin]
-72559cf  sched/fair: Add feature to toggle SchedTune utilization boosting  [Danny Lin]
-abbe10c  FROMLIST: sched/fair: util_est: fast ramp-up EWMA on utilization increases  [Patrick Bellasi]
-5f9845d  sched: reduce softirq conflicts with RT  [Miguel de Dios]
-94f0e48  sched/fair: let scheduler skip util checking if cpu is idle  [Rick Yiu]
-9174e1a  kernel: sched: Mitigate non-boosted tasks preempting boosted tasks  [Miguel de Dios]
-d9e6c46  sched/fair: prefer exclusive mid cluster cpu for top-app task  [Rick Yiu]
-20898df  sched: delete unused & buggy function definitions  [Connor O'Brien]
-43e6776  sched/fair: fix implementation of is_min_capacity_cpu()  [Connor O'Brien]
-e9abad4  sched/fair: refine some scheduler changes from AU drop  [Rick Yiu]
-a11dbcf  BACKPORT: sched/fair: if sync flag ignored, try to place in mid cluster  [Rick Yiu]
-f26cad7  sched/fair: refine check for sync wake-up  [Rick Yiu]
-d3678d4  sched/fair: avoid little cpus due to sync blindly  [Rick Yiu]
-5781ebe  cpufreq: schedutil: fix check for stale utilization values  [Connor O'Brien]
-35f1b18  sched: core: Disable double lock/unlock balance in move_queued_task()  [Miguel de Dios]
-a859d7d  sched: fair: Disable double lock/unlock balance in detach_task()  [Miguel de Dios]
-ff2176a  sched: fair: Move cpu_is_in_target_set definition  [Miguel de Dios]
-ceba003  sched/fair: apply sync wake-up to pure CFS path  [Rick Yiu]
-1d1a80c  sched: fair: avoid little cpus due to sync, prev bias  [Miguel de Dios]
-5f7e66f  sched: fix issue of cpu freq running at max always  [Rick Yiu]
-f0f50cd  ANDROID: sched: cpufreq: use rt_avg as estimate of required RT CPU capacity  [Steve Muckle]
-2253b6e  ANDROID: sched: fair: balance for single core cluster  [Wei Wang]
-da64bb2  sched/fair: Fix "runnable_avg_yN_inv" not used warnings  [Qian Cai]
-04ce231  sched/core: Use READ_ONCE()/WRITE_ONCE() in move_queued_task()/task_rq_lock()  [Andrea Parri]
-43a5ada  UPSTREAM: sched/topology: Add SD_ASYM_CPUCAPACITY flag detection  [Morten Rasmussen]
-34f8651  sched/fair: Use a recently used CPU as an idle candidate and the basis for SIS  [Mel Gorman]
-7072ab0  sched: idle: Avoid retaining the tick when it has been stopped  [Rafael J. Wysocki]
-b057f13  sched/fair: Do not migrate if the prev_cpu is idle  [Mel Gorman]
-361dfb2  sched/fair: Only immediately migrate tasks due to interrupts if prev and target CPUs share cache  [Mel Gorman]
-02d39a9  sched/fair: Restructure wake_affine*() to return a CPU id  [Mel Gorman]
-400d4ab  sched/fair: Remove unnecessary parameters from wake_affine_idle()  [Mel Gorman]
-34abdd7  sched/fair: Search a task from the tail of the queue  [Uladzislau Rezki]
-9fb3227  sched/fair.c: Don't allow SchedTune boosted tasks to be migrated to small cores during interactions  [Zachariah Kennedy]
-e3fd754  sched: optimize for PELT  [Zachariah Kennedy]
-7d205b3  sched/fair: honor sync only if CPU is about to goto idle  [Zachariah Kennedy]
-d285437  sched/energy: Checkout to branch android-4.14 of https://android.googlesource.com/kernel/common  [Adam W. Willis]
-0a8440c  cpufreq: schedutil: Expose default configuration options and apply init protection  [0ctobot]
-db19902  Revert "cpufreq: schedutil: Fix for CR 2040904"  [0ctobot]
-c263f25  cpufreq: schedutil: Don't skip freq update when limits change  [Viresh Kumar]
-ce52b0d  cpufreq: schedutil: clear cached_raw_freq when invalidated  [John Dias]
-2f3aa88  cpufreq: schedutil: Don't set next_freq to UINT_MAX  [Viresh Kumar]
-8e13721  cpufreq: schedutil: Fix iowait boost reset  [Patrick Bellasi]
-feb19a4  FROMLIST: sched: Make iowait_boost optional in schedutil  [Joel Fernandes]
-b56d9e0  sched: Reset in preparation for PELT updates  [Adam W. Willis]
-05b20e6  Revert "sched: use the CPU true capacity while sorting the min/mid/max CPUs"  [vantoman]
-7e645d7  Revert "sched/fair: Improve the scheduler"  [vantoman]
-f00000e  Revert "sched/fair: Improve the scheduler"  [vantoman]
-d418151e  Revert "sched: Improve the scheduler"  [vantoman]
-d43a5b9  scripts: Don't append "+" to localversion  [Sultan Alsawaf]
-f027076  add toggle for disabling newly added USB devices  [Daniel Micay]
-071e044  trace: add CONFIG_DISABLE_TRACE_PRINTK option  [Park Ju Hyung]
-fb04b61  mm: release the spinlock on zap_pte_range  [Minchan Kim]
-2098483  ARM64: configs: davinci: Enable exFAT  [Park Ju Hyung]
-6fa4355  fs: sdfat: Update to version 2.3.0  [Kevin F. Haggerty]
-def4566  fs: sdfat: Update to version 2.1.8  [Kevin F. Haggerty]
-d5e11ad  fs: sdfat: Add MODULE_ALIAS_FS for supported filesystems  [Paul Keith]
-d4a587d  fs: sdfat: Add config option to register sdFAT for VFAT  [Paul Keith]
-216b064  fs: sdfat: Add config option to register sdFAT for exFAT  [Paul Keith]
-862cf2a  fs: sdfat: Update to driver version 2.0.6  [Bruno Martins]
-20886ec  fs: sdfat: Fix compilation without debugging  [Paul Keith]
-3fed431  fs: Import sdFAT driver  [Bruno Martins]
-33ce2cb  techpack: use power efficient workqueues  [HolyAngel]
-5299254  qcacld-3.0: Use more power efficient workingqueues  [freak07]
-132edff  mm: vmstat: Use more power efficient workingqueues  [freak07]
-d9159f7  gpu: drm: Use power efficient workingqueues  [freak07]
-74176fd  platform: ipa: Use power efficient workingqueues  [freak07]
-651bf0d  cpu-boost: Reduce input boost time interval  [Alex Naidis]
-1a117ba  cpu-boost: Bind to LITTLE cpus and reduce RT prio  [Alex Naidis]
-e61478f  cpu-boost: Rework scheduling setup  [Alex Naidis]
-044f149  kernel: module: Ignore signature  [Demon000]
-b08b745  kernel: module: Ignore all magic mismatches  [Christopher N. Hesse]
-65ed6ea  ARM64: configs: davinci: Enable forced module loading  [Demon000]
-870bf60  ARM64: configs: davinci: Enable jump label optimization  [Demon000]
-6868c56  ARM64: configs: davinci: Enable suspend skip sync  [Demon000]
-5097f10  ARM64: configs: davinci: Enable power efficient workqueues  [Demon000]
-b0c6e1c  ARM64: configs: Disable module signature  [Luca Stefani]
-fa866cf  ARM64: configs: Enable all sm6150auto techpack options  [luk1337]
-9109bd6  ARM64: configs: Build all modules in kernel  [PeterCxy]
-73dd98e  ARM64: configs: turn on VDSO  [Mark Salyzyn]
-618ee1d  ARM64: configs: enable CONFIG_QCA_CLD_WLAN  [Park Ju Hyung]
-cedd6e8  ARM64: configs: Enable CONFIG_BUILD_ARM64_DT_OVERLAY  [Jackeagle]
-a98ab09  ARM64: configs: Import Xiaomi defconfig  [Mustafa]
-91cc26a  thermal: core: Use qcom drm notifier  [Demon000]
-738c319  kernel: Use the stock defconfig for /proc/config.gz  [Sultan Alsawaf]
-b06a55c  FROMLIST: arm64: Build vDSO with -ffixed-x18  [Peter Collingbourne]
-cc326ca  ANDROID: turn on VCT access from 32-bit applications  [Mark Salyzyn]
-800ea72  vdso32: Invoke clang with correct path to GCC toolchain  [Daniel Mentz]
-d24d0c8  FROMLIST: arm64: vdso32: Use full path to Clang instead of relying on PATH  [Nathan Chancellor]
-8331e41  ANDROID: clock_gettime(CLOCK_BOOTTIME,) slows down >20x  [Mark Salyzyn]
-31c125a  ANDROID: CROSS_COMPILE_ARM32 must work if CONFIG_COMPAT_VDSO  [Mark Salyzyn]
-8aaf7bd  FROMLIST: BACKPORT: [PATCH 6/6] arm64: Wire up and expose the new compat vDSO  [Kevin Brodsky]
-3a046bb  FROMLIST: [PATCH 5/6] arm64: compat: 32-bit vDSO setup  [Kevin Brodsky]
-5a650d7  FROMLIST: [PATCH 4/6] arm64: compat: Add a 32-bit vDSO  [Kevin Brodsky]
-ceb0e05  FROMLIST: BACKPORT: [PATCH 3/6] arm64: Refactor vDSO init/setup  [Kevin Brodsky]
-d234937  FROMLIST: [PATCH 2/6] arm64: elf: Set AT_SYSINFO_EHDR in compat processes  [Kevin Brodsky]
-86e5aca  FROMLIST: [PATCH 1/6] arm64: compat: Use vDSO sigreturn trampolines if available  [Kevin Brodsky]
-b61f1ca  FROMLIST: lib: vdso: add support for time  [Mark Salyzyn]
-17ae3c6  FROMLIST: [PATCH] arm64: compat: Expose offset to registers in sigframes  [Kevin Brodsky]
-f0f0764  FROMLIST: [PATCH v5 12/12] lib: vdso: do not expose gettimeofday, if no arch supported timer  [Mark Salyzyn]
-165eb63  FROMLIST: [PATCH v5 11/12] lib: vdso: Add support for CLOCK_BOOTTIME  [Mark Salyzyn]
-cce498e  FROMLIST: [PATCH v5 10/12] arm64: vdso: replace gettimeofday.S with global vgettimeofday.C  [Mark Salyzyn]
-507ce86  FROMLIST: [PATCH v5 09/12] arm: vdso: move vgettimeofday.c to lib/vdso/  [Mark Salyzyn]
-9effac8  FROMLIST: [PATCH v5 08/12] arm: vdso: Add ARCH_CLOCK_FIXED_MASK  [Mark Salyzyn]
-bbaa1c1  FROMLIST: [PATCH v5 07/12] arm: vdso: disable profiling  [Mark Salyzyn]
-9886568  FROMLIST: [PATCH v5 06/12] arm: vdso: add support for clock_getres  [Mark Salyzyn]
-5a9cf24  FROMLIST: [PATCH v6 05/12] arm: vdso: Add support for CLOCK_MONOTONIC_RAW  [Mark Salyzyn]
-488a4a8  FROMLIST: [PATCH v5 04/12] arm: vdso: do calculations outside reader loops  [Mark Salyzyn]
-17c1233  FROMLIST: [PATCH v5 03/12] arm: vdso: inline assembler operations to compiler.h  [Mark Salyzyn]
-312f0f4  FROMLIST: [PATCH v5 02/12] arm: vdso: add include file defining __get_datapage()  [Mark Salyzyn]
-104cc54  FROMLIST: [PATCH v5 01/12] arm: vdso: rename vdso_datapage variables  [Mark Salyzyn]
-b77cdee  FROMLIST: [PATCH v3 3/3] arm64: compat: Add CONFIG_KUSER_HELPERS  [Kevin Brodsky]
-125e2ea  FROMLIST: [PATCH v3 2/3] arm64: compat: Split the sigreturn trampolines and kuser helpers (assembler sources)  [Kevin Brodsky]
-5350ac1  FROMLIST: [PATCH v3 1/3] arm64: compat: Split the sigreturn trampolines and kuser helpers (C sources)  [Kevin Brodsky]
-6e8ffc4  Revert "arm64: vdso: Fix clock_getres() for CLOCK_REALTIME"  [Khusika Dhamar Gusti]
-bd55514  Revert "ARM: vdso: Remove dependency with the arch_timer driver internals"  [Khusika Dhamar Gusti]
-fd410c1  scripts: use python rewrite in libfdt for mkdtimg  [UtsavBalar1231]
-c438a75  dtbo.img: build device tree overlay partition image  [Woody Lin]
-90d2a6f  ARM64: dts: Enable Ultra Low Power State Mode  [Pig]
-2b36684  ARM64: dts: enable panel-allow-phy-poweroff  [celtare21]
-8fff401  block: core: gotta go fast  [Demon000]
-72befc6  thermal: Import Xiaomi changes  [PIPIPIG233666]
-725395c  leds: Import Xiaomi changes  [PIPIPIG233666]
-29c904a  pinctrl: msm: prevent access to GPIOs based on hw  [PIPIPIG233666]
-e3cd9f8  socinfo: Import Xiaomi changes  [PIPIPIG233666]
-ffcd335  backlight: Import Xiaomi changes  [PIPIPIG233666]
-1228e53  usb: Import Xiaomi changes  [PIPIPIG233666]
-614d467  media: rc: Import Xiaomi changes over IR driver  [PIPIPIG233666]
-c096491  drivers: iio: adc: set channel_check = true  [PIPIPIG233666]
-f52443d  of: batterydata: use generic node if no node is found  [Luca Stefani]
-590cf5b  sound: soc: pcm: support host-less 24bit formats  [Demon000]
-d242df9  misc: Import drv8846 step motor soc driver  [PIPIPIG233666]
-12fe2ee  input/misc: Import akm09970 compass driver  [PIPIPIG233666]
-f40078c  input: touchscreen: Import Xiaomi double_click driver  [PIPIPIG233666]
-717ed37  input: Import Xiaomi Touch Driver  [PIPIPIG233666]
-2637052  misc: Import Xiaomi SPI touch panel driver  [Pranav Vashi]
-ae034ef  dsi: panel: disable doze on screen off  [Demon000]
-bff4489  input: touchscreen: gt9886: Enable definition of BTN_INFO  [Fabian Leutenegger]
-4f3898d  input: touchscreen: gt9886: Remove testing bits  [Albert I]
-f38d0362  input: touchscreen: gt9886: Use qcom drm notifier  [minz1]
-578c483  input: touchscreen: gt9886: Remove backlight notifier callback  [Fabian Leutenegger]
-e0f77d2  input: Import gt9886 touchscreen driver  [PIPIPIG233666]
-feae612  input: fingerprint: goodix_ta: Use qcom drm notifier  [Demon000]
-3659858  input: fingerprint: Import Goodix fingerprint driver  [Demon000]
-5563444  input: Include fingerprint directory  [Demon000]
-6600fa1  drm: msm: Add fod hbm node  [Demon000]
-6732975  drm: msm: Implement aod mode  [Demon000]
-4420e4b  drm: msm: Modify lp11 mode logic  [Demon000]
-034afcc  drm: msm: Handle ss ea and eb dcs types as well  [minz1]
-11ba5f3  drm: msm: Handle ss dcs type  [Demon000]
-5dadfc3  drm: msm: Extend qcom drm notifier  [Demon000]
-935e8b4  drivers: power: Import Xiaomi Changes  [vantoman]
-a6e1a1f  power: qcom: Checkout to LA.UM.8.9.r1-03800-sm6150.0  [vantoman]
-7fd234c  msm: camera: Import Xiaomi changes  [PIPIPIG233666]
-cde7ae8  Revert "msm: camera: Add Support for Multiple SOF sources"  [vantoman]
-6951958  ARM64: dts: Reserve space for ramoops  [Yaroslav Furman]
-0432872  ARM64: dts: Import overlayed Xiaomi SDMMAGPIE-based device tree sources  [PIPIPIG233666]
-
-* lineage/wiki
-3907184  wiki: templates: Describe Sony's unlocking process better  [Mathis Dirksen-Thedens]
-
-* vendor/gms
-1a78e8b  fonts_customization: Add lato and rubik fonts  [Arian]
-
-* vendor/xiaomi/davinci
-f866705  davinci: Add back tcmclient  [Arian]
-75726fa  davinci: Drop unneded telephony jars and remove android.hidl.base@1.0 shim  [Arian]
