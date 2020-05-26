@@ -1,29 +1,82 @@
 ====================
-     2020-05-25    
+     2020-05-26    
 ====================
 
 * build/make
-93368db  Allow overriding platform SPL  [dianlujitao]
-589e5fe  [DNM] Always use release-keys  [Arian]
+5ca56f2  Allow overriding platform SPL  [dianlujitao]
+7bb529e  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-97e18c2  Label lineage platform SPL prop  [dianlujitao]
+f0c67aa  Label lineage platform SPL prop  [dianlujitao]
 
 * frameworks/av
-650edd1  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+41a8e3a  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
 
 * frameworks/base
-9a8b787  DeviceInfoUtils: Prefer lineage platform SPL  [dianlujitao]
-7a1f647  base: Redo expanded volume panel for 10.x  [HrX03]
-3f89384  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
-846992c  SystemUI: get rid of build text in qs  [Joey]
-9fd89a5  PackageManagerService: Drop caches according to incremental version  [Arian]
-838ea1d  theme: Introduce support for primary color overlays  [Marko Man]
-5a3899b  SystemUI: Fix alignment glitch with brightness mirror  [Umang96]
-955996a  Automatic translation import  [Michael Bestas]
+d4f185f  DeviceInfoUtils: Prefer lineage platform SPL  [dianlujitao]
+fb82341  base: Redo expanded volume panel for 10.x  [HrX03]
+67d27d7  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
+58bb630  SystemUI: get rid of build text in qs  [Joey]
+28bba41  PackageManagerService: Drop caches according to incremental version  [Arian]
+e3ca52d  theme: Introduce support for primary color overlays  [Marko Man]
+5ceea4f  translate="false" -> translatable="false"  [Edward Savage-Jones]
+18f7c02  Add Light/Dark theme for bugreport warning dialog  [Abhijeet Kaur]
+287e565  Fix bugreport warning dialog  [Abhijeet Kaur]
+
+* frameworks/native
+69a8520  sf: Exclude VDS use of HWC on non-UM platforms  [dianlujitao]
 
 * lineage-sdk
-c4d447c  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
+d886bbb  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
+
+* lineage/wiki
+b35a0e5  wiki: Add 'connect to wifi' before oem unlock on gts4lv  [LuK1337]
+
+* packages/apps/Etar
+27cafb4  Etar: Modify about page  [Michael Bestas]
+f3d2170  Etar: Rename package to org.lineageos.etar  [Michael Bestas]
+547aeae  Etar: Switch back to AOSP application name  [Michael Bestas]
+
+* packages/apps/Settings
+323cacb  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+44c1904  Fixes ApnEditor not restoring previous UI  [Lee Chou]
+8954cee  Fix volume slider color is not correct  [Raff Tsai]
+89fdc6e  translate="false" -> translatable="false"  [Niclas Rokicki]
+
+* packages/apps/ThemePicker
+2803895  ThemePicker: Fix theming issues  [maxwen]
+5f65cb0  ThemePicker: Don't ignore white accent or primary colors  [Christian Oder]
+e6c7ca4  ThemePicker: Add support for primary color overlays  [maxwen]
+
+* packages/inputmethods/LatinIME
+788fe07  Support polytonic Greek diacritics in the Greek keyboard  [Alex Henrie]
+e5da9ac  Implement text entry key API for accessibility services in AOSP Keyboard  [ryanlwlin]
+030d52f  Create display context when switching IME to new display for AOSP IME  [lumark]
+863298b  LatinIME: Update key_styles_currency euro lists #2  [Alexander K]
+07c937e  LatinIME: Fix back-arrow finishing activity  [Michael W]
+50ae607  LatinIME: Remove dividers everywhere  [Michael W]
+
+* packages/overlays/Lineage
+52801f8  overlays: Add black primary theme  [Marko Man]
+
+* vendor/lineage
+465fded  lineage: build black primary theme  [Demon000]
+b1d3f65  extract-utils: Fix usage for ETC files which need sub_dir  [Andreas Schneider]
+48917cc  Export qcom UM hal root to soong  [dianlujitao]
+deb2183  config: Build Etar  [LuK1337]
+f646fd7  Sort soong variables alphabetically  [dianlujitao]
+====================
+     2020-05-25    
+====================
+
+* android
+56491b1  android: Move to our own fork of timezonepicker  [Michael W]
+35fe670  Remove unused frameworks/opt/datetimepicker  [Neil Fuller]
+0dbc632  manifest: Replace Calendar with Etar  [LuK1337]
+
+* frameworks/base
+5a3899b  SystemUI: Fix alignment glitch with brightness mirror  [Umang96]
+955996a  Automatic translation import  [Michael Bestas]
 
 * lineage/hudson
 bfcfff6  hudson: add Samsung Galaxy Grand 2 (ms013g)  [Daniel Jacob Chittoor]
@@ -42,23 +95,41 @@ f4b3f27  Contacts: manually configure dark theme for list  [Jesse Chan]
 991dae2  AOSP/Contacts - Updated to sdkVersion 29.  [Raman Tenneti]
 
 * packages/apps/Dialer
+9c227fe   Failed to show hold call when user click swap and merge simultaneously  [rongmei.li]
+bdfb33d  Fix FATAL Exception in PostCallActivity  [Taesu Lee]
+746efe3  AOSP/Dialer - Fix improperly formatted resource string in Dialer across many languages.  [Raman Tenneti]
+2bfb4ff  Fix the issue that automatic mute state remains ON after adding VT call  [Sekine Yasuaki]
+d1341b4  Fix error case which session change request failed when pausing video  [Sekine Yasuaki]
+a0c5bdd  Fix for button flickering issue when video call screen rotates  [Hideki Ishii]
+e7523ef  Fix to update peer dimensions when video screen resumes foreground  [Sekine Yasuaki]
+03a214c  Fix issue that the hold label is not shown during remote video holding  [Oya Masafumi]
+452c34d  Fix preview image overlaps a call button during video call  [Shalika Pathirathna]
 64c1fc6  Dialer: allow framework to do dark theming automatically  [Jesse Chan]
 097bf00  Updated target SDK from 28 to 29.  [Raman Tenneti]
 
+* packages/apps/Etar
+e52b092  Etar: adaptive icon  [Asher Simonds]
+8a3e3cf  Say hello to Android.bp and farewell to Android.mk  [LuK1337]
+5188ba3  Fix retrieving resource ids after --rename-manifest-package (#705)  [luk1337]
+
+* packages/apps/Messaging
+a59d697  Import translations. DO NOT MERGE  [Bill Yi]
+bdacda4  Rescheduling pending messages after outside window failure  [Taesu Lee]
+398ad51  Fix NPE on MultiConversationNotificationState  [Taesu Lee]
+e3485c1  Hide APN prefs if platform APIs are used  [Taesu Lee]
+2af21a4  Use ic_add_white for consistency instead  [Taesu Lee]
+f730ce2  Fix to show APN prefs correctly  [Taesu Lee]
+446e3a7  Fix NPE  [Taesu Lee]
+7e2d9a0  Handle delivered messages as completed messages  [Taesu Lee]
+d07c5ef  Messaging: Contact Colors  [Blaise]
+
 * packages/apps/Settings
-2a9923d  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
 36fff84  Automatic translation import  [Michael Bestas]
 
-* packages/apps/ThemePicker
-0a40d24  ThemePicker: Fix theming issues  [maxwen]
-d00f3bd  ThemePicker: Don't ignore white accent or primary colors  [Christian Oder]
-f99ec1f  ThemePicker: Add support for primary color overlays  [maxwen]
-
-* packages/overlays/Lineage
-4c7719f  overlays: Add black primary theme  [Marko Man]
-
-* vendor/lineage
-f6c92ab  lineage: build black primary theme  [Demon000]
+* vendor/nxp/opensource/commonsys/packages/apps/Nfc
+a1d7de5  Fix style name DialogAlertDayNight  [George Chang]
+f48a631  Add dark mode support for AlertDialog  [George Chang]
+63a7284  Migrated Nfc to androidx  [Aurimas Liutikas]
 ====================
      2020-05-24    
 ====================
@@ -87,17 +158,34 @@ de4d74a  wiki: Improve copy-partitions explanation  [LuK1337]
 * packages/apps/AudioFX
 9e0dcdc  Automatic translation import  [Michael Bestas]
 
-* packages/apps/Calendar
-6c28e8d  Automatic translation import  [Michael Bestas]
+* packages/apps/Bluetooth
+837b47f  Bluetooth string: removed id="sender" in bt_sm_2_1_  [Yinchu Chen]
+3aea9ee  translate="false" -> translatable="false"  [Edward Savage-Jones]
+
+* packages/apps/Camera2
+6a6983d  Camera2: Fix crash when app requesting intent has requested no permisions.  [Jayant Chowdhary]
+acc37c5  Dismiss keyguard when opening settings  [Felix]
 
 * packages/apps/Contacts
 6819879  Automatic translation import  [Michael Bestas]
 
+* packages/apps/DeskClock
+514167c  Import translations. DO NOT MERGE  [Bill Yi]
+66b38ff  Import translations. DO NOT MERGE  [Bill Yi]
+
 * packages/apps/Dialer
 5e8cb15  Automatic translation import  [Michael Bestas]
 
+* packages/apps/DocumentsUI
+7283811  Update message layout  [Tony Huang]
+ec12a92  Set sdk_version 'system_current'  [Jeongik Cha]
+
 * packages/apps/Eleven
 5946f79  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Etar
+dd179aa  Fix export to SD card (#701)  [joost]
+0da38bc  Change search provider url  [Gitsaibot]
 
 * packages/apps/FlipFlap
 33b579e  Automatic translation import  [Michael Bestas]
@@ -111,11 +199,19 @@ de4d74a  wiki: Improve copy-partitions explanation  [LuK1337]
 * packages/apps/LineageParts
 d86541b  Automatic translation import  [Michael Bestas]
 
+* packages/apps/Nfc
+23eb46e  Fix style name DialogAlertDayNight  [George Chang]
+3b54e79  Add dark mode support for AlertDialog  [George Chang]
+
 * packages/apps/Recorder
 a2e9b40  Automatic translation import  [Michael Bestas]
 
 * packages/apps/Settings
 176d2e1  hardwareinfo: Hide hardware revision if empty  [Arian]
+
+* packages/apps/SettingsIntelligence
+d260274  Normalize dynamic search result in Japanese  [Qiang Wu]
+62a65e6  Scrolling search results and autorotate cause crash  [Pingzhi Wang]
 
 * packages/apps/SetupWizard
 dd5da5e  Automatic translation import  [Michael Bestas]
@@ -123,10 +219,33 @@ dd5da5e  Automatic translation import  [Michael Bestas]
 * packages/apps/Snap
 31f7b4d  Automatic translation import  [Michael Bestas]
 
+* packages/apps/Stk
+21e9e72  Remove deprecated unenforced permission from manifest.  [Amit Mahajan]
+8c0f0b5  Close Tone Dialog if the requested tone has already been stopped  [Yoshiaki Naka]
+2c8c003  Fix the incorrect title for DISPLAY TEXT dialog.  [Umashankar Godachi]
+b975311  Correct boundary check and add log.  [Malcolm Chen]
+0ef7cb5  Consider long system notification sound set by user  [Yoshiaki Naka]
+3265cb2  Add a missing boundary check of mStkContext.  [Malcolm Chen]
+8c69fe2  Remove PhoneConstants.SIM_ID_1  [Yoshiaki Naka]
+7624834  Replace CatLog.d(this) with CatLog.d(LOG_TAG) in SIM Toolkit classes  [Michael Bestas]
+7989dd9  Differentiate home screen from others implemented in the same activity  [Anna Suzuki]
+7b5e498  Simplify the mechanism of the pending activity and dialog  [Anna Suzuki]
+e6c1066  Improve the UI layout of the input screen  [Yoshiaki Naka]
+6eb2cf8  Migrate from the support library v4 to AndroidX  [Yoshiaki Naka]
+039632f  Cancel PLAY TONE command if SIM is removed or disabled  [Takanori Nakano]
+ff8bd6d  Operation code should be handled with the field 'what' of Message class  [Yoshiaki Naka]
+19f0079  Missing CatService shall not be treated as exception  [Takanori Nakano]
+6875cb3  Remove the task of SIM Toolkit when it becomes no longer needed  [Anna Suzuki]
+ecc3b4a  Apply DayNight theme to SIM Toolkit for Dark theme support  [Yoshiaki Naka]
+
 * packages/apps/Trebuchet
 30ebe3b  Automatic translation import  [Michael Bestas]
 
 * packages/apps/TvSettings
+76a9899  Import translations. DO NOT MERGE  [Bill Yi]
+3ab38d1  Update Bluetooth HCI snoop log preference per Q requirements.  [Andreea]
+0600bbf  Update connection status when plug/unplug ethernet cable.  [chenhg]
+7637351  Fix string formatting  [Colin Cross]
 dcdd09a  Automatic translation import  [Michael Bestas]
 
 * packages/apps/Updater
@@ -135,10 +254,20 @@ dcdd09a  Automatic translation import  [Michael Bestas]
 * packages/inputmethods/LatinIME
 69a70a2  Automatic translation import  [Michael Bestas]
 
+* packages/modules/CaptivePortalLogin
+219e514  Fix that CaptivePortalApp cannot handle the SSL error of POST request  [lucaslin]
+23d42aa  Support RTL language in SSL error page of CaptivePortal app  [lucaslin]
+
+* packages/providers/DownloadProvider
+a9bf5d8  Fix "Invalid columns in request:" errors, when there are multiple columns  [Pierre-Hugues Husson]
+dfbf1ba  Switch from deprecated/removed JobInfo method.  [Kweku Adams]
+71f7dca  Trigger mediascan after a download is completed.  [Sudheer Shanka]
+
 * packages/resources/devicesettings
 fe24103  Automatic translation import  [Michael Bestas]
 
 * packages/services/BuiltInPrintService
+d2a0512  Restore MITM functionality  [Glade Diviney]
 9597252  Automatic translation import  [Michael Bestas]
 
 * vendor/lineage
@@ -331,11 +460,20 @@ dd2f684  davinci: telephony: Import blobs  [Arian]
      2020-05-22    
 ====================
 
+* packages/apps/DeskClock
+f97987e  AOSP/DeskClock - Added SET_ALARM permission check  [Colin Marsch]
+8c6c374  AOSP/DeskClock - Updated to sdkVersion 29.  [Raman Tenneti]
+732cd5c  AOSP/DeskClock - Updated to sdkVersion 29.  [Raman Tenneti]
+
 * tools/repohooks
 bf70aed  hooks: require a Relnote field when changing current.txt  [Nick Anthony]
 ====================
      2020-05-21    
 ====================
+
+* frameworks/native
+1710e8f  sf: Remove redundant allocateVirtualDisplay.  [Yogendra Charya Tangalapally]
+1872184  sf: Allow VDS to use HWC  [Ramakant Singh]
 
 * packages/apps/ThemePicker
 fcadc14  Fix preview tile in grid option picker  [Marc K]
@@ -348,86 +486,3 @@ fcadc14  Fix preview tile in grid option picker  [Marc K]
 
 * vendor/xiaomi/davinci
 e18def9  davinci: Add CNE configs for VoWifi  [Arian]
-====================
-     2020-05-19    
-====================
-
-* device/xiaomi/davinci
-32291fe  davinci: telephony: Build required packages  [Arian]
-10d3cfb  davinci: power: Import sub system restart blob  [Arian]
-cce5c69  davinci: power: Import poweroff alarm blobs  [Arian]
-325b4b2  davinci: power: Scan input devices for eligible DT2W node  [Bruno Martins]
-154d5db  davinci: power: Support event-based dt2w node  [TheScarastic]
-679e3a0  davinci: power: Prepare HAL extension  [Arian]
-dcfd1ad  davinci: power: Build HAL  [Arian]
-716d500  davinci: light: Detect maximum brightness dynamically  [vasishath]
-1578cf0  davinci: light: Simplify alpha scaling logic  [Demon000]
-f5aa67b  davinci: light: Do not turn on breathing for unlit hardware states  [Demon000]
-987b272  davinci: light: Avoid resetting state  [Demon000]
-b72b9f7  davinci: light: Avoid uint32_t underflow  [Demon000]
-f28ae09  davinci: light: Properly scale brightness range  [Demon000]
-c30874c  davinci: lights: Adjust for davincis LEDs  [Arian]
-92b4f60  davinci: light: Import HAL from Xiaomi msm8998-common  [Demon000]
-3b3bb45  davinci: fod: Use 630nit fod value  [Demon000]
-b50d5cd  davinci: fod: Improve semantics  [Demon000]
-57e6683  davinci: fod: Remove onRelase calls duplication  [Demon000]
-21bd4cf  davinci: fod: Calculate dim amount based on real brightness  [Demon000]
-3999ca4  davinci: fod: Copy hardware permissions from frameworks/native  [Arian]
-c0dc368  davinci: fod: Implement in-screen fingerprint HAL  [Demon000]
-284528b  davinci: fod: Import blobs  [Arian]
-549ac1b  davinci: parts: Add icons for popup settings  [Arian]
-43cd49c  davinci: parts: Try to take the motor back on boot when opened  [jhenrique09]
-e5b9c70  davinci: parts: Check if motor is busy before doing any operation  [jhenrique09]
-ca5ef87  davinci: parts: Add popup camera sound effects and LED toggle  [jhenrique09]
-df0a3c0  davinci: parts: Add support for camera popup light  [TheScarastic]
-26d4058  raphael: Initial popup camera impl  [TheScarastic]
-450c4cb  davinci: parts: Add icons for doze  [arian]
-5e34ed4  davinci: parts: Import from xiaomi_sdm845-common  [Arian]
-069783a  davinci: bluetooth: Switch to a map based BT name  [LuK1337]
-e485710  davinci: bluetooth: Add builcfg  [Arian]
-94e1513  davinci: bluetooth: Copy hardware permissions from frameworks/native  [Arian]
-f6bb231  davinci: bluetooth: Import blobs  [Arian]
-2d5985c  davinci: camera: overlay: Enable AUX camera for snap  [LuK1337]
-0653749  davinci: camera: overlay: Import relevant snap overlays  [GuaiYiHu]
-b066c57  davinci: camera: Build Snap  [Arian]
-6db6c9d  davinci: camera: Copy hardware permissions from frameworks/native  [Arian]
-6f3cb3a  davinci: camera: Build libdng_sdk.vendor  [Arian]
-7a9d2a0  davinci: camera: Build camera provider  [Arian]
-e11ed23  davinci: camera: Import motor blobs  [Arian]
-9743217  davinci: camera: Import blobs  [Arian]
-02ae453  davinci: overlay: Declare STATE_DOZE support  [Bruno Martins]
-4b7e7b0  davinci: overlay: Configure proper rounded corners  [yankarinRG]
-656daa3  davinci: overlay: Add 2 more notification icons  [eray orçunus]
-308ba6a  davinci: overlay: Leave space for FOD while bouncer is requesting Pattern on PIN  [Demon000]
-79084b9  davinci: overlay: Adjust Biometric dialog for fod  [TheScarastic]
-c29a9cf  davinci: overlay: Configure light capabilities  [Arian]
-a77b3b7  davinci: overlay: Enable option for full screen aspect ratio  [Jesse Chan]
-2b55bb9  davinci: overlay: Define fingerprint position  [Arian]
-1ff0437  davinci: overlay: Hide sRGB toggle in developer options  [maxwen]
-ae802f0  davinci: overlay: Adjust vibration strength  [Arian]
-c409d02  davinci: overlay: Enable suspend when screen off due to proximity  [Arian]
-
-* frameworks/base
-50468f6  SystemUI: Initialize proper visibility for notification icons container  [LuK1337]
-
-* hardware/qcom-caf/common
-3b586a8  Don't BUILD_WITHOUT_VENDOR  [Chirayu Desai]
-
-* hardware/qcom-caf/sm8150/audio
-12480be  a2dp: Add a null check before iterating over a2dp.adev->usecase_list  [Scott Warner]
-
-* packages/apps/Messaging
-3aa027c  Messaging: disable auto dark theming on message bubble  [Jesse Chan]
-7f855cc  Messaging: allow framework to do dark theming automatically  [Jesse Chan]
-924731e  Messaging: bump target SDK version to 29  [Jesse Chan]
-
-* packages/apps/ThemePicker
-ecd3dcc  ThemePicker: Show item name under the category name  [El Dainosor]
-
-* packages/apps/Updater
-bb09c53  Updater: Use accent_device_default_{dark,light} for colorAccent values  [LuK1337]
-
-* packages/inputmethods/LatinIME
-0598a8a  LatinIME: Remove divider lines  [Michael W]
-13764c7  LatinIME: Do we really still want Holo?  [Michael W]
-ec563a2  LatinIME: Add setting for theme to follow system setting  [Michael W]
