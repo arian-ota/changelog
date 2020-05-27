@@ -1,33 +1,52 @@
 ====================
-     2020-05-26    
+     2020-05-27    
 ====================
 
 * build/make
-5ca56f2  Allow overriding platform SPL  [dianlujitao]
-7bb529e  [DNM] Always use release-keys  [Arian]
+a9ea800  Allow overriding platform SPL  [dianlujitao]
+354a2ea  [DNM] Always use release-keys  [Arian]
+9435a22  releasetools: do not remove dynamic partitions in system-only builds  [Peter Cai]
 
 * device/lineage/sepolicy
-f0c67aa  Label lineage platform SPL prop  [dianlujitao]
+6d1d73f  Label lineage platform SPL prop  [dianlujitao]
 
 * frameworks/av
-41a8e3a  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+7117ee1  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
 
 * frameworks/base
-d4f185f  DeviceInfoUtils: Prefer lineage platform SPL  [dianlujitao]
-fb82341  base: Redo expanded volume panel for 10.x  [HrX03]
-67d27d7  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
-58bb630  SystemUI: get rid of build text in qs  [Joey]
-28bba41  PackageManagerService: Drop caches according to incremental version  [Arian]
-e3ca52d  theme: Introduce support for primary color overlays  [Marko Man]
+b00973f  DeviceInfoUtils: Prefer lineage platform SPL  [dianlujitao]
+360897d  base: Redo expanded volume panel for 10.x  [HrX03]
+eea819a6  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
+8d80122  SystemUI: get rid of build text in qs  [Joey]
+ddc97d5  PackageManagerService: Drop caches according to incremental version  [Arian]
+a10c52e  SystemUI: support black theme for dark mode [1/4]  [Jesse Chan]
+195653a  SystemUI: add top exclusion to the back gesture  [Joey]
+9d42c48  SystemUI: Brightness slider: Always show the brightness icon  [Michael W]
+e952e58  Fix other lights when backlight uses SurfaceController API  [Pierre-Hugues Husson]
+
+* lineage-sdk
+a9fbe03  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
+9d01848  lineage-sdk: add black theme for dark mode [4/4]  [Jesse Chan]
+d078210  sdk: add top exclusion to the back gesture  [Joey]
+
+* packages/apps/Settings
+be36539  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+cdd1d9d  Settings: add top exclusion to the back gesture  [Joey]
+9bf6961  Settings: support black theme for dark mode [2/4]  [Jesse Chan]
+
+* packages/overlays/Lineage
+33d2e26  overlays: Add black theme for dark mode [3/4]  [Marko Man]
+====================
+     2020-05-26    
+====================
+
+* frameworks/base
 5ceea4f  translate="false" -> translatable="false"  [Edward Savage-Jones]
 18f7c02  Add Light/Dark theme for bugreport warning dialog  [Abhijeet Kaur]
 287e565  Fix bugreport warning dialog  [Abhijeet Kaur]
 
 * frameworks/native
 69a8520  sf: Exclude VDS use of HWC on non-UM platforms  [dianlujitao]
-
-* lineage-sdk
-d886bbb  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
 
 * lineage/wiki
 b35a0e5  wiki: Add 'connect to wifi' before oem unlock on gts4lv  [LuK1337]
@@ -38,15 +57,9 @@ f3d2170  Etar: Rename package to org.lineageos.etar  [Michael Bestas]
 547aeae  Etar: Switch back to AOSP application name  [Michael Bestas]
 
 * packages/apps/Settings
-323cacb  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
 44c1904  Fixes ApnEditor not restoring previous UI  [Lee Chou]
 8954cee  Fix volume slider color is not correct  [Raff Tsai]
 89fdc6e  translate="false" -> translatable="false"  [Niclas Rokicki]
-
-* packages/apps/ThemePicker
-2803895  ThemePicker: Fix theming issues  [maxwen]
-5f65cb0  ThemePicker: Don't ignore white accent or primary colors  [Christian Oder]
-e6c7ca4  ThemePicker: Add support for primary color overlays  [maxwen]
 
 * packages/inputmethods/LatinIME
 788fe07  Support polytonic Greek diacritics in the Greek keyboard  [Alex Henrie]
@@ -56,11 +69,7 @@ e5da9ac  Implement text entry key API for accessibility services in AOSP Keyboar
 07c937e  LatinIME: Fix back-arrow finishing activity  [Michael W]
 50ae607  LatinIME: Remove dividers everywhere  [Michael W]
 
-* packages/overlays/Lineage
-52801f8  overlays: Add black primary theme  [Marko Man]
-
 * vendor/lineage
-465fded  lineage: build black primary theme  [Demon000]
 b1d3f65  extract-utils: Fix usage for ETC files which need sub_dir  [Andreas Schneider]
 48917cc  Export qcom UM hal root to soong  [dianlujitao]
 deb2183  config: Build Etar  [LuK1337]
@@ -480,9 +489,3 @@ fcadc14  Fix preview tile in grid option picker  [Marc K]
 
 * tools/repohooks
 5664c11  utils: run: fix stderr set as str instead of bytes  [Mike Frysinger]
-====================
-     2020-05-20    
-====================
-
-* vendor/xiaomi/davinci
-e18def9  davinci: Add CNE configs for VoWifi  [Arian]
