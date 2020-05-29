@@ -1,28 +1,47 @@
 ====================
-     2020-05-28    
+     2020-05-29    
 ====================
 
 * build/make
-30be1b0  Allow overriding platform SPL  [dianlujitao]
-aaa0dac  [DNM] Always use release-keys  [Arian]
+0c84c2a  Allow overriding platform SPL  [dianlujitao]
+c68fbed  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-cb160bc  Label lineage platform SPL prop  [dianlujitao]
+ab7cc57  Label lineage platform SPL prop  [dianlujitao]
 
 * frameworks/av
-3651bdb  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+e4887d3  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
 
 * frameworks/base
-f98f03e19  DeviceInfoUtils: Prefer lineage platform SPL  [dianlujitao]
-2a9165f  base: Redo expanded volume panel for 10.x  [HrX03]
-18b9fbb3  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
-6894a0e  SystemUI: get rid of build text in qs  [Joey]
-e153b57  PackageManagerService: Drop caches according to incremental version  [Arian]
-4dcd7d2  Implement hide gestural navigation hint bar [1/5]  [Jesse Chan]
-783a129  SystemUI: Do not convert application name to ISO-8859-15  [Han Wang]
+78bd142  DeviceInfoUtils: Prefer lineage platform SPL  [dianlujitao]
+d7d10f6  base: Redo expanded volume panel for 10.x  [HrX03]
+56ec34d  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
+01e1035  SystemUI: get rid of build text in qs  [Joey]
+8b2f462  PackageManagerService: Drop caches according to incremental version  [Arian]
 
 * lineage-sdk
-d156788  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
+4429bcc  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
+
+* lineage/hudson
+1975a27  hudson: Add Redmi 7 (onclite)  [Dhina17]
+6baa87a  hudson: Promote whyred to 17.1  [Sebastiano Barezzi]
+
+* lineage/mirror
+0057894  Updated to 28-May-2020 13:29 UTC  [Kevin F. Haggerty]
+
+* lineage/wiki
+63285aa  wiki: Add Redmi 7 (onclite)  [Dhina17]
+7fc2305  wiki: Promote whyred to 17.1  [Sebastiano Barezzi]
+
+* packages/apps/Settings
+c0e1761  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+====================
+     2020-05-28    
+====================
+
+* frameworks/base
+4dcd7d2  Implement hide gestural navigation hint bar [1/5]  [Jesse Chan]
+783a129  SystemUI: Do not convert application name to ISO-8859-15  [Han Wang]
 
 * lineage/hudson
 6378eee  hudson: Promote oneplus2 to 17.1  [Han Wang]
@@ -37,7 +56,6 @@ bafe5a0  Etar: Don't optimize out no-arg Fragment constructors  [LuK1337]
 3ffbcb7  Use correct app bar color  [Gitsaibot]
 
 * packages/apps/Settings
-6192cdb  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
 17d3991  Implement hide gestural navigation hint bar [2/5]  [Jesse Chan]
 
 * packages/overlays/Lineage
@@ -498,14 +516,3 @@ dd2f684  davinci: telephony: Import blobs  [Arian]
 
 * packages/apps/Settings
 6b7b8e9  Preserve icon for "manage space"  [Wang Han]
-====================
-     2020-05-22    
-====================
-
-* packages/apps/DeskClock
-f97987e  AOSP/DeskClock - Added SET_ALARM permission check  [Colin Marsch]
-8c6c374  AOSP/DeskClock - Updated to sdkVersion 29.  [Raman Tenneti]
-732cd5c  AOSP/DeskClock - Updated to sdkVersion 29.  [Raman Tenneti]
-
-* tools/repohooks
-bf70aed  hooks: require a Relnote field when changing current.txt  [Nick Anthony]
