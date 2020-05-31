@@ -1,26 +1,42 @@
 ====================
-     2020-05-30    
+     2020-05-31    
 ====================
 
+* bootable/recovery
+b7913a0  recovery: Map logical partitions before installation  [Erfan Abdi]
+
 * build/make
-44f2316  Allow overriding platform SPL  [dianlujitao]
-897147b  [DNM] Always use release-keys  [Arian]
+c18a570  Allow overriding platform SPL  [dianlujitao]
+748249c  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-04c3712  Label lineage platform SPL prop  [dianlujitao]
+bc76dc5  Label lineage platform SPL prop  [dianlujitao]
 
 * frameworks/av
-776c8ce  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+ecf7536  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
 
 * frameworks/base
-f9eeb5c  DeviceInfoUtils: Prefer lineage platform SPL  [dianlujitao]
-1f821ea  base: Redo expanded volume panel for 10.x  [HrX03]
-ac0db47  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
-3dfda99  SystemUI: get rid of build text in qs  [Joey]
-b431fe4  PackageManagerService: Drop caches according to incremental version  [Arian]
+822e84f  DeviceInfoUtils: Prefer lineage platform SPL  [dianlujitao]
+c008fe1  base: Redo expanded volume panel for 10.x  [HrX03]
+8b7089a  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
+ccad8ae  SystemUI: get rid of build text in qs  [Joey]
+fe8b498  PackageManagerService: Drop caches according to incremental version  [Arian]
+3527645  SystemUI: Fix for auto brightness icon being shown when disabled  [Michael W]
+e97d340  AlarmManagerService.setKernelTime: fix incorrect limit.  [Elliott Hughes]
+13433cc  Check user unlocked before write to /data/system_ce/0/snapshots  [Guo Li]
+7439406  Fix: Media volume bar indicates a wrong value  [Tetsutoki Shiozawa]
 
 * lineage-sdk
-c573ccb  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
+6f8ff3f  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
+
+* lineage/wiki
+74ff00c  wiki: Switch {discovery, kirin, mermaid, pioneer, voyager} to LineageOS recovery  [LuK1337]
+
+* packages/apps/Settings
+a47dd09  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+====================
+     2020-05-30    
+====================
 
 * lineage/hudson
 10ba3f4  Regenerate device dependency mappings  [razorloves]
@@ -34,7 +50,6 @@ c573ccb  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
 3db48af  Correct a typo  [Mathieu Schopfer]
 
 * packages/apps/Settings
-914e403  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
 2ac3f1e  Settings: Add notification log to search index  [LuK1337]
 7061cf3  Settings: Add notification log to 'App notifications' menu  [LuK1337]
 efa3b6e  Fix NPE if default supervisor is not defined  [Wang Han]
@@ -101,6 +116,19 @@ e952e58  Fix other lights when backlight uses SurfaceController API  [Pierre-Hug
 d649b1d  Implement hide gestural navigation hint bar [3/5]  [Jesse Chan]
 9d01848  lineage-sdk: add black theme for dark mode [4/4]  [Jesse Chan]
 d078210  sdk: add top exclusion to the back gesture  [Joey]
+
+* packages/apps/Gallery2
+a9a010a  Gallery2: Sort media by DATE_ADDED  [Michael Bestas]
+3a89bdf  Remove application/SDP from Gallery2's ACTION_VIEW and REVIEW filters.  [Fares Alhassen]
+398e6c6  Gallery2: Fix jni build warnings  [Luca Stefani]
+c2614ab  Fix warnings and set Werror flag to not let them happen again.  [Tomasz Wasilczyk]
+ff433d3  Cleanup warnings in jni.  [Dan Albert]
+cc7a2af  Use a NDK-compatible libjpeg  [Dan Willemsen]
+c5f0ee7  Revert "Switch to static NDK jpeg library"  [Michael Bestas]
+32be0c5  Revert "Use -Werror in packages/apps/Gallery2"  [Michael Bestas]
+9b25adf  Revert "Fix compiling warnings"  [Michael Bestas]
+72e7ad5  Fix Gallery2's bug: When using Gallery2 player, Device sometimes enters in deep sleep by itself during video playback.  [Dandan Sun]
+4951832  Remove reference to LOCAL_PACKAGE_OVERRIDES.  [Jaewoong Jung]
 
 * packages/apps/Settings
 cdd1d9d  Settings: add top exclusion to the back gesture  [Joey]
@@ -211,151 +239,3 @@ d07c5ef  Messaging: Contact Colors  [Blaise]
 a1d7de5  Fix style name DialogAlertDayNight  [George Chang]
 f48a631  Add dark mode support for AlertDialog  [George Chang]
 63a7284  Migrated Nfc to androidx  [Aurimas Liutikas]
-====================
-     2020-05-24    
-====================
-
-* external/bash
-5f857b9  bashrc: Use full current working directory path for root as well  [LuK1337]
-
-* frameworks/base
-9776943  Tuner: Remove most keys from blacklist  [Michael W]
-d359088b  TunerServiceImpl: Prevent Lineage keys from tuner reset  [Wang Han]
-71c8538  SystemUI: Prevent loop with display timeout  [Sam Mortimer]
-
-* lineage-sdk
-d4444dd  Automatic translation import  [Michael Bestas]
-
-* lineage/hudson
-cda7f91  hudson: Promote exynos7580 devices to 17.1  [Danny Wood]
-
-* lineage/mirror
-51a2a30  Updated to 23-May-2020 16:24 UTC  [Kevin F. Haggerty]
-
-* lineage/wiki
-71bee15  wiki: Promote exynos7580 devices to 17.1  [Danny Wood]
-de4d74a  wiki: Improve copy-partitions explanation  [LuK1337]
-
-* packages/apps/AudioFX
-9e0dcdc  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Bluetooth
-837b47f  Bluetooth string: removed id="sender" in bt_sm_2_1_  [Yinchu Chen]
-3aea9ee  translate="false" -> translatable="false"  [Edward Savage-Jones]
-
-* packages/apps/Camera2
-6a6983d  Camera2: Fix crash when app requesting intent has requested no permisions.  [Jayant Chowdhary]
-acc37c5  Dismiss keyguard when opening settings  [Felix]
-
-* packages/apps/Contacts
-6819879  Automatic translation import  [Michael Bestas]
-
-* packages/apps/DeskClock
-514167c  Import translations. DO NOT MERGE  [Bill Yi]
-66b38ff  Import translations. DO NOT MERGE  [Bill Yi]
-
-* packages/apps/Dialer
-5e8cb15  Automatic translation import  [Michael Bestas]
-
-* packages/apps/DocumentsUI
-7283811  Update message layout  [Tony Huang]
-ec12a92  Set sdk_version 'system_current'  [Jeongik Cha]
-
-* packages/apps/Eleven
-5946f79  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Etar
-dd179aa  Fix export to SD card (#701)  [joost]
-0da38bc  Change search provider url  [Gitsaibot]
-
-* packages/apps/FlipFlap
-33b579e  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Gallery2
-66132be  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Jelly
-00e64bf  Automatic translation import  [Michael Bestas]
-
-* packages/apps/LineageParts
-d86541b  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Nfc
-23eb46e  Fix style name DialogAlertDayNight  [George Chang]
-3b54e79  Add dark mode support for AlertDialog  [George Chang]
-
-* packages/apps/Recorder
-a2e9b40  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Settings
-176d2e1  hardwareinfo: Hide hardware revision if empty  [Arian]
-
-* packages/apps/SettingsIntelligence
-d260274  Normalize dynamic search result in Japanese  [Qiang Wu]
-62a65e6  Scrolling search results and autorotate cause crash  [Pingzhi Wang]
-
-* packages/apps/SetupWizard
-dd5da5e  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Snap
-31f7b4d  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Stk
-21e9e72  Remove deprecated unenforced permission from manifest.  [Amit Mahajan]
-8c0f0b5  Close Tone Dialog if the requested tone has already been stopped  [Yoshiaki Naka]
-2c8c003  Fix the incorrect title for DISPLAY TEXT dialog.  [Umashankar Godachi]
-b975311  Correct boundary check and add log.  [Malcolm Chen]
-0ef7cb5  Consider long system notification sound set by user  [Yoshiaki Naka]
-3265cb2  Add a missing boundary check of mStkContext.  [Malcolm Chen]
-8c69fe2  Remove PhoneConstants.SIM_ID_1  [Yoshiaki Naka]
-7624834  Replace CatLog.d(this) with CatLog.d(LOG_TAG) in SIM Toolkit classes  [Michael Bestas]
-7989dd9  Differentiate home screen from others implemented in the same activity  [Anna Suzuki]
-7b5e498  Simplify the mechanism of the pending activity and dialog  [Anna Suzuki]
-e6c1066  Improve the UI layout of the input screen  [Yoshiaki Naka]
-6eb2cf8  Migrate from the support library v4 to AndroidX  [Yoshiaki Naka]
-039632f  Cancel PLAY TONE command if SIM is removed or disabled  [Takanori Nakano]
-ff8bd6d  Operation code should be handled with the field 'what' of Message class  [Yoshiaki Naka]
-19f0079  Missing CatService shall not be treated as exception  [Takanori Nakano]
-6875cb3  Remove the task of SIM Toolkit when it becomes no longer needed  [Anna Suzuki]
-ecc3b4a  Apply DayNight theme to SIM Toolkit for Dark theme support  [Yoshiaki Naka]
-
-* packages/apps/Trebuchet
-30ebe3b  Automatic translation import  [Michael Bestas]
-
-* packages/apps/TvSettings
-76a9899  Import translations. DO NOT MERGE  [Bill Yi]
-3ab38d1  Update Bluetooth HCI snoop log preference per Q requirements.  [Andreea]
-0600bbf  Update connection status when plug/unplug ethernet cable.  [chenhg]
-7637351  Fix string formatting  [Colin Cross]
-dcdd09a  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Updater
-4f8f001  Automatic translation import  [Michael Bestas]
-
-* packages/inputmethods/LatinIME
-69a70a2  Automatic translation import  [Michael Bestas]
-
-* packages/modules/CaptivePortalLogin
-219e514  Fix that CaptivePortalApp cannot handle the SSL error of POST request  [lucaslin]
-23d42aa  Support RTL language in SSL error page of CaptivePortal app  [lucaslin]
-
-* packages/providers/DownloadProvider
-a9bf5d8  Fix "Invalid columns in request:" errors, when there are multiple columns  [Pierre-Hugues Husson]
-dfbf1ba  Switch from deprecated/removed JobInfo method.  [Kweku Adams]
-71f7dca  Trigger mediascan after a download is completed.  [Sudheer Shanka]
-
-* packages/resources/devicesettings
-fe24103  Automatic translation import  [Michael Bestas]
-
-* packages/services/BuiltInPrintService
-d2a0512  Restore MITM functionality  [Glade Diviney]
-9597252  Automatic translation import  [Michael Bestas]
-
-* vendor/lineage
-a7e400c  extract_utils: Fix vendor Android.bp creation with subdirectory  [Andreas Schneider]
-
-* vendor/qcom/opensource/fm-commonsys
-11158ac  Automatic translation import  [Michael Bestas]
-
-* vendor/xiaomi/davinci
-4622b96  updated from tree  [Arian]
