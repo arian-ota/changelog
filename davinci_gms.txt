@@ -1,39 +1,62 @@
 ====================
+     2020-06-01    
+====================
+
+* build/make
+652a4b1  Allow overriding platform SPL  [dianlujitao]
+15c3902  [DNM] Always use release-keys  [Arian]
+
+* device/lineage/sepolicy
+b9c0368  Label lineage platform SPL prop  [dianlujitao]
+
+* frameworks/av
+d6b823b  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+
+* frameworks/base
+efaebac  DeviceInfoUtils: Prefer lineage platform SPL  [dianlujitao]
+bc862e0  VolumeDialog: Redo expanded volume panel  [HrX03]
+94714fc  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
+ffc8ea1  SystemUI: get rid of build text in qs  [Joey]
+0fc0c08  PackageManagerService: Drop caches according to incremental version  [Arian]
+dcfcf1f  FODCircleView: Add support for pressed fod layer  [TheScarastic]
+0dcd7fe  Revert "FODCircleView: dispatch onPress to HAL only after dimming is applied"  [Demon000]
+969002a  MTP: Fix MTP SD card issue  [James Wei]
+
+* lineage-sdk
+b7a4869  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
+
+* lineage/hudson
+6370606  Revert "hudson: (Temp) Drop kuntao"  [Michael Bestas]
+
+* lineage/wiki
+c1ec9ad  wiki: Fix note content for oneplus2  [Han Wang]
+
+* packages/apps/Settings
+d988352  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+
+* vendor/lineage
+612c5a8  soong: Add flag for fod extension  [TheScarastic]
+====================
      2020-05-31    
 ====================
 
 * bootable/recovery
 b7913a0  recovery: Map logical partitions before installation  [Erfan Abdi]
 
-* build/make
-c18a570  Allow overriding platform SPL  [dianlujitao]
-748249c  [DNM] Always use release-keys  [Arian]
-
-* device/lineage/sepolicy
-bc76dc5  Label lineage platform SPL prop  [dianlujitao]
-
-* frameworks/av
-ecf7536  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
-
 * frameworks/base
-822e84f  DeviceInfoUtils: Prefer lineage platform SPL  [dianlujitao]
-c008fe1  base: Redo expanded volume panel for 10.x  [HrX03]
-8b7089a  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
-ccad8ae  SystemUI: get rid of build text in qs  [Joey]
-fe8b498  PackageManagerService: Drop caches according to incremental version  [Arian]
 3527645  SystemUI: Fix for auto brightness icon being shown when disabled  [Michael W]
 e97d340  AlarmManagerService.setKernelTime: fix incorrect limit.  [Elliott Hughes]
 13433cc  Check user unlocked before write to /data/system_ce/0/snapshots  [Guo Li]
 7439406  Fix: Media volume bar indicates a wrong value  [Tetsutoki Shiozawa]
 
-* lineage-sdk
-6f8ff3f  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
-
 * lineage/wiki
 74ff00c  wiki: Switch {discovery, kirin, mermaid, pioneer, voyager} to LineageOS recovery  [LuK1337]
 
-* packages/apps/Settings
-a47dd09  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+* packages/apps/Gallery2
+64c7e89  Bump API to match dependencies.  [Dan Albert]
+
+* packages/apps/Recorder
+8f08000  Recorder: Stop service after stopping casting  [Luca Stefani]
 ====================
      2020-05-30    
 ====================
@@ -112,6 +135,9 @@ a10c52e  SystemUI: support black theme for dark mode [1/4]  [Jesse Chan]
 9d42c48  SystemUI: Brightness slider: Always show the brightness icon  [Michael W]
 e952e58  Fix other lights when backlight uses SurfaceController API  [Pierre-Hugues Husson]
 
+* frameworks/native
+470dde6  surfaceflinger: Add support for extension lib  [Pierre-Hugues Husson]
+
 * lineage-sdk
 d649b1d  Implement hide gestural navigation hint bar [3/5]  [Jesse Chan]
 9d01848  lineage-sdk: add black theme for dark mode [4/4]  [Jesse Chan]
@@ -129,6 +155,9 @@ c5f0ee7  Revert "Switch to static NDK jpeg library"  [Michael Bestas]
 9b25adf  Revert "Fix compiling warnings"  [Michael Bestas]
 72e7ad5  Fix Gallery2's bug: When using Gallery2 player, Device sometimes enters in deep sleep by itself during video playback.  [Dandan Sun]
 4951832  Remove reference to LOCAL_PACKAGE_OVERRIDES.  [Jaewoong Jung]
+
+* packages/apps/LineageParts
+9f47c0b  LineageParts: Buttons: Add a summary for layout inversion  [Michael W]
 
 * packages/apps/Settings
 cdd1d9d  Settings: add top exclusion to the back gesture  [Joey]
@@ -174,68 +203,3 @@ b1d3f65  extract-utils: Fix usage for ETC files which need sub_dir  [Andreas Sch
 48917cc  Export qcom UM hal root to soong  [dianlujitao]
 deb2183  config: Build Etar  [LuK1337]
 f646fd7  Sort soong variables alphabetically  [dianlujitao]
-====================
-     2020-05-25    
-====================
-
-* android
-56491b1  android: Move to our own fork of timezonepicker  [Michael W]
-35fe670  Remove unused frameworks/opt/datetimepicker  [Neil Fuller]
-0dbc632  manifest: Replace Calendar with Etar  [LuK1337]
-
-* frameworks/base
-5a3899b  SystemUI: Fix alignment glitch with brightness mirror  [Umang96]
-955996a  Automatic translation import  [Michael Bestas]
-
-* lineage/hudson
-bfcfff6  hudson: add Samsung Galaxy Grand 2 (ms013g)  [Daniel Jacob Chittoor]
-
-* lineage/mirror
-ba03637  Updated to 24-May-2020 22:13 UTC  [Kevin F. Haggerty]
-3d5fbf7  Updated to 24-May-2020 13:56 UTC  [Kevin F. Haggerty]
-
-* lineage/wiki
-7b5b8d0  wiki: Update whyred informations  [Sebastiano Barezzi]
-c6e0278  wiki: add Samsung Galaxy Grand 2 (ms013g)  [Daniel Jacob Chittoor]
-
-* packages/apps/Contacts
-f4b3f27  Contacts: manually configure dark theme for list  [Jesse Chan]
-81ebd00  Contacts: allow framework to do dark theming automatically  [Jesse Chan]
-991dae2  AOSP/Contacts - Updated to sdkVersion 29.  [Raman Tenneti]
-
-* packages/apps/Dialer
-9c227fe   Failed to show hold call when user click swap and merge simultaneously  [rongmei.li]
-bdfb33d  Fix FATAL Exception in PostCallActivity  [Taesu Lee]
-746efe3  AOSP/Dialer - Fix improperly formatted resource string in Dialer across many languages.  [Raman Tenneti]
-2bfb4ff  Fix the issue that automatic mute state remains ON after adding VT call  [Sekine Yasuaki]
-d1341b4  Fix error case which session change request failed when pausing video  [Sekine Yasuaki]
-a0c5bdd  Fix for button flickering issue when video call screen rotates  [Hideki Ishii]
-e7523ef  Fix to update peer dimensions when video screen resumes foreground  [Sekine Yasuaki]
-03a214c  Fix issue that the hold label is not shown during remote video holding  [Oya Masafumi]
-452c34d  Fix preview image overlaps a call button during video call  [Shalika Pathirathna]
-64c1fc6  Dialer: allow framework to do dark theming automatically  [Jesse Chan]
-097bf00  Updated target SDK from 28 to 29.  [Raman Tenneti]
-
-* packages/apps/Etar
-e52b092  Etar: adaptive icon  [Asher Simonds]
-8a3e3cf  Say hello to Android.bp and farewell to Android.mk  [LuK1337]
-5188ba3  Fix retrieving resource ids after --rename-manifest-package (#705)  [luk1337]
-
-* packages/apps/Messaging
-a59d697  Import translations. DO NOT MERGE  [Bill Yi]
-bdacda4  Rescheduling pending messages after outside window failure  [Taesu Lee]
-398ad51  Fix NPE on MultiConversationNotificationState  [Taesu Lee]
-e3485c1  Hide APN prefs if platform APIs are used  [Taesu Lee]
-2af21a4  Use ic_add_white for consistency instead  [Taesu Lee]
-f730ce2  Fix to show APN prefs correctly  [Taesu Lee]
-446e3a7  Fix NPE  [Taesu Lee]
-7e2d9a0  Handle delivered messages as completed messages  [Taesu Lee]
-d07c5ef  Messaging: Contact Colors  [Blaise]
-
-* packages/apps/Settings
-36fff84  Automatic translation import  [Michael Bestas]
-
-* vendor/nxp/opensource/commonsys/packages/apps/Nfc
-a1d7de5  Fix style name DialogAlertDayNight  [George Chang]
-f48a631  Add dark mode support for AlertDialog  [George Chang]
-63a7284  Migrated Nfc to androidx  [Aurimas Liutikas]
