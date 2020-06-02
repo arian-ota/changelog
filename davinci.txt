@@ -2,28 +2,10 @@
      2020-06-01    
 ====================
 
-* build/make
-3f44ab6  Allow overriding platform SPL  [dianlujitao]
-d8c499a  [DNM] Always use release-keys  [Arian]
-
-* device/lineage/sepolicy
-7511311  Label lineage platform SPL prop  [dianlujitao]
-
-* frameworks/av
-4711915  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
-
 * frameworks/base
-5668236  DeviceInfoUtils: Prefer lineage platform SPL  [dianlujitao]
-f2fb204  VolumeDialog: Redo expanded volume panel  [HrX03]
-987f61b  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
-b52a047  SystemUI: get rid of build text in qs  [Joey]
-79f5e1a  PackageManagerService: Drop caches according to incremental version  [Arian]
 dcfcf1f  FODCircleView: Add support for pressed fod layer  [TheScarastic]
 0dcd7fe  Revert "FODCircleView: dispatch onPress to HAL only after dimming is applied"  [Demon000]
 969002a  MTP: Fix MTP SD card issue  [James Wei]
-
-* lineage-sdk
-1f1cec1  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
 
 * lineage/hudson
 6370606  Revert "hudson: (Temp) Drop kuntao"  [Michael Bestas]
@@ -31,8 +13,8 @@ dcfcf1f  FODCircleView: Add support for pressed fod layer  [TheScarastic]
 * lineage/wiki
 c1ec9ad  wiki: Fix note content for oneplus2  [Han Wang]
 
-* packages/apps/Settings
-8e65783  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+* packages/apps/Eleven
+c0c4647  Eleven: Use constant notification id  [LuK1337]
 
 * vendor/lineage
 612c5a8  soong: Add flag for fod extension  [TheScarastic]
@@ -155,6 +137,9 @@ c5f0ee7  Revert "Switch to static NDK jpeg library"  [Michael Bestas]
 9b25adf  Revert "Fix compiling warnings"  [Michael Bestas]
 72e7ad5  Fix Gallery2's bug: When using Gallery2 player, Device sometimes enters in deep sleep by itself during video playback.  [Dandan Sun]
 4951832  Remove reference to LOCAL_PACKAGE_OVERRIDES.  [Jaewoong Jung]
+
+* packages/apps/LineageParts
+9f47c0b  LineageParts: Buttons: Add a summary for layout inversion  [Michael W]
 
 * packages/apps/Settings
 cdd1d9d  Settings: add top exclusion to the back gesture  [Joey]
