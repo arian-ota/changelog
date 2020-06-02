@@ -2,28 +2,10 @@
      2020-06-01    
 ====================
 
-* build/make
-652a4b1  Allow overriding platform SPL  [dianlujitao]
-15c3902  [DNM] Always use release-keys  [Arian]
-
-* device/lineage/sepolicy
-b9c0368  Label lineage platform SPL prop  [dianlujitao]
-
-* frameworks/av
-d6b823b  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
-
 * frameworks/base
-efaebac  DeviceInfoUtils: Prefer lineage platform SPL  [dianlujitao]
-bc862e0  VolumeDialog: Redo expanded volume panel  [HrX03]
-94714fc  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
-ffc8ea1  SystemUI: get rid of build text in qs  [Joey]
-0fc0c08  PackageManagerService: Drop caches according to incremental version  [Arian]
 dcfcf1f  FODCircleView: Add support for pressed fod layer  [TheScarastic]
 0dcd7fe  Revert "FODCircleView: dispatch onPress to HAL only after dimming is applied"  [Demon000]
 969002a  MTP: Fix MTP SD card issue  [James Wei]
-
-* lineage-sdk
-b7a4869  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
 
 * lineage/hudson
 6370606  Revert "hudson: (Temp) Drop kuntao"  [Michael Bestas]
@@ -31,8 +13,8 @@ b7a4869  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
 * lineage/wiki
 c1ec9ad  wiki: Fix note content for oneplus2  [Han Wang]
 
-* packages/apps/Settings
-d988352  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+* packages/apps/Eleven
+c0c4647  Eleven: Use constant notification id  [LuK1337]
 
 * vendor/lineage
 612c5a8  soong: Add flag for fod extension  [TheScarastic]
