@@ -1,4 +1,28 @@
 ====================
+     2020-06-02    
+====================
+
+* android
+2cb0f81  manifest: Switch to our external/libtextclassifier fork  [Han Wang]
+
+* frameworks/base
+9edf5fe  SystemUI: Don't forcefully convert wallpaper to SRGB  [Luca Stefani]
+db6a24b  Implement quick QS brightness slider [1/3]  [Jesse Chan]
+
+* lineage-sdk
+343d1e5  Implement quick QS brightness slider [3/3]  [Jesse Chan]
+
+* packages/apps/LineageParts
+1522f15  Implement quick QS brightness slider [2/3]  [Jesse Chan]
+
+* packages/apps/Snap
+e5c1bf6  Snap: remove duplicate pause button  [Alexander Martinz]
+a50c249  CaptureUI: handle secure capture when reviewing pictures  [Alexander Martinz]
+
+* packages/apps/Trebuchet
+4447a63  Trebuchet: Add 5x6, 5x7 and 6x6 default workspaces  [dwardo]
+2da8bf1  Trebuchet: fix protected apps behaviour  [Joey]
+====================
      2020-06-01    
 ====================
 
@@ -147,41 +171,3 @@ cdd1d9d  Settings: add top exclusion to the back gesture  [Joey]
 
 * packages/overlays/Lineage
 33d2e26  overlays: Add black theme for dark mode [3/4]  [Marko Man]
-====================
-     2020-05-26    
-====================
-
-* frameworks/base
-5ceea4f  translate="false" -> translatable="false"  [Edward Savage-Jones]
-18f7c02  Add Light/Dark theme for bugreport warning dialog  [Abhijeet Kaur]
-287e565  Fix bugreport warning dialog  [Abhijeet Kaur]
-
-* frameworks/native
-69a8520  sf: Exclude VDS use of HWC on non-UM platforms  [dianlujitao]
-
-* lineage/wiki
-b35a0e5  wiki: Add 'connect to wifi' before oem unlock on gts4lv  [LuK1337]
-
-* packages/apps/Etar
-27cafb4  Etar: Modify about page  [Michael Bestas]
-f3d2170  Etar: Rename package to org.lineageos.etar  [Michael Bestas]
-547aeae  Etar: Switch back to AOSP application name  [Michael Bestas]
-
-* packages/apps/Settings
-44c1904  Fixes ApnEditor not restoring previous UI  [Lee Chou]
-8954cee  Fix volume slider color is not correct  [Raff Tsai]
-89fdc6e  translate="false" -> translatable="false"  [Niclas Rokicki]
-
-* packages/inputmethods/LatinIME
-788fe07  Support polytonic Greek diacritics in the Greek keyboard  [Alex Henrie]
-e5da9ac  Implement text entry key API for accessibility services in AOSP Keyboard  [ryanlwlin]
-030d52f  Create display context when switching IME to new display for AOSP IME  [lumark]
-863298b  LatinIME: Update key_styles_currency euro lists #2  [Alexander K]
-07c937e  LatinIME: Fix back-arrow finishing activity  [Michael W]
-50ae607  LatinIME: Remove dividers everywhere  [Michael W]
-
-* vendor/lineage
-b1d3f65  extract-utils: Fix usage for ETC files which need sub_dir  [Andreas Schneider]
-48917cc  Export qcom UM hal root to soong  [dianlujitao]
-deb2183  config: Build Etar  [LuK1337]
-f646fd7  Sort soong variables alphabetically  [dianlujitao]
