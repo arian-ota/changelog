@@ -1,4 +1,10 @@
 ====================
+     2020-06-03    
+====================
+
+* packages/apps/Trebuchet
+b0838b2  Trebuchet: only allow hidden apps when no secure keyguard is set  [Joey]
+====================
      2020-06-02    
 ====================
 
@@ -15,6 +21,9 @@ db6a24b  Implement quick QS brightness slider [1/3]  [Jesse Chan]
 * packages/apps/LineageParts
 1522f15  Implement quick QS brightness slider [2/3]  [Jesse Chan]
 
+* packages/apps/SetupWizard
+297b16f  tests: Add privapp permissions whitelist  [Chirayu Desai]
+
 * packages/apps/Snap
 e5c1bf6  Snap: remove duplicate pause button  [Alexander Martinz]
 a50c249  CaptureUI: handle secure capture when reviewing pictures  [Alexander Martinz]
@@ -22,6 +31,9 @@ a50c249  CaptureUI: handle secure capture when reviewing pictures  [Alexander Ma
 * packages/apps/Trebuchet
 4447a63  Trebuchet: Add 5x6, 5x7 and 6x6 default workspaces  [dwardo]
 2da8bf1  Trebuchet: fix protected apps behaviour  [Joey]
+
+* vendor/lineage
+af32ee6  partner_gms: Support TV GMS  [Nolen Johnson]
 ====================
      2020-06-01    
 ====================
@@ -128,46 +140,3 @@ bafe5a0  Etar: Don't optimize out no-arg Fragment constructors  [LuK1337]
 
 * vendor/lineage
 3e7d232  Implement hide gestural navigation hint bar [5/5]  [Jesse Chan]
-====================
-     2020-05-27    
-====================
-
-* build/make
-9435a22  releasetools: do not remove dynamic partitions in system-only builds  [Peter Cai]
-
-* frameworks/base
-a10c52e  SystemUI: support black theme for dark mode [1/4]  [Jesse Chan]
-195653a  SystemUI: add top exclusion to the back gesture  [Joey]
-9d42c48  SystemUI: Brightness slider: Always show the brightness icon  [Michael W]
-e952e58  Fix other lights when backlight uses SurfaceController API  [Pierre-Hugues Husson]
-
-* frameworks/native
-470dde6  surfaceflinger: Add support for extension lib  [Pierre-Hugues Husson]
-
-* lineage-sdk
-d649b1d  Implement hide gestural navigation hint bar [3/5]  [Jesse Chan]
-9d01848  lineage-sdk: add black theme for dark mode [4/4]  [Jesse Chan]
-d078210  sdk: add top exclusion to the back gesture  [Joey]
-
-* packages/apps/Gallery2
-a9a010a  Gallery2: Sort media by DATE_ADDED  [Michael Bestas]
-3a89bdf  Remove application/SDP from Gallery2's ACTION_VIEW and REVIEW filters.  [Fares Alhassen]
-398e6c6  Gallery2: Fix jni build warnings  [Luca Stefani]
-c2614ab  Fix warnings and set Werror flag to not let them happen again.  [Tomasz Wasilczyk]
-ff433d3  Cleanup warnings in jni.  [Dan Albert]
-cc7a2af  Use a NDK-compatible libjpeg  [Dan Willemsen]
-c5f0ee7  Revert "Switch to static NDK jpeg library"  [Michael Bestas]
-32be0c5  Revert "Use -Werror in packages/apps/Gallery2"  [Michael Bestas]
-9b25adf  Revert "Fix compiling warnings"  [Michael Bestas]
-72e7ad5  Fix Gallery2's bug: When using Gallery2 player, Device sometimes enters in deep sleep by itself during video playback.  [Dandan Sun]
-4951832  Remove reference to LOCAL_PACKAGE_OVERRIDES.  [Jaewoong Jung]
-
-* packages/apps/LineageParts
-9f47c0b  LineageParts: Buttons: Add a summary for layout inversion  [Michael W]
-
-* packages/apps/Settings
-cdd1d9d  Settings: add top exclusion to the back gesture  [Joey]
-9bf6961  Settings: support black theme for dark mode [2/4]  [Jesse Chan]
-
-* packages/overlays/Lineage
-33d2e26  overlays: Add black theme for dark mode [3/4]  [Marko Man]
