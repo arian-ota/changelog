@@ -1,4 +1,17 @@
 ====================
+     2020-06-04    
+====================
+
+* frameworks/base
+2dc4ad0  SystemUI: QQS brightness: get container padding directly  [Jesse Chan]
+
+* lineage/wiki
+e92efaf  wiki: Fix bootloader unlocking info for jasmine_sprout  [Davide Garberi]
+dab8fc1  wiki: Remove custom TWRP for crackling  [115ek]
+
+* vendor/gms
+4d85b71  CalendarGoogle: Overwrite Etar  [Arian]
+====================
      2020-06-03    
 ====================
 
@@ -112,31 +125,3 @@ d3a50ee  vendor/lineage: emulator should have mobile config  [Sam Mortimer]
 * lineage/wiki
 63285aa  wiki: Add Redmi 7 (onclite)  [Dhina17]
 7fc2305  wiki: Promote whyred to 17.1  [Sebastiano Barezzi]
-====================
-     2020-05-28    
-====================
-
-* frameworks/base
-4dcd7d2  Implement hide gestural navigation hint bar [1/5]  [Jesse Chan]
-783a129  SystemUI: Do not convert application name to ISO-8859-15  [Han Wang]
-
-* lineage/hudson
-6378eee  hudson: Promote oneplus2 to 17.1  [Han Wang]
-
-* lineage/wiki
-85f6eaa  wiki: Promote oneplus2 to 17.1  [Han Wang]
-
-* packages/apps/Etar
-bafe5a0  Etar: Don't optimize out no-arg Fragment constructors  [LuK1337]
-5a76d6d  Etar: Enable usage of local proguard.flags file  [LuK1337]
-7c9c8da  Accept "application/ics" in ImportActivity intent-filter  [Tom Hacohen]
-3ffbcb7  Use correct app bar color  [Gitsaibot]
-
-* packages/apps/Settings
-17d3991  Implement hide gestural navigation hint bar [2/5]  [Jesse Chan]
-
-* packages/overlays/Lineage
-35fb8ba  Implement hide gestural navigation hint bar [4/5]  [Jesse Chan]
-
-* vendor/lineage
-3e7d232  Implement hide gestural navigation hint bar [5/5]  [Jesse Chan]
