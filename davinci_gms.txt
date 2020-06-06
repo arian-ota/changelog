@@ -1,4 +1,16 @@
 ====================
+     2020-06-05    
+====================
+
+* lineage/hudson
+446a12f  [TMP] hudson: Move all versions to weeklies  [Nolen Johnson]
+
+* lineage/mirror
+5d9d40c  Updated to 04-Jun-2020 13:37 UTC  [Kevin F. Haggerty]
+
+* packages/apps/Dialer
+05afe35  Refactor call recording to use MediaProvider.  [Danny Baumann]
+====================
      2020-06-04    
 ====================
 
@@ -111,17 +123,3 @@ efa3b6e  Fix NPE if default supervisor is not defined  [Wang Han]
 * vendor/lineage
 a24144f  kernel: Add bison and flex to build environment  [dianlujitao]
 d3a50ee  vendor/lineage: emulator should have mobile config  [Sam Mortimer]
-====================
-     2020-05-29    
-====================
-
-* lineage/hudson
-1975a27  hudson: Add Redmi 7 (onclite)  [Dhina17]
-6baa87a  hudson: Promote whyred to 17.1  [Sebastiano Barezzi]
-
-* lineage/mirror
-0057894  Updated to 28-May-2020 13:29 UTC  [Kevin F. Haggerty]
-
-* lineage/wiki
-63285aa  wiki: Add Redmi 7 (onclite)  [Dhina17]
-7fc2305  wiki: Promote whyred to 17.1  [Sebastiano Barezzi]
