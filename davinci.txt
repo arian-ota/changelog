@@ -1,4 +1,16 @@
 ====================
+     2020-06-06    
+====================
+
+* frameworks/base
+63fc6d8  SystemUI: Make clock truly invisible  [Michael W]
+
+* lineage/wiki
+a66bfc0  wiki: Avoid showing `adb reboot` on last step of install/upgrade page on A/B  [LuK1337]
+
+* packages/apps/Dialer
+8392b6a  Iterate old recordings properly when migrating call recording data.  [Danny Baumann]
+====================
      2020-06-05    
 ====================
 
@@ -27,6 +39,49 @@ dab8fc1  wiki: Remove custom TWRP for crackling  [115ek]
      2020-06-03    
 ====================
 
+* android
+9ff371a  manifest: Track additional projects introduced in android-10.0.0_r37  [Kevin F. Haggerty]
+4426c2f  manifest: android-10.0.0_r35 -> android-10.0.0_r37  [Kevin F. Haggerty]
+
+* bootable/recovery
+165d84b  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+
+* build/make
+29615bd  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+
+* build/soong
+418b5a6  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+
+* external/libhevc
+9bd2ff8  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+
+* frameworks/av
+472ff18  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+
+* frameworks/native
+9b6e5d5  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+
+* frameworks/opt/net/wifi
+ef8b1a6  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+
+* frameworks/opt/telephony
+837ce29  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+
+* hardware/interfaces
+50186f1  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+
+* hardware/knowles/athletico/sound_trigger_hal
+7f994b2  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+
+* hardware/nxp/nfc
+40b2156  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+
+* hardware/qcom/gps
+f094c78  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+
+* hardware/qcom/sdm845/display
+bf445fa  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+
 * packages/apps/Trebuchet
 b0838b2  Trebuchet: only allow hidden apps when no secure keyguard is set  [Joey]
 ====================
@@ -35,6 +90,15 @@ b0838b2  Trebuchet: only allow hidden apps when no secure keyguard is set  [Joey
 
 * android
 2cb0f81  manifest: Switch to our external/libtextclassifier fork  [Han Wang]
+
+* art
+412fe31  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+
+* development
+3818034  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+
+* external/ppp
+932c8ea  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
 
 * frameworks/base
 9edf5fe  SystemUI: Don't forcefully convert wallpaper to SRGB  [Luca Stefani]
@@ -63,6 +127,9 @@ af32ee6  partner_gms: Support TV GMS  [Nolen Johnson]
      2020-06-01    
 ====================
 
+* external/selinux
+5137b7d  Don't require seinfo for privapps  [Ashwini Oruganti]
+
 * frameworks/base
 dcfcf1f  FODCircleView: Add support for pressed fod layer  [TheScarastic]
 0dcd7fe  Revert "FODCircleView: dispatch onPress to HAL only after dimming is applied"  [Demon000]
@@ -76,6 +143,9 @@ c1ec9ad  wiki: Fix note content for oneplus2  [Han Wang]
 
 * packages/apps/Eleven
 c0c4647  Eleven: Use constant notification id  [LuK1337]
+
+* packages/apps/Gallery2
+64c7e89  Bump API to match dependencies.  [Dan Albert]
 
 * vendor/lineage
 612c5a8  soong: Add flag for fod extension  [TheScarastic]
@@ -95,31 +165,5 @@ e97d340  AlarmManagerService.setKernelTime: fix incorrect limit.  [Elliott Hughe
 * lineage/wiki
 74ff00c  wiki: Switch {discovery, kirin, mermaid, pioneer, voyager} to LineageOS recovery  [LuK1337]
 
-* packages/apps/Gallery2
-64c7e89  Bump API to match dependencies.  [Dan Albert]
-
 * packages/apps/Recorder
 8f08000  Recorder: Stop service after stopping casting  [Luca Stefani]
-====================
-     2020-05-30    
-====================
-
-* lineage/hudson
-10ba3f4  Regenerate device dependency mappings  [razorloves]
-
-* lineage/wiki
-419c294  wiki: update ms013g informations  [Daniel Jacob Chittoor]
-
-* packages/apps/Etar
-5673a7e  Strike through title of canceled events in all views (#278)  [Mathieu Schopfer]
-5d071c5  Add `status` field to `Event` class (#71 and #201)  [Mathieu Schopfer]
-3db48af  Correct a typo  [Mathieu Schopfer]
-
-* packages/apps/Settings
-2ac3f1e  Settings: Add notification log to search index  [LuK1337]
-7061cf3  Settings: Add notification log to 'App notifications' menu  [LuK1337]
-efa3b6e  Fix NPE if default supervisor is not defined  [Wang Han]
-
-* vendor/lineage
-a24144f  kernel: Add bison and flex to build environment  [dianlujitao]
-d3a50ee  vendor/lineage: emulator should have mobile config  [Sam Mortimer]
