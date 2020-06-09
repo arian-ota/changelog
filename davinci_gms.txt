@@ -1,4 +1,43 @@
 ====================
+     2020-06-08    
+====================
+
+* frameworks/base
+1d47216  SystemUI: Fix pink progress animation color in expanded Wi-Fi tile  [Arne Coucheron]
+
+* kernel/xiaomi/sm6150
+7b3af46  ARM64: configs: Disable sm6150/sm8150 configs  [Arian]
+88c6afb  ARM64: configs: Disable some debug options  [Demon000]
+9c885c3  ARM64: configs: Disable unused cpu governors  [Demon000]
+c1e0db1  ARM64: configs: Disable zram  [Michael Bestas]
+e6aad29  ARM64: configs: Enable device specific configs for davinci  [Arian]
+9d6d898  ARM64: configs: Enable all sm6150auto techpack options  [luk1337]
+ed140b4  ARM64: configs: Enable CONFIG_QCA_CLD_WLAN  [Park Ju Hyung]
+b8dfca6  ARM64: configs: Enable CONFIG_BUILD_ARM64_DT_OVERLAY  [Jackeagle]
+2adcdaa  ARM64: configs: davinci: Enable CONFIG_ION_SYSTEM_HEAP  [Jorge E. Moreira]
+f96d87f  ARM64: configs: Enable power efficient workqueues  [Demon000]
+300fb7b  ARM64: configs: Disable suspend sync  [Demon Singur]
+7a2fe4e  ARM64: configs: Turn on VDSO  [Mark Salyzyn]
+c714d84  ARM64: configs: CONFIG_HZ_300=y  [Wei Wang]
+73434ea  ARM64: configs: Set default readahead to 2048KB  [Wei Wang]
+2ee61d1  ARM64: configs: Disable unused ecrypt fs  [Vol Zhdanov]
+eb1a9d4  ARM64: configs: Enable JUMP_LABEL  [joshuous]
+39b283c  ARM64: configs: Enable CONFIG_DETECT_HUNG_TASK  [Hridya Valsaraju]
+a966e8d  ARM64: configs: Enable various HID drivers  [Patrick Tjin]
+5fbe77f  ARM64: configs: Disable SCHED_AUTOGROUP  [John Dias]
+98580db  ARM64: configs: Disable MSM_11AD  [Thierry Strudel]
+79dfce5  ARM64: configs: Remove remaining unused configs  [Demon Singur]
+0e386ab  ARM64: configs: Remove unused kernel config  [Wei Wang]
+8924233  ARM64: configs: Remove various debug configs  [Thierry Strudel]
+f42ca51  ARM64: configs: Clean up davinci_defconfig  [Patrick Tjin]
+
+* lineage/mirror
+4ac319b  Updated to 07-Jun-2020 21:21 UTC  [Kevin F. Haggerty]
+
+* packages/apps/DeskClock
+c3450b4  DeskClock: Modernize timer_setup_time look  [LuK1337]
+5d6523a  DeskClock: Update drawables  [LuK1337]
+====================
      2020-06-07    
 ====================
 
@@ -515,9 +554,6 @@ dab8fc1  wiki: Remove custom TWRP for crackling  [115ek]
 * frameworks/opt/telephony
 837ce29  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
 
-* hardware/nxp/nfc
-40b2156  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
-
 * hardware/qcom/gps
 f094c78  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
 
@@ -535,6 +571,9 @@ b0838b2  Trebuchet: only allow hidden apps when no secure keyguard is set  [Joey
 
 * packages/apps/TvSettings
 938b530  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+
+* packages/inputmethods/LatinIME
+448651d  Update Bulgarian wordlist  [Eloi Carracedo]
 
 * platform_testing
 137136f  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
@@ -594,6 +633,9 @@ ef8b1a6  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-
 * hardware/knowles/athletico/sound_trigger_hal
 7f994b2  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
 
+* hardware/nxp/nfc
+40b2156  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+
 * lineage-sdk
 343d1e5  Implement quick QS brightness slider [3/3]  [Jesse Chan]
 
@@ -614,6 +656,9 @@ cf38327  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-
 
 * packages/apps/EmergencyInfo
 f2bca0b  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+
+* packages/apps/Gallery2
+fed020f  Revert "Gallery2: Sort media by DATE_ADDED"  [Michael Bestas]
 
 * packages/apps/KeyChain
 0f9918d  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
@@ -685,26 +730,3 @@ f3cc53f  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-
 
 * vendor/lineage
 af32ee6  partner_gms: Support TV GMS  [Nolen Johnson]
-====================
-     2020-06-01    
-====================
-
-* external/selinux
-5137b7d  Don't require seinfo for privapps  [Ashwini Oruganti]
-
-* frameworks/base
-dcfcf1f  FODCircleView: Add support for pressed fod layer  [TheScarastic]
-0dcd7fe  Revert "FODCircleView: dispatch onPress to HAL only after dimming is applied"  [Demon000]
-969002a  MTP: Fix MTP SD card issue  [James Wei]
-
-* lineage/hudson
-6370606  Revert "hudson: (Temp) Drop kuntao"  [Michael Bestas]
-
-* lineage/wiki
-c1ec9ad  wiki: Fix note content for oneplus2  [Han Wang]
-
-* packages/apps/Eleven
-c0c4647  Eleven: Use constant notification id  [LuK1337]
-
-* vendor/lineage
-612c5a8  soong: Add flag for fod extension  [TheScarastic]
