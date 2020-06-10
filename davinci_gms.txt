@@ -1,6 +1,40 @@
 ====================
+     2020-06-09    
+====================
+
+* bootable/recovery
+d1412e3  recovery: Print the active slot  [Richard Hansen]
+33aec6c  recovery: Display recovery version  [Richard Hansen]
+f2d7204  recovery: Draw the help message below the menu on non-touch devices  [Richard Hansen]
+8b7db0b  recovery: Clarify help text  [Richard Hansen]
+4832e2f  recovery: Set the INFO color to the recovery/fastboot light color  [Richard Hansen]
+
+* frameworks/base
+ac2040a  SystemUI: Long press Caffeine for infinite duration  [chillger]
+1e64ed2  SystemUI: Resolve faulty keyguard clock logs outputs  [Adrian DC]
+aa9fbad  SystemUI: Adapt screenshot sound to ringer modes  [Ashwin R C]
+d10203d  [BACKPORT] Config of LTE signal strength default value remove SNR  [SongFerngWang]
+
+* lineage/hudson
+26c61e7  hudson: Add moto8916 devices  [althafvly]
+
+* lineage/wiki
+99aaef7  wiki: devices: Promote osprey,merlin,lux,surnia,harpia to 17.1  [althafvly]
+
+* packages/providers/MediaProvider
+7fb12a5  MediaProvider: Fix sorting by DATE_TAKEN  [BeYkeRYkt]
+
+* system/sepolicy
+00d5609  Export missing audio volume properties  [Michael Bestas]
+
+* vendor/lineage
+e82e08a  Update Bulgarian dictionary  [Eloi Carracedo]
+====================
      2020-06-08    
 ====================
+
+* device/lineage/atv
+04271e2  atv: Import vendor/google/atv  [Nolen Johnson]
 
 * frameworks/base
 1d47216  SystemUI: Fix pink progress animation color in expanded Wi-Fi tile  [Arne Coucheron]
@@ -52,7 +86,6 @@ a0c60f6  releasetools: Skip on empty care_map.  [Tao Bao]
 9b4482b  releasetools: GetCareMap supports non-sparse image.  [Tao Bao]
 
 * device/lineage/atv
-04271e2  atv: Import vendor/google/atv  [Nolen Johnson]
 79a6b1d  Add Lineage ATV init file  [Aaron Kling]
 
 * device/xiaomi/davinci
@@ -551,51 +584,6 @@ dab8fc1  wiki: Remove custom TWRP for crackling  [115ek]
 9ff371a  manifest: Track additional projects introduced in android-10.0.0_r37  [Kevin F. Haggerty]
 4426c2f  manifest: android-10.0.0_r35 -> android-10.0.0_r37  [Kevin F. Haggerty]
 
-* frameworks/opt/telephony
-837ce29  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
-
-* hardware/qcom/gps
-f094c78  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
-
-* hardware/qcom/sdm845/display
-bf445fa  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
-
-* packages/apps/HTMLViewer
-ae62819  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
-
-* packages/apps/Settings
-829b1f7  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
-
-* packages/apps/Trebuchet
-b0838b2  Trebuchet: only allow hidden apps when no secure keyguard is set  [Joey]
-
-* packages/apps/TvSettings
-938b530  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
-
-* packages/inputmethods/LatinIME
-448651d  Update Bulgarian wordlist  [Eloi Carracedo]
-
-* platform_testing
-137136f  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
-
-* system/extras
-7c82259  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
-
-* system/sepolicy
-b4300ee  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
-
-* system/vold
-5f01274  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
-====================
-     2020-06-02    
-====================
-
-* android
-2cb0f81  manifest: Switch to our external/libtextclassifier fork  [Han Wang]
-
-* art
-412fe31  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
-
 * bootable/recovery
 165d84b  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
 
@@ -605,27 +593,20 @@ b4300ee  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-
 * build/soong
 418b5a6  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
 
-* development
-3818034  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
-
 * external/libhevc
 9bd2ff8  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
 
-* external/ppp
-932c8ea  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
-
 * frameworks/av
 472ff18  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
-
-* frameworks/base
-9edf5fe  SystemUI: Don't forcefully convert wallpaper to SRGB  [Luca Stefani]
-db6a24b  Implement quick QS brightness slider [1/3]  [Jesse Chan]
 
 * frameworks/native
 9b6e5d5  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
 
 * frameworks/opt/net/wifi
 ef8b1a6  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+
+* frameworks/opt/telephony
+837ce29  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
 
 * hardware/interfaces
 50186f1  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
@@ -636,14 +617,14 @@ ef8b1a6  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-
 * hardware/nxp/nfc
 40b2156  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
 
-* lineage-sdk
-343d1e5  Implement quick QS brightness slider [3/3]  [Jesse Chan]
+* hardware/qcom/gps
+f094c78  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+
+* hardware/qcom/sdm845/display
+bf445fa  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
 
 * packages/apps/Bluetooth
 cf38327  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
-
-* packages/apps/CarrierConfig
-36d8dc1  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
 
 * packages/apps/CellBroadcastReceiver
 2f15b11  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
@@ -657,20 +638,14 @@ cf38327  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-
 * packages/apps/EmergencyInfo
 f2bca0b  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
 
-* packages/apps/Gallery2
-fed020f  Revert "Gallery2: Sort media by DATE_ADDED"  [Michael Bestas]
+* packages/apps/HTMLViewer
+ae62819  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
 
 * packages/apps/KeyChain
 0f9918d  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
 
-* packages/apps/LineageParts
-1522f15  Implement quick QS brightness slider [2/3]  [Jesse Chan]
-
 * packages/apps/Nfc
 4e01754  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
-
-* packages/apps/PermissionController
-40c5018  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
 
 * packages/apps/PhoneCommon
 0d98949  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
@@ -678,12 +653,8 @@ fed020f  Revert "Gallery2: Sort media by DATE_ADDED"  [Michael Bestas]
 * packages/apps/SecureElement
 35a969d  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
 
-* packages/apps/SetupWizard
-297b16f  tests: Add privapp permissions whitelist  [Chirayu Desai]
-
-* packages/apps/Snap
-e5c1bf6  Snap: remove duplicate pause button  [Alexander Martinz]
-a50c249  CaptureUI: handle secure capture when reviewing pictures  [Alexander Martinz]
+* packages/apps/Settings
+829b1f7  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
 
 * packages/apps/StorageManager
 15c9644  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
@@ -695,8 +666,13 @@ e63bb35  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-
 2928915  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
 
 * packages/apps/Trebuchet
-4447a63  Trebuchet: Add 5x6, 5x7 and 6x6 default workspaces  [dwardo]
-2da8bf1  Trebuchet: fix protected apps behaviour  [Joey]
+b0838b2  Trebuchet: only allow hidden apps when no secure keyguard is set  [Joey]
+
+* packages/apps/TvSettings
+938b530  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+
+* packages/inputmethods/LatinIME
+448651d  Update Bulgarian wordlist  [Eloi Carracedo]
 
 * packages/modules/CaptivePortalLogin
 ec980eb  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
@@ -722,11 +698,20 @@ f721be9  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-
 * packages/wallpapers/LivePicker
 0338564  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
 
+* platform_testing
+137136f  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+
 * system/bt
 f3cc53f  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
 
 * system/core
 8715e68  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
 
-* vendor/lineage
-af32ee6  partner_gms: Support TV GMS  [Nolen Johnson]
+* system/extras
+7c82259  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+
+* system/sepolicy
+b4300ee  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
+
+* system/vold
+5f01274  Merge tag 'android-10.0.0_r37' into staging/lineage-17.1_merge-android-10.0.0_r37  [Kevin F. Haggerty]
