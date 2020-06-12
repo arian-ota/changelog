@@ -1,4 +1,116 @@
 ====================
+     2020-06-11    
+====================
+
+* device/xiaomi/davinci
+49f89b5  davinci: rootdir: Set default thermal mode to evaluation  [TheScarastic]
+b8b6c56  davinci: fod: Set nit value on sysfs notification  [Demon000]
+9f3646c  davinci: fod: Frop 
+ from logs  [Demon000]
+2928f08  davinci: fod: Add surfaceflinger extension lib  [TheScarastic]
+
+* frameworks/base
+f730abf  AODTile: Rewrite AOD setting handling  [Bruno Martins]
+230e19d  SystemUI: set no hint overlay to highest priority  [Jesse Chan]
+
+* kernel/xiaomi/sm6150
+4c8f52b  arm64: Inline the spin lock function family  [Sultan Alsawaf]
+1e9ac01  sched: do not allocate window cpu arrays separately  [Park Ju Hyung]
+d4c4a17  Revert "mutex: Add a delay into the SPIN_ON_OWNER wait loop."  [Sultan Alsawaf]
+0251c3a  drm/sde: use buffer from the stack space  [Park Ju Hyung]
+91362c9  cpuidle: Mark CPUs idle as late as possible to avoid unneeded IPIs  [Sultan Alsawaf]
+cae8714  pinctrl: msm: Remove explicit barriers from mmio ops where unneeded  [Sultan Alsawaf]
+6261845  ARM64: configs: Disable sm6150/sm8150 configs  [Arian]
+69e3511  ARM64: configs: Disable some debug options  [Demon000]
+d608211  ARM64: configs: Disable unused cpu governors  [Demon000]
+6d83c0e  ARM64: configs: Disable zram  [Michael Bestas]
+a31ab79  ARM64: configs: Enable device specific configs for davinci  [Arian]
+afe9710  ARM64: configs: Enable all sm6150auto techpack options  [luk1337]
+4715128  ARM64: configs: Enable CONFIG_QCA_CLD_WLAN  [Park Ju Hyung]
+99df015  ARM64: configs: Enable CONFIG_BUILD_ARM64_DT_OVERLAY  [Jackeagle]
+ad74661  ARM64: configs: davinci: Enable CONFIG_ION_SYSTEM_HEAP  [Jorge E. Moreira]
+9d05114  ARM64: configs: Enable power efficient workqueues  [Demon000]
+0b1fe894  ARM64: configs: Disable suspend sync  [Demon Singur]
+39f380c  ARM64: configs: Turn on VDSO  [Mark Salyzyn]
+908093a  ARM64: configs: CONFIG_HZ_300=y  [Wei Wang]
+3d42f59  ARM64: configs: Set default readahead to 2048KB  [Wei Wang]
+57d5663  ARM64: configs: Disable unused ecrypt fs  [Vol Zhdanov]
+52ffaee  ARM64: configs: Enable JUMP_LABEL  [joshuous]
+0ae7508  ARM64: configs: Enable CONFIG_DETECT_HUNG_TASK  [Hridya Valsaraju]
+19ee651  ARM64: configs: Enable various HID drivers  [Patrick Tjin]
+4352fb1  ARM64: configs: Disable SCHED_AUTOGROUP  [John Dias]
+c825182  ARM64: configs: Disable MSM_11AD  [Thierry Strudel]
+33fca42  ARM64: configs: Remove remaining unused configs  [Demon Singur]
+30294ed  ARM64: configs: Remove unused kernel config  [Wei Wang]
+4ceeb8a  ARM64: configs: Remove various debug configs  [Thierry Strudel]
+2056362  ARM64: configs: Clean up davinci_defconfig  [Patrick Tjin]
+cacab83  ARM64: configs: Reserve space for ramoops  [Arian]
+5083c69  ARM64: configs: Enable pstore  [Oleg Matcovschi]
+50cc759  ARM64: configs: Enable CONFIG_CRYPTO_SHA512  [Chris Fries]
+d08715a  ARM64: configs: Disable module signing  [Chris Fries]
+16f6391  ARM64: configs: Remove unused modules  [Patrick Tjin]
+7870e95  ARM64: configs: Add davinci_defconfig based on sdmsteppe-perf_defconfig  [Arian]
+886942f  thermal: cpu_cooling: simplify cpu_limits_set_level  [Yaroslav Furman]
+493eab1  thermal: core: use qcom drm notifier  [Demon000]
+ccf56e9  thermal: core: custom thermal limits handling  [Demon000]
+0aa119c  ARM64: dts: Enable Ultra Low Power State Mode  [Pig]
+95db955  ARM64: dts: enable panel-allow-phy-poweroff  [celtare21]
+faae8f7  block: core: gotta go fast  [Demon000]
+600679d  leds: Import Xiaomi changes  [PIPIPIG233666]
+50ae2d69c  pinctrl: msm: prevent access to GPIOs based on hw  [PIPIPIG233666]
+0026e5a  socinfo: Import Xiaomi changes  [PIPIPIG233666]
+589847a  backlight: Import Xiaomi changes  [PIPIPIG233666]
+4c20467  usb: Import Xiaomi changes  [PIPIPIG233666]
+0682b02  media: rc: Import Xiaomi changes over IR driver  [PIPIPIG233666]
+18b5622  drivers: iio: adc: set channel_check = true  [PIPIPIG233666]
+495a907  of: batterydata: use generic node if no node is found  [Luca Stefani]
+a949c1b  sound: soc: pcm: support host-less 24bit formats  [Demon000]
+80beb6e  misc: Import drv8846 step motor soc driver  [PIPIPIG233666]
+7e92c75  input/misc: Import akm09970 compass driver  [PIPIPIG233666]
+54e4228  goodix_ta: increase reset delays  [Yaroslav Furman]
+36e67bc  goodix_ta: platform: optimize tdelays in hw_reset function  [Yaroslav Furman]
+a4c5003  fingerprint: goodix_ta: remove DEBUG prints  [UtsavisGreat]
+e504630  goodix_ts: convert milliseconds to jiffies properly  [Nanda Oktavera]
+ad7ca73  input: touchscreen: Import Xiaomi double_click driver  [PIPIPIG233666]
+7d00938  input: Import Xiaomi Touch Driver  [PIPIPIG233666]
+cb5b21d  misc: Import Xiaomi SPI touch panel driver  [Pranav Vashi]
+2ca4c56  input: touchscreen: gt9886: Rip out touchscreen wrapper code  [Fabian Leutenegger]
+44b1dd5  input: touchscreen: gt9886: Enable definition of BTN_INFO  [Fabian Leutenegger]
+e2188e8  input: touchscreen: gt9886: Remove testing bits  [Albert I]
+2c5cbab  input: touchscreen: gt9886: Use qcom drm notifier  [minz1]
+772fd7b  input: touchscreen: gt9886: Remove backlight notifier callback  [Fabian Leutenegger]
+8c9af9f  input: Import gt9886 touchscreen driver  [PIPIPIG233666]
+0bfd659  input: fingerprint: goodix_ta: Use qcom drm notifier  [Demon000]
+c6dbeb6  input: fingerprint: Import Goodix fingerprint driver  [Demon000]
+e6684b6  input: Include fingerprint directory  [Demon000]
+6db0c41  ARM64: dts: optimize HBM commands for in-kernel dimming  [Demon000]
+96d90c6  ARM64: dts: define fod dim lut  [Demon000]
+fa77d7a  ARM64: dts: define doze lpm and hbm backlight levels  [Demon000]
+e5c8bab  ARM64: dts: disable dc dimming during fod hbm commands  [Demon000]
+3fbc0a0  ARM64: dts: move fod hbm commands to their proper place  [Demon000]
+d7df009  drm: msm: dsi-staging: trigger drm notifier  [Demon000]
+8d5fb20  drm: msm: atomic: do not trigger drm notifier  [Demon000]
+dd93519  drm: msm: dsi-staging: cleanup notifier implementation  [Demon000]
+670c22a  drm: msm: notify sysfs for fod ui changes  [Demon000]
+9b1a740  drm: msm: implement fod handling  [Demon000]
+f18d2bd  drm: msm: dsi-staging: add function for reading backlight value  [Demon000]
+01bccd6  drm: msm: dsi-staging: add get_main_display  [DevriesL]
+c16be49  drm: msm: sde: translate zpos property to fod property  [Demon000]
+bc86819  drm: msm: sde: allow 32bit zpos  [Demon000]
+09b2dd3  drm: msm: dsi-staging: implement doze mode  [Demon000]
+3d7d119  drm: msm: dsi-staging: create empty attributes group  [Demon000]
+
+* lineage/hudson
+817f0f1  Regenerate device dependency mappings  [razorloves]
+
+* lineage/wiki
+86f9955  wiki: Remove support for XT1526(surnia)  [Aayush Gupta]
+
+* packages/apps/DeskClock
+9026139  DeskClock: also apply disabled color to annotations  [Jesse Chan]
+6fcbe7e  DeskClock: Come to the dark side...  [Michael W]
+22b6cf2  DeskClock: Rework notification channel implementation  [Michael W]
+====================
      2020-06-10    
 ====================
 
@@ -281,6 +393,9 @@ a3cc517  Revert "qcacld: disable bunch of more debug configs"  [Arian]
 5c730db  kernel: module: Ignore all magic mismatches  [Christopher N. Hesse]
 59ce2c1  ANDROID: mm: add config for default readahead size  [Wei Wang]
 
+* lineage-sdk
+4c23039  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
+
 * packages/apps/Etar
 2062211  Move input field for location under the guest field  [Gitsaibot]
 
@@ -458,9 +573,6 @@ d1b64fb  qcacld: defer hdd initialization and rely on userspace writing to /dev/
 0caff4c  Revert "qcacld-3.0: Use ref count to sync unload and /dev/wlan access"  [Arian]
 07e2e56  qcacld-3.0: Add sme_power_save_api.h include  [Ethan Chen]
 
-* lineage-sdk
-4c23039  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
-
 * lineage/crowdin
 e328af8  config: 17.1: Add hardware/sony/SonyOpenTelephony/ModemConfig  [LuK1337]
 
@@ -498,16 +610,3 @@ b7822c6  dtc: update warning settings for new bus and node/property name checks 
 
 * packages/apps/Dialer
 05afe35  Refactor call recording to use MediaProvider.  [Danny Baumann]
-====================
-     2020-06-04    
-====================
-
-* frameworks/base
-2dc4ad0  SystemUI: QQS brightness: get container padding directly  [Jesse Chan]
-
-* lineage/wiki
-e92efaf  wiki: Fix bootloader unlocking info for jasmine_sprout  [Davide Garberi]
-dab8fc1  wiki: Remove custom TWRP for crackling  [115ek]
-
-* vendor/gms
-4d85b71  CalendarGoogle: Overwrite Etar  [Arian]
