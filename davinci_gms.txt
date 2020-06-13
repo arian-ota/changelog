@@ -1,4 +1,17 @@
 ====================
+     2020-06-12    
+====================
+
+* lineage/hudson
+3c2def6  hudson: Promote mi8996 except black sheep  [Bruno Martins]
+
+* lineage/wiki
+267cc59  wiki: Promote mi8996 except black sheep  [Bruno Martins]
+2bffa4a  wiki: Add Teledurak to s3ve3g maintainers  [Teledurak]
+
+* packages/apps/DeskClock
+58f3edc  DeskClock: Move navigation bar to bottom  [Michael W]
+====================
      2020-06-11    
 ====================
 
@@ -585,26 +598,3 @@ a66bfc0  wiki: Avoid showing `adb reboot` on last step of install/upgrade page o
 
 * packages/apps/Dialer
 8392b6a  Iterate old recordings properly when migrating call recording data.  [Danny Baumann]
-====================
-     2020-06-05    
-====================
-
-* kernel/xiaomi/sm6150
-94126fe  staging: Include qcacld-3.0 source  [LuK1337]
-33702fb  Add 'drivers/staging/qcacld-3.0/' from commit '6f1509075551c8b1be47d0ab6e8561cae98164cc'  [Arian]
-4b91f0b  Add 'drivers/staging/qca-wifi-host-cmn/' from commit 'e41f7b55e844111c605e612c4043f43f3e8bc397'  [Arian]
-53dc35b  Add 'drivers/staging/fw-api/' from commit '298637e4920aeace419763776097d26231923e99'  [Arian]
-4ae9f9e  dtc: Silence warnings  [Danny Lin]
-f6b8a0f  scripts/dtc: Update to upstream version v1.4.6-9-gaadd0b65c987  [Rob Herring]
-2f5e13d  scripts/dtc: Update to upstream version v1.4.5-3-gb1a60033c110  [Rob Herring]
-15f002d  scripts/dtc: add fdt_overlay.c and fdt_addresses.c to sync script  [Rob Herring]
-b7822c6  dtc: update warning settings for new bus and node/property name checks  [Rob Herring]
-
-* lineage/hudson
-446a12f  [TMP] hudson: Move all versions to weeklies  [Nolen Johnson]
-
-* lineage/mirror
-5d9d40c  Updated to 04-Jun-2020 13:37 UTC  [Kevin F. Haggerty]
-
-* packages/apps/Dialer
-05afe35  Refactor call recording to use MediaProvider.  [Danny Baumann]
