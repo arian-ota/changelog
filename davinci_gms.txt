@@ -1,4 +1,11 @@
 ====================
+     2020-06-15    
+====================
+
+* packages/apps/DeskClock
+fbaedef  DeskClock: Replace ViewPager with manual fragment handling  [Michael W]
+26df7bf  DeskClock: Fix german translation of "days"  [Michael W]
+====================
      2020-06-14    
 ====================
 
@@ -204,16 +211,3 @@ d10203d  [BACKPORT] Config of LTE signal strength default value remove SNR  [Son
 
 * vendor/lineage
 e82e08a  Update Bulgarian dictionary  [Eloi Carracedo]
-====================
-     2020-06-08    
-====================
-
-* frameworks/base
-1d47216  SystemUI: Fix pink progress animation color in expanded Wi-Fi tile  [Arne Coucheron]
-
-* lineage/mirror
-4ac319b  Updated to 07-Jun-2020 21:21 UTC  [Kevin F. Haggerty]
-
-* packages/apps/DeskClock
-c3450b4  DeskClock: Modernize timer_setup_time look  [LuK1337]
-5d6523a  DeskClock: Update drawables  [LuK1337]
