@@ -26,15 +26,15 @@ ebd1ba0  Recorder: Prevent running into out of memory exceptions  [Michael W]
 * packages/apps/DeskClock
 fbaedef  DeskClock: Replace ViewPager with manual fragment handling  [Michael W]
 26df7bf  DeskClock: Fix german translation of "days"  [Michael W]
-
-* packages/apps/Jelly
-4fab6ae  Jelly: Sync color{Primary,PrimaryDark,Accent} with Recorder  [LuK1337]
 ====================
      2020-06-13    
 ====================
 
 * lineage/wiki
 e5a2f44  Revert "wiki: Remove support for XT1526(surnia)"  [althafvly]
+
+* packages/apps/Jelly
+4fab6ae  Jelly: Sync color{Primary,PrimaryDark,Accent} with Recorder  [LuK1337]
 
 * packages/apps/Messaging
 31e41d4  Messaging: Require external legacy storage  [Han Wang]
@@ -49,9 +49,6 @@ e5a2f44  Revert "wiki: Remove support for XT1526(surnia)"  [althafvly]
 * frameworks/opt/telephony
 cdcc382  Avoid SubscriptionManager#getUriForSubscriptionId calls with invalid subIds  [Bruno Martins]
 1554a70  Remove setIsoCountryProperty method along with partially dead code  [Bruno Martins]
-
-* lineage/wiki
-267cc59  wiki: Promote mi8996 except black sheep  [Bruno Martins]
 
 * packages/apps/DeskClock
 b6bca2f  DeskClock: Properly align settings  [Michael W]
@@ -72,6 +69,7 @@ f730abf  AODTile: Rewrite AOD setting handling  [Bruno Martins]
 3c2def6  hudson: Promote mi8996 except black sheep  [Bruno Martins]
 
 * lineage/wiki
+267cc59  wiki: Promote mi8996 except black sheep  [Bruno Martins]
 2bffa4a  wiki: Add Teledurak to s3ve3g maintainers  [Teledurak]
 
 * packages/apps/DeskClock
@@ -79,13 +77,6 @@ f730abf  AODTile: Rewrite AOD setting handling  [Bruno Martins]
 ====================
      2020-06-10    
 ====================
-
-* device/xiaomi/davinci
-49f89b5  davinci: rootdir: Set default thermal mode to evaluation  [TheScarastic]
-b8b6c56  davinci: fod: Set nit value on sysfs notification  [Demon000]
-9f3646c  davinci: fod: Frop 
- from logs  [Demon000]
-2928f08  davinci: fod: Add surfaceflinger extension lib  [TheScarastic]
 
 * lineage/hudson
 817f0f1  Regenerate device dependency mappings  [razorloves]
