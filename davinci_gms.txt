@@ -1,4 +1,13 @@
 ====================
+     2020-06-16    
+====================
+
+* packages/apps/DeskClock
+01c3369  DeskClock: Remove notification sound from firing and snoozing channels  [Michael W]
+
+* packages/apps/Recorder
+ebd1ba0  Recorder: Prevent running into out of memory exceptions  [Michael W]
+====================
      2020-06-15    
 ====================
 
@@ -180,34 +189,3 @@ a2f9669  Rewrite test data logic to make it faster  [Dan Willemsen]
 
 * system/core
 350500d  adbd: remove ifdefs guarding root/secure.  [Josh Gao]
-====================
-     2020-06-09    
-====================
-
-* bootable/recovery
-d1412e3  recovery: Print the active slot  [Richard Hansen]
-33aec6c  recovery: Display recovery version  [Richard Hansen]
-f2d7204  recovery: Draw the help message below the menu on non-touch devices  [Richard Hansen]
-8b7db0b  recovery: Clarify help text  [Richard Hansen]
-4832e2f  recovery: Set the INFO color to the recovery/fastboot light color  [Richard Hansen]
-
-* frameworks/base
-ac2040a  SystemUI: Long press Caffeine for infinite duration  [chillger]
-1e64ed2  SystemUI: Resolve faulty keyguard clock logs outputs  [Adrian DC]
-aa9fbad  SystemUI: Adapt screenshot sound to ringer modes  [Ashwin R C]
-d10203d  [BACKPORT] Config of LTE signal strength default value remove SNR  [SongFerngWang]
-
-* lineage/hudson
-26c61e7  hudson: Add moto8916 devices  [althafvly]
-
-* lineage/wiki
-99aaef7  wiki: devices: Promote osprey,merlin,lux,surnia,harpia to 17.1  [althafvly]
-
-* packages/providers/MediaProvider
-7fb12a5  MediaProvider: Fix sorting by DATE_TAKEN  [BeYkeRYkt]
-
-* system/sepolicy
-00d5609  Export missing audio volume properties  [Michael Bestas]
-
-* vendor/lineage
-e82e08a  Update Bulgarian dictionary  [Eloi Carracedo]
