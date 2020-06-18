@@ -1,9 +1,12 @@
 ====================
-     2020-06-16    
+     2020-06-17    
 ====================
 
 * device/lineage/sepolicy
 27e54f2  common: Move aux camera whitelist prop to vendor  [dianlujitao]
+
+* frameworks/base
+257a682  Add a LineageOS clock  [gnumdk]
 
 * vendor/gms
 9f3fd3e  fonts: Add google-sans-bold  [Arian]
@@ -11,7 +14,7 @@ a9202a7  gms: Update from flame-qq3a.200605.001-factory-8f1b5911  [Arian]
 72d38d7  turbo_overlay: Reflect android-10.0.0_r37 changes  [Arian]
 6ebb2c3  Revert "TMP disable turbo overlay"  [Arian]
 ====================
-     2020-06-15    
+     2020-06-16    
 ====================
 
 * packages/apps/DeskClock
@@ -20,14 +23,14 @@ a9202a7  gms: Update from flame-qq3a.200605.001-factory-8f1b5911  [Arian]
 * packages/apps/Recorder
 ebd1ba0  Recorder: Prevent running into out of memory exceptions  [Michael W]
 ====================
-     2020-06-14    
+     2020-06-15    
 ====================
 
 * packages/apps/DeskClock
 fbaedef  DeskClock: Replace ViewPager with manual fragment handling  [Michael W]
 26df7bf  DeskClock: Fix german translation of "days"  [Michael W]
 ====================
-     2020-06-13    
+     2020-06-14    
 ====================
 
 * lineage/wiki
@@ -36,14 +39,11 @@ e5a2f44  Revert "wiki: Remove support for XT1526(surnia)"  [althafvly]
 * packages/apps/Jelly
 4fab6ae  Jelly: Sync color{Primary,PrimaryDark,Accent} with Recorder  [LuK1337]
 
-* packages/apps/Messaging
-31e41d4  Messaging: Require external legacy storage  [Han Wang]
-
 * system/core
 084bb1b  Fine tune blkio setting to improve boot time  [Rick Yiu]
 87e43cb  rootdir: init.rc: use default dirty writeout policy  [Jaegeuk Kim]
 ====================
-     2020-06-12    
+     2020-06-13    
 ====================
 
 * frameworks/opt/telephony
@@ -57,13 +57,12 @@ b6bca2f  DeskClock: Properly align settings  [Michael W]
 1583931  Display hour 00 label if there is room for it.  [rparkins999]
 f604333  Don't mess with selected hour when scrolling  [rparkins999]
 87cba6f  Fix issue #457 and remove other bounces  [rparkins999]
-====================
-     2020-06-11    
-====================
 
-* frameworks/base
-f730abf  AODTile: Rewrite AOD setting handling  [Bruno Martins]
-230e19d  SystemUI: set no hint overlay to highest priority  [Jesse Chan]
+* packages/apps/Messaging
+31e41d4  Messaging: Require external legacy storage  [Han Wang]
+====================
+     2020-06-12    
+====================
 
 * lineage/hudson
 3c2def6  hudson: Promote mi8996 except black sheep  [Bruno Martins]
@@ -75,8 +74,12 @@ f730abf  AODTile: Rewrite AOD setting handling  [Bruno Martins]
 * packages/apps/DeskClock
 58f3edc  DeskClock: Move navigation bar to bottom  [Michael W]
 ====================
-     2020-06-10    
+     2020-06-11    
 ====================
+
+* frameworks/base
+f730abf  AODTile: Rewrite AOD setting handling  [Bruno Martins]
+230e19d  SystemUI: set no hint overlay to highest priority  [Jesse Chan]
 
 * lineage/hudson
 817f0f1  Regenerate device dependency mappings  [razorloves]
