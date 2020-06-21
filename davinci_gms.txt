@@ -1,4 +1,7 @@
 ====================
+     2020-06-20    
+====================
+====================
      2020-06-19    
 ====================
 ====================
@@ -330,21 +333,3 @@ e5a2f44  Revert "wiki: Remove support for XT1526(surnia)"  [althafvly]
 * system/core
 084bb1b  Fine tune blkio setting to improve boot time  [Rick Yiu]
 87e43cb  rootdir: init.rc: use default dirty writeout policy  [Jaegeuk Kim]
-====================
-     2020-06-13    
-====================
-
-* frameworks/opt/telephony
-cdcc382  Avoid SubscriptionManager#getUriForSubscriptionId calls with invalid subIds  [Bruno Martins]
-1554a70  Remove setIsoCountryProperty method along with partially dead code  [Bruno Martins]
-
-* packages/apps/DeskClock
-b6bca2f  DeskClock: Properly align settings  [Michael W]
-
-* packages/apps/Etar
-1583931  Display hour 00 label if there is room for it.  [rparkins999]
-f604333  Don't mess with selected hour when scrolling  [rparkins999]
-87cba6f  Fix issue #457 and remove other bounces  [rparkins999]
-
-* packages/apps/Messaging
-31e41d4  Messaging: Require external legacy storage  [Han Wang]
