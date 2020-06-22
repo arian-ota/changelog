@@ -1,9 +1,41 @@
 ====================
+     2020-06-21    
+====================
+
+* frameworks/base
+24656a5  SystemUI: Fix QS Detail Header  [Michael W]
+
+* lineage/hudson
+b000b2f  hudson: Add Galaxy J7 2015 (j7elte)  [Dario Trombello]
+
+* lineage/wiki
+879bf16  wiki: Add Galaxy J7 2015 (j7elte)  [Dario Trombello]
+
+* packages/apps/Etar
+2d78047  Etar: Fix content provider rebrand  [Michael Bestas]
+====================
      2020-06-20    
 ====================
+
+* device/xiaomi/davinci
+1779648  davinci: rootdir: Increase scaling min frequency to 576MHz for little cluster  [Arian]
+94e611d  Revert "davinci: rootdir: Apply runtime blkio settings"  [Demon000]
+651b14e  Revert "davinci: rootdir: Increase background blkio cgroup weight to 200"  [Demon000]
+9000e19  davinci: fod: Link vendor.goodix.hardware.biometrics.fingerprint@2.1  [xingrz]
+
+* lineage/mirror
+d95df2b  Updated to 19-Jun-2020 13:15 UTC  [Kevin F. Haggerty]
+
+* tools/repohooks
+d7363ec  Fix regex in commit_msg_relnote_for_current_txt repo hook  [Nick Anthony]
 ====================
      2020-06-19    
 ====================
+
+* vendor/translations
+b8a6994  Merge pull request #4 from RemyL/patch-1  [Arian]
+ceff943  Merge pull request #3 from scrubjay55/patch-3  [Arian]
+c68fb53  French Translation  [RemyL]
 ====================
      2020-06-18    
 ====================
@@ -12,44 +44,50 @@
 5428bd4  Allow overriding platform SPL  [dianlujitao]
 e627e14  [DNM] Always use release-keys  [Arian]
 
-* device/lineage/sepolicy
-75ce9f4  Label lineage platform SPL prop  [dianlujitao]
-
 * device/xiaomi/davinci
-c689a3f  davinci: fod: Link vendor.goodix.hardware.biometrics.fingerprint@2.1  [xingrz]
-5fa7bec  tmp  [Arian]
-6edc079  davinci: fod: Acquirce partial wakelock onPress  [TheScarastic]
-63f00e2  davinci: Convert fod_icon_pressed from png to webp  [Pig]
-0fa6a5a  davinci: Make fod color transparent and add custom icon  [TheScarastic]
-249cb06  davinci: fod: Add support for Xiaomi's touchfeature  [PIPIPIG233666]
-c980fd6  davinci: fod: Implement handleAcquire()  [LuK1337]
-ef41ee2  davinci: fod: Set nit value on sysfs notification  [Demon000]
-3114c59  davinci: fod: Frop 
+1eddc31  davinci: Convert fod_icon_pressed from png to webp  [Pig]
+b7cfbda  davinci: Make fod color transparent and add custom icon  [TheScarastic]
+67ccedd  davinci: fod: Add support for Xiaomi's touchfeature  [PIPIPIG233666]
+63fdb42  davinci: fod: Implement handleAcquire()  [LuK1337]
+5036815  davinci: fod: Set nit value on sysfs notification  [Demon000]
+7a67ec5  davinci: fod: Frop 
  from logs  [Demon000]
-34b1cca  davinci: fod: Add surfaceflinger extension lib  [TheScarastic]
-e9e6ee9  sm8150-common: fod: switch to in-kernel handling of changes  [Demon000]
-9b5db89  davinci: rootdir: Set default thermal mode to evaluation  [TheScarastic]
-
-* frameworks/av
-20421c3  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
-
-* frameworks/base
-528fd4d  FODCircleView: Add Support for custom FP pressed icon  [TheScarastic]
-f3cc248  DeviceInfoUtils: Prefer lineage platform SPL  [dianlujitao]
-2b3d115  SystemUI: Improve QS detail view layout  [Anushek Prasal]
-c428482  SystemUI: Fix QS detail header padding  [Arian]
-cf4b2e0  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
-05ef51e  SystemUI: get rid of build text in qs  [Joey]
-4963b8f  PackageManagerService: Drop caches according to incremental version  [Arian]
-42971ca  VolumeDialog: Move the media output selector next to the expandable indicator  [Arian]
-6f470d4  VolumeDialog: Implement expand/collapse animation  [Jesse Chan]
-3a17159  VolumeDialog: Reserve space for expanded panel to avoid re-layout  [Jesse Chan]
-e66be02  VolumeDialog: Treat ring volume the same as others on icon tap  [Arian]
-2012afb  VolumeDialog: Fix muting streams with a minimal volume of 1  [Arian]
-e2f0a94  VolumeDialog: Hide the music row if there is an ally stream  [Giuseppe Maggio]
-fb66c3e  VolumeDialog: Set the gravity and rotation based on the panels location  [Arian]
-8add022  VolumeDialog: Show the notification stream when unlinked  [Arian]
-f1786fa  VolumeDialog: Redo expanded volume panel  [HrX03]
+1953864  davinci: fod: Add surfaceflinger extension lib  [TheScarastic]
+8e92977  sm8150-common: fod: switch to in-kernel handling of changes  [Demon000]
+01c4202  davinci: rootdir: Set default thermal mode to evaluation  [TheScarastic]
+a702f7c  davinci: overlay: Increase dim brightness to 2  [Arian]
+c16d971  davinci: overlay: Keep minimal brightness at least 2 in auto brightness mode  [Arian]
+5a68e8a  davinci: overlay: Set default hotspot ssid  [Glen Kuhne]
+71a60e4  davinci: Increase media volume from 15 to 25 steps  [Jean-Michel Trivi]
+1788158  davinci: Add CNE configs for VoWifi  [Arian]
+2378457  davinci: rootdir: Drop zram  [Arian]
+f87754b  davinci: Add nosdcard characteristic to device  [Patrick Tjin]
+7c8612b  davinci: parts: Add StarWars popup sounds  [Arian]
+88cd717  davinci: Remove android.hidl.base@1.0 shims  [Michael Bestas]
+93ae904  davinci: light: Disable both LEDs  [Arian]
+8327cdb  davinci: parts: Take use of both LEDs for notifications when opened  [Arian]
+def4491  davinci: parts: Restore the LED's previous state after popup  [Arian]
+1b5f1c3  davinci: parts: Disable raise to wake toggle when AOD is on  [Arian]
+4dd9923  davinci: parts: Allow to wake the screen instead of pulsing  [Nauval Rizky]
+1b9bd58  davinci: parts: Implement dc dimming  [Nauval Rizky]
+e3fa230  davinci: Use stock fingerprint  [Arian]
+c9a7d76  davinci: init: Workaround safetynet  [Arian]
+88a09bb  davinci: Define vendor security patch level  [Arian]
+1405ba6  davinci: Build Trust HAL  [Joey]
+649d07f  davinci: Build livedisplay  [Arian]
+9bf1cc2  davinci: Add assert for davinci & davinciin  [Fabian Leutenegger]
+01d8b31  davinci: init: Use variables for the region specific properties  [Arian]
+8a49fb6  davinci: init: Always set the ro.build props  [Arian]
+bf3e5e6  davinci: init: Override everything ^.^  [LuK1337]
+2562543  davinci: Add custom init to set proper variants  [AbhiShek Aggarwal]
+0b00c62  davinci: Switch to enforcing  [Arian]
+21a3639  davinci: sepolicy: Label properties to avoid denials  [Arian]
+c1b03ff  davinci: sepolicy: Silence harmless QCOM denials  [Michael Bestas]
+26b23bd  davinci: sepolicy: Label hwc and hwversion properties  [Arian]
+05c4ef5  davinci: sepolicy: Label property used by ril  [Demon000]
+117b6fe  davinci: sepolicy: Label manufacturer prop used by camera hal  [Demon000]
+484cf46  davinci: sepolicy: Fix OTA auto-flashing with encrypted f2fs.  [Nvertigo]
+d434622  davinci: sepolicy: Add motor rules  [Arian]
 
 * kernel/xiaomi/sm6150
 ffd68e87f  ARM64: configs: Enable TFA9874 for davi  [Arian]
@@ -281,11 +319,17 @@ a6fee3d  arm64: lib: use C string functions with KASAN enabled  [Andrey Ryabinin
 1253a13  arm64: lib: memory utilities optimization  [Hong-Mei Li]
 a3c6af2  Add toggle for disabling newly added USB devices  [Daniel Micay]
 
-* lineage-sdk
-db3a462  TrustInterfaceService: Prefer lineage platform SPL  [dianlujitao]
+* packages/apps/Etar
+e06e35c  Etar: Properly align preferences  [Michael W]
+bf4f066  Etar: Fix crash when opening "Quick responses"  [Michael W]
 
-* packages/apps/Settings
-d80e33b  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+* packages/apps/Jelly
+63bb9f7  Jelly: Avoid unchecked cast warning  [Luca Stefani]
+
+* vendor/translations
+68e1857  lil typo  [scrubjay55]
+7a1c38c  TR translation  [scrubjay55]
+a093a45  Import german translations  [Arian]
 
 * vendor/xiaomi/davinci
 e6cf14e  davinci: Add touchfeature  [Arian]
@@ -320,16 +364,3 @@ ebd1ba0  Recorder: Prevent running into out of memory exceptions  [Michael W]
 * packages/apps/DeskClock
 fbaedef  DeskClock: Replace ViewPager with manual fragment handling  [Michael W]
 26df7bf  DeskClock: Fix german translation of "days"  [Michael W]
-====================
-     2020-06-14    
-====================
-
-* lineage/wiki
-e5a2f44  Revert "wiki: Remove support for XT1526(surnia)"  [althafvly]
-
-* packages/apps/Jelly
-4fab6ae  Jelly: Sync color{Primary,PrimaryDark,Accent} with Recorder  [LuK1337]
-
-* system/core
-084bb1b  Fine tune blkio setting to improve boot time  [Rick Yiu]
-87e43cb  rootdir: init.rc: use default dirty writeout policy  [Jaegeuk Kim]
