@@ -1,4 +1,89 @@
 ====================
+     2020-06-26    
+====================
+
+* android
+5e6813e  manifest: Switch to our external/skia fork  [Han Wang]
+
+* frameworks/base
+271a8c8  FODCircleView: Add Support for custom FP pressed icon  [TheScarastic]
+fa762f8  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
+56da865  SystemUI: get rid of build text in qs  [Joey]
+f182ea0  PackageManagerService: Drop caches according to incremental version  [Arian]
+a638498  VolumeDialog: Implement expand/collapse animation  [Jesse Chan]
+e53ff44  VolumeDialog: Move the media output selector next to the expandable indicator  [Arian]
+85ac3eb4  VolumeDialog: Treat ring volume the same as others on icon tap  [Arian]
+769b051  VolumeDialog: Fix muting streams with a minimal volume of 1  [Arian]
+7079e1c  VolumeDialog: Hide the music row if there is an ally stream  [Giuseppe Maggio]
+507f8c6  VolumeDialog: Set the gravity and rotation based on the panels location  [Arian]
+c5444d8  VolumeDialog: Show the notification stream when unlinked  [Arian]
+acc2741  VolumeDialog: Convert CustomDialog to a View and configure ViewTreeObserver  [HrX03]
+6349db7  VolumeDialog: Redo expanded volume panel  [HrX03]
+aa91c1e  TextureVuew rebind GL texture, if AHB content has changed  [Stan Iliev]
+
+* kernel/xiaomi/sm6150
+f03af9a  drm: msm: Disable DC dimming while HBM is active  [Arian]
+b6731fa7  drm: msm: Use type_map array index 0 for invalid hbm values  [Arian]
+1d4258c  drm: msm: Add support for high brightness mode (HBM)  [Danny Baumann]
+465a3e0  ARM64: configs: Enable exposure adjustment driver  [nullxception]
+056b6d7  drm: msm: temporary disable DC dimming when in fod_hbm mode  [Nauval Rizky]
+0974a84  drm: msm: adapt exposure adjustment methods to davinci  [Nauval Rizky]
+f99d1b9  drm: Let exposure adjustment switchable via sysfs  [XiNGRZ]
+0702d02  drm: Introduce exposure adjustment driver  [DevriesL]
+bdf03ad  ARM64: configs: Enable TFA9874 for davi  [Arian]
+733f587  ARM64: configs: Enable akm09970 compass driver  [Arian]
+1e24136  ARM64: configs: Enable drv8846 step motor soc driver  [Arian]
+c28c018  ARM64: configs: Enable goodix fingerprint driver  [Arian]
+c1cd197  ARM64: configs: Enable xiaomi touchfeature  [Arian]
+85f26c9  ARM64: configs: Enable gt9886 touchscreen driver  [Arian]
+3d5777b  ARM64: configs: Disable Sitronix, Himax and Synaptics touchscreen drivers  [Arian]
+304b987  ARM64: configs: Enable davinci configuration  [Arian]
+ccda445  ARM64: configs: Enable all sm6150auto techpack options  [luk1337]
+afdc0b9  ARM64: configs: Disable sm6150/sm8150 configs  [Arian]
+654570b  ARM64: configs: Enable CONFIG_BUILD_ARM64_DT_OVERLAY  [Jackeagle]
+2b0186c8  ARM64: configs: Enable CONFIG_QCA_CLD_WLAN  [Park Ju Hyung]
+a19e968  ARM64: configs: Report frequency stats  [Demon000]
+d4831c4  ARM64: configs: Enable BBR and set as default  [Demon000]
+5bdcb91a  ARM64: configs: Disable zram  [Michael Bestas]
+58b71ef  ARM64: configs: Disable unused cpu governors  [Demon000]
+ce6dfdb  ARM64: configs: Disable some debug options  [Demon000]
+521af70  ARM64: configs: davinci: Enable CONFIG_ION_SYSTEM_HEAP  [Jorge E. Moreira]
+e7217e8  ARM64: configs: Enable power efficient workqueues  [Demon000]
+38b7407  ARM64: configs: Disable suspend sync  [Demon Singur]
+9f3b99f  ARM64: configs: Turn on VDSO  [Mark Salyzyn]
+10c6f4f  ARM64: configs: CONFIG_HZ_300=y  [Wei Wang]
+0bdcab3  ARM64: configs: Set default readahead to 2048KB  [Wei Wang]
+7ffd6a2  ARM64: configs: Disable unused ecrypt fs  [Vol Zhdanov]
+5275461  ARM64: configs: Enable JUMP_LABEL  [joshuous]
+0e4c2e1  ARM64: configs: Enable CONFIG_DETECT_HUNG_TASK  [Hridya Valsaraju]
+88a42e9  ARM64: configs: Enable various HID drivers  [Patrick Tjin]
+78895c4  ARM64: configs: Disable SCHED_AUTOGROUP  [John Dias]
+55eee32  ARM64: configs: Disable MSM_11AD  [Thierry Strudel]
+280e548  ARM64: configs: Remove remaining unused configs  [Demon Singur]
+d2fd502  ARM64: configs: Remove unused kernel config  [Wei Wang]
+b9112eb  ARM64: configs: Remove various debug configs  [Thierry Strudel]
+f25bcbe  ARM64: configs: Clean up davinci_defconfig  [Patrick Tjin]
+2cd38d6  ARM64: configs: Reserve space for ramoops  [Arian]
+c286373  ARM64: configs: Enable pstore  [Oleg Matcovschi]
+221c470  ARM64: configs: Enable CONFIG_CRYPTO_SHA512  [Chris Fries]
+c9c0b6d  ARM64: configs: Disable module signing  [Chris Fries]
+8d2e0ca  ARM64: configs: Remove unused modules  [Patrick Tjin]
+3a382d2  ARM64: configs: Add davinci_defconfig based on sdmsteppe-perf_defconfig  [Arian]
+d6f814b  ASoC: msm: Report correct key code of headset buttons  [dianlujitao]
+259cf99  thermal: core: Import Xiaomi board_sensor and thermal message changes  [Arian]
+8193b99  thermal: cpu_cooling: Simplify cpu_limits_set_level  [Yaroslav Furman]
+d18515a  thermal: core: Use qcom drm notifier  [Demon000]
+c40f54b  thermal: core: Custom thermal limits handling  [Demon000]
+
+* lineage-sdk
+4fed3ec  LineageSettingsService: prevent setting net.hostname to null  [Alexander Martinz]
+
+* packages/apps/Settings
+44f01a7  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+
+* vendor/lineage
+eb18aa6  qcom: Add atoll platform  [TheHitMan7]
+====================
      2020-06-25    
 ====================
 
@@ -61,31 +146,6 @@ a216366  davinci: rootdir: Cleanup init.qcom.sh  [Arian]
 87721ef  davinci: ueventd: Don't modify permissions of /dev/hw_random  [Wang Han]
 0ef2f08  davinci: rootdir: Cleanup ueventd.rc  [Arian]
 
-* frameworks/base
-5e59fa2  FODCircleView: Add Support for custom FP pressed icon  [TheScarastic]
-a4c6acc  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
-1dd955b  SystemUI: get rid of build text in qs  [Joey]
-07ecf71  PackageManagerService: Drop caches according to incremental version  [Arian]
-1b0c0b1  VolumeDialog: Implement expand/collapse animation  [Jesse Chan]
-549b1fc  VolumeDialog: Move the media output selector next to the expandable indicator  [Arian]
-1316a8a2  VolumeDialog: Treat ring volume the same as others on icon tap  [Arian]
-ee8f3b8  VolumeDialog: Fix muting streams with a minimal volume of 1  [Arian]
-63c7207  VolumeDialog: Hide the music row if there is an ally stream  [Giuseppe Maggio]
-ba79aa5  VolumeDialog: Set the gravity and rotation based on the panels location  [Arian]
-6a6ec89  VolumeDialog: Show the notification stream when unlinked  [Arian]
-7f9eee6  VolumeDialog: Convert CustomDialog to a View and configure ViewTreeObserver  [HrX03]
-cbcb00d  VolumeDialog: Redo expanded volume panel  [HrX03]
-
-* kernel/xiaomi/sm6150
-be774f4  drm: msm: Disable DC dimming while HBM is active  [Arian]
-a1cc560  drm: msm: Use type_map array index 0 for invalid hbm values  [Arian]
-6ebe3ce  drm: msm: Add support for high brightness mode (HBM)  [Danny Baumann]
-1292adf  ARM64: configs: Enable exposure adjustment driver  [nullxception]
-4b0546b  drm: msm: temporary disable DC dimming when in fod_hbm mode  [Nauval Rizky]
-cb67cd6  drm: msm: adapt exposure adjustment methods to davinci  [Nauval Rizky]
-2a57ad7  drm: Let exposure adjustment switchable via sysfs  [XiNGRZ]
-2512ce82  drm: Introduce exposure adjustment driver  [DevriesL]
-
 * packages/apps/Etar
 4d6a7d0  Fix errors caught by aapt2  [Colin Cross]
 50a3718  Allow app to upgrade database on install.  [Sam Blitzstein]
@@ -108,9 +168,6 @@ ee72ce0  Capitalize Noon and Midnight in event edit view.  [Paul Sliwowski]
 a6ee26e  Fixed leak cursor in AlertReciever  [Paul Sliwowski]
 ccf1520  DayView: Revert all whitespace changes  [Michael Bestas]
 199c3df  Etar: Fix invalid string parameter  [Nicholas Lim]
-
-* packages/apps/Settings
-0b917ef  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
 
 * vendor/lineage
 8746721  config: Move default alarm/notification/ringtone sound props to /product  [LuK1337]
@@ -340,16 +397,11 @@ b000b2f  hudson: Add Galaxy J7 2015 (j7elte)  [Dario Trombello]
      2020-06-20    
 ====================
 
+* external/skia
+3e76a81  Allow to rebind GL texture if AHB content has changed  [Stan Iliev]
+
 * lineage/mirror
 d95df2b  Updated to 19-Jun-2020 13:15 UTC  [Kevin F. Haggerty]
 
 * tools/repohooks
 d7363ec  Fix regex in commit_msg_relnote_for_current_txt repo hook  [Nick Anthony]
-====================
-     2020-06-19    
-====================
-
-* vendor/translations
-b8a6994  Merge pull request #4 from RemyL/patch-1  [Arian]
-ceff943  Merge pull request #3 from scrubjay55/patch-3  [Arian]
-c68fb53  French Translation  [RemyL]
