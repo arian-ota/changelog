@@ -1,4 +1,113 @@
 ====================
+     2020-06-27    
+====================
+
+* android
+7756768  lineage: Track QTI BT repos  [Pig]
+
+* frameworks/base
+dc64834  FODCircleView: Add Support for custom FP pressed icon  [TheScarastic]
+ae78e92  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
+3e719c3  SystemUI: get rid of build text in qs  [Joey]
+caf32cc  PackageManagerService: Drop caches according to incremental version  [Arian]
+06cf8c4  VolumeDialog: Implement expand/collapse animation  [Jesse Chan]
+b269ef8  VolumeDialog: Move the media output selector next to the expandable indicator  [Arian]
+ba620ad  VolumeDialog: Treat ring volume the same as others on icon tap  [Arian]
+6b93d14  VolumeDialog: Fix muting streams with a minimal volume of 1  [Arian]
+5bad58a  VolumeDialog: Hide the music row if there is an ally stream  [Giuseppe Maggio]
+4428537  VolumeDialog: Set the gravity and rotation based on the panels location  [Arian]
+990ce0f  VolumeDialog: Show the notification stream when unlinked  [Arian]
+91e2b1b  VolumeDialog: Convert CustomDialog to a View and configure ViewTreeObserver  [HrX03]
+a8df18f  VolumeDialog: Redo expanded volume panel  [HrX03]
+898eec2  Fix build errors  [Scott Lobdell]
+3cc0fee  Fix BLE transport discovery scan filter  [Subramanian Srinivasan]
+a39f9f4  BT: Relocate A2DP codec strings for translation  [dianlujitao]
+937b574  Enable codec change request when mode changes in aptX-adaptive  [Naval saini]
+d5d48fa  Keep a null check before accessing the BluetoothA2dpWrapper APIs.  [Satheesh Kumar Pallemoni]
+131c293  Bluetooth: Fix for out of bound exception  [pramod kotreshappa]
+f1d2ac1  BT Dev: Increase array size for codec selection in Dev Op  [Gurpreet Ghai]
+0c1bc0c  Keep the BluetoothHeadset finalize() method protected  [Diego Wilson]
+e77b3a0  Bluetooth: Fix for Global reference table overflow issue[1/2]  [Bandari Ramesh]
+fb2370e9  BT: Add new intent to broadcast IOT device details  [Gurpreet Ghai]
+22b31dd  BT_Audio: Updated Check for TWS+ switch  [Gurpreet Ghai]
+8fbf21e  TWS_A2DP: Handle active device change between TWS+ earbuds  [pramod kotreshappa]
+e824b90  audio: Add support for APTX TWSP audio codec  [Dhananjay Kumar]
+99db3ab  audio: Add support for audio extended codecs  [Naresh Tanniru]
+e79b237  Use BluetoothUtils instead of Utils  [Diego Wilson]
+2f5026c  GAP: Handle the race condition cases in auto connect logic  [Venkata Jagadeesh Garaga]
+e78e62d  Obex: Squashed commit of the following  [Sravan Kumar V]
+3c915e4  Add scan filter for Transport Discovery data  [Subramanian Srinivasan]
+59855ff  Support CALLBACK_TYPE_SENSOR_ROUTING  [Mingbo Zhang]
+dd1eed0  Add support for Transport discovery AD type (1/2)  [Subramanian Srinivasan]
+9d32a64  Bluetooth: TWSP: Support Battery Status information display  [Bhakthavatsala Raghavendra]
+a602b82  BT: Send info if call is CS type from telecomm service to BT apps.  [Sumit Bajpai]
+86c20db  GAP: Reset bondingInitiatedLocally flag(1/3)  [Venkata Jagadeesh Garaga]
+76947fb  Bluetooth-TWS: Disable outgoing connection to 2nd earbud  [Kiran Kelageri]
+5df1100  Bluetooth-TWS: Disable outgoing connection for 2nd earbud.  [Kiran Kelageri]
+e0d7401  Bluetooth: Rename bluetooth property to support new P Treble rules  [Safoorah Banu Shaik]
+864e6dc  Bluetooth: Unpair both earbuds on unpair.  [Kiran Kelageri]
+493111a  Bluetooth: Add SDK API support for TWS feature (2)  [Bandari Ramesh]
+0798107  Revert the change: AudioService: remove dead BT code.  [Samyak Jain]
+b9f99a2  TWS-A2DP: Add TWS+ codec to DevUI support  [pramod kotreshappa]
+690a4c9  BT: Adding aptX-Adaptive codec entry to Framework  [Gurpreet Ghai]
+17fb496  Add BluetoothQualityReport class(1/2)  [Mingbo Zhang]
+306477d  Automatic translation import  [Michael Bestas]
+
+* hardware/qcom-caf/msm8998/audio
+9e2e494  hal: msm8974: Use stereo recording depending on camera orientation  [BeYkeRYkt]
+972bdcf  hal: msm8974: Fix the wrong device for AUDIO_SOURCE_CAMCORDER  [BeYkeRYkt]
+
+* lineage-sdk
+a674865  Automatic translation import  [Michael Bestas]
+
+* lineage/hudson
+e30dd2d  hudson: Promote tissot to 17.1  [abhinavgupta371]
+ae944cf  Regenerate device dependency mappings  [razorloves]
+
+* lineage/wiki
+af67505  wiki: Promote tissot to 17.1  [abhinavgupta371]
+
+* packages/apps/Bluetooth
+1e694dd  Stub TWS related APIs  [dianlujitao]
+5e7c3d6  GAP: Reset bondingInitiatedLocally flag(2/3)  [Venkata Jagadeesh Garaga]
+9428eff  BT: API to update quiet mode status in Adapter service [1/3]  [M Safoorah Banu]
+1cd8bf9  Bluetooth: Enable Hybrid Audio from App  [Srinu Jella]
+c60eb70  Add BLE Scan Phy parameter to scan API  [Subramanian Srinivasan]
+
+* packages/apps/Dialer
+7257c0a  Fix translation of 'contacts' tab title and main menu.  [Danny Baumann]
+
+* packages/apps/Etar
+4b38c76  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Settings
+11158f9  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+458249a  BT: Use translated a2dp codec strings  [dianlujitao]
+b69d713  codec support for DevUI am: f915bd9438  [Naval saini]
+c5b4c01  BT Settings: Adding aptX Adaptive codec entry in Settings  [Gurpreet Ghai]
+05c9508  Bluetooth-TWS: UI updates based on Filter matched  [zhenchao]
+12a62a8  Bluetooth-TWS: UI updates based on profile connection.  [Kiran Kelageri]
+5adbabc  Fix build error  [Jiyong Park]
+0763466  Bluetooth-TWS: Filter TWS devices  [Kiran Kelageri]
+f513576  Bluetooth: Create new catogory for earbuds  [Kiran Kelageri]
+
+* packages/apps/Snap
+c139411  Snap: Report device orientation to Audio HAL  [BeYkeRYkt]
+
+* packages/services/Telecomm
+d51be63  Bluetooth: Support to know if there is High Def call  [Nivedita Sarkar]
+
+* system/bt
+d745359  GAP: Reset bondingInitiatedLocally flag(3/3)  [Venkata Jagadeesh Garaga]
+9291745  Bluetooth: Enable Hybrid Audio from stack  [Srinu Jella]
+ba9e68b  Add scan filter for Transport Discovery data  [Subramanian Srinivasan]
+a288dd1  TWS-A2DP: Add TWS+ codec index  [pramod kotreshappa]
+605cc45  Bluetooth: Support to know if there is High Def call  [Bhakthavatsala Raghavendra]
+96f01e5  BT: API to update quiet mode status in Adapter service [3/3]  [M Safoorah Banu]
+66b4459  BT: Adding APTX-Adaptive codec to BT HAL  [Gurpreet Ghai]
+7e453fa  Add BLE Scan Phy parameter to scan API  [Subramanian Srinivasan]
+e614ae7  Bluetooth: Add SDK API support for TWS feature (1)  [Ramesh Bandari]
+====================
      2020-06-26    
 ====================
 
@@ -6,19 +115,6 @@
 5e6813e  manifest: Switch to our external/skia fork  [Han Wang]
 
 * frameworks/base
-4003ae7  FODCircleView: Add Support for custom FP pressed icon  [TheScarastic]
-ac7f084  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
-b21095ce  SystemUI: get rid of build text in qs  [Joey]
-22794f1  PackageManagerService: Drop caches according to incremental version  [Arian]
-ab03cb0  VolumeDialog: Implement expand/collapse animation  [Jesse Chan]
-9dfea82  VolumeDialog: Move the media output selector next to the expandable indicator  [Arian]
-2ec2f1d8  VolumeDialog: Treat ring volume the same as others on icon tap  [Arian]
-35b9837  VolumeDialog: Fix muting streams with a minimal volume of 1  [Arian]
-fd77ab8  VolumeDialog: Hide the music row if there is an ally stream  [Giuseppe Maggio]
-fa2020b  VolumeDialog: Set the gravity and rotation based on the panels location  [Arian]
-68e1fd1  VolumeDialog: Show the notification stream when unlinked  [Arian]
-28d8d61  VolumeDialog: Convert CustomDialog to a View and configure ViewTreeObserver  [HrX03]
-1228f54  VolumeDialog: Redo expanded volume panel  [HrX03]
 aa91c1e  TextureVuew rebind GL texture, if AHB content has changed  [Stan Iliev]
 
 * kernel/xiaomi/sm6150
@@ -77,9 +173,6 @@ c40f54b  thermal: core: Custom thermal limits handling  [Demon000]
 
 * lineage-sdk
 4fed3ec  LineageSettingsService: prevent setting net.hostname to null  [Alexander Martinz]
-
-* packages/apps/Settings
-c39e8b2  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
 
 * vendor/lineage
 eb18aa6  qcom: Add atoll platform  [TheHitMan7]
@@ -370,12 +463,75 @@ d6c4b23  SystemUI: QS Details: Fix layout issues  [Michael W]
      2020-06-22    
 ====================
 
+* packages/apps/Bluetooth
+4358861  Automatic translation import  [Michael Bestas]
+
+* packages/apps/DeskClock
+1b3d30e  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Dialer
+262d6bc  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Eleven
+a9f1d80  Automatic translation import  [Michael Bestas]
+
 * packages/apps/Etar
 b338355  Etar: String improvements  [Michael Bestas]
 b288818  Etar: Restore tests  [LuK1337]
 3284faa  AOSP/Calendar - Minimal calendar app.  [Raman Tenneti]
 2fd1c76  Update code coverage filter  [Sebastien Hertz]
 414c864  Etar: Fix translatables  [Michael Bestas]
+
+* packages/apps/Exchange
+6a0f52c  Automatic translation import  [Michael Bestas]
+
+* packages/apps/FMRadio
+8ba2e5d  Automatic translation import  [Michael Bestas]
+
+* packages/apps/FlipFlap
+bf75f55  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Gallery2
+40099ee  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Jelly
+3ef8872  Automatic translation import  [Michael Bestas]
+
+* packages/apps/LineageParts
+e805ede  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Messaging
+1b39a83  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Recorder
+ba6f369  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Settings
+7bd254a  Automatic translation import  [Michael Bestas]
+
+* packages/apps/SetupWizard
+0523274  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Snap
+ffa05e5  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Trebuchet
+9c8ce4e  Automatic translation import  [Michael Bestas]
+
+* packages/apps/TvSettings
+4b7eac6  Automatic translation import  [Michael Bestas]
+
+* packages/inputmethods/LatinIME
+10b148a  Automatic translation import  [Michael Bestas]
+
+* packages/resources/devicesettings
+7a3adac  Automatic translation import  [Michael Bestas]
+
+* packages/services/BuiltInPrintService
+38c8d56  Automatic translation import  [Michael Bestas]
+
+* vendor/qcom/opensource/fm-commonsys
+1f27002  Automatic translation import  [Michael Bestas]
 ====================
      2020-06-21    
 ====================
@@ -391,15 +547,3 @@ b000b2f  hudson: Add Galaxy J7 2015 (j7elte)  [Dario Trombello]
 
 * packages/apps/Etar
 2d78047  Etar: Fix content provider rebrand  [Michael Bestas]
-====================
-     2020-06-20    
-====================
-
-* external/skia
-3e76a81  Allow to rebind GL texture if AHB content has changed  [Stan Iliev]
-
-* lineage/mirror
-d95df2b  Updated to 19-Jun-2020 13:15 UTC  [Kevin F. Haggerty]
-
-* tools/repohooks
-d7363ec  Fix regex in commit_msg_relnote_for_current_txt repo hook  [Nick Anthony]
