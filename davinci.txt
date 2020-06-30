@@ -1,24 +1,84 @@
 ====================
+     2020-06-30    
+====================
+
+* build/make
+7871f2c  [DNM] Always use release-keys  [Arian]
+
+* frameworks/av
+64c5d5e  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+
+* frameworks/base
+0d325b9  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+ea72e2e  FODCircleView: Add Support for custom FP pressed icon  [TheScarastic]
+6294602  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
+d2d4352  SystemUI: get rid of build text in qs  [Joey]
+6fe7d1ba  PackageManagerService: Drop caches according to incremental version  [Arian]
+2a82c9f  VolumeDialog: Implement expand/collapse animation  [Jesse Chan]
+f454603  VolumeDialog: Move the media output selector next to the expandable indicator  [Arian]
+2df53cb  VolumeDialog: Treat ring volume the same as others on icon tap  [Arian]
+cdc02d0  VolumeDialog: Fix muting streams with a minimal volume of 1  [Arian]
+97a2094  VolumeDialog: Hide the music row if there is an ally stream  [Giuseppe Maggio]
+3d4d8af  VolumeDialog: Set the gravity and rotation based on the panels location  [Arian]
+a5393fd  VolumeDialog: Show the notification stream when unlinked  [Arian]
+1d27057  VolumeDialog: Convert CustomDialog to a View and configure ViewTreeObserver  [HrX03]
+c8f2b6a  VolumeDialog: Redo expanded volume panel  [HrX03]
+
+* lineage-sdk
+5dab720  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+
+* packages/apps/LineageParts
+3f2a5e6  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+
+* packages/apps/Settings
+1c77005  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+db3372e  Settings: Fix fallback summary for power_button_instantly_locks preference  [LuK1337]
+====================
+     2020-06-29    
+====================
+
+* build/make
+6bc6d81  releasetools: support dynamic partitions for backuptool  [Jesse Chan]
+06e025b  Generate block based OTA for product partitions  [Tianjie Xu]
+
+* device/xiaomi/davinci
+e0a6803  davinci: rootdir: Tune zram performance  [Wei Wang]
+be6e7e9  davinci: rootdir: Update zram size from V12.0.1.0.QFJMIXM and tweak swappiness and allocstall threshold  [Arian]
+2a54cf9  Revert "davinci: rootdir: Drop zram"  [Arian]
+4baf90a  davinci: Switch to QTI bt stack  [dianlujitao]
+394bcbb  davinci: overlay: Import Bluetooth overlay from LA.UM.8.9.r1-09200-SM6xx.0  [Arian]
+68a8467  davinci: Update from Global Stable V12.0.1.0.QFJMIXM  [Arian]
+a8f4eaa  davinci: Kang fingerprint from dipper  [Arian]
+
+* kernel/xiaomi/sm6150
+afbf3a2  Revert "ARM64: configs: Disable zram"  [Arian]
+
+* vendor/lineage
+d97bfec  repopick: Fallback to name when project path is empty  [Aaron Kling]
+83d2fa4  Export CAF msm-4.14 audio headers  [dianlujitao]
+====================
+     2020-06-28    
+====================
+
+* android
+53f057c  manifest: Sync sm8250 HALs  [LuK1337]
+====================
      2020-06-27    
 ====================
 
 * android
 7756768  lineage: Track QTI BT repos  [Pig]
 
+* build/make
+2649f03  Refactor how MODULES-IN-* is defined  [Dan Willemsen]
+647abd8  base_rules.mk optimizations  [Dan Willemsen]
+ef4e87c  Fix test suite data files issue.  [Jaewoong Jung]
+9424b06  Export list of "installable" files to soong_ui  [Dan Willemsen]
+
+* device/qcom/sepolicy-legacy
+22b912c  sepolicy: cnd: Allow access to wifi_prop  [Nolen Johnson]
+
 * frameworks/base
-dc64834  FODCircleView: Add Support for custom FP pressed icon  [TheScarastic]
-ae78e92  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
-3e719c3  SystemUI: get rid of build text in qs  [Joey]
-caf32cc  PackageManagerService: Drop caches according to incremental version  [Arian]
-06cf8c4  VolumeDialog: Implement expand/collapse animation  [Jesse Chan]
-b269ef8  VolumeDialog: Move the media output selector next to the expandable indicator  [Arian]
-ba620ad  VolumeDialog: Treat ring volume the same as others on icon tap  [Arian]
-6b93d14  VolumeDialog: Fix muting streams with a minimal volume of 1  [Arian]
-5bad58a  VolumeDialog: Hide the music row if there is an ally stream  [Giuseppe Maggio]
-4428537  VolumeDialog: Set the gravity and rotation based on the panels location  [Arian]
-990ce0f  VolumeDialog: Show the notification stream when unlinked  [Arian]
-91e2b1b  VolumeDialog: Convert CustomDialog to a View and configure ViewTreeObserver  [HrX03]
-a8df18f  VolumeDialog: Redo expanded volume panel  [HrX03]
 898eec2  Fix build errors  [Scott Lobdell]
 3cc0fee  Fix BLE transport discovery scan filter  [Subramanian Srinivasan]
 a39f9f4  BT: Relocate A2DP codec strings for translation  [dianlujitao]
@@ -81,7 +141,6 @@ c60eb70  Add BLE Scan Phy parameter to scan API  [Subramanian Srinivasan]
 4b38c76  Automatic translation import  [Michael Bestas]
 
 * packages/apps/Settings
-11158f9  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
 458249a  BT: Use translated a2dp codec strings  [dianlujitao]
 b69d713  codec support for DevUI am: f915bd9438  [Naval saini]
 c5b4c01  BT Settings: Adding aptX Adaptive codec entry in Settings  [Gurpreet Ghai]
@@ -114,8 +173,33 @@ e614ae7  Bluetooth: Add SDK API support for TWS feature (1)  [Ramesh Bandari]
 * android
 5e6813e  manifest: Switch to our external/skia fork  [Han Wang]
 
+* build/make
+64401b3  Avoid adding VINTF manifest fragment more than once.  [Bill Peckham]
+
 * frameworks/base
 aa91c1e  TextureVuew rebind GL texture, if AHB content has changed  [Stan Iliev]
+
+* hardware/qcom-caf/sm8250/audio
+02a7ad6  a2dp: Add a null check before iterating over a2dp.adev->usecase_list  [Scott Warner]
+7282ec9  hal: Add missing includes  [Atman]
+4a5999c  audio_extn: Allow skipping compilation of audio HAL extensions  [Bruno Martins]
+9c5445a  audio: Skip libhdmipassthru on OSS builds  [Bruno Martins]
+5644af1  audio: Use direct project pathmap  [Ethan Chen]
+
+* hardware/qcom-caf/sm8250/display
+b454b69  gralloc: Add option for YCrCb venus camera preview  [SGCMarkus]
+df05127  gralloc: Allow devices to opt-in for YCrCb camera preview  [LuK1337]
+1f986df  Add C2D_FORMAT_BT601_FULLRANGE to C2D_FORMAT_MODE  [Bruno Martins]
+e8ac6d8  Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT  [LuK1337]
+bcaf4ee  Don't build lights module if vendor supplies it  [Steve Kondik]
+2949368  display: Use project pathmap  [Ethan Chen]
+1445210  Add 'display-commonsys-intf/' from commit 'af08d2405c4961f5159e98dc7266753296874bbf'  [LuK1337]
+
+* hardware/qcom-caf/sm8250/media
+bf0d869  media: Exclude libplatformconfig from OSS builds  [Bruno Martins]
+698c47a  media: Include display_headers instead of display_intf_headers  [Dyneteve]
+044079f  media: libOmxSw encoders require prop headers :(  [Ricardo Cerqueira]
+e7cd0ee  media: Use project pathmap  [Ethan Chen]
 
 * kernel/xiaomi/sm6150
 f03af9a  drm: msm: Disable DC dimming while HBM is active  [Arian]
@@ -175,14 +259,13 @@ c40f54b  thermal: core: Custom thermal limits handling  [Demon000]
 4fed3ec  LineageSettingsService: prevent setting net.hostname to null  [Alexander Martinz]
 
 * vendor/lineage
+b82776e  qcom: Add UM 4.19 platforms  [LuK1337]
 eb18aa6  qcom: Add atoll platform  [TheHitMan7]
 ====================
      2020-06-25    
 ====================
 
 * device/xiaomi/davinci
-e470c55  davinci: Update from Global Stable V12.0.1.0.QFJMIXM  [Arian]
-34dae43  davinci: Use stock fingerprint  [Arian]
 158cc79  davinci: init: Workaround safetynet  [Arian]
 c70a8c9  davinci: parts: Add StarWars popup sounds  [Arian]
 53a636f  davinci: light: Disable both LEDs  [Arian]
@@ -452,98 +535,3 @@ d6c4b23  SystemUI: QS Details: Fix layout issues  [Michael W]
 
 * vendor/xiaomi/davinci
 6dbf912  davinci: Updates from tree  [Arian]
-====================
-     2020-06-23    
-====================
-
-* vendor/translations
-45fb88a  parts: add italian translations  [Marco Rizzo]
-87608dd  Correct typo in french translation  [RemyL]
-====================
-     2020-06-22    
-====================
-
-* packages/apps/Bluetooth
-4358861  Automatic translation import  [Michael Bestas]
-
-* packages/apps/DeskClock
-1b3d30e  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Dialer
-262d6bc  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Eleven
-a9f1d80  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Etar
-b338355  Etar: String improvements  [Michael Bestas]
-b288818  Etar: Restore tests  [LuK1337]
-3284faa  AOSP/Calendar - Minimal calendar app.  [Raman Tenneti]
-2fd1c76  Update code coverage filter  [Sebastien Hertz]
-414c864  Etar: Fix translatables  [Michael Bestas]
-
-* packages/apps/Exchange
-6a0f52c  Automatic translation import  [Michael Bestas]
-
-* packages/apps/FMRadio
-8ba2e5d  Automatic translation import  [Michael Bestas]
-
-* packages/apps/FlipFlap
-bf75f55  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Gallery2
-40099ee  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Jelly
-3ef8872  Automatic translation import  [Michael Bestas]
-
-* packages/apps/LineageParts
-e805ede  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Messaging
-1b39a83  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Recorder
-ba6f369  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Settings
-7bd254a  Automatic translation import  [Michael Bestas]
-
-* packages/apps/SetupWizard
-0523274  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Snap
-ffa05e5  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Trebuchet
-9c8ce4e  Automatic translation import  [Michael Bestas]
-
-* packages/apps/TvSettings
-4b7eac6  Automatic translation import  [Michael Bestas]
-
-* packages/inputmethods/LatinIME
-10b148a  Automatic translation import  [Michael Bestas]
-
-* packages/resources/devicesettings
-7a3adac  Automatic translation import  [Michael Bestas]
-
-* packages/services/BuiltInPrintService
-38c8d56  Automatic translation import  [Michael Bestas]
-
-* vendor/qcom/opensource/fm-commonsys
-1f27002  Automatic translation import  [Michael Bestas]
-====================
-     2020-06-21    
-====================
-
-* frameworks/base
-24656a5  SystemUI: Fix QS Detail Header  [Michael W]
-
-* lineage/hudson
-b000b2f  hudson: Add Galaxy J7 2015 (j7elte)  [Dario Trombello]
-
-* lineage/wiki
-879bf16  wiki: Add Galaxy J7 2015 (j7elte)  [Dario Trombello]
-
-* packages/apps/Etar
-2d78047  Etar: Fix content provider rebrand  [Michael Bestas]
