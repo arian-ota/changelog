@@ -1,105 +1,96 @@
 ====================
-     2020-07-05    
+     2020-07-12    
 ====================
 
 * build/make
-b0bc6c8  [DNM] Always use release-keys  [Arian]
+64f67e1  [DNM] Always use release-keys  [Arian]
 
 * frameworks/av
-a902d44  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+9347118  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
 
 * frameworks/base
-631e404  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
-3cdefdf  FODCircleView: Add Support for custom FP pressed icon  [TheScarastic]
-9e0d1a4  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
-fd596ec  SystemUI: get rid of build text in qs  [Joey]
-2470740  PackageManagerService: Drop caches according to incremental version  [Arian]
-d2bcac5  VolumeDialog: Implement expand/collapse animation  [Jesse Chan]
-6bdba11  VolumeDialog: Move the media output selector next to the expandable indicator  [Arian]
-9569991  VolumeDialog: Treat ring volume the same as others on icon tap  [Arian]
-a04cc7a  VolumeDialog: Fix muting streams with a minimal volume of 1  [Arian]
-52b6d34  VolumeDialog: Hide the music row if there is an ally stream  [Giuseppe Maggio]
-d5c8c7d  VolumeDialog: Set the gravity and rotation based on the panels location  [Arian]
-8ef13f2  VolumeDialog: Show the notification stream when unlinked  [Arian]
-431076a  VolumeDialog: Convert CustomDialog to a View and configure ViewTreeObserver  [HrX03]
-8736552  VolumeDialog: Redo expanded volume panel  [HrX03]
-
-* lineage-sdk
-36fd7ce  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
-
-* packages/apps/Etar
-46533bd  Update readme (#728)  [Gitsaibot]
-406bdbe  Release new 1.0.22 version (#725)  [Jochen Sprickerhof]
-ab8f541  Make use of system theme setting on android 10 (#715)  [Gitsaibot]
-
-* packages/apps/LineageParts
-e26b5cf  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
-
-* packages/apps/Settings
-55fbf43  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
-====================
-     2020-07-04    
-====================
-
-* frameworks/base
-af24729  Explicitly grant START_ACTIVITIES_FROM_BACKGROUND to com.android.phone.  [Alan Stokes]
-
-* lineage/mirror
-5a604d7  Updated to 03-Jul-2020 23:24 UTC  [Kevin F. Haggerty]
-97631c5  Updated to 03-Jul-2020 23:12 UTC  [Kevin F. Haggerty]
-
-* packages/services/Telephony
-c0f877a  Explicitly grant START_ACTIVITIES_FROM_BACKGROUND to com.android.phone.  [Alan Stokes]
-====================
-     2020-07-03    
-====================
-
-* lineage/hudson
-767120f  Drop RMX1851 for now  [Kevin F. Haggerty]
-
-* lineage/wiki
-81a619e  Drop RMX1851 for now  [Kevin F. Haggerty]
-
-* packages/apps/Etar
-db9d873  update submodules  [Jochen Sprickerhof]
-====================
-     2020-07-02    
-====================
-====================
-     2020-07-01    
-====================
-
-* android
-a063607  manifest: Track AOSP TV app  [Nolen Johnson]
-====================
-     2020-06-30    
-====================
-
-* packages/apps/Settings
-db3372e  Settings: Fix fallback summary for power_button_instantly_locks preference  [LuK1337]
-
-* vendor/qcom/opensource/commonsys/system/bt
-af7dfee  AVRCP: Ignore AVRCP version when registering absolute volume feature  [LuK1337]
-====================
-     2020-06-29    
-====================
-
-* build/make
-6bc6d81  releasetools: support dynamic partitions for backuptool  [Jesse Chan]
-06e025b  Generate block based OTA for product partitions  [Tianjie Xu]
-
-* device/xiaomi/davinci
-e0a6803  davinci: rootdir: Tune zram performance  [Wei Wang]
-be6e7e9  davinci: rootdir: Update zram size from V12.0.1.0.QFJMIXM and tweak swappiness and allocstall threshold  [Arian]
-2a54cf9  Revert "davinci: rootdir: Drop zram"  [Arian]
-4baf90a  davinci: Switch to QTI bt stack  [dianlujitao]
-394bcbb  davinci: overlay: Import Bluetooth overlay from LA.UM.8.9.r1-09200-SM6xx.0  [Arian]
-68a8467  davinci: Update from Global Stable V12.0.1.0.QFJMIXM  [Arian]
-a8f4eaa  davinci: Kang fingerprint from dipper  [Arian]
+4b5d7e2  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+85ba069  FODCircleView: Add Support for custom FP pressed icon  [TheScarastic]
+dea1f2a  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
+a0e7707  SystemUI: get rid of build text in qs  [Joey]
+584f267  PackageManagerService: Drop caches according to incremental version  [Arian]
+32556f2  VolumeDialog: Implement expand/collapse animation  [Jesse Chan]
+c5428b4  VolumeDialog: Move the media output selector next to the expandable indicator  [Arian]
+6da2de7  VolumeDialog: Treat ring volume the same as others on icon tap  [Arian]
+64103b1  VolumeDialog: Fix muting streams with a minimal volume of 1  [Arian]
+5182d26  VolumeDialog: Hide the music row if there is an ally stream  [Giuseppe Maggio]
+f5cbbaf  VolumeDialog: Set the gravity and rotation based on the panels location  [Arian]
+eebab14  VolumeDialog: Show the notification stream when unlinked  [Arian]
+0dadaed  VolumeDialog: Convert CustomDialog to a View and configure ViewTreeObserver  [HrX03]
+b384230  VolumeDialog: Redo expanded volume panel  [HrX03]
 
 * kernel/xiaomi/sm6150
-afbf3a2  Revert "ARM64: configs: Disable zram"  [Arian]
+fcd3800  rcu: fix a performance regression  [Yaroslav Furman]
 
-* vendor/lineage
-d97bfec  repopick: Fallback to name when project path is empty  [Aaron Kling]
-83d2fa4  Export CAF msm-4.14 audio headers  [dianlujitao]
+* lineage-sdk
+d969cec  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+
+* lineage/mirror
+b56933a  Updated to 11-Jul-2020 13:33 UTC  [Kevin F. Haggerty]
+
+* packages/apps/LineageParts
+cc076a9  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+
+* packages/apps/Settings
+a2a2e7c  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+
+* vendor/translations
+cbd1f6c  nano  [Zadli]
+d778138  Add hungarian translations  [jUUh0028]
+====================
+     2020-07-11    
+====================
+
+* vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
+2ca8b3c  Clean up duplicate uses-permission entries  [Bruno Martins]
+====================
+     2020-07-10    
+====================
+====================
+     2020-07-09    
+====================
+
+* device/qcom/sepolicy-legacy-um
+f432935  sepolicy: cnd: Fix wifi_prop neverallow for compatible props  [dianlujitao]
+
+* frameworks/base
+325252f  Fix typos related to sortSelectionIndices  [Wang Han]
+0edff23  Fix app crash if the selection is from reverse direction.  [Joanne Chung]
+
+* hardware/qcom-caf/sdm845/display
+42deb8b  gralloc: Add option for unaligned YCrCb pixel format  [Willi Ye]
+====================
+     2020-07-08    
+====================
+
+* frameworks/base
+668c9d1  SystemUI: Call setOnlyAlertOnce(true) for PowerShare notification  [LuK1337]
+
+* lineage/mirror
+dd62b6a  Updated to 07-Jul-2020 19:36 UTC  [Kevin F. Haggerty]
+
+* lineage/wiki
+cfbfe73  wiki: Fix zadig typos in heimdall template  [razorloves]
+
+* packages/apps/Dialer
+3334d70  Dialer: Use a DayNight launch theme  [Scott Warner]
+
+* packages/apps/Messaging
+006dbbf  Merge "Messaging: Use a DayNight launch theme" into lineage-17.1  [Michael Bestas]
+====================
+     2020-07-07    
+====================
+====================
+     2020-07-06    
+====================
+
+* device/qcom/sepolicy-legacy-um
+5070197  sepolicy: cnd: Allow access to wifi_prop  [Nolen Johnson]
+
+* frameworks/base
+214db7e  BLE: Fix NPE during start advertising  [Sravan Voleti]
