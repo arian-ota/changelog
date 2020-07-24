@@ -1,27 +1,83 @@
 ====================
-     2020-07-19    
+     2020-07-24    
 ====================
 
 * build/make
-7679004  [DNM] Always use release-keys  [Arian]
+f17f1fe  [DNM] Always use release-keys  [Arian]
 
 * frameworks/av
-2c1fc8b  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+0522468  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
 
 * frameworks/base
-0158e5d  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
-d2bbbe8  FODCircleView: Add Support for custom FP pressed icon  [TheScarastic]
-fee9e13  SystemUI: get rid of build text in qs  [Joey]
-6e1d8cb  PackageManagerService: Drop caches according to incremental version  [Arian]
-0c67753  VolumeDialog: Implement expand/collapse animation  [Jesse Chan]
-955851f  VolumeDialog: Move the media output selector next to the expandable indicator  [Arian]
-42877c6  VolumeDialog: Treat ring volume the same as others on icon tap  [Arian]
-1fc491f  VolumeDialog: Fix muting streams with a minimal volume of 1  [Arian]
-14781c2  VolumeDialog: Hide the music row if there is an ally stream  [Giuseppe Maggio]
-5ce8b9f  VolumeDialog: Set the gravity and rotation based on the panels location  [Arian]
-4457a2a0  VolumeDialog: Show the notification stream when unlinked  [Arian]
-af4aa6b  VolumeDialog: Convert CustomDialog to a View and configure ViewTreeObserver  [HrX03]
-c72e2f4  VolumeDialog: Redo expanded volume panel  [HrX03]
+124366f  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+fef1c0e  FODCircleView: Add Support for custom FP pressed icon  [TheScarastic]
+be3ac12  SystemUI: get rid of build text in qs  [Joey]
+c34ad11  PackageManagerService: Drop caches according to incremental version  [Arian]
+
+* lineage-sdk
+28fc125  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+
+* packages/apps/LineageParts
+96862f6  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+
+* packages/apps/Messaging
+9b65a50  Messaging: Fix quick reply feature on non wearable devices  [Han Wang]
+
+* packages/apps/Settings
+abebd48  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+====================
+     2020-07-23    
+====================
+
+* lineage/wiki
+f41fcbe  wiki: Fix F(x)tec Pro¹ branding  [Sean McCreary]
+
+* packages/apps/CarrierConfig
+0f4ac84  Fix voicemail for Bouygues Telecom France  [gnumdk]
+====================
+     2020-07-22    
+====================
+
+* frameworks/base
+c9e386b  VolumeDialog: Move the media output selector next to the expandable indicator  [Arian]
+b47fdc8  VolumeDialog: Treat ring volume the same as others on icon tap  [Arian]
+dab321a  VolumeDialog: Fix muting streams with a minimal volume of 1  [Arian]
+84e06ce  VolumeDialog: Hide the music row if there is an ally stream  [Giuseppe Maggio]
+e7ee2a9  VolumeDialog: Set the gravity and rotation based on the panels location  [Arian]
+eb521fd  VolumeDialog: Show the notification stream when unlinked  [Arian]
+cefae54  VolumeDialog: Convert CustomDialog to a View and configure ViewTreeObserver  [HrX03]
+1e9a6dd  VolumeDialog: Redo expanded volume panel  [HrX03]
+bd9fed58  VolumeDialog: notifyVisible after the volume panel is fully hidden  [Jesse Chan]
+722c3d6  VolumeDialog: display default row when active row is notification  [Jesse Chan]
+c51c186  SystemUI: fix size of icon of vibrate ringer mode  [Arian]
+6192c8e  VolumeDialog: Display previous active row when active row is default  [Jesse Chan]
+eff9aa5  Purge unused native memory before Zygote fork events  [Chris Wailes]
+====================
+     2020-07-21    
+====================
+
+* frameworks/base
+63f827f  Fix color mismatch of pointers  [xuejianbao]
+====================
+     2020-07-20    
+====================
+
+* lineage/scripts
+961ad2b  Update default webview to 84.0.4147.89  [Kevin F. Haggerty]
+
+* vendor/lineage
+7d6601c  repopick: Use upstream instead of revision to determine branch  [Aaron Kling]
+====================
+     2020-07-19    
+====================
+
+* system/core
+1072bf2  Boost init priority before main loop  [Wei Wang]
+====================
+     2020-07-18    
+====================
+
+* frameworks/base
 5af935c  Teaches the ProcessCpuTracker about USAPs.  [Chris Wailes]
 7a321e6  Adds Zygote policy flags to control how applications are launched  [Chris Wailes]
 fcebbbc  Start process of next activity with top priority in advance  [Riddle Hsu]
@@ -36,86 +92,9 @@ b4c51ad  Adjust Java Language thread priority in new processes.  [Chris Wailes]
 1df153a  Change USAP name to application name as soon as possible.  [Chris Wailes]
 aff5c1b  SystemUI: Use regular global_actions_column layout for layout-sw600dp-land  [LuK1337]
 
-* lineage-sdk
-088d6c6  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
-
-* lineage/wiki
-0ac8de9  wiki: Add fastboot connection tip  [Markus Alfter]
-
-* packages/apps/LineageParts
-ea077a3  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
-
-* packages/apps/Settings
-f1b4192  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
-====================
-     2020-07-18    
-====================
-
-* frameworks/base
-afd45f5  SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod  [maxwen]
-
 * hardware/qcom-caf/sm8150/display
 b210246  sdm: mark FOD pressed layer by setting a bit on ZPOS  [Demon000]
 
 * lineage/wiki
+0ac8de9  wiki: Add fastboot connection tip  [Markus Alfter]
 9032379  wiki: devices: lge-msm8996: Use Lineage Recovery  [Nolen Johnson]
-
-* packages/apps/Jelly
-00e8737  Jelly: Fix find in page functionality  [George Zacharia]
-====================
-     2020-07-17    
-====================
-
-* frameworks/base
-667910a  fw/b: Add support for per app network isolation  [Sam Mortimer]
-
-* lineage/wiki
-cb9490d  wiki: Add pro1 (FxTec Pro1)  [Tom Marshall]
-
-* packages/apps/Settings
-5edbb70  Settings: Add support for per app network isolation  [Sam Mortimer]
-====================
-     2020-07-16    
-====================
-
-* hardware/qcom-caf/sdm845/display
-95a2d7c  gralloc: Add option for unaligned YCrCb/YCbCr pixel format height  [LuK1337]
-
-* tools/repohooks
-07107e6  pre-upload: drop support for Python 3.4  [Mike Frysinger]
-e67d480  pre-upload: enable Python 2 deprecation warning  [Mike Frysinger]
-00ebc1a  Merge "pylint: always run python3 check with --py3"  [Mike Frysinger]
-a835e6d  pylint: always run python3 check with --py3  [Mike Frysinger]
-====================
-     2020-07-15    
-====================
-
-* packages/apps/DeskClock
-cd7108e  DeskClock: Setup data model before calling super.onStart()  [LuK1337]
-
-* packages/apps/Settings
-db1ebbb  fixup! BasebandVersionPreferenceController: Trim baseband if needed  [LuK1337]
-====================
-     2020-07-14    
-====================
-
-* packages/apps/DeskClock
-c38683a  DeskClock: Fix FAB not being shown everytime  [Michael W]
-8a9bb0c  DeskClock: Remove unused imports from NotificationUtils  [Michael Bestas]
-68a451b  DeskClock: Stop depending on platform APIs  [Michael Bestas]
-9378f67  DeskClock: Remove references to org.lineageos.platform.internal  [Michael W]
-
-* vendor/lineage
-99228d6  lineage: update GMS updater component disable list  [Oliver Scott]
-====================
-     2020-07-13    
-====================
-
-* lineage/wiki
-9da5474  wiki: Include 17.1 in java version requirements for building  [filiprrs]
-
-* packages/apps/DeskClock
-2369e05  DeskClock: Don't rely on framework  [Michael W]
-
-* vendor/lineage
-b901116  Remove deprecated backup overlay  [Michael Bestas]
