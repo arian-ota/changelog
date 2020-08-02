@@ -1,92 +1,105 @@
 ====================
-     2020-07-26    
+     2020-08-02    
 ====================
 
 * build/make
-8d36192  [DNM] Always use release-keys  [Arian]
+da6b8cb  [DNM] Always use release-keys  [Arian]
 
 * frameworks/av
-85d3302  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+ddb9e7b  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
 
 * frameworks/base
-b83692e  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
-c53c987  FODCircleView: Add Support for custom FP pressed icon  [TheScarastic]
-2ac8803  SystemUI: get rid of build text in qs  [Joey]
-5af8078  PackageManagerService: Drop caches according to incremental version  [Arian]
-
-* lineage-sdk
-f59128a  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
-
-* lineage/hudson
-f00c949  hudson: mmmm bacon  [Nolen Johnson]
-88082b6  Regenerate device dependency mappings  [razorloves]
-
-* lineage/wiki
-cabb99a  wiki: devices: Promote bacon to 17.1  [Nolen Johnson]
+ce368a8  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+0ba45e6  FODCircleView: Add Support for custom FP pressed icon  [TheScarastic]
+b9469e0  SystemUI: get rid of build text in qs  [Joey]
+9833402  PackageManagerService: Drop caches according to incremental version  [Arian]
+4c299d6  VolumeDialog: Prevent hiding the ally stream  [Arian]
+a9a7848  VolumeDialog: Implement expand/collapse animation  [Jesse Chan]
+3a18b1b  VolumeDialog: Move the media output selector next to the expandable indicator  [Arian]
+aa392f4  VolumeDialog: Treat ring volume the same as others on icon tap  [Arian]
+e512aa5  VolumeDialog: Fix muting streams with a minimal volume of 1  [Arian]
+ee3dd2a  VolumeDialog: Hide the music row if there is an ally stream  [Giuseppe Maggio]
+71c5706  VolumeDialog: Set the gravity and rotation based on the panels location  [Arian]
+70327ac  VolumeDialog: Show the notification stream when unlinked  [Arian]
+09645c7  VolumeDialog: Convert CustomDialog to a View and configure ViewTreeObserver  [HrX03]
+0f24513  VolumeDialog: Redo expanded volume panel  [HrX03]
+045ce64  VolumeDialog: notifyVisible after the volume panel is fully hidden  [Jesse Chan]
+38405aa  VolumeDialog: display default row when active row is notification  [Jesse Chan]
+59a7fdd  SystemUI: fix size of icon of vibrate ringer mode  [Arian]
 
 * packages/apps/LineageParts
-287ede7  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+de5fa7d  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 
 * packages/apps/Settings
-f584c83  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+c893608  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
 ====================
-     2020-07-25    
-====================
-
-* lineage/hudson
-033bda9  hudson: Add Sony Xperia XZ2 (akari)  [Olivier Karasangabo]
-b0b20c0  hudson: Add Sony Xperia XZ2 Compact (xz2c)  [Olivier Karasangabo]
-
-* lineage/wiki
-1978520  wiki: Add Sony Xperia XZ2 Compact (xz2c)  [Olivier Karasangabo]
-7b95e72  wiki: Add Sony Xperia XZ2 (akari)  [sjllls]
-
-* packages/apps/Messaging
-9b65a50  Messaging: Fix quick reply feature on non wearable devices  [Han Wang]
-====================
-     2020-07-24    
+     2020-08-01    
 ====================
 
-* packages/apps/CarrierConfig
-0f4ac84  Fix voicemail for Bouygues Telecom France  [gnumdk]
+* packages/apps/Gallery2
+6bda026  Revert "Remove application/SDP from Gallery2's ACTION_VIEW and REVIEW filters."  [Joey]
+
+* tools/repohooks
+2e1406d  git: use "git rev-list" to get a revision listing  [Jonathan Nieder]
+
+* vendor/lineage
+939e2e6  prebuilt: Clean up lineage-system.rc  [Han Wang]
 ====================
-     2020-07-23    
+     2020-07-31    
 ====================
 
 * frameworks/base
-b47fdc8  VolumeDialog: Treat ring volume the same as others on icon tap  [Arian]
-dab321a  VolumeDialog: Fix muting streams with a minimal volume of 1  [Arian]
-84e06ce  VolumeDialog: Hide the music row if there is an ally stream  [Giuseppe Maggio]
-e7ee2a9  VolumeDialog: Set the gravity and rotation based on the panels location  [Arian]
-eb521fd  VolumeDialog: Show the notification stream when unlinked  [Arian]
-cefae54  VolumeDialog: Convert CustomDialog to a View and configure ViewTreeObserver  [HrX03]
-1e9a6dd  VolumeDialog: Redo expanded volume panel  [HrX03]
-bd9fed58  VolumeDialog: notifyVisible after the volume panel is fully hidden  [Jesse Chan]
-722c3d6  VolumeDialog: display default row when active row is notification  [Jesse Chan]
-c51c186  SystemUI: fix size of icon of vibrate ringer mode  [Arian]
-6192c8e  VolumeDialog: Display previous active row when active row is default  [Jesse Chan]
-eff9aa5  Purge unused native memory before Zygote fork events  [Chris Wailes]
+91648ca  Add isFaceAuthEnabledForUser checks in KeyguardLiftController  [jie shen]
+
+* hardware/lineage/livedisplay
+ce63fc9  livedisplay: sysfs: Add generic implementation for simple sysfs modes  [dianlujitao]
+b8ca32c  livedisplay: sysfs: Modularize all components  [dianlujitao]
+22462db  livedisplay: sysfs: Refine interface registration  [dianlujitao]
+8a01e72  livedisplay: sysfs: Miscellaneous clean-ups  [dianlujitao]
+d0580f3  livedisplay: sysfs: Use POSIX api to check file access  [dianlujitao]
+b1a97e0  livedisplay: sysfs: Move string literals to anonymous namespace  [dianlujitao]
+8888a4b  livedisplay: sysfs: Follow naming rules of Google C++ Style Guide  [dianlujitao]
+44e1a1f  livedisplay: sdm: Modularize all components  [dianlujitao]
+5e27e56  livedisplay: sdm: Fix a mismatched data type  [dianlujitao]
+4afd662  livedisplay: sdm: Miscellaneous clean-ups  [dianlujitao]
+5c154dc  livedisplay: sdm: Improve SendDppsCommand  [dianlujitao]
+bb5ff4a  livedisplay: sdm: Move constants and helpers to anonymous namespace  [dianlujitao]
+b8a246a  livedisplay: sdm: Move SDM feature version check to utils  [dianlujitao]
+39b8735  livedisplay: sdm: Convert Utils class to namespace  [dianlujitao]
+07e4ea4  livedisplay: sdm: Use default member initializers  [dianlujitao]
+143150e  livedisplay: sdm: Follow naming rules of Google C++ Style Guide  [dianlujitao]
+9d5a9c9  livedisplay: sdm: Implement a sane callback to update default PA  [dianlujitao]
+a15a1f3  livedisplay: sdm: Restart when any QDCM backend not ready  [dianlujitao]
+7468c41  livedisplay: sdm: Use RAII semantics where possible  [dianlujitao]
+====================
+     2020-07-30    
+====================
+
+* lineage-sdk
+b0f4882  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+
+* tools/repohooks
+7a814a1  Pull upstream cpplint.py from github.com/google/styleguide  [Alex Light]
+====================
+     2020-07-29    
+====================
 
 * lineage/wiki
-f41fcbe  wiki: Fix F(x)tec Pro¹ branding  [Sean McCreary]
+5f9dde6  wiki: Add pre-install instructions for Xperia XZ2/XZ2c devices  [Olivier Karasangabo]
 ====================
-     2020-07-22    
-====================
-
-* frameworks/base
-63f827f  Fix color mismatch of pointers  [xuejianbao]
-====================
-     2020-07-21    
+     2020-07-28    
 ====================
 
 * lineage/scripts
-961ad2b  Update default webview to 84.0.4147.89  [Kevin F. Haggerty]
+3836e87  update-payload-extractor: Remove dynamic partition support  [Luca Stefani]
+381775f  update-payload-extractor: Switch to env python  [Luca Stefani]
+cc06167  update-payload-extractor: Import master update_payload  [Luca Stefani]
 
-* vendor/lineage
-7d6601c  repopick: Use upstream instead of revision to determine branch  [Aaron Kling]
+* lineage/wiki
+f26ae11  wiki: Merge all 'before_install_needs_android_{}_fw' templates  [LuK1337]
 ====================
-     2020-07-20    
+     2020-07-27    
 ====================
 
-* system/core
-1072bf2  Boost init priority before main loop  [Wei Wang]
+* lineage/mirror
+1fb8c3f  Updated to 26-Jul-2020 13:22 UTC  [Kevin F. Haggerty]
