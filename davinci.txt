@@ -3,19 +3,19 @@
 ====================
 
 * build/make
-492fa42  [DNM] Always use release-keys  [Arian]
+0dfc519  [DNM] Always use release-keys  [Arian]
 
 * device/xiaomi/davinci
-f571066  davinci: Kang fingerprint from dipper  [Arian]
-afbeb65  davinci: init: Workaround safetynet  [Arian]
-e1f696e  davinci: parts: Add StarWars popup sounds  [Arian]
-ad6c6fa  davinci: Move NFC permissions to ODM  [Andrew Hexen]
-599f4e9  davinci: Disable NFC for indian devices  [Erfan Abdi]
-84c239b  davinci: Disable VSync for CPU rendered apps  [Hazari PraveenKumar]
-ffca089  davinci: Enable fluence for audio/voice recording  [Adithya R]
-b0495f3  davinci: Add AOSP RCS packages  [Ethan Chen]
-28b1138  davinci: Remove dead RCS packages  [Ethan Chen]
-690cb6e  davinci: Build librmnetctl from source  [Aleksander Gencel]
+5fcbb7c  davinci: Kang fingerprint from dipper  [Arian]
+66d94f4  davinci: init: Workaround safetynet  [Arian]
+b0f12ac  davinci: parts: Add StarWars popup sounds  [Arian]
+8c3af2f  davinci: Move NFC permissions to ODM  [Andrew Hexen]
+2628a6e  davinci: Disable NFC for indian devices  [Erfan Abdi]
+cff55f6  davinci: Disable VSync for CPU rendered apps  [Hazari PraveenKumar]
+622e530  davinci: Enable fluence for audio/voice recording  [Adithya R]
+a45081e  davinci: Add AOSP RCS packages  [Ethan Chen]
+774b264  davinci: Remove dead RCS packages  [Ethan Chen]
+e04c81f  davinci: Disable uplink features in librmnetctl and build it from source  [LuK1337]
 af3de61  davinci: Update from global stable V12.0.3.0.QFJMIXM  [Arian]
 8c395e8  davinci: audio: Drop audiosphere  [Arian]
 57d2d89  davinci: Drop misound karaoke  [Arian]
@@ -247,25 +247,28 @@ c17ce45  davinci: camera: Build camera provider  [Arian]
 e3862f3  davinci: camera: Import blobs  [Arian]
 
 * frameworks/av
-c50d2f7  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+9edf674  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
 
 * frameworks/base
-d4f4f89  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
-0aa1d7a  FODCircleView: Add Support for custom FP pressed icon  [TheScarastic]
-495877d  SystemUI: get rid of build text in qs  [Joey]
-4a4db68  PackageManagerService: Drop caches according to incremental version  [Arian]
+f3f8e31  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+028379b  FODCircleView: Add Support for custom FP pressed icon  [TheScarastic]
+b636d74  SystemUI: get rid of build text in qs  [Joey]
+328d0be  PackageManagerService: Drop caches according to incremental version  [Arian]
 
 * lineage/hudson
 7b84daa  Ship I001D  [OrdenKrieger]
+
+* lineage/mirror
+1f2bcef  Updated to 05-Aug-2020 14:16 UTC  [Kevin F. Haggerty]
 
 * lineage/wiki
 bea6802  wiki: Add ROG Phone 2 (I001D)  [OrdenKrieger]
 
 * packages/apps/LineageParts
-e6603df  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+55abd09  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 
 * packages/apps/Settings
-42cc753  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+89a2cf0  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
 ====================
      2020-08-04    
 ====================
