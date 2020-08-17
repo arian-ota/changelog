@@ -3,15 +3,16 @@
 ====================
 
 * build/make
-59bd324  [DNM] Always use release-keys  [Arian]
+842174a  [DNM] Always use release-keys  [Arian]
 
 * device/xiaomi/davinci
-19a90c5  davinci: Kang fingerprint from dipper  [Arian]
-bb0874b  davinci: init: Workaround safetynet  [Arian]
-1463e36  davinci: parts: Add StarWars popup sounds  [Arian]
-726e4e0  davinci: Set mono_speaker to left  [Arian]
-8e05228  davinci: audio: Adjust echo reference path names for caf HAL  [Arian]
-31da9c4  davinci: overlay: Enable screen off fod  [TheScarastic]
+6c41789  davinci: Kang fingerprint from dipper  [Arian]
+2ad1248  davinci: init: Workaround safetynet  [Arian]
+9ca5fec  davinci: parts: Add StarWars popup sounds  [Arian]
+36dff39  davinci: audio: Add echo-reference headset paths  [Arian]
+040d893  davinci: audio: Adjust echo reference speaker path names for caf audio HAL  [Arian]
+eda5602  davinci: audio: Set mono_speaker to left  [Arian]
+9e49caf  davinci: overlay: Enable screen off fod  [TheScarastic]
 cef1058  davinci: fod: Change vendorCode for screen off FOD  [TheScarastic]
 979108a  davinci: Enable TARGET_USES_FOD_ZPOS  [Pig]
 89f7620  davinci: Set Header version for bootimage  [Rahul Shahare]
@@ -26,46 +27,33 @@ b4c42e0  davinci: Move NFC permissions to ODM  [Andrew Hexen]
 232a3ac  davinci: Disable NFC for indian devices  [Erfan Abdi]
 
 * frameworks/av
-d6cb2a0  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+3f78354  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
 
 * frameworks/base
-cb2ee7b  SystemUI: get rid of build text in qs  [Joey]
-36876e1  PackageManagerService: Drop caches according to incremental version  [Arian]
-8551881e  fwb: Add screen off fod [1/3]  [TheScarastic]
-cc8817c  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
-a5a7ce9  FODCircleView: Add support for custom FP pressed icon  [TheScarastic]
-d41cf50  WifiManager: Add StaState API [1/2]  [Kshitij Gupta]
-
-* frameworks/opt/net/wifi
-9f1067f  wifi: Add StaState API [2/2]  [Kshitij Gupta]
+0ab42f6  SystemUI: get rid of build text in qs  [Joey]
+4995998  PackageManagerService: Drop caches according to incremental version  [Arian]
+11fc563  fwb: Add screen off fod [1/3]  [TheScarastic]
+e527dbd  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+a79b800  FODCircleView: Add support for custom FP pressed icon  [TheScarastic]
 
 * hardware/lineage/interfaces
-650d528  Add support for anti flicker mode in LiveDisplay  [Arian]
+4a36bcd  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
+61d1af7  hal: msm8974: Allow to set headset echo reference  [Arian]
 0582cd1  hal: Add tfa98xx feedback extension  [Pig]
 
 * lineage-sdk
-81e69fe  Add support for anti flicker mode in LiveDisplay  [Arian]
-378c1b9  lineage-sdk: Screen off fod [2/3]  [TheScarastic]
-
-* lineage/hudson
-5ff2d3e  hudson: Welcome RMX1801 to lineage-17.1  [ShubhamB]
-
-* lineage/wiki
-1272235  wiki: Welcome RMX1801 to lineage-17.1  [ShubhamB]
+4f6ce98  Add support for anti flicker mode in LiveDisplay  [Arian]
+9f16d14  lineage-sdk: Screen off fod [2/3]  [TheScarastic]
 
 * packages/apps/LineageParts
-dae60f6  Add support for anti flicker mode in LiveDisplay  [Arian]
-bdb82a7  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+11adf1e  Add support for anti flicker mode in LiveDisplay  [Arian]
+c91cb2a  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 
 * packages/apps/Settings
-7a6dfef  Settings: Screen off fod [3/3]  [TheScarastic]
-5cb0a56  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
-
-* vendor/lineage
-5061962  kernel: Set full path to DTC  [Chirayu Desai]
-e523884  kernel: Make dtb.img depend on dtc and dtbo.img on mkdtimg  [Rashed Abdel-Tawab]
+7b8659a  Settings: Screen off fod [3/3]  [TheScarastic]
+12eb990  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
 
 * vendor/xiaomi/davinci
 fbeeadc  update megvii shim name  [Arian]
@@ -73,9 +61,25 @@ fbeeadc  update megvii shim name  [Arian]
      2020-08-16    
 ====================
 
+* frameworks/base
+d41cf50  WifiManager: Add StaState API [1/2]  [Kshitij Gupta]
+
+* frameworks/opt/net/wifi
+9f1067f  wifi: Add StaState API [2/2]  [Kshitij Gupta]
+
 * kernel/xiaomi/sm6150
 b573581  drm: sde: Increase sde stage to map zpos changes  [GuaiYiHu]
 5e41ecb  uapi: sde_drm: Define FOD_PRESSED_LAYER_ZORDER  [Pig]
+
+* lineage/hudson
+5ff2d3e  hudson: Welcome RMX1801 to lineage-17.1  [ShubhamB]
+
+* lineage/wiki
+1272235  wiki: Welcome RMX1801 to lineage-17.1  [ShubhamB]
+
+* vendor/lineage
+5061962  kernel: Set full path to DTC  [Chirayu Desai]
+e523884  kernel: Make dtb.img depend on dtc and dtbo.img on mkdtimg  [Rashed Abdel-Tawab]
 ====================
      2020-08-15    
 ====================
