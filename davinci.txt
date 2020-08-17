@@ -1,44 +1,81 @@
 ====================
-     2020-08-16    
+     2020-08-17    
 ====================
 
 * build/make
-08a3bcb  [DNM] Always use release-keys  [Arian]
+59bd324  [DNM] Always use release-keys  [Arian]
 
 * device/xiaomi/davinci
-4860e19  davinci: Enable TARGET_USES_FOD_ZPOS  [Pig]
+19a90c5  davinci: Kang fingerprint from dipper  [Arian]
+bb0874b  davinci: init: Workaround safetynet  [Arian]
+1463e36  davinci: parts: Add StarWars popup sounds  [Arian]
+726e4e0  davinci: Set mono_speaker to left  [Arian]
+8e05228  davinci: audio: Adjust echo reference path names for caf HAL  [Arian]
+31da9c4  davinci: overlay: Enable screen off fod  [TheScarastic]
+cef1058  davinci: fod: Change vendorCode for screen off FOD  [TheScarastic]
+979108a  davinci: Enable TARGET_USES_FOD_ZPOS  [Pig]
+89f7620  davinci: Set Header version for bootimage  [Rahul Shahare]
+825eb2b  davinci: Get rid of megvii dependencies in camera.qcom.so  [kazerine]
+e068566  davinci: livedisplay: Show anti flicker warning  [Arian]
+69c0f62  davinci: livedisplay: Add anti flicker support  [Arian]
+5724219  Revert "davinci: parts: Implement dc dimming"  [Arian]
+0fa8dac  davinci: livedisplay: Fix isEnabled return  [Arian]
+e1cfed6  davinci: Drop unused libnpu.so  [Arian]
+2f2eca4  davinci: List additional native libraries to expose to apps  [Bruno Martins]
+b4c42e0  davinci: Move NFC permissions to ODM  [Andrew Hexen]
+232a3ac  davinci: Disable NFC for indian devices  [Erfan Abdi]
 
 * frameworks/av
-4d72dd8  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+d6cb2a0  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
 
 * frameworks/base
-12b72d9  fwb: Add screen off fod [1/3]  [TheScarastic]
-bde0078  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
-dc7a631  FODCircleView: Add support for custom FP pressed icon  [TheScarastic]
-973c6a4  SystemUI: get rid of build text in qs  [Joey]
-fc1e10e  PackageManagerService: Drop caches according to incremental version  [Arian]
+cb2ee7b  SystemUI: get rid of build text in qs  [Joey]
+36876e1  PackageManagerService: Drop caches according to incremental version  [Arian]
+8551881e  fwb: Add screen off fod [1/3]  [TheScarastic]
+cc8817c  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+a5a7ce9  FODCircleView: Add support for custom FP pressed icon  [TheScarastic]
+d41cf50  WifiManager: Add StaState API [1/2]  [Kshitij Gupta]
+
+* frameworks/opt/net/wifi
+9f1067f  wifi: Add StaState API [2/2]  [Kshitij Gupta]
 
 * hardware/lineage/interfaces
-c025c71  Add support for anti flicker mode in LiveDisplay  [Arian]
+650d528  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-d98e015  hw_info: Add a flag for mono speaker  [Arian]
+0582cd1  hal: Add tfa98xx feedback extension  [Pig]
+
+* lineage-sdk
+81e69fe  Add support for anti flicker mode in LiveDisplay  [Arian]
+378c1b9  lineage-sdk: Screen off fod [2/3]  [TheScarastic]
+
+* lineage/hudson
+5ff2d3e  hudson: Welcome RMX1801 to lineage-17.1  [ShubhamB]
+
+* lineage/wiki
+1272235  wiki: Welcome RMX1801 to lineage-17.1  [ShubhamB]
+
+* packages/apps/LineageParts
+dae60f6  Add support for anti flicker mode in LiveDisplay  [Arian]
+bdb82a7  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+
+* packages/apps/Settings
+7a6dfef  Settings: Screen off fod [3/3]  [TheScarastic]
+5cb0a56  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+
+* vendor/lineage
+5061962  kernel: Set full path to DTC  [Chirayu Desai]
+e523884  kernel: Make dtb.img depend on dtc and dtbo.img on mkdtimg  [Rashed Abdel-Tawab]
+
+* vendor/xiaomi/davinci
+fbeeadc  update megvii shim name  [Arian]
+====================
+     2020-08-16    
+====================
 
 * kernel/xiaomi/sm6150
 b573581  drm: sde: Increase sde stage to map zpos changes  [GuaiYiHu]
 5e41ecb  uapi: sde_drm: Define FOD_PRESSED_LAYER_ZORDER  [Pig]
-
-* lineage-sdk
-e1a07f6  Add support for anti flicker mode in LiveDisplay  [Arian]
-5a3c119  lineage-sdk: Screen off fod [2/3]  [TheScarastic]
-
-* packages/apps/LineageParts
-7f82eb2  Add support for anti flicker mode in LiveDisplay  [Arian]
-b75826e  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
-
-* packages/apps/Settings
-0221b3c  Settings: Screen off fod [3/3]  [TheScarastic]
-d7f3249  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
 ====================
      2020-08-15    
 ====================
@@ -46,17 +83,12 @@ d7f3249  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian
 * frameworks/base
 1ed91f7  Show the nearby chip for images and files too.  [Alison Cichowlas]
 
-* hardware/qcom-caf/sm8150/display
-c78f45e  sdm: mark FOD pressed layer by setting a bit on ZPOS  [Demon000]
-
-* packages/apps/Nfc
-ae902f6  Avoid NFC continuous crash  [Maoliang Tang]
+* frameworks/opt/net/wifi
+2dbe66e  HDM: Resolve concurrent access issue - defer execution  [Etan Cohen]
+558dde0  [HDM] Fix concurrency failure  [Etan Cohen]
 
 * tools/repohooks
 8ee0f2a  hooks: use dedicated None asserts  [Mike Frysinger]
-
-* vendor/lineage
-5c57616  vendor: apns-conf: Drop proxy for Movistar  [althafvly]
 
 * vendor/nxp/opensource/commonsys/packages/apps/Nfc
 1fa0d04  Avoid NFC continuous crash  [Maoliang Tang]
@@ -64,21 +96,29 @@ ae902f6  Avoid NFC continuous crash  [Maoliang Tang]
      2020-08-14    
 ====================
 
-* device/xiaomi/davinci
-ff9ac6b  davinci: Set Header version for bootimage  [Rahul Shahare]
-12cb82c  davinci: Get rid of megvii dependencies in camera.qcom.so  [kazerine]
-1a89936  davinci: livedisplay: Show anti flicker warning  [Arian]
+* hardware/qcom-caf/sm8150/display
+c78f45e  sdm: mark FOD pressed layer by setting a bit on ZPOS  [Demon000]
+
+* packages/apps/Nfc
+ae902f6  Avoid NFC continuous crash  [Maoliang Tang]
+
+* vendor/lineage
+5c57616  vendor: apns-conf: Drop proxy for Movistar  [althafvly]
+====================
+     2020-08-13    
+====================
 
 * lineage/hudson
 13b00dd  hudson: A5|7 2017 promotion!  [filip rrs]
 
 * lineage/wiki
 bec8be8  wiki: Promote a5y17lte and a7y17lte to 17.1  [filiprrs]
+5694df2  devices: Set is_ab_device true on blueline/crosshatch  [razorloves]
 
 * vendor/xiaomi/davinci
 a9b461b  davinci: Updates from trees  [Arian]
 ====================
-     2020-08-13    
+     2020-08-12    
 ====================
 
 * lineage/contributors-cloud-generator
@@ -88,14 +128,8 @@ d6bbd9f  catch potential nullpointer exception in cleanup  [Jan Altensen]
 5457946  Accomodate larger gaps in _account_id  [Kevin F. Haggerty]
 030dfe1  Bump DEFAULT_SIZE to 1992  [Kevin F. Haggerty]
 
-* lineage/wiki
-5694df2  devices: Set is_ab_device true on blueline/crosshatch  [razorloves]
-
 * packages/apps/LineageParts
 6d9b7c4  Regenerate contributors cloud  [Kevin F. Haggerty]
-====================
-     2020-08-12    
-====================
 
 * packages/apps/Settings
 cacc13a  Settings: Add toggle for heads up notifications  [Michael Bestas]
@@ -103,40 +137,6 @@ cacc13a  Settings: Add toggle for heads up notifications  [Michael Bestas]
      2020-08-11    
 ====================
 
-* device/xiaomi/davinci
-8420e0d  davinci: livedisplay: Add anti flicker support  [Arian]
-eb664a4  Revert "davinci: parts: Implement dc dimming"  [Arian]
-9522b3c  davinci: livedisplay: Fix isEnabled return  [Arian]
-fec6944  davinci: Drop unused libnpu.so  [Arian]
-a5e61bb  davinci: List additional native libraries to expose to apps  [Bruno Martins]
-
-* lineage/hudson
-14f1496  hudson: Ship Pixel 3/3 XL (blueline/crosshatch)  [razorloves]
-
 * lineage/wiki
 6c63b52  wiki: Add Pixel 3/3 XL (blueline/crosshatch)  [razorloves]
 dab2a4d  wiki: Update kernel repo name regex  [Harry Youd]
-====================
-     2020-08-10    
-====================
-
-* device/xiaomi/davinci
-1e881b7  {TMP} Revert "davinci: Enable fluence for audio/voice recording"  [Arian]
-65cb603  {TMP} davinci: parts: Add fod_detector  [Arian]
-229471e  davinci: fod: Change vendorCode for screen off FOD  [TheScarastic]
-
-* frameworks/base
-9637d97  webkit: SystemImpl: Make systemIsDebuggable() check IS_ENG as well  [LuK1337]
-a10fd15  Revert "DO NOT MERGE Revert Privacy Indicators to P"  [Michael Bestas]
-
-* lineage/hudson
-8f8f174  hudson: Sup a7xelte.  [Sourajit Karmakar]
-
-* lineage/wiki
-0a6a476  wiki: Add Galaxy A7 2016 (a7xelte).  [Sourajit Karmakar]
-
-* packages/apps/Dialer
-dfa1b38  Fix theme for PostCallActivity  [Sungjae]
-
-* packages/apps/Messaging
-421843b  Messaging: fix launch screen status bar color  [Scott Warner]
