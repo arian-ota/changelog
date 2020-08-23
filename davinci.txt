@@ -1,9 +1,78 @@
 ====================
-     2020-08-17    
+     2020-08-23    
 ====================
 
 * build/make
-842174a  [DNM] Always use release-keys  [Arian]
+e6672f7  [DNM] Always use release-keys  [Arian]
+
+* frameworks/av
+cfa1704  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+
+* frameworks/base
+d82cc16  SystemUI: get rid of build text in qs  [Joey]
+3170e04  PackageManagerService: Drop caches according to incremental version  [Arian]
+f92ea73  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+33110f4  FODCircleView: Add support for custom FP pressed icon  [TheScarastic]
+7d16102  Skip screen on animation when wake and unlock via biometrics  [Jesse Chan]
+
+* hardware/lineage/interfaces
+0ecf3f2  Add support for anti flicker mode in LiveDisplay  [Arian]
+
+* hardware/qcom-caf/sm8150/audio
+5bea7b5  hal: msm8974: Allow to set headset echo reference  [Arian]
+
+* lineage-sdk
+09d0440  Add support for anti flicker mode in LiveDisplay  [Arian]
+
+* lineage/wiki
+a9b5063  wiki: replace s2 maintainer RK with tImI  [Marc Bourgoin]
+
+* packages/apps/LineageParts
+2a9e8c8  Add support for anti flicker mode in LiveDisplay  [Arian]
+7078aa0  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+
+* packages/apps/Settings
+7110a95  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+====================
+     2020-08-22    
+====================
+
+* system/libufdt
+ada7a05  mkdtboimg: Add support to V0 DTBO image creation  [Luca Stefani]
+1f2f097  mkdtboimg: Make filepath search recursive  [Luca Stefani]
+
+* vendor/lineage
+05ce3dc  kernel: Add support for mkdtimg cfg_create  [Luca Stefani]
+16ea814  kernel: Switch to mkdtboimg.py  [Luca Stefani]
+fe00ea9  kernel: Rework how DTB/DTBO are built  [Luca Stefani]
+====================
+     2020-08-21    
+====================
+
+* packages/apps/Settings
+20fb79d  Add NR network type to "Global" mode preference  [Avinash Nalluri]
+====================
+     2020-08-20    
+====================
+
+* vendor/lineage
+14c51c7  vendor: apns-conf: Add Hits APN  [althafvly]
+8038c02  overlay: Remove voicemail number configs  [Wang Han]
+====================
+     2020-08-19    
+====================
+
+* tools/repohooks
+f773756  hooks: rustfmt: handle multiple commits  [Thiébaud Weksteen]
+
+* vendor/lineage
+c2f5e8f  Revert "overlay: Enable Visual Voicemail for Verizon devices"  [Wang Han]
+====================
+     2020-08-18    
+====================
+====================
+     2020-08-17    
+====================
 
 * device/xiaomi/davinci
 6c41789  davinci: Kang fingerprint from dipper  [Arian]
@@ -26,121 +95,11 @@ e1cfed6  davinci: Drop unused libnpu.so  [Arian]
 b4c42e0  davinci: Move NFC permissions to ODM  [Andrew Hexen]
 232a3ac  davinci: Disable NFC for indian devices  [Erfan Abdi]
 
-* frameworks/av
-3f78354  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
-
-* frameworks/base
-0ab42f6  SystemUI: get rid of build text in qs  [Joey]
-4995998  PackageManagerService: Drop caches according to incremental version  [Arian]
-11fc563  fwb: Add screen off fod [1/3]  [TheScarastic]
-e527dbd  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
-a79b800  FODCircleView: Add support for custom FP pressed icon  [TheScarastic]
-
-* hardware/lineage/interfaces
-4a36bcd  Add support for anti flicker mode in LiveDisplay  [Arian]
-
 * hardware/qcom-caf/sm8150/audio
-61d1af7  hal: msm8974: Allow to set headset echo reference  [Arian]
 0582cd1  hal: Add tfa98xx feedback extension  [Pig]
 
-* lineage-sdk
-4f6ce98  Add support for anti flicker mode in LiveDisplay  [Arian]
-9f16d14  lineage-sdk: Screen off fod [2/3]  [TheScarastic]
-
-* packages/apps/LineageParts
-11adf1e  Add support for anti flicker mode in LiveDisplay  [Arian]
-c91cb2a  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
-
-* packages/apps/Settings
-7b8659a  Settings: Screen off fod [3/3]  [TheScarastic]
-12eb990  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+* vendor/lineage
+cbf799e  vendor: Drop verity tool  [Aayush Gupta]
 
 * vendor/xiaomi/davinci
 fbeeadc  update megvii shim name  [Arian]
-====================
-     2020-08-16    
-====================
-
-* frameworks/base
-d41cf50  WifiManager: Add StaState API [1/2]  [Kshitij Gupta]
-
-* frameworks/opt/net/wifi
-9f1067f  wifi: Add StaState API [2/2]  [Kshitij Gupta]
-
-* kernel/xiaomi/sm6150
-b573581  drm: sde: Increase sde stage to map zpos changes  [GuaiYiHu]
-5e41ecb  uapi: sde_drm: Define FOD_PRESSED_LAYER_ZORDER  [Pig]
-
-* lineage/hudson
-5ff2d3e  hudson: Welcome RMX1801 to lineage-17.1  [ShubhamB]
-
-* lineage/wiki
-1272235  wiki: Welcome RMX1801 to lineage-17.1  [ShubhamB]
-
-* vendor/lineage
-5061962  kernel: Set full path to DTC  [Chirayu Desai]
-e523884  kernel: Make dtb.img depend on dtc and dtbo.img on mkdtimg  [Rashed Abdel-Tawab]
-====================
-     2020-08-15    
-====================
-
-* frameworks/base
-1ed91f7  Show the nearby chip for images and files too.  [Alison Cichowlas]
-
-* frameworks/opt/net/wifi
-2dbe66e  HDM: Resolve concurrent access issue - defer execution  [Etan Cohen]
-558dde0  [HDM] Fix concurrency failure  [Etan Cohen]
-
-* tools/repohooks
-8ee0f2a  hooks: use dedicated None asserts  [Mike Frysinger]
-
-* vendor/nxp/opensource/commonsys/packages/apps/Nfc
-1fa0d04  Avoid NFC continuous crash  [Maoliang Tang]
-====================
-     2020-08-14    
-====================
-
-* hardware/qcom-caf/sm8150/display
-c78f45e  sdm: mark FOD pressed layer by setting a bit on ZPOS  [Demon000]
-
-* packages/apps/Nfc
-ae902f6  Avoid NFC continuous crash  [Maoliang Tang]
-
-* vendor/lineage
-5c57616  vendor: apns-conf: Drop proxy for Movistar  [althafvly]
-====================
-     2020-08-13    
-====================
-
-* lineage/hudson
-13b00dd  hudson: A5|7 2017 promotion!  [filip rrs]
-
-* lineage/wiki
-bec8be8  wiki: Promote a5y17lte and a7y17lte to 17.1  [filiprrs]
-5694df2  devices: Set is_ab_device true on blueline/crosshatch  [razorloves]
-
-* vendor/xiaomi/davinci
-a9b461b  davinci: Updates from trees  [Arian]
-====================
-     2020-08-12    
-====================
-
-* lineage/contributors-cloud-generator
-a264670  Fix rebase derp  [Kevin F. Haggerty]
-d6bbd9f  catch potential nullpointer exception in cleanup  [Jan Altensen]
-6f86ede  Allow authenticated gerrit API calls  [Jan Altensen]
-5457946  Accomodate larger gaps in _account_id  [Kevin F. Haggerty]
-030dfe1  Bump DEFAULT_SIZE to 1992  [Kevin F. Haggerty]
-
-* packages/apps/LineageParts
-6d9b7c4  Regenerate contributors cloud  [Kevin F. Haggerty]
-
-* packages/apps/Settings
-cacc13a  Settings: Add toggle for heads up notifications  [Michael Bestas]
-====================
-     2020-08-11    
-====================
-
-* lineage/wiki
-6c63b52  wiki: Add Pixel 3/3 XL (blueline/crosshatch)  [razorloves]
-dab2a4d  wiki: Update kernel repo name regex  [Harry Youd]
