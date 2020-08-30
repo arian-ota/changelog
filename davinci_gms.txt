@@ -1,105 +1,115 @@
 ====================
-     2020-08-23    
+     2020-08-30    
 ====================
 
 * build/make
-6327849  [DNM] Always use release-keys  [Arian]
+80fb70b  [DNM] Always use release-keys  [Arian]
 
 * frameworks/av
-7fb5ba4  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+eb1e739  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
 
 * frameworks/base
-854eee6  SystemUI: get rid of build text in qs  [Joey]
-367d648  PackageManagerService: Drop caches according to incremental version  [Arian]
-df424f6  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
-8881299  FODCircleView: Add support for custom FP pressed icon  [TheScarastic]
-7d16102  Skip screen on animation when wake and unlock via biometrics  [Jesse Chan]
+2ccf6df  SystemUI: get rid of build text in qs  [Joey]
+ab5ef4c  PackageManagerService: Drop caches according to incremental version  [Arian]
+115bf51  VolumeDialog: Show the media output selector always in expanded state  [Arian]
+b4e39e5  VolumeDialog: Don't change the background of the expandable indicator  [Arian]
+8ea588a  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+f9de94d  FODCircleView: Add support for custom FP pressed icon  [TheScarastic]
 
 * hardware/lineage/interfaces
-8873221  Add support for anti flicker mode in LiveDisplay  [Arian]
+4626a0d  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-6aaa0db  hal: msm8974: Allow to set headset echo reference  [Arian]
+e2fc8c8  hal: msm8974: Allow to set headset echo reference  [Arian]
 
 * lineage-sdk
-c290867  Add support for anti flicker mode in LiveDisplay  [Arian]
-
-* lineage/wiki
-a9b5063  wiki: replace s2 maintainer RK with tImI  [Marc Bourgoin]
+f3d8216  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * packages/apps/LineageParts
-12b6d78  Add support for anti flicker mode in LiveDisplay  [Arian]
-62f9d85  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+295b781  Add support for anti flicker mode in LiveDisplay  [Arian]
+9e04093  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+7e5db13  LineageParts: Discard all invalid bits when setting TRUST_WARNINGS value  [LuK1337]
 
 * packages/apps/Settings
-dda2ae3  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+6ee548c  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
 ====================
-     2020-08-22    
-====================
-
-* system/libufdt
-ada7a05  mkdtboimg: Add support to V0 DTBO image creation  [Luca Stefani]
-1f2f097  mkdtboimg: Make filepath search recursive  [Luca Stefani]
-
-* vendor/lineage
-05ce3dc  kernel: Add support for mkdtimg cfg_create  [Luca Stefani]
-16ea814  kernel: Switch to mkdtboimg.py  [Luca Stefani]
-fe00ea9  kernel: Rework how DTB/DTBO are built  [Luca Stefani]
-====================
-     2020-08-21    
+     2020-08-29    
 ====================
 
-* packages/apps/Settings
-20fb79d  Add NR network type to "Global" mode preference  [Avinash Nalluri]
+* lineage/hudson
+c9245d2  hudson: Ship Motorola G7 Play (channel)  [Andrew Hexen]
+546254f  hudson: Ship Motorola G7 Power (ocean)  [Andrew Hexen]
+
+* lineage/wiki
+ff82776  wiki: Add Motorola G7 Play (channel)  [Andrew Hexen]
+38cc9fe  wiki: Add Motorola G7 Power (ocean)  [Andrew Hexen]
 ====================
-     2020-08-20    
+     2020-08-28    
 ====================
 
-* vendor/lineage
-14c51c7  vendor: apns-conf: Add Hits APN  [althafvly]
-8038c02  overlay: Remove voicemail number configs  [Wang Han]
-====================
-     2020-08-19    
-====================
+* bootable/recovery
+27ae5e6  recovery: Stop showing fastbootd logo for devices without it  [Nicholas Lim]
+
+* device/xiaomi/davinci
+db5bc0e  davinci: rootdir: Kang zram configuration from sunfish  [Arian]
+bc55d77  davinci: rootdir: Kang governor settings from sunfish  [Arian]
+c8d0bbe  davinci: rootdir: Drop powerkey input boost  [Arian]
+5de64a0  davinci: rootdir: Move simple writes from post_boot script to init.target.rc  [Arian]
+d3843f9  Revert "davinci: rootdir: Import coral fs tuning"  [Arian]
+3e02dee  davinci: rootdir: Remove adaptive lmk tuning  [Arian]
+db62797  davinci: rootdir: Kang runtime cpusets setup from sunfish  [Arian]
+4cc9856  davinci: rootdir: Don't setup runtime cpusets for silver only first  [Arian]
+1242694  davinci: Enable cortex-A76  [Kyle Lin]
 
 * tools/repohooks
-f773756  hooks: rustfmt: handle multiple commits  [Thiébaud Weksteen]
+1baec12  config: refactor file management  [Mike Frysinger]
+====================
+     2020-08-27    
+====================
 
-* vendor/lineage
-c2f5e8f  Revert "overlay: Enable Visual Voicemail for Verizon devices"  [Wang Han]
+* lineage/mirror
+8369808  Updated to 27-Aug-2020 04:19 UTC  [Kevin F. Haggerty]
+f8d0d41  Updated to 27-Aug-2020 00:30 UTC  [Kevin F. Haggerty]
 ====================
-     2020-08-18    
-====================
-====================
-     2020-08-17    
+     2020-08-26    
 ====================
 
 * device/xiaomi/davinci
-6c41789  davinci: Kang fingerprint from dipper  [Arian]
-2ad1248  davinci: init: Workaround safetynet  [Arian]
-9ca5fec  davinci: parts: Add StarWars popup sounds  [Arian]
-36dff39  davinci: audio: Add echo-reference headset paths  [Arian]
-040d893  davinci: audio: Adjust echo reference speaker path names for caf audio HAL  [Arian]
-eda5602  davinci: audio: Set mono_speaker to left  [Arian]
-9e49caf  davinci: overlay: Enable screen off fod  [TheScarastic]
-cef1058  davinci: fod: Change vendorCode for screen off FOD  [TheScarastic]
-979108a  davinci: Enable TARGET_USES_FOD_ZPOS  [Pig]
-89f7620  davinci: Set Header version for bootimage  [Rahul Shahare]
-825eb2b  davinci: Get rid of megvii dependencies in camera.qcom.so  [kazerine]
-e068566  davinci: livedisplay: Show anti flicker warning  [Arian]
-69c0f62  davinci: livedisplay: Add anti flicker support  [Arian]
-5724219  Revert "davinci: parts: Implement dc dimming"  [Arian]
-0fa8dac  davinci: livedisplay: Fix isEnabled return  [Arian]
-e1cfed6  davinci: Drop unused libnpu.so  [Arian]
-2f2eca4  davinci: List additional native libraries to expose to apps  [Bruno Martins]
-b4c42e0  davinci: Move NFC permissions to ODM  [Andrew Hexen]
-232a3ac  davinci: Disable NFC for indian devices  [Erfan Abdi]
+c5e6bf2  davinci: Set surfaceflinger phase offset properties  [Midas Chien]
+fc5875f  davinci: Refined early phase offsets  [tangrobin]
 
-* hardware/qcom-caf/sm8150/audio
-0582cd1  hal: Add tfa98xx feedback extension  [Pig]
+* frameworks/base
+6d687f0  PackageInstaller: Fix crash when uninstalling apps with fragile data  [LuK1337]
+
+* lineage/wiki
+3d07a60  wiki: devices: jfltespr: Reflect discontinuation of builds  [Nolen Johnson]
+d20023e  wiki: Inform user about expected signature verification failure  [LuK1337]
+
+* tools/repohooks
+41a1fd1  config: add Python 3 compat APIs  [Mike Frysinger]
+0d0796a  config: fix handling of optional args  [Mike Frysinger]
+3798d7e  config: pull valid sections into a class constant  [Mike Frysinger]
 
 * vendor/lineage
-cbf799e  vendor: Drop verity tool  [Aayush Gupta]
+1de3b30  vendor: kernel: Add back support for custom dtboimg makefile  [Aayush Gupta]
+====================
+     2020-08-25    
+====================
 
-* vendor/xiaomi/davinci
-fbeeadc  update megvii shim name  [Arian]
+* device/xiaomi/davinci
+c887fc9  davinci: overlay: Add call recording overlay  [Michael Bestas]
+
+* vendor/lineage
+8431a67  Revert "kernel: Set full path to DTC"  [Weikai Kong]
+====================
+     2020-08-24    
+====================
+
+* frameworks/base
+7d16102  Skip screen on animation when wake and unlock via biometrics  [Jesse Chan]
+
+* lineage/hudson
+5af6d71  hudson: Drop S4 Sprint (jfltespr)  [Arne Coucheron]
+
+* lineage/wiki
+a9b5063  wiki: replace s2 maintainer RK with tImI  [Marc Bourgoin]
