@@ -1,115 +1,140 @@
 ====================
-     2020-08-30    
+     2020-09-06    
 ====================
 
 * build/make
-80fb70b  [DNM] Always use release-keys  [Arian]
+21d85b4  [DNM] Always use release-keys  [Arian]
 
 * frameworks/av
-eb1e739  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+b582c7f  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
 
 * frameworks/base
-2ccf6df  SystemUI: get rid of build text in qs  [Joey]
-ab5ef4c  PackageManagerService: Drop caches according to incremental version  [Arian]
-115bf51  VolumeDialog: Show the media output selector always in expanded state  [Arian]
-b4e39e5  VolumeDialog: Don't change the background of the expandable indicator  [Arian]
-8ea588a  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
-f9de94d  FODCircleView: Add support for custom FP pressed icon  [TheScarastic]
+9391501  fwb: Add screen off fod [1/3]  [TheScarastic]
+731b349  SystemUI: get rid of build text in qs  [Joey]
+7506a78  PackageManagerService: Drop caches according to incremental version  [Arian]
+2b55379  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-4626a0d  Add support for anti flicker mode in LiveDisplay  [Arian]
+27afc1e  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-e2fc8c8  hal: msm8974: Allow to set headset echo reference  [Arian]
+c1fe8e6  hal: msm8974: Allow to set headset echo reference  [Arian]
 
 * lineage-sdk
-f3d8216  Add support for anti flicker mode in LiveDisplay  [Arian]
+9dfc1de  Add support for anti flicker mode in LiveDisplay  [Arian]
+54051bc  lineage-sdk: Screen off fod [2/3]  [TheScarastic]
 
 * packages/apps/LineageParts
-295b781  Add support for anti flicker mode in LiveDisplay  [Arian]
-9e04093  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
-7e5db13  LineageParts: Discard all invalid bits when setting TRUST_WARNINGS value  [LuK1337]
+1d36a41  Add support for anti flicker mode in LiveDisplay  [Arian]
+0f324c3  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 
 * packages/apps/Settings
-6ee548c  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+270522b  Settings: Screen off fod [3/3]  [TheScarastic]
+27b96e1  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
 ====================
-     2020-08-29    
-====================
-
-* lineage/hudson
-c9245d2  hudson: Ship Motorola G7 Play (channel)  [Andrew Hexen]
-546254f  hudson: Ship Motorola G7 Power (ocean)  [Andrew Hexen]
-
-* lineage/wiki
-ff82776  wiki: Add Motorola G7 Play (channel)  [Andrew Hexen]
-38cc9fe  wiki: Add Motorola G7 Power (ocean)  [Andrew Hexen]
-====================
-     2020-08-28    
-====================
-
-* bootable/recovery
-27ae5e6  recovery: Stop showing fastbootd logo for devices without it  [Nicholas Lim]
-
-* device/xiaomi/davinci
-db5bc0e  davinci: rootdir: Kang zram configuration from sunfish  [Arian]
-bc55d77  davinci: rootdir: Kang governor settings from sunfish  [Arian]
-c8d0bbe  davinci: rootdir: Drop powerkey input boost  [Arian]
-5de64a0  davinci: rootdir: Move simple writes from post_boot script to init.target.rc  [Arian]
-d3843f9  Revert "davinci: rootdir: Import coral fs tuning"  [Arian]
-3e02dee  davinci: rootdir: Remove adaptive lmk tuning  [Arian]
-db62797  davinci: rootdir: Kang runtime cpusets setup from sunfish  [Arian]
-4cc9856  davinci: rootdir: Don't setup runtime cpusets for silver only first  [Arian]
-1242694  davinci: Enable cortex-A76  [Kyle Lin]
-
-* tools/repohooks
-1baec12  config: refactor file management  [Mike Frysinger]
-====================
-     2020-08-27    
-====================
-
-* lineage/mirror
-8369808  Updated to 27-Aug-2020 04:19 UTC  [Kevin F. Haggerty]
-f8d0d41  Updated to 27-Aug-2020 00:30 UTC  [Kevin F. Haggerty]
-====================
-     2020-08-26    
-====================
-
-* device/xiaomi/davinci
-c5e6bf2  davinci: Set surfaceflinger phase offset properties  [Midas Chien]
-fc5875f  davinci: Refined early phase offsets  [tangrobin]
-
-* frameworks/base
-6d687f0  PackageInstaller: Fix crash when uninstalling apps with fragile data  [LuK1337]
-
-* lineage/wiki
-3d07a60  wiki: devices: jfltespr: Reflect discontinuation of builds  [Nolen Johnson]
-d20023e  wiki: Inform user about expected signature verification failure  [LuK1337]
-
-* tools/repohooks
-41a1fd1  config: add Python 3 compat APIs  [Mike Frysinger]
-0d0796a  config: fix handling of optional args  [Mike Frysinger]
-3798d7e  config: pull valid sections into a class constant  [Mike Frysinger]
-
-* vendor/lineage
-1de3b30  vendor: kernel: Add back support for custom dtboimg makefile  [Aayush Gupta]
-====================
-     2020-08-25    
-====================
-
-* device/xiaomi/davinci
-c887fc9  davinci: overlay: Add call recording overlay  [Michael Bestas]
-
-* vendor/lineage
-8431a67  Revert "kernel: Set full path to DTC"  [Weikai Kong]
-====================
-     2020-08-24    
+     2020-09-05    
 ====================
 
 * frameworks/base
-7d16102  Skip screen on animation when wake and unlock via biometrics  [Jesse Chan]
-
-* lineage/hudson
-5af6d71  hudson: Drop S4 Sprint (jfltespr)  [Arne Coucheron]
+94b7041  SystemUI: Use TaskStackChangeListener API for contextual screenshot package name  [LuK1337]
 
 * lineage/wiki
-a9b5063  wiki: replace s2 maintainer RK with tImI  [Marc Bourgoin]
+8bcea3b  devices: channel: Use custom TWRP  [Nolen Johnson]
+0c7635b  images: Use the correct image for ocean  [Yagya Parihar]
+
+* vendor/lineage
+e30626d  Revert "kernel: prevent additional config from being always rebuilt"  [Luca Stefani]
+====================
+     2020-09-04    
+====================
+
+* frameworks/base
+2760fc2  VolumeDialog: Don't change the background of the expandable indicator  [Arian]
+
+* lineage/hudson
+7a0bb1f  hudson: Promote Pixel 2 / 2 XL to 17.1 (taimen/walleye)  [Eamon Powell]
+
+* lineage/wiki
+045bc53  wiki: Add support for AB + /recovery  [LuK1337]
+2cd0a6d  wiki: Update copy-partitions.zip  [LuK1337]
+cdd4f21  wiki: Promote Pixel 2 / 2 XL to 17.1 (taimen/walleye)  [Eamon Powell]
+
+* packages/apps/Settings
+f0806f1  Settings: Account more 5G network modes  [Luca Stefani]
+====================
+     2020-09-03    
+====================
+
+* lineage/hudson
+31273b8  hudson: Add Huawei P Smart (figo)  [DarkJoker360]
+c10107c  hudson: Add P20 Lite (anne)  [DarkJoker360]
+657c385  hudson: The budget Pixel family deserves love too  [Nolen Johnson]
+570c83d  hudson: Pixel 5 minus 1  [Nolen Johnson]
+
+* lineage/wiki
+fe936c9  wiki: Add Huawei P Smart (figo)  [DarkJoker360]
+5256236  wiki: Add Huawei P20 Lite (anne)  [DarkJoker360]
+b99871a  wiki: devices: Add Google Pixel 3a {,XL}  [Nolen Johnson]
+87371e0  wiki: devices: Add Google Pixel 4 {,XL}  [Nolen Johnson]
+
+* tools/repohooks
+ec4cdcb  drop python2 testing entirely  [Mike Frysinger]
+
+* vendor/lineage
+2baeb4f  kernel: Use CPATH for including host headers  [LuK1337]
+====================
+     2020-09-02    
+====================
+
+* build/soong
+e17bda6  Add support for macOS 11 SDK  [Dan Willemsen]
+5a6b452  Add support for 10.15 SDK  [Dan Willemsen]
+
+* frameworks/base
+04946cf  Fix CDM.requestNotificationAccess() in profile.  [Oasis Feng]
+
+* lineage/wiki
+e5ce6c7  wiki: devices: i9300: Update TWRP link  [mattmill30]
+
+* prebuilts/tools-lineage
+b0e4e6a  tools-lineage: Add prebuilt DTC  [Nolen Johnson]
+
+* system/sepolicy
+95fe7ee  Fix sepolicy_tests on Mac 10.15  [Dan Willemsen]
+
+* tools/repohooks
+324296b  config: refactor PreUploadSettingsTests  [Thiébaud Weksteen]
+c9ba009  config: add {Local,Global}PreUploadFile classes  [Thiébaud Weksteen]
+====================
+     2020-09-01    
+====================
+
+* frameworks/base
+df8fb7a  FODCircleView: Add support for custom FP pressed icon  [TheScarastic]
+
+* lineage/wiki
+f83c8e7  wiki: Nice order  [LuK1337]
+314f473  fixup! wiki: how-tos: logcat: 17.1 has no AddonSU  [Nolen Johnson]
+85cbca6  wiki: how-tos: logcat: 17.1 has no AddonSU  [Nolen Johnson]
+
+* tools/repohooks
+7698778  pre-upload: drop support for Python 2  [Mike Frysinger]
+====================
+     2020-08-31    
+====================
+
+* lineage/hudson
+dd2a054  hudson: Ship 16.0 for Pixel 2 / 2 XL (taimen/walleye)  [Eamon Powell]
+
+* lineage/wiki
+f05ed18  wiki: Add Pixel 2 / 2 XL (taimen/walleye)  [Eamon Powell]
+
+* system/libufdt
+c54fd08  mkdtboimg: Sanitize dt filename  [Luca Stefani]
+409c2d0  mkdtboimg: Allow specifying full path for dtb  [Luca Stefani]
+
+* vendor/gms
+11e7f59  gms: Update from pixel 4a QD4A.200805.003  [Arian]
+
+* vendor/lineage
+70d5cc4  kernel: prevent additional config from being always rebuilt  [Adrian DC]
