@@ -1,76 +1,163 @@
 ====================
-     2020-09-08    
+     2020-09-10    
 ====================
 
 * build/make
-5ef63b2  [DNM] Always use release-keys  [Arian]
+94a99bb  [DNM] Always use release-keys  [Arian]
 
 * device/xiaomi/davinci
-84695f7  davinci: Kang fingerprint from dipper  [Arian]
-656e2e3  davinci: init: Workaround safetynet  [Arian]
-0126ba8  davinci: parts: Add StarWars popup sounds  [Arian]
-423b785  davinci: sepolicy: Label new LED paths  [Arian]
-ac90d83  davinci: light: Adjust for new led labels in kernel  [Arian]
-10a4393  davinci: parts: Adjust for new led labels in kernel  [Arian]
-d62b03d  davinci: power: Add DT2W support for goodix touchscreens  [Arian]
-b247ed6  davinci: power: Add support for DT2W feature  [Bruno Martins]
-de05a93  davinci: power: Add no-op 1.3 interface implementation  [Demon000]
-7981bdd  davinci: Remove QTI Power HAL  [Arian]
-da01dce  davinci: Disable KPI optimization  [Arian]
-e29eab1  davinci: Remove qti perf stack  [Demon Singur]
-64607fb  davinci: rootdir: Drop unsupported settings  [Arian]
-fbeddbc  davinci: rootdir: Disable input boost  [Arian]
-d6ed0d8  davinci: rootdir: Drop core_ctl  [Arian]
-49116ec  davinci: rootdir: Setup schedTune  [Arian]
-ac43fe4  davinci: rootdir: Kang zram configuration from sunfish  [Arian]
-98aa89d  davinci: rootdir: Kang governor settings from sunfish  [Arian]
-7cce221  davinci: rootdir: Drop powerkey input boost  [Arian]
-12307e3  davinci: rootdir: Move simple writes from post_boot script to init.target.rc  [Arian]
-2520ef7  Revert "davinci: rootdir: Import coral fs tuning"  [Arian]
-4dab641  davinci: rootdir: Remove adaptive lmk tuning  [Arian]
-fd9bb62  davinci: rootdir: Kang runtime cpusets setup from sunfish  [Arian]
-12825bf  davinci: rootdir: Don't setup runtime cpusets for silver only first  [Arian]
-843c1d5  davinci: Enable cortex-A76  [Kyle Lin]
-99de492  davinci: Set surfaceflinger phase offset properties  [Midas Chien]
-aa63489  davinci: Refined early phase offsets  [tangrobin]
-9b2fcc1  davinci: Copy all media configs from the media HAL  [Arian]
+22671a4  davinci: sepolicy: Label panel_info sysfs node  [Arian]
+66b450d  davinci: overlay: Tune vibration levels  [Marco Rizzo]
+5f20866  davinci: parts: Set dynamic thermal interval to 5 sec  [Pranav Vashi]
+827f8f6  davinci: parts: Make thermal profiles naming completely generic  [Bruno Martins]
+4438943  davinci: parts: Implement dynamic thermal profiles  [TheScarastic]
+
+* external/chromium-webview
+cd830a4  Update Chromium Webview to 85.0.4183.101  [Kevin F. Haggerty]
+
+* frameworks/av
+96dd0fa  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+
+* frameworks/base
+f3562d7  fwb: Add screen off fod [1/3]  [TheScarastic]
+57a6c86  SystemUI: get rid of build text in qs  [Joey]
+e228382  PackageManagerService: Drop caches according to incremental version  [Arian]
+e5227ab  SystemUI: Add anti flicker tile  [Arian]
+7d473ea  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+9992223  Automatic translation import  [Michael Bestas]
+c8ca726  Automatic translation import  [Michael Bestas]
+
+* hardware/lineage/interfaces
+09b5008  Add support for anti flicker mode in LiveDisplay  [Arian]
+
+* hardware/qcom-caf/sm8150/audio
+59a842e  hal: msm8974: Allow to set headset echo reference  [Arian]
+
+* kernel/xiaomi/sm6150
+227aba0  drm: msm: Import xiaomi brightness changes for eb panels  [Arian]
+5a95406  drm: Expose panel_info sysfs node  [Arian]
+66da65a  kernel: sched: account for real time utilization  [Kyle Lin]
+c4cb78b  sched/fair: Skip cpu if task does not fit in  [Rick Yiu]
+c80bc3f  sched: fair: Move cpu_is_in_target_set definition  [Miguel de Dios]
+712ac8c  sched: fair: avoid little cpus due to sync, prev bias  [Miguel de Dios]
+39f3553  sched: Disable SCHED_DEBUG  [hypeartist]
+af4899b  VFS: use synchronize_rcu_expedited() in namespace_unlock()  [NeilBrown]
+
+* lineage-sdk
+b69bebc  Add support for anti flicker mode in LiveDisplay  [Arian]
+4fbe815  lineage-sdk: Screen off fod [2/3]  [TheScarastic]
+
+* lineage/mirror
+35ee08b  Updated to 09-Sep-2020 08:14 UTC  [Kevin F. Haggerty]
+
+* packages/apps/DeskClock
+9782195  Automatic translation import  [Michael Bestas]
+ca6b360  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Etar
+f239068  Automatic translation import  [Michael Bestas]
+04673c6  Automatic translation import  [Michael Bestas]
+
+* packages/apps/LineageParts
+9a34935  Add support for anti flicker mode in LiveDisplay  [Arian]
+e9f2d70  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+2a6f288  Automatic translation import  [Michael Bestas]
+07b07e2  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Messaging
+c28af7b  Fix NoSuchMethodError for getTypeInfo()  [Taesu Lee]
+bef7351  Remove advanced category if no preference  [Taesu Lee]
+1d8ca10  AOSP/Messaging - Changed minSdkVersion to 19.  [Raman Tenneti]
+a1521e6  Fix SecurityException at getActiveSubscriptionInfoList() on N and O  [Taesu Lee]
+9e33f5b  Fix app initialization issue if no permissions  [Taesu Lee]
+597cf92  AOSP/Messaging - Changed midSdkVersion to 14 and reverted to using Telephony.Carriers.CONTENT_URI instead of  Telephony.Carriers.SIM_APN_URI.  [Raman Tenneti]
+847766f  Fix handling format based on API level accordingly.  [Taesu Lee]
+23686d0  Remove only one Lambda Exp for JAVA 7  [Taesu Lee]
+0363451  Fix creating ConnectivityUtil to work on any platform  [Taesu Lee]
+c736c5e  Fix missing computeIfAbsent() method in L_MR1 and M  [Taesu Lee]
+af95b5f  Remove unnecessary methods from MmsUtils  [Taesu Lee]
+3ea5e6e  Allow call to phone numbers or voice mail numbers only  [Taesu Lee]
+921e45b  Check CONFIG_SEND_MULTIPART_SMS_AS_SEPARATE_MESSAGES always  [Taesu Lee]
+4289ace  Fix ConcurrentModificationException  [Taesu Lee]
+70ea43b  Parse recipients from RESPOND_VIA_MESSAGE correctly  [Taesu Lee]
+074e3c4  Disallow making a call to emergency numbers  [Taesu Lee]
+a6c311f  Auto re-sending MMS for all the transient failures  [Taesu Lee]
+381ea9d  Remove dead code  [Taesu Lee]
+3a38d32  Check whether dialable only  [Taesu Lee]
+
+* packages/apps/Settings
+e7bceca  Settings: Screen off fod [3/3]  [TheScarastic]
+a8a19d6  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+60ca3f9  Automatic translation import  [Michael Bestas]
+3119bf6  Automatic translation import  [Michael Bestas]
+b4fb823  Remove useless png and add vector drawable  [Raff Tsai]
+ae7bc56  Remove "storage type" preference from Settings  [joffenberg]
+
+* tools/repohooks
+5be91ca  tools: switch all our tools to python3 shebang  [Mike Frysinger]
+
+* vendor/lineage
+bf6e65b  extract_utils: Add support for system_ext  [Luca Stefani]
+====================
+     2020-09-09    
+====================
+
+* device/xiaomi/davinci
+b7579a2  davinci: init: Fall back to UNKNOWN if hwversion is not passed by the bootloader  [Arian]
+2a6fe8f  davinci: light: Add lights HAL manifest as vintf fragment  [Arian]
+eb53afe  davinci: light: Regenerate Android.bp  [Arian]
+614297e  davinci: Kang fingerprint from dipper  [Arian]
+0f8ecce  davinci: init: Workaround safetynet  [Arian]
+ab7e0c4  davinci: parts: Add StarWars popup sounds  [Arian]
+ad166ac  davinci: sepolicy: Label new LED paths  [Arian]
+a5766b7  davinci: light: Adjust for new led labels in kernel  [Arian]
+07b7bf3  davinci: parts: Adjust for new led labels in kernel  [Arian]
+e66b8ec  davinci: power: Add DT2W support for goodix touchscreens  [Arian]
+66d9094  davinci: power: Add support for DT2W feature  [Bruno Martins]
+6235469  davinci: power: Add no-op 1.3 interface implementation  [Demon000]
+ca527b3  davinci: Remove QTI Power HAL  [Arian]
+3c78b6e  davinci: Disable KPI optimization  [Arian]
+eb3a2dd  davinci: Remove qti perf stack  [Demon Singur]
+faa449e  davinci: rootdir: Drop unsupported settings  [Arian]
+5b36fe8  davinci: rootdir: Disable input boost  [Arian]
+8fe4dcc  davinci: rootdir: Drop core_ctl  [Arian]
+ea73348  davinci: rootdir: Setup schedTune  [Arian]
+0842b77  davinci: rootdir: Kang zram configuration from sunfish  [Arian]
+42b0d55  davinci: rootdir: Kang governor settings from sunfish  [Arian]
+2b98a53  davinci: rootdir: Drop powerkey input boost  [Arian]
+394040e  davinci: rootdir: Move simple writes from post_boot script to init.target.rc  [Arian]
+3f56b1b  Revert "davinci: rootdir: Import coral fs tuning"  [Arian]
+3940722  davinci: rootdir: Remove adaptive lmk tuning  [Arian]
+d2c8f3f  davinci: rootdir: Kang runtime cpusets setup from sunfish  [Arian]
+7a4c873  davinci: rootdir: Don't setup runtime cpusets for silver only first  [Arian]
+9c09b9d  davinci: Enable cortex-A76  [Kyle Lin]
+17d0a7a  davinci: Set surfaceflinger phase offset properties  [Midas Chien]
+80b7d1f  davinci: Refined early phase offsets  [tangrobin]
+08b2b4b  davinci: Copy all media configs from the media HAL  [Arian]
 6a8bc47  davinci: sepolicy: Use add_service macro for remosaic_daemon  [Arian]
 8c02aaf  davinci: Drop unnecessary display calibration files  [Arian]
 65e0324  davinci: rootdir: Drop led permissions from ueventd  [Arian]
 0e7799d  davinci: init: Set hardware revision property  [Arian]
 d56fd41  davinci: overlay: Add call recording overlay  [Michael Bestas]
 
-* frameworks/av
-4156040  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
-
-* frameworks/base
-b317ecf  fwb: Add screen off fod [1/3]  [TheScarastic]
-77a795c  SystemUI: get rid of build text in qs  [Joey]
-da36136  PackageManagerService: Drop caches according to incremental version  [Arian]
-354572d  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
-
-* hardware/lineage/interfaces
-b6c7c28  Add support for anti flicker mode in LiveDisplay  [Arian]
-
-* hardware/qcom-caf/sm8150/audio
-668214b  hal: msm8974: Allow to set headset echo reference  [Arian]
-
-* lineage-sdk
-01a7313  Add support for anti flicker mode in LiveDisplay  [Arian]
-d2c7e9c  lineage-sdk: Screen off fod [2/3]  [TheScarastic]
-
 * lineage/mirror
+abd41a8  Updated to 08-Sep-2020 23:05 UTC  [Kevin F. Haggerty]
+84326c0  Updated to 08-Sep-2020 20:05 UTC  [Kevin F. Haggerty]
 c3eba86  Updated to 08-Sep-2020 12:35 UTC  [Kevin F. Haggerty]
 
-* packages/apps/LineageParts
-49ef951  Add support for anti flicker mode in LiveDisplay  [Arian]
-4259e9b  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+* lineage/scripts
+abe23b3  Update default webview to 85.0.4183.101  [Kevin F. Haggerty]
 
-* packages/apps/Settings
-8c0f9e0  Settings: Screen off fod [3/3]  [TheScarastic]
-47ff2d3  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+* system/bt
+1a6a7a0  Changed HID_DEV_MTU_SIZE from 64 to 512  [Danny Trunk]
+
+* tools/repohooks
+09cc9a7  Add [Builtin Hooks Exclude Paths] section am: ea52820de8  [Thiébaud Weksteen]
+
+* vendor/qcom/opensource/commonsys/system/bt
+614a3e2  Changed HID_DEV_MTU_SIZE from 64 to 512  [Danny Trunk]
 ====================
-     2020-09-07    
+     2020-09-08    
 ====================
 
 * build/make
@@ -80,13 +167,12 @@ f303327  build_image: Allow disabling custom inode count calculation  [Christian
 26178e0  Galaxy S5e -> Galaxy Tab S5e  [LuK1337]
 69e5335  Sync updater/devices.json with lineage-build-targets  [LuK1337]
 21a826e  hudson: Ship $(echo 686f74646f670a | xxd -r -p)  [LuK1337]
-1dc97aa  hudson: Promote Sony Xperia Z3 series to 17.1  [Arian]
 
 * lineage/wiki
+609e40a  wiki: Add OnePlus 7T Pro (hotdog)  [LuK1337]
 715fa45  wiki: Set supported models for guacamole  [LuK1337]
-5b8c37a  wiki: device: Promote Sony Xperia Z3 series to 17.1  [Arian]
 ====================
-     2020-09-06    
+     2020-09-07    
 ====================
 
 * kernel/xiaomi/sm6150
@@ -692,9 +778,18 @@ bd71ab9  sched: Spare resched IPI when prio changes on a single fair task  [Fred
 6528781  sched: fair: Stop running idle_balance on active migration kick  [Lingutla Chandrasekhar]
 6f346b4  sched/fair: Optimize the tick path active migration  [Pavankumar Kondeti]
 527b091  posix_cpu_timer: Check cpu_clock_sample() return value  [Sultan Alsawaf]
-0694a2c  mm: compaction: avoid 100====================
-     2020-09-05    
+0694a2c  mm: compaction: avoid 100
+* lineage/hudson
+1dc97aa  hudson: Promote Sony Xperia Z3 series to 17.1  [Arian]
+
+* lineage/wiki
+5b8c37a  wiki: device: Promote Sony Xperia Z3 series to 17.1  [Arian]
 ====================
+     2020-09-06    
+====================
+
+* frameworks/base
+92e0aaf  SystemUI: fix NPE on global actions dialog  [Timi Rautamäki]
 
 * kernel/xiaomi/sm6150
 a9f542d  msm:sde:rotator Async suspend/resume callbacks.  [Vincent Palomares]
@@ -978,7 +1073,7 @@ e9f6ab2  ARM64: dts: qcom: Add label for reserved memory on sdmmagpie  [Vijayana
 e82fcce  Revert "msm: kgsl: Mark the scratch buffer as privileged"  [Jake Weinstein]
 e9215a5  Revert "msm: kgsl: Update A618 GMU firmware to v1.08"  [Park Ju Hyung]
 ====================
-     2020-09-04    
+     2020-09-05    
 ====================
 
 * frameworks/base
@@ -994,7 +1089,7 @@ f6be32c  netd: Support wildcards in cached hosts file  [Tom Marshall]
 * vendor/lineage
 e30626d  Revert "kernel: prevent additional config from being always rebuilt"  [Luca Stefani]
 ====================
-     2020-09-03    
+     2020-09-04    
 ====================
 
 * frameworks/base
@@ -1010,35 +1105,3 @@ cdd4f21  wiki: Promote Pixel 2 / 2 XL to 17.1 (taimen/walleye)  [Eamon Powell]
 
 * packages/apps/Settings
 f0806f1  Settings: Account more 5G network modes  [Luca Stefani]
-====================
-     2020-09-02    
-====================
-
-* build/soong
-e17bda6  Add support for macOS 11 SDK  [Dan Willemsen]
-5a6b452  Add support for 10.15 SDK  [Dan Willemsen]
-
-* lineage/hudson
-31273b8  hudson: Add Huawei P Smart (figo)  [DarkJoker360]
-c10107c  hudson: Add P20 Lite (anne)  [DarkJoker360]
-657c385  hudson: The budget Pixel family deserves love too  [Nolen Johnson]
-570c83d  hudson: Pixel 5 minus 1  [Nolen Johnson]
-
-* lineage/wiki
-fe936c9  wiki: Add Huawei P Smart (figo)  [DarkJoker360]
-5256236  wiki: Add Huawei P20 Lite (anne)  [DarkJoker360]
-b99871a  wiki: devices: Add Google Pixel 3a {,XL}  [Nolen Johnson]
-87371e0  wiki: devices: Add Google Pixel 4 {,XL}  [Nolen Johnson]
-
-* prebuilts/tools-lineage
-b0e4e6a  tools-lineage: Add prebuilt DTC  [Nolen Johnson]
-
-* system/sepolicy
-95fe7ee  Fix sepolicy_tests on Mac 10.15  [Dan Willemsen]
-
-* tools/repohooks
-ea52820  Add [Builtin Hooks Exclude Paths] section  [Thiébaud Weksteen]
-ec4cdcb  drop python2 testing entirely  [Mike Frysinger]
-
-* vendor/lineage
-2baeb4f  kernel: Use CPATH for including host headers  [LuK1337]
