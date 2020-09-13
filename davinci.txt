@@ -1,140 +1,226 @@
 ====================
-     2020-09-06    
+     2020-09-13    
 ====================
 
 * build/make
-37d9541  [DNM] Always use release-keys  [Arian]
+1d6f0c6  [DNM] Always use release-keys  [Arian]
 
 * frameworks/av
-b928a76  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+3fa6dc3  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
 
 * frameworks/base
-48055cd  fwb: Add screen off fod [1/3]  [TheScarastic]
-15fa47e  SystemUI: get rid of build text in qs  [Joey]
-74360b7  PackageManagerService: Drop caches according to incremental version  [Arian]
-cecc777  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+c60c40b  fwb: Add screen off fod [1/3]  [TheScarastic]
+9708a08  SystemUI: get rid of build text in qs  [Joey]
+4da477f  PackageManagerService: Drop caches according to incremental version  [Arian]
+e4c49cb  SystemUI: Add anti flicker tile  [Arian]
+82ed70c  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+c155a3f  Automatic translation import  [LineageOS Builder]
 
 * hardware/lineage/interfaces
-2903c92  Add support for anti flicker mode in LiveDisplay  [Arian]
+2ea10bf  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-603a0ff  hal: msm8974: Allow to set headset echo reference  [Arian]
+ff5b57d  hal: msm8974: Allow to set headset echo reference  [Arian]
 
 * lineage-sdk
-8feecea  Add support for anti flicker mode in LiveDisplay  [Arian]
-39cbe4a  lineage-sdk: Screen off fod [2/3]  [TheScarastic]
+b069ed3  Add support for anti flicker mode in LiveDisplay  [Arian]
+9c46cb7  lineage-sdk: Screen off fod [2/3]  [TheScarastic]
+db3a7bd  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+38d62ca  lineage-sdk: Fix typo for filterDisplayModes comment  [Jarl-Penguin]
+
+* lineage/wiki
+251e96e  devices: victara: No longer require format on upgrade  [Nolen Johnson]
+456c739  fixup! wiki: Set ccache compression in ccache config instead of env  [LuK1337]
+20d216c  wiki: Set ccache compression in ccache config instead of env  [LuK1337]
+
+* packages/apps/Bluetooth
+6c48bf2  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Camera2
+3679c8c  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/DeskClock
+d092175  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Dialer
+4a72a33  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Eleven
+5937b1e  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Etar
+f2e6416  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Gallery2
+2777413  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Jelly
+cc8a1e9  Automatic translation import  [LineageOS Builder]
 
 * packages/apps/LineageParts
-a945042  Add support for anti flicker mode in LiveDisplay  [Arian]
-7582c6a  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+6ccfabb  Add support for anti flicker mode in LiveDisplay  [Arian]
+fb9ad3d  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+2849587  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Messaging
+583c1b1  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Recorder
+767fd3b  Automatic translation import  [LineageOS Builder]
 
 * packages/apps/Settings
-88fa514  Settings: Screen off fod [3/3]  [TheScarastic]
-a5c6ddd  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+d9e3d74  Settings: Screen off fod [3/3]  [TheScarastic]
+5e843f2  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+29ef390  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/SetupWizard
+d63ae5e  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Snap
+972ac98  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Trebuchet
+43a7652  Launcher3: update recent tasks header style  [Joey]
+46c2d81  Launcher3: categorize settings  [Joey]
+39887de  Launcher3: improve protected app names style  [Joey]
+32ca993  Launcher3: Add support for icon packs  [Joey]
+ce2eeb4  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/TvSettings
+fbbe74b  Automatic translation import  [LineageOS Builder]
+
+* packages/inputmethods/LatinIME
+7ae7f65  Automatic translation import  [LineageOS Builder]
+
+* packages/resources/devicesettings
+ce90d23  Automatic translation import  [LineageOS Builder]
+
+* packages/services/BuiltInPrintService
+ce69440  Automatic translation import  [LineageOS Builder]
 ====================
-     2020-09-05    
+     2020-09-12    
 ====================
+
+* build/make
+53540ab  sign_target_apks: Replace update-payload-key.pub.pem in RECOVERY as well  [LuK1337]
+
+* lineage/crowdin
+53cdc08  crowdin: fix _COMMITS_CREATED references  [Simon Shields]
+
+* packages/apps/Updater
+1de5ff5  Automatic translation import  [LineageOS Builder]
+====================
+     2020-09-11    
+====================
+
+* device/lineage/atv
+076ade1  Enable bluetooth remote pairing in Setupwraith  [Aaron Kling]
+
+* lineage/crowdin
+8db4a3d  crowdin: Don't require global installation of crowdin  [Simon Shields]
+e274754  crowdin: Add requirements.txt  [Simon Shields]
+
+* packages/apps/SetupWizard
+5d1780f  ATV: Disable custom SUW if GMS SetupWraith is available  [Aaron Kling]
+====================
+     2020-09-10    
+====================
+
+* external/chromium-webview
+cd830a4  Update Chromium Webview to 85.0.4183.101  [Kevin F. Haggerty]
 
 * frameworks/base
-94b7041  SystemUI: Use TaskStackChangeListener API for contextual screenshot package name  [LuK1337]
+9992223  Automatic translation import  [Michael Bestas]
+c8ca726  Automatic translation import  [Michael Bestas]
 
-* lineage/wiki
-8bcea3b  devices: channel: Use custom TWRP  [Nolen Johnson]
-0c7635b  images: Use the correct image for ocean  [Yagya Parihar]
+* lineage/mirror
+35ee08b  Updated to 09-Sep-2020 08:14 UTC  [Kevin F. Haggerty]
 
-* vendor/lineage
-e30626d  Revert "kernel: prevent additional config from being always rebuilt"  [Luca Stefani]
-====================
-     2020-09-04    
-====================
+* packages/apps/DeskClock
+9782195  Automatic translation import  [Michael Bestas]
+ca6b360  Automatic translation import  [Michael Bestas]
 
-* frameworks/base
-2760fc2  VolumeDialog: Don't change the background of the expandable indicator  [Arian]
+* packages/apps/Etar
+f239068  Automatic translation import  [Michael Bestas]
+04673c6  Automatic translation import  [Michael Bestas]
 
-* lineage/hudson
-7a0bb1f  hudson: Promote Pixel 2 / 2 XL to 17.1 (taimen/walleye)  [Eamon Powell]
+* packages/apps/LineageParts
+2a6f288  Automatic translation import  [Michael Bestas]
+07b07e2  Automatic translation import  [Michael Bestas]
 
-* lineage/wiki
-045bc53  wiki: Add support for AB + /recovery  [LuK1337]
-2cd0a6d  wiki: Update copy-partitions.zip  [LuK1337]
-cdd4f21  wiki: Promote Pixel 2 / 2 XL to 17.1 (taimen/walleye)  [Eamon Powell]
+* packages/apps/Messaging
+c28af7b  Fix NoSuchMethodError for getTypeInfo()  [Taesu Lee]
+bef7351  Remove advanced category if no preference  [Taesu Lee]
+1d8ca10  AOSP/Messaging - Changed minSdkVersion to 19.  [Raman Tenneti]
+a1521e6  Fix SecurityException at getActiveSubscriptionInfoList() on N and O  [Taesu Lee]
+9e33f5b  Fix app initialization issue if no permissions  [Taesu Lee]
+597cf92  AOSP/Messaging - Changed midSdkVersion to 14 and reverted to using Telephony.Carriers.CONTENT_URI instead of  Telephony.Carriers.SIM_APN_URI.  [Raman Tenneti]
+847766f  Fix handling format based on API level accordingly.  [Taesu Lee]
+23686d0  Remove only one Lambda Exp for JAVA 7  [Taesu Lee]
+0363451  Fix creating ConnectivityUtil to work on any platform  [Taesu Lee]
+c736c5e  Fix missing computeIfAbsent() method in L_MR1 and M  [Taesu Lee]
+af95b5f  Remove unnecessary methods from MmsUtils  [Taesu Lee]
+3ea5e6e  Allow call to phone numbers or voice mail numbers only  [Taesu Lee]
+921e45b  Check CONFIG_SEND_MULTIPART_SMS_AS_SEPARATE_MESSAGES always  [Taesu Lee]
+4289ace  Fix ConcurrentModificationException  [Taesu Lee]
+70ea43b  Parse recipients from RESPOND_VIA_MESSAGE correctly  [Taesu Lee]
+074e3c4  Disallow making a call to emergency numbers  [Taesu Lee]
+a6c311f  Auto re-sending MMS for all the transient failures  [Taesu Lee]
+381ea9d  Remove dead code  [Taesu Lee]
+3a38d32  Check whether dialable only  [Taesu Lee]
 
 * packages/apps/Settings
-f0806f1  Settings: Account more 5G network modes  [Luca Stefani]
+60ca3f9  Automatic translation import  [Michael Bestas]
+3119bf6  Automatic translation import  [Michael Bestas]
+b4fb823  Remove useless png and add vector drawable  [Raff Tsai]
+ae7bc56  Remove "storage type" preference from Settings  [joffenberg]
+
+* tools/repohooks
+5be91ca  tools: switch all our tools to python3 shebang  [Mike Frysinger]
+
+* vendor/lineage
+bf6e65b  extract_utils: Add support for system_ext  [Luca Stefani]
 ====================
-     2020-09-03    
+     2020-09-09    
+====================
+
+* lineage/mirror
+abd41a8  Updated to 08-Sep-2020 23:05 UTC  [Kevin F. Haggerty]
+84326c0  Updated to 08-Sep-2020 20:05 UTC  [Kevin F. Haggerty]
+c3eba86  Updated to 08-Sep-2020 12:35 UTC  [Kevin F. Haggerty]
+
+* lineage/scripts
+abe23b3  Update default webview to 85.0.4183.101  [Kevin F. Haggerty]
+
+* system/bt
+1a6a7a0  Changed HID_DEV_MTU_SIZE from 64 to 512  [Danny Trunk]
+
+* tools/repohooks
+09cc9a7  Add [Builtin Hooks Exclude Paths] section am: ea52820de8  [Thiébaud Weksteen]
+
+* vendor/qcom/opensource/commonsys/system/bt
+614a3e2  Changed HID_DEV_MTU_SIZE from 64 to 512  [Danny Trunk]
+====================
+     2020-09-08    
+====================
+
+* build/make
+f303327  build_image: Allow disabling custom inode count calculation  [Christian Oder]
+
+* lineage/hudson
+26178e0  Galaxy S5e -> Galaxy Tab S5e  [LuK1337]
+69e5335  Sync updater/devices.json with lineage-build-targets  [LuK1337]
+21a826e  hudson: Ship $(echo 686f74646f670a | xxd -r -p)  [LuK1337]
+
+* lineage/wiki
+609e40a  wiki: Add OnePlus 7T Pro (hotdog)  [LuK1337]
+715fa45  wiki: Set supported models for guacamole  [LuK1337]
+====================
+     2020-09-07    
 ====================
 
 * lineage/hudson
-31273b8  hudson: Add Huawei P Smart (figo)  [DarkJoker360]
-c10107c  hudson: Add P20 Lite (anne)  [DarkJoker360]
-657c385  hudson: The budget Pixel family deserves love too  [Nolen Johnson]
-570c83d  hudson: Pixel 5 minus 1  [Nolen Johnson]
+1dc97aa  hudson: Promote Sony Xperia Z3 series to 17.1  [Arian]
 
 * lineage/wiki
-fe936c9  wiki: Add Huawei P Smart (figo)  [DarkJoker360]
-5256236  wiki: Add Huawei P20 Lite (anne)  [DarkJoker360]
-b99871a  wiki: devices: Add Google Pixel 3a {,XL}  [Nolen Johnson]
-87371e0  wiki: devices: Add Google Pixel 4 {,XL}  [Nolen Johnson]
-
-* prebuilts/tools-lineage
-b0e4e6a  tools-lineage: Add prebuilt DTC  [Nolen Johnson]
-
-* tools/repohooks
-ec4cdcb  drop python2 testing entirely  [Mike Frysinger]
-
-* vendor/lineage
-2baeb4f  kernel: Use CPATH for including host headers  [LuK1337]
-====================
-     2020-09-02    
-====================
-
-* build/soong
-e17bda6  Add support for macOS 11 SDK  [Dan Willemsen]
-5a6b452  Add support for 10.15 SDK  [Dan Willemsen]
-
-* frameworks/base
-04946cf  Fix CDM.requestNotificationAccess() in profile.  [Oasis Feng]
-
-* lineage/wiki
-e5ce6c7  wiki: devices: i9300: Update TWRP link  [mattmill30]
-
-* system/sepolicy
-95fe7ee  Fix sepolicy_tests on Mac 10.15  [Dan Willemsen]
-
-* tools/repohooks
-324296b  config: refactor PreUploadSettingsTests  [Thiébaud Weksteen]
-c9ba009  config: add {Local,Global}PreUploadFile classes  [Thiébaud Weksteen]
-====================
-     2020-09-01    
-====================
-
-* frameworks/base
-df8fb7a  FODCircleView: Add support for custom FP pressed icon  [TheScarastic]
-
-* lineage/wiki
-f83c8e7  wiki: Nice order  [LuK1337]
-314f473  fixup! wiki: how-tos: logcat: 17.1 has no AddonSU  [Nolen Johnson]
-85cbca6  wiki: how-tos: logcat: 17.1 has no AddonSU  [Nolen Johnson]
-
-* tools/repohooks
-7698778  pre-upload: drop support for Python 2  [Mike Frysinger]
-====================
-     2020-08-31    
-====================
-
-* lineage/hudson
-dd2a054  hudson: Ship 16.0 for Pixel 2 / 2 XL (taimen/walleye)  [Eamon Powell]
-
-* lineage/wiki
-f05ed18  wiki: Add Pixel 2 / 2 XL (taimen/walleye)  [Eamon Powell]
-
-* system/libufdt
-c54fd08  mkdtboimg: Sanitize dt filename  [Luca Stefani]
-409c2d0  mkdtboimg: Allow specifying full path for dtb  [Luca Stefani]
-
-* vendor/gms
-11e7f59  gms: Update from pixel 4a QD4A.200805.003  [Arian]
-
-* vendor/lineage
-70d5cc4  kernel: prevent additional config from being always rebuilt  [Adrian DC]
+5b8c37a  wiki: device: Promote Sony Xperia Z3 series to 17.1  [Arian]
