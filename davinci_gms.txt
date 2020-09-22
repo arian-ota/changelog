@@ -1,9 +1,80 @@
 ====================
-     2020-09-21    
+     2020-09-22    
 ====================
 
 * build/make
-07509ad  [DNM] Always use release-keys  [Arian]
+69a605d  [DNM] Always use release-keys  [Arian]
+
+* device/xiaomi/davinci
+ee6483d  davinci: fix EAS node  [DarkDampSquib]
+33d5a60  davinci: sepolicy: Address some more denials  [DarkDampSquib]
+919c11b  davinci: sepolicy: Add libperfmgr rules  [DarkDampSquib]
+ecf2cc9  davinci: powerhint: Update from Pixel 4a  [DarkDampSquib]
+f999513  davinci: powerhint: do not boost big cluster on interaction  [Demon000]
+edc45d5  davinci: powerhint: remove bandwidth boosting on interaction  [Demon000]
+f597139  davinci: powerhint: remove UFS boosting on interaction  [Demon000]
+9b38f33  davinci: powerhint: tune powerhint  [Pig]
+e752e1f  davinci: powerhint: moorea settings  [Karthik Gopalan]
+db4cd30  davinci: powerhint: change foreground cpuset when app launch  [Rick Yiu]
+42b97c8  davinci: powerhint: Fix QoS CPU DMA latency value  [Artem Labazov]
+c038b3b  davinci: power-libperfmgr: Removing support for stats related APIs  [Benjamin Schwartz]
+ed15ca8  davinci: power-libperfmgr: add a NOT_INTERACTIVE hint for setInteractive  [Jesse Chan]
+59b1dd4  davinci: power-libperfmgr: Scan input devices for eligible DT2W node  [Bruno Martins]
+7a8f0d2  davinci: power-libperfmgr: Add support for event-based tap to wake gesture control  [AbhiShek Aggarwal]
+756582b  davinci: power-libperfmgr: add an updateHint function for simple hint ops  [Jesse Chan]
+ffd0019  davinci: power-libperfmgr: declare override="true" in manifest  [Jesse Chan]
+300f461  davinci: power-libperfmgr: initialize powerHAL when boot is completed  [Jesse Chan]
+0540257  davinci: power-libperfmgr: remove Google-specific camera and audio hints  [Jesse Chan]
+cc11803  davinci: power-libperfmgr: remove Google-specific display LPM control  [Jesse Chan]
+e2abc97  davinci: power-libperfmgr: simply wait if idle state node is not present  [Jesse Chan]
+8dd7a4c  davinci: power-libperfmgr: adapt and rebrand for xiaomi  [Jesse Chan]
+b3a5e98  davinci: power-libperfmgr: import Pixel libperfmgr Power HAL  [Jesse Chan]
+fe645d1  Revert "davinci: power: Add no-op 1.3 interface implementation"  [Arian]
+efaa0cb  Revert "davinci: power: Add support for DT2W feature"  [Arian]
+738addc  Revert "davinci: power: Add DT2W support for goodix touchscreens"  [Arian]
+
+* frameworks/av
+db2afc5  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+
+* frameworks/base
+c121a0b  fwb: Add screen off fod [1/3]  [TheScarastic]
+556ae83  SystemUI: get rid of build text in qs  [Joey]
+4de323a  PackageManagerService: Drop caches according to incremental version  [Arian]
+c5fb196  SystemUI: Add anti flicker tile  [Arian]
+ff54fc1  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+
+* hardware/lineage/interfaces
+7fdd8fe  Add support for anti flicker mode in LiveDisplay  [Arian]
+
+* hardware/qcom-caf/sm8150/audio
+c043c27  hal: msm8974: Allow to set headset echo reference  [Arian]
+cff2a02  hal: Add tfa98xx feedback extension  [Pig]
+
+* lineage-sdk
+0f30351  Add support for anti flicker mode in LiveDisplay  [Arian]
+f9dabf0  lineage-sdk: Screen off fod [2/3]  [TheScarastic]
+886c21b  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+
+* lineage/hudson
+378368e  hudson: Add Redmi Note 8 / 8T (ginkgo)  [DarkJoker360]
+
+* lineage/wiki
+b5b0f97  wiki: devices: Require 10 on dynamic retrofit Pixel devices  [Nolen Johnson]
+4c54bc6  wiki: Add Redmi Note 8 / 8T (ginkgo)  [DarkJoker360]
+
+* packages/apps/LineageParts
+d04d983  Add support for anti flicker mode in LiveDisplay  [Arian]
+ddf47ca  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+
+* packages/apps/Settings
+e335a04  Settings: Screen off fod [3/3]  [TheScarastic]
+05ce7f4  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+
+* packages/apps/Trebuchet
+44597b0  Launcher3: update recent tasks header style  [Joey]
+====================
+     2020-09-21    
+====================
 
 * device/xiaomi/davinci
 09c8cea  davinci: audio: Add built-in/Back mic and remove TelePhony Rx from primary input  [Shalini Manjunatha]
@@ -14,27 +85,6 @@ f802fd5  davinci: rootdir: Drop unsupported settings  [Arian]
 376f198  davinci: rootdir: Disable input boost  [Arian]
 a444bb2  davinci: rootdir: Drop core_ctl  [Arian]
 36b2408  davinci: rootdir: Kang governor settings from sunfish  [Arian]
-ddc993b  davinci: Disable KPI optimization  [Arian]
-96f3b44  davinci: Remove qti perf stack  [Demon Singur]
-3ce8757  davinci: rootdir: Setup schedTune  [Arian]
-
-* frameworks/av
-ae6f278  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
-
-* frameworks/base
-7a7f29c  fwb: Add screen off fod [1/3]  [TheScarastic]
-0b56ff2  SystemUI: get rid of build text in qs  [Joey]
-572cad1  PackageManagerService: Drop caches according to incremental version  [Arian]
-4bb64b9  SystemUI: Add anti flicker tile  [Arian]
-51abbff  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
-7449a62  Automatic translation import  [LineageOS Builder]
-
-* hardware/lineage/interfaces
-e4290c0  Add support for anti flicker mode in LiveDisplay  [Arian]
-
-* hardware/qcom-caf/sm8150/audio
-f99db31  hal: msm8974: Allow to set headset echo reference  [Arian]
-26b8d02  hal: Add tfa98xx feedback extension  [Pig]
 
 * kernel/xiaomi/sm6150
 d910ba5  scsi: ufs: increase power control timeout  [Demon000]
@@ -649,13 +699,31 @@ c410edd  sched: fair: Stop running idle_balance on active migration kick  [Lingu
 9e2d3e5  sched/fair: Optimize the tick path active migration  [Pavankumar Kondeti]
 8bd5346e  posix_cpu_timer: Check cpu_clock_sample() return value  [Sultan Alsawaf]
 9cab41e  mm: compaction: avoid 100
-* lineage-sdk
-fa8c1d7  Add support for anti flicker mode in LiveDisplay  [Arian]
-4b645ea  lineage-sdk: Screen off fod [2/3]  [TheScarastic]
-16ea1ee  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
-
 * lineage/mirror
+14c1faa  Updated to 21-Sep-2020 12:48 UTC  [Kevin F. Haggerty]
 79577ef  Updated to 20-Sep-2020 17:39 UTC  [Kevin F. Haggerty]
+
+* packages/apps/Trebuchet
+fba0af5  Launcher3: categorize settings  [Joey]
+0b976fd  Launcher3: improve protected app names style  [Joey]
+0b1cd0e  Launcher3: Add support for icon packs  [Joey]
+
+* vendor/lineage
+bea30d4  Update APNs for O2 Germany & E-Plus  [Martin Dünkelmann]
+====================
+     2020-09-20    
+====================
+
+* device/xiaomi/davinci
+ddc993b  davinci: Disable KPI optimization  [Arian]
+96f3b44  davinci: Remove qti perf stack  [Demon Singur]
+3ce8757  davinci: rootdir: Setup schedTune  [Arian]
+
+* frameworks/base
+7449a62  Automatic translation import  [LineageOS Builder]
+
+* lineage/wiki
+d533b89  wiki: Assign page.title when device.codename is empty  [LuK1337]
 
 * packages/apps/AudioFX
 f694fbf  Automatic translation import  [LineageOS Builder]
@@ -697,8 +765,6 @@ e88ae19  Automatic translation import  [LineageOS Builder]
 4a7621e  Automatic translation import  [LineageOS Builder]
 
 * packages/apps/LineageParts
-abf028c  Add support for anti flicker mode in LiveDisplay  [Arian]
-0510426  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 6cf1281  Automatic translation import  [LineageOS Builder]
 
 * packages/apps/ManagedProvisioning
@@ -720,8 +786,6 @@ dc12887  Automatic translation import  [LineageOS Builder]
 683eadc  Automatic translation import  [LineageOS Builder]
 
 * packages/apps/Settings
-9a5b57c  Settings: Screen off fod [3/3]  [TheScarastic]
-e557d01  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
 bb53749  Automatic translation import  [LineageOS Builder]
 
 * packages/apps/SetupWizard
@@ -734,10 +798,6 @@ a96ccce  Automatic translation import  [LineageOS Builder]
 5e45ffa  Automatic translation import  [LineageOS Builder]
 
 * packages/apps/Trebuchet
-a1d5cf7  Launcher3: update recent tasks header style  [Joey]
-1de28bb  Launcher3: categorize settings  [Joey]
-c431a30  Launcher3: improve protected app names style  [Joey]
-7f4c7e4  Launcher3: Add support for icon packs  [Joey]
 67724ea  Automatic translation import  [LineageOS Builder]
 
 * packages/apps/TvSettings
@@ -769,27 +829,12 @@ a6d7ddd  Automatic translation import  [LineageOS Builder]
 
 * packages/wallpapers/LivePicker
 9e87e51  Automatic translation import  [LineageOS Builder]
-
-* vendor/lineage
-bea30d4  Update APNs for O2 Germany & E-Plus  [Martin Dünkelmann]
-====================
-     2020-09-20    
-====================
-
-* lineage/wiki
-d533b89  wiki: Assign page.title when device.codename is empty  [LuK1337]
 ====================
      2020-09-19    
 ====================
 ====================
      2020-09-18    
 ====================
-
-* packages/apps/Trebuchet
-87d095d  Trebuchet: optimization of searching apps in Chinese  [zhaoguomanong]
-
-* vendor/lineage
-6c432d2  extract_utils: Fix system_ext framework blueprint generation.  [Alexander Koskovich]
 ====================
      2020-09-17    
 ====================
@@ -828,21 +873,14 @@ becf480  davinci: rootdir: Move simple writes from post_boot script to init.targ
 bb4f81d  davinci: rootdir: Stop overriding audio hal 2.0 service  [Arian]
 3350e80  davinci: rootdir: Drop ssr_setup service  [Arian]
 
+* packages/apps/Trebuchet
+87d095d  Trebuchet: optimization of searching apps in Chinese  [zhaoguomanong]
+
 * tools/repohooks
 573d316  hooks: support Python 3.6 for ExclusionScope  [Thiébaud Weksteen]
+
+* vendor/lineage
+6c432d2  extract_utils: Fix system_ext framework blueprint generation.  [Alexander Koskovich]
 ====================
      2020-09-16    
 ====================
-
-* lineage-sdk
-4ac07a4  lineage-sdk: Run bpfix  [Sam Mortimer]
-====================
-     2020-09-15    
-====================
-
-* frameworks/base
-8cf2dde  WiredAccessoryManager: support for multiple display ports  [Vignesh Kulothungan]
-0692127  audio: update WiredAccessoryManager to use ExtconUEventObserver based on events available  [Dhananjay Kumar]
-d831234  WiredAccessoryManager: Support for multiple extconn devices  [Haynes Mathew George]
-b2852f0  WiredAccessoryManager: update extcon file paths  [Aalique Grahame]
-1ac5d4f  WiredAccessoryManager: Add support for DisplayPort Audio  [Revathi Uddaraju]
