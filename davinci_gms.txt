@@ -1,234 +1,557 @@
 ====================
-     2020-09-13    
+     2020-09-27    
 ====================
 
 * build/make
-4885eca  [DNM] Always use release-keys  [Arian]
+33f7228  [DNM] Always use release-keys  [Arian]
+70fe50d  backuptool: do not unmap dynamic partition after finished  [Jesse Chan]
+
+* device/xiaomi/davinci
+fc56747  davinci: Kang fingerprint from dipper  [Arian]
+36df461  davinci: init: Workaround safetynet  [Arian]
+f3c2a3c  davinci: parts: Add StarWars popup sounds  [Arian]
+dfabe17  davinci: overlay: Enable STATE_DOZE_SUSPEND?  [Arian]
+e9bd7df  davinci: audio: Fix handset echo reference paths  [Arian]
+5cea50f  davinci: rootdir: Allow all filesystems for USB-OTG  [SVB]
+55772d7  davinci: overlay: Update path defining rounded corners  [yankarinRG]
+a5545ff  davinci: overlay: Update window corner radius adjustment  [yankarinRG]
+917b6a2  davinci: overlay: Adjust window rounded corners  [yankarinRG]
+271e94e  davinci: overlay: Add proper keyguard/statusbar configs for rounded corners  [yankarinRG]
+60dffd7  davinci: audio: Add built-in/Back mic and remove TelePhony Rx from primary input  [Shalini Manjunatha]
+9bfa4b2  davinci: Enable USAP  [Luca Stefani]
+20c2c49  davinci: rootdir: Move services to system-background cgroup  [Ethan Chen]
+3c8518d  davinci: rootdir: Change cpuset cpus  [Rick Yiu]
+33fe3df  davinci: rootdir: Add restricted cpuset  [Tim Murray]
+8cb2c54  davinci: rootdir: Use only one big cpu for foreground cgroup  [Arian]
+2f2cb07  davinci: rootdir: Decrease background cpus  [Arian]
+1d509dd  davinci: fod: Use FOD_PRESSED_LAYER_ZORDER instead of magic number  [Vincent Vidal]
+ff40226  davinci: fod: Include generated_kernel_headers to build libfod_extension  [Vincent Vidal]
+ef50cd0  davinci: sepolicy: Label panel_info sysfs node  [Arian]
+60ed227  davinci: overlay: Tune vibration levels  [Marco Rizzo]
+0cd0782  davinci: parts: Set dynamic thermal interval to 5 sec  [Pranav Vashi]
+8f334b9  davinci: parts: Make thermal profiles naming completely generic  [Bruno Martins]
+d693be5  davinci: parts: Implement dynamic thermal profiles  [TheScarastic]
+531745b  davinci: light: Add lights HAL manifest as vintf fragment  [Arian]
+f0b909d  davinci: light: Reformat Android.bp  [Arian]
+22a726c  davinci: sepolicy: Label new LED paths  [Arian]
+8986d3d  davinci: light: Adjust for new led labels in kernel  [Arian]
+456ba4f  davinci: parts: Adjust for new led labels in kernel  [Arian]
+5a98280  davinci: rootdir: Drop powerkey input boost  [Arian]
+c8aba24  davinci: rootdir: Move simple writes from post_boot script to init.target.rc  [Arian]
+6eed26c  Revert "davinci: rootdir: Import coral fs tuning"  [Arian]
 
 * frameworks/av
-493a150  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+4449380  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
 
 * frameworks/base
-b037f13  fwb: Add screen off fod [1/3]  [TheScarastic]
-6681fc9  SystemUI: get rid of build text in qs  [Joey]
-0acab34  PackageManagerService: Drop caches according to incremental version  [Arian]
-77c690d  SystemUI: Add anti flicker tile  [Arian]
-dcecd92  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+15793ac  fwb: Add screen off fod [1/3]  [TheScarastic]
+d17810c  SystemUI: get rid of build text in qs  [Joey]
+4c9018d  PackageManagerService: Drop caches according to incremental version  [Arian]
+4fd3b30  SystemUI: Add anti flicker tile  [Arian]
+80127d1  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-5be7780  Add support for anti flicker mode in LiveDisplay  [Arian]
+edb73bd  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-b19a0a8  hal: msm8974: Allow to set headset echo reference  [Arian]
+19b6b95  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+f725793  hal: Add tfa98xx feedback extension  [Pig]
+
+* kernel/xiaomi/sm6150
+bce3e93  ARM64: configs: {davinci,phoenix}: Re-enable caf cpu boost and core ctl  [Arian]
+5e23d1f  Revert "ARM64: configs: {davinci,phoenix}: Disable CONFIG_MSM_PERFORMANCE"  [Arian]
+239ad77  Revert "ARM64: configs: {davinci,phoenix}: Disable CONFIG_AUTOCGROUP"  [Arian]
+51fc5fa  vidc: remove turbo power mode  [Demon000]
+55fbc5c  clk: Add prepare lock in clk_populate_clock_opp_table  [Veera Vegivada]
+8ba6d185  msm: vidc: fix iteration over vote data  [Demon000]
+853b116  drm/msm/sde: Omit rotator logging code  [Demon000]
+fe2c530  drm/msm: Omit SDE event log and most debugfs code  [Danny Lin]
+eb12b77  drm/msm/sde: Omit debug logging code  [Danny Lin]
+b2b8337  drm/msm/sde: Remove register write debug logging  [Danny Lin]
+101aaf4  sde: interrupts: optimize interrupt dispatching routines  [Demon000]
+6faa44b  ARM64: dts: sdmmagpie: affine cores individually when processing requests  [Demon000]
+2ee4b9b  ARM64: dts: sdmmagpie: use 67us latency for cdsp  [Demon000]
+0483f43  mailbox: msm_qmp: Remove IRQF_NO_SUSPEND  [Chris Lew]
+207fad5  rpmsg: glink: Remove IRQF_NO_SUSPEND  [Chris Lew]
+9096b0b  soc: qcom: smp2p: Remove IRQF_NO_SUSPEND  [Chris Lew]
+1c78a0b  i2c-qcom-geni: move geni_i2c_driver_init to async probe  [Rick Yiu]
+e6fe1c3  msm: kgsl: move kgsl_3d_init to async probe  [Rick Yiu]
+4fadd01  soc/qcom: move icnss_initialize to async probe  [Rick Yiu]
+ea32c2a  ion/msm: move msm_ion_init to async probe  [Rick Yiu]
+4c18d97  drm/msm: move msm_drm_register to async probe  [Rick Yiu]
+e1cf56f  drivers: i2c: support per-device async suspend  [Harpreet "Eli" Sangha]
+920ed30  Revert "Revert "select: use freezable blocking call""  [Tim Murray]
+9fce522  cpuidle: don't disable cpuidle when entering suspend  [Tim Murray]
+c1d4e65  FROMLIST: arm64: kernel: implement fast refcount checking  [Ard Biesheuvel]
+bb8f1d0  arm64: debug: Separate debug hooks based on target exception level  [Will Deacon]
+b663a8e  UPSTREAM: PM / core: Add support to skip power management in device/driver model  [Sudeep Holla]
+143377c  ARM64: dts: atoll: Disable unhandled or broken IRQ monitoring  [Danny Lin]
+f311b95  Revert "usb: gadget: mtp: Increase RX transfer length to 1M"  [Sultan Alsawaf]
+f34211c  Revert "usb: gadget: f_mtp: Increase default TX buffer size"  [Sultan Alsawaf]
+a192fbf  msm: kgsl: Wake GPU upon receiving an ioctl rather than upon touch input  [Sultan Alsawaf]
+a372f44  msm: kgsl: adreno: Properly set GPU timeout  [celtare21]
+03b7199  ARM: dts: sdmmagpie: Set GPU idle timeout to 64 ms  [Danny Lin]
+3dab795  kernel: Only set one CPU in the default IRQ affinity mask  [Sultan Alsawaf]
+4fc69c9  kernel: Don't allow IRQ affinity masks to have more than one CPU  [Sultan Alsawaf]
+e93c3ec  cpuidle: Mark CPUs idle as late as possible to avoid unneeded IPIs  [Sultan Alsawaf]
+014a478  cpuidle: Optimize pm_qos notifier callback and IPI semantics  [Sultan Alsawaf]
+7a1c9b1  arm64: Allow IPI_WAKEUP to be used outside of the ACPI parking protocol  [Sultan Alsawaf]
+9fa0d01  drm/msm: minimize qos remap updates  [Adrian Salido]
+34a2057  ARM64: dts: atoll: remove pm qos latency overrides  [Demon000]
+e9045dc  msm: kgsl: Relax CPU latency requirements to save power  [Sultan Alsawaf]
+f723c3e  cpuidle: lpm-levels: Allow exit latencies equal to target latencies  [Sultan Alsawaf]
+38fd38f  qos: Execute notifier callbacks atomically  [Sultan Alsawaf]
+80f84de  qos: Remove remaining instances of disabling IRQs for pm_qos_lock  [Sultan Alsawaf]
+c0223d4  qos: Don't disable interrupts while holding pm_qos_lock  [Sultan Alsawaf]
+65018d2  tcp: up initial rmem to 128KB and SYN rwin to around 64KB  [Yuchung Cheng]
+9094710  tcp: Enable ECN negotiation by default  [Danny Lin]
+eeb48f1  tcp: allow TLP in ECN CWR  [Neal Cardwell]
+5aac593  sched: features: Disable EAS_PREFER_IDLE  [AngeloGioacchino Del Regno]
+fbe12b9  Revert "sched: turn off the TTWU_QUEUE feature"  [idkwhoiam322]
+8e5a908  sched/idle: Move quiet_vmstate() into the NOHZ code  [Peter Zijlstra]
+5cf21ad  pinctrl: msm: Remove explicit barriers from mmio ops where unneeded  [Sultan Alsawaf]
+4c3ccad  locking/atomics, asm-generic/bitops/atomic.h: Rewrite using atomic_*() APIs  [Will Deacon]
+ea7e809  arm64: Inline the spin lock function family  [Sultan Alsawaf]
+bb64aaf  Revert "mutex: Add a delay into the SPIN_ON_OWNER wait loop."  [Sultan Alsawaf]
+60b38c2  ANDROID: sdcardfs: Alloc memory only when needed in __sdcardfs_lookup()  [Sultan Alsawaf]
+6703549  scatterlist: Don't allocate sg lists using __get_free_page  [Sultan Alsawaf]
+fe28ece  msm_geni_serial: skip flushing tx upon shutdown  [Park Ju Hyung]
+cd51009  msm_geni_serial: make ioctl always exclusive  [Park Ju Hyung]
+a92b028  msm_geni_serial: reduce wakelock timeout from ISR to 100ms  [Park Ju Hyung]
+0279ec5  cpufreq: stats: replace the global lock with atomic  [Kyle Lin]
+979b660  msm: kgsl: Don't try to wait for fences that have been signaled  [Sultan Alsawaf]
+b6d051c  drivers: msm: Don't copy fence names by default  [Yaroslav Furman]
+b709884  scsi: ufs: Remove 10 ms CPU idle latency unvote timeout  [Sultan Alsawaf]
 
 * lineage-sdk
-7c0c3a6  Add support for anti flicker mode in LiveDisplay  [Arian]
-c17f1ad  lineage-sdk: Screen off fod [2/3]  [TheScarastic]
-5a08239  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
-38d62ca  lineage-sdk: Fix typo for filterDisplayModes comment  [Jarl-Penguin]
-
-* lineage/wiki
-251e96e  devices: victara: No longer require format on upgrade  [Nolen Johnson]
-456c739  fixup! wiki: Set ccache compression in ccache config instead of env  [LuK1337]
-20d216c  wiki: Set ccache compression in ccache config instead of env  [LuK1337]
+0a3f768  Add support for anti flicker mode in LiveDisplay  [Arian]
+1ec1ed1  lineage-sdk: Screen off fod [2/3]  [TheScarastic]
+5475008  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * packages/apps/LineageParts
-fad5658  Add support for anti flicker mode in LiveDisplay  [Arian]
-0d1685a  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+90a1724  Add support for anti flicker mode in LiveDisplay  [Arian]
+a1a936b  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 
 * packages/apps/Settings
-d8d8d61  Settings: Screen off fod [3/3]  [TheScarastic]
-7827f80  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+4884b19  Settings: Screen off fod [3/3]  [TheScarastic]
+533b86d  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
 
 * packages/apps/Trebuchet
-8f6f406  Launcher3: update recent tasks header style  [Joey]
-2b47442  Launcher3: categorize settings  [Joey]
-f3648d5  Launcher3: improve protected app names style  [Joey]
-0bc7b2e  Launcher3: Add support for icon packs  [Joey]
+19edce6  Launcher3: update recent tasks header style  [Joey]
+
+* vendor/xiaomi/davinci
+cd15e06  davinci: Updates from tree  [Arian]
 ====================
-     2020-09-12    
+     2020-09-26    
 ====================
 
-* build/make
-53540ab  sign_target_apks: Replace update-payload-key.pub.pem in RECOVERY as well  [LuK1337]
-
-* frameworks/base
-c155a3f  Automatic translation import  [LineageOS Builder]
-
-* lineage/crowdin
-53cdc08  crowdin: fix _COMMITS_CREATED references  [Simon Shields]
-
-* packages/apps/Bluetooth
-6c48bf2  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Camera2
-3679c8c  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/DeskClock
-d092175  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Dialer
-4a72a33  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Eleven
-5937b1e  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Etar
-f2e6416  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Gallery2
-2777413  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Jelly
-cc8a1e9  Automatic translation import  [LineageOS Builder]
+* lineage-sdk
+d1f7869  sdk: Add overlay for disabling livedisplay  [Paul Keith]
 
 * packages/apps/LineageParts
-2849587  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Messaging
-583c1b1  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Recorder
-767fd3b  Automatic translation import  [LineageOS Builder]
+70bba8b  LineageParts: Allow removing livedisplay pref screen with config_enableLiveDisplay  [Paul Keith]
 
 * packages/apps/Settings
-29ef390  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/SetupWizard
-d63ae5e  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Snap
-972ac98  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Trebuchet
-ce2eeb4  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/TvSettings
-fbbe74b  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Updater
-1de5ff5  Automatic translation import  [LineageOS Builder]
-
-* packages/inputmethods/LatinIME
-7ae7f65  Automatic translation import  [LineageOS Builder]
-
-* packages/resources/devicesettings
-ce90d23  Automatic translation import  [LineageOS Builder]
-
-* packages/services/BuiltInPrintService
-ce69440  Automatic translation import  [LineageOS Builder]
+f5b272f  Settings: Allow removing livedisplay pref screen with config_enableLiveDisplay  [Paul Keith]
 ====================
-     2020-09-11    
+     2020-09-25    
 ====================
-
-* device/lineage/atv
-076ade1  Enable bluetooth remote pairing in Setupwraith  [Aaron Kling]
-
-* lineage/crowdin
-8db4a3d  crowdin: Don't require global installation of crowdin  [Simon Shields]
-e274754  crowdin: Add requirements.txt  [Simon Shields]
-
-* packages/apps/SetupWizard
-5d1780f  ATV: Disable custom SUW if GMS SetupWraith is available  [Aaron Kling]
-====================
-     2020-09-10    
-====================
-
-* external/chromium-webview
-cd830a4  Update Chromium Webview to 85.0.4183.101  [Kevin F. Haggerty]
-
-* frameworks/base
-9992223  Automatic translation import  [Michael Bestas]
-c8ca726  Automatic translation import  [Michael Bestas]
-
-* lineage/mirror
-35ee08b  Updated to 09-Sep-2020 08:14 UTC  [Kevin F. Haggerty]
-
-* packages/apps/DeskClock
-9782195  Automatic translation import  [Michael Bestas]
-ca6b360  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Etar
-f239068  Automatic translation import  [Michael Bestas]
-04673c6  Automatic translation import  [Michael Bestas]
-
-* packages/apps/LineageParts
-2a6f288  Automatic translation import  [Michael Bestas]
-07b07e2  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Messaging
-c28af7b  Fix NoSuchMethodError for getTypeInfo()  [Taesu Lee]
-bef7351  Remove advanced category if no preference  [Taesu Lee]
-1d8ca10  AOSP/Messaging - Changed minSdkVersion to 19.  [Raman Tenneti]
-a1521e6  Fix SecurityException at getActiveSubscriptionInfoList() on N and O  [Taesu Lee]
-9e33f5b  Fix app initialization issue if no permissions  [Taesu Lee]
-597cf92  AOSP/Messaging - Changed midSdkVersion to 14 and reverted to using Telephony.Carriers.CONTENT_URI instead of  Telephony.Carriers.SIM_APN_URI.  [Raman Tenneti]
-847766f  Fix handling format based on API level accordingly.  [Taesu Lee]
-23686d0  Remove only one Lambda Exp for JAVA 7  [Taesu Lee]
-0363451  Fix creating ConnectivityUtil to work on any platform  [Taesu Lee]
-c736c5e  Fix missing computeIfAbsent() method in L_MR1 and M  [Taesu Lee]
-af95b5f  Remove unnecessary methods from MmsUtils  [Taesu Lee]
-3ea5e6e  Allow call to phone numbers or voice mail numbers only  [Taesu Lee]
-921e45b  Check CONFIG_SEND_MULTIPART_SMS_AS_SEPARATE_MESSAGES always  [Taesu Lee]
-4289ace  Fix ConcurrentModificationException  [Taesu Lee]
-70ea43b  Parse recipients from RESPOND_VIA_MESSAGE correctly  [Taesu Lee]
-074e3c4  Disallow making a call to emergency numbers  [Taesu Lee]
-a6c311f  Auto re-sending MMS for all the transient failures  [Taesu Lee]
-381ea9d  Remove dead code  [Taesu Lee]
-3a38d32  Check whether dialable only  [Taesu Lee]
-
-* packages/apps/Settings
-60ca3f9  Automatic translation import  [Michael Bestas]
-3119bf6  Automatic translation import  [Michael Bestas]
-b4fb823  Remove useless png and add vector drawable  [Raff Tsai]
-ae7bc56  Remove "storage type" preference from Settings  [joffenberg]
-
-* tools/repohooks
-5be91ca  tools: switch all our tools to python3 shebang  [Mike Frysinger]
 
 * vendor/lineage
-bf6e65b  extract_utils: Add support for system_ext  [Luca Stefani]
+c36db0b  backuptool_ab: Use mv instead of cp for restore step  [razorloves]
 ====================
-     2020-09-09    
+     2020-09-24    
 ====================
+
+* hardware/qcom-caf/msm8960/display
+41b6123  Revert "Don't force GPU composite for older devices"  [Arne Coucheron]
+====================
+     2020-09-23    
+====================
+
+* device/google/atv
+666f054  Disable Traceur on userdebug  [Aaron Kling]
+
+* frameworks/base
+369258a  core: Move context-aware Bluetooth airplane mode string for translations  [Michael Bestas]
+
+* packages/apps/TvSettings
+2558f48  Add rooted development option  [Aaron Kling]
+f5b4599  Add Lineage advanced reboot options  [Aaron Kling]
+b585306  Show Trust in security settings  [Aaron Kling]
+6d16f98  Add button to shut down device  [Aaron Kling]
+acca62b  Settings: Implement ADB over network  [Dave Carey]
+059909b  Settings: Add intent to launch LineageOS platlogo upon multiple taps  [Zhao Wei Liew]
+
+* vendor/lineage
+e4d1daf  apns: Enable IPV6 for China Telecom  [zhaoguomanong]
+024d2fa  apns: Enable IPV6 for China Unicom  [sjllls]
+d13a45b  apns: Enable IPV6 for China Mobile  [sjllls]
+====================
+     2020-09-22    
+====================
+
+* android
+bd09c1d  Sync Lineage Customizer  [Aaron Kling]
+38e7ca7  Switch to our device/google/atv fork  [Aaron Kling]
+
+* lineage/hudson
+378368e  hudson: Add Redmi Note 8 / 8T (ginkgo)  [DarkJoker360]
 
 * lineage/mirror
-abd41a8  Updated to 08-Sep-2020 23:05 UTC  [Kevin F. Haggerty]
-84326c0  Updated to 08-Sep-2020 20:05 UTC  [Kevin F. Haggerty]
-c3eba86  Updated to 08-Sep-2020 12:35 UTC  [Kevin F. Haggerty]
-
-* lineage/scripts
-abe23b3  Update default webview to 85.0.4183.101  [Kevin F. Haggerty]
-
-* system/bt
-1a6a7a0  Changed HID_DEV_MTU_SIZE from 64 to 512  [Danny Trunk]
-
-* tools/repohooks
-09cc9a7  Add [Builtin Hooks Exclude Paths] section am: ea52820de8  [Thiébaud Weksteen]
-
-* vendor/qcom/opensource/commonsys/system/bt
-614a3e2  Changed HID_DEV_MTU_SIZE from 64 to 512  [Danny Trunk]
-====================
-     2020-09-08    
-====================
-
-* build/make
-f303327  build_image: Allow disabling custom inode count calculation  [Christian Oder]
-
-* lineage/hudson
-26178e0  Galaxy S5e -> Galaxy Tab S5e  [LuK1337]
-69e5335  Sync updater/devices.json with lineage-build-targets  [LuK1337]
-21a826e  hudson: Ship $(echo 686f74646f670a | xxd -r -p)  [LuK1337]
+14c1faa  Updated to 21-Sep-2020 12:48 UTC  [Kevin F. Haggerty]
 
 * lineage/wiki
-609e40a  wiki: Add OnePlus 7T Pro (hotdog)  [LuK1337]
-715fa45  wiki: Set supported models for guacamole  [LuK1337]
+b5b0f97  wiki: devices: Require 10 on dynamic retrofit Pixel devices  [Nolen Johnson]
+4c54bc6  wiki: Add Redmi Note 8 / 8T (ginkgo)  [DarkJoker360]
+
+* packages/apps/Trebuchet
+fba0af5  Launcher3: categorize settings  [Joey]
+0b976fd  Launcher3: improve protected app names style  [Joey]
+0b1cd0e  Launcher3: Add support for icon packs  [Joey]
+
+* packages/apps/TvSettings
+3a4971c  Add build date (ro.build.date from build.prop) to About screen.  [dhacker29]
+0ee18b8  One does not simply become a Developer  [dhacker29]
+baec0c2  Add LineageOS version to the About screen  [dhacker29]
 ====================
-     2020-09-07    
+     2020-09-21    
 ====================
 
-* lineage/hudson
-1dc97aa  hudson: Promote Sony Xperia Z3 series to 17.1  [Arian]
+* frameworks/base
+7449a62  Automatic translation import  [LineageOS Builder]
 
-* lineage/wiki
-5b8c37a  wiki: device: Promote Sony Xperia Z3 series to 17.1  [Arian]
+* kernel/xiaomi/sm6150
+07150b7  FROMLIST: arm64: Build vDSO with -ffixed-x18  [Peter Collingbourne]
+058dc01  ANDROID: turn on VCT access from 32-bit applications  [Mark Salyzyn]
+1468c81  vdso32: Invoke clang with correct path to GCC toolchain  [Daniel Mentz]
+cfcf499  FROMLIST: arm64: vdso32: Use full path to Clang instead of relying on PATH  [Nathan Chancellor]
+aede09c  ANDROID: clock_gettime(CLOCK_BOOTTIME,) slows down >20x  [Mark Salyzyn]
+1094fe7  ANDROID: CROSS_COMPILE_ARM32 must work if CONFIG_COMPAT_VDSO  [Mark Salyzyn]
+eeeefd8  FROMLIST: BACKPORT: [PATCH 6/6] arm64: Wire up and expose the new compat vDSO  [Kevin Brodsky]
+f44fb1f  FROMLIST: [PATCH 5/6] arm64: compat: 32-bit vDSO setup  [Kevin Brodsky]
+b534f3e  FROMLIST: [PATCH 4/6] arm64: compat: Add a 32-bit vDSO  [Kevin Brodsky]
+fda147e  FROMLIST: BACKPORT: [PATCH 3/6] arm64: Refactor vDSO init/setup  [Kevin Brodsky]
+b26f134  FROMLIST: [PATCH 2/6] arm64: elf: Set AT_SYSINFO_EHDR in compat processes  [Kevin Brodsky]
+94579fc  FROMLIST: [PATCH 1/6] arm64: compat: Use vDSO sigreturn trampolines if available  [Kevin Brodsky]
+5d0a87f  FROMLIST: lib: vdso: add support for time  [Mark Salyzyn]
+05aea9f  FROMLIST: [PATCH] arm64: compat: Expose offset to registers in sigframes  [Kevin Brodsky]
+6fae0e9  FROMLIST: [PATCH v5 12/12] lib: vdso: do not expose gettimeofday, if no arch supported timer  [Mark Salyzyn]
+2c7918c  FROMLIST: [PATCH v5 11/12] lib: vdso: Add support for CLOCK_BOOTTIME  [Mark Salyzyn]
+f426414  FROMLIST: [PATCH v5 10/12] arm64: vdso: replace gettimeofday.S with global vgettimeofday.C  [Mark Salyzyn]
+b4f2179  FROMLIST: [PATCH v5 09/12] arm: vdso: move vgettimeofday.c to lib/vdso/  [Mark Salyzyn]
+e580fa5  FROMLIST: [PATCH v5 08/12] arm: vdso: Add ARCH_CLOCK_FIXED_MASK  [Mark Salyzyn]
+3fc683d  FROMLIST: [PATCH v5 07/12] arm: vdso: disable profiling  [Mark Salyzyn]
+fc8284ad  FROMLIST: [PATCH v5 06/12] arm: vdso: add support for clock_getres  [Mark Salyzyn]
+e1a20af  FROMLIST: [PATCH v6 05/12] arm: vdso: Add support for CLOCK_MONOTONIC_RAW  [Mark Salyzyn]
+893f46e  FROMLIST: [PATCH v5 04/12] arm: vdso: do calculations outside reader loops  [Mark Salyzyn]
+015e5dd  FROMLIST: [PATCH v5 03/12] arm: vdso: inline assembler operations to compiler.h  [Mark Salyzyn]
+c6280c2  FROMLIST: [PATCH v5 02/12] arm: vdso: add include file defining __get_datapage()  [Mark Salyzyn]
+435ca9c  FROMLIST: [PATCH v5 01/12] arm: vdso: rename vdso_datapage variables  [Mark Salyzyn]
+773d819  FROMLIST: [PATCH v3 3/3] arm64: compat: Add CONFIG_KUSER_HELPERS  [Kevin Brodsky]
+08ce27d  FROMLIST: [PATCH v3 2/3] arm64: compat: Split the sigreturn trampolines and kuser helpers (assembler sources)  [Kevin Brodsky]
+5190703  FROMLIST: [PATCH v3 1/3] arm64: compat: Split the sigreturn trampolines and kuser helpers (C sources)  [Kevin Brodsky]
+a0cc5ba  ARM64: configs: {davinci,phoenix}: Build wireguard in kernel  [Arian]
+fd2adc7  net: Add wireguard  [Arian]
+10d7aa7  net: Import wireguard version 1.0.20200729  [Arian]
+a4dba8d  ARM64: configs: {davinci,phoenix}: Enable exFAT  [Park Ju Hyung]
+b908407  fs: Add exFAT  [Park Ju Hyung]
+4c9c229  Add 'fs/exfat/' from commit '034f47d607c441e7fb5be3eb71d7a289ef76bc0c'  [Arian]
+fdd9746  drm: msm: Skip fod_hbm while HBM is active  [Arian]
+cec123d  drm: msm: Disable DC dimming while HBM is active  [Arian]
+6b6a4db  drm: msm: Use type_map array index 0 for invalid hbm values  [Arian]
+1c50c60  drm: msm: Add support for high brightness mode (HBM)  [Danny Baumann]
+f673407  ARM64: configs: {davinci,phoenix}: Enable exposure adjustment driver  [nullxception]
+26f98be  drm: msm: temporary disable DC dimming when in fod_hbm mode  [Nauval Rizky]
+e251642  drm: msm: adapt exposure adjustment methods to davinci  [Nauval Rizky]
+a709a4f  drm: Let exposure adjustment switchable via sysfs  [XiNGRZ]
+d3d7a23  drm: Introduce exposure adjustment driver  [DevriesL]
+98b6aa5  ARM64: configs: phoenix: Enable IR driver  [Arian]
+eedc1d7  ARM64: configs: phoenix: Enable xiaomi simtray driver  [Arian]
+8d62d82  ARM64: configs: phoenix: Enable DS28E16 battery verify driver  [Arian]
+ffd75c76  ARM64: configs: davinci: Enable drv8846 step motor soc driver  [Arian]
+5bbdfcb  ARM64: configs: davinci: Enable akm09970 compass driver  [Arian]
+c2516b1  ARM64: configs: {davinci,phoenix}: Enable fingerprint drivers  [Arian]
+7d8703d  ARM64: configs: {davinci,phoenix}: Enable touchscreen drivers  [Arian]
+00c0e86  ARM64: configs: {davinci,phoenix}: Enable device specific configuration  [Arian]
+02ff3b2  ARM64: configs: {davinci,phoenix}: Disable existing fingerprint drivers  [Cosmin Tanislav]
+aa89adb  ARM64: configs: {davinci,phoenix}: Disable Sitronix, Himax and Synaptics touchscreen drivers  [Arian]
+a96e54a  ARM64: configs: {davinci,phoenix}: Disable sm6150/sm8150 configs  [Arian]
+93337f5  ARM64: configs: {davinci,phoenix}: Enable CONFIG_QCA_CLD_WLAN  [Park Ju Hyung]
+b6ed0c7  ARM64: configs: {davinci,phoenix}: Reserve space for ramoops  [Arian]
+a312ef6  ARM64: configs: {davinci,phoenix}: Enable BBR and set as default  [Demon000]
+bb012ea  ARM64: configs: {davinci,phoenix}: Enable power efficient workqueues  [Demon000]
+59fc5ee8  ARM64: configs: {davinci,phoenix}: Enable suspend sync  [Demon Singur]
+13b237c  ARM64: configs: {davinci,phoenix}: Enable LZ4 ZRAM  [YH_Lin]
+b3a9252  ARM64: configs: {davinci,phoenix}: Enable CONFIG_COMPAT_VDSO  [Kyle Lin]
+830bc05  ARM64: configs: {davinci,phoenix}: Enable CONFIG_JUMP_LABEL  [Kyle Lin]
+52c2dcb  ARM64: configs: {davinci,phoenix}: Enable CONFIG_HZ_300  [Kyle Lin]
+78c9267  ARM64: configs: {davinci,phoenix}: Enable pstore  [josephjang]
+f1dd434  ARM64: configs: {davinci,phoenix}: Enable LOCALVERSION_AUTO  [Cyan_Hsieh]
+be7dfbb  ARM64: configs: {davinci,phoenix}: Build separated soc-dtb and board-dtbos  [Cyan_Hsieh]
+8085077  ARM64: configs: {davinci,phoenix}: Disable irrelevant erratums  [Demon000]
+0ee8c1c  ARM64: configs: {davinci,phoenix}: Disable qcom download mode  [Demon000]
+3d9834e  ARM64: configs: {davinci,phoenix}: Remove various debug configs  [Thierry Strudel]
+9ccb81d  ARM64: configs: {davinci,phoenix}: Disable unused configs  [Cosmin Tanislav]
+63ecc4b  ARM64: configs: {davinci,phoenix}: Disable MSM_11AD  [Thierry Strudel]
+6374b64  ARM64: configs: {davinci,phoenix}: Disable CONFIG_MSM_PERFORMANCE  [Wei Wang]
+49ac80d  ARM64: configs: {davinci,phoenix}: Remove CONFIG_PM_AUTOSLEEP for Q kernel config requirement  [Cyan_Hsieh]
+b629ad4  ARM64: configs: {davinci,phoenix}: Remove CONFIG_WIL6210  [Howie Chang]
+994af03  ARM64: configs: {davinci,phoenix}: Remove CONFIG_QCOM_MINIDUMP  [Lisa Liu]
+031b975  ARM64: configs: {davinci,phoenix}: Remove unused configs to improve boottime  [Kyle Lin]
+1813ccb  ARM64: configs: {davinci,phoenix}: Remove unused config  [Kyle Lin]
+776e752  ARM64: configs: {davinci,phoenix}: Remove unused defconfig  [Wilson Sung]
+31bc4db  ARM64: configs: {davinci,phoenix}: Remove unused governors and CONFIG_CPU_BOOST  [Kyle Lin]
+285472a  ARM64: configs: {davinci,phoenix}: Unset redundant EXT4_FS_ICE_ENCRYPTION Kconfigs  [YH_Lin]
+4d50b72  ARM64: configs: {davinci,phoenix}: Unset unused DM_CRYPT Kconfig  [YH_Lin]
+085e825  ARM64: configs: {davinci,phoenix}: Unset unused MMC Kconfigs  [YH_Lin]
+b32c820  ARM64: configs: {davinci,phoenix}: Disable CONFIG_AUTOCGROUP  [Kyle Lin]
+2d3b70a  ARM64: configs: Add davinci and phoenix defconfigs based on sdmsteppe-perf_defconfig  [Arian]
+0266dc4  drm: Expose panel_info sysfs node  [Arian]
+08bc87a  ASoC: msm: Report correct key code of headset buttons  [dianlujitao]
+49e8e62  pstore: Import Xiaomi changes  [Arian]
+1ffc53e  thermal: core: Import Xiaomi board_sensor and thermal message changes  [Arian]
+584d893  thermal: cpu_cooling: Simplify cpu_limits_set_level  [Yaroslav Furman]
+75bc348  thermal: core: Use qcom drm notifier  [Demon000]
+23c9c32  thermal: core: Custom thermal limits handling  [Demon000]
+827513b  block: core: gotta go fast  [Demon000]
+d32c474  pinctrl: qcom: Prevent access to FP and NFC spi's  [PIPIPIG233666]
+33e7475  media: rc: Import xiaomi ir changes  [Arian]
+ab2508c  scsi: ufs: Apply wait after ref clk ungate fix to micron devices  [Arian]
+63d7620  scsi: ufs: Increase timeouts  [Arian]
+f22ddc1  spi: geni-qcom: Increase transfer timeout  [Arian]
+ba4f655  leds: qpnp-flash-v2: Import xiaomi changes  [Arian]
+4a699ce  iio: adc: Always set channel_check to true  [Arian]
+c1490ce  of: batterydata: Use generic_node as fallback  [Arian]
+0539130  sound: soc: pcm: support host-less 24bit formats  [Demon000]
+a3542c9  misc: Import xiaomi sim tray driver  [Arian]
+a126f1e  misc: Import drv8846 motor driver  [Arian]
+c217c4e  misc: Import akm09970 hall sensor driver  [Arian]
+b2354a4  ARM64: dts: optimize HBM commands for in-kernel dimming  [Demon000]
+ace358f  ARM64: dts: define fod dim lut  [Demon000]
+54b27fe  ARM64: dts: define doze lpm and hbm backlight levels  [Demon000]
+70972c1  ARM64: dts: disable dc dimming during fod hbm commands  [Demon000]
+acf8e7f  ARM64: dts: move fod hbm commands to their proper place  [Demon000]
+ffd9dbb  drm: sde: Increase sde stage to map zpos changes  [GuaiYiHu]
+98b695e  uapi: sde_drm: Define FOD_PRESSED_LAYER_ZORDER  [Pig]
+6e55e13  drm: msm: dsi-staging: trigger drm notifier  [Demon000]
+fed8c01  drm: msm: atomic: do not trigger drm notifier  [Demon000]
+cd4a236  drm: msm: dsi-staging: cleanup notifier implementation  [Demon000]
+3d46bfa  drm: msm: notify sysfs for fod ui changes  [Demon000]
+8cf5377  drm: msm: implement fod handling  [Demon000]
+7098a79  drm: msm: dsi-staging: add function for reading backlight value  [Demon000]
+ae40258  drm: msm: dsi-staging: add get_main_display  [DevriesL]
+7a78ad5  drm: msm: sde: translate zpos property to fod property  [Demon000]
+e4a40d0  drm: msm: sde: allow 32bit zpos  [Demon000]
+0c087b2  drm: msm: dsi-staging: implement doze mode  [Demon000]
+2347ec0  drm: msm: dsi-staging: create empty attributes group  [Demon000]
+f8737b4  drm: msm: modify lp11 mode logic  [Demon000]
+052a523  drm: msm: Handle ss ea and eb dcs types as well  [minz1]
+93a1551  drm: msm: handle ss dcs type  [Demon000]
+fbf94e9  drm: msm: extend qcom drm notifier  [Demon000]
+6f4a2fb  usb: Import Xiaomi changes  [Arian]
+2fb6e21  power: reset: Move in_panic handling out of dload mode  [Michael Bestas]
+09e4417  power: Import maxim power supply driver  [Arian]
+20b8447  power: Import xiaomi changes  [Arian]
+2ad60b9  power: qcom: Checkout to LA.UM.8.9.r1-03800-sm6150.0  [vantoman]
+5638a7e  msm: camera: crm: Increase the device handles to 182 for v1  [Arian]
+8703a0d  msm: camera: Fix memory leak  [Demon000]
+4cd38e6  msm: camera: sensor: decrease delay in face unlock operation mode  [Demon000]
+b54259f  msm: camera: utils: increase max number of regulators  [Demon000]
+f27b9e3  msm: camera: sensor: Use sensor_probe_addr_type instead of CAMERA_SENSOR_I2C_TYPE_WORD  [Arian]
+184bfde  msm: camera: eeprom: increase memory map count and size  [Demon000]
+7971bad  msm: camera: eeprom: properly destroy device handle on eeprom packet parse fail  [Demon000]
+67c6048  msm: camera: Import xiaomi PHY settings  [Arian]
+18a8219  Revert "mm-camera2:isp2: Notify dual cam drop"  [Demon000]
+5e693e2  input: fingerprint: fpc_tee: Define FPC_DRM_INTERFACE_WA  [Arian]
+50169fb  input: fingerprint: fpc_tee: Use qcom drm notifier  [Demon000]
+7e1c5f7  input: fingerprint: Import fpc_tee driver  [Arian]
+5bec62d  input: fingerprint: goodix_ta: Define GOODIX_DRM_INTERFACE_WA  [Arian]
+4ea7ca4  input: fingerprint: goodix_ta: Remove DEBUG prints  [UtsavisGreat]
+863f663  input: fingerprint: Import goodix_ta driver  [Arian]
+a748ccf  input: Include fingerprint directory  [Demon000]
+8b36603  input: touchscreen: Import xiaomi touchfeature driver  [Arian]
+fcf620d  input: touchscreen: Import TDDI IC double click driver  [Arian]
+11b4310  misc: spi-xiaomi-tp: Remove DEBUG define  [Arian]
+a4cf638  misc: Import Xiaomi SPI touch panel driver  [Pranav Vashi]
+b65f16e  firmware: Import nt36672c firmware  [Arian]
+6b4835b  input: touchscreen: Import nt36672c driver  [Arian]
+d922c97  firmware: Import gt9886 firmware  [Arian]
+dba22ef  firmware: Restore support for ihex firmware  [Arian]
+afed953  input: touchscreen: gt9886: Select TOUCHSCREEN_TDDI_DBCLK  [Arian]
+b3a2cfd  input: touchscreen: gt9886: Require low latency  [Siarhei Vishniakou]
+f1c7d64  input: touchscreen: gt9886: Switch to qcom drm notifier  [UtsavisGreat]
+3621137  input: touchscreen: gt9886: Remove remaining logging override  [Nanda Oktavera]
+f2c8da2  input: touchscreen: gt9886: Remove testing bits  [Albert I]
+62a14f7  input: touchscreen: Import goodix_driver_gt9886 driver  [Arian]
+8fd800e  input: event-codes: define BTN_INFO for touchscreen drivers  [demon000]
+07ad135  soc: qcom: socinfo: Add xiaomi functions to get the hw version  [Arian]
+4659e2d  ARM64: dts: qcom: xiaomi: Configure davinci's leds  [Arian]
+c434e6c  ARM64: dts: qcom: xiaomi: Disable broken thermal zones  [Arian]
+642afde  ARM64: dts: Add xiaomi sdmmagpie support  [Arian]
+708c95d  ARM64: dts: Build specific Xiaomi board variant  [Bruno Martins]
+2305265  ARM64: Add Xiaomi board selection  [Bruno Martins]
+cf81d6f  ARM64: dts: qcom: Add label for reserved memory on sdmmagpie  [Vijayanand Jitta]
+af5d158  Revert "binder: Prevent context manager from incrementing ref 0"  [Todd Kjos]
+2438a93  Revert "msm: kgsl: Mark the scratch buffer as privileged"  [Jake Weinstein]
+2151b52  Revert "msm: kgsl: Update A618 GMU firmware to v1.08"  [Park Ju Hyung]
+705f3f6  greybus: remove Android.mk file  [Demon000]
+822741a  Revert "Android.bp: Initial header export bp for Android (qseecom only)"  [Ethan Chen]
+ab85c1a  techpack: audio: Remove build timestamp injection  [Danny Lin]
+601fdec  techpack: avoid VLA  [Park Ju Hyung]
+a672eae  techpack: fix trivial compilation errors  [Park Ju Hyung]
+921fe95  techpack: fix header paths for kernel builds  [Park Ju Hyung]
+40f8d02  techpack: build bolero and tfa98xx  [Park Ju Hyung]
+226387e  techpack: audio: Get rid of TARGET_PRODUCT checks  [Arian]
+cfd14386  techpack: load sm6150 configuration  [Park Ju Hyung]
+7d72532  techpack: import minimal Xiaomi changes  [Park Ju Hyung]
+327fde3  techpack: explicitly initialize hdr  [Park Ju Hyung]
+f492dc9  techpack: Hardcode modules list  [Luca Stefani]
+13afd14  techpack/pinctrl-lpi: initialise at late_initcall  [Yaroslav Furman]
+32c455b  techpack: build everything inline  [Park Ju Hyung]
+19382bb  techpack: fix broken header paths  [Park Ju Hyung]
+4f80ec2  techpack: remove .gitignore  [Park Ju Hyung]
+78c7658  techpack: Gitignore all subdirs except stub  [Neeraj Upadhyay]
+fbb244a  Set correct techpack header install directory  [Rashed Abdel-Tawab]
+b8a65e1  techpack: add tech package support  [Bryan Huntsman]
+e9be76c  techpack: audio: remove Android.mk files  [Cosmin Tanislav]
+80964b1  qcacld-3.0: Disable WMI history dumps on hang recovery  [Danny Lin]
+8895860  qcacld-3.0: Guard WLAN_DEBUG functions subsequent to LA.UM.8.9.r1-08400-SM6xx.0 merge  [Adam W. Willis]
+1feb504  qcacld-3.0: nuke rx_wakelock code entirely  [Park Ju Hyung]
+2150b98  qcacld-3.0: check if auth_tag_len exceeds sizeof(hash)  [Park Ju Hyung]
+2bc0017  qcacld-3.0: disable bunch of more debug configs  [Park Ju Hyung]
+914ed30  qcacld-3.0: Nuke as much debug bloat as possible  [Sultan Alsawaf]
+2db13f6  qcacld-3.0: default_config: tone down debugging  [Park Ju Hyung]
+ea9ff7a  qcacld-3.0: defer hdd initialization and rely on userspace writing to /dev/wlan  [Park Ju Hyung]
+05b7016  qcacld-3.0: discard wlan_boot sysfs code on !CONFIG_MODULES  [Park Ju Hyung]
+c0d221f  qcacld-3.0: nuke Kconfig-based configuration entirely  [Park Ju Hyung]
+5083ca9  qcacld-3.0: Disable build timestamp  [Luca Stefani]
+84a897e0  staging: Include qcacld-3.0 source  [LuK1337]
+efd7b49  dtc: Silence warnings  [Danny Lin]
+35f62c9  scripts/dtc: Update to upstream version v1.4.6-9-gaadd0b65c987  [Rob Herring]
+03af343c  scripts/dtc: Update to upstream version v1.4.5-3-gb1a60033c110  [Rob Herring]
+b0a7934  scripts/dtc: add fdt_overlay.c and fdt_addresses.c to sync script  [Rob Herring]
+482b943  dtc: update warning settings for new bus and node/property name checks  [Rob Herring]
+ccd559e  Makefile.lib: Stop calling size_append  [Julian Liu]
+0515571  cpuidle: Do not select menu and ladder governors  [Maulik Shah]
+e18c540  video: backlight: disable modules enabled by default  [Demon000]
+ddc3abc  media: gspca: disable gspca module  [Demon000]
+ea2a3156  media: rc: disable geni ir module  [Demon000]
+6bf494a  net: disable bridge netfilter module  [Demon000]
+c49a48a  net: ipv4: disable modules which are enabled by default  [Demon000]
+1446a18  Add 'techpack/audio/' from commit '3d07042c01ced5ef5ec43eec827579baab8bbece'  [Arian]
+d470972  Add 'drivers/staging/qcacld-3.0/' from commit '707f0f8d68e35763ae289fc8f5a68012f02ae20f'  [Arian]
+80b2b2e  Add 'drivers/staging/qca-wifi-host-cmn/' from commit 'bb5a750b4491e1b82560e615d96d4b7f4bc660c6'  [Arian]
+7d784f8  Add 'drivers/staging/fw-api/' from commit 'b4dc2133c2a040e1228134df2759bb318693b91a'  [Arian]
+61e51bf  Merge branch 'kernel.lnx.4.14.r4-rel' of https://github.com/android-linux-stable/msm-4.14 into HEAD  [Arian]
+
+* lineage/mirror
+79577ef  Updated to 20-Sep-2020 17:39 UTC  [Kevin F. Haggerty]
+
+* packages/apps/AudioFX
+f694fbf  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Bluetooth
+383b10f  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/CellBroadcastReceiver
+dcf0d4e  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Contacts
+f9acb6c  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/DeskClock
+fcbbff2  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Dialer
+e88ae19  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/EmergencyInfo
+06696c7  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Etar
+2d2dd48  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Exchange
+975b705  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/FlipFlap
+16f43b9  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Gallery2
+071d939  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/HTMLViewer
+63b8ddd  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Jelly
+4a7621e  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/LineageParts
+6cf1281  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/ManagedProvisioning
+3d29769  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Messaging
+787f7ef  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Nfc
+f882589  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/PhoneCommon
+1ad42b5  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Recorder
+dc12887  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/SafetyRegulatoryInfo
+683eadc  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Settings
+bb53749  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/SetupWizard
+a96ccce  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Snap
+910787f  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Terminal
+5e45ffa  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Trebuchet
+67724ea  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/TvSettings
+9070f77  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Updater
+e3b2610  Automatic translation import  [LineageOS Builder]
+
+* packages/inputmethods/LatinIME
+459a560  Automatic translation import  [LineageOS Builder]
+
+* packages/providers/ContactsProvider
+4a7b223  Automatic translation import  [LineageOS Builder]
+
+* packages/providers/DownloadProvider
+3a1a700  Automatic translation import  [LineageOS Builder]
+
+* packages/providers/MediaProvider
+a6d7ddd  Automatic translation import  [LineageOS Builder]
+
+* packages/resources/devicesettings
+23ba1a9  Automatic translation import  [LineageOS Builder]
+
+* packages/services/Telecomm
+9678213  Automatic translation import  [LineageOS Builder]
+
+* packages/services/Telephony
+191b8ab  Automatic translation import  [LineageOS Builder]
+
+* packages/wallpapers/LivePicker
+9e87e51  Automatic translation import  [LineageOS Builder]
+
+* vendor/lineage
+bea30d4  Update APNs for O2 Germany & E-Plus  [Martin Dünkelmann]
