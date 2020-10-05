@@ -1,44 +1,82 @@
 ====================
-     2020-10-04    
+     2020-10-05    
 ====================
 
 * build/make
-6b78bd0  [DNM] Always use release-keys  [Arian]
+0a38f77  [DNM] Always use release-keys  [Arian]
 
 * device/xiaomi/davinci
-8ba07a4  davinci: Add audio amplifier for TFA amp feedback  [PIPIPIG233666]
+6bae15d  davinci: overlay: Disable proximity sensor check before pulsing  [Erik Müller]
+e48cc14  davinci: Kang fingerprint from dipper  [Arian]
+2bd46f9  davinci: init: Workaround safetynet  [Arian]
+54db1a5  davinci: parts: Add StarWars popup sounds  [Arian]
+02d836a  davinci: tfa98xx: Cleanup audio_amplifier  [Arian]
+9ff2a78  davinci: Add audio amplifier for TFA amp feedback  [PIPIPIG233666]
+37708cd  davinci: overlay: Enable STATE_DOZE_SUSPEND  [Arian]
+dbc6343  davinci: Remove unused libqsap_sdk  [Arian]
+6204025  davinci: rootdir: Allow all filesystems for USB-OTG  [SVB]
+f42484d  davinci: overlay: Update path defining rounded corners  [yankarinRG]
+a1559b2  davinci: overlay: Update window corner radius adjustment  [yankarinRG]
+a4c3ee4  davinci: overlay: Adjust window rounded corners  [yankarinRG]
+4f82557  davinci: overlay: Add proper keyguard/statusbar configs for rounded corners  [yankarinRG]
+363baee  davinci: audio: Add built-in/Back mic and remove TelePhony Rx from primary input  [Shalini Manjunatha]
+842b0eb  davinci: Enable USAP  [Luca Stefani]
+e421067  davinci: rootdir: Move services to system-background cgroup  [Ethan Chen]
+5aa1656  davinci: rootdir: Change cpuset cpus  [Rick Yiu]
+774862d  davinci: rootdir: Add restricted cpuset  [Tim Murray]
+e797054  davinci: rootdir: Use only one big cpu for foreground cgroup  [Arian]
+61585ca  davinci: rootdir: Decrease background cpus  [Arian]
+674b908  davinci: fod: Use FOD_PRESSED_LAYER_ZORDER instead of magic number  [Vincent Vidal]
+81cacec  davinci: fod: Include generated_kernel_headers to build libfod_extension  [Vincent Vidal]
+1b0c0d0  davinci: sepolicy: Label panel_info sysfs node  [Arian]
+75bc5d1  davinci: overlay: Tune vibration levels  [Marco Rizzo]
+7e44340  davinci: parts: Set dynamic thermal interval to 5 sec  [Pranav Vashi]
+37ed8bf  davinci: parts: Make thermal profiles naming completely generic  [Bruno Martins]
+059edb3  davinci: parts: Implement dynamic thermal profiles  [TheScarastic]
+4c35b24  davinci: light: Add lights HAL manifest as vintf fragment  [Arian]
+3e69963  davinci: light: Reformat Android.bp  [Arian]
 
 * frameworks/av
-c302101  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+eff9967  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
 
 * frameworks/base
-afdd4bf  fwb: Add screen off fod [1/3]  [TheScarastic]
-4d78718  SystemUI: get rid of build text in qs  [Joey]
-9c14832  PackageManagerService: Drop caches according to incremental version  [Arian]
-20c8203  SystemUI: Add anti flicker tile  [Arian]
-8a78d2f  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+2125854  fwb: Add screen off fod [1/3]  [TheScarastic]
+8dc2b53  SystemUI: get rid of build text in qs  [Joey]
+7178a73  PackageManagerService: Drop caches according to incremental version  [Arian]
+2d7d817  SystemUI: Add anti flicker tile  [Arian]
+06cbaaf  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-cdc27d1  Add support for anti flicker mode in LiveDisplay  [Arian]
+52f542d  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-9fca2f6  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+eee026c  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+
+* kernel/xiaomi/sm6150
+64328c86  input: touchscreen: gt9886: Move more logging to debug  [Arian]
+7991cd4  input: touchscreen: gt9886: Silent goodix_ts_threadirq_func debugging  [Arian]
 
 * lineage-sdk
-1b0b4f0  Add support for anti flicker mode in LiveDisplay  [Arian]
-b9de190  lineage-sdk: Screen off fod [2/3]  [TheScarastic]
-30f8cda  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+d672c75  Add support for anti flicker mode in LiveDisplay  [Arian]
+55a888b  lineage-sdk: Screen off fod [2/3]  [TheScarastic]
+cb88a07  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+
+* lineage/mirror
+cf6e621  Updated lineage-minimal to 04-Oct-2020 18:14 UTC  [Tim Schumacher]
 
 * packages/apps/LineageParts
-6aef7d2  Add support for anti flicker mode in LiveDisplay  [Arian]
-bc1c91e  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+c37c398  Add support for anti flicker mode in LiveDisplay  [Arian]
+60e0b2e  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 
 * packages/apps/Settings
-c38db43  Settings: Screen off fod [3/3]  [TheScarastic]
-04e1c32  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+1c89900  Settings: Screen off fod [3/3]  [TheScarastic]
+99b03ca  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
 
 * packages/apps/Trebuchet
-974f424  Launcher3: update recent tasks header style  [Joey]
+f141190  Launcher3: update recent tasks header style  [Joey]
+====================
+     2020-10-04    
+====================
 ====================
      2020-10-03    
 ====================
@@ -47,32 +85,6 @@ c38db43  Settings: Screen off fod [3/3]  [TheScarastic]
 ====================
 
 * device/xiaomi/davinci
-94f44de  davinci: Kang fingerprint from dipper  [Arian]
-a81bb6a  davinci: init: Workaround safetynet  [Arian]
-7add0ff  davinci: parts: Add StarWars popup sounds  [Arian]
-324f032  davinci: overlay: Enable STATE_DOZE_SUSPEND?  [Arian]
-c54f961  davinci: Remove unused libqsap_sdk  [Arian]
-2d8267c  davinci: rootdir: Allow all filesystems for USB-OTG  [SVB]
-5b2a90d  davinci: overlay: Update path defining rounded corners  [yankarinRG]
-356a1fe  davinci: overlay: Update window corner radius adjustment  [yankarinRG]
-7f5c50a  davinci: overlay: Adjust window rounded corners  [yankarinRG]
-d404cb9  davinci: overlay: Add proper keyguard/statusbar configs for rounded corners  [yankarinRG]
-6dbefdc  davinci: audio: Add built-in/Back mic and remove TelePhony Rx from primary input  [Shalini Manjunatha]
-530ea46  davinci: Enable USAP  [Luca Stefani]
-8d7d6b2  davinci: rootdir: Move services to system-background cgroup  [Ethan Chen]
-c4d8a8f  davinci: rootdir: Change cpuset cpus  [Rick Yiu]
-099d9d0  davinci: rootdir: Add restricted cpuset  [Tim Murray]
-e9d7ad0  davinci: rootdir: Use only one big cpu for foreground cgroup  [Arian]
-7dcfb0e  davinci: rootdir: Decrease background cpus  [Arian]
-c6d179a  davinci: fod: Use FOD_PRESSED_LAYER_ZORDER instead of magic number  [Vincent Vidal]
-f55bf2d  davinci: fod: Include generated_kernel_headers to build libfod_extension  [Vincent Vidal]
-97456ee  davinci: sepolicy: Label panel_info sysfs node  [Arian]
-be4b9da  davinci: overlay: Tune vibration levels  [Marco Rizzo]
-cb53364  davinci: parts: Set dynamic thermal interval to 5 sec  [Pranav Vashi]
-8046fac  davinci: parts: Make thermal profiles naming completely generic  [Bruno Martins]
-dbf8ab7  davinci: parts: Implement dynamic thermal profiles  [TheScarastic]
-1217496  davinci: light: Add lights HAL manifest as vintf fragment  [Arian]
-f2872f5  davinci: light: Reformat Android.bp  [Arian]
 01a16fb  davinci: sepolicy: Label new LED paths  [Arian]
 4cf2775  davinci: light: Adjust for new led labels in kernel  [Arian]
 bd97c4c  davinci: parts: Adjust for new led labels in kernel  [Arian]
@@ -158,9 +170,6 @@ f56649e  Automatic translation import  [LineageOS Builder]
      2020-10-01    
 ====================
 
-* kernel/xiaomi/sm6150
-fd6b9c970  input: touchscreen: gt9886: Silent goodix_ts_threadirq_func debugging  [Arian]
-
 * lineage/wiki
 49e0da3  wiki: Update system requirements for building  [filiprrs]
 ====================
@@ -171,6 +180,7 @@ fd6b9c970  input: touchscreen: gt9886: Silent goodix_ts_threadirq_func debugging
 91f115c  Regenerate device dependency mappings  [razorloves]
 
 * lineage/mirror
+be620b0  Add a script to generate a LineageOS platform mirror  [Tim Schumacher]
 b73478c  Updated to 29-Sep-2020 04:55 UTC  [Kevin F. Haggerty]
 beb810e  Updated to 29-Sep-2020 04:38 UTC  [Kevin F. Haggerty]
 ====================
@@ -188,13 +198,3 @@ f4c68e8  mm-video: remove hevc sw decoder files  [Manikanta Sivapala]
 
 * lineage/wiki
 ea0b773  wiki: devices: Zangya/Zangya Pro are A/B devices.  [Quallenauge]
-====================
-     2020-09-28    
-====================
-
-* lineage/mirror
-8e49765  Updated aosp-minimal to 27-Sep-2020 22:18 UTC  [Tim Schumacher]
-2b5ee28  Add a script to generate a minimal AOSP mirror  [Tim Schumacher]
-
-* vendor/xiaomi/davinci
-730db7c  davinci: Updates from tree  [Arian]
