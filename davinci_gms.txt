@@ -1,12 +1,103 @@
 ====================
-     2020-10-05    
+     2020-10-11    
 ====================
 
 * build/make
-0a38f77  [DNM] Always use release-keys  [Arian]
+259c2c7  [DNM] Always use release-keys  [Arian]
+
+* frameworks/av
+3927830  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+
+* frameworks/base
+8878107  fwb: Add screen off fod [1/3]  [TheScarastic]
+aafaf5d  SystemUI: get rid of build text in qs  [Joey]
+4502c52  PackageManagerService: Drop caches according to incremental version  [Arian]
+71af34c  SystemUI: Add anti flicker tile  [Arian]
+045811d  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+
+* hardware/lineage/interfaces
+2229c0e  Add support for anti flicker mode in LiveDisplay  [Arian]
+
+* hardware/qcom-caf/sm8150/audio
+8cea029  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+
+* lineage-sdk
+7fd44da  Add support for anti flicker mode in LiveDisplay  [Arian]
+c07c804  lineage-sdk: Screen off fod [2/3]  [TheScarastic]
+58c1d31  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+
+* lineage/mirror
+41e2cc8  Updated aosp-minimal to 10-Oct-2020 12:01 UTC  [Tim Schumacher]
+
+* packages/apps/LineageParts
+d04a3fa  Add support for anti flicker mode in LiveDisplay  [Arian]
+b8d8502  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+
+* packages/apps/Settings
+da33aa1  Settings: Screen off fod [3/3]  [TheScarastic]
+830f7be  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+
+* packages/apps/Trebuchet
+2217e20  Launcher3: update recent tasks header style  [Joey]
+====================
+     2020-10-10    
+====================
+
+* device/qcom/sepolicy-legacy-um
+768aa89  sepolicy-legacy-um: Add sepolices to update engine domain.  [P.Adarsh Reddy]
+
+* lineage/hudson
+0c6dab3  updater: Fix broken json  [Paul Keith]
+fac680d  hudson: Next best thing after the 3310  [Nolen Johnson]
+
+* lineage/mirror
+e215784  Updated aosp-minimal to 09-Oct-2020 12:01 UTC  [Tim Schumacher]
+
+* lineage/wiki
+0eef5a8  wiki: Add Nokia 6.1 (PL2)  [Aayush Gupta]
+====================
+     2020-10-09    
+====================
+====================
+     2020-10-08    
+====================
+
+* build/make
+2ebbb9b  Bump Security String to 2020-10-05  [Kevin F. Haggerty]
+
+* frameworks/opt/telephony
+c00bfb4  Add check for CSIM application presence  [Vidyalakshmi Badiger]
+
+* lineage/hudson
+64f04c0  Revert "hudson: Drop S4 Sprint (jfltespr)"  [Arne Coucheron]
+ba960f1  hudson: Samsung msm8974, come on down  [Kevin F. Haggerty]
+
+* lineage/wiki
+611cf7c  Revert "wiki: devices: jfltespr: Reflect discontinuation of builds"  [Arne Coucheron]
+02b8aea  wiki: devices: Promote hlte* devices to 17.1  [Kevin F. Haggerty]
+ff1c5a0  wiki: devices: Promote klte* devices to 17.1  [Kevin F. Haggerty]
+ccb5968  wiki: Add davinci  [PIPIPIG233666]
+====================
+     2020-10-07    
+====================
+
+* lineage/mirror
+c89b820  Updated aosp-minimal to 06-Oct-2020 12:01 UTC  [Tim Schumacher]
+
+* vendor/lineage
+3e3c608  extract_utils: Set `filename_from_src: true` for `CLASS=ETC` targets  [LuK1337]
+====================
+     2020-10-06    
+====================
+
+* bootable/recovery
+ab5daa5  recovery: Always use the text menu for rescue party  [Alessandro Astone]
+ca652b0  recovery: Draw header lines with less padding  [Alessandro Astone]
+====================
+     2020-10-05    
+====================
 
 * device/xiaomi/davinci
-6bae15d  davinci: overlay: Disable proximity sensor check before pulsing  [Erik Müller]
 e48cc14  davinci: Kang fingerprint from dipper  [Arian]
 2bd46f9  davinci: init: Workaround safetynet  [Arian]
 54db1a5  davinci: parts: Add StarWars popup sounds  [Arian]
@@ -36,165 +127,10 @@ e797054  davinci: rootdir: Use only one big cpu for foreground cgroup  [Arian]
 4c35b24  davinci: light: Add lights HAL manifest as vintf fragment  [Arian]
 3e69963  davinci: light: Reformat Android.bp  [Arian]
 
-* frameworks/av
-eff9967  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
-
-* frameworks/base
-2125854  fwb: Add screen off fod [1/3]  [TheScarastic]
-8dc2b53  SystemUI: get rid of build text in qs  [Joey]
-7178a73  PackageManagerService: Drop caches according to incremental version  [Arian]
-2d7d817  SystemUI: Add anti flicker tile  [Arian]
-06cbaaf  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
-
-* hardware/lineage/interfaces
-52f542d  Add support for anti flicker mode in LiveDisplay  [Arian]
-
-* hardware/qcom-caf/sm8150/audio
-eee026c  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
-
 * kernel/xiaomi/sm6150
 64328c86  input: touchscreen: gt9886: Move more logging to debug  [Arian]
 7991cd4  input: touchscreen: gt9886: Silent goodix_ts_threadirq_func debugging  [Arian]
 
-* lineage-sdk
-d672c75  Add support for anti flicker mode in LiveDisplay  [Arian]
-55a888b  lineage-sdk: Screen off fod [2/3]  [TheScarastic]
-cb88a07  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
-
 * lineage/mirror
+10e72d4  Updated lineage-minimal to 05-Oct-2020 00:50 UTC  [Tim Schumacher]
 cf6e621  Updated lineage-minimal to 04-Oct-2020 18:14 UTC  [Tim Schumacher]
-
-* packages/apps/LineageParts
-c37c398  Add support for anti flicker mode in LiveDisplay  [Arian]
-60e0b2e  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
-
-* packages/apps/Settings
-1c89900  Settings: Screen off fod [3/3]  [TheScarastic]
-99b03ca  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
-
-* packages/apps/Trebuchet
-f141190  Launcher3: update recent tasks header style  [Joey]
-====================
-     2020-10-04    
-====================
-====================
-     2020-10-03    
-====================
-====================
-     2020-10-02    
-====================
-
-* device/xiaomi/davinci
-01a16fb  davinci: sepolicy: Label new LED paths  [Arian]
-4cf2775  davinci: light: Adjust for new led labels in kernel  [Arian]
-bd97c4c  davinci: parts: Adjust for new led labels in kernel  [Arian]
-05991e5  davinci: rootdir: Drop powerkey input boost  [Arian]
-c740f9f  davinci: rootdir: Move simple writes from post_boot script to init.target.rc  [Arian]
-d31f4db  Revert "davinci: rootdir: Import coral fs tuning"  [Arian]
-0c64eef  davinci: rootdir: Stop overriding audio hal 2.0 service  [Arian]
-ab254ff  davinci: rootdir: Drop ssr_setup service  [Arian]
-d1a90d0  davinci: rootdir: Don't setup runtime cpusets for silver only first  [Arian]
-d7313d0  davinci: Enable cortex-A76  [Kyle Lin]
-b8ce517  davinci: Set surfaceflinger phase offset properties  [Midas Chien]
-1cba3ed  davinci: Refined early phase offsets  [tangrobin]
-9ae2596  davinci: Copy all media configs from the media HAL  [Arian]
-3747d69  davinci: sepolicy: Use add_service macro for remosaic_daemon  [Arian]
-e202221  davinci: Drop unnecessary display calibration files  [Arian]
-41ea9f8  davinci: rootdir: Drop led permissions from ueventd  [Arian]
-b12564d  davinci: init: Set hardware revision property  [Arian]
-2ce9cd1  davinci: overlay: Add call recording overlay  [Michael Bestas]
-94b14b5  davinci: audio: Fix handset echo reference paths  [Arian]
-d2b1c11  davinci: audio: Add echo-reference headset paths  [Arian]
-250e9a9  davinci: audio: Adjust echo reference speaker path names for caf audio HAL  [Arian]
-
-* frameworks/base
-67c36e4  Automatic translation import  [LineageOS Builder]
-
-* lineage/hudson
-630f561  hudson: Add davinci  [PIPIPIG233666]
-
-* lineage/wiki
-8402877  Adding chil360 as osprey maintainer  [Thomas Karl Pietrowski]
-
-* packages/apps/AudioFX
-887ee80  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Bluetooth
-4b93627  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Camera2
-f96f302  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/CellBroadcastReceiver
-75067ed  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/CertInstaller
-af3289a  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Contacts
-b91c460  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/DeskClock
-6710de6  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Dialer
-262e9dd  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Email
-66c6d3f  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Etar
-15e694a  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/ExactCalculator
-f23a2c2  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Gallery2
-3e48055  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/HTMLViewer
-15fa6be  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/KeyChain
-f56649e  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/ManagedProvisioning
-1d0d7d7  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Settings
-0a22076  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Tag
-1b66b0b  Automatic translation import  [LineageOS Builder]
-====================
-     2020-10-01    
-====================
-
-* lineage/wiki
-49e0da3  wiki: Update system requirements for building  [filiprrs]
-====================
-     2020-09-30    
-====================
-
-* lineage/hudson
-91f115c  Regenerate device dependency mappings  [razorloves]
-
-* lineage/mirror
-be620b0  Add a script to generate a LineageOS platform mirror  [Tim Schumacher]
-b73478c  Updated to 29-Sep-2020 04:55 UTC  [Kevin F. Haggerty]
-beb810e  Updated to 29-Sep-2020 04:38 UTC  [Kevin F. Haggerty]
-====================
-     2020-09-29    
-====================
-
-* hardware/qcom-caf/msm8974/display
-d5ea072  copybit: Export c2d header  [Naseer Ahmed]
-
-* hardware/qcom-caf/msm8974/media
-0ac6d80  libc2dcolorconvert: Remove dependency on stagefright  [Shalaj Jain]
-88a2c35  media: change way of accessing aosp project headers  [Manikanta Kanamarlapudi]
-f4c68e8  mm-video: remove hevc sw decoder files  [Manikanta Sivapala]
-124e6f3  mm-video: Remove old decoder test apps  [Shalaj Jain]
-
-* lineage/wiki
-ea0b773  wiki: devices: Zangya/Zangya Pro are A/B devices.  [Quallenauge]
