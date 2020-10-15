@@ -1,53 +1,143 @@
 ====================
-     2020-10-11    
+     2020-10-15    
 ====================
 
 * build/make
-259c2c7  [DNM] Always use release-keys  [Arian]
+a75985a  [DNM] Always use release-keys  [Arian]
 
-* frameworks/av
-3927830  CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes  [John Doe]
+* device/xiaomi/davinci
+6388758  davinci: parts: Allow to wake the screen instead of pulsing  [Arian]
+d54a739  davinci: parts: clang-format everything  [Arian]
+0781cd4  davinci: parts: Always show the warning dialog  [Arian]
+867c780  davinci: parts: Add a warning dialog for manual calibrations  [Arian]
+e282e3b  davinci: parts: Add a setting to calibrate the motor  [Arian]
+16ac851  davinci: parts: Quickly takeback the motor in free fall  [Arian]
+21cca80  davinci: parts: Delay creating MotorStatusCallback when the motor is opened  [Arian]
 
 * frameworks/base
-8878107  fwb: Add screen off fod [1/3]  [TheScarastic]
-aafaf5d  SystemUI: get rid of build text in qs  [Joey]
-4502c52  PackageManagerService: Drop caches according to incremental version  [Arian]
-71af34c  SystemUI: Add anti flicker tile  [Arian]
-045811d  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+62e9dc1  fwb: Add screen off fod [1/3]  [TheScarastic]
+9e72cf3  SystemUI: get rid of build text in qs  [Joey]
+fca090d  SystemUI: Add anti flicker tile  [Arian]
+617475a  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+c840b68  Automatic translation import  [LineageOS Builder]
+
+* frameworks/opt/telephony
+5482900  Remove stray checkThread()  [Arne Coucheron]
 
 * hardware/lineage/interfaces
-2229c0e  Add support for anti flicker mode in LiveDisplay  [Arian]
+170b5b0  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-8cea029  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+f7fe539  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-7fd44da  Add support for anti flicker mode in LiveDisplay  [Arian]
-c07c804  lineage-sdk: Screen off fod [2/3]  [TheScarastic]
-58c1d31  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+8152938  Add support for anti flicker mode in LiveDisplay  [Arian]
+5622e1c  lineage-sdk: Screen off fod [2/3]  [TheScarastic]
+10645ad  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+
+* lineage/mirror
+f8d0a3f  Updated aosp-minimal to 15-Oct-2020 12:01 UTC  [Tim Schumacher]
+
+* packages/apps/Etar
+7cfefcd  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/LineageParts
+81a1ae5  Add support for anti flicker mode in LiveDisplay  [Arian]
+db10b0c  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+
+* packages/apps/Messaging
+793c5a3  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Nfc
+3b393bf  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/PhoneCommon
+90906a2  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Settings
+7925122  Settings: Screen off fod [3/3]  [TheScarastic]
+4c5b3bc  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
+bfeb9d7  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Stk
+7fc8734  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Trebuchet
+b8d037e  Launcher3: update recent tasks header style  [Joey]
+1f8713c  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/TvSettings
+d4b71c5  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Updater
+2590f83  Automatic translation import  [LineageOS Builder]
+
+* packages/inputmethods/LatinIME
+e1cf711  Automatic translation import  [LineageOS Builder]
+
+* packages/screensavers/Basic
+526d626  Automatic translation import  [LineageOS Builder]
+
+* packages/screensavers/PhotoTable
+b87fd51  Automatic translation import  [LineageOS Builder]
+
+* packages/wallpapers/LivePicker
+5b6b44c  Automatic translation import  [LineageOS Builder]
+====================
+     2020-10-14    
+====================
+
+* device/xiaomi/davinci
+1efb74a  davinci: parts: Implement popup motor calibration  [jhenrique09]
+767de74  davinci: Build the vendor.xiaomi.hardware.motor@1.0 interface  [Arian]
+83da3cf  davinci: parts: Directly takeback the motor if it's not closed on create  [Arian]
+bc08791  davinci: parts: clang-format  [Arian]
+0accccd  Revert "davinci: parts: Try to take the motor back on boot when opened"  [Arian]
+f7500dc  davinci: Add clang-format configuration  [Arian]
+043d13b  Revert "davinci: parts: Allow to wake the screen instead of pulsing"  [Arian]
+93f0665  Revert "davinci: parts: Disable raise to wake toggle when AOD is on"  [Arian]
+d25c1ce  Revert "davinci: parts: Take use of both LEDs for notifications when opened"  [Arian]
+409dc34  Revert "davinci: light: Disable both LEDs"  [Arian]
+a0e27d2  davinci: Add 32-bit perf stack and drop unused libskewknob  [Arian]
+
+* kernel/xiaomi/sm6150
+1495b4e  Merge tag 'LA.UM.8.9.r1-10600-SM6xx.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.14 into lineage-17.1_20201004  [Arian]
+8061317  Merge branch 'kernel.lnx.4.14.r4-rel' of https://github.com/android-linux-stable/msm-4.14 into lineage-17.1_20201004  [Arian]
+
+* vendor/xiaomi/davinci
+4e98b43  davinci: Updates from tree  [Arian]
+====================
+     2020-10-13    
+====================
+
+* lineage/mirror
+b1bcf29  Updated aosp-minimal to 13-Oct-2020 12:01 UTC  [Tim Schumacher]
+====================
+     2020-10-12    
+====================
+
+* vendor/qcom/opensource/power
+2d40d99  power: Handle launch and interaction hints for sm6150  [Arian]
+====================
+     2020-10-11    
+====================
+====================
+     2020-10-10    
+====================
+
+* lineage/hudson
+0c6dab3  updater: Fix broken json  [Paul Keith]
 
 * lineage/mirror
 41e2cc8  Updated aosp-minimal to 10-Oct-2020 12:01 UTC  [Tim Schumacher]
-
-* packages/apps/LineageParts
-d04a3fa  Add support for anti flicker mode in LiveDisplay  [Arian]
-b8d8502  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
-
-* packages/apps/Settings
-da33aa1  Settings: Screen off fod [3/3]  [TheScarastic]
-830f7be  Settings: Make device-specific doze settings overwrite AOSP AOD  [Arian]
-
-* packages/apps/Trebuchet
-2217e20  Launcher3: update recent tasks header style  [Joey]
 ====================
-     2020-10-10    
+     2020-10-09    
 ====================
 
 * device/qcom/sepolicy-legacy-um
 768aa89  sepolicy-legacy-um: Add sepolices to update engine domain.  [P.Adarsh Reddy]
 
 * lineage/hudson
-0c6dab3  updater: Fix broken json  [Paul Keith]
 fac680d  hudson: Next best thing after the 3310  [Nolen Johnson]
 
 * lineage/mirror
@@ -55,82 +145,3 @@ e215784  Updated aosp-minimal to 09-Oct-2020 12:01 UTC  [Tim Schumacher]
 
 * lineage/wiki
 0eef5a8  wiki: Add Nokia 6.1 (PL2)  [Aayush Gupta]
-====================
-     2020-10-09    
-====================
-====================
-     2020-10-08    
-====================
-
-* build/make
-2ebbb9b  Bump Security String to 2020-10-05  [Kevin F. Haggerty]
-
-* frameworks/opt/telephony
-c00bfb4  Add check for CSIM application presence  [Vidyalakshmi Badiger]
-
-* lineage/hudson
-64f04c0  Revert "hudson: Drop S4 Sprint (jfltespr)"  [Arne Coucheron]
-ba960f1  hudson: Samsung msm8974, come on down  [Kevin F. Haggerty]
-
-* lineage/wiki
-611cf7c  Revert "wiki: devices: jfltespr: Reflect discontinuation of builds"  [Arne Coucheron]
-02b8aea  wiki: devices: Promote hlte* devices to 17.1  [Kevin F. Haggerty]
-ff1c5a0  wiki: devices: Promote klte* devices to 17.1  [Kevin F. Haggerty]
-ccb5968  wiki: Add davinci  [PIPIPIG233666]
-====================
-     2020-10-07    
-====================
-
-* lineage/mirror
-c89b820  Updated aosp-minimal to 06-Oct-2020 12:01 UTC  [Tim Schumacher]
-
-* vendor/lineage
-3e3c608  extract_utils: Set `filename_from_src: true` for `CLASS=ETC` targets  [LuK1337]
-====================
-     2020-10-06    
-====================
-
-* bootable/recovery
-ab5daa5  recovery: Always use the text menu for rescue party  [Alessandro Astone]
-ca652b0  recovery: Draw header lines with less padding  [Alessandro Astone]
-====================
-     2020-10-05    
-====================
-
-* device/xiaomi/davinci
-e48cc14  davinci: Kang fingerprint from dipper  [Arian]
-2bd46f9  davinci: init: Workaround safetynet  [Arian]
-54db1a5  davinci: parts: Add StarWars popup sounds  [Arian]
-02d836a  davinci: tfa98xx: Cleanup audio_amplifier  [Arian]
-9ff2a78  davinci: Add audio amplifier for TFA amp feedback  [PIPIPIG233666]
-37708cd  davinci: overlay: Enable STATE_DOZE_SUSPEND  [Arian]
-dbc6343  davinci: Remove unused libqsap_sdk  [Arian]
-6204025  davinci: rootdir: Allow all filesystems for USB-OTG  [SVB]
-f42484d  davinci: overlay: Update path defining rounded corners  [yankarinRG]
-a1559b2  davinci: overlay: Update window corner radius adjustment  [yankarinRG]
-a4c3ee4  davinci: overlay: Adjust window rounded corners  [yankarinRG]
-4f82557  davinci: overlay: Add proper keyguard/statusbar configs for rounded corners  [yankarinRG]
-363baee  davinci: audio: Add built-in/Back mic and remove TelePhony Rx from primary input  [Shalini Manjunatha]
-842b0eb  davinci: Enable USAP  [Luca Stefani]
-e421067  davinci: rootdir: Move services to system-background cgroup  [Ethan Chen]
-5aa1656  davinci: rootdir: Change cpuset cpus  [Rick Yiu]
-774862d  davinci: rootdir: Add restricted cpuset  [Tim Murray]
-e797054  davinci: rootdir: Use only one big cpu for foreground cgroup  [Arian]
-61585ca  davinci: rootdir: Decrease background cpus  [Arian]
-674b908  davinci: fod: Use FOD_PRESSED_LAYER_ZORDER instead of magic number  [Vincent Vidal]
-81cacec  davinci: fod: Include generated_kernel_headers to build libfod_extension  [Vincent Vidal]
-1b0c0d0  davinci: sepolicy: Label panel_info sysfs node  [Arian]
-75bc5d1  davinci: overlay: Tune vibration levels  [Marco Rizzo]
-7e44340  davinci: parts: Set dynamic thermal interval to 5 sec  [Pranav Vashi]
-37ed8bf  davinci: parts: Make thermal profiles naming completely generic  [Bruno Martins]
-059edb3  davinci: parts: Implement dynamic thermal profiles  [TheScarastic]
-4c35b24  davinci: light: Add lights HAL manifest as vintf fragment  [Arian]
-3e69963  davinci: light: Reformat Android.bp  [Arian]
-
-* kernel/xiaomi/sm6150
-64328c86  input: touchscreen: gt9886: Move more logging to debug  [Arian]
-7991cd4  input: touchscreen: gt9886: Silent goodix_ts_threadirq_func debugging  [Arian]
-
-* lineage/mirror
-10e72d4  Updated lineage-minimal to 05-Oct-2020 00:50 UTC  [Tim Schumacher]
-cf6e621  Updated lineage-minimal to 04-Oct-2020 18:14 UTC  [Tim Schumacher]
