@@ -1,127 +1,182 @@
 ====================
-     2020-11-01    
+     2020-11-08    
+====================
+
+* build/make
+db58300  [DNM] Always use release-keys  [Arian]
+
+* device/lineage/sepolicy
+e310617  common: Label IAntiFlicker live display service  [Arian]
+
+* frameworks/base
+14db5aa  fwb: Add screen off fod [1/3]  [TheScarastic]
+df2b5618  SystemUI: get rid of build text in qs  [Joey]
+7af4f8a  SystemUI: Add anti flicker tile  [Arian]
+2d109d2  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+70d4b0a  Merge tag 'android-security-10.0.0_r48' into staging/lineage-17.1_merge-android-security-10.0.0_r48  [Kevin F. Haggerty]
+
+* hardware/lineage/interfaces
+d3e913b  Add support for anti flicker mode in LiveDisplay  [Arian]
+
+* hardware/qcom-caf/sm8150/audio
+0563aac  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+
+* lineage-sdk
+734c6d5  Add support for anti flicker mode in LiveDisplay  [Arian]
+f8b5218  lineage-sdk: Screen off fod [2/3]  [TheScarastic]
+048454d  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+
+* lineage/hudson
+e5a5973  hudson: Add FP3  [Daniel Köster]
+
+* lineage/mirror
+e5a84ec  Updated to 07-Nov-2020 18:56 UTC  [Kevin F. Haggerty]
+194f954  Updated to 07-Nov-2020 18:46 UTC  [Kevin F. Haggerty]
+66ed475  Updated to 07-Nov-2020 17:32 UTC  [Kevin F. Haggerty]
+
+* lineage/wiki
+c66606d  wiki: devices: Add FP3  [Daniel Koester]
+
+* packages/apps/LineageParts
+09c7d36  Add support for anti flicker mode in LiveDisplay  [Arian]
+e24d36e  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+
+* packages/apps/Settings
+a4349d2  Settings: Screen off fod [3/3]  [TheScarastic]
+
+* packages/apps/Trebuchet
+075feaa  Launcher3: update recent tasks header style  [Joey]
+====================
+     2020-11-07    
 ====================
 
 * android
-f77e7b1  lineage: Sync Seedvault  [Michael Bestas]
+239614f  manifest: Track our own freetype  [Kevin F. Haggerty]
 
 * build/make
-25bbe7c  [DNM] Always use release-keys  [Arian]
+d450118  Bump Security String to 2020-11-05  [Kevin F. Haggerty]
 
-* device/lineage/sepolicy
-6d18271  common: Label IAntiFlicker live display service  [Arian]
-dd4a6fd  common: Remove deprecated init policy  [Han Wang]
+* external/freetype
+b963bd2  Fix heap buffer overflow (#59308).  [Werner Lemberg]
 
-* frameworks/base
-0bba034  fwb: Add screen off fod [1/3]  [TheScarastic]
-eb2a434  SystemUI: get rid of build text in qs  [Joey]
-4a2f8a7  SystemUI: Add anti flicker tile  [Arian]
-d4da23a  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
-
-* hardware/lineage/interfaces
-cb54a63  Add support for anti flicker mode in LiveDisplay  [Arian]
-
-* hardware/qcom-caf/sm8150/audio
-3eb85e4  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
-
-* lineage-sdk
-72a7e7d  Add support for anti flicker mode in LiveDisplay  [Arian]
-c328363  lineage-sdk: Screen off fod [2/3]  [TheScarastic]
-2a0ae64  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
-
-* lineage/mirror
-e7fa4ba  Updated to 31-Oct-2020 13:37 UTC  [Kevin F. Haggerty]
-f7aca17  Updated lineage-minimal to 31-Oct-2020 13:01 UTC  [Tim Schumacher]
+* lineage/hudson
+d2259b6  Welcome Galaxy Tab S5e LTE  [Bruno Martins]
 
 * lineage/wiki
-449cb49  devices: pro1: Promote to 17.1  [Nolen Johnson]
-
-* packages/apps/LineageParts
-05a5ee1  Add support for anti flicker mode in LiveDisplay  [Arian]
-f5ef5bd  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
-
-* packages/apps/Settings
-2264732  Settings: Screen off fod [3/3]  [TheScarastic]
-aafff5d  Allow the user to change the BackupTransport  [Torsten Grote]
-3007906  [Settings] Code Refactor  [Bonian Chen]
-
-* packages/apps/Trebuchet
-741a188  Launcher3: update recent tasks header style  [Joey]
-
-* vendor/lineage
-e35dc5b  prebuilt: Remove lineage-livedisplay.rc  [Han Wang]
-6a816cd  Add Settings overlays to enable backup transport selector  [Michael Bestas]
-f16956a  config: Build Seedvault  [Michael Bestas]
+aa37ba3  devices: Add Galaxy Tab S5e LTE  [Bruno Martins]
 ====================
-     2020-10-31    
+     2020-11-06    
 ====================
 
 * frameworks/base
-7d049fd  lineage_config: Set default keyboard light brightness to 0  [Bruno Martins]
-
-* lineage/charter
-c6252b9  charter: Remove exception from hardware codecs for Tegra devices  [Ryan Grachek]
+44f7cdc  SystemUI: Reset horizontal panel position when on keyguard  [LuK1337]
 
 * lineage/mirror
-13c7694  Updated aosp-minimal to 30-Oct-2020 13:01 UTC  [Tim Schumacher]
+7f79b79  Updated aosp-minimal to 05-Nov-2020 13:01 UTC  [Tim Schumacher]
 ====================
-     2020-10-30    
-====================
-
-* frameworks/base
-5d4bcf6  fwb: Allow support for keyboard lights toggle mode only  [Bruno Martins]
-0863056  fwb: Re-introduce keyboard backlight brightness control  [Bruno Martins]
-
-* lineage/mirror
-d1a08f9  Updated aosp-minimal to 29-Oct-2020 13:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-a0680d6  wiki: Alerts: Restructure  [Michael W]
-1f8b604  wiki: Add "Back" possibility for a few pages  [Michael W]
-83566e4  wiki: Guides: Fix a few spacing issues  [Michael W]
-fb99a59  wiki: Add the recovery app warning text to the upgrades pages  [Michael W]
-
-* packages/apps/LineageParts
-d71197f  ButtonSettings: Implement support for keyboard lights toggle mode only  [Bruno Martins]
-4351e70  ButtonBacklightBrightness: Restore disabled keyboard backlight code  [Bruno Martins]
-====================
-     2020-10-29    
-====================
-
-* lineage/wiki
-b76fb29  devices: s3ve3g{jv,xx,ds}: fix bootloader requirements  [Francescodario Cuzzocrea]
-====================
-     2020-10-28    
-====================
-
-* build/make
-6cc7d06  build: allow refreshmod with external out directory  [Alessandro Astone]
-
-* lineage/mirror
-da7fb54  Updated to 28-Oct-2020 02:40 UTC  [Kevin F. Haggerty]
-b28bb2d  Updated to 28-Oct-2020 02:02 UTC  [Kevin F. Haggerty]
-
-* lineage/wiki
-c42fe5d  wiki: contributors: Update Trusted reviewers list  [Kevin F. Haggerty]
-====================
-     2020-10-27    
-====================
-
-* packages/apps/SetupWizard
-fc026fc  Add an activity for launching a restore from backup  [Torsten Grote]
-====================
-     2020-10-26    
+     2020-11-05    
 ====================
 
 * external/chromium-webview
-64b0dfa  Update Chromium Webview to 86.0.4240.114  [Kevin F. Haggerty]
+ad4f2cc  Update Chromium Webview to 86.0.4240.185  [Kevin F. Haggerty]
 
-* lineage-sdk
-804dfd4  ConstraintsHelper: Allow replacing multiple keys at once  [Bruno Martins]
+* lineage/mirror
+2d639ec  Updated aosp-minimal to 04-Nov-2020 13:01 UTC  [Tim Schumacher]
 
-* lineage/wiki
-51c0d43  wiki: templates: device_upgrade: Enable ADB Root on <= 16.0 only  [Nolen Johnson]
+* lineage/scripts
+9104e52  Update default webview to 86.0.4240.185  [Kevin F. Haggerty]
+
+* vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
+37967af  Pass whether the local device is an atv device to the native layer to determine whether to include pairing dialogs for justworks and encryption only LE pairing  [Rahul Sabnis]
+
+* vendor/qcom/opensource/commonsys/system/bt
+bcb3caf  Check whether local device is an ATV device to determine whether to show the consent dialog for BLE pairing in JUSTWORKS and ENCRYPTION_ONLY mode  [Rahul Sabnis]
+204a797  Shows a consent dialog on the local device when pairing a bluetooth low energy device if the local device has a display.  [Rahul Sabnis]
+====================
+     2020-11-04    
+====================
+
+* android
+dc6f24b  Track our own fork(s) for 2020-11 ASB patching  [Kevin F. Haggerty]
+
+* external/aac
+8125b4e  Merge tag 'android-security-10.0.0_r48' into staging/lineage-17.1_merge-android-security-10.0.0_r48  [Kevin F. Haggerty]
+
+* external/libexif
+a88728a  Merge tag 'android-security-10.0.0_r48' into staging/lineage-17.1_merge-android-security-10.0.0_r48  [Kevin F. Haggerty]
+
+* frameworks/native
+a1d8785  Merge tag 'android-security-10.0.0_r48' into staging/lineage-17.1_merge-android-security-10.0.0_r48  [Kevin F. Haggerty]
+
+* packages/apps/Bluetooth
+7b5f1fb  Merge tag 'android-security-10.0.0_r48' into staging/lineage-17.1_merge-android-security-10.0.0_r48  [Kevin F. Haggerty]
+
+* packages/apps/CellBroadcastReceiver
+438b7c3  Merge tag 'android-security-10.0.0_r48' into staging/lineage-17.1_merge-android-security-10.0.0_r48  [Kevin F. Haggerty]
+
+* packages/services/Telecomm
+55a08f1  Merge tag 'android-security-10.0.0_r48' into staging/lineage-17.1_merge-android-security-10.0.0_r48  [Kevin F. Haggerty]
+
+* system/bt
+343c9de  Merge tag 'android-security-10.0.0_r48' into staging/lineage-17.1_merge-android-security-10.0.0_r48  [Kevin F. Haggerty]
+
+* system/core
+cb2391d  Merge tag 'android-security-10.0.0_r48' into staging/lineage-17.1_merge-android-security-10.0.0_r48  [Kevin F. Haggerty]
+
+* system/netd
+002b576  Merge tag 'android-security-10.0.0_r48' into staging/lineage-17.1_merge-android-security-10.0.0_r48  [Kevin F. Haggerty]
+
+* system/nfc
+190ca3f  Merge tag 'android-security-10.0.0_r48' into staging/lineage-17.1_merge-android-security-10.0.0_r48  [Kevin F. Haggerty]
+
+* tools/repohooks
+737bf27  sixish: delete Python 2/3 compat module  [Mike Frysinger]
+====================
+     2020-11-03    
+====================
+
+* packages/resources/devicesettings
+2fc8419  Add strings for wake on gesture  [Arian]
+====================
+     2020-11-02    
+====================
+
+* frameworks/base
+2fb8dda  fw/b: Resolve black forced lights with notifications channels  [Adrian DC]
+187ff7f  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/DeskClock
+b8b6826  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Eleven
+164b27e  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Etar
+ad81d36  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/LineageParts
+4ad6ff1  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Recorder
+da8b2d5  Automatic translation import  [LineageOS Builder]
 
 * packages/apps/Settings
-cb1721e  Settings: Move battery lights pref to Battery settings category  [Bruno Martins]
-57ef6d3  Settings: Hide AOD pref is device provides Doze settings  [Bruno Martins]
+09a194d  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/SetupWizard
+f1bfe7e  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Snap
+c0f948c  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Trebuchet
+d360b16  Automatic translation import  [LineageOS Builder]
+
+* packages/inputmethods/LatinIME
+921a67e  Automatic translation import  [LineageOS Builder]
+
+* packages/resources/devicesettings
+dd1873e  Automatic translation import  [LineageOS Builder]
+
+* packages/services/BuiltInPrintService
+0700616  Automatic translation import  [LineageOS Builder]
