@@ -1,212 +1,132 @@
 ====================
-     2020-11-15    
+     2020-11-22    
 ====================
 
 * build/make
-193486e  [DNM] Always use release-keys  [Arian]
+bf62b14  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-37918ae  common: Label IAntiFlicker live display service  [Arian]
+48f466c  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-050ad50  fwb: Add screen off fod [1/3]  [TheScarastic]
-8d69495  SystemUI: get rid of build text in qs  [Joey]
-28a8656  SystemUI: Add anti flicker tile  [Arian]
-950aa7a  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+23c15db  SystemUI: get rid of build text in qs  [Joey]
+b7fd676  SystemUI: Add anti flicker tile  [Arian]
+15d4a51  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-c1d8428  Add support for anti flicker mode in LiveDisplay  [Arian]
+4c3be01  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-4993a35  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+ac4eaee  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-13803be  Add support for anti flicker mode in LiveDisplay  [Arian]
-6656e9a  lineage-sdk: Screen off fod [2/3]  [TheScarastic]
-071d948  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
-
-* lineage/mirror
-813c501  Updated to 14-Nov-2020 18:09 UTC  [Kevin F. Haggerty]
-cb58489  Updated to 14-Nov-2020 18:01 UTC  [Kevin F. Haggerty]
-b55d019  Updated to 14-Nov-2020 13:00 UTC  [Tim Schumacher]
+5ba08b0  Add support for anti flicker mode in LiveDisplay  [Arian]
+3d08280  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * lineage/wiki
-44e2ffe  wiki: devices: Add aleasto as a maintainer of LGE-8996  [Nolen Johnson]
-f9ac12a  wiki: Don't hardcode codename for gts4lv vbmeta download link  [LuK1337]
+733f95f  wiki: Use generic needs_specific_android_fw template for a5y17lte, a7y17lte, beckham, evert, and payton  [Jarl-Penguin]
 
 * packages/apps/LineageParts
-ef67063  Add support for anti flicker mode in LiveDisplay  [Arian]
-4a558b2  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+12d6dfa  Add support for anti flicker mode in LiveDisplay  [Arian]
+19ad4f4  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 
-* packages/apps/Settings
-3290f2c  Settings: Screen off fod [3/3]  [TheScarastic]
+* packages/apps/Snap
+507c9c5  Snap: Remove saving to sdcard  [Michael W]
 
 * packages/apps/Trebuchet
-5b6f136  Launcher3: update recent tasks header style  [Joey]
+671bcd9  Launcher3: update recent tasks header style  [Joey]
 ====================
-     2020-11-14    
-====================
-====================
-     2020-11-13    
-====================
-
-* lineage/mirror
-3e29258  Updated aosp-minimal to 12-Nov-2020 13:01 UTC  [Tim Schumacher]
-====================
-     2020-11-12    
-====================
-
-* lineage/wiki
-7e863a9  wiki: Clarify copy partitions step  [LuK1337]
-7c8c2f5  wiki: update firmware download links for cheeseburger, dumpling  [Timi]
-====================
-     2020-11-11    
-====================
-
-* lineage/mirror
-cb5b49a  Updated aosp-minimal to 10-Nov-2020 13:01 UTC  [Tim Schumacher]
-====================
-     2020-11-10    
+     2020-11-21    
 ====================
 
 * device/xiaomi/davinci
-5e74805  davinci: power: Add DT2W support for goodix touchscreens  [Arian]
-bc46b84  davinci: power: Add support for DT2W feature  [Bruno Martins]
-da645dc  davinci: power: Add no-op 1.3 interface implementation  [Demon000]
-700df42  davinci: Remove QTI Power HAL  [Arian]
-a322a37  davinci: rootdir: Tune ramdisk for dynamic schedtune boost  [celtare21]
+e732c93  davinci: Map display modes for livedisplay  [Arian]
+
+* hardware/lineage/livedisplay
+db60203  sdm: Unguard restoring default mode  [Arian]
 
 * kernel/xiaomi/sm6150
-737e885  sched: Defend cfs and rt bandwidth quota against overflow  [Huaixin Chang]
-f107404  sched/fair: Replace zero-length array with flexible-array  [Gustavo A. R. Silva]
-8ef6d22  kernel: Force sched_walt_rotate_big_tasks to 0  [celtare21]
-735c99c  ARM64: configs: {davinci,phoenix}: Enable DYNAMIC_STUNE_BOOST  [celtare21]
-834bfbf  cpu-boost: Create separate tunable for Dynamic Schedtune Boost duration  [Josh Choo]
-5dc0a5c  cpu-boost: Update functions for newer Dynamic Schedtune Boost changes  [joshuous]
-787248c  cpu-boost: Reset Dynamic SchedTune Boost only if it is currently active  [joshuous]
-3bd6674  cpu-boost: Implement Dynamic SchedTune Boost v3  [joshuous]
-2e3c777  sched/boost: Perform SchedTune boosting when sched_boost is triggered  [RenderBroken]
-ea8910f  sched/tune: Switch Dynamic Schedtune Boost to a slot-based tracking system  [joshuous]
-7f1fc9d  sched/stune: Rename stune_boost() to do_stune_sched_boost()  [joshuous]
-c50d09d  sched/tune: Rename dynamic_boost parameter to sched_boost  [joshuous]
-6d2f08d  sched/tune: Track active boosts on a per-Schedtune basis  [joshuous]
-bb01ef9  sched/tune: Reset Dynamic Schedtune Boost only if no more boosts running  [joshuous]
-c3d740e  sched/tune: Introduce stune_boost() function  [joshuous]
-cb14a66  sched/tune: Refactor do_stune_boost()  [joshuous]
-28c6604  sched/tune: Create dynamic_boost SchedTune parameter  [joshuous]
-65a6951  sched/tune: Rename dynamic_boost_write() to dynamic_boost()  [joshuous]
-eff86c5  sched/tune: Add initial support for Dynamic SchedTune Boost  [joshuous]
-d0d0431  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
-4b26d55  sched/walt: Improve the scheduler  [Abhijeet Dharmapurikar]
-54ca83c  sched/fair: Avoid force newly idle load balance if have iowait task  [Maria Yu]
-4fe60f1  sched/fair: Force gold cpus to do idle lb when silver has big tasks  [Pavankumar Kondeti]
-71daf827  sched/fair: Cleanup for incoming upstream changes  [Zachariah Kennedy]
-0ac36f4  sched/fair: Cleanup for incoming upstream changes  [Zachariah Kennedy]
-b2c10ca  sched/fair: remove unused variable  [Satya Durga Srinivasu Prabhala]
-5d7fd18  sched: fair: Improve the scheduler  [Lingutla Chandrasekhar]
-8c71cdc  sched: Improve the scheduler  [Lingutla Chandrasekhar]
-33cc91e  sched: fair: Stop running idle_balance on active migration kick  [Lingutla Chandrasekhar]
-5d1f341  cpufreq: Avoid leaving stale IRQ work items during CPU offline  [Rafael J. Wysocki]
-d54f957  cpufreq: schedutil: Queue sugov irq work on policy online cpu  [Maria Yu]
-c8d3388  sched/cpufreq_schedutil: create a function for common steps  [Abhijeet Dharmapurikar]
-8689777  sched/fair: Don't place wakee on waker cpu if colocate enabled  [Biao Long]
-996783e  sched: core_ctl: Improve the scheduler  [Lingutla Chandrasekhar]
-14a0617  sched/walt: Fix kernel panic issue by uninitialized data  [Biao Long]
-d41dcd2  sched: walt: Improve the scheduler  [Lingutla Chandrasekhar]
-9c55b5e  sched: walt: Improve the scheduler  [Abhijeet Dharmapurikar]
-7c3050d  sched/walt: Improve the scheduler  [Lingutla Chandrasekhar]
-c59bc43  sched: walt: improve the scheduler  [Abhijeet Dharmapurikar]
-8a4fa30  sched/walt: cleanup unused code  [Zachariah Kennedy]
-6b98cfc  sched/walt: Improve the scheduler  [Sai Harshini Nimmala]
-558382c  sched: Improve the scheduler  [Lingutla Chandrasekhar]
-3cf1913  sched/walt: Avoid walt irq work in offlined cpu  [Maria Yu]
-04cb0e4  sched: walt: Improve the scheduler  [Lingutla Chandrasekhar]
-876ce61  sched: core: Use sched_clusters for updown migration handler  [Lingutla Chandrasekhar]
-3de162b  sched: walt: fix sched_cluster initialization  [Lingutla Chandrasekhar]
-23ed07e  sched/walt: Improve the scheduler  [Sai Harshini Nimmala]
-c0ee726  sched/walt: Improve the scheduler  [Sai Harshini Nimmala]
-2550523  sched: walt: Dump walt status on BUG_ON  [Lingutla Chandrasekhar]
-713aeb2  sched/walt: Improve the scheduler  [Jonathan Avila]
-ec6e773  sched/walt: Improve the scheduler  [Jonathan Avila]
-ddd33d2  sched/walt: Improve the scheduler  [Sai Harshini Nimmala]
-a115859  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
-848b6aa  sched: improve the scheduler  [Lingutla Chandrasekhar]
-38eb11d  sched: walt: remove unused variable  [Lingutla Chandrasekhar]
-208f1e2  sched: walt: Improve the Scheduler  [Shaleen Agrawal]
-7bed676  sched/walt: Improve the scheduler  [Amir Vajid]
-c38d3ce  sched/walt: Improve the scheduler  [Amir Vajid]
-1118c01  cpuidle: lpm-levels: get bias time from scheduler  [Amir Vajid]
-7d7a60f  lpm-levels: Optimize and make way for upstream changes  [Zachariah Kennedy]
-482aef3  sched: Remove unused code in sched_avg.c  [Pavankumar Kondeti]
-9fac15a  sched: Use bitmask for sched_busy_hysteresis_enable_cpus tunable  [Pavankumar Kondeti]
-79e9740  sched: Introduce sched_busy_hysteresis_enable_cpus tunable  [Pavankumar Kondeti]
-5465cc5  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
-b3ff59e  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
-20440bf  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
-306b2c2  sched: core: Fix usage of cpu core group mask  [Lingutla Chandrasekhar]
-4cc0db9  arch_topology: Add possible sibling cpu mask for cpu_topology  [Lingutla Chandrasekhar]
-c807882  arm64/kernel/topology: Cleanup for upstream commit  [Zachariah Kennedy]
-81c5ca1  sched: Improve the scheduler  [Abhijeet Dharmapurikar]
-3257ac5  sched/walt: Fix invalid access of CPU cycle counter callback  [Pavankumar Kondeti]
-12d0805  sched/walt: Improve the scheduler  [Abhijeet Dharmapurikar]
-6b08380  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
-e915004  sched: Improve the scheduler  [Lingutla Chandrasekhar]
-c3d277b  sched/core_ctl: Improve the scheduler  [Pavankumar Kondeti]
-c8facd8  sched/core_ctl: Improve the scheduler  [Pavankumar Kondeti]
-503fcd6  sched/walt: Improve the scheduler  [Abhijeet Dharmapurikar]
-86d6c83  sched/walt: drop preferred_cluster from rtg  [Abhijeet Dharmapurikar]
-fdd4e58  sched/isolcpus: Fix "isolcpus=" boot parameter handling when !CONFIG_CPUMASK_OFFSTACK  [Rakib Mullick]
-4cb2b37  sched/fair: Fix incorrect CPU access in check_for_migration()  [Pavankumar Kondeti]
-c509e6a  sched/walt: Improve the scheduler  [Abhijeet Dharmapurikar]
-b5726c1  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
-c9b833f  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
-900657e  sched/walt: Improve the scheduler  [Puja Gupta]
-11024c8  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
-e1d30d1  sched/walt: Improve the scheduler  [Abhijeet Dharmapurikar]
-9f3e73f  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
-3b6f470  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
-b67c8da  sched: Improve the scheduler  [Lingutla Chandrasekhar]
-ee6de4f  sched: Improve the scheduler  [Lingutla Chandrasekhar]
-1363bb4  sched: Improve the scheduler  [Lingutla Chandrasekhar]
-12902ac  sched: Improve the scheduler  [Lingutla Chandrasekhar]
-78ae756  sched: Improve the scheduler  [Lingutla Chandrasekhar]
-34ee433  sched: Cleanup unused variables in walt  [Lingutla Chandrasekhar]
-29b0d98  sched: walt: Improve the scheduler  [Lingutla Chandrasekhar]
-bb58e20  sched: Improve the scheduler  [Lingutla Chandrasekhar]
-e7a86e8  sched: clean-up unused/duplicate functions & variables  [Satya Durga Srinivasu Prabhala]
-fa96b5b  sched/fair: upadte adjust_cpus_for_packing()  [Pavankumar Kondeti]
-2a11e90  sched/fair: Fix excessive packing on the max capacity CPU  [Lingutla Chandrasekhar]
-4519854  sched/fair: Allow prev cpu in find best target  [Abhijeet Dharmapurikar]
-5215ba4  sched: improve the scheduler  [Abhijeet Dharmapurikar]
-68a20f5  sched/fair: Refactor packing eligible test  [Pavankumar Kondeti]
-01cab5f  sched: Improve the scheduler  [Pavankumar Kondeti]
-6b88a6c  sched/walt: Improve the scheduler  [Abhijeet Dharmapurikar]
-6bd456c  sched/fair: Derive the downmigration margin wrt the destination CPU  [Pavankumar Kondeti]
-60a9ff4  sched/fair: Prevent false-positive lockdep warnings  [Satya Durga Srinivasu Prabhala]
-2a76c46  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
-b8285e6  sched/walt: Access sched_boost_enabled with RCU protection  [Pavankumar Kondeti]
-6b01a06  sched/walt: fix lockdep warning from walt_update_min_max_capacity()  [Satya Durga Srinivasu Prabhala]
-21d8bc1  trace/irq: sched: irq trace events should be used with !PROVE_LOCKING  [Yadu MG]
-ef2a850  Revert "sched/core: Fix migration to invalid CPU in __set_cpus_allowed_ptr()"  [Blagovest Kolenichev]
-7200f33  sched: reduce softirq conflicts with RT  [Miguel de Dios]
-a5453d7  Revert "ANDROID: Add hold functionality to schedtune CPU boost"  [Zachariah Kennedy]
-25884d9  sched/fair: Initialize fbt_env.need_idle  [Arun KS]
-cbca98d  sched/core: Use READ_ONCE()/WRITE_ONCE() in move_queued_task()/task_rq_lock()  [Andrea Parri]
-57148ea  sched: idle: Avoid retaining the tick when it has been stopped  [Rafael J. Wysocki]
-e55ad69  sched/deadline: Fix missing clock update  [Juri Lelli]
+4765119  drm: msm: Import xiaomi backlight remap changes  [Arian]
 ====================
-     2020-11-09    
+     2020-11-20    
 ====================
 
 * frameworks/base
-e0577f3  fixup! fwb: Re-introduce keyboard backlight brightness control  [Sean McCreary]
+1a0cc0d  SystemUI: Fix visualizer issues  [LuK1337]
+1e29fd7  Implement click to take partial screenshot [1/3]  [Jesse Chan]
 
-* lineage/hudson
-4f11545  hudson: klteactivexx builds don't support the AT&T variant  [Nolen Johnson]
-3e5eeff  hudson: Promote Oneplus 5 & 5T  [Timi]
+* lineage-sdk
+43cb67f  Implement click to take partial screenshot [3/3]  [Jesse Chan]
+
+* lineage/mirror
+cfda217  Updated aosp-minimal to 20-Nov-2020 13:01 UTC  [Tim Schumacher]
+
+* packages/apps/Email
+11cd39d  Handle IMAP NonExistent folder flag as NoSelect  [Fs00]
+0daa1bd  Do not show unreads count for Trash folder  [Fs00]
+dd0553e  Email: Declare GET_WIDGET_UPDATE permission  [MSe1969]
+
+* packages/apps/Gallery2
+9496568  Gallery: rotate icon is counter-clockwise, so do it!  [SpiritCroc]
+
+* packages/apps/LineageParts
+20c5a7e  Implement click to take partial screenshot [2/3]  [Jesse Chan]
+
+* vendor/lineage
+9b03b6e  apn: Update Greek APN list  [Michael Bestas]
+====================
+     2020-11-19    
+====================
+
+* lineage/mirror
+4f8c6a2  Updated aosp-minimal to 19-Nov-2020 13:01 UTC  [Tim Schumacher]
 
 * lineage/wiki
-721b32a  wiki: devices: klteactivexx builds don't support the AT&T variant  [Nolen Johnson]
-4b8798a  devices: dumpling: Promote to 17.1  [Timi]
-cd8ce59  devices: cheeseburger: Promote to 17.1  [Timi]
-0e1bac9  FP3: Remove claim that we support FP3+  [Daniel Köster]
+22e242c  wiki: Drop `phablet` type  [LuK1337]
+
+* packages/apps/Settings
+d38b16c  Backup: Don't hardcode ignored backup transports  [Michael Bestas]
+
+* tools/repohooks
+fc3ee95  Fix issue with triple quoted relnotes  [Nick Anthony]
+
+* vendor/lineage
+634dad4  overlay: Add ignored backup transport overlay for Settings  [Michael Bestas]
+====================
+     2020-11-18    
+====================
+
+* kernel/xiaomi/sm6150
+c6a9f44  Merge branch 'kernel.lnx.4.14.r4-rel' of https://github.com/android-linux-stable/msm-4.14 into HEAD  [Arian]
+
+* lineage/mirror
+0e0550c  Updated aosp-minimal to 18-Nov-2020 13:01 UTC  [Tim Schumacher]
+
+* packages/apps/LineageParts
+273dcde  Regenerate contributors cloud  [Kevin F. Haggerty]
+
+* packages/apps/SetupWizard
+578a6c9  SetupWizard: Add seedvault restore page in GMS flow  [Michael Bestas]
+====================
+     2020-11-17    
+====================
+
+* lineage/hudson
+b77308d  hudson: Add beckham to Moto sdm660 crew  [Joshua Blanchard]
+
+* lineage/mirror
+913a89b  Updated aosp-minimal to 17-Nov-2020 13:01 UTC  [Tim Schumacher]
+504413f  Updated to 17-Nov-2020 05:18 UTC  [Kevin F. Haggerty]
+
+* lineage/wiki
+786a28a  wiki: devices: Add Moto Z3 Play (beckham)  [Joshua Blanchard]
+3388bdc  wiki: Add me as a floral maintainer  [Eamon Powell]
+
+* packages/inputmethods/LatinIME
+69c4c76  Include Bulgarian Extended Keyboard Layout  [Iliya Bazlyankov]
+====================
+     2020-11-16    
+====================
+
+* lineage/wiki
+a56f567  wiki: Change FP3 `name` to FP3  [LuK1337]
