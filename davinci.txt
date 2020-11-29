@@ -1,129 +1,83 @@
 ====================
-     2020-11-22    
+     2020-11-29    
 ====================
 
 * build/make
-048871d  [DNM] Always use release-keys  [Arian]
+b075c5b  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-b8701dc  common: Label IAntiFlicker live display service  [Arian]
+bb03a91  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-284b547  SystemUI: get rid of build text in qs  [Joey]
-6265065  SystemUI: Add anti flicker tile  [Arian]
-544c9b3  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+a77652d  SystemUI: get rid of build text in qs  [Joey]
+cad27ef  SystemUI: Add anti flicker tile  [Arian]
+cdb801f  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-630df2e  Add support for anti flicker mode in LiveDisplay  [Arian]
+b2bfeae  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-f966dd6  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+a433dee  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-f69d39c  Add support for anti flicker mode in LiveDisplay  [Arian]
-06c7edc  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+c9cc47d  Add support for anti flicker mode in LiveDisplay  [Arian]
+adc6589  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+
+* packages/apps/LineageParts
+02189c1  Add support for anti flicker mode in LiveDisplay  [Arian]
+f345919  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+
+* packages/apps/Trebuchet
+fec3e58  Launcher3: update recent tasks header style  [Joey]
+====================
+     2020-11-28    
+====================
+
+* hardware/qcom/sm8150/data/ipacfg-mgr
+e4bd860  Kernel Header Changes  [arnav_s]
+
+* hardware/qcom/sm8150/display
+f57d218  libhistogram: Use generated kernel headers  [Eamon Powell]
+====================
+     2020-11-27    
+====================
+
+* lineage/wiki
+c507fbe  wiki: devices: motorola-msm8916: Add alert on latest firmware  [althafvly]
+====================
+     2020-11-26    
+====================
+
+* lineage/mirror
+1678cbf  Updated aosp-minimal to 25-Nov-2020 13:01 UTC  [Tim Schumacher]
+
+* lineage/wiki
+833a708  fixup! wiki: contributors: Update hierarchy order  [Nolen Johnson]
+98ff070  wiki: contributors: Update hierarchy order  [Nolen Johnson]
+====================
+     2020-11-25    
+====================
+
+* packages/apps/Camera2
+0a7390f  jni: Build libs against current sdk  [Michael Bestas]
+====================
+     2020-11-24    
+====================
+
+* lineage/mirror
+d38ac9e  Updated lineage-minimal to 23-Nov-2020 13:01 UTC  [Tim Schumacher]
+
+* vendor/lineage
+54563c8  repopick: Use project revision if available  [LuK1337]
+====================
+     2020-11-23    
+====================
 
 * lineage/wiki
 733f95f  wiki: Use generic needs_specific_android_fw template for a5y17lte, a7y17lte, beckham, evert, and payton  [Jarl-Penguin]
 
-* packages/apps/LineageParts
-11eb771  Add support for anti flicker mode in LiveDisplay  [Arian]
-836c580  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+* packages/apps/Gallery2
+09836d6  Gallery2: Remove LOCAL_NDK_STL_VARIANT  [Arne Coucheron]
 
 * packages/apps/Snap
 507c9c5  Snap: Remove saving to sdcard  [Michael W]
-
-* packages/apps/Trebuchet
-5e82eff  Launcher3: update recent tasks header style  [Joey]
-====================
-     2020-11-21    
-====================
-
-* device/xiaomi/davinci
-e732c93  davinci: Map display modes for livedisplay  [Arian]
-
-* hardware/lineage/livedisplay
-db60203  sdm: Unguard restoring default mode  [Arian]
-
-* kernel/xiaomi/sm6150
-4765119  drm: msm: Import xiaomi backlight remap changes  [Arian]
-====================
-     2020-11-20    
-====================
-
-* frameworks/base
-1e29fd7  Implement click to take partial screenshot [1/3]  [Jesse Chan]
-
-* lineage-sdk
-43cb67f  Implement click to take partial screenshot [3/3]  [Jesse Chan]
-
-* lineage/mirror
-cfda217  Updated aosp-minimal to 20-Nov-2020 13:01 UTC  [Tim Schumacher]
-
-* packages/apps/Email
-11cd39d  Handle IMAP NonExistent folder flag as NoSelect  [Fs00]
-0daa1bd  Do not show unreads count for Trash folder  [Fs00]
-dd0553e  Email: Declare GET_WIDGET_UPDATE permission  [MSe1969]
-
-* packages/apps/Gallery2
-9496568  Gallery: rotate icon is counter-clockwise, so do it!  [SpiritCroc]
-
-* packages/apps/LineageParts
-20c5a7e  Implement click to take partial screenshot [2/3]  [Jesse Chan]
-
-* packages/apps/Settings
-d38b16c  Backup: Don't hardcode ignored backup transports  [Michael Bestas]
-
-* vendor/lineage
-9b03b6e  apn: Update Greek APN list  [Michael Bestas]
-634dad4  overlay: Add ignored backup transport overlay for Settings  [Michael Bestas]
-====================
-     2020-11-19    
-====================
-
-* lineage/mirror
-4f8c6a2  Updated aosp-minimal to 19-Nov-2020 13:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-22e242c  wiki: Drop `phablet` type  [LuK1337]
-
-* tools/repohooks
-fc3ee95  Fix issue with triple quoted relnotes  [Nick Anthony]
-====================
-     2020-11-18    
-====================
-
-* kernel/xiaomi/sm6150
-c6a9f44  Merge branch 'kernel.lnx.4.14.r4-rel' of https://github.com/android-linux-stable/msm-4.14 into HEAD  [Arian]
-
-* lineage/mirror
-0e0550c  Updated aosp-minimal to 18-Nov-2020 13:01 UTC  [Tim Schumacher]
-
-* packages/apps/LineageParts
-273dcde  Regenerate contributors cloud  [Kevin F. Haggerty]
-
-* packages/apps/SetupWizard
-578a6c9  SetupWizard: Add seedvault restore page in GMS flow  [Michael Bestas]
-====================
-     2020-11-17    
-====================
-
-* lineage/hudson
-b77308d  hudson: Add beckham to Moto sdm660 crew  [Joshua Blanchard]
-
-* lineage/mirror
-913a89b  Updated aosp-minimal to 17-Nov-2020 13:01 UTC  [Tim Schumacher]
-504413f  Updated to 17-Nov-2020 05:18 UTC  [Kevin F. Haggerty]
-
-* lineage/wiki
-786a28a  wiki: devices: Add Moto Z3 Play (beckham)  [Joshua Blanchard]
-3388bdc  wiki: Add me as a floral maintainer  [Eamon Powell]
-
-* packages/inputmethods/LatinIME
-69c4c76  Include Bulgarian Extended Keyboard Layout  [Iliya Bazlyankov]
-====================
-     2020-11-16    
-====================
-
-* lineage/wiki
-a56f567  wiki: Change FP3 `name` to FP3  [LuK1337]
