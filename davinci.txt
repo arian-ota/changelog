@@ -1,83 +1,136 @@
 ====================
-     2020-11-29    
+     2020-12-06    
 ====================
 
 * build/make
-b075c5b  [DNM] Always use release-keys  [Arian]
+6d8e7f9  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-bb03a91  common: Label IAntiFlicker live display service  [Arian]
+7d4f311  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-a77652d  SystemUI: get rid of build text in qs  [Joey]
-cad27ef  SystemUI: Add anti flicker tile  [Arian]
-cdb801f  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+66c5613  SystemUI: get rid of build text in qs  [Joey]
+8ce1aac  SystemUI: Add anti flicker tile  [Arian]
+3712848  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-b2bfeae  Add support for anti flicker mode in LiveDisplay  [Arian]
+a3d0777  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-a433dee  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+7fb5b16  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-c9cc47d  Add support for anti flicker mode in LiveDisplay  [Arian]
-adc6589  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+8f11ce2  Add support for anti flicker mode in LiveDisplay  [Arian]
+8d8f53f  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * packages/apps/LineageParts
-02189c1  Add support for anti flicker mode in LiveDisplay  [Arian]
-f345919  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+56fe316  Add support for anti flicker mode in LiveDisplay  [Arian]
+9763d35  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 
 * packages/apps/Trebuchet
-fec3e58  Launcher3: update recent tasks header style  [Joey]
+2c65369  Launcher3: update recent tasks header style  [Joey]
 ====================
-     2020-11-28    
+     2020-12-05    
 ====================
 
-* hardware/qcom/sm8150/data/ipacfg-mgr
-e4bd860  Kernel Header Changes  [arnav_s]
+* frameworks/base
+fed4017  NetworkPolicyManagerService: Fix network isolation for secondary users  [Oliver Scott]
 
-* hardware/qcom/sm8150/display
-f57d218  libhistogram: Use generated kernel headers  [Eamon Powell]
+* lineage/mirror
+d413190  Updated aosp-minimal to 04-Dec-2020 13:01 UTC  [Tim Schumacher]
 ====================
-     2020-11-27    
+     2020-12-04    
 ====================
 
 * lineage/wiki
-c507fbe  wiki: devices: motorola-msm8916: Add alert on latest firmware  [althafvly]
-====================
-     2020-11-26    
-====================
-
-* lineage/mirror
-1678cbf  Updated aosp-minimal to 25-Nov-2020 13:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-833a708  fixup! wiki: contributors: Update hierarchy order  [Nolen Johnson]
-98ff070  wiki: contributors: Update hierarchy order  [Nolen Johnson]
-====================
-     2020-11-25    
-====================
-
-* packages/apps/Camera2
-0a7390f  jni: Build libs against current sdk  [Michael Bestas]
-====================
-     2020-11-24    
-====================
-
-* lineage/mirror
-d38ac9e  Updated lineage-minimal to 23-Nov-2020 13:01 UTC  [Tim Schumacher]
+1f64f9a  devices: j{active,f,fve}lte*: Correct recovery mode key-combo  [Thue]
+ec3466d  templates: {odin,heimdall}: Provide tip about no-reboot intricacies  [Thue]
+2c18241  wiki: templates: device_install: Add tip about adb sideload 47ug  [Thue]
 
 * vendor/lineage
-54563c8  repopick: Use project revision if available  [LuK1337]
+6d3b1a7  apn: Ting: Adding missing flag to list of types  [Thomas Karl Pietrowski]
 ====================
-     2020-11-23    
+     2020-12-03    
+====================
+====================
+     2020-12-02    
 ====================
 
-* lineage/wiki
-733f95f  wiki: Use generic needs_specific_android_fw template for a5y17lte, a7y17lte, beckham, evert, and payton  [Jarl-Penguin]
+* android
+402a66d  use our fork of aidl  [Tom Powell]
+
+* frameworks/base
+0421c4e  Automatic translation import  [LineageOS Builder]
+
+* lineage-sdk
+7fa4c75  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Bluetooth
+e18e0a4  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Dialer
+1f693be  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/DocumentsUI
+1146fad  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Etar
+990f6b3  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/FlipFlap
+68a29f5  Automatic translation import  [LineageOS Builder]
 
 * packages/apps/Gallery2
-09836d6  Gallery2: Remove LOCAL_NDK_STL_VARIANT  [Arne Coucheron]
+cac0c60  Automatic translation import  [LineageOS Builder]
 
-* packages/apps/Snap
-507c9c5  Snap: Remove saving to sdcard  [Michael W]
+* packages/apps/LineageParts
+4aa27d2  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/ManagedProvisioning
+75376de  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/PhoneCommon
+0924dd9  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Settings
+b92b34c  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/SetupWizard
+3d03d8e  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Trebuchet
+f1e8cff  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/TvSettings
+d51bf06  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/UnifiedEmail
+6f125a2  Automatic translation import  [LineageOS Builder]
+
+* packages/inputmethods/LatinIME
+fbdb191  Automatic translation import  [LineageOS Builder]
+
+* packages/resources/devicesettings
+1d52414  Automatic translation import  [LineageOS Builder]
+
+* packages/screensavers/Basic
+97677a4  Automatic translation import  [LineageOS Builder]
+
+* packages/services/BuiltInPrintService
+5461b61  Automatic translation import  [LineageOS Builder]
+
+* packages/services/Telecomm
+c7d27cc  Automatic translation import  [LineageOS Builder]
+
+* packages/services/Telephony
+1dfa938  Automatic translation import  [LineageOS Builder]
+
+* tools/repohooks
+8f1ceeb  pre-upload: warn whenever a hook is too slow  [Mike Frysinger]
+6c6f9ee  drop file coding & print_function import  [Mike Frysinger]
+====================
+     2020-12-01    
+====================
+====================
+     2020-11-30    
+====================
