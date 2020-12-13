@@ -1,136 +1,85 @@
 ====================
-     2020-12-06    
+     2020-12-13    
 ====================
 
 * build/make
-6d8e7f9  [DNM] Always use release-keys  [Arian]
+d1adb6b  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-7d4f311  common: Label IAntiFlicker live display service  [Arian]
+b710525  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-66c5613  SystemUI: get rid of build text in qs  [Joey]
-8ce1aac  SystemUI: Add anti flicker tile  [Arian]
-3712848  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+88cd02b  SystemUI: get rid of build text in qs  [Joey]
+c2b5bd3  SystemUI: Add anti flicker tile  [Arian]
+7fab5f7  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-a3d0777  Add support for anti flicker mode in LiveDisplay  [Arian]
+7986a85  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-7fb5b16  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+731357e  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-8f11ce2  Add support for anti flicker mode in LiveDisplay  [Arian]
-8d8f53f  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+be7cb12  Add support for anti flicker mode in LiveDisplay  [Arian]
+4ef1e16  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * packages/apps/LineageParts
-56fe316  Add support for anti flicker mode in LiveDisplay  [Arian]
-9763d35  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+895bcb5  Add support for anti flicker mode in LiveDisplay  [Arian]
+1066e29  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 
 * packages/apps/Trebuchet
-2c65369  Launcher3: update recent tasks header style  [Joey]
+9d58d22  Launcher3: update recent tasks header style  [Joey]
 ====================
-     2020-12-05    
-====================
-
-* frameworks/base
-fed4017  NetworkPolicyManagerService: Fix network isolation for secondary users  [Oliver Scott]
-
-* lineage/mirror
-d413190  Updated aosp-minimal to 04-Dec-2020 13:01 UTC  [Tim Schumacher]
-====================
-     2020-12-04    
-====================
-
-* lineage/wiki
-1f64f9a  devices: j{active,f,fve}lte*: Correct recovery mode key-combo  [Thue]
-ec3466d  templates: {odin,heimdall}: Provide tip about no-reboot intricacies  [Thue]
-2c18241  wiki: templates: device_install: Add tip about adb sideload 47ug  [Thue]
-
-* vendor/lineage
-6d3b1a7  apn: Ting: Adding missing flag to list of types  [Thomas Karl Pietrowski]
-====================
-     2020-12-03    
-====================
-====================
-     2020-12-02    
+     2020-12-12    
 ====================
 
 * android
-402a66d  use our fork of aidl  [Tom Powell]
+06a0acb  README: Jenkins is dead, so point to its replacement  [Bruno Martins]
+
+* external/chromium-webview
+33ab33d  Update Chromium Webview to 87.0.4280.101  [Kevin F. Haggerty]
+
+* lineage/mirror
+e5a9d33  Updated aosp-minimal to 11-Dec-2020 13:01 UTC  [Tim Schumacher]
+
+* lineage/wiki
+7c6d2f5  wiki: Add Nexus 7 2013 Wi-Fi Repartitioned (flox)  [surblazer]
+====================
+     2020-12-11    
+====================
+
+* lineage/mirror
+a9d0a89  Updated aosp-minimal to 10-Dec-2020 13:01 UTC  [Tim Schumacher]
+====================
+     2020-12-10    
+====================
+
+* lineage/mirror
+4b293a7  Updated to 09-Dec-2020 13:01 UTC  [Tim Schumacher]
+
+* lineage/scripts
+550c7d8  Update default webview to 87.0.4280.101  [Kevin F. Haggerty]
+
+* vendor/lineage
+eb3f245  README: Jenkins is dead, so point to its replacement  [Bruno Martins]
+====================
+     2020-12-09    
+====================
+
+* lineage/mirror
+9494c1d  Updated aosp-minimal to 08-Dec-2020 13:01 UTC  [Tim Schumacher]
+====================
+     2020-12-08    
+====================
 
 * frameworks/base
-0421c4e  Automatic translation import  [LineageOS Builder]
-
-* lineage-sdk
-7fa4c75  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Bluetooth
-e18e0a4  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Dialer
-1f693be  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/DocumentsUI
-1146fad  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Etar
-990f6b3  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/FlipFlap
-68a29f5  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Gallery2
-cac0c60  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/LineageParts
-4aa27d2  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/ManagedProvisioning
-75376de  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/PhoneCommon
-0924dd9  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Settings
-b92b34c  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/SetupWizard
-3d03d8e  Automatic translation import  [LineageOS Builder]
+5ac7721  SettingsProvider: adaptive icon  [Asher Simonds]
 
 * packages/apps/Trebuchet
-f1e8cff  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/TvSettings
-d51bf06  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/UnifiedEmail
-6f125a2  Automatic translation import  [LineageOS Builder]
-
-* packages/inputmethods/LatinIME
-fbdb191  Automatic translation import  [LineageOS Builder]
-
-* packages/resources/devicesettings
-1d52414  Automatic translation import  [LineageOS Builder]
-
-* packages/screensavers/Basic
-97677a4  Automatic translation import  [LineageOS Builder]
-
-* packages/services/BuiltInPrintService
-5461b61  Automatic translation import  [LineageOS Builder]
-
-* packages/services/Telecomm
-c7d27cc  Automatic translation import  [LineageOS Builder]
-
-* packages/services/Telephony
-1dfa938  Automatic translation import  [LineageOS Builder]
-
-* tools/repohooks
-8f1ceeb  pre-upload: warn whenever a hook is too slow  [Mike Frysinger]
-6c6f9ee  drop file coding & print_function import  [Mike Frysinger]
+953f32c  Trebuchet: Fix pref_show_google_now_summary on RTL  [Bruno Martins]
 ====================
-     2020-12-01    
+     2020-12-07    
 ====================
-====================
-     2020-11-30    
-====================
+
+* hardware/qcom-caf/msm8960/audio
+54b66b5  Partial revert of "hal: update input source type during open input stream"  [Arne Coucheron]
