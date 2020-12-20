@@ -1,85 +1,140 @@
 ====================
-     2020-12-13    
+     2020-12-20    
 ====================
 
 * build/make
-d1adb6b  [DNM] Always use release-keys  [Arian]
+284509f  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-b710525  common: Label IAntiFlicker live display service  [Arian]
+fc32926  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-88cd02b  SystemUI: get rid of build text in qs  [Joey]
-c2b5bd3  SystemUI: Add anti flicker tile  [Arian]
-7fab5f7  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+bb9ede2  SystemUI: get rid of build text in qs  [Joey]
+ea4a562  SystemUI: Add anti flicker tile  [Arian]
+8d8722f  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-7986a85  Add support for anti flicker mode in LiveDisplay  [Arian]
+929cbb9  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-731357e  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+8c1483a  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-be7cb12  Add support for anti flicker mode in LiveDisplay  [Arian]
-4ef1e16  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+421d018  Add support for anti flicker mode in LiveDisplay  [Arian]
+74fa3fc  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * packages/apps/LineageParts
-895bcb5  Add support for anti flicker mode in LiveDisplay  [Arian]
-1066e29  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+b016575  Add support for anti flicker mode in LiveDisplay  [Arian]
+f1194bf  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 
 * packages/apps/Trebuchet
-9d58d22  Launcher3: update recent tasks header style  [Joey]
+73114dd  Launcher3: update recent tasks header style  [Joey]
 ====================
-     2020-12-12    
+     2020-12-19    
+====================
+
+* lineage/mirror
+c4533eb  Updated to 18-Dec-2020 14:09 UTC  [Kevin F. Haggerty]
+4c9a5a4  Updated aosp-minimal to 18-Dec-2020 13:01 UTC  [Tim Schumacher]
+====================
+     2020-12-18    
+====================
+
+* lineage/mirror
+4e89d82  Updated aosp-minimal to 17-Dec-2020 13:01 UTC  [Tim Schumacher]
+
+* lineage/wiki
+45041be  wiki: Move how-tos to a better url scheme  [Michael W]
+b4e3df4  State that Gerrit username is case-sensitive  [Phyks (Lucas Verney)]
+77a8c73  Make local bundle/vendor install of Jekyll easier  [Phyks (Lucas Verney)]
+====================
+     2020-12-17    
+====================
+
+* lineage/mirror
+b421d0f  Updated aosp-minimal to 16-Dec-2020 13:01 UTC  [Tim Schumacher]
+====================
+     2020-12-16    
+====================
+
+* frameworks/base
+99f9231  Automatic translation import  [LineageOS Builder]
+
+* lineage/mirror
+6f597a9  Updated to 15-Dec-2020 13:11 UTC  [Kevin F. Haggerty]
+9240572  Updated lineage-minimal to 15-Dec-2020 13:02 UTC  [Tim Schumacher]
+cfcbbb1  Updated to 15-Dec-2020 13:01 UTC  [Tim Schumacher]
+
+* packages/apps/AudioFX
+277a395  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/DeskClock
+0678fbd  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Dialer
+e1881a4  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Eleven
+8a39cbb  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Etar
+1606dda  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Jelly
+926e6f0  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/LineageParts
+1502e85  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Recorder
+c7dd05a  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Settings
+ad2ffb1  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/SetupWizard
+d6af60c  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Snap
+37830fd  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Trebuchet
+fbac82b  Automatic translation import  [LineageOS Builder]
+
+* packages/inputmethods/LatinIME
+787eecc  Automatic translation import  [LineageOS Builder]
+
+* packages/resources/devicesettings
+abe38e3  Automatic translation import  [LineageOS Builder]
+
+* packages/services/BuiltInPrintService
+14aa36a  Automatic translation import  [LineageOS Builder]
+
+* vendor/lineage
+ee66978  extract_utils: generate_prop_list: Ignore vdex/odex files too  [Alessandro Astone]
+
+* vendor/qcom/opensource/fm-commonsys
+b258ea1  Automatic translation import  [LineageOS Builder]
+====================
+     2020-12-15    
 ====================
 
 * android
-06a0acb  README: Jenkins is dead, so point to its replacement  [Bruno Martins]
-
-* external/chromium-webview
-33ab33d  Update Chromium Webview to 87.0.4280.101  [Kevin F. Haggerty]
-
-* lineage/mirror
-e5a9d33  Updated aosp-minimal to 11-Dec-2020 13:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-7c6d2f5  wiki: Add Nexus 7 2013 Wi-Fi Repartitioned (flox)  [surblazer]
-====================
-     2020-12-11    
-====================
-
-* lineage/mirror
-a9d0a89  Updated aosp-minimal to 10-Dec-2020 13:01 UTC  [Tim Schumacher]
-====================
-     2020-12-10    
-====================
-
-* lineage/mirror
-4b293a7  Updated to 09-Dec-2020 13:01 UTC  [Tim Schumacher]
-
-* lineage/scripts
-550c7d8  Update default webview to 87.0.4280.101  [Kevin F. Haggerty]
-
-* vendor/lineage
-eb3f245  README: Jenkins is dead, so point to its replacement  [Bruno Martins]
-====================
-     2020-12-09    
-====================
-
-* lineage/mirror
-9494c1d  Updated aosp-minimal to 08-Dec-2020 13:01 UTC  [Tim Schumacher]
-====================
-     2020-12-08    
-====================
+9256fd0  Track our own fork(s) for 2020-12 ASB patching  [Kevin F. Haggerty]
 
 * frameworks/base
-5ac7721  SettingsProvider: adaptive icon  [Asher Simonds]
+caf0280  CONFIGURED_NETWORKS_CHANGED_ACTION: update docs since we stop sending WifiConfiguration  [David Su]
+7c4ac79  Merge tag 'android-security-10.0.0_r49' into staging/lineage-17.1_merge-android-security-10.0.0_r49  [Kevin F. Haggerty]
 
-* packages/apps/Trebuchet
-953f32c  Trebuchet: Fix pref_show_google_now_summary on RTL  [Bruno Martins]
+* lineage/mirror
+45f0dae  Updated to 14-Dec-2020 16:02 UTC  [Kevin F. Haggerty]
+
+* lineage/wiki
+ca6bc32  devices: klteactivexx: We don't support the AT&T varaint  [Nolen Johnson]
+8776c6f  devices: flo: State that 17.1 and beyond codename is now flox  [Nolen Johnson]
 ====================
-     2020-12-07    
+     2020-12-14    
 ====================
 
-* hardware/qcom-caf/msm8960/audio
-54b66b5  Partial revert of "hal: update input source type during open input stream"  [Arne Coucheron]
+* lineage/mirror
+0c24537  Updated to 13-Dec-2020 13:01 UTC  [Tim Schumacher]
