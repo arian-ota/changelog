@@ -1,58 +1,220 @@
 ====================
+     2020-12-30    
+====================
+
+* frameworks/base
+65f88ef  audio: Discard QTI only codecs when AOSP BT stack is in use  [LuK1337]
+dfeebfe  NotificationPanelViewController: Call onTouchEvent on mDoubleTapGesture when mBarState is not keyguard  [Arian]
+bd7d22d  SeekBarVolumizer: Properly setup the minimum of the seekbar  [Arian Kulmer]
+daef93f  camera: Support exposing aux camera to apps  [Sauhard Pande]
+====================
+     2020-12-29    
+====================
+
+* device/xiaomi/davinci
+35c6ad3  davinci: Use component-override to configure Bluetooth  [Ryan Mitchell]
+09497e2  davinci: overlay: Enable the SAP Profile  [jonerlin]
+
+* frameworks/base
+2373904  SystemUI: Resolve faulty keyguard clock logs outputs  [Adrian DC]
+a31439f  SystemUI: Fix size of icon of vibrate ringer mode for additional icon packs  [Volodymyr Zhdanov]
+
+* lineage/hudson
+368fd5c  hudson: Promote FP3 to 17.1  [Daniel Köster]
+
+* lineage/mirror
+b85f1a0  Updated to 28-Dec-2020 13:00 UTC  [Tim Schumacher]
+
+* packages/apps/Updater
+29ca6e5  update push script: remove bashisms  [chrmhoffmann]
+====================
+     2020-12-28    
+====================
+
+* external/chromium-webview
+c780a2e  webview: Hard no to persistent histograms  [Kevin F. Haggerty]
+
+* hardware/qcom-caf/sdm845/audio
+cffff24  audio: Drop LOCAL_COPY_HEADERS usage  [Pig]
+ab2e2dc  hal: Include POSIX thread header  [trkzmn]
+cfe63fb  audio_extn: Allow skipping compilation of audio HAL extensions  [Bruno Martins]
+fad535d  audio: adsprpcd: Drop dependency on proprietary headers and fix build errors  [LuK1337]
+d0135f2  audio: Skip libhdmipassthru on OSS builds  [Bruno Martins]
+6f27ee5  audio: Use direct project pathmap  [Ethan Chen]
+
+* hardware/qcom-caf/sdm845/display
+66f4fe7  device_impl: Fix format types to avoid compilation errors  [Bruno Martins]
+7f2ee86  display: Drop LOCAL_COPY_HEADERS usage  [Pig]
+bff910a  gralloc: Add option for unaligned YCrCb/YCbCr pixel format height  [LuK1337]
+01503e3  gralloc: Add option for unaligned YCrCb pixel format  [Willi Ye]
+0e9a8e2  gralloc: Add option for unaligned NV21_ZSL pixel format  [LuK1337]
+8f1cddd  gralloc: Add option for YCrCb venus camera preview  [SGCMarkus]
+c74af5b  gralloc: Allow devices to opt-in for YCrCb camera preview  [LuK1337]
+06349b6  display-hals: Expose c2d2.h even if TARGET_DISABLE_DISPLAY is set  [Bruno Martins]
+89897e9  Add C2D_FORMAT_BT601_FULLRANGE to C2D_FORMAT_MODE  [Bruno Martins]
+f9e6688  Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT  [LuK1337]
+3b198ca  Don't build lights module if vendor supplies it  [Steve Kondik]
+6b35852  display: Use project pathmap  [Ethan Chen]
+29b4d3c  Add 'display-commonsys-intf/' from commit '8e14567b3f59dc53a12a7e219cfc074e907ebd37'  [Bruno Martins]
+
+* hardware/qcom-caf/sdm845/media
+761548f  media: Switch to display_headers lib include  [Arne Coucheron]
+65795aa  media: Drop LOCAL_COPY_HEADERS usage  [Pig]
+7d5f5bb  media: libOmxSw encoders require prop headers :(  [Ricardo Cerqueira]
+7bc9760  media: Use project pathmap  [Ethan Chen]
+
+* lineage/wiki
+caad00f  devices: FP3: Promote to 17.1  [Daniel Köster]
+====================
      2020-12-27    
 ====================
 
-* build/make
-d75699d  [DNM] Always use release-keys  [Arian]
+* android
+f315bb7  manifest: Track our own tzdata-related repos  [Kevin F. Haggerty]
+fa215b0  lineage: Re-sync QTI BT repos  [Pig]
 
-* device/lineage/sepolicy
-7a83ac7  common: Label IAntiFlicker live display service  [Arian]
+* device/qcom/sepolicy_vndr
+0a4f9ef  legacy: Allow writing WLAN driver/fw version into property  [Bruno Martins]
 
 * device/xiaomi/davinci
-2212bc5  davinci: rootdir: Set schedtune.boost to 1  [Volodymyr Zhdanov]
+177331d  davinci: rootdir: Set schedtune.boost to 1  [Volodymyr Zhdanov]
+
+* external/cldr
+bca0ad9  RESTRICT AUTOMERGE CLDR-14225 tz database 2020b updates [R]  [Neil Fuller]
+1b1fe92  RESTRICT AUTOMERGE CLDR-13739 Changed some tzdata files to rear-guard version. (#445)  [Neil Fuller]
+
+* external/icu
+56b88bc  RESTRICT AUTOMERGE Update Android to tzdb 2020d [R]  [Neil Fuller]
+e0583f3  RESTRICT AUTOMERGE Update Android to tzdb 2020c [R]  [Neil Fuller]
+394ae3d  RESTRICT AUTOMERGE Update Android to tzdb 2020b [R]  [Neil Fuller]
 
 * frameworks/base
-4ee7c6b  SystemUI: get rid of build text in qs  [Joey]
-16f0bf7  SystemUI: Add anti flicker tile  [Arian]
-6ea2d9f  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+f72364c  Add LC3 codec type.  [pramod kotreshappa]
+d78d862  Audio: Add support for lc3 codec.  [Manisha Agarwal]
+d620f88  Bluetooth: Add APTX-Adaptive and APTX-TWS+ entries.  [Kiran Kelageri]
+77aa064  Add callback onA2dpCodecConfigChanged  [Mingbo Zhang]
+10a9885  Audio: Do not disconnect profiles till Bluetooth Off  [Gurpreet Ghai]
+3518d60  Audio: use cached BT codec info during disconnecting  [Zhou Song]
+de3689c  Audio: Update current active bt device of mApmConnectedDevices.  [Manisha Agarwal]
+9a44270  BT-Audio: Keep track of Active TWS+ EB device in BTHelper  [Sagar Verma]
+3d08aec  BLE: Fix NPE during start advertising  [Sravan Voleti]
+42ca62d  Fix build errors  [Scott Lobdell]
+0f9e029  Fix BLE transport discovery scan filter  [Subramanian Srinivasan]
+ca935c9  BT: Relocate A2DP codec strings for translation  [dianlujitao]
+0218bfb  Enable codec change request when mode changes in aptX-adaptive  [Naval saini]
+70f4132  Keep a null check before accessing the BluetoothA2dpWrapper APIs.  [Satheesh Kumar Pallemoni]
+371694c  Bluetooth: Fix for out of bound exception  [pramod kotreshappa]
+75b80d1  BT Dev: Increase array size for codec selection in Dev Op  [Gurpreet Ghai]
+73da27f  Keep the BluetoothHeadset finalize() method protected  [Diego Wilson]
+fc7ce01  Bluetooth: Fix for Global reference table overflow issue[1/2]  [Bandari Ramesh]
+c2d32c0  BT: Add new intent to broadcast IOT device details  [Gurpreet Ghai]
+79e027d  BT_Audio: Updated Check for TWS+ switch  [Gurpreet Ghai]
+8f24488  TWS_A2DP: Handle active device change between TWS+ earbuds  [pramod kotreshappa]
+f9167b3  audio: Add support for APTX TWSP audio codec  [Dhananjay Kumar]
+6e6110f  audio: Add support for audio extended codecs  [Naresh Tanniru]
+143de07  Use BluetoothUtils instead of Utils  [Diego Wilson]
+282ac82  GAP: Handle the race condition cases in auto connect logic  [Venkata Jagadeesh Garaga]
+408ffd1  Obex: Squashed commit of the following  [Sravan Kumar V]
+64067a1  Add scan filter for Transport Discovery data  [Subramanian Srinivasan]
+8ce3d8d  Support CALLBACK_TYPE_SENSOR_ROUTING  [Mingbo Zhang]
+d72d3aa  Add support for Transport discovery AD type (1/2)  [Subramanian Srinivasan]
+6c0ca70  Bluetooth: TWSP: Support Battery Status information display  [Bhakthavatsala Raghavendra]
+624f769  BT: Send info if call is CS type from telecomm service to BT apps.  [Sumit Bajpai]
+b28fd0b  GAP: Reset bondingInitiatedLocally flag(1/3)  [Venkata Jagadeesh Garaga]
+be64cbb  Bluetooth-TWS: Disable outgoing connection to 2nd earbud  [Kiran Kelageri]
+82f0609  Bluetooth-TWS: Disable outgoing connection for 2nd earbud.  [Kiran Kelageri]
+9289829  Bluetooth: Rename bluetooth property to support new P Treble rules  [Safoorah Banu Shaik]
+37661a4  Bluetooth: Unpair both earbuds on unpair.  [Kiran Kelageri]
+86eb709  Bluetooth: Add SDK API support for TWS feature (2)  [Bandari Ramesh]
+948cad4  Revert the change: AudioService: remove dead BT code.  [Samyak Jain]
+0a5e399  TWS-A2DP: Add TWS+ codec to DevUI support  [pramod kotreshappa]
+7ddab604  BT: Adding aptX-Adaptive codec entry to Framework  [Gurpreet Ghai]
+3511ebd  Add BluetoothQualityReport class(1/2)  [Mingbo Zhang]
 
-* hardware/lineage/interfaces
-12541ac  Add support for anti flicker mode in LiveDisplay  [Arian]
+* packages/apps/Settings
+f7178f5  A2dpSrc: Bluetooth codec Dev-UI support for QVA codecs  [Satheesh Kumar Pallemoni]
+7a6c634  bluetooth: update SavedBluetoothTwsDeviceUpdater for superclass ctor signature change  [Steven Laver]
+594ac09  Implement abstract method getPreferenceKey in SavedBluetoothTwsDeviceUpdater  [Justin DeMartino]
+941dd0d  BT: Use translated a2dp codec strings  [dianlujitao]
+683fd8d  A2dpSrc: DEV-UI support for Blutooth Audio codec.  [Satheesh Kumar Pallemoni]
+e320a8b  Bluetooth-TWS: UI updates based on Filter matched  [zhenchao]
+51b1283  Bluetooth-TWS: UI updates based on profile connection.  [Kiran Kelageri]
+bb7abee  Fix build error  [Jiyong Park]
+7092980  Bluetooth-TWS: Filter TWS devices  [Kiran Kelageri]
+6372a3a  Bluetooth: Create new catogory for earbuds  [Kiran Kelageri]
 
-* hardware/qcom-caf/sm8150/audio
-c1101cf  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+* system/timezone
+16a8d2a  RESTRICT AUTOMERGE Update Android from 2020c to 2020d [R]  [Neil Fuller]
+927672e  RESTRICT AUTOMERGE Update Android from 2020b to 2020c [R]  [Neil Fuller]
+5c9bf9b  RESTRICT AUTOMERGE Update Android from 2020a to 2020b [R]  [Neil Fuller]
 
-* lineage-sdk
-dcfa320  Add support for anti flicker mode in LiveDisplay  [Arian]
-0348b1c  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+* vendor/gms
+c5b51b2  overlay: Forcefully disable Now Playing components  [jhenrique09]
+117b35a  Import config_globallyDisabledComponents from vendor/lineage  [Arian]
 
-* packages/apps/LineageParts
-ccb370a  Add support for anti flicker mode in LiveDisplay  [Arian]
-bbc8599  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
-
-* packages/apps/Trebuchet
-142d94a  Launcher3: update recent tasks header style  [Joey]
+* vendor/lineage
+f85f7e8  config: Setup soong namespaces for TARGET_USE_QTI_BT_STACK  [Pig]
 ====================
      2020-12-26    
 ====================
 
 * lineage/hudson
 d28011c  Revert "Drop kuntao"  [Michael Bestas]
+
+* packages/apps/Snap
+a3fddbc  {Capture,MultiCamera}UI: Match video stop icon to API1 mode  [Paul Keith]
 ====================
      2020-12-25    
 ====================
 
 * bootable/recovery
-8246793  recovery: Allow going back in rescue party menu  [Alessandro Astone]
+c4b3e64  recovery: Allow going back in rescue party menu  [Alessandro Astone]
 
-* device/lineage/sepolicy
-bceeb27  lineage: Add sepolicy for mediatek livedisplay  [Aayush Gupta]
+* device/qcom/sepolicy_vndr
+2f7337d  common: Address BT denials  [Bruno Martins]
+
+* device/xiaomi/davinci
+95e9344  Revert "davinci: Drop QC value-add"  [Arian]
+e4a0551  Revert "davinci: Update from 20.12.10"  [Arian]
+
+* frameworks/base
+1e19a67  UserRestrictionUtils: Return null Bundle if there are no restrictions  [Paul Keith]
 
 * lineage/mirror
 86ecd60  Updated aosp-minimal to 24-Dec-2020 13:01 UTC  [Tim Schumacher]
+
+* packages/apps/Contacts
+4496174  Contacts: Enable support for device contact.  [Toha]
+
+* packages/apps/Etar
+a4cced1  Etar: Add local com.google.android.material_material prebuilt  [LuK1337]
+
+* packages/apps/Snap
+d08c78d  Snap: chmod 0644  [Paul Keith]
+05e1f3f  Snap: dos2unix  [Paul Keith]
+600377c  CaptureModule: Only look for ssm capture results if ssm is enabled  [Paul Keith]
+7c2678a  CaptureModule: Fix init sequence  [Paul Keith]
+
+* packages/providers/ContactsProvider
+78f2b52  ContactsProvider: Prevent device contact being deleted.  [Toha]
+
+* vendor/gms
+a7fd0b0  Build NexusLauncherOverlay  [Arian]
+94c5c29  Fix Launcher3QuickStep name  [Arian]
+2d32154  Add pixel_experience_2020  [Arian]
+2420765  Move turbo overlay to RRO package  [Arian]
+f4af016  Add Device Personalization services  [Arian]
 ====================
      2020-12-24    
 ====================
+
+* android
+13cb0cf  lineage: Track our Snap Camera  [althafvly]
+f32e528  lineage: Sync SimpleDeviceConfig  [Michael Bestas]
+
+* frameworks/base
+1108fc3  Keyguard: Allow disabling fingerprint wake-and-unlock  [Steve Kondik]
+5d5e5e2c  SystemUI: Increase icon padding in QS privacy chip  [Danny Lin]
 
 * lineage/hudson
 93e132a  Drop kuntao  [Michael Bestas]
@@ -63,29 +225,32 @@ b4080c5  Updated lineage-minimal to 23-Dec-2020 13:01 UTC  [Tim Schumacher]
 
 * lineage/wiki
 25d9aaf  wiki: cheeseburger,dumpling: firmware is not handleded by user  [Timi]
-====================
-     2020-12-23    
-====================
+
+* packages/apps/Etar
+8a5a01f  Hardcode `locationIconRounded` corner size  [LuK1337]
+3c8850d  Add accidentally deleted code (#820)  [Gitsaibot]
+c70e067  Release version 1.0.24 (#817)  [Gitsaibot]
+f779d0d  Update submodules (#819)  [Jochen Sprickerhof]
+735feb5  Let widget respect app theme colors (#816)  [Gitsaibot]
+ffa837a  Improve location drop box (#815)  [Gitsaibot]
+3cf0c4d  Set api21 as minsdk  [Gitsaibot]
+
+* packages/apps/Settings
+59fe5d0  Add translations for face unlock strings  [Chirayu Desai]
+b46d1f7  Add strings for face unlock feature  [Chirayu Desai]
+9423d76  Revert "Remove permission bar chart in Privacy setting"  [Michael Bestas]
+
+* vendor/gms
+902328c  Set the ThemePicker for NexusLauncher  [Arian]
+119c18a  update overlays  [Arian]
+86c5f0e  fix Trebuchet name  [Arian]
+1b81ba7  Update GmsConfigOverlay  [Arian]
+d73b7c8  Update GmsConfigOverlay  [Arian]
+5c85134  Add NexusLauncherRelease  [Arian]
+5c42f59  Remove commented code  [Arian]
+c9549f8  add back FontGoogleSansOverlay  [Arian]
+6fe63f0  gms: Update from redfin december  [Arian]
 
 * vendor/lineage
-2f92f21  partner_gms: Add support for Android Go GMS  [Bruno Martins]
-====================
-     2020-12-22    
-====================
-
-* lineage/hudson
-e3a616c  hudson: add Galaxy Tab S6 Lite Wi-Fi (gta4xlwifi)  [Tim Zimmermann]
-
-* lineage/wiki
-b7f3120  wiki: Fix up gta4xlwifi data  [Harry Youd]
-716983e  wiki: add Galaxy Tab S6 Lite Wi-Fi (gta4xlwifi)  [Tim Zimmermann]
-====================
-     2020-12-21    
-====================
-
-* lineage/mirror
-1587a04  Updated to 20-Dec-2020 18:51 UTC  [Kevin F. Haggerty]
-0aab4ae  Updated lineage-minimal to 20-Dec-2020 13:01 UTC  [Tim Schumacher]
-
-* system/sepolicy
-1d13a7e  Add fastbootd to the sys_rawio whitelist.  [David Anderson]
+85359e5  fixup! extract_utils: implement patchelf  [Sebastiano Barezzi]
+fe8a057  config: Allow more legacy apps to use conversation notifications  [Danny Lin]
