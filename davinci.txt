@@ -1,91 +1,114 @@
 ====================
-     2020-12-27    
+     2021-01-03    
 ====================
 
 * build/make
-1009ecc  [DNM] Always use release-keys  [Arian]
+47b4a12  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-c5ebee3  common: Label IAntiFlicker live display service  [Arian]
-
-* device/xiaomi/davinci
-2212bc5  davinci: rootdir: Set schedtune.boost to 1  [Volodymyr Zhdanov]
+926ce2f  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-54e9531  SystemUI: get rid of build text in qs  [Joey]
-a664d33  SystemUI: Add anti flicker tile  [Arian]
-11d2d71  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+a7cfd21  SystemUI: get rid of build text in qs  [Joey]
+15389f8  SystemUI: Add anti flicker tile  [Arian]
+abf5286  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-5e6db91  Add support for anti flicker mode in LiveDisplay  [Arian]
+20b7995  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-c536acc  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+f42f5e2  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-2372112  Add support for anti flicker mode in LiveDisplay  [Arian]
-cea40f0  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+81fb578  Add support for anti flicker mode in LiveDisplay  [Arian]
+1023c3f  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * packages/apps/LineageParts
-ff90257  Add support for anti flicker mode in LiveDisplay  [Arian]
-8eec4d2  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+91c3eee  Add support for anti flicker mode in LiveDisplay  [Arian]
+670e45a  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 
 * packages/apps/Trebuchet
-22709c5  Launcher3: update recent tasks header style  [Joey]
+40f990e  Launcher3: update recent tasks header style  [Joey]
 ====================
-     2020-12-26    
-====================
-
-* lineage/hudson
-d28011c  Revert "Drop kuntao"  [Michael Bestas]
-====================
-     2020-12-25    
+     2021-01-02    
 ====================
 
-* bootable/recovery
-8246793  recovery: Allow going back in rescue party menu  [Alessandro Astone]
+* frameworks/base
+5ef54fb  Automatic translation import  [LineageOS Builder]
 
-* device/lineage/sepolicy
-bceeb27  lineage: Add sepolicy for mediatek livedisplay  [Aayush Gupta]
+* packages/apps/Eleven
+5734f5f  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Etar
+52c1f10  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/FlipFlap
+bd775a2  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/LineageParts
+5a1fdc9  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Settings
+4a4f775  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/SetupWizard
+542c8e3  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Snap
+4ce58fc  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Updater
+14b7b7e  Automatic translation import  [LineageOS Builder]
+
+* packages/providers/DownloadProvider
+12b4ad2  Automatic translation import  [LineageOS Builder]
+
+* packages/resources/devicesettings
+55ee00a  Automatic translation import  [LineageOS Builder]
+====================
+     2021-01-01    
+====================
 
 * lineage/mirror
-86ecd60  Updated aosp-minimal to 24-Dec-2020 13:01 UTC  [Tim Schumacher]
+e6c6534  Updated to 31-Dec-2020 15:30 UTC  [Kevin F. Haggerty]
 ====================
-     2020-12-24    
+     2020-12-31    
 ====================
-
-* lineage/hudson
-93e132a  Drop kuntao  [Michael Bestas]
 
 * lineage/mirror
-f229d03  Updated to 23-Dec-2020 13:46 UTC  [Kevin F. Haggerty]
-b4080c5  Updated lineage-minimal to 23-Dec-2020 13:01 UTC  [Tim Schumacher]
+c07fe56  Updated lineage-minimal to 30-Dec-2020 13:01 UTC  [Tim Schumacher]
 
 * lineage/wiki
-25d9aaf  wiki: cheeseburger,dumpling: firmware is not handleded by user  [Timi]
+44e1c32  wiki: Add Adreno 308 as a valid GPU  [Jarl-Penguin]
 ====================
-     2020-12-23    
+     2020-12-30    
 ====================
+
+* frameworks/base
+6343aa2  Use associated display to get real size  [Riddle Hsu]
+20c4186  Disallow back gesture in the bottom gesture area  [Winson Chung]
+350010d  Set gesture exclusion rect for IMEs  [Vinit Nayak]
+
+* lineage-sdk
+a91ad3e  SystemUI: NetworkTraffic: Refactor message handling  [Michael W]
 
 * vendor/lineage
-2f92f21  partner_gms: Add support for Android Go GMS  [Bruno Martins]
+6fd22da  lineage: apns: Update T-Mobile US to reflect latest carrier changes  [Zachariah Anderson]
 ====================
-     2020-12-22    
+     2020-12-29    
 ====================
 
 * lineage/hudson
-e3a616c  hudson: add Galaxy Tab S6 Lite Wi-Fi (gta4xlwifi)  [Tim Zimmermann]
-
-* lineage/wiki
-b7f3120  wiki: Fix up gta4xlwifi data  [Harry Youd]
-716983e  wiki: add Galaxy Tab S6 Lite Wi-Fi (gta4xlwifi)  [Tim Zimmermann]
-
-* system/sepolicy
-1d13a7e  Add fastbootd to the sys_rawio whitelist.  [David Anderson]
-====================
-     2020-12-21    
-====================
+368fd5c  hudson: Promote FP3 to 17.1  [Daniel Köster]
 
 * lineage/mirror
-1587a04  Updated to 20-Dec-2020 18:51 UTC  [Kevin F. Haggerty]
-0aab4ae  Updated lineage-minimal to 20-Dec-2020 13:01 UTC  [Tim Schumacher]
+b85f1a0  Updated to 28-Dec-2020 13:00 UTC  [Tim Schumacher]
+====================
+     2020-12-28    
+====================
+
+* external/chromium-webview
+c780a2e  webview: Hard no to persistent histograms  [Kevin F. Haggerty]
+
+* lineage/wiki
+caad00f  devices: FP3: Promote to 17.1  [Daniel Köster]
