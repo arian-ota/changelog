@@ -1,114 +1,133 @@
 ====================
-     2021-01-03    
+     2021-01-17    
 ====================
 
 * build/make
-47b4a12  [DNM] Always use release-keys  [Arian]
+27e8cfa  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-926ce2f  common: Label IAntiFlicker live display service  [Arian]
+55c3b89  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-a7cfd21  SystemUI: get rid of build text in qs  [Joey]
-15389f8  SystemUI: Add anti flicker tile  [Arian]
-abf5286  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+aea5370  SystemUI: get rid of build text in qs  [Joey]
+d893b15  SystemUI: Add anti flicker tile  [Arian]
+05bec289  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+4be11d7  NfcTile: Don't create an error when editing tiles  [Michael W]
 
 * hardware/lineage/interfaces
-20b7995  Add support for anti flicker mode in LiveDisplay  [Arian]
+4243ab2  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-f42f5e2  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+15a988e  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-81fb578  Add support for anti flicker mode in LiveDisplay  [Arian]
-1023c3f  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+28aea9e  Add support for anti flicker mode in LiveDisplay  [Arian]
+a24e1bd  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
-* packages/apps/LineageParts
-91c3eee  Add support for anti flicker mode in LiveDisplay  [Arian]
-670e45a  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
-
-* packages/apps/Trebuchet
-40f990e  Launcher3: update recent tasks header style  [Joey]
-====================
-     2021-01-02    
-====================
-
-* frameworks/base
-5ef54fb  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Eleven
-5734f5f  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Etar
-52c1f10  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/FlipFlap
-bd775a2  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/LineageParts
-5a1fdc9  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Settings
-4a4f775  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/SetupWizard
-542c8e3  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Snap
-4ce58fc  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Updater
-14b7b7e  Automatic translation import  [LineageOS Builder]
-
-* packages/providers/DownloadProvider
-12b4ad2  Automatic translation import  [LineageOS Builder]
-
-* packages/resources/devicesettings
-55ee00a  Automatic translation import  [LineageOS Builder]
-====================
-     2021-01-01    
-====================
-
-* lineage/mirror
-e6c6534  Updated to 31-Dec-2020 15:30 UTC  [Kevin F. Haggerty]
-====================
-     2020-12-31    
-====================
-
-* lineage/mirror
-c07fe56  Updated lineage-minimal to 30-Dec-2020 13:01 UTC  [Tim Schumacher]
+* lineage/hudson
+03e6f51  hudson: Drop find7  [Michael Bestas]
 
 * lineage/wiki
-44e1c32  wiki: Add Adreno 308 as a valid GPU  [Jarl-Penguin]
+3c7f61f  Remove myself from legacy devices  [Michael Bestas]
+e75831e  wiki: Update aleasto nickname  [aleasto]
+
+* packages/apps/LineageParts
+e24257e  Add support for anti flicker mode in LiveDisplay  [Arian]
+90a0c93  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+
+* packages/apps/Settings
+e7eae87  Settings: Remove empty category from Security Settings  [Michael W]
+
+* packages/apps/Snap
+eb11043  Snap: Remove warnings for generated ids  [Michael W]
+
+* packages/apps/Trebuchet
+f0a71bd  Launcher3: update recent tasks header style  [Joey]
 ====================
-     2020-12-30    
+     2021-01-16    
 ====================
 
 * frameworks/base
-6343aa2  Use associated display to get real size  [Riddle Hsu]
-20c4186  Disallow back gesture in the bottom gesture area  [Winson Chung]
-350010d  Set gesture exclusion rect for IMEs  [Vinit Nayak]
+05ba748  Automatic translation import  [LineageOS Builder]
 
-* lineage-sdk
-a91ad3e  SystemUI: NetworkTraffic: Refactor message handling  [Michael W]
+* lineage/wiki
+a3668cc  wiki: devices: flox: Opt-in to fastboot boot requirement  [Nolen Johnson]
+94d21d4  wiki: templates: Add support for requiring fastboot boot  [Nolen Johnson]
+ae0008d  devices: ms013g: Specify that we use TWRP  [Daniel Jacob Chittoor]
 
-* vendor/lineage
-6fd22da  lineage: apns: Update T-Mobile US to reflect latest carrier changes  [Zachariah Anderson]
+* packages/apps/Etar
+fa1aaae  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/LineageParts
+996d22c  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Settings
+da99b1e  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/SetupWizard
+5760444  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Snap
+9869998  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Trebuchet
+6bd5759  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Updater
+b2218df  Automatic translation import  [LineageOS Builder]
+
+* packages/inputmethods/LatinIME
+67c7c55  Automatic translation import  [LineageOS Builder]
+
+* packages/resources/devicesettings
+2165d42  Automatic translation import  [LineageOS Builder]
 ====================
-     2020-12-29    
+     2021-01-15    
+====================
+
+* frameworks/av
+c4a1c73  Merge tag 'android-security-10.0.0_r50' into staging/lineage-17.1_merge_android-security-10.0.0_r50  [Kevin F. Haggerty]
+
+* lineage/mirror
+77fcf3a  Updated aosp-minimal to 14-Jan-2021 13:01 UTC  [Tim Schumacher]
+
+* lineage/wiki
+abf67ee  wiki: Remove leftover custom_recovery_codename  [razorloves]
+da268ae  wiki: Fix us996 supported versions  [razorloves]
+====================
+     2021-01-14    
+====================
+
+* lineage/mirror
+07cfe2d  Updated lineage-minimal to 13-Jan-2021 13:01 UTC  [Tim Schumacher]
+====================
+     2021-01-13    
+====================
+====================
+     2021-01-12    
+====================
+
+* lineage/mirror
+3eedb67  Updated lineage-minimal to 11-Jan-2021 13:01 UTC  [Tim Schumacher]
+
+* lineage/wiki
+e3a1f03  wiki: How-tos: Add adb over wifi  [Michael W]
+0c8b7ce  wiki: bugreporting: Move logcat requirement to an alert  [Michael W]
+====================
+     2021-01-11    
 ====================
 
 * lineage/hudson
-368fd5c  hudson: Promote FP3 to 17.1  [Daniel Köster]
+d21fb22  hudson: Promote kiwi to 17.1  [Michael W]
 
 * lineage/mirror
-b85f1a0  Updated to 28-Dec-2020 13:00 UTC  [Tim Schumacher]
-====================
-     2020-12-28    
-====================
-
-* external/chromium-webview
-c780a2e  webview: Hard no to persistent histograms  [Kevin F. Haggerty]
+0ba8734  Updated lineage-minimal to 10-Jan-2021 13:01 UTC  [Tim Schumacher]
 
 * lineage/wiki
-caad00f  devices: FP3: Promote to 17.1  [Daniel Köster]
+ac7997a  kiwi: Move to 17.1  [Michael W]
+
+* packages/apps/LineageParts
+4b295f9  LineageParts: Stats: Improve getting a valid carrier name  [Michael W]
+
+* packages/inputmethods/LatinIME
+92990f8  LatinIME: Fix NPE in getKeyboardThemeName  [Michael W]
