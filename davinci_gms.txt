@@ -1,213 +1,108 @@
 ====================
-     2021-01-11    
+     2021-01-18    
 ====================
-
-* device/xiaomi/davinci
-ddf3fa4  davinci: manifest: Remove Trust interface entry  [Michael Bestas]
 
 * frameworks/base
-5c83645  SeekBarVolumizer: Properly setup the minimum of the seekbar  [Arian Kulmer]
-05bdcba  FODCircleView: detect touch outside and take action accordingly  [Dil3mm4]
+45ddd37  SeekBarVolumizer: Properly setup the minimum of the seekbar  [Arian Kulmer]
+
+* lineage/wiki
+3d3d520  wiki: Fix FP3 supported versions  [razorloves]
+====================
+     2021-01-17    
+====================
 
 * lineage/hudson
-d21fb22  hudson: Promote kiwi to 17.1  [Michael W]
-
-* lineage/mirror
-0ba8734  Updated lineage-minimal to 10-Jan-2021 13:01 UTC  [Tim Schumacher]
+03e6f51  hudson: Drop find7  [Michael Bestas]
 
 * lineage/wiki
-ac7997a  kiwi: Move to 17.1  [Michael W]
-
-* packages/apps/LineageParts
-afc820b  LineageParts: Stats: Improve getting a valid carrier name  [Michael W]
-b5e155e  LineageParts: Stats: Try getting a valid country code  [Michael W]
-
-* packages/apps/SetupWizard
-21ae606  UpdateRecoveryActivity: Don't force recovery update by default  [Bruno Martins]
-
-* packages/inputmethods/LatinIME
-4549f94  LatinIME: Fix NPE in getKeyboardThemeName  [Michael W]
-====================
-     2021-01-10    
-====================
-
-* android
-6e91822  manifest: Import common display_intf_headers for QSSI supported platforms  [Alessandro Astone]
-
-* lineage/wiki
-3479d7f  wiki: Add Adreno 504/650/675/685 to schema  [LuK1337]
-b52a5a0  wiki: Add Kryo 560/585 to schema  [LuK1337]
-cf4fb1d  wiki: Add Bluetooth 5.1 to schema  [LuK1337]
-====================
-     2021-01-09    
-====================
-
-* device/xiaomi/davinci
-cfa22ed  davinci: sepolicy: Use prefix to label wakeup nodes  [Adam Shih]
-441427c  davinci: sepolicy: Give system_suspend access to wakeup nodes  [Adam Shih]
-
-* lineage/hudson
-00a8434  hudson: Ship OnePlus Nord  [CryllicBuster273]
-
-* lineage/mirror
-12701dd  Updated to 08-Jan-2021 20:15 UTC  [Kevin F. Haggerty]
-c42c2c9  Updated to 08-Jan-2021 20:06 UTC  [Kevin F. Haggerty]
-7f859fd  Updated to 08-Jan-2021 19:46 UTC  [Kevin F. Haggerty]
-ca2677f  Updated aosp-minimal to 08-Jan-2021 13:01 UTC  [Tim Schumacher]
-
-* vendor/xiaomi/davinci
-a56808f  davinci: Regenerate and update from 20.12.28  [Arian]
-====================
-     2021-01-08    
-====================
-
-* device/lineage/sepolicy
-3e9d48f  touch: Add IKeySwapper context  [Arian]
-
-* device/xiaomi/davinci
-4c4368a  davinci: Switch to standalone extract utils  [Michael Bestas]
-1d49404  davinci: Switch to patchelf from tools-lineage  [Michael Bestas]
-648867a  davinci: audio: Increase headphones echo reference channels  [Arian]
-39b50ba  davinci: gps: Update from 20.12.28  [Arian]
-310ab96  davinci: Add Certificate Authority service  [Arian]
-
-* hardware/lineage/interfaces
-ba7d528  touch: Add keys swap interface  [Arian]
-
-* lineage-sdk
-056187e  LineageHardwareManager: Introduce keys swap feature support  [Arian]
-
-* lineage/mirror
-1e70f99  Updated lineage-minimal to 07-Jan-2021 13:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-28e39aa  wiki: Add OnePlus Nord (avicii)  [KakatkarAkshay]
-====================
-     2021-01-07    
-====================
-
-* android
-869041b  manifest: Track our forked hardware/google/pixel  [Peter Cai]
-c1c7802  manifest: android-11.0.0_r19 -> android-11.0.0_r27  [Michael Bestas]
-
-* frameworks/base
-b4296af  Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27  [Michael Bestas]
-
-* hardware/lineage/interfaces
-4f96e3f  trust: set system vintf fragment xml to framework  [Michael Benedict]
-
-* hardware/qcom-caf/common
-5bd19fa  os_pickup: Import common display_intf_headers for QSSI supported platforms  [Alessandro Astone]
-
-* hardware/qcom-caf/sdm845/display
-3a9e02b  display: Remove display-commonsys-intf git subtree  [Bruno Martins]
-
-* hardware/qcom-caf/sm8150/display
-0b034a6  display: Remove display-commonsys-intf git subtree  [Bruno Martins]
-
-* hardware/qcom-caf/sm8250/display
-42ad8e5  display: Remove display-commonsys-intf git subtree  [Bruno Martins]
-
-* lineage/crowdin
-b65c024  Initial setup for lineage-18.1 translations  [Michael Bestas]
-
-* lineage/hudson
-69758ef  hudson: add Asus Zenfone 5Z (ZS620KL)  [Marc Bourgoin]
-
-* lineage/scripts
-f07e158  aosp-merger: Get branch reliably  [Chirayu Desai]
-
-* lineage/wiki
-71a95c6  wiki: Add Asus Zenfone 5Z (Z01R)  [rohan]
-
-* packages/apps/LineageParts
-c77e9f8  ButtonSettings: Add a setting to swap capacitive keys  [Arian]
-5f25790  LineageParts: update preference category title text color  [Timi]
-
-* packages/apps/Trebuchet
-94afb12  Revert "Trebuchet: Add extra privapp permissions xml"  [Michael Bestas]
+3c7f61f  Remove myself from legacy devices  [Michael Bestas]
+e75831e  wiki: Update aleasto nickname  [aleasto]
 
 * vendor/lineage
-9f160e6  lineage: Commonize display_intf_headers for QSSI supported platforms  [Alessandro Astone]
+c3710ba  config: Remove persist.sys.dun.override again  [Han Wang]
 ====================
-     2021-01-06    
+     2021-01-16    
+====================
+
+* device/qcom/sepolicy-legacy-um
+c3a3f76  common: Allow system_app to read fm_radio_device  [Jarl-Penguin]
+
+* lineage/wiki
+a3668cc  wiki: devices: flox: Opt-in to fastboot boot requirement  [Nolen Johnson]
+94d21d4  wiki: templates: Add support for requiring fastboot boot  [Nolen Johnson]
+ae0008d  devices: ms013g: Specify that we use TWRP  [Daniel Jacob Chittoor]
+abf67ee  wiki: Remove leftover custom_recovery_codename  [razorloves]
+da268ae  wiki: Fix us996 supported versions  [razorloves]
+
+* packages/apps/Snap
+b6ebe16  Snap: there is no camera icon shown if have no camera in first boot up  [zhang sanshan]
+====================
+     2021-01-15    
 ====================
 
 * android
-5ae2bba  manifest: Sync QTI bootctrl HAL  [LuK1337]
+dfed70a  manifest: Track our fork of qcom sm8150 display and media HALs  [Peter Cai]
 
 * build/make
-c5362f0  Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27  [Michael Bestas]
-
-* development
-c140a31  Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27  [Michael Bestas]
-
-* device/lineage/sepolicy
-1165bf2  qcom: gmscore_app: Ignore denials on DSP files too  [Bruno Martins]
-0ee6bd8  lineage: Suppress bash related ioctl denials  [Bruno Martins]
-811e656  qcom: gmscore_app: suppress denials on firmware  [Adam Shih]
-
-* external/gptfdisk
-60f8818  Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27  [Michael Bestas]
-
-* frameworks/av
-ea00c9f  Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27  [Michael Bestas]
+78c28df  mainline_system: Exclude vendor.lineage.power@1.0 from artifact path requirements  [Peter Cai]
 
 * frameworks/base
-b0d54ee  SystemUI: add FloatingRotationButton for hw-key devices  [Michal Pražák]
+0177db1  SystemUI: Use AVCProfileMain for screen recorder  [Arne Coucheron]
 
-* frameworks/native
-144dd1e  Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27  [Michael Bestas]
+* hardware/qcom/sm8150/data/ipacfg-mgr
+4f288b0  Partial revert "skip building when BUILD_WITHOUT_VENDOR = true"  [Eamon Powell]
+
+* lineage/mirror
+77fcf3a  Updated aosp-minimal to 14-Jan-2021 13:01 UTC  [Tim Schumacher]
+
+* system/core
+cbb1c72  fastbootd: hacks for legacy  [Alessandro Astone]
+3a16b1b  fastbootd: usb: fallback to v1 descriptors  [Alessandro Astone]
+8d61af8  core: Bring back support for legacy FunctionFS  [Arne Coucheron]
+====================
+     2021-01-14    
+====================
 
 * hardware/lineage/interfaces
-315d284  gnss: fix -Wreorder-init-list  [Nick Desaulniers]
+25c9051  Add 'vendor.' prefix to a vendor HAL service name  [Jaekyun Seok]
+6841153  Add interface info to .rc files  [Felix]
 
-* hardware/qcom-caf/bootctrl
-d1c4ad0  Expose 1.1 impl via cc_defaults  [LuK1337]
-dc8ec5d  Build bootctrl.sdm845 using Android.bp  [Hridya Valsaraju]
-432ead1  Drop dependency on librecovery_updater  [LuK1337]
+* hardware/qcom/sm8150/media
+3042020  vidc: pull in content of libion_path.mk from core-utils  [Peter Cai]
+9c787f6  media: Include display_headers instead of display_intf_headers  [Dyneteve]
 
-* lineage/hudson
-24da43f  hudson: promote s3ve3g{xx,jv,ds} to 17.1  [Francescodario Cuzzocrea]
+* lineage/mirror
+07cfe2d  Updated lineage-minimal to 13-Jan-2021 13:01 UTC  [Tim Schumacher]
+
+* vendor/lineage
+2552c63  lineage: More checks for copying AB backuptool scripts  [Alessandro Astone]
+====================
+     2021-01-13    
+====================
+
+* android
+d42aa2b  lineage: Track wfd-commonsys  [Pig]
+
+* hardware/qcom/sm8150/display
+08cbcb9  Add C2D_FORMAT_BT601_FULLRANGE to C2D_FORMAT_MODE  [Bruno Martins]
+ccfdee7  Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT  [LuK1337]
+a75bd03  gralloc: pull in content of libion_path.mk from core-utils  [Peter Cai]
+65e527f  libhistogram: Use generated kernel headers  [Eamon Powell]
+8407823  Revert "Add conditional controls for Android.bp"  [Dyneteve]
+0979867  sm8150: display: Import display commonsys interfaces namespace  [Alessandro Astone]
 
 * lineage/wiki
-1242f0d  wiki: devices: promote s3ve3g{xx,jv,ds} to 17.1  [Francescodario Cuzzocrea]
+e3a1f03  wiki: How-tos: Add adb over wifi  [Michael W]
+0c8b7ce  wiki: bugreporting: Move logcat requirement to an alert  [Michael W]
 
-* packages/apps/DocumentsUI
-532d2bd  Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27  [Michael Bestas]
-
-* system/bt
-c1f9733  Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27  [Michael Bestas]
-
-* vendor/lineage
-d8ad094  audio: Add missing Effect_Tick.ogg effect sound used by the UI  [Adrian DC]
-
-* vendor/qcom/opensource/commonsys-intf/display
-7884dde  display-commonsys-intf: Define a soong namespace  [Alessandro Astone]
-
-* vendor/qcom/opensource/commonsys/system/bt
-b3a5563  ACL: Drop broadcasts  [Myles Watson]
-f23129f  Fix potential OOB write in libbluetooth  [Ted Wang]
-62a1288  Fix a security issue in sdp_server.cc  [Hansong Zhang]
-37a143b  Check Classic key before cross-key derivation  [Chen Chen]
-26aa768  Send a response to an smp security request depending on the callback event  [Rahul Sabnis]
-1f868de  [system][bt] fix -Wdangling-gsl  [Nick Desaulniers]
-d7ae831  Fix read out of bounds in BtifAvEvent::DeepCopy  [Jakub Pawlowski]
+* vendor/qcom/opensource/wfd-commonsys
+2fefd77  wfd-commonsys: Guard against non-QSSI_SUPPORTED_PLATFORMS  [Bruno Martins]
 ====================
-     2021-01-05    
+     2021-01-12    
 ====================
 
-* device/lineage/sepolicy
-cbba130  common: dynamic: Replace packageblacklist with packageexludelist  [Arian]
+* android
+40cab48  lineage: Sync QCOM USB HAL  [Pig]
 
-* frameworks/base
-364462f  camera: Support exposing aux camera to apps  [Sauhard Pande]
-
-* hardware/lineage/interfaces
-742a534  trust: Include VINTF fragments  [Michael Bestas]
-
-* hardware/qcom-caf/sm8250/media
-41e7d38  media: Add local fastcv header  [LuK1337]
-
-* vendor/lineage
-64b5b1c  partner_gms: Simplify if/else if logic  [Ethan Chen]
+* lineage/mirror
+3eedb67  Updated lineage-minimal to 11-Jan-2021 13:01 UTC  [Tim Schumacher]
