@@ -1,111 +1,105 @@
 ====================
-     2021-01-17    
+     2021-01-24    
 ====================
 
 * frameworks/base
-535b1f6  SeekBarVolumizer: Properly setup the minimum of the seekbar  [Arian Kulmer]
-
-* lineage/wiki
-3d3d520  wiki: Fix FP3 supported versions  [razorloves]
+4f0add3  SeekBarVolumizer: Properly setup the minimum of the seekbar  [Arian Kulmer]
 ====================
-     2021-01-16    
+     2021-01-23    
 ====================
 
-* lineage/hudson
-03e6f51  hudson: Drop find7  [Michael Bestas]
+* hardware/qcom-caf/msm8916/audio
+8048167  hal: msim_voice_extn: Set msim_phone based on phone_type parameter  [Paul Keith]
+cf31899  hal: msim_voice_extn: Use an enum for keeping track of the current SIM  [Paul Keith]
+69465c0  hal: Genericize dual-SIM voice_extn implementation  [Bruno Martins]
+26be886  hal: Add support for Samsung dual-SIM implementation  [ljzyal]
 
-* lineage/wiki
-3c7f61f  Remove myself from legacy devices  [Michael Bestas]
-e75831e  wiki: Update aleasto nickname  [aleasto]
+* hardware/qcom-caf/msm8994/audio
+23c562e  audio: Include media headers  [Arne Coucheron]
+c5417d2  audio: Add audio headers lib  [Arne Coucheron]
 
-* packages/apps/Snap
-b6ebe16  Snap: there is no camera icon shown if have no camera in first boot up  [zhang sanshan]
+* hardware/qcom-caf/msm8994/display
+3bf44d6  display: Add display headers lib  [Arne Coucheron]
 
-* vendor/lineage
-c3710ba  config: Remove persist.sys.dun.override again  [Han Wang]
+* hardware/qcom-caf/msm8994/media
+234b632  media: Include display headers  [Arne Coucheron]
+16125df  media: Add media headers lib  [Arne Coucheron]
+
+* vendor/gms
+c973631  gms: Update from redfin-rq1a.210105.003  [Arian]
+cba6563  gms: Regenerate makefiles  [Arian]
+9a001a4  gms: Switch to standalone extract utils  [Michael Bestas]
 ====================
-     2021-01-15    
-====================
-
-* device/qcom/sepolicy-legacy-um
-c3a3f76  common: Allow system_app to read fm_radio_device  [Jarl-Penguin]
-
-* frameworks/base
-0177db1  SystemUI: Use AVCProfileMain for screen recorder  [Arne Coucheron]
-
-* hardware/qcom/sm8150/data/ipacfg-mgr
-4f288b0  Partial revert "skip building when BUILD_WITHOUT_VENDOR = true"  [Eamon Powell]
-
-* lineage/wiki
-a3668cc  wiki: devices: flox: Opt-in to fastboot boot requirement  [Nolen Johnson]
-94d21d4  wiki: templates: Add support for requiring fastboot boot  [Nolen Johnson]
-ae0008d  devices: ms013g: Specify that we use TWRP  [Daniel Jacob Chittoor]
-abf67ee  wiki: Remove leftover custom_recovery_codename  [razorloves]
-da268ae  wiki: Fix us996 supported versions  [razorloves]
-====================
-     2021-01-14    
+     2021-01-22    
 ====================
 
 * android
-dfed70a  manifest: Track our fork of qcom sm8150 display and media HALs  [Peter Cai]
-
-* build/make
-78c28df  mainline_system: Exclude vendor.lineage.power@1.0 from artifact path requirements  [Peter Cai]
+afc0d41  manifest: Sync 8994 HALS  [Nolen Johnson]
 
 * hardware/lineage/interfaces
-25c9051  Add 'vendor.' prefix to a vendor HAL service name  [Jaekyun Seok]
-6841153  Add interface info to .rc files  [Felix]
+8fac36e  lineage/interfaces: add fastcharge HAL  [Francescodario Cuzzocrea]
 
-* hardware/qcom/sm8150/media
-3042020  vidc: pull in content of libion_path.mk from core-utils  [Peter Cai]
-9c787f6  media: Include display_headers instead of display_intf_headers  [Dyneteve]
+* lineage/wiki
+7c5fb03  wiki: Improve special boot mode naming  [razorloves]
 
-* lineage/mirror
-77fcf3a  Updated aosp-minimal to 14-Jan-2021 13:01 UTC  [Tim Schumacher]
-
-* system/core
-cbb1c72  fastbootd: hacks for legacy  [Alessandro Astone]
-3a16b1b  fastbootd: usb: fallback to v1 descriptors  [Alessandro Astone]
-8d61af8  core: Bring back support for legacy FunctionFS  [Arne Coucheron]
+* packages/apps/Settings
+920510f  Settings: Add FastCharge preference into Battery settings  [Bruno Martins]
 ====================
-     2021-01-13    
-====================
-
-* android
-d42aa2b  lineage: Track wfd-commonsys  [Pig]
-
-* lineage/mirror
-07cfe2d  Updated lineage-minimal to 13-Jan-2021 13:01 UTC  [Tim Schumacher]
-
-* vendor/lineage
-2552c63  lineage: More checks for copying AB backuptool scripts  [Alessandro Astone]
-
-* vendor/qcom/opensource/wfd-commonsys
-2fefd77  wfd-commonsys: Guard against non-QSSI_SUPPORTED_PLATFORMS  [Bruno Martins]
-====================
-     2021-01-12    
+     2021-01-21    
 ====================
 
 * hardware/qcom/sm8150/display
-08cbcb9  Add C2D_FORMAT_BT601_FULLRANGE to C2D_FORMAT_MODE  [Bruno Martins]
-ccfdee7  Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT  [LuK1337]
-a75bd03  gralloc: pull in content of libion_path.mk from core-utils  [Peter Cai]
-65e527f  libhistogram: Use generated kernel headers  [Eamon Powell]
-8407823  Revert "Add conditional controls for Android.bp"  [Dyneteve]
-0979867  sm8150: display: Import display commonsys interfaces namespace  [Alessandro Astone]
+57e1155  display: Drop LOCAL_COPY_HEADERS usage  [Pig]
+
+* hardware/qcom/sm8150/media
+5992430  media: Drop LOCAL_COPY_HEADERS usage  [Pig]
+
+* lineage/hudson
+88bebad  Regenerate device dependency mappings  [razorloves]
+f6d0295  hudson: Ship Moto G5S (montana)  [Jarl-Penguin]
+b19d5bc  hudson: Ship Moto G5 (cedric)  [Jarl-Penguin]
+7465aa4  hudson: Ship Moto E5 Plus (ahannah/hannah/rhannah)  [Jarl-Penguin]
 
 * lineage/wiki
-e3a1f03  wiki: How-tos: Add adb over wifi  [Michael W]
-0c8b7ce  wiki: bugreporting: Move logcat requirement to an alert  [Michael W]
+ae0217e  wiki: Add Moto G5S (montana)  [Jarl-Penguin]
+470c52c  wiki: Add Moto G5 (cedric)  [Jarl-Penguin]
+d025341  wiki: Add Moto E5 Plus (ahannah/hannah/rhannah)  [Jarl-Penguin]
+d4f9b8c  wiki: devices: Promote ether to 17.1  [Nolen Johnson]
+
+* tools/repohooks
+147b6c3  Add aidl-format as a new builtin hook  [Jiyong Park]
 ====================
-     2021-01-11    
+     2021-01-20    
 ====================
 
-* android
-40cab48  lineage: Sync QCOM USB HAL  [Pig]
+* device/google/atv
+9c591b4  products: Include ATV x86_64 target  [Nolen Johnson]
+479e60b  products: Add generic x86_64 TV target  [Nolen Johnson]
 
-* device/xiaomi/davinci
-ddf3fa4  davinci: manifest: Remove Trust interface entry  [Michael Bestas]
+* lineage/hudson
+234e951  hudson: Enter the ether  [Nolen Johnson]
+
+* lineage/wiki
+be3d76e  wiki: Fix recovery mode boot steps on pixels  [razorloves]
+
+* vendor/lineage
+c2d63c6  lineage: targets: Add support for ATV GSI builds  [Nolen Johnson]
+====================
+     2021-01-19    
+====================
+
+* device/lineage/sepolicy
+9840990  lineage: Make FastCharge service discoverable by Settings app  [Bruno Martins]
 
 * lineage/mirror
-3eedb67  Updated lineage-minimal to 11-Jan-2021 13:01 UTC  [Tim Schumacher]
+bbb1713  Updated to 19-Jan-2021 14:02 UTC  [Kevin F. Haggerty]
+69647a9  Updated to 19-Jan-2021 13:12 UTC  [Kevin F. Haggerty]
+
+* lineage/wiki
+ee0b20e  wiki: payton: update maintainers  [Marc Bourgoin]
+====================
+     2021-01-18    
+====================
+
+* lineage/mirror
+65e78e4  Updated to 18-Jan-2021 13:01 UTC  [Tim Schumacher]
