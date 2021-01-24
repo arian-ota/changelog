@@ -1,133 +1,93 @@
 ====================
-     2021-01-17    
+     2021-01-24    
 ====================
 
 * build/make
-27e8cfa  [DNM] Always use release-keys  [Arian]
+0975135  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-55c3b89  common: Label IAntiFlicker live display service  [Arian]
+37a75f9  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-aea5370  SystemUI: get rid of build text in qs  [Joey]
-d893b15  SystemUI: Add anti flicker tile  [Arian]
-05bec289  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
-4be11d7  NfcTile: Don't create an error when editing tiles  [Michael W]
+4af5282  SystemUI: get rid of build text in qs  [Joey]
+f35969a  SystemUI: Add anti flicker tile  [Arian]
+d7d266b  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-4243ab2  Add support for anti flicker mode in LiveDisplay  [Arian]
+09bf442  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-15a988e  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+1a18915  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-28aea9e  Add support for anti flicker mode in LiveDisplay  [Arian]
-a24e1bd  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
-
-* lineage/hudson
-03e6f51  hudson: Drop find7  [Michael Bestas]
-
-* lineage/wiki
-3c7f61f  Remove myself from legacy devices  [Michael Bestas]
-e75831e  wiki: Update aleasto nickname  [aleasto]
+e9cc76b  Add support for anti flicker mode in LiveDisplay  [Arian]
+9167fea  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * packages/apps/LineageParts
-e24257e  Add support for anti flicker mode in LiveDisplay  [Arian]
-90a0c93  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
-
-* packages/apps/Settings
-e7eae87  Settings: Remove empty category from Security Settings  [Michael W]
-
-* packages/apps/Snap
-eb11043  Snap: Remove warnings for generated ids  [Michael W]
+c743eb3  Add support for anti flicker mode in LiveDisplay  [Arian]
+4d667a7  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 
 * packages/apps/Trebuchet
-f0a71bd  Launcher3: update recent tasks header style  [Joey]
+ae6a27e  Launcher3: update recent tasks header style  [Joey]
 ====================
-     2021-01-16    
+     2021-01-23    
 ====================
 
-* frameworks/base
-05ba748  Automatic translation import  [LineageOS Builder]
-
-* lineage/wiki
-a3668cc  wiki: devices: flox: Opt-in to fastboot boot requirement  [Nolen Johnson]
-94d21d4  wiki: templates: Add support for requiring fastboot boot  [Nolen Johnson]
-ae0008d  devices: ms013g: Specify that we use TWRP  [Daniel Jacob Chittoor]
-
-* packages/apps/Etar
-fa1aaae  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/LineageParts
-996d22c  Automatic translation import  [LineageOS Builder]
+* device/lineage/sepolicy
+eee48ec  lineage: Make FastCharge service discoverable by Settings app  [Bruno Martins]
+97266da  sepolicy: add hal_lineage_fastcharge  [Francescodario Cuzzocrea]
 
 * packages/apps/Settings
-da99b1e  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/SetupWizard
-5760444  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Snap
-9869998  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Trebuchet
-6bd5759  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Updater
-b2218df  Automatic translation import  [LineageOS Builder]
-
-* packages/inputmethods/LatinIME
-67c7c55  Automatic translation import  [LineageOS Builder]
-
-* packages/resources/devicesettings
-2165d42  Automatic translation import  [LineageOS Builder]
+cfc0a27  Settings: Add FastCharge preference into Battery settings  [Bruno Martins]
 ====================
-     2021-01-15    
-====================
-
-* frameworks/av
-c4a1c73  Merge tag 'android-security-10.0.0_r50' into staging/lineage-17.1_merge_android-security-10.0.0_r50  [Kevin F. Haggerty]
-
-* lineage/mirror
-77fcf3a  Updated aosp-minimal to 14-Jan-2021 13:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-abf67ee  wiki: Remove leftover custom_recovery_codename  [razorloves]
-da268ae  wiki: Fix us996 supported versions  [razorloves]
-====================
-     2021-01-14    
-====================
-
-* lineage/mirror
-07cfe2d  Updated lineage-minimal to 13-Jan-2021 13:01 UTC  [Tim Schumacher]
-====================
-     2021-01-13    
-====================
-====================
-     2021-01-12    
-====================
-
-* lineage/mirror
-3eedb67  Updated lineage-minimal to 11-Jan-2021 13:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-e3a1f03  wiki: How-tos: Add adb over wifi  [Michael W]
-0c8b7ce  wiki: bugreporting: Move logcat requirement to an alert  [Michael W]
-====================
-     2021-01-11    
+     2021-01-22    
 ====================
 
 * lineage/hudson
-d21fb22  hudson: Promote kiwi to 17.1  [Michael W]
-
-* lineage/mirror
-0ba8734  Updated lineage-minimal to 10-Jan-2021 13:01 UTC  [Tim Schumacher]
+88bebad  Regenerate device dependency mappings  [razorloves]
 
 * lineage/wiki
-ac7997a  kiwi: Move to 17.1  [Michael W]
+7c5fb03  wiki: Improve special boot mode naming  [razorloves]
+====================
+     2021-01-21    
+====================
 
-* packages/apps/LineageParts
-4b295f9  LineageParts: Stats: Improve getting a valid carrier name  [Michael W]
+* lineage/hudson
+f6d0295  hudson: Ship Moto G5S (montana)  [Jarl-Penguin]
+b19d5bc  hudson: Ship Moto G5 (cedric)  [Jarl-Penguin]
+7465aa4  hudson: Ship Moto E5 Plus (ahannah/hannah/rhannah)  [Jarl-Penguin]
+234e951  hudson: Enter the ether  [Nolen Johnson]
 
-* packages/inputmethods/LatinIME
-92990f8  LatinIME: Fix NPE in getKeyboardThemeName  [Michael W]
+* lineage/wiki
+ae0217e  wiki: Add Moto G5S (montana)  [Jarl-Penguin]
+470c52c  wiki: Add Moto G5 (cedric)  [Jarl-Penguin]
+d025341  wiki: Add Moto E5 Plus (ahannah/hannah/rhannah)  [Jarl-Penguin]
+d4f9b8c  wiki: devices: Promote ether to 17.1  [Nolen Johnson]
+
+* tools/repohooks
+147b6c3  Add aidl-format as a new builtin hook  [Jiyong Park]
+====================
+     2021-01-20    
+====================
+
+* lineage/mirror
+bbb1713  Updated to 19-Jan-2021 14:02 UTC  [Kevin F. Haggerty]
+69647a9  Updated to 19-Jan-2021 13:12 UTC  [Kevin F. Haggerty]
+
+* lineage/wiki
+be3d76e  wiki: Fix recovery mode boot steps on pixels  [razorloves]
+
+* vendor/lineage
+e87a909  Add nvidia product  [Aaron Kling]
+====================
+     2021-01-19    
+====================
+
+* lineage/mirror
+65e78e4  Updated to 18-Jan-2021 13:01 UTC  [Tim Schumacher]
+
+* lineage/wiki
+ee0b20e  wiki: payton: update maintainers  [Marc Bourgoin]
+====================
+     2021-01-18    
+====================
