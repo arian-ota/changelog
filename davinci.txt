@@ -1,11 +1,20 @@
 ====================
-     2021-01-24    
+     2021-01-28    
+====================
+====================
+     2021-01-27    
+====================
+====================
+     2021-01-26    
+====================
+====================
+     2021-01-25    
 ====================
 
 * frameworks/base
-4f0add3  SeekBarVolumizer: Properly setup the minimum of the seekbar  [Arian Kulmer]
+b22bd01  SeekBarVolumizer: Properly setup the minimum of the seekbar  [Arian Kulmer]
 ====================
-     2021-01-23    
+     2021-01-24    
 ====================
 
 * hardware/qcom-caf/msm8916/audio
@@ -13,6 +22,17 @@
 cf31899  hal: msim_voice_extn: Use an enum for keeping track of the current SIM  [Paul Keith]
 69465c0  hal: Genericize dual-SIM voice_extn implementation  [Bruno Martins]
 26be886  hal: Add support for Samsung dual-SIM implementation  [ljzyal]
+
+* vendor/gms
+c973631  gms: Update from redfin-rq1a.210105.003  [Arian]
+cba6563  gms: Regenerate makefiles  [Arian]
+9a001a4  gms: Switch to standalone extract utils  [Michael Bestas]
+====================
+     2021-01-23    
+====================
+
+* hardware/lineage/interfaces
+8fac36e  lineage/interfaces: add fastcharge HAL  [Francescodario Cuzzocrea]
 
 * hardware/qcom-caf/msm8994/audio
 23c562e  audio: Include media headers  [Arne Coucheron]
@@ -25,34 +45,17 @@ c5417d2  audio: Add audio headers lib  [Arne Coucheron]
 234b632  media: Include display headers  [Arne Coucheron]
 16125df  media: Add media headers lib  [Arne Coucheron]
 
-* vendor/gms
-c973631  gms: Update from redfin-rq1a.210105.003  [Arian]
-cba6563  gms: Regenerate makefiles  [Arian]
-9a001a4  gms: Switch to standalone extract utils  [Michael Bestas]
-====================
-     2021-01-22    
-====================
-
-* android
-afc0d41  manifest: Sync 8994 HALS  [Nolen Johnson]
-
-* hardware/lineage/interfaces
-8fac36e  lineage/interfaces: add fastcharge HAL  [Francescodario Cuzzocrea]
-
 * lineage/wiki
 7c5fb03  wiki: Improve special boot mode naming  [razorloves]
 
 * packages/apps/Settings
 920510f  Settings: Add FastCharge preference into Battery settings  [Bruno Martins]
 ====================
-     2021-01-21    
+     2021-01-22    
 ====================
 
-* hardware/qcom/sm8150/display
-57e1155  display: Drop LOCAL_COPY_HEADERS usage  [Pig]
-
-* hardware/qcom/sm8150/media
-5992430  media: Drop LOCAL_COPY_HEADERS usage  [Pig]
+* android
+afc0d41  manifest: Sync 8994 HALS  [Nolen Johnson]
 
 * lineage/hudson
 88bebad  Regenerate device dependency mappings  [razorloves]
@@ -64,42 +67,3 @@ b19d5bc  hudson: Ship Moto G5 (cedric)  [Jarl-Penguin]
 ae0217e  wiki: Add Moto G5S (montana)  [Jarl-Penguin]
 470c52c  wiki: Add Moto G5 (cedric)  [Jarl-Penguin]
 d025341  wiki: Add Moto E5 Plus (ahannah/hannah/rhannah)  [Jarl-Penguin]
-d4f9b8c  wiki: devices: Promote ether to 17.1  [Nolen Johnson]
-
-* tools/repohooks
-147b6c3  Add aidl-format as a new builtin hook  [Jiyong Park]
-====================
-     2021-01-20    
-====================
-
-* device/google/atv
-9c591b4  products: Include ATV x86_64 target  [Nolen Johnson]
-479e60b  products: Add generic x86_64 TV target  [Nolen Johnson]
-
-* lineage/hudson
-234e951  hudson: Enter the ether  [Nolen Johnson]
-
-* lineage/wiki
-be3d76e  wiki: Fix recovery mode boot steps on pixels  [razorloves]
-
-* vendor/lineage
-c2d63c6  lineage: targets: Add support for ATV GSI builds  [Nolen Johnson]
-====================
-     2021-01-19    
-====================
-
-* device/lineage/sepolicy
-9840990  lineage: Make FastCharge service discoverable by Settings app  [Bruno Martins]
-
-* lineage/mirror
-bbb1713  Updated to 19-Jan-2021 14:02 UTC  [Kevin F. Haggerty]
-69647a9  Updated to 19-Jan-2021 13:12 UTC  [Kevin F. Haggerty]
-
-* lineage/wiki
-ee0b20e  wiki: payton: update maintainers  [Marc Bourgoin]
-====================
-     2021-01-18    
-====================
-
-* lineage/mirror
-65e78e4  Updated to 18-Jan-2021 13:01 UTC  [Tim Schumacher]
