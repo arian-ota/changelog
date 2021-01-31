@@ -1,91 +1,73 @@
 ====================
-     2021-01-24    
+     2021-01-31    
 ====================
 
 * build/make
-b49f2cc  [DNM] Always use release-keys  [Arian]
+1aed3f9  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-72896f8  common: Label IAntiFlicker live display service  [Arian]
+9aa371c  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-29b9386  SystemUI: get rid of build text in qs  [Joey]
-9bb9097  SystemUI: Add anti flicker tile  [Arian]
-052aa1cb  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+22ab17b  SystemUI: get rid of build text in qs  [Joey]
+ddff5f9  SystemUI: Add anti flicker tile  [Arian]
+4ab507a  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-34fe5f1  Add support for anti flicker mode in LiveDisplay  [Arian]
+c5756b5  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-59282b7  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+dd0240e  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-00c3318  Add support for anti flicker mode in LiveDisplay  [Arian]
-a54974d  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+b30e434  Add support for anti flicker mode in LiveDisplay  [Arian]
+220e9a4  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * packages/apps/LineageParts
-2efd6b0  Add support for anti flicker mode in LiveDisplay  [Arian]
-7e26b76  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+2e55356  Add support for anti flicker mode in LiveDisplay  [Arian]
+ed0b6a7  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 
 * packages/apps/Trebuchet
-755e599  Launcher3: update recent tasks header style  [Joey]
+f9037b8  Launcher3: update recent tasks header style  [Joey]
 ====================
-     2021-01-23    
-====================
-
-* device/lineage/sepolicy
-eee48ec  lineage: Make FastCharge service discoverable by Settings app  [Bruno Martins]
-97266da  sepolicy: add hal_lineage_fastcharge  [Francescodario Cuzzocrea]
-
-* packages/apps/Settings
-cfc0a27  Settings: Add FastCharge preference into Battery settings  [Bruno Martins]
-====================
-     2021-01-22    
-====================
-
-* lineage/wiki
-7c5fb03  wiki: Improve special boot mode naming  [razorloves]
-====================
-     2021-01-21    
+     2021-01-30    
 ====================
 
 * lineage/hudson
-88bebad  Regenerate device dependency mappings  [razorloves]
-f6d0295  hudson: Ship Moto G5S (montana)  [Jarl-Penguin]
-b19d5bc  hudson: Ship Moto G5 (cedric)  [Jarl-Penguin]
-7465aa4  hudson: Ship Moto E5 Plus (ahannah/hannah/rhannah)  [Jarl-Penguin]
-234e951  hudson: Enter the ether  [Nolen Johnson]
+e0ab036  hudson: Drop Redmi note 7 (lavender)  [Erfan Abdi]
+e8e261f  hudson: Drop exynos 9810 devices  [Erfan Abdi]
+
+* lineage/mirror
+20ff477  Updated aosp-minimal to 29-Jan-2021 17:02 UTC  [Tim Schumacher]
 
 * lineage/wiki
-ae0217e  wiki: Add Moto G5S (montana)  [Jarl-Penguin]
-470c52c  wiki: Add Moto G5 (cedric)  [Jarl-Penguin]
-d025341  wiki: Add Moto E5 Plus (ahannah/hannah/rhannah)  [Jarl-Penguin]
-d4f9b8c  wiki: devices: Promote ether to 17.1  [Nolen Johnson]
+421c499  wiki: Improve addon install terminology  [razorloves]
+e4a36dc  wiki: Remove my name from ginkgo and lavender  [Erfan Abdi]
+a5d3845  wiki: Drop exynos 9810 devices  [Erfan Abdi]
 
 * tools/repohooks
-147b6c3  Add aidl-format as a new builtin hook  [Jiyong Park]
+8349d89  config: drop Python 2 support  [Mike Frysinger]
 ====================
-     2021-01-20    
-====================
-
-* lineage/mirror
-bbb1713  Updated to 19-Jan-2021 14:02 UTC  [Kevin F. Haggerty]
-69647a9  Updated to 19-Jan-2021 13:12 UTC  [Kevin F. Haggerty]
-
-* lineage/wiki
-be3d76e  wiki: Fix recovery mode boot steps on pixels  [razorloves]
-
-* vendor/lineage
-e87a909  Add nvidia product  [Aaron Kling]
-====================
-     2021-01-19    
+     2021-01-29    
 ====================
 
-* lineage/mirror
-65e78e4  Updated to 18-Jan-2021 13:01 UTC  [Tim Schumacher]
+* packages/apps/Email
+eb0b811  Revert "Email: Fix leaked ServiceConnection"  [Michael W]
+====================
+     2021-01-28    
+====================
 
-* lineage/wiki
-ee0b20e  wiki: payton: update maintainers  [Marc Bourgoin]
+* device/xiaomi/davinci
+3e4da9a  Revert "davinci: rootdir: Set schedtune.boost to 1"  [Arian]
 ====================
-     2021-01-18    
+     2021-01-27    
 ====================
+====================
+     2021-01-26    
+====================
+====================
+     2021-01-25    
+====================
+
+* build/make
+d7f120f  check_boot_jars: Add Nvidia services to whitelist  [Ricky Cheung]
