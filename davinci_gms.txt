@@ -1,111 +1,116 @@
 ====================
-     2021-02-01    
+     2021-02-09    
 ====================
+
+* device/lineage/sepolicy
+5653b96  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-fd7d843  SeekBarVolumizer: Properly setup the minimum of the seekbar  [Arian Kulmer]
+5a9533e  SystemUI: Add anti flicker tile  [Arian]
 
-* packages/apps/Settings
-2dd2222  KeyboardSettings: Add a RemotePreference for device-specific panel  [Bruno Martins]
+* packages/apps/LineageParts
+25c8451  Add a toggle for anti flicker mode in LiveDisplay settings  [Arian]
+
+* system/core
+f29ed7d  init: Don't run update_sys_usb_config if /data isn't mounted  [Michael Bestas]
 ====================
-     2021-01-31    
+     2021-02-08    
 ====================
 
-* lineage/wiki
-421c499  wiki: Improve addon install terminology  [razorloves]
+* vendor/lineage
+c63fa84  backuptool: Support seamless backup and restore to extra partitions  [Alessandro Astone]
+6245873  backuptool_ab: Make tmp actually tmpfs  [Alessandro Astone]
 ====================
-     2021-01-30    
+     2021-02-07    
 ====================
+
+* frameworks/av
+da85637  Merge tag 'android-11.0.0_r29' of https://android.googlesource.com/platform/frameworks/av into staging/lineage-18.1_merge-android-11.0.0_r29  [Kevin F. Haggerty]
 
 * frameworks/base
-a6eff9c  AudioService: Remove Analog Dock from fixed-volume devices  [Vachounet]
+d7c3493  Merge tag 'android-11.0.0_r29' of https://android.googlesource.com/platform/frameworks/base into staging/lineage-18.1_merge-android-11.0.0_r29  [Kevin F. Haggerty]
 
-* lineage/hudson
-e0ab036  hudson: Drop Redmi note 7 (lavender)  [Erfan Abdi]
-e8e261f  hudson: Drop exynos 9810 devices  [Erfan Abdi]
+* hardware/lineage/interfaces
+04bd93c  Introduce anti flicker LiveDisplay interface  [Arian]
 
-* lineage/mirror
-20ff477  Updated aosp-minimal to 29-Jan-2021 17:02 UTC  [Tim Schumacher]
+* lineage-sdk
+91bd3a8  Introduce anti flicker mode in LiveDisplay  [Arian]
 
-* lineage/wiki
-e4a36dc  wiki: Remove my name from ginkgo and lavender  [Erfan Abdi]
-a5d3845  wiki: Drop exynos 9810 devices  [Erfan Abdi]
-
-* tools/repohooks
-8349d89  config: drop Python 2 support  [Mike Frysinger]
+* packages/apps/LineageParts
+dcbb629  profiles: SeekBarVolumizer: Properly setup the minimum of the seekbar  [Arian Kulmer]
+7302037  profiles: Import SeekBarVolumizer for usage in SetupActionsfragment  [Arian]
 ====================
-     2021-01-29    
+     2021-02-06    
+====================
+
+* external/chromium-webview
+d8c9c41  Update Chromium Webview to 88.0.4324.152  [Kevin F. Haggerty]
+
+* frameworks/base
+1a41725  No need to 'addChild' when start 'FLAG_ACTIVITY_CLEAR_TOP' Activity.  [yangyankai1]
+73c1924  Fix a bug in the USAP Pool refill logic.  [Chris Wailes]
+====================
+     2021-02-05    
 ====================
 
 * android
-bf91c0f  lineage: Enable msm8952 HALs  [Michael Bestas]
+2572a5b  manifest: android-11.0.0_r27 -> android-11.0.0_r29  [Kevin F. Haggerty]
 
-* packages/apps/Gallery2
-4e96ca6  Gallery2: dark theme  [Timi]
+* build/make
+0e7a236  Merge tag 'android-11.0.0_r29' into staging/lineage-18.1_merge-android-11.0.0_r29  [Kevin F. Haggerty]
+
+* frameworks/base
+ea71eff  Partially revert "Wake up to lock screen when bouncer is visible"  [Sultan Alsawaf]
+bf766d5  PhoneWindowManager: Only react to camera key when necessary  [Michael W]
+
+* frameworks/native
+f1201c6  Merge tag 'android-11.0.0_r29' into staging/lineage-18.1_merge-android-11.0.0_r29  [Kevin F. Haggerty]
+
+* packages/apps/Bluetooth
+cc597b3  Merge tag 'android-11.0.0_r29' into staging/lineage-18.1_merge-android-11.0.0_r29  [Kevin F. Haggerty]
 
 * packages/apps/Settings
-c98196f  Settings: Remove empty category from Security Settings  [Michael W]
-====================
-     2021-01-28    
-====================
+513e45d  Merge tag 'android-11.0.0_r29' into staging/lineage-18.1_merge-android-11.0.0_r29  [Kevin F. Haggerty]
 
-* device/xiaomi/davinci
-e142b77  davinci: Builds have overriding commands  [Dan Willemsen]
-30324b1  davinci: init: Workaround safetynet  [Arian]
-57c936d  davinci: Build fingerprint service from source  [Arian]
-8d3c631  davinci: Update from 21.1.20  [Arian]
-2094d25  davinci: Strip doze from parts and rename to XiaomiPopupCamera  [Arian]
-e541912  davinci: parts: Use all shared resources from devicesettings  [Bruno Martins]
-8ab1e78  davinci: Inherit from sm6150-common  [Arian]
+* packages/apps/SetupWizard
+2b90a7f  SetupWizard: Add device specific hook page  [Michael W]
 
-* device/xiaomi/sm6150-common
-e146d03  sm6150-common: Enable LED based vibrator  [Bharat Pawar]
-35d94ed  sm6150-common: Disable vibrator HAL interface  [Bharat Pawar]
-5ed199c  sm6150-common: Remove PRODUCT_AAPT config  [Anton Hansson]
-ef4b218  sm6150-common: Don't build tinymix  [Michael Bestas]
-5cbde0e  Revert "davinci: Builds have overriding commands"  [Arian]
-10d4cea  sm6150-common: Build open source bluetooth interfaces from source  [Arian]
-26d2920  sm6150-common: Drop prebuilt libwfdaac  [Bruno Martins]
-d077ccb  sm6150-common: Pack libwfdaac_vendor for WFD  [Indranil Chakraborty]
-1d860e7  sm6150-common: Deploy libwfdaac_proprietary for miracast  [Lubin Yin]
-d6e2d76  sm6150-common: fingerprint: Setup file permissions for goodix and fpc  [Arian]
-4cf733f  sm6150-common: fingerprint: Don't depend on fingerprintextension  [Arian]
-cb0132c  sm6150-common: fingerprint: Add Xiaomi fingerprintextension support  [Pig]
-f5a493a  sm6150-common: fingerprint: Allow loading FOD modules  [Bruno Martins]
-83a9e17  sm6150-common: fingerprint: Load goodix HAL if loading the fpc HAL fails  [Christopher R. Palmer]
-3b46e02  sm6150-common: Rename fingerprint service  [Arian]
-952b74c  Revert "fpc: keep fpc in system-background"  [Jake Weinstein]
-6c41e7d  sm6150-common: Import fingerprint service  [Arian]
-ed61a11  sm6150-common: lights: Dynamically pick the left or white LED path  [Arian]
-99928a3  sm6150-common: Update from 21.1.20  [Arian]
-889aac8  sm6150-common: Disable qti-telephony-common injection for time being  [LuK1337]
-5e27de7  sm6150-common: Pin widevine firmware and liboemcrypto from 12.0.3.0.QFJMIXM  [Arian]
-fcf757a  sm6150-common: Enable UXE and IOP in perfconfigstore  [Jake Weinstein]
-c17ff11  sm6150-common: perf: Revert Xiaomi's perfboostconfig changes  [Arian]
-6f0657d  sm6150-common: steppe: irqbalance: correct the arch_mem_timer interrupt  [Srinivas Ramana]
-09ddc78  sm6150-common: Move perf configs to device tree  [raghavt20]
-a7093b2  sm6150-common: Strip popupcamera from parts  [Arian]
-030f166  sm6150-common: parts: Use all shared resources from devicesettings  [Bruno Martins]
-c80e241  sm6150-common: Transform davinci into common tree  [raghavt20]
+* packages/providers/ContactsProvider
+755039c  Merge tag 'android-11.0.0_r29' into staging/lineage-18.1_merge-android-11.0.0_r29  [Kevin F. Haggerty]
 
-* kernel/xiaomi/sm6150
-23b125a  input: touchscreen: gt9886: Report BTN_INFO key events only when fod is in use  [trpsl]
+* system/core
+a231505  Merge tag 'android-11.0.0_r29' into staging/lineage-18.1_merge-android-11.0.0_r29  [Kevin F. Haggerty]
 
-* vendor/qcom/opensource/power
-3273dc9  power: Handle launch and interaction hints for sm6150  [Arian]
+* vendor/lineage
+2263d4b  fixup! Dialer: Add visual voicemail configs from Google Dialer  [Eamon Powell]
+04bbc65  Dialer: Add visual voicemail configs from Google Dialer  [Danny Lin]
 
-* vendor/xiaomi
-d39e410  {davinci,sm6150-common}: Update vendor from 21.1.20  [Arian]
+* vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
+9a8c62b  Check permission before sending batch scan result  [Jakub Pawlowski]
+3e5a7fa  Check if advertiserId value matches valid advertiser  [Jakub Pawlowski]
 ====================
-     2021-01-27    
-====================
-====================
-     2021-01-26    
+     2021-02-04    
 ====================
 
-* hardware/qcom-caf/msm8916/audio
-8eea101  hal: Fix warnings  [Michael W]
+* lineage/mirror
+e116655  Updated aosp-minimal to 03-Feb-2021 13:01 UTC  [Tim Schumacher]
 
-* hardware/qcom-caf/msm8952/media
-7514c22  mm-video-v4l2: venc: Advertise constrained profiles for AVC encoder  [Santhosh Behara]
-f7640fc  mm-video-v4l2: vidc: Update supported Level values  [Praneeth Paladugu]
+* system/core
+e8dcaba  fs_mgr: Allow remounts with Magisk installed  [Bruno Martins]
+79f606e  liblog: Always report as debuggable when building userdebug/eng  [Bruno Martins]
+====================
+     2021-02-03    
+====================
+
+* lineage/mirror
+a1693c2  Updated aosp-minimal to 02-Feb-2021 13:01 UTC  [Tim Schumacher]
+8d3f411  aosp-minimal: Always add platform/manifest  [Chirayu Desai]
+
+* lineage/wiki
+d23bc0f  wiki: Correct d803 architecture  [Michael W]
+
+* tools/repohooks
+f1e0b3b  android_test_mapping_format: drop Python 2 support  [Mike Frysinger]
+
+* vendor/lineage
+ec016fd  qcom: Add bengal platform  [TheMalachite]
