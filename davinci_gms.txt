@@ -1,127 +1,82 @@
 ====================
-     2021-02-07    
+     2021-02-14    
 ====================
 
 * build/make
-5d83bf8  [DNM] Always use release-keys  [Arian]
+8f784ec  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-9e10931  common: Label IAntiFlicker live display service  [Arian]
+87ffbe5  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-2936723  SystemUI: get rid of build text in qs  [Joey]
-631f63a  SystemUI: Add anti flicker tile  [Arian]
-cb1d451  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
-fa7f48e  Merge tag 'android-security-10.0.0_r51' of https://android.googlesource.com/platform/frameworks/base into staging/lineage-17.1_merge_android-security-10.0.0_r51  [Kevin F. Haggerty]
+47b272d  SystemUI: get rid of build text in qs  [Joey]
+e6180dc  SystemUI: Add anti flicker tile  [Arian]
+98cbfd9  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-9378780  Add support for anti flicker mode in LiveDisplay  [Arian]
+d70d41c  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-af85c58  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+764789e  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-099f7fa  Add support for anti flicker mode in LiveDisplay  [Arian]
-ba6fb8a  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+4b40bba  Add support for anti flicker mode in LiveDisplay  [Arian]
+65a4874  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * packages/apps/LineageParts
-0a3da1c  Add support for anti flicker mode in LiveDisplay  [Arian]
-9178302  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+633382d  Add support for anti flicker mode in LiveDisplay  [Arian]
+43911df  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+====================
+     2021-02-13    
+====================
+
+* lineage/wiki
+9c7c8d4  d803: Bring instructions up to date with other g2 variants  [Alessandro Astone]
+====================
+     2021-02-12    
+====================
+
+* lineage/mirror
+cb4de66  Updated to 12-Feb-2021 16:20 UTC  [Kevin F. Haggerty]
+
+* system/bt
+dade8ce  Interop Workaround: Add Joy-Con  [cncn]
+====================
+     2021-02-11    
+====================
+
+* external/chromium-webview
+c7ee4db  Chomium Webview repository administrative note  [Kevin F. Haggerty]
+
+* lineage/hudson
+8e8f7bc  hudson: Introduce the Motorola Edge  [Joshua Blanchard]
+
+* lineage/mirror
+69f0de0  Updated aosp-minimal to 11-Feb-2021 13:01 UTC  [Tim Schumacher]
+
+* lineage/wiki
+f706719  wiki: Add Motorola Edge (racer)  [Joshua Blanchard]
+====================
+     2021-02-10    
+====================
+
+* frameworks/base
+86d76da  Add uhid group to system_server  [Siarhei Vishniakou]
+
+* lineage/mirror
+c2d4c98  Updated aosp-minimal to 10-Feb-2021 13:01 UTC  [Tim Schumacher]
 
 * packages/apps/Trebuchet
-31adc6d  Launcher3: update recent tasks header style  [Joey]
-
-* system/core
-2d4f2d2  Merge tag 'android-security-10.0.0_r51' of https://android.googlesource.com/platform/system/core into staging/lineage-17.1_merge_android-security-10.0.0_r51  [Kevin F. Haggerty]
+d876408  Trebuchet: Show labels in landscape by default on tablets  [Billy Laws]
 ====================
-     2021-02-06    
+     2021-02-09    
+====================
+
+* lineage/mirror
+e422c3f  Updated to 08-Feb-2021 20:50 UTC  [Kevin F. Haggerty]
+====================
+     2021-02-08    
 ====================
 
 * build/make
-cb53169  Bump Security String to 2021-02-05  [Kevin F. Haggerty]
-
-* external/chromium-webview
-d8c9c41  Update Chromium Webview to 88.0.4324.152  [Kevin F. Haggerty]
-====================
-     2021-02-05    
-====================
-
-* frameworks/base
-acbd268  Partially revert "Wake up to lock screen when bouncer is visible"  [Sultan Alsawaf]
-====================
-     2021-02-04    
-====================
-
-* lineage/mirror
-e116655  Updated aosp-minimal to 03-Feb-2021 13:01 UTC  [Tim Schumacher]
-
-* system/core
-3032c7a  fs_mgr: Allow remounts with Magisk installed  [Bruno Martins]
-01266f5  liblog: Always report as debuggable when building userdebug/eng  [Bruno Martins]
-====================
-     2021-02-03    
-====================
-
-* android
-9c7964f  Track our own fork(s) for 2021-02 ASB patching  [Kevin F. Haggerty]
-
-* external/libavc
-2438701  Merge tag 'android-security-10.0.0_r51' of https://android.googlesource.com/platform/external/libavc into staging/lineage-17.1_merge_android-security-10.0.0_r51  [Kevin F. Haggerty]
-
-* external/wpa_supplicant_8
-609458d  Merge tag 'android-security-10.0.0_r51' of https://android.googlesource.com/platform/external/wpa_supplicant_8 into staging/lineage-17.1_merge_android-security-10.0.0_r51  [Kevin F. Haggerty]
-
-* frameworks/native
-8fec0de  Merge tag 'android-security-10.0.0_r51' of https://android.googlesource.com/platform/frameworks/native into staging/lineage-17.1_merge_android-security-10.0.0_r51  [Kevin F. Haggerty]
-
-* libcore
-2ddd1b7  Merge tag 'android-security-10.0.0_r51' of https://android.googlesource.com/platform/libcore into staging/lineage-17.1_merge_android-security-10.0.0_r51  [Kevin F. Haggerty]
-
-* lineage/mirror
-a1693c2  Updated aosp-minimal to 02-Feb-2021 13:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-d23bc0f  wiki: Correct d803 architecture  [Michael W]
-
-* packages/apps/Bluetooth
-955bc9d  Merge tag 'android-security-10.0.0_r51' of https://android.googlesource.com/platform/packages/apps/Bluetooth into staging/lineage-17.1_merge_android-security-10.0.0_r51  [Kevin F. Haggerty]
-
-* packages/apps/Settings
-db65184  Merge tag 'android-security-10.0.0_r51' of https://android.googlesource.com/platform/packages/apps/Settings into staging/lineage-17.1_merge_android-security-10.0.0_r51  [Kevin F. Haggerty]
-
-* packages/providers/MediaProvider
-914e836  Merge tag 'android-security-10.0.0_r51' of https://android.googlesource.com/platform/packages/providers/MediaProvider into staging/lineage-17.1_merge_android-security-10.0.0_r51  [Kevin F. Haggerty]
-
-* tools/repohooks
-f1e0b3b  android_test_mapping_format: drop Python 2 support  [Mike Frysinger]
-
-* vendor/lineage
-9e8a2e3  qcom: Add bengal platform  [TheMalachite]
-
-* vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
-0b5e81e  Check permission before sending batch scan result  [Jakub Pawlowski]
-4294b2a  Check if advertiserId value matches valid advertiser  [Jakub Pawlowski]
-====================
-     2021-02-02    
-====================
-
-* lineage/hudson
-c714e23  hudson: Promote s2 to 17.1  [tImIbreakdown]
-
-* lineage/mirror
-8d3f411  aosp-minimal: Always add platform/manifest  [Chirayu Desai]
-
-* lineage/wiki
-042b33a  wiki: Add my name to lavender  [Usaamah Patel]
-
-* tools/repohooks
-42e4aa4  config: switch to stdlib get() fallback logic  [Mike Frysinger]
-====================
-     2021-02-01    
-====================
-
-* lineage/hudson
-22be650  hudson: Re-add Redmi Note 7 (lavender)  [Usaamah Patel]
-
-* lineage/wiki
-8e5e64b  wiki: Promote s2 to 17.1  [tImIbreakdown]
+0d70257  build tools: Fix TypeError when signing builds with Python3  [ThePiGuy]
