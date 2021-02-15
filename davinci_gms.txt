@@ -1,116 +1,464 @@
 ====================
-     2021-02-09    
+     2021-02-15    
 ====================
 
 * device/lineage/sepolicy
-5653b96  common: Label IAntiFlicker live display service  [Arian]
+3b5b606  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-5a9533e  SystemUI: Add anti flicker tile  [Arian]
+dceb105  SystemUI: Add anti flicker tile  [Arian]
 
 * packages/apps/LineageParts
-25c8451  Add a toggle for anti flicker mode in LiveDisplay settings  [Arian]
+fdd2f00  Add a toggle for anti flicker mode in LiveDisplay settings  [Arian]
 
-* system/core
-f29ed7d  init: Don't run update_sys_usb_config if /data isn't mounted  [Michael Bestas]
+* packages/apps/Snap
+97755cb  Revert "Snap: Let mediaprovider add entry for newly taken photos"  [Arne Coucheron]
 ====================
-     2021-02-08    
-====================
-
-* vendor/lineage
-c63fa84  backuptool: Support seamless backup and restore to extra partitions  [Alessandro Astone]
-6245873  backuptool_ab: Make tmp actually tmpfs  [Alessandro Astone]
-====================
-     2021-02-07    
+     2021-02-14    
 ====================
 
-* frameworks/av
-da85637  Merge tag 'android-11.0.0_r29' of https://android.googlesource.com/platform/frameworks/av into staging/lineage-18.1_merge-android-11.0.0_r29  [Kevin F. Haggerty]
+* device/xiaomi/davinci
+063b3ab  davinci: parts: Tune the LED effect for popup  [Arian]
+
+* device/xiaomi/sm6150-common
+987fe67  Revert "sm6150-common: livedisplay: Add anti flicker support"  [Arian]
+4db1b37  sm6150-common: rootdir: Setup all permissions for left and right LED  [Arian]
+6fafa7f  Revert "davinci: rootdir: Drop led permissions from ueventd"  [Arian]
+
+* kernel/xiaomi/sm6150
+4a80b44  kernel/irq: Silence 'irq no longer affine' messages  [Yaroslav Furman]
+00e2316  drm/msm: msm_drv: Mark IRQ as performance critical  [Yaroslav Furman]
+a046893  drm/msm: Only force actual screen threads to big cluster  [Yaroslav Furman]
+f1a1308  kernel: Only set one CPU in the default IRQ affinity mask  [Sultan Alsawaf]
+88b74a8  drm/msm: Mark important kthreads as performance critical  [Sultan Alsawaf]
+9340cf9  kernel: irq: add more backup pathways for perf critical IRQs  [Yaroslav Furman]
+78ab305  kernel: irq: properly disallow userspace from changing IRQs affinity  [Yaroslav Furman]
+eb6c3be  kernel: irq: manage: use a different way of affining perf IRQs  [Yaroslav Furman]
+e9f8253  drm: Mark IRQ as performance critical  [Sultan Alsawaf]
+624c65e4  msm: kgsl: Mark IRQ and worker thread as performance critical  [Sultan Alsawaf]
+cf1c875  kernel: Don't allow IRQ affinity masks to have more than one CPU  [Sultan Alsawaf]
+7373369  kernel: Add API to mark IRQs and kthreads as performance critical  [Sultan Alsawaf]
+f5152dc  ARM64: configs: {davinci,phoenix,toco,tucana}: Declare cpu masks  [Mustafa]
+8152817  cpumask: Add cpumasks for big and LITTLE CPU clusters  [Sultan Alsawaf]
+4790f0a  msm: kgsl: Increase worker thread priority  [Sultan Alsawaf]
+90fb9e1  binder: set binder_debug_mask=0 to suppress logging  [John Dias]
+8658a59  msm: kgsl: run kgsl-workqueue as a high prio wq  [Francisco Franco]
+d67dbac  PM: devfreq: Use high priority workqueue  [myfluxi]
+90c1793  sched/fair: Improve the scheduler  [Pavankumar Kondeti]
+6f66890  sched/fair: Improve the scheduler  [Biao Long]
+fa17492  sched/fair: Improve the scheduler  [Pavankumar Kondeti]
+a4632a1  sched: revert force load balance when silver has big tasks  [Maria Yu]
+c8de405  sched/walt: Avoid taking rq lock for every IRQ update  [Pavankumar Kondeti]
+17d7c1b  sched/fair: Add timeout for detach_tasks() in load balance  [Pavankumar Kondeti]
+463e91a  sched/fair: Tighten prefer_spread feature  [Pavankumar Kondeti]
+2325f3a  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
+c0f2f78  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
+bad364d  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
+8cd5c5d  sched/walt: Improve the scheduler  [Abhijeet Dharmapurikar]
+9f70dd7  sched: Add support to spread tasks  [Lingutla Chandrasekhar]
+9152d03  sched/fair: Avoid force newly idle load balance if have iowait task  [Maria Yu]
+7ea0323  sched/fair: Force gold cpus to do idle lb when silver has big tasks  [Pavankumar Kondeti]
+453a6d1  sched/fair: Cleanup for incoming upstream changes  [Zachariah Kennedy]
+5f51a01  sched/fair: Cleanup for incoming upstream changes  [Zachariah Kennedy]
+48b1341  sched/fair: remove unused variable  [Satya Durga Srinivasu Prabhala]
+9efbe78  sched: fair: Improve the scheduler  [Lingutla Chandrasekhar]
+88bdebf  sched: Improve the scheduler  [Lingutla Chandrasekhar]
+3c8781d  sched: fair: Stop running idle_balance on active migration kick  [Lingutla Chandrasekhar]
+9ac8483  cpufreq: Avoid leaving stale IRQ work items during CPU offline  [Rafael J. Wysocki]
+d553f93  cpufreq: schedutil: Queue sugov irq work on policy online cpu  [Maria Yu]
+4c26cad  sched/cpufreq_schedutil: create a function for common steps  [Abhijeet Dharmapurikar]
+af92326  sched/fair: Don't place wakee on waker cpu if colocate enabled  [Biao Long]
+a53eed2  sched: core_ctl: Improve the scheduler  [Lingutla Chandrasekhar]
+12c69e9  sched/walt: Fix kernel panic issue by uninitialized data  [Biao Long]
+b61b1c2  sched: walt: Improve the scheduler  [Lingutla Chandrasekhar]
+bb2150d  sched: walt: Improve the scheduler  [Abhijeet Dharmapurikar]
+98c178b  sched/walt: Improve the scheduler  [Lingutla Chandrasekhar]
+986aff4  sched: walt: improve the scheduler  [Abhijeet Dharmapurikar]
+844fc08  sched/walt: cleanup unused code  [Zachariah Kennedy]
+cde17d9  sched/walt: Improve the scheduler  [Sai Harshini Nimmala]
+82e765b  sched: Improve the scheduler  [Lingutla Chandrasekhar]
+c917991  sched/walt: Avoid walt irq work in offlined cpu  [Maria Yu]
+d096204  sched: walt: Improve the scheduler  [Lingutla Chandrasekhar]
+dca5d7a  sched: core: Use sched_clusters for updown migration handler  [Lingutla Chandrasekhar]
+2ebde66  sched: walt: fix sched_cluster initialization  [Lingutla Chandrasekhar]
+caf363b  sched/walt: Improve the scheduler  [Sai Harshini Nimmala]
+1c86305  sched/walt: Improve the scheduler  [Sai Harshini Nimmala]
+d469933  sched: walt: Dump walt status on BUG_ON  [Lingutla Chandrasekhar]
+b1989b7  sched/walt: Improve the scheduler  [Jonathan Avila]
+6c520b0  sched/walt: Improve the scheduler  [Jonathan Avila]
+bb7202c  sched/walt: Improve the scheduler  [Sai Harshini Nimmala]
+5852c4e  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
+d5e470d  sched: improve the scheduler  [Lingutla Chandrasekhar]
+8dad818  sched: walt: remove unused variable  [Lingutla Chandrasekhar]
+a1d8613  sched: walt: Improve the Scheduler  [Shaleen Agrawal]
+08e9f62  sched/walt: Improve the scheduler  [Amir Vajid]
+991a6c4  sched/walt: Improve the scheduler  [Amir Vajid]
+768d2dc  cpuidle: lpm-levels: get bias time from scheduler  [Amir Vajid]
+4b59a55  lpm-levels: Optimize and make way for upstream changes  [Zachariah Kennedy]
+d582139  sched: Remove unused code in sched_avg.c  [Pavankumar Kondeti]
+17f00e6  sched: Use bitmask for sched_busy_hysteresis_enable_cpus tunable  [Pavankumar Kondeti]
+3ffef23b  sched: Introduce sched_busy_hysteresis_enable_cpus tunable  [Pavankumar Kondeti]
+9136ae4  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
+0a82cd9  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
+5956977  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
+cda7a87  sched: core: Fix usage of cpu core group mask  [Lingutla Chandrasekhar]
+9b38477  arch_topology: Add possible sibling cpu mask for cpu_topology  [Lingutla Chandrasekhar]
+2e8d93c  arm64/kernel/topology: Cleanup for upstream commit  [Zachariah Kennedy]
+56cab81  sched: Improve the scheduler  [Abhijeet Dharmapurikar]
+0826443  sched/walt: Improve the scheduler  [Abhijeet Dharmapurikar]
+b37cfe8  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
+74c1223  sched: Improve the scheduler  [Lingutla Chandrasekhar]
+b4642bb  sched/core_ctl: Improve the scheduler  [Pavankumar Kondeti]
+a60927c  sched/core_ctl: Improve the scheduler  [Pavankumar Kondeti]
+d198b9c  sched/walt: Improve the scheduler  [Abhijeet Dharmapurikar]
+885f0f6  sched/walt: drop preferred_cluster from rtg  [Abhijeet Dharmapurikar]
+8fa5bd0  sched/isolcpus: Fix "isolcpus=" boot parameter handling when !CONFIG_CPUMASK_OFFSTACK  [Rakib Mullick]
+2352f62  sched/fair: Fix incorrect CPU access in check_for_migration()  [Pavankumar Kondeti]
+7028236  sched/walt: Improve the scheduler  [Abhijeet Dharmapurikar]
+66c5580  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
+d8de7b6  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
+6e59a24  sched/walt: Improve the scheduler  [Puja Gupta]
+a76fe43  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
+c446b09  sched/walt: Improve the scheduler  [Abhijeet Dharmapurikar]
+e522e66  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
+296974e  sched/walt: Improve the scheduler  [Pavankumar Kondeti]
+f365a58  sched: Improve the scheduler  [Lingutla Chandrasekhar]
+07276ab  sched: Improve the scheduler  [Lingutla Chandrasekhar]
+cde3450  sched: Improve the scheduler  [Lingutla Chandrasekhar]
+cbd7cf1  sched: Improve the scheduler  [Lingutla Chandrasekhar]
+59249af  sched: Improve the scheduler  [Lingutla Chandrasekhar]
+b5b1d40  sched: Cleanup unused variables in walt  [Lingutla Chandrasekhar]
+d6fdf2f  sched: walt: Improve the scheduler  [Lingutla Chandrasekhar]
+169d41a  sched: Improve the scheduler  [Lingutla Chandrasekhar]
+cbf0746  sched: clean-up unused/duplicate functions & variables  [Satya Durga Srinivasu Prabhala]
+60dee84  sched/fair: upadte adjust_cpus_for_packing()  [Pavankumar Kondeti]
+e90071a  sched/fair: Fix excessive packing on the max capacity CPU  [Lingutla Chandrasekhar]
+979539f  sched/fair: Allow prev cpu in find best target  [Abhijeet Dharmapurikar]
+fe310e9  sched: improve the scheduler  [Abhijeet Dharmapurikar]
+0c3143e  sched/fair: Refactor packing eligible test  [Pavankumar Kondeti]
+5905f74  sched: Improve the scheduler  [Pavankumar Kondeti]
+e5e4ad6  sched/walt: Improve the scheduler  [Abhijeet Dharmapurikar]
+72d1d50  sched/fair: Derive the downmigration margin wrt the destination CPU  [Pavankumar Kondeti]
+92443bf  Revert "sched/core: Fix migration to invalid CPU in __set_cpus_allowed_ptr()"  [Blagovest Kolenichev]
+15cd782  sched: reduce softirq conflicts with RT  [Miguel de Dios]
+7f375a6  ANDROID: sched: fair: balance for single core cluster  [Wei Wang]
+744268f8  ARM64: configs: {davinci,phoenix,toco,tucana}: Enable CONFIG_TCP_CONG_BBR and set as default  [Zachariah Kennedy]
+4bc8eac  BACKPORT: FROMGIT: net-tcp_bbr: v2: shrink delivered_mstamp, first_tx_mstamp to u32 to free up 8 bytes  [Neal Cardwell]
+02e1c18  BACKPORT: FROMGIT: net-tcp_rate: consolidate inflight tracking approaches in TCP  [Yuchung Cheng]
+fd8b7b6  FROMGIT: net-tcp_bbr: broaden app-limited rate sample detection  [Neal Cardwell]
+3717765  tcp_bbr: adapt cwnd based on ack aggregation estimation  [Priyaranjan Jha]
+51b2ff8  tcp_bbr: refactor bbr_target_cwnd() for general inflight provisioning  [Priyaranjan Jha]
+ee5bed0  tcp_bbr: centralize code to set gains  [Neal Cardwell]
+18b2392  tcp_bbr: apply PROBE_RTT cwnd cap even if acked==0  [Kevin Yang]
+a7d51db  tcp_bbr: in restart from idle, see if we should exit PROBE_RTT  [Kevin Yang]
+e6b6758  tcp_bbr: add bbr_check_probe_rtt_done() helper  [Kevin Yang]
+e2617ce  tcp_bbr: fix bbr pacing rate for internal pacing  [Eric Dumazet]
+d25b004  net-tcp_bbr: set tp->snd_ssthresh to BDP upon STARTUP exit  [Yousuk Seung]
+ad85fb8  tcp_bbr: remove bbr->tso_segs_goal  [Eric Dumazet]
+3efb150  tcp_bbr: better deal with suboptimal GSO (II)  [Eric Dumazet]
+6a4f355  tcp: avoid min RTT bloat by skipping RTT from delayed-ACK in BBR  [Yuchung Cheng]
+5f0893e  tcp: avoid min-RTT overestimation from delayed ACKs  [Yuchung Cheng]
+ff916f29  ARM64: configs: {davinci,phoenix,toco,tucana}: Enable CONFIG_COMPAT_VDSO  [Kyle Lin]
+a0ff625  FROMLIST: arm64: Build vDSO with -ffixed-x18  [Peter Collingbourne]
+1536fef  ANDROID: turn on VCT access from 32-bit applications  [Mark Salyzyn]
+f3140a2  vdso32: Invoke clang with correct path to GCC toolchain  [Daniel Mentz]
+94d88da  FROMLIST: arm64: vdso32: Use full path to Clang instead of relying on PATH  [Nathan Chancellor]
+0dbd695  ANDROID: clock_gettime(CLOCK_BOOTTIME,) slows down >20x  [Mark Salyzyn]
+61f21e0  ANDROID: CROSS_COMPILE_ARM32 must work if CONFIG_COMPAT_VDSO  [Mark Salyzyn]
+72c61d4  FROMLIST: BACKPORT: [PATCH 6/6] arm64: Wire up and expose the new compat vDSO  [Kevin Brodsky]
+98d2b34  FROMLIST: [PATCH 5/6] arm64: compat: 32-bit vDSO setup  [Kevin Brodsky]
+6a8c6dc  FROMLIST: [PATCH 4/6] arm64: compat: Add a 32-bit vDSO  [Kevin Brodsky]
+4699b1a  FROMLIST: BACKPORT: [PATCH 3/6] arm64: Refactor vDSO init/setup  [Kevin Brodsky]
+bcd0b8b  FROMLIST: [PATCH 2/6] arm64: elf: Set AT_SYSINFO_EHDR in compat processes  [Kevin Brodsky]
+638c385  FROMLIST: [PATCH 1/6] arm64: compat: Use vDSO sigreturn trampolines if available  [Kevin Brodsky]
+2cbceb9  FROMLIST: lib: vdso: add support for time  [Mark Salyzyn]
+e14e04b  FROMLIST: [PATCH] arm64: compat: Expose offset to registers in sigframes  [Kevin Brodsky]
+701b96c  FROMLIST: [PATCH v5 12/12] lib: vdso: do not expose gettimeofday, if no arch supported timer  [Mark Salyzyn]
+1353321  FROMLIST: [PATCH v5 11/12] lib: vdso: Add support for CLOCK_BOOTTIME  [Mark Salyzyn]
+70b18a6  FROMLIST: [PATCH v5 10/12] arm64: vdso: replace gettimeofday.S with global vgettimeofday.C  [Mark Salyzyn]
+523ecca  FROMLIST: [PATCH v5 09/12] arm: vdso: move vgettimeofday.c to lib/vdso/  [Mark Salyzyn]
+19355e6  FROMLIST: [PATCH v5 08/12] arm: vdso: Add ARCH_CLOCK_FIXED_MASK  [Mark Salyzyn]
+8051924  FROMLIST: [PATCH v5 07/12] arm: vdso: disable profiling  [Mark Salyzyn]
+1bbb8e4  FROMLIST: [PATCH v5 06/12] arm: vdso: add support for clock_getres  [Mark Salyzyn]
+23ae86b  FROMLIST: [PATCH v6 05/12] arm: vdso: Add support for CLOCK_MONOTONIC_RAW  [Mark Salyzyn]
+19591be  FROMLIST: [PATCH v5 04/12] arm: vdso: do calculations outside reader loops  [Mark Salyzyn]
+af061e91  FROMLIST: [PATCH v5 03/12] arm: vdso: inline assembler operations to compiler.h  [Mark Salyzyn]
+9cbf959  FROMLIST: [PATCH v5 02/12] arm: vdso: add include file defining __get_datapage()  [Mark Salyzyn]
+c72676a  FROMLIST: [PATCH v5 01/12] arm: vdso: rename vdso_datapage variables  [Mark Salyzyn]
+fd09fa4  FROMLIST: [PATCH v3 3/3] arm64: compat: Add CONFIG_KUSER_HELPERS  [Kevin Brodsky]
+a0e50f2  FROMLIST: [PATCH v3 2/3] arm64: compat: Split the sigreturn trampolines and kuser helpers (assembler sources)  [Kevin Brodsky]
+55c19b6  FROMLIST: [PATCH v3 1/3] arm64: compat: Split the sigreturn trampolines and kuser helpers (C sources)  [Kevin Brodsky]
+35d7d2b  drm: msm: Skip fod_hbm while HBM is active  [Arian]
+856aff9  ARM64: configs: {davinci,phoenix,toco,tucana}: Enable exFAT  [Park Ju Hyung]
+2197ed9  fs: Add exFAT  [Park Ju Hyung]
+8c249a4  Add 'fs/exfat/' from commit '034f47d607c441e7fb5be3eb71d7a289ef76bc0c'  [Arian]
+465ed11  Revert "nl80211: fix non-split wiphy information"  [vantoman]
+77c3756  ARM64: configs: {davinci,phoenix,toco,tucana}: Enable recommended configs  [Arian]
+4f778f6  ARM64: configs: {davinci,phoenix,toco,tucana}: Enable recommended HID drivers  [Arian]
+d3d20ee  ARM64: configs: {toco,tucana}: Enable AW3644 LED driver  [Arian]
+94764df  ARM64: configs: {toco,tucana}: Enable BQ2597X charge pump driver  [Arian]
+c74854f  ARM64: configs: {phoenix,toco,tucana}: Enable ds28e16 battery verify driver  [Arian]
+300e358  ARM64: configs: {toco,tucana}: Enable drv260x haptics driver  [Arian]
+c950e89  ARM64: configs: {phoenix,toco,tucana}: Enable IR driver  [Arian]
+a4cdd5f  ARM64: configs: {phoenix,toco,tucana}: Enable xiaomi simtray driver  [Arian]
+4fc3f13  ARM64: configs: davinci: Enable drv8846 step motor soc driver  [Arian]
+a6159c4  ARM64: configs: davinci: Enable akm09970 compass driver  [Arian]
+9746227  ARM64: configs: {davinci,phoenix,toco,tucana}: Enable fingerprint drivers  [Arian]
+4132e05  ARM64: configs: {davinci,phoenix,toco,tucana}: Enable touchscreen drivers  [Arian]
+53004c7  ARM64: configs: {davinci,phoenix,toco,tucana}: Enable device specific configuration  [Arian]
+c2616fe  ARM64: configs: {davinci,phoenix,toco,tucana}: Disable existing fingerprint drivers  [Cosmin Tanislav]
+3256846  ARM64: configs: {davinci,phoenix,toco,tucana}: Disable Sitronix, Himax and Synaptics touchscreen drivers  [Arian]
+7ec5e92  ARM64: configs: {davinci,phoenix,toco,tucana}: Disable sm6150/sm8150 configs  [Arian]
+1524859  ARM64: configs: {davinci,phoenix,toco,tucana}: Enable CONFIG_QCA_CLD_WLAN  [Park Ju Hyung]
+35b2aed  ARM64: configs: {davinci,phoenix,toco,tucana}: Reserve space for ramoops  [Arian]
+6c0f4fe  ARM64: configs: {davinci,phoenix,toco,tucana}: Enable power efficient workqueues  [Demon000]
+b8f6fe9  ARM64: configs: {davinci,phoenix,toco,tucana}: Enable suspend sync  [Demon Singur]
+74ae6c8  ARM64: configs: {davinci,phoenix,toco,tucana}: Expand USB HID game controller support  [Puma Hsu]
+8d985dd  ARM64: configs: {davinci,phoenix,toco,tucana}: Enable CONFIG_JUMP_LABEL  [Kyle Lin]
+ae2ee99  ARM64: configs: {davinci,phoenix,toco,tucana}: Enable CONFIG_HZ_300  [Kyle Lin]
+29c872d  ARM64: configs: {davinci,phoenix,toco,tucana}: Enable pstore  [josephjang]
+86eb048  ARM64: configs: {davinci,phoenix,toco,tucana}: Enable LOCALVERSION_AUTO  [Cyan_Hsieh]
+120db4d  ARM64: configs: {davinci,phoenix,toco,tucana}: Build separated soc-dtb and board-dtbos  [Cyan_Hsieh]
+251c992  ARM64: configs: {davinci,phoenix,toco,tucana}: Disable qcom download mode  [Demon000]
+83f89f0  ARM64: configs: {davinci,phoenix,toco,tucana}: Disable module signing to allow kernel-module mismatch  [Howie Chang]
+c492a4c  ARM64: configs: {davinci,phoenix,toco,tucana}: Remove various debug configs  [Thierry Strudel]
+a3ac4aa  ARM64: configs: {davinci,phoenix,toco,tucana}: Disable unused configs  [Cosmin Tanislav]
+a3a167c  ARM64: configs: {davinci,phoenix,toco,tucana}: Disable MSM_11AD  [Thierry Strudel]
+0d3edec  ARM64: configs: {davinci,phoenix,toco,tucana}: Remove CONFIG_WIL6210  [Howie Chang]
+6ea150a  ARM64: configs: {davinci,phoenix,toco,tucana}: Remove CONFIG_QCOM_MINIDUMP  [Lisa Liu]
+eb0fe64  ARM64: configs: {davinci,phoenix,toco,tucana}: Remove unused configs to improve boottime  [Kyle Lin]
+1aa375b  ARM64: configs: {davinci,phoenix,toco,tucana}: Remove unused config  [Kyle Lin]
+0e9a8cf  ARM64: configs: {davinci,phoenix,toco,tucana}: Remove unused governors  [Kyle Lin]
+bf0831b  ARM64: configs: {davinci,toco,tucana}: Unset unused MMC Kconfigs  [YH_Lin]
+6b1090c  ARM64: configs: {davinci,phoenix,toco,tucana}: Disable CONFIG_AUTOCGROUP  [Kyle Lin]
+48fbf03  ARM64: configs: Add davinci, phoenix, toco and tucana defconfigs based on sdmsteppe-perf_defconfig  [Arian]
+268af9e  pstore: Import Xiaomi changes  [Arian]
+c86634f  pinctrl: qcom: msm: Prevent access to GPIOs for FP and NFC  [Arian]
+c520f06  input: misc: Import drv_260x_input driver  [Arian]
+bd607be  leds: Import AW3644 driver  [Arian]
+6db311c  drivers: leds: Add support for led breath rate and LUT pattern switch control  [UtsavBalar1231]
+cd048dd  drivers: leds: Allow switching between dual flashlight leds  [UtsavBalar1231]
+32577f8  drivers: leds: Allow setting max brightness  [Demon000]
+680ed57  misc: Import xiaomi sim tray driver  [Arian]
+c67219c  misc: Import drv8846 motor driver  [Arian]
+4073940  misc: Import akm09970 hall sensor driver  [Arian]
+51f34b5  drm: msm: Add support for backlight remap  [Arian]
+fa61c1f  drm/msm: fix brightness level mapping  [Adrian Salido]
+87a3bbd  drm: Expose panel_info sysfs node  [Arian]
+bdcbac7  drm: msm: Add support for high brightness mode (HBM)  [Danny Baumann]
+56be7e5  ARM64: dts: optimize HBM commands for in-kernel dimming  [Demon000]
+c8a5c99  ARM64: dts: define fod dim lut  [Demon000]
+a4eff4e  ARM64: dts: define doze lpm and hbm backlight levels  [Demon000]
+5f3e8b4  ARM64: dts: disable dc dimming during fod hbm commands  [Demon000]
+2bc111a  ARM64: dts: move fod hbm commands to their proper place  [Demon000]
+97c11b8  drm: msm: dsi-staging: cleanup notifier implementation  [Demon000]
+3575364  drm: msm: dsi-staging: trigger drm notifier  [Demon000]
+584cea2  drm: msm: atomic: do not trigger drm notifier  [Demon000]
+48ffa96  drm: msm: notify sysfs for fod ui changes  [Demon000]
+17e323a  drm: msm: implement fod handling  [Demon000]
+89f5dd5  drm: msm: dsi-staging: add function for reading backlight value  [Demon000]
+a4f8830  drm: msm: dsi-staging: add get_main_display  [DevriesL]
+401f996  drm: msm: sde: translate zpos property to fod property  [Demon000]
+cd73c03  drm: msm: sde: allow 32bit zpos  [Demon000]
+e7b2b80  drm: msm: dsi-staging: implement doze mode  [Demon000]
+8518343  drm: msm: dsi-staging: create empty attributes group  [Demon000]
+dff7b80  drm: msm: modify lp11 mode logic  [Demon000]
+aa86532  drm: msm: handle ss dcs type  [Demon000]
+d955314  drm: msm: extend qcom drm notifier  [Demon000]
+c633ca8  [M700][charging][HTH-99151]fix huawei scp A to C cable 3A current issue for SDP  [wangyibo]
+81446c3  usb: Import Xiaomi changes  [Arian]
+859232f  power: reset: Move in_panic handling out of dload mode  [Michael Bestas]
+64721ce  power: qpnp-smb5: Add support to get type c mode  [Arian]
+55c1e7c  power: supply: Improve Makefile style  [Arian]
+bda6acc  power: Import xiaomi changes  [Arian]
+53f733e  msm: camera: crm: Increase the device handles to 182 for v1  [Arian]
+2c961ad  msm: camera: sensor: decrease delay in face unlock operation mode  [Demon000]
+dc858ff  msm: camera: utils: increase max number of regulators  [Demon000]
+f6d22df  msm: camera: eeprom: increase memory map count and size  [Demon000]
+07020e2  msm: camera: eeprom: properly destroy device handle on eeprom packet parse fail  [Demon000]
+2ba8294  input: fingerprint: Import fpc_fod driver  [Arian]
+1f0cd5b  fingerprint: goodix_fod: Switch to msm drm notifier api  [UtsavBalar1231]
+cef6d5d  input: fingerprint: Import goodix_fod driver  [Arian]
+9ef651d  input: fingerprint: fpc_tee: Use qcom drm notifier  [Demon000]
+fd8cdca  input: fingerprint: Import fpc_tee driver  [Arian]
+74ec91d  input: fingerprint: goodix_ta: Switch to msm drm notifier api  [UtsavBalar1231]
+78c0f7d  drm: msm: Implement early fingerprint wake-up optimization  [UtsavBalar1231]
+7a2b05a  input: fingerprint: Import goodix_ta driver  [Arian]
+92445a3  input: Include fingerprint directory  [Demon000]
+33ace13  firmware: Import f4 and f4l fts firmware  [Arian]
+d415e55  touchscreen: fts_521: Switch to msm drm notifier api  [UtsavisGreat]
+0f22b84  input: touchscreen: Import ST FTS V521 driver  [Arian]
+0748532  firmware: Import f4 goodix_gt9886 firmware  [Arian]
+6e48147  touchscreen: f4_goodix_driver_gt9886: Switch to msm drm notifier api  [UtsavisGreat]
+037ddc1  input: touchscreen: Import f4_goodix_driver_gt9886 driver  [Arian]
+5381aaf  input: touchscreen: Import xiaomi touchfeature driver  [Arian]
+b0f6b92  input: touchscreen: Import TDDI IC double click driver  [Arian]
+25b23a0  misc: Import Xiaomi touch panel driver  [Arian]
+babf2cf  firmware: Import nt36672c firmware  [Arian]
+82f93c1  input: touchscreen: Import nt36672c driver  [Arian]
+875f4be  firmware: Import gt9886 firmware  [Arian]
+5a79d47  firmware: Restore support for ihex firmware  [Arian]
+031e75a  input: touchscreen: gt9886: Report BTN_INFO key events only when fod is in use  [trpsl]
+da0092f  input: touchscreen: goodix_driver_gt9886: optimize ascii to hex data conversion  [UtsavBalar1231]
+e319c643  input: touchscreen: goodix_driver_gt9886: Fix memoryleak from goodix_debugfs_init()  [UtsavBalar1231]
+12ff433  input: touchscreen: goodix_driver_gt9886: Make goodix_set_i2c_doze_mode() static  [UtsavBalar1231]
+c52f85c  input: touchscreen: goodix_driver_gt9886: Use atomic operations in ESD protection  [UtsavBalar1231]
+08581ca  input: touchscreen: goodix_driver_gt9886: Disable Debugging  [UtsavBalar1231]
+74e371f  input: touchscreen: goodix_driver_gt9886: Switch to msm drm notifier api  [UtsavisGreat]
+c74f275  input: touchscreen: Import goodix_driver_gt9886 driver  [Arian]
+52ecec4  input: event-codes: define BTN_INFO for touchscreen drivers  [demon000]
+9bdc4c0  soc: qcom: socinfo: Add methods to get the hw version  [Arian]
+ed95293  ARM64: dts: qcom: xiaomi: Configure davinci's leds  [Arian]
+bb90fa5  ARM64: dts: qcom: xiaomi: Disable broken thermal zones  [Arian]
+b0894dc  ARM64: dts: Add xiaomi sdmmagpie support  [Arian]
+53d1069  ARM64: dts: Build specific Xiaomi board variant  [Bruno Martins]
+dd12fa5  ARM64: Add Xiaomi board selection  [Bruno Martins]
+aa05725  ARM64: dts: qcom: Add label for reserved memory on sdmmagpie  [Vijayanand Jitta]
+8ac85d1  ASoC: msm: Report correct key code of headset buttons  [dianlujitao]
+a85b6ad  techpack: audio: Remove build timestamp injection  [Danny Lin]
+e4c67de  techpack: avoid VLA  [Park Ju Hyung]
+4ec97d1  techpack: fix trivial compilation errors  [Park Ju Hyung]
+86f5911  techpack: fix header paths for kernel builds  [Park Ju Hyung]
+29ee5e0  techpack: build bolero and tfa98xx  [Park Ju Hyung]
+fab2bb6  techpack: audio: Get rid of TARGET_PRODUCT checks  [Arian]
+a3d0a08  techpack: load sm6150 configuration  [Park Ju Hyung]
+0745517  techpack: audio: Import xiaomi changes  [Arian]
+4c9aaf6  techpack: explicitly initialize hdr  [Park Ju Hyung]
+cc078f1  techpack: Hardcode modules list  [Luca Stefani]
+6ac741d  techpack/pinctrl-lpi: initialise at late_initcall  [Yaroslav Furman]
+f4ee78e  techpack: build everything inline  [Park Ju Hyung]
+986f0c6  techpack: fix broken header paths  [Park Ju Hyung]
+fedd887  techpack: remove .gitignore  [Park Ju Hyung]
+16418ad  techpack: Gitignore all subdirs except stub  [Neeraj Upadhyay]
+6f088b1d  Set correct techpack header install directory  [Rashed Abdel-Tawab]
+acfca68  techpack: audio: remove Android.mk files  [Cosmin Tanislav]
+44e41a8  qcacld-3.0: defer hdd initialization and rely on userspace writing to /dev/wlan  [Park Ju Hyung]
+b5a7ae6  qcacld-3.0: discard wlan_boot sysfs code on !CONFIG_MODULES  [Park Ju Hyung]
+1bf3007  qcacld-3.0: nuke Kconfig-based configuration entirely  [Park Ju Hyung]
+734b965  qcacld: Disable build timestamp  [Luca Stefani]
+df3495a  drivers: staging: Include qcacld-3.0 source  [LuK1337]
+e5f71b5  greybus: remove Android.mk file  [Demon000]
+6c31f98  dtc: Silence warnings  [Danny Lin]
+f501db6  scripts/dtc: Update to upstream version v1.4.6-9-gaadd0b65c987  [Rob Herring]
+1a4c66f  scripts/dtc: Update to upstream version v1.4.5-3-gb1a60033c110  [Rob Herring]
+74558151  scripts/dtc: add fdt_overlay.c and fdt_addresses.c to sync script  [Rob Herring]
+cccbdf45  dtc: update warning settings for new bus and node/property name checks  [Rob Herring]
+842a0cb  Makefile.lib: Stop calling size_append  [Julian Liu]
+5b7438a  cpuidle: Do not select menu and ladder governors  [Maulik Shah]
+1259489  video: backlight: disable modules enabled by default  [Demon000]
+c9804c0  media: gspca: disable gspca module  [Demon000]
+7c8ba5d  media: rc: disable geni ir module  [Demon000]
+b96e1b14  net: disable bridge netfilter module  [Demon000]
+9ab19d6  net: ipv4: disable modules which are enabled by default  [Demon000]
+894b906  Add 'techpack/audio/' from commit 'beea29d7ad1deaa54f8f03e82d76a785011f53d3'  [Arian]
+afde25d  Add 'drivers/staging/qcacld-3.0/' from commit 'ed870f933e7831a759a558ce540e186a7add236d'  [Arian]
+8117748e  Add 'drivers/staging/qca-wifi-host-cmn/' from commit '70d665bfa9d5ed749e7d773a7ff3a0a5560bfcd9'  [Arian]
+b6ebd39  Add 'drivers/staging/fw-api/' from commit 'c084d46797eadee8ff358a2a5ed4261400c520a6'  [Arian]
+7412362  Merge branch 'android-4.14-stable' of https://android.googlesource.com/kernel/common into HEAD  [Arian]
+99fecfc  Merge branch 'android-4.14-stable' of https://android.googlesource.com/kernel/common into HEAD  [Arian]
+
+* lineage/hudson
+0472bf3  hudson: Promote ls990 to 17.1  [Aleksander Gencel]
+
+* lineage/wiki
+62b3dc7  wiki: Promote ls990 to 17.1  [Aleksander Gencel]
+====================
+     2021-02-13    
+====================
+
+* lineage/wiki
+9c7c8d4  d803: Bring instructions up to date with other g2 variants  [Alessandro Astone]
+
+* packages/apps/Recorder
+3661dd2  Recorder: Bring back original wav recording as an option  [2bllw8]
+4ffa2a1  Recorder: Move list actions to popup menu  [joey]
+0eaf975  Recorder: Add configuration for high quality  [2bllw8]
+258639f  Recorder: Recording list: Don't slide in and out  [Michael W]
+d538764  Recorder: Add feature to pause / resume recording  [2bllw8]
+fa2c748  Recorder: Rewrite sound recording service  [2bllw8]
+22145eb  Recorder: Add feature to rename recordings  [2bllw8]
+45dc4d2  Recorder: Do not show double popup when asking to delete a record  [2bllw8]
+498d990  Recorder: Show empty view when removing last item  [Michael W]
+eb39a6d  Recorder: Add view of all my records  [2bllw8]
+b3502b4  Recorder: Add support for tagging records with location name  [Joey]
+====================
+     2021-02-12    
+====================
 
 * frameworks/base
-d7c3493  Merge tag 'android-11.0.0_r29' of https://android.googlesource.com/platform/frameworks/base into staging/lineage-18.1_merge-android-11.0.0_r29  [Kevin F. Haggerty]
+e44a64e  Fix: "Clear All" recent app screen loop bug  [vincent.cw_lee]
 
-* hardware/lineage/interfaces
-04bd93c  Introduce anti flicker LiveDisplay interface  [Arian]
+* kernel/xiaomi/sm6150
+34073d7  BACKPORT: bpf: add bpf_ktime_get_boot_ns()  [Maciej Żenczykowski]
+cbb4c73  UPSTREAM: net: bpf: Make bpf_ktime_get_ns() available to non GPL programs  [Maciej Żenczykowski]
 
-* lineage-sdk
-91bd3a8  Introduce anti flicker mode in LiveDisplay  [Arian]
-
-* packages/apps/LineageParts
-dcbb629  profiles: SeekBarVolumizer: Properly setup the minimum of the seekbar  [Arian Kulmer]
-7302037  profiles: Import SeekBarVolumizer for usage in SetupActionsfragment  [Arian]
+* lineage/mirror
+cb4de66  Updated to 12-Feb-2021 16:20 UTC  [Kevin F. Haggerty]
 ====================
-     2021-02-06    
+     2021-02-11    
 ====================
 
 * external/chromium-webview
-d8c9c41  Update Chromium Webview to 88.0.4324.152  [Kevin F. Haggerty]
+c7ee4db  Chomium Webview repository administrative note  [Kevin F. Haggerty]
 
-* frameworks/base
-1a41725  No need to 'addChild' when start 'FLAG_ACTIVITY_CLEAR_TOP' Activity.  [yangyankai1]
-73c1924  Fix a bug in the USAP Pool refill logic.  [Chris Wailes]
-====================
-     2021-02-05    
-====================
-
-* android
-2572a5b  manifest: android-11.0.0_r27 -> android-11.0.0_r29  [Kevin F. Haggerty]
-
-* build/make
-0e7a236  Merge tag 'android-11.0.0_r29' into staging/lineage-18.1_merge-android-11.0.0_r29  [Kevin F. Haggerty]
-
-* frameworks/base
-ea71eff  Partially revert "Wake up to lock screen when bouncer is visible"  [Sultan Alsawaf]
-bf766d5  PhoneWindowManager: Only react to camera key when necessary  [Michael W]
-
-* frameworks/native
-f1201c6  Merge tag 'android-11.0.0_r29' into staging/lineage-18.1_merge-android-11.0.0_r29  [Kevin F. Haggerty]
-
-* packages/apps/Bluetooth
-cc597b3  Merge tag 'android-11.0.0_r29' into staging/lineage-18.1_merge-android-11.0.0_r29  [Kevin F. Haggerty]
-
-* packages/apps/Settings
-513e45d  Merge tag 'android-11.0.0_r29' into staging/lineage-18.1_merge-android-11.0.0_r29  [Kevin F. Haggerty]
-
-* packages/apps/SetupWizard
-2b90a7f  SetupWizard: Add device specific hook page  [Michael W]
-
-* packages/providers/ContactsProvider
-755039c  Merge tag 'android-11.0.0_r29' into staging/lineage-18.1_merge-android-11.0.0_r29  [Kevin F. Haggerty]
-
-* system/core
-a231505  Merge tag 'android-11.0.0_r29' into staging/lineage-18.1_merge-android-11.0.0_r29  [Kevin F. Haggerty]
-
-* vendor/lineage
-2263d4b  fixup! Dialer: Add visual voicemail configs from Google Dialer  [Eamon Powell]
-04bbc65  Dialer: Add visual voicemail configs from Google Dialer  [Danny Lin]
-
-* vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
-9a8c62b  Check permission before sending batch scan result  [Jakub Pawlowski]
-3e5a7fa  Check if advertiserId value matches valid advertiser  [Jakub Pawlowski]
-====================
-     2021-02-04    
-====================
+* lineage/hudson
+8e8f7bc  hudson: Introduce the Motorola Edge  [Joshua Blanchard]
 
 * lineage/mirror
-e116655  Updated aosp-minimal to 03-Feb-2021 13:01 UTC  [Tim Schumacher]
-
-* system/core
-e8dcaba  fs_mgr: Allow remounts with Magisk installed  [Bruno Martins]
-79f606e  liblog: Always report as debuggable when building userdebug/eng  [Bruno Martins]
-====================
-     2021-02-03    
-====================
-
-* lineage/mirror
-a1693c2  Updated aosp-minimal to 02-Feb-2021 13:01 UTC  [Tim Schumacher]
-8d3f411  aosp-minimal: Always add platform/manifest  [Chirayu Desai]
+69f0de0  Updated aosp-minimal to 11-Feb-2021 13:01 UTC  [Tim Schumacher]
 
 * lineage/wiki
-d23bc0f  wiki: Correct d803 architecture  [Michael W]
+f706719  wiki: Add Motorola Edge (racer)  [Joshua Blanchard]
+====================
+     2021-02-10    
+====================
 
-* tools/repohooks
-f1e0b3b  android_test_mapping_format: drop Python 2 support  [Mike Frysinger]
+* kernel/xiaomi/sm6150
+aad61ce  Merge 4.14.221 into android-4.14-stable  [Greg Kroah-Hartman]
+29c5202  Linux 4.14.221  [Greg Kroah-Hartman]
+6e0e334  net: dsa: mv88e6xxx: override existent unicast portvec in port_fdb_add  [DENG Qingfang]
+43cc149  iommu/vt-d: Do not use flush-queue when caching-mode is on  [Nadav Amit]
+044f2a5  Input: xpad - sync supported devices with fork on GitHub  [Benjamin Valentin]
+ad57fc9  x86/apic: Add extra serialization for non-serializing MSRs  [Dave Hansen]
+7f31a66  x86/build: Disable CET instrumentation in the kernel  [Josh Poimboeuf]
+93ea243  mm: thp: fix MADV_REMOVE deadlock on shmem THP  [Hugh Dickins]
+ea69d8c  mm: hugetlb: remove VM_BUG_ON_PAGE from page_huge_active  [Muchun Song]
+2e5d58f  mm: hugetlb: fix a race between isolating and freeing page  [Muchun Song]
+a7db76e  mm: hugetlbfs: fix cannot migrate the fallocated HugeTLB page  [Muchun Song]
+c916f02  ARM: footbridge: fix dc21285 PCI configuration accessors  [Russell King]
+70a813a  nvme-pci: avoid the deepest sleep state on Kingston A2000 SSDs  [Thorsten Leemhuis]
+b2663b3  mmc: core: Limit retries when analyse of SDIO tuples fails  [Fengnan Chang]
+fad5b13  smb3: Fix out-of-bounds bug in SMB2_negotiate()  [Gustavo A. R. Silva]
+bdb1757  cifs: report error instead of invalid when revalidating a dentry fails  [Aurelien Aptel]
+22110d9  xhci: fix bounce buffer usage for non-sg list case  [Mathias Nyman]
+e5bbb94  kretprobe: Avoid re-registration of the same kretprobe earlier  [Wang ShaoBo]
+b08e7ee  mac80211: fix station rate table updates on assoc  [Felix Fietkau]
+2ea09e6  ovl: fix dentry leak in ovl_get_redirect  [Liangyan]
+329ad28  usb: dwc2: Fix endpoint direction check in ep_from_windex  [Heiko Stuebner]
+94122d0  USB: usblp: don't call usb_set_interface if there's a single alt  [Jeremy Figgins]
+bbcdc94  USB: gadget: legacy: fix an error code in eth_bind()  [Dan Carpenter]
+43ebd30  ipv4: fix race condition between route lookup and invalidation  [Wei Wang]
+347cf0e  elfcore: fix building with clang  [Arnd Bergmann]
+37ffdca  objtool: Support Clang non-section symbols in ORC generation  [Josh Poimboeuf]
+f40e70f  net: lapb: Copy the skb before sending a packet  [Xie He]
+d99f2fa  arm64: dts: ls1046a: fix dcfg address range  [Zyta Szpak]
+38bbf8b  Input: i8042 - unbreak Pegatron C15B  [Alexey Dobriyan]
+d242aca  USB: serial: option: Adding support for Cinterion MV31  [Christoph Schemmel]
+cd796d9  USB: serial: cp210x: add new VID/PID for supporting Teraoka AD2000  [Chenxin Jin]
+62ecd95  USB: serial: cp210x: add pid/vid for WSDA-200-USB  [Pho Tran]
 
-* vendor/lineage
-ec016fd  qcom: Add bengal platform  [TheMalachite]
+* lineage/mirror
+c2d4c98  Updated aosp-minimal to 10-Feb-2021 13:01 UTC  [Tim Schumacher]
+====================
+     2021-02-09    
+====================
+
+* kernel/xiaomi/sm6150
+72068f1  UPSTREAM: dma-buf: Fix SET_NAME ioctl uapi  [Daniel Vetter]
+0b5d240  UPSTREAM: dma-buf: free dmabuf->name in dma_buf_release()  [Cong Wang]
+
+* lineage/mirror
+e422c3f  Updated to 08-Feb-2021 20:50 UTC  [Kevin F. Haggerty]
+
+* packages/apps/Snap
+3abede0  SnapCam: Fix thumbnail not update  [junjiez]
