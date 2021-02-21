@@ -1,82 +1,79 @@
 ====================
-     2021-02-14    
+     2021-02-21    
 ====================
 
 * build/make
-8f784ec  [DNM] Always use release-keys  [Arian]
+5e88be6  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-87ffbe5  common: Label IAntiFlicker live display service  [Arian]
+5d55261  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-47b272d  SystemUI: get rid of build text in qs  [Joey]
-e6180dc  SystemUI: Add anti flicker tile  [Arian]
-98cbfd9  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+cf711de  SystemUI: get rid of build text in qs  [Joey]
+6679271  SystemUI: Add anti flicker tile  [Arian]
+8dde317  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-d70d41c  Add support for anti flicker mode in LiveDisplay  [Arian]
+52d06b2  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-764789e  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+3fefde2  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-4b40bba  Add support for anti flicker mode in LiveDisplay  [Arian]
-65a4874  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+7ff37df  Add support for anti flicker mode in LiveDisplay  [Arian]
+6bab1c2  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * packages/apps/LineageParts
-633382d  Add support for anti flicker mode in LiveDisplay  [Arian]
-43911df  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+3d2f55f  Add support for anti flicker mode in LiveDisplay  [Arian]
+08a08c8  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-02-13    
+     2021-02-20    
 ====================
-
-* lineage/wiki
-9c7c8d4  d803: Bring instructions up to date with other g2 variants  [Alessandro Astone]
 ====================
-     2021-02-12    
+     2021-02-19    
 ====================
 
 * lineage/mirror
-cb4de66  Updated to 12-Feb-2021 16:20 UTC  [Kevin F. Haggerty]
-
-* system/bt
-dade8ce  Interop Workaround: Add Joy-Con  [cncn]
+14be6cd  Updated aosp-minimal to 18-Feb-2021 13:01 UTC  [Tim Schumacher]
 ====================
-     2021-02-11    
+     2021-02-18    
 ====================
-
-* external/chromium-webview
-c7ee4db  Chomium Webview repository administrative note  [Kevin F. Haggerty]
-
-* lineage/hudson
-8e8f7bc  hudson: Introduce the Motorola Edge  [Joshua Blanchard]
 
 * lineage/mirror
-69f0de0  Updated aosp-minimal to 11-Feb-2021 13:01 UTC  [Tim Schumacher]
+ad18097  Updated aosp-minimal to 17-Feb-2021 13:01 UTC  [Tim Schumacher]
+====================
+     2021-02-17    
+====================
 
 * lineage/wiki
-f706719  wiki: Add Motorola Edge (racer)  [Joshua Blanchard]
+2e96479  wiki: Mark remaining 16.0 devices discontinued  [razorloves]
+0f3bc07  Lineage is finally legal!  [Nolen Johnson]
 ====================
-     2021-02-10    
+     2021-02-16    
 ====================
 
 * frameworks/base
-86d76da  Add uhid group to system_server  [Siarhei Vishniakou]
+202acb2  Automatic translation import  [LineageOS Builder]
+
+* lineage/hudson
+010927c  Add experimental build targets  [Tom Powell]
+d1e170c  Drop 16.0  [Tom Powell]
 
 * lineage/mirror
-c2d4c98  Updated aosp-minimal to 10-Feb-2021 13:01 UTC  [Tim Schumacher]
+37588b4  Updated aosp-minimal to 15-Feb-2021 13:01 UTC  [Tim Schumacher]
 
-* packages/apps/Trebuchet
-d876408  Trebuchet: Show labels in landscape by default on tablets  [Billy Laws]
-====================
-     2021-02-09    
-====================
+* lineage/wiki
+d6837c0  wiki: Restore note for LG recovery boot  [Alessandro Astone]
+0ed921b  Revert "d803: Bring instructions up to date with other g2 variants"  [Alessandro Astone]
 
-* lineage/mirror
-e422c3f  Updated to 08-Feb-2021 20:50 UTC  [Kevin F. Haggerty]
+* packages/apps/LineageParts
+e3c8674  Automatic translation import  [LineageOS Builder]
 ====================
-     2021-02-08    
+     2021-02-15    
 ====================
 
-* build/make
-0d70257  build tools: Fix TypeError when signing builds with Python3  [ThePiGuy]
+* lineage/hudson
+0472bf3  hudson: Promote ls990 to 17.1  [Aleksander Gencel]
+
+* lineage/wiki
+62b3dc7  wiki: Promote ls990 to 17.1  [Aleksander Gencel]
