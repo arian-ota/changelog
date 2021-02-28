@@ -1,84 +1,82 @@
 ====================
-     2021-02-21    
+     2021-02-28    
 ====================
 
 * device/lineage/sepolicy
-c24c3c4  common: Label IAntiFlicker live display service  [Arian]
-
-* device/xiaomi/davinci
-2da868c  davinci: parts: Convert mLedBreathing to a boolean  [Arian]
-71da980  davinci: parts: Fix typo  [Arian]
-1e8ca4c  davinci: parts: Avoid saving and restoring our own LED effect  [Arian]
+a340d0f  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-26a2280  SystemUI: Add anti flicker tile  [Arian]
+ade58b2  SystemUI: Add anti flicker tile  [Arian]
+
+* hardware/lineage/interfaces
+fa7a304  Introduce anti flicker LiveDisplay interface  [Arian]
 
 * packages/apps/LineageParts
-5697d03  Add a toggle for anti flicker mode in LiveDisplay settings  [Arian]
+75f0fde  Add a toggle for anti flicker mode in LiveDisplay settings  [Arian]
 ====================
-     2021-02-20    
+     2021-02-27    
 ====================
-====================
-     2021-02-19    
-====================
-====================
-     2021-02-18    
-====================
-
-* bootable/recovery
-fd1fbeb  updater: Do not null terminate mount_flags_list array  [Alessandro Astone]
 
 * lineage/mirror
-14be6cd  Updated aosp-minimal to 18-Feb-2021 13:01 UTC  [Tim Schumacher]
+d30ecef  Updated aosp-minimal to 27-Feb-2021 13:01 UTC  [Tim Schumacher]
 
-* vendor/lineage
-f16993e  backuptool: Correct supported partitions for addon.d v3  [Alessandro Astone]
+* vendor/qcom/opensource/cryptfs_hw
+aaa8a78  cryptfs_hw: Choose keymaster version for key signing  [Neeraj Soni]
 ====================
-     2021-02-17    
+     2021-02-26    
 ====================
-
-* hardware/lineage/livedisplay
-3e29877  livedisplay: Remove SDM-backended AdaptiveBacklight implementation  [dianlujitao]
 
 * lineage/mirror
-ad18097  Updated aosp-minimal to 17-Feb-2021 13:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-2e96479  wiki: Mark remaining 16.0 devices discontinued  [razorloves]
-
-* vendor/lineage
-b9aa311  kernel: Support pixel style vendor_boot modules  [Alessandro Astone]
+8502c21  Updated aosp-minimal to 26-Feb-2021 13:01 UTC  [Tim Schumacher]
 ====================
-     2021-02-16    
+     2021-02-25    
 ====================
-
-* build/make
-e661b59  releasetools: support reading release keys out of some sort of command  [Tom Powell]
 
 * frameworks/base
-b213dbd  SystemUI: Fix shutter sound  [Michael W]
-24463ec  SystemUI: Screenshots: Refactor shutter sound logic  [Michael W]
-e281e53  SystemUI: Handle cases that we can't address within FODCircleView  [Dil3mm4]
+d4cca21  BatteryService: Add support for battery Moto Mods  [Vachounet]
 
-* hardware/lineage/livedisplay
-7910c33  livedisplay: Move away from usage of ro.vendor.display.foss  [Nolen Johnson]
+* lineage/website
+872416a  Engineering: Basics of Working with SELinux on Android  [Aayush Gupta]
 
-* lineage/hudson
-010927c  Add experimental build targets  [Tom Powell]
-d1e170c  Drop 16.0  [Tom Powell]
-
-* lineage/wiki
-0f3bc07  Lineage is finally legal!  [Nolen Johnson]
+* vendor/xiaomi
+2479051  msm8998-common: Drop unused 32-bit RIL blobs  [Arian]
+c59e33f  Import msm8998-common and sagit from https://gitlab.com/the-muppets/proprietary_vendor_xiaomi/-/tree/9990e690dc06dfa588a1c38f5ec9789ebfdb8b58  [Arian]
 ====================
-     2021-02-15    
+     2021-02-24    
+====================
+
+* frameworks/base
+3e9fa16  Allow SBC as HD audio codec in Bluetooth device configuration  [ValdikSS]
+24de8e5  Add Dual Channel into Bluetooth Audio Channel Mode developer options menu  [ValdikSS]
+5c15088  Add CHANNEL_MODE_DUAL_CHANNEL constant  [ValdikSS]
+
+* hardware/lineage/interfaces
+4e8790e  Import Motorola Health HAL  [Vachounet]
+
+* lineage/mirror
+6bcc573  Updated aosp-minimal to 24-Feb-2021 13:01 UTC  [Tim Schumacher]
+
+* packages/apps/Bluetooth
+b4615fd  Assume optional codecs are supported if were supported previously  [ValdikSS]
+eef20ba  SBC Dual Channel (SBC HD Audio) support  [ValdikSS]
+
+* packages/apps/Settings
+c6bc9ee  Add Dual Channel into Bluetooth Audio Channel Mode developer options menu  [ValdikSS]
+
+* prebuilts/extract-tools
+2ffd09a  tools-lineage: Add prebuilt patchelf v0.8  [Sebastiano Barezzi]
+
+* tools/extract-utils
+7f0c788  extract_utils: Implement versioned patchelf and patchelf 0.8  [Sebastiano Barezzi]
+====================
+     2021-02-23    
 ====================
 
 * lineage/mirror
-37588b4  Updated aosp-minimal to 15-Feb-2021 13:01 UTC  [Tim Schumacher]
+3c0203c  Updated lineage-minimal to 23-Feb-2021 13:01 UTC  [Tim Schumacher]
 
-* lineage/wiki
-d6837c0  wiki: Restore note for LG recovery boot  [Alessandro Astone]
-0ed921b  Revert "d803: Bring instructions up to date with other g2 variants"  [Alessandro Astone]
-
-* packages/apps/Snap
-97755cb  Revert "Snap: Let mediaprovider add entry for newly taken photos"  [Arne Coucheron]
+* vendor/lineage
+7c42814  soong: Add TARGET_LEGACY_HW_DISK_ENCRYPTION conditional  [Nolen Johnson]
+====================
+     2021-02-22    
+====================
