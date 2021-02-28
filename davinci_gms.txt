@@ -1,82 +1,329 @@
 ====================
-     2021-02-22    
+     2021-02-28    
 ====================
 
 * device/lineage/sepolicy
-fe8c6c2  common: Label IAntiFlicker live display service  [Arian]
+c1dcea9  common: Label IAntiFlicker live display service  [Arian]
 
-* device/xiaomi/davinci
-2da868c  davinci: parts: Convert mLedBreathing to a boolean  [Arian]
-71da980  davinci: parts: Fix typo  [Arian]
-1e8ca4c  davinci: parts: Avoid saving and restoring our own LED effect  [Arian]
+* device/xiaomi/sm6150-common
+7d999c9  sm6150-common: Exclude CarrierConfig overlays from RRO  [derfelot]
+2670626  sm6150-common: Update from 21.2.24  [Arian]
 
 * frameworks/base
-6e6bdf9  SystemUI: Add anti flicker tile  [Arian]
+3a6e1c6  SystemUI: Add anti flicker tile  [Arian]
+009dd8b  Automatic translation import  [Michael Bestas]
+
+* hardware/lineage/interfaces
+36e5172  Introduce anti flicker LiveDisplay interface  [Arian]
+
+* kernel/xiaomi/sm6150
+eeda4ad  Merge branch 'android-4.14-stable' of https://android.googlesource.com/kernel/common into HEAD  [Arian]
+
+* lineage-sdk
+4713dd7  Introduce anti flicker mode in LiveDisplay  [Arian]
+09b2736  Automatic translation import  [Michael Bestas]
+
+* packages/apps/AudioFX
+61c0b0c  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Bluetooth
+8e8a27e  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Camera2
+ff976ad  Automatic translation import  [Michael Bestas]
+
+* packages/apps/CellBroadcastReceiver
+6d2de4a  Automatic translation import  [Michael Bestas]
+
+* packages/apps/CertInstaller
+a76e061  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Contacts
+c9fdee6  Automatic translation import  [Michael Bestas]
+
+* packages/apps/DeskClock
+a6ca1e0  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Dialer
+5a1bf25  Automatic translation import  [Michael Bestas]
+
+* packages/apps/DocumentsUI
+860e6bd  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Eleven
+fd4180f  Automatic translation import  [Michael Bestas]
+
+* packages/apps/EmergencyInfo
+80a9b04  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Etar
+85c3563  Automatic translation import  [Michael Bestas]
+
+* packages/apps/FlipFlap
+c243b20  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Gallery2
+12dedab  Automatic translation import  [Michael Bestas]
+
+* packages/apps/HTMLViewer
+28c88ac  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Jelly
+0591712  Automatic translation import  [Michael Bestas]
+
+* packages/apps/KeyChain
+4ae08c8  Automatic translation import  [Michael Bestas]
 
 * packages/apps/LineageParts
-6b6a706  Add a toggle for anti flicker mode in LiveDisplay settings  [Arian]
+24dec47  Add a toggle for anti flicker mode in LiveDisplay settings  [Arian]
+b723287  Automatic translation import  [Michael Bestas]
 
-* vendor/gms
-301ab87  Add Google Files app  [Arian]
+* packages/apps/ManagedProvisioning
+9e0b3f2  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Messaging
+d23ebe4  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Nfc
+b96085d  Automatic translation import  [Michael Bestas]
+
+* packages/apps/PermissionController
+245faee  Automatic translation import  [Michael Bestas]
+
+* packages/apps/PhoneCommon
+6a7dd26  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Recorder
+d21a50f  Automatic translation import  [Michael Bestas]
+
+* packages/apps/SafetyRegulatoryInfo
+7a20e4b  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Settings
+c4a02fd  Automatic translation import  [Michael Bestas]
+
+* packages/apps/SetupWizard
+f1b9098  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Snap
+2a72f37  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Stk
+1b18e7d  Automatic translation import  [Michael Bestas]
+
+* packages/apps/StorageManager
+5e17b9c  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Tag
+6856a19  Automatic translation import  [Michael Bestas]
+
+* packages/apps/ThemePicker
+71d5df0  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Trebuchet
+6ec5de2  Automatic translation import  [Michael Bestas]
+
+* packages/apps/TvSettings
+3f97219  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Updater
+5a9c747  Automatic translation import  [Michael Bestas]
+
+* packages/apps/WallpaperPicker2
+9fccfe5  Automatic translation import  [Michael Bestas]
+
+* packages/inputmethods/LatinIME
+2da36c4  Automatic translation import  [Michael Bestas]
+
+* packages/modules/CaptivePortalLogin
+f07b392  Automatic translation import  [Michael Bestas]
+
+* packages/providers/BlockedNumberProvider
+8721f75  Automatic translation import  [Michael Bestas]
+
+* packages/providers/BookmarkProvider
+f9f7d5b  Automatic translation import  [Michael Bestas]
+
+* packages/providers/CalendarProvider
+625d6f7  Automatic translation import  [Michael Bestas]
+
+* packages/providers/CallLogProvider
+0b14c94  Automatic translation import  [Michael Bestas]
+
+* packages/providers/ContactsProvider
+d25b1d5  Automatic translation import  [Michael Bestas]
+
+* packages/providers/DownloadProvider
+cb1fbfe  Automatic translation import  [Michael Bestas]
+
+* packages/providers/MediaProvider
+f1bbe5e  Automatic translation import  [Michael Bestas]
+
+* packages/providers/TelephonyProvider
+5c9d45a  Automatic translation import  [Michael Bestas]
+
+* packages/providers/UserDictionaryProvider
+ac74f35  Automatic translation import  [Michael Bestas]
+
+* packages/resources/devicesettings
+254e40a  Automatic translation import  [Michael Bestas]
+
+* packages/screensavers/Basic
+191ea06  Automatic translation import  [Michael Bestas]
+
+* packages/screensavers/PhotoTable
+cc71e4e  Automatic translation import  [Michael Bestas]
+
+* packages/services/BuiltInPrintService
+b57d21e  Automatic translation import  [Michael Bestas]
+
+* packages/services/Mms
+75b2c16  Automatic translation import  [Michael Bestas]
+
+* packages/services/Telecomm
+d8959b6  Automatic translation import  [Michael Bestas]
+
+* packages/services/Telephony
+6c79ae1  Automatic translation import  [Taesu Lee]
+
+* packages/wallpapers/LivePicker
+0b31d3a  Automatic translation import  [Michael Bestas]
+
+* vendor/qcom/opensource/fm-commonsys
+bfbc875  Automatic translation import  [Michael Bestas]
+
+* vendor/xiaomi
+356dfb8  {davinci,sm6150-common}: Update from 21.2.24  [Arian]
+6ff401b  msm8998-common: Remove IWlan  [Arian]
+0687ae4  msm8998-common: Drop unused libs  [Arian]
+7e2fe2e  msm8998-common: Drop unused 32-bit RIL blobs  [Arian]
 ====================
-     2021-02-21    
-====================
-====================
-     2021-02-20    
-====================
-====================
-     2021-02-19    
+     2021-02-27    
 ====================
 
 * lineage/mirror
-14be6cd  Updated aosp-minimal to 18-Feb-2021 13:01 UTC  [Tim Schumacher]
-
-* vendor/lineage
-f16993e  backuptool: Correct supported partitions for addon.d v3  [Alessandro Astone]
+d30ecef  Updated aosp-minimal to 27-Feb-2021 13:01 UTC  [Tim Schumacher]
 ====================
-     2021-02-18    
+     2021-02-26    
 ====================
-
-* bootable/recovery
-fd1fbeb  updater: Do not null terminate mount_flags_list array  [Alessandro Astone]
-
-* hardware/lineage/livedisplay
-3e29877  livedisplay: Remove SDM-backended AdaptiveBacklight implementation  [dianlujitao]
 
 * lineage/mirror
-ad18097  Updated aosp-minimal to 17-Feb-2021 13:01 UTC  [Tim Schumacher]
+8502c21  Updated aosp-minimal to 26-Feb-2021 13:01 UTC  [Tim Schumacher]
 
-* vendor/lineage
-b9aa311  kernel: Support pixel style vendor_boot modules  [Alessandro Astone]
+* vendor/qcom/opensource/cryptfs_hw
+aaa8a78  cryptfs_hw: Choose keymaster version for key signing  [Neeraj Soni]
 ====================
-     2021-02-17    
+     2021-02-25    
 ====================
-
-* build/make
-e661b59  releasetools: support reading release keys out of some sort of command  [Tom Powell]
 
 * frameworks/base
-b213dbd  SystemUI: Fix shutter sound  [Michael W]
-24463ec  SystemUI: Screenshots: Refactor shutter sound logic  [Michael W]
-e281e53  SystemUI: Handle cases that we can't address within FODCircleView  [Dil3mm4]
+d4cca21  BatteryService: Add support for battery Moto Mods  [Vachounet]
 
-* hardware/lineage/livedisplay
-7910c33  livedisplay: Move away from usage of ro.vendor.display.foss  [Nolen Johnson]
-
-* lineage/wiki
-2e96479  wiki: Mark remaining 16.0 devices discontinued  [razorloves]
-0f3bc07  Lineage is finally legal!  [Nolen Johnson]
+* lineage/website
+872416a  Engineering: Basics of Working with SELinux on Android  [Aayush Gupta]
 ====================
-     2021-02-16    
+     2021-02-24    
 ====================
 
-* lineage/hudson
-010927c  Add experimental build targets  [Tom Powell]
-d1e170c  Drop 16.0  [Tom Powell]
+* hardware/lineage/interfaces
+4e8790e  Import Motorola Health HAL  [Vachounet]
 
 * lineage/mirror
-37588b4  Updated aosp-minimal to 15-Feb-2021 13:01 UTC  [Tim Schumacher]
+6bcc573  Updated aosp-minimal to 24-Feb-2021 13:01 UTC  [Tim Schumacher]
 
-* lineage/wiki
-d6837c0  wiki: Restore note for LG recovery boot  [Alessandro Astone]
-0ed921b  Revert "d803: Bring instructions up to date with other g2 variants"  [Alessandro Astone]
+* vendor/xiaomi
+c59e33f  Import msm8998-common and sagit from https://gitlab.com/the-muppets/proprietary_vendor_xiaomi/-/tree/9990e690dc06dfa588a1c38f5ec9789ebfdb8b58  [Arian]
+====================
+     2021-02-23    
+====================
+
+* frameworks/base
+3e9fa16  Allow SBC as HD audio codec in Bluetooth device configuration  [ValdikSS]
+24de8e5  Add Dual Channel into Bluetooth Audio Channel Mode developer options menu  [ValdikSS]
+5c15088  Add CHANNEL_MODE_DUAL_CHANNEL constant  [ValdikSS]
+
+* kernel/xiaomi/sm6150
+c0303b0  Merge 4.14.222 into android-4.14-stable  [Greg Kroah-Hartman]
+3242aa3  Linux 4.14.222  [Greg Kroah-Hartman]
+3017f5e  kvm: check tlbs_dirty directly  [Lai Jiangshan]
+2afb9a5  usb: gadget: u_ether: Fix MTU size mismatch with RX packet size  [Manish Narani]
+2c7a2cf  USB: Gadget Ethernet: Re-enable Jumbo frames.  [John Greb]
+944a2bc  scsi: qla2xxx: Fix crash during driver load on big endian machines  [Arun Easi]
+5571633  xen-blkback: fix error handling in xen_blkbk_map()  [Jan Beulich]
+7910839  xen-scsiback: don't "handle" error by BUG()  [Jan Beulich]
+9ca5958  xen-netback: don't "handle" error by BUG()  [Jan Beulich]
+fd8ec8c  xen-blkback: don't "handle" error by BUG()  [Jan Beulich]
+4514b5e  xen/arm: don't ignore return errors from set_phys_to_machine  [Stefano Stabellini]
+9c12c61  Xen/gntdev: correct error checking in gntdev_map_grant_pages()  [Jan Beulich]
+84e240c  Xen/gntdev: correct dev_bus_addr handling in gntdev_map_grant_pages()  [Jan Beulich]
+232ba59  Xen/x86: also check kernel mapping in set_foreign_p2m_mapping()  [Jan Beulich]
+da2e2a5  Xen/x86: don't bail early from clear_foreign_p2m_mapping()  [Jan Beulich]
+4480921  tracing: Avoid calling cc-option -mrecord-mcount for every Makefile  [Vasily Gorbik]
+cfc6eb1  tracing: Fix SKIP_STACK_VALIDATION=1 build due to bad merge with -mrecord-mcount  [Greg Thelen]
+0788a22  trace: Use -mcount-record for dynamic ftrace  [Andi Kleen]
+0d38200  x86/build: Disable CET instrumentation in the kernel for 32-bit too  [Borislav Petkov]
+307f2d6  h8300: fix PREEMPTION build, TI_PRE_COUNT undefined  [Randy Dunlap]
+de3ae58  i2c: stm32f7: fix configuration of the digital filter  [Alain Volmat]
+dbdc5fe  vsock: fix locking in vsock_shutdown()  [Stefano Garzarella]
+e3bb32a  vsock/virtio: update credit only if socket is not closed  [Stefano Garzarella]
+8d403a8  net: watchdog: hold device global xmit lock during tx disable  [Edwin Peer]
+8326059  net/vmw_vsock: improve locking in vsock_connect_timeout()  [Norbert Slusarek]
+910df5c  usb: dwc3: ulpi: Replace CPU-based busyloop with Protocol-based one  [Serge Semin]
+bf94aed  usb: dwc3: ulpi: fix checkpatch warning  [Felipe Balbi]
+f66f9f7  netfilter: conntrack: skip identical origin tuple in same zone only  [Florian Westphal]
+18b4830  xen/netback: avoid race in xenvif_rx_ring_slots_available()  [Juergen Gross]
+c7559fe  netfilter: xt_recent: Fix attempt to update deleted entry  [Jozsef Kadlecsik]
+7661073  bpf: Check for integer overflow when using roundup_pow_of_two()  [Bui Quang Minh]
+6c8acb4  memblock: do not start bottom-up allocations with kernel_end  [Roman Gushchin]
+b71cc50  ARM: ensure the signal page contains defined contents  [Russell King]
+5cbab23  ARM: dts: lpc32xx: Revert set default clock rate of HCLK PLL  [Alexandre Belloni]
+4dfce60  ovl: skip getxattr of security labels  [Amir Goldstein]
+83515cf  cap: fix conversions on getxattr  [Miklos Szeredi]
+7b6887b  ovl: perform vfs_getxattr() with mounter creds  [Miklos Szeredi]
+a9313a5  platform/x86: hp-wmi: Disable tablet-mode reporting by default  [Hans de Goede]
+9b66fea  arm64: dts: rockchip: Fix PCIe DT properties on rk3399  [Marc Zyngier]
+5c780be  MIPS: BMIPS: Fix section mismatch warning  [Jaedon Shin]
+11c2ecc  arm/xen: Don't probe xenbus as part of an early initcall  [Julien Grall]
+e46d433  tracing: Check length before giving out the filter buffer  [Steven Rostedt (VMware)]
+c6cb6af  tracing: Do not count ftrace events in top level enable output  [Steven Rostedt (VMware)]
+ff49cac  squashfs: add more sanity checks in xattr id lookup  [Phillip Lougher]
+69396cf  squashfs: add more sanity checks in inode lookup  [Phillip Lougher]
+8d9ca7e  squashfs: add more sanity checks in id lookup  [Phillip Lougher]
+d24cf6d  memcg: fix a crash in wb_workfn when a device disappears  [Theodore Ts'o]
+fe4c891  include/trace/events/writeback.h: fix -Wstringop-truncation warnings  [Qian Cai]
+fe072e5  lib/string: Add strscpy_pad() function  [Tobin C. Harding]
+8019d707  SUNRPC: Handle 0 length opaque XDR object data properly  [Dave Wysochanski]
+29160df  SUNRPC: Move simple_get_bytes and simple_get_netobj into private header  [Dave Wysochanski]
+0dc0b33  iwlwifi: mvm: guard against device removal in reprobe  [Johannes Berg]
+4728105  iwlwifi: pcie: add a NULL check in iwl_pcie_txq_unmap  [Emmanuel Grumbach]
+82835d7  iwlwifi: mvm: take mutex for calling iwl_mvm_get_sync_time()  [Johannes Berg]
+2efbcd8  pNFS/NFSv4: Try to return invalid layout in pnfs_layout_process()  [Trond Myklebust]
+1ca96f3  af_key: relax availability checks for skb size calculation  [Cong Wang]
+a4dfa80  remoteproc: qcom_q6v5_mss: Validate MBA firmware size before load  [Sibi Sankar]
+5de4af5  remoteproc: qcom_q6v5_mss: Validate modem blob firmware size before load  [Sibi Sankar]
+7ffd979  fgraph: Initialize tracing_graph_pause at task creation  [Steven Rostedt (VMware)]
+
+* lineage/mirror
+3c0203c  Updated lineage-minimal to 23-Feb-2021 13:01 UTC  [Tim Schumacher]
+
+* packages/apps/Bluetooth
+b4615fd  Assume optional codecs are supported if were supported previously  [ValdikSS]
+eef20ba  SBC Dual Channel (SBC HD Audio) support  [ValdikSS]
+
+* packages/apps/Settings
+c6bc9ee  Add Dual Channel into Bluetooth Audio Channel Mode developer options menu  [ValdikSS]
+
+* prebuilts/extract-tools
+2ffd09a  tools-lineage: Add prebuilt patchelf v0.8  [Sebastiano Barezzi]
+
+* tools/extract-utils
+7f0c788  extract_utils: Implement versioned patchelf and patchelf 0.8  [Sebastiano Barezzi]
+====================
+     2021-02-22    
+====================
+
+* kernel/xiaomi/sm6150
+2581e5b  BACKPORT: dma-buf: Move dma_buf_release() from fops to dentry_ops  [Allen Chiu]
+
+* vendor/lineage
+7c42814  soong: Add TARGET_LEGACY_HW_DISK_ENCRYPTION conditional  [Nolen Johnson]
