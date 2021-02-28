@@ -1,79 +1,67 @@
 ====================
-     2021-02-21    
+     2021-02-28    
 ====================
 
 * build/make
-d321581  [DNM] Always use release-keys  [Arian]
+443bced  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-287ced3  common: Label IAntiFlicker live display service  [Arian]
+8e7a39a  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-05cf748  SystemUI: get rid of build text in qs  [Joey]
-6869e61  SystemUI: Add anti flicker tile  [Arian]
-fd2fc11  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+1c2a0ba  SystemUI: get rid of build text in qs  [Joey]
+fbde613  SystemUI: Add anti flicker tile  [Arian]
+0cf856e  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-28b8b7e  Add support for anti flicker mode in LiveDisplay  [Arian]
+effe871  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-0390358  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+b4e56cf  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-8b3dc09  Add support for anti flicker mode in LiveDisplay  [Arian]
-0512647  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+cf13d96  Add support for anti flicker mode in LiveDisplay  [Arian]
+0861dd4  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+
+* lineage/mirror
+d30ecef  Updated aosp-minimal to 27-Feb-2021 13:01 UTC  [Tim Schumacher]
 
 * packages/apps/LineageParts
-4c6b347  Add support for anti flicker mode in LiveDisplay  [Arian]
-06941a7  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+a741faa  Add support for anti flicker mode in LiveDisplay  [Arian]
+789dddd  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-02-20    
-====================
-====================
-     2021-02-19    
+     2021-02-27    
 ====================
 
 * lineage/mirror
-14be6cd  Updated aosp-minimal to 18-Feb-2021 13:01 UTC  [Tim Schumacher]
+8502c21  Updated aosp-minimal to 26-Feb-2021 13:01 UTC  [Tim Schumacher]
 ====================
-     2021-02-18    
+     2021-02-26    
+====================
+
+* lineage/website
+872416a  Engineering: Basics of Working with SELinux on Android  [Aayush Gupta]
+====================
+     2021-02-25    
 ====================
 
 * lineage/mirror
-ad18097  Updated aosp-minimal to 17-Feb-2021 13:01 UTC  [Tim Schumacher]
-====================
-     2021-02-17    
-====================
+6bcc573  Updated aosp-minimal to 24-Feb-2021 13:01 UTC  [Tim Schumacher]
 
-* lineage/wiki
-2e96479  wiki: Mark remaining 16.0 devices discontinued  [razorloves]
-0f3bc07  Lineage is finally legal!  [Nolen Johnson]
+* vendor/lineage
+6b983e7  Enable IPV4V6 for APN Yesss  [Johannes UNGER]
 ====================
-     2021-02-16    
+     2021-02-24    
 ====================
-
-* frameworks/base
-202acb2  Automatic translation import  [LineageOS Builder]
-
-* lineage/hudson
-010927c  Add experimental build targets  [Tom Powell]
-d1e170c  Drop 16.0  [Tom Powell]
 
 * lineage/mirror
-37588b4  Updated aosp-minimal to 15-Feb-2021 13:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-d6837c0  wiki: Restore note for LG recovery boot  [Alessandro Astone]
-0ed921b  Revert "d803: Bring instructions up to date with other g2 variants"  [Alessandro Astone]
-
-* packages/apps/LineageParts
-e3c8674  Automatic translation import  [LineageOS Builder]
+3c0203c  Updated lineage-minimal to 23-Feb-2021 13:01 UTC  [Tim Schumacher]
 ====================
-     2021-02-15    
+     2021-02-23    
+====================
+====================
+     2021-02-22    
 ====================
 
-* lineage/hudson
-0472bf3  hudson: Promote ls990 to 17.1  [Aleksander Gencel]
-
-* lineage/wiki
-62b3dc7  wiki: Promote ls990 to 17.1  [Aleksander Gencel]
+* lineage/mirror
+1a1ee4b  Updated aosp-minimal to 21-Feb-2021 13:01 UTC  [Tim Schumacher]
