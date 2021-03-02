@@ -1,26 +1,59 @@
 ====================
-     2021-02-28    
+     2021-03-02    
 ====================
 
 * device/lineage/sepolicy
-c1dcea9  common: Label IAntiFlicker live display service  [Arian]
+c06d7c1  common: Label IAntiFlicker live display service  [Arian]
+
+* device/xiaomi/davinci
+99c542f  davinci: Build fingerprintextension enabled fingerprint service  [Arian]
+
+* device/xiaomi/sm6150-common
+e750521  sm6150-common: sepolicy: Label fingerprintextension enabled fingerprint service  [Arian]
+0ec3664  sm6150-common: fingerprint: Remove fpc, fpdump and fortsense folders  [Arian]
+7a8f661  sm6150-common: rootdir: Move event2 permissions to ueventd.rc  [Arian]
+454cf27  sm6150-common: Move fingerprintextension to vintf fragments  [Arian]
+26c810f  sm6150-common: fingerprint: Setup file permissions  [Arian]
+32aba99  sm6150-common: fingerprint: Allow to build without fingerprintextension  [Arian]
+05b5d54  Revert "sm6150-common: fingerprint: Setup file permissions for goodix and fpc"  [Arian]
+08f8d3c  Revert "sm6150-common: fingerprint: Don't depend on fingerprintextension"  [Arian]
+fc7c658  sm6150-common: Rollback WCNSS_qcom_cfg.ini to china stable  [Arian]
+
+* frameworks/base
+e382ffd  SystemUI: Add anti flicker tile  [Arian]
+
+* hardware/lineage/interfaces
+e797f71  Introduce anti flicker LiveDisplay interface  [Arian]
+
+* kernel/xiaomi/sm6150
+072e8ae  ARM64: dts: xiaomi: Decrease physical panel dimensions  [Arian]
+
+* lineage-sdk
+c995733  Introduce anti flicker mode in LiveDisplay  [Arian]
+
+* packages/apps/LineageParts
+5f73766  Add a toggle for anti flicker mode in LiveDisplay settings  [Arian]
+====================
+     2021-03-01    
+====================
+
+* device/xiaomi/davinci
+045bcf3  davinci: Rearrange camera blobs  [Arian]
+====================
+     2021-02-28    
+====================
 
 * device/xiaomi/sm6150-common
 7d999c9  sm6150-common: Exclude CarrierConfig overlays from RRO  [derfelot]
 2670626  sm6150-common: Update from 21.2.24  [Arian]
 
 * frameworks/base
-3a6e1c6  SystemUI: Add anti flicker tile  [Arian]
 009dd8b  Automatic translation import  [Michael Bestas]
-
-* hardware/lineage/interfaces
-36e5172  Introduce anti flicker LiveDisplay interface  [Arian]
 
 * kernel/xiaomi/sm6150
 eeda4ad  Merge branch 'android-4.14-stable' of https://android.googlesource.com/kernel/common into HEAD  [Arian]
 
 * lineage-sdk
-4713dd7  Introduce anti flicker mode in LiveDisplay  [Arian]
 09b2736  Automatic translation import  [Michael Bestas]
 
 * packages/apps/AudioFX
@@ -75,7 +108,6 @@ c243b20  Automatic translation import  [Michael Bestas]
 4ae08c8  Automatic translation import  [Michael Bestas]
 
 * packages/apps/LineageParts
-24dec47  Add a toggle for anti flicker mode in LiveDisplay settings  [Arian]
 b723287  Automatic translation import  [Michael Bestas]
 
 * packages/apps/ManagedProvisioning
@@ -203,38 +235,29 @@ bfbc875  Automatic translation import  [Michael Bestas]
 
 * lineage/mirror
 d30ecef  Updated aosp-minimal to 27-Feb-2021 13:01 UTC  [Tim Schumacher]
-====================
-     2021-02-26    
-====================
-
-* lineage/mirror
-8502c21  Updated aosp-minimal to 26-Feb-2021 13:01 UTC  [Tim Schumacher]
 
 * vendor/qcom/opensource/cryptfs_hw
 aaa8a78  cryptfs_hw: Choose keymaster version for key signing  [Neeraj Soni]
 ====================
-     2021-02-25    
+     2021-02-26    
 ====================
 
 * frameworks/base
 d4cca21  BatteryService: Add support for battery Moto Mods  [Vachounet]
 
+* lineage/mirror
+8502c21  Updated aosp-minimal to 26-Feb-2021 13:01 UTC  [Tim Schumacher]
+
 * lineage/website
 872416a  Engineering: Basics of Working with SELinux on Android  [Aayush Gupta]
 ====================
-     2021-02-24    
+     2021-02-25    
 ====================
-
-* hardware/lineage/interfaces
-4e8790e  Import Motorola Health HAL  [Vachounet]
-
-* lineage/mirror
-6bcc573  Updated aosp-minimal to 24-Feb-2021 13:01 UTC  [Tim Schumacher]
 
 * vendor/xiaomi
 c59e33f  Import msm8998-common and sagit from https://gitlab.com/the-muppets/proprietary_vendor_xiaomi/-/tree/9990e690dc06dfa588a1c38f5ec9789ebfdb8b58  [Arian]
 ====================
-     2021-02-23    
+     2021-02-24    
 ====================
 
 * frameworks/base
@@ -242,69 +265,11 @@ c59e33f  Import msm8998-common and sagit from https://gitlab.com/the-muppets/pro
 24de8e5  Add Dual Channel into Bluetooth Audio Channel Mode developer options menu  [ValdikSS]
 5c15088  Add CHANNEL_MODE_DUAL_CHANNEL constant  [ValdikSS]
 
-* kernel/xiaomi/sm6150
-c0303b0  Merge 4.14.222 into android-4.14-stable  [Greg Kroah-Hartman]
-3242aa3  Linux 4.14.222  [Greg Kroah-Hartman]
-3017f5e  kvm: check tlbs_dirty directly  [Lai Jiangshan]
-2afb9a5  usb: gadget: u_ether: Fix MTU size mismatch with RX packet size  [Manish Narani]
-2c7a2cf  USB: Gadget Ethernet: Re-enable Jumbo frames.  [John Greb]
-944a2bc  scsi: qla2xxx: Fix crash during driver load on big endian machines  [Arun Easi]
-5571633  xen-blkback: fix error handling in xen_blkbk_map()  [Jan Beulich]
-7910839  xen-scsiback: don't "handle" error by BUG()  [Jan Beulich]
-9ca5958  xen-netback: don't "handle" error by BUG()  [Jan Beulich]
-fd8ec8c  xen-blkback: don't "handle" error by BUG()  [Jan Beulich]
-4514b5e  xen/arm: don't ignore return errors from set_phys_to_machine  [Stefano Stabellini]
-9c12c61  Xen/gntdev: correct error checking in gntdev_map_grant_pages()  [Jan Beulich]
-84e240c  Xen/gntdev: correct dev_bus_addr handling in gntdev_map_grant_pages()  [Jan Beulich]
-232ba59  Xen/x86: also check kernel mapping in set_foreign_p2m_mapping()  [Jan Beulich]
-da2e2a5  Xen/x86: don't bail early from clear_foreign_p2m_mapping()  [Jan Beulich]
-4480921  tracing: Avoid calling cc-option -mrecord-mcount for every Makefile  [Vasily Gorbik]
-cfc6eb1  tracing: Fix SKIP_STACK_VALIDATION=1 build due to bad merge with -mrecord-mcount  [Greg Thelen]
-0788a22  trace: Use -mcount-record for dynamic ftrace  [Andi Kleen]
-0d38200  x86/build: Disable CET instrumentation in the kernel for 32-bit too  [Borislav Petkov]
-307f2d6  h8300: fix PREEMPTION build, TI_PRE_COUNT undefined  [Randy Dunlap]
-de3ae58  i2c: stm32f7: fix configuration of the digital filter  [Alain Volmat]
-dbdc5fe  vsock: fix locking in vsock_shutdown()  [Stefano Garzarella]
-e3bb32a  vsock/virtio: update credit only if socket is not closed  [Stefano Garzarella]
-8d403a8  net: watchdog: hold device global xmit lock during tx disable  [Edwin Peer]
-8326059  net/vmw_vsock: improve locking in vsock_connect_timeout()  [Norbert Slusarek]
-910df5c  usb: dwc3: ulpi: Replace CPU-based busyloop with Protocol-based one  [Serge Semin]
-bf94aed  usb: dwc3: ulpi: fix checkpatch warning  [Felipe Balbi]
-f66f9f7  netfilter: conntrack: skip identical origin tuple in same zone only  [Florian Westphal]
-18b4830  xen/netback: avoid race in xenvif_rx_ring_slots_available()  [Juergen Gross]
-c7559fe  netfilter: xt_recent: Fix attempt to update deleted entry  [Jozsef Kadlecsik]
-7661073  bpf: Check for integer overflow when using roundup_pow_of_two()  [Bui Quang Minh]
-6c8acb4  memblock: do not start bottom-up allocations with kernel_end  [Roman Gushchin]
-b71cc50  ARM: ensure the signal page contains defined contents  [Russell King]
-5cbab23  ARM: dts: lpc32xx: Revert set default clock rate of HCLK PLL  [Alexandre Belloni]
-4dfce60  ovl: skip getxattr of security labels  [Amir Goldstein]
-83515cf  cap: fix conversions on getxattr  [Miklos Szeredi]
-7b6887b  ovl: perform vfs_getxattr() with mounter creds  [Miklos Szeredi]
-a9313a5  platform/x86: hp-wmi: Disable tablet-mode reporting by default  [Hans de Goede]
-9b66fea  arm64: dts: rockchip: Fix PCIe DT properties on rk3399  [Marc Zyngier]
-5c780be  MIPS: BMIPS: Fix section mismatch warning  [Jaedon Shin]
-11c2ecc  arm/xen: Don't probe xenbus as part of an early initcall  [Julien Grall]
-e46d433  tracing: Check length before giving out the filter buffer  [Steven Rostedt (VMware)]
-c6cb6af  tracing: Do not count ftrace events in top level enable output  [Steven Rostedt (VMware)]
-ff49cac  squashfs: add more sanity checks in xattr id lookup  [Phillip Lougher]
-69396cf  squashfs: add more sanity checks in inode lookup  [Phillip Lougher]
-8d9ca7e  squashfs: add more sanity checks in id lookup  [Phillip Lougher]
-d24cf6d  memcg: fix a crash in wb_workfn when a device disappears  [Theodore Ts'o]
-fe4c891  include/trace/events/writeback.h: fix -Wstringop-truncation warnings  [Qian Cai]
-fe072e5  lib/string: Add strscpy_pad() function  [Tobin C. Harding]
-8019d707  SUNRPC: Handle 0 length opaque XDR object data properly  [Dave Wysochanski]
-29160df  SUNRPC: Move simple_get_bytes and simple_get_netobj into private header  [Dave Wysochanski]
-0dc0b33  iwlwifi: mvm: guard against device removal in reprobe  [Johannes Berg]
-4728105  iwlwifi: pcie: add a NULL check in iwl_pcie_txq_unmap  [Emmanuel Grumbach]
-82835d7  iwlwifi: mvm: take mutex for calling iwl_mvm_get_sync_time()  [Johannes Berg]
-2efbcd8  pNFS/NFSv4: Try to return invalid layout in pnfs_layout_process()  [Trond Myklebust]
-1ca96f3  af_key: relax availability checks for skb size calculation  [Cong Wang]
-a4dfa80  remoteproc: qcom_q6v5_mss: Validate MBA firmware size before load  [Sibi Sankar]
-5de4af5  remoteproc: qcom_q6v5_mss: Validate modem blob firmware size before load  [Sibi Sankar]
-7ffd979  fgraph: Initialize tracing_graph_pause at task creation  [Steven Rostedt (VMware)]
+* hardware/lineage/interfaces
+4e8790e  Import Motorola Health HAL  [Vachounet]
 
 * lineage/mirror
-3c0203c  Updated lineage-minimal to 23-Feb-2021 13:01 UTC  [Tim Schumacher]
+6bcc573  Updated aosp-minimal to 24-Feb-2021 13:01 UTC  [Tim Schumacher]
 
 * packages/apps/Bluetooth
 b4615fd  Assume optional codecs are supported if were supported previously  [ValdikSS]
@@ -318,12 +283,3 @@ c6bc9ee  Add Dual Channel into Bluetooth Audio Channel Mode developer options me
 
 * tools/extract-utils
 7f0c788  extract_utils: Implement versioned patchelf and patchelf 0.8  [Sebastiano Barezzi]
-====================
-     2021-02-22    
-====================
-
-* kernel/xiaomi/sm6150
-2581e5b  BACKPORT: dma-buf: Move dma_buf_release() from fops to dentry_ops  [Allen Chiu]
-
-* vendor/lineage
-7c42814  soong: Add TARGET_LEGACY_HW_DISK_ENCRYPTION conditional  [Nolen Johnson]
