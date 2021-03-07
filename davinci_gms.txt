@@ -1,67 +1,134 @@
 ====================
-     2021-02-28    
+     2021-03-07    
 ====================
 
 * build/make
-6c1b241  [DNM] Always use release-keys  [Arian]
+d1abf28  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-204a2f3  common: Label IAntiFlicker live display service  [Arian]
+506930b  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-9b5138a  SystemUI: get rid of build text in qs  [Joey]
-a0503a8  SystemUI: Add anti flicker tile  [Arian]
-4afd07a  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+3f421c1  SystemUI: get rid of build text in qs  [Joey]
+e5130da  SystemUI: Add anti flicker tile  [Arian]
+1c4c993  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-71d0bd4  Add support for anti flicker mode in LiveDisplay  [Arian]
+c87f21c  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-86b2da5  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+cc50890  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-2ad9ee1  Add support for anti flicker mode in LiveDisplay  [Arian]
-1a1a020  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
-
-* lineage/mirror
-d30ecef  Updated aosp-minimal to 27-Feb-2021 13:01 UTC  [Tim Schumacher]
+5fc85b7  Add support for anti flicker mode in LiveDisplay  [Arian]
+7642d72  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * packages/apps/LineageParts
-41ef121  Add support for anti flicker mode in LiveDisplay  [Arian]
-439d07d  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+a0abaa2  Add support for anti flicker mode in LiveDisplay  [Arian]
+78b1cea  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-02-27    
+     2021-03-06    
+====================
+====================
+     2021-03-05    
+====================
+
+* build/make
+00793cf  Bump Security String to 2021-03-05  [Kevin F. Haggerty]
+
+* frameworks/native
+75f7787  libbinder: readString*Inplace SafetyNet (II)  [Steven Moreland]
+a036cac  libbinder: check null bytes in readString*Inplace  [Steven Moreland]
+
+* vendor/qcom/opensource/commonsys/system/bt
+ab54cd0  SDP: Only start discovery once  [Myles Watson]
+====================
+     2021-03-04    
+====================
+
+* android
+04a1525  Track our own fork(s) for 2021-03 ASB patching  [Kevin F. Haggerty]
+
+* art
+ff92682  Merge tag 'android-security-10.0.0_r52' into staging/lineage-17.1_merge_android-security-10.0.0_r52  [Kevin F. Haggerty]
+
+* external/v8
+507001d  Merge tag 'android-security-10.0.0_r52' into staging/lineage-17.1_merge_android-security-10.0.0_r52  [Kevin F. Haggerty]
+
+* frameworks/base
+41eae47  Merge tag 'android-security-10.0.0_r52' into staging/lineage-17.1_merge_android-security-10.0.0_r52  [Kevin F. Haggerty]
+
+* frameworks/opt/net/wifi
+cd31d34  Merge tag 'android-security-10.0.0_r52' into staging/lineage-17.1_merge_android-security-10.0.0_r52  [Kevin F. Haggerty]
+
+* system/bt
+dbd2f70  Merge tag 'android-security-10.0.0_r52' into staging/lineage-17.1_merge_android-security-10.0.0_r52  [Kevin F. Haggerty]
+====================
+     2021-03-03    
 ====================
 
 * lineage/mirror
-8502c21  Updated aosp-minimal to 26-Feb-2021 13:01 UTC  [Tim Schumacher]
+10ac4b5  Updated aosp-minimal to 02-Mar-2021 13:01 UTC  [Tim Schumacher]
 ====================
-     2021-02-26    
+     2021-03-02    
 ====================
-
-* lineage/website
-872416a  Engineering: Basics of Working with SELinux on Android  [Aayush Gupta]
 ====================
-     2021-02-25    
+     2021-03-01    
 ====================
 
-* lineage/mirror
-6bcc573  Updated aosp-minimal to 24-Feb-2021 13:01 UTC  [Tim Schumacher]
+* frameworks/base
+76ec2b4  Automatic translation import  [LineageOS Builder]
 
-* vendor/lineage
-6b983e7  Enable IPV4V6 for APN Yesss  [Johannes UNGER]
-====================
-     2021-02-24    
-====================
+* packages/apps/DeskClock
+3be624d  Automatic translation import  [LineageOS Builder]
 
-* lineage/mirror
-3c0203c  Updated lineage-minimal to 23-Feb-2021 13:01 UTC  [Tim Schumacher]
-====================
-     2021-02-23    
-====================
-====================
-     2021-02-22    
-====================
+* packages/apps/Dialer
+2bf756c  Automatic translation import  [LineageOS Builder]
 
-* lineage/mirror
-1a1ee4b  Updated aosp-minimal to 21-Feb-2021 13:01 UTC  [Tim Schumacher]
+* packages/apps/Eleven
+fa65c2a  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Etar
+22f8319  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/FMRadio
+f07cfd7  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Jelly
+04221f3  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/LineageParts
+e594e5d  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Recorder
+54706e4  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Settings
+203ee68  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/SetupWizard
+1cad6ae  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Snap
+53e8a76  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Trebuchet
+3987cf0  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Updater
+f1977fa  Automatic translation import  [LineageOS Builder]
+
+* packages/inputmethods/LatinIME
+335556a  Automatic translation import  [LineageOS Builder]
+
+* packages/resources/devicesettings
+248fb5b  Automatic translation import  [LineageOS Builder]
+
+* packages/services/BuiltInPrintService
+9ead2d8  Automatic translation import  [LineageOS Builder]
+
+* packages/services/Telephony
+fe48c96  Automatic translation import  [LineageOS Builder]
+
+* vendor/qcom/opensource/fm-commonsys
+7cf9191  Automatic translation import  [LineageOS Builder]
