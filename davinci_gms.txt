@@ -1,15 +1,255 @@
 ====================
-     2021-03-02    
+     2021-03-08    
 ====================
 
 * device/lineage/sepolicy
-c06d7c1  common: Label IAntiFlicker live display service  [Arian]
+01d0455  common: Label IAntiFlicker live display service  [Arian]
+9175be9  fixup! sepolicy: common: Move Moto Health HAL to dynamic policy  [Aayush Gupta]
+d13d4fa  sepolicy: common: Move Moto Health HAL to dynamic policy  [Joshua Blanchard]
+
+* frameworks/base
+ab28bac  SystemUI: Add anti flicker tile  [Arian]
+
+* hardware/lineage/interfaces
+23b16eb  Introduce anti flicker LiveDisplay interface  [Arian]
+
+* lineage-sdk
+b3f7738  Introduce anti flicker mode in LiveDisplay  [Arian]
+
+* lineage/wiki
+494a9d2  wiki: g2: Instruct to exit adb shell after bootloader dd  [Alessandro Astone]
+
+* packages/apps/LineageParts
+206bb23  Add a toggle for anti flicker mode in LiveDisplay settings  [Arian]
+====================
+     2021-03-07    
+====================
+
+* frameworks/base
+e388fe7  Sharesheet: Set max ranked items to 8  [LuK1337]
+d274c33  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* frameworks/native
+8734385  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* lineage-sdk
+4457a81  lineage-sdk: Fix NPE when using getPictureAdjustmentRanges()  [Han Wang]
+
+* system/core
+38d2a0e  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* system/vold
+748ecf7  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+====================
+     2021-03-06    
+====================
+
+* device/lineage/sepolicy
+a5640c3  lineage: common: public: Address Motorola Health HAL denial  [Nolen Johnson]
+====================
+     2021-03-05    
+====================
+
+* android
+2914b89  manifest: android-11.0.0_r29 -> android-11.0.0_r32  [Kevin F. Haggerty]
+====================
+     2021-03-04    
+====================
+
+* vendor/nxp/opensource/pn5xx/halimpl
+b5a5253  A stack OOB write vuln of nxp nfc hal library  [Alisher Alikhodjaev]
+
+* vendor/nxp/opensource/sn100x/halimpl
+cad836e  A stack OOB write vuln of nxp nfc hal library  [Alisher Alikhodjaev]
+
+* vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
+2592b10  Prevent drawing on top of Bluetooth activities  [Jakub Pawlowski]
+====================
+     2021-03-03    
+====================
+
+* art
+aad295f  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* bionic
+3a00387  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* bootable/recovery
+b320ec0  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* build/make
+2f68654  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* build/soong
+72b6170  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
 
 * device/xiaomi/davinci
+01101a6  davinci: overlay: Add regulatory info from MIUI V12.0.4.0.QFJEUXM  [Arian]
+7d2667c  davinci: Rollback to stable 12.1.1.0  [Arian]
 99c542f  davinci: Build fingerprintextension enabled fingerprint service  [Arian]
 
 * device/xiaomi/sm6150-common
 e750521  sm6150-common: sepolicy: Label fingerprintextension enabled fingerprint service  [Arian]
+
+* external/cldr
+1e4de98  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* external/icu
+9631b02  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* frameworks/av
+26a64fb  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* frameworks/base
+d0b4d17  BatteryService: Mod: Check against all conditions  [Ali B]
+df71b93  BatteryManager: Mark battery moto mods constants as hidden  [LuK1337]
+
+* frameworks/native
+9e07dbd  Ensure that expected present time is in the future  [Snild Dolkow]
+c02140b  SF: handle long waiting Layer sync point  [KaiChieh Chuang]
+
+* frameworks/opt/net/wifi
+5f3c73c  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* frameworks/opt/telephony
+fad7a3a  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* frameworks/opt/timezonepicker
+b001963  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* hardware/google/pixel
+3439a86  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* hardware/interfaces
+229285d  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* hardware/knowles/athletico/sound_trigger_hal
+339f25d  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* hardware/nxp/nfc
+111aecc  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* hardware/qcom/sm7250/gps
+eb3b91e  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* kernel/xiaomi/sm6150
+072e8ae  ARM64: dts: xiaomi: Decrease physical panel dimensions  [Arian]
+
+* lineage/mirror
+10ac4b5  Updated aosp-minimal to 02-Mar-2021 13:01 UTC  [Tim Schumacher]
+
+* packages/apps/BasicSmsReceiver
+24073c6  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/apps/Bluetooth
+4953e5b  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/apps/CarrierConfig
+f9c56d7  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/apps/CellBroadcastReceiver
+2daf3ec  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/apps/CertInstaller
+615fe43  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/apps/Contacts
+514d1ab  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/apps/DocumentsUI
+27a3507  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/apps/EmergencyInfo
+9c1ad2e  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/apps/ManagedProvisioning
+778a6b5  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/apps/Nfc
+71a38be  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/apps/PermissionController
+f4b38f2  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/apps/PhoneCommon
+aa2a9c7  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/apps/Settings
+5b06dc2  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/apps/SettingsIntelligence
+b3da2c5  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/apps/StorageManager
+6792c91  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/apps/Tag
+e2c10b7  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/apps/ThemePicker
+05efb67  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/apps/Traceur
+ee15011  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/apps/Trebuchet
+fd3fde7  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/apps/TvSettings
+d7facce  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/apps/WallpaperPicker2
+6b89cbd  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/modules/CaptivePortalLogin
+352c5d4  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/providers/ContactsProvider
+9237c99  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/providers/DownloadProvider
+f9d9d32  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/providers/MediaProvider
+8124230  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/providers/TelephonyProvider
+2bcb7d9  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/services/BuiltInPrintService
+c8a1e5c  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/services/Telecomm
+84063bd  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/services/Telephony
+030ccd7  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* packages/wallpapers/LivePicker
+c282b0b  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* system/bt
+464b040  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* system/sepolicy
+f351416  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* system/timezone
+4181b85  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* system/update_engine
+0732d12  Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32  [Kevin F. Haggerty]
+
+* vendor/qcom/opensource/commonsys/system/bt
+3a0ad0d  SDP: Only start discovery once  [Myles Watson]
+====================
+     2021-03-02    
+====================
+
+* device/xiaomi/davinci
+045bcf3  davinci: Rearrange camera blobs  [Arian]
+
+* device/xiaomi/sm6150-common
 0ec3664  sm6150-common: fingerprint: Remove fpc, fpdump and fortsense folders  [Arian]
 7a8f661  sm6150-common: rootdir: Move event2 permissions to ueventd.rc  [Arian]
 454cf27  sm6150-common: Move fingerprintextension to vintf fragments  [Arian]
@@ -19,267 +259,5 @@ e750521  sm6150-common: sepolicy: Label fingerprintextension enabled fingerprint
 08f8d3c  Revert "sm6150-common: fingerprint: Don't depend on fingerprintextension"  [Arian]
 fc7c658  sm6150-common: Rollback WCNSS_qcom_cfg.ini to china stable  [Arian]
 
-* frameworks/base
-e382ffd  SystemUI: Add anti flicker tile  [Arian]
-
-* hardware/lineage/interfaces
-e797f71  Introduce anti flicker LiveDisplay interface  [Arian]
-
-* kernel/xiaomi/sm6150
-072e8ae  ARM64: dts: xiaomi: Decrease physical panel dimensions  [Arian]
-
-* lineage-sdk
-c995733  Introduce anti flicker mode in LiveDisplay  [Arian]
-
-* packages/apps/LineageParts
-5f73766  Add a toggle for anti flicker mode in LiveDisplay settings  [Arian]
-====================
-     2021-03-01    
-====================
-
-* device/xiaomi/davinci
-045bcf3  davinci: Rearrange camera blobs  [Arian]
-====================
-     2021-02-28    
-====================
-
-* device/xiaomi/sm6150-common
-7d999c9  sm6150-common: Exclude CarrierConfig overlays from RRO  [derfelot]
-2670626  sm6150-common: Update from 21.2.24  [Arian]
-
-* frameworks/base
-009dd8b  Automatic translation import  [Michael Bestas]
-
-* kernel/xiaomi/sm6150
-eeda4ad  Merge branch 'android-4.14-stable' of https://android.googlesource.com/kernel/common into HEAD  [Arian]
-
-* lineage-sdk
-09b2736  Automatic translation import  [Michael Bestas]
-
-* packages/apps/AudioFX
-61c0b0c  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Bluetooth
-8e8a27e  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Camera2
-ff976ad  Automatic translation import  [Michael Bestas]
-
-* packages/apps/CellBroadcastReceiver
-6d2de4a  Automatic translation import  [Michael Bestas]
-
-* packages/apps/CertInstaller
-a76e061  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Contacts
-c9fdee6  Automatic translation import  [Michael Bestas]
-
-* packages/apps/DeskClock
-a6ca1e0  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Dialer
-5a1bf25  Automatic translation import  [Michael Bestas]
-
-* packages/apps/DocumentsUI
-860e6bd  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Eleven
-fd4180f  Automatic translation import  [Michael Bestas]
-
-* packages/apps/EmergencyInfo
-80a9b04  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Etar
-85c3563  Automatic translation import  [Michael Bestas]
-
-* packages/apps/FlipFlap
-c243b20  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Gallery2
-12dedab  Automatic translation import  [Michael Bestas]
-
-* packages/apps/HTMLViewer
-28c88ac  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Jelly
-0591712  Automatic translation import  [Michael Bestas]
-
-* packages/apps/KeyChain
-4ae08c8  Automatic translation import  [Michael Bestas]
-
-* packages/apps/LineageParts
-b723287  Automatic translation import  [Michael Bestas]
-
-* packages/apps/ManagedProvisioning
-9e0b3f2  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Messaging
-d23ebe4  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Nfc
-b96085d  Automatic translation import  [Michael Bestas]
-
-* packages/apps/PermissionController
-245faee  Automatic translation import  [Michael Bestas]
-
-* packages/apps/PhoneCommon
-6a7dd26  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Recorder
-d21a50f  Automatic translation import  [Michael Bestas]
-
-* packages/apps/SafetyRegulatoryInfo
-7a20e4b  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Settings
-c4a02fd  Automatic translation import  [Michael Bestas]
-
-* packages/apps/SetupWizard
-f1b9098  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Snap
-2a72f37  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Stk
-1b18e7d  Automatic translation import  [Michael Bestas]
-
-* packages/apps/StorageManager
-5e17b9c  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Tag
-6856a19  Automatic translation import  [Michael Bestas]
-
-* packages/apps/ThemePicker
-71d5df0  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Trebuchet
-6ec5de2  Automatic translation import  [Michael Bestas]
-
-* packages/apps/TvSettings
-3f97219  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Updater
-5a9c747  Automatic translation import  [Michael Bestas]
-
-* packages/apps/WallpaperPicker2
-9fccfe5  Automatic translation import  [Michael Bestas]
-
-* packages/inputmethods/LatinIME
-2da36c4  Automatic translation import  [Michael Bestas]
-
-* packages/modules/CaptivePortalLogin
-f07b392  Automatic translation import  [Michael Bestas]
-
-* packages/providers/BlockedNumberProvider
-8721f75  Automatic translation import  [Michael Bestas]
-
-* packages/providers/BookmarkProvider
-f9f7d5b  Automatic translation import  [Michael Bestas]
-
-* packages/providers/CalendarProvider
-625d6f7  Automatic translation import  [Michael Bestas]
-
-* packages/providers/CallLogProvider
-0b14c94  Automatic translation import  [Michael Bestas]
-
-* packages/providers/ContactsProvider
-d25b1d5  Automatic translation import  [Michael Bestas]
-
-* packages/providers/DownloadProvider
-cb1fbfe  Automatic translation import  [Michael Bestas]
-
-* packages/providers/MediaProvider
-f1bbe5e  Automatic translation import  [Michael Bestas]
-
-* packages/providers/TelephonyProvider
-5c9d45a  Automatic translation import  [Michael Bestas]
-
-* packages/providers/UserDictionaryProvider
-ac74f35  Automatic translation import  [Michael Bestas]
-
-* packages/resources/devicesettings
-254e40a  Automatic translation import  [Michael Bestas]
-
-* packages/screensavers/Basic
-191ea06  Automatic translation import  [Michael Bestas]
-
-* packages/screensavers/PhotoTable
-cc71e4e  Automatic translation import  [Michael Bestas]
-
-* packages/services/BuiltInPrintService
-b57d21e  Automatic translation import  [Michael Bestas]
-
-* packages/services/Mms
-75b2c16  Automatic translation import  [Michael Bestas]
-
-* packages/services/Telecomm
-d8959b6  Automatic translation import  [Michael Bestas]
-
-* packages/services/Telephony
-6c79ae1  Automatic translation import  [Taesu Lee]
-
-* packages/wallpapers/LivePicker
-0b31d3a  Automatic translation import  [Michael Bestas]
-
-* vendor/qcom/opensource/fm-commonsys
-bfbc875  Automatic translation import  [Michael Bestas]
-
-* vendor/xiaomi
-356dfb8  {davinci,sm6150-common}: Update from 21.2.24  [Arian]
-6ff401b  msm8998-common: Remove IWlan  [Arian]
-0687ae4  msm8998-common: Drop unused libs  [Arian]
-7e2fe2e  msm8998-common: Drop unused 32-bit RIL blobs  [Arian]
-====================
-     2021-02-27    
-====================
-
-* lineage/mirror
-d30ecef  Updated aosp-minimal to 27-Feb-2021 13:01 UTC  [Tim Schumacher]
-
-* vendor/qcom/opensource/cryptfs_hw
-aaa8a78  cryptfs_hw: Choose keymaster version for key signing  [Neeraj Soni]
-====================
-     2021-02-26    
-====================
-
-* frameworks/base
-d4cca21  BatteryService: Add support for battery Moto Mods  [Vachounet]
-
-* lineage/mirror
-8502c21  Updated aosp-minimal to 26-Feb-2021 13:01 UTC  [Tim Schumacher]
-
-* lineage/website
-872416a  Engineering: Basics of Working with SELinux on Android  [Aayush Gupta]
-====================
-     2021-02-25    
-====================
-
-* vendor/xiaomi
-c59e33f  Import msm8998-common and sagit from https://gitlab.com/the-muppets/proprietary_vendor_xiaomi/-/tree/9990e690dc06dfa588a1c38f5ec9789ebfdb8b58  [Arian]
-====================
-     2021-02-24    
-====================
-
-* frameworks/base
-3e9fa16  Allow SBC as HD audio codec in Bluetooth device configuration  [ValdikSS]
-24de8e5  Add Dual Channel into Bluetooth Audio Channel Mode developer options menu  [ValdikSS]
-5c15088  Add CHANNEL_MODE_DUAL_CHANNEL constant  [ValdikSS]
-
-* hardware/lineage/interfaces
-4e8790e  Import Motorola Health HAL  [Vachounet]
-
-* lineage/mirror
-6bcc573  Updated aosp-minimal to 24-Feb-2021 13:01 UTC  [Tim Schumacher]
-
-* packages/apps/Bluetooth
-b4615fd  Assume optional codecs are supported if were supported previously  [ValdikSS]
-eef20ba  SBC Dual Channel (SBC HD Audio) support  [ValdikSS]
-
-* packages/apps/Settings
-c6bc9ee  Add Dual Channel into Bluetooth Audio Channel Mode developer options menu  [ValdikSS]
-
-* prebuilts/extract-tools
-2ffd09a  tools-lineage: Add prebuilt patchelf v0.8  [Sebastiano Barezzi]
-
-* tools/extract-utils
-7f0c788  extract_utils: Implement versioned patchelf and patchelf 0.8  [Sebastiano Barezzi]
+* system/core
+95cc2d2  fastboot: Bring back legacy A/B support  [LuK1337]
