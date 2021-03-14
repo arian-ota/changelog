@@ -1,106 +1,82 @@
 ====================
-     2021-03-07    
+     2021-03-14    
 ====================
 
 * build/make
-7523a59  [DNM] Always use release-keys  [Arian]
+b7ad1a5  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-d248d94  common: Label IAntiFlicker live display service  [Arian]
+af10043  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-695c00d  SystemUI: get rid of build text in qs  [Joey]
-d138f91  SystemUI: Add anti flicker tile  [Arian]
-f7dc3c2  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+27f8424  SystemUI: get rid of build text in qs  [Joey]
+9453626  SystemUI: Add anti flicker tile  [Arian]
+f2ec118  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-c10998f  Add support for anti flicker mode in LiveDisplay  [Arian]
+fde228e  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-379833c  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+9b4bda9  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-87d85ff  Add support for anti flicker mode in LiveDisplay  [Arian]
-dad72b9  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+5088bc6  Add support for anti flicker mode in LiveDisplay  [Arian]
+04ed81a  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+
+* lineage/mirror
+7529457  Updated aosp-minimal to 13-Mar-2021 13:01 UTC  [Tim Schumacher]
 
 * packages/apps/LineageParts
-17cd3dc  Add support for anti flicker mode in LiveDisplay  [Arian]
-200e6b3  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+f14613b  Add support for anti flicker mode in LiveDisplay  [Arian]
+3e2527d  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-03-06    
+     2021-03-13    
 ====================
+
+* lineage/wiki
+66fc4d9  wiki: Reorder gts4lv maintainers  [LuK1337]
+
+* packages/apps/Recorder
+ecbce95  Recorder: Correct WAV header creation  [Paul Keith]
 ====================
-     2021-03-05    
-====================
-====================
-     2021-03-04    
-====================
-====================
-     2021-03-03    
+     2021-03-12    
 ====================
 
 * lineage/mirror
-10ac4b5  Updated aosp-minimal to 02-Mar-2021 13:01 UTC  [Tim Schumacher]
+0bf9386  Updated aosp-minimal to 11-Mar-2021 13:01 UTC  [Tim Schumacher]
+
+* lineage/wiki
+c843dba  wiki: Add remaining retail devices to gts4lv models  [LuK1337]
 ====================
-     2021-03-02    
+     2021-03-11    
 ====================
 
-* frameworks/base
-76ec2b4  Automatic translation import  [LineageOS Builder]
+* lineage/hudson
+476f594  hudson: Show Recovery on castor  [Nolen Johnson]
 
-* packages/apps/DeskClock
-3be624d  Automatic translation import  [LineageOS Builder]
+* lineage/wiki
+ca7766c  wiki: Add Sony Xperia Tablet Z2 LTE (castor)  [Georg Veichtlbauer]
+====================
+     2021-03-10    
+====================
+====================
+     2021-03-09    
+====================
+
+* lineage/mirror
+976a2ef  Updated aosp-minimal to 08-Mar-2021 13:01 UTC  [Tim Schumacher]
+
+* lineage/wiki
+8efe06c  wiki: before_lineage_install_flox: Format userdata at correct time  [Nolen Johnson]
 
 * packages/apps/Dialer
-2bf756c  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Eleven
-fa65c2a  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Etar
-22f8319  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/FMRadio
-f07cfd7  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Jelly
-04221f3  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/LineageParts
-e594e5d  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Recorder
-54706e4  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Settings
-203ee68  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/SetupWizard
-1cad6ae  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Snap
-53e8a76  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Trebuchet
-3987cf0  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Updater
-f1977fa  Automatic translation import  [LineageOS Builder]
-
-* packages/inputmethods/LatinIME
-335556a  Automatic translation import  [LineageOS Builder]
-
-* packages/resources/devicesettings
-248fb5b  Automatic translation import  [LineageOS Builder]
-
-* packages/services/BuiltInPrintService
-9ead2d8  Automatic translation import  [LineageOS Builder]
-
-* packages/services/Telephony
-fe48c96  Automatic translation import  [LineageOS Builder]
-
-* vendor/qcom/opensource/fm-commonsys
-7cf9191  Automatic translation import  [LineageOS Builder]
+d70c18a  dialer: Allow Call Recording For Bangladesh  [Nahid Hasan Riyad]
 ====================
-     2021-03-01    
+     2021-03-08    
 ====================
+
+* lineage/wiki
+494a9d2  wiki: g2: Instruct to exit adb shell after bootloader dd  [Alessandro Astone]
+
+* vendor/translations
+ce118bd  Merge pull request #9 from FelixFrog/patch-1  [Arian]
