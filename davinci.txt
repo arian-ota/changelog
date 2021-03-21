@@ -1,27 +1,86 @@
 ====================
-     2021-03-16    
+     2021-03-21    
 ====================
 
 * device/lineage/sepolicy
-32c039d  common: Label IAntiFlicker live display service  [Arian]
+0dd774a  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-ee954db  SystemUI: Add anti flicker tile  [Arian]
+c832834  SystemUI: Add anti flicker tile  [Arian]
 
 * hardware/lineage/interfaces
-99f8af4  Introduce anti flicker LiveDisplay interface  [Arian]
+9f0a3d8  Introduce anti flicker LiveDisplay interface  [Arian]
+
+* kernel/xiaomi/sm6150
+eaad595  Revert "vidc: remove turbo power mode"  [Arian]
 
 * lineage-sdk
-08a526b  Introduce anti flicker mode in LiveDisplay  [Arian]
+e831403  Introduce anti flicker mode in LiveDisplay  [Arian]
+
+* lineage/wiki
+b2fefa9  wiki: contributors: Update Committers/Reviewers to match Gerrit  [Kevin F. Haggerty]
+e5bf897  wiki: contributors: Sort Committers  [Kevin F. Haggerty]
+
+* packages/apps/LineageParts
+65588a9  Add a toggle for anti flicker mode in LiveDisplay settings  [Arian]
+====================
+     2021-03-20    
+====================
+====================
+     2021-03-19    
+====================
+====================
+     2021-03-18    
+====================
+
+* frameworks/base
+d209b41  SystemUI: AmbientTile: Default the setting to 1  [Luca Stefani]
+e928b5d  SystemUI: SecureSetting: Allow specifying a non-zero default  [Luca Stefani]
+4d3d8db  SystemUI: AmbientTile: Actually start using SecureSetting  [LuK1337]
+810cac8  SystemUI: AmbientTile: Use SecureSetting to change doze setting  [Luca Stefani]
+5ca4149  SystemUI: AmbientTile: Don't hardcode display settings intent  [Luca Stefani]
+
+* frameworks/opt/telephony
+26b8abd  Update external card state based on current app  [Wileen Chiu]
+
+* lineage/mirror
+fe36af6  Updated to 17-Mar-2021 13:52 UTC  [Kevin F. Haggerty]
+5638820  Updated aosp-minimal to 17-Mar-2021 13:01 UTC  [Tim Schumacher]
+
+* lineage/wiki
+d7a8295  Revert "devices: channel: Use custom TWRP"  [Nolen Johnson]
+
+* packages/apps/Eleven
+ba4ec3a  Eleven: Add a Material Theme and a Dark Theme  [Marcos Lopez]
+f8b4fc5  Eleven: declare support for ACTION_SEEK_TO  [Marcos Lopez]
+c71ba79  Eleven: the great cleanup  [Joey]
+c9c8288  Eleven: Update gradle and dependencies  [Michael W]
+365a1e7  Eleven: Audio preview: Follow dark/light theming  [Michael W]
+
+* packages/apps/SetupWizard
+bc224d5  SetupWizard: Remove libphonenumber dep  [Luca Stefani]
+====================
+     2021-03-17    
+====================
+
+* lineage/mirror
+e29cf02  Updated to 16-Mar-2021 13:35 UTC  [Kevin F. Haggerty]
+0b8d155  Updated aosp-minimal to 16-Mar-2021 13:01 UTC  [Tim Schumacher]
+
+* packages/apps/Recorder
+9a36896  Recorder: update UI theme  [2bllw8]
+148c038  Recorder: add paused title  [2bllw8]
+6c9c3a8  Recorder: update to sdk 30  [2bllw8]
+d98e93e  Recorder: draw full edge-to-edge  [2bllw8]
+====================
+     2021-03-16    
+====================
 
 * lineage/mirror
 e1f3f15  Updated aosp-minimal to 15-Mar-2021 13:01 UTC  [Tim Schumacher]
 
-* packages/apps/LineageParts
-60e92d9  Add a toggle for anti flicker mode in LiveDisplay settings  [Arian]
-
 * packages/apps/Settings
-be981c4  MediaOutputPanel: Try to get the package name of the active media controller if packageName is null  [Arian]
+9f789c1  MediaOutputPanel: Handle the case of missing packageName  [Arian]
 ====================
      2021-03-15    
 ====================
@@ -322,49 +381,3 @@ b21d1e2  Add 'techpack/audio/' from commit '3b4022f9747f6d8ffa8a11bdef0f5c7313bd
 01c89dd  Add 'drivers/staging/qcacld-3.0/' from commit '793e8e4a442ee8504ec64d2a714ff411b32c3637'  [Arian]
 6509765  Add 'drivers/staging/qca-wifi-host-cmn/' from commit '6fc328c02be00535135458bd906af3999ea16c41'  [Arian]
 e3db16b  Add 'drivers/staging/fw-api/' from commit '7ca76902726e7c0cd3f74db0280e86edad9c4704'  [Arian]
-====================
-     2021-03-14    
-====================
-
-* frameworks/base
-b10457e  Revert "No need to 'addChild' when start 'FLAG_ACTIVITY_CLEAR_TOP' Activity."  [Han Wang]
-
-* lineage/mirror
-7529457  Updated aosp-minimal to 13-Mar-2021 13:01 UTC  [Tim Schumacher]
-====================
-     2021-03-13    
-====================
-
-* lineage/wiki
-66fc4d9  wiki: Reorder gts4lv maintainers  [LuK1337]
-
-* packages/apps/Recorder
-9148e67  Recorder: Correct WAV header creation  [Paul Keith]
-
-* vendor/lineage
-ade9895  config: Set screen size defaults globally  [Alessandro Astone]
-====================
-     2021-03-12    
-====================
-
-* lineage/mirror
-0bf9386  Updated aosp-minimal to 11-Mar-2021 13:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-c843dba  wiki: Add remaining retail devices to gts4lv models  [LuK1337]
-====================
-     2021-03-11    
-====================
-
-* lineage/hudson
-476f594  hudson: Show Recovery on castor  [Nolen Johnson]
-
-* lineage/wiki
-ca7766c  wiki: Add Sony Xperia Tablet Z2 LTE (castor)  [Georg Veichtlbauer]
-====================
-     2021-03-10    
-====================
-
-* vendor/lineage
-db31384  lineage: targets: x86{,_64}_ab: Don't explicitly include SDK addon  [Nolen Johnson]
-52be5fc  lineage: targets: Add support for Legacy GSIs  [Nolen Johnson]
