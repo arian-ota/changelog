@@ -1,129 +1,115 @@
 ====================
-     2021-03-22    
+     2021-03-28    
 ====================
 
-* build/soong
-fa55b7c  Add AIDL lineage power HAL to VndkMustUseVendorVariantList  [dianlujitao]
+* build/make
+8505a10  sign_target_files_apks: Relax ro.build.description requirements  [Stefen Wakefield]
 
 * device/lineage/sepolicy
-11baac5  common: Label IAntiFlicker live display service  [Arian]
-13f733d  sepolicy: Label AIDL lineage power HAL service  [dianlujitao]
+a5ae77c  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-25df420  [SQUASH]base: Revert secondary home handle  [Ido Ben-Hur]
-7f0127a  SystemUI: Add anti flicker tile  [Arian]
-6bd9c12  perf: Support AIDL Lineage power HAL service  [dianlujitao]
-6941cbf  MediaCodecInfo: do not alter performance points for 32-bit processes  [Wonsik Kim]
-95fa768  MediaCodecInfo: limit resolution to 4K for 32-bit processes  [Wonsik Kim]
-62da546  Revert "Revert "Restore preferred activity filter if it not inside""  [Songchun Fan]
-3de49ba  Revert "Restore preferred activity filter if it not inside"  [Wale Ogunwale]
-d394326  Restore preferred activity filter if it not inside  [vend_wsd_am_052]
-
-* frameworks/native
-1e7f9e6  gralloc4: fix PlaneLayout encode typecasting  [SeYeong Byeon]
-
-* hardware/interfaces
-297cf89  Adjust the parameters of accelerometer and hinge angle sensor  [Hsin-Yi Chen]
-2ad0d81  Set default value for pressure sensor  [Hsin-Yi Chen]
+105dbb8  [SQUASH]base: Revert secondary home handle  [Ido Ben-Hur]
+04b738b  SystemUI: Add anti flicker tile  [Arian]
 
 * hardware/lineage/interfaces
-169c223  Introduce anti flicker LiveDisplay interface  [Arian]
-7858a4c  Add AIDL lineage power HAL  [dianlujitao]
+1d99aef  Introduce 2.1 LiveDisplay interface with IAntiFlicker support  [Arian]
 
 * lineage-sdk
-64f3ab3  Introduce anti flicker mode in LiveDisplay  [Arian]
-
-* lineage/wiki
-19e05d0  wiki: Correct button combinations on espressowifi  [Harry Cutts]
+248374b  Introduce anti flicker mode in LiveDisplay  [Arian]
 
 * packages/apps/LineageParts
-dcdfd77  Add a toggle for anti flicker mode in LiveDisplay settings  [Arian]
+48171b1  Add a toggle for anti flicker mode in LiveDisplay settings  [Arian]
 
-* packages/apps/PermissionController
-67260eb  [DO NOT MERGE] Deep-update live datas and update on isStale in getInitializedValue  [Eugene Susla]
-
-* packages/apps/Settings
-35eebd2  Fix crash on "Connection preferences"  [Hugh Chen]
-
-* system/core
-f5c18f8  Adding 'postinstall' root dir unconditionally.  [Bowgo Tsai]
-0fdfe77  Store result of mount_all for mounted userdata by metadata encryption  [Qilin Tan]
-ba44a40  Only store result of mount_all that mounted userdata  [Nikita Ioffe]
-
-* system/sepolicy
-95da6f3  Export ro.vendor.product.cpu.abilist*  [SzuWei Lin]
-996e744  Sepolicy for dumsys suspend_control in bugreport  [Kalesh Singh]
-5a9e45a  Add ro.cpuvulkan.version to property_contexts  [Inseob Kim]
-46d058f  Add ro.cdma.home.operator. properties  [Inseob Kim]
-73da57f  Allow dumpstate to dump hal_light  [Roman Kiryanov]
-8baeefa  Allow dumpstate to get thermal and power hal debug info  [TeYuan Wang]
+* packages/apps/Nfc
+3a59915  NativeNfcTag: Treat MIFARE_CLASSIC same as NFC_A in getTechExtras()  [LuK1337]
 ====================
-     2021-03-21    
+     2021-03-27    
 ====================
 
-* kernel/xiaomi/sm6150
-eaad595  Revert "vidc: remove turbo power mode"  [Arian]
+* device/google/atv
+61e3e9f  Remove minimize debug symbol flags  [Aaron Kling]
+
+* lineage/hudson
+1b4c009  hudson: Set correct codename for ROG Phone 2  [OrdenKrieger]
 
 * lineage/wiki
-b2fefa9  wiki: contributors: Update Committers/Reviewers to match Gerrit  [Kevin F. Haggerty]
-e5bf897  wiki: contributors: Sort Committers  [Kevin F. Haggerty]
-====================
-     2021-03-20    
-====================
-====================
-     2021-03-19    
-====================
-
-* frameworks/base
-d209b41  SystemUI: AmbientTile: Default the setting to 1  [Luca Stefani]
-e928b5d  SystemUI: SecureSetting: Allow specifying a non-zero default  [Luca Stefani]
-
-* lineage/wiki
-d7a8295  Revert "devices: channel: Use custom TWRP"  [Nolen Johnson]
-====================
-     2021-03-18    
-====================
-
-* frameworks/base
-4d3d8db  SystemUI: AmbientTile: Actually start using SecureSetting  [LuK1337]
-810cac8  SystemUI: AmbientTile: Use SecureSetting to change doze setting  [Luca Stefani]
-5ca4149  SystemUI: AmbientTile: Don't hardcode display settings intent  [Luca Stefani]
-
-* frameworks/opt/telephony
-26b8abd  Update external card state based on current app  [Wileen Chiu]
-
-* lineage/mirror
-fe36af6  Updated to 17-Mar-2021 13:52 UTC  [Kevin F. Haggerty]
-5638820  Updated aosp-minimal to 17-Mar-2021 13:01 UTC  [Tim Schumacher]
+0fe5038  wiki: Set correct codename for ROG Phone 2  [OrdenKrieger]
 
 * packages/apps/Eleven
-ba4ec3a  Eleven: Add a Material Theme and a Dark Theme  [Marcos Lopez]
-f8b4fc5  Eleven: declare support for ACTION_SEEK_TO  [Marcos Lopez]
-c71ba79  Eleven: the great cleanup  [Joey]
-c9c8288  Eleven: Update gradle and dependencies  [Michael W]
-365a1e7  Eleven: Audio preview: Follow dark/light theming  [Michael W]
+30b0348  Eleven: Remove unused class  [Michael W]
+9e08cc0  Eleven: ensure we got proper permissions before initializing  [Alexander Martinz]
+36a7789  Eleven: update widgets UI  [Joey]
+====================
+     2021-03-26    
+====================
+
+* bootable/recovery
+119a2a3  roots: Correct mount flags in /etc/fstab  [Alessandro Astone]
+
+* lineage/wiki
+6e24e58  wiki: templates: Add instructions for building emulator images  [Tim Schumacher]
+
+* packages/apps/Eleven
+073a49a  Eleven: Fix White on White Bug.  [lopez05656]
+
+* packages/apps/Snap
+113ebcf  Snap: Fix SD card visibility for secondary users  [Arne Coucheron]
+f2068cc  Snap: Save SDCard photos to legacy path  [Kevin F. Haggerty]
+f968486  Revert "Snap: Remove saving to sdcard"  [Arne Coucheron]
+
+* packages/providers/MediaProvider
+7a9f0c3  MediaProvider: Fix insert fail while file saved in sdcard  [Wang Haijun]
+
+* vendor/lineage
+271ba02  sensitive_pn: Run XML lint against the schema  [Luca Stefani]
+2b30c72  sensitive_pn: Convert to new format  [Michael W]
+e4359d9  sensitive_pn: Comment, add and change numbers for multiple countries.  [Arekusu Rin]
+====================
+     2021-03-25    
+====================
+
+* bootable/recovery
+dbd2467  Add controller support  [Aaron Kling]
+
+* frameworks/base
+bc36ac0  SystemUI: AODTile: Actually start using SecureSetting  [LuK1337]
+90a1fae  SystemUI: AODTile: Use SecureSetting to change doze setting  [Luca Stefani]
+
+* lineage/wiki
+558c594  wiki: devices: crackling: Instruct users to install required firmware  [115ek]
+====================
+     2021-03-24    
+====================
+
+* build/make
+8c8f429  releasetools: Add script to sign zips  [Gabriele M]
+
+* build/soong
+3ead21d  Revert "Add AIDL lineage power HAL to VndkMustUseVendorVariantList"  [LuK1337]
+
+* external/chromium-webview
+dcdf525  Update Chromium Webview to 89.0.4389.105  [Kevin F. Haggerty]
+
+* hardware/lineage/interfaces
+af905cd  Drop VNDK support from vendor.lineage.power aidl interface  [LuK1337]
+
+* lineage/hudson
+6a6ddbf  experimentals: Cover all test-cases  [Nolen Johnson]
+====================
+     2021-03-23    
+====================
+
+* frameworks/base
+401638a7  VolumeDialogImpl: Don't vibrate when volume dialog is not visible  [LuK1337]
+
+* lineage/wiki
+3433899  wiki: templates: ab_copy_partitions: Remove mapper from the loop  [Nolen Johnson]
 
 * packages/apps/SetupWizard
-bc224d5  SetupWizard: Remove libphonenumber dep  [Luca Stefani]
+6b9de1c  SetupWizard: Move to system_ext  [Luca Stefani]
+c102a32  SetupWizard: Convert to Android.bp  [Luca Stefani]
+29e7774  SetupWizard: Disable mobile data at least once  [Michael W]
 ====================
-     2021-03-17    
+     2021-03-22    
 ====================
-
-* lineage/mirror
-e29cf02  Updated to 16-Mar-2021 13:35 UTC  [Kevin F. Haggerty]
-0b8d155  Updated aosp-minimal to 16-Mar-2021 13:01 UTC  [Tim Schumacher]
-
-* packages/apps/Recorder
-9a36896  Recorder: update UI theme  [2bllw8]
-148c038  Recorder: add paused title  [2bllw8]
-6c9c3a8  Recorder: update to sdk 30  [2bllw8]
-d98e93e  Recorder: draw full edge-to-edge  [2bllw8]
-====================
-     2021-03-16    
-====================
-
-* lineage/mirror
-e1f3f15  Updated aosp-minimal to 15-Mar-2021 13:01 UTC  [Tim Schumacher]
-
-* packages/apps/Settings
-9f789c1  MediaOutputPanel: Handle the case of missing packageName  [Arian]
