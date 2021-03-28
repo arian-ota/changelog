@@ -1,82 +1,94 @@
 ====================
-     2021-03-14    
+     2021-03-28    
 ====================
 
 * build/make
-b7ad1a5  [DNM] Always use release-keys  [Arian]
+ebe6d71  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-af10043  common: Label IAntiFlicker live display service  [Arian]
+d594193  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-27f8424  SystemUI: get rid of build text in qs  [Joey]
-9453626  SystemUI: Add anti flicker tile  [Arian]
-f2ec118  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+66a5f08  SystemUI: get rid of build text in qs  [Joey]
+d1f4ee3  SystemUI: Add anti flicker tile  [Arian]
+fb762fc  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-fde228e  Add support for anti flicker mode in LiveDisplay  [Arian]
+824d8c9  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-9b4bda9  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+885858b  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-5088bc6  Add support for anti flicker mode in LiveDisplay  [Arian]
-04ed81a  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
-
-* lineage/mirror
-7529457  Updated aosp-minimal to 13-Mar-2021 13:01 UTC  [Tim Schumacher]
-
-* packages/apps/LineageParts
-f14613b  Add support for anti flicker mode in LiveDisplay  [Arian]
-3e2527d  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
-====================
-     2021-03-13    
-====================
-
-* lineage/wiki
-66fc4d9  wiki: Reorder gts4lv maintainers  [LuK1337]
-
-* packages/apps/Recorder
-ecbce95  Recorder: Correct WAV header creation  [Paul Keith]
-====================
-     2021-03-12    
-====================
-
-* lineage/mirror
-0bf9386  Updated aosp-minimal to 11-Mar-2021 13:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-c843dba  wiki: Add remaining retail devices to gts4lv models  [LuK1337]
-====================
-     2021-03-11    
-====================
+51ab802  Add support for anti flicker mode in LiveDisplay  [Arian]
+4501225  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * lineage/hudson
-476f594  hudson: Show Recovery on castor  [Nolen Johnson]
+1b4c009  hudson: Set correct codename for ROG Phone 2  [OrdenKrieger]
 
 * lineage/wiki
-ca7766c  wiki: Add Sony Xperia Tablet Z2 LTE (castor)  [Georg Veichtlbauer]
+0fe5038  wiki: Set correct codename for ROG Phone 2  [OrdenKrieger]
+
+* packages/apps/LineageParts
+e4887d9  Add support for anti flicker mode in LiveDisplay  [Arian]
+8baf24c  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-03-10    
-====================
-====================
-     2021-03-09    
+     2021-03-27    
 ====================
 
-* lineage/mirror
-976a2ef  Updated aosp-minimal to 08-Mar-2021 13:01 UTC  [Tim Schumacher]
+* bootable/recovery
+ea1b260  roots: Correct mount flags in /etc/fstab  [Alessandro Astone]
+
+* device/google/atv
+5706c57  Remove minimize debug symbol flags  [Aaron Kling]
+
+* packages/apps/Snap
+ab62b93  SnapCam: Fix thumbnail not update  [junjiez]
+6fec6ce  Snap: Save SDCard photos to legacy path  [Kevin F. Haggerty]
+11a63d3  Revert "Snap: Remove saving to sdcard"  [Arne Coucheron]
+
+* packages/providers/MediaProvider
+219e448  MediaProvider: Fix insert fail while file saved in sdcard  [Wang Haijun]
+====================
+     2021-03-26    
+====================
+
+* bootable/recovery
+023dc99  Add controller support  [Aaron Kling]
 
 * lineage/wiki
-8efe06c  wiki: before_lineage_install_flox: Format userdata at correct time  [Nolen Johnson]
-
-* packages/apps/Dialer
-d70c18a  dialer: Allow Call Recording For Bangladesh  [Nahid Hasan Riyad]
+6e24e58  wiki: templates: Add instructions for building emulator images  [Tim Schumacher]
+558c594  wiki: devices: crackling: Instruct users to install required firmware  [115ek]
 ====================
-     2021-03-08    
+     2021-03-25    
+====================
+
+* build/make
+962c648  soong: add TARGET_SPECIFIC_HEADER_PATH  [Jan Altensen]
+
+* build/soong
+2281a2b  soong: allow overriding header files  [Jan Altensen]
+
+* external/chromium-webview
+dcdf525  Update Chromium Webview to 89.0.4389.105  [Kevin F. Haggerty]
+
+* lineage/hudson
+6a6ddbf  experimentals: Cover all test-cases  [Nolen Johnson]
+====================
+     2021-03-24    
+====================
+
+* frameworks/base
+9ec2532  VolumeDialogImpl: Don't vibrate when volume dialog is not visible  [LuK1337]
+
+* lineage/wiki
+3433899  wiki: templates: ab_copy_partitions: Remove mapper from the loop  [Nolen Johnson]
+====================
+     2021-03-23    
+====================
+====================
+     2021-03-22    
 ====================
 
 * lineage/wiki
-494a9d2  wiki: g2: Instruct to exit adb shell after bootloader dd  [Alessandro Astone]
-
-* vendor/translations
-ce118bd  Merge pull request #9 from FelixFrog/patch-1  [Arian]
+19e05d0  wiki: Correct button combinations on espressowifi  [Harry Cutts]
