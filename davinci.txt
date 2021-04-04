@@ -1,94 +1,141 @@
 ====================
-     2021-03-28    
+     2021-04-04    
 ====================
 
 * build/make
-ebe6d71  [DNM] Always use release-keys  [Arian]
+f21a5cb  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-d594193  common: Label IAntiFlicker live display service  [Arian]
+d230950  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-66a5f08  SystemUI: get rid of build text in qs  [Joey]
-d1f4ee3  SystemUI: Add anti flicker tile  [Arian]
-fb762fc  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+0ed8618  SystemUI: get rid of build text in qs  [Joey]
+238afcd  SystemUI: Add anti flicker tile  [Arian]
+d10e043  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-824d8c9  Add support for anti flicker mode in LiveDisplay  [Arian]
+2e8d13c  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-885858b  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+83b581a  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-51ab802  Add support for anti flicker mode in LiveDisplay  [Arian]
-4501225  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
-
-* lineage/hudson
-1b4c009  hudson: Set correct codename for ROG Phone 2  [OrdenKrieger]
+08d436f  Add support for anti flicker mode in LiveDisplay  [Arian]
+af177a5  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * lineage/wiki
-0fe5038  wiki: Set correct codename for ROG Phone 2  [OrdenKrieger]
+301ea86  wiki: shamu: Add format_on_upgrade flag  [Elektroschmock]
+a0b1498  wiki: device_upgrade: Improve reboot to recovery steps  [razorloves]
 
 * packages/apps/LineageParts
-e4887d9  Add support for anti flicker mode in LiveDisplay  [Arian]
-8baf24c  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+fce9516  Add support for anti flicker mode in LiveDisplay  [Arian]
+eb18404  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-03-27    
-====================
-
-* bootable/recovery
-ea1b260  roots: Correct mount flags in /etc/fstab  [Alessandro Astone]
-
-* device/google/atv
-5706c57  Remove minimize debug symbol flags  [Aaron Kling]
-
-* packages/apps/Snap
-ab62b93  SnapCam: Fix thumbnail not update  [junjiez]
-6fec6ce  Snap: Save SDCard photos to legacy path  [Kevin F. Haggerty]
-11a63d3  Revert "Snap: Remove saving to sdcard"  [Arne Coucheron]
-
-* packages/providers/MediaProvider
-219e448  MediaProvider: Fix insert fail while file saved in sdcard  [Wang Haijun]
-====================
-     2021-03-26    
+     2021-04-03    
 ====================
 
-* bootable/recovery
-023dc99  Add controller support  [Aaron Kling]
+* frameworks/native
+686c455  SF: Correctly handle the LayerRequest bitfield  [Billy Laws]
+
+* lineage/mirror
+ca4a838  Updated to 02-Apr-2021 13:32 UTC  [Kevin F. Haggerty]
 
 * lineage/wiki
-6e24e58  wiki: templates: Add instructions for building emulator images  [Tim Schumacher]
-558c594  wiki: devices: crackling: Instruct users to install required firmware  [115ek]
+420418d  wiki: devices: Update 17.1 notes and future-proof  [razorloves]
 ====================
-     2021-03-25    
-====================
-
-* build/make
-962c648  soong: add TARGET_SPECIFIC_HEADER_PATH  [Jan Altensen]
-
-* build/soong
-2281a2b  soong: allow overriding header files  [Jan Altensen]
-
-* external/chromium-webview
-dcdf525  Update Chromium Webview to 89.0.4389.105  [Kevin F. Haggerty]
-
-* lineage/hudson
-6a6ddbf  experimentals: Cover all test-cases  [Nolen Johnson]
-====================
-     2021-03-24    
+     2021-04-02    
 ====================
 
 * frameworks/base
-9ec2532  VolumeDialogImpl: Don't vibrate when volume dialog is not visible  [LuK1337]
+2a9f078  Automatic translation import  [LineageOS Builder]
+
+* lineage/hudson
+b298177  X(2) just ain't gon' stop giving it to ya  [Nolen Johnson]
+fa83c9b  Regenerate device dependency mappings  [razorloves]
+
+* lineage/mirror
+78a7f52  Updated aosp-minimal to 01-Apr-2021 12:01 UTC  [Tim Schumacher]
+
+* lineage/scripts
+5192150  device-deps-regenerator: Add 18.1 branch  [razorloves]
 
 * lineage/wiki
-3433899  wiki: templates: ab_copy_partitions: Remove mapper from the loop  [Nolen Johnson]
+1d407e3  devices: Remove format_on_upgrade where it isn't needed  [Nolen Johnson]
+41ca426  wiki: devices: Promote the Moto X 2014 to 18.1  [Nolen Johnson]
+2eb9e52  pages: gapps: Make AFH primary for MTG download  [Nolen Johnson]
+02641bd  wiki: Upgrade guide: make use of format flag  [Michael W]
+
+* packages/apps/DeskClock
+f2165d8  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Eleven
+2c47245  Eleven: Deduplicate query selection/sorting logic  [Paul Keith]
+8f701a3  Eleven: Fix sorting by track number in albums  [Paul Keith]
+
+* packages/apps/Etar
+99d19c6  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/LineageParts
+d2a3e9d  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Settings
+b5c7e90  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Updater
+008c048  Automatic translation import  [LineageOS Builder]
+
+* packages/resources/devicesettings
+d9f79a2  Automatic translation import  [LineageOS Builder]
+
+* vendor/qcom/opensource/fm-commonsys
+385c24f  Automatic translation import  [LineageOS Builder]
 ====================
-     2021-03-23    
+     2021-04-01    
 ====================
+
+* lineage/hudson
+8468754  Revert "[temporary] Move 18.1 to nightly, pause 17.1"  [Tom Powell]
+9de2ab9  [temporary] Move 18.1 to nightly, pause 17.1  [Tom Powell]
+9eb8480  drop experimental 18.1 targets  [Tom Powell]
+
+* lineage/website
+4ba800f  Changelog 25  [Nolen Johnson]
+0dfed29  blog: Fix Cymraeg typo  [Nolen Johnson]
+
+* lineage/wiki
+23a17a7  devices: moto_sdm632: Fix case of my username  [Nolen Johnson]
+a449765  wiki: contributors: Add 18.1 device maintainers, remove 16.0  [razorloves]
+79c6f23  pages: verifying_builds: Update to Python3  [Nolen Johnson]
+8131d87  wiki: Add Xiaomi Mi 8 Lite (platina)  [Sebastiano Barezzi]
+2e711d7  wiki: devices: Add Google Pixel 4a  [Peter Cai]
+3554cb1  wiki: devices: Add Google Pixel 5, Pixel 4a 5G  [Alessandro Astone]
+be9c68d  wiki: Add OnePlus 8 (instantnoodle)  [LuK1337]
+efd14a7  wiki: Add OnePlus 8T (kebab)  [LuK1337]
+721d5e3  wiki: Add OnePlus 8 Pro (instantnoodlep)  [LuK1337]
+998f0c7  wiki: devices: Initial batch of 18.1 promotions  [Nolen Johnson]
 ====================
-     2021-03-22    
+     2021-03-31    
 ====================
 
 * lineage/wiki
-19e05d0  wiki: Correct button combinations on espressowifi  [Harry Cutts]
+441fe46  wiki: devices: gta4xlwifi: update recovery boot instructions  [Tim Zimmermann]
+255d415  wiki: Enable copy partitions step for FP3  [LuK1337]
+7dd3852  devices: Resolve issues discovered  [Nolen Johnson]
+
+* packages/apps/LineageParts
+8c357f9  Regenerate contributors cloud  [Kevin F. Haggerty]
+====================
+     2021-03-30    
+====================
+
+* lineage/hudson
+32b1f9b  hudson: Initial batch of 18.1 additions  [LuK1337]
+e65b874  hudson: Initial batch of 18.1 promotions  [Nolen Johnson]
+cd27faa  hudson: Rename Moto E5 Plus variants  [Jarl-Penguin]
+
+* lineage/wiki
+e255430  wiki: devices: bacon: Update maintainer list  [Nolen Johnson]
+92584db  wiki: Rename Moto E5 Plus variants  [Jarl-Penguin]
+====================
+     2021-03-29    
+====================
