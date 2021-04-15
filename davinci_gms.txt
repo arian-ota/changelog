@@ -1,115 +1,108 @@
 ====================
-     2021-03-28    
+     2021-04-15    
+====================
+
+* frameworks/base
+703d435  Reset all package signatures on boot  [Sam Mortimer]
+1df3bce  [SQUASH]base: Revert secondary home handle  [Ido Ben-Hur]
+
+* lineage/hudson
+b738134  hudson: Promote LG G3 family to 18.1  [Aleksander Gencel]
+
+* lineage/wiki
+349ebff  wiki: Promote LG G3 family to 18.1  [Aleksander Gencel]
+====================
+     2021-04-14    
 ====================
 
 * build/make
-8505a10  sign_target_files_apks: Relax ro.build.description requirements  [Stefen Wakefield]
-
-* device/lineage/sepolicy
-a5ae77c  common: Label IAntiFlicker live display service  [Arian]
+75b03c6  envsetup: Fix the way we check check_product's return value  [LuK1337]
 
 * frameworks/base
-105dbb8  [SQUASH]base: Revert secondary home handle  [Ido Ben-Hur]
-04b738b  SystemUI: Add anti flicker tile  [Arian]
+84c0117  SystemUI: Hide centered_area when showing heads up  [LuK1337]
+5a28ff7  SystemUI: Move network traffic monitor under same layout as clock  [LuK1337]
+46712ee  SystemUI: Make center clock layout safe insets aware  [LuK1337]
 
-* hardware/lineage/interfaces
-1d99aef  Introduce 2.1 LiveDisplay interface with IAntiFlicker support  [Arian]
-
-* lineage-sdk
-248374b  Introduce anti flicker mode in LiveDisplay  [Arian]
-
-* packages/apps/LineageParts
-48171b1  Add a toggle for anti flicker mode in LiveDisplay settings  [Arian]
-
-* packages/apps/Nfc
-3a59915  NativeNfcTag: Treat MIFARE_CLASSIC same as NFC_A in getTechExtras()  [LuK1337]
-====================
-     2021-03-27    
-====================
-
-* device/google/atv
-61e3e9f  Remove minimize debug symbol flags  [Aaron Kling]
-
-* lineage/hudson
-1b4c009  hudson: Set correct codename for ROG Phone 2  [OrdenKrieger]
+* frameworks/opt/telephony
+1e607c9  RIL: Fix manual network selection with old modem  [faust93]
 
 * lineage/wiki
-0fe5038  wiki: Set correct codename for ROG Phone 2  [OrdenKrieger]
+712fb72  wiki: Bump supported version on 19801  [LuK1337]
 
-* packages/apps/Eleven
-30b0348  Eleven: Remove unused class  [Michael W]
-9e08cc0  Eleven: ensure we got proper permissions before initializing  [Alexander Martinz]
-36a7789  Eleven: update widgets UI  [Joey]
-====================
-     2021-03-26    
-====================
-
-* bootable/recovery
-119a2a3  roots: Correct mount flags in /etc/fstab  [Alessandro Astone]
-
-* lineage/wiki
-6e24e58  wiki: templates: Add instructions for building emulator images  [Tim Schumacher]
-
-* packages/apps/Eleven
-073a49a  Eleven: Fix White on White Bug.  [lopez05656]
-
-* packages/apps/Snap
-113ebcf  Snap: Fix SD card visibility for secondary users  [Arne Coucheron]
-f2068cc  Snap: Save SDCard photos to legacy path  [Kevin F. Haggerty]
-f968486  Revert "Snap: Remove saving to sdcard"  [Arne Coucheron]
-
-* packages/providers/MediaProvider
-7a9f0c3  MediaProvider: Fix insert fail while file saved in sdcard  [Wang Haijun]
+* system/core
+8ca6344  fastboot: Add a few missing fastboot commands from help  [Luca Stefani]
 
 * vendor/lineage
-271ba02  sensitive_pn: Run XML lint against the schema  [Luca Stefani]
-2b30c72  sensitive_pn: Convert to new format  [Michael W]
-e4359d9  sensitive_pn: Comment, add and change numbers for multiple countries.  [Arekusu Rin]
+3bd9a66  lineage: Handle build type suffixes properly  [LuK1337]
 ====================
-     2021-03-25    
+     2021-04-13    
+====================
+====================
+     2021-04-12    
 ====================
 
-* bootable/recovery
-dbd2467  Add controller support  [Aaron Kling]
+* device/xiaomi/toco
+1ab7620  sm6150-common: Build 1.0 sensors service  [raghavt20]
 
-* frameworks/base
-bc36ac0  SystemUI: AODTile: Actually start using SecureSetting  [LuK1337]
-90a1fae  SystemUI: AODTile: Use SecureSetting to change doze setting  [Luca Stefani]
+* lineage/mirror
+5d20124  Updated lineage-minimal to 12-Apr-2021 12:01 UTC  [Tim Schumacher]
 
 * lineage/wiki
-558c594  wiki: devices: crackling: Instruct users to install required firmware  [115ek]
+970b71a  wiki: devices: Promote jasmine_sprout to 18.1  [Michael Bestas]
 ====================
-     2021-03-24    
+     2021-04-11    
 ====================
 
-* build/make
-8c8f429  releasetools: Add script to sign zips  [Gabriele M]
+* frameworks/base
+0de4290  Merge tag 'android-11.0.0_r34' into staging/lineage-18.1_merge-android-11.0.0_r34  [Kevin F. Haggerty]
 
-* build/soong
-3ead21d  Revert "Add AIDL lineage power HAL to VndkMustUseVendorVariantList"  [LuK1337]
+* lineage/wiki
+626782e  wiki: Bump supported version on 18821  [LuK1337]
+a220006  wiki: Various smaller fixes  [Tim Schumacher]
 
-* external/chromium-webview
-dcdf525  Update Chromium Webview to 89.0.4389.105  [Kevin F. Haggerty]
+* packages/apps/Trebuchet
+6005772  Merge tag 'android-11.0.0_r34' into staging/lineage-18.1_merge-android-11.0.0_r34  [Kevin F. Haggerty]
+
+* packages/providers/MediaProvider
+2d005c9  Merge tag 'android-11.0.0_r34' into staging/lineage-18.1_merge-android-11.0.0_r34  [Kevin F. Haggerty]
+178741f  MediaProvider: Less spam  [Michael W]
+
+* vendor/lineage
+ba8e075  soong: Add TARGET_QTI_USB_SUPPORTS_{AUDIO,DEBUG}_ACCESSORY flags  [LuK1337]
+====================
+     2021-04-10    
+====================
+
+* lineage/mirror
+050f269  Updated to 09-Apr-2021 15:56 UTC  [Kevin F. Haggerty]
+
+* lineage/wiki
+90fdfe5  wiki: Switch away from payload-dumper-go  [LuK1337]
+d8588e6  wiki: Provide firmware update pages for OnePlus SDM845 devices  [LuK1337]
+c69273c  wiki: Provide firmware update pages for OnePlus SM8150 devices  [LuK1337]
+02f3276  wiki: Provide firmware update pages for OnePlus SM8250 devices  [LuK1337]
+c4f9c1c  wiki: Allow devices to provide firmware update instructions  [LuK1337]
+634db32  wiki: devices: jfvelte: Use Lineage Recovery  [Nolen Johnson]
+
+* vendor/qcom/opensource/usb
+cec97e1  Allow enabling support for audio and debug accessories  [LuK1337]
+====================
+     2021-04-09    
+====================
+
+* device/lineage/sepolicy
+df6a088  common: Label IAntiFlicker live display service  [Arian]
+
+* frameworks/base
+5960e54  SystemUI: Add anti flicker tile  [Arian]
+21a64f3  SystemUI: tiles: Open display settings on long clicks for livedisplay tiles  [Arian]
+a1775ac  SystemUI: Fix status bar battery icon title  [Bruno Martins]
 
 * hardware/lineage/interfaces
-af905cd  Drop VNDK support from vendor.lineage.power aidl interface  [LuK1337]
+83b4eb8  Introduce 2.1 LiveDisplay interface with IAntiFlicker support  [Arian]
 
-* lineage/hudson
-6a6ddbf  experimentals: Cover all test-cases  [Nolen Johnson]
-====================
-     2021-03-23    
-====================
+* packages/apps/LineageParts
+bbb25f0  Add a toggle for anti flicker mode in LiveDisplay settings  [Arian]
 
-* frameworks/base
-401638a7  VolumeDialogImpl: Don't vibrate when volume dialog is not visible  [LuK1337]
-
-* lineage/wiki
-3433899  wiki: templates: ab_copy_partitions: Remove mapper from the loop  [Nolen Johnson]
-
-* packages/apps/SetupWizard
-6b9de1c  SetupWizard: Move to system_ext  [Luca Stefani]
-c102a32  SetupWizard: Convert to Android.bp  [Luca Stefani]
-29e7774  SetupWizard: Disable mobile data at least once  [Michael W]
-====================
-     2021-03-22    
-====================
+* vendor/lineage
+157fff1  Allow unified location provider as possible location provider (not as used location provider)  [Greenflash1986]
