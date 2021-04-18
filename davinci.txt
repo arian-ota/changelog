@@ -1,16 +1,55 @@
 ====================
-     2021-04-15    
+     2021-04-18    
 ====================
 
 * frameworks/base
-05f1cf6  Reset all package signatures on boot  [Sam Mortimer]
-c216efe  [SQUASH]base: Revert secondary home handle  [Ido Ben-Hur]
+07478d7  Reset all package signatures on boot  [Sam Mortimer]
+be3bf70  [SQUASH]base: Revert secondary home handle  [Ido Ben-Hur]
+====================
+     2021-04-17    
+====================
 
-* lineage/hudson
-b738134  hudson: Promote LG G3 family to 18.1  [Aleksander Gencel]
+* build/soong
+ae90578  Make sure prebuilt modules are exported before attempting to use them  [LuK1337]
+
+* external/rsync
+1f24516  config: Undef USE_ICONV_OPEN as it segfaults for us  [LuK1337]
+
+* frameworks/base
+70af95c  SystemUI: Pass lock pattern size to biometrics auth  [LuK1337]
+
+* lineage/mirror
+4716615  Updated aosp-minimal to 17-Apr-2021 12:01 UTC  [Tim Schumacher]
 
 * lineage/wiki
-349ebff  wiki: Promote LG G3 family to 18.1  [Aleksander Gencel]
+0a70083  wiki: Remove 'get lineage' heading when device is unsupported  [razorloves]
+====================
+     2021-04-16    
+====================
+
+* lineage/mirror
+1cf150d  Updated aosp-minimal to 16-Apr-2021 12:01 UTC  [Tim Schumacher]
+
+* lineage/wiki
+9f0bec2  wiki: Improve search result container positioning  [LuK1337]
+33121cc  wiki: Include addons signature warning for all A/B devices  [LuK1337]
+
+* packages/apps/Settings
+0a0ffca  Settings: Fix hardcoded black text in storage summary  [maxwen]
+====================
+     2021-04-15    
+====================
+
+* lineage/mirror
+f896566  Updated to 15-Apr-2021 14:18 UTC  [Kevin F. Haggerty]
+
+* packages/apps/LineageParts
+c513d5d  LineageParts: Use colorControlNormal for touchscreen gestures icons tint  [LuK1337]
+
+* tools/repohooks
+95795d8  lint: clean up newer pylint warnings  [Mike Frysinger]
+bfa656d  utils: run: fix file leakage with bad execs  [Mike Frysinger]
+a89a138  utils: run: make sure exceptions always use strings for output  [Mike Frysinger]
 ====================
      2021-04-14    
 ====================
@@ -23,6 +62,18 @@ b738134  hudson: Promote LG G3 family to 18.1  [Aleksander Gencel]
 5a28ff7  SystemUI: Move network traffic monitor under same layout as clock  [LuK1337]
 46712ee  SystemUI: Make center clock layout safe insets aware  [LuK1337]
 
+* lineage/hudson
+b738134  hudson: Promote LG G3 family to 18.1  [Aleksander Gencel]
+
+* lineage/wiki
+349ebff  wiki: Promote LG G3 family to 18.1  [Aleksander Gencel]
+
+* vendor/lineage
+3bd9a66  lineage: Handle build type suffixes properly  [LuK1337]
+====================
+     2021-04-13    
+====================
+
 * frameworks/opt/telephony
 1e607c9  RIL: Fix manual network selection with old modem  [faust93]
 
@@ -31,83 +82,12 @@ b738134  hudson: Promote LG G3 family to 18.1  [Aleksander Gencel]
 
 * system/core
 8ca6344  fastboot: Add a few missing fastboot commands from help  [Luca Stefani]
-
-* vendor/lineage
-3bd9a66  lineage: Handle build type suffixes properly  [LuK1337]
-====================
-     2021-04-13    
-====================
-
-* lineage/mirror
-5d20124  Updated lineage-minimal to 12-Apr-2021 12:01 UTC  [Tim Schumacher]
 ====================
      2021-04-12    
 ====================
 
-* device/xiaomi/toco
-1ab7620  sm6150-common: Build 1.0 sensors service  [raghavt20]
+* lineage/mirror
+5d20124  Updated lineage-minimal to 12-Apr-2021 12:01 UTC  [Tim Schumacher]
 
 * lineage/wiki
 970b71a  wiki: devices: Promote jasmine_sprout to 18.1  [Michael Bestas]
-626782e  wiki: Bump supported version on 18821  [LuK1337]
-a220006  wiki: Various smaller fixes  [Tim Schumacher]
-====================
-     2021-04-11    
-====================
-
-* frameworks/base
-0de4290  Merge tag 'android-11.0.0_r34' into staging/lineage-18.1_merge-android-11.0.0_r34  [Kevin F. Haggerty]
-
-* lineage/wiki
-90fdfe5  wiki: Switch away from payload-dumper-go  [LuK1337]
-d8588e6  wiki: Provide firmware update pages for OnePlus SDM845 devices  [LuK1337]
-c69273c  wiki: Provide firmware update pages for OnePlus SM8150 devices  [LuK1337]
-02f3276  wiki: Provide firmware update pages for OnePlus SM8250 devices  [LuK1337]
-c4f9c1c  wiki: Allow devices to provide firmware update instructions  [LuK1337]
-
-* packages/apps/Trebuchet
-6005772  Merge tag 'android-11.0.0_r34' into staging/lineage-18.1_merge-android-11.0.0_r34  [Kevin F. Haggerty]
-
-* packages/providers/MediaProvider
-2d005c9  Merge tag 'android-11.0.0_r34' into staging/lineage-18.1_merge-android-11.0.0_r34  [Kevin F. Haggerty]
-178741f  MediaProvider: Less spam  [Michael W]
-
-* vendor/lineage
-ba8e075  soong: Add TARGET_QTI_USB_SUPPORTS_{AUDIO,DEBUG}_ACCESSORY flags  [LuK1337]
-
-* vendor/qcom/opensource/usb
-cec97e1  Allow enabling support for audio and debug accessories  [LuK1337]
-====================
-     2021-04-10    
-====================
-
-* device/lineage/sepolicy
-df6a088  common: Label IAntiFlicker live display service  [Arian]
-
-* frameworks/base
-5960e54  SystemUI: Add anti flicker tile  [Arian]
-21a64f3  SystemUI: tiles: Open display settings on long clicks for livedisplay tiles  [Arian]
-
-* hardware/lineage/interfaces
-83b4eb8  Introduce 2.1 LiveDisplay interface with IAntiFlicker support  [Arian]
-
-* lineage/mirror
-050f269  Updated to 09-Apr-2021 15:56 UTC  [Kevin F. Haggerty]
-
-* lineage/wiki
-634db32  wiki: devices: jfvelte: Use Lineage Recovery  [Nolen Johnson]
-
-* packages/apps/LineageParts
-bbb25f0  Add a toggle for anti flicker mode in LiveDisplay settings  [Arian]
-
-* vendor/lineage
-157fff1  Allow unified location provider as possible location provider (not as used location provider)  [Greenflash1986]
-====================
-     2021-04-09    
-====================
-
-* frameworks/base
-a1775ac  SystemUI: Fix status bar battery icon title  [Bruno Martins]
-
-* lineage/hudson
-9258e47  Promote jasmine_sprout to 18.1  [Michael Bestas]
