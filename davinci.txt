@@ -1,109 +1,140 @@
 ====================
-     2021-04-18    
+     2021-04-25    
 ====================
 
 * build/make
-3257e3a  [DNM] Always use release-keys  [Arian]
+a1a9f03  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-5440912  common: Label IAntiFlicker live display service  [Arian]
+6527f7a  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-c3bbc24  SystemUI: get rid of build text in qs  [Joey]
-8efd019  SystemUI: Add anti flicker tile  [Arian]
-c156b93  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+7db0331  SystemUI: get rid of build text in qs  [Joey]
+60c9b34  SystemUI: Add anti flicker tile  [Arian]
+fca4997  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-25aa651  Add support for anti flicker mode in LiveDisplay  [Arian]
+a6162af  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-10a4d7b  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+362e3ca  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-4e6a1a5  Add support for anti flicker mode in LiveDisplay  [Arian]
-75911ff  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
-
-* lineage/mirror
-4716615  Updated aosp-minimal to 17-Apr-2021 12:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-0a70083  wiki: Remove 'get lineage' heading when device is unsupported  [razorloves]
+d1a9304  Add support for anti flicker mode in LiveDisplay  [Arian]
+1ee1e45  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * packages/apps/LineageParts
-1f36c96  Add support for anti flicker mode in LiveDisplay  [Arian]
-a648d65  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+33e9c93  Add support for anti flicker mode in LiveDisplay  [Arian]
+916997b  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-04-17    
+     2021-04-24    
+====================
+====================
+     2021-04-23    
+====================
+====================
+     2021-04-22    
 ====================
 
 * lineage/mirror
-1cf150d  Updated aosp-minimal to 16-Apr-2021 12:01 UTC  [Tim Schumacher]
-====================
-     2021-04-16    
-====================
-
-* lineage/mirror
-f896566  Updated to 15-Apr-2021 14:18 UTC  [Kevin F. Haggerty]
-
-* lineage/wiki
-9f0bec2  wiki: Improve search result container positioning  [LuK1337]
-33121cc  wiki: Include addons signature warning for all A/B devices  [LuK1337]
-====================
-     2021-04-15    
-====================
-
-* build/make
-b303323  envsetup: Fix the way we check check_product's return value  [LuK1337]
-
-* hardware/intel/common/libmix
-c452714  libmix: export securevideo processing headers  [Anay Wadhera]
-
-* hardware/intel/img/hwcomposer
-b056741  hwcomposer: export moorefield_hdmi-specific headers  [Anay Wadhera]
-c230c7a  hwcomposer: match AOSP in virtual device spec  [Anay Wadhera]
-e8281d6  hwcomposer: use goto call directly instead of declaring fallthrough  [Anay Wadhera]
-
-* lineage/hudson
-b738134  hudson: Promote LG G3 family to 18.1  [Aleksander Gencel]
-
-* lineage/wiki
-349ebff  wiki: Promote LG G3 family to 18.1  [Aleksander Gencel]
+1d702f0  Updated to 22-Apr-2021 00:12 UTC  [Kevin F. Haggerty]
+d403946  Updated to 21-Apr-2021 17:55 UTC  [Kevin F. Haggerty]
+4a0a5fb  Updated to 21-Apr-2021 17:23 UTC  [Kevin F. Haggerty]
+a0ec6ef  Updated to 21-Apr-2021 17:14 UTC  [Kevin F. Haggerty]
 
 * tools/repohooks
-95795d8  lint: clean up newer pylint warnings  [Mike Frysinger]
-bfa656d  utils: run: fix file leakage with bad execs  [Mike Frysinger]
-a89a138  utils: run: make sure exceptions always use strings for output  [Mike Frysinger]
-
-* vendor/lineage
-349993c  lineage: Handle build type suffixes properly  [LuK1337]
+2163340  utils: run: fix crash with failing tools & combined stderr  [Mike Frysinger]
 ====================
-     2021-04-14    
+     2021-04-21    
 ====================
 
-* lineage/wiki
-712fb72  wiki: Bump supported version on 19801  [LuK1337]
-====================
-     2021-04-13    
-====================
+* external/chromium-webview
+729ee65  Update Chromium Webview to 90.0.4430.82  [Kevin F. Haggerty]
 
-* hardware/intel/common/omx-components
-0286245  omx-components: use correct header libs  [Anay Wadhera]
-
-* hardware/intel/common/utils
-f7cfb3a  ISV: address the case the **roles may be NULL  [Anay Wadhera]
-3961b46  ituxd: add privapp perms  [Anay Wadhera]
-77f1baa  utils: ISV: use correct header package  [Anay Wadhera]
-
-* hardware/intel/img/psb_headers
-ee44d21  psb_headers: create drm header library to export secure headers  [Anay Wadhera]
+* lineage/hudson
+3923d73  hudson: promote Z01R to 18.1  [Marc Bourgoin]
 
 * lineage/mirror
-5d20124  Updated lineage-minimal to 12-Apr-2021 12:01 UTC  [Tim Schumacher]
-====================
-     2021-04-12    
-====================
+9ac85ea  Updated aosp-minimal to 20-Apr-2021 12:01 UTC  [Tim Schumacher]
 
 * lineage/wiki
-970b71a  wiki: devices: Promote jasmine_sprout to 18.1  [Michael Bestas]
-626782e  wiki: Bump supported version on 18821  [LuK1337]
-a220006  wiki: Various smaller fixes  [Tim Schumacher]
+3cd9dc9  wiki: devices: Remove channels flag from Z01R  [razorloves]
+d2bb499  wiki: devices: promote Z01R to 18.1  [Marc Bourgoin]
+1ae994c  wiki: Update signing builds instructions  [LuK1337]
+
+* vendor/lineage
+9dcdf04  lineage: atv: Disable LiveDisplay  [Nolen Johnson]
+====================
+     2021-04-20    
+====================
+
+* frameworks/base
+21ad054  Automatic translation import  [LineageOS Builder]
+ef2ec5d  Automatic translation import  [LineageOS Builder]
+
+* lineage-sdk
+bd7a66e  Automatic translation import  [LineageOS Builder]
+71b4745  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/DeskClock
+42cfc3f  Automatic translation import  [LineageOS Builder]
+31e47dd  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Dialer
+7980702  Automatic translation import  [LineageOS Builder]
+bc6d0e7  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Etar
+e8b4abc  Automatic translation import  [LineageOS Builder]
+a2b30a2  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Exchange
+24b9788  Automatic translation import  [LineageOS Builder]
+19f46a3  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/FMRadio
+083683d  Automatic translation import  [LineageOS Builder]
+3eedce6  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/FlipFlap
+4f708e3  Automatic translation import  [LineageOS Builder]
+919f2a2  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/LineageParts
+b68e2b3  Automatic translation import  [LineageOS Builder]
+4510985  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Settings
+5ba751f  Automatic translation import  [LineageOS Builder]
+f1291f3  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/SetupWizard
+8ff9c97  Automatic translation import  [LineageOS Builder]
+35692f0  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Snap
+7a4fcfa  Automatic translation import  [LineageOS Builder]
+7be9600  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Trebuchet
+804e3f1  Automatic translation import  [LineageOS Builder]
+59bd725  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Updater
+c083fa2  Automatic translation import  [LineageOS Builder]
+ca99965  Automatic translation import  [LineageOS Builder]
+
+* packages/inputmethods/LatinIME
+4acf30d  Automatic translation import  [LineageOS Builder]
+765ba49  Automatic translation import  [LineageOS Builder]
+
+* packages/resources/devicesettings
+3158c32  Automatic translation import  [LineageOS Builder]
+8e978df  Automatic translation import  [LineageOS Builder]
+
+* vendor/qcom/opensource/fm-commonsys
+cf4a6b3  Automatic translation import  [LineageOS Builder]
+c10489d  Automatic translation import  [LineageOS Builder]
+====================
+     2021-04-19    
+====================
