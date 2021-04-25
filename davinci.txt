@@ -1,93 +1,198 @@
 ====================
-     2021-04-18    
+     2021-04-25    
+====================
+
+* android
+23280b5  manifest: Track our fork of system/media  [dianlujitao]
+
+* frameworks/base
+7a46513  Reset all package signatures on boot  [Sam Mortimer]
+6cd9135  Keyguard: Fix mapping mismatch between KeyEvent and NumPadKey  [LuK1337]
+
+* system/media
+b432f63  Merge tag 'android-11.0.0_r34' staging/lineage-18.1_merge-android-11.0.0_r34  [Michael Bestas]
+====================
+     2021-04-24    
+====================
+
+* packages/apps/Messaging
+07ae0bb  Messaging: Update cellbroadcast package name  [z3DD3r]
+====================
+     2021-04-23    
+====================
+====================
+     2021-04-22    
 ====================
 
 * frameworks/base
-07478d7  Reset all package signatures on boot  [Sam Mortimer]
-be3bf70  [SQUASH]base: Revert secondary home handle  [Ido Ben-Hur]
-====================
-     2021-04-17    
-====================
-
-* build/soong
-ae90578  Make sure prebuilt modules are exported before attempting to use them  [LuK1337]
-
-* external/rsync
-1f24516  config: Undef USE_ICONV_OPEN as it segfaults for us  [LuK1337]
-
-* frameworks/base
-70af95c  SystemUI: Pass lock pattern size to biometrics auth  [LuK1337]
+01b994a  [SQUASH]base: Revert secondary home handle  [Ido Ben-Hur]
 
 * lineage/mirror
-4716615  Updated aosp-minimal to 17-Apr-2021 12:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-0a70083  wiki: Remove 'get lineage' heading when device is unsupported  [razorloves]
-====================
-     2021-04-16    
-====================
-
-* lineage/mirror
-1cf150d  Updated aosp-minimal to 16-Apr-2021 12:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-9f0bec2  wiki: Improve search result container positioning  [LuK1337]
-33121cc  wiki: Include addons signature warning for all A/B devices  [LuK1337]
-
-* packages/apps/Settings
-0a0ffca  Settings: Fix hardcoded black text in storage summary  [maxwen]
-====================
-     2021-04-15    
-====================
-
-* lineage/mirror
-f896566  Updated to 15-Apr-2021 14:18 UTC  [Kevin F. Haggerty]
-
-* packages/apps/LineageParts
-c513d5d  LineageParts: Use colorControlNormal for touchscreen gestures icons tint  [LuK1337]
+1d702f0  Updated to 22-Apr-2021 00:12 UTC  [Kevin F. Haggerty]
 
 * tools/repohooks
-95795d8  lint: clean up newer pylint warnings  [Mike Frysinger]
-bfa656d  utils: run: fix file leakage with bad execs  [Mike Frysinger]
-a89a138  utils: run: make sure exceptions always use strings for output  [Mike Frysinger]
+2163340  utils: run: fix crash with failing tools & combined stderr  [Mike Frysinger]
 ====================
-     2021-04-14    
+     2021-04-21    
 ====================
 
-* build/make
-75b03c6  envsetup: Fix the way we check check_product's return value  [LuK1337]
-
-* frameworks/base
-84c0117  SystemUI: Hide centered_area when showing heads up  [LuK1337]
-5a28ff7  SystemUI: Move network traffic monitor under same layout as clock  [LuK1337]
-46712ee  SystemUI: Make center clock layout safe insets aware  [LuK1337]
-
-* lineage/hudson
-b738134  hudson: Promote LG G3 family to 18.1  [Aleksander Gencel]
-
-* lineage/wiki
-349ebff  wiki: Promote LG G3 family to 18.1  [Aleksander Gencel]
-
-* vendor/lineage
-3bd9a66  lineage: Handle build type suffixes properly  [LuK1337]
-====================
-     2021-04-13    
-====================
-
-* frameworks/opt/telephony
-1e607c9  RIL: Fix manual network selection with old modem  [faust93]
-
-* lineage/wiki
-712fb72  wiki: Bump supported version on 19801  [LuK1337]
-
-* system/core
-8ca6344  fastboot: Add a few missing fastboot commands from help  [Luca Stefani]
-====================
-     2021-04-12    
-====================
+* external/chromium-webview
+729ee65  Update Chromium Webview to 90.0.4430.82  [Kevin F. Haggerty]
 
 * lineage/mirror
-5d20124  Updated lineage-minimal to 12-Apr-2021 12:01 UTC  [Tim Schumacher]
+d403946  Updated to 21-Apr-2021 17:55 UTC  [Kevin F. Haggerty]
+4a0a5fb  Updated to 21-Apr-2021 17:23 UTC  [Kevin F. Haggerty]
+a0ec6ef  Updated to 21-Apr-2021 17:14 UTC  [Kevin F. Haggerty]
 
 * lineage/wiki
-970b71a  wiki: devices: Promote jasmine_sprout to 18.1  [Michael Bestas]
+3cd9dc9  wiki: devices: Remove channels flag from Z01R  [razorloves]
+
+* packages/apps/Eleven
+3fe3151  proguard: welcome 2021  [Alexander Martinz]
+f2e1a14  Eleven: convert last remaining png icons to svg  [Joey]
+1fa2153  Eleven: version: 4.0.1 (401)  [Alexander Martinz]
+7250d2e  Eleven: simplify layout  [Joey]
+0bc7c61  Eleven: remove unused resources  [Joey]
+8ea97f7  Eleven: update playPause button animation  [Joey]
+91bc555  Eleven: convert default artwork to svg  [Joey]
+e22e9bf  Eleven: AlbumScrimImage: generate drawable for default artwork  [Alexander Martinz]
+0c4a3ae  MusicUtils: ensure query parameters are not null  [Alexander Martinz]
+bc518e8  !fixup "Eleven: ensure we got proper permissions before initializing"  [Alexander Martinz]
+8186899  Eleven: remove dragdrop package  [Joey]
+31b872a  Eleven: convert playlist songs list to RecyclerView  [2bllw8]
+2fcdb0c  Eleven: convert queue list to RecyclerView  [2bllw8]
+e14b7a8  Eleven: Update artist, songs and smart playlists lists to RecyclerView  [2bllw8]
+f96b0dc  Eleven: convert playlist list to RecyclerView  [2bllw8]
+eadfb42  Eleven: convert albums and artist lists to RecyclerView  [2bllw8]
+8181a71  Eleven: use more easy to understand drag drop icons  [2bllw8]
+c9b5fde  Eleven: allow to reset to default photo  [2bllw8]
+10366aa  Eleven: update to sdk 30  [2bllw8]
+c84c8a6  Eleven: AudioPreviewActivity: do not use deprecated APIs for audio focus changes  [2bllw8]
+3857e63  Eleven: AudioPreviewActivity: use static handler class  [2bllw8]
+f6553f1  Eleven: ViewDragHelper: use Overscroller  [2bllw8]
+
+* packages/apps/Settings
+e333d56  Device picker: add title to fix offset in progressbar  [Timi]
+76869b9  ProgressCategory: update title style for consistency  [Timi]
+====================
+     2021-04-20    
+====================
+
+* hardware/xiaomi
+f05aff1  power-libperfmgr: Guard it  [LuK1337]
+
+* lineage/hudson
+3923d73  hudson: promote Z01R to 18.1  [Marc Bourgoin]
+
+* lineage/mirror
+9ac85ea  Updated aosp-minimal to 20-Apr-2021 12:01 UTC  [Tim Schumacher]
+
+* lineage/wiki
+d2bb499  wiki: devices: promote Z01R to 18.1  [Marc Bourgoin]
+1ae994c  wiki: Update signing builds instructions  [LuK1337]
+
+* packages/apps/Eleven
+808fa75  Eleven: PropertiesStore: use try-with-resource  [2bllw8]
+b51f0a2  Eleven: use FragmentActivity  [2bllw8]
+b0c6002  Eleven: cleanup findById usages  [2bllw8]
+6524fc6  Eleven: update android gradle plugin version to 4.1.3  [2bllw8]
+cc0bd10  Eleven: use default transaction animations to fragments  [2bllw8]
+
+* vendor/lineage
+ea6f9a7  lineage: atv: Disable LiveDisplay  [Nolen Johnson]
+
+* vendor/qcom/opensource/commonsys-intf/display
+17b02be  Merge tag 'LA.QSSI.11.0.r1-11400-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/display-commonsys-intf into lineage-18.1  [Michael Bestas]
+====================
+     2021-04-19    
+====================
+
+* device/qcom/sepolicy
+0004e50  Merge tag 'LA.QSSI.11.0.r1-11400-qssi.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy into lineage-18.1  [Michael Bestas]
+
+* device/qcom/sepolicy-legacy-um
+bf514b8  common: Allow system_app to read fm_radio_device  [Jarl-Penguin]
+3f031ba  sdm660: Remove overly broad init rule  [Michael Bestas]
+77caf56  Address init denials regarding socket_device  [Aayush Gupta]
+04808ca  Use set_prop() macro for property sets  [Michael Bestas]
+61b6695  sepolicy: Switch to BOARD_VENDOR_SEPOLICY_DIRS  [Aayush Gupta]
+72f52b0  legacy-um: qva: Label dpmd in /system/product/ again  [Aayush Gupta]
+c589f05  sdm660: Generate contexts for rtc  [Aayush Gupta]
+277f836  Label old telephony extension  [Michael Bestas]
+14cb6bc  Label persist.vendor.bluetooth. properties  [Michael Bestas]
+c226356  sepolicy : Add rule to set property for wlan driver/fw ver info  [Vinay Gannevaram]
+1f12a66  Allow hal_sensors read vendor_sensors_dbg_prop  [Michael Bestas]
+4673819  sepolicy: cnd: Conditionally allow access to wifi_prop  [Nolen Johnson]
+0ed559b  Sepolicy: add define for lksecapp vbmeta and dtbo  [Arthur Shuai]
+e6ac732  sepolicy-legacy-um: Allow Snap to read camera props  [Bruno Martins]
+223774b  msm8953: Label additional SSR sysfs  [Michael Bestas]
+38bbed0  Label persist/rfs recursively  [Chirayu Desai]
+830728c  Allow vendor_init set vendor_time_service_prop  [Michael Bestas]
+ef57b0d  sdm660: Label sysfs_uio_file  [Michael Bestas]
+32e1a94  sdm660: Label sysfs_ssr_toggle  [Michael Bestas]
+85876f8  common: Fix sysfs_socinfo Label for sensors  [Max Weffers]
+79bbaeb  common: Label persist.vendor.camera.debug.logfile  [Michael Bestas]
+f83b482  sepolicy : msm8998: remove regexp for ssr node on sysfs  [Shashi Shekar Shankar]
+62662a5  sepolicy: setting secontext to rtc node  [Mohit Aggarwal]
+d5b97a9  sepolicy: Add rw permission for i2c touch sys node  [Amit P Choudhari]
+457a62f  msm8998: Label LED sysfs  [Michael Bestas]
+136be27  msm8998: Label usbpd sysfs  [Michael Bestas]
+9bcf8e2  sepolicy: allow vold to read persist dirs  [jrior001]
+6305336  Import msm8996 policy from lineage-17.1-legacy-um  [Michael Bestas]
+e05c326  sepolicy: Allow mm-qcamerad to access v4L "name" node  [Bruno Martins]
+30e84cc  sepolicy: Fix video4linux "name" node labeling  [Bruno Martins]
+2b143f3  Use set_prop() macro for property sets  [Michael Bestas]
+a826c0b  qcom: Label vendor files with (vendor|system/vendor) instead of vendor  [Rashed Abdel-Tawab]
+fdbed5d  sepolicy: Label persist partition for all SoCs  [Michael Bestas]
+eb83f6b  sepolicy: Unlabel aux camera whitelist prop  [dianlujitao]
+dc1cf5b  sepolicy: Remove rules for non legacy platforms  [Michael Bestas]
+1837c80  sepolicy: Include Lineage-specific QCOM sepolicy  [Pig]
+7c71fe4  legacy: Fix newline in file_contexts  [Volodymyr Zhdanov]
+50983df  sepolicy: Update paths for new repository location  [Michael Bestas]
+c0ebb88  sepolicy: Remove QCOM guards  [Pig]
+
+* device/qcom/sepolicy_vndr
+805006e  Merge tag 'LA.UM.9.12.r1-11000-SMxx50.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy_vndr into lineage-18.1  [Michael Bestas]
+
+* hardware/qcom-caf/thermal
+08cefce  Merge tag 'LA.UM.9.12.r1-11000-SMxx50.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/thermal into lineage-18.1  [Michael Bestas]
+
+* hardware/qcom-caf/wlan
+23c6098  Merge tag 'LA.UM.9.12.r1-11000-SMxx50.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/wlan into lineage-18.1-caf  [Michael Bestas]
+
+* hardware/xiaomi
+2182dd8  power-libperfmgr: Allow device specific hooks for setMode, isModeSupported  [LuK1337]
+0cc25a1  power-libperfmgr: remove Google-specific VR and camera hints  [Jesse Chan]
+2978882  power-libperfmgr: simply wait if idle state node is not present  [Jesse Chan]
+3178283  libperfmgr.rc: let power hal start early  [Kyle Lin]
+b0464fc  libperfmgr.rc: let perfmgr can change dex2oat priorities  [Kyle Lin]
+8e41597  power-libperfmgr: rename namespace for Pixel power HAL  [Wei Wang]
+9e3e1e7  power-libperfmgr: allow powerhint calls as soon as service starts  [Wei Wang]
+18e667e  power-libperfmgr: add aidl extension server  [Wei Wang]
+3762d10  power-libperfmgr: Hook with display handler  [Wei Wang]
+289283e  power-libperfmgr: Import power HAL AIDL implementation  [Bruno Martins]
+
+* packages/apps/Updater
+7cfeb81  Updater: Fix exporting updates  [Michael W]
+
+* vendor/codeaurora/telephony
+4b8a379  Keep old APIs for Auto Reject  [Pranav Vashi]
+3905bd4  Merge tag 'LA.QSSI.11.0.r1-11400-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/codeaurora/telephony into lineage-18.1  [Michael Bestas]
+
+* vendor/qcom/opensource/audio
+77abc79  Merge tag 'LA.QSSI.11.0.r1-11400-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/audio into lineage-18.1  [Michael Bestas]
+
+* vendor/qcom/opensource/data-ipa-cfg-mgr
+5acf202  Merge tag 'LA.UM.9.12.r1-11000-SMxx50.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/data-ipa-cfg-mgr into lineage-18.1  [Michael Bestas]
+
+* vendor/qcom/opensource/fm-commonsys
+3709d0a  Merge tag 'LA.QSSI.11.0.r1-11400-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/fm-commonsys into lineage-18.1  [Michael Bestas]
+
+* vendor/qcom/opensource/interfaces
+f50e5c3  Merge tag 'LA.QSSI.11.0.r1-11400-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/interfaces into lineage-18.1  [Michael Bestas]
+
+* vendor/qcom/opensource/usb
+4692565  Merge tag 'LA.UM.9.12.r1-11000-SMxx50.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/usb into lineage-18.1  [Michael Bestas]
+
+* vendor/qcom/opensource/vibrator
+17efe07  Merge tag 'LA.UM.9.12.r1-11000-SMxx50.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/vibrator into lineage-18.1  [Michael Bestas]
