@@ -1,176 +1,95 @@
 ====================
-     2021-04-25    
+     2021-05-02    
 ====================
 
 * build/make
-e4ad02b  [DNM] Always use release-keys  [Arian]
+087f8ce  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-ab2d860  common: Label IAntiFlicker live display service  [Arian]
+5e25290  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-9b00a16  SystemUI: get rid of build text in qs  [Joey]
-7ebd6e5  SystemUI: Add anti flicker tile  [Arian]
-b3c9824  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+ce74078  SystemUI: get rid of build text in qs  [Joey]
+bbbb49a  SystemUI: Add anti flicker tile  [Arian]
+069a24f  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-ea5b569  Add support for anti flicker mode in LiveDisplay  [Arian]
+25462d9  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-6f1e20d  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+347bf7f  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-7efd386  Add support for anti flicker mode in LiveDisplay  [Arian]
-ad5e807  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+c31c506  Add support for anti flicker mode in LiveDisplay  [Arian]
+0f79f26  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * packages/apps/LineageParts
-ee25b9a  Add support for anti flicker mode in LiveDisplay  [Arian]
-deb3b51  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+056fc9d  Add support for anti flicker mode in LiveDisplay  [Arian]
+ca41dce  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-04-24    
+     2021-05-01    
 ====================
-====================
-     2021-04-23    
-====================
-====================
-     2021-04-22    
-====================
-
-* lineage/mirror
-1d702f0  Updated to 22-Apr-2021 00:12 UTC  [Kevin F. Haggerty]
-d403946  Updated to 21-Apr-2021 17:55 UTC  [Kevin F. Haggerty]
-4a0a5fb  Updated to 21-Apr-2021 17:23 UTC  [Kevin F. Haggerty]
-a0ec6ef  Updated to 21-Apr-2021 17:14 UTC  [Kevin F. Haggerty]
-
-* tools/repohooks
-2163340  utils: run: fix crash with failing tools & combined stderr  [Mike Frysinger]
-====================
-     2021-04-21    
-====================
-
-* external/chromium-webview
-729ee65  Update Chromium Webview to 90.0.4430.82  [Kevin F. Haggerty]
 
 * lineage/hudson
-3923d73  hudson: promote Z01R to 18.1  [Marc Bourgoin]
+62f0a20  hudson: b? why not.  [LuK1337]
+392c33c  Reland: "hudson: Bump 0x859583888993818481 and 0x86819189a381 to 18.1"  [LuK1337]
+
+* lineage/wiki
+07869bf  Reland: "wiki: Bump fajita to 18.1"  [LuK1337]
+====================
+     2021-04-30    
+====================
+
+* lineage/hudson
+a5d0a5c  Revert "hudson: Bump 0x859583888993818481 and 0x86819189a381 to 18.1"  [LuK1337]
 
 * lineage/mirror
-9ac85ea  Updated aosp-minimal to 20-Apr-2021 12:01 UTC  [Tim Schumacher]
+7e39acc  Updated aosp-minimal to 29-Apr-2021 12:01 UTC  [Tim Schumacher]
 
 * lineage/wiki
-3cd9dc9  wiki: devices: Remove channels flag from Z01R  [razorloves]
-d2bb499  wiki: devices: promote Z01R to 18.1  [Marc Bourgoin]
-
-* vendor/lineage
-9dcdf04  lineage: atv: Disable LiveDisplay  [Nolen Johnson]
+e1aacca  Revert "wiki: Bump fajita to 18.1"  [LuK1337]
 ====================
-     2021-04-20    
+     2021-04-29    
+====================
+
+* lineage/hudson
+3ff89cc  hudson: Bump 0x859583888993818481 and 0x86819189a381 to 18.1  [LuK1337]
+
+* lineage/mirror
+d944f35  Updated to 28-Apr-2021 11:39 UTC  [Kevin F. Haggerty]
+
+* lineage/wiki
+8b290ac  wiki: Bump fajita to 18.1  [LuK1337]
+====================
+     2021-04-28    
+====================
+
+* lineage/mirror
+dac64e9  Updated aosp-minimal to 27-Apr-2021 12:01 UTC  [Tim Schumacher]
+
+* lineage/wiki
+99979ee  wiki: Go back to payload-dumper-go  [LuK1337]
+c9d67d7  wiki: Instruct users to reboot to recovery past copy-partitions  [LuK1337]
+====================
+     2021-04-27    
 ====================
 
 * frameworks/base
-21ad054  Automatic translation import  [LineageOS Builder]
-
-* lineage-sdk
-bd7a66e  Automatic translation import  [LineageOS Builder]
-
-* lineage/wiki
-1ae994c  wiki: Update signing builds instructions  [LuK1337]
-
-* packages/apps/DeskClock
-42cfc3f  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Dialer
-7980702  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Etar
-e8b4abc  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Exchange
-24b9788  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/FMRadio
-083683d  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/FlipFlap
-4f708e3  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/LineageParts
-b68e2b3  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Settings
-5ba751f  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/SetupWizard
-8ff9c97  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Snap
-7a4fcfa  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Trebuchet
-804e3f1  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Updater
-c083fa2  Automatic translation import  [LineageOS Builder]
-
-* packages/inputmethods/LatinIME
-4acf30d  Automatic translation import  [LineageOS Builder]
-
-* packages/resources/devicesettings
-3158c32  Automatic translation import  [LineageOS Builder]
-
-* vendor/qcom/opensource/fm-commonsys
-cf4a6b3  Automatic translation import  [LineageOS Builder]
+a82d1f6  Invoke One Touch Play on wakeUp for HDMI playback devices  [Nathalie Le Clair]
+1d72978  Turning on HDMI on Wake Up  [Madhava Srinivasan]
 ====================
-     2021-04-19    
+     2021-04-26    
 ====================
 
 * frameworks/base
-ef2ec5d  Automatic translation import  [LineageOS Builder]
+917cfdf  Fix volume key handling for key press repeat  [Jean-Michel Trivi]
+90a5c10  Use sendVolumeKeyEvent API instead of sendKeyEvent API  [Amy]
 
-* lineage-sdk
-71b4745  Automatic translation import  [LineageOS Builder]
+* lineage/hudson
+0f4e8f4  Promote jason to 18.1  [dianlujitao]
 
-* packages/apps/DeskClock
-31e47dd  Automatic translation import  [LineageOS Builder]
+* lineage/mirror
+65fec70  Updated to 25-Apr-2021 12:00 UTC  [Tim Schumacher]
 
-* packages/apps/Dialer
-bc6d0e7  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Etar
-a2b30a2  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Exchange
-19f46a3  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/FMRadio
-3eedce6  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/FlipFlap
-919f2a2  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/LineageParts
-4510985  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Settings
-f1291f3  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/SetupWizard
-35692f0  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Snap
-7be9600  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Trebuchet
-59bd725  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Updater
-ca99965  Automatic translation import  [LineageOS Builder]
-
-* packages/inputmethods/LatinIME
-765ba49  Automatic translation import  [LineageOS Builder]
-
-* packages/resources/devicesettings
-8e978df  Automatic translation import  [LineageOS Builder]
-
-* vendor/qcom/opensource/fm-commonsys
-c10489d  Automatic translation import  [LineageOS Builder]
+* lineage/wiki
+e3dc817  wiki: devices: promote jason to 18.1  [dianlujitao]
