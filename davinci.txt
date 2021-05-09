@@ -1,103 +1,67 @@
 ====================
-     2021-05-02    
+     2021-05-09    
 ====================
 
 * build/make
-48d75f7  [DNM] Always use release-keys  [Arian]
+b35d2b1  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-ef01016  common: Label IAntiFlicker live display service  [Arian]
+39ec6c4  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-0eef244  SystemUI: get rid of build text in qs  [Joey]
-c45c669  SystemUI: Add anti flicker tile  [Arian]
-fb4c054  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+50d9a2a  SystemUI: get rid of build text in qs  [Joey]
+a67634d  SystemUI: Add anti flicker tile  [Arian]
+5386094  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-6977e0a  Add support for anti flicker mode in LiveDisplay  [Arian]
+56335fb  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-44e4bcd  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+b7f6a7f  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-e1a55a8  Add support for anti flicker mode in LiveDisplay  [Arian]
-beab29c  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
-
-* lineage/hudson
-62f0a20  hudson: b? why not.  [LuK1337]
+d36d6dc  Add support for anti flicker mode in LiveDisplay  [Arian]
+91884a9  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * packages/apps/LineageParts
-a47a16c  Add support for anti flicker mode in LiveDisplay  [Arian]
-57dad94  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+5187459  Add support for anti flicker mode in LiveDisplay  [Arian]
+24ee252  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-05-01    
-====================
-
-* lineage/hudson
-392c33c  Reland: "hudson: Bump 0x859583888993818481 and 0x86819189a381 to 18.1"  [LuK1337]
-
-* lineage/wiki
-07869bf  Reland: "wiki: Bump fajita to 18.1"  [LuK1337]
-====================
-     2021-04-30    
-====================
-
-* lineage/hudson
-a5d0a5c  Revert "hudson: Bump 0x859583888993818481 and 0x86819189a381 to 18.1"  [LuK1337]
-
-* lineage/mirror
-7e39acc  Updated aosp-minimal to 29-Apr-2021 12:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-e1aacca  Revert "wiki: Bump fajita to 18.1"  [LuK1337]
-====================
-     2021-04-29    
-====================
-
-* lineage/hudson
-3ff89cc  hudson: Bump 0x859583888993818481 and 0x86819189a381 to 18.1  [LuK1337]
-
-* lineage/mirror
-d944f35  Updated to 28-Apr-2021 11:39 UTC  [Kevin F. Haggerty]
-
-* lineage/wiki
-8b290ac  wiki: Bump fajita to 18.1  [LuK1337]
-99979ee  wiki: Go back to payload-dumper-go  [LuK1337]
-====================
-     2021-04-28    
+     2021-05-08    
 ====================
 
 * lineage/mirror
-dac64e9  Updated aosp-minimal to 27-Apr-2021 12:01 UTC  [Tim Schumacher]
+0e493ff  Updated aosp-minimal to 07-May-2021 12:01 UTC  [Tim Schumacher]
 
 * lineage/wiki
-c9d67d7  wiki: Instruct users to reboot to recovery past copy-partitions  [LuK1337]
+2fcd413  wiki: devices: Update maintainers for cheeseburger, dumpling  [Georg Veichtlbauer]
+cf71bc6  wiki: Warn about fastbootd not being available on old builds for OP fw update  [LuK1337]
+5cc3b77  wiki: Fix wording in fastboot_ab template  [razorloves]
 ====================
-     2021-04-27    
+     2021-05-07    
 ====================
-
-* frameworks/base
-a82d1f6  Invoke One Touch Play on wakeUp for HDMI playback devices  [Nathalie Le Clair]
-1d72978  Turning on HDMI on Wake Up  [Madhava Srinivasan]
-====================
-     2021-04-26    
-====================
-
-* frameworks/base
-917cfdf  Fix volume key handling for key press repeat  [Jean-Michel Trivi]
-90a5c10  Use sendVolumeKeyEvent API instead of sendKeyEvent API  [Amy]
-c247463  CEC: Prevent overwriting volume control Settings  [Marvin Ramin]
-c5bf1dd  CEC: Add listener for HDMI CEC volume control feature  [Marvin Ramin]
-dccbb02  CEC: Make HDMI CEC volume control configurable  [Marvin Ramin]
-b093ac4  Honor HDMI_CONTROL_ENABLED setting in AudioService  [Madhava Srinivasan]
-610e9d4  Initialize HDMI PowerStatus to standby  [Robert Horvath]
-03ea07d  Default wake on plug to false for audio system  [Nathalie Le Clair]
-
-* lineage/hudson
-0f4e8f4  Promote jason to 18.1  [dianlujitao]
-
-* lineage/mirror
-65fec70  Updated to 25-Apr-2021 12:00 UTC  [Tim Schumacher]
 
 * lineage/wiki
-e3dc817  wiki: devices: promote jason to 18.1  [dianlujitao]
+f95a2b8  wiki: Remove duplicated lines from firmware_update_oneplus_sm8250.md  [LuK1337]
+====================
+     2021-05-06    
+====================
+
+* lineage/wiki
+497ae4e  templates: fastboot_ab: Don't expect user to boot recovery at this stage  [Nolen Johnson]
+3dd5307  wiki: templates: fastboot_ab: Fastboot on legacy A/B is fixed now  [Nolen Johnson]
+====================
+     2021-05-05    
+====================
+
+* lineage/wiki
+70c7232  wiki: Bump enchilada to 18.1  [LuK1337]
+====================
+     2021-05-04    
+====================
+====================
+     2021-05-03    
+====================
+
+* lineage/wiki
+bfbf495  wiki: Add OnePlus 7T (hotdogb)  [LuK1337]
