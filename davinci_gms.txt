@@ -1,108 +1,143 @@
 ====================
-     2021-05-03    
+     2021-05-10    
 ====================
+
+* build/make
+d8dffd8  backuptool: Map extra dynamic partitions for Addon.d V3  [Alessandro Astone]
 
 * frameworks/base
-c66322e  Reset all package signatures on boot  [Sam Mortimer]
+f15a9cc  Reset all package signatures on boot  [Sam Mortimer]
 
 * lineage/wiki
-bfbf495  wiki: Add OnePlus 7T (hotdogb)  [LuK1337]
-====================
-     2021-05-02    
-====================
-
-* frameworks/base
-b6f3f98  SystemUI: Update carrier label margin right after setting the padding  [LuK1337]
-
-* lineage/hudson
-62f0a20  hudson: b? why not.  [LuK1337]
-
-* packages/apps/Jelly
-16e5ac7  Jelly: Add support for viewable content:// scheme  [LuK1337]
-
-* vendor/lineage
-70925d6  vendor: apns: Add Ting  [Michael W]
-9b70f83  envsetup: Make dopush() /system_ext aware  [Bruno Martins]
-====================
-     2021-05-01    
-====================
-
-* lineage-sdk
-c47d955  BatteryLights: Add ability to turn off LED when fully charged  [Bruno Martins]
-
-* lineage/hudson
-392c33c  Reland: "hudson: Bump 0x859583888993818481 and 0x86819189a381 to 18.1"  [LuK1337]
-
-* lineage/wiki
-07869bf  Reland: "wiki: Bump fajita to 18.1"  [LuK1337]
-
-* packages/apps/Jelly
-47ad959  Jelly: Start using OpenMultipleDocuments for FileShower  [Luca Stefani]
-
-* packages/apps/LineageParts
-fa3b1bd  LineageParts: Add color mode preview from AOSP Settings  [LuK1337]
-c642690  BatteryLightSettings: Add ability to turn off LED when fully charged  [Bruno Martins]
-
-* packages/apps/WallpaperPicker2
-276c210  WallpaperPicker2: Fix race condition for fast-loading wallpapers  [Danny Lin]
-====================
-     2021-04-30    
-====================
-
-* frameworks/av
-3bcf5d2  Don't fail AAC decoding if DRC parameter isn't available  [Pierre-Hugues Husson]
-
-* lineage/hudson
-a5d0a5c  Revert "hudson: Bump 0x859583888993818481 and 0x86819189a381 to 18.1"  [LuK1337]
-
-* lineage/mirror
-7e39acc  Updated aosp-minimal to 29-Apr-2021 12:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-e1aacca  Revert "wiki: Bump fajita to 18.1"  [LuK1337]
-====================
-     2021-04-29    
-====================
-
-* frameworks/base
-8f854f4  [DO NOT MERGE] Use loadDrawableAsUser in MediaDataManager  [Isak Lilja]
-2807f50  SystemUI: allow to limit the max framerate of built-in screen recorder  [Kuba Wojciechowski]
-
-* lineage/hudson
-3ff89cc  hudson: Bump 0x859583888993818481 and 0x86819189a381 to 18.1  [LuK1337]
-
-* lineage/mirror
-d944f35  Updated to 28-Apr-2021 11:39 UTC  [Kevin F. Haggerty]
-
-* lineage/wiki
-8b290ac  wiki: Bump fajita to 18.1  [LuK1337]
-99979ee  wiki: Go back to payload-dumper-go  [LuK1337]
-
-* packages/apps/Updater
-a36be60  Updater: appbar: Set the collapsing animation duration to 0ms  [Dhina17]
-====================
-     2021-04-28    
-====================
-
-* device/xiaomi/toco
-50aea6c  toco: overlay-lineage: Disable proximity usage during doze  [Demon000]
-c90faf7  toco: overlay: Add support for doze auto brightness  [TheScarastic]
-
-* frameworks/base
-be00ba5  SystemUI: Apply system_icons_keyguard_padding_end to parent view  [LuK1337]
-
-* lineage/mirror
-dac64e9  Updated aosp-minimal to 27-Apr-2021 12:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-c9d67d7  wiki: Instruct users to reboot to recovery past copy-partitions  [LuK1337]
+b2fce12  wiki: devices: Promote Motorola msm8937 family to 18.1  [Jarl-Penguin]
 
 * packages/apps/Settings
-e039c25  Settings: Allow devices to provide their own color mode strings  [LuK1337]
+0a9477f  Settings: Remove dependency on pref object for min refresh rate isAvailable()  [LuK1337]
 ====================
-     2021-04-27    
+     2021-05-09    
 ====================
 
 * vendor/lineage
-4280154  envsetup: replace  __detect_shell with basename $SHELL  [Dhina17]
-5c1d8be  envsetup: fix lineagegerrit push for zsh  [Dhina17]
+11c43d2  backuptool: use correct BLK_PATH on a-only dynamic partitions devices  [Tim Zimmermann]
+====================
+     2021-05-08    
+====================
+
+* frameworks/base
+653674c  Merge tag 'android-11.0.0_r37' into staging/lineage-18.1_merge-android-11.0.0_r37  [Kevin F. Haggerty]
+
+* lineage/hudson
+bf8c8a8  hudson: Promote Motorola msm8937 family to 18.1  [Jarl-Penguin]
+
+* lineage/mirror
+0e493ff  Updated aosp-minimal to 07-May-2021 12:01 UTC  [Tim Schumacher]
+
+* lineage/wiki
+2fcd413  wiki: devices: Update maintainers for cheeseburger, dumpling  [Georg Veichtlbauer]
+cf71bc6  wiki: Warn about fastbootd not being available on old builds for OP fw update  [LuK1337]
+5cc3b77  wiki: Fix wording in fastboot_ab template  [razorloves]
+====================
+     2021-05-07    
+====================
+
+* frameworks/base
+029edb3  SystemUI: Force left-to-right for network traffic monitor holder  [LuK1337]
+
+* lineage/wiki
+f95a2b8  wiki: Remove duplicated lines from firmware_update_oneplus_sm8250.md  [LuK1337]
+
+* packages/apps/Snap
+868d2a3  Snap: api2: close mode switcher on promode events  [Timi]
+96b64e6  Snap: api2: close mode switcher on back-keypress  [Timi]
+====================
+     2021-05-06    
+====================
+
+* lineage/wiki
+497ae4e  templates: fastboot_ab: Don't expect user to boot recovery at this stage  [Nolen Johnson]
+3dd5307  wiki: templates: fastboot_ab: Fastboot on legacy A/B is fixed now  [Nolen Johnson]
+
+* packages/apps/Snap
+686f695  Snap: api2: correct format-setting icon  [Timi]
+d6485f3  Snap: use translucent control background on 16:9  [Timi]
+
+* vendor/lineage
+c966b95  apns-conf: Add Kena Mobile entries  [Sebastiano Barezzi]
+ebb8899  apns-conf: Update PosteMobile entries  [Sebastiano Barezzi]
+c0541e7  apns-conf: Add ho.mobile configs  [Sebastiano Barezzi]
+a10bd28  apns-conf: Update CoopVoce entries  [Sebastiano Barezzi]
+====================
+     2021-05-05    
+====================
+
+* android
+24f78db  manifest: android-11.0.0_r34 -> android-11.0.0_r37  [Kevin F. Haggerty]
+
+* build/make
+8d02a8a  Merge tag 'android-11.0.0_r37' into staging/lineage-18.1_merge-android-11.0.0_r37  [Kevin F. Haggerty]
+
+* frameworks/av
+7d7dec0  Merge tag 'android-11.0.0_r37' into staging/lineage-18.1_merge-android-11.0.0_r37  [Kevin F. Haggerty]
+
+* frameworks/base
+773c39a  PhoneWindowManager: Forward port long press back to kill app  [Danesh Mondegarian]
+
+* lineage-sdk
+7378e73  lineage-sdk: Add KILL_APP button action  [LuK1337]
+44427ae  lineage-sdk: Add preference keys for back key long press customization  [LuK1337]
+122825f  lineage-sdk: Remove single hand mode enum values  [LuK1337]
+
+* lineage/wiki
+70c7232  wiki: Bump enchilada to 18.1  [LuK1337]
+
+* packages/apps/LineageParts
+c0b3cc1  LineageParts: Add KILL_APP button action  [LuK1337]
+5fb004f  LineageParts: Add preferences for back key long press customization  [LuK1337]
+
+* packages/apps/Settings
+2299165  Merge tag 'android-11.0.0_r37' into staging/lineage-18.1_merge-android-11.0.0_r37  [Kevin F. Haggerty]
+
+* packages/providers/CalendarProvider
+6a47545  Merge tag 'android-11.0.0_r37' into staging/lineage-18.1_merge-android-11.0.0_r37  [Kevin F. Haggerty]
+
+* system/bt
+0e9cb77  Merge tag 'android-11.0.0_r37' into staging/lineage-18.1_merge-android-11.0.0_r37  [Kevin F. Haggerty]
+
+* vendor/qcom/opensource/commonsys/system/bt
+545ecf3  smp: Use SMP_TRACE_WARNING  [Myles Watson]
+83656f3  smp: Reject pairing if the public keys match  [Myles Watson]
+8a611fa  avrcp: Ignore AVCT commands that are too long  [Myles Watson]
+5d23e9d  btif: Return after closing the socket  [Myles Watson]
+====================
+     2021-05-04    
+====================
+
+* device/lineage/sepolicy
+814ce39  lineage: sepolicy: label USB 1.1 HAL  [josip-k]
+
+* frameworks/base
+9bf606b  PhoneWindowManager: Add support for back key long press customization  [LuK1337]
+
+* hardware/lineage/interfaces
+5fc3310  lineage/interfaces: usb 1.1-typec: add VINTF fragment  [josip-k]
+18140c8  usb 1.1-typec: Add interface info to .rc files  [Felix]
+04b0ff4  usb 1.1-typec: Remove libhwbinder/libhidltransport deps  [Steven Moreland]
+e789f59  lineage/interfaces: Rename USB HAL suffix to typec  [Rashed Abdel-Tawab]
+45561ba  lineage/interfaces: USB: Use -Werror  [Chih-Hung Hsieh]
+802a54b  lineage/interfaces: USB: Add 'vendor.' prefix to a vendor HAL service name  [Jaekyun Seok]
+5d75b74  lineage/interfaces: USB: Fix potential racing by wall time change in USBhal  [Wei Wang]
+ed8b460  lineage/interfaces: USB: HAL: enable auto suspend for USB headsets  [Yueyao Zhu]
+e585323  lineage/interfaces: USB: HAL: run as user root, group root system  [Yueyao Zhu]
+2106a73  lineage/interfaces: USB HAL: Use 1.1 IUsb intead of 1.0 IUsb  [Badhri Jagan Sridharan]
+25c85e2  lineage/interfaces: Usb: HAL: Update wahoo HAL  [Badhri Jagan Sridharan]
+fda77b9  lineage/interfaces: USB: HAL: update hal to V1_1  [Badhri Jagan Sridharan]
+37ad3bf  lineage/interfaces: USB: HIDL: check the status of registerAsService  [Badhri Jagan Sridharan]
+5313e72  lineage/interfaces: The IUsb interface uses "default" service name  [Badhri Jagan Sridharan]
+68a692f  lineage/interfaces: USB HAL: initial type-c hal  [Badhri Jagan Sridharan]
+
+* lineage-sdk
+d1461d3  BatteryLights: Fix disabled lights when fully charged conditions  [Bruno Martins]
+
+* packages/apps/LineageParts
+96508d2  LineageParts: Make sure "Wake device" pref is always accessible  [LuK1337]
+cc24db2  LineageParts: Remove leftover single hand mode action code  [LuK1337]
