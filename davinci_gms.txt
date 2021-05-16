@@ -1,64 +1,115 @@
 ====================
-     2021-05-09    
+     2021-05-16    
 ====================
 
 * build/make
-2436e5f  [DNM] Always use release-keys  [Arian]
+b268d1d  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-926a35b  common: Label IAntiFlicker live display service  [Arian]
+e4308a4  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-dd2493d  SystemUI: get rid of build text in qs  [Joey]
-dc621b0  SystemUI: Add anti flicker tile  [Arian]
-09512c1  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+223d36f  SystemUI: get rid of build text in qs  [Joey]
+8e993d6  SystemUI: Add anti flicker tile  [Arian]
+6331783  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+5193e38  Automatic translation import  [LineageOS Builder]
 
 * hardware/lineage/interfaces
-a2ca41e  Add support for anti flicker mode in LiveDisplay  [Arian]
+c07cc00  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-3734625  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+7e2f241  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-913f7da  Add support for anti flicker mode in LiveDisplay  [Arian]
-52d2582  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+06ef0d4  Add support for anti flicker mode in LiveDisplay  [Arian]
+60db1f0  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+
+* lineage/hudson
+108bed2  hudson: Ship Zenfone Max M2  [danascape]
+
+* lineage/wiki
+490e574  wiki: Add Asus Zenfone Max M2 (X01AD)  [danascape]
+
+* packages/apps/Email
+a145cb6  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Gallery2
+f0347d8  Automatic translation import  [LineageOS Builder]
 
 * packages/apps/LineageParts
-da8c5eb  Add support for anti flicker mode in LiveDisplay  [Arian]
-6fa9092  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+be32634  Add support for anti flicker mode in LiveDisplay  [Arian]
+985143b  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+
+* packages/apps/Settings
+d35185b  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Updater
+90e4ccb  Automatic translation import  [LineageOS Builder]
+
+* vendor/qcom/opensource/fm-commonsys
+e401695  Automatic translation import  [LineageOS Builder]
 ====================
-     2021-05-08    
+     2021-05-15    
 ====================
 
 * lineage/mirror
-0e493ff  Updated aosp-minimal to 07-May-2021 12:01 UTC  [Tim Schumacher]
+0d59b46  Updated to 14-May-2021 17:17 UTC  [Kevin F. Haggerty]
 
 * lineage/wiki
-2fcd413  wiki: devices: Update maintainers for cheeseburger, dumpling  [Georg Veichtlbauer]
+1b5eabf  wiki: Update `peripherals` for OnePlus 6->8  [LuK1337]
+67a4dc6  wiki: Bump YTX703L/YTX703F to 18.1  [Quallenauge]
 ====================
-     2021-05-07    
+     2021-05-14    
+====================
+
+* lineage/hudson
+a4f8a56  hudson: Promote X00TD & X01BD to 18.1  [Vivekachooz]
+
+* lineage/wiki
+1654bae  wiki: devices: Promote X00TD & X01BD to 18.1  [Vivekachooz]
+
+* vendor/lineage
+57243fd  apns-conf: Add TPG Singapore configs  [Nicholas Lim]
+36ea6d6  apns: Remove T-Mobile UK  [Michael W]
+a120926  vendor: apns: Add LIDL Connect  [Michael W]
+8be5def  apns-conf: Add Kena Mobile entries  [Sebastiano Barezzi]
+6b9ab1e  apns-conf: Update PosteMobile entries  [Sebastiano Barezzi]
+67b95e4  apns-conf: Add ho.mobile configs  [Sebastiano Barezzi]
+eb977ff  apns-conf: Update CoopVoce entries  [Sebastiano Barezzi]
+31fd0c7  vendor: apns: Add Ting  [Michael W]
+5b4606f  apn: Add Visible Wireless (VZW)  [Alessandro Astone]
+====================
+     2021-05-13    
+====================
+====================
+     2021-05-12    
+====================
+
+* lineage/mirror
+d14a216  Updated to 11-May-2021 17:19 UTC  [Kevin F. Haggerty]
+
+* lineage/wiki
+1a05c8e  wiki: Use push-update script from current device branch  [razorloves]
+235e285  wiki: Update bardock & bardockpro info  [Alexander K]
+====================
+     2021-05-11    
+====================
+
+* lineage/hudson
+b735f8e  hudson: Promote blueline/crosshatch to 18.1  [razorloves]
+9c5828e  hudson: Promote YTX703L/YTX703F to 18.1  [Quallenauge]
+
+* lineage/scripts
+8d34acd  device-deps-regenerator: Drop 16.0  [razorloves]
+
+* lineage/wiki
+5434cf0  wiki: devices: Promote blueline/crosshatch to 18.1  [razorloves]
+====================
+     2021-05-10    
 ====================
 
 * lineage/wiki
-cf71bc6  wiki: Warn about fastbootd not being available on old builds for OP fw update  [LuK1337]
-5cc3b77  wiki: Fix wording in fastboot_ab template  [razorloves]
-f95a2b8  wiki: Remove duplicated lines from firmware_update_oneplus_sm8250.md  [LuK1337]
-====================
-     2021-05-06    
-====================
+b2fce12  wiki: devices: Promote Motorola msm8937 family to 18.1  [Jarl-Penguin]
 
-* lineage/wiki
-497ae4e  templates: fastboot_ab: Don't expect user to boot recovery at this stage  [Nolen Johnson]
-3dd5307  wiki: templates: fastboot_ab: Fastboot on legacy A/B is fixed now  [Nolen Johnson]
-====================
-     2021-05-05    
-====================
-====================
-     2021-05-04    
-====================
-
-* lineage/wiki
-70c7232  wiki: Bump enchilada to 18.1  [LuK1337]
-====================
-     2021-05-03    
-====================
+* vendor/lineage
+574017e  roomservice: Set exit status if we fail to fetch data from github  [LuK1337]
