@@ -1,131 +1,147 @@
 ====================
-     2021-05-09    
-====================
-
-* build/make
-d8dffd8  backuptool: Map extra dynamic partitions for Addon.d V3  [Alessandro Astone]
-
-* frameworks/base
-1fc9c86  Reset all package signatures on boot  [Sam Mortimer]
-====================
-     2021-05-08    
+     2021-05-16    
 ====================
 
 * frameworks/base
-653674c  Merge tag 'android-11.0.0_r37' into staging/lineage-18.1_merge-android-11.0.0_r37  [Kevin F. Haggerty]
-
-* vendor/lineage
-11c43d2  backuptool: use correct BLK_PATH on a-only dynamic partitions devices  [Tim Zimmermann]
-====================
-     2021-05-07    
-====================
-
-* lineage/mirror
-0e493ff  Updated aosp-minimal to 07-May-2021 12:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-2fcd413  wiki: devices: Update maintainers for cheeseburger, dumpling  [Georg Veichtlbauer]
-cf71bc6  wiki: Warn about fastbootd not being available on old builds for OP fw update  [LuK1337]
-5cc3b77  wiki: Fix wording in fastboot_ab template  [razorloves]
-====================
-     2021-05-06    
-====================
-
-* frameworks/base
-029edb3  SystemUI: Force left-to-right for network traffic monitor holder  [LuK1337]
-
-* lineage/wiki
-f95a2b8  wiki: Remove duplicated lines from firmware_update_oneplus_sm8250.md  [LuK1337]
-497ae4e  templates: fastboot_ab: Don't expect user to boot recovery at this stage  [Nolen Johnson]
-3dd5307  wiki: templates: fastboot_ab: Fastboot on legacy A/B is fixed now  [Nolen Johnson]
-
-* packages/apps/Snap
-868d2a3  Snap: api2: close mode switcher on promode events  [Timi]
-96b64e6  Snap: api2: close mode switcher on back-keypress  [Timi]
-686f695  Snap: api2: correct format-setting icon  [Timi]
-====================
-     2021-05-05    
-====================
-
-* packages/apps/Snap
-d6485f3  Snap: use translucent control background on 16:9  [Timi]
-
-* vendor/lineage
-c966b95  apns-conf: Add Kena Mobile entries  [Sebastiano Barezzi]
-ebb8899  apns-conf: Update PosteMobile entries  [Sebastiano Barezzi]
-c0541e7  apns-conf: Add ho.mobile configs  [Sebastiano Barezzi]
-a10bd28  apns-conf: Update CoopVoce entries  [Sebastiano Barezzi]
-====================
-     2021-05-04    
-====================
-
-* android
-24f78db  manifest: android-11.0.0_r34 -> android-11.0.0_r37  [Kevin F. Haggerty]
-
-* build/make
-8d02a8a  Merge tag 'android-11.0.0_r37' into staging/lineage-18.1_merge-android-11.0.0_r37  [Kevin F. Haggerty]
-
-* device/lineage/sepolicy
-814ce39  lineage: sepolicy: label USB 1.1 HAL  [josip-k]
-
-* frameworks/av
-7d7dec0  Merge tag 'android-11.0.0_r37' into staging/lineage-18.1_merge-android-11.0.0_r37  [Kevin F. Haggerty]
-
-* frameworks/base
-773c39a  PhoneWindowManager: Forward port long press back to kill app  [Danesh Mondegarian]
-9bf606b  PhoneWindowManager: Add support for back key long press customization  [LuK1337]
-
-* hardware/lineage/interfaces
-5fc3310  lineage/interfaces: usb 1.1-typec: add VINTF fragment  [josip-k]
-18140c8  usb 1.1-typec: Add interface info to .rc files  [Felix]
-04b0ff4  usb 1.1-typec: Remove libhwbinder/libhidltransport deps  [Steven Moreland]
-e789f59  lineage/interfaces: Rename USB HAL suffix to typec  [Rashed Abdel-Tawab]
-45561ba  lineage/interfaces: USB: Use -Werror  [Chih-Hung Hsieh]
-802a54b  lineage/interfaces: USB: Add 'vendor.' prefix to a vendor HAL service name  [Jaekyun Seok]
-5d75b74  lineage/interfaces: USB: Fix potential racing by wall time change in USBhal  [Wei Wang]
-ed8b460  lineage/interfaces: USB: HAL: enable auto suspend for USB headsets  [Yueyao Zhu]
-e585323  lineage/interfaces: USB: HAL: run as user root, group root system  [Yueyao Zhu]
-2106a73  lineage/interfaces: USB HAL: Use 1.1 IUsb intead of 1.0 IUsb  [Badhri Jagan Sridharan]
-25c85e2  lineage/interfaces: Usb: HAL: Update wahoo HAL  [Badhri Jagan Sridharan]
-fda77b9  lineage/interfaces: USB: HAL: update hal to V1_1  [Badhri Jagan Sridharan]
-37ad3bf  lineage/interfaces: USB: HIDL: check the status of registerAsService  [Badhri Jagan Sridharan]
-5313e72  lineage/interfaces: The IUsb interface uses "default" service name  [Badhri Jagan Sridharan]
-68a692f  lineage/interfaces: USB HAL: initial type-c hal  [Badhri Jagan Sridharan]
+d28df7a  Reset all package signatures on boot  [Sam Mortimer]
+ff120e6  Automatic translation import  [LineageOS Builder]
 
 * lineage-sdk
-7378e73  lineage-sdk: Add KILL_APP button action  [LuK1337]
-44427ae  lineage-sdk: Add preference keys for back key long press customization  [LuK1337]
-122825f  lineage-sdk: Remove single hand mode enum values  [LuK1337]
-
-* lineage/wiki
-70c7232  wiki: Bump enchilada to 18.1  [LuK1337]
-
-* packages/apps/LineageParts
-c0b3cc1  LineageParts: Add KILL_APP button action  [LuK1337]
-5fb004f  LineageParts: Add preferences for back key long press customization  [LuK1337]
-96508d2  LineageParts: Make sure "Wake device" pref is always accessible  [LuK1337]
-cc24db2  LineageParts: Remove leftover single hand mode action code  [LuK1337]
-
-* packages/apps/Settings
-2299165  Merge tag 'android-11.0.0_r37' into staging/lineage-18.1_merge-android-11.0.0_r37  [Kevin F. Haggerty]
-
-* packages/providers/CalendarProvider
-6a47545  Merge tag 'android-11.0.0_r37' into staging/lineage-18.1_merge-android-11.0.0_r37  [Kevin F. Haggerty]
-
-* system/bt
-0e9cb77  Merge tag 'android-11.0.0_r37' into staging/lineage-18.1_merge-android-11.0.0_r37  [Kevin F. Haggerty]
-
-* vendor/qcom/opensource/commonsys/system/bt
-545ecf3  smp: Use SMP_TRACE_WARNING  [Myles Watson]
-83656f3  smp: Reject pairing if the public keys match  [Myles Watson]
-8a611fa  avrcp: Ignore AVCT commands that are too long  [Myles Watson]
-5d23e9d  btif: Return after closing the socket  [Myles Watson]
-====================
-     2021-05-03    
-====================
-
-* lineage-sdk
-d1461d3  BatteryLights: Fix disabled lights when fully charged conditions  [Bruno Martins]
+3a38117  Automatic translation import  [LineageOS Builder]
 
 * packages/apps/Etar
-9cca67e  Enable lights for "Etar" channel notification by default  [LuK1337]
+00e00b3  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/LineageParts
+149e258  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Settings
+4ad2d4e  Automatic translation import  [LineageOS Builder]
+
+* packages/apps/Snap
+5f4ccfb  Automatic translation import  [LineageOS Builder]
+====================
+     2021-05-15    
+====================
+
+* frameworks/base
+5921a43  ReadingModeTile: Drop dependency on wellbeing app  [Bruno Martins]
+
+* lineage/hudson
+108bed2  hudson: Ship Zenfone Max M2  [danascape]
+
+* lineage/wiki
+490e574  wiki: Add Asus Zenfone Max M2 (X01AD)  [danascape]
+1b5eabf  wiki: Update `peripherals` for OnePlus 6->8  [LuK1337]
+
+* packages/apps/LineageParts
+549117e  LiveDisplaySettings: Unlock Reading Mode whenever is possible  [Bruno Martins]
+
+* packages/apps/Settings
+0491b67  Version info: make Lineage specific entries not selectable  [Timi]
+====================
+     2021-05-14    
+====================
+
+* device/xiaomi/toco
+eaa3a84  toco: Add prebuilt audio HAL  [Arian]
+3f48a57  toco: Import vibrator firmware  [Arian]
+d97aac8  toco: sepolicy: Address IR denials  [Arian]
+
+* frameworks/base
+b0675ce  VolumeDialogImpl: Get the location in window instead of on screen  [HrX03]
+678a06b  VolumeDialogImpl: Remove insets listener on dismiss  [HrX03]
+c380560  VolumeDialogImpl: Reschedule the timeout on clicks on captions  [Arian]
+
+* lineage/mirror
+0d59b46  Updated to 14-May-2021 17:17 UTC  [Kevin F. Haggerty]
+
+* lineage/wiki
+67a4dc6  wiki: Bump YTX703L/YTX703F to 18.1  [Quallenauge]
+====================
+     2021-05-13    
+====================
+
+* lineage-sdk
+6fe262a  lineage-sdk: Disallow KILL_APP action when task is pinned  [LuK1337]
+
+* lineage/hudson
+a4f8a56  hudson: Promote X00TD & X01BD to 18.1  [Vivekachooz]
+
+* lineage/wiki
+1654bae  wiki: devices: Promote X00TD & X01BD to 18.1  [Vivekachooz]
+
+* packages/apps/Snap
+cc82877  Snap: api2: reduce unneeded animations  [Timi]
+
+* vendor/lineage
+94aaca4  apns-conf: Add TPG Singapore configs  [Nicholas Lim]
+fb59cfd  apns: Remove T-Mobile UK  [Michael W]
+e21a1e8  vendor: apns: Add LIDL Connect  [Michael W]
+6c32584  apns: Enable IPV6 for China Telecom  [zhaoguomanong]
+9f1696a  apns: Enable IPV6 for China Unicom  [sjllls]
+d377a1c  apns: Enable IPV6 for China Mobile  [sjllls]
+====================
+     2021-05-12    
+====================
+
+* lineage-sdk
+1167224  lineage-sdk: Retire HostnamePreference as net.hostname no longer works  [LuK1337]
+
+* lineage/wiki
+1a05c8e  wiki: Use push-update script from current device branch  [razorloves]
+
+* packages/apps/Settings
+a3d630e  Revert "Expose option to change the device hostname."  [LuK1337]
+
+* vendor/lineage
+4f5669c  overlay: Set the device hostname like the device name in About Phone  [Ezio Lacandia Bijelkic]
+====================
+     2021-05-11    
+====================
+
+* lineage/hudson
+b735f8e  hudson: Promote blueline/crosshatch to 18.1  [razorloves]
+
+* lineage/mirror
+d14a216  Updated to 11-May-2021 17:19 UTC  [Kevin F. Haggerty]
+
+* lineage/scripts
+8d34acd  device-deps-regenerator: Drop 16.0  [razorloves]
+
+* lineage/wiki
+235e285  wiki: Update bardock & bardockpro info  [Alexander K]
+
+* packages/apps/Jelly
+01ec94e  Jelly: MainActivity: Replace applyThemeColor with setUiMode  [Aayush Gupta]
+ce7abca  Jelly: Switch to mavenCentral() inplace of jCenter()  [Aayush Gupta]
+71d6085  Jelly: Upgrade gradle to v4.2.0 stable release  [Aayush Gupta]
+
+* packages/apps/Settings
+ed7df03  Settings: Make setup wizard go through ChooseLockPatternSize if needed  [LuK1337]
+92de599  Settings: Make FRP go through ChooseLockPatternSize if needed  [LuK1337]
+2c261b6  Settings: Remove hardcoded extras from ChooseLockPatternSize  [LuK1337]
+====================
+     2021-05-10    
+====================
+
+* frameworks/base
+e97818f  WifiManager: Add StaState API [1/2]  [Kshitij Gupta]
+
+* hardware/qcom-caf/msm8998/audio
+4b4c4a5  audio_amplifier: Add new hook for setting amp feedback  [Pig]
+
+* lineage/hudson
+9c5828e  hudson: Promote YTX703L/YTX703F to 18.1  [Quallenauge]
+
+* lineage/wiki
+5434cf0  wiki: devices: Promote blueline/crosshatch to 18.1  [razorloves]
+b2fce12  wiki: devices: Promote Motorola msm8937 family to 18.1  [Jarl-Penguin]
+
+* packages/apps/Snap
+8cd66af  Snap: api2: add QR scanner mode  [Timi]
+029c55f  Snap: api2: update promode icons  [Timi]
+cf411ba  Snap: api2: use nicer icons in settings  [Timi]
+
+* vendor/lineage
+8137c7c  roomservice: Set exit status if we fail to fetch data from github  [LuK1337]
