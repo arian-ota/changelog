@@ -1,115 +1,104 @@
 ====================
-     2021-05-16    
+     2021-05-23    
 ====================
 
 * build/make
-b268d1d  [DNM] Always use release-keys  [Arian]
+857d60e  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-e4308a4  common: Label IAntiFlicker live display service  [Arian]
+6e7130c  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-223d36f  SystemUI: get rid of build text in qs  [Joey]
-8e993d6  SystemUI: Add anti flicker tile  [Arian]
-6331783  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
-5193e38  Automatic translation import  [LineageOS Builder]
+0e5cd07  SystemUI: get rid of build text in qs  [Joey]
+20ef3d5  SystemUI: Add anti flicker tile  [Arian]
+33ca57a  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-c07cc00  Add support for anti flicker mode in LiveDisplay  [Arian]
+c805fa9  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-7e2f241  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+185cdb0  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-06ef0d4  Add support for anti flicker mode in LiveDisplay  [Arian]
-60db1f0  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
-
-* lineage/hudson
-108bed2  hudson: Ship Zenfone Max M2  [danascape]
-
-* lineage/wiki
-490e574  wiki: Add Asus Zenfone Max M2 (X01AD)  [danascape]
-
-* packages/apps/Email
-a145cb6  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Gallery2
-f0347d8  Automatic translation import  [LineageOS Builder]
+d7b8789  Add support for anti flicker mode in LiveDisplay  [Arian]
+6ee0c15  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * packages/apps/LineageParts
-be32634  Add support for anti flicker mode in LiveDisplay  [Arian]
-985143b  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+99ae2e6  Add support for anti flicker mode in LiveDisplay  [Arian]
+0a7e102  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 
-* packages/apps/Settings
-d35185b  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Updater
-90e4ccb  Automatic translation import  [LineageOS Builder]
-
-* vendor/qcom/opensource/fm-commonsys
-e401695  Automatic translation import  [LineageOS Builder]
+* vendor/translations
+68809bb  Fix build of Turkish translations  [Arian]
 ====================
-     2021-05-15    
-====================
-
-* lineage/mirror
-0d59b46  Updated to 14-May-2021 17:17 UTC  [Kevin F. Haggerty]
-
-* lineage/wiki
-1b5eabf  wiki: Update `peripherals` for OnePlus 6->8  [LuK1337]
-67a4dc6  wiki: Bump YTX703L/YTX703F to 18.1  [Quallenauge]
-====================
-     2021-05-14    
+     2021-05-22    
 ====================
 
 * lineage/hudson
-a4f8a56  hudson: Promote X00TD & X01BD to 18.1  [Vivekachooz]
-
-* lineage/wiki
-1654bae  wiki: devices: Promote X00TD & X01BD to 18.1  [Vivekachooz]
-
-* vendor/lineage
-57243fd  apns-conf: Add TPG Singapore configs  [Nicholas Lim]
-36ea6d6  apns: Remove T-Mobile UK  [Michael W]
-a120926  vendor: apns: Add LIDL Connect  [Michael W]
-8be5def  apns-conf: Add Kena Mobile entries  [Sebastiano Barezzi]
-6b9ab1e  apns-conf: Update PosteMobile entries  [Sebastiano Barezzi]
-67b95e4  apns-conf: Add ho.mobile configs  [Sebastiano Barezzi]
-eb977ff  apns-conf: Update CoopVoce entries  [Sebastiano Barezzi]
-31fd0c7  vendor: apns: Add Ting  [Michael W]
-5b4606f  apn: Add Visible Wireless (VZW)  [Alessandro Astone]
-====================
-     2021-05-13    
-====================
-====================
-     2021-05-12    
-====================
+fb7246d  Regenerate device dependency mappings  [razorloves]
+005a412  Promote lavender to 18.1  [Usaamah Patel]
+d5c2df9  hudson: Promote Xperia XZ2/3 family to 18.1  [Olivier Karasangabo]
 
 * lineage/mirror
-d14a216  Updated to 11-May-2021 17:19 UTC  [Kevin F. Haggerty]
+b56363b  Updated aosp-minimal to 22-May-2021 12:01 UTC  [Tim Schumacher]
 
 * lineage/wiki
-1a05c8e  wiki: Use push-update script from current device branch  [razorloves]
-235e285  wiki: Update bardock & bardockpro info  [Alexander K]
+e1b5733  wiki: devices: Promote lavender to 18.1  [Usaamah Patel]
+f0c9398  wiki: Promote Xperia XZ2/3 family to 18.1  [sjllls]
+dc180cb  wiki: Add Sony Xperia XZ3 (akatsuki)  [sjllls]
+
+* packages/apps/FlipFlap
+e9191cf  FlipFlap: Respect correct setting  [Michael W]
+0e0e870  FlipFlap: Code maintenance  [Michael W]
+c150139  FlipFlap: Fix small CircleView  [Michael W]
 ====================
-     2021-05-11    
+     2021-05-21    
 ====================
 
 * lineage/hudson
-b735f8e  hudson: Promote blueline/crosshatch to 18.1  [razorloves]
-9c5828e  hudson: Promote YTX703L/YTX703F to 18.1  [Quallenauge]
-
-* lineage/scripts
-8d34acd  device-deps-regenerator: Drop 16.0  [razorloves]
+59b08d5  Promote xiaomi msm8998 family to 18.1  [Michael Bestas]
+e26310a  Hudson: Add Lenovo Z6 Pro (zippo)  [Marc Bourgoin]
 
 * lineage/wiki
-5434cf0  wiki: devices: Promote blueline/crosshatch to 18.1  [razorloves]
+6b039b3  wiki: devices: Promote xiaomi msm8998 family to 18.1  [Michael Bestas]
+4a7f84a  wiki: Drop irc/hangouts info from submitting device page  [LuK1337]
+aac79e9  wiki: Add Lenovo Z6 Pro (zippo)  [Marc Bourgoin]
+62b0fd1  wiki: Remove non-retail variants from guacamole  [LuK1337]
 ====================
-     2021-05-10    
+     2021-05-20    
 ====================
+
+* lineage/website
+f132255  Freenode -> Libera.Chat  [LuK1337]
 
 * lineage/wiki
-b2fce12  wiki: devices: Promote Motorola msm8937 family to 18.1  [Jarl-Penguin]
+3a8aec6  wiki: Add danascape as ginkgo co-maintainer  [DarkJoker360]
 
-* vendor/lineage
-574017e  roomservice: Set exit status if we fail to fetch data from github  [LuK1337]
+* vendor/translations
+80fbcc4  Merge pull request #12 from zadli/translations  [Arian]
+efe9fb1  Add RU translation  [Kirill]
+e838567  Merge pull request #11 from edssbn/patch-1  [Arian]
+302c980  Update strings.xml  [edssbn]
+515026e  Update strings.xml  [edssbn]
+====================
+     2021-05-19    
+====================
+
+* lineage/mirror
+bba232e  Updated aosp-minimal to 19-May-2021 12:01 UTC  [Tim Schumacher]
+
+* lineage/wiki
+e84fb35  wiki: Freenode -> Libera.Chat  [LuK1337]
+====================
+     2021-05-18    
+====================
+
+* vendor/translations
+b050bf1  Fix indentation for french strings  [Arian]
+c2a7bea  Correct german string  [Arian]
+444ac3a  Merge pull request #10 from ilurell/patch-1  [Arian]
+44e1d62  Added Turkish popup settings and fixed some words  [Eymen]
+da1aeff  Add README  [Arian]
+69c78db  Update translations  [Arian]
+====================
+     2021-05-17    
+====================
