@@ -1,148 +1,126 @@
 ====================
-     2021-05-17    
+     2021-05-24    
 ====================
 
 * frameworks/base
-2a7ec55  Reset all package signatures on boot  [Sam Mortimer]
-de06a3c  FODCircleView: Hide fod when screen is off  [AdarshGrewal]
-
-* lineage/wiki
-1332fd1  Revert "templates: fastboot_ab: Don't expect user to boot recovery at this stage"  [Nolen Johnson]
-
-* packages/resources/devicesettings
-359ceb0  devicesettings: Add strings for "Disabled" + wake on pick-up  [LuK1337]
-====================
-     2021-05-16    
-====================
-
-* frameworks/base
-ff120e6  Automatic translation import  [LineageOS Builder]
+79a4091  Reset all package signatures on boot  [Sam Mortimer]
+5ce924d  GlobalActionsDialog: Remove broken PhoneStateListener for airplane mode toggle  [Gegham Zakaryan]
+d68b0ef  frameworks: New Users dialog for GlobalActions  [Gegham Zakaryan]
+2ca394b  frameworks: Add tunable for GlobalActions configuration  [Gegham Zakaryan]
+b5632e3  frameworks: Power menu customizations for R  [Gegham Zakaryan]
 
 * lineage-sdk
-3a38117  Automatic translation import  [LineageOS Builder]
+ad4bce4  lineage-sdk: Add LineageGlobalActions service  [Gegham Zakaryan]
+df05cf8  lineage-sdk: Follow AOSP order of PowerMenuConstants  [Gegham Zakaryan]
+8e4a978  Revert "sdk: Deprecate POWER_MENU_ACTIONS"  [Gegham Zakaryan]
 
-* lineage/hudson
-108bed2  hudson: Ship Zenfone Max M2  [danascape]
-
-* lineage/wiki
-490e574  wiki: Add Asus Zenfone Max M2 (X01AD)  [danascape]
-1b5eabf  wiki: Update `peripherals` for OnePlus 6->8  [LuK1337]
-
-* packages/apps/Etar
-00e00b3  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/LineageParts
-149e258  Automatic translation import  [LineageOS Builder]
-
-* packages/apps/Settings
-4ad2d4e  Automatic translation import  [LineageOS Builder]
-0491b67  Version info: make Lineage specific entries not selectable  [Timi]
-
-* packages/apps/Snap
-5f4ccfb  Automatic translation import  [LineageOS Builder]
+* vendor/lineage
+4fe28bc  config: Add globalactions service permissions  [Gegham Zakaryan]
 ====================
-     2021-05-15    
+     2021-05-23    
+====================
+
+* lineage/mirror
+b56363b  Updated aosp-minimal to 22-May-2021 12:01 UTC  [Tim Schumacher]
+
+* packages/apps/FlipFlap
+c959391  FlipFlap: Respect correct setting  [Michael W]
+d7db011  FlipFlap: Code maintenance  [Michael W]
+b33efd7  FlipFlap: Fix small CircleView  [Michael W]
+
+* vendor/translations
+68809bb  Fix build of Turkish translations  [Arian]
+====================
+     2021-05-22    
 ====================
 
 * frameworks/base
-5921a43  ReadingModeTile: Drop dependency on wellbeing app  [Bruno Martins]
-b0675ce  VolumeDialogImpl: Get the location in window instead of on screen  [HrX03]
-678a06b  VolumeDialogImpl: Remove insets listener on dismiss  [HrX03]
-c380560  VolumeDialogImpl: Reschedule the timeout on clicks on captions  [Arian]
+600d04c  Make isUidIsolated public  [Oliver Scott]
 
-* lineage/mirror
-0d59b46  Updated to 14-May-2021 17:17 UTC  [Kevin F. Haggerty]
+* lineage/hudson
+fb7246d  Regenerate device dependency mappings  [razorloves]
+005a412  Promote lavender to 18.1  [Usaamah Patel]
+d5c2df9  hudson: Promote Xperia XZ2/3 family to 18.1  [Olivier Karasangabo]
+59b08d5  Promote xiaomi msm8998 family to 18.1  [Michael Bestas]
+e26310a  Hudson: Add Lenovo Z6 Pro (zippo)  [Marc Bourgoin]
 
 * lineage/wiki
-67a4dc6  wiki: Bump YTX703L/YTX703F to 18.1  [Quallenauge]
+e1b5733  wiki: devices: Promote lavender to 18.1  [Usaamah Patel]
+f0c9398  wiki: Promote Xperia XZ2/3 family to 18.1  [sjllls]
+dc180cb  wiki: Add Sony Xperia XZ3 (akatsuki)  [sjllls]
+6b039b3  wiki: devices: Promote xiaomi msm8998 family to 18.1  [Michael Bestas]
+4a7f84a  wiki: Drop irc/hangouts info from submitting device page  [LuK1337]
+aac79e9  wiki: Add Lenovo Z6 Pro (zippo)  [Marc Bourgoin]
 
-* packages/apps/LineageParts
-549117e  LiveDisplaySettings: Unlock Reading Mode whenever is possible  [Bruno Martins]
+* packages/apps/Dialer
+1854a4f  Dialer: use black/white navigation colors  [Timi]
+
+* vendor/lineage
+c43ccf2  apns: Add AT&T 310-280 ids  [Alessandro Astone]
 ====================
-     2021-05-14    
+     2021-05-21    
 ====================
 
 * device/xiaomi/toco
-eaa3a84  toco: Add prebuilt audio HAL  [Arian]
-3f48a57  toco: Import vibrator firmware  [Arian]
-d97aac8  toco: sepolicy: Address IR denials  [Arian]
+f6a84f6  toco: overlay-lineage: Declare that we do not have a notification light  [Arian]
+ed23a21  toco: fixup 1ab7620699fb4b1e56edb58a257b69dd97af50a0  [Arian]
+467ee7c  toco: Import decommonized audio fluencetype property  [Adithya R]
+ddbb1aa  toco: Import decommonized cnss-daemon  [Arian]
+92848d5  toco: Import decommonized audio libraries  [Arian]
+bf517a5  toco: Add prebuilt audio HAL  [Arian]
+9c80192  Revert "toco: rootdir: Don't mount unused metadata partition"  [Arian]
 
 * lineage-sdk
-6fe262a  lineage-sdk: Disallow KILL_APP action when task is pinned  [LuK1337]
-
-* lineage/hudson
-a4f8a56  hudson: Promote X00TD & X01BD to 18.1  [Vivekachooz]
+feae6f7  lineage-sdk: Mark DEVICE_HOSTNAME as deprecated and drop code using it  [LuK1337]
 
 * lineage/wiki
-1654bae  wiki: devices: Promote X00TD & X01BD to 18.1  [Vivekachooz]
+62b0fd1  wiki: Remove non-retail variants from guacamole  [LuK1337]
+3a8aec6  wiki: Add danascape as ginkgo co-maintainer  [DarkJoker360]
 
-* packages/apps/Snap
-cc82877  Snap: api2: reduce unneeded animations  [Timi]
-
-* vendor/lineage
-94aaca4  apns-conf: Add TPG Singapore configs  [Nicholas Lim]
-fb59cfd  apns: Remove T-Mobile UK  [Michael W]
-e21a1e8  vendor: apns: Add LIDL Connect  [Michael W]
-6c32584  apns: Enable IPV6 for China Telecom  [zhaoguomanong]
-9f1696a  apns: Enable IPV6 for China Unicom  [sjllls]
-d377a1c  apns: Enable IPV6 for China Mobile  [sjllls]
+* vendor/translations
+80fbcc4  Merge pull request #12 from zadli/translations  [Arian]
+efe9fb1  Add RU translation  [Kirill]
+e838567  Merge pull request #11 from edssbn/patch-1  [Arian]
+302c980  Update strings.xml  [edssbn]
+515026e  Update strings.xml  [edssbn]
 ====================
-     2021-05-13    
-====================
-
-* lineage-sdk
-1167224  lineage-sdk: Retire HostnamePreference as net.hostname no longer works  [LuK1337]
-
-* lineage/wiki
-1a05c8e  wiki: Use push-update script from current device branch  [razorloves]
-
-* packages/apps/Settings
-a3d630e  Revert "Expose option to change the device hostname."  [LuK1337]
-
-* vendor/lineage
-4f5669c  overlay: Set the device hostname like the device name in About Phone  [Ezio Lacandia Bijelkic]
-====================
-     2021-05-12    
+     2021-05-20    
 ====================
 
 * lineage/mirror
-d14a216  Updated to 11-May-2021 17:19 UTC  [Kevin F. Haggerty]
+bba232e  Updated aosp-minimal to 19-May-2021 12:01 UTC  [Tim Schumacher]
+
+* lineage/website
+f132255  Freenode -> Libera.Chat  [LuK1337]
 
 * lineage/wiki
-235e285  wiki: Update bardock & bardockpro info  [Alexander K]
-
-* packages/apps/Jelly
-01ec94e  Jelly: MainActivity: Replace applyThemeColor with setUiMode  [Aayush Gupta]
-ce7abca  Jelly: Switch to mavenCentral() inplace of jCenter()  [Aayush Gupta]
-71d6085  Jelly: Upgrade gradle to v4.2.0 stable release  [Aayush Gupta]
-
-* packages/apps/Settings
-ed7df03  Settings: Make setup wizard go through ChooseLockPatternSize if needed  [LuK1337]
+e84fb35  wiki: Freenode -> Libera.Chat  [LuK1337]
 ====================
-     2021-05-11    
+     2021-05-19    
 ====================
 
-* hardware/qcom-caf/msm8998/audio
-4b4c4a5  audio_amplifier: Add new hook for setting amp feedback  [Pig]
+* vendor/gms
+63e1bed  Move pixel colors to an accent overlay  [Arian]
 
-* lineage/hudson
-b735f8e  hudson: Promote blueline/crosshatch to 18.1  [razorloves]
-9c5828e  hudson: Promote YTX703L/YTX703F to 18.1  [Quallenauge]
+* vendor/translations
+b050bf1  Fix indentation for french strings  [Arian]
+c2a7bea  Correct german string  [Arian]
+444ac3a  Merge pull request #10 from ilurell/patch-1  [Arian]
+44e1d62  Added Turkish popup settings and fixed some words  [Eymen]
+da1aeff  Add README  [Arian]
+69c78db  Update translations  [Arian]
+====================
+     2021-05-18    
+====================
 
-* lineage/scripts
-8d34acd  device-deps-regenerator: Drop 16.0  [razorloves]
-
-* lineage/wiki
-5434cf0  wiki: devices: Promote blueline/crosshatch to 18.1  [razorloves]
+* android
+3b3bee1  android: Update source control tools reference  [Aayush Gupta]
 
 * packages/apps/Settings
-92de599  Settings: Make FRP go through ChooseLockPatternSize if needed  [LuK1337]
-2c261b6  Settings: Remove hardcoded extras from ChooseLockPatternSize  [LuK1337]
+45c2085  Settings: remove Bluetooth related text from DNS-dialog  [Timi Rautamäki]
 
-* packages/apps/Snap
-8cd66af  Snap: api2: add QR scanner mode  [Timi]
-029c55f  Snap: api2: update promode icons  [Timi]
-cf411ba  Snap: api2: use nicer icons in settings  [Timi]
+* packages/apps/Trebuchet
+6cde7ce  Trebuchet: Set 5x6 grid to 5 hotseat icons  [Sam Mortimer]
 
 * vendor/lineage
-8137c7c  roomservice: Set exit status if we fail to fetch data from github  [LuK1337]
+fb45458  Fix voicemail for Bouygues Telecom France  [Gnumdk]
