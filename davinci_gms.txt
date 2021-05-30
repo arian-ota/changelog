@@ -1,104 +1,57 @@
 ====================
-     2021-05-23    
+     2021-05-30    
 ====================
 
 * build/make
-857d60e  [DNM] Always use release-keys  [Arian]
+8380b5a  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-6e7130c  common: Label IAntiFlicker live display service  [Arian]
+db65a95  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-0e5cd07  SystemUI: get rid of build text in qs  [Joey]
-20ef3d5  SystemUI: Add anti flicker tile  [Arian]
-33ca57a  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+6509125  SystemUI: get rid of build text in qs  [Joey]
+db0f225  SystemUI: Add anti flicker tile  [Arian]
+24db0d0  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-c805fa9  Add support for anti flicker mode in LiveDisplay  [Arian]
+a9fa32b  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-185cdb0  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+d8b3ec0  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-d7b8789  Add support for anti flicker mode in LiveDisplay  [Arian]
-6ee0c15  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+c0b5dd4  Add support for anti flicker mode in LiveDisplay  [Arian]
+153eada  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * packages/apps/LineageParts
-99ae2e6  Add support for anti flicker mode in LiveDisplay  [Arian]
-0a7e102  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
-
-* vendor/translations
-68809bb  Fix build of Turkish translations  [Arian]
+de45cb3  Add support for anti flicker mode in LiveDisplay  [Arian]
+09e47dc  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-05-22    
+     2021-05-29    
 ====================
 
-* lineage/hudson
-fb7246d  Regenerate device dependency mappings  [razorloves]
-005a412  Promote lavender to 18.1  [Usaamah Patel]
-d5c2df9  hudson: Promote Xperia XZ2/3 family to 18.1  [Olivier Karasangabo]
-
-* lineage/mirror
-b56363b  Updated aosp-minimal to 22-May-2021 12:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-e1b5733  wiki: devices: Promote lavender to 18.1  [Usaamah Patel]
-f0c9398  wiki: Promote Xperia XZ2/3 family to 18.1  [sjllls]
-dc180cb  wiki: Add Sony Xperia XZ3 (akatsuki)  [sjllls]
-
-* packages/apps/FlipFlap
-e9191cf  FlipFlap: Respect correct setting  [Michael W]
-0e0e870  FlipFlap: Code maintenance  [Michael W]
-c150139  FlipFlap: Fix small CircleView  [Michael W]
+* lineage/crowdin
+2713c01  crowdin: Add helpline strings and categories to translation files  [Michael W]
 ====================
-     2021-05-21    
+     2021-05-28    
 ====================
-
-* lineage/hudson
-59b08d5  Promote xiaomi msm8998 family to 18.1  [Michael Bestas]
-e26310a  Hudson: Add Lenovo Z6 Pro (zippo)  [Marc Bourgoin]
-
-* lineage/wiki
-6b039b3  wiki: devices: Promote xiaomi msm8998 family to 18.1  [Michael Bestas]
-4a7f84a  wiki: Drop irc/hangouts info from submitting device page  [LuK1337]
-aac79e9  wiki: Add Lenovo Z6 Pro (zippo)  [Marc Bourgoin]
-62b0fd1  wiki: Remove non-retail variants from guacamole  [LuK1337]
 ====================
-     2021-05-20    
-====================
-
-* lineage/website
-f132255  Freenode -> Libera.Chat  [LuK1337]
-
-* lineage/wiki
-3a8aec6  wiki: Add danascape as ginkgo co-maintainer  [DarkJoker360]
-
-* vendor/translations
-80fbcc4  Merge pull request #12 from zadli/translations  [Arian]
-efe9fb1  Add RU translation  [Kirill]
-e838567  Merge pull request #11 from edssbn/patch-1  [Arian]
-302c980  Update strings.xml  [edssbn]
-515026e  Update strings.xml  [edssbn]
-====================
-     2021-05-19    
+     2021-05-27    
 ====================
 
 * lineage/mirror
-bba232e  Updated aosp-minimal to 19-May-2021 12:01 UTC  [Tim Schumacher]
+f77adef  Updated aosp-minimal to 26-May-2021 12:01 UTC  [Tim Schumacher]
+====================
+     2021-05-26    
+====================
 
 * lineage/wiki
-e84fb35  wiki: Freenode -> Libera.Chat  [LuK1337]
+a6a0028  templates: device_specific: Revamp nash's before_install  [Nolen Johnson]
+7cadbd0  templates: device_install: Add before_recovery_install support  [Nolen Johnson]
+55d7e1b  templates: device_install: Move before_install after ADB configuration  [Nolen Johnson]
 ====================
-     2021-05-18    
+     2021-05-25    
 ====================
-
-* vendor/translations
-b050bf1  Fix indentation for french strings  [Arian]
-c2a7bea  Correct german string  [Arian]
-444ac3a  Merge pull request #10 from ilurell/patch-1  [Arian]
-44e1d62  Added Turkish popup settings and fixed some words  [Eymen]
-da1aeff  Add README  [Arian]
-69c78db  Update translations  [Arian]
 ====================
-     2021-05-17    
+     2021-05-24    
 ====================
