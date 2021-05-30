@@ -1,107 +1,60 @@
 ====================
-     2021-05-23    
+     2021-05-30    
 ====================
 
 * build/make
-120d667  [DNM] Always use release-keys  [Arian]
+de0eabf  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-d3c8184  common: Label IAntiFlicker live display service  [Arian]
+76c2518  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-6bc2ffc  SystemUI: get rid of build text in qs  [Joey]
-526fbc9  SystemUI: Add anti flicker tile  [Arian]
-27974b0  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+172d940  SystemUI: get rid of build text in qs  [Joey]
+4aa70ed  SystemUI: Add anti flicker tile  [Arian]
+eac889c  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-e0d1ce2  Add support for anti flicker mode in LiveDisplay  [Arian]
+8852327  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-69b08ec  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+4422ec4  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-dd3e1e5  Add support for anti flicker mode in LiveDisplay  [Arian]
-1fd134f  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
-
-* packages/apps/FlipFlap
-e9191cf  FlipFlap: Respect correct setting  [Michael W]
-0e0e870  FlipFlap: Code maintenance  [Michael W]
-c150139  FlipFlap: Fix small CircleView  [Michael W]
+bb7fe8a  Add support for anti flicker mode in LiveDisplay  [Arian]
+1f01096  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * packages/apps/LineageParts
-b4f1edf  Add support for anti flicker mode in LiveDisplay  [Arian]
-3e5bace  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+215793b  Add support for anti flicker mode in LiveDisplay  [Arian]
+b54e3fd  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+====================
+     2021-05-29    
+====================
+
+* lineage/crowdin
+2713c01  crowdin: Add helpline strings and categories to translation files  [Michael W]
+====================
+     2021-05-28    
+====================
+====================
+     2021-05-27    
+====================
+
+* lineage/mirror
+f77adef  Updated aosp-minimal to 26-May-2021 12:01 UTC  [Tim Schumacher]
+====================
+     2021-05-26    
+====================
+
+* lineage/wiki
+a6a0028  templates: device_specific: Revamp nash's before_install  [Nolen Johnson]
+7cadbd0  templates: device_install: Add before_recovery_install support  [Nolen Johnson]
+55d7e1b  templates: device_install: Move before_install after ADB configuration  [Nolen Johnson]
+====================
+     2021-05-25    
+====================
+====================
+     2021-05-24    
+====================
 
 * vendor/translations
 68809bb  Fix build of Turkish translations  [Arian]
-====================
-     2021-05-22    
-====================
-
-* lineage/hudson
-fb7246d  Regenerate device dependency mappings  [razorloves]
-005a412  Promote lavender to 18.1  [Usaamah Patel]
-d5c2df9  hudson: Promote Xperia XZ2/3 family to 18.1  [Olivier Karasangabo]
-59b08d5  Promote xiaomi msm8998 family to 18.1  [Michael Bestas]
-
-* lineage/mirror
-b56363b  Updated aosp-minimal to 22-May-2021 12:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-e1b5733  wiki: devices: Promote lavender to 18.1  [Usaamah Patel]
-f0c9398  wiki: Promote Xperia XZ2/3 family to 18.1  [sjllls]
-dc180cb  wiki: Add Sony Xperia XZ3 (akatsuki)  [sjllls]
-6b039b3  wiki: devices: Promote xiaomi msm8998 family to 18.1  [Michael Bestas]
-4a7f84a  wiki: Drop irc/hangouts info from submitting device page  [LuK1337]
-aac79e9  wiki: Add Lenovo Z6 Pro (zippo)  [Marc Bourgoin]
-====================
-     2021-05-21    
-====================
-
-* lineage/hudson
-e26310a  Hudson: Add Lenovo Z6 Pro (zippo)  [Marc Bourgoin]
-
-* lineage/wiki
-62b0fd1  wiki: Remove non-retail variants from guacamole  [LuK1337]
-
-* vendor/translations
-80fbcc4  Merge pull request #12 from zadli/translations  [Arian]
-efe9fb1  Add RU translation  [Kirill]
-e838567  Merge pull request #11 from edssbn/patch-1  [Arian]
-302c980  Update strings.xml  [edssbn]
-515026e  Update strings.xml  [edssbn]
-====================
-     2021-05-20    
-====================
-
-* lineage/website
-f132255  Freenode -> Libera.Chat  [LuK1337]
-
-* lineage/wiki
-3a8aec6  wiki: Add danascape as ginkgo co-maintainer  [DarkJoker360]
-e84fb35  wiki: Freenode -> Libera.Chat  [LuK1337]
-====================
-     2021-05-19    
-====================
-
-* lineage/mirror
-bba232e  Updated aosp-minimal to 19-May-2021 12:01 UTC  [Tim Schumacher]
-
-* vendor/translations
-b050bf1  Fix indentation for french strings  [Arian]
-c2a7bea  Correct german string  [Arian]
-====================
-     2021-05-18    
-====================
-
-* vendor/translations
-444ac3a  Merge pull request #10 from ilurell/patch-1  [Arian]
-44e1d62  Added Turkish popup settings and fixed some words  [Eymen]
-da1aeff  Add README  [Arian]
-69c78db  Update translations  [Arian]
-====================
-     2021-05-17    
-====================
-
-* lineage/wiki
-1332fd1  Revert "templates: fastboot_ab: Don't expect user to boot recovery at this stage"  [Nolen Johnson]
