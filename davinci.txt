@@ -1,57 +1,99 @@
 ====================
-     2021-05-30    
+     2021-06-06    
 ====================
-
-* device/xiaomi/toco
-860b3ea  toco: Fix copying qdcm profiles  [Arian]
 
 * frameworks/base
-86acc87  Reset all package signatures on boot  [Sam Mortimer]
-====================
-     2021-05-29    
-====================
+274411a  Reset all package signatures on boot  [Sam Mortimer]
 
 * lineage-sdk
-1bc4dc5  LineageSettingsProvider: Allow overriding volume panel default location  [Bruno Martins]
+1416383  LineageSettings: Mark lookup features as deprecated  [Bruno Martins]
 ====================
-     2021-05-28    
+     2021-06-05    
+====================
+
+* lineage/hudson
+14c041d  They said it couldn't be done.  [Michael Bestas]
+
+* lineage/wiki
+72f3f95  devices: Stop recommending outdated TWRP images  [Michael Bestas]
+ef15c23  wiki: devices: kuntao gets 18.1  [Michael Bestas]
+
+* vendor/lineage
+5c084cb  config: Actually disable strict mode for non eng builds  [Han Wang]
+21e586a  Disable extra StrictMode features on all non-engineering builds  [Sam Mortimer]
+====================
+     2021-06-04    
+====================
+
+* vendor/lineage
+0a78392  sensitive_pn: Add two numbers for Italy  [dwayne goben]
+====================
+     2021-06-03    
 ====================
 
 * frameworks/base
-c0d43e0  SystemUI: Remove unused resources  [Michael Bestas]
-b1a93f0  Explicitly make SBC Dual Channel an optional (HD) codec  [Alessandro Astone]
+045f758  DozeSensors: only use proximity sensor if supported  [Demon000]
 
-* lineage/crowdin
-2713c01  crowdin: Add helpline strings and categories to translation files  [Michael W]
+* lineage-sdk
+162d0fd  PerformanceManagerService: Account for QCOM perf HAL 2.1/2.2  [Han Wang]
+====================
+     2021-06-02    
+====================
 
-* packages/apps/Bluetooth
-aec2c72  Reimplement SBC Dual Channel in a saner way  [Alessandro Astone]
+* lineage/wiki
+d0cb238  wiki: Add Kryo 240/465/468/490/570/670/680 to schema  [LuK1337]
+1f6b977  wiki: Add Bluetooth 5.2 to schema  [LuK1337]
+80e7159  wiki: Add Adreno 619/660/690 to schema  [LuK1337]
 
-* packages/apps/Dialer
-0bb0059  Dialer: Helplines: Fix a few casing issues  [Michael W]
-d909a87  Dialer: Helplines: Use a webview dialog  [Luca Stefani]
+* packages/apps/Eleven
+00a6e30  Eleven: remove custom gradle manifest  [Joey]
+5139403  Eleven: Fix adding a song to a playlist  [Michael W]
+f054260  Eleven: Fix renaming playlists  [Michael W]
+f6164f4  Eleven: Fold values-v27 into values  [Michael Bestas]
+5b8a31e  Eleven: Remove unused imports  [Michael Bestas]
 
-* vendor/lineage
-12d252b  generated_kernel_headers: Also add usr/include/audio to include path  [LuK1337]
+* packages/apps/Recorder
+ab6da62  Recorder: Add missing super call in onRequestPermissionsResult  [Michael Bestas]
+b7e5ffe  Recorder: Resolve android studio layout warnings  [Michael Bestas]
+e986545  Recorder: Update androidx gradle deps  [Michael Bestas]
+defd42b  Recorder: Remove screen recording leftover string  [Michael Bestas]
+292955f  Recorder: Remove values-*v29  [Michael Bestas]
+68c1717  Recorder: Move from jcenter to mavenCentral  [Michael Bestas]
+b2090bb  Recorder: Update gradle version  [Michael Bestas]
+ebe989e  Recorder: Remove hardcoded package name references  [Michael Bestas]
+
+* system/sepolicy
+1d46a12  public/file.te: add 'allow proc_net proc:filesystem associate'  [Maciej Żenczykowski]
 ====================
-     2021-05-27    
+     2021-06-01    
 ====================
-====================
-     2021-05-26    
-====================
+
+* android
+582a7d3  manifest: Sync SM8350 HALs  [LuK1337]
+
+* lineage/charter
+fd7fedc  charter: Resolve markdown indentation issue on GitHub  [Nolen Johnson]
 
 * lineage/mirror
-f77adef  Updated aosp-minimal to 26-May-2021 12:01 UTC  [Tim Schumacher]
+9ecb3fb  Updated to 31-May-2021 19:30 UTC  [Kevin F. Haggerty]
 
-* lineage/wiki
-a6a0028  templates: device_specific: Revamp nash's before_install  [Nolen Johnson]
+* system/sepolicy
+cef0f31  Export missing audio volume properties  [Michael Bestas]
+
+* vendor/lineage
+902f447  qcom: add lahaina platform  [JamieHoSzeYui]
 ====================
-     2021-05-25    
+     2021-05-31    
 ====================
 
-* lineage/wiki
-7cadbd0  templates: device_install: Add before_recovery_install support  [Nolen Johnson]
-55d7e1b  templates: device_install: Move before_install after ADB configuration  [Nolen Johnson]
-====================
-     2021-05-24    
-====================
+* device/qcom/sepolicy_vndr
+791cdec  legacy: Add write permission to proc file system  [Ankita Bajaj]
+
+* frameworks/base
+dcb9694  SystemUI: use matching padding on both sides of QS detail title  [Timi Rautamäki]
+81aec88  SystemUI: avoid double ripple in QS detail view  [Timi Rautamäki]
+1d36f44  SystemUI: QS: minimize detail view to middle of the button  [Timi Rautamäki]
+
+* vendor/translations
+be31fa2  Merge pull request #13 from RemyL/patch-2  [Arian]
+72a48f3  Update french translation  [RemyL]
