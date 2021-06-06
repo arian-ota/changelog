@@ -1,57 +1,68 @@
 ====================
-     2021-05-30    
+     2021-06-06    
 ====================
 
 * build/make
-8380b5a  [DNM] Always use release-keys  [Arian]
+560f606  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-db65a95  common: Label IAntiFlicker live display service  [Arian]
+44c4d02  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-6509125  SystemUI: get rid of build text in qs  [Joey]
-db0f225  SystemUI: Add anti flicker tile  [Arian]
-24db0d0  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+6772229  SystemUI: get rid of build text in qs  [Joey]
+ce44019  SystemUI: Add anti flicker tile  [Arian]
+dd29f1f  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-a9fa32b  Add support for anti flicker mode in LiveDisplay  [Arian]
+3d814d3  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-d8b3ec0  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+ed574f5  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-c0b5dd4  Add support for anti flicker mode in LiveDisplay  [Arian]
-153eada  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+65ab243  Add support for anti flicker mode in LiveDisplay  [Arian]
+61063de  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+
+* lineage/hudson
+14c041d  They said it couldn't be done.  [Michael Bestas]
+
+* lineage/wiki
+72f3f95  devices: Stop recommending outdated TWRP images  [Michael Bestas]
+ef15c23  wiki: devices: kuntao gets 18.1  [Michael Bestas]
 
 * packages/apps/LineageParts
-de45cb3  Add support for anti flicker mode in LiveDisplay  [Arian]
-09e47dc  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+cf877d4  Add support for anti flicker mode in LiveDisplay  [Arian]
+b455aa0  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-05-29    
-====================
-
-* lineage/crowdin
-2713c01  crowdin: Add helpline strings and categories to translation files  [Michael W]
-====================
-     2021-05-28    
+     2021-06-05    
 ====================
 ====================
-     2021-05-27    
+     2021-06-04    
 ====================
-
-* lineage/mirror
-f77adef  Updated aosp-minimal to 26-May-2021 12:01 UTC  [Tim Schumacher]
 ====================
-     2021-05-26    
+     2021-06-03    
 ====================
 
 * lineage/wiki
-a6a0028  templates: device_specific: Revamp nash's before_install  [Nolen Johnson]
-7cadbd0  templates: device_install: Add before_recovery_install support  [Nolen Johnson]
-55d7e1b  templates: device_install: Move before_install after ADB configuration  [Nolen Johnson]
+d0cb238  wiki: Add Kryo 240/465/468/490/570/670/680 to schema  [LuK1337]
+1f6b977  wiki: Add Bluetooth 5.2 to schema  [LuK1337]
+80e7159  wiki: Add Adreno 619/660/690 to schema  [LuK1337]
 ====================
-     2021-05-25    
+     2021-06-02    
 ====================
+
+* lineage/charter
+fd7fedc  charter: Resolve markdown indentation issue on GitHub  [Nolen Johnson]
 ====================
-     2021-05-24    
+     2021-06-01    
 ====================
+
+* lineage/mirror
+9ecb3fb  Updated to 31-May-2021 19:30 UTC  [Kevin F. Haggerty]
+====================
+     2021-05-31    
+====================
+
+* vendor/translations
+be31fa2  Merge pull request #13 from RemyL/patch-2  [Arian]
+72a48f3  Update french translation  [RemyL]
