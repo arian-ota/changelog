@@ -1,68 +1,85 @@
 ====================
-     2021-06-06    
+     2021-06-13    
 ====================
 
 * build/make
-560f606  [DNM] Always use release-keys  [Arian]
+a74b123  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-44c4d02  common: Label IAntiFlicker live display service  [Arian]
+4746bf8  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-6772229  SystemUI: get rid of build text in qs  [Joey]
-ce44019  SystemUI: Add anti flicker tile  [Arian]
-dd29f1f  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+9b2485f  SystemUI: get rid of build text in qs  [Joey]
+c3707b0  SystemUI: Add anti flicker tile  [Arian]
+49a8a8d  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-3d814d3  Add support for anti flicker mode in LiveDisplay  [Arian]
+128b2e1  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-ed574f5  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+13779c4  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-65ab243  Add support for anti flicker mode in LiveDisplay  [Arian]
-61063de  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
-
-* lineage/hudson
-14c041d  They said it couldn't be done.  [Michael Bestas]
-
-* lineage/wiki
-72f3f95  devices: Stop recommending outdated TWRP images  [Michael Bestas]
-ef15c23  wiki: devices: kuntao gets 18.1  [Michael Bestas]
+4bd1475  Add support for anti flicker mode in LiveDisplay  [Arian]
+95fb3cb  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * packages/apps/LineageParts
-cf877d4  Add support for anti flicker mode in LiveDisplay  [Arian]
-b455aa0  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+9abda9f  Add support for anti flicker mode in LiveDisplay  [Arian]
+30ca27a  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-06-05    
-====================
-====================
-     2021-06-04    
-====================
-====================
-     2021-06-03    
-====================
-
-* lineage/wiki
-d0cb238  wiki: Add Kryo 240/465/468/490/570/670/680 to schema  [LuK1337]
-1f6b977  wiki: Add Bluetooth 5.2 to schema  [LuK1337]
-80e7159  wiki: Add Adreno 619/660/690 to schema  [LuK1337]
-====================
-     2021-06-02    
-====================
-
-* lineage/charter
-fd7fedc  charter: Resolve markdown indentation issue on GitHub  [Nolen Johnson]
-====================
-     2021-06-01    
+     2021-06-12    
 ====================
 
 * lineage/mirror
-9ecb3fb  Updated to 31-May-2021 19:30 UTC  [Kevin F. Haggerty]
+846afd8  Updated to 11-Jun-2021 16:56 UTC  [Kevin F. Haggerty]
 ====================
-     2021-05-31    
+     2021-06-11    
 ====================
 
-* vendor/translations
-be31fa2  Merge pull request #13 from RemyL/patch-2  [Arian]
-72a48f3  Update french translation  [RemyL]
+* external/chromium-webview
+b497e69  Update Chromium Webview to 91.0.4472.101  [Kevin F. Haggerty]
+
+* lineage/wiki
+371110b  wiki: "Enable adb" -> "Enable ADB"  [LuK1337]
+====================
+     2021-06-10    
+====================
+
+* lineage/scripts
+7ccbd3a  Update default webview to 91.0.4472.101  [Kevin F. Haggerty]
+
+* packages/apps/LineageParts
+8a1a7ff  trust: Fix case of details about vendor security patch  [Nolen Johnson]
+====================
+     2021-06-09    
+====================
+
+* lineage/wiki
+0395a85  wiki: Advertise "Qi reverse wireless charging" on the Pixel 5 page  [Alessandro Astone]
+71214d6  wiki: Advertise "Qi reverse wireless charging" on OnePlus 8 Pro/9 Pro pages  [LuK1337]
+40af7b0  wiki: Add 'Qi reverse wireless charging' to schema  [LuK1337]
+34f73c9  wiki: Make kebab fw update work for DDR5 devices  [LuK1337]
+====================
+     2021-06-08    
+====================
+
+* lineage/wiki
+0bc062f  wiki: Add OnePlus 9 Pro  [LuK1337]
+4451aac  wiki: device_specific: before_lineage_instal_flox: Fine tune  [Nolen Johnson]
+====================
+     2021-06-07    
+====================
+
+* lineage/hudson
+d71d720  Fire dragon now rests in peace  [Han Wang]
+c3dac84  Regenerate device dependency mappings  [razorloves]
+b7d2fac  Forgot to enable lineage recovery in 5cda145 ;(((  [LuK1337]
+5cda145  This soon? How interesting...  [LuK1337]
+b26cc16  Only REAL gamers will remember this  [Michael Bestas]
+
+* lineage/mirror
+c4d710a  Updated to 06-Jun-2021 18:51 UTC  [Kevin F. Haggerty]
+
+* lineage/wiki
+de80685  wiki: RIP oneplus2  [Han Wang]
+fe00d2f  wiki: devices: Add the Razer Phone 2 (aura)  [Nolen Johnson]
