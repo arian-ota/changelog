@@ -1,90 +1,75 @@
 ====================
-     2021-06-07    
-====================
-
-* external/exfatprogs
-1d003c3  Merge branch 'master' of github.com:exfatprogs/exfatprogs into HEAD  [Luca Stefani]
-
-* frameworks/base
-74c02b5  Reset all package signatures on boot  [Sam Mortimer]
-====================
-     2021-06-06    
-====================
-
-* lineage-sdk
-1416383  LineageSettings: Mark lookup features as deprecated  [Bruno Martins]
-
-* lineage/hudson
-14c041d  They said it couldn't be done.  [Michael Bestas]
-
-* lineage/wiki
-72f3f95  devices: Stop recommending outdated TWRP images  [Michael Bestas]
-ef15c23  wiki: devices: kuntao gets 18.1  [Michael Bestas]
-
-* vendor/lineage
-5c084cb  config: Actually disable strict mode for non eng builds  [Han Wang]
-21e586a  Disable extra StrictMode features on all non-engineering builds  [Sam Mortimer]
-====================
-     2021-06-05    
-====================
-====================
-     2021-06-04    
+     2021-06-14    
 ====================
 
 * frameworks/base
-045f758  DozeSensors: only use proximity sensor if supported  [Demon000]
+d8e4636  Reset all package signatures on boot  [Sam Mortimer]
+====================
+     2021-06-13    
+====================
 
-* lineage-sdk
-162d0fd  PerformanceManagerService: Account for QCOM perf HAL 2.1/2.2  [Han Wang]
+* frameworks/base
+f5c3b65  IconPack{Sam,Victor}: Inverse vol collapse/expand anim path data  [Dhina17]
 
 * vendor/lineage
-0a78392  sensitive_pn: Add two numbers for Italy  [dwayne goben]
+cae10f8  kernel: Pass absolute path for KCONFIG_ALLCONFIG  [LuK1337]
 ====================
-     2021-06-03    
+     2021-06-12    
 ====================
-
-* lineage/wiki
-d0cb238  wiki: Add Kryo 240/465/468/490/570/670/680 to schema  [LuK1337]
-1f6b977  wiki: Add Bluetooth 5.2 to schema  [LuK1337]
-80e7159  wiki: Add Adreno 619/660/690 to schema  [LuK1337]
-
-* packages/apps/Eleven
-00a6e30  Eleven: remove custom gradle manifest  [Joey]
-
-* packages/apps/Recorder
-ab6da62  Recorder: Add missing super call in onRequestPermissionsResult  [Michael Bestas]
-b7e5ffe  Recorder: Resolve android studio layout warnings  [Michael Bestas]
-e986545  Recorder: Update androidx gradle deps  [Michael Bestas]
-defd42b  Recorder: Remove screen recording leftover string  [Michael Bestas]
-292955f  Recorder: Remove values-*v29  [Michael Bestas]
-68c1717  Recorder: Move from jcenter to mavenCentral  [Michael Bestas]
-b2090bb  Recorder: Update gradle version  [Michael Bestas]
-ebe989e  Recorder: Remove hardcoded package name references  [Michael Bestas]
-====================
-     2021-06-02    
-====================
-
-* lineage/charter
-fd7fedc  charter: Resolve markdown indentation issue on GitHub  [Nolen Johnson]
-
-* packages/apps/Eleven
-5139403  Eleven: Fix adding a song to a playlist  [Michael W]
-f054260  Eleven: Fix renaming playlists  [Michael W]
-f6164f4  Eleven: Fold values-v27 into values  [Michael Bestas]
-5b8a31e  Eleven: Remove unused imports  [Michael Bestas]
-
-* system/sepolicy
-1d46a12  public/file.te: add 'allow proc_net proc:filesystem associate'  [Maciej Żenczykowski]
-cef0f31  Export missing audio volume properties  [Michael Bestas]
-====================
-     2021-06-01    
-====================
-
-* android
-582a7d3  manifest: Sync SM8350 HALs  [LuK1337]
 
 * lineage/mirror
-9ecb3fb  Updated to 31-May-2021 19:30 UTC  [Kevin F. Haggerty]
+846afd8  Updated to 11-Jun-2021 16:56 UTC  [Kevin F. Haggerty]
+
+* lineage/wiki
+371110b  wiki: "Enable adb" -> "Enable ADB"  [LuK1337]
+
+* packages/apps/Trebuchet
+f199540  Revert "Trebuchet: Remove workspaceStatusBarScrim"  [Adi Wahono]
+====================
+     2021-06-11    
+====================
+
+* external/chromium-webview
+b497e69  Update Chromium Webview to 91.0.4472.101  [Kevin F. Haggerty]
+
+* lineage/scripts
+7ccbd3a  Update default webview to 91.0.4472.101  [Kevin F. Haggerty]
+
+* system/core
+68725c6  Add exfat utilities for mkfs and fsck  [Daniel Rosenberg]
 
 * vendor/lineage
-902f447  qcom: add lahaina platform  [JamieHoSzeYui]
+b735fac  common: Remove extra tools already shipped by default  [Bruno Martins]
+2630730  config: Remove exfat tools  [Luca Stefani]
+====================
+     2021-06-10    
+====================
+
+* bootable/recovery
+5b3c1e3  recovery: make wiping dynamic partitions work  [Tim Zimmermann]
+
+* packages/apps/LineageParts
+4a34bc9  trust: Fix case of details about vendor security patch  [Nolen Johnson]
+====================
+     2021-06-09    
+====================
+
+* lineage/wiki
+0395a85  wiki: Advertise "Qi reverse wireless charging" on the Pixel 5 page  [Alessandro Astone]
+71214d6  wiki: Advertise "Qi reverse wireless charging" on OnePlus 8 Pro/9 Pro pages  [LuK1337]
+40af7b0  wiki: Add 'Qi reverse wireless charging' to schema  [LuK1337]
+34f73c9  wiki: Make kebab fw update work for DDR5 devices  [LuK1337]
+0bc062f  wiki: Add OnePlus 9 Pro  [LuK1337]
+4451aac  wiki: device_specific: before_lineage_instal_flox: Fine tune  [Nolen Johnson]
+====================
+     2021-06-08    
+====================
+
+* lineage/hudson
+d71d720  Fire dragon now rests in peace  [Han Wang]
+
+* lineage/wiki
+de80685  wiki: RIP oneplus2  [Han Wang]
+
+* packages/apps/Settings
+f26c1ec  Settings: use framework text colors for SwitchBar  [Timi]
