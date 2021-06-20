@@ -1,87 +1,55 @@
 ====================
-     2021-06-13    
+     2021-06-20    
 ====================
 
 * build/make
-f563b99  [DNM] Always use release-keys  [Arian]
+eb88d0d  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-d7a4c02  common: Label IAntiFlicker live display service  [Arian]
+03ef1bd  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-c3d002e  SystemUI: get rid of build text in qs  [Joey]
-c74fb0f  SystemUI: Add anti flicker tile  [Arian]
-e74ff7c  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+cb30428  SystemUI: get rid of build text in qs  [Joey]
+085acd4  SystemUI: Add anti flicker tile  [Arian]
+5035aae8  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-c1f3c52  Add support for anti flicker mode in LiveDisplay  [Arian]
+484b316  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-0106165  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+afdc3e7  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-3496b92  Add support for anti flicker mode in LiveDisplay  [Arian]
-2f218f7  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+719e109  Add support for anti flicker mode in LiveDisplay  [Arian]
+c989289  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+
+* lineage/mirror
+3ee2b99  Updated to 19-Jun-2021 13:47 UTC  [Kevin F. Haggerty]
 
 * packages/apps/LineageParts
-254f074  Add support for anti flicker mode in LiveDisplay  [Arian]
-9d610c0  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+e6378b4  Add support for anti flicker mode in LiveDisplay  [Arian]
+f7f9ba9  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-06-12    
+     2021-06-19    
+====================
+====================
+     2021-06-18    
+====================
+====================
+     2021-06-17    
 ====================
 
 * lineage/mirror
-846afd8  Updated to 11-Jun-2021 16:56 UTC  [Kevin F. Haggerty]
+8ec8c65  Updated to 16-Jun-2021 16:17 UTC  [Kevin F. Haggerty]
 
 * lineage/wiki
-371110b  wiki: "Enable adb" -> "Enable ADB"  [LuK1337]
+fd130de  wiki: Clarify which Xperia XZ2/3 models are supported  [Olivier Karasangabo]
 ====================
-     2021-06-11    
+     2021-06-16    
 ====================
-
-* external/chromium-webview
-b497e69  Update Chromium Webview to 91.0.4472.101  [Kevin F. Haggerty]
 ====================
-     2021-06-10    
+     2021-06-15    
 ====================
-
-* lineage/scripts
-7ccbd3a  Update default webview to 91.0.4472.101  [Kevin F. Haggerty]
-
-* packages/apps/LineageParts
-8a1a7ff  trust: Fix case of details about vendor security patch  [Nolen Johnson]
 ====================
-     2021-06-09    
+     2021-06-14    
 ====================
-
-* lineage/wiki
-0395a85  wiki: Advertise "Qi reverse wireless charging" on the Pixel 5 page  [Alessandro Astone]
-71214d6  wiki: Advertise "Qi reverse wireless charging" on OnePlus 8 Pro/9 Pro pages  [LuK1337]
-40af7b0  wiki: Add 'Qi reverse wireless charging' to schema  [LuK1337]
-34f73c9  wiki: Make kebab fw update work for DDR5 devices  [LuK1337]
-0bc062f  wiki: Add OnePlus 9 Pro  [LuK1337]
-====================
-     2021-06-08    
-====================
-
-* lineage/hudson
-d71d720  Fire dragon now rests in peace  [Han Wang]
-
-* lineage/wiki
-4451aac  wiki: device_specific: before_lineage_instal_flox: Fine tune  [Nolen Johnson]
-de80685  wiki: RIP oneplus2  [Han Wang]
-====================
-     2021-06-07    
-====================
-
-* lineage/hudson
-c3dac84  Regenerate device dependency mappings  [razorloves]
-b7d2fac  Forgot to enable lineage recovery in 5cda145 ;(((  [LuK1337]
-5cda145  This soon? How interesting...  [LuK1337]
-b26cc16  Only REAL gamers will remember this  [Michael Bestas]
-
-* lineage/mirror
-c4d710a  Updated to 06-Jun-2021 18:51 UTC  [Kevin F. Haggerty]
-
-* lineage/wiki
-fe00d2f  wiki: devices: Add the Razer Phone 2 (aura)  [Nolen Johnson]
