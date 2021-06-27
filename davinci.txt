@@ -1,55 +1,49 @@
 ====================
-     2021-06-20    
+     2021-06-27    
 ====================
 
 * build/make
-eb88d0d  [DNM] Always use release-keys  [Arian]
+e61f297  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-03ef1bd  common: Label IAntiFlicker live display service  [Arian]
+6bed2a6  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-cb30428  SystemUI: get rid of build text in qs  [Joey]
-085acd4  SystemUI: Add anti flicker tile  [Arian]
-5035aae8  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+608ac64  SystemUI: get rid of build text in qs  [Joey]
+ae81c14  SystemUI: Add anti flicker tile  [Arian]
+823b828  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-484b316  Add support for anti flicker mode in LiveDisplay  [Arian]
+d15765d  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-afdc3e7  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+21abadb  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-719e109  Add support for anti flicker mode in LiveDisplay  [Arian]
-c989289  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+427641a  Add support for anti flicker mode in LiveDisplay  [Arian]
+3db1b3c  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
-* lineage/mirror
-3ee2b99  Updated to 19-Jun-2021 13:47 UTC  [Kevin F. Haggerty]
+* lineage/hudson
+b7a777d  hudson: ship Xiaomi Mi 10T / Mi 10T Pro / Redmi K30S Ultra  [Ramii Ahmed]
 
 * packages/apps/LineageParts
-e6378b4  Add support for anti flicker mode in LiveDisplay  [Arian]
-f7f9ba9  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+1ba3ada  Add support for anti flicker mode in LiveDisplay  [Arian]
+9ed90ef  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-06-19    
-====================
-====================
-     2021-06-18    
+     2021-06-26    
 ====================
 ====================
-     2021-06-17    
-====================
-
-* lineage/mirror
-8ec8c65  Updated to 16-Jun-2021 16:17 UTC  [Kevin F. Haggerty]
-
-* lineage/wiki
-fd130de  wiki: Clarify which Xperia XZ2/3 models are supported  [Olivier Karasangabo]
-====================
-     2021-06-16    
+     2021-06-25    
 ====================
 ====================
-     2021-06-15    
+     2021-06-24    
 ====================
 ====================
-     2021-06-14    
+     2021-06-23    
+====================
+====================
+     2021-06-22    
+====================
+====================
+     2021-06-21    
 ====================
