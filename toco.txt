@@ -1,132 +1,118 @@
 ====================
-     2021-04-11    
+     2021-06-28    
 ====================
 
 * frameworks/base
-7ddd3a3  Reset all package signatures on boot  [Sam Mortimer]
-b979204  [SQUASH]base: Revert secondary home handle  [Ido Ben-Hur]
-0de4290  Merge tag 'android-11.0.0_r34' into staging/lineage-18.1_merge-android-11.0.0_r34  [Kevin F. Haggerty]
+0706f5d  Reset all package signatures on boot  [Sam Mortimer]
 
-* lineage/wiki
-a220006  wiki: Various smaller fixes  [Tim Schumacher]
-
-* packages/apps/Trebuchet
-6005772  Merge tag 'android-11.0.0_r34' into staging/lineage-18.1_merge-android-11.0.0_r34  [Kevin F. Haggerty]
-
-* packages/providers/MediaProvider
-2d005c9  Merge tag 'android-11.0.0_r34' into staging/lineage-18.1_merge-android-11.0.0_r34  [Kevin F. Haggerty]
-
-* vendor/lineage
-ba8e075  soong: Add TARGET_QTI_USB_SUPPORTS_{AUDIO,DEBUG}_ACCESSORY flags  [LuK1337]
+* kernel/xiaomi/sm6150
+b55d97c  input: misc: drv260x_input: Rename to qti-haptics  [Arian]
 ====================
-     2021-04-10    
-====================
-
-* lineage/wiki
-90fdfe5  wiki: Switch away from payload-dumper-go  [LuK1337]
-d8588e6  wiki: Provide firmware update pages for OnePlus SDM845 devices  [LuK1337]
-c69273c  wiki: Provide firmware update pages for OnePlus SM8150 devices  [LuK1337]
-02f3276  wiki: Provide firmware update pages for OnePlus SM8250 devices  [LuK1337]
-c4f9c1c  wiki: Allow devices to provide firmware update instructions  [LuK1337]
-634db32  wiki: devices: jfvelte: Use Lineage Recovery  [Nolen Johnson]
-
-* packages/providers/MediaProvider
-178741f  MediaProvider: Less spam  [Michael W]
-
-* vendor/qcom/opensource/usb
-cec97e1  Allow enabling support for audio and debug accessories  [LuK1337]
-====================
-     2021-04-09    
-====================
-
-* device/lineage/sepolicy
-df6a088  common: Label IAntiFlicker live display service  [Arian]
-
-* frameworks/base
-5960e54  SystemUI: Add anti flicker tile  [Arian]
-21a64f3  SystemUI: tiles: Open display settings on long clicks for livedisplay tiles  [Arian]
-a1775ac  SystemUI: Fix status bar battery icon title  [Bruno Martins]
-
-* hardware/lineage/interfaces
-83b4eb8  Introduce 2.1 LiveDisplay interface with IAntiFlicker support  [Arian]
-
-* lineage/mirror
-050f269  Updated to 09-Apr-2021 15:56 UTC  [Kevin F. Haggerty]
-
-* packages/apps/LineageParts
-bbb25f0  Add a toggle for anti flicker mode in LiveDisplay settings  [Arian]
-
-* vendor/lineage
-157fff1  Allow unified location provider as possible location provider (not as used location provider)  [Greenflash1986]
-====================
-     2021-04-08    
-====================
-
-* lineage/mirror
-88fa6f0  Updated to 07-Apr-2021 17:57 UTC  [Kevin F. Haggerty]
-
-* vendor/lineage
-02f0ab6  backuptool: Ensure dedicated partitions are not unused before mounting  [Alessandro Astone]
-====================
-     2021-04-07    
+     2021-06-27    
 ====================
 
 * lineage/hudson
-f1ab558  hudson: Promote whyred to 18.1  [Sebastiano Barezzi]
+b7a777d  hudson: ship Xiaomi Mi 10T / Mi 10T Pro / Redmi K30S Ultra  [Ramii Ahmed]
 
-* lineage/wiki
-596b06d  wiki: devices: Promote whyred to 18.1  [Sebastiano Barezzi]
-a31a64f  wiki: Fix spacing between conditional steps in gts4lv unlock template  [LuK1337]
-
-* vendor/qcom/opensource/commonsys/system/bt
-4cd10f5  avrc_copy_packet: Zero initialize packet  [Hansong Zhang]
-bfef545  AVRCP: Use calloc to zero reserved fields  [Myles Watson]
-8b17da5  Legacy pairing: Reject device with same BD_ADDR  [Hansong Zhang]
+* vendor/lineage
+cec409e  kernel: Fix the check for official builds  [Tim Schumacher]
 ====================
-     2021-04-06    
+     2021-06-26    
 ====================
 
-* android
-9d179eb  manifest: android-11.0.0_r32 -> android-11.0.0_r34  [Kevin F. Haggerty]
-
-* build/make
-224d5a3  Merge tag 'android-11.0.0_r34' into staging/lineage-18.1_merge-android-11.0.0_r34  [Kevin F. Haggerty]
+* device/xiaomi/davinci
+ce2ec9d  davinci: fod: Correct fod_status values  [Arian]
 
 * device/xiaomi/sm6150-common
-6a45f8b  sm6150-common: livedisplay: Use modules from common implementation  [dianlujitao]
-bd2a5f8  sm6150-common: livedisplay: Uprev to 2.1  [Arian]
-b979442  sm6150-common: livedisplay: Renamed AntiFlicker node  [Arian]
-9fe49d5  sm6150-common: livedisplay: Add anti flicker support  [Arian]
+8cf1d5d  sm6150-common: power: Use xiaomi-touch to handle dt2w  [Arian]
 
-* frameworks/av
-792bc9a  Merge tag 'android-11.0.0_r34' into staging/lineage-18.1_merge-android-11.0.0_r34  [Kevin F. Haggerty]
+* kernel/xiaomi/sm6150
+aaf6600  Revert "input: touchscreen: goodix_driver_gt9886: Report BTN_INFO key events only when fod is in use"  [Arian]
+222e8e4  input: touchscreen: f4_goodix_driver_gt9886: Remove input event dt2w handling  [Arian]
+2409d56  input: touchscreen: f4_goodix_driver_gt886: Handle dt2w feature through xiaomi-touch  [Arian]
+e285698  input: touchscreen: goodix_driver_gt9886: Remove input event dt2w handling  [Arian]
+7b21dcd  input: touchscreen: goodix_driver_gt886: Handle dt2w feature through xiaomi-touch  [Arian]
 
-* hardware/interfaces
-ee34a8c  Merge tag 'android-11.0.0_r34' into staging/lineage-18.1_merge-android-11.0.0_r34  [Kevin F. Haggerty]
-
-* lineage-sdk
-5f3ded7  Introduce anti flicker mode in LiveDisplay  [Arian]
-
-* lineage/wiki
-b5cd6c0  wiki: devices: Flag the rest of my sw encrption devices format_on_upgrade  [Nolen Johnson]
-
-* packages/apps/Contacts
-6fe61f7  Merge tag 'android-11.0.0_r34' into staging/lineage-18.1_merge-android-11.0.0_r34  [Kevin F. Haggerty]
-
-* packages/apps/Settings
-1906a9e  Merge tag 'android-11.0.0_r34' into staging/lineage-18.1_merge-android-11.0.0_r34  [Kevin F. Haggerty]
-
-* system/bt
-ccc271b  Merge tag 'android-11.0.0_r34' into staging/lineage-18.1_merge-android-11.0.0_r34  [Kevin F. Haggerty]
-
-* system/core
-07aa82b  Merge tag 'android-11.0.0_r34' into staging/lineage-18.1_merge-android-11.0.0_r34  [Kevin F. Haggerty]
+* packages/apps/FlipFlap
+344e2c7  FlipFlap: Don't interrupt  [Michael W]
 ====================
-     2021-04-05    
+     2021-06-25    
 ====================
 
-* lineage/hudson
-ffbeb19  wiki: Bump 18821 and 19801 to 18.1  [LuK1337]
+* device/xiaomi/sm6150-common
+cf3b327  davinci: sepolicy: Label idle_state sysfs nodes  [Arian]
+3135fd7  sm6150-common: rootdir: Enable idle_state mechanism  [Robb Glasser]
 
-* lineage/wiki
-db6b5b8  wiki: flox: Add format_on_upgrade flag  [Elektroschmock]
+* device/xiaomi/toco
+3e6358a  toco: power: Decrease launch boost to 3sec  [DennySPB]
+5b9c4b5  toco: power: Remove Google-specific camera hints  [Bruno Martins]
+26c3015  toco: power: Import powerhint configuration from Pixel 4A  [Arian]
+fd2cc9d  toco: Move screen density to BoardConfig  [Arian]
+ab6a1aa  toco: Remove PRODUCT_AAPT config  [Anton Hansson]
+5410ad5  toco: fod: Set fod status using xiaomi-touch  [Arian]
+03b51a9  Revert "toco: fod: Add support for Xiaomi's touchfeature"  [Arian]
+bcf5525  toco: overlay: Set dim, doze and minimum brightness levels  [Arian]
+8ea2cd8  toco: overlay-lineage: Move fingerprint sensor location to overlay-lineage  [Arian]
+
+* vendor/xiaomi
+9395c25  toco: Update from 12.5.1.0, import cnss-deamon, remove audiosphere, import audio libraries, remove touchfeature  [Arian]
+====================
+     2021-06-24    
+====================
+
+* build/make
+e903369  build: Exclude generic libnfc-nci.conf  [razorloves]
+
+* frameworks/base
+b1208e6  IconPack{Kai,Victor}: Fix clock icon  [DarkJoker360]
+
+* hardware/xiaomi
+d865b86  power-libperfmgr: Add support for tap-to-wake feature control  [Stefanie Kondik]
+
+* vendor/lineage
+c86a1a8  kernel: Add TARGET_FORCE_PREBUILT_KERNEL flag  [Sebastiano Barezzi]
+5f7f10d  lineage: Add double quote in custom APN name check  [Erfan Abdi]
+====================
+     2021-06-23    
+====================
+====================
+     2021-06-22    
+====================
+
+* device/xiaomi/davinci
+8761012  davinci: fod: Set fod status using xiaomi-touch  [Arian]
+acfe4db  Revert "davinci: fod: Add support for Xiaomi's touchfeature"  [Arian]
+9c9fa76  davinci: init: Workaround safetynet  [Arian]
+b239dcc  TMP Allow broken dup rules for gapps  [Arian]
+5f2fde5  davinci: power: Decrease launch boost to 3sec  [DennySPB]
+96eb968  davinci: power: Remove Google-specific camera hints  [Bruno Martins]
+f7b9f62  davinci: power: Import powerhint configuration from Pixel 4A  [Arian]
+e919ce3  davinci: motor: Follow brace style recommendation  [Arian]
+43815d5  davinci: overlay: Set dim, doze and minimum brightness levels  [Arian]
+2a10f6b  davinci: tfa98xx: Add debugging about enabling/disabling the sound device  [Arian]
+e68aee0  davinci: tfa98xx: Fix invalid params check  [Arian]
+8aafde8  davinci: tfa98xx: Fix getting usecase to disable  [Arian]
+0eafaae  davinci: tfa98xx: Fix stopping feedback  [Arian]
+9dcd42e  davinci: tfa8xx: Simplify amplifier_set_feedback  [Arian]
+8e9e0fe  davinci: tfa98xx: Refactor amplifier  [Pig]
+3f6f393  davinci: tfa98xx: Fix device list initializations  [Pig]
+498af61  davinci: tfa98xx: Correct handling of failed pcm_open  [Arian]
+b9d69b0  davinci: tfa98xx: Correct pcm_config parameters  [Arian]
+d0b31b5  davinci: tfa98xx: Cleanup audio_amplifier  [Arian]
+
+* device/xiaomi/sm6150-common
+c1baef0  sm6150-common: sepolicy: Address power HAL denials  [Arian]
+3d1697d  sm6150-common: rootdir: Enable PowerHAL hint processing  [Arian]
+0280d9c  sm6150-comon: rootdir: Modify the cpuset setting  [Kyle Lin]
+7d83a2b  sm6150-common: rootdir: Kang scheduler settings from sunfish  [Arian]
+50f85ce  sm6150-common: rootdir: Kang governor settings from sunfish  [Arian]
+656a445  sm6150-common: rootdir: Remove CAF input boost  [Arian]
+bc48111  sm6150-common: rootdir: Disable core control  [celtare21]
+e66b019  sm6150-common: rootdir: Add SchedTune configuration  [Andres Oportus]
+7e0b1d8  sm6150-common: Migrate to Xiaomi power HAL AIDL  [Bruno Martins]
+
+* kernel/xiaomi/sm6150
+de0c4e0  msm: vidc: disable decode batching feature  [wenchangliu]
+
+* vendor/xiaomi
+e933a41  davinci: Remove touchfeature service  [Arian]
