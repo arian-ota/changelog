@@ -1,237 +1,115 @@
 ====================
-     2021-06-21    
+     2021-06-28    
 ====================
 
 * frameworks/base
-ec454f2  Reset all package signatures on boot  [Sam Mortimer]
+2ae24b4  Reset all package signatures on boot  [Sam Mortimer]
+
+* vendor/lineage
+cec409e  kernel: Fix the check for official builds  [Tim Schumacher]
 ====================
-     2021-06-20    
+     2021-06-27    
 ====================
 
-* frameworks/base
-c230fe4  Allow screen unpinning on devices without navbar  [Utkarsh Gupta]
-e3bb0af  SystemUI: Expose location icon to Tuner  [Bruno Martins]
+* lineage/hudson
+b7a777d  hudson: ship Xiaomi Mi 10T / Mi 10T Pro / Redmi K30S Ultra  [Ramii Ahmed]
 
-* lineage/mirror
-3ee2b99  Updated to 19-Jun-2021 13:47 UTC  [Kevin F. Haggerty]
+* packages/apps/FlipFlap
+344e2c7  FlipFlap: Don't interrupt  [Michael W]
 ====================
-     2021-06-19    
+     2021-06-26    
 ====================
 
 * device/xiaomi/davinci
-eff59a6  davinci: init: Workaround safetynet  [Arian]
-2375355  TMP Allow broken dup rules for gapps  [Arian]
-403d9ad  davinci: power: Decrease launch boost to 3sec  [DennySPB]
-390ef48  davinci: power: Remove Google-specific camera hints  [Bruno Martins]
-c7a18e7  davinci: power: Import powerhint configuration from Pixel 4A  [Arian]
-ff04372  davinci: motor: Follow brace style recommendation  [Arian]
+ce2ec9d  davinci: fod: Correct fod_status values  [Arian]
 
 * device/xiaomi/sm6150-common
-0532dbb  sm6150-common: sepolicy: Address power HAL denials  [Arian]
-8e6c1a4  sm6150-common: rootdir: Enable PowerHAL hint processing  [Arian]
-743c03f  sm6150-comon: rootdir: Modify the cpuset setting  [Kyle Lin]
-10f947a  sm6150-common: rootdir: Kang scheduler settings from sunfish  [Arian]
-9536e9c  sm6150-common: rootdir: Kang governor settings from sunfish  [Arian]
-206c41c  sm6150-common: rootdir: Remove CAF input boost  [Arian]
-cb71a37  sm6150-common: rootdir: Disable core control  [celtare21]
-917e145  sm6150-common: rootdir: Add SchedTune configuration  [Andres Oportus]
-61a578a  sm6150-common: Migrate to Xiaomi power HAL AIDL  [Bruno Martins]
-8735166  Revert "sm6150-common: rootdir: Override power HAL service and add input group"  [Arian]
-ce8581c  sm6150-common: Disable AUDIO_FEATURE_ENABLED_KPI_OPTIMIZE  [Sultanxda]
-fe82d28  sm6150-common: Remove QTI perfd  [Wei Wang]
-907ff51  sm6150-common: audio: Don't advertise vorbis offloading support  [LuK1337]
-548f696  sm6150-common: audio: Disable audio ULL mode  [dianlujitao]
-7068a36  sm6150-common: Simplify AVB flag logic  [Nolen Johnson]
-724c2c8  sm6150-common: Welcome Redmi Note 10 Pro  [Rasenkai]
-2db5017  sm6150-common: overlay: Remove COLOR_MODE_SATURATED  [Chia-I Wu]
-b612c65  sm6150-common: overlay: [Display] Enable adaptive color mode  [Gil]
-3ee56cb  sm6150-common: overlay: Add config value for a11y color mode  [Christine Franks]
-6139e34  Revert "davinci: overlay: Hide sRGB toggle in developer options"  [Adithya R]
-83fd734  sm6150-common: overlay: Decommonize brightness overlays  [Arian]
-a9988f3  sm6150-common: rro_overlays: Move CarrierConfig to RRO  [Chirayu Desai]
-ce60eb6  Revert "sm6150-common: Exclude CarrierConfig overlays from RRO"  [Arian]
-da8bb7d  sm6150-common: Import missing libops.so  [Arian]
-8ab4fcd  sm6150-common: Include c2 manifest from media HAL  [Arian]
-111ebf4  sm6150-common: media: Use omx raw decoder on 24bit pcm playback  [George Gao]
-eb01249  sm6150-common: media: Apply xiaomi's media codecs tuning  [Arian]
-c0604d8  sm6150-common: media: Import configs from LA.UM.9.1.r1-09600-SMxxx0.0  [Arian]
-37495bd  sm6150-common: Use sdmmagpie_v1 media configs  [Arian]
-690cccb  sm6150-common: Decommonize lights HAL and overlays  [Arian]
-d9a7822  sm6150-common: Update blobs from sweet V12.5.1.0.RKFMIXM  [Arian]
-31a323b  sm6150-common: wifi: Update from sweet 12.5.1.0  [Arian]
-2f7c22b  sm6150-common: Enable dynamic SAR  [Arian]
-b29f19c  sm6150-common: Drop unnecessary fqnames from manifests  [LuK1337]
-28ff150  sm6150-common: Get rid of megvii shim  [Adithya R]
-605de37  sm6150-common: Decommonize cnss-daemon  [Adithya R]
-c8c613c  sm6150-common: Exclude additional haptics devices from input subsystem  [Arian]
-e6e3bc7  sm6150-common: Add config to exclude haptics devices from input subsystem  [Fenglin Wu]
-b049682  Revert "davinci: Increase media volume from 15 to 25 steps"  [Arian]
-e4ea795  sm6150-common: Decommonize audio fluencetype prop  [Adithya R]
-fb7663b  sm6150-common: Add missing librice for soundtrigger  [Rasenkai]
-bc384c8  sm6150-common: Add libadpcmdec for sound trigger  [Arian]
-783e9df  sm6150-common: Update blobs from sweet V12.0.14.0  [Arian]
-182b1dc  sm6150-common: Remove wfdhdcphal service  [Arian]
-5471dad  sm6150-common: Remove Super Sensor/Photo ADSP modules  [Arian]
-a04fb57  sm6150-common: Re-add shoebox and audio sphere effects  [Arian]
-72b9205  sm6150-common: Decommonize audio libraries  [Arian]
-237862f  sm6150-common: Move btaudio_offload_if.so to audio section  [Arian]
-7cd101a  sm6150-common: Decommonize audio HAL  [Arian]
-484f6e5  sm6150-common: Decommonize tfa98xx amplifier  [Arian]
-a25e0e9  sm6150-common: rootdir: Update audio hal service override as per latest base service definition  [Dhananjay Kumar]
-a75fe3e  Revert "davinci: rootdir: Stop overriding audio hal 2.0 service"  [Arian]
-4fd1fd2  Revert "davinci: sepolicy: Unlabel audio_hw_socket"  [Arian]
-d9a98b7  sm6150-common: Add all stock ADSP modules  [Arian]
-27700c7  Revert "davinci: overlay: Enable STATE_DOZE_SUSPEND"  [Arian]
-5848b70  sm6150-common: livedisplay: Use modules from common implementation  [dianlujitao]
-6d05622  sm6150-common: livedisplay: Uprev to 2.1  [Arian]
-afb4a21  sm6150-common: livedisplay: Renamed AntiFlicker node  [Arian]
-83f9791  sm6150-common: livedisplay: Add anti flicker support  [Arian]
-72944d2  sm6150-common: overlay: Remove adaptive colour mode  [Arian]
-fbefbbb  sm6150-common: power: Add NVTCapacitiveTouchScreen support  [Rasenkai]
-6d7d3b5  sm6150-common: Remove hard-code for ro.boot.bootdevice  [raghavt20]
-113fdbe  sm6150-common: Do not set nosdcard characteristic  [Adithya R]
-af52191  sm6150-common: Welcome POCO X3 - surya!  [Adithya R]
-2bd715b  sm6150-common: rootdir: Add IR nodes to ueventd  [Adithya R]
-58d33f1  sm6150-common: Enable SAP+SAP for wifi hal interface  [Purushottam Kushwaha]
-bd18886  sm6150-common: gps: Lower debug level  [Michael Bestas]
-f3e8480  sm6150-common: Remove unused gps certificates  [Michael Bestas]
-5968444  sm6150-common: Remove xtwfi-client and xtwifi-inet-agent  [Arian]
-2ce94a5  sm6150-common: gps: Disable xtwifi location services  [TheStrix]
-97937bd  sm6150-common: Sync earlycon kernel cmdline with CAF  [Adithya R]
-bea69bc  sm6150-common: Add new surfaceflinger flags  [Volodymyr Zhdanov]
-97896a1  sm6150-common: Disable SF configstore  [Volodymyr Zhdanov]
-4efee45  sm6150-common: fingerprint: Setup permissions for violet's goodix node  [raghavt20]
-a4bc80a  sm6150-common: fingerprint: Setup permissions for violet FPC nodes  [merothh]
-32e23fe  sm6150-common: fingerprint: Label fpc and fpdump data dirs  [raghavt20]
-876d672  sm6150-common: Add FRP permissions for violet  [raghavt20]
-b227173  sm6150-common: Update from Mi Note 10 Lite V12.1.4.0.RFNMIXM  [Arian]
-48936b4  sm6150-common: Drop unused 3.0 and 4.1 keymaster service  [Arian]
-f60089a  sm6150-common: Don't build Image.gz-dtb for dynamic devices  [Arian]
-6c7410e  sm6150-common: TARGET_KERNEL_APPEND_DTB handling  [Swetha Chikkaboraiah]
-07f53dd  sm6150-common: BoardConfig: Add support for header version 2 of boot image  [Swetha Chikkaboraiah]
-69b52a2  Revert "Revert "davinci: rootdir: Import coral fs tuning""  [Arian]
-506cf92  sm6150-common: rootdir: Support more soc-id's  [Arian]
-a54ae83  sm6150-common: rootdir: Prepare for different soc_id's  [Arian]
-0af4075  Revert "davinci: rootdir: Remove sleep_disabled switch during boot"  [Arian]
-70a7144  sm6150-common: rootdir: Update init.qcom.post_boot.sh from V12.1.4.0.RFNMIXM  [Arian]
-8f7a271  Revert "davinci: rootdir: Move simple writes from post_boot script to init.target.rc"  [raghavt20]
-6b60b20  sm6150-common: Move cne property to system  [Arian]
-4438bf7  sm6150-common: rootdir: Setup file permissions on IR spi node  [Arian]
-38538e6  sm6150-common: Add permissions for RCS service  [Manoj Basapathi]
-1b90732  sm6150-common: rootdir: Setup file permissions on mius iio devices  [Arian]
+8cf1d5d  sm6150-common: power: Use xiaomi-touch to handle dt2w  [Arian]
+cf3b327  davinci: sepolicy: Label idle_state sysfs nodes  [Arian]
+3135fd7  sm6150-common: rootdir: Enable idle_state mechanism  [Robb Glasser]
+
+* kernel/xiaomi/sm6150
+aaf6600  Revert "input: touchscreen: goodix_driver_gt9886: Report BTN_INFO key events only when fod is in use"  [Arian]
+222e8e4  input: touchscreen: f4_goodix_driver_gt9886: Remove input event dt2w handling  [Arian]
+2409d56  input: touchscreen: f4_goodix_driver_gt886: Handle dt2w feature through xiaomi-touch  [Arian]
+e285698  input: touchscreen: goodix_driver_gt9886: Remove input event dt2w handling  [Arian]
+7b21dcd  input: touchscreen: goodix_driver_gt886: Handle dt2w feature through xiaomi-touch  [Arian]
 ====================
-     2021-06-18    
+     2021-06-25    
 ====================
 
-* lineage-sdk
-ad35709  lineage-sdk: Mark all pending intents as immutable  [Han Wang]
-====================
-     2021-06-17    
-====================
+* build/make
+e903369  build: Exclude generic libnfc-nci.conf  [razorloves]
 
-* lineage/mirror
-8ec8c65  Updated to 16-Jun-2021 16:17 UTC  [Kevin F. Haggerty]
-
-* lineage/wiki
-fd130de  wiki: Clarify which Xperia XZ2/3 models are supported  [Olivier Karasangabo]
-====================
-     2021-06-16    
-====================
+* device/xiaomi/toco
+3e6358a  toco: power: Decrease launch boost to 3sec  [DennySPB]
+5b9c4b5  toco: power: Remove Google-specific camera hints  [Bruno Martins]
+26c3015  toco: power: Import powerhint configuration from Pixel 4A  [Arian]
+fd2cc9d  toco: Move screen density to BoardConfig  [Arian]
+ab6a1aa  toco: Remove PRODUCT_AAPT config  [Anton Hansson]
+5410ad5  toco: fod: Set fod status using xiaomi-touch  [Arian]
+03b51a9  Revert "toco: fod: Add support for Xiaomi's touchfeature"  [Arian]
+bcf5525  toco: overlay: Set dim, doze and minimum brightness levels  [Arian]
+8ea2cd8  toco: overlay-lineage: Move fingerprint sensor location to overlay-lineage  [Arian]
 
 * frameworks/base
-99e87bb  Add broadcast profile id  [pramod kotreshappa]
-69f29b9  Bluetooth: Add BC profile entry  [Bhakthavatsala Raghavendra]
-4d3f23e  Enhanced Attribute protocol support  [Subramanian Srinivasan]
-d24d25d  Periodic Advertisment Sync Transfer feature support  [pramod kotreshappa]
-429d0f2  Revert "DO NOT MERGE Disable privacy indicators"  [DarkJoker360]
-
-* packages/apps/LineageParts
-6168584  profiles: Add FLAG_IMMUTABLE flag for security purposes  [Bruno Martins]
-07f2c91  lineagestats: Use FLAG_IMMUTABLE for ReportingServiceManager  [Bruno Martins]
-
-* vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
-f877649  Merge tag 'LA.QSSI.11.0.r1-12300-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/packages/apps/Bluetooth into HEAD  [Bruno Martins]
-
-* vendor/qcom/opensource/commonsys/system/bt
-e366ce9  Merge tag 'LA.QSSI.11.0.r1-12300-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/system/bt into HEAD  [Bruno Martins]
-====================
-     2021-06-15    
-====================
-
-* android
-2968c46  manifest: Sync minimal GCC AS toolchain from aosp  [Alessandro Astone]
-
-* bootable/recovery
-65427ac  Merge tag 'android-11.0.0_r38' into staging/lineage-18.1_merge-android-11.0.0_r38  [Kevin F. Haggerty]
-
-* device/qcom/sepolicy
-b598f5b  Merge tag 'LA.QSSI.11.0.r1-12300-qssi.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy into HEAD  [Bruno Martins]
-
-* device/qcom/sepolicy_vndr
-fd50b2b  Merge tag 'LA.UM.9.12.r1-11500-SMxx50.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy_vndr into HEAD  [Bruno Martins]
-
-* frameworks/av
-1540b08  cameraservice: Avoid calling getSystemCameraKind if the camera was not mapped yet  [Timi Rautamäki]
-
-* frameworks/base
-0d56322  Merge tag 'android-11.0.0_r38' into staging/lineage-18.1_merge-android-11.0.0_r38  [Kevin F. Haggerty]
-b80ca7e  Revert "DO NOT MERGE Revert "Allow DeviceConfig to change display settings for high zone""  [Kevin F. Haggerty]
-14ea33f  Revert "DO NOT MERGE Revert "Set fixed fps when ambient or display brightness is high""  [Kevin F. Haggerty]
-
-* hardware/lineage/interfaces
-cfcb4c8  livedisplay: 2.1: Fix interfaces order  [Sebastiano Barezzi]
-
-* packages/apps/Bluetooth
-3a866bd  Support for broadcast active api  [pramod kotreshappa]
-d67a39d  PAST feature implementation  [pramod kotreshappa]
-3972050  Enhanced Attribute protocol support  [Subramanian Srinivasan]
-ff2243d  DeviceGroup: Add Binder method in Bluetooth App  [Sravan voleti]
-3d07b05  Periodic Sync Feature implementation  [pramod kotreshappa]
-
-* packages/apps/Etar
-f0c50b9  Add package "com.google.android.gm" to queries to avoid crash on api 30  [Gitsaibot]
-25ced60  Update dependencies  [Gitsaibot]
-a492f8f  Use switches instead of checkboxes and remove some lint errors  [Gitsaibot]
-6e883c7  Do not always recreate view when changing settings in "system pure black mode"  [Gitsaibot]
-94b6e00  Turkish metadata translations added  [Muha Aliss]
-
-* packages/apps/Trebuchet
-616cdca  Merge tag 'android-11.0.0_r38' into staging/lineage-18.1_merge-android-11.0.0_r38  [Kevin F. Haggerty]
-
-* packages/services/Telephony
-bb2e17c  Removing dead code from Telephony which uses wakelock.  [Tyler Gunn]
-
-* system/bt
-be66f8c  Add broadcast active api  [pramod kotreshappa]
-931e8a7  BLE Broadcast Isochronous channel support  [Sunny Kapdi]
-72c7dba  DeviceGroup: Add new system API's to support Group UI.  [Sravan voleti]
-3d25f6a  Enhanced Attribute protocol support  [Subramanian Srinivasan]
-b3af820  Periodic Adv Sync Transfer feature support  [pramod kotreshappa]
+b1208e6  IconPack{Kai,Victor}: Fix clock icon  [DarkJoker360]
 
 * vendor/lineage
-e741d46  Revert "soong: Add TARGET_QTI_USB_SUPPORTS_{AUDIO,DEBUG}_ACCESSORY flags"  [Bruno Martins]
+c86a1a8  kernel: Add TARGET_FORCE_PREBUILT_KERNEL flag  [Sebastiano Barezzi]
 
-* vendor/qcom/opensource/commonsys-intf/bluetooth
-d7d16e5  Merge tag 'LA.QSSI.11.0.r1-12300-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/bluetooth-commonsys-intf into HEAD  [Bruno Martins]
+* vendor/xiaomi
+9395c25  toco: Update from 12.5.1.0, import cnss-deamon, remove audiosphere, import audio libraries, remove touchfeature  [Arian]
+====================
+     2021-06-24    
+====================
 
-* vendor/qcom/opensource/commonsys-intf/display
-244be5c  Merge tag 'LA.QSSI.11.0.r1-12300-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/display-commonsys-intf into HEAD  [Bruno Martins]
+* hardware/xiaomi
+d865b86  power-libperfmgr: Add support for tap-to-wake feature control  [Stefanie Kondik]
 
-* vendor/qcom/opensource/commonsys/bluetooth_ext
-7a9e33e  Merge tag 'LA.QSSI.11.0.r1-12300-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/bluetooth_ext into HEAD  [Bruno Martins]
+* vendor/lineage
+5f7f10d  lineage: Add double quote in custom APN name check  [Erfan Abdi]
+====================
+     2021-06-23    
+====================
+====================
+     2021-06-22    
+====================
 
-* vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
-871f440  Don't print passkey to logcat on non-debug builds  [Jakub Pawlowski]
+* device/xiaomi/davinci
+8761012  davinci: fod: Set fod status using xiaomi-touch  [Arian]
+acfe4db  Revert "davinci: fod: Add support for Xiaomi's touchfeature"  [Arian]
+9c9fa76  davinci: init: Workaround safetynet  [Arian]
+b239dcc  TMP Allow broken dup rules for gapps  [Arian]
+5f2fde5  davinci: power: Decrease launch boost to 3sec  [DennySPB]
+96eb968  davinci: power: Remove Google-specific camera hints  [Bruno Martins]
+f7b9f62  davinci: power: Import powerhint configuration from Pixel 4A  [Arian]
+e919ce3  davinci: motor: Follow brace style recommendation  [Arian]
+43815d5  davinci: overlay: Set dim, doze and minimum brightness levels  [Arian]
+2a10f6b  davinci: tfa98xx: Add debugging about enabling/disabling the sound device  [Arian]
+e68aee0  davinci: tfa98xx: Fix invalid params check  [Arian]
+8aafde8  davinci: tfa98xx: Fix getting usecase to disable  [Arian]
+0eafaae  davinci: tfa98xx: Fix stopping feedback  [Arian]
+9dcd42e  davinci: tfa8xx: Simplify amplifier_set_feedback  [Arian]
+8e9e0fe  davinci: tfa98xx: Refactor amplifier  [Pig]
+3f6f393  davinci: tfa98xx: Fix device list initializations  [Pig]
+498af61  davinci: tfa98xx: Correct handling of failed pcm_open  [Arian]
+b9d69b0  davinci: tfa98xx: Correct pcm_config parameters  [Arian]
+d0b31b5  davinci: tfa98xx: Cleanup audio_amplifier  [Arian]
 
-* vendor/qcom/opensource/data-ipa-cfg-mgr
-582dffc  Merge tag 'LA.UM.9.12.r1-11500-SMxx50.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/data-ipa-cfg-mgr into HEAD  [Bruno Martins]
+* device/xiaomi/sm6150-common
+c1baef0  sm6150-common: sepolicy: Address power HAL denials  [Arian]
+3d1697d  sm6150-common: rootdir: Enable PowerHAL hint processing  [Arian]
+0280d9c  sm6150-comon: rootdir: Modify the cpuset setting  [Kyle Lin]
+7d83a2b  sm6150-common: rootdir: Kang scheduler settings from sunfish  [Arian]
+50f85ce  sm6150-common: rootdir: Kang governor settings from sunfish  [Arian]
+656a445  sm6150-common: rootdir: Remove CAF input boost  [Arian]
+bc48111  sm6150-common: rootdir: Disable core control  [celtare21]
+e66b019  sm6150-common: rootdir: Add SchedTune configuration  [Andres Oportus]
+7e0b1d8  sm6150-common: Migrate to Xiaomi power HAL AIDL  [Bruno Martins]
 
-* vendor/qcom/opensource/fm-commonsys
-26ca589  Merge tag 'LA.QSSI.11.0.r1-12300-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/fm-commonsys into HEAD  [Bruno Martins]
+* kernel/xiaomi/sm6150
+de0c4e0  msm: vidc: disable decode batching feature  [wenchangliu]
 
-* vendor/qcom/opensource/usb
-136f791  Merge tag 'LA.UM.9.12.r1-11500-SMxx50.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/usb into LA.UM.9.12.r1-11500-SMxx50.0  [Bruno Martins]
-c192ab1  Revert "Allow enabling support for audio and debug accessories"  [Bruno Martins]
-
-* vendor/qcom/opensource/vibrator
-0ba562c  Merge tag 'LA.UM.9.12.r1-11500-SMxx50.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/vibrator into HEAD  [Bruno Martins]
+* vendor/xiaomi
+e933a41  davinci: Remove touchfeature service  [Arian]
