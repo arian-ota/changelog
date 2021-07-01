@@ -1,12 +1,41 @@
 ====================
+     2021-07-01    
+====================
+
+* device/xiaomi/toco
+8751e0b  DNM toco: sepolicy: Address more battery secret denials  [Adithya R]
+ade8108  DNM toco: sepolicy: Initial rules for batterysecret  [Kuba Wojciechowski]
+d4b1a2d  toco: Import batterysecret service  [Arian]
+7d54868  toco: Import HVDCP properties from stock  [Arian]
+e093f2b  davinci: fod: Disable FOD on hide  [Arian]
+
+* frameworks/base
+08902fb  Reset all package signatures on boot  [Sam Mortimer]
+
+* kernel/xiaomi/sm6150
+4a669fa  input: touchscreen: f4_goodix_driver_gt9886: Resume to change fod status  [Arian]
+
+* vendor/xiaomi
+aec9866  toco: Import batterysecret service  [Arian]
+====================
+     2021-06-30    
+====================
+
+* kernel/xiaomi/sm6150
+862d49f  input: touchscreen: goodix_driver_gt9886: Resume to change fod status  [Arian]
+====================
+     2021-06-29    
+====================
+====================
      2021-06-28    
 ====================
 
-* frameworks/base
-1237aeb  Reset all package signatures on boot  [Sam Mortimer]
-
 * kernel/xiaomi/sm6150
 b55d97c  input: misc: drv260x_input: Rename to qti-haptics  [Arian]
+
+* lineage/mirror
+16578af  Updated lineage-minimal to 28-Jun-2021 14:48 UTC  [Tim Schumacher]
+81f8a29  Updated aosp-minimal to 28-Jun-2021 14:43 UTC  [Tim Schumacher]
 ====================
      2021-06-27    
 ====================
@@ -40,77 +69,3 @@ aaf6600  Revert "input: touchscreen: goodix_driver_gt9886: Report BTN_INFO key e
 2409d56  input: touchscreen: f4_goodix_driver_gt886: Handle dt2w feature through xiaomi-touch  [Arian]
 e285698  input: touchscreen: goodix_driver_gt9886: Remove input event dt2w handling  [Arian]
 7b21dcd  input: touchscreen: goodix_driver_gt886: Handle dt2w feature through xiaomi-touch  [Arian]
-====================
-     2021-06-24    
-====================
-
-* build/make
-e903369  build: Exclude generic libnfc-nci.conf  [razorloves]
-
-* device/xiaomi/toco
-3e6358a  toco: power: Decrease launch boost to 3sec  [DennySPB]
-5b9c4b5  toco: power: Remove Google-specific camera hints  [Bruno Martins]
-26c3015  toco: power: Import powerhint configuration from Pixel 4A  [Arian]
-fd2cc9d  toco: Move screen density to BoardConfig  [Arian]
-ab6a1aa  toco: Remove PRODUCT_AAPT config  [Anton Hansson]
-5410ad5  toco: fod: Set fod status using xiaomi-touch  [Arian]
-03b51a9  Revert "toco: fod: Add support for Xiaomi's touchfeature"  [Arian]
-bcf5525  toco: overlay: Set dim, doze and minimum brightness levels  [Arian]
-8ea2cd8  toco: overlay-lineage: Move fingerprint sensor location to overlay-lineage  [Arian]
-
-* frameworks/base
-b1208e6  IconPack{Kai,Victor}: Fix clock icon  [DarkJoker360]
-
-* vendor/lineage
-c86a1a8  kernel: Add TARGET_FORCE_PREBUILT_KERNEL flag  [Sebastiano Barezzi]
-5f7f10d  lineage: Add double quote in custom APN name check  [Erfan Abdi]
-
-* vendor/xiaomi
-9395c25  toco: Update from 12.5.1.0, import cnss-deamon, remove audiosphere, import audio libraries, remove touchfeature  [Arian]
-====================
-     2021-06-23    
-====================
-
-* hardware/xiaomi
-d865b86  power-libperfmgr: Add support for tap-to-wake feature control  [Stefanie Kondik]
-====================
-     2021-06-22    
-====================
-
-* device/xiaomi/davinci
-8761012  davinci: fod: Set fod status using xiaomi-touch  [Arian]
-acfe4db  Revert "davinci: fod: Add support for Xiaomi's touchfeature"  [Arian]
-9c9fa76  davinci: init: Workaround safetynet  [Arian]
-b239dcc  TMP Allow broken dup rules for gapps  [Arian]
-5f2fde5  davinci: power: Decrease launch boost to 3sec  [DennySPB]
-96eb968  davinci: power: Remove Google-specific camera hints  [Bruno Martins]
-f7b9f62  davinci: power: Import powerhint configuration from Pixel 4A  [Arian]
-e919ce3  davinci: motor: Follow brace style recommendation  [Arian]
-43815d5  davinci: overlay: Set dim, doze and minimum brightness levels  [Arian]
-2a10f6b  davinci: tfa98xx: Add debugging about enabling/disabling the sound device  [Arian]
-e68aee0  davinci: tfa98xx: Fix invalid params check  [Arian]
-8aafde8  davinci: tfa98xx: Fix getting usecase to disable  [Arian]
-0eafaae  davinci: tfa98xx: Fix stopping feedback  [Arian]
-9dcd42e  davinci: tfa8xx: Simplify amplifier_set_feedback  [Arian]
-8e9e0fe  davinci: tfa98xx: Refactor amplifier  [Pig]
-3f6f393  davinci: tfa98xx: Fix device list initializations  [Pig]
-498af61  davinci: tfa98xx: Correct handling of failed pcm_open  [Arian]
-b9d69b0  davinci: tfa98xx: Correct pcm_config parameters  [Arian]
-d0b31b5  davinci: tfa98xx: Cleanup audio_amplifier  [Arian]
-
-* device/xiaomi/sm6150-common
-c1baef0  sm6150-common: sepolicy: Address power HAL denials  [Arian]
-3d1697d  sm6150-common: rootdir: Enable PowerHAL hint processing  [Arian]
-0280d9c  sm6150-comon: rootdir: Modify the cpuset setting  [Kyle Lin]
-7d83a2b  sm6150-common: rootdir: Kang scheduler settings from sunfish  [Arian]
-50f85ce  sm6150-common: rootdir: Kang governor settings from sunfish  [Arian]
-656a445  sm6150-common: rootdir: Remove CAF input boost  [Arian]
-bc48111  sm6150-common: rootdir: Disable core control  [celtare21]
-e66b019  sm6150-common: rootdir: Add SchedTune configuration  [Andres Oportus]
-7e0b1d8  sm6150-common: Migrate to Xiaomi power HAL AIDL  [Bruno Martins]
-
-* kernel/xiaomi/sm6150
-de0c4e0  msm: vidc: disable decode batching feature  [wenchangliu]
-
-* vendor/xiaomi
-e933a41  davinci: Remove touchfeature service  [Arian]
