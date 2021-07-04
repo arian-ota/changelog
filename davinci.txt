@@ -1,49 +1,51 @@
 ====================
-     2021-06-27    
+     2021-07-04    
 ====================
 
 * build/make
-e61f297  [DNM] Always use release-keys  [Arian]
+7adc342  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-6bed2a6  common: Label IAntiFlicker live display service  [Arian]
+e033e3c  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-608ac64  SystemUI: get rid of build text in qs  [Joey]
-ae81c14  SystemUI: Add anti flicker tile  [Arian]
-823b828  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+d19e55c  SystemUI: get rid of build text in qs  [Joey]
+4941151  SystemUI: Add anti flicker tile  [Arian]
+02a7367  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-d15765d  Add support for anti flicker mode in LiveDisplay  [Arian]
-
-* hardware/qcom-caf/sm8150/audio
-21abadb  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+cae6fdc  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * lineage-sdk
-427641a  Add support for anti flicker mode in LiveDisplay  [Arian]
-3db1b3c  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
-
-* lineage/hudson
-b7a777d  hudson: ship Xiaomi Mi 10T / Mi 10T Pro / Redmi K30S Ultra  [Ramii Ahmed]
+7c7f4b0  Add support for anti flicker mode in LiveDisplay  [Arian]
+3f00e63  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * packages/apps/LineageParts
-1ba3ada  Add support for anti flicker mode in LiveDisplay  [Arian]
-9ed90ef  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+c5a6ac3  Add support for anti flicker mode in LiveDisplay  [Arian]
+230fb62  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-06-26    
-====================
-====================
-     2021-06-25    
+     2021-07-03    
 ====================
 ====================
-     2021-06-24    
+     2021-07-02    
 ====================
 ====================
-     2021-06-23    
+     2021-07-01    
 ====================
 ====================
-     2021-06-22    
+     2021-06-30    
 ====================
 ====================
-     2021-06-21    
+     2021-06-29    
+====================
+
+* frameworks/base
+0d4186c  Fix freeform window moving/resizing doesn't work  [utzcoz]
+8de9649  Fix NPE when resizing with transferring focus failed  [utzcoz]
+
+* lineage/mirror
+16578af  Updated lineage-minimal to 28-Jun-2021 14:48 UTC  [Tim Schumacher]
+81f8a29  Updated aosp-minimal to 28-Jun-2021 14:43 UTC  [Tim Schumacher]
+====================
+     2021-06-28    
 ====================
