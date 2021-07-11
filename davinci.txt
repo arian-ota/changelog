@@ -1,51 +1,50 @@
 ====================
-     2021-07-04    
+     2021-07-11    
 ====================
 
 * build/make
-7adc342  [DNM] Always use release-keys  [Arian]
+ad547ec  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-e033e3c  common: Label IAntiFlicker live display service  [Arian]
+22a63e1  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-d19e55c  SystemUI: get rid of build text in qs  [Joey]
-4941151  SystemUI: Add anti flicker tile  [Arian]
-02a7367  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+bed568c  SystemUI: get rid of build text in qs  [Joey]
+e9e78c0  SystemUI: Add anti flicker tile  [Arian]
+36923f1  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-cae6fdc  Add support for anti flicker mode in LiveDisplay  [Arian]
+4b46dc2  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * lineage-sdk
-7c7f4b0  Add support for anti flicker mode in LiveDisplay  [Arian]
-3f00e63  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+878408f  Add support for anti flicker mode in LiveDisplay  [Arian]
+0089c86  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * packages/apps/LineageParts
-c5a6ac3  Add support for anti flicker mode in LiveDisplay  [Arian]
-230fb62  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+c9ae806  Add support for anti flicker mode in LiveDisplay  [Arian]
+94808ee  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-07-03    
-====================
-====================
-     2021-07-02    
+     2021-07-10    
 ====================
 ====================
-     2021-07-01    
+     2021-07-09    
 ====================
-====================
-     2021-06-30    
-====================
-====================
-     2021-06-29    
-====================
-
-* frameworks/base
-0d4186c  Fix freeform window moving/resizing doesn't work  [utzcoz]
-8de9649  Fix NPE when resizing with transferring focus failed  [utzcoz]
 
 * lineage/mirror
-16578af  Updated lineage-minimal to 28-Jun-2021 14:48 UTC  [Tim Schumacher]
-81f8a29  Updated aosp-minimal to 28-Jun-2021 14:43 UTC  [Tim Schumacher]
+95a5d2d  Updated to 08-Jul-2021 12:28 UTC  [Kevin F. Haggerty]
+3faa941  Updated to 08-Jul-2021 12:01 UTC  [Tim Schumacher]
 ====================
-     2021-06-28    
+     2021-07-08    
+====================
+
+* frameworks/native
+9356445  Properly scale touch input window through resolution changes  [Aaron Kling]
+====================
+     2021-07-07    
+====================
+====================
+     2021-07-06    
+====================
+====================
+     2021-07-05    
 ====================
