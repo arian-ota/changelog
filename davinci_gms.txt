@@ -1,60 +1,44 @@
 ====================
-     2021-07-05    
-====================
-
-* device/xiaomi/davinci
-ce9b1e3  Revert "davinci: overlay: Add support for doze auto brightness"  [Arian]
-
-* frameworks/base
-0ed45c5  Reset all package signatures on boot  [Sam Mortimer]
-====================
-     2021-07-04    
-====================
-
-* device/xiaomi/sm6150-common
-7764bbd  sm6150-common: parts: Hide doze brightness if it is not supported  [Arian]
-10f101e  sm6150-common: parts: Enable doze_status on screen off  [Arian]
-dd8b25b  sm6150-common: parts: Set default doze brightness icon  [Arian]
-8720bb5  sm6150-common: parts: Add support for zero brightness doze mode  [Arian]
-727405d  sm6150-common: parts: Implement doze modes and auto brightness  [Arian]
-c202629  sm6150-common: parts: Add local FileUtils  [Luca Stefani]
-93ca9d0  sm6150-common: parts: Move doze gestures into a preference category  [Arian]
-
-* kernel/xiaomi/sm6150
-54c7fba  input: touchscreen: f4_goodix_driver_gt9886: Only resume to enable FOD  [Arian]
-a0fec99  input: touchscreen: goodix_driver_gt9886: Only resume to enable FOD  [Arian]
-====================
-     2021-07-03    
-====================
-====================
-     2021-07-02    
+     2021-07-12    
 ====================
 
 * device/xiaomi/toco
-8751e0b  DNM toco: sepolicy: Address more battery secret denials  [Adithya R]
-ade8108  DNM toco: sepolicy: Initial rules for batterysecret  [Kuba Wojciechowski]
-d4b1a2d  toco: Import batterysecret service  [Arian]
-7d54868  toco: Import HVDCP properties from stock  [Arian]
-e093f2b  davinci: fod: Disable FOD on hide  [Arian]
+1931ea3  toco: fod: Fix enabling FOD  [Arian]
+
+* frameworks/base
+b5a07f2  Reset all package signatures on boot  [Sam Mortimer]
 
 * kernel/xiaomi/sm6150
-4a669fa  input: touchscreen: f4_goodix_driver_gt9886: Resume to change fod status  [Arian]
-
-* vendor/xiaomi
-aec9866  toco: Import batterysecret service  [Arian]
+c989c3d  input: touchscreen: f4_goodix_driver_gt9886: Fix variable  [iGOR121]
+423289d  input: touchscreen: fts_521: Handle dt2w feature through xiaomi touch  [iGOR121]
 ====================
-     2021-07-01    
+     2021-07-11    
 ====================
 
-* kernel/xiaomi/sm6150
-862d49f  input: touchscreen: goodix_driver_gt9886: Resume to change fod status  [Arian]
+* packages/apps/LineageParts
+ffa8535  LineageParts: improve Notification light settings actionbar  [Timi Rautamäki]
 ====================
-     2021-06-30    
+     2021-07-10    
 ====================
 ====================
-     2021-06-29    
+     2021-07-09    
 ====================
+
+* frameworks/native
+ed22282  Properly scale touch input window through resolution changes  [Aaron Kling]
 
 * lineage/mirror
-16578af  Updated lineage-minimal to 28-Jun-2021 14:48 UTC  [Tim Schumacher]
-81f8a29  Updated aosp-minimal to 28-Jun-2021 14:43 UTC  [Tim Schumacher]
+95a5d2d  Updated to 08-Jul-2021 12:28 UTC  [Kevin F. Haggerty]
+3faa941  Updated to 08-Jul-2021 12:01 UTC  [Tim Schumacher]
+====================
+     2021-07-08    
+====================
+====================
+     2021-07-07    
+====================
+====================
+     2021-07-06    
+====================
+
+* frameworks/base
+75137cd  CarSystemUI: Pass FODCircleView to StatusBar constructor  [Al Sutton]
