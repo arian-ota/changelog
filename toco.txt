@@ -1,60 +1,44 @@
 ====================
-     2021-07-01    
+     2021-07-12    
+====================
+
+* device/xiaomi/toco
+1931ea3  toco: fod: Fix enabling FOD  [Arian]
+
+* frameworks/base
+0bf6e88  Reset all package signatures on boot  [Sam Mortimer]
+
+* kernel/xiaomi/sm6150
+c989c3d  input: touchscreen: f4_goodix_driver_gt9886: Fix variable  [iGOR121]
+423289d  input: touchscreen: fts_521: Handle dt2w feature through xiaomi touch  [iGOR121]
+====================
+     2021-07-11    
+====================
+
+* packages/apps/LineageParts
+ffa8535  LineageParts: improve Notification light settings actionbar  [Timi Rautamäki]
+====================
+     2021-07-10    
+====================
+====================
+     2021-07-09    
+====================
+
+* frameworks/native
+ed22282  Properly scale touch input window through resolution changes  [Aaron Kling]
+
+* lineage/mirror
+95a5d2d  Updated to 08-Jul-2021 12:28 UTC  [Kevin F. Haggerty]
+3faa941  Updated to 08-Jul-2021 12:01 UTC  [Tim Schumacher]
+====================
+     2021-07-08    
+====================
+====================
+     2021-07-07    
+====================
+====================
+     2021-07-06    
 ====================
 
 * frameworks/base
-52488bb  Reset all package signatures on boot  [Sam Mortimer]
-====================
-     2021-06-30    
-====================
-
-* kernel/xiaomi/sm6150
-862d49f  input: touchscreen: goodix_driver_gt9886: Resume to change fod status  [Arian]
-====================
-     2021-06-29    
-====================
-
-* lineage/mirror
-16578af  Updated lineage-minimal to 28-Jun-2021 14:48 UTC  [Tim Schumacher]
-81f8a29  Updated aosp-minimal to 28-Jun-2021 14:43 UTC  [Tim Schumacher]
-====================
-     2021-06-28    
-====================
-
-* kernel/xiaomi/sm6150
-b55d97c  input: misc: drv260x_input: Rename to qti-haptics  [Arian]
-====================
-     2021-06-27    
-====================
-
-* vendor/lineage
-cec409e  kernel: Fix the check for official builds  [Tim Schumacher]
-====================
-     2021-06-26    
-====================
-
-* device/xiaomi/davinci
-ce2ec9d  davinci: fod: Correct fod_status values  [Arian]
-
-* device/xiaomi/sm6150-common
-8cf1d5d  sm6150-common: power: Use xiaomi-touch to handle dt2w  [Arian]
-
-* kernel/xiaomi/sm6150
-aaf6600  Revert "input: touchscreen: goodix_driver_gt9886: Report BTN_INFO key events only when fod is in use"  [Arian]
-222e8e4  input: touchscreen: f4_goodix_driver_gt9886: Remove input event dt2w handling  [Arian]
-2409d56  input: touchscreen: f4_goodix_driver_gt886: Handle dt2w feature through xiaomi-touch  [Arian]
-e285698  input: touchscreen: goodix_driver_gt9886: Remove input event dt2w handling  [Arian]
-7b21dcd  input: touchscreen: goodix_driver_gt886: Handle dt2w feature through xiaomi-touch  [Arian]
-
-* lineage/hudson
-b7a777d  hudson: ship Xiaomi Mi 10T / Mi 10T Pro / Redmi K30S Ultra  [Ramii Ahmed]
-
-* packages/apps/FlipFlap
-344e2c7  FlipFlap: Don't interrupt  [Michael W]
-====================
-     2021-06-25    
-====================
-
-* device/xiaomi/sm6150-common
-cf3b327  davinci: sepolicy: Label idle_state sysfs nodes  [Arian]
-3135fd7  sm6150-common: rootdir: Enable idle_state mechanism  [Robb Glasser]
+75137cd  CarSystemUI: Pass FODCircleView to StatusBar constructor  [Al Sutton]
