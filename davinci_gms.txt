@@ -1,50 +1,112 @@
 ====================
-     2021-07-11    
+     2021-07-18    
 ====================
 
 * build/make
-348d307  [DNM] Always use release-keys  [Arian]
+d66e648  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-726fc7e  common: Label IAntiFlicker live display service  [Arian]
+2e6efb1  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-98f4cd4  SystemUI: get rid of build text in qs  [Joey]
-7da0e05  SystemUI: Add anti flicker tile  [Arian]
-86fbeaa  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+d11bb21  SystemUI: get rid of build text in qs  [Joey]
+00ce744  SystemUI: Add anti flicker tile  [Arian]
+aa17103  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-e59e960  Add support for anti flicker mode in LiveDisplay  [Arian]
+7d60b36  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * lineage-sdk
-82aaf83  Add support for anti flicker mode in LiveDisplay  [Arian]
-c1259a2  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+248e81c  Add support for anti flicker mode in LiveDisplay  [Arian]
+d216f2e  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+
+* lineage/mirror
+5b56f4f  Updated to 17-Jul-2021 21:15 UTC  [Kevin F. Haggerty]
+20d536f  Updated to 17-Jul-2021 20:43 UTC  [Kevin F. Haggerty]
+e67d0f7  Updated aosp-minimal to 17-Jul-2021 12:01 UTC  [Tim Schumacher]
+
+* lineage/wiki
+314e8a1  wiki: extract_blobs: Mount system_ext too  [Alessandro Astone]
+b562990  wiki: extract_blobs: Mount system images as RO  [Alessandro Astone]
 
 * packages/apps/LineageParts
-2d3ed8f  Add support for anti flicker mode in LiveDisplay  [Arian]
-615e1d1  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+bf96e94  Add support for anti flicker mode in LiveDisplay  [Arian]
+7b05042  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+
+* vendor/lineage
+de66052  apns: Add IPV4V6 to EE (UK)  [Alessandro Astone]
 ====================
-     2021-07-10    
+     2021-07-17    
 ====================
+
+* external/chromium-webview
+16176f6  Update Chromium Webview to 91.0.4472.164  [Kevin F. Haggerty]
+
+* lineage/hudson
+3f6c4c2  RIP GPE - it was a cool program  [Nolen Johnson]
+
+* lineage/mirror
+bd794ad  Updated aosp-minimal to 16-Jul-2021 12:01 UTC  [Tim Schumacher]
+
+* lineage/wiki
+087c7e0  devices: jfltexx: Kill GPE support  [Nolen Johnson]
+0d5e61e  wiki: update path to Gerrit SSH settings  [Timi Rautamäki]
 ====================
-     2021-07-09    
+     2021-07-16    
+====================
+
+* frameworks/base
+b322815  SystemUI: VolumeDialogImpl: Fix volume panel permanently visible  [programminghoch10]
+
+* lineage/mirror
+bd89a16  Updated aosp-minimal to 15-Jul-2021 12:01 UTC  [Tim Schumacher]
+
+* lineage/scripts
+c0c5557  Update default webview to 91.0.4472.164  [Kevin F. Haggerty]
+====================
+     2021-07-15    
 ====================
 
 * lineage/mirror
-95a5d2d  Updated to 08-Jul-2021 12:28 UTC  [Kevin F. Haggerty]
-3faa941  Updated to 08-Jul-2021 12:01 UTC  [Tim Schumacher]
+e631eee  Updated lineage-minimal to 14-Jul-2021 12:01 UTC  [Tim Schumacher]
+
+* vendor/translations
+e432c75  Merge pull request #16 from jpm92/translations  [Arian]
+4a55185  Added spanish translations (es-ES)  [Jesús Peña]
+cb70389  Add a translation gif  [Arian]
+562df73  If i say "Do NOT modify the name of the strings", i shouldn't do it myself...  [Arian]
+d1c96ee  Update link to original strings  [Arian]
+086d9cf  Added spanish (es-ES) translations.  [Jesús Peña]
 ====================
-     2021-07-08    
+     2021-07-14    
 ====================
 
-* frameworks/native
-9356445  Properly scale touch input window through resolution changes  [Aaron Kling]
+* lineage/mirror
+5d86475  Updated to 13-Jul-2021 12:38 UTC  [Kevin F. Haggerty]
 ====================
-     2021-07-07    
+     2021-07-13    
 ====================
+
+* build/make
+11d9c8e  Bump Security String to 2021-07-05  [Kevin F. Haggerty]
+
+* lineage/wiki
+6bc7dcb  Promote Sony Xperia Z3 and Z3 Compact to 18.1  [Arian]
+
+* vendor/lineage
+b7d29a7  lineage: partner_gms: Correctly guard ATV GMS  [Nolen Johnson]
 ====================
-     2021-07-06    
+     2021-07-12    
 ====================
-====================
-     2021-07-05    
-====================
+
+* frameworks/base
+4920fca  Allow empty tokens in strict grammar  [Hall Liu]
+
+* lineage/hudson
+534bc4c  hudson: Promote Sony Xperia Z3 and Sony Xperia Z3 Compact to lineage-18.1  [Arian]
+
+* packages/apps/Contacts
+ff4043a  Hide non system overlays in ContactSelectionActivity  [John Shao]
+
+* packages/providers/ContactsProvider
+829c32c  Enforce strict grammar when querying the call log  [Hall Liu]
