@@ -1,44 +1,221 @@
 ====================
-     2021-07-12    
+     2021-07-19    
 ====================
+
+* device/lineage/atv
+d5cf35b  atv: Disable RRO overlays on device/google/atv  [Nolen Johnson]
 
 * frameworks/base
-e4cd288  Reset all package signatures on boot  [Sam Mortimer]
+4bf0910  Reset all package signatures on boot  [Sam Mortimer]
 ====================
-     2021-07-11    
-====================
-
-* device/xiaomi/toco
-1931ea3  toco: fod: Fix enabling FOD  [Arian]
-
-* kernel/xiaomi/sm6150
-c989c3d  input: touchscreen: f4_goodix_driver_gt9886: Fix variable  [iGOR121]
-423289d  input: touchscreen: fts_521: Handle dt2w feature through xiaomi touch  [iGOR121]
-
-* packages/apps/LineageParts
-ffa8535  LineageParts: improve Notification light settings actionbar  [Timi Rautamäki]
-====================
-     2021-07-10    
-====================
-====================
-     2021-07-09    
-====================
-====================
-     2021-07-08    
+     2021-07-18    
 ====================
 
-* frameworks/native
-ed22282  Properly scale touch input window through resolution changes  [Aaron Kling]
+* android
+04e3022  manifest: Track external/wpa_supplicant_8  [Nolen Johnson]
+
+* frameworks/base
+9d52e2b  SystemUI: Expose camera and microphone icons to Tuner  [Bruno Martins]
 
 * lineage/mirror
-95a5d2d  Updated to 08-Jul-2021 12:28 UTC  [Kevin F. Haggerty]
-3faa941  Updated to 08-Jul-2021 12:01 UTC  [Tim Schumacher]
+5b56f4f  Updated to 17-Jul-2021 21:15 UTC  [Kevin F. Haggerty]
+20d536f  Updated to 17-Jul-2021 20:43 UTC  [Kevin F. Haggerty]
+
+* lineage/wiki
+314e8a1  wiki: extract_blobs: Mount system_ext too  [Alessandro Astone]
+b562990  wiki: extract_blobs: Mount system images as RO  [Alessandro Astone]
+
+* vendor/qcom/opensource/fm-commonsys
+f031b3f  fmapp2: don't destroy notification channel on stop  [Luca Weiss]
 ====================
-     2021-07-07    
-====================
-====================
-     2021-07-06    
+     2021-07-17    
 ====================
 
+* device/qcom/sepolicy-legacy
+2e3d163  sepolicy-legacy: Add sepolicy support for FM domain switch  [himta ram]
+
+* device/qcom/sepolicy-legacy-um
+d5646c9  Revert "sepolicy-legacy-um: Add sepolicy support for FM domain switch"  [Timi Rautamäki]
+
+* external/chromium-webview
+16176f6  Update Chromium Webview to 91.0.4472.164  [Kevin F. Haggerty]
+
+* lineage/hudson
+3f6c4c2  RIP GPE - it was a cool program  [Nolen Johnson]
+
+* lineage/mirror
+e67d0f7  Updated aosp-minimal to 17-Jul-2021 12:01 UTC  [Tim Schumacher]
+
+* lineage/wiki
+087c7e0  devices: jfltexx: Kill GPE support  [Nolen Johnson]
+0d5e61e  wiki: update path to Gerrit SSH settings  [Timi Rautamäki]
+
+* vendor/lineage
+14062ab  apns: Add IPV4V6 to EE (UK)  [Alessandro Astone]
+====================
+     2021-07-16    
+====================
+
+* device/qcom/sepolicy
+3415a28  Revert "sepolicy: Label vendor.qcom.bluetooth props"  [Pranav Vashi]
+366dbe6  sepolicy: Label vendor.qcom.bluetooth props  [Arne Coucheron]
+
+* device/qcom/sepolicy-legacy
+789d4b6  sepolicy-legacy: Label vendor.qcom.bluetooth props  [Arne Coucheron]
+
+* device/xiaomi/davinci
+bd2d6c5  davinci: init: Workaround safetynet  [Arian]
+dbe9fce  TMP Allow broken dup rules for gapps  [Arian]
+1e84cf0  davinci: Make firmware assertions region specific  [Arian]
+
+* device/xiaomi/sm6150-common
+2df6676  sm6150-common: releasetools: Make firmware assertions region specific  [Arian]
+
+* device/xiaomi/toco
+7403de2  TMP Allow broken dup rules for gapps  [Arian]
+f8d877b  DNM toco: sepolicy: Address more battery secret denials  [Adithya R]
+48c6e1e  DNM toco: sepolicy: Initial rules for batterysecret  [Kuba Wojciechowski]
+609228b  toco: Import batterysecret service  [Arian]
+78b5c4f  toco: Import HVDCP properties from stock  [Arian]
+379eb71  toco: Update required firmware level  [Arian]
+
+* lineage/mirror
+bd794ad  Updated aosp-minimal to 16-Jul-2021 12:01 UTC  [Tim Schumacher]
+
+* lineage/scripts
+c0c5557  Update default webview to 91.0.4472.164  [Kevin F. Haggerty]
+====================
+     2021-07-15    
+====================
+
+* android
+3089013  manifest: Add cuttlefish and kernel prebuilts  [Tim Schumacher]
+
+* device/xiaomi/sm6150-common
+9dcfed3  sm6150-common: releasetools: Drop support for '*' in modem version  [Arian]
+7de8311  sm6150-common: releasetools: Drop support for multiple modem version  [Arian]
+2c30dfe  sm6150-common: releaseteools: Rename timestamp to modem_version  [Arian]
+514f6bb  sm6150-common: sepolicy: Allow power HAL to read idle_state node  [Arian]
+5875449  sm6150-common: sepolicy: Label fastrpc adsprpc wakeup nodes  [Arian]
+
+* lineage/mirror
+bd89a16  Updated aosp-minimal to 15-Jul-2021 12:01 UTC  [Tim Schumacher]
+
+* tools/extract-utils
+b49ac3f  extract_utils: Add "check_elf_files: false" also for binaries  [Sebastiano Barezzi]
+====================
+     2021-07-14    
+====================
+
+* device/xiaomi/davinci
+c24e7d9  Revert "davinci: overlay: Add support for doze auto brightness"  [Arian]
+a3f0c1d  davinci: fod: Set fod status using xiaomi-touch  [Arian]
+7d22942  Revert "davinci: fod: Add support for Xiaomi's touchfeature"  [Arian]
+e533c25  davinci: power: Decrease launch boost to 3sec  [DennySPB]
+e8dd43a  davinci: power: Remove Google-specific camera hints  [Bruno Martins]
+651d904  davinci: power: Import powerhint configuration from Pixel 4A  [Arian]
+
+* device/xiaomi/sm6150-common
+a73e279  sm6150-common: Set permissions on /dev/xiaomi-touch  [Arian]
+
+* device/xiaomi/toco
+27fc41a  Revert "toco: overlay: Add support for doze auto brightness"  [Arian]
+907357f  toco: fod: Set fod status using xiaomi-touch  [Arian]
+43c7b7f  Revert "toco: fod: Add support for Xiaomi's touchfeature"  [Arian]
+1e14f32  toco: power: Decrease launch boost to 3sec  [DennySPB]
+b63b297  toco: power: Remove Google-specific camera hints  [Bruno Martins]
+8b8f5dd  toco: power: Import powerhint configuration from Pixel 4A  [Arian]
+952e53c  toco: overlay: Set dim, doze and minimum brightness levels  [Arian]
+630b31c  toco: overlay-lineage: Declare that we do not have a notification light  [Arian]
+b685be4  toco: Import decommonized audio fluencetype property  [Adithya R]
+e84e8e5  toco: Import decommonized cnss-daemon  [Arian]
+00dcaff  toco: Import decommonized audio libraries  [Arian]
+c65e956  toco: Add prebuilt audio HAL  [Arian]
+d3cd9fe  Revert "toco: rootdir: Don't mount unused metadata partition"  [Arian]
+6bab8c3  toco: Import vibrator firmware  [Arian]
+b12c42a  toco: sepolicy: Address IR denials  [Arian]
+6eacc5f  toco: overlay-lineage: Disable proximity usage during doze  [Demon000]
+96408f1  toco: overlay: Add support for doze auto brightness  [TheScarastic]
+4aee0af  sm6150-common: Build 1.0 sensors service  [raghavt20]
+26f7d4f  toco: Build vendor.goodix.hardware.biometrics.fingerprint@2.1 interface  [Arian]
+52d55f6  toco: overlay-lineage: Specify device has a notch  [Luca Stefani]
+5700b42  toco: overlay-lineage: Add reboot to fastbootd  [LuK1337]
+edcdd79  toco: Build fastbootd  [Alessandro Astone]
+c2c9be6  toco: overlay: Disable proximity sensor check before pulsing  [Erik Müller]
+63e321b  toco: Add consumerir support  [Arian]
+19399f9  toco: sepolicy: Label ds28e16 and bq2597x  [Arian]
+f8d4575  toco: Add ultrasound sepolicy  [Arian]
+4db90e8  toco: Reserve less system/product space for gapps builds  [Volodymyr Zhdanov]
+aa1031f  toco: Increase reserved space on product and system partitions  [Volodymyr Zhdanov]
+cc3957d  toco: Reserve 100MB on each dynamic partition  [Cosmin Tanislav]
+74c8805  configs: display: Remove video modes  [Arian]
+0e6b059  toco: configs: Import qdcm display calibration  [Arian]
+dbbfcb4  toco: Build fingerprintextension enabled fingerprint service  [Arian]
+16baac7  toco: overlay-lineage: Define fingerprint sensor location  [Arian]
+87024b9  davinci: overlay: Leave space for FOD while bouncer is requesting Pattern on PIN  [Demon000]
+d75a2b0  toco: Set TARGET_USES_FOD_ZPOS in BoardConfig  [Vincent Vidal]
+92b47e9  toco: fod: Use FOD_PRESSED_LAYER_ZORDER instead of magic number  [Vincent Vidal]
+17d7305  toco: fod: Add surfaceflinger extension lib  [TheScarastic]
+0c04cab  toco: fod: Add support for Xiaomi's touchfeature  [PIPIPIG233666]
+a73ba4a  toco: fod: Set nit value on sysfs notification  [Demon000]
+b752701  toco: fod: Switch to in-kernel handling of changes  [Demon000]
+8131f67  toco: fod: Frop 
+ from logs  [Demon000]
+8b394e7  toco: fod: Use 630nit fod value  [Demon000]
+b937270  toco: fod: Improve semantics  [Demon000]
+50cd9e6  toco: fod: Remove onRelase calls duplication  [Demon000]
+0a1685a  toco: fod: Calculate dim amount based on real brightness  [Demon000]
+c719c25  toco: fod: Implement in-screen fingerprint HAL  [Demon000]
+a962b0d  toco: overlay: Setup fingerprint position  [Arian]
+a60bb47  toco: overlay: Import config_mainBuiltInDisplayCutout from MIUI  [Arian]
+e3c2a76  toco: overlay: Configure rounded corners  [Arian]
+4ddd541  toco: Require V12.1.4.0 firmware  [Arian]
+e75e37d  toco: Initial set of proprietary files  [Arian]
+0ed114a  toco: Add vendor properties  [Arian]
+01d05ed  toco: Import audio configs from MIUI V12.1.4.0.RFNMIXM  [Arian]
+c684b23  toco: Add NFC support  [Arian]
+3b08b13  toco: Configure Verfified boot for product, system and system_ext  [Arian]
+54c13c6  toco: rootdir: Don't mount unused metadata partition  [Arian]
+8c0b6fb  toco: rootdir: Add /boot to fstab  [Demon000]
+aa6487b  toco: rootdir: Import fstab  [Arian]
+9d98289  toco: Configure partitions  [Arian]
+656f899  toco: Add build fingerprint and description from MIUI V12.1.4.0  [Arian]
+0b76971  toco: Inherit from sm6150-common  [Arian]
+3ffd1e4  toco: Don't sign Wifi RROs with platform cert  [David Su]
+5ed23c2  toco: Add TocoWifiOverlay  [Roshan Pius]
+9b4bd9f  toco: overlay: Re-write power_profile based on power_profile_test  [Arian]
+87fdd1e  toco: overlay: Update power profile to match framework change  [Alessandro Astone]
+b2b74e2  toco: overlay: Remove dsp. prefix from audio and video power profiles  [Arian]
+be98df1  toco: overlay: Import power_profile  [Arian]
+3ca42e9  toco: overlay: Import brightness overlays from MIUI  [TheScarastic]
+1de6882  toco: Define kernel config  [Arian]
+78cafab  toco: Configure screen density  [Arian]
+
 * frameworks/base
-75137cd  CarSystemUI: Pass FODCircleView to StatusBar constructor  [Al Sutton]
+3ad13ef  SystemUI: VolumeDialogImpl: Fix volume panel permanently visible  [programminghoch10]
+f43431e  CarSystemUI: Exclude FODCircleViewImpl from UI components  [Al Sutton]
+
+* lineage/mirror
+e631eee  Updated lineage-minimal to 14-Jul-2021 12:01 UTC  [Tim Schumacher]
+
+* vendor/translations
+e432c75  Merge pull request #16 from jpm92/translations  [Arian]
+4a55185  Added spanish translations (es-ES)  [Jesús Peña]
+cb70389  Add a translation gif  [Arian]
+562df73  If i say "Do NOT modify the name of the strings", i shouldn't do it myself...  [Arian]
+d1c96ee  Update link to original strings  [Arian]
+086d9cf  Added spanish (es-ES) translations.  [Jesús Peña]
+====================
+     2021-07-13    
+====================
+
+* lineage/mirror
+5d86475  Updated to 13-Jul-2021 12:38 UTC  [Kevin F. Haggerty]
+
+* packages/apps/TvSettings
+88442b8  HDMI CEC: Add volume preference  [Aaron Kling]
+7420e9f  Show input settings on cec playback devices  [Aaron Kling]
+64bb1d4  TvSettings: Default to not showing bug-report quick setting  [Nolen Johnson]
+
+* vendor/lineage
+a3fc194  lineage: partner_gms: Correctly guard ATV GMS  [Nolen Johnson]
