@@ -1,299 +1,116 @@
 ====================
-     2021-07-19    
+     2021-07-26    
 ====================
-
-* device/lineage/atv
-d5cf35b  atv: Disable RRO overlays on device/google/atv  [Nolen Johnson]
 
 * frameworks/base
-1f93bac  Reset all package signatures on boot  [Sam Mortimer]
-9d52e2b  SystemUI: Expose camera and microphone icons to Tuner  [Bruno Martins]
+ec19ece  Reset all package signatures on boot  [Sam Mortimer]
 ====================
-     2021-07-18    
+     2021-07-25    
 ====================
-
-* android
-04e3022  manifest: Track external/wpa_supplicant_8  [Nolen Johnson]
-
-* lineage/mirror
-5b56f4f  Updated to 17-Jul-2021 21:15 UTC  [Kevin F. Haggerty]
-20d536f  Updated to 17-Jul-2021 20:43 UTC  [Kevin F. Haggerty]
-e67d0f7  Updated aosp-minimal to 17-Jul-2021 12:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-314e8a1  wiki: extract_blobs: Mount system_ext too  [Alessandro Astone]
-b562990  wiki: extract_blobs: Mount system images as RO  [Alessandro Astone]
-
-* vendor/qcom/opensource/fm-commonsys
-f031b3f  fmapp2: don't destroy notification channel on stop  [Luca Weiss]
-====================
-     2021-07-17    
-====================
-
-* device/qcom/sepolicy
-3415a28  Revert "sepolicy: Label vendor.qcom.bluetooth props"  [Pranav Vashi]
-366dbe6  sepolicy: Label vendor.qcom.bluetooth props  [Arne Coucheron]
-
-* device/qcom/sepolicy-legacy
-2e3d163  sepolicy-legacy: Add sepolicy support for FM domain switch  [himta ram]
-789d4b6  sepolicy-legacy: Label vendor.qcom.bluetooth props  [Arne Coucheron]
-
-* device/qcom/sepolicy-legacy-um
-d5646c9  Revert "sepolicy-legacy-um: Add sepolicy support for FM domain switch"  [Timi Rautamäki]
-
-* external/chromium-webview
-16176f6  Update Chromium Webview to 91.0.4472.164  [Kevin F. Haggerty]
 
 * lineage/hudson
-3f6c4c2  RIP GPE - it was a cool program  [Nolen Johnson]
-
-* lineage/mirror
-bd794ad  Updated aosp-minimal to 16-Jul-2021 12:01 UTC  [Tim Schumacher]
-
-* lineage/scripts
-c0c5557  Update default webview to 91.0.4472.164  [Kevin F. Haggerty]
+c8a7ed0  hudson: add Galaxy S10/Note10 Series  [Tim Zimmermann]
 
 * lineage/wiki
-087c7e0  devices: jfltexx: Kill GPE support  [Nolen Johnson]
-0d5e61e  wiki: update path to Gerrit SSH settings  [Timi Rautamäki]
-
-* vendor/lineage
-14062ab  apns: Add IPV4V6 to EE (UK)  [Alessandro Astone]
+9093f7b  wiki: add Galaxy S10/Note10 Series  [Tim Zimmermann]
+f2a84cc  wiki: devices: Yeet lmi in  [Sebastiano Barezzi]
 ====================
-     2021-07-16    
+     2021-07-24    
 ====================
 
 * device/xiaomi/davinci
-bd2d6c5  davinci: init: Workaround safetynet  [Arian]
-dbe9fce  TMP Allow broken dup rules for gapps  [Arian]
-1e84cf0  davinci: Make firmware assertions region specific  [Arian]
+3640f08  davinci: init: Workaround safetynet  [Arian]
+03616ca  TMP Allow broken dup rules for gapps  [Arian]
+ff9cde2  davinci: rootdir: Commonize zram fstab entry  [Adithya R]
 
 * device/xiaomi/sm6150-common
-2df6676  sm6150-common: releasetools: Make firmware assertions region specific  [Arian]
-9dcfed3  sm6150-common: releasetools: Drop support for '*' in modem version  [Arian]
-7de8311  sm6150-common: releasetools: Drop support for multiple modem version  [Arian]
-2c30dfe  sm6150-common: releaseteools: Rename timestamp to modem_version  [Arian]
+abd793c  sm6150-common: fstab: Correct zram parameter names  [YH_Lin]
+1f959d0  sm6150-common: fstab: Make zram swap /data/per_boot  [Minchan Kim]
+560aefb  sm6150-common: Increase ZRAM to 2GB  [Tim Murray]
+73becf7  sm6150-common: Tune zram performance  [Wei Wang]
+b2d8bf6  sm6150-common: Configure zram from separate fstab  [Adithya R]
 
-* device/xiaomi/toco
-7403de2  TMP Allow broken dup rules for gapps  [Arian]
-f8d877b  DNM toco: sepolicy: Address more battery secret denials  [Adithya R]
-48c6e1e  DNM toco: sepolicy: Initial rules for batterysecret  [Kuba Wojciechowski]
-609228b  toco: Import batterysecret service  [Arian]
-78b5c4f  toco: Import HVDCP properties from stock  [Arian]
-379eb71  toco: Update required firmware level  [Arian]
+* frameworks/base
+8cee403  InputManagerService: Flag when an injected event is a real input  [Sam Mortimer]
+
+* frameworks/native
+240b811  Use the original device ID when the injected event is unchanged  [Sean McCreary]
+
+* kernel/xiaomi/sm6150
+a05bd1d  input: touchscreen: goodix_driver_gt9886: Always lock work_stat mutex when changing fod status  [Arian]
 
 * lineage/mirror
-bd89a16  Updated aosp-minimal to 15-Jul-2021 12:01 UTC  [Tim Schumacher]
+0e19fff  Updated to 23-Jul-2021 18:12 UTC  [Kevin F. Haggerty]
+ab2b83c  Updated to 23-Jul-2021 15:15 UTC  [Kevin F. Haggerty]
+be6e87c  Updated to 23-Jul-2021 14:54 UTC  [Kevin F. Haggerty]
+0e7b97e  Updated lineage-minimal to 23-Jul-2021 12:01 UTC  [Tim Schumacher]
+
+* lineage/wiki
+6fe8343  wiki: Specify required firmware for klte* builds using M RIL  [Kevin F. Haggerty]
+e13ea51  wiki: Specify required firmware for gta4xlwifi  [Kevin F. Haggerty]
+
+* vendor/lineage
+de83dff  Add generic targets for automotive  [Tom Pratt]
 ====================
-     2021-07-15    
+     2021-07-23    
+====================
+
+* lineage-sdk
+e136372  Read sensitive_pn.xml from product partition  [Michael Bestas]
+
+* lineage/hudson
+f3358e9  hudson: Yeet lmi in  [Sebastiano Barezzi]
+
+* lineage/mirror
+9bb873c  Updated aosp-minimal to 22-Jul-2021 12:01 UTC  [Tim Schumacher]
+
+* lineage/wiki
+9d38890  fixup! wiki: Add OpenGapps to list of Android 11 compatible gapps packages  [Jarl-Penguin]
+
+* packages/apps/Recorder
+2c55be7  Recorder: Add share selected list items  [2bllw8]
+ec098f9  Recorder: Add delete selected list items  [2bllw8]
+cf7e981  Recorder: Add "Delete all" to the recording list  [Michael W]
+
+* packages/services/Car
+af0d347  Hardcode default pattern size  [Tom Pratt]
+
+* vendor/lineage
+f16a9d9  Move sensitive_pn.xml to product partition  [Michael Bestas]
+====================
+     2021-07-22    
+====================
+
+* build/make
+10de37b  Fix PRODUCT_PROPERTY_OVERRIDES usage in full_base_telephony.mk  [Han Wang]
+
+* lineage/mirror
+84f64d1  Updated aosp-minimal to 21-Jul-2021 12:01 UTC  [Tim Schumacher]
+
+* packages/services/Car
+3999866  Exclude Home app from automotive builds  [Tom Pratt]
+====================
+     2021-07-21    
+====================
+
+* packages/services/Car
+3ef9935  Don't copy Car specific boot animation for Lineage builds  [Tom Pratt]
+====================
+     2021-07-20    
 ====================
 
 * android
-3089013  manifest: Add cuttlefish and kernel prebuilts  [Tim Schumacher]
+a706031  Track forks for Automotive repos  [Tom Pratt]
 
-* device/xiaomi/sm6150-common
-514f6bb  sm6150-common: sepolicy: Allow power HAL to read idle_state node  [Arian]
-5875449  sm6150-common: sepolicy: Label fastrpc adsprpc wakeup nodes  [Arian]
-
-* frameworks/base
-3ad13ef  SystemUI: VolumeDialogImpl: Fix volume panel permanently visible  [programminghoch10]
-f43431e  CarSystemUI: Exclude FODCircleViewImpl from UI components  [Al Sutton]
-
-* lineage/mirror
-e631eee  Updated lineage-minimal to 14-Jul-2021 12:01 UTC  [Tim Schumacher]
-
-* tools/extract-utils
-b49ac3f  extract_utils: Add "check_elf_files: false" also for binaries  [Sebastiano Barezzi]
-
-* vendor/translations
-e432c75  Merge pull request #16 from jpm92/translations  [Arian]
-4a55185  Added spanish translations (es-ES)  [Jesús Peña]
-cb70389  Add a translation gif  [Arian]
-562df73  If i say "Do NOT modify the name of the strings", i shouldn't do it myself...  [Arian]
-d1c96ee  Update link to original strings  [Arian]
-086d9cf  Added spanish (es-ES) translations.  [Jesús Peña]
-====================
-     2021-07-14    
-====================
-
-* device/xiaomi/davinci
-c24e7d9  Revert "davinci: overlay: Add support for doze auto brightness"  [Arian]
-a3f0c1d  davinci: fod: Set fod status using xiaomi-touch  [Arian]
-7d22942  Revert "davinci: fod: Add support for Xiaomi's touchfeature"  [Arian]
-e533c25  davinci: power: Decrease launch boost to 3sec  [DennySPB]
-e8dd43a  davinci: power: Remove Google-specific camera hints  [Bruno Martins]
-651d904  davinci: power: Import powerhint configuration from Pixel 4A  [Arian]
-
-* device/xiaomi/sm6150-common
-a73e279  sm6150-common: Set permissions on /dev/xiaomi-touch  [Arian]
-
-* device/xiaomi/toco
-27fc41a  Revert "toco: overlay: Add support for doze auto brightness"  [Arian]
-907357f  toco: fod: Set fod status using xiaomi-touch  [Arian]
-43c7b7f  Revert "toco: fod: Add support for Xiaomi's touchfeature"  [Arian]
-1e14f32  toco: power: Decrease launch boost to 3sec  [DennySPB]
-b63b297  toco: power: Remove Google-specific camera hints  [Bruno Martins]
-8b8f5dd  toco: power: Import powerhint configuration from Pixel 4A  [Arian]
-952e53c  toco: overlay: Set dim, doze and minimum brightness levels  [Arian]
-630b31c  toco: overlay-lineage: Declare that we do not have a notification light  [Arian]
-b685be4  toco: Import decommonized audio fluencetype property  [Adithya R]
-e84e8e5  toco: Import decommonized cnss-daemon  [Arian]
-00dcaff  toco: Import decommonized audio libraries  [Arian]
-c65e956  toco: Add prebuilt audio HAL  [Arian]
-d3cd9fe  Revert "toco: rootdir: Don't mount unused metadata partition"  [Arian]
-6bab8c3  toco: Import vibrator firmware  [Arian]
-b12c42a  toco: sepolicy: Address IR denials  [Arian]
-6eacc5f  toco: overlay-lineage: Disable proximity usage during doze  [Demon000]
-96408f1  toco: overlay: Add support for doze auto brightness  [TheScarastic]
-4aee0af  sm6150-common: Build 1.0 sensors service  [raghavt20]
-26f7d4f  toco: Build vendor.goodix.hardware.biometrics.fingerprint@2.1 interface  [Arian]
-52d55f6  toco: overlay-lineage: Specify device has a notch  [Luca Stefani]
-5700b42  toco: overlay-lineage: Add reboot to fastbootd  [LuK1337]
-edcdd79  toco: Build fastbootd  [Alessandro Astone]
-c2c9be6  toco: overlay: Disable proximity sensor check before pulsing  [Erik Müller]
-63e321b  toco: Add consumerir support  [Arian]
-19399f9  toco: sepolicy: Label ds28e16 and bq2597x  [Arian]
-f8d4575  toco: Add ultrasound sepolicy  [Arian]
-4db90e8  toco: Reserve less system/product space for gapps builds  [Volodymyr Zhdanov]
-aa1031f  toco: Increase reserved space on product and system partitions  [Volodymyr Zhdanov]
-cc3957d  toco: Reserve 100MB on each dynamic partition  [Cosmin Tanislav]
-74c8805  configs: display: Remove video modes  [Arian]
-0e6b059  toco: configs: Import qdcm display calibration  [Arian]
-dbbfcb4  toco: Build fingerprintextension enabled fingerprint service  [Arian]
-16baac7  toco: overlay-lineage: Define fingerprint sensor location  [Arian]
-87024b9  davinci: overlay: Leave space for FOD while bouncer is requesting Pattern on PIN  [Demon000]
-d75a2b0  toco: Set TARGET_USES_FOD_ZPOS in BoardConfig  [Vincent Vidal]
-92b47e9  toco: fod: Use FOD_PRESSED_LAYER_ZORDER instead of magic number  [Vincent Vidal]
-17d7305  toco: fod: Add surfaceflinger extension lib  [TheScarastic]
-0c04cab  toco: fod: Add support for Xiaomi's touchfeature  [PIPIPIG233666]
-a73ba4a  toco: fod: Set nit value on sysfs notification  [Demon000]
-b752701  toco: fod: Switch to in-kernel handling of changes  [Demon000]
-8131f67  toco: fod: Frop 
- from logs  [Demon000]
-8b394e7  toco: fod: Use 630nit fod value  [Demon000]
-b937270  toco: fod: Improve semantics  [Demon000]
-50cd9e6  toco: fod: Remove onRelase calls duplication  [Demon000]
-0a1685a  toco: fod: Calculate dim amount based on real brightness  [Demon000]
-c719c25  toco: fod: Implement in-screen fingerprint HAL  [Demon000]
-a962b0d  toco: overlay: Setup fingerprint position  [Arian]
-a60bb47  toco: overlay: Import config_mainBuiltInDisplayCutout from MIUI  [Arian]
-e3c2a76  toco: overlay: Configure rounded corners  [Arian]
-4ddd541  toco: Require V12.1.4.0 firmware  [Arian]
-e75e37d  toco: Initial set of proprietary files  [Arian]
-0ed114a  toco: Add vendor properties  [Arian]
-01d05ed  toco: Import audio configs from MIUI V12.1.4.0.RFNMIXM  [Arian]
-c684b23  toco: Add NFC support  [Arian]
-3b08b13  toco: Configure Verfified boot for product, system and system_ext  [Arian]
-54c13c6  toco: rootdir: Don't mount unused metadata partition  [Arian]
-8c0b6fb  toco: rootdir: Add /boot to fstab  [Demon000]
-aa6487b  toco: rootdir: Import fstab  [Arian]
-9d98289  toco: Configure partitions  [Arian]
-656f899  toco: Add build fingerprint and description from MIUI V12.1.4.0  [Arian]
-0b76971  toco: Inherit from sm6150-common  [Arian]
-3ffd1e4  toco: Don't sign Wifi RROs with platform cert  [David Su]
-5ed23c2  toco: Add TocoWifiOverlay  [Roshan Pius]
-9b4bd9f  toco: overlay: Re-write power_profile based on power_profile_test  [Arian]
-87fdd1e  toco: overlay: Update power profile to match framework change  [Alessandro Astone]
-b2b74e2  toco: overlay: Remove dsp. prefix from audio and video power profiles  [Arian]
-be98df1  toco: overlay: Import power_profile  [Arian]
-3ca42e9  toco: overlay: Import brightness overlays from MIUI  [TheScarastic]
-1de6882  toco: Define kernel config  [Arian]
-78cafab  toco: Configure screen density  [Arian]
-
-* lineage/mirror
-5d86475  Updated to 13-Jul-2021 12:38 UTC  [Kevin F. Haggerty]
-====================
-     2021-07-13    
-====================
-
-* device/xiaomi/sm6150-common
-18ee1a3  sm6150-common: parts: Rename doze brightness to always on brightness  [Arian]
-67e472e  sm6150-common: parts: Ensure doze_mode is set to LBM when disabling AOD  [Arian]
-
-* frameworks/base
-e6ffa41  BiometricPrompt: Automatically add padding to incorporate FOD  [rituj]
-
-* kernel/xiaomi/sm6150
-2a13c00  input: touchscreen: f4_goodix_driver_gt9886: Lock work_stat mutex while resuming to change fod status  [Arian]
-d7b6f06  input: touchscreen: f4_goodix_driver_gt9886: Resume to change fod status  [Arian]
-38c350f  input: touchscreen: goodix_driver_gt9886: Lock work_stat mutex while resuming to change fod status  [Arian]
-22b3b0d  input: touchscreen: goodix_driver_gt9886: Resume to change fod status  [Arian]
-c78a781  drm: msm: dsi-staging: Implement zero brightness doze mode  [Arian]
-de09d313  drm: msm: dsi-staging: Fix logging after disabling doze mode  [Arian]
-9d6e6d1  drm: msm: dsi-staging: Check if panel is initialized before updating doze mode/status  [Arian]
-de3fb66  drm: msm: Add support for backlight remap  [Arian]
-2a1c0db  drm: msm: dsi-staging: Fix brightness level mapping  [Adrian Salido]
-98dffb5  drm: Expose panel_info sysfs node  [Arian]
-2e321d3  drm: msm: dsi-staging: Add support for high brightness mode (HBM)  [Danny Baumann]
-db011a7  ARM64: dts: qcom: xiaomi: Optimize HBM commands for in-kernel dimming  [Demon000]
-8e0837d  ARM64: dts: qcom: xiaomi: Define fod dim lut  [Demon000]
-9427976  ARM64: dts: qcom: xiaomi: Adjust f4-41 panel lpm and hbm brightness  [Arian]
-e422b4f  ARM64: dts: qcom: xiaomi: Define doze lpm and hbm backlight levels  [Demon000]
-a401394  ARM64: dts: qcom: xiaomi: Disable dc dimming during fod hbm commands  [Demon000]
-7084b66  ARM64: dts: qcom: xiaomi: Move fod hbm commands to their proper place  [Demon000]
-62bc6bc  drm: msm: dsi-staging: Trigger drm notifier  [Demon000]
-7a8918e  drm: msm: atomic: Do not trigger drm notifier  [Demon000]
-5fba829  drm: msm: dsi-staging: Cleanup notifier implementation  [Demon000]
-a1c5953  drm: msm: Notify sysfs for fod ui changes  [Demon000]
-d283311  drm: msm: Implement fod handling  [Demon000]
-9f5b42b  drm: msm: dsi-staging: Add dsi_panel_get_backlight  [Demon000]
-0adc7c1  drm: msm: dsi-staging: Add get_main_display  [DevriesL]
-a4754b6  drm: msm: sde: Translate zpos property to fod property  [Demon000]
-ad165b5  drm: msm: dsi-staging: Implement doze mode  [Demon000]
-851f3e5  drm: msm: dsi-staging: Create empty attributes group  [Demon000]
-2d06271  drm: msm: dsi-staging: Modify lp11 mode logic  [Demon000]
-a71de56  drm: msm: dsi-staging: Add panel flags for f4  [Arian]
-4e78a83  drm: msm: Handle ss dcs type  [Demon000]
-69bd7ce  drm: msm: Extend qcom drm notifier  [Demon000]
-2efdf27  Revert "drm: msm: Extend qcom drm notifier"  [Arian]
-1961d33  Revert "drm: msm: Handle ss dcs type"  [Arian]
-32b166f  Revert "drm: msm: dsi-staging: Add panel flags for f4"  [Arian]
-3ca8e90  Revert "drm: msm: dsi-staging: Modify lp11 mode logic"  [Arian]
-6d2d6a1  Revert "drm: msm: dsi-staging: Implement doze high and low brigthness modes"  [Arian]
-1e6679c  Revert "drm: msm: sde: Allow 32bit zpos"  [Arian]
-aec13c73  Revert "drm: msm: sde: Translate zpos property to fod property"  [Arian]
-addbd29  Revert "drm: msm: dsi-staging: Add get_main_display"  [Arian]
-3e672e4  Revert "drm: msm: dsi-staging: Add function for reading backlight value"  [Arian]
-04967ff  Revert "drm: msm: Implement fod handling"  [Arian]
-fbbc5c8  Revert "drm: msm: dsi-staging: Create empty attributes group"  [Arian]
-a3350c6  Revert "drm: msm: Notify sysfs for fod ui changes"  [Arian]
-b987ac4  Revert "drm: msm: atomic: Do not trigger drm notifier"  [Arian]
-6921fd7  Revert "drm: msm: dsi-staging: Trigger drm notifier"  [Arian]
-605af8f  Revert "drm: msm: dsi-staging: Cleanup notifier implementation"  [Arian]
-7a06972  Revert "ARM64: dts: qcom: xiaomi: Move fod hbm commands to their proper place"  [Arian]
-956790c  Revert "ARM64: dts: qcom: xiaomi: Disable dc dimming during fod hbm commands"  [Arian]
-86cafcc  Revert "ARM64: dts: qcom: xiaomi: Define doze lbm and hbm backlight levels"  [Arian]
-87aae94  Revert "ARM64: dts: qcom: xiaomi: Adjust f4-41 panel lbm and hbm brightness"  [Arian]
-39365185  Revert "ARM64: dts: qcom: xiaomi: Define fod dim lut"  [Arian]
-aa9582b  Revert "ARM64: dts: qcom: xiaomi: Optimize HBM commands for in-kernel dimming"  [Arian]
-d559926  Revert "drm: msm: dsi-staging: Add support for high brightness mode (HBM)"  [Arian]
-21f02a4  Revert "drm: Expose panel_info sysfs node"  [Arian]
-437a94b  Revert "drm: msm: dsi-staging: Fix brightness level mapping"  [Arian]
-a5612aa  Revert "drm: msm: Add support for backlight remap"  [Arian]
-264f853  Revert "drm: msm: Implement demura dc dimming"  [Arian]
-77cfd4d  Revert "drm: msm: dsi_panel: Remove skip set backlight"  [Arian]
-9a728c0  input: touchscreen: fts_521: Handle dt2w feature through xiaomi touch  [iGOR121]
+* device/qcom/sepolicy-legacy-um
+5205565  sepolicy-legacy-um: Add sepolicy support for FM domain switch  [himta ram]
 
 * lineage/wiki
-6bc7dcb  Promote Sony Xperia Z3 and Z3 Compact to 18.1  [Arian]
+14852d1  wiki: devices: Promote FP2 to 18.1  [Christian Hoffmann]
+28d8ced  wiki: Add OpenGapps to list of Android 11 compatible gapps packages  [LuK1337]
 
-* packages/apps/Dialer
-2f5b5ea  Dialer: improve search bar  [Timi Rautamäki]
-9f5f0ee  Dialer: set statusbar color same as activity background  [Timi Rautamäki]
-d50c89c  Dialer: update ripple color  [Timi Rautamäki]
-17b9264  Dialer: update dark theme colors  [Timi Rautamäki]
-fa8c2a4  Dialer: correct the expanded search bar height  [Timi Rautamäki]
-
-* packages/apps/TvSettings
-88442b8  HDMI CEC: Add volume preference  [Aaron Kling]
-7420e9f  Show input settings on cec playback devices  [Aaron Kling]
-64bb1d4  TvSettings: Default to not showing bug-report quick setting  [Nolen Johnson]
-
-* system/bt
-2c0856f  Merge tag 'android-11.0.0_r39' of https://android.googlesource.com/platform/system/bt into staging/lineage-18.1_merge-android-11.0.0_r39  [Kevin F. Haggerty]
-
-* vendor/gms
-8a802b5  gms: Update from redfin-rq3a.210705.001  [Arian]
+* packages/apps/Car/Settings
+a582489  Hardcode default pattern size  [Al Sutton]
 
 * vendor/lineage
-a3fc194  lineage: partner_gms: Correctly guard ATV GMS  [Nolen Johnson]
+4ccc17d  soong: Add TARGET_CAMERA_BOOTTIME_TIMESTAMP conditional  [Sebastiano Barezzi]
