@@ -1,79 +1,78 @@
 ====================
-     2021-07-25    
+     2021-08-01    
 ====================
 
 * build/make
-289c2f5  [DNM] Always use release-keys  [Arian]
+88a5c39  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-9664bad  common: Label IAntiFlicker live display service  [Arian]
+a5ca70e  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-3d3a8a8  SystemUI: get rid of build text in qs  [Joey]
-ac825f0d  SystemUI: Add anti flicker tile  [Arian]
-5a2e009  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+0135758  SystemUI: get rid of build text in qs  [Joey]
+66adc28  SystemUI: Add anti flicker tile  [Arian]
+c39c6b2  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-c60075e  Add support for anti flicker mode in LiveDisplay  [Arian]
+a987ba8  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * lineage-sdk
-9de6900  Add support for anti flicker mode in LiveDisplay  [Arian]
-8d81fc6  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+63fba44  Add support for anti flicker mode in LiveDisplay  [Arian]
+e870f78  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+
+* lineage/contributors-cloud-generator
+15fcfef  Update dependencies  [Kevin F. Haggerty]
+9df999d  Bump DEFAULT_CLOUD_SIZE to 2024  [Kevin F. Haggerty]
 
 * lineage/hudson
-c8a7ed0  hudson: add Galaxy S10/Note10 Series  [Tim Zimmermann]
+7f848bd  hudson: Promote bardock/bardockpro to 18.1  [Quallenauge]
+
+* lineage/mirror
+7dadd5b  Updated aosp-minimal to 31-Jul-2021 12:01 UTC  [Tim Schumacher]
 
 * lineage/wiki
-9093f7b  wiki: add Galaxy S10/Note10 Series  [Tim Zimmermann]
+1245431  devices: Promote bardock/bardockpro to 18.1  [Quallenauge]
+2b96c3b  Fix device name in build instruction page  [Bharath]
 
 * packages/apps/LineageParts
-6fd7fe1  Add support for anti flicker mode in LiveDisplay  [Arian]
-d48d3a3  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+cf2ea35  Add support for anti flicker mode in LiveDisplay  [Arian]
+16d1bdb  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+4ff47ab  Regenerate contributors cloud  [Kevin F. Haggerty]
 ====================
-     2021-07-24    
-====================
-
-* lineage/mirror
-0e19fff  Updated to 23-Jul-2021 18:12 UTC  [Kevin F. Haggerty]
-ab2b83c  Updated to 23-Jul-2021 15:15 UTC  [Kevin F. Haggerty]
-be6e87c  Updated to 23-Jul-2021 14:54 UTC  [Kevin F. Haggerty]
-0e7b97e  Updated lineage-minimal to 23-Jul-2021 12:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-f2a84cc  wiki: devices: Yeet lmi in  [Sebastiano Barezzi]
-6fe8343  wiki: Specify required firmware for klte* builds using M RIL  [Kevin F. Haggerty]
-e13ea51  wiki: Specify required firmware for gta4xlwifi  [Kevin F. Haggerty]
-====================
-     2021-07-23    
+     2021-07-31    
 ====================
 
 * lineage/hudson
-f3358e9  hudson: Yeet lmi in  [Sebastiano Barezzi]
+1bdcd3c  Promote FP3 to 18.1  [Daniel Köster]
+69731d4  Regenerate device dependency mappings  [razorloves]
 
 * lineage/mirror
-9bb873c  Updated aosp-minimal to 22-Jul-2021 12:01 UTC  [Tim Schumacher]
-====================
-     2021-07-22    
-====================
-
-* lineage/mirror
-84f64d1  Updated aosp-minimal to 21-Jul-2021 12:01 UTC  [Tim Schumacher]
+b731f22  Updated to 30-Jul-2021 22:30 UTC  [Kevin F. Haggerty]
+44f3640  Updated to 30-Jul-2021 20:25 UTC  [Kevin F. Haggerty]
+5505c3b  Updated to 30-Jul-2021 20:19 UTC  [Kevin F. Haggerty]
+7b13965  Updated aosp-minimal to 30-Jul-2021 12:01 UTC  [Tim Schumacher]
 
 * lineage/wiki
-9d38890  fixup! wiki: Add OpenGapps to list of Android 11 compatible gapps packages  [Jarl-Penguin]
+2ccae66  wiki: devices: Add POCO F3 / Redmi K40 / Mi 11X  [althafvly]
+59cf340  wiki: devices: Promote FP3 to 18.1  [Daniel Köster]
 ====================
-     2021-07-21    
+     2021-07-30    
 ====================
 ====================
-     2021-07-20    
+     2021-07-29    
 ====================
-
-* lineage/wiki
-14852d1  wiki: devices: Promote FP2 to 18.1  [Christian Hoffmann]
-28d8ced  wiki: Add OpenGapps to list of Android 11 compatible gapps packages  [LuK1337]
 ====================
-     2021-07-19    
+     2021-07-28    
+====================
+====================
+     2021-07-27    
 ====================
 
 * lineage/hudson
-4cf4ba7  Promote FP2 to 18.1  [Christian Hoffmann]
+b9246a3  hudson: ship POCO F3 / Redmi K40 / Mi 11X  [althafvly]
+====================
+     2021-07-26    
+====================
+
+* tools/repohooks
+109ae1a  cpplint: switch to open source community fork  [Mike Frysinger]
