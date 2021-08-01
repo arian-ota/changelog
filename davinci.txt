@@ -1,79 +1,77 @@
 ====================
-     2021-07-25    
+     2021-08-01    
 ====================
 
 * build/make
-ec6405d  [DNM] Always use release-keys  [Arian]
+901bdac  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-3a5f5c1  common: Label IAntiFlicker live display service  [Arian]
+1e1099d  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-871a2a8  SystemUI: get rid of build text in qs  [Joey]
-30b9b3e  SystemUI: Add anti flicker tile  [Arian]
-ba24b62  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+b92ee12  SystemUI: get rid of build text in qs  [Joey]
+88b872c  SystemUI: Add anti flicker tile  [Arian]
+8f7cee5  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-dc521a1  Add support for anti flicker mode in LiveDisplay  [Arian]
+c0d1d42  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * lineage-sdk
-b6dd350  Add support for anti flicker mode in LiveDisplay  [Arian]
-7c64c43  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+90cc692  Add support for anti flicker mode in LiveDisplay  [Arian]
+f08073b  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
-* lineage/hudson
-c8a7ed0  hudson: add Galaxy S10/Note10 Series  [Tim Zimmermann]
+* lineage/contributors-cloud-generator
+15fcfef  Update dependencies  [Kevin F. Haggerty]
+9df999d  Bump DEFAULT_CLOUD_SIZE to 2024  [Kevin F. Haggerty]
+
+* lineage/mirror
+7dadd5b  Updated aosp-minimal to 31-Jul-2021 12:01 UTC  [Tim Schumacher]
 
 * lineage/wiki
-9093f7b  wiki: add Galaxy S10/Note10 Series  [Tim Zimmermann]
-f2a84cc  wiki: devices: Yeet lmi in  [Sebastiano Barezzi]
+2b96c3b  Fix device name in build instruction page  [Bharath]
+2ccae66  wiki: devices: Add POCO F3 / Redmi K40 / Mi 11X  [althafvly]
 
 * packages/apps/LineageParts
-c79e618  Add support for anti flicker mode in LiveDisplay  [Arian]
-dafba90  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+5f8b145  Add support for anti flicker mode in LiveDisplay  [Arian]
+9a5c9aa  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+4ff47ab  Regenerate contributors cloud  [Kevin F. Haggerty]
 ====================
-     2021-07-24    
-====================
-
-* lineage/mirror
-0e19fff  Updated to 23-Jul-2021 18:12 UTC  [Kevin F. Haggerty]
-ab2b83c  Updated to 23-Jul-2021 15:15 UTC  [Kevin F. Haggerty]
-be6e87c  Updated to 23-Jul-2021 14:54 UTC  [Kevin F. Haggerty]
-0e7b97e  Updated lineage-minimal to 23-Jul-2021 12:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-6fe8343  wiki: Specify required firmware for klte* builds using M RIL  [Kevin F. Haggerty]
-e13ea51  wiki: Specify required firmware for gta4xlwifi  [Kevin F. Haggerty]
-====================
-     2021-07-23    
+     2021-07-31    
 ====================
 
 * lineage/hudson
-f3358e9  hudson: Yeet lmi in  [Sebastiano Barezzi]
+1bdcd3c  Promote FP3 to 18.1  [Daniel Köster]
+69731d4  Regenerate device dependency mappings  [razorloves]
 
 * lineage/mirror
-9bb873c  Updated aosp-minimal to 22-Jul-2021 12:01 UTC  [Tim Schumacher]
+b731f22  Updated to 30-Jul-2021 22:30 UTC  [Kevin F. Haggerty]
+44f3640  Updated to 30-Jul-2021 20:25 UTC  [Kevin F. Haggerty]
+5505c3b  Updated to 30-Jul-2021 20:19 UTC  [Kevin F. Haggerty]
+7b13965  Updated aosp-minimal to 30-Jul-2021 12:01 UTC  [Tim Schumacher]
 
 * lineage/wiki
-9d38890  fixup! wiki: Add OpenGapps to list of Android 11 compatible gapps packages  [Jarl-Penguin]
+59cf340  wiki: devices: Promote FP3 to 18.1  [Daniel Köster]
 ====================
-     2021-07-22    
-====================
-
-* lineage/mirror
-84f64d1  Updated aosp-minimal to 21-Jul-2021 12:01 UTC  [Tim Schumacher]
-====================
-     2021-07-21    
+     2021-07-30    
 ====================
 ====================
-     2021-07-20    
+     2021-07-29    
 ====================
-
-* lineage/wiki
-14852d1  wiki: devices: Promote FP2 to 18.1  [Christian Hoffmann]
-28d8ced  wiki: Add OpenGapps to list of Android 11 compatible gapps packages  [LuK1337]
 ====================
-     2021-07-19    
+     2021-07-28    
+====================
+====================
+     2021-07-27    
 ====================
 
 * lineage/hudson
-4cf4ba7  Promote FP2 to 18.1  [Christian Hoffmann]
+b9246a3  hudson: ship POCO F3 / Redmi K40 / Mi 11X  [althafvly]
+
+* tools/repohooks
+109ae1a  cpplint: switch to open source community fork  [Mike Frysinger]
+====================
+     2021-07-26    
+====================
+
+* lineage/hudson
+0f5db79  fixup! hudson: add Galaxy S10/Note10 Series  [Tim Zimmermann]
