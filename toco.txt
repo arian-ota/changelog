@@ -1,114 +1,73 @@
 ====================
-     2021-07-26    
+     2021-08-02    
 ====================
 
 * frameworks/base
-ae7e1e0  Reset all package signatures on boot  [Sam Mortimer]
+4cb3b49  Reset all package signatures on boot  [Sam Mortimer]
 ====================
-     2021-07-25    
+     2021-08-01    
+====================
+
+* lineage/contributors-cloud-generator
+15fcfef  Update dependencies  [Kevin F. Haggerty]
+9df999d  Bump DEFAULT_CLOUD_SIZE to 2024  [Kevin F. Haggerty]
+
+* lineage/hudson
+7f848bd  hudson: Promote bardock/bardockpro to 18.1  [Quallenauge]
+
+* lineage/mirror
+7dadd5b  Updated aosp-minimal to 31-Jul-2021 12:01 UTC  [Tim Schumacher]
+
+* lineage/wiki
+1245431  devices: Promote bardock/bardockpro to 18.1  [Quallenauge]
+2b96c3b  Fix device name in build instruction page  [Bharath]
+
+* packages/apps/LineageParts
+63437b5  Regenerate contributors cloud  [Kevin F. Haggerty]
+====================
+     2021-07-31    
 ====================
 
 * lineage/hudson
-0f5db79  fixup! hudson: add Galaxy S10/Note10 Series  [Tim Zimmermann]
-c8a7ed0  hudson: add Galaxy S10/Note10 Series  [Tim Zimmermann]
+1bdcd3c  Promote FP3 to 18.1  [Daniel Köster]
+69731d4  Regenerate device dependency mappings  [razorloves]
+
+* lineage/mirror
+b731f22  Updated to 30-Jul-2021 22:30 UTC  [Kevin F. Haggerty]
+44f3640  Updated to 30-Jul-2021 20:25 UTC  [Kevin F. Haggerty]
+5505c3b  Updated to 30-Jul-2021 20:19 UTC  [Kevin F. Haggerty]
+7b13965  Updated aosp-minimal to 30-Jul-2021 12:01 UTC  [Tim Schumacher]
 
 * lineage/wiki
-9093f7b  wiki: add Galaxy S10/Note10 Series  [Tim Zimmermann]
+2ccae66  wiki: devices: Add POCO F3 / Redmi K40 / Mi 11X  [althafvly]
+59cf340  wiki: devices: Promote FP3 to 18.1  [Daniel Köster]
 ====================
-     2021-07-24    
+     2021-07-30    
 ====================
-
-* device/xiaomi/davinci
-3640f08  davinci: init: Workaround safetynet  [Arian]
-03616ca  TMP Allow broken dup rules for gapps  [Arian]
-ff9cde2  davinci: rootdir: Commonize zram fstab entry  [Adithya R]
-
-* device/xiaomi/sm6150-common
-abd793c  sm6150-common: fstab: Correct zram parameter names  [YH_Lin]
-1f959d0  sm6150-common: fstab: Make zram swap /data/per_boot  [Minchan Kim]
-560aefb  sm6150-common: Increase ZRAM to 2GB  [Tim Murray]
-73becf7  sm6150-common: Tune zram performance  [Wei Wang]
-b2d8bf6  sm6150-common: Configure zram from separate fstab  [Adithya R]
 
 * frameworks/base
-8cee403  InputManagerService: Flag when an injected event is a real input  [Sam Mortimer]
+dda6759  Revert "InputManagerService: Flag when an injected event is a real input"  [Sam Mortimer]
 
 * frameworks/native
-240b811  Use the original device ID when the injected event is unchanged  [Sean McCreary]
-
-* kernel/xiaomi/sm6150
-a05bd1d  input: touchscreen: goodix_driver_gt9886: Always lock work_stat mutex when changing fod status  [Arian]
-
-* lineage/mirror
-0e19fff  Updated to 23-Jul-2021 18:12 UTC  [Kevin F. Haggerty]
-ab2b83c  Updated to 23-Jul-2021 15:15 UTC  [Kevin F. Haggerty]
-be6e87c  Updated to 23-Jul-2021 14:54 UTC  [Kevin F. Haggerty]
-0e7b97e  Updated lineage-minimal to 23-Jul-2021 12:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-f2a84cc  wiki: devices: Yeet lmi in  [Sebastiano Barezzi]
-6fe8343  wiki: Specify required firmware for klte* builds using M RIL  [Kevin F. Haggerty]
-e13ea51  wiki: Specify required firmware for gta4xlwifi  [Kevin F. Haggerty]
+23c9f41  Revert "Use the original device ID when the injected event is unchanged"  [Sam Mortimer]
 
 * vendor/lineage
-de83dff  Add generic targets for automotive  [Tom Pratt]
+882e97e  roomservice: add repo to syncable repo list if dir doesn't exist  [Timi Rautamäki]
 ====================
-     2021-07-23    
+     2021-07-29    
+====================
+====================
+     2021-07-28    
 ====================
 
-* lineage-sdk
-e136372  Read sensitive_pn.xml from product partition  [Michael Bestas]
+* frameworks/base
+fa60142  BACKPORT: Fix initialization of USER_ROTATION setting.  [Tomasz Wasilczyk]
+====================
+     2021-07-27    
+====================
+
+* frameworks/base
+751fb2d  fixup! InputManagerService: Flag when an injected event is a real input  [Al Sutton]
 
 * lineage/hudson
-f3358e9  hudson: Yeet lmi in  [Sebastiano Barezzi]
-
-* lineage/mirror
-9bb873c  Updated aosp-minimal to 22-Jul-2021 12:01 UTC  [Tim Schumacher]
-
-* packages/apps/Recorder
-2c55be7  Recorder: Add share selected list items  [2bllw8]
-ec098f9  Recorder: Add delete selected list items  [2bllw8]
-cf7e981  Recorder: Add "Delete all" to the recording list  [Michael W]
-
-* packages/services/Car
-af0d347  Hardcode default pattern size  [Tom Pratt]
-
-* vendor/lineage
-f16a9d9  Move sensitive_pn.xml to product partition  [Michael Bestas]
-====================
-     2021-07-22    
-====================
-
-* build/make
-10de37b  Fix PRODUCT_PROPERTY_OVERRIDES usage in full_base_telephony.mk  [Han Wang]
-
-* lineage/mirror
-84f64d1  Updated aosp-minimal to 21-Jul-2021 12:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-9d38890  fixup! wiki: Add OpenGapps to list of Android 11 compatible gapps packages  [Jarl-Penguin]
-
-* packages/services/Car
-3999866  Exclude Home app from automotive builds  [Tom Pratt]
-====================
-     2021-07-21    
-====================
-
-* packages/services/Car
-3ef9935  Don't copy Car specific boot animation for Lineage builds  [Tom Pratt]
-====================
-     2021-07-20    
-====================
-
-* device/qcom/sepolicy-legacy-um
-5205565  sepolicy-legacy-um: Add sepolicy support for FM domain switch  [himta ram]
-
-* lineage/wiki
-14852d1  wiki: devices: Promote FP2 to 18.1  [Christian Hoffmann]
-28d8ced  wiki: Add OpenGapps to list of Android 11 compatible gapps packages  [LuK1337]
-
-* packages/apps/Car/Settings
-a582489  Hardcode default pattern size  [Al Sutton]
-
-* vendor/lineage
-4ccc17d  soong: Add TARGET_CAMERA_BOOTTIME_TIMESTAMP conditional  [Sebastiano Barezzi]
+b9246a3  hudson: ship POCO F3 / Redmi K40 / Mi 11X  [althafvly]
