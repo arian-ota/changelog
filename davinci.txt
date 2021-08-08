@@ -1,78 +1,94 @@
 ====================
-     2021-08-01    
+     2021-08-08    
 ====================
+
+* build/soong
+2c54649  soong: move header override to compiler.go  [Jan Altensen]
 
 * frameworks/base
-659decf  Reset all package signatures on boot  [Sam Mortimer]
-
-* lineage/hudson
-7f848bd  hudson: Promote bardock/bardockpro to 18.1  [Quallenauge]
-
-* lineage/wiki
-1245431  devices: Promote bardock/bardockpro to 18.1  [Quallenauge]
+4786098  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
 ====================
-     2021-07-31    
+     2021-08-07    
 ====================
 
-* lineage/contributors-cloud-generator
-15fcfef  Update dependencies  [Kevin F. Haggerty]
-9df999d  Bump DEFAULT_CLOUD_SIZE to 2024  [Kevin F. Haggerty]
+* device/xiaomi/davinci
+6d96339  TMP Allow broken dup rules for gapps  [Arian]
+15ff405  davinci: rootdir: Commonize zram fstab entry  [Adithya R]
+4402d30  davinci: Make firmware assertions region specific  [Arian]
+f5cf717  Revert "davinci: overlay: Add support for doze auto brightness"  [Arian]
+f87fcaa  davinci: fod: Set fod status using xiaomi-touch  [Arian]
+
+* device/xiaomi/sm6150-common
+d299288  sm6150-common: mm: Adjust zram write back policy  [Martin Liu]
+997e8f0  sm6150-common: fstab: Correct zram parameter names  [YH_Lin]
+30494c5  sm6150-common: fstab: Switch zram swap to /data/per_boot  [YH_Lin]
+9010fc7  sm6150-common: Enable zram writeback  [Jenhao Chen]
+
+* kernel/xiaomi/sm6150
+f1ff935  ARM64: configs: {davinci, phoenix, toco, tucana}: Enable ZRAM WRITEBACK  [YH_Lin]
 
 * lineage/mirror
-7dadd5b  Updated aosp-minimal to 31-Jul-2021 12:01 UTC  [Tim Schumacher]
-b731f22  Updated to 30-Jul-2021 22:30 UTC  [Kevin F. Haggerty]
-44f3640  Updated to 30-Jul-2021 20:25 UTC  [Kevin F. Haggerty]
-5505c3b  Updated to 30-Jul-2021 20:19 UTC  [Kevin F. Haggerty]
+e5e1eb2  Updated aosp-minimal to 07-Aug-2021 12:01 UTC  [Tim Schumacher]
+====================
+     2021-08-06    
+====================
+====================
+     2021-08-05    
+====================
+
+* lineage/hudson
+998fdb3  hudson: Add m20lte  [SamarV-121]
+f7feebe  hudson: Exynos 7880 lives on!  [filiprrs]
+
+* lineage/mirror
+553e32e  Updated to 05-Aug-2021 03:25 UTC  [Kevin F. Haggerty]
 
 * lineage/wiki
-2b96c3b  Fix device name in build instruction page  [Bharath]
-2ccae66  wiki: devices: Add POCO F3 / Redmi K40 / Mi 11X  [althafvly]
+57f15a4  wiki: devices: Add m20lte  [SamarV-121]
+47f2139  wiki: Promote a5y17lte and a7y17lte to 18.1  [filiprrs]
+====================
+     2021-08-04    
+====================
 
-* packages/apps/LineageParts
-63437b5  Regenerate contributors cloud  [Kevin F. Haggerty]
+* lineage/mirror
+412bcc3  Updated aosp-minimal to 04-Aug-2021 12:01 UTC  [Tim Schumacher]
 ====================
-     2021-07-30    
+     2021-08-03    
 ====================
+
+* android
+eac253c  manifest: android-11.0.0_r39 -> android-11.0.0_r40  [Kevin F. Haggerty]
+
+* build/make
+2425273  Merge tag 'android-11.0.0_r40' into staging/lineage-18.1_merge-android-11.0.0_r40  [Kevin F. Haggerty]
 
 * frameworks/base
-dda6759  Revert "InputManagerService: Flag when an injected event is a real input"  [Sam Mortimer]
+ff0dd62  Merge tag 'android-11.0.0_r40' into staging/lineage-18.1_merge-android-11.0.0_r40  [Kevin F. Haggerty]
 
-* frameworks/native
-23c9f41  Revert "Use the original device ID when the injected event is unchanged"  [Sam Mortimer]
-
-* lineage/hudson
-1bdcd3c  Promote FP3 to 18.1  [Daniel Köster]
-69731d4  Regenerate device dependency mappings  [razorloves]
+* frameworks/opt/telephony
+e3d255b  Merge tag 'android-11.0.0_r40' into staging/lineage-18.1_merge-android-11.0.0_r40  [Kevin F. Haggerty]
 
 * lineage/mirror
-7b13965  Updated aosp-minimal to 30-Jul-2021 12:01 UTC  [Tim Schumacher]
+301eb0f  Updated aosp-minimal to 03-Aug-2021 12:01 UTC  [Tim Schumacher]
 
-* lineage/wiki
-59cf340  wiki: devices: Promote FP3 to 18.1  [Daniel Köster]
+* packages/apps/Settings
+e4c37ea  Merge tag 'android-11.0.0_r40' into staging/lineage-18.1_merge-android-11.0.0_r40  [Kevin F. Haggerty]
+
+* packages/services/Telephony
+20ec99f  Merge tag 'android-11.0.0_r40' into staging/lineage-18.1_merge-android-11.0.0_r40  [Kevin F. Haggerty]
 
 * vendor/lineage
-882e97e  roomservice: add repo to syncable repo list if dir doesn't exist  [Timi Rautamäki]
+9887e1f  lineage: Don't enforce inclusion of common compatibility matrix  [LuK1337]
 ====================
-     2021-07-29    
-====================
-====================
-     2021-07-28    
-====================
-====================
-     2021-07-27    
+     2021-08-02    
 ====================
 
-* frameworks/base
-fa60142  BACKPORT: Fix initialization of USER_ROTATION setting.  [Tomasz Wasilczyk]
-====================
-     2021-07-26    
-====================
+* android
+c7d9acc  manifest: Track system HIDL tools.  [Alexander Koskovich]
 
-* frameworks/base
-751fb2d  fixup! InputManagerService: Flag when an injected event is a real input  [Al Sutton]
+* system/tools/hidl
+44f4d6a  prebuilt_hidl_interfaces  [Steven Moreland]
+cfffcdc  hidl_metadata_test  [Steven Moreland]
 
-* lineage/hudson
-b9246a3  hudson: ship POCO F3 / Redmi K40 / Mi 11X  [althafvly]
-
-* tools/repohooks
-109ae1a  cpplint: switch to open source community fork  [Mike Frysinger]
+* vendor/lineage
+78870c2  lineage: Add framework compatibility matrix for Lineage HALs.  [Alexander Koskovich]
