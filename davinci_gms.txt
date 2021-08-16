@@ -1,92 +1,34 @@
 ====================
-     2021-08-08    
+     2021-08-16    
 ====================
 
 * frameworks/base
-009c2d7  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+2a1f789  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
 ====================
-     2021-08-07    
+     2021-08-15    
 ====================
-
-* build/soong
-2c54649  soong: move header override to compiler.go  [Jan Altensen]
-
-* lineage/mirror
-e5e1eb2  Updated aosp-minimal to 07-Aug-2021 12:01 UTC  [Tim Schumacher]
-====================
-     2021-08-06    
-====================
-
-* device/xiaomi/davinci
-6d96339  TMP Allow broken dup rules for gapps  [Arian]
-15ff405  davinci: rootdir: Commonize zram fstab entry  [Adithya R]
-4402d30  davinci: Make firmware assertions region specific  [Arian]
-f5cf717  Revert "davinci: overlay: Add support for doze auto brightness"  [Arian]
-f87fcaa  davinci: fod: Set fod status using xiaomi-touch  [Arian]
-
-* device/xiaomi/sm6150-common
-d299288  sm6150-common: mm: Adjust zram write back policy  [Martin Liu]
-997e8f0  sm6150-common: fstab: Correct zram parameter names  [YH_Lin]
-30494c5  sm6150-common: fstab: Switch zram swap to /data/per_boot  [YH_Lin]
-9010fc7  sm6150-common: Enable zram writeback  [Jenhao Chen]
-
-* kernel/xiaomi/sm6150
-f1ff935  ARM64: configs: {davinci, phoenix, toco, tucana}: Enable ZRAM WRITEBACK  [YH_Lin]
-====================
-     2021-08-05    
-====================
-
-* lineage/hudson
-998fdb3  hudson: Add m20lte  [SamarV-121]
-f7feebe  hudson: Exynos 7880 lives on!  [filiprrs]
-
-* lineage/mirror
-553e32e  Updated to 05-Aug-2021 03:25 UTC  [Kevin F. Haggerty]
 
 * lineage/wiki
-57f15a4  wiki: devices: Add m20lte  [SamarV-121]
-47f2139  wiki: Promote a5y17lte and a7y17lte to 18.1  [filiprrs]
+2c7a49a  wiki: zippo: Add required Android 11 FW  [Marc Bourgoin]
+b1990da  wiki: Mention supported firmware version in firmware_update_oneplus_fastbootd  [LuK1337]
 ====================
-     2021-08-04    
+     2021-08-14    
 ====================
-
-* lineage/mirror
-412bcc3  Updated aosp-minimal to 04-Aug-2021 12:01 UTC  [Tim Schumacher]
 ====================
-     2021-08-03    
+     2021-08-13    
 ====================
-
-* android
-eac253c  manifest: android-11.0.0_r39 -> android-11.0.0_r40  [Kevin F. Haggerty]
-
-* build/make
-2425273  Merge tag 'android-11.0.0_r40' into staging/lineage-18.1_merge-android-11.0.0_r40  [Kevin F. Haggerty]
-
-* frameworks/base
-ff0dd62  Merge tag 'android-11.0.0_r40' into staging/lineage-18.1_merge-android-11.0.0_r40  [Kevin F. Haggerty]
-
-* frameworks/opt/telephony
-e3d255b  Merge tag 'android-11.0.0_r40' into staging/lineage-18.1_merge-android-11.0.0_r40  [Kevin F. Haggerty]
-
-* lineage/mirror
-301eb0f  Updated aosp-minimal to 03-Aug-2021 12:01 UTC  [Tim Schumacher]
-
-* packages/apps/Settings
-e4c37ea  Merge tag 'android-11.0.0_r40' into staging/lineage-18.1_merge-android-11.0.0_r40  [Kevin F. Haggerty]
-
-* packages/services/Telephony
-20ec99f  Merge tag 'android-11.0.0_r40' into staging/lineage-18.1_merge-android-11.0.0_r40  [Kevin F. Haggerty]
 ====================
-     2021-08-02    
+     2021-08-12    
 ====================
 
-* android
-c7d9acc  manifest: Track system HIDL tools.  [Alexander Koskovich]
+* lineage/wiki
+081736c  signing_builds: migration: Correct the command to run the script  [Dhina17]
+====================
+     2021-08-11    
+====================
+====================
+     2021-08-10    
+====================
 
-* system/tools/hidl
-44f4d6a  prebuilt_hidl_interfaces  [Steven Moreland]
-cfffcdc  hidl_metadata_test  [Steven Moreland]
-
-* vendor/lineage
-9887e1f  lineage: Don't enforce inclusion of common compatibility matrix  [LuK1337]
-78870c2  lineage: Add framework compatibility matrix for Lineage HALs.  [Alexander Koskovich]
+* lineage/wiki
+fb389da  wiki: Set has_recovery_partition=true for hotdogb  [LuK1337]
