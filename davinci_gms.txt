@@ -1,57 +1,52 @@
 ====================
-     2021-08-15    
+     2021-08-22    
 ====================
 
 * build/make
-068d2e7  [DNM] Always use release-keys  [Arian]
+76876ee  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-4811151  common: Label IAntiFlicker live display service  [Arian]
+28b7e41  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-6793449  SystemUI: get rid of build text in qs  [Joey]
-86974619  SystemUI: Add anti flicker tile  [Arian]
-868bf12  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+c5abd12  SystemUI: get rid of build text in qs  [Joey]
+bfd39c5  SystemUI: Add anti flicker tile  [Arian]
+5df7376  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-c8488bd  Add support for anti flicker mode in LiveDisplay  [Arian]
+29cba4e  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * lineage-sdk
-06fd94c  Add support for anti flicker mode in LiveDisplay  [Arian]
-4ced655  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+384c7e9  Add support for anti flicker mode in LiveDisplay  [Arian]
+8ccd788  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
-* lineage/wiki
-2c7a49a  wiki: zippo: Add required Android 11 FW  [Marc Bourgoin]
-b1990da  wiki: Mention supported firmware version in firmware_update_oneplus_fastbootd  [LuK1337]
+* lineage/mirror
+32d1156  Updated aosp-minimal to 21-Aug-2021 12:01 UTC  [Tim Schumacher]
 
 * packages/apps/LineageParts
-ec1ea80  Add support for anti flicker mode in LiveDisplay  [Arian]
-65262ee  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+e2ff5e4  Add support for anti flicker mode in LiveDisplay  [Arian]
+49708ec  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-08-14    
-====================
-====================
-     2021-08-13    
+     2021-08-21    
 ====================
 ====================
-     2021-08-12    
+     2021-08-20    
 ====================
 
-* lineage/wiki
-081736c  signing_builds: migration: Correct the command to run the script  [Dhina17]
+* lineage/mirror
+8c22d3b  Updated aosp-minimal to 19-Aug-2021 12:02 UTC  [Tim Schumacher]
 ====================
-     2021-08-11    
-====================
-
-* device/lineage/sepolicy
-72049da  atv: Allow setupwraith configs to be set by vendor  [Aaron Kling]
-====================
-     2021-08-10    
+     2021-08-19    
 ====================
 ====================
-     2021-08-09    
+     2021-08-18    
 ====================
 
-* lineage/wiki
-fb389da  wiki: Set has_recovery_partition=true for hotdogb  [LuK1337]
-a3ab922  Add link to FAQ on start page  [fe60]
+* lineage/mirror
+5471ac2  Updated aosp-minimal to 18-Aug-2021 01:08 UTC  [Tim Schumacher]
+====================
+     2021-08-17    
+====================
+====================
+     2021-08-16    
+====================
