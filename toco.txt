@@ -1,34 +1,37 @@
 ====================
-     2021-08-16    
+     2021-08-23    
 ====================
 
 * frameworks/base
-2c521ac  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+0986d6f  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+
+* vendor/lineage
+38f3891  lineage: config: DEVICE_PACKAGE_OVERLAYS -> PRODUCT_PACKAGE_OVERLAYS  [Alexander Koskovich]
+393b0e8  lineage: overlay: Remove MMS user agent URL  [Alexander Koskovich]
 ====================
-     2021-08-15    
+     2021-08-22    
 ====================
 
-* lineage/wiki
-2c7a49a  wiki: zippo: Add required Android 11 FW  [Marc Bourgoin]
-b1990da  wiki: Mention supported firmware version in firmware_update_oneplus_fastbootd  [LuK1337]
+* lineage/mirror
+32d1156  Updated aosp-minimal to 21-Aug-2021 12:01 UTC  [Tim Schumacher]
 ====================
-     2021-08-14    
-====================
-====================
-     2021-08-13    
+     2021-08-21    
 ====================
 ====================
-     2021-08-12    
+     2021-08-20    
 ====================
 
-* lineage/wiki
-081736c  signing_builds: migration: Correct the command to run the script  [Dhina17]
+* lineage/mirror
+8c22d3b  Updated aosp-minimal to 19-Aug-2021 12:02 UTC  [Tim Schumacher]
 ====================
-     2021-08-11    
+     2021-08-19    
 ====================
 ====================
-     2021-08-10    
+     2021-08-18    
 ====================
 
-* lineage/wiki
-fb389da  wiki: Set has_recovery_partition=true for hotdogb  [LuK1337]
+* lineage/mirror
+5471ac2  Updated aosp-minimal to 18-Aug-2021 01:08 UTC  [Tim Schumacher]
+====================
+     2021-08-17    
+====================
