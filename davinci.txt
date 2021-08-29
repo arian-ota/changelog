@@ -1,52 +1,52 @@
 ====================
-     2021-08-22    
+     2021-08-29    
 ====================
 
 * build/make
-1b344ca  [DNM] Always use release-keys  [Arian]
-
-* device/lineage/sepolicy
-7720caf  common: Label IAntiFlicker live display service  [Arian]
+2d5364b  [DNM] Always use release-keys  [Arian]
 
 * frameworks/base
-c755ee6  SystemUI: get rid of build text in qs  [Joey]
-d1e0910  SystemUI: Add anti flicker tile  [Arian]
-24c64e8  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+15f287d  SystemUI: get rid of build text in qs  [Joey]
+079d1ad  SystemUI: Add anti flicker tile  [Arian]
+5e5d00c  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-8397dc7  Add support for anti flicker mode in LiveDisplay  [Arian]
+e0978b5  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * lineage-sdk
-d3e55bb  Add support for anti flicker mode in LiveDisplay  [Arian]
-10728a4  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+42bbd73  Add support for anti flicker mode in LiveDisplay  [Arian]
+c6bb549  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
-* lineage/mirror
-32d1156  Updated aosp-minimal to 21-Aug-2021 12:01 UTC  [Tim Schumacher]
+* lineage/wiki
+2a96730  wiki: Use correct closing tags in _includes/deviceinfo.html  [LuK1337]
 
 * packages/apps/LineageParts
-bc6b23f  Add support for anti flicker mode in LiveDisplay  [Arian]
-85ff228  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+bdf46e2  Add support for anti flicker mode in LiveDisplay  [Arian]
+56429c1  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-08-21    
-====================
-====================
-     2021-08-20    
+     2021-08-28    
 ====================
 
 * lineage/mirror
-8c22d3b  Updated aosp-minimal to 19-Aug-2021 12:02 UTC  [Tim Schumacher]
+1745da7  Updated aosp-minimal to 27-Aug-2021 12:02 UTC  [Tim Schumacher]
 ====================
-     2021-08-19    
+     2021-08-27    
+====================
+
+* lineage/hudson
+f3b5874  hudson: Welcome to POCO X3 Pro  [Sebastiano Barezzi]
+====================
+     2021-08-26    
 ====================
 ====================
-     2021-08-18    
+     2021-08-25    
 ====================
 
 * lineage/mirror
-5471ac2  Updated aosp-minimal to 18-Aug-2021 01:08 UTC  [Tim Schumacher]
+c45da7b  Updated aosp-minimal to 24-Aug-2021 12:01 UTC  [Tim Schumacher]
 ====================
-     2021-08-17    
+     2021-08-24    
 ====================
 ====================
-     2021-08-16    
+     2021-08-23    
 ====================
