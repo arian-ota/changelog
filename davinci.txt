@@ -1,33 +1,88 @@
 ====================
-     2021-08-22    
+     2021-08-29    
 ====================
 
 * frameworks/base
-53f561b  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+9fc022e  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
 ====================
-     2021-08-21    
-====================
-
-* lineage/mirror
-32d1156  Updated aosp-minimal to 21-Aug-2021 12:01 UTC  [Tim Schumacher]
-====================
-     2021-08-20    
-====================
-====================
-     2021-08-19    
+     2021-08-28    
 ====================
 
-* lineage/mirror
-8c22d3b  Updated aosp-minimal to 19-Aug-2021 12:02 UTC  [Tim Schumacher]
+* lineage/wiki
+2a96730  wiki: Use correct closing tags in _includes/deviceinfo.html  [LuK1337]
 ====================
-     2021-08-18    
+     2021-08-27    
 ====================
 
+* lineage/hudson
+f3b5874  hudson: Welcome to POCO X3 Pro  [Sebastiano Barezzi]
+
 * lineage/mirror
-5471ac2  Updated aosp-minimal to 18-Aug-2021 01:08 UTC  [Tim Schumacher]
+1745da7  Updated aosp-minimal to 27-Aug-2021 12:02 UTC  [Tim Schumacher]
 ====================
-     2021-08-17    
+     2021-08-26    
 ====================
 ====================
-     2021-08-16    
+     2021-08-25    
 ====================
+
+* packages/apps/Etar
+e640218  Divider color fixes (#973)  [Kavita Patil]
+9539704  Fixed crash of WeekView, Agenda, Settings & MonthView screens when calendar permission is not given (#965)  [Kavita Patil]
+043c90b  updated build settings for more aggressive CPU and memory utilization  [Sergey Parshin]
+abebf06  Bugfix Release  [Gitsaibot]
+7db07e2  Refresh view only when themePref "system" is selected (#941)  [Gitsaibot]
+0289951  Home time zone setting grayed out if not enabled  [Gitsaibot]
+b1eea5c  Bump kotlinx-coroutines-core from 1.5.0 to 1.5.1  [dependabot[bot]]
+1230f9a  Bump kotlinx-coroutines-android from 1.5.0 to 1.5.1  [dependabot[bot]]
+4ecfef0  Bump gradle from 4.2.1 to 4.2.2  [dependabot[bot]]
+b4d9ec5  Bump material from 1.3.0 to 1.4.0  [dependabot[bot]]
+3de0725  Bump kotlin_version from 1.5.0 to 1.5.20  [dependabot[bot]]
+756efac  Replace dip with sp in event info text size  [04cfb1ed]
+b86f79c  Avoid text overlapping in start, end date fields (#946)  [04cfb1ed]
+12e5b75  Update submodules  [Jochen Sprickerhof]
+
+* packages/apps/Seedvault
+e0d53f4  Merge branch 'android11' of https://github.com/seedvault-app/seedvault into lineage-18.1  [Michael Bestas]
+====================
+     2021-08-24    
+====================
+
+* device/xiaomi/davinci
+f8606b2  TMP Allow broken dup rules for gapps  [Arian]
+29be67d  davinci: Turn on BOARD_USES_METADATA_PARTITION  [Jeongik Cha]
+8a298a1  Revert "davinci: rootdir: Remove metadata from fstab"  [Arian]
+
+* device/xiaomi/sm6150-common
+0a41f5c  sm6150-common: parts: AodSensor: Remove useless SystemClock include  [Arian]
+
+* lineage/mirror
+c45da7b  Updated aosp-minimal to 24-Aug-2021 12:01 UTC  [Tim Schumacher]
+====================
+     2021-08-23    
+====================
+
+* frameworks/base
+0071222  AutoBrightness: Add support for one shot auto-brightness:  [Cédric Bellegarde]
+
+* lineage-sdk
+6e7936c  lineage-sdk: Add preference keys for one shot auto-brightness  [Cédric Bellegarde]
+
+* packages/apps/Messaging
+07958b8  Automatic translation import  [Michael Bestas]
+
+* packages/apps/Settings
+ffd8671  Settings: Add preference for one shot auto-brightness  [Cédric Bellegarde]
+
+* tools/extract-utils
+72d5bdf  fixup! extract_utils: Add support for overriding packages  [LuK1337]
+3749ce5  extract_utils: Add support for overriding packages  [TheStrix]
+eed0c8c  extract_utils: Skip colored echo when piped  [Bruno Martins]
+f12ce8b  extract_utils: Add a bit of color to the output  [Bruno Martins]
+ac8ec32  extract_utils: Introduce colored echo helper function  [Bruno Martins]
+
+* vendor/lineage
+d5b4b59  kernel: Fix vdso32 building for 4.19+ kernels  [LibXZR]
+
+* vendor/qcom/opensource/usb
+561ce41  usb: Add USB Soong namespace to product makefile.  [Alexander Koskovich]
