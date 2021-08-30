@@ -1,187 +1,79 @@
 ====================
-     2021-08-23    
+     2021-08-30    
 ====================
 
 * frameworks/base
-206fd4e  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
-
-* packages/apps/Messaging
-07958b8  Automatic translation import  [Michael Bestas]
-
-* vendor/lineage
-38f3891  lineage: config: DEVICE_PACKAGE_OVERLAYS -> PRODUCT_PACKAGE_OVERLAYS  [Alexander Koskovich]
-393b0e8  lineage: overlay: Remove MMS user agent URL  [Alexander Koskovich]
+d3a1b730  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
 ====================
-     2021-08-22    
+     2021-08-29    
 ====================
 ====================
-     2021-08-21    
+     2021-08-28    
 ====================
 
-* frameworks/base
-8a27e35  Automatic translation import  [Michael Bestas]
+* lineage/wiki
+2a96730  wiki: Use correct closing tags in _includes/deviceinfo.html  [LuK1337]
+====================
+     2021-08-27    
+====================
 
-* lineage-sdk
-ce85343  Automatic translation import  [Michael Bestas]
+* lineage/hudson
+f3b5874  hudson: Welcome to POCO X3 Pro  [Sebastiano Barezzi]
 
 * lineage/mirror
-32d1156  Updated aosp-minimal to 21-Aug-2021 12:01 UTC  [Tim Schumacher]
-
-* packages/apps/AudioFX
-3eaa8f2  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Bluetooth
-de55f17  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Camera2
-a4c840a  Automatic translation import  [Michael Bestas]
-
-* packages/apps/CellBroadcastReceiver
-5ff5102  Automatic translation import  [Michael Bestas]
-
-* packages/apps/CertInstaller
-6a116c7  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Contacts
-631ce50  Automatic translation import  [Michael Bestas]
-
-* packages/apps/DeskClock
-b3433a2  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Dialer
-087d382  Automatic translation import  [Michael Bestas]
-
-* packages/apps/DocumentsUI
-ea74df8  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Eleven
-7c8a3fd  Automatic translation import  [Michael Bestas]
-
-* packages/apps/EmergencyInfo
-00a46ad  Automatic translation import  [Michael Bestas]
+1745da7  Updated aosp-minimal to 27-Aug-2021 12:02 UTC  [Tim Schumacher]
+====================
+     2021-08-26    
+====================
+====================
+     2021-08-25    
+====================
 
 * packages/apps/Etar
-57ca7e4  Automatic translation import  [Michael Bestas]
+e640218  Divider color fixes (#973)  [Kavita Patil]
+9539704  Fixed crash of WeekView, Agenda, Settings & MonthView screens when calendar permission is not given (#965)  [Kavita Patil]
+043c90b  updated build settings for more aggressive CPU and memory utilization  [Sergey Parshin]
+abebf06  Bugfix Release  [Gitsaibot]
+7db07e2  Refresh view only when themePref "system" is selected (#941)  [Gitsaibot]
+0289951  Home time zone setting grayed out if not enabled  [Gitsaibot]
+b1eea5c  Bump kotlinx-coroutines-core from 1.5.0 to 1.5.1  [dependabot[bot]]
+1230f9a  Bump kotlinx-coroutines-android from 1.5.0 to 1.5.1  [dependabot[bot]]
+4ecfef0  Bump gradle from 4.2.1 to 4.2.2  [dependabot[bot]]
+b4d9ec5  Bump material from 1.3.0 to 1.4.0  [dependabot[bot]]
+3de0725  Bump kotlin_version from 1.5.0 to 1.5.20  [dependabot[bot]]
+756efac  Replace dip with sp in event info text size  [04cfb1ed]
+b86f79c  Avoid text overlapping in start, end date fields (#946)  [04cfb1ed]
+12e5b75  Update submodules  [Jochen Sprickerhof]
 
-* packages/apps/ExactCalculator
-6d116dd  Automatic translation import  [Michael Bestas]
+* packages/apps/Seedvault
+e0d53f4  Merge branch 'android11' of https://github.com/seedvault-app/seedvault into lineage-18.1  [Michael Bestas]
+====================
+     2021-08-24    
+====================
 
-* packages/apps/FMRadio
-608e0ec  Automatic translation import  [Michael Bestas]
+* device/xiaomi/davinci
+f8606b2  TMP Allow broken dup rules for gapps  [Arian]
+29be67d  davinci: Turn on BOARD_USES_METADATA_PARTITION  [Jeongik Cha]
+8a298a1  Revert "davinci: rootdir: Remove metadata from fstab"  [Arian]
 
-* packages/apps/Gallery2
-211d328  Automatic translation import  [Michael Bestas]
+* device/xiaomi/sm6150-common
+0a41f5c  sm6150-common: parts: AodSensor: Remove useless SystemClock include  [Arian]
 
-* packages/apps/Jelly
-c7ed0f4  Automatic translation import  [Michael Bestas]
+* frameworks/base
+0071222  AutoBrightness: Add support for one shot auto-brightness:  [Cédric Bellegarde]
 
-* packages/apps/KeyChain
-a468317  Automatic translation import  [Michael Bestas]
+* lineage-sdk
+6e7936c  lineage-sdk: Add preference keys for one shot auto-brightness  [Cédric Bellegarde]
 
-* packages/apps/LineageParts
-fe58be2  Automatic translation import  [Michael Bestas]
-
-* packages/apps/ManagedProvisioning
-9c15a20  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Nfc
-bd2b598  Automatic translation import  [Michael Bestas]
-
-* packages/apps/PermissionController
-5eb248b  Automatic translation import  [Michael Bestas]
-
-* packages/apps/PhoneCommon
-ee0931a  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Recorder
-4b283d7  Automatic translation import  [Michael Bestas]
+* lineage/mirror
+c45da7b  Updated aosp-minimal to 24-Aug-2021 12:01 UTC  [Tim Schumacher]
 
 * packages/apps/Settings
-38fbd1a  Automatic translation import  [Michael Bestas]
+ffd8671  Settings: Add preference for one shot auto-brightness  [Cédric Bellegarde]
 
-* packages/apps/SetupWizard
-d23252f  Automatic translation import  [Michael Bestas]
+* tools/extract-utils
+72d5bdf  fixup! extract_utils: Add support for overriding packages  [LuK1337]
+3749ce5  extract_utils: Add support for overriding packages  [TheStrix]
 
-* packages/apps/Snap
-e8a3152  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Stk
-39afae2  Automatic translation import  [Michael Bestas]
-
-* packages/apps/StorageManager
-4eab62c  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Tag
-1ff8f98  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Terminal
-1849511  Automatic translation import  [Michael Bestas]
-
-* packages/apps/ThemePicker
-22b9ec1  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Trebuchet
-cda2204  Automatic translation import  [Michael Bestas]
-
-* packages/apps/TvSettings
-6fc5eb7  Automatic translation import  [Michael Bestas]
-
-* packages/apps/Updater
-6e5bbda  Automatic translation import  [Michael Bestas]
-
-* packages/apps/WallpaperPicker2
-5d60b1a  Automatic translation import  [Michael Bestas]
-
-* packages/inputmethods/LatinIME
-d4c6ca8  Automatic translation import  [Michael Bestas]
-
-* packages/modules/CaptivePortalLogin
-ba02a0d  Automatic translation import  [Michael Bestas]
-
-* packages/providers/BlockedNumberProvider
-1898cec  Automatic translation import  [Michael Bestas]
-
-* packages/providers/CalendarProvider
-1c6dfbb  Automatic translation import  [Michael Bestas]
-
-* packages/providers/DownloadProvider
-c23a1bf  Automatic translation import  [Michael Bestas]
-
-* packages/providers/MediaProvider
-7f3c7ea  Automatic translation import  [Michael Bestas]
-
-* packages/resources/devicesettings
-b259f67  Automatic translation import  [Michael Bestas]
-
-* packages/services/BuiltInPrintService
-b5c1eed  Automatic translation import  [Michael Bestas]
-
-* packages/services/Telecomm
-617d40d  Automatic translation import  [Michael Bestas]
-
-* packages/services/Telephony
-53e0d10  Automatic translation import  [Michael Bestas]
-
-* packages/wallpapers/LivePicker
-d374960  Automatic translation import  [Michael Bestas]
-
-* vendor/qcom/opensource/fm-commonsys
-8920992  Automatic translation import  [Michael Bestas]
-====================
-     2021-08-20    
-====================
-====================
-     2021-08-19    
-====================
-
-* lineage/mirror
-8c22d3b  Updated aosp-minimal to 19-Aug-2021 12:02 UTC  [Tim Schumacher]
-====================
-     2021-08-18    
-====================
-
-* lineage/mirror
-5471ac2  Updated aosp-minimal to 18-Aug-2021 01:08 UTC  [Tim Schumacher]
-====================
-     2021-08-17    
-====================
+* vendor/lineage
+d5b4b59  kernel: Fix vdso32 building for 4.19+ kernels  [LibXZR]
