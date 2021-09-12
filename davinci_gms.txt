@@ -1,73 +1,52 @@
 ====================
-     2021-09-05    
+     2021-09-12    
 ====================
 
 * build/make
-f999e84  [DNM] Always use release-keys  [Arian]
+3139a5b  [DNM] Always use release-keys  [Arian]
+
+* device/lineage/sepolicy
+eddbdc3  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-e47aab6  SystemUI: get rid of build text in qs  [Joey]
-eda7222  SystemUI: Add anti flicker tile  [Arian]
-36b2fc0  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+602ea61  SystemUI: get rid of build text in qs  [Joey]
+4d524ff  SystemUI: Add anti flicker tile  [Arian]
+61a856e  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-8c6b4a4  Add support for anti flicker mode in LiveDisplay  [Arian]
+cc103d5  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * lineage-sdk
-567a060  Add support for anti flicker mode in LiveDisplay  [Arian]
-55ec73c  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
-
-* lineage/mirror
-b341340  Updated to 04-Sep-2021 14:46 UTC  [Kevin F. Haggerty]
-aadbe8c  Updated to 04-Sep-2021 14:19 UTC  [Kevin F. Haggerty]
-87e2f0f  Updated to 04-Sep-2021 14:03 UTC  [Kevin F. Haggerty]
-89d66d5  Updated to 04-Sep-2021 13:51 UTC  [Kevin F. Haggerty]
+56f3daa  Add support for anti flicker mode in LiveDisplay  [Arian]
+697866b  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * packages/apps/LineageParts
-50bc85f  Add support for anti flicker mode in LiveDisplay  [Arian]
-a020f2c  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+e159aef  Add support for anti flicker mode in LiveDisplay  [Arian]
+cd851c3  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-09-04    
+     2021-09-11    
+====================
+====================
+     2021-09-10    
+====================
+====================
+     2021-09-09    
 ====================
 
 * lineage/wiki
-c92c42a  wiki: Welcome to POCO X3 Pro  [Sebastiano Barezzi]
+9acc60f  wiki: contributors: Update Committers/Reviewers to match Gerrit  [Nolen Johnson]
 ====================
-     2021-09-03    
+     2021-09-08    
 ====================
 
 * lineage/wiki
-a79762b  wiki: Fix OCD (.. -> ...)  [LuK1337]
-11af581  wiki: Add Sony Xperia Tablet Z2 WiFi (castor_windy)  [Georg Veichtlbauer]
-c906711  wiki: Bump required FW version for fajita  [LuK1337]
+5d4e96b  wiki: templates: Update ADB sideload alert tip.  [Alexander Koskovich]
 ====================
-     2021-09-02    
+     2021-09-07    
 ====================
-
-* device/lineage/atv
-ed571ee  Add netflix config app  [Aaron Kling]
-
-* lineage/hudson
-a5379f3  hudson: Add castor_windy to 17.1  [Georg Veichtlbauer]
-0f4ce08  hudson: Add Support for Sony Xperia Z2  [Arian]
-
-* lineage/mirror
-394eb73  Updated aosp-minimal to 01-Sep-2021 12:02 UTC  [Tim Schumacher]
 
 * lineage/wiki
-66096b2  Add support for Sony Xperia Z2  [Arian]
-
-* tools/repohooks
-20ff946  android_test_mapping_format: updated the code to match the internal version.  [Raman Tenneti]
+cd32a30  wiki: Bump required FW version for enchilada  [LuK1337]
 ====================
-     2021-09-01    
-====================
-====================
-     2021-08-31    
-====================
-
-* lineage/scripts
-1e7d546  aidl-gen: Initial release  [Sebastiano Barezzi]
-====================
-     2021-08-30    
+     2021-09-06    
 ====================
