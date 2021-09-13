@@ -1,98 +1,95 @@
 ====================
-     2021-09-06    
+     2021-09-13    
 ====================
+
+* build/make
+a1a18d4  Merge tag 'android-11.0.0_r43' into staging/lineage-18.1_merge-android-11.0.0_r43  [Kevin F. Haggerty]
 
 * frameworks/base
-d8709f7  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
-====================
-     2021-09-05    
-====================
-
-* lineage/mirror
-b341340  Updated to 04-Sep-2021 14:46 UTC  [Kevin F. Haggerty]
-aadbe8c  Updated to 04-Sep-2021 14:19 UTC  [Kevin F. Haggerty]
-87e2f0f  Updated to 04-Sep-2021 14:03 UTC  [Kevin F. Haggerty]
-89d66d5  Updated to 04-Sep-2021 13:51 UTC  [Kevin F. Haggerty]
-
-* packages/apps/SetupWizard
-841512b  SUW: Move re-enabling of status bar to FinishActivity  [Alessandro Astone]
-367f321  SUW: restore: Handle RESULT_SKIP from Seedvault  [Alessandro Astone]
-====================
-     2021-09-04    
-====================
-
-* frameworks/base
-0f31254  fixup! AutoBrightness: Add support for one shot auto-brightness:  [Eamon Powell]
-
-* lineage/wiki
-c92c42a  wiki: Welcome to POCO X3 Pro  [Sebastiano Barezzi]
-
-* packages/apps/Seedvault
-87352c8  Seedvault: redesign SUW activities  [Timi Rautamäki]
-c43117d  Don't hide navigation bar in setup wizard  [Michael Bestas]
-
-* packages/apps/Settings
-864537e  Settings: Adjust one shot auto-brightness strings  [Eamon Powell]
-a643cef  fixup! Settings: Add preference for one shot auto-brightness  [Eamon Powell]
-
-* packages/apps/SetupWizard
-4ce5316  SUW: FinishActivity: hide navigation bar & statusbar before animation  [Timi Rautamäki]
-b3789b8  SUW: Intent changes for new Wi-Fi setup flow  [Michael Bestas]
-b7b34b9  The big code style cleanup  [Michael Bestas]
-ade1361  Remove whitespace  [Michael Bestas]
-8723ede  Ensure all files have a newline at the end  [Michael Bestas]
-f6dbf84  SUW: add accessibility settings to welcome page  [Timi Rautamäki]
-ab4f123  SUW: rearrange welcome activity  [Timi Rautamäki]
-fbf886e  SetupWizard: Fix status bar managing workflow  [Artem Borisov]
-44fb45c  SUW: use standard navigation method  [Timi Rautamäki]
-
-* vendor/lineage
-6b4ffc9  overlay: follow system accent in setupdesign  [Timi Rautamäki]
-====================
-     2021-09-03    
-====================
-
-* lineage/wiki
-a79762b  wiki: Fix OCD (.. -> ...)  [LuK1337]
-11af581  wiki: Add Sony Xperia Tablet Z2 WiFi (castor_windy)  [Georg Veichtlbauer]
-
-* packages/apps/SetupWizard
-ab4d6d3  SUW: use GLIF v3 light -theme  [Timi Rautamäki]
-885e3b3  SUW: Cleanup intent extras  [Michael Bestas]
-5e2f7f2  SUW: use setupdesign layout & theming  [Timi Rautamäki]
-d186af2  Replace LOCAL_MAC_ADDRESS with NETWORK_SETTINGS  [Daniel Micay]
-7e04f9c  Disable ChooseDataSimActivity if single SIM detected  [Oliver Scott]
-1167c04  Fix SimMissingActivity never showing  [Oliver Scott]
-c5232fc  Rework isMultiSimDevice check  [Michael Bestas]
-8dc3cf8  SetupWizard: Use SettingsLib for Timezones  [Michael W]
-====================
-     2021-09-02    
-====================
-
-* frameworks/base
-a5459eb  Make battery clickable again in quick QS status  [Marc K]
+d3338dc  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+74544b9  Merge tag 'android-11.0.0_r43' into staging/lineage-18.1_merge-android-11.0.0_r43  [Kevin F. Haggerty]
+1bbd566  Revert "Revert "Detects all activities for whether showing work challenge""  [Chirayu Desai]
+6945498  Disallow click to partial screenshot right after screenshot is taken  [LuK1337]
 
 * lineage/hudson
-a5379f3  hudson: Add castor_windy to 17.1  [Georg Veichtlbauer]
-0f4ce08  hudson: Add Support for Sony Xperia Z2  [Arian]
-
-* lineage/mirror
-394eb73  Updated aosp-minimal to 01-Sep-2021 12:02 UTC  [Tim Schumacher]
+931588f  hudson: Asus -> ASUS  [Alexander Koskovich]
 
 * lineage/wiki
-c906711  wiki: Bump required FW version for fajita  [LuK1337]
+396d6e0  wiki: Add ASUS ZenFone 8 (sake)  [Alexander Koskovich]
+4269d82  wiki: Account for devices with vendor_boot partitions.  [Alexander Koskovich]
+c31296e  wiki: Asus -> ASUS  [Alexander Koskovich]
 
-* tools/repohooks
-20ff946  android_test_mapping_format: updated the code to match the internal version.  [Raman Tenneti]
+* packages/apps/Seedvault
+ec1120d  Only treat eng builds as debug  [Chirayu Desai]
 ====================
-     2021-09-01    
+     2021-09-12    
 ====================
+====================
+     2021-09-11    
+====================
+====================
+     2021-09-10    
+====================
+
+* device/xiaomi/sm6150-common
+59c2522  sm6150-common: CarrierConfigOverlay: Disable HD logo  [Dyneteve]
+
+* vendor/lineage
+c57312c  apns: Update APNs for Chinese carriers  [Martincz Gao]
+====================
+     2021-09-09    
+====================
+
+* android
+056dae6  manifest: android-11.0.0_r40 -> android-11.0.0_r43  [Kevin F. Haggerty]
+
+* build/make
+564b498  Add support for separate kernels for boot and recovery [2/2]  [marcost2]
+
+* frameworks/native
+11c9e3c  Merge tag 'android-11.0.0_r43' into staging/lineage-18.1_merge-android-11.0.0_r43  [Kevin F. Haggerty]
 
 * lineage/wiki
-66096b2  Add support for Sony Xperia Z2  [Arian]
+9acc60f  wiki: contributors: Update Committers/Reviewers to match Gerrit  [Nolen Johnson]
+
+* packages/apps/Nfc
+671a210  Merge tag 'android-11.0.0_r43' into staging/lineage-18.1_merge-android-11.0.0_r43  [Kevin F. Haggerty]
+
+* packages/apps/Settings
+a70ea07  Merge tag 'android-11.0.0_r43' into staging/lineage-18.1_merge-android-11.0.0_r43  [Kevin F. Haggerty]
+
+* packages/apps/Trebuchet
+c8d5010  Merge tag 'android-11.0.0_r43' into staging/lineage-18.1_merge-android-11.0.0_r43  [Kevin F. Haggerty]
+
+* system/bt
+29f5941  Merge tag 'android-11.0.0_r43' into staging/lineage-18.1_merge-android-11.0.0_r43  [Kevin F. Haggerty]
+
+* system/sepolicy
+fd95208  Merge tag 'android-11.0.0_r43' into staging/lineage-18.1_merge-android-11.0.0_r43  [Kevin F. Haggerty]
+
+* vendor/lineage
+fad4142  Add support for separate kernels for boot and recovery [1/2]  [marcost2]
+
+* vendor/qcom/opensource/commonsys/system/bt
+19a4d6b  SMP: Reject pairing if public_key.x match  [Hansong Zhang]
 ====================
-     2021-08-31    
+     2021-09-08    
 ====================
 
-* lineage/scripts
-1e7d546  aidl-gen: Initial release  [Sebastiano Barezzi]
+* device/qcom/sepolicy-legacy
+a3e5797  sepolicy-legacy: Restore fm radio permissions for system_app  [Arian]
+
+* frameworks/base
+5d4222a  Fixed a crash in settings in tts engine selection screen.  [Deve]
+
+* lineage/wiki
+5d4e96b  wiki: templates: Update ADB sideload alert tip.  [Alexander Koskovich]
+====================
+     2021-09-07    
+====================
+
+* frameworks/base
+422769a  fixup! SystemUI: Show bluetooth battery level when available  [Luca Stefani]
+
+* lineage/wiki
+cd32a30  wiki: Bump required FW version for enchilada  [LuK1337]
