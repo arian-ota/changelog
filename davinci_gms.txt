@@ -1,52 +1,97 @@
 ====================
-     2021-09-12    
+     2021-09-19    
 ====================
 
 * build/make
-3139a5b  [DNM] Always use release-keys  [Arian]
+10f65f3  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-eddbdc3  common: Label IAntiFlicker live display service  [Arian]
+073ba18  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-602ea61  SystemUI: get rid of build text in qs  [Joey]
-4d524ff  SystemUI: Add anti flicker tile  [Arian]
-61a856e  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+f9c5086  SystemUI: get rid of build text in qs  [Joey]
+c37b6c4  SystemUI: Add anti flicker tile  [Arian]
+941ae70  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-cc103d5  Add support for anti flicker mode in LiveDisplay  [Arian]
+15e2c03  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * lineage-sdk
-56f3daa  Add support for anti flicker mode in LiveDisplay  [Arian]
-697866b  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+fc2feeb  Add support for anti flicker mode in LiveDisplay  [Arian]
+5b604e3  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * packages/apps/LineageParts
-e159aef  Add support for anti flicker mode in LiveDisplay  [Arian]
-cd851c3  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+5bc0c17  Add support for anti flicker mode in LiveDisplay  [Arian]
+740ab5f  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-09-11    
-====================
-====================
-     2021-09-10    
-====================
-====================
-     2021-09-09    
+     2021-09-18    
 ====================
 
-* lineage/wiki
-9acc60f  wiki: contributors: Update Committers/Reviewers to match Gerrit  [Nolen Johnson]
-====================
-     2021-09-08    
-====================
+* lineage/hudson
+c651ff6  hudson: Add miatoll  [Alexander Winkowski]
 
 * lineage/wiki
-5d4e96b  wiki: templates: Update ADB sideload alert tip.  [Alexander Koskovich]
+15a8f7a  wiki: devices: Add miatoll  [Alexander Winkowski]
 ====================
-     2021-09-07    
+     2021-09-17    
 ====================
 
+* build/make
+a20bdca  Bump Security String to 2021-09-05  [Kevin F. Haggerty]
+
+* external/chromium-webview
+42b388a  Update Chromium Webview to 93.0.4577.82  [Kevin F. Haggerty]
+
+* lineage/hudson
+6b41ac9  Non-QCOM master-race  [Nolen Johnson]
+
 * lineage/wiki
-cd32a30  wiki: Bump required FW version for enchilada  [LuK1337]
+c8379c7  wiki: devices: Add Moto-Exynos-9610 family  [Nolen Johnson]
 ====================
-     2021-09-06    
+     2021-09-16    
 ====================
+
+* lineage/scripts
+9c8e617  Update default webview to 93.0.4577.82  [Kevin F. Haggerty]
+
+* lineage/wiki
+9ae0dac  Explicitly select the container registry in Dockerfiles  [Tim Schumacher]
+3bc629d  wiki: add surya  [Willy Gardiol]
+====================
+     2021-09-15    
+====================
+
+* lineage/hudson
+8f360c4  hudson: Start builds for surya!  [Willy Gardiol]
+88cde4f  hudson: add SHIFT6mq (axolotl)  [Joey]
+
+* lineage/wiki
+06baae9  Add the `export LC_ALL=C` workaround to the build page  [Tim Schumacher]
+e8372af  wiki: add axolotl  [Joey]
+====================
+     2021-09-14    
+====================
+
+* lineage/hudson
+a40487a  hudson: Add Lenovo Z5 Pro GT (heart)  [Marc Bourgoin]
+
+* lineage/mirror
+1234809  Updated to 14-Sep-2021 03:00 UTC  [Kevin F. Haggerty]
+86adeb7  Updated to 13-Sep-2021 22:29 UTC  [Kevin F. Haggerty]
+311628c  Updated to 13-Sep-2021 22:12 UTC  [Kevin F. Haggerty]
+0bee845  Updated to 13-Sep-2021 21:45 UTC  [Kevin F. Haggerty]
+54a4520  Updated to 13-Sep-2021 12:52 UTC  [Kevin F. Haggerty]
+
+* lineage/wiki
+70de6d5  wiki: Add Lenovo Z5 Pro GT (heart)  [Marc Bourgoin]
+====================
+     2021-09-13    
+====================
+
+* lineage/hudson
+931588f  hudson: Asus -> ASUS  [Alexander Koskovich]
+
+* lineage/wiki
+396d6e0  wiki: Add ASUS ZenFone 8 (sake)  [Alexander Koskovich]
+4269d82  wiki: Account for devices with vendor_boot partitions.  [Alexander Koskovich]
+c31296e  wiki: Asus -> ASUS  [Alexander Koskovich]
