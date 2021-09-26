@@ -1,97 +1,66 @@
 ====================
-     2021-09-19    
+     2021-09-26    
 ====================
 
 * build/make
-10f65f3  [DNM] Always use release-keys  [Arian]
+3ce1a9c  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-073ba18  common: Label IAntiFlicker live display service  [Arian]
+a82aa47  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-f9c5086  SystemUI: get rid of build text in qs  [Joey]
-c37b6c4  SystemUI: Add anti flicker tile  [Arian]
-941ae70  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+83e99d4  SystemUI: get rid of build text in qs  [Joey]
+f238bbe  SystemUI: Add anti flicker tile  [Arian]
+444fc565  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-15e2c03  Add support for anti flicker mode in LiveDisplay  [Arian]
+f957e59  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * lineage-sdk
-fc2feeb  Add support for anti flicker mode in LiveDisplay  [Arian]
-5b604e3  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+6ab3416  Add support for anti flicker mode in LiveDisplay  [Arian]
+28626a1  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * packages/apps/LineageParts
-5bc0c17  Add support for anti flicker mode in LiveDisplay  [Arian]
-740ab5f  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+8fbe131  Add support for anti flicker mode in LiveDisplay  [Arian]
+d875c76  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-09-18    
+     2021-09-25    
 ====================
-
-* lineage/hudson
-c651ff6  hudson: Add miatoll  [Alexander Winkowski]
-
-* lineage/wiki
-15a8f7a  wiki: devices: Add miatoll  [Alexander Winkowski]
 ====================
-     2021-09-17    
+     2021-09-24    
 ====================
-
-* build/make
-a20bdca  Bump Security String to 2021-09-05  [Kevin F. Haggerty]
-
-* external/chromium-webview
-42b388a  Update Chromium Webview to 93.0.4577.82  [Kevin F. Haggerty]
-
-* lineage/hudson
-6b41ac9  Non-QCOM master-race  [Nolen Johnson]
-
-* lineage/wiki
-c8379c7  wiki: devices: Add Moto-Exynos-9610 family  [Nolen Johnson]
 ====================
-     2021-09-16    
-====================
-
-* lineage/scripts
-9c8e617  Update default webview to 93.0.4577.82  [Kevin F. Haggerty]
-
-* lineage/wiki
-9ae0dac  Explicitly select the container registry in Dockerfiles  [Tim Schumacher]
-3bc629d  wiki: add surya  [Willy Gardiol]
-====================
-     2021-09-15    
+     2021-09-23    
 ====================
 
 * lineage/hudson
-8f360c4  hudson: Start builds for surya!  [Willy Gardiol]
-88cde4f  hudson: add SHIFT6mq (axolotl)  [Joey]
-
-* lineage/wiki
-06baae9  Add the `export LC_ALL=C` workaround to the build page  [Tim Schumacher]
-e8372af  wiki: add axolotl  [Joey]
+c86281c  Regenerate device dependency mappings  [LuK1337]
 ====================
-     2021-09-14    
+     2021-09-22    
+====================
+
+* tools/repohooks
+b0a69d5  android_test_mapping_format: cleanup - "void" funcs don't need explicit ->None.  [Raman Tenneti]
+====================
+     2021-09-21    
 ====================
 
 * lineage/hudson
-a40487a  hudson: Add Lenovo Z5 Pro GT (heart)  [Marc Bourgoin]
+5b31d9a  hudson: Add barbet  [Alessandro Astone]
+1242870  Revert "hudson: Start builds for surya!"  [Nolen Johnson]
 
 * lineage/mirror
-1234809  Updated to 14-Sep-2021 03:00 UTC  [Kevin F. Haggerty]
-86adeb7  Updated to 13-Sep-2021 22:29 UTC  [Kevin F. Haggerty]
-311628c  Updated to 13-Sep-2021 22:12 UTC  [Kevin F. Haggerty]
-0bee845  Updated to 13-Sep-2021 21:45 UTC  [Kevin F. Haggerty]
-54a4520  Updated to 13-Sep-2021 12:52 UTC  [Kevin F. Haggerty]
+ca0d66b  Updated to 20-Sep-2021 15:28 UTC  [Kevin F. Haggerty]
 
 * lineage/wiki
-70de6d5  wiki: Add Lenovo Z5 Pro GT (heart)  [Marc Bourgoin]
+a571830  wiki: Add Pixel 5a  [Alessandro Astone]
 ====================
-     2021-09-13    
+     2021-09-20    
 ====================
-
-* lineage/hudson
-931588f  hudson: Asus -> ASUS  [Alexander Koskovich]
 
 * lineage/wiki
-396d6e0  wiki: Add ASUS ZenFone 8 (sake)  [Alexander Koskovich]
-4269d82  wiki: Account for devices with vendor_boot partitions.  [Alexander Koskovich]
-c31296e  wiki: Asus -> ASUS  [Alexander Koskovich]
+ed21ab8  devices: Drop surya temporarily  [Nolen Johnson]
+187b829  wiki: Add SM-T720N to gts4lvwifi supported models  [LuK1337]
+
+* packages/apps/TvSettings
+5bf435b  [2/2] Add battery info to tvsettings device info  [Aaron Kling]
