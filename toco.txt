@@ -1,80 +1,67 @@
 ====================
-     2021-09-20    
+     2021-09-27    
 ====================
 
 * frameworks/base
-3b61378  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
-
-* lineage/wiki
-187b829  wiki: Add SM-T720N to gts4lvwifi supported models  [LuK1337]
+a72d20b  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
 ====================
-     2021-09-19    
-====================
-====================
-     2021-09-18    
+     2021-09-26    
 ====================
 
-* lineage/hudson
-c651ff6  hudson: Add miatoll  [Alexander Winkowski]
-
-* lineage/wiki
-15a8f7a  wiki: devices: Add miatoll  [Alexander Winkowski]
-====================
-     2021-09-17    
-====================
-
-* external/chromium-webview
-42b388a  Update Chromium Webview to 93.0.4577.82  [Kevin F. Haggerty]
-
-* lineage/hudson
-6b41ac9  Non-QCOM master-race  [Nolen Johnson]
-
-* lineage/wiki
-c8379c7  wiki: devices: Add Moto-Exynos-9610 family  [Nolen Johnson]
-====================
-     2021-09-16    
-====================
-
-* lineage/scripts
-9c8e617  Update default webview to 93.0.4577.82  [Kevin F. Haggerty]
-
-* lineage/wiki
-9ae0dac  Explicitly select the container registry in Dockerfiles  [Tim Schumacher]
-3bc629d  wiki: add surya  [Willy Gardiol]
+* device/lineage/atv
+288a0d6  atv: Enable new Settings Two-Panel UI  [Nolen Johnson]
 
 * packages/apps/TvSettings
-d0b7690  TvSettings: fix double ripple in Wifi selection  [Timi Rautamäki]
+7853345  TwoPanelSettings: Add shut down button  [Aaron Kling]
+7cff378  Add Lineage advanced reboot options  [Aaron Kling]
+e70e301  TvSettings: add Buttons-section to System settings  [Timi Rautamäki]
 ====================
-     2021-09-15    
+     2021-09-25    
+====================
+====================
+     2021-09-24    
+====================
+
+* packages/apps/Dialer
+4b4f511  Dialer: Fix typo in RU translation  [cyberwalkman]
+====================
+     2021-09-23    
+====================
+
+* device/lineage/atv
+890435e  atv: Declare soong namespace  [Alessandro Astone]
+
+* frameworks/base
+3b46ef1  One more Build.FINGERPRINT to Build.DATE change  [maxwen]
+
+* lineage-sdk
+641bc03  lineage-sdk: add ATV button settings  [Timi Rautamäki]
+
+* lineage/hudson
+c86281c  Regenerate device dependency mappings  [LuK1337]
+====================
+     2021-09-22    
+====================
+
+* device/lineage/atv
+9407546  atv: add KeyHandler  [Timi Rautamäki]
+
+* packages/apps/Dialer
+a32ed43  Fix status bar colors in detail activities.  [Danny Baumann]
+
+* tools/repohooks
+b0a69d5  android_test_mapping_format: cleanup - "void" funcs don't need explicit ->None.  [Raman Tenneti]
+====================
+     2021-09-21    
 ====================
 
 * lineage/hudson
-8f360c4  hudson: Start builds for surya!  [Willy Gardiol]
-88cde4f  hudson: add SHIFT6mq (axolotl)  [Joey]
-
-* lineage/wiki
-06baae9  Add the `export LC_ALL=C` workaround to the build page  [Tim Schumacher]
-e8372af  wiki: add axolotl  [Joey]
-
-* packages/apps/Updater
-81dc120  Updater: follow TwoPanelSettings styling  [Timi Rautamäki]
-a96d54f  Updater: initial layout for TV  [Timi Rautamäki]
-
-* vendor/lineage
-bcac3f3  apns: Update Vodafone NL  [Michael W]
-====================
-     2021-09-14    
-====================
-
-* lineage/hudson
-a40487a  hudson: Add Lenovo Z5 Pro GT (heart)  [Marc Bourgoin]
+5b31d9a  hudson: Add barbet  [Alessandro Astone]
+1242870  Revert "hudson: Start builds for surya!"  [Nolen Johnson]
 
 * lineage/mirror
-1234809  Updated to 14-Sep-2021 03:00 UTC  [Kevin F. Haggerty]
-86adeb7  Updated to 13-Sep-2021 22:29 UTC  [Kevin F. Haggerty]
-311628c  Updated to 13-Sep-2021 22:12 UTC  [Kevin F. Haggerty]
-0bee845  Updated to 13-Sep-2021 21:45 UTC  [Kevin F. Haggerty]
-54a4520  Updated to 13-Sep-2021 12:52 UTC  [Kevin F. Haggerty]
+ca0d66b  Updated to 20-Sep-2021 15:28 UTC  [Kevin F. Haggerty]
 
 * lineage/wiki
-70de6d5  wiki: Add Lenovo Z5 Pro GT (heart)  [Marc Bourgoin]
+a571830  wiki: Add Pixel 5a  [Alessandro Astone]
+ed21ab8  devices: Drop surya temporarily  [Nolen Johnson]
