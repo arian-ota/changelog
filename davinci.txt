@@ -1,69 +1,93 @@
 ====================
-     2021-09-26    
-====================
-
-* device/lineage/atv
-288a0d6  atv: Enable new Settings Two-Panel UI  [Nolen Johnson]
-
-* frameworks/base
-cd2a25f  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
-====================
-     2021-09-25    
-====================
-
-* packages/apps/TvSettings
-7853345  TwoPanelSettings: Add shut down button  [Aaron Kling]
-7cff378  Add Lineage advanced reboot options  [Aaron Kling]
-e70e301  TvSettings: add Buttons-section to System settings  [Timi Rautamäki]
-====================
-     2021-09-24    
-====================
-====================
-     2021-09-23    
+     2021-10-03    
 ====================
 
 * frameworks/base
-3b46ef1  One more Build.FINGERPRINT to Build.DATE change  [maxwen]
+80a8ca4  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
 
-* lineage/hudson
-c86281c  Regenerate device dependency mappings  [LuK1337]
-
-* packages/apps/Dialer
-4b4f511  Dialer: Fix typo in RU translation  [cyberwalkman]
+* vendor/lineage
+359cf85  apn: Fix FreedomPop UK  [David Wheatley]
 ====================
-     2021-09-22    
+     2021-10-02    
 ====================
 
-* device/lineage/atv
-890435e  atv: Declare soong namespace  [Alessandro Astone]
-9407546  atv: add KeyHandler  [Timi Rautamäki]
-
-* lineage-sdk
-641bc03  lineage-sdk: add ATV button settings  [Timi Rautamäki]
-
-* tools/repohooks
-b0a69d5  android_test_mapping_format: cleanup - "void" funcs don't need explicit ->None.  [Raman Tenneti]
-====================
-     2021-09-21    
-====================
-
-* lineage/hudson
-5b31d9a  hudson: Add barbet  [Alessandro Astone]
-
-* lineage/wiki
-a571830  wiki: Add Pixel 5a  [Alessandro Astone]
-
-* packages/apps/Dialer
-a32ed43  Fix status bar colors in detail activities.  [Danny Baumann]
-====================
-     2021-09-20    
-====================
-
-* lineage/hudson
-1242870  Revert "hudson: Start builds for surya!"  [Nolen Johnson]
+* android
+dddf99a  Track DnsResolver  [Nolen Johnson]
 
 * lineage/mirror
-ca0d66b  Updated to 20-Sep-2021 15:28 UTC  [Kevin F. Haggerty]
+88beec4  Updated to 02-Oct-2021 13:40 UTC  [Kevin F. Haggerty]
+41e5f67  Updated lineage-minimal to 02-Oct-2021 12:01 UTC  [Tim Schumacher]
+6001c88  Updated to 02-Oct-2021 12:00 UTC  [Tim Schumacher]
+024d74d  Updated to 01-Oct-2021 16:40 UTC  [Kevin F. Haggerty]
 
 * lineage/wiki
-ed21ab8  devices: Drop surya temporarily  [Nolen Johnson]
+156064c  wiki: initiate adding Dynamic partition devices  [Ramii Ahmed]
+093a30e  wiki: devices: add Surya  [Willy Gardiol]
+
+* packages/modules/DnsResolver
+cb250fe  DnsResolver: Support wildcards in cached hosts file  [Tom Marshall]
+b0042566  DnsResolver: Sort and cache hosts file data for fast lookup  [Tom Marshall]
+====================
+     2021-10-01    
+====================
+
+* lineage/mirror
+44fdfd1  Updated to 01-Oct-2021 12:01 UTC  [Tim Schumacher]
+====================
+     2021-09-30    
+====================
+
+* frameworks/base
+cf0606c  [1/2] Add battery info to tvsettings device info  [Aaron Kling]
+
+* packages/apps/TvSettings
+4184ec1  [2/2] Add battery info to tvsettings device info  [Aaron Kling]
+
+* vendor/lineage
+6261bcc  apn: Update giffgaff APN  [David Wheatley]
+====================
+     2021-09-29    
+====================
+
+* frameworks/base
+6cdc54b  SystemUI: fix volume dialog position on TV  [Timi Rautamäki]
+
+* lineage/mirror
+0dc7feb  Updated aosp-minimal to 29-Sep-2021 12:02 UTC  [Tim Schumacher]
+====================
+     2021-09-28    
+====================
+
+* device/xiaomi/sm6150-common
+00bee6e  sm6150-common: Update vendor security patch level from sweet RKQ1.200826.002 V12.5.8.0.RKFMIXM  [Arian]
+6b969a5  sm6150-common: Pin PowerOffAlarm.apk from sweet 12.5.1.0  [Arian]
+
+* frameworks/base
+1189311  LockPatternView: Fix a11y+BiometricPrompt related OOB exception  [LuK1337]
+
+* lineage/mirror
+c7cf0fc  Updated aosp-minimal to 28-Sep-2021 12:02 UTC  [Tim Schumacher]
+
+* lineage/wiki
+903d689  Updating gts4lv pre-install instructions  [Ricardo Rosales]
+
+* tools/extract-utils
+d3e0c02  extract_utils: Seperate multiple override targets with comma  [Arian]
+
+* vendor/gms
+1f21159  Avoid overriding targets for fonts_customization.xml  [Arian]
+
+* vendor/xiaomi
+883a89d  sm6150-common: Upate blobs from sweet RKQ1.200826.002 V12.5.8.0.RKFMIXM  [Arian]
+====================
+     2021-09-27    
+====================
+
+* lineage/charter
+5c4d892  Clarify Non-PIE blobs  [deadman96385]
+
+* vendor/gms
+ecdf531  gms: Update from redfin-rq3a.210905.001  [Arian]
+0e001ae  Fix overriding multiple targets  [Arian]
+044b6a6  Use the common overrides feature of extract-utils  [Arian]
+a110109  Let GoogleOneTimeInitializer override OneTimeInitializer instead of SetupWizardPrebuilt  [Arian]
