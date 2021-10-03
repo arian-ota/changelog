@@ -1,66 +1,70 @@
 ====================
-     2021-09-26    
+     2021-10-03    
 ====================
 
 * build/make
-3ce1a9c  [DNM] Always use release-keys  [Arian]
+9fd41fb  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-a82aa47  common: Label IAntiFlicker live display service  [Arian]
+92f4de5  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-83e99d4  SystemUI: get rid of build text in qs  [Joey]
-f238bbe  SystemUI: Add anti flicker tile  [Arian]
-444fc565  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+89c4266  SystemUI: get rid of build text in qs  [Joey]
+41908ee  SystemUI: Add anti flicker tile  [Arian]
+8ff6201  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-f957e59  Add support for anti flicker mode in LiveDisplay  [Arian]
+6f34947  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * lineage-sdk
-6ab3416  Add support for anti flicker mode in LiveDisplay  [Arian]
-28626a1  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
-
-* packages/apps/LineageParts
-8fbe131  Add support for anti flicker mode in LiveDisplay  [Arian]
-d875c76  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
-====================
-     2021-09-25    
-====================
-====================
-     2021-09-24    
-====================
-====================
-     2021-09-23    
-====================
-
-* lineage/hudson
-c86281c  Regenerate device dependency mappings  [LuK1337]
-====================
-     2021-09-22    
-====================
-
-* tools/repohooks
-b0a69d5  android_test_mapping_format: cleanup - "void" funcs don't need explicit ->None.  [Raman Tenneti]
-====================
-     2021-09-21    
-====================
-
-* lineage/hudson
-5b31d9a  hudson: Add barbet  [Alessandro Astone]
-1242870  Revert "hudson: Start builds for surya!"  [Nolen Johnson]
+814168c  Add support for anti flicker mode in LiveDisplay  [Arian]
+a00c9e1  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * lineage/mirror
-ca0d66b  Updated to 20-Sep-2021 15:28 UTC  [Kevin F. Haggerty]
+88beec4  Updated to 02-Oct-2021 13:40 UTC  [Kevin F. Haggerty]
+41e5f67  Updated lineage-minimal to 02-Oct-2021 12:01 UTC  [Tim Schumacher]
+6001c88  Updated to 02-Oct-2021 12:00 UTC  [Tim Schumacher]
 
 * lineage/wiki
-a571830  wiki: Add Pixel 5a  [Alessandro Astone]
+156064c  wiki: initiate adding Dynamic partition devices  [Ramii Ahmed]
+
+* packages/apps/LineageParts
+1dcd4cc  Add support for anti flicker mode in LiveDisplay  [Arian]
+57c7e12  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-09-20    
+     2021-10-02    
+====================
+
+* lineage/mirror
+024d74d  Updated to 01-Oct-2021 16:40 UTC  [Kevin F. Haggerty]
+44fdfd1  Updated to 01-Oct-2021 12:01 UTC  [Tim Schumacher]
+
+* lineage/wiki
+093a30e  wiki: devices: add Surya  [Willy Gardiol]
+====================
+     2021-10-01    
+====================
+====================
+     2021-09-30    
+====================
+
+* lineage/mirror
+0dc7feb  Updated aosp-minimal to 29-Sep-2021 12:02 UTC  [Tim Schumacher]
+====================
+     2021-09-29    
+====================
+
+* lineage/mirror
+c7cf0fc  Updated aosp-minimal to 28-Sep-2021 12:02 UTC  [Tim Schumacher]
+====================
+     2021-09-28    
 ====================
 
 * lineage/wiki
-ed21ab8  devices: Drop surya temporarily  [Nolen Johnson]
-187b829  wiki: Add SM-T720N to gts4lvwifi supported models  [LuK1337]
+903d689  Updating gts4lv pre-install instructions  [Ricardo Rosales]
+====================
+     2021-09-27    
+====================
 
-* packages/apps/TvSettings
-5bf435b  [2/2] Add battery info to tvsettings device info  [Aaron Kling]
+* lineage/charter
+5c4d892  Clarify Non-PIE blobs  [deadman96385]
