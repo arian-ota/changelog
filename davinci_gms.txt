@@ -1,91 +1,84 @@
 ====================
-     2021-10-03    
+     2021-10-10    
 ====================
 
 * frameworks/base
-2f84dd0  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+3dbe139  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
 ====================
-     2021-10-02    
+     2021-10-09    
 ====================
+====================
+     2021-10-08    
+====================
+
+* lineage/hudson
+d47c351  Experimental: foster/mdarcy 17.1  [Aaron Kling]
 
 * lineage/mirror
-88beec4  Updated to 02-Oct-2021 13:40 UTC  [Kevin F. Haggerty]
-41e5f67  Updated lineage-minimal to 02-Oct-2021 12:01 UTC  [Tim Schumacher]
-6001c88  Updated to 02-Oct-2021 12:00 UTC  [Tim Schumacher]
+788122c  Updated aosp-minimal to 08-Oct-2021 12:02 UTC  [Tim Schumacher]
+====================
+     2021-10-07    
+====================
+
+* build/soong
+c297197  installclean_files: replace *.zip.md5sum with *.zip.sha256sum  [Julian Veit]
+
+* lineage/hudson
+1059848  Drop guacamoleb  [Nolen Johnson]
+
+* lineage/website
+514fa23  Use nicer looking Discord invite URL  [LuK1337]
 
 * lineage/wiki
-156064c  wiki: initiate adding Dynamic partition devices  [Ramii Ahmed]
+10debde  Drop guacamoleb  [Nolen Johnson]
 
 * vendor/lineage
-359cf85  apn: Fix FreedomPop UK  [David Wheatley]
+cb30d25  bacon: switch to sha256 checksum  [Julian Veit]
 ====================
-     2021-10-01    
+     2021-10-06    
+====================
+
+* lineage/wiki
+d951642  templates: recovery_install_*: The device may want to confirm unlock  [Nolen Johnson]
+
+* tools/repohooks
+0f54b33  Merge Android 12  [Xin Li]
+====================
+     2021-10-05    
 ====================
 
 * android
-dddf99a  Track DnsResolver  [Nolen Johnson]
+baa6c6b  manifest: android-11.0.0_r43 -> android-11.0.0_r46  [Kevin F. Haggerty]
 
-* lineage/mirror
-024d74d  Updated to 01-Oct-2021 16:40 UTC  [Kevin F. Haggerty]
-44fdfd1  Updated to 01-Oct-2021 12:01 UTC  [Tim Schumacher]
+* build/make
+fafe0ef  Merge tag 'android-11.0.0_r46' into staging/lineage-18.1_merge-android-11.0.0_r46  [Kevin F. Haggerty]
 
-* lineage/wiki
-093a30e  wiki: devices: add Surya  [Willy Gardiol]
-
-* packages/modules/DnsResolver
-cb250fe  DnsResolver: Support wildcards in cached hosts file  [Tom Marshall]
-b0042566  DnsResolver: Sort and cache hosts file data for fast lookup  [Tom Marshall]
-====================
-     2021-09-30    
-====================
-
-* vendor/lineage
-6261bcc  apn: Update giffgaff APN  [David Wheatley]
-====================
-     2021-09-29    
-====================
+* frameworks/av
+b992512  Merge tag 'android-11.0.0_r46' into staging/lineage-18.1_merge-android-11.0.0_r46  [Kevin F. Haggerty]
 
 * frameworks/base
-cf0606c  [1/2] Add battery info to tvsettings device info  [Aaron Kling]
-6cdc54b  SystemUI: fix volume dialog position on TV  [Timi Rautamäki]
+7f7fc25  Merge tag 'android-11.0.0_r46' into staging/lineage-18.1_merge-android-11.0.0_r46  [Kevin F. Haggerty]
+
+* frameworks/opt/telephony
+d0983ae  Merge tag 'android-11.0.0_r46' into staging/lineage-18.1_merge-android-11.0.0_r46  [Kevin F. Haggerty]
 
 * lineage/mirror
-0dc7feb  Updated aosp-minimal to 29-Sep-2021 12:02 UTC  [Tim Schumacher]
-
-* packages/apps/TvSettings
-4184ec1  [2/2] Add battery info to tvsettings device info  [Aaron Kling]
-====================
-     2021-09-28    
-====================
-
-* lineage/mirror
-c7cf0fc  Updated aosp-minimal to 28-Sep-2021 12:02 UTC  [Tim Schumacher]
+7c281e9  Updated aosp-minimal to 05-Oct-2021 11:43 UTC  [Tim Schumacher]
 
 * lineage/wiki
-903d689  Updating gts4lv pre-install instructions  [Ricardo Rosales]
+aa0c450  wiki: Add Nokia 6.1 Plus/Nokia X6 (dragon, TLA: DRG)  [Aayush Gupta]
+
+* packages/apps/Settings
+e77d825  Merge tag 'android-11.0.0_r46' into staging/lineage-18.1_merge-android-11.0.0_r46  [Kevin F. Haggerty]
+
+* system/core
+5ef7f7b  Merge tag 'android-11.0.0_r46' into staging/lineage-18.1_merge-android-11.0.0_r46  [Kevin F. Haggerty]
+
+* system/nfc
+284e2ec  Type confusion due to race condition on tag type change  [Alisher Alikhodjaev]
 ====================
-     2021-09-27    
+     2021-10-04    
 ====================
 
-* device/xiaomi/sm6150-common
-00bee6e  sm6150-common: Update vendor security patch level from sweet RKQ1.200826.002 V12.5.8.0.RKFMIXM  [Arian]
-6b969a5  sm6150-common: Pin PowerOffAlarm.apk from sweet 12.5.1.0  [Arian]
-
-* frameworks/base
-1189311  LockPatternView: Fix a11y+BiometricPrompt related OOB exception  [LuK1337]
-
-* lineage/charter
-5c4d892  Clarify Non-PIE blobs  [deadman96385]
-
-* tools/extract-utils
-d3e0c02  extract_utils: Seperate multiple override targets with comma  [Arian]
-
-* vendor/gms
-1f21159  Avoid overriding targets for fonts_customization.xml  [Arian]
-ecdf531  gms: Update from redfin-rq3a.210905.001  [Arian]
-0e001ae  Fix overriding multiple targets  [Arian]
-044b6a6  Use the common overrides feature of extract-utils  [Arian]
-a110109  Let GoogleOneTimeInitializer override OneTimeInitializer instead of SetupWizardPrebuilt  [Arian]
-
-* vendor/xiaomi
-883a89d  sm6150-common: Upate blobs from sweet RKQ1.200826.002 V12.5.8.0.RKFMIXM  [Arian]
+* lineage/hudson
+98641a2  hudson: Connecting people  [Aayush Gupta]
