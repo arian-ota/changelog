@@ -1,70 +1,102 @@
 ====================
-     2021-10-03    
+     2021-10-10    
 ====================
 
 * build/make
-876b804  [DNM] Always use release-keys  [Arian]
+9fc267a  [DNM] Always use release-keys  [Arian]
+c0e5668  Bump Security String to 2021-10-05  [Kevin F. Haggerty]
 
 * device/lineage/sepolicy
-98547a3  common: Label IAntiFlicker live display service  [Arian]
+d730fad  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-1127c37  SystemUI: get rid of build text in qs  [Joey]
-8790bd6  SystemUI: Add anti flicker tile  [Arian]
-b004e8b  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+5867742  SystemUI: get rid of build text in qs  [Joey]
+3830647  SystemUI: Add anti flicker tile  [Arian]
+5ff6b12  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+ba6f705  Merge tag 'android-security-10.0.0_r59' into staging/lineage-17.1_merge_android-security-10.0.0_r59  [Kevin F. Haggerty]
 
 * hardware/lineage/interfaces
-541c7fb  Add support for anti flicker mode in LiveDisplay  [Arian]
+cd1cdff  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * lineage-sdk
-663d465  Add support for anti flicker mode in LiveDisplay  [Arian]
-36d1d44  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
-
-* lineage/mirror
-88beec4  Updated to 02-Oct-2021 13:40 UTC  [Kevin F. Haggerty]
-41e5f67  Updated lineage-minimal to 02-Oct-2021 12:01 UTC  [Tim Schumacher]
-6001c88  Updated to 02-Oct-2021 12:00 UTC  [Tim Schumacher]
-
-* lineage/wiki
-156064c  wiki: initiate adding Dynamic partition devices  [Ramii Ahmed]
+9e41e22  Add support for anti flicker mode in LiveDisplay  [Arian]
+d9ea40c  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * packages/apps/LineageParts
-55eb384  Add support for anti flicker mode in LiveDisplay  [Arian]
-9295a77  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+00dce9d  Add support for anti flicker mode in LiveDisplay  [Arian]
+5940132  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-10-02    
+     2021-10-09    
 ====================
 
+* lineage/hudson
+d47c351  Experimental: foster/mdarcy 17.1  [Aaron Kling]
+
 * lineage/mirror
-024d74d  Updated to 01-Oct-2021 16:40 UTC  [Kevin F. Haggerty]
-44fdfd1  Updated to 01-Oct-2021 12:01 UTC  [Tim Schumacher]
+788122c  Updated aosp-minimal to 08-Oct-2021 12:02 UTC  [Tim Schumacher]
+====================
+     2021-10-08    
+====================
+
+* frameworks/base
+189a54c  BootAnimation: Check for resolution override  [Aaron Kling]
+====================
+     2021-10-07    
+====================
+
+* lineage/hudson
+1059848  Drop guacamoleb  [Nolen Johnson]
+
+* lineage/website
+514fa23  Use nicer looking Discord invite URL  [LuK1337]
 
 * lineage/wiki
-093a30e  wiki: devices: add Surya  [Willy Gardiol]
+10debde  Drop guacamoleb  [Nolen Johnson]
+
+* tools/repohooks
+0f54b33  Merge Android 12  [Xin Li]
+
+* vendor/lineage
+5e02575  lineage: Don't enforce specifying image name on prebuilt kernel  [Aayush Gupta]
 ====================
-     2021-10-01    
-====================
-====================
-     2021-09-30    
+     2021-10-06    
 ====================
 
-* lineage/mirror
-0dc7feb  Updated aosp-minimal to 29-Sep-2021 12:02 UTC  [Tim Schumacher]
-====================
-     2021-09-29    
-====================
+* external/sonivox
+3bbd41d  Merge tag 'android-security-10.0.0_r59' into staging/lineage-17.1_merge_android-security-10.0.0_r59  [Kevin F. Haggerty]
+
+* frameworks/av
+4ae5547  Merge tag 'android-security-10.0.0_r59' into staging/lineage-17.1_merge_android-security-10.0.0_r59  [Kevin F. Haggerty]
+
+* frameworks/opt/telephony
+b551dfa  Merge tag 'android-security-10.0.0_r59' into staging/lineage-17.1_merge_android-security-10.0.0_r59  [Kevin F. Haggerty]
 
 * lineage/mirror
-c7cf0fc  Updated aosp-minimal to 28-Sep-2021 12:02 UTC  [Tim Schumacher]
-====================
-     2021-09-28    
-====================
+7c281e9  Updated aosp-minimal to 05-Oct-2021 11:43 UTC  [Tim Schumacher]
 
 * lineage/wiki
-903d689  Updating gts4lv pre-install instructions  [Ricardo Rosales]
+d951642  templates: recovery_install_*: The device may want to confirm unlock  [Nolen Johnson]
+
+* system/nfc
+2dbe6f0  Merge tag 'android-security-10.0.0_r59' into staging/lineage-17.1_merge_android-security-10.0.0_r59  [Kevin F. Haggerty]
 ====================
-     2021-09-27    
+     2021-10-05    
 ====================
 
-* lineage/charter
-5c4d892  Clarify Non-PIE blobs  [deadman96385]
+* lineage/hudson
+98641a2  hudson: Connecting people  [Aayush Gupta]
+
+* lineage/wiki
+aa0c450  wiki: Add Nokia 6.1 Plus/Nokia X6 (dragon, TLA: DRG)  [Aayush Gupta]
+====================
+     2021-10-04    
+====================
+
+* external/chromium-webview
+9e193c9  Update arm{,64} Chromium Webview to 94.0.4606.71 and rebuild x86{,_64}  [Kevin F. Haggerty]
+
+* lineage/scripts
+9e063c9  Update default webview to 94.0.4606.71  [Kevin F. Haggerty]
+f50f00f  build_webview: Use production, not testing, settings for field trials  [Kevin F. Haggerty]
+c7380df  build_webview: Disable Google VR  [Kevin F. Haggerty]
+f830c6c  build_webview: Disable Dev UI, Autofill Assistant, and Tab UI DFMs  [Kevin F. Haggerty]
