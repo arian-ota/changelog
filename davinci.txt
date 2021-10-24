@@ -1,73 +1,75 @@
 ====================
-     2021-10-17    
+     2021-10-24    
 ====================
 
 * build/make
-f05dbed  [DNM] Always use release-keys  [Arian]
+017dfc5  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-e50a51e  common: Label IAntiFlicker live display service  [Arian]
+4171cdd  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-59efa3e  SystemUI: get rid of build text in qs  [Joey]
-b0a73f0  SystemUI: Add anti flicker tile  [Arian]
-b1be953  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+a744058  SystemUI: get rid of build text in qs  [Joey]
+5cd333e  SystemUI: Add anti flicker tile  [Arian]
+ebc6bd7  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-a64ec57  Add support for anti flicker mode in LiveDisplay  [Arian]
+899699a  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * lineage-sdk
-70ad144  Add support for anti flicker mode in LiveDisplay  [Arian]
-17605eb  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+cf13d05  Add support for anti flicker mode in LiveDisplay  [Arian]
+57c5857  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * packages/apps/LineageParts
-4972d72  Add support for anti flicker mode in LiveDisplay  [Arian]
-fb31e47  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+0afd46f  Add support for anti flicker mode in LiveDisplay  [Arian]
+69871da  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-10-16    
-====================
-====================
-     2021-10-15    
-====================
-
-* lineage/mirror
-6406281  Updated to 14-Oct-2021 12:01 UTC  [Tim Schumacher]
-====================
-     2021-10-14    
-====================
-
-* lineage/mirror
-a968a4d  Updated aosp-minimal to 13-Oct-2021 12:01 UTC  [Tim Schumacher]
-
-* lineage/website
-862cb88  Remove google analytics  [Tom Powell]
-
-* lineage/wiki
-d9368bc  devices: Promote Shield TV (all models) to 17.1  [Nolen Johnson]
-40b623f  pages: gapps: Split out Mobile and Android TV GApps listing  [Nolen Johnson]
-====================
-     2021-10-13    
+     2021-10-23    
 ====================
 
 * lineage/hudson
-a04dba4  And they said it couldn't be done.  [Nolen Johnson]
-
-* lineage/mirror
-3cc903b  Updated to 12-Okt-2021 11:46 UTC  [Tim Schumacher]
+af00828  hudson: Promote z2_plus to 18.1  [Davide Garberi]
+7a54b18  Regenerate device dependency mappings  [razorloves]
 
 * lineage/wiki
-970e388  devices: cheryl: Add me  [Nolen Johnson]
+0cc9b2f  wiki: Promote z2_plus to 18.1  [Davide Garberi]
 ====================
-     2021-10-12    
+     2021-10-22    
+====================
+
+* lineage/wiki
+fc23f68  devices: Update tama maintainers  [Danny Trunk]
+====================
+     2021-10-21    
 ====================
 
 * lineage/hudson
-7ce4119  hudson: Promote wayne to 18.1  [Isaac Chen]
-e3677b6  hudson: Promote twolip to 18.1  [Davide Garberi]
+e8dd997  hudson: Add aurora  [Danny Trunk]
+====================
+     2021-10-20    
+====================
+
+* lineage/mirror
+e9bbac6  Updated to 19-Oct-2021 13:24 UTC  [Kevin F. Haggerty]
 
 * lineage/wiki
-c9ad9ce  wiki: Promote wayne to 18.1  [Isaac Chen]
-fd97e1b  wiki: Promote twolip to 18.1  [Davide Garberi]
+d9bb18b  wiki: s3ve3g*: add format_on_upgrade flag  [Francescodario Cuzzocrea]
 ====================
-     2021-10-11    
+     2021-10-19    
 ====================
+
+* lineage/hudson
+70dd07b  hudson: Add obiwan  [Alessandro Astone]
+
+* lineage/mirror
+21bac6c  Updated to 18-Oct-2021 11:45 UTC  [Kevin F. Haggerty]
+c87ceb8  Updated to 18-Oct-2021 11:25 UTC  [Kevin F. Haggerty]
+====================
+     2021-10-18    
+====================
+
+* lineage/hudson
+ac04cec  hudson: promote s3ve3 family to 18.1  [Francescodario Cuzzocrea]
+
+* lineage/wiki
+23e1ff4  devices: promote s3ve3 family to 18.1  [Francescodario Cuzzocrea]
