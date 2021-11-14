@@ -1,72 +1,60 @@
 ====================
-     2021-10-25    
-====================
-
-* frameworks/base
-a9c99ea  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
-====================
-     2021-10-24    
-====================
-
-* lineage/wiki
-81ab410  wiki: Add ROG Phone 3  [Alessandro Astone]
-====================
-     2021-10-23    
-====================
-====================
-     2021-10-22    
-====================
-
-* lineage/hudson
-af00828  hudson: Promote z2_plus to 18.1  [Davide Garberi]
-7a54b18  Regenerate device dependency mappings  [razorloves]
-
-* lineage/wiki
-0cc9b2f  wiki: Promote z2_plus to 18.1  [Davide Garberi]
-====================
-     2021-10-21    
-====================
-
-* lineage/hudson
-e8dd997  hudson: Add aurora  [Danny Trunk]
-
-* lineage/wiki
-fc23f68  devices: Update tama maintainers  [Danny Trunk]
-====================
-     2021-10-20    
+     2021-11-14    
 ====================
 
 * lineage/mirror
-e9bbac6  Updated to 19-Oct-2021 13:24 UTC  [Kevin F. Haggerty]
+43fcb6f  Updated lineage-minimal to 14-Nov-2021 13:01 UTC  [Tim Schumacher]
+
+* packages/apps/SetupWizard
+7955e86  SUW: remove privacy policy link on large-notouch  [Timi Rautamäki]
 ====================
-     2021-10-19    
+     2021-11-13    
 ====================
-
-* android
-e6c801d  Call time on Terminal and libvterm.  [Elliott Hughes]
-
-* frameworks/opt/net/wifi
-0fd2226  WiFi: Ignore connectivity scans during WFD session  [Arif Hussain]
-
-* lineage/hudson
-70dd07b  hudson: Add obiwan  [Alessandro Astone]
-
-* lineage/mirror
-21bac6c  Updated to 18-Oct-2021 11:45 UTC  [Kevin F. Haggerty]
+====================
+     2021-11-12    
+====================
 
 * lineage/wiki
-d9bb18b  wiki: s3ve3g*: add format_on_upgrade flag  [Francescodario Cuzzocrea]
+bf1750c  wiki: kuntao: Remove format_on_upgrade  [Michael W]
+3ee54c3  wiki: Fix screen section on deviceinfo page  [Michael W]
+====================
+     2021-11-11    
+====================
 
-* packages/apps/Dialer
-7cb4d69  Fix selecting phone account dialog show error.  [Grace Jia]
-9803373  Dialer: Notify content observers upon call log entry deletion  [LuK1337]
+* lineage/mirror
+a7c83c9  Updated aosp-minimal to 11-Nov-2021 13:01 UTC  [Tim Schumacher]
+====================
+     2021-11-10    
+====================
 
-* packages/apps/Seedvault
-68dc4f1  Disable AOSP K/V Call log backups  [Oliver Scott]
+* lineage/mirror
+bb51208  Updated aosp-minimal to 10-Nov-2021 13:01 UTC  [Tim Schumacher]
 
-* packages/inputmethods/LatinIME
-f812d4b  LatinIME: Remove hardcoded emoji row logic  [George Zacharia]
-0aae9ae  LatinIME: Enable full flag emoji support  [George Zacharia]
+* packages/apps/SetupWizard
+b975189  SUW: update lineage_wizard_script for TV  [Timi Rautamäki]
+====================
+     2021-11-09    
+====================
 
-* vendor/lineage
-e628bbc  config: Don't build Terminal  [Luca Stefani]
+* lineage/mirror
+69d3f93  Updated aosp-minimal to 09-Nov-2021 13:01 UTC  [Tim Schumacher]
+
+* lineage/website
+fc89488  Add headers/redirect to cloudflare  [Tom Powell]
+f87a75f  Revert "Use nicer looking Discord invite URL"  [LuK1337]
+
+* packages/apps/TvSettings
+e4c2915  TvSettings: use dark color for Wifi SUW  [Timi Rautamäki]
+====================
+     2021-11-08    
+====================
+
+* device/lineage/sepolicy
+9f177f7  atv: Label and allow mediashell_app what it needs  [Nolen Johnson]
+
+* lineage/mirror
+0e036fc  Updated to 08-Nov-2021 15:48 UTC  [Kevin F. Haggerty]
+28792d7  Updated lineage-minimal to 08-Nov-2021 13:01 UTC  [Tim Schumacher]
+
+* packages/providers/MediaProvider
+9d2c402  Merge tag 'android-security-11.0.0_r49' into staging/lineage-18.1_merge-android-security-11.0.0_r49  [Kevin F. Haggerty]
