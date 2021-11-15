@@ -1,75 +1,67 @@
 ====================
-     2021-10-24    
+     2021-11-15    
 ====================
 
 * build/make
-017dfc5  [DNM] Always use release-keys  [Arian]
+9514966  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-4171cdd  common: Label IAntiFlicker live display service  [Arian]
+37d4ec8  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-a744058  SystemUI: get rid of build text in qs  [Joey]
-5cd333e  SystemUI: Add anti flicker tile  [Arian]
-ebc6bd7  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+9a5c505  SystemUI: get rid of build text in qs  [Joey]
+b3177e6  SystemUI: Add anti flicker tile  [Arian]
+c71848a  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-899699a  Add support for anti flicker mode in LiveDisplay  [Arian]
+54a4f9c  Add support for anti flicker mode in LiveDisplay  [Arian]
+
+* hardware/qcom-caf/sm8150/audio
+afc22a1  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-cf13d05  Add support for anti flicker mode in LiveDisplay  [Arian]
-57c5857  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+70b38c0  Add support for anti flicker mode in LiveDisplay  [Arian]
+5d4a3f5  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * packages/apps/LineageParts
-0afd46f  Add support for anti flicker mode in LiveDisplay  [Arian]
-69871da  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+97cfb6d  Add support for anti flicker mode in LiveDisplay  [Arian]
+a0c94a3  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-10-23    
-====================
-
-* lineage/hudson
-af00828  hudson: Promote z2_plus to 18.1  [Davide Garberi]
-7a54b18  Regenerate device dependency mappings  [razorloves]
-
-* lineage/wiki
-0cc9b2f  wiki: Promote z2_plus to 18.1  [Davide Garberi]
-====================
-     2021-10-22    
-====================
-
-* lineage/wiki
-fc23f68  devices: Update tama maintainers  [Danny Trunk]
-====================
-     2021-10-21    
-====================
-
-* lineage/hudson
-e8dd997  hudson: Add aurora  [Danny Trunk]
-====================
-     2021-10-20    
+     2021-11-14    
 ====================
 
 * lineage/mirror
-e9bbac6  Updated to 19-Oct-2021 13:24 UTC  [Kevin F. Haggerty]
+43fcb6f  Updated lineage-minimal to 14-Nov-2021 13:01 UTC  [Tim Schumacher]
+====================
+     2021-11-13    
+====================
 
 * lineage/wiki
-d9bb18b  wiki: s3ve3g*: add format_on_upgrade flag  [Francescodario Cuzzocrea]
+bf1750c  wiki: kuntao: Remove format_on_upgrade  [Michael W]
+3ee54c3  wiki: Fix screen section on deviceinfo page  [Michael W]
 ====================
-     2021-10-19    
+     2021-11-12    
 ====================
-
-* lineage/hudson
-70dd07b  hudson: Add obiwan  [Alessandro Astone]
+====================
+     2021-11-11    
+====================
 
 * lineage/mirror
-21bac6c  Updated to 18-Oct-2021 11:45 UTC  [Kevin F. Haggerty]
-c87ceb8  Updated to 18-Oct-2021 11:25 UTC  [Kevin F. Haggerty]
+a7c83c9  Updated aosp-minimal to 11-Nov-2021 13:01 UTC  [Tim Schumacher]
 ====================
-     2021-10-18    
+     2021-11-10    
 ====================
 
-* lineage/hudson
-ac04cec  hudson: promote s3ve3 family to 18.1  [Francescodario Cuzzocrea]
+* lineage/mirror
+bb51208  Updated aosp-minimal to 10-Nov-2021 13:01 UTC  [Tim Schumacher]
+====================
+     2021-11-09    
+====================
 
-* lineage/wiki
-23e1ff4  devices: promote s3ve3 family to 18.1  [Francescodario Cuzzocrea]
+* lineage/mirror
+69d3f93  Updated aosp-minimal to 09-Nov-2021 13:01 UTC  [Tim Schumacher]
+0e036fc  Updated to 08-Nov-2021 15:48 UTC  [Kevin F. Haggerty]
+
+* lineage/website
+fc89488  Add headers/redirect to cloudflare  [Tom Powell]
+f87a75f  Revert "Use nicer looking Discord invite URL"  [LuK1337]
