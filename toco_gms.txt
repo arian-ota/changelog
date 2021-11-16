@@ -1,5 +1,20 @@
 ====================
+     2021-11-16    
+====================
+
+* lineage/wiki
+9a8c076  templates: recovery_install_odin: Odin tars shouldn't be gzipped  [Kevin F. Haggerty]
+====================
      2021-11-15    
+====================
+
+* build/make
+3325db7  build: Respect fs_config when generating recovery ramdisk  [lambdadroid]
+
+* packages/apps/TvSettings
+2873dea  TvSettings: hide password by default  [Timi Rautamäki]
+====================
+     2021-11-14    
 ====================
 
 * lineage/mirror
@@ -8,23 +23,26 @@
 * packages/apps/SetupWizard
 7955e86  SUW: remove privacy policy link on large-notouch  [Timi Rautamäki]
 ====================
-     2021-11-14    
-====================
-====================
      2021-11-13    
 ====================
+====================
+     2021-11-12    
+====================
+
+* hardware/qcom-caf/msm8974/media
+921538f  mm-video: vidc: Advertise the correct max supported level  [Deva Ramasubramanian]
 
 * lineage/wiki
 bf1750c  wiki: kuntao: Remove format_on_upgrade  [Michael W]
 3ee54c3  wiki: Fix screen section on deviceinfo page  [Michael W]
 ====================
-     2021-11-12    
+     2021-11-11    
 ====================
 
 * lineage/mirror
 a7c83c9  Updated aosp-minimal to 11-Nov-2021 13:01 UTC  [Tim Schumacher]
 ====================
-     2021-11-11    
+     2021-11-10    
 ====================
 
 * lineage/mirror
@@ -32,29 +50,3 @@ bb51208  Updated aosp-minimal to 10-Nov-2021 13:01 UTC  [Tim Schumacher]
 
 * packages/apps/SetupWizard
 b975189  SUW: update lineage_wizard_script for TV  [Timi Rautamäki]
-====================
-     2021-11-10    
-====================
-
-* lineage/mirror
-69d3f93  Updated aosp-minimal to 09-Nov-2021 13:01 UTC  [Tim Schumacher]
-
-* packages/apps/TvSettings
-e4c2915  TvSettings: use dark color for Wifi SUW  [Timi Rautamäki]
-====================
-     2021-11-09    
-====================
-
-* device/lineage/sepolicy
-9f177f7  atv: Label and allow mediashell_app what it needs  [Nolen Johnson]
-
-* lineage/mirror
-0e036fc  Updated to 08-Nov-2021 15:48 UTC  [Kevin F. Haggerty]
-28792d7  Updated lineage-minimal to 08-Nov-2021 13:01 UTC  [Tim Schumacher]
-
-* lineage/website
-fc89488  Add headers/redirect to cloudflare  [Tom Powell]
-f87a75f  Revert "Use nicer looking Discord invite URL"  [LuK1337]
-
-* packages/providers/MediaProvider
-9d2c402  Merge tag 'android-security-11.0.0_r49' into staging/lineage-18.1_merge-android-security-11.0.0_r49  [Kevin F. Haggerty]
