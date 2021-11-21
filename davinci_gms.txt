@@ -1,68 +1,85 @@
 ====================
-     2021-11-15    
+     2021-11-21    
 ====================
 
 * build/make
-aab99b0  [DNM] Always use release-keys  [Arian]
+d74e86d  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-095a173  common: Label IAntiFlicker live display service  [Arian]
+026c5d7  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-ff85fd8  SystemUI: get rid of build text in qs  [Joey]
-c77048f  SystemUI: Add anti flicker tile  [Arian]
-fb7f702  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+afed121  SystemUI: get rid of build text in qs  [Joey]
+3fdba26  SystemUI: Add anti flicker tile  [Arian]
+3858b0d  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-bbad44a  Add support for anti flicker mode in LiveDisplay  [Arian]
+607b924  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-a7eb35a  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+da2aaca  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-393294e  Add support for anti flicker mode in LiveDisplay  [Arian]
-ae6f268  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+4dcaaaf  Add support for anti flicker mode in LiveDisplay  [Arian]
+aeecfcb  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+
+* lineage/wiki
+c15bc6a  wiki: Add odm.img to extracting_blobs_from_zips page  [LuK1337]
+1423f4f  wiki: Remove unnecessary empty line  [LuK1337]
 
 * packages/apps/LineageParts
-f3c395d  Add support for anti flicker mode in LiveDisplay  [Arian]
-0f4f285  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+4be4a0f  Add support for anti flicker mode in LiveDisplay  [Arian]
+0cf79ee  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-11-14    
+     2021-11-20    
+====================
+
+* lineage/mirror
+b086214  Updated to 19-Nov-2021 17:07 UTC  [Kevin F. Haggerty]
+
+* lineage/wiki
+911faf8  wiki: devices: lge-msm8996: State that Nougat firmware is required  [Nolen Johnson]
+ca84321  wiki: devices: Move rs988 to Lineage Recovery  [Nolen Johnson]
+35dabe0  wiki: Flash vendor last for OnePlus SDM845  [LuK1337]
+====================
+     2021-11-19    
+====================
+
+* lineage/wiki
+57994e9  wiki: Only allow `true` for uses_twrp  [Michael W]
+16c40bb  wiki: Update "adding device" how to  [Michael W]
+96540df  wiki: Validate sdcard property  [Michael W]
+a833e28  wiki: Validate before_* properties  [Michael W]
+80de301  wiki: Various small fixes on deviceinfo page  [Michael W]
+eab6f24  wiki: Validate dimensions  [Michael W]
+434fa69  wiki: Validate screen property  [Michael W]
+
+* vendor/lineage
+ed1818c  overlay: update default wallpaper for large-notouch  [Timi Rautamäki]
+====================
+     2021-11-18    
+====================
+
+* lineage/mirror
+0120c7f  Updated to 17-Nov-2021 13:01 UTC  [Tim Schumacher]
+
+* lineage/wiki
+4f4a41a  Include build date / git rev somewhere we can scrape  [Tom Powell]
+608850e  wiki: Resize device images  [Michael W]
+====================
+     2021-11-17    
+====================
+
+* lineage/wiki
+7d3c054  wiki: Prepend numeric device names with vendor  [Michael W]
+ca94390  wiki: Improve readability  [Tim Schumacher]
+9a8c076  templates: recovery_install_odin: Odin tars shouldn't be gzipped  [Kevin F. Haggerty]
+====================
+     2021-11-16    
+====================
+====================
+     2021-11-15    
 ====================
 
 * lineage/mirror
 43fcb6f  Updated lineage-minimal to 14-Nov-2021 13:01 UTC  [Tim Schumacher]
-====================
-     2021-11-13    
-====================
-
-* lineage/wiki
-bf1750c  wiki: kuntao: Remove format_on_upgrade  [Michael W]
-====================
-     2021-11-12    
-====================
-
-* lineage/wiki
-3ee54c3  wiki: Fix screen section on deviceinfo page  [Michael W]
-====================
-     2021-11-11    
-====================
-
-* lineage/mirror
-a7c83c9  Updated aosp-minimal to 11-Nov-2021 13:01 UTC  [Tim Schumacher]
-====================
-     2021-11-10    
-====================
-
-* lineage/mirror
-bb51208  Updated aosp-minimal to 10-Nov-2021 13:01 UTC  [Tim Schumacher]
-====================
-     2021-11-09    
-====================
-
-* lineage/mirror
-69d3f93  Updated aosp-minimal to 09-Nov-2021 13:01 UTC  [Tim Schumacher]
-
-* lineage/website
-fc89488  Add headers/redirect to cloudflare  [Tom Powell]
-f87a75f  Revert "Use nicer looking Discord invite URL"  [LuK1337]
