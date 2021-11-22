@@ -1,15 +1,23 @@
 ====================
+     2021-11-22    
+====================
+
+* frameworks/base
+8795f62  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+====================
      2021-11-21    
 ====================
+
+* lineage/hudson
+d51e01b  We don't like Star Wars either  [Luca Stefani]
+c684b1a  We don't like beer :(  [Luca Stefani]
+
+* lineage/wiki
+39ec641  Kill yoda  [Luca Stefani]
+5b2820f  Kill kirin  [Luca Stefani]
 ====================
      2021-11-20    
 ====================
-
-* bootable/recovery
-3b60be6  recovery.cpp: Fix typo when unmounting system  [Mohammad Hasan Keramat J]
-
-* lineage/mirror
-b086214  Updated to 19-Nov-2021 17:07 UTC  [Kevin F. Haggerty]
 
 * lineage/wiki
 c15bc6a  wiki: Add odm.img to extracting_blobs_from_zips page  [LuK1337]
@@ -20,15 +28,14 @@ ca84321  wiki: devices: Move rs988 to Lineage Recovery  [Nolen Johnson]
      2021-11-19    
 ====================
 
+* bootable/recovery
+3b60be6  recovery.cpp: Fix typo when unmounting system  [Mohammad Hasan Keramat J]
+
+* lineage/mirror
+b086214  Updated to 19-Nov-2021 17:07 UTC  [Kevin F. Haggerty]
+
 * lineage/wiki
 35dabe0  wiki: Flash vendor last for OnePlus SDM845  [LuK1337]
-57994e9  wiki: Only allow `true` for uses_twrp  [Michael W]
-16c40bb  wiki: Update "adding device" how to  [Michael W]
-96540df  wiki: Validate sdcard property  [Michael W]
-a833e28  wiki: Validate before_* properties  [Michael W]
-80de301  wiki: Various small fixes on deviceinfo page  [Michael W]
-eab6f24  wiki: Validate dimensions  [Michael W]
-434fa69  wiki: Validate screen property  [Michael W]
 
 * packages/apps/DeskClock
 cb82206  DeskClock: fix setting alarm volume  [Timi Rautamäki]
@@ -43,6 +50,13 @@ cb82206  DeskClock: fix setting alarm volume  [Timi Rautamäki]
 e9bd5da  Merge tag 3.1.1 of https://github.com/htop-dev/htop  [DroidFreak32]
 
 * lineage/wiki
+57994e9  wiki: Only allow `true` for uses_twrp  [Michael W]
+16c40bb  wiki: Update "adding device" how to  [Michael W]
+96540df  wiki: Validate sdcard property  [Michael W]
+a833e28  wiki: Validate before_* properties  [Michael W]
+80de301  wiki: Various small fixes on deviceinfo page  [Michael W]
+eab6f24  wiki: Validate dimensions  [Michael W]
+434fa69  wiki: Validate screen property  [Michael W]
 4f4a41a  Include build date / git rev somewhere we can scrape  [Tom Powell]
 608850e  wiki: Resize device images  [Michael W]
 
@@ -54,25 +68,14 @@ cc0df93  overlay: update default wallpaper for large-notouch  [Timi Rautamäki]
 
 * lineage/mirror
 0120c7f  Updated to 17-Nov-2021 13:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-7d3c054  wiki: Prepend numeric device names with vendor  [Michael W]
-ca94390  wiki: Improve readability  [Tim Schumacher]
-
-* packages/apps/Trebuchet
-339c216  Launcher: Fix all apps view not dismissing  [Timi Rautamäki]
 ====================
      2021-11-16    
 ====================
 
 * lineage/wiki
+7d3c054  wiki: Prepend numeric device names with vendor  [Michael W]
+ca94390  wiki: Improve readability  [Tim Schumacher]
 9a8c076  templates: recovery_install_odin: Odin tars shouldn't be gzipped  [Kevin F. Haggerty]
 
-* packages/apps/TvSettings
-2873dea  TvSettings: hide password by default  [Timi Rautamäki]
-====================
-     2021-11-15    
-====================
-
-* build/make
-3325db7  build: Respect fs_config when generating recovery ramdisk  [lambdadroid]
+* packages/apps/Trebuchet
+339c216  Launcher: Fix all apps view not dismissing  [Timi Rautamäki]
