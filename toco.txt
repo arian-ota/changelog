@@ -1,4 +1,19 @@
 ====================
+     2021-11-23    
+====================
+
+* frameworks/base
+a389ef4  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+
+* lineage/mirror
+17e63a7  Updated to 22-Nov-2021 19:12 UTC  [Kevin F. Haggerty]
+
+* lineage/wiki
+de38fe5  wiki: Validator: Check for all required images  [Michael W]
+3395ee6  wiki: Specify the image format  [Michael W]
+5dd4910  wiki: Introduce prepare_image script  [Michael W]
+d0b204a  wiki: Revamp devices page  [Michael W]
+====================
      2021-11-22    
 ====================
 
@@ -9,13 +24,15 @@ c684b1a  We don't like beer :(  [Luca Stefani]
 * lineage/wiki
 39ec641  Kill yoda  [Luca Stefani]
 5b2820f  Kill kirin  [Luca Stefani]
+
+* vendor/lineage
+a3d6e25  overlay: dialer: Update visual voicemail config  [razorloves]
 ====================
      2021-11-21    
 ====================
 
 * lineage/wiki
 c15bc6a  wiki: Add odm.img to extracting_blobs_from_zips page  [LuK1337]
-1423f4f  wiki: Remove unnecessary empty line  [LuK1337]
 ====================
      2021-11-20    
 ====================
@@ -27,9 +44,9 @@ c15bc6a  wiki: Add odm.img to extracting_blobs_from_zips page  [LuK1337]
 b086214  Updated to 19-Nov-2021 17:07 UTC  [Kevin F. Haggerty]
 
 * lineage/wiki
+1423f4f  wiki: Remove unnecessary empty line  [LuK1337]
 911faf8  wiki: devices: lge-msm8996: State that Nougat firmware is required  [Nolen Johnson]
 ca84321  wiki: devices: Move rs988 to Lineage Recovery  [Nolen Johnson]
-35dabe0  wiki: Flash vendor last for OnePlus SDM845  [LuK1337]
 
 * packages/apps/DeskClock
 cb82206  DeskClock: fix setting alarm volume  [Timi Rautamäki]
@@ -44,6 +61,7 @@ cb82206  DeskClock: fix setting alarm volume  [Timi Rautamäki]
 e9bd5da  Merge tag 3.1.1 of https://github.com/htop-dev/htop  [DroidFreak32]
 
 * lineage/wiki
+35dabe0  wiki: Flash vendor last for OnePlus SDM845  [LuK1337]
 57994e9  wiki: Only allow `true` for uses_twrp  [Michael W]
 16c40bb  wiki: Update "adding device" how to  [Michael W]
 96540df  wiki: Validate sdcard property  [Michael W]
@@ -75,12 +93,3 @@ ca94390  wiki: Improve readability  [Tim Schumacher]
 
 * packages/apps/Trebuchet
 339c216  Launcher: Fix all apps view not dismissing  [Timi Rautamäki]
-====================
-     2021-11-16    
-====================
-
-* build/make
-3325db7  build: Respect fs_config when generating recovery ramdisk  [lambdadroid]
-
-* packages/apps/TvSettings
-2873dea  TvSettings: hide password by default  [Timi Rautamäki]
