@@ -1,5 +1,26 @@
 ====================
+     2021-11-23    
+====================
+
+* frameworks/base
+37bf020  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+
+* lineage/wiki
+de38fe5  wiki: Validator: Check for all required images  [Michael W]
+3395ee6  wiki: Specify the image format  [Michael W]
+5dd4910  wiki: Introduce prepare_image script  [Michael W]
+d0b204a  wiki: Revamp devices page  [Michael W]
+====================
      2021-11-22    
+====================
+
+* lineage/mirror
+17e63a7  Updated to 22-Nov-2021 19:12 UTC  [Kevin F. Haggerty]
+
+* vendor/lineage
+a3d6e25  overlay: dialer: Update visual voicemail config  [razorloves]
+====================
+     2021-11-21    
 ====================
 
 * lineage/hudson
@@ -10,14 +31,16 @@ c684b1a  We don't like beer :(  [Luca Stefani]
 39ec641  Kill yoda  [Luca Stefani]
 5b2820f  Kill kirin  [Luca Stefani]
 ====================
-     2021-11-21    
+     2021-11-20    
 ====================
 
 * lineage/wiki
 c15bc6a  wiki: Add odm.img to extracting_blobs_from_zips page  [LuK1337]
 1423f4f  wiki: Remove unnecessary empty line  [LuK1337]
+911faf8  wiki: devices: lge-msm8996: State that Nougat firmware is required  [Nolen Johnson]
+ca84321  wiki: devices: Move rs988 to Lineage Recovery  [Nolen Johnson]
 ====================
-     2021-11-20    
+     2021-11-19    
 ====================
 
 * bootable/recovery
@@ -27,14 +50,12 @@ c15bc6a  wiki: Add odm.img to extracting_blobs_from_zips page  [LuK1337]
 b086214  Updated to 19-Nov-2021 17:07 UTC  [Kevin F. Haggerty]
 
 * lineage/wiki
-911faf8  wiki: devices: lge-msm8996: State that Nougat firmware is required  [Nolen Johnson]
-ca84321  wiki: devices: Move rs988 to Lineage Recovery  [Nolen Johnson]
 35dabe0  wiki: Flash vendor last for OnePlus SDM845  [LuK1337]
 
 * packages/apps/DeskClock
 cb82206  DeskClock: fix setting alarm volume  [Timi Rautamäki]
 ====================
-     2021-11-19    
+     2021-11-18    
 ====================
 
 * external/htop
@@ -51,33 +72,18 @@ a833e28  wiki: Validate before_* properties  [Michael W]
 80de301  wiki: Various small fixes on deviceinfo page  [Michael W]
 eab6f24  wiki: Validate dimensions  [Michael W]
 434fa69  wiki: Validate screen property  [Michael W]
+4f4a41a  Include build date / git rev somewhere we can scrape  [Tom Powell]
+608850e  wiki: Resize device images  [Michael W]
 
 * vendor/lineage
 cc0df93  overlay: update default wallpaper for large-notouch  [Timi Rautamäki]
 ====================
-     2021-11-18    
+     2021-11-17    
 ====================
 
 * lineage/mirror
 0120c7f  Updated to 17-Nov-2021 13:01 UTC  [Tim Schumacher]
 
 * lineage/wiki
-4f4a41a  Include build date / git rev somewhere we can scrape  [Tom Powell]
-608850e  wiki: Resize device images  [Michael W]
-====================
-     2021-11-17    
-====================
-
-* lineage/wiki
 7d3c054  wiki: Prepend numeric device names with vendor  [Michael W]
 ca94390  wiki: Improve readability  [Tim Schumacher]
-9a8c076  templates: recovery_install_odin: Odin tars shouldn't be gzipped  [Kevin F. Haggerty]
-
-* packages/apps/Trebuchet
-339c216  Launcher: Fix all apps view not dismissing  [Timi Rautamäki]
-====================
-     2021-11-16    
-====================
-
-* packages/apps/TvSettings
-2873dea  TvSettings: hide password by default  [Timi Rautamäki]
