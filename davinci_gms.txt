@@ -1,85 +1,74 @@
 ====================
-     2021-11-21    
+     2021-11-28    
 ====================
 
 * build/make
-d74e86d  [DNM] Always use release-keys  [Arian]
+c54f1ab  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-026c5d7  common: Label IAntiFlicker live display service  [Arian]
+b024c45  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-afed121  SystemUI: get rid of build text in qs  [Joey]
-3fdba26  SystemUI: Add anti flicker tile  [Arian]
-3858b0d  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+e376fb2  SystemUI: get rid of build text in qs  [Joey]
+c2a200b  SystemUI: Add anti flicker tile  [Arian]
+7fd6120  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-607b924  Add support for anti flicker mode in LiveDisplay  [Arian]
+1991416  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-da2aaca  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+4e91a40  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-4dcaaaf  Add support for anti flicker mode in LiveDisplay  [Arian]
-aeecfcb  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+e980aef  Add support for anti flicker mode in LiveDisplay  [Arian]
+934a454  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * lineage/wiki
-c15bc6a  wiki: Add odm.img to extracting_blobs_from_zips page  [LuK1337]
-1423f4f  wiki: Remove unnecessary empty line  [LuK1337]
+7b74217  Fix Windows stupidness in the Odin instructions  [Tim Schumacher]
+71c5c33  wiki: Remove unnecessary hint  [LuK1337]
+75b5c33  wiki: Switch gts4lv/gts4lvwifi to LineageOS recovery  [LuK1337]
 
 * packages/apps/LineageParts
-4be4a0f  Add support for anti flicker mode in LiveDisplay  [Arian]
-0cf79ee  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+1436228  Add support for anti flicker mode in LiveDisplay  [Arian]
+1e9ddbd  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-11-20    
+     2021-11-27    
 ====================
-
-* lineage/mirror
-b086214  Updated to 19-Nov-2021 17:07 UTC  [Kevin F. Haggerty]
-
-* lineage/wiki
-911faf8  wiki: devices: lge-msm8996: State that Nougat firmware is required  [Nolen Johnson]
-ca84321  wiki: devices: Move rs988 to Lineage Recovery  [Nolen Johnson]
-35dabe0  wiki: Flash vendor last for OnePlus SDM845  [LuK1337]
 ====================
-     2021-11-19    
+     2021-11-26    
 ====================
-
-* lineage/wiki
-57994e9  wiki: Only allow `true` for uses_twrp  [Michael W]
-16c40bb  wiki: Update "adding device" how to  [Michael W]
-96540df  wiki: Validate sdcard property  [Michael W]
-a833e28  wiki: Validate before_* properties  [Michael W]
-80de301  wiki: Various small fixes on deviceinfo page  [Michael W]
-eab6f24  wiki: Validate dimensions  [Michael W]
-434fa69  wiki: Validate screen property  [Michael W]
-
-* vendor/lineage
-ed1818c  overlay: update default wallpaper for large-notouch  [Timi Rautamäki]
 ====================
-     2021-11-18    
+     2021-11-25    
 ====================
 
 * lineage/mirror
-0120c7f  Updated to 17-Nov-2021 13:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-4f4a41a  Include build date / git rev somewhere we can scrape  [Tom Powell]
-608850e  wiki: Resize device images  [Michael W]
+db91bac  Updated aosp-minimal to 24-Nov-2021 13:01 UTC  [Tim Schumacher]
 ====================
-     2021-11-17    
-====================
-
-* lineage/wiki
-7d3c054  wiki: Prepend numeric device names with vendor  [Michael W]
-ca94390  wiki: Improve readability  [Tim Schumacher]
-9a8c076  templates: recovery_install_odin: Odin tars shouldn't be gzipped  [Kevin F. Haggerty]
-====================
-     2021-11-16    
+     2021-11-24    
 ====================
 ====================
-     2021-11-15    
+     2021-11-23    
 ====================
 
 * lineage/mirror
-43fcb6f  Updated lineage-minimal to 14-Nov-2021 13:01 UTC  [Tim Schumacher]
+17e63a7  Updated to 22-Nov-2021 19:12 UTC  [Kevin F. Haggerty]
+
+* lineage/wiki
+de38fe5  wiki: Validator: Check for all required images  [Michael W]
+3395ee6  wiki: Specify the image format  [Michael W]
+5dd4910  wiki: Introduce prepare_image script  [Michael W]
+d0b204a  wiki: Revamp devices page  [Michael W]
+
+* packages/apps/Trebuchet
+961e453  Launcher: Fix all apps view not dismissing  [Timi Rautamäki]
+====================
+     2021-11-22    
+====================
+
+* lineage/hudson
+d51e01b  We don't like Star Wars either  [Luca Stefani]
+c684b1a  We don't like beer :(  [Luca Stefani]
+
+* lineage/wiki
+39ec641  Kill yoda  [Luca Stefani]
+5b2820f  Kill kirin  [Luca Stefani]
