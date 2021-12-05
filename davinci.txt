@@ -1,61 +1,55 @@
 ====================
-     2021-11-28    
+     2021-12-05    
 ====================
 
 * frameworks/base
-9dca502  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+c8d1769  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
 ====================
-     2021-11-27    
+     2021-12-04    
 ====================
-
-* lineage/wiki
-7b74217  Fix Windows stupidness in the Odin instructions  [Tim Schumacher]
-71c5c33  wiki: Remove unnecessary hint  [LuK1337]
-75b5c33  wiki: Switch gts4lv/gts4lvwifi to LineageOS recovery  [LuK1337]
 ====================
-     2021-11-26    
+     2021-12-03    
 ====================
 
-* android
-f81f76d  manifest: Track our own libcore for tzdb-related updates  [Kevin F. Haggerty]
+* lineage/mirror
+e78cf71  Updated lineage-minimal to 03-Dec-2021 13:01 UTC  [Tim Schumacher]
+6ab5c08  Updated to 02-Dec-2021 23:47 UTC  [Kevin F. Haggerty]
+====================
+     2021-12-02    
+====================
+
+* lineage/mirror
+42c9000  Updated to 02-Dec-2021 13:01 UTC  [Tim Schumacher]
+====================
+     2021-12-01    
+====================
 
 * frameworks/base
-14749db  Use custom flag for edge long swipe gesture  [LuK1337]
+7ba7894  VolumeDialog: fix an NPE on TV dialog  [Timi Rautamäki]
+255c6ea  Fix SystemUI not using appropriate horizontal settings on devices  [lu5ck]
 
-* libcore
-0ff20c6  Fix tests which relied on Pacific/Apia DST offset.  [Almaz Mingaleev]
-====================
-     2021-11-25    
-====================
-====================
-     2021-11-24    
-====================
+* packages/apps/Settings
+0f5d423  Revert "[Wi-Fi] Remove 'Do not validate' option in CA certificate spinner"  [TogoFire]
 
-* lineage/mirror
-db91bac  Updated aosp-minimal to 24-Nov-2021 13:01 UTC  [Tim Schumacher]
-====================
-     2021-11-23    
-====================
+* packages/apps/SetupWizard
+c2d3b09  SUW: remove restore page on TV for now  [Timi Rautamäki]
 
-* lineage/mirror
-17e63a7  Updated to 22-Nov-2021 19:12 UTC  [Kevin F. Haggerty]
-
-* lineage/wiki
-de38fe5  wiki: Validator: Check for all required images  [Michael W]
-3395ee6  wiki: Specify the image format  [Michael W]
-5dd4910  wiki: Introduce prepare_image script  [Michael W]
-d0b204a  wiki: Revamp devices page  [Michael W]
+* system/core
+039f8f1  healthd: Add support for HVDCP_3P5 chargers  [Dyneteve]
 ====================
-     2021-11-22    
+     2021-11-30    
 ====================
 
 * lineage/hudson
-d51e01b  We don't like Star Wars either  [Luca Stefani]
-c684b1a  We don't like beer :(  [Luca Stefani]
+7b36abd  hudson: promote Mi a1 (tissot) to 18.1  [abhinavgupta371]
+
+* lineage/mirror
+d1b3412  aosp-minimal: Add kernel/manifest repos  [Chirayu Desai]
+c9b122e  aosp-minimal: Include kernel/manifest, not synced by default  [Chirayu Desai]
+fb91187  Updated lineage-minimal to 30-Nov-2021 13:01 UTC  [Tim Schumacher]
 
 * lineage/wiki
-39ec641  Kill yoda  [Luca Stefani]
-5b2820f  Kill kirin  [Luca Stefani]
-
-* vendor/lineage
-a3d6e25  overlay: dialer: Update visual voicemail config  [razorloves]
+f14b878  wiki: promote Mi a1 (tissot) to 18.1  [abhinavgupta371]
+====================
+     2021-11-29    
+====================
