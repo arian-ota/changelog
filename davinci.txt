@@ -1,75 +1,83 @@
 ====================
-     2021-12-05    
+     2021-12-12    
 ====================
 
 * build/make
-e0de578  [DNM] Always use release-keys  [Arian]
+d5544de  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-6a45ef9  common: Label IAntiFlicker live display service  [Arian]
+1c4df5d  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-d921ed1  SystemUI: get rid of build text in qs  [Joey]
-1f07dd3  SystemUI: Add anti flicker tile  [Arian]
-ef56bd7  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+c0a355f  SystemUI: get rid of build text in qs  [Joey]
+5a5213a  SystemUI: Add anti flicker tile  [Arian]
+046d8ae  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-09d0544  Add support for anti flicker mode in LiveDisplay  [Arian]
+caa41d9  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-943f05d  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+dd82b57  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-99cafac  Add support for anti flicker mode in LiveDisplay  [Arian]
-2ea6aea  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+848e8f3  Add support for anti flicker mode in LiveDisplay  [Arian]
+382f281  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
+
+* lineage/mirror
+9de889c  Updated lineage-minimal to 11-Dec-2021 13:01 UTC  [Tim Schumacher]
 
 * packages/apps/LineageParts
-26e0e2b  Add support for anti flicker mode in LiveDisplay  [Arian]
-61fd80b  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+3ddbe04  Add support for anti flicker mode in LiveDisplay  [Arian]
+76edcfc  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-12-04    
-====================
-
-* lineage/mirror
-e78cf71  Updated lineage-minimal to 03-Dec-2021 13:01 UTC  [Tim Schumacher]
-====================
-     2021-12-03    
+     2021-12-11    
 ====================
 
 * lineage/mirror
-6ab5c08  Updated to 02-Dec-2021 23:47 UTC  [Kevin F. Haggerty]
-42c9000  Updated to 02-Dec-2021 13:01 UTC  [Tim Schumacher]
+b856d29  Updated aosp-minimal to 10-Dec-2021 13:01 UTC  [Tim Schumacher]
 ====================
-     2021-12-02    
+     2021-12-10    
 ====================
 
-* packages/apps/TvSettings
-d849abe  TvSettings: hide password by default  [Timi Rautamäki]
-a8ff5ab  TvSettings: use dark color for Wifi SUW  [Timi Rautamäki]
+* lineage/mirror
+d8bcf78  Updated aosp-minimal to 09-Dec-2021 13:01 UTC  [Tim Schumacher]
 ====================
-     2021-12-01    
+     2021-12-09    
+====================
+
+* lineage/wiki
+a61f9c9  wiki: Hide "Previously supported versions" if device.versions.size <= 1  [LuK1337]
+707360a  wiki: Add camera validation  [Michael W]
+8765eea  wiki: devices: Remove redundant note_show  [Michael W]
+908727b  wiki: deviceinfo: Link to FAQ in model list  [Michael W]
+9b941da  wiki: deviceinfo: More space for content  [Michael W]
+1d00f12  wiki: deviceinfo: Distinguish between current and past branches  [Michael W]
+220f0ed  wiki: FAQ: Add questions for unsupported devices and models  [Michael W]
+a0cbf96  wiki: gapps: Move installation section before downloads  [Michael W]
+====================
+     2021-12-08    
 ====================
 
 * lineage/hudson
-7b36abd  hudson: promote Mi a1 (tissot) to 18.1  [abhinavgupta371]
+45f5d2e  Regenerate device dependency mappings  [razorloves]
 
-* lineage/mirror
-d1b3412  aosp-minimal: Add kernel/manifest repos  [Chirayu Desai]
-c9b122e  aosp-minimal: Include kernel/manifest, not synced by default  [Chirayu Desai]
-fb91187  Updated lineage-minimal to 30-Nov-2021 13:01 UTC  [Tim Schumacher]
+* packages/apps/Trebuchet
+2737d0d  Add null check before updating animation progress  [Tony Wickham]
+====================
+     2021-12-07    
+====================
+
+* lineage/website
+38a7e84  reddit -> Reddit  [LuK1337]
 
 * lineage/wiki
-f14b878  wiki: promote Mi a1 (tissot) to 18.1  [abhinavgupta371]
+9729b65  Subreddit -> subreddit  [LuK1337]
+====================
+     2021-12-06    
+====================
 
-* packages/apps/TvSettings
-e3b4871  TvSettings: Trust  [Timi Rautamäki]
-0b6cbdc  Revert "Show Trust in security settings"  [Timi Rautamäki]
+* lineage/hudson
+b148068  hudson: Add monet  [xSylla]
 
-* vendor/lineage
-8f1132f  overlay: tv: default to night mode  [Timi Rautamäki]
-====================
-     2021-11-30    
-====================
-====================
-     2021-11-29    
-====================
+* lineage/wiki
+f7d7afd  devices: Add Xiaomi Mi 10 Lite 5G (monet)  [xSylla]
