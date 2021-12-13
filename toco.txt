@@ -1,66 +1,57 @@
 ====================
-     2021-12-06    
+     2021-12-13    
 ====================
 
-* development
-7e7d6fd  make-key: Enforce PBEv1 password-protected signing keys  [Vasyl Gello]
-
 * frameworks/base
-4606ba7  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
-
-* lineage/hudson
-b148068  hudson: Add monet  [xSylla]
+d6a31ae  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+f876646  Don't pass repeated back key events to app if custom action is set up  [LuK1337]
+899621a  Avoid sending duplicate MSG_BACK_LONG_PRESS messages  [LuK1337]
 
 * lineage/wiki
-f7d7afd  devices: Add Xiaomi Mi 10 Lite 5G (monet)  [xSylla]
+a010dce  wiki: Add ab_copy_partition for chef  [LuK1337]
 ====================
-     2021-12-05    
-====================
-====================
-     2021-12-04    
+     2021-12-12    
 ====================
 
 * lineage/mirror
-e78cf71  Updated lineage-minimal to 03-Dec-2021 13:01 UTC  [Tim Schumacher]
+9de889c  Updated lineage-minimal to 11-Dec-2021 13:01 UTC  [Tim Schumacher]
 ====================
-     2021-12-03    
+     2021-12-11    
 ====================
 
 * lineage/mirror
-6ab5c08  Updated to 02-Dec-2021 23:47 UTC  [Kevin F. Haggerty]
-42c9000  Updated to 02-Dec-2021 13:01 UTC  [Tim Schumacher]
+b856d29  Updated aosp-minimal to 10-Dec-2021 13:01 UTC  [Tim Schumacher]
 ====================
-     2021-12-02    
+     2021-12-10    
 ====================
-
-* frameworks/base
-7ba7894  VolumeDialog: fix an NPE on TV dialog  [Timi Rautamäki]
-
-* packages/apps/Settings
-0f5d423  Revert "[Wi-Fi] Remove 'Do not validate' option in CA certificate spinner"  [TogoFire]
-
-* packages/apps/SetupWizard
-c2d3b09  SUW: remove restore page on TV for now  [Timi Rautamäki]
-
-* system/core
-039f8f1  healthd: Add support for HVDCP_3P5 chargers  [Dyneteve]
-====================
-     2021-12-01    
-====================
-
-* frameworks/base
-255c6ea  Fix SystemUI not using appropriate horizontal settings on devices  [lu5ck]
-
-* lineage/hudson
-7b36abd  hudson: promote Mi a1 (tissot) to 18.1  [abhinavgupta371]
 
 * lineage/mirror
-d1b3412  aosp-minimal: Add kernel/manifest repos  [Chirayu Desai]
-c9b122e  aosp-minimal: Include kernel/manifest, not synced by default  [Chirayu Desai]
-fb91187  Updated lineage-minimal to 30-Nov-2021 13:01 UTC  [Tim Schumacher]
+d8bcf78  Updated aosp-minimal to 09-Dec-2021 13:01 UTC  [Tim Schumacher]
+====================
+     2021-12-09    
+====================
 
 * lineage/wiki
-f14b878  wiki: promote Mi a1 (tissot) to 18.1  [abhinavgupta371]
+a61f9c9  wiki: Hide "Previously supported versions" if device.versions.size <= 1  [LuK1337]
+707360a  wiki: Add camera validation  [Michael W]
+8765eea  wiki: devices: Remove redundant note_show  [Michael W]
+908727b  wiki: deviceinfo: Link to FAQ in model list  [Michael W]
+9b941da  wiki: deviceinfo: More space for content  [Michael W]
+1d00f12  wiki: deviceinfo: Distinguish between current and past branches  [Michael W]
+220f0ed  wiki: FAQ: Add questions for unsupported devices and models  [Michael W]
+a0cbf96  wiki: gapps: Move installation section before downloads  [Michael W]
 ====================
-     2021-11-30    
+     2021-12-08    
 ====================
+
+* lineage/hudson
+45f5d2e  Regenerate device dependency mappings  [razorloves]
+====================
+     2021-12-07    
+====================
+
+* lineage/website
+38a7e84  reddit -> Reddit  [LuK1337]
+
+* lineage/wiki
+9729b65  Subreddit -> subreddit  [LuK1337]
