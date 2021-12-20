@@ -1,57 +1,57 @@
 ====================
-     2021-12-13    
+     2021-12-20    
 ====================
 
 * frameworks/base
-6fbc829  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
-f876646  Don't pass repeated back key events to app if custom action is set up  [LuK1337]
-899621a  Avoid sending duplicate MSG_BACK_LONG_PRESS messages  [LuK1337]
+60dcc4f  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
 
-* lineage/wiki
-a010dce  wiki: Add ab_copy_partition for chef  [LuK1337]
+* lineage/mirror
+668c54f  Updated lineage-minimal to 19-Dec-2021 13:01 UTC  [Tim Schumacher]
 ====================
-     2021-12-12    
+     2021-12-19    
+====================
+
+* lineage-sdk
+de23e39  sdk: ATV Keyhandler: Add accessory pairing to the default list  [Aaron Kling]
+
+* lineage/mirror
+7d45818  Updated to 18-Dec-2021 16:24 UTC  [Kevin F. Haggerty]
+
+* packages/apps/LineageParts
+9b07aa6  ATV Keyhandler: Add support for pairing intent  [Aaron Kling]
+====================
+     2021-12-18    
+====================
+====================
+     2021-12-17    
 ====================
 
 * lineage/mirror
-9de889c  Updated lineage-minimal to 11-Dec-2021 13:01 UTC  [Tim Schumacher]
+946a7af  Updated to 16-Dec-2021 03:04 UTC  [Kevin F. Haggerty]
 ====================
-     2021-12-11    
-====================
-
-* lineage/mirror
-b856d29  Updated aosp-minimal to 10-Dec-2021 13:01 UTC  [Tim Schumacher]
-====================
-     2021-12-10    
-====================
-
-* lineage/mirror
-d8bcf78  Updated aosp-minimal to 09-Dec-2021 13:01 UTC  [Tim Schumacher]
-====================
-     2021-12-09    
+     2021-12-16    
 ====================
 
 * lineage/wiki
-a61f9c9  wiki: Hide "Previously supported versions" if device.versions.size <= 1  [LuK1337]
-707360a  wiki: Add camera validation  [Michael W]
-8765eea  wiki: devices: Remove redundant note_show  [Michael W]
-908727b  wiki: deviceinfo: Link to FAQ in model list  [Michael W]
-9b941da  wiki: deviceinfo: More space for content  [Michael W]
-1d00f12  wiki: deviceinfo: Distinguish between current and past branches  [Michael W]
-220f0ed  wiki: FAQ: Add questions for unsupported devices and models  [Michael W]
-a0cbf96  wiki: gapps: Move installation section before downloads  [Michael W]
+975e302  wiki: Update gems again  [Michael W]
 ====================
-     2021-12-08    
+     2021-12-15    
 ====================
 
-* lineage/hudson
-45f5d2e  Regenerate device dependency mappings  [razorloves]
+* external/chromium-webview
+49b105a  Update arm{,64} Chromium Webview to 96.0.4664.104  [Kevin F. Haggerty]
+
+* lineage/scripts
+9099b7e  Update default webview to 96.0.4664.104  [Kevin F. Haggerty]
 ====================
-     2021-12-07    
+     2021-12-14    
 ====================
 
-* lineage/website
-38a7e84  reddit -> Reddit  [LuK1337]
+* device/lineage/atv
+02256c8  Standardize wake keys across all supported remotes  [Aaron Kling]
 
-* lineage/wiki
-9729b65  Subreddit -> subreddit  [LuK1337]
+* frameworks/base
+8eb0d78  Merge tag 'android-security-11.0.0_r50' into staging/lineage-18.1_merge-android-security-11.0.0_r50  [Kevin F. Haggerty]
+
+* packages/apps/LineageParts
+92c7d06  Add ATV KeyHandler  [Timi Rautamäki]
