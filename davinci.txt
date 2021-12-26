@@ -1,65 +1,42 @@
 ====================
-     2021-12-19    
+     2021-12-26    
 ====================
 
 * frameworks/base
-7c01ed1  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+8d98e51  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+
+* vendor/translations
+bf7cc26  Merge pull request #17 from NeroXD1/translations  [Arian]
 ====================
-     2021-12-18    
+     2021-12-25    
+====================
+====================
+     2021-12-24    
 ====================
 
-* lineage-sdk
-de23e39  sdk: ATV Keyhandler: Add accessory pairing to the default list  [Aaron Kling]
-
-* lineage/mirror
-7d45818  Updated to 18-Dec-2021 16:24 UTC  [Kevin F. Haggerty]
-
-* packages/apps/LineageParts
-9b07aa6  ATV Keyhandler: Add support for pairing intent  [Aaron Kling]
+* vendor/translations
+9e2013c  Add brazilian portuguese translations  [NeroXD1]
 ====================
-     2021-12-17    
-====================
-====================
-     2021-12-16    
+     2021-12-23    
 ====================
 
 * lineage/mirror
-946a7af  Updated to 16-Dec-2021 03:04 UTC  [Kevin F. Haggerty]
+430e810  Updated aosp-minimal to 23-Dec-2021 13:01 UTC  [Tim Schumacher]
 ====================
-     2021-12-15    
+     2021-12-22    
 ====================
 
-* external/chromium-webview
-49b105a  Update arm{,64} Chromium Webview to 96.0.4664.104  [Kevin F. Haggerty]
+* lineage/mirror
+bbc6a94  Updated to 22-Dec-2021 13:01 UTC  [Tim Schumacher]
+====================
+     2021-12-21    
+====================
 
 * lineage/wiki
-975e302  wiki: Update gems again  [Michael W]
+b28eff8  wiki: Update Asus Max M1 (X00P) image  [danascape]
 ====================
-     2021-12-14    
-====================
-
-* device/lineage/atv
-02256c8  Standardize wake keys across all supported remotes  [Aaron Kling]
-
-* frameworks/base
-8eb0d78  Merge tag 'android-security-11.0.0_r50' into staging/lineage-18.1_merge-android-security-11.0.0_r50  [Kevin F. Haggerty]
-
-* lineage/scripts
-9099b7e  Update default webview to 96.0.4664.104  [Kevin F. Haggerty]
-====================
-     2021-12-13    
+     2021-12-20    
 ====================
 
-* device/lineage/atv
-8efed18  Set jarvis and pepper search button to voice assist  [Aaron Kling]
-4ecd3ed  Import idc and kl for adt-3 remote from aosp S  [Aaron Kling]
-5a0cbf7  Adjust nvidia friday remote keylayout to match common keyhandler  [Aaron Kling]
-0a5a040  Adjust sabrina remote keylayout to match common keyhandler  [Aaron Kling]
-d4868c4  Import idc and kl for sabrina remote  [Aaron Kling]
-6c2cd5f  Adjust onn remote keylayout to match common keyhandler  [Aaron Kling]
-ea7ead4  Import idc and kl for Onn remote bundled with 4k stb  [Aaron Kling]
-8f5fbd1  Enable LineageParts ATV keyhandler  [Timi Rautamäki]
-2577362  Revert "atv: add KeyHandler"  [Aaron Kling]
-
-* packages/apps/LineageParts
-92c7d06  Add ATV KeyHandler  [Timi Rautamäki]
+* lineage/mirror
+d42729a  Updated to 20-Dec-2021 13:01 UTC  [Tim Schumacher]
