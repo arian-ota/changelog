@@ -1,84 +1,61 @@
 ====================
-     2021-12-19    
+     2021-12-26    
 ====================
 
 * build/make
-73b7b8b  [DNM] Always use release-keys  [Arian]
+427e20e  [DNM] Always use release-keys  [Arian]
 
 * device/lineage/sepolicy
-0871245  common: Label IAntiFlicker live display service  [Arian]
+41b0df7  common: Label IAntiFlicker live display service  [Arian]
 
 * frameworks/base
-c2a9196  SystemUI: get rid of build text in qs  [Joey]
-6ef3855  SystemUI: Add anti flicker tile  [Arian]
-1250c5b  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
+75d82e7  SystemUI: get rid of build text in qs  [Joey]
+e5685f1  SystemUI: Add anti flicker tile  [Arian]
+1650a5d  [1/3] SystemUI: add burnIn protection setting  [Park Ju Hyung]
 
 * hardware/lineage/interfaces
-9bc8299  Add support for anti flicker mode in LiveDisplay  [Arian]
+aa9671b  Add support for anti flicker mode in LiveDisplay  [Arian]
 
 * hardware/qcom-caf/sm8150/audio
-b24b2ff  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
+28eea1e  hal: msm8974: Allow to set headset and bt-sco-headset echo references  [Arian]
 
 * lineage-sdk
-d2d44bb  Add support for anti flicker mode in LiveDisplay  [Arian]
-11bb98f  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
-
-* lineage/mirror
-7d45818  Updated to 18-Dec-2021 16:24 UTC  [Kevin F. Haggerty]
+51a5403  Add support for anti flicker mode in LiveDisplay  [Arian]
+0596e2c  [3/3]lineage-sdk: Bring back burnIn protection  [TheScarastic]
 
 * packages/apps/LineageParts
-e79b66b  Add support for anti flicker mode in LiveDisplay  [Arian]
-46c5714  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
+0e46dad  Add support for anti flicker mode in LiveDisplay  [Arian]
+c4b3648  [2/3] LineageParts: add burnIn protection setting  [Joey Rizzoli]
 ====================
-     2021-12-18    
-====================
-
-* lineage-sdk
-04cc674  sdk: ATV Keyhandler: Add accessory pairing to the default list  [Aaron Kling]
-
-* packages/apps/LineageParts
-f78e0d7  ATV Keyhandler: Add support for pairing intent  [Aaron Kling]
-====================
-     2021-12-17    
+     2021-12-25    
 ====================
 ====================
-     2021-12-16    
+     2021-12-24    
 ====================
 
 * lineage/mirror
-946a7af  Updated to 16-Dec-2021 03:04 UTC  [Kevin F. Haggerty]
+430e810  Updated aosp-minimal to 23-Dec-2021 13:01 UTC  [Tim Schumacher]
+====================
+     2021-12-23    
+====================
+
+* lineage/mirror
+bbc6a94  Updated to 22-Dec-2021 13:01 UTC  [Tim Schumacher]
+====================
+     2021-12-22    
+====================
 
 * lineage/wiki
-975e302  wiki: Update gems again  [Michael W]
+b28eff8  wiki: Update Asus Max M1 (X00P) image  [danascape]
 ====================
-     2021-12-15    
-====================
-
-* external/chromium-webview
-49b105a  Update arm{,64} Chromium Webview to 96.0.4664.104  [Kevin F. Haggerty]
-
-* lineage/scripts
-9099b7e  Update default webview to 96.0.4664.104  [Kevin F. Haggerty]
-
-* vendor/lineage
-58f620b  vendor: apns: Add auth_type explanation  [Michael W]
-056f4aa  vendor: apns: Fix wrong IPV4 protocols  [Michael W]
-500bdd6  vendor: apns: Remove unused "spn" attribute  [Michael W]
-7d86837  vendor: apns: Correct Telia  [Michael W]
-a47919e  apn: Update giffgaff APN  [David Wheatley]
-0c02d84  apns: Update Vodafone NL  [Michael W]
-====================
-     2021-12-14    
+     2021-12-21    
 ====================
 
-* frameworks/base
-338240e  Revert "Do not show the notification footer until the user is set up."  [Kevin F. Haggerty]
+* lineage/mirror
+d42729a  Updated to 20-Dec-2021 13:01 UTC  [Tim Schumacher]
 ====================
-     2021-12-13    
+     2021-12-20    
 ====================
 
-* build/make
-20c6c9c  Bump Security String to 2021-12-05  [Kevin F. Haggerty]
-
-* packages/apps/LineageParts
-e65acf3  Add ATV KeyHandler  [Timi Rautamäki]
+* lineage/mirror
+668c54f  Updated lineage-minimal to 19-Dec-2021 13:01 UTC  [Tim Schumacher]
