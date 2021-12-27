@@ -1,57 +1,42 @@
 ====================
-     2021-12-20    
+     2021-12-27    
 ====================
 
 * frameworks/base
-60dcc4f  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+c4840aa  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
 
-* lineage/mirror
-668c54f  Updated lineage-minimal to 19-Dec-2021 13:01 UTC  [Tim Schumacher]
+* vendor/translations
+bf7cc26  Merge pull request #17 from NeroXD1/translations  [Arian]
 ====================
-     2021-12-19    
+     2021-12-26    
+====================
+====================
+     2021-12-25    
 ====================
 
-* lineage-sdk
-de23e39  sdk: ATV Keyhandler: Add accessory pairing to the default list  [Aaron Kling]
-
-* lineage/mirror
-7d45818  Updated to 18-Dec-2021 16:24 UTC  [Kevin F. Haggerty]
-
-* packages/apps/LineageParts
-9b07aa6  ATV Keyhandler: Add support for pairing intent  [Aaron Kling]
+* vendor/translations
+9e2013c  Add brazilian portuguese translations  [NeroXD1]
 ====================
-     2021-12-18    
-====================
-====================
-     2021-12-17    
+     2021-12-24    
 ====================
 
 * lineage/mirror
-946a7af  Updated to 16-Dec-2021 03:04 UTC  [Kevin F. Haggerty]
+430e810  Updated aosp-minimal to 23-Dec-2021 13:01 UTC  [Tim Schumacher]
 ====================
-     2021-12-16    
+     2021-12-23    
+====================
+
+* lineage/mirror
+bbc6a94  Updated to 22-Dec-2021 13:01 UTC  [Tim Schumacher]
+====================
+     2021-12-22    
 ====================
 
 * lineage/wiki
-975e302  wiki: Update gems again  [Michael W]
+b28eff8  wiki: Update Asus Max M1 (X00P) image  [danascape]
 ====================
-     2021-12-15    
-====================
-
-* external/chromium-webview
-49b105a  Update arm{,64} Chromium Webview to 96.0.4664.104  [Kevin F. Haggerty]
-
-* lineage/scripts
-9099b7e  Update default webview to 96.0.4664.104  [Kevin F. Haggerty]
-====================
-     2021-12-14    
+     2021-12-21    
 ====================
 
-* device/lineage/atv
-02256c8  Standardize wake keys across all supported remotes  [Aaron Kling]
-
-* frameworks/base
-8eb0d78  Merge tag 'android-security-11.0.0_r50' into staging/lineage-18.1_merge-android-security-11.0.0_r50  [Kevin F. Haggerty]
-
-* packages/apps/LineageParts
-92c7d06  Add ATV KeyHandler  [Timi Rautamäki]
+* lineage/mirror
+d42729a  Updated to 20-Dec-2021 13:01 UTC  [Tim Schumacher]
