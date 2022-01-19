@@ -1,42 +1,58 @@
 ====================
-     2021-12-26    
+     2022-01-19    
 ====================
 
 * frameworks/base
-8d98e51  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+2f54f04  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
 
-* vendor/translations
-bf7cc26  Merge pull request #17 from NeroXD1/translations  [Arian]
+* kernel/xiaomi/sm8350
+ca6be93  Android.bp: Define soong namespace  [LuK1337]
+bb597d7  cam_sensor_module: cam_csiphy: Include hwid  [Arian]
 ====================
-     2021-12-25    
+     2022-01-18    
 ====================
 ====================
-     2021-12-24    
+     2022-01-17    
 ====================
-
-* vendor/translations
-9e2013c  Add brazilian portuguese translations  [NeroXD1]
 ====================
-     2021-12-23    
+     2022-01-16    
 ====================
-
-* lineage/mirror
-430e810  Updated aosp-minimal to 23-Dec-2021 13:01 UTC  [Tim Schumacher]
 ====================
-     2021-12-22    
+     2022-01-15    
 ====================
 
-* lineage/mirror
-bbc6a94  Updated to 22-Dec-2021 13:01 UTC  [Tim Schumacher]
+* kernel/xiaomi/sm8350
+e087d01  audio: Hardcode renoir checks  [Arian]
+d41a88d  audio: Update changes from odin-r-oss  [Arian]
+32c17da  Revert "audio: Hardcode renoir checks"  [Arian]
+6c969f7  audio: Update cs35l45 codec from odin-r-oss  [Arian]
+d525a83  audio: Update cs35l41 codec from odin-r-oss  [Arian]
+620c4cf  audio: Update mius from odin-r-oss  [Arian]
+9e23fb3  audio: Update tfa98xx codec from odin-r-oss  [Arian]
+d197cd1  sed -i 's///g' techpack/audio/asoc/codecs/tfa98xx/*/*  [Arian]
 ====================
-     2021-12-21    
+     2022-01-14    
+====================
+====================
+     2022-01-13    
 ====================
 
-* lineage/wiki
-b28eff8  wiki: Update Asus Max M1 (X00P) image  [danascape]
-====================
-     2021-12-20    
-====================
-
-* lineage/mirror
-d42729a  Updated to 20-Dec-2021 13:01 UTC  [Tim Schumacher]
+* kernel/xiaomi/sm8350
+0b361da  usb: dwc3: Increase the command timeout  [Arian]
+504e5d1  usb: phy: Add support for distinguishing host device  [Arian]
+e217793  usb: dwc3: Handle more cases which can not be queued  [Arian]
+f1a1b2b  usb: dwc3: Add reason to cancelled gadget requests  [Arian]
+c7813748  usb: Import changes from star-r-oss  [Arian]
+cd2fc7b0  Revert "usb: typec: ucsi: Import swap role changes from star-r-oss"  [Arian]
+5d7fb59e  usb: typec: ucsi: Import swap role changes from star-r-oss  [Arian]
+9387abe  usb: gadget: configfs: Fix KASAN use-after-free  [Jim Lin]
+5230715  USB: replace hardcode maximum usb string length by definition  [Macpaul Lin]
+039dd73  Revert "include: usb: Import f_dtp.h from star-r-oss"  [Arian]
+943e2d4  Revert "usb: Import changes from star-r-oss"  [Arian]
+d0dabf3  techpack: camera: csiphy: Guard overriding csiphy register values  [Arian]
+6edfa5f  techpack: camera: Increase req mgr events further  [Arian]
+8bc0e63  lahaina-qgki_defconfig: Generate  [Arian]
+da81031  renoir-qgki_defconfig: Enable some configs  [Arian]
+6703f75  renoir_qgki_defconfig: enable CLANG configs  [Cosmin Tanislav]
+85ea09d  renoir-qgki_defconfig: Regenerate  [Arian]
+1be9d0d  Revert "renoir-qgki_defconfig: Update from renoir MIUI V13.0.4.0.SKICNXM"  [Arian]
