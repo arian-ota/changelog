@@ -1,0 +1,87 @@
+====================
+     2022-01-19    
+====================
+
+* device/xiaomi/violet
+51b9ca4  violet: Add source for unpinned extracted blobs  [raghavt20]
+b7433f9  violet: Add decommonized liboemcrypto from stock  [raghavt20]
+32fe86d  violet: audio: Allocate dedicated pcm node for in call recording  [Shalini Manjunatha]
+4d313e0  violet: overlay: Decrease vibration strength  [Arian]
+3f63535  violet: overlay: Import vibration patterns from AOSP  [Arian]
+2fc00f0  violet: Drop redundant ACDB properties  [raghavt20]
+a1d9c57  violet: rootdir: Commonize zram fstab entry  [Adithya R]
+d19cf35  violet: rootdir: Add device specific init for sensor perms  [raghavt20]
+69d3ecc  violet: power: Tune powerhint.json  [raghavt20]
+d149022  violet: Import decommonized cnss-daemon  [raghavt20]
+cee0fb1  violet: Add audio fluencetype property  [raghavt20]
+67bea11  violet: Update Audio Libraries from sweet  [raghavt20]
+4b6b531  violet: power: Decrease launch boost to 3sec  [DennySPB]
+b06f603  violet: power: Remove Google-specific camera hints  [Bruno Martins]
+2168edc  violet: power: Import powerhint configuration from Pixel 4A  [Arian]
+80a34ad  violet: Setup fingerprint position  [raghavt20]
+f067c40  violet: overlay-lineage: Specify device has a notch  [Luca Stefani]
+9901d6e  violet: overlay-lineage: Add reboot to fastbootd  [LuK1337]
+acdff27  violet: audio: Import xiaomi changes  [ujjwalkirorimal]
+21c293d  violet: audio: Checkout configs from LA.UM.9.1.r1-10500-SMxxx0.QSSI12.0  [raghavt20]
+5d07e24  violet: Add back megvii blobs  [raghavt20]
+5d1b8e1  violet: Import decommonized Audio libraries  [raghavt20]
+
+* frameworks/base
+fb31ea3  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+====================
+     2022-01-18    
+====================
+
+* kernel/xiaomi/sm8350
+ca6be93  Android.bp: Define soong namespace  [LuK1337]
+bb597d7  cam_sensor_module: cam_csiphy: Include hwid  [Arian]
+====================
+     2022-01-17    
+====================
+====================
+     2022-01-16    
+====================
+
+* lineage/mirror
+406c93e  Updated lineage-minimal to 16-Jan-2022 13:01 UTC  [Tim Schumacher]
+====================
+     2022-01-15    
+====================
+
+* lineage/mirror
+00c2c75  Updated to 15-Jan-2022 13:25 UTC  [Kevin F. Haggerty]
+
+* system/core
+74ba4db  Revert "adbconnection: don't spin if adbd isn't running."  [Łukasz Patron]
+====================
+     2022-01-14    
+====================
+
+* kernel/xiaomi/sm8350
+e087d01  audio: Hardcode renoir checks  [Arian]
+d41a88d  audio: Update changes from odin-r-oss  [Arian]
+32c17da  Revert "audio: Hardcode renoir checks"  [Arian]
+6c969f7  audio: Update cs35l45 codec from odin-r-oss  [Arian]
+d525a83  audio: Update cs35l41 codec from odin-r-oss  [Arian]
+620c4cf  audio: Update mius from odin-r-oss  [Arian]
+9e23fb3  audio: Update tfa98xx codec from odin-r-oss  [Arian]
+d197cd1  sed -i 's///g' techpack/audio/asoc/codecs/tfa98xx/*/*  [Arian]
+====================
+     2022-01-13    
+====================
+
+* frameworks/base
+898ecaa  Revert "Remove dependency on IME subtype from TSMS"  [Michael Bestas]
+
+* kernel/xiaomi/sm8350
+0b361da  usb: dwc3: Increase the command timeout  [Arian]
+504e5d1  usb: phy: Add support for distinguishing host device  [Arian]
+e217793  usb: dwc3: Handle more cases which can not be queued  [Arian]
+f1a1b2b  usb: dwc3: Add reason to cancelled gadget requests  [Arian]
+c7813748  usb: Import changes from star-r-oss  [Arian]
+cd2fc7b0  Revert "usb: typec: ucsi: Import swap role changes from star-r-oss"  [Arian]
+5d7fb59e  usb: typec: ucsi: Import swap role changes from star-r-oss  [Arian]
+9387abe  usb: gadget: configfs: Fix KASAN use-after-free  [Jim Lin]
+5230715  USB: replace hardcode maximum usb string length by definition  [Macpaul Lin]
+039dd73  Revert "include: usb: Import f_dtp.h from star-r-oss"  [Arian]
+943e2d4  Revert "usb: Import changes from star-r-oss"  [Arian]
