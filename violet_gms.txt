@@ -29,9 +29,10 @@ acdff27  violet: audio: Import xiaomi changes  [ujjwalkirorimal]
 5d1b8e1  violet: Import decommonized Audio libraries  [raghavt20]
 
 * frameworks/base
-44e7f1e  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+e6afe56  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
 
 * kernel/xiaomi/sm6150
+d8810f7  [FIXUP d1b69cd]ARM64: configs: violet: Enable CONFIG_TOUCHSCREEN_XIAOMI_TOUCHFEATURE_GAMEMODE  [raghavt20]
 789ed52  [FIXUP d1b69cd783a1]ARM64: configs: violet: Enable CONFIG_TOUCHSCREEN_XIAOMI_TOUCHFEATURE  [raghavt20]
 
 * vendor/xiaomi
