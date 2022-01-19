@@ -3,6 +3,7 @@
 ====================
 
 * device/xiaomi/violet
+debde00  violet: overlay-lineage: Declare LED capabilites  [Arian]
 e6a217e  violet: rootdir: Add ipa_fws root command  [raghavt20]
 48c771f  violet: Add source for unpinned extracted blobs  [raghavt20]
 ec35c71  violet: Add decommonized liboemcrypto from stock  [raghavt20]
@@ -28,7 +29,15 @@ acdff27  violet: audio: Import xiaomi changes  [ujjwalkirorimal]
 5d1b8e1  violet: Import decommonized Audio libraries  [raghavt20]
 
 * frameworks/base
-2f5eb09  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+44e7f1e  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+
+* kernel/xiaomi/sm6150
+789ed52  [FIXUP d1b69cd783a1]ARM64: configs: violet: Enable CONFIG_TOUCHSCREEN_XIAOMI_TOUCHFEATURE  [raghavt20]
+
+* vendor/xiaomi
+491cbcd  violet: Add decommonized liboemcrypto from stock  [raghavt20]
+4dc4ed5  violet: Update blobs from violet QKQ1.190915.002 V12.5.4.0.QFHCNXM  [raghavt20]
+c8c44d2  sm6150-common: Decommonize liboemcrypto  [raghavt20]
 ====================
      2022-01-18    
 ====================
@@ -84,5 +93,3 @@ cd2fc7b0  Revert "usb: typec: ucsi: Import swap role changes from star-r-oss"  [
 5d7fb59e  usb: typec: ucsi: Import swap role changes from star-r-oss  [Arian]
 9387abe  usb: gadget: configfs: Fix KASAN use-after-free  [Jim Lin]
 5230715  USB: replace hardcode maximum usb string length by definition  [Macpaul Lin]
-039dd73  Revert "include: usb: Import f_dtp.h from star-r-oss"  [Arian]
-943e2d4  Revert "usb: Import changes from star-r-oss"  [Arian]
