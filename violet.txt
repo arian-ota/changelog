@@ -3,7 +3,7 @@
 ====================
 
 * frameworks/base
-92b4c81  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+a2eb2c7  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
 ====================
      2022-01-22    
 ====================
@@ -16,23 +16,6 @@
 
 * android
 96b0638  Track our own forks for 2022-01 ASB patching  [Kevin F. Haggerty]
-
-* device/xiaomi/violet
-a6ddce7  violet: Update a630_sqe firmware from Redmi Note 10 Pro V12.5.9.0 RKFMIXM  [raghavt20]
-a06b9c4  violet: overlay-lineage: Declare LED capabilites  [Arian]
-bb8f88f  violet: rootdir: Add ipa_fws root command  [raghavt20]
-08f03d0  violet: Add source for unpinned extracted blobs  [raghavt20]
-b6f23cf  violet: Add decommonized liboemcrypto from stock  [raghavt20]
-61a232a  violet: audio: Allocate dedicated pcm node for in call recording  [Shalini Manjunatha]
-d59d4a6  violet: overlay: Decrease vibration strength  [Arian]
-cfda074  violet: overlay: Import vibration patterns from AOSP  [Arian]
-bc171c6  violet: Drop redundant ACDB properties  [raghavt20]
-eab50df  violet: rootdir: Commonize zram fstab entry  [Adithya R]
-ce66d8f  violet: rootdir: Add device specific init for sensor perms  [raghavt20]
-2e3c112  violet: power: Tune powerhint.json  [raghavt20]
-f7ad747  violet: Import decommonized cnss-daemon  [raghavt20]
-030b7be  violet: Add audio fluencetype property  [raghavt20]
-ad72d59  violet: Update Audio Libraries from Redmi Note 10 Pro V12.5.9.0 RKFMIXM  [raghavt20]
 
 * frameworks/base
 ce87f77  Merge tag 'android-security-11.0.0_r51' into staging/lineage-18.1_merge-android-security-11.0.0_r51  [Kevin F. Haggerty]
@@ -59,10 +42,7 @@ c5a580c  ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Enable PELT
 fe906ab  sched/fair: Skip cpu if task does not fit in  [Rick Yiu]
 1e6be6bb  sched: separate capacity margin for boosted tasks  [Rick Yiu]
 b5d7cd8  Roll back performace files  [Wilson Sung]
-a4e45a1  sched: bump big core down migration further to 35
-* vendor/xiaomi
-a6a401b  violet: Update a630_sqe firmware from Redmi Note 10 Pro V12.5.9.0 RKFMIXM  [raghavt20]
-====================
+a4e45a1  sched: bump big core down migration further to 35====================
      2022-01-20    
 ====================
 
@@ -70,6 +50,21 @@ a6a401b  violet: Update a630_sqe firmware from Redmi Note 10 Pro V12.5.9.0 RKFMI
 5139815  Bump Security String to 2022-01-05  [Kevin F. Haggerty]
 
 * device/xiaomi/violet
+a6ddce7  violet: Update a630_sqe firmware from Redmi Note 10 Pro V12.5.9.0 RKFMIXM  [raghavt20]
+a06b9c4  violet: overlay-lineage: Declare LED capabilites  [Arian]
+bb8f88f  violet: rootdir: Add ipa_fws root command  [raghavt20]
+08f03d0  violet: Add source for unpinned extracted blobs  [raghavt20]
+b6f23cf  violet: Add decommonized liboemcrypto from stock  [raghavt20]
+61a232a  violet: audio: Allocate dedicated pcm node for in call recording  [Shalini Manjunatha]
+d59d4a6  violet: overlay: Decrease vibration strength  [Arian]
+cfda074  violet: overlay: Import vibration patterns from AOSP  [Arian]
+bc171c6  violet: Drop redundant ACDB properties  [raghavt20]
+eab50df  violet: rootdir: Commonize zram fstab entry  [Adithya R]
+ce66d8f  violet: rootdir: Add device specific init for sensor perms  [raghavt20]
+2e3c112  violet: power: Tune powerhint.json  [raghavt20]
+f7ad747  violet: Import decommonized cnss-daemon  [raghavt20]
+030b7be  violet: Add audio fluencetype property  [raghavt20]
+ad72d59  violet: Update Audio Libraries from Redmi Note 10 Pro V12.5.9.0 RKFMIXM  [raghavt20]
 4b6b531  violet: power: Decrease launch boost to 3sec  [DennySPB]
 b06f603  violet: power: Remove Google-specific camera hints  [Bruno Martins]
 2168edc  violet: power: Import powerhint configuration from Pixel 4A  [Arian]
@@ -81,18 +76,19 @@ acdff27  violet: audio: Import xiaomi changes  [ujjwalkirorimal]
 5d07e24  violet: Add back megvii blobs  [raghavt20]
 5d1b8e1  violet: Import decommonized Audio libraries  [raghavt20]
 
-* kernel/xiaomi/sm6150
-a1f8c54  f2fs: do not allow partial truncation on pinned file  [Jaegeuk Kim]
-e16f0aa  f2fs: remove redunant invalidate compress pages  [Fengnan Chang]
-d0a87cd  f2fs: Simplify bool conversion  [Yang Li]
-
 * vendor/xiaomi
+a6a401b  violet: Update a630_sqe firmware from Redmi Note 10 Pro V12.5.9.0 RKFMIXM  [raghavt20]
 491cbcd  violet: Add decommonized liboemcrypto from stock  [raghavt20]
 4dc4ed5  violet: Update blobs from violet QKQ1.190915.002 V12.5.4.0.QFHCNXM  [raghavt20]
 c8c44d2  sm6150-common: Decommonize liboemcrypto  [raghavt20]
 ====================
      2022-01-19    
 ====================
+
+* kernel/xiaomi/sm6150
+a1f8c54  f2fs: do not allow partial truncation on pinned file  [Jaegeuk Kim]
+e16f0aa  f2fs: remove redunant invalidate compress pages  [Fengnan Chang]
+d0a87cd  f2fs: Simplify bool conversion  [Yang Li]
 
 * kernel/xiaomi/sm8350
 ca6be93  Android.bp: Define soong namespace  [LuK1337]
