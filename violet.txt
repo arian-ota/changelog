@@ -1,22 +1,75 @@
 ====================
-     2022-01-19    
+     2022-01-23    
 ====================
 
+* frameworks/base
+92b4c81  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+====================
+     2022-01-22    
+====================
+
+* lineage/mirror
+05140e0  Updated aosp-minimal to 21-Jan-2022 13:01 UTC  [Tim Schumacher]
+====================
+     2022-01-21    
+====================
+
+* android
+96b0638  Track our own forks for 2022-01 ASB patching  [Kevin F. Haggerty]
+
 * device/xiaomi/violet
-debde00  violet: overlay-lineage: Declare LED capabilites  [Arian]
-e6a217e  violet: rootdir: Add ipa_fws root command  [raghavt20]
-48c771f  violet: Add source for unpinned extracted blobs  [raghavt20]
-ec35c71  violet: Add decommonized liboemcrypto from stock  [raghavt20]
-8ca0906  violet: audio: Allocate dedicated pcm node for in call recording  [Shalini Manjunatha]
-fa9a24e  violet: overlay: Decrease vibration strength  [Arian]
-240c593  violet: overlay: Import vibration patterns from AOSP  [Arian]
-adbb5f4  violet: Drop redundant ACDB properties  [raghavt20]
-5c3528c  violet: rootdir: Commonize zram fstab entry  [Adithya R]
-6d9fbfa  violet: rootdir: Add device specific init for sensor perms  [raghavt20]
-69d3ecc  violet: power: Tune powerhint.json  [raghavt20]
-d149022  violet: Import decommonized cnss-daemon  [raghavt20]
-cee0fb1  violet: Add audio fluencetype property  [raghavt20]
-67bea11  violet: Update Audio Libraries from sweet  [raghavt20]
+a6ddce7  violet: Update a630_sqe firmware from Redmi Note 10 Pro V12.5.9.0 RKFMIXM  [raghavt20]
+a06b9c4  violet: overlay-lineage: Declare LED capabilites  [Arian]
+bb8f88f  violet: rootdir: Add ipa_fws root command  [raghavt20]
+08f03d0  violet: Add source for unpinned extracted blobs  [raghavt20]
+b6f23cf  violet: Add decommonized liboemcrypto from stock  [raghavt20]
+61a232a  violet: audio: Allocate dedicated pcm node for in call recording  [Shalini Manjunatha]
+d59d4a6  violet: overlay: Decrease vibration strength  [Arian]
+cfda074  violet: overlay: Import vibration patterns from AOSP  [Arian]
+bc171c6  violet: Drop redundant ACDB properties  [raghavt20]
+eab50df  violet: rootdir: Commonize zram fstab entry  [Adithya R]
+ce66d8f  violet: rootdir: Add device specific init for sensor perms  [raghavt20]
+2e3c112  violet: power: Tune powerhint.json  [raghavt20]
+f7ad747  violet: Import decommonized cnss-daemon  [raghavt20]
+030b7be  violet: Add audio fluencetype property  [raghavt20]
+ad72d59  violet: Update Audio Libraries from Redmi Note 10 Pro V12.5.9.0 RKFMIXM  [raghavt20]
+
+* frameworks/base
+ce87f77  Merge tag 'android-security-11.0.0_r51' into staging/lineage-18.1_merge-android-security-11.0.0_r51  [Kevin F. Haggerty]
+
+* kernel/xiaomi/sm6150
+6b2f743  ion: Don't create a kernel mapping in begin_cpu_access  [Liam Mark]
+c7c98d1  staging: android: ion: rate limit warning in ion_buffer_kmap_put  [Liam Mark]
+684be4d  staging: android: ion: WARN on attempted access to unmapped memory  [Liam Mark]
+0caf026  Revert "ANDROID: staging: ion: move buffer kmap from begin/end_cpu_access()"  [Arian]
+ea570a6  upstream  [Arian]
+e99a931  cpufreq: Ensure the minimal frequency is lower than the maximal frequency  [Arian]
+c5a580c  ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Enable PELT  [Kyle Lin]
+9d21bed  sched: core: fix kmalloc error during spinlock  [Jimmy Shiu]
+3b62cb3  UPSTREAM: sched/rt: Disable RT_RUNTIME_SHARE by default  [Daniel Bristot de Oliveira]
+05bbb6a  Revert "sched/fair: use actual cpu capacity to calculate boosted util"  [Rick Yiu]
+1b9fd43  sched/fair: do not use boosted margin for prefer_high_cap case  [Rick Yiu]
+425bce2  sched/fair: use actual cpu capacity to calculate boosted util  [Rick Yiu]
+3ac3f67  sched/core: fix userspace affining threads incorrectly by task name.  [Jimmy Shiu]
+9b480ac  sched: Improve the scheduler  [Pavankumar Kondeti]
+3e8e222  sched/core: Fix use after free issue in is_sched_lib_based_app()  [Pavankumar Kondeti]
+6dae8bf  sched/core: fix userspace affining threads incorrectly  [Abhijeet Dharmapurikar]
+2d48b32  sched: change capacity margin down to 20 0.000000or non-boost task  [Wei Wang]
+5ff672a  sched/fair: fix merge conflict  [Rick Yiu]
+fe906ab  sched/fair: Skip cpu if task does not fit in  [Rick Yiu]
+1e6be6bb  sched: separate capacity margin for boosted tasks  [Rick Yiu]
+b5d7cd8  Roll back performace files  [Wilson Sung]
+a4e45a1  sched: bump big core down migration further to 35
+* vendor/xiaomi
+a6a401b  violet: Update a630_sqe firmware from Redmi Note 10 Pro V12.5.9.0 RKFMIXM  [raghavt20]
+====================
+     2022-01-20    
+====================
+
+* build/make
+5139815  Bump Security String to 2022-01-05  [Kevin F. Haggerty]
+
+* device/xiaomi/violet
 4b6b531  violet: power: Decrease launch boost to 3sec  [DennySPB]
 b06f603  violet: power: Remove Google-specific camera hints  [Bruno Martins]
 2168edc  violet: power: Import powerhint configuration from Pixel 4A  [Arian]
@@ -28,69 +81,28 @@ acdff27  violet: audio: Import xiaomi changes  [ujjwalkirorimal]
 5d07e24  violet: Add back megvii blobs  [raghavt20]
 5d1b8e1  violet: Import decommonized Audio libraries  [raghavt20]
 
-* frameworks/base
-d581af2  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
-
 * kernel/xiaomi/sm6150
-d8810f7  [FIXUP d1b69cd]ARM64: configs: violet: Enable CONFIG_TOUCHSCREEN_XIAOMI_TOUCHFEATURE_GAMEMODE  [raghavt20]
-789ed52  [FIXUP d1b69cd783a1]ARM64: configs: violet: Enable CONFIG_TOUCHSCREEN_XIAOMI_TOUCHFEATURE  [raghavt20]
+a1f8c54  f2fs: do not allow partial truncation on pinned file  [Jaegeuk Kim]
+e16f0aa  f2fs: remove redunant invalidate compress pages  [Fengnan Chang]
+d0a87cd  f2fs: Simplify bool conversion  [Yang Li]
 
 * vendor/xiaomi
 491cbcd  violet: Add decommonized liboemcrypto from stock  [raghavt20]
 4dc4ed5  violet: Update blobs from violet QKQ1.190915.002 V12.5.4.0.QFHCNXM  [raghavt20]
 c8c44d2  sm6150-common: Decommonize liboemcrypto  [raghavt20]
 ====================
-     2022-01-18    
+     2022-01-19    
 ====================
 
 * kernel/xiaomi/sm8350
 ca6be93  Android.bp: Define soong namespace  [LuK1337]
 bb597d7  cam_sensor_module: cam_csiphy: Include hwid  [Arian]
 ====================
+     2022-01-18    
+====================
+====================
      2022-01-17    
-====================
-====================
-     2022-01-16    
 ====================
 
 * lineage/mirror
 406c93e  Updated lineage-minimal to 16-Jan-2022 13:01 UTC  [Tim Schumacher]
-====================
-     2022-01-15    
-====================
-
-* lineage/mirror
-00c2c75  Updated to 15-Jan-2022 13:25 UTC  [Kevin F. Haggerty]
-
-* system/core
-74ba4db  Revert "adbconnection: don't spin if adbd isn't running."  [Łukasz Patron]
-====================
-     2022-01-14    
-====================
-
-* kernel/xiaomi/sm8350
-e087d01  audio: Hardcode renoir checks  [Arian]
-d41a88d  audio: Update changes from odin-r-oss  [Arian]
-32c17da  Revert "audio: Hardcode renoir checks"  [Arian]
-6c969f7  audio: Update cs35l45 codec from odin-r-oss  [Arian]
-d525a83  audio: Update cs35l41 codec from odin-r-oss  [Arian]
-620c4cf  audio: Update mius from odin-r-oss  [Arian]
-9e23fb3  audio: Update tfa98xx codec from odin-r-oss  [Arian]
-d197cd1  sed -i 's///g' techpack/audio/asoc/codecs/tfa98xx/*/*  [Arian]
-====================
-     2022-01-13    
-====================
-
-* frameworks/base
-898ecaa  Revert "Remove dependency on IME subtype from TSMS"  [Michael Bestas]
-
-* kernel/xiaomi/sm8350
-0b361da  usb: dwc3: Increase the command timeout  [Arian]
-504e5d1  usb: phy: Add support for distinguishing host device  [Arian]
-e217793  usb: dwc3: Handle more cases which can not be queued  [Arian]
-f1a1b2b  usb: dwc3: Add reason to cancelled gadget requests  [Arian]
-c7813748  usb: Import changes from star-r-oss  [Arian]
-cd2fc7b0  Revert "usb: typec: ucsi: Import swap role changes from star-r-oss"  [Arian]
-5d7fb59e  usb: typec: ucsi: Import swap role changes from star-r-oss  [Arian]
-9387abe  usb: gadget: configfs: Fix KASAN use-after-free  [Jim Lin]
-5230715  USB: replace hardcode maximum usb string length by definition  [Macpaul Lin]
