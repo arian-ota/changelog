@@ -1,108 +1,83 @@
 ====================
-     2022-01-23    
+     2022-01-30    
 ====================
 
 * frameworks/base
-3c4ab38  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
-====================
-     2022-01-22    
-====================
+01e3bfc  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
 
 * lineage/mirror
-05140e0  Updated aosp-minimal to 21-Jan-2022 13:01 UTC  [Tim Schumacher]
+f955a79  Updated to 29-Jan-2022 16:23 UTC  [Kevin F. Haggerty]
+
+* vendor/lineage
+cadcc2b  config: Set defaultSupervisionProfileOwnerComponent  [Han Wang]
+a3d17b8  apns: Add Unifi  [Alexander Winkowski]
 ====================
-     2022-01-21    
+     2022-01-29    
 ====================
-
-* android
-96b0638  Track our own forks for 2022-01 ASB patching  [Kevin F. Haggerty]
-
-* device/xiaomi/violet
-a6ddce7  violet: Update a630_sqe firmware from Redmi Note 10 Pro V12.5.9.0 RKFMIXM  [raghavt20]
-a06b9c4  violet: overlay-lineage: Declare LED capabilites  [Arian]
-bb8f88f  violet: rootdir: Add ipa_fws root command  [raghavt20]
-08f03d0  violet: Add source for unpinned extracted blobs  [raghavt20]
-b6f23cf  violet: Add decommonized liboemcrypto from stock  [raghavt20]
-61a232a  violet: audio: Allocate dedicated pcm node for in call recording  [Shalini Manjunatha]
-d59d4a6  violet: overlay: Decrease vibration strength  [Arian]
-cfda074  violet: overlay: Import vibration patterns from AOSP  [Arian]
-bc171c6  violet: Drop redundant ACDB properties  [raghavt20]
-eab50df  violet: rootdir: Commonize zram fstab entry  [Adithya R]
-ce66d8f  violet: rootdir: Add device specific init for sensor perms  [raghavt20]
-2e3c112  violet: power: Tune powerhint.json  [raghavt20]
-f7ad747  violet: Import decommonized cnss-daemon  [raghavt20]
-030b7be  violet: Add audio fluencetype property  [raghavt20]
-ad72d59  violet: Update Audio Libraries from Redmi Note 10 Pro V12.5.9.0 RKFMIXM  [raghavt20]
-
-* frameworks/base
-ce87f77  Merge tag 'android-security-11.0.0_r51' into staging/lineage-18.1_merge-android-security-11.0.0_r51  [Kevin F. Haggerty]
-
-* kernel/xiaomi/sm6150
-6b2f743  ion: Don't create a kernel mapping in begin_cpu_access  [Liam Mark]
-c7c98d1  staging: android: ion: rate limit warning in ion_buffer_kmap_put  [Liam Mark]
-684be4d  staging: android: ion: WARN on attempted access to unmapped memory  [Liam Mark]
-0caf026  Revert "ANDROID: staging: ion: move buffer kmap from begin/end_cpu_access()"  [Arian]
-ea570a6  upstream  [Arian]
-e99a931  cpufreq: Ensure the minimal frequency is lower than the maximal frequency  [Arian]
-c5a580c  ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Enable PELT  [Kyle Lin]
-9d21bed  sched: core: fix kmalloc error during spinlock  [Jimmy Shiu]
-3b62cb3  UPSTREAM: sched/rt: Disable RT_RUNTIME_SHARE by default  [Daniel Bristot de Oliveira]
-05bbb6a  Revert "sched/fair: use actual cpu capacity to calculate boosted util"  [Rick Yiu]
-1b9fd43  sched/fair: do not use boosted margin for prefer_high_cap case  [Rick Yiu]
-425bce2  sched/fair: use actual cpu capacity to calculate boosted util  [Rick Yiu]
-3ac3f67  sched/core: fix userspace affining threads incorrectly by task name.  [Jimmy Shiu]
-9b480ac  sched: Improve the scheduler  [Pavankumar Kondeti]
-3e8e222  sched/core: Fix use after free issue in is_sched_lib_based_app()  [Pavankumar Kondeti]
-6dae8bf  sched/core: fix userspace affining threads incorrectly  [Abhijeet Dharmapurikar]
-2d48b32  sched: change capacity margin down to 20 0.000000or non-boost task  [Wei Wang]
-5ff672a  sched/fair: fix merge conflict  [Rick Yiu]
-fe906ab  sched/fair: Skip cpu if task does not fit in  [Rick Yiu]
-1e6be6bb  sched: separate capacity margin for boosted tasks  [Rick Yiu]
-b5d7cd8  Roll back performace files  [Wilson Sung]
-a4e45a1  sched: bump big core down migration further to 35
-* vendor/xiaomi
-a6a401b  violet: Update a630_sqe firmware from Redmi Note 10 Pro V12.5.9.0 RKFMIXM  [raghavt20]
-====================
-     2022-01-20    
-====================
-
-* build/make
-5139815  Bump Security String to 2022-01-05  [Kevin F. Haggerty]
-
-* device/xiaomi/violet
-4b6b531  violet: power: Decrease launch boost to 3sec  [DennySPB]
-b06f603  violet: power: Remove Google-specific camera hints  [Bruno Martins]
-2168edc  violet: power: Import powerhint configuration from Pixel 4A  [Arian]
-80a34ad  violet: Setup fingerprint position  [raghavt20]
-f067c40  violet: overlay-lineage: Specify device has a notch  [Luca Stefani]
-9901d6e  violet: overlay-lineage: Add reboot to fastbootd  [LuK1337]
-acdff27  violet: audio: Import xiaomi changes  [ujjwalkirorimal]
-21c293d  violet: audio: Checkout configs from LA.UM.9.1.r1-10500-SMxxx0.QSSI12.0  [raghavt20]
-5d07e24  violet: Add back megvii blobs  [raghavt20]
-5d1b8e1  violet: Import decommonized Audio libraries  [raghavt20]
-
-* vendor/xiaomi
-491cbcd  violet: Add decommonized liboemcrypto from stock  [raghavt20]
-4dc4ed5  violet: Update blobs from violet QKQ1.190915.002 V12.5.4.0.QFHCNXM  [raghavt20]
-c8c44d2  sm6150-common: Decommonize liboemcrypto  [raghavt20]
-====================
-     2022-01-19    
-====================
-
-* kernel/xiaomi/sm6150
-a1f8c54  f2fs: do not allow partial truncation on pinned file  [Jaegeuk Kim]
-e16f0aa  f2fs: remove redunant invalidate compress pages  [Fengnan Chang]
-d0a87cd  f2fs: Simplify bool conversion  [Yang Li]
 
 * kernel/xiaomi/sm8350
-ca6be93  Android.bp: Define soong namespace  [LuK1337]
-bb597d7  cam_sensor_module: cam_csiphy: Include hwid  [Arian]
+afd2aee  audio: msm_dailink: Fix renoir ifdef  [Arian]
 ====================
-     2022-01-18    
-====================
-====================
-     2022-01-17    
+     2022-01-28    
 ====================
 
+* kernel/xiaomi/sm8350
+d94f5bb  Regenerate defconfig  [Arian]
+
 * lineage/mirror
-406c93e  Updated lineage-minimal to 16-Jan-2022 13:01 UTC  [Tim Schumacher]
+3d3daa0  Updated lineage-minimal to 27-Jan-2022 13:02 UTC  [Tim Schumacher]
+
+* lineage/wiki
+c44c923  wiki: devices: gauguin: Add 5G to Redmi Note 9 Pro  [Michael W]
+====================
+     2022-01-27    
+====================
+
+* device/qcom/sepolicy_vndr
+6c122b2  sepolicy: Fix genfscon for kona  [MoetaYuko]
+
+* lineage/hudson
+50e855a  hudson: Add gauguin  [LynnrinChan]
+
+* lineage/wiki
+c433335  devices: Add gauguin  [LynnrinChan]
+377d0f7  wiki: images: Fix a few images and the instructions  [Michael W]
+5d21687  wiki: Update gems  [Michael W]
+ce9e407  wiki: Some small fixes & improvements  [Michael W]
+222a325  wiki: FAQ: Add more Q&A  [Michael W]
+dae4e3f  wiki: upgrade: Also ask for specific android fw  [Michael W]
+b291b00  wiki: install: Clarify & declutter  [Michael W]
+====================
+     2022-01-26    
+====================
+
+* lineage/hudson
+1412d8e  ⑨  [LuK1337]
+
+* lineage/mirror
+659467a  Updated to 25-Jan-2022 15:48 UTC  [Kevin F. Haggerty]
+3ba1e87  Updated to 25-Jan-2022 15:01 UTC  [Kevin F. Haggerty]
+
+* lineage/wiki
+929585c  wiki: Add OnePlus 9 (lemonade)  [Albert Tang]
+====================
+     2022-01-25    
+====================
+
+* frameworks/base
+703986f  frameworks: Add support for clock auto-hiding  [Cédric Bellegarde]
+
+* lineage-sdk
+1d3d2f4  lineage-sdk: Add support for clock auto-hiding  [Cédric Bellegarde]
+
+* packages/apps/LineageParts
+bc2c0b8  LineageParts: Add support for clock auto-hiding  [Cédric Bellegarde]
+====================
+     2022-01-24    
+====================
+
+* device/xiaomi/davinci
+903840f  davinci: Import decommonized liboemcrypto  [Arian]
+
+* packages/apps/SettingsIntelligence
+da232f4  SettingsIntelligence: Search: Skip showing a few packages  [Michael W]
