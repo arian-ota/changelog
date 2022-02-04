@@ -1,9 +1,53 @@
 ====================
-     2022-01-30    
+     2022-02-04    
 ====================
 
 * frameworks/base
-01e3bfc  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+0a1ec8b  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+
+* system/core
+fcbad04  Set properties to make SafetyNet pass  [Danny Lin]
+====================
+     2022-02-03    
+====================
+
+* hardware/qcom/sm7250/display
+2233dfb  composer: Apply color transform only on power mode change.  [Anjaneya Prasad Musunuri]
+====================
+     2022-02-02    
+====================
+
+* lineage/mirror
+c829b32  Updated aosp-minimal to 01-Feb-2022 13:01 UTC  [Tim Schumacher]
+bb32a5e  Updated to 01-Feb-2022 12:09 UTC  [Kevin F. Haggerty]
+
+* lineage/wiki
+5697cab  wiki: Add Galaxy Tab S6 Lite LTE (gta4xl)  [Kevin F. Haggerty]
+====================
+     2022-02-01    
+====================
+
+* lineage/wiki
+66cc60c  wiki: Add warning regarding firmware bug for DRG  [Aayush Gupta]
+
+* system/core
+121ed18  Add function CleanupOldScratchFiles symmetrically  [Jintao Zhu]
+====================
+     2022-01-31    
+====================
+
+* frameworks/av
+e03eedb  cameraserver: fix deadlock scenario in torchModeStatusChanged callback.  [Jayant Chowdhary]
+cd43085  Revert "cameraservice: Avoid calling getSystemCameraKind if the camera was not mapped yet"  [Wang Han]
+
+* packages/resources/devicesettings
+de23ecb  devicesettings: Add strings for MotoActions  [dianlujitao]
+====================
+     2022-01-30    
+====================
+
+* lineage/hudson
+190be86  hudson: Same as the other thing, but with a modem  [Kevin F. Haggerty]
 
 * lineage/mirror
 f955a79  Updated to 29-Jan-2022 16:23 UTC  [Kevin F. Haggerty]
@@ -17,67 +61,3 @@ a3d17b8  apns: Add Unifi  [Alexander Winkowski]
 
 * kernel/xiaomi/sm8350
 afd2aee  audio: msm_dailink: Fix renoir ifdef  [Arian]
-====================
-     2022-01-28    
-====================
-
-* kernel/xiaomi/sm8350
-d94f5bb  Regenerate defconfig  [Arian]
-
-* lineage/mirror
-3d3daa0  Updated lineage-minimal to 27-Jan-2022 13:02 UTC  [Tim Schumacher]
-
-* lineage/wiki
-c44c923  wiki: devices: gauguin: Add 5G to Redmi Note 9 Pro  [Michael W]
-====================
-     2022-01-27    
-====================
-
-* device/qcom/sepolicy_vndr
-6c122b2  sepolicy: Fix genfscon for kona  [MoetaYuko]
-
-* lineage/hudson
-50e855a  hudson: Add gauguin  [LynnrinChan]
-
-* lineage/wiki
-c433335  devices: Add gauguin  [LynnrinChan]
-377d0f7  wiki: images: Fix a few images and the instructions  [Michael W]
-5d21687  wiki: Update gems  [Michael W]
-ce9e407  wiki: Some small fixes & improvements  [Michael W]
-222a325  wiki: FAQ: Add more Q&A  [Michael W]
-dae4e3f  wiki: upgrade: Also ask for specific android fw  [Michael W]
-b291b00  wiki: install: Clarify & declutter  [Michael W]
-====================
-     2022-01-26    
-====================
-
-* lineage/hudson
-1412d8e  ⑨  [LuK1337]
-
-* lineage/mirror
-659467a  Updated to 25-Jan-2022 15:48 UTC  [Kevin F. Haggerty]
-3ba1e87  Updated to 25-Jan-2022 15:01 UTC  [Kevin F. Haggerty]
-
-* lineage/wiki
-929585c  wiki: Add OnePlus 9 (lemonade)  [Albert Tang]
-====================
-     2022-01-25    
-====================
-
-* frameworks/base
-703986f  frameworks: Add support for clock auto-hiding  [Cédric Bellegarde]
-
-* lineage-sdk
-1d3d2f4  lineage-sdk: Add support for clock auto-hiding  [Cédric Bellegarde]
-
-* packages/apps/LineageParts
-bc2c0b8  LineageParts: Add support for clock auto-hiding  [Cédric Bellegarde]
-====================
-     2022-01-24    
-====================
-
-* device/xiaomi/davinci
-903840f  davinci: Import decommonized liboemcrypto  [Arian]
-
-* packages/apps/SettingsIntelligence
-da232f4  SettingsIntelligence: Search: Skip showing a few packages  [Michael W]
