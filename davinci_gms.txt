@@ -1,15 +1,28 @@
 ====================
-     2022-02-04    
+     2022-02-06    
 ====================
 
 * frameworks/base
-e1369b2  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+68b8007  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+
+* lineage/mirror
+651e010  Updated aosp-minimal to 05-Feb-2022 13:01 UTC  [Tim Schumacher]
+
+* system/core
+8ed0746  Set properties to make SafetyNet pass  [Danny Lin]
+====================
+     2022-02-05    
+====================
+
+* lineage/mirror
+cd27943  Updated to 04-Feb-2022 13:01 UTC  [Tim Schumacher]
+540d4ac  Updated aosp-minimal to 04-Feb-2022 13:01 UTC  [Tim Schumacher]
+====================
+     2022-02-04    
+====================
 
 * lineage/hudson
 fbf5fa3  Regenerate device dependency mappings  [razorloves]
-
-* system/core
-3e97ecf  Set properties to make SafetyNet pass  [Danny Lin]
 ====================
      2022-02-03    
 ====================
@@ -45,22 +58,3 @@ cd43085  Revert "cameraservice: Avoid calling getSystemCameraKind if the camera 
 
 * packages/resources/devicesettings
 de23ecb  devicesettings: Add strings for MotoActions  [dianlujitao]
-====================
-     2022-01-30    
-====================
-
-* lineage/hudson
-190be86  hudson: Same as the other thing, but with a modem  [Kevin F. Haggerty]
-
-* lineage/mirror
-f955a79  Updated to 29-Jan-2022 16:23 UTC  [Kevin F. Haggerty]
-
-* vendor/lineage
-cadcc2b  config: Set defaultSupervisionProfileOwnerComponent  [Han Wang]
-a3d17b8  apns: Add Unifi  [Alexander Winkowski]
-====================
-     2022-01-29    
-====================
-
-* kernel/xiaomi/sm8350
-afd2aee  audio: msm_dailink: Fix renoir ifdef  [Arian]
