@@ -3,34 +3,37 @@
 ====================
 
 * frameworks/base
-68b8007  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+f20da2f  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+
+* kernel/xiaomi/sm6150
+8aeb8ac  proc: Remove SafetyNet flags from /proc/cmdline  [Sultan Alsawaf]
+====================
+     2022-02-05    
+====================
 
 * lineage/mirror
 651e010  Updated aosp-minimal to 05-Feb-2022 13:01 UTC  [Tim Schumacher]
-
-* system/core
-8ed0746  Set properties to make SafetyNet pass  [Danny Lin]
 ====================
-     2022-02-05    
+     2022-02-04    
 ====================
 
 * lineage/mirror
 cd27943  Updated to 04-Feb-2022 13:01 UTC  [Tim Schumacher]
 540d4ac  Updated aosp-minimal to 04-Feb-2022 13:01 UTC  [Tim Schumacher]
 ====================
-     2022-02-04    
+     2022-02-03    
 ====================
 
 * lineage/hudson
 fbf5fa3  Regenerate device dependency mappings  [razorloves]
 ====================
-     2022-02-03    
+     2022-02-02    
 ====================
 
 * hardware/qcom/sm7250/display
 2233dfb  composer: Apply color transform only on power mode change.  [Anjaneya Prasad Musunuri]
 ====================
-     2022-02-02    
+     2022-02-01    
 ====================
 
 * lineage/mirror
@@ -39,22 +42,10 @@ bb32a5e  Updated to 01-Feb-2022 12:09 UTC  [Kevin F. Haggerty]
 
 * lineage/wiki
 5697cab  wiki: Add Galaxy Tab S6 Lite LTE (gta4xl)  [Kevin F. Haggerty]
-====================
-     2022-02-01    
-====================
-
-* lineage/wiki
 66cc60c  wiki: Add warning regarding firmware bug for DRG  [Aayush Gupta]
-
-* system/core
-121ed18  Add function CleanupOldScratchFiles symmetrically  [Jintao Zhu]
 ====================
      2022-01-31    
 ====================
 
-* frameworks/av
-e03eedb  cameraserver: fix deadlock scenario in torchModeStatusChanged callback.  [Jayant Chowdhary]
-cd43085  Revert "cameraservice: Avoid calling getSystemCameraKind if the camera was not mapped yet"  [Wang Han]
-
-* packages/resources/devicesettings
-de23ecb  devicesettings: Add strings for MotoActions  [dianlujitao]
+* system/core
+121ed18  Add function CleanupOldScratchFiles symmetrically  [Jintao Zhu]
