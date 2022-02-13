@@ -1,51 +1,93 @@
 ====================
-     2022-02-06    
+     2022-02-13    
 ====================
 
 * frameworks/base
-55a3e33  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+12cc8e3  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
+
+* lineage/crowdin
+3bc21e5  crowdin: Add unzipping  [Michael W]
+4be3036  crowdin: Add voting  [Michael W]
+2365ce7  crowdin: Refactor gerrit.py  [Michael W]
+862bd3e  config: lineage-18.1: Add all missing AOSP projects  [Michael Bestas]
+19752a9  config: lineage-17.1: Add all missing AOSP projects  [Michael W]
+c23d1de  crowdin: Correct source paths  [Michael W]
+a1b7129  crowdin: Separate code into files  [Michael W]
+
+* lineage/mirror
+c33ee1a  Updated aosp-minimal to 12-Feb-2022 13:01 UTC  [Tim Schumacher]
+====================
+     2022-02-12    
+====================
+
+* hardware/qcom-caf/sdm845/display
+60d1425  sdm: ensure color mode stays the same after reboot  [Chenyang Zhong]
+d19634e  sdm: correctly return to previous color mode after HDR/DCI P3  [Chenyang Zhong]
+====================
+     2022-02-11    
+====================
+
+* lineage/mirror
+6ad48c1  Updated aosp-minimal to 10-Feb-2022 13:01 UTC  [Tim Schumacher]
+====================
+     2022-02-10    
+====================
+
+* android
+fd1dcf9  manifest: Track our own system/extras  [Jarl-Penguin]
+
+* lineage/mirror
+8fcc1f1  Updated aosp-minimal to 09-Feb-2022 13:01 UTC  [Tim Schumacher]
+====================
+     2022-02-09    
+====================
+
+* build/make
+39b2b32  fixup! build: Add support for device tree in boot.img  [Jarl-Penguin]
+
+* device/xiaomi/violet
+81b0d26  violet: Update a630_sqe firmware from Redmi Note 10 Pro V12.5.9.0 RKFMIXM  [raghavt20]
+cb2fda6  violet: overlay-lineage: Declare LED capabilites  [Arian]
+5e1514a  violet: rootdir: Add ipa_fws root command  [raghavt20]
+dce356b  violet: Add source for unpinned extracted blobs  [raghavt20]
+f068769  violet: Add decommonized liboemcrypto from stock  [raghavt20]
+056bc94  violet: audio: Allocate dedicated pcm node for in call recording  [Shalini Manjunatha]
+0bd479a  violet: overlay: Add decommonized vibration patterns  [Arian]
+
+* kernel/xiaomi/sm6150
+56c2de2  drm: msm: dsi-staging: Keep the power regulator active when tddi doubleclick is enabled  [Arian]
+901e574  drm: msm: dsi-staging: Add dsi_panel_get_lockdowninfo_for_tp  [PIPIPIG233666]
+a50305a  drm: Import changes for F7B  [merothh]
+2889420  Revert "drm: Import changes for F7B"  [Arian]
+d4ad669  Revert "drm: msm: dsi-staging: Add dsi_panel_get_lockdowninfo_for_tp"  [Arian]
+d41b5af  Revert "drm: msm: dsi-staging: Import Xiaomi changes over panel_power{on,off}"  [Arian]
+3e50abd  Revert "drm: msm: dsi-staging: Ifdef panel_power[on,off} changes with CONFIG_TOUCHSCREEN_TDDI_DBCLK"  [Arian]
+06d7142  Revert "[FIXUP e7670791f000f8173d3ac805bec0cb0a2d9c93f0]drm: msm: dsi-staging: Ifdef panel_power[on,off} changes with CONFIG_TOUCHSCREEN_TDDI_DBCLK"  [Arian]
+85f44ea  Revert "drm: msm: dsi-staging: Cleanup reset gpio conditionals for tddi dblclk and violet"  [Arian]
+79d1c7e  Revert "[FIXUP a0115fb34d4111288811cbce34cf83dd7fce16ad]drm: Import changes for F7B"  [Arian]
+0eb1f20  [FIXUP a0115fb34d4111288811cbce34cf83dd7fce16ad]drm: Import changes for F7B  [raghavt20]
+32933bd  drm: msm: dsi-staging: Cleanup reset gpio conditionals for tddi dblclk and violet  [Arian]
+c9836b4  [FIXUP e7670791f000f8173d3ac805bec0cb0a2d9c93f0]drm: msm: dsi-staging: Ifdef panel_power[on,off} changes with CONFIG_TOUCHSCREEN_TDDI_DBCLK  [raghavt20]
+
+* lineage/mirror
+0e9419d  Always add prebuilts/gas/linux-x86 to the default manifest  [Tim Schumacher]
+ea77443  Updated to 08-Feb-2022 13:01 UTC  [Tim Schumacher]
+
+* vendor/lineage
+3191fee  envsetup: Fix long time broken path to sh  [Bruno Martins]
+5ad978c  envsetup: dopush: Correct paths  [Michael W]
+====================
+     2022-02-08    
+====================
+
+* lineage/charter
+f6561e2  charter: Update path for new extract-utils location  [Michael Bestas]
+
+* lineage/hudson
+12620f8  hudson: Flip lineage_recovery default to true  [Alessandro Astone]
+====================
+     2022-02-07    
+====================
 
 * kernel/xiaomi/sm6150
 8aeb8ac  proc: Remove SafetyNet flags from /proc/cmdline  [Sultan Alsawaf]
-====================
-     2022-02-05    
-====================
-
-* lineage/mirror
-651e010  Updated aosp-minimal to 05-Feb-2022 13:01 UTC  [Tim Schumacher]
-====================
-     2022-02-04    
-====================
-
-* lineage/hudson
-fbf5fa3  Regenerate device dependency mappings  [razorloves]
-
-* lineage/mirror
-cd27943  Updated to 04-Feb-2022 13:01 UTC  [Tim Schumacher]
-540d4ac  Updated aosp-minimal to 04-Feb-2022 13:01 UTC  [Tim Schumacher]
-====================
-     2022-02-03    
-====================
-====================
-     2022-02-02    
-====================
-
-* hardware/qcom/sm7250/display
-2233dfb  composer: Apply color transform only on power mode change.  [Anjaneya Prasad Musunuri]
-====================
-     2022-02-01    
-====================
-
-* lineage/mirror
-c829b32  Updated aosp-minimal to 01-Feb-2022 13:01 UTC  [Tim Schumacher]
-bb32a5e  Updated to 01-Feb-2022 12:09 UTC  [Kevin F. Haggerty]
-
-* lineage/wiki
-5697cab  wiki: Add Galaxy Tab S6 Lite LTE (gta4xl)  [Kevin F. Haggerty]
-66cc60c  wiki: Add warning regarding firmware bug for DRG  [Aayush Gupta]
-====================
-     2022-01-31    
-====================
-
-* system/core
-121ed18  Add function CleanupOldScratchFiles symmetrically  [Jintao Zhu]
