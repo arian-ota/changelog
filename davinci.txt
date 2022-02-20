@@ -1,93 +1,110 @@
 ====================
-     2022-02-13    
+     2022-02-20    
 ====================
 
 * frameworks/base
-12cc8e3  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
-
-* lineage/crowdin
-3bc21e5  crowdin: Add unzipping  [Michael W]
-4be3036  crowdin: Add voting  [Michael W]
-2365ce7  crowdin: Refactor gerrit.py  [Michael W]
-862bd3e  config: lineage-18.1: Add all missing AOSP projects  [Michael Bestas]
-19752a9  config: lineage-17.1: Add all missing AOSP projects  [Michael W]
-c23d1de  crowdin: Correct source paths  [Michael W]
-a1b7129  crowdin: Separate code into files  [Michael W]
+28b83f4  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
 
 * lineage/mirror
-c33ee1a  Updated aosp-minimal to 12-Feb-2022 13:01 UTC  [Tim Schumacher]
-====================
-     2022-02-12    
-====================
+c3c658b  Updated aosp-minimal to 19-Feb-2022 13:01 UTC  [Tim Schumacher]
 
-* hardware/qcom-caf/sdm845/display
-60d1425  sdm: ensure color mode stays the same after reboot  [Chenyang Zhong]
-d19634e  sdm: correctly return to previous color mode after HDR/DCI P3  [Chenyang Zhong]
+* lineage/wiki
+9170984  wiki: deviceinfo: Always show previously supported versions  [Michael W]
+dc020f6  wiki: Install: Only show the requirements first  [Michael W]
 ====================
-     2022-02-11    
+     2022-02-19    
 ====================
 
 * lineage/mirror
-6ad48c1  Updated aosp-minimal to 10-Feb-2022 13:01 UTC  [Tim Schumacher]
+1bcc90d  Updated aosp-minimal to 18-Feb-2022 13:01 UTC  [Tim Schumacher]
+
+* lineage/wiki
+cfc3f67  devices: Kill TWRP for the last of my devices  [Nolen Johnson]
+5da82f7  devices: payton: Stop using TWRP  [Nolen Johnson]
+03a765d  wiki: Drop 17.1 devices  [Michael W]
 ====================
-     2022-02-10    
+     2022-02-18    
 ====================
 
-* android
-fd1dcf9  manifest: Track our own system/extras  [Jarl-Penguin]
+* build/soong
+f4eba0f  Be more explicit about GMS dumpvars  [Nolen Johnson]
 
-* lineage/mirror
-8fcc1f1  Updated aosp-minimal to 09-Feb-2022 13:01 UTC  [Tim Schumacher]
+* device/xiaomi/renoir
+ed4d127  renoir: Import decommonized firmware and audio  [Arian]
+033a7c3  renoir: Drop proto sensor configs and sensorscalibrate stack  [Arian]
+
+* lineage/hudson
+ee2ec9a  Remove b1c1 from experimentals  [Nolen Johnson]
+e305838  hudson: Add nio  [dianlujitao]
+
+* lineage/wiki
+a3ce882  wiki: Unbreak Pre-Install instructions  [Michael W]
+8da6cbe  wiki: Add nio  [dianlujitao]
+
+* vendor/lineage
+0183d0a  lineage: partner_gms: Add Automotive support  [Nolen Johnson]
 ====================
-     2022-02-09    
+     2022-02-17    
 ====================
 
 * build/make
-39b2b32  fixup! build: Add support for device tree in boot.img  [Jarl-Penguin]
+44c8889  Bump Security String to 2022-02-05  [Michael Bestas]
 
-* device/xiaomi/violet
-81b0d26  violet: Update a630_sqe firmware from Redmi Note 10 Pro V12.5.9.0 RKFMIXM  [raghavt20]
-cb2fda6  violet: overlay-lineage: Declare LED capabilites  [Arian]
-5e1514a  violet: rootdir: Add ipa_fws root command  [raghavt20]
-dce356b  violet: Add source for unpinned extracted blobs  [raghavt20]
-f068769  violet: Add decommonized liboemcrypto from stock  [raghavt20]
-056bc94  violet: audio: Allocate dedicated pcm node for in call recording  [Shalini Manjunatha]
-0bd479a  violet: overlay: Add decommonized vibration patterns  [Arian]
-
-* kernel/xiaomi/sm6150
-56c2de2  drm: msm: dsi-staging: Keep the power regulator active when tddi doubleclick is enabled  [Arian]
-901e574  drm: msm: dsi-staging: Add dsi_panel_get_lockdowninfo_for_tp  [PIPIPIG233666]
-a50305a  drm: Import changes for F7B  [merothh]
-2889420  Revert "drm: Import changes for F7B"  [Arian]
-d4ad669  Revert "drm: msm: dsi-staging: Add dsi_panel_get_lockdowninfo_for_tp"  [Arian]
-d41b5af  Revert "drm: msm: dsi-staging: Import Xiaomi changes over panel_power{on,off}"  [Arian]
-3e50abd  Revert "drm: msm: dsi-staging: Ifdef panel_power[on,off} changes with CONFIG_TOUCHSCREEN_TDDI_DBCLK"  [Arian]
-06d7142  Revert "[FIXUP e7670791f000f8173d3ac805bec0cb0a2d9c93f0]drm: msm: dsi-staging: Ifdef panel_power[on,off} changes with CONFIG_TOUCHSCREEN_TDDI_DBCLK"  [Arian]
-85f44ea  Revert "drm: msm: dsi-staging: Cleanup reset gpio conditionals for tddi dblclk and violet"  [Arian]
-79d1c7e  Revert "[FIXUP a0115fb34d4111288811cbce34cf83dd7fce16ad]drm: Import changes for F7B"  [Arian]
-0eb1f20  [FIXUP a0115fb34d4111288811cbce34cf83dd7fce16ad]drm: Import changes for F7B  [raghavt20]
-32933bd  drm: msm: dsi-staging: Cleanup reset gpio conditionals for tddi dblclk and violet  [Arian]
-c9836b4  [FIXUP e7670791f000f8173d3ac805bec0cb0a2d9c93f0]drm: msm: dsi-staging: Ifdef panel_power[on,off} changes with CONFIG_TOUCHSCREEN_TDDI_DBCLK  [raghavt20]
-
-* lineage/mirror
-0e9419d  Always add prebuilts/gas/linux-x86 to the default manifest  [Tim Schumacher]
-ea77443  Updated to 08-Feb-2022 13:01 UTC  [Tim Schumacher]
-
-* vendor/lineage
-3191fee  envsetup: Fix long time broken path to sh  [Bruno Martins]
-5ad978c  envsetup: dopush: Correct paths  [Michael W]
+* external/chromium-webview
+658dc62  Update arm{,64} Chromium Webview to 98.0.4758.101  [Kevin F. Haggerty]
 ====================
-     2022-02-08    
+     2022-02-16    
 ====================
 
-* lineage/charter
-f6561e2  charter: Update path for new extract-utils location  [Michael Bestas]
+* device/lineage/sepolicy
+44fd376  Remove unused weather service policy  [Michael Bestas]
+84ff049  common: Drop custom filesystem rules  [Michael Bestas]
+cbeaa99  common: Remove unused updater policy  [Michael Bestas]
+
+* device/xiaomi/renoir
+090e1c9  renoir: Copy audio configs to sku_shima  [Arian]
+
+* kernel/xiaomi/sm8350
+b3ca01f  msm: vidc: disable decode batching feature  [wenchangliu]
+c18aba6  Revert "nl80211: fix non-split wiphy information"  [Arian]
 
 * lineage/hudson
-12620f8  hudson: Flip lineage_recovery default to true  [Alessandro Astone]
+af811de  add experimental 19.0 targets  [Tom Powell]
+84b0aa6  Drop 17.1  [Tom Powell]
+
+* lineage/mirror
+c2332cf  Updated to 16-Feb-2022 02:52 UTC  [Kevin F. Haggerty]
+
+* lineage/scripts
+04daa6f  Update default webview to 98.0.4758.101  [Kevin F. Haggerty]
 ====================
-     2022-02-07    
+     2022-02-15    
 ====================
 
-* kernel/xiaomi/sm6150
-8aeb8ac  proc: Remove SafetyNet flags from /proc/cmdline  [Sultan Alsawaf]
+* packages/apps/SetupWizard
+62b331d  SUW: add missing navigation bar in landsape layout  [Sean McCreary]
+====================
+     2022-02-14    
+====================
+
+* device/lineage/sepolicy
+4bb57d8  common: Narrow down sysfs_io_sched_tuneable  [dianlujitao]
+
+* frameworks/base
+a84cb45  Automatic translation import  [Michael Bestas]
+
+* lineage/crowdin
+8310110  crowdin: Remove code and configs for branches < lineage-17.1  [Michael W]
+
+* lineage/mirror
+d4e6146  Updated to 13-Feb-2022 14:21 UTC  [Kevin F. Haggerty]
+
+* packages/apps/Snap
+8c44416  Automatic translation import  [Michael Bestas]
+a521244  Snap: Mark strings as non translatable  [Michael Bestas]
+
+* packages/apps/Updater
+f7f4e1a  Automatic translation import  [Michael Bestas]
+
+* vendor/lineage
+961af00  kernel: Implement build time LTO choice  [Chirayu Desai]
