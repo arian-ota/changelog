@@ -1,110 +1,85 @@
 ====================
-     2022-02-20    
+     2022-02-27    
 ====================
 
 * frameworks/base
-28b83f4  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
-
-* lineage/mirror
-c3c658b  Updated aosp-minimal to 19-Feb-2022 13:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-9170984  wiki: deviceinfo: Always show previously supported versions  [Michael W]
-dc020f6  wiki: Install: Only show the requirements first  [Michael W]
-====================
-     2022-02-19    
-====================
-
-* lineage/mirror
-1bcc90d  Updated aosp-minimal to 18-Feb-2022 13:01 UTC  [Tim Schumacher]
-
-* lineage/wiki
-cfc3f67  devices: Kill TWRP for the last of my devices  [Nolen Johnson]
-5da82f7  devices: payton: Stop using TWRP  [Nolen Johnson]
-03a765d  wiki: Drop 17.1 devices  [Michael W]
-====================
-     2022-02-18    
-====================
-
-* build/soong
-f4eba0f  Be more explicit about GMS dumpvars  [Nolen Johnson]
-
-* device/xiaomi/renoir
-ed4d127  renoir: Import decommonized firmware and audio  [Arian]
-033a7c3  renoir: Drop proto sensor configs and sensorscalibrate stack  [Arian]
+3aeb019  TMP core: Spoof build fingerprint for Google Play Services  [Danny Lin]
 
 * lineage/hudson
-ee2ec9a  Remove b1c1 from experimentals  [Nolen Johnson]
-e305838  hudson: Add nio  [dianlujitao]
+1e88d9b  Add b1c1/floral back to experimentals  [Michael Bestas]
 
-* lineage/wiki
-a3ce882  wiki: Unbreak Pre-Install instructions  [Michael W]
-8da6cbe  wiki: Add nio  [dianlujitao]
-
-* vendor/lineage
-0183d0a  lineage: partner_gms: Add Automotive support  [Nolen Johnson]
+* lineage/mirror
+457cc29  Updated aosp-minimal to 26-Feb-2022 13:01 UTC  [Tim Schumacher]
 ====================
-     2022-02-17    
+     2022-02-26    
 ====================
-
-* build/make
-44c8889  Bump Security String to 2022-02-05  [Michael Bestas]
-
-* external/chromium-webview
-658dc62  Update arm{,64} Chromium Webview to 98.0.4758.101  [Kevin F. Haggerty]
-====================
-     2022-02-16    
-====================
-
-* device/lineage/sepolicy
-44fd376  Remove unused weather service policy  [Michael Bestas]
-84ff049  common: Drop custom filesystem rules  [Michael Bestas]
-cbeaa99  common: Remove unused updater policy  [Michael Bestas]
 
 * device/xiaomi/renoir
-090e1c9  renoir: Copy audio configs to sku_shima  [Arian]
+02658fd  renoir: Import decommonized ACDB libraries  [Arian]
+07c776d  renoir: Sort proprietary-files  [Arian]
+
+* frameworks/base
+0d7e68d  Add CLI command to restrict all network usage  [Tư Mã Tần Quảng]
+98f3c37  GlobalActionsDialog: Hint that there's more behind restart button  [Bruno Martins]
+
+* lineage/mirror
+355f77e  Updated aosp-minimal to 25-Feb-2022 13:01 UTC  [Tim Schumacher]
+====================
+     2022-02-25    
+====================
+
+* android
+72b1216  msm8953: Split msm8953 from UM_3_18_FAMILY [1/2]  [Bharath]
+
+* device/xiaomi/renoir
+caa4c98  renoir: Pin double click effect  [Arian]
+8bc5c88  renoir: Enable vibrator stream effects  [Arian]
+
+* lineage/mirror
+d94a9a2  Updated aosp-minimal to 24-Feb-2022 13:01 UTC  [Tim Schumacher]
+
+* lineage/wiki
+c074826  wiki: alioth: Include copy-partitions instructions before installation  [Sebastiano Barezzi]
+
+* vendor/lineage
+7846164  msm8953: Split msm8953 from UM_3_18_FAMILY [2/2]  [Bharath]
+====================
+     2022-02-24    
+====================
+
+* lineage/wiki
+e33d0cb  Remove 17.1 from the contributors list  [Tim Schumacher]
+====================
+     2022-02-23    
+====================
+
+* hardware/qcom-caf/msm8953/audio
+2d01112  Build audio.primary.* with BOARD_VNDK_VERSION  [Jiyong Park]
+2638b2a  audio: adsprpcd: Drop dependency on proprietary headers and fix build errors  [LuK1337]
+9abdcc7  audio: Drop LOCAL_COPY_HEADERS usage  [Pig]
+29ff01a  audio: Use direct project pathmap  [Ethan Chen]
 
 * kernel/xiaomi/sm8350
-b3ca01f  msm: vidc: disable decode batching feature  [wenchangliu]
-c18aba6  Revert "nl80211: fix non-split wiphy information"  [Arian]
+f6654d6  Partially revert "arm64: dts: shima: Decrease i2c pmic dropout voltage"  [Arian]
+9cf4c77  Revert "arm64: dts: shima: Update from renoir V13.0.7.1.7.DEV"  [Arian]
+f239025  arm64: dts: shima: Update mi display flags from renoir V13.0.7.1.7.DEV  [Arian]
+7911530  arm64: dts: shima: Update from renoir V13.0.7.1.7.DEV  [Arian]
+df7c8bc  arm64: dts: shima: Fixup 53a08d461fc69a75f97d2019fb134c94822a7e75  [Arian]
+d587773  arm64: dts: shima: Update K9 panel commands from renoir V13.0.7.1.7.DEV  [Arian]
 
 * lineage/hudson
-af811de  add experimental 19.0 targets  [Tom Powell]
-84b0aa6  Drop 17.1  [Tom Powell]
+4b0dfba  What did the marlin say to the sailfish?  [Nolen Johnson]
+df566b1  remove coral/flame experimental  [Tom Powell]
 
-* lineage/mirror
-c2332cf  Updated to 16-Feb-2022 02:52 UTC  [Kevin F. Haggerty]
-
-* lineage/scripts
-04daa6f  Update default webview to 98.0.4758.101  [Kevin F. Haggerty]
+* lineage/wiki
+6409055  wiki: devices: Promote the original Pixel family to 18.1  [Nolen Johnson]
 ====================
-     2022-02-15    
+     2022-02-22    
 ====================
-
-* packages/apps/SetupWizard
-62b331d  SUW: add missing navigation bar in landsape layout  [Sean McCreary]
 ====================
-     2022-02-14    
+     2022-02-21    
 ====================
 
-* device/lineage/sepolicy
-4bb57d8  common: Narrow down sysfs_io_sched_tuneable  [dianlujitao]
-
-* frameworks/base
-a84cb45  Automatic translation import  [Michael Bestas]
-
-* lineage/crowdin
-8310110  crowdin: Remove code and configs for branches < lineage-17.1  [Michael W]
-
-* lineage/mirror
-d4e6146  Updated to 13-Feb-2022 14:21 UTC  [Kevin F. Haggerty]
-
-* packages/apps/Snap
-8c44416  Automatic translation import  [Michael Bestas]
-a521244  Snap: Mark strings as non translatable  [Michael Bestas]
-
-* packages/apps/Updater
-f7f4e1a  Automatic translation import  [Michael Bestas]
-
-* vendor/lineage
-961af00  kernel: Implement build time LTO choice  [Chirayu Desai]
+* lineage/wiki
+736be7b  Check if .git exists before trying to get HEAD id  [LuK1337]
+b1d7419  Use correct jekyll tag for first_boot note  [LuK1337]
