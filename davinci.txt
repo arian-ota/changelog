@@ -1,24 +1,17 @@
 ====================
-     2022-03-14    
+     2022-03-15    
 ====================
-
-* android
-4127c17  lineage: Re-enable NQ NXP support  [Bruno Martins]
 
 * device/xiaomi/davinci
 3d44600  davinci: overlay-lineage: Update udfps hbm type name  [Arian]
 3b7192c  tmp davinci: drop duplicated assertions  [Arian]
 
-* frameworks/base
-2168ac6  SystemUI: Add visualizer feature  [Utkarsh Gupta]
-8da38f9  SystemUI: Port statusbar brightness control  [Alberto97]
-5d5de48  SystemUI: handle camera launch gesture from keyhandler  [Roman Birg]
-def0500  frameworks/base: Support for third party NFC features and extensions  [Puneet Mishra]
-
 * packages/apps/Settings
 d4ff03a  deviceinfo: Show display variant of lineage version  [Arian]
 
 * tools/buildscript
+ab043c3  fix uploading images  [Arian]
+4d0c2ea  fix build date monospace  [Arian]
 90d4346  Don't write compilation failed message to release channel on debug builds  [Arian]
 dcfd2d7  return after failed build  [Arian]
 7cffe49  Always use ==, fix ota jso check and don't upload debug builds  [Arian]
@@ -37,12 +30,12 @@ a6ba1d1  config: Remove TARGET_VENDOR_RELEASE_BUILD_ID  [Michael Bestas]
 82ba06f  config: Remove LINEAGE_VERSION_MAINTENANCE  [Michael Bestas]
 180be0a  LineageOS 19.1  [Nolen Johnson]
 755d713  config: Drop 2-button navigation support on tablets  [Bruno Martins]
-c86992e  Fix GSI targets  [Tom Pratt]
 ====================
-     2022-03-13    
+     2022-03-14    
 ====================
 
 * android
+4127c17  lineage: Re-enable NQ NXP support  [Bruno Martins]
 a6c701c  Track forked device/generic/common  [Tom Pratt]
 61f9e29  lineage: Enable Etar  [Michael Bestas]
 
@@ -54,6 +47,12 @@ fa9bc59  Compile guard aosp apns conf in gsi product  [Tom Pratt]
 
 * device/nubia/TP1803
 7368525  TP1803: Remove CLANG compile flag  [Georg Veichtlbauer]
+
+* frameworks/base
+2168ac6  SystemUI: Add visualizer feature  [Utkarsh Gupta]
+8da38f9  SystemUI: Port statusbar brightness control  [Alberto97]
+5d5de48  SystemUI: handle camera launch gesture from keyhandler  [Roman Birg]
+def0500  frameworks/base: Support for third party NFC features and extensions  [Puneet Mishra]
 
 * lineage/mirror
 e1acf7d  Updated to 13-Mar-2022 00:46 UTC  [Kevin F. Haggerty]
@@ -91,17 +90,12 @@ c476536  rework updater json  [Arian]
 56a76d2  initial import  [Arian]
 
 * vendor/lineage
+c86992e  Fix GSI targets  [Tom Pratt]
 4fef411  lineage: overlay: Move Trebuchet overlay to seperate RRO package.  [Alexander Koskovich]
 c453599  lineage: overlay: Exclude backup transport overlays from RRO.  [Alexander Koskovich]
 7561a9b  Revert "lineage: Exclude all lineage overlays from RRO"  [Alexander Koskovich]
-e15a636  config: Include androidx.window.extensions in tablet builds  [Tim Zimmermann]
-d0b3a4a  lineage: products: Add ATV emulator targets  [Nolen Johnson]
-2cf8a6a  overlay: core: Remove accent color overrides  [Danny Lin]
-
-* vendor/qcom/opensource/commonsys/system/bt
-7ea8732  BLE Scanning: Pass original address back to GattService#onScanResult  [Martin Brabham]
 ====================
-     2022-03-12    
+     2022-03-13    
 ====================
 
 * android
@@ -970,8 +964,16 @@ ee10c41  update_engine: Transition to backuptool domain  [Luca Stefani]
 7470900  update_engine: Run backuptool script before normal postinstall script  [Dan Pasanen]
 c0ff77c  update_engine: Add performance mode  [Gabriele M]
 cee1119  update_engine: put update_engine into background sched group  [Wei Wang]
+
+* vendor/lineage
+e15a636  config: Include androidx.window.extensions in tablet builds  [Tim Zimmermann]
+d0b3a4a  lineage: products: Add ATV emulator targets  [Nolen Johnson]
+2cf8a6a  overlay: core: Remove accent color overrides  [Danny Lin]
+
+* vendor/qcom/opensource/commonsys/system/bt
+7ea8732  BLE Scanning: Pass original address back to GattService#onScanResult  [Martin Brabham]
 ====================
-     2022-03-11    
+     2022-03-12    
 ====================
 
 * frameworks/base
@@ -994,7 +996,7 @@ c0eaccf  Squash of SystemUI: Show bluetooth battery level  [LuK1337]
 * vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
 df492c4  BLE Scanning: Receive the original address to onScanResults  [Martin Brabham]
 ====================
-     2022-03-10    
+     2022-03-11    
 ====================
 
 * android
@@ -1011,7 +1013,7 @@ a6fd633  lineage: overlay: Set biometrics colors to accent.  [Alexander Koskovic
 4d4e39a  overlay: Default to night mode  [Timi Rautamäki]
 6d88852  lineage: config: Make LLVM kernel compile the default  [Alexander Koskovich]
 ====================
-     2022-03-09    
+     2022-03-10    
 ====================
 
 * frameworks/base
@@ -1074,7 +1076,7 @@ ac25727  Trebuchet: Add 5x6, 5x7 and 6x6 default workspaces  [dwardo]
 5732ce5  Change app name to Trebuchet  [Joey]
 b499a43  Trebuchet: update build configs  [Joey]
 ====================
-     2022-03-08    
+     2022-03-09    
 ====================
 
 * android
