@@ -17,7 +17,6 @@ e849237  config: Remove custom LINEAGE_EXTRAVERSION logic  [Michael Bestas]
 38aa2ac  config: Make use of LINEAGE_VERSION_APPEND_TIME_OF_DAY consistent  [Michael Bestas]
 89c7f4d  config: Move version setup to version.mk  [Michael Bestas]
 398aa75  config: Remove TARGET_VENDOR_RELEASE_BUILD_ID  [Michael Bestas]
-b690588  config: Remove LINEAGE_VERSION_MAINTENANCE  [Michael Bestas]
 ====================
      2022-03-13    
 ====================
@@ -729,6 +728,7 @@ c0ff77c  update_engine: Add performance mode  [Gabriele M]
 cee1119  update_engine: put update_engine into background sched group  [Wei Wang]
 
 * vendor/lineage
+b690588  config: Remove LINEAGE_VERSION_MAINTENANCE  [Michael Bestas]
 df5087c  LineageOS 19.1  [Nolen Johnson]
 4fef411  lineage: overlay: Move Trebuchet overlay to seperate RRO package.  [Alexander Koskovich]
 c453599  lineage: overlay: Exclude backup transport overlays from RRO.  [Alexander Koskovich]
