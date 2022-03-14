@@ -10,6 +10,7 @@
 d4ff03a  deviceinfo: Show display variant of lineage version  [Arian]
 
 * tools/buildscript
+94339de  don't add builds with same id twice to ota json  [Arian]
 ab043c3  fix uploading images  [Arian]
 4d0c2ea  fix build date monospace  [Arian]
 90d4346  Don't write compilation failed message to release channel on debug builds  [Arian]
