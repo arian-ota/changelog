@@ -2,14 +2,11 @@
      2022-03-15    
 ====================
 
-* device/xiaomi/davinci
-3d44600  davinci: overlay-lineage: Update udfps hbm type name  [Arian]
-3b7192c  tmp davinci: drop duplicated assertions  [Arian]
-
 * packages/apps/Settings
 d4ff03a  deviceinfo: Show display variant of lineage version  [Arian]
 
 * tools/buildscript
+2dc7bd0  Create remote directories before uploading to them  [Arian]
 94339de  don't add builds with same id twice to ota json  [Arian]
 ab043c3  fix uploading images  [Arian]
 4d0c2ea  fix build date monospace  [Arian]
@@ -48,6 +45,10 @@ fa9bc59  Compile guard aosp apns conf in gsi product  [Tom Pratt]
 
 * device/nubia/TP1803
 7368525  TP1803: Remove CLANG compile flag  [Georg Veichtlbauer]
+
+* device/xiaomi/davinci
+3d44600  davinci: overlay-lineage: Update udfps hbm type name  [Arian]
+3b7192c  tmp davinci: drop duplicated assertions  [Arian]
 
 * frameworks/base
 2168ac6  SystemUI: Add visualizer feature  [Utkarsh Gupta]
