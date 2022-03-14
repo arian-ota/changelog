@@ -69,11 +69,6 @@ c159e74  wiki: Make version changes easier  [Michael W]
 4ab037e  Import internal Time API class  [Michael Bestas]
 2f667d0  Create and show reminders after start of event using a checkbox  [woheller69]
 59e432b  Repair reminder with negative values, e.g. for a reminder at 9:00am on a birthday (whole day event)  [woheller69]
-9b7ee34  Use real calendar colors with adaptive text color (dark/light) (#1091)  [sof4jazz]
-c89bf4b  Replace deprecated function and solve lint warning.  [Gitsaibot]
-c1e159b  Timeisinvalid (#1093)  [EsmaeeilMoradi]
-1c1c5b2  Widget Enhancement- Option To Add A New Event From The Widget Screen (#1105)  [Kavita Patil]
-7dda9e8  Remove duplicate descriptions  [Jochen Sprickerhof]
 
 * packages/apps/Nfc
 ea7c2ea  NFC: Adding new vendor specific interface to NFC Service  [Puneet Mishra]
@@ -655,6 +650,13 @@ b5896d8  Dialer: adaptive icon  [Asher Simonds]
 21bb78e  DocumentsUI: adaptive icon  [Asher Simonds]
 ace4fd7  DocumentsUI: define appcategory  [Joey]
 
+* packages/apps/Etar
+9b7ee34  Use real calendar colors with adaptive text color (dark/light) (#1091)  [sof4jazz]
+c89bf4b  Replace deprecated function and solve lint warning.  [Gitsaibot]
+c1e159b  Timeisinvalid (#1093)  [EsmaeeilMoradi]
+1c1c5b2  Widget Enhancement- Option To Add A New Event From The Widget Screen (#1105)  [Kavita Patil]
+7dda9e8  Remove duplicate descriptions  [Jochen Sprickerhof]
+
 * packages/apps/Messaging
 4b4e8b8  Automatic translation import  [Michael Bestas]
 1b6b3b2  Messaging: Show quick reply choices only on wearable devices  [Han Wang]
@@ -1081,13 +1083,6 @@ b499a43  Trebuchet: update build configs  [Joey]
 
 * android
 88a51eb  lineage: Track msm8996 HALs  [Scott Warner]
-
-* frameworks/base
-a4a343b  LockPatternUtils: Make settings getter and setters protected  [d34d]
-7b791ce  Check for null callerPackage in getStorageEncryptionStatus  [Ethan Chen]
-c3bd9f38  admin: Restore requireSecureKeyguard interface.  [Adnan Begovic]
-11b6a4c  fw/b: Add NotificationGroup class for use by lineage sdk system profiles  [Martin Long]
-19a9cb7  Download: Add support to manually pause/resume download  [qqzhou]
 
 * lineage/mirror
 448163f  Updated aosp-minimal to 08-Mar-2022 13:01 UTC  [Tim Schumacher]
