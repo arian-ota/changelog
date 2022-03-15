@@ -5,7 +5,6 @@
 * packages/apps/Settings
 d4ff03a1ef deviceinfo: Show display variant of lineage version
 
-
 * tools/buildscript
 2dc7bd0 Create remote directories before uploading to them
 94339de don't add builds with same id twice to ota json
@@ -18,7 +17,6 @@ dcfd2d7 return after failed build
 2b18667 spring cleanup
 4bf1c83 Create a new OTA json if necessary
 
-
 * vendor/lineage
 cfc974fe config: Remove PRODUCT_VERSION_MINOR from LINEAGE_DISPLAY_VERSION
 30744444 config: Remove custom LINEAGE_EXTRAVERSION logic
@@ -30,7 +28,6 @@ a6ba1d16 config: Remove TARGET_VENDOR_RELEASE_BUILD_ID
 82ba06fc config: Remove LINEAGE_VERSION_MAINTENANCE
 180be0af LineageOS 19.1
 755d713e config: Drop 2-button navigation support on tablets
-
 ====================
      2022-03-14    
 ====================
@@ -39,23 +36,18 @@ a6ba1d16 config: Remove TARGET_VENDOR_RELEASE_BUILD_ID
 4127c17 lineage: Re-enable NQ NXP support
 a6c701c Track forked device/generic/common
 
-
 * build/make
 a5d1eecc5 Add wildcards to allow lineage gsi targets
-
 
 * device/generic/common
 fa9bc59 Compile guard aosp apns conf in gsi product
 
-
 * device/nubia/TP1803
 7368525 TP1803: Remove CLANG compile flag
-
 
 * device/xiaomi/davinci
 3d44600 davinci: overlay-lineage: Update udfps hbm type name
 3b7192c tmp davinci: drop duplicated assertions
-
 
 * frameworks/base
 2168ac688985 SystemUI: Add visualizer feature
@@ -63,14 +55,11 @@ fa9bc59 Compile guard aosp apns conf in gsi product
 5d5de48dd682 SystemUI: handle camera launch gesture from keyhandler
 def05000a15d frameworks/base: Support for third party NFC features and extensions
 
-
 * lineage/mirror
 e1acf7d Updated to 13-Mar-2022 00:46 UTC
 
-
 * lineage/wiki
 c159e747 wiki: Make version changes easier
-
 
 * packages/apps/Etar
 37c0aecb Don't show time for all day events
@@ -82,10 +71,8 @@ c159e747 wiki: Make version changes easier
 2f667d0e Create and show reminders after start of event using a checkbox
 59e432b1 Repair reminder with negative values, e.g. for a reminder at 9:00am on a birthday (whole day event)
 
-
 * system/core
 3c200d1bf init: Skip interface duplicates if service is an override
-
 
 * tools/buildscript
 188d202 Revert "prevent idle while building"
@@ -95,10 +82,8 @@ c476536 rework updater json
 000d106 enable ccache
 56a76d2 initial import
 
-
 * vendor/lineage
 c86992e0 Fix GSI targets
-
 ====================
      2022-03-13    
 ====================
@@ -108,13 +93,11 @@ c86992e0 Fix GSI targets
 2657932 manifest: 19.0 -> 19.1
 04d9fa6 manifest: android-12.0.0_r29 -> android-12.1.0_r1
 
-
 * bionic
 6e6ed4d6c Add ability to build scudo-free 32-bit libc variant.
 81be02222 libc: Mark libstdc++ as vendor available
 0f4382a49 linker: Add support for dynamic SHIM libraries
 2c90af779 Add inaddr.h header file
-
 
 * bootable/recovery
 05272427 recovery.cpp: Fix typo when unmounting system
@@ -180,7 +163,6 @@ d13a8c51 recovery: ui: Support hardware virtual keys
 8297df78 recovery: ui: Default to touch enabled
 d4a57c06 Bring back file-based OTA edify functions
 
-
 * build/make
 140af11f3 releasetools: Fallback to calculated fp if partition fp is missing
 9070978ff build: Respect fs_config when generating recovery ramdisk
@@ -225,7 +207,6 @@ e1f7ab5c9 Add extra variables to _readonly_late_variables
 23bb8094f build: Include vendor/extra/BoardConfigExtra.mk if available
 471b9d81b Check for vintf compatiblity early in generation process
 
-
 * build/soong
 3280b3700 check_boot_jars: Add nvidia packages to whitelist
 c265d950f cleanbuild: Add `recovery_kernel` to installclean files
@@ -247,41 +228,33 @@ db79c8a9d soong: Squash of lineage-sdk bringup commits
 3431bddb7 Add dumpvars for WITH_SU and WITH_GMS
 11476bc44 soong: Add LINEAGE_VERSION to dumpvars
 
-
 * device/google/atv
 3a4d50a products: Add generic x86_64 TV target
 6b5682b Remove minimize debug symbol flags
 4306ce7 atv: Only build debug packages on `-eng` builds
 
-
 * external/android-nn-driver
 3c54114 Link to libOpenCL unconditionally when building OpenCL backend
-
 
 * external/armnn
 a8874c08 Link to libOpenCL unconditionally when building OpenCL backend
 
-
 * external/e2fsprogs
 582d894c resize: Make a target for standalone resize2fs_static binary
 0fdcab1e Mark libext2_blkid as vendor available
-
 
 * external/gptfdisk
 7645cd3 gptfdisk: include gptcl.h after sgdisk.h
 28a658c gptfdisk: Provide sgdisk_read for direct reads of the partition table
 d1756ec gptfdisk: Build lib for recovery
 
-
 * external/libcxx
 026699844 Make libc++fs vendor available and as a shared lib
-
 
 * external/mksh
 777020a mksh: Set TERM to xterm-256color
 f5056ce mksh: don't use /data/local for TMPDIR in recovery
 88ae224 mksh: Mark mkshrc as recovery_available
-
 
 * external/openssh
 13145b57 Tweak SSH config for security
@@ -289,14 +262,11 @@ f5056ce mksh: don't use /data/local for TMPDIR in recovery
 a8e4db32 Move build targets to /product
 3a38197d Disable StrictModes
 
-
 * external/tinycompress
 b5a5755 tinycompress: Conditionally enable extended compress format
 
-
 * external/wpa_supplicant_8
 2a41b93f wpa_supplicant: add support for bcmdhd SAE authentication offload
-
 
 * frameworks/av
 ee5b58a710 Partial revert "Move unused classes out of stagefright foundataion"
@@ -309,7 +279,6 @@ a89077a5b2 stagefright: Fix SurfaceMediaSource getting handle from wrong positio
 a3a9496982 Revert "Removed unused class and its test"
 1f10fa1281 Revert "stagefright: remove Miracast sender code"
 
-
 * frameworks/native
 bcfca821b5 InputDispatcher: On keypress, deliver keycode to pokeUserActivity
 011566b62a PowerManager.h: Define USER_ACTIVITY_FLAG values
@@ -319,71 +288,58 @@ a8d9b10c43 surfaceflinger: Add support for Udfps extension lib
 c6e05ce34d libui: Allow extension of valid gralloc 1.0 buffer usage bits
 606275d31b Add vendor version for libgui
 
-
 * frameworks/opt/telephony
 cbded5de81 Restore support with RadioConfig@1.0 dsds clients.
 058268c1c4 Release wakelock if setRadioCapability is not supported
 f36814f66f Update external card state based on current app
 
-
 * frameworks/opt/timezonepicker
 672ce8d Restore time_zone_item ripple effect
 11589dc Change ItemBackground for Black Theme
-
 
 * hardware/google/pixel
 3cd1adc pixel: Implement PowerShare HAL
 117934e pixel: Add lineage touch hal
 e51b193 pixel: Disable userdebug diagnostics
 
-
 * hardware/google/pixel-sepolicy
 eed6f6e sepolicy: Add PowerShare HAL policy
 1f065c4 sepolicy: Add lineage touch hal policy
 
-
 * hardware/interfaces
 e6816f299 wifi: Add provision to create/remove dynamic interface(s).
 
-
 * hardware/knowles/athletico/sound_trigger_hal
 0e0fa7e Use generated kernel headers
-
 
 * hardware/libhardware
 8d68001c libhardware: Add new display types.
 a13d0dc8 hardware/libhw: Add display_defs.h to declare custom enums/flags
 9de3fab5 audio: Add audio amplifier HAL
 
-
 * hardware/qcom/audio
 c23ba18f5 hal: Fix CFI errors
 095b06083 audio: Add audio headers lib
 51a38b6d5 audio: Use generated kernel headers
 
-
 * hardware/qcom/camera
 05016f8 msm8998: camera: Drop usage of LOCAL_COPY_HEADERS
 7a9c40a msm8998: Ignore -Wno-compound-token-split-by-macro warnings
 
-
 * hardware/qcom/data/ipacfg-mgr
 6200d46 ipacfg-mgr: Use generated kernel headers
 ce1a19a Kernel Header Changes
-
 
 * hardware/qcom/sdm845/display
 efd7e26c display: Drop LOCAL_COPY_HEADERS usage
 c5d5088d display: Fix path to vendor/qcom/opensource
 7d8ae195 Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT
 
-
 * hardware/qcom/sdm845/media
 80da3615 media: Stop overriding LOCAL_HEADER_LIBRARIES
 13f66bd1 media: Switch to display_headers lib include
 131f82a3 media: Drop LOCAL_COPY_HEADERS usage
 d6d242c8 mm-core: Generate omx core header library.
-
 
 * hardware/qcom/sm7250/display
 17c375f1 display: Drop LOCAL_COPY_HEADERS usage
@@ -394,16 +350,13 @@ feb90c13 sm7250: display: Export libdisplaydebug headers to dependencies
 e54e044a sm7250: display: Import display interfaces namespace
 cac7f9ec sm7250: display: Import display commonsys interfaces namespace
 
-
 * hardware/qcom/sm7250/media
 d1d11711 media: Drop LOCAL_COPY_HEADERS usage
 238e6a0f media: Add local fastcv header
 bcf3921e media: Include display_headers instead of display_intf_headers
 
-
 * hardware/qcom/sm8150/data/ipacfg-mgr
 cee5f29 Kernel Header Changes
-
 
 * hardware/qcom/sm8150/display
 188ebc26 sm8150: display: Import display interfaces namespace
@@ -415,20 +368,16 @@ db9646ab display: Drop LOCAL_COPY_HEADERS usage
 69427fe4 libhistogram: Use generated kernel headers
 933467c1 sm8150: display: Import display commonsys interfaces namespace
 
-
 * hardware/qcom/sm8150/media
 0507534a media: Drop LOCAL_COPY_HEADERS usage
 1d3a2643 vidc: pull in content of libion_path.mk from core-utils
 4b03141d media: Include display_headers instead of display_intf_headers
 
-
 * hardware/qcom/wlan
 55c2b5e Resolve compilation error for fib_rule_port_range with fib_rules.h
 
-
 * hardware/ril
 decca06 libril: allow board to provide libril
-
 
 * packages/apps/Bluetooth
 317e54a29 Don't assign codecs to a size fixed array
@@ -444,7 +393,6 @@ f962e9eec Stub TWS related APIs
 4b7e8d550 Add BLE Scan Phy parameter to scan API
 9633a63ff hfp: Report SCO sample rate via g_sco_samplerate audio param if needed
 
-
 * packages/apps/Camera2
 af3706294 Automatic translation import
 689cf7e05 Camera2: Request for ACCESS_FINE_LOCATION permission
@@ -455,10 +403,8 @@ c68d05662 Camera2: Remove settings preferences only once
 090462beb Camera2: Only autofocus before a snap if we are actually in "auto" mode.
 74fd04eb9 Camera2: adaptive icon
 
-
 * packages/apps/Car/Settings
 0ea0a8b1f Hardcode default pattern size
-
 
 * packages/apps/Contacts
 d916a14be Automatic translation import
@@ -472,7 +418,6 @@ f806b9545 Contacts: Enable support for device contact.
 9422d8925 Place MyInfo shortcut on drawer
 b578eabef Contacts: adaptive icon
 158892310 Contacts: define app category
-
 
 * packages/apps/Dialer
 c7fb10908 Automatic translation import
@@ -506,12 +451,10 @@ fc4a1b237 Dialer: Remove unused resources
 b5896d818 Dialer: adaptive icon
 2beaa5e37 Dialer: define app category
 
-
 * packages/apps/DocumentsUI
 1d5218a04 Remove unused string resources
 21bb78ea1 DocumentsUI: adaptive icon
 ace4fd726 DocumentsUI: define appcategory
-
 
 * packages/apps/Etar
 9b7ee343 Use real calendar colors with adaptive text color (dark/light) (#1091)
@@ -519,7 +462,6 @@ c89bf4b9 Replace deprecated function and solve lint warning.
 c1e159b5 Timeisinvalid (#1093)
 1c1c5b28 Widget Enhancement- Option To Add A New Event From The Widget Screen (#1105)
 7dda9e82 Remove duplicate descriptions
-
 
 * packages/apps/Messaging
 4b4e8b8 Automatic translation import
@@ -547,10 +489,8 @@ dc12307 Messaging: Toggable keyboard emoticons access
 e7d4d5c Messaging: adaptive icon
 1b58301 Messaging: define app category
 
-
 * packages/apps/Nfc
 ea7c2eab NFC: Adding new vendor specific interface to NFC Service
-
 
 * packages/apps/Settings
 e35670b40f Remove useless USB page header
@@ -627,17 +567,14 @@ ef18cf51e4 Settings: Add rotation settings
 13a2b4ba23 Settings: Put device info header above "Basic info"
 c974464550 Allow the user to change the BackupTransport
 
-
 * packages/apps/SettingsIntelligence
 a52e605 Style search bar to match new Settings UI
 39aec0b SettingsIntelligence: Search: Skip showing a few packages
 baec9eb SettingsIntelligence: Regen database on build version change
 4c075e0 SettingsIntelligence: Match Settings style
 
-
 * packages/apps/Stk
 771a51a Stk: adaptive icon
-
 
 * packages/apps/ThemePicker
 0b67029 Add permission for launcher preview rendering
@@ -645,7 +582,6 @@ baec9eb SettingsIntelligence: Regen database on build version change
 3c4e2e3 Specify we read and write launcher settings
 3f77007 Add wallpaper default permissions
 28175ec Add wallpaper privapp whitelist
-
 
 * packages/apps/TvSettings
 bcae672b7 TvSettings: Trust
@@ -666,10 +602,8 @@ a6ae2d612 Add build date (ro.build.date from build.prop) to About screen.
 42a8ea6ca One does not simply become a Developer
 3c3b8f3f6 Add LineageOS version to the About screen
 
-
 * packages/apps/WallpaperPicker2
 6914a2b WallpaperPicker2: Don't publish placeholder categories
-
 
 * packages/inputmethods/LatinIME
 5950b9f37 LatinIME: Properly refresh summary
@@ -705,16 +639,13 @@ e8bed96fd LatinIME: Update emojis
 334bc4623 LatinIME: support for incognito mode
 7ec8dd1d4 Fix send button not being centered for non-standard densities.
 
-
 * packages/modules/Connectivity
 ede2264ed setUidsAllowedOnRestrictedNetworks: Modify UID enforcement to check app id
 f41f6f56d Remove DUN requirement for tethering
 8a19f06f8 Connectivity: Add capability to allow tethering to use VPN upstreams
 
-
 * packages/modules/Wifi
 60d377f4f Wifi: Ingore miracast scan from connectivity manager
-
 
 * packages/modules/adb
 70709fa2 adb: Look for shell executable in alternate places
@@ -722,54 +653,43 @@ f41f6f56d Remove DUN requirement for tethering
 5549be3c Squashed import of adb root patches
 76fb5fab adb: Add ro.adb.secure.recovery handling
 
-
 * packages/modules/common
 40c73c9 Make adbroot_aidl_interface-ndk_platform available for adbd
-
 
 * packages/providers/BlockedNumberProvider
 2c66554 BlockedNumberProvider: adaptive icon
 
-
 * packages/providers/BookmarkProvider
 a319d9e BookmarkProvider: adaptive icon
-
 
 * packages/providers/CalendarProvider
 b0f5ccc CalendarProvider: adaptive icon
 
-
 * packages/providers/CallLogProvider
 9a73fe3 CallLogBackup: adaptive icon
-
 
 * packages/providers/ContactsProvider
 cf591c87 ContactsProvider: Prevent device contact being deleted.
 b5c14eff ContactsProvider: adaptive icon
-
 
 * packages/providers/DownloadProvider
 ca2f2762 Automatic translation import
 938cca3d DownloadProvider: Add support for manual pause/resume
 9d6d83e9 DownloadProvider: Display download speed in notification
 
-
 * packages/providers/MediaProvider
 0a5b28bb MediaProvider: Less spam
 e9d4a246 MediaProvider: adaptive icon
-
 
 * packages/providers/TelephonyProvider
 5913c26 TelephonyProvider: add upgrade support from lineage-17.1
 0709fdc TelephonyProvider: adaptive icon
 89e3352 Fix MmsSmsDatabaseHelper onUpgrade always destroying the database
 
-
 * packages/services/Mms
 bc22843 Automatic translation import
 b9f34f3 Mms: adaptive icon
 70f63d9 Add app label
-
 
 * packages/services/Telecomm
 916ed18a9 Telecomm: adaptive icon
@@ -777,17 +697,14 @@ f0bda9751 CallLog: Get rid of warning
 56871f54c Add back increasing ring feature (1/2).
 136dbd297 Telecom: Add sensitive phone numbers hooks
 
-
 * packages/services/Telephony
 104f56daa Telephony: use Build.VERSION.INCREMENTAL to check for system update
 b88884ce7 Telephony: Mark enhanced_4g_lte_mode_title_variant as untranslatable
 09db84702 Telephony: adaptive icon
 a16a13f54 Removing dead code from Telephony which uses wakelock.
 
-
 * packages/wallpapers/LivePicker
 ef6989e LivePicker: adaptive icon
-
 
 * system/bt
 fb8f860cd Update Bluetooth permission
@@ -812,7 +729,6 @@ ef3c0a46f BT: Adding APTX-Adaptive codec to BT HAL
 7679b3e62 Add BLE Scan Phy parameter to scan API
 88360acfc Bluetooth: Add SDK API support for TWS feature (1)
 
-
 * system/core
 5cbcd4cec llkd: Include llkd-debuggable.rc in eng builds only
 07adb89d0 fs_mgr: Allow remounts with Magisk installed
@@ -830,33 +746,26 @@ bdf16d01d init: don't skip starting a service with no domain if permissive
 99ef051a7 init: Add vendor-specific initialization hooks.
 c41189469 remount: Fix failure for system-as-root
 
-
 * system/extras
 a728f391 bootsignature: includes dt image size for signed boot image
 4398d2db Make sure header version is less than or equal to 4
 
-
 * system/libziparchive
 e911277 ziptool: restore unzip for recovery
-
 
 * system/logging
 bca97461 liblog: Always report as debuggable when building userdebug/eng
 
-
 * system/media
 ce8ec8bf media: update path for vendor specific config files
-
 
 * system/sepolicy
 9b39c3805 Grant permission for mediatranscoding hal_allocator for GSI image
 2d458cb40 sepolicy: Allow recovery to alter /
 03098777e sepolicy: whitelist recovery from node creation neverallow
 
-
 * system/tools/mkbootimg
 e8b1035 mkbootimg: add support for --dt
-
 
 * system/update_engine
 acecab11 update_engine: Remove any (stale) read-only flag before r/w mount of system
@@ -867,7 +776,6 @@ ee10c414 update_engine: Transition to backuptool domain
 c0ff77c4 update_engine: Add performance mode
 cee1119e update_engine: put update_engine into background sched group
 
-
 * vendor/lineage
 4fef4114 lineage: overlay: Move Trebuchet overlay to seperate RRO package.
 c4535991 lineage: overlay: Exclude backup transport overlays from RRO.
@@ -876,10 +784,8 @@ e15a6363 config: Include androidx.window.extensions in tablet builds
 d0b3a4af lineage: products: Add ATV emulator targets
 2cf8a6ad overlay: core: Remove accent color overrides
 
-
 * vendor/qcom/opensource/commonsys/system/bt
 7ea87328a BLE Scanning: Pass original address back to GattService#onScanResult
-
 ====================
      2022-03-12    
 ====================
@@ -1086,14 +992,11 @@ f9931ce0e93f trust: Add hooks for USB HAL 1.3
 c0eaccf409b7 Squash of SystemUI: Show bluetooth battery level
 7f02994b9f27 Forward port CM Screen Security settings (1/2)
 
-
 * vendor/lineage
 157a2a71 config: Create makefiles for tablets with telephony support
 
-
 * vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
 df492c4dd BLE Scanning: Receive the original address to onScanResults
-
 ====================
      2022-03-11    
 ====================
@@ -1101,20 +1004,16 @@ df492c4dd BLE Scanning: Receive the original address to onScanResults
 * android
 4bb4914 Track our fork of hardware/interfaces
 
-
 * hardware/qcom-caf/sdm845/display
 7b1c3cc76 sdm: mark FOD pressed layer by setting a bit on ZPOS
 
-
 * packages/apps/SetupWizard
 9709678 SUW: Drop SIM card tray illustration hint all together
-
 
 * vendor/lineage
 a6fd6339 lineage: overlay: Set biometrics colors to accent.
 4d4e39a8 overlay: Default to night mode
 6d88852d lineage: config: Make LLVM kernel compile the default
-
 ====================
      2022-03-10    
 ====================
@@ -1149,7 +1048,6 @@ f7f99a6b1f4d services: Kick off to LineageSystemServer for external service init
 ddae65ff379c Add lineage sdk resource APK to Zygote FD whitelist
 f6c046ba0fee androidfw: Squash of declare and load lineage sdk resource package w/ id
 
-
 * packages/apps/Trebuchet
 de6427df67 QuickStep: Google Feed integration
 603e67e50b Launcher3: Reduce app label text size
@@ -1179,7 +1077,6 @@ ac25727152 Trebuchet: Add 5x6, 5x7 and 6x6 default workspaces
 47730f412c Trebuchet: adaptive icon
 5732ce5ecf Change app name to Trebuchet
 b499a43806 Trebuchet: update build configs
-
 ====================
      2022-03-09    
 ====================
@@ -1187,15 +1084,11 @@ b499a43806 Trebuchet: update build configs
 * android
 88a51eb lineage: Track msm8996 HALs
 
-
 * lineage/mirror
 448163f Updated aosp-minimal to 08-Mar-2022 13:01 UTC
-
 
 * packages/apps/SetupWizard
 9eaa10c SUW: Support dark mode by default
 
-
 * vendor/lineage
 d5cdc097 config: device_framework_matrix: Remove inscreen and power HAL entries
-
