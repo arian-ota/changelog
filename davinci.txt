@@ -6,6 +6,9 @@
 d4ff03a1ef deviceinfo: Show display variant of lineage version
 
 * tools/buildscript
+b316d27 simplify ab vs non-ab images
+b2673cc fix for partition loop on ab devices
+2f90433 update changelog generation
 2dc7bd0 Create remote directories before uploading to them
 94339de don't add builds with same id twice to ota json
 ab043c3 fix uploading images
@@ -43,9 +46,6 @@ a5d1eecc5 Add wildcards to allow lineage gsi targets
 * device/generic/common
 fa9bc59 Compile guard aosp apns conf in gsi product
 
-* device/nubia/TP1803
-7368525 TP1803: Remove CLANG compile flag
-
 * device/xiaomi/davinci
 3d44600 davinci: overlay-lineage: Update udfps hbm type name
 3b7192c tmp davinci: drop duplicated assertions
@@ -55,25 +55,6 @@ fa9bc59 Compile guard aosp apns conf in gsi product
 8da38f936758 SystemUI: Port statusbar brightness control
 5d5de48dd682 SystemUI: handle camera launch gesture from keyhandler
 def05000a15d frameworks/base: Support for third party NFC features and extensions
-
-* lineage/mirror
-e1acf7d Updated to 13-Mar-2022 00:46 UTC
-
-* lineage/wiki
-c159e747 wiki: Make version changes easier
-
-* packages/apps/Etar
-37c0aecb Don't show time for all day events
-744098a1 Remove isDst references and always return false
-1a756900 Adapt for removed public Time(Time other) constructor
-5ac939bc Import getCurrentTimezone() from android.text.format.Time
-301e79a6 Changes for internal Time API
-4ab037ef Import internal Time API class
-2f667d0e Create and show reminders after start of event using a checkbox
-59e432b1 Repair reminder with negative values, e.g. for a reminder at 9:00am on a birthday (whole day event)
-
-* system/core
-3c200d1bf init: Skip interface duplicates if service is an override
 
 * tools/buildscript
 188d202 Revert "prevent idle while building"
@@ -235,6 +216,9 @@ db79c8a9d soong: Squash of lineage-sdk bringup commits
 6b5682b Remove minimize debug symbol flags
 4306ce7 atv: Only build debug packages on `-eng` builds
 
+* device/nubia/TP1803
+7368525 TP1803: Remove CLANG compile flag
+
 * external/android-nn-driver
 3c54114 Link to libOpenCL unconditionally when building OpenCL backend
 
@@ -381,6 +365,12 @@ db9646ab display: Drop LOCAL_COPY_HEADERS usage
 * hardware/ril
 decca06 libril: allow board to provide libril
 
+* lineage/mirror
+e1acf7d Updated to 13-Mar-2022 00:46 UTC
+
+* lineage/wiki
+c159e747 wiki: Make version changes easier
+
 * packages/apps/Bluetooth
 317e54a29 Don't assign codecs to a size fixed array
 b6af4ca70 Add Attribution source parameter to isBroadcastActive API
@@ -459,6 +449,14 @@ b5896d818 Dialer: adaptive icon
 ace4fd726 DocumentsUI: define appcategory
 
 * packages/apps/Etar
+37c0aecb Don't show time for all day events
+744098a1 Remove isDst references and always return false
+1a756900 Adapt for removed public Time(Time other) constructor
+5ac939bc Import getCurrentTimezone() from android.text.format.Time
+301e79a6 Changes for internal Time API
+4ab037ef Import internal Time API class
+2f667d0e Create and show reminders after start of event using a checkbox
+59e432b1 Repair reminder with negative values, e.g. for a reminder at 9:00am on a birthday (whole day event)
 9b7ee343 Use real calendar colors with adaptive text color (dark/light) (#1091)
 c89bf4b9 Replace deprecated function and solve lint warning.
 c1e159b5 Timeisinvalid (#1093)
@@ -732,6 +730,7 @@ ef3c0a46f BT: Adding APTX-Adaptive codec to BT HAL
 88360acfc Bluetooth: Add SDK API support for TWS feature (1)
 
 * system/core
+3c200d1bf init: Skip interface duplicates if service is an override
 5cbcd4cec llkd: Include llkd-debuggable.rc in eng builds only
 07adb89d0 fs_mgr: Allow remounts with Magisk installed
 33d5bec34 debuggerd: add Lineage version to tombstones
@@ -1017,7 +1016,6 @@ df492c4dd BLE Scanning: Receive the original address to onScanResults
 * vendor/lineage
 a6fd6339 lineage: overlay: Set biometrics colors to accent.
 4d4e39a8 overlay: Default to night mode
-6d88852d lineage: config: Make LLVM kernel compile the default
 
 ====================
      2022-03-10    
@@ -1082,6 +1080,9 @@ ac25727152 Trebuchet: Add 5x6, 5x7 and 6x6 default workspaces
 47730f412c Trebuchet: adaptive icon
 5732ce5ecf Change app name to Trebuchet
 b499a43806 Trebuchet: update build configs
+
+* vendor/lineage
+6d88852d lineage: config: Make LLVM kernel compile the default
 
 ====================
      2022-03-09    
