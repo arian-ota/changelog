@@ -5,6 +5,7 @@
 * packages/apps/Settings
 d4ff03a1ef deviceinfo: Show display variant of lineage version
 
+
 * tools/buildscript
 2dc7bd0 Create remote directories before uploading to them
 94339de don't add builds with same id twice to ota json
@@ -17,6 +18,7 @@ dcfd2d7 return after failed build
 2b18667 spring cleanup
 4bf1c83 Create a new OTA json if necessary
 
+
 * vendor/lineage
 cfc974fe config: Remove PRODUCT_VERSION_MINOR from LINEAGE_DISPLAY_VERSION
 30744444 config: Remove custom LINEAGE_EXTRAVERSION logic
@@ -28,6 +30,7 @@ a6ba1d16 config: Remove TARGET_VENDOR_RELEASE_BUILD_ID
 82ba06fc config: Remove LINEAGE_VERSION_MAINTENANCE
 180be0af LineageOS 19.1
 755d713e config: Drop 2-button navigation support on tablets
+
 ====================
      2022-03-14    
 ====================
@@ -36,18 +39,23 @@ a6ba1d16 config: Remove TARGET_VENDOR_RELEASE_BUILD_ID
 4127c17 lineage: Re-enable NQ NXP support
 a6c701c Track forked device/generic/common
 
+
 * build/make
 a5d1eecc5 Add wildcards to allow lineage gsi targets
+
 
 * device/generic/common
 fa9bc59 Compile guard aosp apns conf in gsi product
 
+
 * device/nubia/TP1803
 7368525 TP1803: Remove CLANG compile flag
+
 
 * device/xiaomi/davinci
 3d44600 davinci: overlay-lineage: Update udfps hbm type name
 3b7192c tmp davinci: drop duplicated assertions
+
 
 * frameworks/base
 2168ac688985 SystemUI: Add visualizer feature
@@ -55,11 +63,14 @@ fa9bc59 Compile guard aosp apns conf in gsi product
 5d5de48dd682 SystemUI: handle camera launch gesture from keyhandler
 def05000a15d frameworks/base: Support for third party NFC features and extensions
 
+
 * lineage/mirror
 e1acf7d Updated to 13-Mar-2022 00:46 UTC
 
+
 * lineage/wiki
 c159e747 wiki: Make version changes easier
+
 
 * packages/apps/Etar
 37c0aecb Don't show time for all day events
@@ -71,11 +82,10 @@ c159e747 wiki: Make version changes easier
 2f667d0e Create and show reminders after start of event using a checkbox
 59e432b1 Repair reminder with negative values, e.g. for a reminder at 9:00am on a birthday (whole day event)
 
-* packages/apps/Nfc
-ea7c2eab NFC: Adding new vendor specific interface to NFC Service
 
 * system/core
 3c200d1bf init: Skip interface duplicates if service is an override
+
 
 * tools/buildscript
 188d202 Revert "prevent idle while building"
@@ -85,8 +95,10 @@ c476536 rework updater json
 000d106 enable ccache
 56a76d2 initial import
 
+
 * vendor/lineage
 c86992e0 Fix GSI targets
+
 ====================
      2022-03-13    
 ====================
@@ -96,11 +108,13 @@ c86992e0 Fix GSI targets
 2657932 manifest: 19.0 -> 19.1
 04d9fa6 manifest: android-12.0.0_r29 -> android-12.1.0_r1
 
+
 * bionic
 6e6ed4d6c Add ability to build scudo-free 32-bit libc variant.
 81be02222 libc: Mark libstdc++ as vendor available
 0f4382a49 linker: Add support for dynamic SHIM libraries
 2c90af779 Add inaddr.h header file
+
 
 * bootable/recovery
 05272427 recovery.cpp: Fix typo when unmounting system
@@ -166,6 +180,7 @@ d13a8c51 recovery: ui: Support hardware virtual keys
 8297df78 recovery: ui: Default to touch enabled
 d4a57c06 Bring back file-based OTA edify functions
 
+
 * build/make
 140af11f3 releasetools: Fallback to calculated fp if partition fp is missing
 9070978ff build: Respect fs_config when generating recovery ramdisk
@@ -210,6 +225,7 @@ e1f7ab5c9 Add extra variables to _readonly_late_variables
 23bb8094f build: Include vendor/extra/BoardConfigExtra.mk if available
 471b9d81b Check for vintf compatiblity early in generation process
 
+
 * build/soong
 3280b3700 check_boot_jars: Add nvidia packages to whitelist
 c265d950f cleanbuild: Add `recovery_kernel` to installclean files
@@ -231,33 +247,41 @@ db79c8a9d soong: Squash of lineage-sdk bringup commits
 3431bddb7 Add dumpvars for WITH_SU and WITH_GMS
 11476bc44 soong: Add LINEAGE_VERSION to dumpvars
 
+
 * device/google/atv
 3a4d50a products: Add generic x86_64 TV target
 6b5682b Remove minimize debug symbol flags
 4306ce7 atv: Only build debug packages on `-eng` builds
 
+
 * external/android-nn-driver
 3c54114 Link to libOpenCL unconditionally when building OpenCL backend
+
 
 * external/armnn
 a8874c08 Link to libOpenCL unconditionally when building OpenCL backend
 
+
 * external/e2fsprogs
 582d894c resize: Make a target for standalone resize2fs_static binary
 0fdcab1e Mark libext2_blkid as vendor available
+
 
 * external/gptfdisk
 7645cd3 gptfdisk: include gptcl.h after sgdisk.h
 28a658c gptfdisk: Provide sgdisk_read for direct reads of the partition table
 d1756ec gptfdisk: Build lib for recovery
 
+
 * external/libcxx
 026699844 Make libc++fs vendor available and as a shared lib
+
 
 * external/mksh
 777020a mksh: Set TERM to xterm-256color
 f5056ce mksh: don't use /data/local for TMPDIR in recovery
 88ae224 mksh: Mark mkshrc as recovery_available
+
 
 * external/openssh
 13145b57 Tweak SSH config for security
@@ -265,11 +289,14 @@ f5056ce mksh: don't use /data/local for TMPDIR in recovery
 a8e4db32 Move build targets to /product
 3a38197d Disable StrictModes
 
+
 * external/tinycompress
 b5a5755 tinycompress: Conditionally enable extended compress format
 
+
 * external/wpa_supplicant_8
 2a41b93f wpa_supplicant: add support for bcmdhd SAE authentication offload
+
 
 * frameworks/av
 ee5b58a710 Partial revert "Move unused classes out of stagefright foundataion"
@@ -281,6 +308,581 @@ a89077a5b2 stagefright: Fix SurfaceMediaSource getting handle from wrong positio
 96d6d66e8e libstagefright: Remove libmediaextractor dependency
 a3a9496982 Revert "Removed unused class and its test"
 1f10fa1281 Revert "stagefright: remove Miracast sender code"
+
+
+* frameworks/native
+bcfca821b5 InputDispatcher: On keypress, deliver keycode to pokeUserActivity
+011566b62a PowerManager.h: Define USER_ACTIVITY_FLAG values
+961931142d Forward port 'Swap volume buttons' (2/3)
+e7c8c0f84f CompositionEngine: Request device composition for the Udfps touched layer
+a8d9b10c43 surfaceflinger: Add support for Udfps extension lib
+c6e05ce34d libui: Allow extension of valid gralloc 1.0 buffer usage bits
+606275d31b Add vendor version for libgui
+
+
+* frameworks/opt/telephony
+cbded5de81 Restore support with RadioConfig@1.0 dsds clients.
+058268c1c4 Release wakelock if setRadioCapability is not supported
+f36814f66f Update external card state based on current app
+
+
+* frameworks/opt/timezonepicker
+672ce8d Restore time_zone_item ripple effect
+11589dc Change ItemBackground for Black Theme
+
+
+* hardware/google/pixel
+3cd1adc pixel: Implement PowerShare HAL
+117934e pixel: Add lineage touch hal
+e51b193 pixel: Disable userdebug diagnostics
+
+
+* hardware/google/pixel-sepolicy
+eed6f6e sepolicy: Add PowerShare HAL policy
+1f065c4 sepolicy: Add lineage touch hal policy
+
+
+* hardware/interfaces
+e6816f299 wifi: Add provision to create/remove dynamic interface(s).
+
+
+* hardware/knowles/athletico/sound_trigger_hal
+0e0fa7e Use generated kernel headers
+
+
+* hardware/libhardware
+8d68001c libhardware: Add new display types.
+a13d0dc8 hardware/libhw: Add display_defs.h to declare custom enums/flags
+9de3fab5 audio: Add audio amplifier HAL
+
+
+* hardware/qcom/audio
+c23ba18f5 hal: Fix CFI errors
+095b06083 audio: Add audio headers lib
+51a38b6d5 audio: Use generated kernel headers
+
+
+* hardware/qcom/camera
+05016f8 msm8998: camera: Drop usage of LOCAL_COPY_HEADERS
+7a9c40a msm8998: Ignore -Wno-compound-token-split-by-macro warnings
+
+
+* hardware/qcom/data/ipacfg-mgr
+6200d46 ipacfg-mgr: Use generated kernel headers
+ce1a19a Kernel Header Changes
+
+
+* hardware/qcom/sdm845/display
+efd7e26c display: Drop LOCAL_COPY_HEADERS usage
+c5d5088d display: Fix path to vendor/qcom/opensource
+7d8ae195 Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT
+
+
+* hardware/qcom/sdm845/media
+80da3615 media: Stop overriding LOCAL_HEADER_LIBRARIES
+13f66bd1 media: Switch to display_headers lib include
+131f82a3 media: Drop LOCAL_COPY_HEADERS usage
+d6d242c8 mm-core: Generate omx core header library.
+
+
+* hardware/qcom/sm7250/display
+17c375f1 display: Drop LOCAL_COPY_HEADERS usage
+b1857d07 Add C2D_FORMAT_BT601_FULLRANGE to C2D_FORMAT_MODE
+ef55de3f Add C2D_COLOR_FORMAT_420_P010 to C2D_YUV_FORMAT
+83570557 Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT
+feb90c13 sm7250: display: Export libdisplaydebug headers to dependencies
+e54e044a sm7250: display: Import display interfaces namespace
+cac7f9ec sm7250: display: Import display commonsys interfaces namespace
+
+
+* hardware/qcom/sm7250/media
+d1d11711 media: Drop LOCAL_COPY_HEADERS usage
+238e6a0f media: Add local fastcv header
+bcf3921e media: Include display_headers instead of display_intf_headers
+
+
+* hardware/qcom/sm8150/data/ipacfg-mgr
+cee5f29 Kernel Header Changes
+
+
+* hardware/qcom/sm8150/display
+188ebc26 sm8150: display: Import display interfaces namespace
+db9646ab display: Drop LOCAL_COPY_HEADERS usage
+013893d1 Add C2D_FORMAT_BT601_FULLRANGE to C2D_FORMAT_MODE
+832f4833 Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT
+5352f090 gralloc: Ignore sign-conversion errors
+05bb3e7e gralloc: pull in content of libion_path.mk from core-utils
+69427fe4 libhistogram: Use generated kernel headers
+933467c1 sm8150: display: Import display commonsys interfaces namespace
+
+
+* hardware/qcom/sm8150/media
+0507534a media: Drop LOCAL_COPY_HEADERS usage
+1d3a2643 vidc: pull in content of libion_path.mk from core-utils
+4b03141d media: Include display_headers instead of display_intf_headers
+
+
+* hardware/qcom/wlan
+55c2b5e Resolve compilation error for fib_rule_port_range with fib_rules.h
+
+
+* hardware/ril
+decca06 libril: allow board to provide libril
+
+
+* packages/apps/Bluetooth
+317e54a29 Don't assign codecs to a size fixed array
+b6af4ca70 Add Attribution source parameter to isBroadcastActive API
+cc2d84d27 Support for broadcast active api
+b86ad2af7 PAST feature implementation
+ba5f99d7c Periodic Sync Feature implementation
+01d9b3b08 Add Attribution source parameter for internal APIS.
+07623e057 DeviceGroup: Add Binder method in Bluetooth App
+8446fd9bd Adds missing methods/parameters to Bluetooth app required to build.
+5048e1283 Bluetooth: Reset packages/apps/Bluetooth to upstream
+f962e9eec Stub TWS related APIs
+4b7e8d550 Add BLE Scan Phy parameter to scan API
+9633a63ff hfp: Report SCO sample rate via g_sco_samplerate audio param if needed
+
+
+* packages/apps/Camera2
+af3706294 Automatic translation import
+689cf7e05 Camera2: Request for ACCESS_FINE_LOCATION permission
+025ca3dda Fix crash if Exif-Tag buffer-length and component-count are both 0
+c6c0cf5db Camera2: Fix Undo button behaviour
+7a7bffd20 Camera2: Add option to set max screen brightness
+c68d05662 Camera2: Remove settings preferences only once
+090462beb Camera2: Only autofocus before a snap if we are actually in "auto" mode.
+74fd04eb9 Camera2: adaptive icon
+
+
+* packages/apps/Car/Settings
+0ea0a8b1f Hardcode default pattern size
+
+
+* packages/apps/Contacts
+d916a14be Automatic translation import
+f806b9545 Contacts: Enable support for device contact.
+4b6e9295b Contacts: Make the launch screen follow the system theme
+3265edfb4 Contacts: manually configure dark theme for list
+387dd1309 Contacts: allow framework to do dark theming automatically
+2d9d4db99 Contacts: use white nav bar
+3efac2644 Allow calling contacts via specific phone accounts.
+414965fb9 Place EmergencyInfo shortcut on drawer
+9422d8925 Place MyInfo shortcut on drawer
+b578eabef Contacts: adaptive icon
+158892310 Contacts: define app category
+
+
+* packages/apps/Dialer
+c7fb10908 Automatic translation import
+a6c23e0c2 Dialer: Notify content observers upon call log entry deletion
+ef8fc768a Dialer: improve search bar
+d02dd02db Dialer: set statusbar color same as activity background
+fe4a11969 Dialer: update ripple color
+6dea9af34 Dialer: update dark theme colors
+6d698b7ba Dialer: correct the expanded search bar height
+2569cb7b6 Dialer: use black/white navigation colors
+57c98bc49 Dialer: Add a helpline phone book
+f5c98f546 Dialer: Hide sensitive numbers from incall screen
+4e0fdbd03 Dialer: Don't prompt to send a message to sensitive numbers
+ffc906e15 Dialer: handle database downgrade from lineage-17.1
+63eefc6ef Dialer: Use a DayNight launch theme
+bae468894 Dialer: allow framework to do dark theming automatically
+6dc290217 Dialer: AudioModeProvider: use wired route for usb headsets
+06f0128d0 Control dialer's incoming call proximity sensor check via an overlay
+75b3d5c8e Re-add dialer lookup.
+87a68aed8 Re-add call statistics.
+313c4f2e8 Allow per-call account selection.
+39dcb1e57 Re-add call recording.
+83dcac8e4 Add setting to enable Do Not Disturb during calls
+fb4ea117a Generalize the in-call vibration settings category
+5cc3ff883 Add back in-call vibration features
+e3aa556dd Revert "Remove dialer sounds and vibrations settings fragments and redirect to the system sound settings fragment instead."
+56accdedd Dialer: disable anti-falsing for call answer screen
+851238b54 Dialer: Fix typo in RU translation
+fc4a1b237 Dialer: Remove unused resources
+2216c6076 Fix translation of 'contacts' tab title and main menu.
+b5896d818 Dialer: adaptive icon
+2beaa5e37 Dialer: define app category
+
+
+* packages/apps/DocumentsUI
+1d5218a04 Remove unused string resources
+21bb78ea1 DocumentsUI: adaptive icon
+ace4fd726 DocumentsUI: define appcategory
+
+
+* packages/apps/Etar
+9b7ee343 Use real calendar colors with adaptive text color (dark/light) (#1091)
+c89bf4b9 Replace deprecated function and solve lint warning.
+c1e159b5 Timeisinvalid (#1093)
+1c1c5b28 Widget Enhancement- Option To Add A New Event From The Widget Screen (#1105)
+7dda9e82 Remove duplicate descriptions
+
+
+* packages/apps/Messaging
+4b4e8b8 Automatic translation import
+1b6b3b2 Messaging: Show quick reply choices only on wearable devices
+c1bd3b1 Messaging: allow selecting text inside the selected message
+28af586 Messaging: restore AOSP colors for selected messages
+1233c55 Messaging: Remove unused resources
+375101c Messaging: Update cellbroadcast package name
+7cf6901 Messaging: Contact Colors
+9d4efbb Messaging: Use a DayNight launch theme
+776c848 Messaging: disable auto dark theming on message bubble
+7851621 Messaging: allow framework to do dark theming automatically
+d7e30fb Messaging: Require external legacy storage
+0376f76 Messaging: bump target SDK version to 29
+04edd09 Messaging: Add sysconfig whitelist xml
+3f8f79f Messaging: Notification channel string fixes
+7cc8289 Messaging: Implement per conversation channels. Update API level to 28.
+44696ba Don't build with platform certificate
+4449123 Messaging: use white nav bar
+3d954fd MediaPicker: Check for NPE
+86dd1f4 Play an audible notification on receiving a class zero message.
+dfba7b4 Messaging: bring back accent color
+dc12307 Messaging: Toggable keyboard emoticons access
+26903b0 Messaging: Implement option for swipe right to delete.
+e7d4d5c Messaging: adaptive icon
+1b58301 Messaging: define app category
+
+
+* packages/apps/Nfc
+ea7c2eab NFC: Adding new vendor specific interface to NFC Service
+
+
+* packages/apps/Settings
+e35670b40f Remove useless USB page header
+b0bfc86630 Settings: Only show gesture navigation if device has a software nav bar
+033c0b903b Settings: update SUW theming for 12
+8521a1adb5 KeyboardSettings: Add a RemotePreference for device-specific panel
+cc68943d6d fingerprint: Rework enrollment screen
+90d0ef7728 fingerprint: hide link icon when there's no link
+ce7b71b404 Settings: Add FastCharge preference into Battery settings
+22af3dbef8 Settings: Add an option to force pre-O apps to use full screen aspect ratio
+0214b73d3d Settings: Add back battery and notification lights settings
+7fe97ec9ee Settings: Add setup UI for minimum delay between an app's notification sounds
+c1c3c9f37b Settings: display: Add wake on plug switch
+89274d554f Settings: Add proximity check on wake preference
+54289569ef Settings: Allow devices to provide remote gesture preferences
+a7304f5204 Settings: gesture: Add LineageParts touchscreen gesture settings
+7146dc3e2a AppDataUsage: Handle apps without INTERNET permission
+eebe2313ab Settings: Add high touch sensitivity and touchscreen hovering toggles
+43538af430 Settings: Add toggle for Lockscreen Media Art
+e1f6c0e434 Settings: Add lockscreen visualizer toggle
+76cc84cf72 Settings: Add double tap to sleep preference
+610b5bb171 get outer NFC preference to listen for changes
+06cb26aa49 Bring back font and icon shape customization
+68feee1f76 Fix inconsistent USB preference screen title
+b8589e1126 settings: display actual device peak refresh rate in summary
+ff4fa5aa75 Phone fails to switch channel mode from stereo to mono
+52712e0fd0 BTHS will have no sound after disable HD audio
+49f21cf689 A2dpSrc: Bluetooth codec Dev-UI support for QVA codecs
+a8bb4acee9 bluetooth: update SavedBluetoothTwsDeviceUpdater for superclass ctor signature change
+435811936c Implement abstract method getPreferenceKey in SavedBluetoothTwsDeviceUpdater
+3e871487b8 BT: Use translated a2dp codec strings
+8580c51c2a A2dpSrc: DEV-UI support for Blutooth Audio codec.
+80a54bfec4 Bluetooth-TWS: UI updates based on Filter matched
+58ff58cc23 Bluetooth-TWS: UI updates based on profile connection.
+05952f8768 Fix build error
+ac4371fae7 Bluetooth-TWS: Filter TWS devices
+505dde83e1 Bluetooth: Create new catogory for earbuds
+5fcf3f5b13 Settings: Add back increasing ring feature (2/2).
+030c36be5d Automatic translation import
+e418d681d8 Settings: only set phone number if it's not empty
+2828a9ea5f Add toggle to enable ADB root
+b5fac050ef Settings: Allow removing livedisplay pref screen with config_enableLiveDisplay
+8070d573fa Settings: Add LineageParts charging sound settings preference
+15bfc39fba Settings: Network setup UI changes for SUW
+76607b03f5 Settings: use Glif themed button bar
+1be7afb0b7 Settings: default to GlifV3Theme
+a082716f7b Settings: Add LineageOS legal info
+1d481b936f Settings: Hide "Mainline module version" preference
+0bf3a55632 Don't change nouns in summaries to lower case for German
+8f07c992ca Settings: Add package name to installed app details
+0060b30332 Allow sorting Applications by size
+d38f236680 Settings: Make PIN scramble user specific
+26fbdb6cdb Settings: Add support for allowing/disallowing apps on cellular, vpn and wifi networks
+754483cb3a Settings: Add support for allowing/disallowing apps on restricted networks
+b6a9c27ed5 Settings: Implement hide gestural navigation hint bar [2/5]
+c3a86c850a Settings: Add a RemotePreference for device-specific doze settings
+2730d1c888 Settings: Hide unsupported USB modes automatically
+980823c1f1 Settings: Check if we have any color modes declared in overlay
+964b269a49 Settings: Add hotspot setting to allow VPN upstreams
+df4091ca08 Revert "[Wi-Fi] Remove 'Do not validate' option in CA certificate spinner"
+0b943bb7c8 Version info: make Lineage specific entries not selectable
+782571360e Settings: Make FRP go through ChooseLockPatternSize if needed
+f277bf7fa2 Settings: Make setup wizard go through ChooseLockPatternSize if needed
+733493759b Settings: Remove hardcoded extras from ChooseLockPatternSize
+5a04201e02 Settings: Forward port pattern visibility settings (2/2)
+10f2098475 Settings: Forward port lock pattern grid size (2/2)
+822fa67640 Settings: Add option to scramble pin layout when unlocking (1/2).
+9270530a21 BasebandVersionPreferenceController: Trim baseband if needed
+e874e89e64 Disable notification channel warnings by default
+0b3fa7bca8 Settings: Add switch for linked ring and media notification volumes
+ef18cf51e4 Settings: Add rotation settings
+45da50d1e8 Settings: Add LineageOS entries into device info
+42fc1aeecf Settings: Depend on lineage platform library
+13a2b4ba23 Settings: Put device info header above "Basic info"
+c974464550 Allow the user to change the BackupTransport
+
+
+* packages/apps/SettingsIntelligence
+a52e605 Style search bar to match new Settings UI
+39aec0b SettingsIntelligence: Search: Skip showing a few packages
+baec9eb SettingsIntelligence: Regen database on build version change
+4c075e0 SettingsIntelligence: Match Settings style
+
+
+* packages/apps/Stk
+771a51a Stk: adaptive icon
+
+
+* packages/apps/ThemePicker
+0b67029 Add permission for launcher preview rendering
+14584d0 Declare HOME query for launcher discovery
+3c4e2e3 Specify we read and write launcher settings
+3f77007 Add wallpaper default permissions
+28175ec Add wallpaper privapp whitelist
+
+
+* packages/apps/TvSettings
+bcae672b7 TvSettings: Trust
+982237524 Add Lineage advanced reboot options
+daf066146 Add rooted development option
+aa267c2a0 TvSettings: update preference item corner radius
+8516fc2ac TvSettings: hide password by default
+0580f7119 TvSettings: use dark color for Wifi SUW
+3d60b095e TwoPanelSettings: fix double ripple in Wifi selection
+4327e7bc0 TwoPanelSettings: bring back ripple
+a3c71b1c4 TwoPanelSettings: improve category title text appearance
+64a14b321 HDMI CEC: Add volume preference
+49da76b3f Show input settings on cec playback devices
+371138b2f TvSettings: Default to not showing bug-report quick setting
+4b3b2d85f TvSettings: add Buttons-section to System settings
+9e9945c65 Settings: Add intent to launch LineageOS platlogo upon multiple taps
+a6ae2d612 Add build date (ro.build.date from build.prop) to About screen.
+42a8ea6ca One does not simply become a Developer
+3c3b8f3f6 Add LineageOS version to the About screen
+
+
+* packages/apps/WallpaperPicker2
+6914a2b WallpaperPicker2: Don't publish placeholder categories
+
+
+* packages/inputmethods/LatinIME
+5950b9f37 LatinIME: Properly refresh summary
+836263c61 LatinIME: Remove unused resources
+92e6d04ed LatinIME: Fix invisible icon
+927d234e4 Automatic translation import
+91ba67787 LatinIME: Remove hardcoded emoji row logic
+57676b7d9 LatinIME: Enable full flag emoji support
+c3599f866 LatinIME: Fix NPE in getKeyboardThemeName
+e9e3668a9 Include Bulgarian Extended Keyboard Layout
+66b6fc4b2 LatinIME: Move keyboard height setting from debug to advanced
+231773c68 LatinIME: Fix back-arrow finishing activity
+da6420ab5 LatinIME: Remove dividers everywhere
+61fb4a627 LatinIME: Do we really still want Holo?
+214d28946 LatinIME: Add setting for theme to follow system setting
+56191b3f2 LatinIME: Update key_styles_currency euro lists.
+ca8fdce1c LatinIME: Add Luxembourgish keyboard & spellchecking dictionary
+17c9ce6ec LatinIME: Add support for Australian English
+0d1b7a11b Add support for Bépo keyboard layout
+c75c3e403 LatinIME: Add Hungarian QWERTY, enable predictive dictionary
+1a102dc21 LatinIME: HU enable predictive dictionary and remove unused letters
+ca4d6a94e LatinIME: Enable spellchecker for additional languages
+d259763bd LatinIME: Add Bulgarian, Georgian and Ukrainian wordlists
+081e0e54e LatinIME: Set proper keyboard for Georgian script
+f2645d26d LatinIME: Add new type for Bulgarian script
+d3fd2a874 LatinIME: Add "more" keys to ALL the keys
+194c59655 LatinIME: Add shortcuts support
+f6027c57a Don't interrupt active gesture input by modifier key presses.
+74233f6cd LatinIME: Add fallback loader for JNI lib
+e8bed96fd LatinIME: Update emojis
+37d88fbd9 LatinIME: disable sound on keypress on all devices by default
+8f9243b80 LatinIME: Regenerate KeyboardTextsTable
+334bc4623 LatinIME: support for incognito mode
+7ec8dd1d4 Fix send button not being centered for non-standard densities.
+
+
+* packages/modules/Connectivity
+ede2264ed setUidsAllowedOnRestrictedNetworks: Modify UID enforcement to check app id
+f41f6f56d Remove DUN requirement for tethering
+8a19f06f8 Connectivity: Add capability to allow tethering to use VPN upstreams
+
+
+* packages/modules/Wifi
+60d377f4f Wifi: Ingore miracast scan from connectivity manager
+
+
+* packages/modules/adb
+70709fa2 adb: Look for shell executable in alternate places
+3fbe9a51 adb_root: Move to system_ext
+5549be3c Squashed import of adb root patches
+76fb5fab adb: Add ro.adb.secure.recovery handling
+
+
+* packages/modules/common
+40c73c9 Make adbroot_aidl_interface-ndk_platform available for adbd
+
+
+* packages/providers/BlockedNumberProvider
+2c66554 BlockedNumberProvider: adaptive icon
+
+
+* packages/providers/BookmarkProvider
+a319d9e BookmarkProvider: adaptive icon
+
+
+* packages/providers/CalendarProvider
+b0f5ccc CalendarProvider: adaptive icon
+
+
+* packages/providers/CallLogProvider
+9a73fe3 CallLogBackup: adaptive icon
+
+
+* packages/providers/ContactsProvider
+cf591c87 ContactsProvider: Prevent device contact being deleted.
+b5c14eff ContactsProvider: adaptive icon
+
+
+* packages/providers/DownloadProvider
+ca2f2762 Automatic translation import
+938cca3d DownloadProvider: Add support for manual pause/resume
+9d6d83e9 DownloadProvider: Display download speed in notification
+
+
+* packages/providers/MediaProvider
+0a5b28bb MediaProvider: Less spam
+e9d4a246 MediaProvider: adaptive icon
+
+
+* packages/providers/TelephonyProvider
+5913c26 TelephonyProvider: add upgrade support from lineage-17.1
+0709fdc TelephonyProvider: adaptive icon
+89e3352 Fix MmsSmsDatabaseHelper onUpgrade always destroying the database
+
+
+* packages/services/Mms
+bc22843 Automatic translation import
+b9f34f3 Mms: adaptive icon
+70f63d9 Add app label
+
+
+* packages/services/Telecomm
+916ed18a9 Telecomm: adaptive icon
+f0bda9751 CallLog: Get rid of warning
+56871f54c Add back increasing ring feature (1/2).
+136dbd297 Telecom: Add sensitive phone numbers hooks
+
+
+* packages/services/Telephony
+104f56daa Telephony: use Build.VERSION.INCREMENTAL to check for system update
+b88884ce7 Telephony: Mark enhanced_4g_lte_mode_title_variant as untranslatable
+09db84702 Telephony: adaptive icon
+a16a13f54 Removing dead code from Telephony which uses wakelock.
+
+
+* packages/wallpapers/LivePicker
+ef6989e LivePicker: adaptive icon
+
+
+* system/bt
+fb8f860cd Update Bluetooth permission
+d60c1a1e5 BT: AIDL entry for Active Profile Control APIs
+62e701d26 Update Bluetooth permissions for VCP APIS (2/3)
+e4cda98fe VCP: AIDL changes for VCP Profile
+e122235c5 BLE Broadcast Isochronous channel support
+e115d8059 A2dpSrc: Align legacy codec enumeration with AOSP(3/7)
+43d8c56f8 Periodic Adv Sync Transfer feature support
+d7785012b BLE: Group AD Type based filtering.
+46c1380fd bluetooth: select bluetooth modules by fully qualified namespace.
+de3365d3d Update Bluetooth permissions for internal APIS. (3/4)
+5703b68f6 DeviceGroup: AIDL Interface changes for dual mode devices.
+ff2643bfe DeviceGroup: AIDL Interface.
+c2e1d86a2 Add Broadcast active API
+dc4dab979 DeviceGroup: Add new system API's to support Group UI.
+14a7618ea GAP: Reset bondingInitiatedLocally flag(3/3)
+18bee382f Add scan filter for Transport Discovery data
+20836e018 TWS-A2DP: Add TWS+ codec index
+4a5a950ad BT: API to update quiet mode status in Adapter service [3/3]
+ef3c0a46f BT: Adding APTX-Adaptive codec to BT HAL
+7679b3e62 Add BLE Scan Phy parameter to scan API
+88360acfc Bluetooth: Add SDK API support for TWS feature (1)
+
+
+* system/core
+5cbcd4cec llkd: Include llkd-debuggable.rc in eng builds only
+07adb89d0 fs_mgr: Allow remounts with Magisk installed
+33d5bec34 debuggerd: add Lineage version to tombstones
+98cf81f7a healthd: Reinitialize mChargerNames for every battery update
+8baf0e02d healthd: Add support for HVDCP_3P5 chargers
+447ee2706 healthd: Add support for HVDCP_3 chargers
+a212bce9e healthd: Add DASH charger type
+9edba6f5d reboot: allow opting-in to fastbootd
+0bbf9e611 core: mark libsysutils and libdiskconfig recovery_available
+1db5c0f2c Revert "Format formattable partitions if mount fails"
+bd0ff8674 fs_mgr: mount: don't set the block device as ro for recovery
+662be092b Add exfat utilities for mkfs and fsck
+bdf16d01d init: don't skip starting a service with no domain if permissive
+99ef051a7 init: Add vendor-specific initialization hooks.
+c41189469 remount: Fix failure for system-as-root
+
+
+* system/extras
+a728f391 bootsignature: includes dt image size for signed boot image
+4398d2db Make sure header version is less than or equal to 4
+
+
+* system/libziparchive
+e911277 ziptool: restore unzip for recovery
+
+
+* system/logging
+bca97461 liblog: Always report as debuggable when building userdebug/eng
+
+
+* system/media
+ce8ec8bf media: update path for vendor specific config files
+
+
+* system/sepolicy
+9b39c3805 Grant permission for mediatranscoding hal_allocator for GSI image
+2d458cb40 sepolicy: Allow recovery to alter /
+03098777e sepolicy: whitelist recovery from node creation neverallow
+
+
+* system/tools/mkbootimg
+e8b1035 mkbootimg: add support for --dt
+
+
+* system/update_engine
+acecab11 update_engine: Remove any (stale) read-only flag before r/w mount of system
+a5a18ac5 Don't verify payload signatures in recovery
+5919288c update_engine: Run backuptool only in debuggable builds
+ee10c414 update_engine: Transition to backuptool domain
+7470900e update_engine: Run backuptool script before normal postinstall script
+c0ff77c4 update_engine: Add performance mode
+cee1119e update_engine: put update_engine into background sched group
+
+
+* vendor/lineage
+4fef4114 lineage: overlay: Move Trebuchet overlay to seperate RRO package.
+c4535991 lineage: overlay: Exclude backup transport overlays from RRO.
+7561a9b7 Revert "lineage: Exclude all lineage overlays from RRO"
+e15a6363 config: Include androidx.window.extensions in tablet builds
+d0b3a4af lineage: products: Add ATV emulator targets
+2cf8a6ad overlay: core: Remove accent color overrides
+
+
+* vendor/qcom/opensource/commonsys/system/bt
+7ea87328a BLE Scanning: Pass original address back to GattService#onScanResult
+
+====================
+     2022-03-12    
+====================
 
 * frameworks/base
 79db50aaf30b SystemUI: Bring back good ol' circle battery style
@@ -455,526 +1057,6 @@ ba54eb5e3e90 SystemUI: Add USB Tether tile
 d443c7663a22 SystemUI: Add Sync tile
 91911b853a04 SystemUI: Add heads up tile
 3fcb17e98004 SystemUI: Add caffeine QS tile
-
-* frameworks/native
-bcfca821b5 InputDispatcher: On keypress, deliver keycode to pokeUserActivity
-011566b62a PowerManager.h: Define USER_ACTIVITY_FLAG values
-961931142d Forward port 'Swap volume buttons' (2/3)
-e7c8c0f84f CompositionEngine: Request device composition for the Udfps touched layer
-a8d9b10c43 surfaceflinger: Add support for Udfps extension lib
-c6e05ce34d libui: Allow extension of valid gralloc 1.0 buffer usage bits
-606275d31b Add vendor version for libgui
-
-* frameworks/opt/telephony
-cbded5de81 Restore support with RadioConfig@1.0 dsds clients.
-058268c1c4 Release wakelock if setRadioCapability is not supported
-f36814f66f Update external card state based on current app
-
-* frameworks/opt/timezonepicker
-672ce8d Restore time_zone_item ripple effect
-11589dc Change ItemBackground for Black Theme
-
-* hardware/google/pixel
-3cd1adc pixel: Implement PowerShare HAL
-117934e pixel: Add lineage touch hal
-e51b193 pixel: Disable userdebug diagnostics
-
-* hardware/google/pixel-sepolicy
-eed6f6e sepolicy: Add PowerShare HAL policy
-1f065c4 sepolicy: Add lineage touch hal policy
-
-* hardware/interfaces
-e6816f299 wifi: Add provision to create/remove dynamic interface(s).
-
-* hardware/knowles/athletico/sound_trigger_hal
-0e0fa7e Use generated kernel headers
-
-* hardware/libhardware
-8d68001c libhardware: Add new display types.
-a13d0dc8 hardware/libhw: Add display_defs.h to declare custom enums/flags
-9de3fab5 audio: Add audio amplifier HAL
-
-* hardware/qcom/audio
-c23ba18f5 hal: Fix CFI errors
-095b06083 audio: Add audio headers lib
-51a38b6d5 audio: Use generated kernel headers
-
-* hardware/qcom/camera
-05016f8 msm8998: camera: Drop usage of LOCAL_COPY_HEADERS
-7a9c40a msm8998: Ignore -Wno-compound-token-split-by-macro warnings
-
-* hardware/qcom/data/ipacfg-mgr
-6200d46 ipacfg-mgr: Use generated kernel headers
-ce1a19a Kernel Header Changes
-
-* hardware/qcom/sdm845/display
-efd7e26c display: Drop LOCAL_COPY_HEADERS usage
-c5d5088d display: Fix path to vendor/qcom/opensource
-7d8ae195 Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT
-
-* hardware/qcom/sdm845/media
-80da3615 media: Stop overriding LOCAL_HEADER_LIBRARIES
-13f66bd1 media: Switch to display_headers lib include
-131f82a3 media: Drop LOCAL_COPY_HEADERS usage
-d6d242c8 mm-core: Generate omx core header library.
-
-* hardware/qcom/sm7250/display
-17c375f1 display: Drop LOCAL_COPY_HEADERS usage
-b1857d07 Add C2D_FORMAT_BT601_FULLRANGE to C2D_FORMAT_MODE
-ef55de3f Add C2D_COLOR_FORMAT_420_P010 to C2D_YUV_FORMAT
-83570557 Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT
-feb90c13 sm7250: display: Export libdisplaydebug headers to dependencies
-e54e044a sm7250: display: Import display interfaces namespace
-cac7f9ec sm7250: display: Import display commonsys interfaces namespace
-
-* hardware/qcom/sm7250/media
-d1d11711 media: Drop LOCAL_COPY_HEADERS usage
-238e6a0f media: Add local fastcv header
-bcf3921e media: Include display_headers instead of display_intf_headers
-
-* hardware/qcom/sm8150/data/ipacfg-mgr
-cee5f29 Kernel Header Changes
-
-* hardware/qcom/sm8150/display
-188ebc26 sm8150: display: Import display interfaces namespace
-db9646ab display: Drop LOCAL_COPY_HEADERS usage
-013893d1 Add C2D_FORMAT_BT601_FULLRANGE to C2D_FORMAT_MODE
-832f4833 Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT
-5352f090 gralloc: Ignore sign-conversion errors
-05bb3e7e gralloc: pull in content of libion_path.mk from core-utils
-69427fe4 libhistogram: Use generated kernel headers
-933467c1 sm8150: display: Import display commonsys interfaces namespace
-
-* hardware/qcom/sm8150/media
-0507534a media: Drop LOCAL_COPY_HEADERS usage
-1d3a2643 vidc: pull in content of libion_path.mk from core-utils
-4b03141d media: Include display_headers instead of display_intf_headers
-
-* hardware/qcom/wlan
-55c2b5e Resolve compilation error for fib_rule_port_range with fib_rules.h
-
-* hardware/ril
-decca06 libril: allow board to provide libril
-
-* packages/apps/Bluetooth
-317e54a29 Don't assign codecs to a size fixed array
-b6af4ca70 Add Attribution source parameter to isBroadcastActive API
-cc2d84d27 Support for broadcast active api
-b86ad2af7 PAST feature implementation
-ba5f99d7c Periodic Sync Feature implementation
-01d9b3b08 Add Attribution source parameter for internal APIS.
-07623e057 DeviceGroup: Add Binder method in Bluetooth App
-8446fd9bd Adds missing methods/parameters to Bluetooth app required to build.
-5048e1283 Bluetooth: Reset packages/apps/Bluetooth to upstream
-f962e9eec Stub TWS related APIs
-4b7e8d550 Add BLE Scan Phy parameter to scan API
-9633a63ff hfp: Report SCO sample rate via g_sco_samplerate audio param if needed
-
-* packages/apps/Camera2
-af3706294 Automatic translation import
-689cf7e05 Camera2: Request for ACCESS_FINE_LOCATION permission
-025ca3dda Fix crash if Exif-Tag buffer-length and component-count are both 0
-c6c0cf5db Camera2: Fix Undo button behaviour
-7a7bffd20 Camera2: Add option to set max screen brightness
-c68d05662 Camera2: Remove settings preferences only once
-090462beb Camera2: Only autofocus before a snap if we are actually in "auto" mode.
-74fd04eb9 Camera2: adaptive icon
-
-* packages/apps/Car/Settings
-0ea0a8b1f Hardcode default pattern size
-
-* packages/apps/Contacts
-d916a14be Automatic translation import
-f806b9545 Contacts: Enable support for device contact.
-4b6e9295b Contacts: Make the launch screen follow the system theme
-3265edfb4 Contacts: manually configure dark theme for list
-387dd1309 Contacts: allow framework to do dark theming automatically
-2d9d4db99 Contacts: use white nav bar
-3efac2644 Allow calling contacts via specific phone accounts.
-414965fb9 Place EmergencyInfo shortcut on drawer
-9422d8925 Place MyInfo shortcut on drawer
-b578eabef Contacts: adaptive icon
-158892310 Contacts: define app category
-
-* packages/apps/Dialer
-c7fb10908 Automatic translation import
-a6c23e0c2 Dialer: Notify content observers upon call log entry deletion
-ef8fc768a Dialer: improve search bar
-d02dd02db Dialer: set statusbar color same as activity background
-fe4a11969 Dialer: update ripple color
-6dea9af34 Dialer: update dark theme colors
-6d698b7ba Dialer: correct the expanded search bar height
-2569cb7b6 Dialer: use black/white navigation colors
-57c98bc49 Dialer: Add a helpline phone book
-f5c98f546 Dialer: Hide sensitive numbers from incall screen
-4e0fdbd03 Dialer: Don't prompt to send a message to sensitive numbers
-ffc906e15 Dialer: handle database downgrade from lineage-17.1
-63eefc6ef Dialer: Use a DayNight launch theme
-bae468894 Dialer: allow framework to do dark theming automatically
-6dc290217 Dialer: AudioModeProvider: use wired route for usb headsets
-06f0128d0 Control dialer's incoming call proximity sensor check via an overlay
-75b3d5c8e Re-add dialer lookup.
-87a68aed8 Re-add call statistics.
-313c4f2e8 Allow per-call account selection.
-39dcb1e57 Re-add call recording.
-83dcac8e4 Add setting to enable Do Not Disturb during calls
-fb4ea117a Generalize the in-call vibration settings category
-5cc3ff883 Add back in-call vibration features
-e3aa556dd Revert "Remove dialer sounds and vibrations settings fragments and redirect to the system sound settings fragment instead."
-56accdedd Dialer: disable anti-falsing for call answer screen
-851238b54 Dialer: Fix typo in RU translation
-fc4a1b237 Dialer: Remove unused resources
-2216c6076 Fix translation of 'contacts' tab title and main menu.
-b5896d818 Dialer: adaptive icon
-2beaa5e37 Dialer: define app category
-
-* packages/apps/DocumentsUI
-1d5218a04 Remove unused string resources
-21bb78ea1 DocumentsUI: adaptive icon
-ace4fd726 DocumentsUI: define appcategory
-
-* packages/apps/Etar
-9b7ee343 Use real calendar colors with adaptive text color (dark/light) (#1091)
-c89bf4b9 Replace deprecated function and solve lint warning.
-c1e159b5 Timeisinvalid (#1093)
-1c1c5b28 Widget Enhancement- Option To Add A New Event From The Widget Screen (#1105)
-7dda9e82 Remove duplicate descriptions
-
-* packages/apps/Messaging
-4b4e8b8 Automatic translation import
-1b6b3b2 Messaging: Show quick reply choices only on wearable devices
-c1bd3b1 Messaging: allow selecting text inside the selected message
-28af586 Messaging: restore AOSP colors for selected messages
-1233c55 Messaging: Remove unused resources
-375101c Messaging: Update cellbroadcast package name
-7cf6901 Messaging: Contact Colors
-9d4efbb Messaging: Use a DayNight launch theme
-776c848 Messaging: disable auto dark theming on message bubble
-7851621 Messaging: allow framework to do dark theming automatically
-d7e30fb Messaging: Require external legacy storage
-0376f76 Messaging: bump target SDK version to 29
-04edd09 Messaging: Add sysconfig whitelist xml
-3f8f79f Messaging: Notification channel string fixes
-7cc8289 Messaging: Implement per conversation channels. Update API level to 28.
-44696ba Don't build with platform certificate
-4449123 Messaging: use white nav bar
-3d954fd MediaPicker: Check for NPE
-86dd1f4 Play an audible notification on receiving a class zero message.
-dfba7b4 Messaging: bring back accent color
-dc12307 Messaging: Toggable keyboard emoticons access
-26903b0 Messaging: Implement option for swipe right to delete.
-e7d4d5c Messaging: adaptive icon
-1b58301 Messaging: define app category
-
-* packages/apps/Settings
-e35670b40f Remove useless USB page header
-b0bfc86630 Settings: Only show gesture navigation if device has a software nav bar
-033c0b903b Settings: update SUW theming for 12
-8521a1adb5 KeyboardSettings: Add a RemotePreference for device-specific panel
-cc68943d6d fingerprint: Rework enrollment screen
-90d0ef7728 fingerprint: hide link icon when there's no link
-ce7b71b404 Settings: Add FastCharge preference into Battery settings
-22af3dbef8 Settings: Add an option to force pre-O apps to use full screen aspect ratio
-0214b73d3d Settings: Add back battery and notification lights settings
-7fe97ec9ee Settings: Add setup UI for minimum delay between an app's notification sounds
-c1c3c9f37b Settings: display: Add wake on plug switch
-89274d554f Settings: Add proximity check on wake preference
-54289569ef Settings: Allow devices to provide remote gesture preferences
-a7304f5204 Settings: gesture: Add LineageParts touchscreen gesture settings
-7146dc3e2a AppDataUsage: Handle apps without INTERNET permission
-eebe2313ab Settings: Add high touch sensitivity and touchscreen hovering toggles
-43538af430 Settings: Add toggle for Lockscreen Media Art
-e1f6c0e434 Settings: Add lockscreen visualizer toggle
-76cc84cf72 Settings: Add double tap to sleep preference
-610b5bb171 get outer NFC preference to listen for changes
-06cb26aa49 Bring back font and icon shape customization
-68feee1f76 Fix inconsistent USB preference screen title
-b8589e1126 settings: display actual device peak refresh rate in summary
-ff4fa5aa75 Phone fails to switch channel mode from stereo to mono
-52712e0fd0 BTHS will have no sound after disable HD audio
-49f21cf689 A2dpSrc: Bluetooth codec Dev-UI support for QVA codecs
-a8bb4acee9 bluetooth: update SavedBluetoothTwsDeviceUpdater for superclass ctor signature change
-435811936c Implement abstract method getPreferenceKey in SavedBluetoothTwsDeviceUpdater
-3e871487b8 BT: Use translated a2dp codec strings
-8580c51c2a A2dpSrc: DEV-UI support for Blutooth Audio codec.
-80a54bfec4 Bluetooth-TWS: UI updates based on Filter matched
-58ff58cc23 Bluetooth-TWS: UI updates based on profile connection.
-05952f8768 Fix build error
-ac4371fae7 Bluetooth-TWS: Filter TWS devices
-505dde83e1 Bluetooth: Create new catogory for earbuds
-5fcf3f5b13 Settings: Add back increasing ring feature (2/2).
-030c36be5d Automatic translation import
-e418d681d8 Settings: only set phone number if it's not empty
-2828a9ea5f Add toggle to enable ADB root
-b5fac050ef Settings: Allow removing livedisplay pref screen with config_enableLiveDisplay
-8070d573fa Settings: Add LineageParts charging sound settings preference
-15bfc39fba Settings: Network setup UI changes for SUW
-76607b03f5 Settings: use Glif themed button bar
-1be7afb0b7 Settings: default to GlifV3Theme
-a082716f7b Settings: Add LineageOS legal info
-1d481b936f Settings: Hide "Mainline module version" preference
-0bf3a55632 Don't change nouns in summaries to lower case for German
-8f07c992ca Settings: Add package name to installed app details
-0060b30332 Allow sorting Applications by size
-d38f236680 Settings: Make PIN scramble user specific
-26fbdb6cdb Settings: Add support for allowing/disallowing apps on cellular, vpn and wifi networks
-754483cb3a Settings: Add support for allowing/disallowing apps on restricted networks
-b6a9c27ed5 Settings: Implement hide gestural navigation hint bar [2/5]
-c3a86c850a Settings: Add a RemotePreference for device-specific doze settings
-2730d1c888 Settings: Hide unsupported USB modes automatically
-980823c1f1 Settings: Check if we have any color modes declared in overlay
-964b269a49 Settings: Add hotspot setting to allow VPN upstreams
-df4091ca08 Revert "[Wi-Fi] Remove 'Do not validate' option in CA certificate spinner"
-0b943bb7c8 Version info: make Lineage specific entries not selectable
-782571360e Settings: Make FRP go through ChooseLockPatternSize if needed
-f277bf7fa2 Settings: Make setup wizard go through ChooseLockPatternSize if needed
-733493759b Settings: Remove hardcoded extras from ChooseLockPatternSize
-5a04201e02 Settings: Forward port pattern visibility settings (2/2)
-10f2098475 Settings: Forward port lock pattern grid size (2/2)
-822fa67640 Settings: Add option to scramble pin layout when unlocking (1/2).
-9270530a21 BasebandVersionPreferenceController: Trim baseband if needed
-e874e89e64 Disable notification channel warnings by default
-0b3fa7bca8 Settings: Add switch for linked ring and media notification volumes
-ef18cf51e4 Settings: Add rotation settings
-45da50d1e8 Settings: Add LineageOS entries into device info
-42fc1aeecf Settings: Depend on lineage platform library
-13a2b4ba23 Settings: Put device info header above "Basic info"
-c974464550 Allow the user to change the BackupTransport
-
-* packages/apps/SettingsIntelligence
-a52e605 Style search bar to match new Settings UI
-39aec0b SettingsIntelligence: Search: Skip showing a few packages
-baec9eb SettingsIntelligence: Regen database on build version change
-4c075e0 SettingsIntelligence: Match Settings style
-
-* packages/apps/Stk
-771a51a Stk: adaptive icon
-
-* packages/apps/ThemePicker
-0b67029 Add permission for launcher preview rendering
-14584d0 Declare HOME query for launcher discovery
-3c4e2e3 Specify we read and write launcher settings
-3f77007 Add wallpaper default permissions
-28175ec Add wallpaper privapp whitelist
-
-* packages/apps/TvSettings
-bcae672b7 TvSettings: Trust
-982237524 Add Lineage advanced reboot options
-daf066146 Add rooted development option
-aa267c2a0 TvSettings: update preference item corner radius
-8516fc2ac TvSettings: hide password by default
-0580f7119 TvSettings: use dark color for Wifi SUW
-3d60b095e TwoPanelSettings: fix double ripple in Wifi selection
-4327e7bc0 TwoPanelSettings: bring back ripple
-a3c71b1c4 TwoPanelSettings: improve category title text appearance
-64a14b321 HDMI CEC: Add volume preference
-49da76b3f Show input settings on cec playback devices
-371138b2f TvSettings: Default to not showing bug-report quick setting
-4b3b2d85f TvSettings: add Buttons-section to System settings
-9e9945c65 Settings: Add intent to launch LineageOS platlogo upon multiple taps
-a6ae2d612 Add build date (ro.build.date from build.prop) to About screen.
-42a8ea6ca One does not simply become a Developer
-3c3b8f3f6 Add LineageOS version to the About screen
-
-* packages/apps/WallpaperPicker2
-6914a2b WallpaperPicker2: Don't publish placeholder categories
-
-* packages/inputmethods/LatinIME
-5950b9f37 LatinIME: Properly refresh summary
-836263c61 LatinIME: Remove unused resources
-92e6d04ed LatinIME: Fix invisible icon
-927d234e4 Automatic translation import
-91ba67787 LatinIME: Remove hardcoded emoji row logic
-57676b7d9 LatinIME: Enable full flag emoji support
-c3599f866 LatinIME: Fix NPE in getKeyboardThemeName
-e9e3668a9 Include Bulgarian Extended Keyboard Layout
-66b6fc4b2 LatinIME: Move keyboard height setting from debug to advanced
-231773c68 LatinIME: Fix back-arrow finishing activity
-da6420ab5 LatinIME: Remove dividers everywhere
-61fb4a627 LatinIME: Do we really still want Holo?
-214d28946 LatinIME: Add setting for theme to follow system setting
-56191b3f2 LatinIME: Update key_styles_currency euro lists.
-ca8fdce1c LatinIME: Add Luxembourgish keyboard & spellchecking dictionary
-17c9ce6ec LatinIME: Add support for Australian English
-0d1b7a11b Add support for Bépo keyboard layout
-c75c3e403 LatinIME: Add Hungarian QWERTY, enable predictive dictionary
-1a102dc21 LatinIME: HU enable predictive dictionary and remove unused letters
-ca4d6a94e LatinIME: Enable spellchecker for additional languages
-d259763bd LatinIME: Add Bulgarian, Georgian and Ukrainian wordlists
-081e0e54e LatinIME: Set proper keyboard for Georgian script
-f2645d26d LatinIME: Add new type for Bulgarian script
-d3fd2a874 LatinIME: Add "more" keys to ALL the keys
-194c59655 LatinIME: Add shortcuts support
-f6027c57a Don't interrupt active gesture input by modifier key presses.
-74233f6cd LatinIME: Add fallback loader for JNI lib
-e8bed96fd LatinIME: Update emojis
-37d88fbd9 LatinIME: disable sound on keypress on all devices by default
-8f9243b80 LatinIME: Regenerate KeyboardTextsTable
-334bc4623 LatinIME: support for incognito mode
-7ec8dd1d4 Fix send button not being centered for non-standard densities.
-
-* packages/modules/Connectivity
-ede2264ed setUidsAllowedOnRestrictedNetworks: Modify UID enforcement to check app id
-f41f6f56d Remove DUN requirement for tethering
-8a19f06f8 Connectivity: Add capability to allow tethering to use VPN upstreams
-
-* packages/modules/Wifi
-60d377f4f Wifi: Ingore miracast scan from connectivity manager
-
-* packages/modules/adb
-70709fa2 adb: Look for shell executable in alternate places
-3fbe9a51 adb_root: Move to system_ext
-5549be3c Squashed import of adb root patches
-76fb5fab adb: Add ro.adb.secure.recovery handling
-
-* packages/modules/common
-40c73c9 Make adbroot_aidl_interface-ndk_platform available for adbd
-
-* packages/providers/BlockedNumberProvider
-2c66554 BlockedNumberProvider: adaptive icon
-
-* packages/providers/BookmarkProvider
-a319d9e BookmarkProvider: adaptive icon
-
-* packages/providers/CalendarProvider
-b0f5ccc CalendarProvider: adaptive icon
-
-* packages/providers/CallLogProvider
-9a73fe3 CallLogBackup: adaptive icon
-
-* packages/providers/ContactsProvider
-cf591c87 ContactsProvider: Prevent device contact being deleted.
-b5c14eff ContactsProvider: adaptive icon
-
-* packages/providers/DownloadProvider
-ca2f2762 Automatic translation import
-938cca3d DownloadProvider: Add support for manual pause/resume
-9d6d83e9 DownloadProvider: Display download speed in notification
-
-* packages/providers/MediaProvider
-0a5b28bb MediaProvider: Less spam
-e9d4a246 MediaProvider: adaptive icon
-
-* packages/providers/TelephonyProvider
-5913c26 TelephonyProvider: add upgrade support from lineage-17.1
-0709fdc TelephonyProvider: adaptive icon
-89e3352 Fix MmsSmsDatabaseHelper onUpgrade always destroying the database
-
-* packages/services/Mms
-bc22843 Automatic translation import
-b9f34f3 Mms: adaptive icon
-70f63d9 Add app label
-
-* packages/services/Telecomm
-916ed18a9 Telecomm: adaptive icon
-f0bda9751 CallLog: Get rid of warning
-56871f54c Add back increasing ring feature (1/2).
-136dbd297 Telecom: Add sensitive phone numbers hooks
-
-* packages/services/Telephony
-104f56daa Telephony: use Build.VERSION.INCREMENTAL to check for system update
-b88884ce7 Telephony: Mark enhanced_4g_lte_mode_title_variant as untranslatable
-09db84702 Telephony: adaptive icon
-a16a13f54 Removing dead code from Telephony which uses wakelock.
-
-* packages/wallpapers/LivePicker
-ef6989e LivePicker: adaptive icon
-
-* system/bt
-fb8f860cd Update Bluetooth permission
-d60c1a1e5 BT: AIDL entry for Active Profile Control APIs
-62e701d26 Update Bluetooth permissions for VCP APIS (2/3)
-e4cda98fe VCP: AIDL changes for VCP Profile
-e122235c5 BLE Broadcast Isochronous channel support
-e115d8059 A2dpSrc: Align legacy codec enumeration with AOSP(3/7)
-43d8c56f8 Periodic Adv Sync Transfer feature support
-d7785012b BLE: Group AD Type based filtering.
-46c1380fd bluetooth: select bluetooth modules by fully qualified namespace.
-de3365d3d Update Bluetooth permissions for internal APIS. (3/4)
-5703b68f6 DeviceGroup: AIDL Interface changes for dual mode devices.
-ff2643bfe DeviceGroup: AIDL Interface.
-c2e1d86a2 Add Broadcast active API
-dc4dab979 DeviceGroup: Add new system API's to support Group UI.
-14a7618ea GAP: Reset bondingInitiatedLocally flag(3/3)
-18bee382f Add scan filter for Transport Discovery data
-20836e018 TWS-A2DP: Add TWS+ codec index
-4a5a950ad BT: API to update quiet mode status in Adapter service [3/3]
-ef3c0a46f BT: Adding APTX-Adaptive codec to BT HAL
-7679b3e62 Add BLE Scan Phy parameter to scan API
-88360acfc Bluetooth: Add SDK API support for TWS feature (1)
-
-* system/core
-5cbcd4cec llkd: Include llkd-debuggable.rc in eng builds only
-07adb89d0 fs_mgr: Allow remounts with Magisk installed
-33d5bec34 debuggerd: add Lineage version to tombstones
-98cf81f7a healthd: Reinitialize mChargerNames for every battery update
-8baf0e02d healthd: Add support for HVDCP_3P5 chargers
-447ee2706 healthd: Add support for HVDCP_3 chargers
-a212bce9e healthd: Add DASH charger type
-9edba6f5d reboot: allow opting-in to fastbootd
-0bbf9e611 core: mark libsysutils and libdiskconfig recovery_available
-1db5c0f2c Revert "Format formattable partitions if mount fails"
-bd0ff8674 fs_mgr: mount: don't set the block device as ro for recovery
-662be092b Add exfat utilities for mkfs and fsck
-bdf16d01d init: don't skip starting a service with no domain if permissive
-99ef051a7 init: Add vendor-specific initialization hooks.
-c41189469 remount: Fix failure for system-as-root
-
-* system/extras
-a728f391 bootsignature: includes dt image size for signed boot image
-4398d2db Make sure header version is less than or equal to 4
-
-* system/libziparchive
-e911277 ziptool: restore unzip for recovery
-
-* system/logging
-bca97461 liblog: Always report as debuggable when building userdebug/eng
-
-* system/media
-ce8ec8bf media: update path for vendor specific config files
-
-* system/sepolicy
-9b39c3805 Grant permission for mediatranscoding hal_allocator for GSI image
-2d458cb40 sepolicy: Allow recovery to alter /
-03098777e sepolicy: whitelist recovery from node creation neverallow
-
-* system/tools/mkbootimg
-e8b1035 mkbootimg: add support for --dt
-
-* system/update_engine
-acecab11 update_engine: Remove any (stale) read-only flag before r/w mount of system
-a5a18ac5 Don't verify payload signatures in recovery
-5919288c update_engine: Run backuptool only in debuggable builds
-ee10c414 update_engine: Transition to backuptool domain
-7470900e update_engine: Run backuptool script before normal postinstall script
-c0ff77c4 update_engine: Add performance mode
-cee1119e update_engine: put update_engine into background sched group
-
-* vendor/lineage
-4fef4114 lineage: overlay: Move Trebuchet overlay to seperate RRO package.
-c4535991 lineage: overlay: Exclude backup transport overlays from RRO.
-7561a9b7 Revert "lineage: Exclude all lineage overlays from RRO"
-e15a6363 config: Include androidx.window.extensions in tablet builds
-d0b3a4af lineage: products: Add ATV emulator targets
-2cf8a6ad overlay: core: Remove accent color overrides
-
-* vendor/qcom/opensource/commonsys/system/bt
-7ea87328a BLE Scanning: Pass original address back to GattService#onScanResult
-====================
-     2022-03-12    
-====================
-
-* frameworks/base
-4f6f2397e788 audio: update WiredAccessoryManager to use ExtconUEventObserver based on events available
-8bd0979725b5 WiredAccessoryManager: Support for multiple extconn devices
-87d262528987 WiredAccessoryManager: update extcon file paths
-ecc633f60eea WiredAccessoryManager: Add support for DisplayPort Audio
-6cad12f06f7e SystemUI: Add AOD QS tile
-ba54eb5e3e90 SystemUI: Add USB Tether tile
-5f26f6e799a6 SystemUI: Add AmbientDisplay tile
-d443c7663a22 SystemUI: Add Sync tile
-91911b853a04 SystemUI: Add heads up tile
-3fcb17e98004 SystemUI: Add caffeine QS tile
 547d38d92785 SystemUI: Expose legacy Wi-Fi and cellular data QS tiles
 05841fdb76b1 SystemUI: Allow Wi-Fi/cell tiles to co-exist with provider model
 737704a18e2e Revert "[DO NOT MERGE] Make sure WiFi and Cell tiles are not created in Provider Model"
@@ -1004,11 +1086,14 @@ f9931ce0e93f trust: Add hooks for USB HAL 1.3
 c0eaccf409b7 Squash of SystemUI: Show bluetooth battery level
 7f02994b9f27 Forward port CM Screen Security settings (1/2)
 
+
 * vendor/lineage
 157a2a71 config: Create makefiles for tablets with telephony support
 
+
 * vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
 df492c4dd BLE Scanning: Receive the original address to onScanResults
+
 ====================
      2022-03-11    
 ====================
@@ -1016,16 +1101,20 @@ df492c4dd BLE Scanning: Receive the original address to onScanResults
 * android
 4bb4914 Track our fork of hardware/interfaces
 
+
 * hardware/qcom-caf/sdm845/display
 7b1c3cc76 sdm: mark FOD pressed layer by setting a bit on ZPOS
 
+
 * packages/apps/SetupWizard
 9709678 SUW: Drop SIM card tray illustration hint all together
+
 
 * vendor/lineage
 a6fd6339 lineage: overlay: Set biometrics colors to accent.
 4d4e39a8 overlay: Default to night mode
 6d88852d lineage: config: Make LLVM kernel compile the default
+
 ====================
      2022-03-10    
 ====================
@@ -1060,6 +1149,7 @@ f7f99a6b1f4d services: Kick off to LineageSystemServer for external service init
 ddae65ff379c Add lineage sdk resource APK to Zygote FD whitelist
 f6c046ba0fee androidfw: Squash of declare and load lineage sdk resource package w/ id
 
+
 * packages/apps/Trebuchet
 de6427df67 QuickStep: Google Feed integration
 603e67e50b Launcher3: Reduce app label text size
@@ -1089,6 +1179,7 @@ ac25727152 Trebuchet: Add 5x6, 5x7 and 6x6 default workspaces
 47730f412c Trebuchet: adaptive icon
 5732ce5ecf Change app name to Trebuchet
 b499a43806 Trebuchet: update build configs
+
 ====================
      2022-03-09    
 ====================
@@ -1096,11 +1187,15 @@ b499a43806 Trebuchet: update build configs
 * android
 88a51eb lineage: Track msm8996 HALs
 
+
 * lineage/mirror
 448163f Updated aosp-minimal to 08-Mar-2022 13:01 UTC
+
 
 * packages/apps/SetupWizard
 9eaa10c SUW: Support dark mode by default
 
+
 * vendor/lineage
 d5cdc097 config: device_framework_matrix: Remove inscreen and power HAL entries
+
