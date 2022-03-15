@@ -28,6 +28,7 @@ a6ba1d16 config: Remove TARGET_VENDOR_RELEASE_BUILD_ID
 82ba06fc config: Remove LINEAGE_VERSION_MAINTENANCE
 180be0af LineageOS 19.1
 755d713e config: Drop 2-button navigation support on tablets
+
 ====================
      2022-03-14    
 ====================
@@ -84,6 +85,7 @@ c476536 rework updater json
 
 * vendor/lineage
 c86992e0 Fix GSI targets
+
 ====================
      2022-03-13    
 ====================
@@ -786,6 +788,7 @@ d0b3a4af lineage: products: Add ATV emulator targets
 
 * vendor/qcom/opensource/commonsys/system/bt
 7ea87328a BLE Scanning: Pass original address back to GattService#onScanResult
+
 ====================
      2022-03-12    
 ====================
@@ -997,6 +1000,7 @@ c0eaccf409b7 Squash of SystemUI: Show bluetooth battery level
 
 * vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
 df492c4dd BLE Scanning: Receive the original address to onScanResults
+
 ====================
      2022-03-11    
 ====================
@@ -1014,6 +1018,7 @@ df492c4dd BLE Scanning: Receive the original address to onScanResults
 a6fd6339 lineage: overlay: Set biometrics colors to accent.
 4d4e39a8 overlay: Default to night mode
 6d88852d lineage: config: Make LLVM kernel compile the default
+
 ====================
      2022-03-10    
 ====================
@@ -1077,6 +1082,7 @@ ac25727152 Trebuchet: Add 5x6, 5x7 and 6x6 default workspaces
 47730f412c Trebuchet: adaptive icon
 5732ce5ecf Change app name to Trebuchet
 b499a43806 Trebuchet: update build configs
+
 ====================
      2022-03-09    
 ====================
@@ -1092,3 +1098,4 @@ b499a43806 Trebuchet: update build configs
 
 * vendor/lineage
 d5cdc097 config: device_framework_matrix: Remove inscreen and power HAL entries
+
