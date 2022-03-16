@@ -3,7 +3,7 @@
 ====================
 
 * kernel/xiaomi/sm6150
-5d771cf80917
+5d771cf
 * packages/overlays/Lineage
 d548921
 * tools/buildscript
@@ -11,7 +11,7 @@ d548921
 * vendor/gms
 0742710
 * vendor/lineage
-c0ede774
+c0ede77
 * vendor/xiaomi
 01eeb27
 ====================
@@ -19,11 +19,11 @@ c0ede774
 ====================
 
 * packages/apps/Settings
-d4ff03a1ef
+d4ff03a
 * tools/buildscript
 2f90433
 * vendor/lineage
-cfc974fe
+cfc974f
 ====================
      2022-03-14    
 ====================
@@ -31,17 +31,17 @@ cfc974fe
 * android
 4127c17
 * build/make
-a5d1eecc5
+a5d1eec
 * device/generic/common
 fa9bc59
 * device/xiaomi/davinci
 3d44600
 * frameworks/base
-2168ac688985
+2168ac6
 * tools/buildscript
 188d202
 * vendor/lineage
-c86992e0
+c86992e
 ====================
      2022-03-13    
 ====================
@@ -49,13 +49,13 @@ c86992e0
 * android
 61f9e29
 * bionic
-6e6ed4d6c
+6e6ed4d
 * bootable/recovery
-05272427
+0527242
 * build/make
-140af11f3
+140af11
 * build/soong
-3280b3700
+3280b37
 * device/google/atv
 3a4d50a
 * device/nubia/TP1803
@@ -63,27 +63,27 @@ c86992e0
 * external/android-nn-driver
 3c54114
 * external/armnn
-a8874c08
+a8874c0
 * external/e2fsprogs
-582d894c
+582d894
 * external/gptfdisk
 7645cd3
 * external/libcxx
-026699844
+0266998
 * external/mksh
 777020a
 * external/openssh
-13145b57
+13145b5
 * external/tinycompress
 b5a5755
 * external/wpa_supplicant_8
-2a41b93f
+2a41b93
 * frameworks/av
-ee5b58a710
+ee5b58a
 * frameworks/native
-bcfca821b5
+bcfca82
 * frameworks/opt/telephony
-cbded5de81
+cbded5d
 * frameworks/opt/timezonepicker
 672ce8d
 * hardware/google/pixel
@@ -91,31 +91,31 @@ cbded5de81
 * hardware/google/pixel-sepolicy
 eed6f6e
 * hardware/interfaces
-e6816f299
+e6816f2
 * hardware/knowles/athletico/sound_trigger_hal
 0e0fa7e
 * hardware/libhardware
-8d68001c
+8d68001
 * hardware/qcom/audio
-c23ba18f5
+c23ba18
 * hardware/qcom/camera
 05016f8
 * hardware/qcom/data/ipacfg-mgr
 6200d46
 * hardware/qcom/sdm845/display
-efd7e26c
+efd7e26
 * hardware/qcom/sdm845/media
-80da3615
+80da361
 * hardware/qcom/sm7250/display
-17c375f1
+17c375f
 * hardware/qcom/sm7250/media
-d1d11711
+d1d1171
 * hardware/qcom/sm8150/data/ipacfg-mgr
 cee5f29
 * hardware/qcom/sm8150/display
-188ebc26
+188ebc2
 * hardware/qcom/sm8150/media
-0507534a
+0507534
 * hardware/qcom/wlan
 55c2b5e
 * hardware/ril
@@ -123,27 +123,27 @@ decca06
 * lineage/mirror
 e1acf7d
 * lineage/wiki
-c159e747
+c159e74
 * packages/apps/Bluetooth
-317e54a29
+317e54a
 * packages/apps/Camera2
-af3706294
+af37062
 * packages/apps/Car/Settings
-0ea0a8b1f
+0ea0a8b
 * packages/apps/Contacts
-d916a14be
+d916a14
 * packages/apps/Dialer
-c7fb10908
+c7fb109
 * packages/apps/DocumentsUI
-1d5218a04
+1d5218a
 * packages/apps/Etar
-37c0aecb
+37c0aec
 * packages/apps/Messaging
 4b4e8b8
 * packages/apps/Nfc
-ea7c2eab
+ea7c2ea
 * packages/apps/Settings
-e35670b40f
+e35670b
 * packages/apps/SettingsIntelligence
 a52e605
 * packages/apps/Stk
@@ -151,17 +151,17 @@ a52e605
 * packages/apps/ThemePicker
 0b67029
 * packages/apps/TvSettings
-bcae672b7
+bcae672
 * packages/apps/WallpaperPicker2
 6914a2b
 * packages/inputmethods/LatinIME
-5950b9f37
+5950b9f
 * packages/modules/Connectivity
-ede2264ed
+ede2264
 * packages/modules/Wifi
-60d377f4f
+60d377f
 * packages/modules/adb
-70709fa2
+70709fa
 * packages/modules/common
 40c73c9
 * packages/providers/BlockedNumberProvider
@@ -173,53 +173,53 @@ b0f5ccc
 * packages/providers/CallLogProvider
 9a73fe3
 * packages/providers/ContactsProvider
-cf591c87
+cf591c8
 * packages/providers/DownloadProvider
-ca2f2762
+ca2f276
 * packages/providers/MediaProvider
-0a5b28bb
+0a5b28b
 * packages/providers/TelephonyProvider
 5913c26
 * packages/services/Mms
 bc22843
 * packages/services/Telecomm
-916ed18a9
+916ed18
 * packages/services/Telephony
-104f56daa
+104f56d
 * packages/wallpapers/LivePicker
 ef6989e
 * system/bt
-fb8f860cd
+fb8f860
 * system/core
-3c200d1bf
+3c200d1
 * system/extras
-a728f391
+a728f39
 * system/libziparchive
 e911277
 * system/logging
-bca97461
+bca9746
 * system/media
-ce8ec8bf
+ce8ec8b
 * system/sepolicy
-9b39c3805
+9b39c38
 * system/tools/mkbootimg
 e8b1035
 * system/update_engine
-acecab11
+acecab1
 * vendor/lineage
-4fef4114
+4fef411
 * vendor/qcom/opensource/commonsys/system/bt
-7ea87328a
+7ea8732
 ====================
      2022-03-12    
 ====================
 
 * frameworks/base
-79db50aaf30b
+79db50a
 * vendor/lineage
-157a2a71
+157a2a7
 * vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
-df492c4dd
+df492c4
 ====================
      2022-03-11    
 ====================
@@ -227,20 +227,20 @@ df492c4dd
 * android
 4bb4914
 * hardware/qcom-caf/sdm845/display
-7b1c3cc76
+7b1c3cc
 * kernel/xiaomi/sm6150
-2414f45b93e8
+2414f45
 * packages/apps/SetupWizard
 9709678
 * vendor/lineage
-a6fd6339
+a6fd633
 ====================
      2022-03-10    
 ====================
 
 * frameworks/base
-a8d09784fc18
+a8d0978
 * packages/apps/Trebuchet
-de6427df67
+de6427d
 * vendor/lineage
-6d88852d
+6d88852
