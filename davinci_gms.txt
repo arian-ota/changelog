@@ -1,7 +1,8 @@
 ====================
      2022-03-16    
 ====================
-\n* kernel/xiaomi/sm6150\n5d771cf80917 cpufreq: Ensure the minimal frequency is lower than the maximal frequency [Arian]
+* kernel/xiaomi/sm6150
+5d771cf80917 cpufreq: Ensure the minimal frequency is lower than the maximal frequency [Arian]
 0fdc27c0ac56 ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Enable PELT [Kyle Lin]
 7cea7910a80e sched: core: fix kmalloc error during spinlock [Jimmy Shiu]
 6e67f7cc7ee6 UPSTREAM: sched/rt: Disable RT_RUNTIME_SHARE by default [Daniel Bristot de Oliveira]
@@ -407,27 +408,40 @@ c236699e0b1c Set correct techpack header install directory [Rashed Abdel-Tawab]
 7397dd5dc939 Add 'techpack/audio/' from commit '6ae17fb294e9a019be3cc4d43757583b0baa4563' [Arian]
 af20aa70b54b Add 'drivers/staging/qcacld-3.0/' from commit '41d33b0546bc270aea6ab649bb8d720f33d3b42b' [Arian]
 6cfe03755c8d Add 'drivers/staging/qca-wifi-host-cmn/' from commit 'cf9faafb00911ac3595221440ae0e235dae33ec2' [Arian]
-16831047e6b2 Add 'drivers/staging/fw-api/' from commit '5ff275ff5c5735ff4a9341b7f549ad9044b6d8c7' [Arian]\n
-\n* packages/overlays/Lineage\nd548921 Revert "Revert "Add back font overlays"" [Arian]
-4437f3f Revert "Add back font overlays" [Arian]\n
-\n* tools/buildscript\n64aad51 create ota and changelog branches if necessary [Arian]
+16831047e6b2 Add 'drivers/staging/fw-api/' from commit '5ff275ff5c5735ff4a9341b7f549ad9044b6d8c7' [Arian]
+
+* packages/overlays/Lineage
+d548921 Revert "Revert "Add back font overlays"" [Arian]
+4437f3f Revert "Add back font overlays" [Arian]
+
+* tools/buildscript
+64aad51 create ota and changelog branches if necessary [Arian]
 be0f492 update_changelog on release instead of update_ota [Arian]
 a705209 commonize ota entry for appending and new ota [Arian]
 b316d27 simplify ab vs non-ab images [Arian]
-b2673cc fix for partition loop on ab devices [Arian]\n
-\n* vendor/gms\n0742710 Import PixelThemesStub and override aosp ThemePicker and WallpaperCropper [Arian]
+b2673cc fix for partition loop on ab devices [Arian]
+
+* vendor/gms
+0742710 Import PixelThemesStub and override aosp ThemePicker and WallpaperCropper [Arian]
 bb0dd4b overlay: Introduce PixelConfigOverlayWallpaper [Arian]
 6f0ee9a Import WallpaperPickerGoogleRelease [Arian]
 28c987c Update from redfin SP2A.220305.012 [Arian]
-4af318a Split PixelSetupWizardOverlay2019 [Arian]\n
-\n* vendor/lineage\nc0ede774 Revert "config: Build font overlays again" [Arian]\n
-\n* vendor/xiaomi\n01eeb27 Revert "[dnm]sm6150-common: Disable soong namespace for bootjars" [Arian]\n
+4af318a Split PixelSetupWizardOverlay2019 [Arian]
+
+* vendor/lineage
+c0ede774 Revert "config: Build font overlays again" [Arian]
+
+* vendor/xiaomi
+01eeb27 Revert "[dnm]sm6150-common: Disable soong namespace for bootjars" [Arian]
 
 ====================
      2022-03-15    
 ====================
-\n* packages/apps/Settings\nd4ff03a1ef deviceinfo: Show display variant of lineage version [Arian]\n
-\n* tools/buildscript\n2f90433 update changelog generation [Arian]
+* packages/apps/Settings
+d4ff03a1ef deviceinfo: Show display variant of lineage version [Arian]
+
+* tools/buildscript
+2f90433 update changelog generation [Arian]
 2dc7bd0 Create remote directories before uploading to them [Arian]
 94339de don't add builds with same id twice to ota json [Arian]
 ab043c3 fix uploading images [Arian]
@@ -437,8 +451,10 @@ dcfd2d7 return after failed build [Arian]
 7cffe49 Always use ==, fix ota jso check and don't upload debug builds [Arian]
 03e8089 make signed uppercase [Arian]
 2b18667 spring cleanup [Arian]
-4bf1c83 Create a new OTA json if necessary [Arian]\n
-\n* vendor/lineage\ncfc974fe config: Remove PRODUCT_VERSION_MINOR from LINEAGE_DISPLAY_VERSION [Michael Bestas]
+4bf1c83 Create a new OTA json if necessary [Arian]
+
+* vendor/lineage
+cfc974fe config: Remove PRODUCT_VERSION_MINOR from LINEAGE_DISPLAY_VERSION [Michael Bestas]
 30744444 config: Remove custom LINEAGE_EXTRAVERSION logic [Michael Bestas]
 14a3b4dd config: Remove custom LINEAGE_DISPLAY_VERSION logic for !testkey [Michael Bestas]
 726cf985 config: Remove PRODUCT_VERSION_DEVICE_SPECIFIC [Michael Bestas]
@@ -447,40 +463,58 @@ dcfd2d7 return after failed build [Arian]
 a6ba1d16 config: Remove TARGET_VENDOR_RELEASE_BUILD_ID [Michael Bestas]
 82ba06fc config: Remove LINEAGE_VERSION_MAINTENANCE [Michael Bestas]
 180be0af LineageOS 19.1 [Nolen Johnson]
-755d713e config: Drop 2-button navigation support on tablets [Bruno Martins]\n
+755d713e config: Drop 2-button navigation support on tablets [Bruno Martins]
 
 ====================
      2022-03-14    
 ====================
-\n* android\n4127c17 lineage: Re-enable NQ NXP support [Bruno Martins]
-a6c701c Track forked device/generic/common [Tom Pratt]\n
-\n* build/make\na5d1eecc5 Add wildcards to allow lineage gsi targets [Tom Pratt]\n
-\n* device/generic/common\nfa9bc59 Compile guard aosp apns conf in gsi product [Tom Pratt]\n
-\n* device/xiaomi/davinci\n3d44600 davinci: overlay-lineage: Update udfps hbm type name [Arian]
-3b7192c tmp davinci: drop duplicated assertions [Arian]\n
-\n* frameworks/base\n2168ac688985 SystemUI: Add visualizer feature [Utkarsh Gupta]
+* android
+4127c17 lineage: Re-enable NQ NXP support [Bruno Martins]
+a6c701c Track forked device/generic/common [Tom Pratt]
+
+* build/make
+a5d1eecc5 Add wildcards to allow lineage gsi targets [Tom Pratt]
+
+* device/generic/common
+fa9bc59 Compile guard aosp apns conf in gsi product [Tom Pratt]
+
+* device/xiaomi/davinci
+3d44600 davinci: overlay-lineage: Update udfps hbm type name [Arian]
+3b7192c tmp davinci: drop duplicated assertions [Arian]
+
+* frameworks/base
+2168ac688985 SystemUI: Add visualizer feature [Utkarsh Gupta]
 8da38f936758 SystemUI: Port statusbar brightness control [Alberto97]
 5d5de48dd682 SystemUI: handle camera launch gesture from keyhandler [Roman Birg]
-def05000a15d frameworks/base: Support for third party NFC features and extensions [Puneet Mishra]\n
-\n* tools/buildscript\n188d202 Revert "prevent idle while building" [Arian]
+def05000a15d frameworks/base: Support for third party NFC features and extensions [Puneet Mishra]
+
+* tools/buildscript
+188d202 Revert "prevent idle while building" [Arian]
 e2349f9 tmp [Arian]
 d45b6c6 prevent idle while building [Arian]
 c476536 rework updater json [Arian]
 000d106 enable ccache [Arian]
-56a76d2 initial import [Arian]\n
-\n* vendor/lineage\nc86992e0 Fix GSI targets [Tom Pratt]\n
+56a76d2 initial import [Arian]
+
+* vendor/lineage
+c86992e0 Fix GSI targets [Tom Pratt]
 
 ====================
      2022-03-13    
 ====================
-\n* android\n61f9e29 lineage: Enable Etar [Michael Bestas]
+* android
+61f9e29 lineage: Enable Etar [Michael Bestas]
 2657932 manifest: 19.0 -> 19.1 [Michael Bestas]
-04d9fa6 manifest: android-12.0.0_r29 -> android-12.1.0_r1 [Michael Bestas]\n
-\n* bionic\n6e6ed4d6c Add ability to build scudo-free 32-bit libc variant. [Quallenauge]
+04d9fa6 manifest: android-12.0.0_r29 -> android-12.1.0_r1 [Michael Bestas]
+
+* bionic
+6e6ed4d6c Add ability to build scudo-free 32-bit libc variant. [Quallenauge]
 81be02222 libc: Mark libstdc++ as vendor available [Rashed Abdel-Tawab]
 0f4382a49 linker: Add support for dynamic SHIM libraries [Christopher R. Palmer]
-2c90af779 Add inaddr.h header file [Roopesh Rajashekharaiah Nataraja]\n
-\n* bootable/recovery\n05272427 recovery.cpp: Fix typo when unmounting system [Mohammad Hasan Keramat J]
+2c90af779 Add inaddr.h header file [Roopesh Rajashekharaiah Nataraja]
+
+* bootable/recovery
+05272427 recovery.cpp: Fix typo when unmounting system [Mohammad Hasan Keramat J]
 09d57c8f recovery: Allow separating device asserts with a colon too [Alessandro Astone]
 68dd30eb recovery: make wiping dynamic partitions work [Tim Zimmermann]
 53b26ef7 Add controller support [Aaron Kling]
@@ -541,8 +575,10 @@ dbc4d66e recovery_utils: add support for unmounting entire volumes [Simon Shield
 d13a8c51 recovery: ui: Support hardware virtual keys [Tom Marshall]
 1aa398c5 recovery: ui: Minor cleanup for touch code [Tom Marshall]
 8297df78 recovery: ui: Default to touch enabled [Tom Marshall]
-d4a57c06 Bring back file-based OTA edify functions [Michael Bestas]\n
-\n* build/make\n140af11f3 releasetools: Fallback to calculated fp if partition fp is missing [Aaron Kling]
+d4a57c06 Bring back file-based OTA edify functions [Michael Bestas]
+
+* build/make
+140af11f3 releasetools: Fallback to calculated fp if partition fp is missing [Aaron Kling]
 9070978ff build: Respect fs_config when generating recovery ramdisk [lambdadroid]
 c34b850fa Add support for separate kernels for boot and recovery [2/2] [marcost2]
 27c07df28 soong: Add ability to build scudo-free 32-bit libc variant. [Quallenauge]
@@ -583,8 +619,10 @@ e1f7ab5c9 Add extra variables to _readonly_late_variables [dianlujitao]
 9ab2ba932 Source lineage specific envsetup [Michael Bestas]
 37dc8d35e envsetup: export ANDROID_BUILD_TOP earlier [Chirayu Desai]
 23bb8094f build: Include vendor/extra/BoardConfigExtra.mk if available [Steve Kondik]
-471b9d81b Check for vintf compatiblity early in generation process [Kelvin Zhang]\n
-\n* build/soong\n3280b3700 check_boot_jars: Add nvidia packages to whitelist [LuK1337]
+471b9d81b Check for vintf compatiblity early in generation process [Kelvin Zhang]
+
+* build/soong
+3280b3700 check_boot_jars: Add nvidia packages to whitelist [LuK1337]
 c265d950f cleanbuild: Add `recovery_kernel` to installclean files [Jarl-Penguin]
 1021c6541 Add Init_rc to Product_variables.Eng [dianlujitao]
 815750db9 Be more explicit about GMS dumpvars [Nolen Johnson]
@@ -602,29 +640,53 @@ cc2c0f66e Make lineage res module support variation deps [Luca Stefani]
 db79c8a9d soong: Squash of lineage-sdk bringup commits [Rashed Abdel-Tawab]
 8d34019bc cleanbuild: add *.zip.sha256sum to installclean_files [Julian Veit]
 3431bddb7 Add dumpvars for WITH_SU and WITH_GMS [Abhisek Devkota]
-11476bc44 soong: Add LINEAGE_VERSION to dumpvars [Rashed Abdel-Tawab]\n
-\n* device/google/atv\n3a4d50a products: Add generic x86_64 TV target [Nolen Johnson]
+11476bc44 soong: Add LINEAGE_VERSION to dumpvars [Rashed Abdel-Tawab]
+
+* device/google/atv
+3a4d50a products: Add generic x86_64 TV target [Nolen Johnson]
 6b5682b Remove minimize debug symbol flags [Aaron Kling]
-4306ce7 atv: Only build debug packages on `-eng` builds [Nolen Johnson]\n
-\n* device/nubia/TP1803\n7368525 TP1803: Remove CLANG compile flag [Georg Veichtlbauer]\n
-\n* external/android-nn-driver\n3c54114 Link to libOpenCL unconditionally when building OpenCL backend [Danny Lin]\n
-\n* external/armnn\na8874c08 Link to libOpenCL unconditionally when building OpenCL backend [Danny Lin]\n
-\n* external/e2fsprogs\n582d894c resize: Make a target for standalone resize2fs_static binary [Bruno Martins]
-0fdcab1e Mark libext2_blkid as vendor available [LuK1337]\n
-\n* external/gptfdisk\n7645cd3 gptfdisk: include gptcl.h after sgdisk.h [Tom Marshall]
+4306ce7 atv: Only build debug packages on `-eng` builds [Nolen Johnson]
+
+* device/nubia/TP1803
+7368525 TP1803: Remove CLANG compile flag [Georg Veichtlbauer]
+
+* external/android-nn-driver
+3c54114 Link to libOpenCL unconditionally when building OpenCL backend [Danny Lin]
+
+* external/armnn
+a8874c08 Link to libOpenCL unconditionally when building OpenCL backend [Danny Lin]
+
+* external/e2fsprogs
+582d894c resize: Make a target for standalone resize2fs_static binary [Bruno Martins]
+0fdcab1e Mark libext2_blkid as vendor available [LuK1337]
+
+* external/gptfdisk
+7645cd3 gptfdisk: include gptcl.h after sgdisk.h [Tom Marshall]
 28a658c gptfdisk: Provide sgdisk_read for direct reads of the partition table [Tom Marshall]
-d1756ec gptfdisk: Build lib for recovery [Tom Marshall]\n
-\n* external/libcxx\n026699844 Make libc++fs vendor available and as a shared lib [Aaron Kling]\n
-\n* external/mksh\n777020a mksh: Set TERM to xterm-256color [Luca Stefani]
+d1756ec gptfdisk: Build lib for recovery [Tom Marshall]
+
+* external/libcxx
+026699844 Make libc++fs vendor available and as a shared lib [Aaron Kling]
+
+* external/mksh
+777020a mksh: Set TERM to xterm-256color [Luca Stefani]
 f5056ce mksh: don't use /data/local for TMPDIR in recovery [Alessandro Astone]
-88ae224 mksh: Mark mkshrc as recovery_available [Michael Bestas]\n
-\n* external/openssh\n13145b57 Tweak SSH config for security [Danny Lin]
+88ae224 mksh: Mark mkshrc as recovery_available [Michael Bestas]
+
+* external/openssh
+13145b57 Tweak SSH config for security [Danny Lin]
 69404c8d Generate ECDSA and ED25519 keys [Danny Lin]
 a8e4db32 Move build targets to /product [Michael Bestas]
-3a38197d Disable StrictModes [Luca Stefani]\n
-\n* external/tinycompress\nb5a5755 tinycompress: Conditionally enable extended compress format [Michael Bestas]\n
-\n* external/wpa_supplicant_8\n2a41b93f wpa_supplicant: add support for bcmdhd SAE authentication offload [Tim Zimmermann]\n
-\n* frameworks/av\nee5b58a710 Partial revert "Move unused classes out of stagefright foundataion" [Nico]
+3a38197d Disable StrictModes [Luca Stefani]
+
+* external/tinycompress
+b5a5755 tinycompress: Conditionally enable extended compress format [Michael Bestas]
+
+* external/wpa_supplicant_8
+2a41b93f wpa_supplicant: add support for bcmdhd SAE authentication offload [Tim Zimmermann]
+
+* frameworks/av
+ee5b58a710 Partial revert "Move unused classes out of stagefright foundataion" [Nico]
 8dd4bfb0cf audioflinger: Fix audio for WifiDisplay [myfluxi]
 3887abbdd5 libstagefright_wfd: video encoder does not actually release MediaBufferBase when done [Vladimir Oltean]
 48012fd568 stagefright: Fix buffer handle retrieval in signalBufferReturned [Angelo G. Del Regno]
@@ -632,70 +694,116 @@ a89077a5b2 stagefright: Fix SurfaceMediaSource getting handle from wrong positio
 1c8324d06a libstagefright_wfd: compilation fixes [Vladimir Oltean]
 96d6d66e8e libstagefright: Remove libmediaextractor dependency [Adithya R]
 a3a9496982 Revert "Removed unused class and its test" [Vladimir Oltean]
-1f10fa1281 Revert "stagefright: remove Miracast sender code" [Vladimir Oltean]\n
-\n* frameworks/native\nbcfca821b5 InputDispatcher: On keypress, deliver keycode to pokeUserActivity [Corinna Vinschen]
+1f10fa1281 Revert "stagefright: remove Miracast sender code" [Vladimir Oltean]
+
+* frameworks/native
+bcfca821b5 InputDispatcher: On keypress, deliver keycode to pokeUserActivity [Corinna Vinschen]
 011566b62a PowerManager.h: Define USER_ACTIVITY_FLAG values [Corinna Vinschen]
 961931142d Forward port 'Swap volume buttons' (2/3) [nadlabak]
 e7c8c0f84f CompositionEngine: Request device composition for the Udfps touched layer [daniml3]
 a8d9b10c43 surfaceflinger: Add support for Udfps extension lib [Pierre-Hugues Husson]
 c6e05ce34d libui: Allow extension of valid gralloc 1.0 buffer usage bits [Kevin F. Haggerty]
-606275d31b Add vendor version for libgui [Vinay Verma]\n
-\n* frameworks/opt/telephony\ncbded5de81 Restore support with RadioConfig@1.0 dsds clients. [Quallenauge]
+606275d31b Add vendor version for libgui [Vinay Verma]
+
+* frameworks/opt/telephony
+cbded5de81 Restore support with RadioConfig@1.0 dsds clients. [Quallenauge]
 058268c1c4 Release wakelock if setRadioCapability is not supported [Sooraj Sasindran]
-f36814f66f Update external card state based on current app [Wileen Chiu]\n
-\n* frameworks/opt/timezonepicker\n672ce8d Restore time_zone_item ripple effect [LuK1337]
-11589dc Change ItemBackground for Black Theme [Gitsaibot]\n
-\n* hardware/google/pixel\n3cd1adc pixel: Implement PowerShare HAL [Alessandro Astone]
+f36814f66f Update external card state based on current app [Wileen Chiu]
+
+* frameworks/opt/timezonepicker
+672ce8d Restore time_zone_item ripple effect [LuK1337]
+11589dc Change ItemBackground for Black Theme [Gitsaibot]
+
+* hardware/google/pixel
+3cd1adc pixel: Implement PowerShare HAL [Alessandro Astone]
 117934e pixel: Add lineage touch hal [Alessandro Astone]
-e51b193 pixel: Disable userdebug diagnostics [Ethan Chen]\n
-\n* hardware/google/pixel-sepolicy\need6f6e sepolicy: Add PowerShare HAL policy [Alessandro Astone]
-1f065c4 sepolicy: Add lineage touch hal policy [Alessandro Astone]\n
-\n* hardware/interfaces\ne6816f299 wifi: Add provision to create/remove dynamic interface(s). [Purushottam Kushwaha]\n
-\n* hardware/knowles/athletico/sound_trigger_hal\n0e0fa7e Use generated kernel headers [Chirayu Desai]\n
-\n* hardware/libhardware\n8d68001c libhardware: Add new display types. [Dileep Marchya]
+e51b193 pixel: Disable userdebug diagnostics [Ethan Chen]
+
+* hardware/google/pixel-sepolicy
+eed6f6e sepolicy: Add PowerShare HAL policy [Alessandro Astone]
+1f065c4 sepolicy: Add lineage touch hal policy [Alessandro Astone]
+
+* hardware/interfaces
+e6816f299 wifi: Add provision to create/remove dynamic interface(s). [Purushottam Kushwaha]
+
+* hardware/knowles/athletico/sound_trigger_hal
+0e0fa7e Use generated kernel headers [Chirayu Desai]
+
+* hardware/libhardware
+8d68001c libhardware: Add new display types. [Dileep Marchya]
 a13d0dc8 hardware/libhw: Add display_defs.h to declare custom enums/flags [Arun Kumar K.R]
-9de3fab5 audio: Add audio amplifier HAL [Ethan Chen]\n
-\n* hardware/qcom/audio\nc23ba18f5 hal: Fix CFI errors [Sujin Panicker]
+9de3fab5 audio: Add audio amplifier HAL [Ethan Chen]
+
+* hardware/qcom/audio
+c23ba18f5 hal: Fix CFI errors [Sujin Panicker]
 095b06083 audio: Add audio headers lib [Arne Coucheron]
-51a38b6d5 audio: Use generated kernel headers [razorloves]\n
-\n* hardware/qcom/camera\n05016f8 msm8998: camera: Drop usage of LOCAL_COPY_HEADERS [Bruno Martins]
-7a9c40a msm8998: Ignore -Wno-compound-token-split-by-macro warnings [Lunarixus]\n
-\n* hardware/qcom/data/ipacfg-mgr\n6200d46 ipacfg-mgr: Use generated kernel headers [Bruno Martins]
-ce1a19a Kernel Header Changes [arnav_s]\n
-\n* hardware/qcom/sdm845/display\nefd7e26c display: Drop LOCAL_COPY_HEADERS usage [Pig]
+51a38b6d5 audio: Use generated kernel headers [razorloves]
+
+* hardware/qcom/camera
+05016f8 msm8998: camera: Drop usage of LOCAL_COPY_HEADERS [Bruno Martins]
+7a9c40a msm8998: Ignore -Wno-compound-token-split-by-macro warnings [Lunarixus]
+
+* hardware/qcom/data/ipacfg-mgr
+6200d46 ipacfg-mgr: Use generated kernel headers [Bruno Martins]
+ce1a19a Kernel Header Changes [arnav_s]
+
+* hardware/qcom/sdm845/display
+efd7e26c display: Drop LOCAL_COPY_HEADERS usage [Pig]
 c5d5088d display: Fix path to vendor/qcom/opensource [razorloves]
-7d8ae195 Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT [LuK1337]\n
-\n* hardware/qcom/sdm845/media\n80da3615 media: Stop overriding LOCAL_HEADER_LIBRARIES [Michael Bestas]
+7d8ae195 Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT [LuK1337]
+
+* hardware/qcom/sdm845/media
+80da3615 media: Stop overriding LOCAL_HEADER_LIBRARIES [Michael Bestas]
 13f66bd1 media: Switch to display_headers lib include [Arne Coucheron]
 131f82a3 media: Drop LOCAL_COPY_HEADERS usage [Pig]
-d6d242c8 mm-core: Generate omx core header library. [Brijesh Patel]\n
-\n* hardware/qcom/sm7250/display\n17c375f1 display: Drop LOCAL_COPY_HEADERS usage [Pig]
+d6d242c8 mm-core: Generate omx core header library. [Brijesh Patel]
+
+* hardware/qcom/sm7250/display
+17c375f1 display: Drop LOCAL_COPY_HEADERS usage [Pig]
 b1857d07 Add C2D_FORMAT_BT601_FULLRANGE to C2D_FORMAT_MODE [Bruno Martins]
 ef55de3f Add C2D_COLOR_FORMAT_420_P010 to C2D_YUV_FORMAT [Davide Garberi]
 83570557 Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT [LuK1337]
 feb90c13 sm7250: display: Export libdisplaydebug headers to dependencies [Alessandro Astone]
 e54e044a sm7250: display: Import display interfaces namespace [Michael Bestas]
-cac7f9ec sm7250: display: Import display commonsys interfaces namespace [Alessandro Astone]\n
-\n* hardware/qcom/sm7250/media\nd1d11711 media: Drop LOCAL_COPY_HEADERS usage [Pig]
+cac7f9ec sm7250: display: Import display commonsys interfaces namespace [Alessandro Astone]
+
+* hardware/qcom/sm7250/media
+d1d11711 media: Drop LOCAL_COPY_HEADERS usage [Pig]
 238e6a0f media: Add local fastcv header [LuK1337]
-bcf3921e media: Include display_headers instead of display_intf_headers [Dyneteve]\n
-\n* hardware/qcom/sm8150/data/ipacfg-mgr\ncee5f29 Kernel Header Changes [arnav_s]\n
-\n* hardware/qcom/sm8150/display\n188ebc26 sm8150: display: Import display interfaces namespace [Michael Bestas]
+bcf3921e media: Include display_headers instead of display_intf_headers [Dyneteve]
+
+* hardware/qcom/sm8150/data/ipacfg-mgr
+cee5f29 Kernel Header Changes [arnav_s]
+
+* hardware/qcom/sm8150/display
+188ebc26 sm8150: display: Import display interfaces namespace [Michael Bestas]
 db9646ab display: Drop LOCAL_COPY_HEADERS usage [Pig]
 013893d1 Add C2D_FORMAT_BT601_FULLRANGE to C2D_FORMAT_MODE [Bruno Martins]
 832f4833 Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT [LuK1337]
 5352f090 gralloc: Ignore sign-conversion errors [Michael Bestas]
 05bb3e7e gralloc: pull in content of libion_path.mk from core-utils [Peter Cai]
 69427fe4 libhistogram: Use generated kernel headers [Eamon Powell]
-933467c1 sm8150: display: Import display commonsys interfaces namespace [Alessandro Astone]\n
-\n* hardware/qcom/sm8150/media\n0507534a media: Drop LOCAL_COPY_HEADERS usage [Pig]
+933467c1 sm8150: display: Import display commonsys interfaces namespace [Alessandro Astone]
+
+* hardware/qcom/sm8150/media
+0507534a media: Drop LOCAL_COPY_HEADERS usage [Pig]
 1d3a2643 vidc: pull in content of libion_path.mk from core-utils [Peter Cai]
-4b03141d media: Include display_headers instead of display_intf_headers [Dyneteve]\n
-\n* hardware/qcom/wlan\n55c2b5e Resolve compilation error for fib_rule_port_range with fib_rules.h [Sreeramya Soratkal]\n
-\n* hardware/ril\ndecca06 libril: allow board to provide libril [Tom Giordano]\n
-\n* lineage/mirror\ne1acf7d Updated to 13-Mar-2022 00:46 UTC [Kevin F. Haggerty]\n
-\n* lineage/wiki\nc159e747 wiki: Make version changes easier [Michael W]\n
-\n* packages/apps/Bluetooth\n317e54a29 Don't assign codecs to a size fixed array [Luca Stefani]
+4b03141d media: Include display_headers instead of display_intf_headers [Dyneteve]
+
+* hardware/qcom/wlan
+55c2b5e Resolve compilation error for fib_rule_port_range with fib_rules.h [Sreeramya Soratkal]
+
+* hardware/ril
+decca06 libril: allow board to provide libril [Tom Giordano]
+
+* lineage/mirror
+e1acf7d Updated to 13-Mar-2022 00:46 UTC [Kevin F. Haggerty]
+
+* lineage/wiki
+c159e747 wiki: Make version changes easier [Michael W]
+
+* packages/apps/Bluetooth
+317e54a29 Don't assign codecs to a size fixed array [Luca Stefani]
 b6af4ca70 Add Attribution source parameter to isBroadcastActive API [pramod kotreshappa]
 cc2d84d27 Support for broadcast active api [pramod kotreshappa]
 b86ad2af7 PAST feature implementation [pramod kotreshappa]
@@ -706,17 +814,23 @@ ba5f99d7c Periodic Sync Feature implementation [pramod kotreshappa]
 5048e1283 Bluetooth: Reset packages/apps/Bluetooth to upstream [Steven Laver]
 f962e9eec Stub TWS related APIs [dianlujitao]
 4b7e8d550 Add BLE Scan Phy parameter to scan API [Subramanian Srinivasan]
-9633a63ff hfp: Report SCO sample rate via g_sco_samplerate audio param if needed [Andreas Schneider]\n
-\n* packages/apps/Camera2\naf3706294 Automatic translation import [Michael Bestas]
+9633a63ff hfp: Report SCO sample rate via g_sco_samplerate audio param if needed [Andreas Schneider]
+
+* packages/apps/Camera2
+af3706294 Automatic translation import [Michael Bestas]
 689cf7e05 Camera2: Request for ACCESS_FINE_LOCATION permission [Wang Han]
 025ca3dda Fix crash if Exif-Tag buffer-length and component-count are both 0 [tobigun]
 c6c0cf5db Camera2: Fix Undo button behaviour [NBruderman]
 7a7bffd20 Camera2: Add option to set max screen brightness [Michael Bestas]
 c68d05662 Camera2: Remove settings preferences only once [Konsta]
 090462beb Camera2: Only autofocus before a snap if we are actually in "auto" mode. [Steve Kondik]
-74fd04eb9 Camera2: adaptive icon [Asher Simonds]\n
-\n* packages/apps/Car/Settings\n0ea0a8b1f Hardcode default pattern size [Al Sutton]\n
-\n* packages/apps/Contacts\nd916a14be Automatic translation import [Michael Bestas]
+74fd04eb9 Camera2: adaptive icon [Asher Simonds]
+
+* packages/apps/Car/Settings
+0ea0a8b1f Hardcode default pattern size [Al Sutton]
+
+* packages/apps/Contacts
+d916a14be Automatic translation import [Michael Bestas]
 f806b9545 Contacts: Enable support for device contact. [Toha]
 4b6e9295b Contacts: Make the launch screen follow the system theme [Scott Warner]
 3265edfb4 Contacts: manually configure dark theme for list [Jesse Chan]
@@ -726,8 +840,10 @@ f806b9545 Contacts: Enable support for device contact. [Toha]
 414965fb9 Place EmergencyInfo shortcut on drawer [yuichiro fujiwara]
 9422d8925 Place MyInfo shortcut on drawer [yuichiro fujiwara]
 b578eabef Contacts: adaptive icon [Asher Simonds]
-158892310 Contacts: define app category [Joey]\n
-\n* packages/apps/Dialer\nc7fb10908 Automatic translation import [Michael Bestas]
+158892310 Contacts: define app category [Joey]
+
+* packages/apps/Dialer
+c7fb10908 Automatic translation import [Michael Bestas]
 a6c23e0c2 Dialer: Notify content observers upon call log entry deletion [LuK1337]
 ef8fc768a Dialer: improve search bar [Timi Rautamäki]
 d02dd02db Dialer: set statusbar color same as activity background [Timi Rautamäki]
@@ -756,11 +872,15 @@ e3aa556dd Revert "Remove dialer sounds and vibrations settings fragments and red
 fc4a1b237 Dialer: Remove unused resources [Michael Bestas]
 2216c6076 Fix translation of 'contacts' tab title and main menu. [Danny Baumann]
 b5896d818 Dialer: adaptive icon [Asher Simonds]
-2beaa5e37 Dialer: define app category [Joey]\n
-\n* packages/apps/DocumentsUI\n1d5218a04 Remove unused string resources [Michael Bestas]
+2beaa5e37 Dialer: define app category [Joey]
+
+* packages/apps/DocumentsUI
+1d5218a04 Remove unused string resources [Michael Bestas]
 21bb78ea1 DocumentsUI: adaptive icon [Asher Simonds]
-ace4fd726 DocumentsUI: define appcategory [Joey]\n
-\n* packages/apps/Etar\n37c0aecb Don't show time for all day events [Michael Bestas]
+ace4fd726 DocumentsUI: define appcategory [Joey]
+
+* packages/apps/Etar
+37c0aecb Don't show time for all day events [Michael Bestas]
 744098a1 Remove isDst references and always return false [Michael Bestas]
 1a756900 Adapt for removed public Time(Time other) constructor [Michael Bestas]
 5ac939bc Import getCurrentTimezone() from android.text.format.Time [Michael Bestas]
@@ -772,8 +892,10 @@ ace4fd726 DocumentsUI: define appcategory [Joey]\n
 c89bf4b9 Replace deprecated function and solve lint warning. [Gitsaibot]
 c1e159b5 Timeisinvalid (#1093) [EsmaeeilMoradi]
 1c1c5b28 Widget Enhancement- Option To Add A New Event From The Widget Screen (#1105) [Kavita Patil]
-7dda9e82 Remove duplicate descriptions [Jochen Sprickerhof]\n
-\n* packages/apps/Messaging\n4b4e8b8 Automatic translation import [Michael Bestas]
+7dda9e82 Remove duplicate descriptions [Jochen Sprickerhof]
+
+* packages/apps/Messaging
+4b4e8b8 Automatic translation import [Michael Bestas]
 1b6b3b2 Messaging: Show quick reply choices only on wearable devices [Han Wang]
 c1bd3b1 Messaging: allow selecting text inside the selected message [Timi Rautamäki]
 28af586 Messaging: restore AOSP colors for selected messages [Timi Rautamäki]
@@ -796,9 +918,13 @@ dfba7b4 Messaging: bring back accent color [jrizzoli]
 dc12307 Messaging: Toggable keyboard emoticons access [AdrianDC]
 26903b0 Messaging: Implement option for swipe right to delete. [Adnan Begovic]
 e7d4d5c Messaging: adaptive icon [Asher Simonds]
-1b58301 Messaging: define app category [Joey]\n
-\n* packages/apps/Nfc\nea7c2eab NFC: Adding new vendor specific interface to NFC Service [Puneet Mishra]\n
-\n* packages/apps/Settings\ne35670b40f Remove useless USB page header [Michael Bestas]
+1b58301 Messaging: define app category [Joey]
+
+* packages/apps/Nfc
+ea7c2eab NFC: Adding new vendor specific interface to NFC Service [Puneet Mishra]
+
+* packages/apps/Settings
+e35670b40f Remove useless USB page header [Michael Bestas]
 b0bfc86630 Settings: Only show gesture navigation if device has a software nav bar [Rashed Abdel-Tawab]
 033c0b903b Settings: update SUW theming for 12 [Timi Rautamäki]
 8521a1adb5 KeyboardSettings: Add a RemotePreference for device-specific panel [Bruno Martins]
@@ -870,18 +996,26 @@ ef18cf51e4 Settings: Add rotation settings [Steve Kondik]
 45da50d1e8 Settings: Add LineageOS entries into device info [LuK1337]
 42fc1aeecf Settings: Depend on lineage platform library [Sam Mortimer]
 13a2b4ba23 Settings: Put device info header above "Basic info" [LuK1337]
-c974464550 Allow the user to change the BackupTransport [Torsten Grote]\n
-\n* packages/apps/SettingsIntelligence\na52e605 Style search bar to match new Settings UI [Danny Lin]
+c974464550 Allow the user to change the BackupTransport [Torsten Grote]
+
+* packages/apps/SettingsIntelligence
+a52e605 Style search bar to match new Settings UI [Danny Lin]
 39aec0b SettingsIntelligence: Search: Skip showing a few packages [Michael W]
 baec9eb SettingsIntelligence: Regen database on build version change [Luca Stefani]
-4c075e0 SettingsIntelligence: Match Settings style [Luca Stefani]\n
-\n* packages/apps/Stk\n771a51a Stk: adaptive icon [Joey]\n
-\n* packages/apps/ThemePicker\n0b67029 Add permission for launcher preview rendering [Danny Lin]
+4c075e0 SettingsIntelligence: Match Settings style [Luca Stefani]
+
+* packages/apps/Stk
+771a51a Stk: adaptive icon [Joey]
+
+* packages/apps/ThemePicker
+0b67029 Add permission for launcher preview rendering [Danny Lin]
 14584d0 Declare HOME query for launcher discovery [Danny Lin]
 3c4e2e3 Specify we read and write launcher settings [Luca Stefani]
 3f77007 Add wallpaper default permissions [LuK1337]
-28175ec Add wallpaper privapp whitelist [Luca Stefani]\n
-\n* packages/apps/TvSettings\nbcae672b7 TvSettings: Trust [Timi Rautamäki]
+28175ec Add wallpaper privapp whitelist [Luca Stefani]
+
+* packages/apps/TvSettings
+bcae672b7 TvSettings: Trust [Timi Rautamäki]
 982237524 Add Lineage advanced reboot options [Aaron Kling]
 daf066146 Add rooted development option [Aaron Kling]
 aa267c2a0 TvSettings: update preference item corner radius [Timi Rautamäki]
@@ -897,9 +1031,13 @@ a3c71b1c4 TwoPanelSettings: improve category title text appearance [Timi Rautam�
 9e9945c65 Settings: Add intent to launch LineageOS platlogo upon multiple taps [Zhao Wei Liew]
 a6ae2d612 Add build date (ro.build.date from build.prop) to About screen. [dhacker29]
 42a8ea6ca One does not simply become a Developer [dhacker29]
-3c3b8f3f6 Add LineageOS version to the About screen [dhacker29]\n
-\n* packages/apps/WallpaperPicker2\n6914a2b WallpaperPicker2: Don't publish placeholder categories [Danny Lin]\n
-\n* packages/inputmethods/LatinIME\n5950b9f37 LatinIME: Properly refresh summary [Michael W]
+3c3b8f3f6 Add LineageOS version to the About screen [dhacker29]
+
+* packages/apps/WallpaperPicker2
+6914a2b WallpaperPicker2: Don't publish placeholder categories [Danny Lin]
+
+* packages/inputmethods/LatinIME
+5950b9f37 LatinIME: Properly refresh summary [Michael W]
 836263c61 LatinIME: Remove unused resources [Michael W]
 92e6d04ed LatinIME: Fix invisible icon [Michael W]
 927d234e4 Automatic translation import [Michael Bestas]
@@ -930,43 +1068,77 @@ e8bed96fd LatinIME: Update emojis [Joey Rizzoli]
 37d88fbd9 LatinIME: disable sound on keypress on all devices by default [Dan Pasanen]
 8f9243b80 LatinIME: Regenerate KeyboardTextsTable [Michael Bestas]
 334bc4623 LatinIME: support for incognito mode [Joey]
-7ec8dd1d4 Fix send button not being centered for non-standard densities. [Danny Baumann]\n
-\n* packages/modules/Connectivity\nede2264ed setUidsAllowedOnRestrictedNetworks: Modify UID enforcement to check app id [Oliver Scott]
+7ec8dd1d4 Fix send button not being centered for non-standard densities. [Danny Baumann]
+
+* packages/modules/Connectivity
+ede2264ed setUidsAllowedOnRestrictedNetworks: Modify UID enforcement to check app id [Oliver Scott]
 f41f6f56d Remove DUN requirement for tethering [Dave Daynard]
-8a19f06f8 Connectivity: Add capability to allow tethering to use VPN upstreams [Oliver Scott]\n
-\n* packages/modules/Wifi\n60d377f4f Wifi: Ingore miracast scan from connectivity manager [Xin Deng]\n
-\n* packages/modules/adb\n70709fa2 adb: Look for shell executable in alternate places [Tom Marshall]
+8a19f06f8 Connectivity: Add capability to allow tethering to use VPN upstreams [Oliver Scott]
+
+* packages/modules/Wifi
+60d377f4f Wifi: Ingore miracast scan from connectivity manager [Xin Deng]
+
+* packages/modules/adb
+70709fa2 adb: Look for shell executable in alternate places [Tom Marshall]
 3fbe9a51 adb_root: Move to system_ext [Alessandro Astone]
 5549be3c Squashed import of adb root patches [LuK1337]
-76fb5fab adb: Add ro.adb.secure.recovery handling [LuK1337]\n
-\n* packages/modules/common\n40c73c9 Make adbroot_aidl_interface-ndk_platform available for adbd [LuK1337]\n
-\n* packages/providers/BlockedNumberProvider\n2c66554 BlockedNumberProvider: adaptive icon [Asher Simonds]\n
-\n* packages/providers/BookmarkProvider\na319d9e BookmarkProvider: adaptive icon [Asher Simonds]\n
-\n* packages/providers/CalendarProvider\nb0f5ccc CalendarProvider: adaptive icon [Asher Simonds]\n
-\n* packages/providers/CallLogProvider\n9a73fe3 CallLogBackup: adaptive icon [Asher Simonds]\n
-\n* packages/providers/ContactsProvider\ncf591c87 ContactsProvider: Prevent device contact being deleted. [Toha]
-b5c14eff ContactsProvider: adaptive icon [Asher Simonds]\n
-\n* packages/providers/DownloadProvider\nca2f2762 Automatic translation import [Michael Bestas]
+76fb5fab adb: Add ro.adb.secure.recovery handling [LuK1337]
+
+* packages/modules/common
+40c73c9 Make adbroot_aidl_interface-ndk_platform available for adbd [LuK1337]
+
+* packages/providers/BlockedNumberProvider
+2c66554 BlockedNumberProvider: adaptive icon [Asher Simonds]
+
+* packages/providers/BookmarkProvider
+a319d9e BookmarkProvider: adaptive icon [Asher Simonds]
+
+* packages/providers/CalendarProvider
+b0f5ccc CalendarProvider: adaptive icon [Asher Simonds]
+
+* packages/providers/CallLogProvider
+9a73fe3 CallLogBackup: adaptive icon [Asher Simonds]
+
+* packages/providers/ContactsProvider
+cf591c87 ContactsProvider: Prevent device contact being deleted. [Toha]
+b5c14eff ContactsProvider: adaptive icon [Asher Simonds]
+
+* packages/providers/DownloadProvider
+ca2f2762 Automatic translation import [Michael Bestas]
 938cca3d DownloadProvider: Add support for manual pause/resume [Zhao Wei Liew]
-9d6d83e9 DownloadProvider: Display download speed in notification [Lasse Brudeskar Vikås]\n
-\n* packages/providers/MediaProvider\n0a5b28bb MediaProvider: Less spam [Michael W]
-e9d4a246 MediaProvider: adaptive icon [Asher Simonds]\n
-\n* packages/providers/TelephonyProvider\n5913c26 TelephonyProvider: add upgrade support from lineage-17.1 [Michael Bestas]
+9d6d83e9 DownloadProvider: Display download speed in notification [Lasse Brudeskar Vikås]
+
+* packages/providers/MediaProvider
+0a5b28bb MediaProvider: Less spam [Michael W]
+e9d4a246 MediaProvider: adaptive icon [Asher Simonds]
+
+* packages/providers/TelephonyProvider
+5913c26 TelephonyProvider: add upgrade support from lineage-17.1 [Michael Bestas]
 0709fdc TelephonyProvider: adaptive icon [Asher Simonds]
-89e3352 Fix MmsSmsDatabaseHelper onUpgrade always destroying the database [Michael Bestas]\n
-\n* packages/services/Mms\nbc22843 Automatic translation import [Michael Bestas]
+89e3352 Fix MmsSmsDatabaseHelper onUpgrade always destroying the database [Michael Bestas]
+
+* packages/services/Mms
+bc22843 Automatic translation import [Michael Bestas]
 b9f34f3 Mms: adaptive icon [Asher Simonds]
-70f63d9 Add app label [Michael Bestas]\n
-\n* packages/services/Telecomm\n916ed18a9 Telecomm: adaptive icon [Asher Simonds]
+70f63d9 Add app label [Michael Bestas]
+
+* packages/services/Telecomm
+916ed18a9 Telecomm: adaptive icon [Asher Simonds]
 f0bda9751 CallLog: Get rid of warning [Michael W]
 56871f54c Add back increasing ring feature (1/2). [Danny Baumann]
-136dbd297 Telecom: Add sensitive phone numbers hooks [Luca Stefani]\n
-\n* packages/services/Telephony\n104f56daa Telephony: use Build.VERSION.INCREMENTAL to check for system update [maxwen]
+136dbd297 Telecom: Add sensitive phone numbers hooks [Luca Stefani]
+
+* packages/services/Telephony
+104f56daa Telephony: use Build.VERSION.INCREMENTAL to check for system update [maxwen]
 b88884ce7 Telephony: Mark enhanced_4g_lte_mode_title_variant as untranslatable [Michael Bestas]
 09db84702 Telephony: adaptive icon [Asher Simonds]
-a16a13f54 Removing dead code from Telephony which uses wakelock. [Tyler Gunn]\n
-\n* packages/wallpapers/LivePicker\nef6989e LivePicker: adaptive icon [Joey]\n
-\n* system/bt\nfb8f860cd Update Bluetooth permission [pramod kotreshappa]
+a16a13f54 Removing dead code from Telephony which uses wakelock. [Tyler Gunn]
+
+* packages/wallpapers/LivePicker
+ef6989e LivePicker: adaptive icon [Joey]
+
+* system/bt
+fb8f860cd Update Bluetooth permission [pramod kotreshappa]
 d60c1a1e5 BT: AIDL entry for Active Profile Control APIs [Gurpreet Ghai]
 62e701d26 Update Bluetooth permissions for VCP APIS (2/3) [zhenchao]
 e4cda98fe VCP: AIDL changes for VCP Profile [zhenchao]
@@ -986,8 +1158,10 @@ dc4dab979 DeviceGroup: Add new system API's to support Group UI. [Sravan voleti]
 4a5a950ad BT: API to update quiet mode status in Adapter service [3/3] [M Safoorah Banu]
 ef3c0a46f BT: Adding APTX-Adaptive codec to BT HAL [Gurpreet Ghai]
 7679b3e62 Add BLE Scan Phy parameter to scan API [Subramanian Srinivasan]
-88360acfc Bluetooth: Add SDK API support for TWS feature (1) [Ramesh Bandari]\n
-\n* system/core\n3c200d1bf init: Skip interface duplicates if service is an override [Alexander Koskovich]
+88360acfc Bluetooth: Add SDK API support for TWS feature (1) [Ramesh Bandari]
+
+* system/core
+3c200d1bf init: Skip interface duplicates if service is an override [Alexander Koskovich]
 5cbcd4cec llkd: Include llkd-debuggable.rc in eng builds only [dianlujitao]
 07adb89d0 fs_mgr: Allow remounts with Magisk installed [Bruno Martins]
 33d5bec34 debuggerd: add Lineage version to tombstones [Scott Mertz]
@@ -1002,35 +1176,54 @@ bd0ff8674 fs_mgr: mount: don't set the block device as ro for recovery [Alessand
 662be092b Add exfat utilities for mkfs and fsck [Daniel Rosenberg]
 bdf16d01d init: don't skip starting a service with no domain if permissive [William Bellavance]
 99ef051a7 init: Add vendor-specific initialization hooks. [David Ng]
-c41189469 remount: Fix failure for system-as-root [Leo Yan]\n
-\n* system/extras\na728f391 bootsignature: includes dt image size for signed boot image [Ankit Gupta]
-4398d2db Make sure header version is less than or equal to 4 [Jarl-Penguin]\n
-\n* system/libziparchive\ne911277 ziptool: restore unzip for recovery [Alessandro Astone]\n
-\n* system/logging\nbca97461 liblog: Always report as debuggable when building userdebug/eng [Bruno Martins]\n
-\n* system/media\nce8ec8bf media: update path for vendor specific config files [Banajit Goswami]\n
-\n* system/sepolicy\n9b39c3805 Grant permission for mediatranscoding hal_allocator for GSI image [Kilyoung Shin]
+c41189469 remount: Fix failure for system-as-root [Leo Yan]
+
+* system/extras
+a728f391 bootsignature: includes dt image size for signed boot image [Ankit Gupta]
+4398d2db Make sure header version is less than or equal to 4 [Jarl-Penguin]
+
+* system/libziparchive
+e911277 ziptool: restore unzip for recovery [Alessandro Astone]
+
+* system/logging
+bca97461 liblog: Always report as debuggable when building userdebug/eng [Bruno Martins]
+
+* system/media
+ce8ec8bf media: update path for vendor specific config files [Banajit Goswami]
+
+* system/sepolicy
+9b39c3805 Grant permission for mediatranscoding hal_allocator for GSI image [Kilyoung Shin]
 2d458cb40 sepolicy: Allow recovery to alter / [Gabriele M]
-03098777e sepolicy: whitelist recovery from node creation neverallow [Alessandro Astone]\n
-\n* system/tools/mkbootimg\ne8b1035 mkbootimg: add support for --dt [M1cha]\n
-\n* system/update_engine\nacecab11 update_engine: Remove any (stale) read-only flag before r/w mount of system [Christian Hoffmann]
+03098777e sepolicy: whitelist recovery from node creation neverallow [Alessandro Astone]
+
+* system/tools/mkbootimg
+e8b1035 mkbootimg: add support for --dt [M1cha]
+
+* system/update_engine
+acecab11 update_engine: Remove any (stale) read-only flag before r/w mount of system [Christian Hoffmann]
 a5a18ac5 Don't verify payload signatures in recovery [Alessandro Astone]
 5919288c update_engine: Run backuptool only in debuggable builds [Luca Stefani]
 ee10c414 update_engine: Transition to backuptool domain [Luca Stefani]
 7470900e update_engine: Run backuptool script before normal postinstall script [Dan Pasanen]
 c0ff77c4 update_engine: Add performance mode [Gabriele M]
-cee1119e update_engine: put update_engine into background sched group [Wei Wang]\n
-\n* vendor/lineage\n4fef4114 lineage: overlay: Move Trebuchet overlay to seperate RRO package. [Alexander Koskovich]
+cee1119e update_engine: put update_engine into background sched group [Wei Wang]
+
+* vendor/lineage
+4fef4114 lineage: overlay: Move Trebuchet overlay to seperate RRO package. [Alexander Koskovich]
 c4535991 lineage: overlay: Exclude backup transport overlays from RRO. [Alexander Koskovich]
 7561a9b7 Revert "lineage: Exclude all lineage overlays from RRO" [Alexander Koskovich]
 e15a6363 config: Include androidx.window.extensions in tablet builds [Tim Zimmermann]
 d0b3a4af lineage: products: Add ATV emulator targets [Nolen Johnson]
-2cf8a6ad overlay: core: Remove accent color overrides [Danny Lin]\n
-\n* vendor/qcom/opensource/commonsys/system/bt\n7ea87328a BLE Scanning: Pass original address back to GattService#onScanResult [Martin Brabham]\n
+2cf8a6ad overlay: core: Remove accent color overrides [Danny Lin]
+
+* vendor/qcom/opensource/commonsys/system/bt
+7ea87328a BLE Scanning: Pass original address back to GattService#onScanResult [Martin Brabham]
 
 ====================
      2022-03-12    
 ====================
-\n* frameworks/base\n79db50aaf30b SystemUI: Bring back good ol' circle battery style [Luca Stefani]
+* frameworks/base
+79db50aaf30b SystemUI: Bring back good ol' circle battery style [Luca Stefani]
 1824ff773ae9 Keyguard: Add option to scramble pin layout when unlocking (2/2). [Adnan]
 639443f6db76 SystemUI: Use AVCProfileMain for screen recorder [Arne Coucheron]
 faf58cf93575 Add nvidia profile manager [Aaron Kling]
@@ -1229,16 +1422,25 @@ f9931ce0e93f trust: Add hooks for USB HAL 1.3 [Luca Stefani]
 6e9c4bb1f823 SystemUI: Dismiss keyguard on boot if disabled by current profile [Gabriele M]
 142db3955940 keyguard: Do not trigger a wake up when hiding lockscreen [Arne Coucheron]
 c0eaccf409b7 Squash of SystemUI: Show bluetooth battery level [LuK1337]
-7f02994b9f27 Forward port CM Screen Security settings (1/2) [Michael Bestas]\n
-\n* vendor/lineage\n157a2a71 config: Create makefiles for tablets with telephony support [Bruno Martins]\n
-\n* vendor/qcom/opensource/commonsys/packages/apps/Bluetooth\ndf492c4dd BLE Scanning: Receive the original address to onScanResults [Martin Brabham]\n
+7f02994b9f27 Forward port CM Screen Security settings (1/2) [Michael Bestas]
+
+* vendor/lineage
+157a2a71 config: Create makefiles for tablets with telephony support [Bruno Martins]
+
+* vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
+df492c4dd BLE Scanning: Receive the original address to onScanResults [Martin Brabham]
 
 ====================
      2022-03-11    
 ====================
-\n* android\n4bb4914 Track our fork of hardware/interfaces [Bruno Martins]\n
-\n* hardware/qcom-caf/sdm845/display\n7b1c3cc76 sdm: mark FOD pressed layer by setting a bit on ZPOS [Demon000]\n
-\n* kernel/xiaomi/sm6150\n2414f45b93e8 Merge 4.14.271 into android-4.14-stable [Greg Kroah-Hartman]
+* android
+4bb4914 Track our fork of hardware/interfaces [Bruno Martins]
+
+* hardware/qcom-caf/sdm845/display
+7b1c3cc76 sdm: mark FOD pressed layer by setting a bit on ZPOS [Demon000]
+
+* kernel/xiaomi/sm6150
+2414f45b93e8 Merge 4.14.271 into android-4.14-stable [Greg Kroah-Hartman]
 af48f51cb593 Linux 4.14.271 [Greg Kroah-Hartman]
 1b9f4115738a xen/netfront: react properly to failing gnttab_end_foreign_access_ref() [Juergen Gross]
 94b8ccbcc063 xen/gnttab: fix gnttab_end_foreign_access() without page specified [Juergen Gross]
@@ -1271,15 +1473,20 @@ d2109c347ec2 Documentation/hw-vuln: Update spectre doc [Peter Zijlstra]
 35c13d13becb x86/speculation: Rename RETPOLINE_AMD to RETPOLINE_LFENCE [Peter Zijlstra (Intel)]
 3862830dd5b8 x86,bugs: Unconditionally allow spectre_v2=retpoline,amd [Peter Zijlstra]
 bd63aa4ff3c9 x86/speculation: Merge one test in spectre_v2_user_select_mitigation() [Borislav Petkov]
-e1a777beeb7d Merge 4.14.270 into android-4.14-stable [Greg Kroah-Hartman]\n
-\n* packages/apps/SetupWizard\n9709678 SUW: Drop SIM card tray illustration hint all together [RKBDI]\n
-\n* vendor/lineage\na6fd6339 lineage: overlay: Set biometrics colors to accent. [Alexander Koskovich]
-4d4e39a8 overlay: Default to night mode [Timi Rautamäki]\n
+e1a777beeb7d Merge 4.14.270 into android-4.14-stable [Greg Kroah-Hartman]
+
+* packages/apps/SetupWizard
+9709678 SUW: Drop SIM card tray illustration hint all together [RKBDI]
+
+* vendor/lineage
+a6fd6339 lineage: overlay: Set biometrics colors to accent. [Alexander Koskovich]
+4d4e39a8 overlay: Default to night mode [Timi Rautamäki]
 
 ====================
      2022-03-10    
 ====================
-\n* frameworks/base\na8d09784fc18 Fallback to global actions if assistant is not available [LuK1337]
+* frameworks/base
+a8d09784fc18 Fallback to global actions if assistant is not available [LuK1337]
 8f8ea8fa767a Screenshot: Append app name to filename [ezio84]
 3ad12554aaef SystemUI: Adapt screenshot sound to ringer modes [Ashwin R C]
 182b1e814336 Statusbar: show vibration icon in collapsed statusbar [Timi Rautamäki]
@@ -1306,8 +1513,10 @@ f7f99a6b1f4d services: Kick off to LineageSystemServer for external service init
 2202f50e9761 services: Include org.lineageos.platform.internal [Rashed Abdel-Tawab]
 85b85e9c3ca7 AssetManager: Mark lineage res as system [Luca Stefani]
 ddae65ff379c Add lineage sdk resource APK to Zygote FD whitelist [Steve Kondik]
-f6c046ba0fee androidfw: Squash of declare and load lineage sdk resource package w/ id [Adnan Begovic]\n
-\n* packages/apps/Trebuchet\nde6427df67 QuickStep: Google Feed integration [Edward Cross]
+f6c046ba0fee androidfw: Squash of declare and load lineage sdk resource package w/ id [Adnan Begovic]
+
+* packages/apps/Trebuchet
+de6427df67 QuickStep: Google Feed integration [Edward Cross]
 603e67e50b Launcher3: Reduce app label text size [Danny Lin]
 42ec830aff Update search icon to match Settings [Michael Bestas]
 428f7faaee Fix search bar UI in All Apps [Michael Bestas]
@@ -1334,6 +1543,8 @@ ac25727152 Trebuchet: Add 5x6, 5x7 and 6x6 default workspaces [dwardo]
 5a0d5e1fd6 Trebuchet: Update default workspace [Bruno Martins]
 47730f412c Trebuchet: adaptive icon [Asher Simonds]
 5732ce5ecf Change app name to Trebuchet [Joey]
-b499a43806 Trebuchet: update build configs [Joey]\n
-\n* vendor/lineage\n6d88852d lineage: config: Make LLVM kernel compile the default [Alexander Koskovich]\n
+b499a43806 Trebuchet: update build configs [Joey]
+
+* vendor/lineage
+6d88852d lineage: config: Make LLVM kernel compile the default [Alexander Koskovich]
 
