@@ -1,0 +1,81 @@
+====================
+     2022-04-12    
+====================
+* device/xiaomi/renoir
+1d05d53 renoir: Import decommonized batterysecret [Arian]
+a9022ba renoir: Set default Settings.Global.DEVICE_NAME according to MIUI [LuK1337]
+6415a39 renoir: Change model to M2101K9G [Arian]
+4397902 renoir: Add 32 bit variant of libcamxexternalformatutils [Arian]
+3601b9b renoir: Sort proprietary-files [Arian]
+
+* device/xiaomi/sm8350-common
+ad4dd5526b sm8350-common: Decommonize batterysecret [Arian]
+
+* kernel/xiaomi/sm8350
+b58075c362949 supply: qti_battery_charger: Squashed revert of xiaomi property addition [Arian]
+d3620967a7e5d supply: qti_battery_charger: Add sport mode [Arian]
+2d77cbafb4e91 supply: qti_battery_charger: Add shipmode count reset [Arian]
+b25a2a06aaa72 supply: qti_battery_charger: Add smart battery property [Arian]
+444f70a391cec supply: supply_qti_charger: Add uvdm reverse authentication [Arian]
+7ef7d462d95a5 supply: qti_battery_charger: Add wireless fw_state and tx_speed [Arian]
+9d5662bf2a5cd supply: qti_battery_charger: Add bt_transfer [Arian]
+119c97079ffdc power: Import xiaomi changes [Arian]
+6390791b3d4b6 Revert "power: Import changes from star-r-oss" [Arian]
+b51d8169a9423 Revert "power: Update changes from odin-r-oss" [Arian]
+
+* vendor/xiaomi
+bb9c1d92 renoir: Update as of device/xiaomi/renoir@1d05d53b0aadb5b2a4b615ce14df79d289217b3c [Arian]
+f9560451 sm8350-common: Update as of device/xiaomi/sm8350-common@ad4dd5526b10ee77ae2e4e0d30c687b848050ca5 [Arian]
+
+====================
+     2022-04-11    
+====================
+* lineage/mirror
+cf86bcc Updated to 11-Apr-2022 13:11 UTC [Kevin F. Haggerty]
+
+====================
+     2022-04-10    
+====================
+* bootable/recovery
+7ef2e392 volume_manager: Move bind/mount failure from ERROR to WARNING [Nolen Johnson]
+
+* lineage/wiki
+95d566ad wiki: Don't imply that LineageRecovery is optional [Michael W]
+
+====================
+     2022-04-09    
+====================
+* build/make
+3c861ee59e Bump Security String to 2022-04-05 [Kevin F. Haggerty]
+
+====================
+     2022-04-08    
+====================
+* lineage/wiki
+85d8594e devices: FP3: Update maintainers [Nolen Johnson]
+
+====================
+     2022-04-07    
+====================
+* lineage/mirror
+2893d24 Update lineage-minimal to 06-Apr-2022 23:28 UTC [Chirayu Desai]
+eee0e74 Update lineage-minimal to 06-Apr-2022 20:24 UTC [Chirayu Desai]
+
+====================
+     2022-04-06    
+====================
+* device/xiaomi/msm8998-common
+a70ed146 msm8998-common: audio: Set proper interface & ACDB IDs for TMUS [LuK1337]
+
+* lineage/mirror
+c03782d Updated aosp-minimal to 06-Apr-2022 12:01 UTC [Tim Schumacher]
+
+* lineage/scripts
+e1afbf3 pixel/firmware: Use prebuilts/extract-tools/qc_image_unpacker [Chirayu Desai]
+ad9967b pixel/get-new-device-vars: 12L is 12.1 [Chirayu Desai]
+9bd0e2c vars: Add a new pixels [Chirayu Desai]
+5364d09 pixel/get-new-device-vars: Handle failure gracefully [Chirayu Desai]
+
+* packages/providers/MediaProvider
+aec58127 Merge tag 'android-security-11.0.0_r54' into staging/lineage-18.1_merge_android-security-11.0.0_r54 [Kevin F. Haggerty]
+
