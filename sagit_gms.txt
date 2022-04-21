@@ -1,50 +1,81 @@
 ====================
-     2022-04-20    
+     2022-04-21    
 ====================
 * device/xiaomi/msm8998-common
-e644353fd msm8998-common: Add more packages to vendor [Arian]
-cb1c3be8a msm8998-common: Patch libminikin-v28.so to load libicuuc-v28.so [Arian]
-d8ba2c205 msm8998-common: sepolicy: Disable exported_radio_prop labels [Arian]
-8ef9aeb09 msm8998-common: vndk: Update vndk-ext-libs [sbwml]
-35b9d1892 msm8998-common: vndk: disable ELF check [sbwml]
-171d58e2e msm8998-common: vndk: Extend vndk-ext for android-10.0.0_r18 [Arian]
-7d3fae614 msm8998-common: vndk: Enable runtime isolation [Arian]
-aabd8f25b msm8998-common: sepolicy: Allow hal_camera_default to read bootanim_system_prop [Nolen Johnson]
-2c4d1ace8 msm8998-common: Move dpm system property to system_prop.mk [Arian]
-58a5d96e2 msm8998-common: Move DPM property to system [Nolen Johnson]
-bce6b2992 msm8998-common: Drop support for Snapdragon Camera. [Alexander Koskovich]
-7f0796b74 msm8998-common: Remove CLANG compile flag [Georg Veichtlbauer]
-419bfa283 msm8998-common: Uprev manifests/FCM level [Nolen Johnson]
-be9e75462 msm8998-common: Move libgui_shim to ims dir [Arian]
-add96f9ba msm8998-common: libshims: Add shim for camera blobs [Erfan Abdi]
-368cefeb8 msm8998-common: Unbreak peripheral manager [Bruno Martins]
-1ad703cc7 msm8998-common: Remove leading dash from remaining apks [Arian]
-659ea66d4 msm8998-common: Automatically add apk/jar/vintf fragments to PRODUCT_PACKAGES [Michael Bestas]
-3617160ab msm8998-common: Copy cgroups and task_profiles directly from system/core [Bruno Martins]
-9535aee5c msm8998-common: Ship cgroups.json and task_profiles.json in vendor [Chenyang Zhong]
-857f52539 msm8998-common: Modify Vulkan and OpenGL version to 2020-03-01 [linjoey]
-785c32477 msm8998-common: Add OpenGL ES and update Vulkan dEQP feature flags [Alastair Donaldson]
-fe0ac6df5 msm8998-common: Set manufacturer and soc properties [sudharani]
-b950904dd msm8998-common: Remove odex/oat files from pinner list [Nicolas Geoffray]
-d2f83c5f4 msm8998-common: Update SurfaceFlinger pin on all targets [Kevin Jeon]
-762ecc3d7 msm8998-common: Drop unnecessary HIDL libs from vendor [Arian]
+9ffec9ff0 msm8998-common: doze: Treat ProximitySensor values as int [Arian]
+b05eb8777 msm8998-common: Patch camera HAL for Q bringup [Bruno Martins]
+536ddae2d Revert "msm8998-common: sepolicy: Allow hal_camera_default to read bootanim_system_prop" [Arian]
+00a18f30d msm8998-common: sepolicy: Add contexts for exported telephony props [Inseob Kim]
+4df875d4f msm8998-common: properties: Use threaded GLES render engine [Kyle Harrison]
+e8884c75d msm8998-common: properties: Disable SDM Scalar [clarencelol]
+d3de143f2 msm8998-common: properties: Remove obsolete debug.sf.disable_backpressure [SamarV-121]
+e116eb17b msm8998-common: properties: don't latch unsignal buffers [Midas Chien]
+881afa9a8 msm8998-common: Remove activity_recognition libs [Jeferson]
+6c8384e15 msm8998-common: Drop QTI datastatusnotification [daniml3]
+109461f5d msm8998-common: qcril: fix MT SMS sent during power off [Tim Lin]
+c2ba7f614 mms8998-common: Squashed removal of TetheringOverlay [Nolen Johnson]
+19f7c0827 msm8998-common: Patch libminikin-v28.so to load libicuuc-v28.so [Arian]
+93e947005 msm8998-common: vndk: Enable runtime isolation [Arian]
+cc5ac6c3c msm8998-common: sepolicy: Allow hal_camera_default to read bootanim_system_prop [Nolen Johnson]
+88f5ff5ee msm8998-common: Move dpm system property to system_prop.mk [Arian]
+75de8ce1e msm8998-common: Move DPM property to system [Nolen Johnson]
+ffb828a5c msm8998-common: Drop support for Snapdragon Camera [Alexander Koskovich]
+f59d93da2 msm8998-common: Remove CLANG compile flag [Georg Veichtlbauer]
+1fe3f1977 msm8998-common: Uprev manifests/FCM level [Nolen Johnson]
+c34793677 msm8998-common: Move libui_shim to system_ext and align with libgui_shim [Arian]
+26390d7a8 msm8998-common: Move libgui_shim to ims dir [Arian]
+24c4058b4 msm8998-common: libshims: Add shim for camera blobs [Erfan Abdi]
+884c7369f msm8998-common: Unbreak peripheral manager [Bruno Martins]
+564dcb323 msm8998-common: Remove leading dash from remaining apks [Arian]
+31ef32e9c msm8998-common: Automatically add apk/jar/vintf fragments to PRODUCT_PACKAGES [Michael Bestas]
+90dfa12a7 msm8998-common: Copy cgroups and task_profiles directly from system/core [Bruno Martins]
+4c96077e6 msm8998-common: Ship cgroups.json and task_profiles.json in vendor [Chenyang Zhong]
+15de6c8c0 msm8998-common: Modify Vulkan and OpenGL version to 2020-03-01 [linjoey]
+1ff94b0af msm8998-common: Add OpenGL ES and update Vulkan dEQP feature flags [Alastair Donaldson]
+1173784bf msm8998-common: Set manufacturer and soc properties [sudharani]
+d2d152dd0 msm8998-common: Remove odex/oat files from pinner list [Nicolas Geoffray]
+c126a75e8 msm8998-common: Update SurfaceFlinger pin on all targets [Kevin Jeon]
+48fe62c29 msm8998-common: Drop unnecessary HIDL libs from vendor [Arian]
+
+* kernel/xiaomi/msm8998
+f4d429ae82f1 {chiron,sagit}_defconfig: enable CONFIG_CRYPTO_SHA512 and savedefconfig [Lorenzo Colitti]
+7384a7ddfc28 {chiron,sagit}_defconfig: Enable eBPF [ivanmeler]
+ffe3466ae84d Merge remote-tracking branch 'msm8998/lineage-19.1' into lineage-19.1 [Michael Bestas]
+56500d8b2ae3 Merge remote-tracking branch 'msm8998/lineage-18.1' into lineage-18.1 [Michael Bestas]
+
+* lineage/mirror
+ed669e6 Updated aosp-minimal to 21-Apr-2022 12:01 UTC [Tim Schumacher]
+
+* vendor/xiaomi
+7afd7332 msm8998-common: Patch camera HAL for Q bringup [Bruno Martins]
+9a9b425e msm8998-common: Remove activity_recognition libs [Jeferson]
+714e3bf9 msm8998-common: Drop QTI datastatusnotification [daniml3]
+93a9a9f0 msm8998-common: Patch libminikin-v28.so to load libicuuc-v28.so [Arian]
+
+====================
+     2022-04-20    
+====================
+* device/xiaomi/davinci
+91bd98c davinci: overlay: Remove obsolete fps location config [Alexander Koskovich]
+
+* device/xiaomi/msm8998-common
 759d54fe0 msm8998-common: Build needed HIDL libs into vendor [LuK1337]
 6ae51a232 msm8998-common: Disable APEX compression [LuK1337]
 5dbc4f4c5 msm8998-common: clearkey plugin to drm HAL v1.4 [Edwin Wong]
 8ff1b0726 msm8998-common: sepolicy: Attach vendor_property_type to properties [Inseob Kim]
 aeb42a045 msm8998-common: doze: Adapt to S style [TheScarastic]
-27be3c520 msm8998-common: Allow ELF prebuilts in PRODUCT_COPY_FILES. [Roger Ellis]
-2b899ed8f msm8998-common: RIP com.dsi.ant.antradio_library [LuK1337]
-f20c1ce6a msm8998-common: Use PRODUCT_*_SEPOLICY_DIRS to build product sepolicy [Tri Vo]
+
+* device/xiaomi/sagit
+aa8b06b5 sagit: overlay: Set physical power button and fps location [Bruno Martins]
+dfb93c6c sagit: overlay: Remove obsolete fps location config [Alexander Koskovich]
 
 * device/xiaomi/sm6150-common
 ef38d89 sm6150-common: Remove odex/oat files from pinner list [Nicolas Geoffray]
 cb96f74 sm6150-common: Update SurfaceFlinger pin on all targets [Kevin Jeon]
 b01b18c sm6150-common: Drop renderscript pin [Arian]
 
-* kernel/xiaomi/msm8998
-f403c028454c sagit_defconfig: Enable eBPF configs [Arian]
-bce59fed32c5 Merge branch 'staging/lineage-19.1' of github.com:LineageOS/android_kernel_qcom_msm8998 into HEAD [Arian]
+* packages/apps/Recorder
+f90745b Recorder: do not set top system inset to list padding [2bllw8]
 
 * tools/buildscript
 cf886a3 Pass gms argument from upload to release [Arian]
@@ -56,10 +87,9 @@ a9afcab Update PixelSetupWizardStringsOverlay after extracting proprietary files
 1719e32 Update from oriole SP2A.220405.004 [Arian]
 
 * vendor/xiaomi
-e8425c6bf msm8998-common: Patch libminikin-v28.so to load libicuuc-v28.so [Arian]
-c5f4f3d41 msm8998-common: libshims: Add shim for camera blobs [Erfan Abdi]
-cc330411f msm8998-common: Unbreak peripheral manager [Bruno Martins]
-7ce7488ae msm8998-common: Automatically add apk/jar/vintf fragments to PRODUCT_PACKAGES [Michael Bestas]
+c5f4f3d4 msm8998-common: libshims: Add shim for camera blobs [Erfan Abdi]
+cc330411 msm8998-common: Unbreak peripheral manager [Bruno Martins]
+7ce7488a msm8998-common: Automatically add apk/jar/vintf fragments to PRODUCT_PACKAGES [Michael Bestas]
 
 ====================
      2022-04-19    
@@ -87,11 +117,16 @@ a870b256 sepolicy: Add rw permission for i2c touch sys node [Amit P Choudhari]
 b59bea96 fixup! sepolicy: Remove rules for non legacy platforms [Michael Bestas]
 4e5afc67 fixup! qcom: Label vendor files with (vendor|system/vendor) instead of vendor [Michael Bestas]
 
-* device/xiaomi/sm8450-common
-e815282 sm8450-common: Intial configuration [Arian]
+* device/xiaomi/msm8998-common
+27be3c520 msm8998-common: Allow ELF prebuilts in PRODUCT_COPY_FILES. [Roger Ellis]
+2b899ed8f msm8998-common: RIP com.dsi.ant.antradio_library [LuK1337]
+f20c1ce6a msm8998-common: Use PRODUCT_*_SEPOLICY_DIRS to build product sepolicy [Tri Vo]
 
 * external/chromium-webview
 0f78a8f Update arm{,64} and x86 Chromium Webview to 100.0.4896.127 [Kevin F. Haggerty]
+
+* frameworks/base
+af01fc24bb52 SystemUI: Split status bar icon controls for vibrate and mute [althafvly]
 
 * kernel/xiaomi/msm8998
 aaf94607d52f bpf: fix missing header inclusion [Zi Shen Lim]
@@ -543,17 +578,80 @@ af30bb72b074 Revert "bpf/verifier: Pass instruction index to check_mem_access() 
 a2b3af0ff2eb Revert "bpf: Prevent memory disambiguation attack" [Anay Wadhera]
 b5829ffaf76f Revert "bpf: silence warning messages in core" [Anay Wadhera]
 
+* lineage/scripts
+5cc4c2d build-webview: Update default webview to 100.0.4896.127 [Kevin F. Haggerty]
+e2c47f1 pixel: Run regen-vendor before extracting [Chirayu Desai]
+
+* packages/apps/Recorder
+abba63c Material you? [luca020400]
+
+* vendor/firmware
+8653e9f mata: Import from lineage-18.1 [Nolen Johnson]
+6bc6989 cheryl: Import from lineage-18.1 [Nolen Johnson]
+3084485 aura: Import from lineage-18.1 [Nolen Johnson]
+ef02c4a PL2: Import from lineage-18.1 [Nolen Johnson]
+
 ====================
      2022-04-18    
 ====================
+* device/lineage/sepolicy
+2819ec7 atv: Update mediashell_app policy [Nolen Johnson]
+
+* lineage/mirror
+be43ceb The full quail experience [Chirayu Desai]
+f5fa0f0 Updated to 17-Apr-2022 23:03 UTC [Kevin F. Haggerty]
+
+* lineage/scripts
+a8b11ec build-webview: Only try to am files with a .patch extension [Kevin F. Haggerty]
+
+* lineage/wiki
+5ddf403a wiki: Fix steps numbering and indentations in heimdall template [razorloves]
+
+* packages/apps/DeskClock
+fa6047db2 DeskClock: Remove compatibility to old APIs [Michael W]
+23d7064d1 DeskClock: Material Me? No YOU! [Michael W]
+a997c68c8 DeskClock: Remove legacy support [Michael W]
+fa5bf24dd DeskClock: Fix left button display [Michael W]
+8ac239324 DeskClock: Add FLAG_IMMUTABLE [Michael W]
+
+* packages/apps/Recorder
+5f91a27 Improve high quality recorder [luca020400]
+a9c599f Fix amplitude in high quality recorder [luca020400]
+5ab9683 Fix high quality recorder [luca020400]
+540b471 Recorder: material you colors [2bllw8]
+90ac7c1 Recorder: save in Music directory on older devices [2bllw8]
+ed6f957 Recorder: play/pause animation for pause/resume button [2bllw8]
+a69487e Recorder: set appropriate notification title [2bllw8]
+f57c146 Recorder: move lastItemUri preference methods to PreferencesManager [2bllw8]
+2433725 Recorder: improve file name selection logic [2bllw8]
+335c199 Recorder: add recording elapsed time below the title [2bllw8]
+0b5c423 Recorder: move preferences management to its own class [2bllw8]
+fac9475 Recorder: refactor SoundRecorderService and status management [2bllw8]
+
+* packages/inputmethods/LatinIME
+37de94c8c LatinIME: Update emojis [George Zacharia]
+c879b4dcf LatinIME: update follow system theme label [Timi Rautamäki]
+
+* vendor/firmware
+e8f33f2 exynos9610: Update splash screens to correct ones [Nolen Johnson]
+
 * vendor/lineage
 8f67d055 Remove libbfqio [Han Wang]
-9c4fd99f config: Disable remote keyguard animation until it's fixed [LuK1337]
 
 ====================
      2022-04-17    
 ====================
+* lineage/hudson
+97bf93e Update Experimental targets [Nolen Johnson]
+
+* lineage/mirror
+7775092 Updated to 17-Apr-2022 14:31 UTC [Kevin F. Haggerty]
+
+* system/core
+cecb11d0b fs_mgr: Don't assume partitions replaced by DSU are logical already [Tim Zimmermann]
+
 * vendor/lineage
+9c4fd99f config: Disable remote keyguard animation until it's fixed [LuK1337]
 6d0a45fb Update default wallpaper [Nolen Johnson]
 
 ====================
@@ -565,12 +663,20 @@ cd2d068c overlays: Use rounded corners in SystemUI [Danny Lin]
 ====================
      2022-04-15    
 ====================
+* lineage/mirror
+c80a30f scripts: Re-format [Chirayu Desai]
+
+* packages/apps/Recorder
+e11902b Recorder: move permissions management code to its own class [2bllw8]
+4098399 Recorder: remove unused action from manifest [2bllw8]
+5b02970 Recorder: remove redundant activity label [2bllw8]
+322d6a2 Recorder: save base WAV header in const variable [2bllw8]
+a5875c0 Recorder: use java.nio.Path instead of java.io.File [2bllw8]
+3f91bb3 Recorder: use DateUtils for elapsed time string representation [2bllw8]
+4134d97 Recorder: use java 8 time instead of Date [2bllw8]
+a8c6cb1 Recorder: update constraint layout library [2bllw8]
+9ff9505 Recorder: Update android gradle plugin [2bllw8]
+
 * vendor/lineage
 03503fee qcom: Drop unused media flags for UM 5.4 family [Arian]
-
-====================
-     2022-04-14    
-====================
-* device/lineage/atv
-c9eca84 TVLauncherNoGMS: Allow launcher to run with gms installed [Aaron Kling]
 
