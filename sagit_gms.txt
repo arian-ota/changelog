@@ -20,7 +20,20 @@ c2ba7f614 mms8998-common: Squashed removal of TetheringOverlay [Nolen Johnson]
 * packages/apps/LineageParts
 0700955 LineageParts: switch to 3-button navigation when disabling navbar [Timi Rautamäki]
 
+* system/core
+a8e1e24fa Add wrapped key support [dianlujitao]
+
+* system/vold
+1a82fea Revert "system: vold: Upgrade the FBE key" [Arian]
+bb726f0 vold: Bring in more wrapped key changes [Pig]
+1aacace system: vold: Upgrade the FBE key [Neeraj Soni]
+8cb2506 vold: Enable legacy support for wrapped key [Neeraj Soni]
+de9cb35 system: vold: Use wrapped key for metadata encryption [Neeraj Soni]
+
 * tools/buildscript
+2fc5479 Drop sourceforge [Arian]
+3fc29f5 drop set -e [Arian]
+43271b8 Move to github releases [Arian]
 646be21 Exit if a command fails [Arian]
 dc2c278 rename upload to upload_sourceforge [Arian]
 7cd4dda simplify lineage prefixed variable names [Arian]
@@ -69,11 +82,6 @@ ed669e6 Updated aosp-minimal to 21-Apr-2022 12:01 UTC [Tim Schumacher]
 * tools/buildscript
 cf886a3 Pass gms argument from upload to release [Arian]
 
-* vendor/gms
-a084fce tools: Use double brackets [Arian]
-288151b update_PixelSetupWizardStringsOverlay: Dynamically get the strings to replace [Arian]
-a9afcab Update PixelSetupWizardStringsOverlay after extracting proprietary files [Arian]
-
 * vendor/xiaomi
 7afd7332 msm8998-common: Patch camera HAL for Q bringup [Bruno Martins]
 9a9b425e msm8998-common: Remove activity_recognition libs [Jeferson]
@@ -98,18 +106,11 @@ ef38d89 sm6150-common: Remove odex/oat files from pinner list [Nicolas Geoffray]
 cb96f74 sm6150-common: Update SurfaceFlinger pin on all targets [Kevin Jeon]
 b01b18c sm6150-common: Drop renderscript pin [Arian]
 
-* external/chromium-webview
-0f78a8f Update arm{,64} and x86 Chromium Webview to 100.0.4896.127 [Kevin F. Haggerty]
-
 * frameworks/base
 af01fc24bb52 SystemUI: Split status bar icon controls for vibrate and mute [althafvly]
 
-* lineage/scripts
-5cc4c2d build-webview: Update default webview to 100.0.4896.127 [Kevin F. Haggerty]
-
 * packages/apps/Recorder
 f90745b Recorder: do not set top system inset to list padding [2bllw8]
-abba63c Material you? [luca020400]
 
 * vendor/firmware
 8653e9f mata: Import from lineage-18.1 [Nolen Johnson]
@@ -118,6 +119,9 @@ abba63c Material you? [luca020400]
 ef02c4a PL2: Import from lineage-18.1 [Nolen Johnson]
 
 * vendor/gms
+a084fce tools: Use double brackets [Arian]
+288151b update_PixelSetupWizardStringsOverlay: Dynamically get the strings to replace [Arian]
+a9afcab Update PixelSetupWizardStringsOverlay after extracting proprietary files [Arian]
 1719e32 Update from oriole SP2A.220405.004 [Arian]
 
 * vendor/xiaomi
@@ -150,6 +154,9 @@ a870b256 sepolicy: Add rw permission for i2c touch sys node [Amit P Choudhari]
 5f259f40 sepolicy: Switch to BOARD_VENDOR_SEPOLICY_DIRS [Aayush Gupta]
 b59bea96 fixup! sepolicy: Remove rules for non legacy platforms [Michael Bestas]
 4e5afc67 fixup! qcom: Label vendor files with (vendor|system/vendor) instead of vendor [Michael Bestas]
+
+* external/chromium-webview
+0f78a8f Update arm{,64} and x86 Chromium Webview to 100.0.4896.127 [Kevin F. Haggerty]
 
 * kernel/xiaomi/msm8998
 aaf94607d52f bpf: fix missing header inclusion [Zi Shen Lim]
@@ -602,10 +609,12 @@ a2b3af0ff2eb Revert "bpf: Prevent memory disambiguation attack" [Anay Wadhera]
 b5829ffaf76f Revert "bpf: silence warning messages in core" [Anay Wadhera]
 
 * lineage/scripts
+5cc4c2d build-webview: Update default webview to 100.0.4896.127 [Kevin F. Haggerty]
 e2c47f1 pixel: Run regen-vendor before extracting [Chirayu Desai]
 a8b11ec build-webview: Only try to am files with a .patch extension [Kevin F. Haggerty]
 
 * packages/apps/Recorder
+abba63c Material you? [luca020400]
 5f91a27 Improve high quality recorder [luca020400]
 a9c599f Fix amplitude in high quality recorder [luca020400]
 5ab9683 Fix high quality recorder [luca020400]
@@ -625,7 +634,6 @@ a9c599f Fix amplitude in high quality recorder [luca020400]
 * lineage/mirror
 be43ceb The full quail experience [Chirayu Desai]
 f5fa0f0 Updated to 17-Apr-2022 23:03 UTC [Kevin F. Haggerty]
-7775092 Updated to 17-Apr-2022 14:31 UTC [Kevin F. Haggerty]
 
 * lineage/wiki
 5ddf403a wiki: Fix steps numbering and indentations in heimdall template [razorloves]
@@ -661,19 +669,18 @@ e8f33f2 exynos9610: Update splash screens to correct ones [Nolen Johnson]
 ====================
      2022-04-17    
 ====================
+* lineage/mirror
+7775092 Updated to 17-Apr-2022 14:31 UTC [Kevin F. Haggerty]
+
 * system/core
 cecb11d0b fs_mgr: Don't assume partitions replaced by DSU are logical already [Tim Zimmermann]
 
 * vendor/lineage
 6d0a45fb Update default wallpaper [Nolen Johnson]
-cd2d068c overlays: Use rounded corners in SystemUI [Danny Lin]
 
 ====================
      2022-04-16    
 ====================
-* lineage/mirror
-c80a30f scripts: Re-format [Chirayu Desai]
-
 * vendor/lineage
-03503fee qcom: Drop unused media flags for UM 5.4 family [Arian]
+cd2d068c overlays: Use rounded corners in SystemUI [Danny Lin]
 
