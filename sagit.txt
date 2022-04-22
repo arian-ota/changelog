@@ -31,6 +31,7 @@ bb726f0 vold: Bring in more wrapped key changes [Pig]
 de9cb35 system: vold: Use wrapped key for metadata encryption [Neeraj Soni]
 
 * tools/buildscript
+2fc5479 Drop sourceforge [Arian]
 3fc29f5 drop set -e [Arian]
 43271b8 Move to github releases [Arian]
 646be21 Exit if a command fails [Arian]
