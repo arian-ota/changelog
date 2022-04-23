@@ -1,4 +1,31 @@
 ====================
+     2022-04-23    
+====================
+* device/xiaomi/sagit
+2b3e02af sagit: overlay: Define proximity sensor type with custom threshold [Michael W]
+
+* packages/apps/Updater
+16cb5c2 UpdateInstaller: Set file permissions on uncrypt ota package [Arian]
+
+* system/core
+a8e1e24fa Add wrapped key support [dianlujitao]
+
+* system/security
+a9ff7ac Handle key parameter conversion for FBE_ICE tag [Phanindra Babu Pabba]
+
+* system/vold
+bc9cb46 Revert "system: vold: Upgrade the FBE key" [Arian]
+bb726f0 vold: Bring in more wrapped key changes [Pig]
+1aacace system: vold: Upgrade the FBE key [Neeraj Soni]
+8cb2506 vold: Enable legacy support for wrapped key [Neeraj Soni]
+de9cb35 system: vold: Use wrapped key for metadata encryption [Neeraj Soni]
+
+* tools/buildscript
+e4f60ff unset time variable in release method [Arian]
+2fc5479 Drop sourceforge [Arian]
+3fc29f5 drop set -e [Arian]
+
+====================
      2022-04-22    
 ====================
 * device/xiaomi/msm8998-common
@@ -20,19 +47,7 @@ c2ba7f614 mms8998-common: Squashed removal of TetheringOverlay [Nolen Johnson]
 * packages/apps/LineageParts
 0700955 LineageParts: switch to 3-button navigation when disabling navbar [Timi Rautamäki]
 
-* system/core
-a8e1e24fa Add wrapped key support [dianlujitao]
-
-* system/vold
-1a82fea Revert "system: vold: Upgrade the FBE key" [Arian]
-bb726f0 vold: Bring in more wrapped key changes [Pig]
-1aacace system: vold: Upgrade the FBE key [Neeraj Soni]
-8cb2506 vold: Enable legacy support for wrapped key [Neeraj Soni]
-de9cb35 system: vold: Use wrapped key for metadata encryption [Neeraj Soni]
-
 * tools/buildscript
-2fc5479 Drop sourceforge [Arian]
-3fc29f5 drop set -e [Arian]
 43271b8 Move to github releases [Arian]
 646be21 Exit if a command fails [Arian]
 dc2c278 rename upload to upload_sourceforge [Arian]
@@ -634,6 +649,7 @@ a9c599f Fix amplitude in high quality recorder [luca020400]
 * lineage/mirror
 be43ceb The full quail experience [Chirayu Desai]
 f5fa0f0 Updated to 17-Apr-2022 23:03 UTC [Kevin F. Haggerty]
+7775092 Updated to 17-Apr-2022 14:31 UTC [Kevin F. Haggerty]
 
 * lineage/wiki
 5ddf403a wiki: Fix steps numbering and indentations in heimdall template [razorloves]
@@ -669,18 +685,9 @@ e8f33f2 exynos9610: Update splash screens to correct ones [Nolen Johnson]
 ====================
      2022-04-17    
 ====================
-* lineage/mirror
-7775092 Updated to 17-Apr-2022 14:31 UTC [Kevin F. Haggerty]
-
 * system/core
 cecb11d0b fs_mgr: Don't assume partitions replaced by DSU are logical already [Tim Zimmermann]
 
 * vendor/lineage
 6d0a45fb Update default wallpaper [Nolen Johnson]
-
-====================
-     2022-04-16    
-====================
-* vendor/lineage
-cd2d068c overlays: Use rounded corners in SystemUI [Danny Lin]
 
