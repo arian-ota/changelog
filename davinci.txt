@@ -1,79 +1,158 @@
 ====================
-     2022-03-31    
-====================
-* frameworks/base
-c526e6518b5e SystemUI: Make the volume dialog expandable [Arian]
-0521a9d4352e SystemUI: runtime configurable audio panel location [a.derendyaev]
-2889c662c1fd VolumeDialogImpl: Don't hide the default stream when adjusting the music stream [Arian]
-500792cb5048 VolumeDialogImpl: Respect multiple visible rows in landscape [Arian]
-
-* tools/buildscript
-5d843f8 Fix usage of {} in for loops for image upload [Arian]
-
-====================
-     2022-03-30    
+     2022-05-05    
 ====================
 ====================
-     2022-03-29    
+     2022-05-04    
 ====================
-====================
-     2022-03-28    
-====================
-====================
-     2022-03-27    
-====================
-* android
-8098911 manifest: android-12.1.0_r1 -> android-12.1.0_r2 [Michael Bestas]
-
-* build/make
-0bf1b6ed8 Merge tag 'android-12.1.0_r2' into staging/lineage-19.1_merge-android-12.1.0_r2 [Michael Bestas]
-
-* device/xiaomi/sm6150-common
-a13246a sm6150-common: Force restorecon for /mnt/vendor/persist [Felix]
-f23eac1 sm6150-common: sepolicy: Add vendor prefix to camera persist file type [Arian]
-
-====================
-     2022-03-26    
-====================
-* device/lineage/atv
-0b9b740 atv: overlay: Update to reflect LineageParts move to system_ext [Nolen Johnson]
-
-* system/core
-e154cbd5b fastboot: Fallback to "raw" partition type if fastboot hal isn't present [LuK1337]
-
-* system/update_engine
-805bc58e Revert "Force PrepareSnapshotPartitionsForUpdate to fail in recovery" [Alexander Koskovich]
-
-* tools/repohooks
-d9aa634 checkpatch: update to 5.17 [Adrian Salido]
-
-* vendor/lineage
-834a1081 lineage: Pass mka argument to m [Edwin Moquete]
-057ffca8 lineage: Make mka a function again [Nolen Johnson]
-
-====================
-     2022-03-25    
-====================
-* frameworks/base
-39f933692ade ADBRootService: Add isSupported() method to check if we are debuggable [LuK1337]
-962150f38264 UsbDeviceManager: Delay MSG_UPDATE_SCREEN_LOCK message [LuK1337]
+* hardware/xiaomi
+8d12cc2 IFAAService: Mark processCmd param as inout [Sebastiano Barezzi]
 
 * lineage/hudson
-90363d4 hudson: Add ZenFone 8 to experimental 19.1 targets [Alexander Koskovich]
-39b5d33 Move experimentals to 19.1 [Nolen Johnson]
+49d05ed hudson: Promote gauguin to 19.1 [LynnrinChan]
 
-* packages/apps/Settings
-f2433b1b71 AdbRootPreferenceController: Use ADBRootService::isSupported() [LuK1337]
-fb6cf9d78e Settings: Add preference for KEY_MIN_REFRESH_RATE [LuK1337]
-8e061c520e Settings: Add peak refresh rate list preference [Michael Bestas]
+* lineage/mirror
+71f0213 Updated aosp-minimal to 03-May-2022 12:01 UTC [Tim Schumacher]
 
-* system/core
-2655ad488 libsparse: Add simg2img_static target for host [Chirayu Desai]
+* lineage/wiki
+96063725 gauguin: Promote to 19.1 [LynnrinChan]
+
+====================
+     2022-05-03    
+====================
+* android
+47ae4bc lineage: Sync cryptfs_hw [Michael Bestas]
+45f3a40 msm8953: Split msm8953 from UM_3_18_FAMILY [1/2] [Bharath]
+77994e7 Track our fork of system/vold [Bruno Martins]
+
+* bootable/recovery
+ed6ddc48 fixup! volume_manager: Move bind/mount failure from ERROR to WARNING [Alessandro Astone]
+
+* frameworks/base
+53494fdbe2e2 LockSettingsService : Restrict access to getpassword API [Prerna Kalla]
+8fbcb8b04fbc Fix Build Credentials refactored to use byte[] [Justin DeMartino]
+aeacf57f7bd3 frameworks: base: Port password retention feature [AnilKumar Chimata]
+
+* lineage/hudson
+148850c fixup! beyond promotions [Tim Zimmermann]
+
+* lineage/wiki
+8102fa5c Update TP1803 images [Fancypants]
+
+* system/vold
+3dab545 cryptfs: Fix legacy QCOM HW FDE encryption [chrmhoffmann]
+52214f9 vold: skip first disk change when converting MBR to GPT [Scott Mertz]
+0bf2f64 Add "changepw" command to vdc. [LuK1337]
+fc9589b vold: Fix the compilation failure for cryptfs [Phanindra Babu Pabba]
+8670134 vold: Adapt req-crypt based HW disk encryption [Neeraj Soni]
+4db9e9e Updates for migrated code upstream [Yifan Hong]
+17eebf4 Fix for CTS test CtsAppSecurityHostTestCases [Shivaprasad Hongal]
+4ee388d vold: Move QCOM HW FDE inclusion under Lineage namespace [Michael Bestas]
+2f213f4 system: vold: Remove crypto block device creation [AnilKumar Chimata]
+5e9d31b vold: Add Hardware FDE feature [AnilKumar Chimata]
+
+* tools/repohooks
+ceb6fb3 Merge "hooks: require that hooks & tools dicts are sorted" [Treehugger Robot]
+df057d3 Add ktfmt hook. [Joe Baker-Malone]
+23372d0 hooks: require that hooks & tools dicts are sorted [Mike Frysinger]
 
 * vendor/lineage
-a99b767d Fix nvidia enhancements soong conversion [Aaron Kling]
+b5da8d5d msm8953: Split msm8953 from UM_3_18_FAMILY [2/2] [Bharath]
 
-* vendor/translations
-7ad9066 Merge pull request #18 from Sleppyiecat/translations [Arian]
-fc025ad values-pl/strings.xml: fixup Polish translation [Karou]
+====================
+     2022-05-02    
+====================
+* frameworks/base
+cefb184803ec DSU: Only try to install on sdcard if the filesystem in use is vfat [Tim Zimmermann]
+c447d5e6ca3b SystemUI: Let screenshot window ignore screen decorations [LuK1337]
+2ae247ee2e4f SystemUI: Add API for runtime taskbar config [Danny Lin]
+
+* hardware/qcom-caf/msm8953/audio
+79893e3c9 hal: msm8953: Correct interfaces to use proper receiver [Bharath]
+948f853c3 hal: msm8953: Add backend support for handset [Bharath]
+a1c6768eb Build audio.primary.* with BOARD_VNDK_VERSION [Jiyong Park]
+44617d708 audio: adsprpcd: Drop dependency on proprietary headers and fix build errors [LuK1337]
+346ebfd6e audio: Drop LOCAL_COPY_HEADERS usage [Pig]
+4e248ac29 audio: Use direct project pathmap [Ethan Chen]
+
+* hardware/qcom-caf/msm8953/display
+eaa4c82cd Revert "vendor-freeze: Move few commonsys-intf libs to commonsys" [Bruno Martins]
+96c7ca051 display: Drop LOCAL_COPY_HEADERS usage [Pig]
+74ab01185 Don't build lights module if vendor supplies it [Steve Kondik]
+f0e2179a7 display: Use project pathmap [Ethan Chen]
+
+* hardware/qcom-caf/msm8953/media
+3706a46d5 media: Switch to display_headers lib include [Arne Coucheron]
+aecfd36c8 media: Drop LOCAL_COPY_HEADERS usage [Pig]
+b3cc7b2c6 media: libOmxSw encoders require prop headers :( [Ricardo Cerqueira]
+65c2e1921 media: Use project pathmap [Ethan Chen]
+
+* hardware/xiaomi
+5eb7d26 IFAAService: Initial implementation [Sebastiano Barezzi]
+
+* lineage/hudson
+604e154 beyond promotions [Tim Zimmermann]
+
+* lineage/mirror
+b11c8fa Updated to 01-May-2022 14:08 UTC [Kevin F. Haggerty]
+
+* lineage/wiki
+a37d762b wiki: devices: Promote Exynos 9820 Family to 19.1 [Tim Zimmermann]
+
+* packages/apps/EmergencyInfo
+ce82ebe EmergencyInfo: Allow adding contacts [Michael W]
+
+* packages/apps/LineageParts
+ef4a07d LineageParts: Add "Enable taskbar" toggle [LuK1337]
+
+* vendor/lineage
+bb993175 Revert "config: Drop 2-button navigation support on tablets" [LuK1337]
+
+====================
+     2022-05-01    
+====================
+* lineage/mirror
+4d8c3a8 Updated aosp-minimal to 30-Apr-2022 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+3ca53e33 wiki: Correct copy-partitions documentation [Zardshard]
+
+====================
+     2022-04-30    
+====================
+* android
+8b9c84d manifest: Track our own system/keymaster [Kevin F. Haggerty]
+
+* frameworks/base
+53d52dccb4bf SystemUI: Add back charging ripple [aswin7469]
+
+* hardware/qcom-caf/common
+43f2083 common: Add QTI embmssl to prebuilt HIDL interfaces [Alexander Koskovich]
+
+* lineage/wiki
+068a89e2 devices: wahoo: Move to Lineage Recovery [Nolen Johnson]
+
+* packages/apps/Settings
+c630ca3806 Settings: Hide settings that don't work when taskbar is enabled [LuK1337]
+
+* packages/apps/Trebuchet
+f1226b108e Add support for toggling taskbar [Danny Lin]
+
+====================
+     2022-04-29    
+====================
+* lineage-sdk
+a3e5a256 sdk: Add ENABLE_TASKBAR setting [LuK1337]
+
+* lineage/hudson
+3d0bd0e 7 is back [Shantanu Sarkar]
+
+* lineage/mirror
+65106e9 Updated aosp-minimal to 28-Apr-2022 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+4c7f6fa3 wiki: Re-add OnePlus 7 (guacamoleb) [Shantanu Sarkar]
+eaf0c7e3 wiki: Mark sargo as "shipping firmware" [Tim Schumacher]
+
+* vendor/lineage
+04987683 device_config: Save discrete app op history for more permissions [Danny Lin]
 
