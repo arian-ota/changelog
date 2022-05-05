@@ -1,8 +1,17 @@
 ====================
+     2022-05-05    
+====================
+====================
      2022-05-04    
 ====================
+* hardware/xiaomi
+8d12cc2 IFAAService: Mark processCmd param as inout [Sebastiano Barezzi]
+
 * lineage/hudson
 49d05ed hudson: Promote gauguin to 19.1 [LynnrinChan]
+
+* lineage/mirror
+71f0213 Updated aosp-minimal to 03-May-2022 12:01 UTC [Tim Schumacher]
 
 * lineage/wiki
 96063725 gauguin: Promote to 19.1 [LynnrinChan]
@@ -12,14 +21,19 @@
 ====================
 * android
 47ae4bc lineage: Sync cryptfs_hw [Michael Bestas]
+45f3a40 msm8953: Split msm8953 from UM_3_18_FAMILY [1/2] [Bharath]
+77994e7 Track our fork of system/vold [Bruno Martins]
+
+* bootable/recovery
+ed6ddc48 fixup! volume_manager: Move bind/mount failure from ERROR to WARNING [Alessandro Astone]
 
 * frameworks/base
 53494fdbe2e2 LockSettingsService : Restrict access to getpassword API [Prerna Kalla]
 8fbcb8b04fbc Fix Build Credentials refactored to use byte[] [Justin DeMartino]
 aeacf57f7bd3 frameworks: base: Port password retention feature [AnilKumar Chimata]
 
-* lineage/mirror
-71f0213 Updated aosp-minimal to 03-May-2022 12:01 UTC [Tim Schumacher]
+* lineage/hudson
+148850c fixup! beyond promotions [Tim Zimmermann]
 
 * lineage/wiki
 8102fa5c Update TP1803 images [Fancypants]
@@ -30,22 +44,23 @@ aeacf57f7bd3 frameworks: base: Port password retention feature [AnilKumar Chimat
 0bf2f64 Add "changepw" command to vdc. [LuK1337]
 fc9589b vold: Fix the compilation failure for cryptfs [Phanindra Babu Pabba]
 8670134 vold: Adapt req-crypt based HW disk encryption [Neeraj Soni]
+4db9e9e Updates for migrated code upstream [Yifan Hong]
+17eebf4 Fix for CTS test CtsAppSecurityHostTestCases [Shivaprasad Hongal]
+4ee388d vold: Move QCOM HW FDE inclusion under Lineage namespace [Michael Bestas]
+2f213f4 system: vold: Remove crypto block device creation [AnilKumar Chimata]
+5e9d31b vold: Add Hardware FDE feature [AnilKumar Chimata]
 
 * tools/repohooks
 ceb6fb3 Merge "hooks: require that hooks & tools dicts are sorted" [Treehugger Robot]
 df057d3 Add ktfmt hook. [Joe Baker-Malone]
 23372d0 hooks: require that hooks & tools dicts are sorted [Mike Frysinger]
 
+* vendor/lineage
+b5da8d5d msm8953: Split msm8953 from UM_3_18_FAMILY [2/2] [Bharath]
+
 ====================
      2022-05-02    
 ====================
-* android
-45f3a40 msm8953: Split msm8953 from UM_3_18_FAMILY [1/2] [Bharath]
-77994e7 Track our fork of system/vold [Bruno Martins]
-
-* bootable/recovery
-ed6ddc48 fixup! volume_manager: Move bind/mount failure from ERROR to WARNING [Alessandro Astone]
-
 * frameworks/base
 cefb184803ec DSU: Only try to install on sdcard if the filesystem in use is vfat [Tim Zimmermann]
 c447d5e6ca3b SystemUI: Let screenshot window ignore screen decorations [LuK1337]
@@ -71,38 +86,35 @@ aecfd36c8 media: Drop LOCAL_COPY_HEADERS usage [Pig]
 b3cc7b2c6 media: libOmxSw encoders require prop headers :( [Ricardo Cerqueira]
 65c2e1921 media: Use project pathmap [Ethan Chen]
 
-* lineage/hudson
-148850c fixup! beyond promotions [Tim Zimmermann]
-604e154 beyond promotions [Tim Zimmermann]
-
-* lineage/wiki
-a37d762b wiki: devices: Promote Exynos 9820 Family to 19.1 [Tim Zimmermann]
-
-* system/vold
-4db9e9e Updates for migrated code upstream [Yifan Hong]
-17eebf4 Fix for CTS test CtsAppSecurityHostTestCases [Shivaprasad Hongal]
-4ee388d vold: Move QCOM HW FDE inclusion under Lineage namespace [Michael Bestas]
-2f213f4 system: vold: Remove crypto block device creation [AnilKumar Chimata]
-5e9d31b vold: Add Hardware FDE feature [AnilKumar Chimata]
-
-* vendor/lineage
-b5da8d5d msm8953: Split msm8953 from UM_3_18_FAMILY [2/2] [Bharath]
-bb993175 Revert "config: Drop 2-button navigation support on tablets" [LuK1337]
-
-====================
-     2022-05-01    
-====================
 * hardware/xiaomi
 5eb7d26 IFAAService: Initial implementation [Sebastiano Barezzi]
 
+* lineage/hudson
+604e154 beyond promotions [Tim Zimmermann]
+
 * lineage/mirror
 b11c8fa Updated to 01-May-2022 14:08 UTC [Kevin F. Haggerty]
+
+* lineage/wiki
+a37d762b wiki: devices: Promote Exynos 9820 Family to 19.1 [Tim Zimmermann]
 
 * packages/apps/EmergencyInfo
 ce82ebe EmergencyInfo: Allow adding contacts [Michael W]
 
 * packages/apps/LineageParts
 ef4a07d LineageParts: Add "Enable taskbar" toggle [LuK1337]
+
+* vendor/lineage
+bb993175 Revert "config: Drop 2-button navigation support on tablets" [LuK1337]
+
+====================
+     2022-05-01    
+====================
+* lineage/mirror
+4d8c3a8 Updated aosp-minimal to 30-Apr-2022 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+3ca53e33 wiki: Correct copy-partitions documentation [Zardshard]
 
 ====================
      2022-04-30    
@@ -116,12 +128,11 @@ ef4a07d LineageParts: Add "Enable taskbar" toggle [LuK1337]
 * hardware/qcom-caf/common
 43f2083 common: Add QTI embmssl to prebuilt HIDL interfaces [Alexander Koskovich]
 
-* lineage/mirror
-4d8c3a8 Updated aosp-minimal to 30-Apr-2022 12:01 UTC [Tim Schumacher]
-
 * lineage/wiki
-3ca53e33 wiki: Correct copy-partitions documentation [Zardshard]
 068a89e2 devices: wahoo: Move to Lineage Recovery [Nolen Johnson]
+
+* packages/apps/Trebuchet
+f1226b108e Add support for toggling taskbar [Danny Lin]
 
 ====================
      2022-04-29    
@@ -132,39 +143,16 @@ a3e5a256 sdk: Add ENABLE_TASKBAR setting [LuK1337]
 * lineage/hudson
 3d0bd0e 7 is back [Shantanu Sarkar]
 
+* lineage/mirror
+65106e9 Updated aosp-minimal to 28-Apr-2022 12:01 UTC [Tim Schumacher]
+
 * lineage/wiki
 4c7f6fa3 wiki: Re-add OnePlus 7 (guacamoleb) [Shantanu Sarkar]
+eaf0c7e3 wiki: Mark sargo as "shipping firmware" [Tim Schumacher]
 
 * packages/apps/Settings
 c630ca3806 Settings: Hide settings that don't work when taskbar is enabled [LuK1337]
 
-* packages/apps/Trebuchet
-f1226b108e Add support for toggling taskbar [Danny Lin]
-
 * vendor/lineage
 04987683 device_config: Save discrete app op history for more permissions [Danny Lin]
-
-====================
-     2022-04-28    
-====================
-* lineage/hudson
-37fa53c OG gamerz rejoice [Nolen Johnson]
-
-* lineage/mirror
-65106e9 Updated aosp-minimal to 28-Apr-2022 12:01 UTC [Tim Schumacher]
-
-* lineage/website
-58852a3 www: Point to the wiki devices page instead of download portal [Michael W]
-
-* lineage/wiki
-eaf0c7e3 wiki: Mark sargo as "shipping firmware" [Tim Schumacher]
-ea5d33e3 pages: emulator: Lineage car build targets are 64-bit only [razorloves]
-e46d7be9 wiki: devices: Promote Razer Phone 1 [Nolen Johnson]
-
-* system/keymaster
-32611b3 Restore ImportKeyRequest::SetKeyMaterial [Aaron Kling]
-
-* tools/repohooks
-0522922 lint: clean up newer warnings [Mike Frysinger]
-cb3d9c5 utils: delete ad-hoc Python 2 compat init code [Mike Frysinger]
 
