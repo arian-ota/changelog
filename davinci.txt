@@ -7,6 +7,9 @@ fd96086 manifest: android-12.1.0_r4 -> android-12.1.0_r5 [Kevin F. Haggerty]
 * frameworks/base
 f5cd5ab652b1 Merge tag 'android-12.1.0_r5' into staging/lineage-19.1_merge-android-12.1.0_r5 [Kevin F. Haggerty]
 
+* hardware/xiaomi
+c6a4249 Revert "megvii: Initial stub libraries" [Arian]
+
 * lineage/crowdin
 94c5464 config: Remove LineageCustomizer [Michael Bestas]
 
@@ -39,9 +42,6 @@ b7dadeb megvii: Initial stub libraries [Sebastiano Barezzi]
 * frameworks/base
 06fe7f4ce865 AutoBrightness: Add support for one shot auto-brightness [Cédric Bellegarde]
 
-* lineage/wiki
-8b0234a1 wiki: Remove dupe before_recovery_install handling in fastboot_nexus [LuK1337]
-
 * packages/apps/Settings
 dbda9a3f5a Settings: Add preference for one shot auto-brightness [Cédric Bellegarde]
 
@@ -52,6 +52,7 @@ dbda9a3f5a Settings: Add preference for one shot auto-brightness [Cédric Belleg
 8fa17fe Revert "hudson: Promote gauguin to 19.1" [凛凛凛个鳖]
 
 * lineage/wiki
+8b0234a1 wiki: Remove dupe before_recovery_install handling in fastboot_nexus [LuK1337]
 735f8eb3 pixels: Clarify to use the latest Android 12.1.0 firmware [Alessandro Astone]
 ab9d0ed3 Revert "gauguin: Promote to 19.1" [Łukasz Patron]
 
@@ -65,12 +66,8 @@ e742ef96e1 Revert "Settings: Fix NPE when launching accessibility settings from 
 ====================
      2022-05-07    
 ====================
-* frameworks/opt/telephony
-a6bc00af33 RIL: Fix manual network selection with old modem [faust93]
-
 * packages/apps/Settings
 64b09c4502 Settings: Migrate encryption settings xml to NestedScrollView [filiprrs]
-750d0df0cb Settings: Migrate interstitial encryption settings xml to NestedScrollView. [Quallenauge]
 
 * vendor/lineage
 c057d4a9 May 2022 Security update [Chirayu Desai]
@@ -81,12 +78,17 @@ c057d4a9 May 2022 Security update [Chirayu Desai]
 * build/make
 abf60da3e Merge tag 'android-12.1.0_r5' into staging/lineage-19.1_merge-android-12.1.0_r5 [Kevin F. Haggerty]
 
+* frameworks/opt/telephony
+a6bc00af33 RIL: Fix manual network selection with old modem [faust93]
+
 * hardware/xiaomi
 3b1a4a6 IFAAService: Move from FOD to UDFPS naming convention [Bruno Martins]
-aaa03ac interfaces: mtdservice: Initial dump [Sebastiano Barezzi]
 
 * lineage/mirror
 02f4a56 Updated aosp-minimal to 05-May-2022 12:01 UTC [Tim Schumacher]
+
+* packages/apps/Settings
+750d0df0cb Settings: Migrate interstitial encryption settings xml to NestedScrollView. [Quallenauge]
 
 * packages/apps/SetupWizard
 a445988 SUW: Fix divider color for dark theme [Michael Bestas]
@@ -103,5 +105,5 @@ b16ecaf SUW: Set EXTRA_IS_SETUP_FLOW for accessibility settings [Michael Bestas]
      2022-05-05    
 ====================
 * hardware/xiaomi
-8d12cc2 IFAAService: Mark processCmd param as inout [Sebastiano Barezzi]
+aaa03ac interfaces: mtdservice: Initial dump [Sebastiano Barezzi]
 
