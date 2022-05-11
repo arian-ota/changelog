@@ -1,158 +1,109 @@
 ====================
-     2022-05-05    
-====================
-====================
-     2022-05-04    
-====================
-* hardware/xiaomi
-8d12cc2 IFAAService: Mark processCmd param as inout [Sebastiano Barezzi]
-
-* lineage/hudson
-49d05ed hudson: Promote gauguin to 19.1 [LynnrinChan]
-
-* lineage/mirror
-71f0213 Updated aosp-minimal to 03-May-2022 12:01 UTC [Tim Schumacher]
-
-* lineage/wiki
-96063725 gauguin: Promote to 19.1 [LynnrinChan]
-
-====================
-     2022-05-03    
+     2022-05-11    
 ====================
 * android
-47ae4bc lineage: Sync cryptfs_hw [Michael Bestas]
-45f3a40 msm8953: Split msm8953 from UM_3_18_FAMILY [1/2] [Bharath]
-77994e7 Track our fork of system/vold [Bruno Martins]
-
-* bootable/recovery
-ed6ddc48 fixup! volume_manager: Move bind/mount failure from ERROR to WARNING [Alessandro Astone]
+fd96086 manifest: android-12.1.0_r4 -> android-12.1.0_r5 [Kevin F. Haggerty]
 
 * frameworks/base
-53494fdbe2e2 LockSettingsService : Restrict access to getpassword API [Prerna Kalla]
-8fbcb8b04fbc Fix Build Credentials refactored to use byte[] [Justin DeMartino]
-aeacf57f7bd3 frameworks: base: Port password retention feature [AnilKumar Chimata]
-
-* lineage/hudson
-148850c fixup! beyond promotions [Tim Zimmermann]
-
-* lineage/wiki
-8102fa5c Update TP1803 images [Fancypants]
-
-* system/vold
-3dab545 cryptfs: Fix legacy QCOM HW FDE encryption [chrmhoffmann]
-52214f9 vold: skip first disk change when converting MBR to GPT [Scott Mertz]
-0bf2f64 Add "changepw" command to vdc. [LuK1337]
-fc9589b vold: Fix the compilation failure for cryptfs [Phanindra Babu Pabba]
-8670134 vold: Adapt req-crypt based HW disk encryption [Neeraj Soni]
-4db9e9e Updates for migrated code upstream [Yifan Hong]
-17eebf4 Fix for CTS test CtsAppSecurityHostTestCases [Shivaprasad Hongal]
-4ee388d vold: Move QCOM HW FDE inclusion under Lineage namespace [Michael Bestas]
-2f213f4 system: vold: Remove crypto block device creation [AnilKumar Chimata]
-5e9d31b vold: Add Hardware FDE feature [AnilKumar Chimata]
-
-* tools/repohooks
-ceb6fb3 Merge "hooks: require that hooks & tools dicts are sorted" [Treehugger Robot]
-df057d3 Add ktfmt hook. [Joe Baker-Malone]
-23372d0 hooks: require that hooks & tools dicts are sorted [Mike Frysinger]
-
-* vendor/lineage
-b5da8d5d msm8953: Split msm8953 from UM_3_18_FAMILY [2/2] [Bharath]
-
-====================
-     2022-05-02    
-====================
-* frameworks/base
-cefb184803ec DSU: Only try to install on sdcard if the filesystem in use is vfat [Tim Zimmermann]
-c447d5e6ca3b SystemUI: Let screenshot window ignore screen decorations [LuK1337]
-2ae247ee2e4f SystemUI: Add API for runtime taskbar config [Danny Lin]
-
-* hardware/qcom-caf/msm8953/audio
-79893e3c9 hal: msm8953: Correct interfaces to use proper receiver [Bharath]
-948f853c3 hal: msm8953: Add backend support for handset [Bharath]
-a1c6768eb Build audio.primary.* with BOARD_VNDK_VERSION [Jiyong Park]
-44617d708 audio: adsprpcd: Drop dependency on proprietary headers and fix build errors [LuK1337]
-346ebfd6e audio: Drop LOCAL_COPY_HEADERS usage [Pig]
-4e248ac29 audio: Use direct project pathmap [Ethan Chen]
-
-* hardware/qcom-caf/msm8953/display
-eaa4c82cd Revert "vendor-freeze: Move few commonsys-intf libs to commonsys" [Bruno Martins]
-96c7ca051 display: Drop LOCAL_COPY_HEADERS usage [Pig]
-74ab01185 Don't build lights module if vendor supplies it [Steve Kondik]
-f0e2179a7 display: Use project pathmap [Ethan Chen]
-
-* hardware/qcom-caf/msm8953/media
-3706a46d5 media: Switch to display_headers lib include [Arne Coucheron]
-aecfd36c8 media: Drop LOCAL_COPY_HEADERS usage [Pig]
-b3cc7b2c6 media: libOmxSw encoders require prop headers :( [Ricardo Cerqueira]
-65c2e1921 media: Use project pathmap [Ethan Chen]
+f5cd5ab652b1 Merge tag 'android-12.1.0_r5' into staging/lineage-19.1_merge-android-12.1.0_r5 [Kevin F. Haggerty]
 
 * hardware/xiaomi
-5eb7d26 IFAAService: Initial implementation [Sebastiano Barezzi]
+c6a4249 Revert "megvii: Initial stub libraries" [Arian]
+
+* lineage/crowdin
+94c5464 config: Remove LineageCustomizer [Michael Bestas]
 
 * lineage/hudson
-604e154 beyond promotions [Tim Zimmermann]
-
-* lineage/mirror
-b11c8fa Updated to 01-May-2022 14:08 UTC [Kevin F. Haggerty]
+31bd03b hudson: Promote X00TD to 19.1 [Vivekachooz]
+3e0aa22 Grand Theft Android 4 [Tim Zimmermann]
 
 * lineage/wiki
-a37d762b wiki: devices: Promote Exynos 9820 Family to 19.1 [Tim Zimmermann]
-
-* packages/apps/EmergencyInfo
-ce82ebe EmergencyInfo: Allow adding contacts [Michael W]
-
-* packages/apps/LineageParts
-ef4a07d LineageParts: Add "Enable taskbar" toggle [LuK1337]
-
-* vendor/lineage
-bb993175 Revert "config: Drop 2-button navigation support on tablets" [LuK1337]
-
-====================
-     2022-05-01    
-====================
-* lineage/mirror
-4d8c3a8 Updated aosp-minimal to 30-Apr-2022 12:01 UTC [Tim Schumacher]
-
-* lineage/wiki
-3ca53e33 wiki: Correct copy-partitions documentation [Zardshard]
-
-====================
-     2022-04-30    
-====================
-* android
-8b9c84d manifest: Track our own system/keymaster [Kevin F. Haggerty]
-
-* frameworks/base
-53d52dccb4bf SystemUI: Add back charging ripple [aswin7469]
-
-* hardware/qcom-caf/common
-43f2083 common: Add QTI embmssl to prebuilt HIDL interfaces [Alexander Koskovich]
-
-* lineage/wiki
-068a89e2 devices: wahoo: Move to Lineage Recovery [Nolen Johnson]
-
-* packages/apps/Trebuchet
-f1226b108e Add support for toggling taskbar [Danny Lin]
-
-====================
-     2022-04-29    
-====================
-* lineage-sdk
-a3e5a256 sdk: Add ENABLE_TASKBAR setting [LuK1337]
-
-* lineage/hudson
-3d0bd0e 7 is back [Shantanu Sarkar]
-
-* lineage/mirror
-65106e9 Updated aosp-minimal to 28-Apr-2022 12:01 UTC [Tim Schumacher]
-
-* lineage/wiki
-4c7f6fa3 wiki: Re-add OnePlus 7 (guacamoleb) [Shantanu Sarkar]
-eaf0c7e3 wiki: Mark sargo as "shipping firmware" [Tim Schumacher]
+445a0f39 wiki: Promote X00TD to 19.1 [Vivekachooz]
+5b0927ea wiki: devices: Promote gta4xlwifi to 19.1 [Tim Zimmermann]
 
 * packages/apps/Settings
-c630ca3806 Settings: Hide settings that don't work when taskbar is enabled [LuK1337]
+23e2dfe4cc Merge tag 'android-12.1.0_r5' into staging/lineage-19.1_merge-android-12.1.0_r5 [Kevin F. Haggerty]
+
+====================
+     2022-05-10    
+====================
+* android
+e31111e lineage: RIP Slack [LuK1337]
+
+* hardware/xiaomi
+b7dadeb megvii: Initial stub libraries [Sebastiano Barezzi]
+
+* tools/repohooks
+1bada39 Add some missing `f` prefix to f-strings [David Duarte]
+
+====================
+     2022-05-09    
+====================
+* frameworks/base
+06fe7f4ce865 AutoBrightness: Add support for one shot auto-brightness [Cédric Bellegarde]
+
+* packages/apps/Settings
+dbda9a3f5a Settings: Add preference for one shot auto-brightness [Cédric Bellegarde]
+
+====================
+     2022-05-08    
+====================
+* lineage/wiki
+8b0234a1 wiki: Remove dupe before_recovery_install handling in fastboot_nexus [LuK1337]
+735f8eb3 pixels: Clarify to use the latest Android 12.1.0 firmware [Alessandro Astone]
+ab9d0ed3 Revert "gauguin: Promote to 19.1" [Łukasz Patron]
+
+* packages/apps/Settings
+dd470c0343 Revert "Settings: Accessibility wants fullscreen, too!" [Michael Bestas]
+e742ef96e1 Revert "Settings: Fix NPE when launching accessibility settings from GMS SUW" [Michael Bestas]
+
+* system/core
+772da5b54 libsysutils: Hide NetlinkListener error in recovery [Michael Bestas]
+
+====================
+     2022-05-07    
+====================
+* lineage/hudson
+8fa17fe Revert "hudson: Promote gauguin to 19.1" [凛凛凛个鳖]
+
+* packages/apps/Settings
+64b09c4502 Settings: Migrate encryption settings xml to NestedScrollView [filiprrs]
 
 * vendor/lineage
-04987683 device_config: Save discrete app op history for more permissions [Danny Lin]
+c057d4a9 May 2022 Security update [Chirayu Desai]
+
+====================
+     2022-05-06    
+====================
+* build/make
+abf60da3e Merge tag 'android-12.1.0_r5' into staging/lineage-19.1_merge-android-12.1.0_r5 [Kevin F. Haggerty]
+
+* frameworks/opt/telephony
+a6bc00af33 RIL: Fix manual network selection with old modem [faust93]
+
+* hardware/xiaomi
+3b1a4a6 IFAAService: Move from FOD to UDFPS naming convention [Bruno Martins]
+
+* lineage/mirror
+02f4a56 Updated aosp-minimal to 05-May-2022 12:01 UTC [Tim Schumacher]
+
+* packages/apps/Settings
+750d0df0cb Settings: Migrate interstitial encryption settings xml to NestedScrollView. [Quallenauge]
+
+* packages/services/Telecomm
+036c7c725 Merge tag 'android-12.1.0_r5' into staging/lineage-19.1_merge-android-12.1.0_r5 [Kevin F. Haggerty]
+
+* system/bt
+090cad126 Merge tag 'android-12.1.0_r5' into staging/lineage-19.1_merge-android-12.1.0_r5 [Kevin F. Haggerty]
+
+====================
+     2022-05-05    
+====================
+* hardware/xiaomi
+aaa03ac interfaces: mtdservice: Initial dump [Sebastiano Barezzi]
+
+* packages/apps/SetupWizard
+a445988 SUW: Fix divider color for dark theme [Michael Bestas]
+bbd1630 SUW: Remove unused drawables [Michael Bestas]
+b16ecaf SUW: Set EXTRA_IS_SETUP_FLOW for accessibility settings [Michael Bestas]
 
