@@ -1,0 +1,107 @@
+====================
+     2022-05-11    
+====================
+* android
+fd96086 manifest: android-12.1.0_r4 -> android-12.1.0_r5 [Kevin F. Haggerty]
+
+* frameworks/base
+f5cd5ab652b1 Merge tag 'android-12.1.0_r5' into staging/lineage-19.1_merge-android-12.1.0_r5 [Kevin F. Haggerty]
+
+* lineage/crowdin
+94c5464 config: Remove LineageCustomizer [Michael Bestas]
+
+* lineage/hudson
+31bd03b hudson: Promote X00TD to 19.1 [Vivekachooz]
+3e0aa22 Grand Theft Android 4 [Tim Zimmermann]
+
+* lineage/wiki
+445a0f39 wiki: Promote X00TD to 19.1 [Vivekachooz]
+5b0927ea wiki: devices: Promote gta4xlwifi to 19.1 [Tim Zimmermann]
+
+* packages/apps/Settings
+23e2dfe4cc Merge tag 'android-12.1.0_r5' into staging/lineage-19.1_merge-android-12.1.0_r5 [Kevin F. Haggerty]
+
+====================
+     2022-05-10    
+====================
+* android
+e31111e lineage: RIP Slack [LuK1337]
+
+* hardware/xiaomi
+b7dadeb megvii: Initial stub libraries [Sebastiano Barezzi]
+
+* tools/repohooks
+1bada39 Add some missing `f` prefix to f-strings [David Duarte]
+
+====================
+     2022-05-09    
+====================
+* frameworks/base
+06fe7f4ce865 AutoBrightness: Add support for one shot auto-brightness [Cédric Bellegarde]
+
+* lineage/wiki
+8b0234a1 wiki: Remove dupe before_recovery_install handling in fastboot_nexus [LuK1337]
+
+* packages/apps/Settings
+dbda9a3f5a Settings: Add preference for one shot auto-brightness [Cédric Bellegarde]
+
+====================
+     2022-05-08    
+====================
+* lineage/hudson
+8fa17fe Revert "hudson: Promote gauguin to 19.1" [凛凛凛个鳖]
+
+* lineage/wiki
+735f8eb3 pixels: Clarify to use the latest Android 12.1.0 firmware [Alessandro Astone]
+ab9d0ed3 Revert "gauguin: Promote to 19.1" [Łukasz Patron]
+
+* packages/apps/Settings
+dd470c0343 Revert "Settings: Accessibility wants fullscreen, too!" [Michael Bestas]
+e742ef96e1 Revert "Settings: Fix NPE when launching accessibility settings from GMS SUW" [Michael Bestas]
+
+* system/core
+772da5b54 libsysutils: Hide NetlinkListener error in recovery [Michael Bestas]
+
+====================
+     2022-05-07    
+====================
+* frameworks/opt/telephony
+a6bc00af33 RIL: Fix manual network selection with old modem [faust93]
+
+* packages/apps/Settings
+64b09c4502 Settings: Migrate encryption settings xml to NestedScrollView [filiprrs]
+750d0df0cb Settings: Migrate interstitial encryption settings xml to NestedScrollView. [Quallenauge]
+
+* vendor/lineage
+c057d4a9 May 2022 Security update [Chirayu Desai]
+
+====================
+     2022-05-06    
+====================
+* build/make
+abf60da3e Merge tag 'android-12.1.0_r5' into staging/lineage-19.1_merge-android-12.1.0_r5 [Kevin F. Haggerty]
+
+* hardware/xiaomi
+3b1a4a6 IFAAService: Move from FOD to UDFPS naming convention [Bruno Martins]
+aaa03ac interfaces: mtdservice: Initial dump [Sebastiano Barezzi]
+
+* lineage/mirror
+02f4a56 Updated aosp-minimal to 05-May-2022 12:01 UTC [Tim Schumacher]
+
+* packages/apps/SetupWizard
+a445988 SUW: Fix divider color for dark theme [Michael Bestas]
+bbd1630 SUW: Remove unused drawables [Michael Bestas]
+b16ecaf SUW: Set EXTRA_IS_SETUP_FLOW for accessibility settings [Michael Bestas]
+
+* packages/services/Telecomm
+036c7c725 Merge tag 'android-12.1.0_r5' into staging/lineage-19.1_merge-android-12.1.0_r5 [Kevin F. Haggerty]
+
+* system/bt
+090cad126 Merge tag 'android-12.1.0_r5' into staging/lineage-19.1_merge-android-12.1.0_r5 [Kevin F. Haggerty]
+
+====================
+     2022-05-05    
+====================
+* hardware/xiaomi
+8d12cc2 IFAAService: Mark processCmd param as inout [Sebastiano Barezzi]
+
