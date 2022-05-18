@@ -1,109 +1,97 @@
 ====================
-     2022-05-11    
+     2022-05-18    
 ====================
-* android
-fd96086 manifest: android-12.1.0_r4 -> android-12.1.0_r5 [Kevin F. Haggerty]
+====================
+     2022-05-17    
+====================
+* lineage/mirror
+c93c73d Updated to 16-May-2022 14:57 UTC [Kevin F. Haggerty]
+943f820 Updated to 16-May-2022 14:50 UTC [Kevin F. Haggerty]
 
+====================
+     2022-05-16    
+====================
 * frameworks/base
-f5cd5ab652b1 Merge tag 'android-12.1.0_r5' into staging/lineage-19.1_merge-android-12.1.0_r5 [Kevin F. Haggerty]
+5c75eff46675 SystemUI: Catch IllegalArgumentException in updateHint() [LuK1337]
+
+* lineage/hudson
+071e2b2 This device is so OSOM... I mean awesome. [Nolen Johnson]
+08911f5 hudson: Promote gauguin to 19.1 again [LynnrinChan]
+
+* lineage/wiki
+e8181843 wiki: devices: Promote Essential Phone [Nolen Johnson]
+7012cd9d gauguin: Promote to 19.1 again [LynnrinChan]
+
+====================
+     2022-05-15    
+====================
+* frameworks/base
+e13984d0ac0a PermissionManager: fix NPE in getIndicatorExemptedPackages [Timi Rautamäki]
+8eba0708921c SystemUI: Add Profiles tile [Roman Birg]
+586cf47c6c20 SystemUI: Make isTablet() use correct API for getting window metrics [LuK1337]
+
+====================
+     2022-05-14    
+====================
+* device/qcom/sepolicy-legacy-um
+000c877a Label old telephony extension [Michael Bestas]
+
+* lineage/hudson
+e9ee689 updater: Merge mdarcy build with foster [Nolen Johnson]
+d702411 What's the difference between an Nvidia card and an AMD card? [Nolen Johnson]
+71c9ace hudson: `↑ ↑ ↓ ↓ ← → ← → B A` gets monet [Sebastiano Barezzi]
+
+* lineage/wiki
+03700fc3 wiki: Promote Xiaomi SM8250 family to 19.1 [althafvly]
+dc03da04 m20lte: Add explicit bootloader unlock instructions [SamarV-121]
+1a8390fe wiki: Promote foster* and porg* [Nolen Johnson]
+4dbcf263 wiki: gapps: Point to proper MTG page [Nolen Johnson]
+6de15090 wiki: gapps: Add ATV MTG for 18.1 [Nolen Johnson]
+2b0c4df4 wiki: alioth: install vendor_boot before recovery [althafvly]
+
+* tools/repohooks
+1d76f6a Merge "clang-format: handle exit(1) from git-clang-format" [Treehugger Robot]
+97805c7 Merge "rh: set REPO_ROOT to the submanifest root, if present." [Treehugger Robot]
+9b9f576 rh: set REPO_ROOT to the submanifest root, if present. [LaMont Jones]
+
+====================
+     2022-05-13    
+====================
+* external/chromium-webview/patches
+a644f51 Update Chromium Webview to 101.0.4951.61 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm
+ad7537f Update Chromium Webview arm prebuilt to 101.0.4951.61 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm64
+cb72ff6 Update Chromium Webview arm64 prebuilt to 101.0.4951.61 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86
+a67e6c2 Update Chromium Webview x86 prebuilt to 101.0.4951.61 [Kevin F. Haggerty]
+
+* tools/repohooks
+aa268a7 clang-format: handle exit(1) from git-clang-format [Mike Frysinger]
+90280f4 Add support for calling directly from git, without using repo. [Xin Li]
+
+====================
+     2022-05-12    
+====================
+* frameworks/av
+230c458dee camera: Allow to use boottime as timestamp reference [maxwen]
 
 * hardware/xiaomi
 c6a4249 Revert "megvii: Initial stub libraries" [Arian]
 
-* lineage/crowdin
-94c5464 config: Remove LineageCustomizer [Michael Bestas]
+* lineage/charter
+b344771 charter: Deny the usage of Megvii and SenseTime blobs [Sebastiano Barezzi]
 
-* lineage/hudson
-31bd03b hudson: Promote X00TD to 19.1 [Vivekachooz]
-3e0aa22 Grand Theft Android 4 [Tim Zimmermann]
-
-* lineage/wiki
-445a0f39 wiki: Promote X00TD to 19.1 [Vivekachooz]
-5b0927ea wiki: devices: Promote gta4xlwifi to 19.1 [Tim Zimmermann]
-
-* packages/apps/Settings
-23e2dfe4cc Merge tag 'android-12.1.0_r5' into staging/lineage-19.1_merge-android-12.1.0_r5 [Kevin F. Haggerty]
-
-====================
-     2022-05-10    
-====================
-* android
-e31111e lineage: RIP Slack [LuK1337]
-
-* hardware/xiaomi
-b7dadeb megvii: Initial stub libraries [Sebastiano Barezzi]
-
-* tools/repohooks
-1bada39 Add some missing `f` prefix to f-strings [David Duarte]
-
-====================
-     2022-05-09    
-====================
-* frameworks/base
-06fe7f4ce865 AutoBrightness: Add support for one shot auto-brightness [Cédric Bellegarde]
-
-* packages/apps/Settings
-dbda9a3f5a Settings: Add preference for one shot auto-brightness [Cédric Bellegarde]
-
-====================
-     2022-05-08    
-====================
-* lineage/hudson
-8fa17fe Revert "hudson: Promote gauguin to 19.1" [凛凛凛个鳖]
+* lineage/scripts
+93954ec build-webview: Update default webview to 101.0.4951.61 [Kevin F. Haggerty]
 
 * lineage/wiki
-8b0234a1 wiki: Remove dupe before_recovery_install handling in fastboot_nexus [LuK1337]
-735f8eb3 pixels: Clarify to use the latest Android 12.1.0 firmware [Alessandro Astone]
-ab9d0ed3 Revert "gauguin: Promote to 19.1" [Łukasz Patron]
-
-* packages/apps/Settings
-dd470c0343 Revert "Settings: Accessibility wants fullscreen, too!" [Michael Bestas]
-e742ef96e1 Revert "Settings: Fix NPE when launching accessibility settings from GMS SUW" [Michael Bestas]
-
-* system/core
-772da5b54 libsysutils: Hide NetlinkListener error in recovery [Michael Bestas]
-
-====================
-     2022-05-07    
-====================
-* packages/apps/Settings
-64b09c4502 Settings: Migrate encryption settings xml to NestedScrollView [filiprrs]
-
-* vendor/lineage
-c057d4a9 May 2022 Security update [Chirayu Desai]
-
-====================
-     2022-05-06    
-====================
-* build/make
-abf60da3e Merge tag 'android-12.1.0_r5' into staging/lineage-19.1_merge-android-12.1.0_r5 [Kevin F. Haggerty]
-
-* frameworks/opt/telephony
-a6bc00af33 RIL: Fix manual network selection with old modem [faust93]
-
-* hardware/xiaomi
-3b1a4a6 IFAAService: Move from FOD to UDFPS naming convention [Bruno Martins]
-
-* lineage/mirror
-02f4a56 Updated aosp-minimal to 05-May-2022 12:01 UTC [Tim Schumacher]
-
-* packages/apps/Settings
-750d0df0cb Settings: Migrate interstitial encryption settings xml to NestedScrollView. [Quallenauge]
-
-* packages/apps/SetupWizard
-a445988 SUW: Fix divider color for dark theme [Michael Bestas]
-bbd1630 SUW: Remove unused drawables [Michael Bestas]
-b16ecaf SUW: Set EXTRA_IS_SETUP_FLOW for accessibility settings [Michael Bestas]
-
-* packages/services/Telecomm
-036c7c725 Merge tag 'android-12.1.0_r5' into staging/lineage-19.1_merge-android-12.1.0_r5 [Kevin F. Haggerty]
-
-* system/bt
-090cad126 Merge tag 'android-12.1.0_r5' into staging/lineage-19.1_merge-android-12.1.0_r5 [Kevin F. Haggerty]
-
-====================
-     2022-05-05    
-====================
-* hardware/xiaomi
-aaa03ac interfaces: mtdservice: Initial dump [Sebastiano Barezzi]
+5e72ce61 wiki: make an explicit mention of gapps.html page and instructions there [solsTiCe d'Hiver]
+0b15ea96 Just specify where to look for GApps package by being explicit [solsTiCe d'Hiver]
+fc4560a8 Specify the type of ssh key to use on the gerrit server [solsTiCe d'Hiver]
+0d481839 wiki: fix running locally with jekyll with ruby 3 [solsTiCe d'Hiver]
+0b73fdab wiki: xiaomi: Use stable package instead of weekly [althafvly]
 
