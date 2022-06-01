@@ -1,69 +1,70 @@
 ====================
-     2022-05-25    
+     2022-06-01    
 ====================
-====================
-     2022-05-24    
-====================
-* hardware/qcom-caf/common
-de147ee common: Update matrix to LA.QSSI.12.0.r1-07600-qssi.0 [Alexander Koskovich]
+* hardware/qcom-caf/sm8350/audio
+5decb6c52 Merge tag 'LA.UM.9.14.r1-19200.02-LAHAINA.QSSI13.0' into lineage-19.1-caf-sm8350 [Kevin F. Haggerty]
+
+* hardware/qcom-caf/sm8350/display
+054d9065f Merge tag 'LA.UM.9.14.r1-19200.02-LAHAINA.QSSI13.0' into lineage-19.1-caf-sm8350 [Kevin F. Haggerty]
 
 * lineage/wiki
-13402641 wiki: Improve the reboot to recovery instructions [Michael W]
-
-====================
-     2022-05-23    
-====================
-* packages/apps/Updater
-418d464 Updater: Show update's version on AlertDialog and Notification [Aayush Gupta]
-
-====================
-     2022-05-22    
-====================
-* lineage/mirror
-eeb8bc5 Updated aosp-minimal to 21-May-2022 12:01 UTC [Tim Schumacher]
-
-* lineage/wiki
-75a73168 dipper/polaris: Unset uses_twrp flag [Bruno Martins]
-
-* vendor/nxp/opensource/sn100x/halimpl
-3312a196 sn100x: halimpl: ignore autonomous mode writes if the feature is disabled [Demon000]
-
-====================
-     2022-05-21    
-====================
-* lineage/hudson
-437436d Grand Theft Android 4, a Limited Time Event [Kevin F. Haggerty]
-
-* lineage/wiki
-c469ab55 wiki: devices: Promote gta4xl to 19 [Kevin F. Haggerty]
-
-* tools/repohooks
-e0447aa clang-format: handle exit(0) w/no output from git-clang-format [Mike Frysinger]
-5722c92 shell: handle Path objects [Mike Frysinger]
-
-====================
-     2022-05-20    
-====================
-* lineage/wiki
-5b818e69 wiki: devices: Update kernel for floral and sunfish [Eamon Powell]
-
-* tools/repohooks
-4be0279 Remove usage of removeprefix [Joe Baker-Malone]
+baeae652 wiki: Make oplus8350 devices flash dtbo.img too [LuK1337]
 
 * vendor/lineage
-f224255c soong: Drop TARGET_USES_QTI_CAMERA_DEVICE [Sebastiano Barezzi]
+ccdf4e91 overlay: Exempt Bluetooth from location indicators [LuK1337]
 
 ====================
-     2022-05-19    
+     2022-05-31    
 ====================
 * lineage/hudson
-6f4b0f7 hudson: Promote cheeseburger and dumpling to 19.1 [Georg Veichtlbauer]
-
-* lineage/mirror
-b2c9944 Updated aosp-minimal to 18-May-2022 12:01 UTC [Tim Schumacher]
+560323e s/oneplus/oplus/g [LuK1337]
 
 * lineage/wiki
-511e2391 wiki: devices: Fix peripherals for floral [razorloves]
-a57dfee5 wiki: Fix step 3 indention in vendor_boot template [razorloves]
-35e066db wiki: Promote cheeseburger and dumpling to 19.1 [Georg Veichtlbauer]
+e2f3b5db oplus8350: Update to Android 12 [Bruno Martins]
+
+* vendor/lineage
+3bab7d78 lineage: build: Wipe DTB/O OBJs before build [Alexander Koskovich]
+
+====================
+     2022-05-30    
+====================
+* packages/apps/LineageParts
+77c1826 LineageParts: Improve easter egg activity style [LuK1337]
+
+====================
+     2022-05-29    
+====================
+* frameworks/base
+4a7a4426944e SystemUI: Add left padding for keyguard slices [LuK1337]
+
+* hardware/qcom-caf/sm8350/audio
+16ff87039 audio: configs: Don't advertise vorbis offloading support [LuK1337]
+
+* lineage/mirror
+083df9f Updated aosp-minimal to 28-May-2022 12:01 UTC [Tim Schumacher]
+
+====================
+     2022-05-28    
+====================
+====================
+     2022-05-27    
+====================
+* packages/apps/Seedvault
+346773d Seedvault: Redesign SUW activities for 12 [Michael W]
+
+* system/core
+292a43ca7 fastboot: Print OemCmdHandler return message on success [Michael Bestas]
+
+====================
+     2022-05-26    
+====================
+* external/htop
+6e15b36 htop: regenerate sources and configs for Android builds [programminghoch10]
+ef0af86 Merge tag `3.2.0` of `https://github.com/htop-dev/htop` into `lineage-19.1` [Nolen Johnson]
+
+* lineage/wiki
+eca99703 emulator: Put all the targets into a table [Tim Schumacher]
+
+* packages/apps/Updater
+c6d2a16 Updater: Unbreak "Export update" feature [LuK1337]
 
