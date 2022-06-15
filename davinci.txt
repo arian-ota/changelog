@@ -1,70 +1,117 @@
 ====================
-     2022-06-01    
-====================
-* hardware/qcom-caf/sm8350/audio
-5decb6c52 Merge tag 'LA.UM.9.14.r1-19200.02-LAHAINA.QSSI13.0' into lineage-19.1-caf-sm8350 [Kevin F. Haggerty]
-
-* hardware/qcom-caf/sm8350/display
-054d9065f Merge tag 'LA.UM.9.14.r1-19200.02-LAHAINA.QSSI13.0' into lineage-19.1-caf-sm8350 [Kevin F. Haggerty]
-
-* lineage/wiki
-baeae652 wiki: Make oplus8350 devices flash dtbo.img too [LuK1337]
-
-* vendor/lineage
-ccdf4e91 overlay: Exempt Bluetooth from location indicators [LuK1337]
-
-====================
-     2022-05-31    
-====================
-* lineage/hudson
-560323e s/oneplus/oplus/g [LuK1337]
-
-* lineage/wiki
-e2f3b5db oplus8350: Update to Android 12 [Bruno Martins]
-
-* vendor/lineage
-3bab7d78 lineage: build: Wipe DTB/O OBJs before build [Alexander Koskovich]
-
-====================
-     2022-05-30    
-====================
-* packages/apps/LineageParts
-77c1826 LineageParts: Improve easter egg activity style [LuK1337]
-
-====================
-     2022-05-29    
+     2022-06-15    
 ====================
 * frameworks/base
-4a7a4426944e SystemUI: Add left padding for keyguard slices [LuK1337]
+1726a9eda329 fixup! Allow lineage resources package to be overlayed by RRO packages [nift4]
 
-* hardware/qcom-caf/sm8350/audio
-16ff87039 audio: configs: Don't advertise vorbis offloading support [LuK1337]
+* lineage/hudson
+9fec909 Regenerate device dependency mappings [razorloves]
 
 * lineage/mirror
-083df9f Updated aosp-minimal to 28-May-2022 12:01 UTC [Tim Schumacher]
-
-====================
-     2022-05-28    
-====================
-====================
-     2022-05-27    
-====================
-* packages/apps/Seedvault
-346773d Seedvault: Redesign SUW activities for 12 [Michael W]
-
-* system/core
-292a43ca7 fastboot: Print OemCmdHandler return message on success [Michael Bestas]
-
-====================
-     2022-05-26    
-====================
-* external/htop
-6e15b36 htop: regenerate sources and configs for Android builds [programminghoch10]
-ef0af86 Merge tag `3.2.0` of `https://github.com/htop-dev/htop` into `lineage-19.1` [Nolen Johnson]
+eb05cb6 Updated to 14-Jun-2022 12:01 UTC [Tim Schumacher]
 
 * lineage/wiki
-eca99703 emulator: Put all the targets into a table [Tim Schumacher]
+9ec1e985 addison/albus: Move to lineage recovery [Nolen Johnson]
+467dc285 wiki: devices: whyred: Opt out of TWRP [Sebastiano Barezzi]
 
-* packages/apps/Updater
-c6d2a16 Updater: Unbreak "Export update" feature [LuK1337]
+* system/sepolicy
+f04386d2c sepolicy: allow recovery to operate devpts and kmsg [xiaohuin]
+
+====================
+     2022-06-14    
+====================
+* build/make
+26aa57154 Add vendor-bootconfig.img to target-files-package [Devin Moore]
+
+* device/lineage/atv
+1dd3b22 Standardize wake keys on wade's BT remote [Aaron Kling]
+389ee9b Adjust wade's BT remote keylayout to match common keyhandler [Aaron Kling]
+47d3ede atv: Remove duplicate PRODUCT_PACKAGES entries [Bruno Martins]
+47b741e Import idc and kl for wade's BT remote [Christian Hoffmann]
+
+* lineage/wiki
+55d80267 wiki: devices: Promote monet to 19.1 [xSylla]
+b443a67c feat: add MD5 and SHA-256 for copy-partitions [Outvi V]
+484a9a96 wiki: gapps: Add MTG filename and warning [Michael W]
+c0c13393 wiki: 12.1 -> 12L, 19.1 -> 19 [Michael W]
+
+* packages/apps/Settings
+3962488433 Settings: Make NetworkScanHelper max search time customizable [LuK1337]
+
+====================
+     2022-06-13    
+====================
+* lineage/hudson
+16dbad4 add experimental target, needed for some infra tests [Tom Powell]
+
+* lineage/mirror
+90e19ca Updated to 12-Jun-2022 12:00 UTC [Tim Schumacher]
+
+====================
+     2022-06-12    
+====================
+* build/soong
+bec7d52dc Merge tag 'android-12.1.0_r7' into staging/lineage-19.1_merge-android-12.1.0_r7 [Michael Bestas]
+
+* frameworks/base
+ba528922c37f SystemUI: Add HBM provider for UDFPS on Pixel devices [Danny Lin]
+9129d2dc731e SystemUI: Import Pixel display interfaces [Danny Lin]
+23b641c5793b Show the vibrate icon in the Status Bar by default [Chirayu Desai]
+8acf7b3981a5 Merge tag 'android-12.1.0_r7' into staging/lineage-19.1_merge-android-12.1.0_r7 [Michael Bestas]
+
+* lineage/crowdin
+b9bb829 config: lineage-19.1_aosp: Update for qpr3 changes [Michael Bestas]
+
+* packages/apps/LineageParts
+407d965 Trust: Add option to always disable USB gadgets [Michael Bestas]
+
+* packages/apps/Settings
+34dec4a9ad Hide the "Show the vibrate icon in the Status Bar" setting [Chirayu Desai]
+
+* vendor/crowdin
+d5cd0e7 Update for qpr3 changes [Michael Bestas]
+
+====================
+     2022-06-11    
+====================
+* lineage/hudson
+9734318 hudson: Promote monet to 19.1 [xSylla]
+2d1b266 hudson: Promote dipper to 19.1 [1nfrag]
+
+====================
+     2022-06-10    
+====================
+* build/soong
+f017a30c4 dumpvars: Replace ATV and Automotive vars [Bruno Martins]
+
+* lineage/mirror
+4242b26 Updated aosp-minimal to 09-Jun-2022 12:01 UTC [Tim Schumacher]
+
+* packages/resources/devicesettings
+d53614e devicesettings: Add moto gesture strings [dianlujitao]
+
+* tools/extract-utils
+58851a0 extract_utils: Add a script to reorder blobs list [Sebastiano Barezzi]
+
+* vendor/lineage
+c93bdd63 partner_gms: Stop relying on exported vars for ATV and Automotive targets [Bruno Martins]
+265fdadd vars: Remove pixel sepolicy repos [Michael Bestas]
+cf700465 vars: Remove b1c1 from devices [Michael Bestas]
+fbadddae envsetup: Add sort-blobs-list [Michael Bestas]
+
+====================
+     2022-06-09    
+====================
+* packages/apps/SetupWizard
+2af9f05 SuW: Disable BluetoothSetupActivity component with prop [Nicholas Lim]
+
+* vendor/nxp/opensource/commonsys/external/libnfc-nci
+57a3085d OOBR in nfc_ncif_proc_ee_discover_req() [Alisher Alikhodjaev]
+3a75b79e Double Free in ce_t4t_data_cback [Alisher Alikhodjaev]
+49d03376 Out of Bounds Read in nfa_dm_check_set_config [Alisher Alikhodjaev]
+
+* vendor/nxp/opensource/commonsys/packages/apps/Nfc
+35a6b667 OOB read in phNciNfc_RecvMfResp() [Alisher Alikhodjaev]
+ca1ef595 Add EventLog to trace the tag reusing issue [chloedai]
+3b4b97b3 Add methods to check tag availability [chloedai]
 
