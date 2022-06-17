@@ -1,0 +1,108 @@
+====================
+     2022-06-17    
+====================
+* device/xiaomi/sm8450-common
+9051149b Add recovery to ab ota partitions [Arian]
+b55917d8 Update rro scripts [Arian]
+ee115080 sm8450-common: Switch to erofs partitions [Arian]
+
+* hardware/qcom-caf/bootctrl
+d4799e9 bootctrl: Enabling bootctrl for gvmq beased on property [Tabassum Tabassum]
+b298eec Bootctrl: Replace usage of ro.build.product with ro.board.platform [Huang Li]
+10036b1 Handle "multiimgoem", "multiimgqti" partitions. [Siddeswar Aluganti]
+
+====================
+     2022-06-16    
+====================
+* device/xiaomi/msm8998-common
+70630f963 msm8998-common: Remove deprecated TARGET_USES_QTI_CAMERA_DEVICE [Nolen Johnson]
+168d7138d msm8998-common: Drop USE_DEVICE_SPECIFIC_CAMERA [Elektroschmock]
+
+* lineage/mirror
+1c89c7c Updated aosp-minimal to 15-Jun-2022 12:01 UTC [Tim Schumacher]
+
+====================
+     2022-06-15    
+====================
+* device/xiaomi/sm8450-common
+83195e94 sm8450-common: Remove ineffective BOARD_KERNEL_TAGS_OFFSET variable [Daniel Mentz]
+937fc21c Add sepolicy types for mi_thermald, batterysecret and mi_ric [Arian]
+8432fd80 Drop miui screenshotprovider [Arian]
+
+* frameworks/base
+1726a9eda329 fixup! Allow lineage resources package to be overlayed by RRO packages [nift4]
+
+* lineage/mirror
+eb05cb6 Updated to 14-Jun-2022 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+9ec1e985 addison/albus: Move to lineage recovery [Nolen Johnson]
+467dc285 wiki: devices: whyred: Opt out of TWRP [Sebastiano Barezzi]
+
+* system/sepolicy
+f04386d2c sepolicy: allow recovery to operate devpts and kmsg [xiaohuin]
+
+====================
+     2022-06-14    
+====================
+* build/make
+26aa57154 Add vendor-bootconfig.img to target-files-package [Devin Moore]
+
+* device/lineage/atv
+1dd3b22 Standardize wake keys on wade's BT remote [Aaron Kling]
+389ee9b Adjust wade's BT remote keylayout to match common keyhandler [Aaron Kling]
+47d3ede atv: Remove duplicate PRODUCT_PACKAGES entries [Bruno Martins]
+47b741e Import idc and kl for wade's BT remote [Christian Hoffmann]
+
+* lineage/hudson
+9fec909 Regenerate device dependency mappings [razorloves]
+
+* lineage/wiki
+55d80267 wiki: devices: Promote monet to 19.1 [xSylla]
+b443a67c feat: add MD5 and SHA-256 for copy-partitions [Outvi V]
+484a9a96 wiki: gapps: Add MTG filename and warning [Michael W]
+c0c13393 wiki: 12.1 -> 12L, 19.1 -> 19 [Michael W]
+
+* packages/apps/Settings
+3962488433 Settings: Make NetworkScanHelper max search time customizable [LuK1337]
+
+====================
+     2022-06-13    
+====================
+* lineage/hudson
+16dbad4 add experimental target, needed for some infra tests [Tom Powell]
+
+* lineage/mirror
+90e19ca Updated to 12-Jun-2022 12:00 UTC [Tim Schumacher]
+
+====================
+     2022-06-12    
+====================
+* build/soong
+bec7d52dc Merge tag 'android-12.1.0_r7' into staging/lineage-19.1_merge-android-12.1.0_r7 [Michael Bestas]
+
+* frameworks/base
+ba528922c37f SystemUI: Add HBM provider for UDFPS on Pixel devices [Danny Lin]
+9129d2dc731e SystemUI: Import Pixel display interfaces [Danny Lin]
+23b641c5793b Show the vibrate icon in the Status Bar by default [Chirayu Desai]
+8acf7b3981a5 Merge tag 'android-12.1.0_r7' into staging/lineage-19.1_merge-android-12.1.0_r7 [Michael Bestas]
+
+* lineage/crowdin
+b9bb829 config: lineage-19.1_aosp: Update for qpr3 changes [Michael Bestas]
+
+* packages/apps/LineageParts
+407d965 Trust: Add option to always disable USB gadgets [Michael Bestas]
+
+* packages/apps/Settings
+34dec4a9ad Hide the "Show the vibrate icon in the Status Bar" setting [Chirayu Desai]
+
+* vendor/crowdin
+d5cd0e7 Update for qpr3 changes [Michael Bestas]
+
+====================
+     2022-06-11    
+====================
+* lineage/hudson
+9734318 hudson: Promote monet to 19.1 [xSylla]
+2d1b266 hudson: Promote dipper to 19.1 [1nfrag]
+
