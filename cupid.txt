@@ -1,10 +1,49 @@
 ====================
+     2022-06-18    
+====================
+* device/xiaomi/cupid
+bbe8c73 cupid: overlay: Add corner content padding [Arian]
+3ee72e9 cupid: overlay: Set keyguard bottom margin [Ayush Dubey]
+1d1d5f1 cupidr: overlay: Allow switching between 60Hz and 120Hz [Cosmin Tanislav]
+
+* device/xiaomi/sm8450-common
+fe9aa982 sm8450-common: Build telephony packages and disable rild [Arian]
+fa959d00 sm8450-common: Set ro.media.xml_variant.profiles to choose media profiles [Arian]
+b6abdadb sm8450-common: Import media init scripts [Arian]
+98199a1d sm8450-common: Add proprietary telephony system blobs [Arian]
+74ef1261 sm8450-common: Add odm, product, system and system_ext properties from stock [Arian]
+d8e659c2 sm8450-common: overlay: Add automatic brightness config and enable by default [Arian]
+69fd6693 save SettingsProvider source [Arian]
+1585d004 sm8450-common: overlay: Add brightness levels [Arian]
+3e3e60e5 sm8450-common: overlay: Enable config_dozeAfterScreenOffByDefault [Arian]
+
+* vendor/lineage
+a0642b2d adb insecure by default [Scott Mertz]
+
+====================
      2022-06-17    
 ====================
+* device/xiaomi/cupid
+62c5f8f cupid: overlay: Import power_profile from V13.0.16.0.SLCEUXM [Arian]
+cf8ebe8 cupid: overlay: Refactor wifi overlay [Arian]
+44df55b cupid: overlay: Add fingerprint overlays [Arian]
+
 * device/xiaomi/sm8450-common
-9051149b Add recovery to ab ota partitions [Arian]
-b55917d8 Update rro scripts [Arian]
-ee115080 sm8450-common: Switch to erofs partitions [Arian]
+017b2855 sm8450-common: Build new rro packages [Arian]
+02fa6560 update overlay list [Arian]
+f62bef0e sm8450-common: overlay: Checkout Frameworks overlay to LA.VENDOR.1.0.r1-13100-WAIPIO.0 [Arian]
+e39ea087 sm8450-common: overlay: Update CarrierConfig from LA.VENDOR.1.0.r1-13100-WAIPIO.0 [Arian]
+c197cb4d sm8450-common: overlay: Checkout Wifi overlays to LA.VENDOR.1.0.r1-13100-WAIPIO.0 [Arian]
+c62ea827 sm8450-common: Rename overlays [Arian]
+ae4c7b27 Import overlays from V13.0.16.0.SLCEUXM [Arian]
+a3e713bd update list of overlays [Arian]
+80b947e4 Drop overlays [Arian]
+436b93b3 Update rro scripts [Arian]
+d3484221 Add recovery to ab ota partitions [Arian]
+
+* frameworks/base
+1920e61f1fbd SystemUI: VolumeDialogImpl: Show output button if there is an active stream [Arian]
+60e396a80990 SystemUI: MediaOutputController: Avoid NPE when created with empty packageName [Arian]
 
 * hardware/qcom-caf/bootctrl
 d4799e9 bootctrl: Enabling bootctrl for gvmq beased on property [Tabassum Tabassum]
@@ -14,26 +53,18 @@ b298eec Bootctrl: Replace usage of ro.build.product with ro.board.platform [Huan
 ====================
      2022-06-16    
 ====================
+* device/xiaomi/sm8450-common
+ee115080 sm8450-common: Switch to erofs partitions [Arian]
+
+====================
+     2022-06-15    
+====================
 * device/xiaomi/msm8998-common
 70630f963 msm8998-common: Remove deprecated TARGET_USES_QTI_CAMERA_DEVICE [Nolen Johnson]
 168d7138d msm8998-common: Drop USE_DEVICE_SPECIFIC_CAMERA [Elektroschmock]
 
 * lineage/mirror
 1c89c7c Updated aosp-minimal to 15-Jun-2022 12:01 UTC [Tim Schumacher]
-
-====================
-     2022-06-15    
-====================
-* device/xiaomi/sm8450-common
-83195e94 sm8450-common: Remove ineffective BOARD_KERNEL_TAGS_OFFSET variable [Daniel Mentz]
-937fc21c Add sepolicy types for mi_thermald, batterysecret and mi_ric [Arian]
-8432fd80 Drop miui screenshotprovider [Arian]
-
-* frameworks/base
-1726a9eda329 fixup! Allow lineage resources package to be overlayed by RRO packages [nift4]
-
-* lineage/mirror
-eb05cb6 Updated to 14-Jun-2022 12:01 UTC [Tim Schumacher]
 
 * lineage/wiki
 9ec1e985 addison/albus: Move to lineage recovery [Nolen Johnson]
@@ -54,8 +85,19 @@ f04386d2c sepolicy: allow recovery to operate devpts and kmsg [xiaohuin]
 47d3ede atv: Remove duplicate PRODUCT_PACKAGES entries [Bruno Martins]
 47b741e Import idc and kl for wade's BT remote [Christian Hoffmann]
 
+* device/xiaomi/sm8450-common
+83195e94 sm8450-common: Remove ineffective BOARD_KERNEL_TAGS_OFFSET variable [Daniel Mentz]
+937fc21c Add sepolicy types for mi_thermald, batterysecret and mi_ric [Arian]
+8432fd80 Drop miui screenshotprovider [Arian]
+
+* frameworks/base
+1726a9eda329 fixup! Allow lineage resources package to be overlayed by RRO packages [nift4]
+
 * lineage/hudson
 9fec909 Regenerate device dependency mappings [razorloves]
+
+* lineage/mirror
+eb05cb6 Updated to 14-Jun-2022 12:01 UTC [Tim Schumacher]
 
 * lineage/wiki
 55d80267 wiki: devices: Promote monet to 19.1 [xSylla]
@@ -72,37 +114,19 @@ c0c13393 wiki: 12.1 -> 12L, 19.1 -> 19 [Michael W]
 * lineage/hudson
 16dbad4 add experimental target, needed for some infra tests [Tom Powell]
 
-* lineage/mirror
-90e19ca Updated to 12-Jun-2022 12:00 UTC [Tim Schumacher]
-
 ====================
      2022-06-12    
 ====================
-* build/soong
-bec7d52dc Merge tag 'android-12.1.0_r7' into staging/lineage-19.1_merge-android-12.1.0_r7 [Michael Bestas]
-
 * frameworks/base
 ba528922c37f SystemUI: Add HBM provider for UDFPS on Pixel devices [Danny Lin]
 9129d2dc731e SystemUI: Import Pixel display interfaces [Danny Lin]
-23b641c5793b Show the vibrate icon in the Status Bar by default [Chirayu Desai]
-8acf7b3981a5 Merge tag 'android-12.1.0_r7' into staging/lineage-19.1_merge-android-12.1.0_r7 [Michael Bestas]
 
 * lineage/crowdin
 b9bb829 config: lineage-19.1_aosp: Update for qpr3 changes [Michael Bestas]
 
-* packages/apps/LineageParts
-407d965 Trust: Add option to always disable USB gadgets [Michael Bestas]
-
-* packages/apps/Settings
-34dec4a9ad Hide the "Show the vibrate icon in the Status Bar" setting [Chirayu Desai]
+* lineage/mirror
+90e19ca Updated to 12-Jun-2022 12:00 UTC [Tim Schumacher]
 
 * vendor/crowdin
 d5cd0e7 Update for qpr3 changes [Michael Bestas]
-
-====================
-     2022-06-11    
-====================
-* lineage/hudson
-9734318 hudson: Promote monet to 19.1 [xSylla]
-2d1b266 hudson: Promote dipper to 19.1 [1nfrag]
 
