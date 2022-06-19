@@ -1,13 +1,48 @@
 ====================
+     2022-06-19    
+====================
+* device/xiaomi/cupid
+481fdee cupid: overlay: Import display cutout and rounded corner configurations [Arian]
+0915c93 cupid: overlay: Use stock content padding value [Arian]
+fee2b5f cupid: Add support for udfps long press sensor [Cosmin Tanislav]
+
+* device/xiaomi/sm8450-common
+c08db7be sm8450-common: Import audio configs [Arian]
+90a5dc0e sm8450-common: overlay: Don't use brightness float values [Arian]
+78160d23 sm8450-common: Rollback to ext4 [Arian]
+aa264e08 sm8450-common: rootdir: Add ultrasound socket to sensors hal service [Arian]
+3eea6af9 sm8450-common: Fix init.qti.media.rc path [Arian]
+5cd500c1 sm8450-common: Build xiaomi sensors multihal [Arian]
+fe9aa982 sm8450-common: Build telephony packages and disable rild [Arian]
+
+* hardware/xiaomi
+4d3a4c4 More debug and extend udfps handler [Arian]
+3542040 sensors: Add udfps long press sensor [Cosmin Tanislav]
+ee237d5 sensors: Fix locking around setOperationMode and activate [Cosmin Tanislav]
+fa74125 sensors: Move one shot sensor out of main class [Cosmin Tanislav]
+fddc4ae sensors: Make sensor set mode operation function virtual [Cosmin Tanislav]
+76ad897 sensors: Make sensor flush function virtual [Cosmin Tanislav]
+f94b5d9 sensors: Make sensor run function virtual [Cosmin Tanislav]
+6df3a7d sensors: Make sensor batch function virtual [Cosmin Tanislav]
+fc193b2 Add dummy sensors sub HAL [Cosmin Tanislav]
+203ce54 hidl: sensors: Standardize xiaomi pickup sensor [Cosmin Tanislav]
+e4d8a6a hidl: sensors: Avoid target name conflicts [Cosmin Tanislav]
+27c291e hidl: sensors: Import 2.X sensors hal proxy [Cosmin Tanislav]
+502105c hidl: sensors: Drop hardware interfaces license [Arian]
+4bcc1c0 hidl: sensors: Import 2.1 sensors multihal [Cosmin Tanislav]
+
+====================
      2022-06-18    
 ====================
 * device/xiaomi/cupid
 bbe8c73 cupid: overlay: Add corner content padding [Arian]
 3ee72e9 cupid: overlay: Set keyguard bottom margin [Ayush Dubey]
 1d1d5f1 cupidr: overlay: Allow switching between 60Hz and 120Hz [Cosmin Tanislav]
+62c5f8f cupid: overlay: Import power_profile from V13.0.16.0.SLCEUXM [Arian]
+cf8ebe8 cupid: overlay: Refactor wifi overlay [Arian]
+44df55b cupid: overlay: Add fingerprint overlays [Arian]
 
 * device/xiaomi/sm8450-common
-fe9aa982 sm8450-common: Build telephony packages and disable rild [Arian]
 fa959d00 sm8450-common: Set ro.media.xml_variant.profiles to choose media profiles [Arian]
 b6abdadb sm8450-common: Import media init scripts [Arian]
 98199a1d sm8450-common: Add proprietary telephony system blobs [Arian]
@@ -16,6 +51,9 @@ d8e659c2 sm8450-common: overlay: Add automatic brightness config and enable by d
 69fd6693 save SettingsProvider source [Arian]
 1585d004 sm8450-common: overlay: Add brightness levels [Arian]
 3e3e60e5 sm8450-common: overlay: Enable config_dozeAfterScreenOffByDefault [Arian]
+017b2855 sm8450-common: Build new rro packages [Arian]
+02fa6560 update overlay list [Arian]
+f62bef0e sm8450-common: overlay: Checkout Frameworks overlay to LA.VENDOR.1.0.r1-13100-WAIPIO.0 [Arian]
 
 * vendor/lineage
 a0642b2d adb insecure by default [Scott Mertz]
@@ -23,15 +61,7 @@ a0642b2d adb insecure by default [Scott Mertz]
 ====================
      2022-06-17    
 ====================
-* device/xiaomi/cupid
-62c5f8f cupid: overlay: Import power_profile from V13.0.16.0.SLCEUXM [Arian]
-cf8ebe8 cupid: overlay: Refactor wifi overlay [Arian]
-44df55b cupid: overlay: Add fingerprint overlays [Arian]
-
 * device/xiaomi/sm8450-common
-017b2855 sm8450-common: Build new rro packages [Arian]
-02fa6560 update overlay list [Arian]
-f62bef0e sm8450-common: overlay: Checkout Frameworks overlay to LA.VENDOR.1.0.r1-13100-WAIPIO.0 [Arian]
 e39ea087 sm8450-common: overlay: Update CarrierConfig from LA.VENDOR.1.0.r1-13100-WAIPIO.0 [Arian]
 c197cb4d sm8450-common: overlay: Checkout Wifi overlays to LA.VENDOR.1.0.r1-13100-WAIPIO.0 [Arian]
 c62ea827 sm8450-common: Rename overlays [Arian]
@@ -53,16 +83,16 @@ b298eec Bootctrl: Replace usage of ro.build.product with ro.board.platform [Huan
 ====================
      2022-06-16    
 ====================
+* device/xiaomi/msm8998-common
+70630f963 msm8998-common: Remove deprecated TARGET_USES_QTI_CAMERA_DEVICE [Nolen Johnson]
+168d7138d msm8998-common: Drop USE_DEVICE_SPECIFIC_CAMERA [Elektroschmock]
+
 * device/xiaomi/sm8450-common
 ee115080 sm8450-common: Switch to erofs partitions [Arian]
 
 ====================
      2022-06-15    
 ====================
-* device/xiaomi/msm8998-common
-70630f963 msm8998-common: Remove deprecated TARGET_USES_QTI_CAMERA_DEVICE [Nolen Johnson]
-168d7138d msm8998-common: Drop USE_DEVICE_SPECIFIC_CAMERA [Elektroschmock]
-
 * lineage/mirror
 1c89c7c Updated aosp-minimal to 15-Jun-2022 12:01 UTC [Tim Schumacher]
 
@@ -113,20 +143,4 @@ c0c13393 wiki: 12.1 -> 12L, 19.1 -> 19 [Michael W]
 ====================
 * lineage/hudson
 16dbad4 add experimental target, needed for some infra tests [Tom Powell]
-
-====================
-     2022-06-12    
-====================
-* frameworks/base
-ba528922c37f SystemUI: Add HBM provider for UDFPS on Pixel devices [Danny Lin]
-9129d2dc731e SystemUI: Import Pixel display interfaces [Danny Lin]
-
-* lineage/crowdin
-b9bb829 config: lineage-19.1_aosp: Update for qpr3 changes [Michael Bestas]
-
-* lineage/mirror
-90e19ca Updated to 12-Jun-2022 12:00 UTC [Tim Schumacher]
-
-* vendor/crowdin
-d5cd0e7 Update for qpr3 changes [Michael Bestas]
 
