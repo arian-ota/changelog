@@ -1,148 +1,172 @@
 ====================
-     2022-06-19    
+     2022-07-01    
 ====================
-* device/xiaomi/cupid
-481fdee cupid: overlay: Import display cutout and rounded corner configurations [Arian]
-0915c93 cupid: overlay: Use stock content padding value [Arian]
-
 * device/xiaomi/sm8450-common
-b5acb129 sm8450-common: Import audio configs [Arian]
-90a5dc0e sm8450-common: overlay: Don't use brightness float values [Arian]
-78160d23 sm8450-common: Rollback to ext4 [Arian]
-aa264e08 sm8450-common: rootdir: Add ultrasound socket to sensors hal service [Arian]
-3eea6af9 sm8450-common: Fix init.qti.media.rc path [Arian]
-
-====================
-     2022-06-18    
-====================
-* device/xiaomi/cupid
-fee2b5f cupid: Add support for udfps long press sensor [Cosmin Tanislav]
-bbe8c73 cupid: overlay: Add corner content padding [Arian]
-3ee72e9 cupid: overlay: Set keyguard bottom margin [Ayush Dubey]
-1d1d5f1 cupidr: overlay: Allow switching between 60Hz and 120Hz [Cosmin Tanislav]
-
-* device/xiaomi/sm8450-common
-5cd500c1 sm8450-common: Build xiaomi sensors multihal [Arian]
-fe9aa982 sm8450-common: Build telephony packages and disable rild [Arian]
-fa959d00 sm8450-common: Set ro.media.xml_variant.profiles to choose media profiles [Arian]
-b6abdadb sm8450-common: Import media init scripts [Arian]
-98199a1d sm8450-common: Add proprietary telephony system blobs [Arian]
-74ef1261 sm8450-common: Add odm, product, system and system_ext properties from stock [Arian]
-d8e659c2 sm8450-common: overlay: Add automatic brightness config and enable by default [Arian]
-69fd6693 save SettingsProvider source [Arian]
-1585d004 sm8450-common: overlay: Add brightness levels [Arian]
-3e3e60e5 sm8450-common: overlay: Enable config_dozeAfterScreenOffByDefault [Arian]
+0272de1c sm8450-common: overlay: Drop QTI UIM GBA package [Arian]
+f7d72d86 sm8450-common: Rework system side telephony blobs and move qti configs to vendor [Arian]
+812b30eb sm8450-common: Enable CNE feature [Arian]
+ecbe2598 sm8450-common: Update telephony package list to LA.QSSI.12.0.r1-05600-qssi.0 [Alexander Koskovich]
+73cd083c sm8450-common: overlay: Enable double tap to wake support [Arian]
+15fd77fe sm8450-common: Build power hal interface for gps hal [Arian]
+6028a813 sm8450-common: Add power HAL extension and use xiaomi-touch to handle dt2w [Arian]
+74a9aadf sm8450-common: Build qti aidl power hal [Arian]
+377e12b7 sm8450-common: Add ImsRcsService and dependencies [Arian]
+d1adf6e6 sm8450-common: Run sort-blobs-list.py [Arian]
+97a3a830 sm8450-common: Move to dummy megvii impl [Arian]
 
 * hardware/xiaomi
-4d3a4c4 More debug and extend udfps handler [Arian]
-3542040 sensors: Add udfps long press sensor [Cosmin Tanislav]
-ee237d5 sensors: Fix locking around setOperationMode and activate [Cosmin Tanislav]
-fa74125 sensors: Move one shot sensor out of main class [Cosmin Tanislav]
-fddc4ae sensors: Make sensor set mode operation function virtual [Cosmin Tanislav]
-76ad897 sensors: Make sensor flush function virtual [Cosmin Tanislav]
-f94b5d9 sensors: Make sensor run function virtual [Cosmin Tanislav]
-6df3a7d sensors: Make sensor batch function virtual [Cosmin Tanislav]
-fc193b2 Add dummy sensors sub HAL [Cosmin Tanislav]
-203ce54 hidl: sensors: Standardize xiaomi pickup sensor [Cosmin Tanislav]
-e4d8a6a hidl: sensors: Avoid target name conflicts [Cosmin Tanislav]
-27c291e hidl: sensors: Import 2.X sensors hal proxy [Cosmin Tanislav]
-502105c hidl: sensors: Drop hardware interfaces license [Arian]
-4bcc1c0 hidl: sensors: Import 2.1 sensors multihal [Cosmin Tanislav]
+5dd5459 Revert "Revert "More debug and extend udfps handler"" [Arian]
 
 * vendor/lineage
-a0642b2d adb insecure by default [Scott Mertz]
+432df835 qcom: Add taro platform [Arian]
+
+* vendor/qcom/opensource/power
+16a955b power: msm8953: Remove HBTP support [Michael Bestas]
+5d5f8f5 power: Remove no longer used files [Michael Bestas]
+4c5b7d7 power: Reduce log level of setBoost() method to VERBOSE. [Quallenauge]
+aeb8daf power: Avoid reaching req limit of qti perf service. [Quallenauge]
+d72c7fa power: Handle Boost:INTERACTION. [Quallenauge]
+c2ef0b8 power: Re-Enable power_hint() call for Mode::LAUNCH. [Quallenauge]
+c934ee8 power: Allow device specific hooks for setMode, isModeSupported [LuK1337]
+fb6bbca power: msm8916: Drop MIN_FREQ tweak for 8939 [nico]
+286b834 power: Handle launch and interaction hints for legacy platforms [Michael Bestas]
+b310ad8 power: Handle launch and interaction hints for perf HAL platforms [BeYkeRYkt]
+8384b5a power: Use monotonic time for interaction boost [Wei Wang]
+a5b4acb power: perform_hint_action: return an error code [Corinna Vinschen]
+4e985f5 power: Use declared enums where possible [Michael Bestas]
+ff09485 power: Add known perf hint IDs [dianlujitao]
+8e836bc power: msm8996: Support VR + Sustained performance mode [dianlujitao]
+dcb5db4 power: Clean up and fix set_interactive_override [Michael Bestas]
+dc8764d power: Clean up and fix video encode/decode hint handling [Michael Bestas]
+5adbf95 power: Find online CPU core and get scaling governor [nico]
+be8a6c0 power: msm8952: Remove HBTP support [Michael Bestas]
+22e1675 power: Rename power-8952.c to power-8937.c [Michael Bestas]
+497bf1f power: Remove unused camera_hint_ref_count [Michael Bestas]
+2ac9fce power: Fix power hal compiler warnings [Adrian Salido]
+1e7e774 power: Compile with -Wall -Wextra -Werror [Michael Bestas]
+1620850 power: msm8916: Code clean up [dianlujitao]
+63c2499 power: fix sysfs_read/sysfs_write usage [Corinna Vinschen]
+8d68aaf power: msm8996: Remove dead code [Michael Bestas]
+4b72324 power: add back check for ro.vendor.extension_library [Corinna Vinschen]
+1aa7110 power: Use ARRAY_SIZE macro where possible [Zhao Wei Liew]
+58a9ac6 power: Drop default POWER_HINT_INTERACTION routine [dianlujitao]
+31a3ef2 power: Cache SOC ID checks for future queries [Zhao Wei Liew]
+ee41a21 power: Add back display_boost checks [Zhao Wei Liew]
+e82914f power: Simplify display_hint_sent [Zhao Wei Liew]
+46eacfc power: Simplify soc_id checks [Zhao Wei Liew]
+1715a96 power: Remove unused list utils [Michael Bestas]
+f7c6ee7 power: Avoid interaction build errors [Michael Bestas]
+2f56858 power: Use is_interactive_governor/is_schedutil_governor [Ethan Chen]
+8387738 power: Introduce is_schedutil_governor [Michael Bestas]
+2844495 power: Remove leftover support for ondemand governor [Michael Bestas]
+967b45d power: Remove leftover support for msm-dcvs governor [Michael Bestas]
+3083dad power: clang-format [Michael Bestas]
+03dbabb power: Remove mutex to hints [dianlujitao]
+13aa18c power: Remove unused arg from power_hint_override/set_interactive_override [Rashed Abdel-Tawab]
+c556b13 power: Enable 4+0 core config for display off cases [Dilip Gudlur]
+5990c21 power: introduce 8992-specific handling [Dilip Gudlur]
+14f2761 power: modify return value for display off hint in 8994 [Dilip Gudlur]
+411e2a9 power: Fix to handle min freq changes when CPU cores hotplugged. [Nikhil Kumar Kansal]
+4bfa2e8 power: Changed the minfreq to 400Mhz for display off scenario. [vaibhav bhalla]
+d96c4e9 power: Change the Hi-Speed freq to 800Mhz for camcorder case [vaibhav bhalla]
+aca070b power: override encode hint for 8909 [vaibhav bhalla]
+e603100 power: Allow devices to write their own platform specific bits [Christopher R. Palmer]
+becde51 power: Allow device specific hooks for set_interactive [Steve Kondik]
+b312799 power: Use log/log.h instead of utils/Log.h [Ethan Chen]
+a5c65f4 Revert "power: Fix a few compiler warnings" [Arian]
+ab9adfa power: Fix a few compiler warnings [Paul Keith]
+73669cf power: Remove powerhintparser [Michael Bestas]
+749f7af power: Add support for tap-to-wake feature control [Steve Kondik]
+01329bb power: Add -qti suffix to module name [Michael Bestas]
 
 ====================
-     2022-06-17    
+     2022-06-30    
 ====================
-* device/xiaomi/cupid
-62c5f8f cupid: overlay: Import power_profile from V13.0.16.0.SLCEUXM [Arian]
-cf8ebe8 cupid: overlay: Refactor wifi overlay [Arian]
-44df55b cupid: overlay: Add fingerprint overlays [Arian]
-
-* device/xiaomi/sm8450-common
-017b2855 sm8450-common: Build new rro packages [Arian]
-02fa6560 update overlay list [Arian]
-f62bef0e sm8450-common: overlay: Checkout Frameworks overlay to LA.VENDOR.1.0.r1-13100-WAIPIO.0 [Arian]
-e39ea087 sm8450-common: overlay: Update CarrierConfig from LA.VENDOR.1.0.r1-13100-WAIPIO.0 [Arian]
-c197cb4d sm8450-common: overlay: Checkout Wifi overlays to LA.VENDOR.1.0.r1-13100-WAIPIO.0 [Arian]
-c62ea827 sm8450-common: Rename overlays [Arian]
-ae4c7b27 Import overlays from V13.0.16.0.SLCEUXM [Arian]
-a3e713bd update list of overlays [Arian]
-80b947e4 Drop overlays [Arian]
-436b93b3 Update rro scripts [Arian]
-d3484221 Add recovery to ab ota partitions [Arian]
-
-* frameworks/base
-1920e61f1fbd SystemUI: VolumeDialogImpl: Show output button if there is an active stream [Arian]
-60e396a80990 SystemUI: MediaOutputController: Avoid NPE when created with empty packageName [Arian]
-
-* hardware/qcom-caf/bootctrl
-d4799e9 bootctrl: Enabling bootctrl for gvmq beased on property [Tabassum Tabassum]
-b298eec Bootctrl: Replace usage of ro.build.product with ro.board.platform [Huang Li]
-10036b1 Handle "multiimgoem", "multiimgqti" partitions. [Siddeswar Aluganti]
-
 ====================
-     2022-06-16    
+     2022-06-29    
 ====================
-* device/xiaomi/sm8450-common
-ee115080 sm8450-common: Switch to erofs partitions [Arian]
+* device/xiaomi/davinci
+101cf612 davinci: Update blobs from MIUI V12.5.2.0.RFJCNXM [Arian]
+01cdb7c7 davinci: init: Update fingerprints [Arian]
+ad652274 davinci: init: Override vendor_dlkm props too and drop product and bootimage [Arian]
+84e0c9b1 davinci: init: Override system_ext props too [Arne Coucheron]
+9fd82142 davinci: Declare source of proprietary files [Arian]
 
-====================
-     2022-06-15    
-====================
-* device/xiaomi/msm8998-common
-70630f963 msm8998-common: Remove deprecated TARGET_USES_QTI_CAMERA_DEVICE [Nolen Johnson]
-168d7138d msm8998-common: Drop USE_DEVICE_SPECIFIC_CAMERA [Elektroschmock]
+* device/xiaomi/sm6150-common
+aea412534 fixup alarm blobs [Arian]
+82af9d687 sm6150-common: sepolicy: Label new telephony properties [Arian]
+60dd6a956 sm6150-common: Decommonize vendor security patch level [Arian]
+1fadb9816 sm6150-common: Update blobs from sweet V13.0.8.0.SKFMIXM [Arian]
+c59c8ee2f sm6150-common: wifi: Update from sweet V13.0.8.0.SKFMIXM [Arian]
+54a9eac76 sm6150-common: gps: Update to LA.UM.9.1.r1-11200-SMxxx0.0 [Arian]
+816544797 sm6150-common: gps: Update configs from sweet V13.0.8.0.SKFMIXM [Arian]
+4242a98d1 sm6150-common: gps: Comment out ANTENNA_INFO_VECTOR_SIZE by default [Mike Cailean]
+553228f12 sm6150-common: gps: Add nmea tag block grouping feature [Hoss Zhou]
+338269c5d sm6150-common: display: Enable support for protected content GPU composition [Vinoth Jayaram]
+745358489 sm6150-common: Disable partial FB excl rect [Rajavenu Kyatham]
+3ade89d76 sm6150-common: qcc-tr: define new AID for qcc-trd [Shawn Shin]
+30b624457 sm6150-common: audio: Set valid and supported channel mask for earpiece [Anver sadhique]
+ee19f5214 sm6150-common: audio: Fix copyright [Anver sadhique]
+c58c4b845 sm6150-common: audio: Remove dynamic attributes from APS config [Anver sadhique]
+7426fb171 sm6150-common: audio: Add Stereo config channel support to usb surround sound [Lakshman Chaluvaraju]
+e365753ba sm6150-common: audio: Add compress recording configurations [Weiyin Jiang]
+b09191563 sm6150-common: media: Drop media_codecs_c2.xml [Arian]
+c777f2dca sm6150-common: media: Add Attribute name for SW encoder [Paras Nagda]
+8b0924327 sm6150-common: media: Update max resolution from True4k to UHD. [Vasantha Balla]
+a6f04db0a sm6150-common: media: Finetune performance xml [Paras Nagda]
+658691704 sm6150-common: rootdir: ueventd: Set permissions for KGSL sysfs node [Mohammed Mirza Mandayappurath Manzoor]
+6c79c4001 sm6150-common: rootdir: Set system graphics to power control node [Varun Arora]
+3a3b9ce92 sm6150-common: rootdir: Add edgnss socket directory [Hoss Zhou]
+520a1d852 sm6150-common: Move Netflix property to vendor [Arian]
+f87adf6a7 sm6150-common: rootdir: Set Netflix property based on target [Rajeshwar Kurapaty]
+9e0dad888 sm6150-common: rootdir: Increase the console log level [Ashish Bhimanpalliwar]
+9aa8c4c9c sm6150-common: rootdir: Decrease the console log level [Raghavendra Rao Ananta]
+98c5e0ec3 sm6150-common: WifiOverlay: Update from sweet V13.0.8.0.SKFMIXM [Arian]
+4162106c4 sm6150-common: WifiOverlay: Align config.xml with AOSP [Arian]
+57d5f1f1d sm6150-common: Set soc properties [Arvind Kumar]
+ac437d967 sm6150-common: hidl: Update uceservice HAL to 2.3 [Pavan Kumar M]
+7a23256ee sm6150-common: hidl: Update factory version to v2.2 [Manoj Basapathi]
+f92a01172 sm6150-common: Add udfps handler lib [Arian]
+cc3ba5c9c sm6150-common: Move to common fingerprint HIDL [Bruno Martins]
+2b9128df8 sm6150-common: fingerprint: Remove local UDFPS extension [Bruno Martins]
+c6daece9b sm6150-common: Build opensource soundtrigger HAL [Bruno Martins]
+f97544641 sm6150-common: sepolicy: Extend vendor_toolbox permissions to files in persist [Arian]
 
-* lineage/mirror
-1c89c7c Updated aosp-minimal to 15-Jun-2022 12:01 UTC [Tim Schumacher]
-
-* lineage/wiki
-9ec1e985 addison/albus: Move to lineage recovery [Nolen Johnson]
-
-====================
-     2022-06-14    
-====================
-* build/make
-26aa57154 Add vendor-bootconfig.img to target-files-package [Devin Moore]
-
-* device/xiaomi/sm8450-common
-83195e94 sm8450-common: Remove ineffective BOARD_KERNEL_TAGS_OFFSET variable [Daniel Mentz]
-937fc21c Add sepolicy types for mi_thermald, batterysecret and mi_ric [Arian]
-8432fd80 Drop miui screenshotprovider [Arian]
-
-* frameworks/base
-1726a9eda329 fixup! Allow lineage resources package to be overlayed by RRO packages [nift4]
-
-* lineage/hudson
-9fec909 Regenerate device dependency mappings [razorloves]
-
-* lineage/mirror
-eb05cb6 Updated to 14-Jun-2022 12:01 UTC [Tim Schumacher]
-
-* lineage/wiki
-467dc285 wiki: devices: whyred: Opt out of TWRP [Sebastiano Barezzi]
-55d80267 wiki: devices: Promote monet to 19.1 [xSylla]
-b443a67c feat: add MD5 and SHA-256 for copy-partitions [Outvi V]
-484a9a96 wiki: gapps: Add MTG filename and warning [Michael W]
-c0c13393 wiki: 12.1 -> 12L, 19.1 -> 19 [Michael W]
-
-* packages/apps/Settings
-3962488433 Settings: Make NetworkScanHelper max search time customizable [LuK1337]
-
-* system/sepolicy
-f04386d2c sepolicy: allow recovery to operate devpts and kmsg [xiaohuin]
+* vendor/xiaomi
+9a7788f9 davinci: Update from MIUI V12.5.2.0.RFJCNXM [Arian]
+29ad3306 sm6150-common: Update from sweet MIUI V13.0.8.0.SKFMIXM [Arian]
+3e047828 davinci: Update from MIUI V12.1.4.0.RFJMIXM [Arian]
 
 ====================
-     2022-06-13    
+     2022-06-28    
 ====================
-* device/lineage/atv
-1dd3b22 Standardize wake keys on wade's BT remote [Aaron Kling]
-389ee9b Adjust wade's BT remote keylayout to match common keyhandler [Aaron Kling]
-47d3ede atv: Remove duplicate PRODUCT_PACKAGES entries [Bruno Martins]
-47b741e Import idc and kl for wade's BT remote [Christian Hoffmann]
+* device/xiaomi/davinci
+a25aefb5 davinci: Set vendor security patch level according to MIUI V12.1.4.0.RFJMIXM [Arian]
+7ef86c75 davinci: overlay: Set status bar height according to rounded corners [Arian]
+80d2f547 davinci: Build udfps handler [Bruno Martins]
+056814c6 davinci: Move to common fingerprint HIDL [Bruno Martins]
+6b73032b davinci: Move to common surfaceflinger UDFPS extension [Bruno Martins]
+0e00ab3c Revert "davinci: Set SOC manufacturer and chipset properties" [Arian]
+ada1d39b Revert "davinci: Correct the chipset model name" [Prasanta Kumar Sahu]
+bb3a7b34 davinci: Sort blobs list /w sort-blobs-list.py [LuK1337]
 
-* lineage/hudson
-16dbad4 add experimental target, needed for some infra tests [Tom Powell]
+* device/xiaomi/sm6150-common
+dc759f642 sm6150-common: sepolicy: Label additional usb related wakeup nodes [Arian]
+08b94607f Revert "davinci: sepolicy: Remove qcom PMIC devices wakeup nodes" [Arian]
+4ba3c8109 sm6150-common: Remove TARGET_ENABLE_MEDIADRM_64 [Sebastiano Barezzi]
+29a3f78a3 sm6150-common: Automatically add apk/jar/vintf fragments to PRODUCT_PACKAGES [Michael Bestas]
+e6fa02024 sm6150-common: Sort blobs list /w sort-blobs-list.py [LuK1337]
+b3bb71aeb sm6150-common: Add gnss seccomp_policy [Arian]
 
+* hardware/xiaomi
+328e9ea Revert "More debug and extend udfps handler" [Arian]
+
+====================
+     2022-06-27    
+====================
+====================
+     2022-06-26    
+====================
+====================
+     2022-06-25    
+====================
