@@ -1,117 +1,453 @@
 ====================
-     2022-06-15    
+     2022-07-20    
 ====================
-* frameworks/base
-1726a9eda329 fixup! Allow lineage resources package to be overlayed by RRO packages [nift4]
-
-* lineage/hudson
-9fec909 Regenerate device dependency mappings [razorloves]
-
-* lineage/mirror
-eb05cb6 Updated to 14-Jun-2022 12:01 UTC [Tim Schumacher]
-
-* lineage/wiki
-9ec1e985 addison/albus: Move to lineage recovery [Nolen Johnson]
-467dc285 wiki: devices: whyred: Opt out of TWRP [Sebastiano Barezzi]
-
-* system/sepolicy
-f04386d2c sepolicy: allow recovery to operate devpts and kmsg [xiaohuin]
-
-====================
-     2022-06-14    
-====================
-* build/make
-26aa57154 Add vendor-bootconfig.img to target-files-package [Devin Moore]
-
 * device/lineage/atv
-1dd3b22 Standardize wake keys on wade's BT remote [Aaron Kling]
-389ee9b Adjust wade's BT remote keylayout to match common keyhandler [Aaron Kling]
-47d3ede atv: Remove duplicate PRODUCT_PACKAGES entries [Bruno Martins]
-47b741e Import idc and kl for wade's BT remote [Christian Hoffmann]
+4cf3172 Support restarting adb when adb port prop is set [Aaron Kling]
 
-* lineage/wiki
-55d80267 wiki: devices: Promote monet to 19.1 [xSylla]
-b443a67c feat: add MD5 and SHA-256 for copy-partitions [Outvi V]
-484a9a96 wiki: gapps: Add MTG filename and warning [Michael W]
-c0c13393 wiki: 12.1 -> 12L, 19.1 -> 19 [Michael W]
+* device/lineage/sepolicy
+aebf06b atv: Allow TvSettings to set adb port property [Aaron Kling]
 
-* packages/apps/Settings
-3962488433 Settings: Make NetworkScanHelper max search time customizable [LuK1337]
-
-====================
-     2022-06-13    
-====================
-* lineage/hudson
-16dbad4 add experimental target, needed for some infra tests [Tom Powell]
-
-* lineage/mirror
-90e19ca Updated to 12-Jun-2022 12:00 UTC [Tim Schumacher]
-
-====================
-     2022-06-12    
-====================
-* build/soong
-bec7d52dc Merge tag 'android-12.1.0_r7' into staging/lineage-19.1_merge-android-12.1.0_r7 [Michael Bestas]
-
-* frameworks/base
-ba528922c37f SystemUI: Add HBM provider for UDFPS on Pixel devices [Danny Lin]
-9129d2dc731e SystemUI: Import Pixel display interfaces [Danny Lin]
-23b641c5793b Show the vibrate icon in the Status Bar by default [Chirayu Desai]
-8acf7b3981a5 Merge tag 'android-12.1.0_r7' into staging/lineage-19.1_merge-android-12.1.0_r7 [Michael Bestas]
-
-* lineage/crowdin
-b9bb829 config: lineage-19.1_aosp: Update for qpr3 changes [Michael Bestas]
-
-* packages/apps/LineageParts
-407d965 Trust: Add option to always disable USB gadgets [Michael Bestas]
-
-* packages/apps/Settings
-34dec4a9ad Hide the "Show the vibrate icon in the Status Bar" setting [Chirayu Desai]
-
-* vendor/crowdin
-d5cd0e7 Update for qpr3 changes [Michael Bestas]
-
-====================
-     2022-06-11    
-====================
-* lineage/hudson
-9734318 hudson: Promote monet to 19.1 [xSylla]
-2d1b266 hudson: Promote dipper to 19.1 [1nfrag]
-
-====================
-     2022-06-10    
-====================
-* build/soong
-f017a30c4 dumpvars: Replace ATV and Automotive vars [Bruno Martins]
-
-* lineage/mirror
-4242b26 Updated aosp-minimal to 09-Jun-2022 12:01 UTC [Tim Schumacher]
-
-* packages/resources/devicesettings
-d53614e devicesettings: Add moto gesture strings [dianlujitao]
-
-* tools/extract-utils
-58851a0 extract_utils: Add a script to reorder blobs list [Sebastiano Barezzi]
+* packages/apps/TvSettings
+ceaaf19f5 Settings: Implement ADB over network [Dave Carey]
 
 * vendor/lineage
-c93bdd63 partner_gms: Stop relying on exported vars for ATV and Automotive targets [Bruno Martins]
-265fdadd vars: Remove pixel sepolicy repos [Michael Bestas]
-cf700465 vars: Remove b1c1 from devices [Michael Bestas]
-fbadddae envsetup: Add sort-blobs-list [Michael Bestas]
+cb15b81b qcom: Add holi platform [SahilSonar]
+
+* vendor/xiaomi
+9c8e7c2a3 davinci: Update from MIUI V12.5.2.0.RFJCNXM [Arian]
 
 ====================
-     2022-06-09    
+     2022-07-19    
 ====================
-* packages/apps/SetupWizard
-2af9f05 SuW: Disable BluetoothSetupActivity component with prop [Nicholas Lim]
+* android
+acf9410 lineage: Bring back LineageCustomizer for ATV [Nolen Johnson]
 
-* vendor/nxp/opensource/commonsys/external/libnfc-nci
-57a3085d OOBR in nfc_ncif_proc_ee_discover_req() [Alisher Alikhodjaev]
-3a75b79e Double Free in ce_t4t_data_cback [Alisher Alikhodjaev]
-49d03376 Out of Bounds Read in nfa_dm_check_set_config [Alisher Alikhodjaev]
+* system/sepolicy
+b2ea519f4 private: Exempt system_app from adbd_config_prop neverallow [Nolen Johnson]
 
-* vendor/nxp/opensource/commonsys/packages/apps/Nfc
-35a6b667 OOB read in phNciNfc_RecvMfResp() [Alisher Alikhodjaev]
-ca1ef595 Add EventLog to trace the tag reusing issue [chloedai]
-3b4b97b3 Add methods to check tag availability [chloedai]
+====================
+     2022-07-18    
+====================
+====================
+     2022-07-17    
+====================
+* frameworks/base
+3dd1c0ac07e7 SystemUI: doze: add config for long press sensors that need a proximity check [Cosmin Tanislav]
+a4b357c9dd7c SystemUI: doze: add config for double tap sensors that need a proximity check [Cosmin Tanislav]
+100058582558 Partially revert "Assume sensors perform prox check" [Cosmin Tanislav]
+
+====================
+     2022-07-16    
+====================
+* lineage/mirror
+7fb58eb Updated aosp-minimal to 15-Jul-2022 12:01 UTC [Tim Schumacher]
+
+* vendor/lineage
+b88982a7 overlay: Convert NetworkStack overlay to an RRO package [LuK1337]
+
+====================
+     2022-07-15    
+====================
+* lineage/wiki
+b568e4dc wiki: Add `needs_specific_android_fw` for ginkgo [LuK1337]
+
+* packages/apps/LineageParts
+7bf41c1 Regenerate contributors cloud [Kevin F. Haggerty]
+
+* vendor/lineage
+92b2067a lineage: config: Use $(abspath .) instead of $(shell pwd) [Jason Wojcik]
+
+====================
+     2022-07-14    
+====================
+* device/xiaomi/davinci
+d49b732 davinci: Update blobs from MIUI V12.5.2.0.RFJCNXM [Arian]
+5a79cf7 davinci: init: Update fingerprints [Arian]
+2d782fe davinci: init: Override vendor_dlkm props too and drop product and bootimage [Arian]
+e83987c davinci: init: Override system_ext props too [Arne Coucheron]
+5c7f6a4 davinci: Declare source of proprietary files [Arian]
+2819fda davinci: Set vendor security patch level according to MIUI V12.1.4.0.RFJMIXM [Arian]
+db23c43 davinci: overlay: Set status bar height according to rounded corners [Arian]
+423f157 davinci: Build udfps handler [Bruno Martins]
+85d508f davinci: Move to common fingerprint HIDL [Bruno Martins]
+21f09d7 davinci: Move to common surfaceflinger UDFPS extension [Bruno Martins]
+96c4bca Revert "davinci: Set SOC manufacturer and chipset properties" [Arian]
+597d92a Revert "davinci: Correct the chipset model name" [Prasanta Kumar Sahu]
+19ac90c davinci: Sort blobs list /w sort-blobs-list.py [LuK1337]
+48a3732 davinci: Drop manifest-qva [Arian]
+acb31e3 davinci: overlay: Fixed status bar glitch for apps that access internal resource dimen [shawnlin]
+4d3ee01 davinci: Rename camera face detection libs [Arian]
+
+* device/xiaomi/sm6150-common
+b4118d4 Revert "sm6150-common: parts: Add support for zero brightness doze mode" [Arian]
+28b9dec sm6150-common: sepolicy: Label new telephony properties [Arian]
+1bc49c2 sm6150-common: Decommonize vendor security patch level [Arian]
+e0b57d8 sm6150-common: Update blobs from sweet V13.0.8.0.SKFMIXM [Arian]
+
+* kernel/xiaomi/sm6150
+749f21a0823e ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Enable ZRAM WRITEBACK [YH_Lin]
+f16d7afc7d27 ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Enable LZ4 ZRAM [YH_Lin]
+c8e69264ad8b zram: remove BD_CAP_SYNCHRONOUS_IO with writeback feature [Minchan Kim]
+5258b5e61b67 UPSTREAM: zram: add stat to gather incompressible pages since zram set  up [Minchan Kim]
+5371b7033941 zram: fix idle/writeback string compare [Minchan Kim]
+0f9fcb9d36ff Revert "zram: introduce zram_entry to prepare dedup functionality" [Minchan Kim]
+8b2ad7db4a71 Revert "zram: implement deduplication in zram" [Minchan Kim]
+4ff077be248e Revert "zram: make deduplication feature optional" [Minchan Kim]
+03d88ab7784d cpufreq: Ensure the minimal frequency is lower than the maximal frequency [Arian]
+6b33c1be9acd ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Enable PELT [Kyle Lin]
+0ce774bcaafb sched: core: fix kmalloc error during spinlock [Jimmy Shiu]
+51c35756266a UPSTREAM: sched/rt: Disable RT_RUNTIME_SHARE by default [Daniel Bristot de Oliveira]
+d0d96704a944 Revert "sched/fair: use actual cpu capacity to calculate boosted util" [Rick Yiu]
+9683cc7e2f9d sched/fair: do not use boosted margin for prefer_high_cap case [Rick Yiu]
+4335c762c094 sched/fair: use actual cpu capacity to calculate boosted util [Rick Yiu]
+28202ae0c63a sched/core: fix userspace affining threads incorrectly by task name. [Jimmy Shiu]
+dc38077b0661 sched: Improve the scheduler [Pavankumar Kondeti]
+a9e4f8304eca sched/core: Fix use after free issue in is_sched_lib_based_app() [Pavankumar Kondeti]
+1b6c410f565f sched/core: fix userspace affining threads incorrectly [Abhijeet Dharmapurikar]
+060efc66a6bc sched: change capacity margin down to 20% for non-boost task [Wei Wang]
+e91e0fdb1b83 sched/fair: fix merge conflict [Rick Yiu]
+6156a683864e sched/fair: Skip cpu if task does not fit in [Rick Yiu]
+cfe60677be8c sched: separate capacity margin for boosted tasks [Rick Yiu]
+8082e42864c9 Roll back performace files [Wilson Sung]
+cd95df603016 sched: bump big core down migration further to 35% [Wei Wang]
+c3f32aa5eb21 kernel: sched: account for real time utilization [Kyle Lin]
+f6e618d513bb sched/fair: check if mid capacity cpu exists [Rick Yiu]
+b4ad68d8d296 ANDROID: increase limit on sched-tune boost groups [Todd Kjos]
+f2bdeb95f1fe sched: bump big core down migration further to 31% [Wei Wang]
+24e381667ecd sched: adopt capacity margin 20% from EAS PELT's capacity_margin [Wei Wang]
+122a1d19ac2b sched: separate boost signal from placement hint [Wei Wang]
+7d267a122697 Roll back sched files [Wilson Sung]
+9d42ceafb24b sched: restrict iowait boost to tasks with prefer_idle [Wei Wang]
+0313e8891580 Revert "kernel: sched: cpufreq_schedutil: Make iowait boost optional." [Wei Wang]
+f8ce255b6ccf sched/tune: Increase the cgroup limit to 7 [Wei Wang]
+20757e9c0ce2 kernel: sched: fix build breakage when PELT enabled [Kyle Lin]
+49c2611bf561 attribute page lock and waitqueue functions as sched [Minchan Kim]
+9b17d05d5ed4 sched/fair: fix misfit with PELT [Quentin Perret]
+9fc09b37b84c trace: sched: add capacity change tracing [Wei Wang]
+101699bd10e4 kernel: sched: fix cpu cpu_capacity_orig being capped incorrectly [Wei Wang]
+bac9be2a726a sched: use sysctl to control energy aware feature [Rick Yiu]
+e34673660f14 ANDROID: sched: fair: balance for single core cluster [Wei Wang]
+e6569c1524b0 sched: reduce softirq conflicts with RT [Miguel de Dios]
+30e6f677ab1b sched/fair: let scheduler skip util checking if cpu is idle [Rick Yiu]
+ae8ca3e81a81 kernel: sched: Mitigate non-boosted tasks preempting boosted tasks [Miguel de Dios]
+d9d38d31277b Revert "sched/core: fix userspace affining threads incorrectly" [Wei Wang]
+9ed444947be3 Revert "sched/core: Fix use after free issue in is_sched_lib_based_app()" [Wei Wang]
+693e96663ad1 Revert "sched: Improve the scheduler" [Wei Wang]
+2556e834e57b sched/fair: prefer exclusive mid cluster cpu for top-app task [Rick Yiu]
+60eab0b137d3 sched: delete unused & buggy function definitions [Connor O'Brien]
+5be808ddf18a sched/fair: fix implementation of is_min_capacity_cpu() [Connor O'Brien]
+2507c50d78ad Revert "sched/fair: fix implementation of is_min_capacity_cpu()" [Jonglin Lee]
+f87d0a073afb Revert "sched: delete unused & buggy function definitions" [Jonglin Lee]
+1c1030ee966b sched/fair: refine some scheduler changes from AU drop [Rick Yiu]
+4dc23239af36 sched: delete unused & buggy function definitions [Connor O'Brien]
+0a488ae6d994 sched/fair: fix implementation of is_min_capacity_cpu() [Connor O'Brien]
+466ed3b78fe6 BACKPORT: sched/fair: if sync flag ignored, try to place in mid cluster [Rick Yiu]
+0ff51d33bbde sched/fair: refine check for sync wake-up [Rick Yiu]
+fe703535af25 sched/fair: avoid little cpus due to sync blindly [Rick Yiu]
+693185a3f5cb cpufreq: schedutil: fix check for stale utilization values [Connor O'Brien]
+27a73cfb3115 sched: core: Disable double lock/unlock balance in move_queued_task() [Miguel de Dios]
+de9e42aea5b9 sched: fair: Disable double lock/unlock balance in detach_task() [Miguel de Dios]
+d07c8231e29f sched: fair: Move cpu_is_in_target_set definition [Miguel de Dios]
+5ec6427b2032 sched/fair: apply sync wake-up to pure CFS path [Rick Yiu]
+60c890f06557 Revert "sched: fair: Always try to use energy efficient cpu for wakeups" [Connor O'Brien]
+7c4b05a4aac1 sched: fair: avoid little cpus due to sync, prev bias [Miguel de Dios]
+46426c056030 Revert "sched/fair: apply sync wake-up to pure CFS path" [Andrew Chant]
+d70dfb53bd4a sched/fair: apply sync wake-up to pure CFS path [Rick Yiu]
+705ddd39ea88 kernel: sched: cpufreq_schedutil: Make iowait boost optional. [Miguel de Dios]
+2bad90042e3f sched/fair: Add overutilization condition to sync wakeup case [Pavankumar Kondeti]
+d17b4c813541 ANDROID: sched/fair: fix -Wdeclaration-after-statement [Nick Desaulniers]
+46cd0e4547e4 ANDROID: sched: cpufreq: use rt_avg as estimate of required RT CPU capacity [Steve Muckle]
+5d5a2a465196 cpufreq: schedutil: clear cached_raw_freq when invalidated [John Dias]
+0bf8c167ba5e sched: walt: fix build breakage with CONFIG_SCHED_WALT=n [Steve Muckle]
+555e92708565 sched: Move sched_boost defines out of SCHED_WALT [Pavankumar Kondeti]
+d01085c6572f drm/msm: add idle state sysfs node [Adrian Salido]
+6d9a839c09ab ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Disable CAF cpu-boost driver [Danny Lin]
+bb988db3dc5c ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Disable Qualcomm core control [Danny Lin]
+e7253a2d1d7e ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Disable CONFIG_MSM_PERFORMANCE [Wei Wang]
+c58f320e811b ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Enable wireguard [Jason A. Donenfeld]
+9be9145734a9 ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Enable exFAT [Park Ju Hyung]
+10cac3767ba5 ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Enable recommended configs [Arian]
+97f98d5051a2 ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Enable recommended HID drivers [Arian]
+69b672868b62 ARM64: configs: violet: Enable TAS2563 drivers [raghavt20]
+ba1eeaa36548 ARM64: configs: sweet: Enable spectra camera upgrade [Arian]
+b2557caa3219 ARM64: configs: sweet: Enable multi ldo wl2866d support [Arian]
+3b0024ece5c9 ARM64: configs: sweet: Enable PN80T NFC support [Arian]
+738b296f2a1b ARM64: configs: tucana: Enable CONFIG_CSID_CAMERA [Arian]
+2c9e8f47419a ARM64: configs: tucana: Enable CONFIG_NO_DELAY_DMA_UNMAP_CAMERA [Arian]
+524b2d3b1a1b ARM64: configs: {toco,tucana}: Enable CONFIG_SOFTLED_CAMERA [vantoman]
+6d4620fe1e1a ARM64: configs: {sweet,toco}: Enable CONFIG_US_PROXIMITY [vantoman]
+27436659ba59 ARM64: configs: {toco,tucana}: Enable AW3644 LED driver [Arian]
+e8717d8a1742 ARM64: configs: {sweet,toco,tucana}: Enable BQ2597X charge pump driver [Arian]
+3ea74c9dafc3 ARM64: configs: sweet: Enable K6 charge [Arian]
+34a8c091c064 ARM64: configs: {phoenix,sweet,toco,tucana}: Enable ds28e16 battery verify driver [Arian]
+f00c1bd88d23 ARM64: configs: sweet: Enable aw8624 haptics driver [Rasenkai]
+344a8065dcf4 ARM64: configs: {toco,tucana}: Enable drv260x haptics driver [Arian]
+b3ec3bd9034f ARM64: configs: {phoenix,sweet,toco,tucana,violet}: Enable IR driver [Arian]
+127de02e07b1 ARM64: configs: {phoenix,sweet,toco,tucana}: Enable xiaomi simtray driver [Arian]
+7131e284e887 ARM64: configs: {davinci,sweet}: Enable drv8846 step motor soc driver [Arian]
+c227b77477ed ARM64: configs: {davinci,sweet}: Enable akm09970 compass driver [Arian]
+ba465a3b3b11 ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Enable fingerprint drivers [Arian]
+c6619f82e431 ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Enable touchscreen drivers [Arian]
+37dd915c5a1b ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Enable device specific configuration [Arian]
+0e2f693e1dfe ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Disable existing fingerprint drivers [Cosmin Tanislav]
+58bf7341b142 ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Disable Sitronix, Himax and Synaptics touchscreen drivers [Arian]
+8607a2c9fa75 ARM64: configs: violet: Disable sdmmagpie/sm8150 configs [raghavt20]
+a0f14c16142f ARM64: configs: {davinci,phoenix,sweet,toco,tucana}: Disable sm6150/sm8150 configs [Arian]
+75f5b632f456 ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Enable CONFIG_QCA_CLD_WLAN [Park Ju Hyung]
+370f452e9a77 ARM64: configs: {davinci,phoenix,sweet,toco,tucana}: Reserve space for ramoops [Arian]
+b46d240321f8 ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Enable power efficient workqueues [Danny Lin]
+63fe83fe968f ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Enable suspend sync [Demon Singur]
+acb89a0f869b ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Expand USB HID game controller support [Puma Hsu]
+41428f8cddc6 ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Enable CONFIG_JUMP_LABEL [Kyle Lin]
+897893acdc6f ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Enable CONFIG_HZ_300 [Kyle Lin]
+bcf2644397e7 ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Enable pstore [josephjang]
+6922436ccc26 ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Enable LOCALVERSION_AUTO [Cyan_Hsieh]
+abc4482755a8 ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Build separated soc-dtb and board-dtbos [Cyan_Hsieh]
+cf1208832d17 ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Disable qcom download mode [Demon000]
+5ba0f32095ac ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Disable module signing to allow kernel-module mismatch [Howie Chang]
+6773fc1cb784 ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Remove various debug configs [Thierry Strudel]
+6dfdefb2d525 ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Disable unused configs [Cosmin Tanislav]
+7177e8c30f21 ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Disable MSM_11AD [Thierry Strudel]
+5f16709090ac ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Remove CONFIG_WIL6210 [Howie Chang]
+90fcc0343be4 ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Remove CONFIG_QCOM_MINIDUMP [Lisa Liu]
+5c76d2c41f91 ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Remove unused configs to improve boottime [Kyle Lin]
+0d103090396e ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Remove unused config [Kyle Lin]
+27e697ada7a4 ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Remove unused governors [Kyle Lin]
+6e95f3f7a5af ARM64: configs: {davinci,toco,tucana}: Unset unused MMC Kconfigs [YH_Lin]
+41041d11343b ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Disable CONFIG_AUTOCGROUP [Kyle Lin]
+c946754dfa8f ARM64: configs: Add davinci, phoenix, sweet, toco, tucana and violet defconfigs based on sdmsteppe-perf_defconfig [Arian]
+c04b5a2bc058 thermal: cpu_cooling: Simplify cpu_limits_set_level [Yaroslav Furman]
+406bf1789d6f thermal: core: Use qcom drm notifier [Demon000]
+a25c0e87cb44 thermal: core: Import Xiaomi board_sensor and thermal message changes [Arian]
+90c0578688ba thermal: core: Custom thermal limits handling [Demon000]
+27f744e0e0b9 power: supply: Increase DCP_CURRENT_UA value to 2000000 [raghavt20]
+9aa994d8dfe9 power: qpnp-smb5: Expose system temperature level properties [merothh]
+ab7c5944705a power: qpnp-smb5: Add support to get type c mode [Arian]
+ee82ee0b9ac5 power: supply: maxim: Add support for K6/sweet [Arian]
+15d7e921de5e power: supply: ti: Add support for K6/sweet [Arian]
+9df11a78009b power: supply: Properly define type for K6_CHARGE [CloudedQuartz]
+19e922da106b power: supply: qcom: Add support for K6/sweet [Arian]
+e5da5a70920b power: supply: smb5-lib: Fix fastcharge soc threshold logging for bq2597x charge pump [Arian]
+649de3ae3b5e power: supply: Add support for bq2597x charge pump [Arian]
+350e7b0b8aa3 power: supply: ti: Add APDO max voltage limit [Arian]
+468c92433b79 power: Import bq2597x charge pump driver [Arian]
+0bc83234ac7f power: supply: maxim: Merge K6 unrelated changes from maxim_k6 [Arian]
+c49fc687081f power: supply: Import maxim ds28e16 battery verify driver [Arian]
+cf07729287e5 power: qcom: Add six pin battery support [Arian]
+ad7c1d78d25d power: Import xiaomi changes [Arian]
+8f7fb4330698 usb: Import Xiaomi changes [Arian]
+3e9d6a29aa08 smb5: Rerun APSD to ensure proper charger detection [Haijian Ma]
+c6f5d6af4f09 power: smb5-lib: Query FLASH_TRIGGER only for PMI632 [Anirudh Ghayal]
+7483e090e41a power: reset: Move in_panic handling out of dload mode [Michael Bestas]
+227e5f96acfc drm: msm: dsi-staging: Add dsi_panel_get_lockdowninfo_for_tp [PIPIPIG233666]
+993d5018421e drm: msm: dsi-staging: Keep the power regulator active when tddi doubleclick is enabled [Arian]
+f2efd053a250 drm: Import changes for F7B [merothh]
+141237c1dfb0 drm: msm: dsi-staging: Fix logging after disabling doze mode [Arian]
+8cf47e8060e7 drm: msm: dsi-staging: Check if panel is initialized before updating doze mode/status [Arian]
+e5766f66fcc6 drm: msm: Add support for backlight remap [Arian]
+8600444392a8 drm: msm: dsi-staging: Fix brightness level mapping [Adrian Salido]
+f54558053d7d drm: Expose panel_info sysfs node [Arian]
+c6dd8f7b3911 drm: msm: dsi-staging: Add support for high brightness mode (HBM) [Danny Baumann]
+77320c0074f1 ARM64: dts: qcom: xiaomi: Optimize HBM commands for in-kernel dimming [Demon000]
+747b62d44b50 ARM64: dts: qcom: xiaomi: Define fod dim lut [Demon000]
+874870638dca ARM64: dts: qcom: xiaomi: Adjust f4-41 panel lpm and hbm brightness [Arian]
+d5db51415959 ARM64: dts: qcom: xiaomi: Define doze lpm and hbm backlight levels [Demon000]
+6ce398d3b466 ARM64: dts: qcom: xiaomi: Disable dc dimming during fod hbm commands [Demon000]
+5b32b809e00c ARM64: dts: qcom: xiaomi: Move fod hbm commands to their proper place [Demon000]
+b742e0090b4e drm: msm: dsi-staging: Trigger drm notifier [Demon000]
+1a2dddfbd9c6 drm: msm: atomic: Do not trigger drm notifier [Demon000]
+6bc77ed2ff7f drm: msm: dsi-staging: Cleanup notifier implementation [Demon000]
+de5fe4a2926e drm: msm: Notify sysfs for fod ui changes [Demon000]
+947a9203e701 drm: msm: Implement fod handling [Demon000]
+342177ac685b drm: msm: dsi-staging: Add dsi_panel_get_backlight [Demon000]
+71566f1a58d0 drm: msm: dsi-staging: Add get_main_display [DevriesL]
+89681b306971 drm: msm: sde: Translate zpos property to fod property [Demon000]
+a9a735a933b7 drm: msm: dsi-staging: Implement doze mode [Demon000]
+221cf8c3301f drm: msm: dsi-staging: Create empty attributes group [Demon000]
+b531d3eb58ce drm: msm: dsi-staging: Modify lp11 mode logic [Demon000]
+064fa296fc0c drm: msm: dsi-staging: Add panel flags for f4 [Arian]
+a9f63f791ace drm: msm: Handle ss dcs type [Demon000]
+c3d763924918 drm: msm: Extend qcom drm notifier [Demon000]
+3bdf0f9754bf media: spi: Import Xiaomi IR changes for violet [GuaiYiHu]
+559faf406941 media: spi: Import Xiaomi IR SPI changes [Arian]
+067be281dce5 msm: camera: Import minimal Xiaomi camera changes for violet [Yaroslav Furman]
+e47958d716d1 misc: Import multi ldo wl2866d driver [Arian]
+1df2f393d593 msm: camera: Add spectra camera upgrade support [Arian]
+f51c6238d61b msm: camera: cam_fd: Mark device as ready to process on hw start and stop [Arian]
+99376300c834 msm: camera: cam_sync: Increase max V4L2 events [Arian]
+f1d6d5e53b2d msm: camera: cam_req_mgr: Correct unmapping iova [Arian]
+13087377830f msm: camera: Add multi ldo wl2866d support [Arian]
+a7e52c10a286 msm: camera: cam_flash: Add softled support [Arian]
+14e6436ace2b msm: camera: cam_isp: Add CSID binning support [Arian]
+1a58557dec65 msm: camera: Import Xiaomi OIS changes [Arian]
+12b6578a8d25 msm: camera: cam_smmu: Add support for no delayed unmap [Arian]
+0cd014329453 msm: camera: Add support for mipi switch [Arian]
+5992abcdbf4b msm: camera: cam_eeprom: Add 1ms delay after write 0x0A00 for toco [Arian]
+add5b53c843c msm: camera: cam_cci: Add 50us delay while reading for the thermal register of ut ak7377 [Arian]
+c64a3228d933 msm: camera: cam_sensor: Hardcode pipeline delay for face unlock and bokeh [Arian]
+e4bf60ecfd08 msm: camera: Add support to read and update reg [Arian]
+a843d29852d3 msm: camera: cam_csiphy: Respect reserved acquire parameter [Arian]
+6b24c8e64d4a msm: camera: cam_csiphy: Stop cpas if start failed with -EALREADY [Arian]
+26f6ffb2f00b msm: camera: cam_csiphy: Add cdr config [Arian]
+656286c7a634 msm: camera: cam_smmu: Set cb stall disable attribute [Arian]
+bb75977fe658 msm: camera: cam_smmu: Add cam_smmu_mi_init [Arian]
+84e8e66fdc47 msm: camera: cam_icp: Increase icp device idle timeout [Arian]
+df01d145b07e msm: camera: cam_icp: Increase max allowed contexts [Arian]
+3e5dab3f21d9 msm: camera: cam_utils: Increase max number of device regulators [Arian]
+5012fcfbd288 msm: camera: cam_sync: Increase max objs [Arian]
+bb3d66893e19 msm: camera: cam_eeprom: Increase max memory map size [Arian]
+35cdf2948924 include: media: cam_req_mgr: Increase handles supported by cam_req_mgr [Arian]
+45c43fdc1998 msm: camera: cam_req_mgr: Increase maximum allowed buffers in existence [Arian]
+b07bbc1dce2b msm: camera: cam_req_mgr: Increase max events [Arian]
+7fbfa7e73d2c msm: camera: Fix sensor id read issue [wangshuo18]
+338ed17f2d96 msm: camera: Fix out of memory issue [guocx4]
+01ffbc070d17 Revert "msm: camera: eeprom: Fix OOB read/write in EEPROM" [a7301c]
+0c7b5977a591 Revert "msm: camera: eeprom: Fix OOB condition for memory map count" [a7301c]
+cc1af7d2a0ca msm: camera: Fix EEPROM device handle leak. [chenglong1]
+b4ce005c0ba6 iommu: Import Xiaomi changes [Arian]
+2cd12628a3a8 iio: proximity: Import ultrasound driver [Arian]
+971478f6610b pstore: Import Xiaomi changes [Arian]
+2826688572e4 nfc: Import NQ PN80T driver [Arian]
+2ab6f65f2f25 input: misc: aw8624_haptic: Rename to qti-haptics [Arian]
+37da57afa46b input: misc: Import aw8624 haptic driver [Arian]
+d1918ee79df8 pinctrl: qcom: msm: Prevent access to GPIOs for FP and NFC [Arian]
+211e8e7b8c6b input: misc: drv260x_input: Rename to qti-haptics [Arian]
+58f5a893f128 input: misc: Import drv_260x_input driver [Arian]
+30fc26a6c0d0 leds: Import AW3644 driver [Arian]
+9b272c3535ea drivers: leds: Add support for led breath rate and LUT pattern switch control [UtsavBalar1231]
+36b47181d8c0 drivers: leds: Allow switching between dual flashlight leds [UtsavBalar1231]
+26220ff7ae8d misc: Import xiaomi sim tray driver [Arian]
+0adf1595d9b2 misc: Import drv8846 motor driver [Arian]
+9d318d13ba06 misc: Import akm09970 hall sensor driver [Arian]
+4d73c7155fe0 init: report fingerprint sensor on boot (for F7B) [merothh]
+4fb52c312831 input: fingerprint: Import gf3208 F7B fingerprint driver [Shubham Das]
+e87ede6d5b03 input: fingerprint: Import fpc1020 F7B fingerprint driver [Shubham Das]
+d40c73b63367 input: fingerprint: Import fpc_fod driver [Arian]
+0560b94f4602 fingerprint: goodix_fod: Switch to msm drm notifier api [UtsavBalar1231]
+13ae7cc89a35 input: fingerprint: Import goodix_fod driver [Arian]
+af1c247bcdb6 input: fingerprint: fpc_tee: Make vreg control mode runtime configurable [Arian]
+578f22d7ef3e input: fingerprint: fpc_tee: Undefine FPC_DRM_INTERFACE_WA [Arian]
+69c8248fcbe3 input: fingerprint: fpc_tee: Extend drm interface exclusions [Arian]
+0b38560c3509 input: fingerprint: fpc_tee: Remove unnecessary gpio 121 wake setup [Arian]
+de6968ecf792 input: fingerprint: fpc_tee: Disable regulator when disabling [Arian]
+2ee861fb4830 input: fingerprint: fpc_tee: Switch to msm drm notifier [Arian]
+c7c587740b2b input: fingerprint: Import fpc_tee driver from psyche-r-oss [Arian]
+fd9b3f3ece3a input: fingerprint: goodix_ta: Switch to msm drm notifier api [UtsavBalar1231]
+1c148dd54092 drm: msm: Implement early fingerprint wake-up optimization [UtsavBalar1231]
+bc560fc6d968 input: fingerprint: Import goodix_ta driver [Arian]
+6f1b21adf6dd input: Include fingerprint directory [Demon000]
+5ddd820d498c input: touchscreen: nvt_touch_f7b: Handle dt2w feature through xiaomi-touch [raghavt20]
+59566c2f348e input: touchscreen: Import f7b Nvt driver & firmware [raghavt20]
+114693dae44c input: touchscreen: ft8719_touch_f7b: Handle dt2w feature through xiaomi-touch [raghavt20]
+3f75a32c0b6b input: touchscreen: Import f7b fts driver & firmware [raghavt20]
+b8b964d7f376 input: touchscreen: gt9896: Nuke touch_irq_boost [vantoman]
+eab70c4b936a input: touchscreen: gt9896: Remove usages of lpm_disable_for_input [Demon000]
+504182d32069 input: touchscreen: gt9896: Switch to msm drm notifier api [UtsavisGreat]
+a39f5b5da56c input: touchscreen: Import gt9896 driver [Arian]
+f5fd3ddd4a02 firmware: Import f4 and f4l fts firmware [Arian]
+da76961c642d input: touchscreen: fts_521: Handle dt2w feature through xiaomi touch [iGOR121]
+86348bc86203 input: touchscreen: fts_521: Nuke touch_irq_boost [vantoman]
+28660e049edc input: touchscreen: fts_521: Remove usages of lpm_disable_for_input [Demon000]
+bb9d9873a3fa input: touchscreen: fts_521: Switch to msm drm notifier api [UtsavisGreat]
+97b13c6e6c04 input: touchscreen: Import ST FTS V521 driver [Arian]
+31d285322bdf firmware: Import f4 goodix_gt9886 firmware [Arian]
+e2f3ba1e6436 input: touchscreen: f4_goodix_driver_gt9886: Lock work_stat mutex while resuming to change fod status [Arian]
+1405640838b1 input: touchscreen: f4_goodix_driver_gt9886: Resume to change fod status [Arian]
+85c157e1e38c input: touchscreen: f4_goodix_driver_gt9886: Remove input event dt2w handling [Arian]
+7950711eecba input: touchscreen: f4_goodix_driver_gt886: Handle dt2w feature through xiaomi-touch [Arian]
+817b157d28ff touchscreen: f4_goodix_driver_gt9886: Switch to msm drm notifier api [UtsavisGreat]
+933534249719 input: touchscreen: Import f4_goodix_driver_gt9886 driver [Arian]
+0ffe088e4ada input: touchscreen: xiaomi: Add new touch gamemode support [Arian]
+031a614986dd input: touchscreen: Import xiaomi touchfeature driver [Arian]
+72b49b37ed15 input: touchscreen: Import TDDI IC double click driver [Arian]
+9803e78df82f misc: Import Xiaomi touch panel driver [Arian]
+1446936683e4 firmware: Import nt36672c firmware [Arian]
+9e74491e9c34 input: touchscreen: Import nt36672c driver [Arian]
+2b4661902a3f firmware: Import gt9886 firmware [Arian]
+c2389ea62deb firmware: Restore support for ihex firmware [Arian]
+34c47a6a82c5 input: touchscreen: goodix_driver_gt9886: Lock work_stat mutex while resuming to change fod status [Arian]
+9d847d39a337 input: touchscreen: goodix_driver_gt9886: Resume to change fod status [Arian]
+2eccf7929e4b input: touchscreen: goodix_driver_gt9886: Remove input event dt2w handling [Arian]
+f7c3844aea3f input: touchscreen: goodix_driver_gt886: Handle dt2w feature through xiaomi-touch [Arian]
+5e5a299df37f input: touchscreen: goodix_driver_gt9886: Disable Debugging [UtsavBalar1231]
+ab782f2cce21 input: touchscreen: goodix_driver_gt9886: Fix memoryleak from goodix_debugfs_init() [UtsavBalar1231]
+09a31d796edf input: touchscreen: goodix_driver_gt9886: Switch to msm drm notifier api [UtsavisGreat]
+24dee6acfbd6 input: touchscreen: Import goodix_driver_gt9886 driver [Arian]
+2d9197f86652 input: event-codes: define BTN_INFO for touchscreen drivers [demon000]
+87b7c1264d33 soc: qcom: socinfo: Add methods to get the hw version [Arian]
+d7f2e6bba0fd ARM64: dts: qcom: xiaomi: Configure violet's leds [Arian]
+6adfbf36cee8 ARM64: dts: qcom: xiaomi: Kang thermal-mitigation steps from davinci [raghavt20]
+5c8938191eb5 ARM64: dts: qcom: xiaomi: Configure xiaomi touch feature support [raghavt20]
+88068a1a82fb ARM64: dts: xiaomi: import overlayed violet dts [merothh]
+b730045150d5 ARM64: dts: qcom: xiaomi: Overlay memory region changes [vantoman]
+ec4858dc67c2 ARM64: dts: qcom: xiaomi: toco: Increase minimum backlight level [vantoman]
+798c648e7502 ARM64: dts: qcom: xiaomi: sweet: Increase minimum backlight level [vantoman]
+383a903f09f1 ARM64: dts: qcom: xiaomi: Fix sdmmagpie-sde-display include [Arian]
+4dcd28b587e2 ARM64: dts: qcom: xiaomi: davinci: Increase minimum backlight level [Arian]
+4cf54964dd79 ARM64: dts: qcom: xiaomi: Configure davinci's leds [Arian]
+1a1a9fac945a ARM64: dts: qcom: Move xiaomi api2 alias to xiaomi/sdmmagpie.dtsi [Arian]
+d0b8460903f9 ARM64: dts: qcom: xiaomi: sdmmagpie: Drop secure display heap size definition [Arian]
+b0680b838468 ARM64: dts: qcom: Move xiaomi sdmmagpie changes to a seperate file [Arian]
+6c08fbf140bc ARM64: dts: qcom: Move xiaomi sm6150-audio-overlay changes to a seperate file [Arian]
+8af615c02307 ARM64: dts: qcom: Move xiaomi sm6150-audio changes to a seperate file [Arian]
+a519dde88f2c ARM64: dts: qcom: Move xiaomi sdmmagpie-thermal changes to a seperate file [Arian]
+e6662cf8e85d ARM64: dts: qcom: Move xiaomi sdmmagpie-sde-display changes to a seperate file [Arian]
+b9b2e5de072b ARM64: dts: qcom: Move xiaomi sdmmagpie-sde changes to a seperate file [Arian]
+6de2590c84c6 ARM64: dts: qcom: Move xiaomi sdmmagpie-regulator changes to a seperate file [Arian]
+04444c65a45e ARM64: dts: qcom: Move xiaomi sdmmagpie-pinctrl changes to a seperate file [Arian]
+019d6810d341 ARM64: dts: qcom: Move xiaomi sdmmagpie-camera changes to a seperate file [Arian]
+7df61678fb91 ARM64: dts: qcom: xiaomi: davinci: Fix pwm lpg2 and lpg3 without xiaomi labels [Arian]
+d9281976b444 ARM64: dts: qcom: xiaomi: phoenix: Fix led without xiaomi labels [Arian]
+9dbcc77a1fb8 ARM64: dts: qcom: Move xiaomi pm6150l changes to a seperate file [Arian]
+cd9d08593d28 ARM64: dts: qcom: Move xiaomi pm6150 changes to a seperate file [Arian]
+0260c7618d1f ARM64: dts: qcom: Scratch xiaomi sdmmagpie-stub-regulator changes [Arian]
+dae7bceb9e12 ARM64: dts: qcom: Scratch xiaomi sdmmagpie-idp changes [Arian]
+4dc078da9d51 ARM64: dts: qcom: Drop setting sw43404 to active [Arian]
+2e84c21bee12 ARM64: dts: qcom: Introduce xiaomi-sdmmagpie [Arian]
+c4ed2d395926 ARM64: dts: qcom: Remove unused files [Arian]
+950f0fee39c8 ARM64: dts: Add xiaomi sdmmagpie support [Arian]
+0f3733a0876b ARM64: dts: Build specific Xiaomi board variant [Bruno Martins]
+3bc9b2855819 ARM64: dts: sdmmagpie: Remove unused 36 MiB memdump region [Danny Lin]
+243462b31151 ARM64: dts: sdmmagpie: Remove unused conflicting disp_rdump_memory region [AngeloGioacchino Del Regno]
+08b0a3161e51 ARM64: dts: qcom: Add label for reserved memory on sdmmagpie [Vijayanand Jitta]
+4ee97b39eb3a ARM64: Add Xiaomi board selection [Bruno Martins]
+7b1d5254b342 asoc: import tas2563 codec [raghavt20]
+0cb5d36dd1c9 asoc: codecs: tfa9873: Fix header paths for kernel builds [Park Ju Hyung]
+5ef58a4aac03 asoc: codecs: Import tfa9873 codec [Arian]
+8c6583e1f4b9 asoc: Add support for K9A [Arian]
+f00e96dfc5db base: firmware: Load firmware from /vendor/firmware/awinic [CloudedQuartz]
+bedaf34e70b0 asoc: codecs: awinic: Fix header paths for kernel builds [Park Ju Hyung]
+011050ed3be3 asoc: codecs: Import awinic codec [Arian]
+381f9d9a2bec dsp: Import elliptic and mius [Arian]
+042a6c9603e0 [M700][audio][HMI_M700_A01-3] audio support 24bit playback [zhanandong]
+9adb5b086aea asoc: codecs: tfa98xx: Support 16bit/24bit/32bit audio data [Arian]
+c10bf14da1f0 asoc: codecs: tfa98xx: Fix header paths for kernel builds [Park Ju Hyung]
+c05cb42275f4 asoc: codecs: Import tfa98xx codec [Arian]
+8b1e1a112284 audio: import selected changes for violet [GuaiYiHu]
+3005afa75614 asoc: sm6150: Report correct key code of headset buttons [dianlujitao]
+fa91520b96f7 audio: Import Xiaomi changes [Arian]
+2181f4031711 audio: config: Include device specific configs [Arian]
+9c0b31d9a4e7 audio: config: Build everything inline [Park Ju Hyung]
+8190d7e94ae0 net: wireguad: Update to v1.0.20220627 [Arian]
+c220208a1484 extcon: Allocate blocking_notifier_head after registering the device [Nauval Rizky]
+c0fd0b3401c0 arm64: kernel: cpu_errata: Add arm64_update_smccc_conduit [Arian]
+d38ec7096145 soc: qcom: early_random: Fix race during early random pool initialization [Reinazhard]
+5438d14a150a soc: qcom: early_random: Include random.h instead of hw_random.h [Arian]
+db32a602c048 mailbox: Define flags variable [Arian]
+d7086545aa65 Merge branch 'android-4.14-stable' of https://android.googlesource.com/kernel/common into HEAD [Arian]
+6ca779f9bdf4 Merge commit 'bd907c225d7eb0820ebf8469ac1eba4dd6df66db' into HEAD [Arian]
+2c3e3d9cea0b Merge commit 'cd5d604819054f1fc75802585a2bd5ea70f5af44' into HEAD [Arian]
+de3a94525616 Merge commit '537197d39c39d228a92e83ca68443a57972c28f8' into HEAD [Arian]
+ca5612774203 Merge commit '5c00aa86ffaaae4f97d8e9fa50a7fbd0195b9b85' into HEAD [Arian]
+9c99e0478cf5 Merge tag 'LA.UM.9.1.r1-12000.01-SMxxx0.QSSI12.0' of https://git.codelinaro.org/clo/la/kernel/msm-4.14 into HEAD [Arian]
+
+* packages/apps/Camera2
+8dd68bdc2 Camera2: Invoke saveVideo when mVideoFileDescriptor != null [linghao.kong]
+
+* vendor/gms
+02bf171 Update from oriole SQ3A.220705.003 [Arian]
+b203308 Set executable file permissions on update_PixelSetupWizardStringsOverlay.sh [Arian]
+
+* vendor/xiaomi
+8e35495dc !fixup df36f2cf18b2be759b2f6f66cce5541a657bbe70 [Arian]
 
