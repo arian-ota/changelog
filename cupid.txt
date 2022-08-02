@@ -1,14 +1,17 @@
 ====================
-     2022-08-02    
+     2022-08-03    
 ====================
 * device/xiaomi/sm8450-common
-b5d1f365 sm8450-common: Drop board platform check from kernel platform [Arian]
-2cd6c356 sm8450-common: overlay: Decrease minimum allowed brightness [Arian]
-6e332398 sm8450-common: Move to kernel-platform kernel setup [Arian]
-a0da0747 sm8450-common: Use cupid kernel repository [Arian]
-065bd5a1 sm8450-common: Import kernel-platform configs [Arian]
+32bfa42a sm8450-common: Move to kernel-platform kernel setup [Arian]
+76fcd33e sm8450-common: Use cupid kernel repository [Arian]
+d305a25c sm8450-common: Drop board platform check from kernel platform [Arian]
+29c6ace9 sm8450-common: Import kernel-platform configs [Arian]
+d10580df sm8450-common: overlay: Decrease minimum allowed brightness [Arian]
 be19738f sm8450-common: Set lineage version as fingerprint for mdtoops [Arian]
 
+====================
+     2022-08-02    
+====================
 ====================
      2022-08-01    
 ====================
@@ -21,9 +24,6 @@ be19738f sm8450-common: Set lineage version as fingerprint for mdtoops [Arian]
 ====================
      2022-07-29    
 ====================
-====================
-     2022-07-28    
-====================
 * frameworks/base
 e27d52b09737 SystemUI: VolumeDialogImpl: Change bg tint for inactive rows [Arian]
 03c4a39b1705 SystemUI: VolumeDialogImpl: notifyVisible after the volume panel is fully hidden [Jesse Chan]
@@ -31,5 +31,5 @@ e27d52b09737 SystemUI: VolumeDialogImpl: Change bg tint for inactive rows [Arian
 58d4f4adb151 SystemUI: VolumeDialogImpl: Show output button if there is an active stream [Arian]
 
 ====================
-     2022-07-27    
+     2022-07-28    
 ====================
