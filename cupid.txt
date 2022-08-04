@@ -1,12 +1,41 @@
 ====================
-     2022-08-03    
+     2022-08-05    
 ====================
 * device/xiaomi/sm8450-common
+7fffb758 sm8450-common: rootdir: Overwrite audio service [Arian]
+45717e22 sm8450-common: Build libcodec2_soft_common.vendor for dolby [Arian]
+c2855f7f sm8450-common: Build more from source [Arian]
+c1a66a81 sm8450-common: Drop unused authsecret interface [Arian]
+afeb10ac sm8450-common: Build WiFi hal from source [Arian]
+397f6eec sm8450-common: Enable 64bit audio HAL [Arian]
+7a8890ec sm8450-common: Build AOSP services and interfaces from source if possible [Arian]
+fa9554cf sm8450-common: Disable prebuilt kernel headers for now [Arian]
+6c5af2ec sm8450-common: Copy permissions from frameworks/native [Arian]
+28603aee sm8450-common: Sectionize proprietary-files.txt [Arian]
+8232d933 sm8450-common: Move to hex partition sizes [Arian]
+
+* hardware/interfaces
+9cbc17dec audio: Support 64bit configuration on 32+64bit compatible OS [Carter Hsu]
+
+* hardware/xiaomi
+3468a5d megvii: Return a char pointer for some stubs instead [Tim Schumacher]
+aa3c0f9 Reland "megvii: Initial stub libraries" [Sebastiano Barezzi]
+
+====================
+     2022-08-04    
+====================
+* device/xiaomi/sm8450-common
+051cead1 sm8450-common: Exclude qca6490.ko from recovery kernel modules [Arian]
 32bfa42a sm8450-common: Move to kernel-platform kernel setup [Arian]
 76fcd33e sm8450-common: Use cupid kernel repository [Arian]
 d305a25c sm8450-common: Drop board platform check from kernel platform [Arian]
 29c6ace9 sm8450-common: Import kernel-platform configs [Arian]
 d10580df sm8450-common: overlay: Decrease minimum allowed brightness [Arian]
+
+====================
+     2022-08-03    
+====================
+* device/xiaomi/sm8450-common
 be19738f sm8450-common: Set lineage version as fingerprint for mdtoops [Arian]
 
 ====================
@@ -20,16 +49,4 @@ be19738f sm8450-common: Set lineage version as fingerprint for mdtoops [Arian]
 ====================
 ====================
      2022-07-30    
-====================
-====================
-     2022-07-29    
-====================
-* frameworks/base
-e27d52b09737 SystemUI: VolumeDialogImpl: Change bg tint for inactive rows [Arian]
-03c4a39b1705 SystemUI: VolumeDialogImpl: notifyVisible after the volume panel is fully hidden [Jesse Chan]
-16af4f1d9b51 SystemUI: VolumeDialogImpl: Move the MediaOutputDialog above status bar [Arian]
-58d4f4adb151 SystemUI: VolumeDialogImpl: Show output button if there is an active stream [Arian]
-
-====================
-     2022-07-28    
 ====================
