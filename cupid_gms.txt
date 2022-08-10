@@ -1,35 +1,96 @@
 ====================
-     2022-08-02    
+     2022-08-11    
 ====================
 * device/xiaomi/sm8450-common
-b5d1f365 sm8450-common: Drop board platform check from kernel platform [Arian]
-2cd6c356 sm8450-common: overlay: Decrease minimum allowed brightness [Arian]
-6e332398 sm8450-common: Move to kernel-platform kernel setup [Arian]
-a0da0747 sm8450-common: Use cupid kernel repository [Arian]
-065bd5a1 sm8450-common: Import kernel-platform configs [Arian]
-be19738f sm8450-common: Set lineage version as fingerprint for mdtoops [Arian]
+dd7fb3db sm8450-common: overlay: Drop xiaomi auto brightness overlays for now [Arian]
+c11fc117 sm8450-common: overlay: Move to float brightness overlays [Arian]
+ea06dd53 sm8450-common: Drop libs that are dependencies of libwfdaac_vendor [Arian]
+52f4bfbb sm8450.common: fix building some libs [Arian]
+425eae6f sm8450-common: Build libwfdaac_vendor [Arian]
+2df00eb3 Revert "Revert "sm8450-common: Add system wide wfd blobs"" [Arian]
+eee4c32c Revert "sm8450-common: Build wfdaac_vendor" [Arian]
+07927707 Revert "sm8450-common: Add system wide wfd blobs" [Arian]
+8d6ec6ec sm8450-common: Install libkeymaster_messages to vendor [Arian]
+2714d1f2 sm8450-common: Add system wide wfd blobs [Arian]
+48cca310 sm8450-common: Build libsfplugin_ccodec_utils.vendor from source [Arian]
+339fc026 sm8450-common: Build wfdaac_vendor [Arian]
+08b26af2 sm8450-common: Build neural network aidl interface from source [Arian]
+63fd8391 sm8450-common: Build systemhelper interface from source [Arian]
+b7b50a64 sm8450-common: Build servicetracker interface from source [Arian]
+5f4c344d sm8450-common: Build perf interfaces from source [Arian]
+97690309 sm8450-common: Build qti display demura interface [Arian]
+5643e068 sm8450-common: Build qti display mapper interfaces [Arian]
+e5e0ff31 sm8450-common: Build display aidl libs [Arian]
+6086f6bd sm8450-common: Build camera interfaces from source [Arian]
+a7e0758b sm8450-common: Build qti allocator and composer interfaces from source [Arian]
+8bc09fa3 sm8450-common: Build capabilityconfigstore from source [Arian]
+e4b6ee49 sm8450-common: Build vendor.nxp.hardware.nfc interface [Arian]
+e5454bf5 sm8450-common: Drop prebuilt vendor.display.config interfaces [Arian]
+f16396ae sm8450-common: Drop prebuilt libtinycompress [Arian]
+6564f581 sm8450-common: Drop prebuilt libstagefright_bufferpool@2.0.1 [Arian]
+d6193bd8 sm8450-common: Drop prebuilt libqdMetaData [Arian]
+4d36e71d sm8450-common: Drop prebuilt libgralloc.qti [Arian]
+b571ca75 sm8450-common: Drop prebuilt libgui_vendor [Arian]
+d0472277 sm8450-common: Build fwk-detect from source [Arian]
+1ba69c57 sm8450-common: Drop prebuilt libpsi [Arian]
+5a843e35 sm8450-common: Drop libnbaio_mono which is built as dependency of audio.r_submix [Arian]
+5230730d sm8450-common: Drop unused libkeymaster_messages [Arian]
+ad88eb0f sm8450-common: Drop unused libgrpc++_unsecure [Arian]
+905b1f9e sm8450-common: Drop prebuilt libdrm [Arian]
+f14f8ea1 sm8450-common: Drop prebuilt libdisplayconfig.qti [Arian]
+cd318d63 sm8450-common: Drop bluetooth binaries [Arian]
+12761ad6 sm8450-common: Build bluetooth interfaces from source [Arian]
+4ef9bdcf sm8450-common: Build ANT+ interface from source [Arian]
+19d8a340 sm8450-common: Drop prebuilt vndservicemanager [Arian]
+61de2689 sm8450-common: Build vndservicemanager [LuK1337]
+
+* external/tinycompress
+30f3454 tinycompress: Add support for compress_set_codec_params API [Ritu Sharma]
+
+* hardware/qcom-caf/common
+8274aed fwk-detect: Add support for system/vendor suffixed variants [Arian]
+
+* vendor/qcom/opensource/interfaces
+b52b2fa Add reversed perf 2.3 interface [Arian]
+
+* vendor/qcom/opensource/wfd-commonsys
+3a942c5 wfd-csys: Enable Android.mk 64-bit compilation [Mahesh Raja Bhogineni]
 
 ====================
-     2022-08-01    
+     2022-08-10    
 ====================
 ====================
-     2022-07-31    
+     2022-08-09    
 ====================
 ====================
-     2022-07-30    
+     2022-08-08    
 ====================
 ====================
-     2022-07-29    
+     2022-08-07    
 ====================
 ====================
-     2022-07-28    
+     2022-08-06    
 ====================
-* frameworks/base
-e27d52b09737 SystemUI: VolumeDialogImpl: Change bg tint for inactive rows [Arian]
-03c4a39b1705 SystemUI: VolumeDialogImpl: notifyVisible after the volume panel is fully hidden [Jesse Chan]
-16af4f1d9b51 SystemUI: VolumeDialogImpl: Move the MediaOutputDialog above status bar [Arian]
-58d4f4adb151 SystemUI: VolumeDialogImpl: Show output button if there is an active stream [Arian]
+====================
+     2022-08-05    
+====================
+* device/xiaomi/sm8450-common
+7fffb758 sm8450-common: rootdir: Overwrite audio service [Arian]
+45717e22 sm8450-common: Build libcodec2_soft_common.vendor for dolby [Arian]
+c2855f7f sm8450-common: Build more from source [Arian]
+c1a66a81 sm8450-common: Drop unused authsecret interface [Arian]
+afeb10ac sm8450-common: Build WiFi hal from source [Arian]
+397f6eec sm8450-common: Enable 64bit audio HAL [Arian]
+7a8890ec sm8450-common: Build AOSP services and interfaces from source if possible [Arian]
+fa9554cf sm8450-common: Disable prebuilt kernel headers for now [Arian]
+6c5af2ec sm8450-common: Copy permissions from frameworks/native [Arian]
+28603aee sm8450-common: Sectionize proprietary-files.txt [Arian]
+8232d933 sm8450-common: Move to hex partition sizes [Arian]
 
-====================
-     2022-07-27    
-====================
+* hardware/interfaces
+9cbc17dec audio: Support 64bit configuration on 32+64bit compatible OS [Carter Hsu]
+
+* hardware/xiaomi
+3468a5d megvii: Return a char pointer for some stubs instead [Tim Schumacher]
+aa3c0f9 Reland "megvii: Initial stub libraries" [Sebastiano Barezzi]
+
