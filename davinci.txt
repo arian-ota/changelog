@@ -1,0 +1,174 @@
+====================
+     2022-08-18    
+====================
+* build/make
+d7eed00dc4 tools: Let adb secure check depend on "==0" rather than "!=1" [LibXZR]
+281990b1bb Disable Traceur for non eng-builds [Aaron Kling]
+884241b49d releasetools: Unconditionally store recovery.img in non-A/B OTA [LuK1337]
+d10d237c41 releasetools: Fallback to calculated fp if partition fp is missing [Aaron Kling]
+23ffc4f567 build: Respect fs_config when generating recovery ramdisk [lambdadroid]
+9f3165be15 Add support for separate kernels for boot and recovery [2/2] [marcost2]
+98de19e109 soong: Add ability to build scudo-free 32-bit libc variant. [Quallenauge]
+f3aac9dc50 build: Add support for device tree in boot.img [David Ng]
+56066f6180 Add BOARD_CUSTOM_BOOTIMG_MK support [Ricardo Cerqueira]
+6c4aea572a core: Allow overriding device/model/name properties [LuK1337]
+a516596482 core: Add support for overriding build.prop settings [Koushik Dutta]
+06ac7d7a0a build: Squash of allowing a device to generically define its own headers [Ricardo Cerqueira]
+b80bd78cc7 Add build support for XZ ramdisks [Luca Stefani]
+73e7a2dede Fix recovery image generation with LZ4 compressed ramdisk [Arne Coucheron]
+f30d8aa89d releasetools: Add script to sign zips [Gabriele M]
+572bb6306d releasetools: support reading release keys out of some sort of command [Tom Powell]
+47549323db All operating systems are beautiful [Christopher N. Hesse]
+6164f99eb3 releasetools: do not remove dynamic partitions in system-only builds [Peter Cai]
+ad8182d9cf Unset BOARD_EXT4_SHARE_DUP_BLOCKS [LuK1337]
+4e75bf8027 build_image: Allow disabling custom inode count calculation [Christian Oder]
+5be7a57145 Remove unused locale data for recovery [Alessandro Astone]
+c01c379064 releasetools: Use the first entry of a mount point when reading fstab [Brint E. Kriebel]
+9514aba16f Edify: Add abort message for bootloader asserts [Matt Mower]
+b903db5d73 ota: Disable downgrade check [Andrew Dodd]
+3b6a02e8ef Add blank_unblank_on_init to PRIVATE_RECOVERY_UI_PROPERTIES [Michael Bestas]
+28f6d23db9 Allow setting the recovery density separately from the aapt config [Chirayu Desai]
+91049f7b4c build: Separate commands in recovery foreach loops [Matt Mower]
+2f17c27d3f build: recovery: Support adding device-specific items [Tom Marshall]
+efc9b20884 releasetools: ota_from_target_files: add FullOTA_PostValidate [M1cha]
+50c3d2e4b5 Add missing languages [Michael W]
+3e3ea992cc Don't enable ADB by default on userdebug builds [Michael Bestas]
+310a17bc29 Don't make recovery patch for devices with prebuilt vendor [TheScarastic]
+693172fbf9 Move recovery-from-boot.p from /system to /vendor [dianlujitao]
+37d1212ee3 Allow override of device asserts, including multi-device support. [Steve Kondik]
+767c7ef5f3 build: Automatically replace old-style kernel header includes with new header lib [Rashed Abdel-Tawab]
+8af8421ec4 Add extra variables to _readonly_late_variables [dianlujitao]
+40f2c338bd Add roomservice [Koushik Dutta]
+812be3feab build: Add Lineage build support [Luca Stefani]
+ce3837ff2b Source lineage specific envsetup [Michael Bestas]
+340d2a04b9 envsetup: export ANDROID_BUILD_TOP earlier [Chirayu Desai]
+0d52861631 build: Include vendor/extra/BoardConfigExtra.mk if available [Steve Kondik]
+
+* build/soong
+5707349f2 dumpvars: Replace ATV and Automotive vars [Bruno Martins]
+cf9dd3e18 sandbox_linux: set CCACHE_DIR as a writable path [daniml3]
+6aba1d9e9 check_boot_jars: Add nvidia packages to whitelist [LuK1337]
+fd550d519 cleanbuild: Add `recovery_kernel` to installclean files [Jarl-Penguin]
+596c5a836 Add Init_rc to Product_variables.Eng [dianlujitao]
+5edc985ad Be more explicit about GMS dumpvars [Nolen Johnson]
+f7e573f1a check_boot_jars: Add IFAA Manager to whitelist [Michael Bestas]
+c038295b8 Add exported-to-kati namespaces to root namespace [LuK1337]
+0a36b0190 Add ability to enable scudo-free 32-bit libc variant. [Quallenauge]
+fd3d3e035 Replace qti_kernel_headers with generated_kernel_headers [Nolen Johnson]
+4cd6a41c9 Add qcom.fmradio and org.codeaurora.internal to allowlist [Scott Lobdell]
+78b745cad Replace device_kernel_headers with generated_kernel_headers [Chirayu Desai]
+f051ce9ed soong: allow overriding header files [Jan Altensen]
+fe1f5151a cleanbuild: Add `install` to installclean files [LuK1337]
+da0448c5f soong: Add PathForSourceRelaxed [Sam Mortimer]
+1a8cd5d2e cleanbuild: add *.zip.sha256sum to installclean_files [Julian Veit]
+f2c9d1525 Add dumpvars for WITH_SU and WITH_GMS [Abhisek Devkota]
+e4b63ab74 soong: Add LINEAGE_VERSION to dumpvars [Rashed Abdel-Tawab]
+
+* device/qcom/sepolicy
+c820ce6a Revert "Selinux: add vendor_perfetto_dump domain" [Arian]
+
+* external/tinycompress
+2f35a16 tinycompress: Conditionally enable extended compress format [Michael Bestas]
+
+* hardware/libhardware
+5ea7624e audio: Add audio amplifier HAL [Ethan Chen]
+
+* hardware/qcom-caf/sm8150/audio
+ffac3914 Remove ndk_platform backend. Use the ndk backend. [Jiyong Park]
+
+* hardware/qcom-caf/wlan
+d72d364 wlan: Fix compile issue for wpa_supplicant_8_lib [Manjunatha Madana]
+
+* hardware/xiaomi
+cbd48b1 Remove ndk_platform backend. Use the ndk backend. [Jiyong Park]
+
+* kernel/xiaomi/sm6150
+0e34496b1035 davinci: Disable strong stackprotector [Arian]
+
+* lineage/mirror
+8498efe Updated to 17-Aug-2022 12:35 UTC [Kevin F. Haggerty]
+f57c361 Updated to 17-Aug-2022 12:16 UTC [Kevin F. Haggerty]
+9d9d4f7 Updated aosp-minimal to 17-Aug-2022 12:01 UTC [Tim Schumacher]
+
+* packages/apps/Settings
+b6369f0760 Settings: Put device info header above "Basic info" [LuK1337]
+d72994ccf0 Allow the user to change the BackupTransport [Torsten Grote]
+
+* system/sepolicy
+62d19435c private: Exempt system_app from adbd_config_prop neverallow [Nolen Johnson]
+850e47593 sepolicy: Add sdcard_posix_contextmount_type attribute [LuK1337]
+170cd4f06 Give mediaprovider_app mlstrustedsubject [Aaron Kling]
+608b4701c sepolicy: Allow recovery to alter / [Gabriele M]
+6fc1c42fc sepolicy: whitelist recovery from node creation neverallow [Alessandro Astone]
+
+* vendor/lineage
+7b16e027 set privapp permission enforcement to log [Arian]
+e7fe1b0a adb insecure by default [Scott Mertz]
+1f0cab60 soong: generator: Replace android.SourceDepTag usage with IsSourceDepTagWithOutputTag [Arian]
+9d42d6f4 Lineage 20.0 [Arian]
+3a464d6e config: Update clang version to clang-r450784d [Arian]
+
+====================
+     2022-08-17    
+====================
+* lineage/hudson
+44fa83d hudson: Promote z2_plus to 19.1 [Davide Garberi]
+
+* lineage/mirror
+754e774 Updated aosp-minimal to 16-Aug-2022 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+83012f09 wiki: upgrade: We need USB debugging! [Michael W]
+965e32cc pages: emulator: Only mention supported GSI/EMU arch [Nolen Johnson]
+84e56e34 wiki: devices: z2_plus: Promote to 19.1 [Davide Garberi]
+
+====================
+     2022-08-16    
+====================
+* lineage/mirror
+4eee8a9 Updated aosp-minimal to 15-Aug-2022 22:46 UTC [Tim Schumacher]
+
+====================
+     2022-08-15    
+====================
+* lineage/hudson
+6e07199 hudson: promote kiev, nairo, racer to 19.1 [Andrew Hexen]
+
+* lineage/mirror
+3116d04 Updated lineage-minimal to 14-Aug-2022 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+d7e512b0 wiki: correctly describe 5G tech as NR [Andrew Hexen]
+5ba439a2 wiki: devices: kiev, nairo, racer: promote to 19.1 [Andrew Hexen]
+
+====================
+     2022-08-14    
+====================
+* lineage/wiki
+8d7786dc wiki: alioth: add alternative way to verify model [althafvly]
+
+* vendor/lineage
+5dfc89a4 kernel: Always build dtb targets before dtbo.img [Michael Bestas]
+
+====================
+     2022-08-13    
+====================
+* vendor/lineage
+319d4c4e kernel: Add support for vendor_boot image header version 4 [Michael Bestas]
+
+====================
+     2022-08-12    
+====================
+* lineage/mirror
+f2015c1 Updated to 11-Aug-2022 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+5778adbe wiki: Fix model list not being shown for unmaintained devices [Tim Schumacher]
+
+* vendor/lineage
+fadfdbf4 kernel.mk: Allow building external kernel modules [Neel Chauhan]
+98447383 kernel: Allow overriding dtb target [Michael Bestas]
+7e054e52 kernel: Allow setting dtbo target path prefix [Michael Bestas]
+12b812b4 kernel: Allow overriding dtbo target name [Michael Bestas]
+eaf4a49a config: Use LLVM binutils for 5.10 as well [Michael Bestas]
+
