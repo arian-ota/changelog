@@ -1,5 +1,120 @@
 ====================
+     2022-08-19    
+====================
+* device/xiaomi/davinci
+a06f546 davinci: Use GetPreviewImageData shim for com.qti.node.watermark [daniml3]
+
+* device/xiaomi/sm6150-common
+e97eb66c Revert "sm6150-common: hidl: Update factory version to v2.2" [Arian]
+ac37c7ba Revert "sm6150-common: hidl: Update uceservice HAL to 2.3" [Arian]
+0ae2d862 Revert "sm6150-common: WifiOverlay: Align config.xml with AOSP" [Arian]
+7bd01963 Revert "sm6150-common: WifiOverlay: Update from sweet V13.0.8.0.SKFMIXM" [Arian]
+9f3b4e50 Revert "sm6150-common: gps: Update to LA.UM.9.1.r1-11200-SMxxx0.0" [Arian]
+a7223209 Revert "sm6150-common: Update blobs from sweet V13.0.8.0.SKFMIXM" [Arian]
+c4f19714 sm6150-common: Add GetPreviewImageData shim for camera [daniml3]
+816cf6a1 sm6150-common: Use LLVM binutils and LLVM integrated assembler [Arian]
+c027a3e4 sm6150-common: Preopt SystemUI for AOSP builds. [Jiakai Zhang]
+a90cd875 sm6150-common: Add a system property for System UI compiler filter. [Jiakai Zhang]
+37edd932 sm6150-common: Disable LE audio related profiles for sunfish [Alice Kuo]
+
+* kernel/xiaomi/sm6150
+ef1a8a0f7acc ASoC: Fix overflow error in routing driver [Soumya Managoli]
+498ae989feb9 usb: fix undefined behavior caused by zero-length array [Jimmy Hu]
+0a78b32f6ad1 BACKPORT: msm: adsprpc: Allocate buffer taking NULL byte into consideration [Jeya R]
+25ff933c3d00 char: adsprpc: fix global-out-of-bounds error [JJ Lee]
+8d583efd243c usb: f_fs: Avoid invalid pointer access in ffs_fs_get_tree [Pratham Pratap]
+fec1fe825984 mmc: sdhci-msm: Fix array-index-out-of-bounds [Ivan Vecera]
+6a0d2dea023a mmc: sdio: Fix strlcpy usage [Nathan Chancellor]
+870ab0cd9be9 msm: camera: Fix trivial misleading indentation warnings [Sultan Alsawaf]
+d5b8423460c6 lib/nlattr.c: Fix warning due to incorrect strlen() variable type [Sultan Alsawaf]
+41b68ea43226 msm: vidc: Fix uninitialized tag_data usage [Sultan Alsawaf]
+a93ba1736d62 ASoC: msm-pcm-routing-v2: Fix non-blocking if-statement warning [Sultan Alsawaf]
+88a2bb10580a ASoC: dsp: msm-dts-srs-tm-config: Fix trivial unguarded pr_debug() [Sultan Alsawaf]
+b3d932d9b8af ASoC: dsp: amrwb_in: Fix AUDIO_GET_AMRWB_ENC_CONFIG ioctl [Sultan Alsawaf]
+445944f3a591 msm: ipa: Fix size check in ipa_debugfs_enable_disable_drop_stats() [Sultan Alsawaf]
+bc370cc28f57 msm: ipa: Refactor buffer size check in ipa3_write() [Sultan Alsawaf]
+45ed5e70b0ad msm_geni_serial: Fix format specifier warnings due to transposed args [Sultan Alsawaf]
+060636eb2f9e thermal: tsens: Fix exported function marked as static [Sultan Alsawaf]
+4550df7256cb smb5-lib: Fix misleading indentation warning due to missing braces [Sultan Alsawaf]
+d488484e3204 msm: ipa3: Fix non-atomic read on atomic_t variable [Sultan Alsawaf]
+fa538f28734a msm: ipa3: Fix format specifier warnings [Sultan Alsawaf]
+f15dd8d918e4 cnss_utils: Fix unused function warnings when CONFIG_CNSS_TIMESYNC=n [Sultan Alsawaf]
+947f58a3f2dc msm: npu: Fix format specifier warnings [Sultan Alsawaf]
+3fd3b010a511 msm: camera: Remove nonsensical register reads in cam_vfe_fe_reg_dump() [Sultan Alsawaf]
+52131db9e45b msm: camera: Fix misleading indentation warnings due to missing braces [Sultan Alsawaf]
+dcd0ef1ed05f arm64: arch_timer: Fix unused function warnings when OOL_WORKAROUND=n [Sultan Alsawaf]
+a5cf3cbb46da mhi: core: Fix unchecked must_check sysfs_create_group() return value [Sultan Alsawaf]
+fde511fafb7b mhi: core: Fix unchecked must_check mhi_read_reg_field() return value [Sultan Alsawaf]
+2b5bdc5959a2 mhi: core: Fix format specifier warnings [Sultan Alsawaf]
+85e3164769d1 msm: camera: icp: fix -Wunsequenced [Nick Desaulniers]
+bf57d5b9f288 kconfig: fix -Wmisleading-indentation [Nick Desaulniers]
+02877d8e0602 msm: camera: isp: fix -Wpointer-to-int-cast [Nick Desaulniers]
+9ab4d9b2907e msm: camera: icp: fix -Wunsequenced [Nick Desaulniers]
+40755411a12e soc: qcom: spcom: fix section mismatch warning [Nick Desaulniers]
+7cb6d1f595d2 Revert "arm64: spinlock: Drop the prfm from arch_spin_trylock" [Nick Desaulniers]
+7a542c656c85 Revert "selinux: Relocate ss_initialized and selinux_enforcing to separate 4k" [Nick Desaulniers]
+b5a205264b02 Revert "RTIC: Move selinux_state to a separate 4k" [Volodymyr Zhdanov]
+1ecbdfed1c0e Revert "ANDROID: HACK: arm64, LLVMLinux: use -mno-implicit-float" [Danny Lin]
+0ad14d675fd3 Makefile: Remove obsolete -fno-builtin flag [Danny Lin]
+c8b681b453b3 arm64: make label allocation style consistent in tishift [Jason A. Donenfeld]
+c1d6c3d3da78 arm64: Implement __lshrti3 library function [Jason A. Donenfeld]
+cd0cc1fc447f arm64: support __int128 with clang [Jason A. Donenfeld]
+443a2ca17d60 arm64: support __int128 on gcc 5+ [Jason A. Donenfeld]
+4044562669ee scripts: Remove gcc-wrapper.py [Nathan Chancellor]
+d3669e23d6a5 Makefile.lib: Stop calling size_append [Julian Liu]
+d81c8a20ebc2 ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Disable CONFIG_FORTIFY_SOURCE [Greg Kroah-Hartman]
+ecb1387ee4a6 fortify: Explicitly disable Clang support [Kees Cook]
+9e977c1d80bc arm64: Change .weak to SYM_FUNC_START_WEAK_PI for arch/arm64/lib/mem*.S [Fangrui Song]
+8c7ebd2e7ee2 arm64/crypto: remove non-standard notation [Nick Desaulniers]
+
+====================
      2022-08-18    
+====================
+* device/qcom/sepolicy
+c820ce6a Revert "Selinux: add vendor_perfetto_dump domain" [Arian]
+
+* device/xiaomi/sm6150-common
+09b9b46f sm6150-common: Use the ?= operator so BT properties can be overridden [Sal Savage]
+c7bf0ce6 sm6150-common: Set default the Bluetooth class of device [Sal Savage]
+7e7d7f7d sm6150-common: Update LE Audio profile properties to match spec and implementation [Sal Savage]
+77256f49 sm6150-common: Enable bluetooth profiles with product.prop [Sal Savage]
+a2af0b07 sm6150-common: Drop audio.a2dp.default [Arian]
+684970d7 sm6150-common: gps: Fix usage of or operator on booleans [Arian]
+
+* external/tinycompress
+2f35a16 tinycompress: Conditionally enable extended compress format [Michael Bestas]
+
+* kernel/xiaomi/sm6150
+4b55c894f40b arm64: vdso: remove commas between macro name and arguments [Jian Cai]
+cabae6cf8935 Kbuild: do not emit debug info for assembly with LLVM_IAS=1 [Nick Desaulniers]
+967232816e2a BACKPORT: kbuild: support LLVM=1 to switch the default tools to Clang/LLVM [Masahiro Yamada]
+610f30fc16cb BACKPORT: kbuild: replace AS=clang with LLVM_IAS=1 [Masahiro Yamada]
+8a75e7b1a592 BACKPORT: kbuild: remove AS variable [Masahiro Yamada]
+c36ac017694d BACKPORT: kbuild: Add ability to test Clang's integrated assembler [Nathan Chancellor]
+5b4aa138c0d7 BACKPORT: x86/boot: kbuild: allow readelf executable to be specified [Dmitry Golovin]
+a81c3530698d BACKPORT: net: wan: wanxl: use $(M68KCC) instead of $(M68KAS) for rebuilding firmware [Masahiro Yamada]
+5d2842597cc2 BACKPORT: net: wan: wanxl: use allow to pass CROSS_COMPILE_M68k for rebuilding firmware [Masahiro Yamada]
+f9ff745e3a1e BACKPORT: Documentation/llvm: fix the name of llvm-size [Fangrui Song]
+b302d55d4ea1 BACKPORT: Documentation/llvm: add documentation on building w/ Clang/LLVM [Nick Desaulniers]
+
+* packages/apps/Settings
+b6369f0760 Settings: Put device info header above "Basic info" [LuK1337]
+d72994ccf0 Allow the user to change the BackupTransport [Torsten Grote]
+
+* system/sepolicy
+62d19435c private: Exempt system_app from adbd_config_prop neverallow [Nolen Johnson]
+850e47593 sepolicy: Add sdcard_posix_contextmount_type attribute [LuK1337]
+170cd4f06 Give mediaprovider_app mlstrustedsubject [Aaron Kling]
+
+* vendor/lineage
+7b16e027 set privapp permission enforcement to log [Arian]
+e7fe1b0a adb insecure by default [Scott Mertz]
+
+* vendor/qcom/opensource/vibrator
+7b0835c Remove ndk_platform backend. Use the ndk backend. [Jiyong Park]
+
+====================
+     2022-08-17    
 ====================
 * build/make
 d7eed00dc4 tools: Let adb secure check depend on "==0" rather than "!=1" [LibXZR]
@@ -64,12 +179,6 @@ da0448c5f soong: Add PathForSourceRelaxed [Sam Mortimer]
 f2c9d1525 Add dumpvars for WITH_SU and WITH_GMS [Abhisek Devkota]
 e4b63ab74 soong: Add LINEAGE_VERSION to dumpvars [Rashed Abdel-Tawab]
 
-* device/qcom/sepolicy
-c820ce6a Revert "Selinux: add vendor_perfetto_dump domain" [Arian]
-
-* external/tinycompress
-2f35a16 tinycompress: Conditionally enable extended compress format [Michael Bestas]
-
 * hardware/libhardware
 5ea7624e audio: Add audio amplifier HAL [Ethan Chen]
 
@@ -82,40 +191,29 @@ d72d364 wlan: Fix compile issue for wpa_supplicant_8_lib [Manjunatha Madana]
 * hardware/xiaomi
 cbd48b1 Remove ndk_platform backend. Use the ndk backend. [Jiyong Park]
 
-* kernel/xiaomi/sm6150
-0e34496b1035 davinci: Disable strong stackprotector [Arian]
-
 * lineage/mirror
 8498efe Updated to 17-Aug-2022 12:35 UTC [Kevin F. Haggerty]
 f57c361 Updated to 17-Aug-2022 12:16 UTC [Kevin F. Haggerty]
 9d9d4f7 Updated aosp-minimal to 17-Aug-2022 12:01 UTC [Tim Schumacher]
 
-* packages/apps/Settings
-b6369f0760 Settings: Put device info header above "Basic info" [LuK1337]
-d72994ccf0 Allow the user to change the BackupTransport [Torsten Grote]
-
 * system/sepolicy
-62d19435c private: Exempt system_app from adbd_config_prop neverallow [Nolen Johnson]
-850e47593 sepolicy: Add sdcard_posix_contextmount_type attribute [LuK1337]
-170cd4f06 Give mediaprovider_app mlstrustedsubject [Aaron Kling]
 608b4701c sepolicy: Allow recovery to alter / [Gabriele M]
 6fc1c42fc sepolicy: whitelist recovery from node creation neverallow [Alessandro Astone]
 
 * vendor/lineage
-7b16e027 set privapp permission enforcement to log [Arian]
-e7fe1b0a adb insecure by default [Scott Mertz]
 1f0cab60 soong: generator: Replace android.SourceDepTag usage with IsSourceDepTagWithOutputTag [Arian]
 9d42d6f4 Lineage 20.0 [Arian]
 3a464d6e config: Update clang version to clang-r450784d [Arian]
 
 ====================
-     2022-08-17    
+     2022-08-16    
 ====================
 * lineage/hudson
 44fa83d hudson: Promote z2_plus to 19.1 [Davide Garberi]
 
 * lineage/mirror
 754e774 Updated aosp-minimal to 16-Aug-2022 12:01 UTC [Tim Schumacher]
+4eee8a9 Updated aosp-minimal to 15-Aug-2022 22:46 UTC [Tim Schumacher]
 
 * lineage/wiki
 83012f09 wiki: upgrade: We need USB debugging! [Michael W]
@@ -123,13 +221,10 @@ e7fe1b0a adb insecure by default [Scott Mertz]
 84e56e34 wiki: devices: z2_plus: Promote to 19.1 [Davide Garberi]
 
 ====================
-     2022-08-16    
-====================
-* lineage/mirror
-4eee8a9 Updated aosp-minimal to 15-Aug-2022 22:46 UTC [Tim Schumacher]
-
-====================
      2022-08-15    
+====================
+====================
+     2022-08-14    
 ====================
 * lineage/hudson
 6e07199 hudson: promote kiev, nairo, racer to 19.1 [Andrew Hexen]
@@ -142,33 +237,12 @@ d7e512b0 wiki: correctly describe 5G tech as NR [Andrew Hexen]
 5ba439a2 wiki: devices: kiev, nairo, racer: promote to 19.1 [Andrew Hexen]
 
 ====================
-     2022-08-14    
+     2022-08-13    
 ====================
 * lineage/wiki
 8d7786dc wiki: alioth: add alternative way to verify model [althafvly]
 
 * vendor/lineage
 5dfc89a4 kernel: Always build dtb targets before dtbo.img [Michael Bestas]
-
-====================
-     2022-08-13    
-====================
-* vendor/lineage
 319d4c4e kernel: Add support for vendor_boot image header version 4 [Michael Bestas]
-
-====================
-     2022-08-12    
-====================
-* lineage/mirror
-f2015c1 Updated to 11-Aug-2022 12:01 UTC [Tim Schumacher]
-
-* lineage/wiki
-5778adbe wiki: Fix model list not being shown for unmaintained devices [Tim Schumacher]
-
-* vendor/lineage
-fadfdbf4 kernel.mk: Allow building external kernel modules [Neel Chauhan]
-98447383 kernel: Allow overriding dtb target [Michael Bestas]
-7e054e52 kernel: Allow setting dtbo target path prefix [Michael Bestas]
-12b812b4 kernel: Allow overriding dtbo target name [Michael Bestas]
-eaf4a49a config: Use LLVM binutils for 5.10 as well [Michael Bestas]
 
