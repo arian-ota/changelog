@@ -1,21 +1,43 @@
 ====================
-     2022-08-19    
+     2022-08-21    
+====================
+* frameworks/base
+1b8233e40be3 udfps: Make pressed udfp view configurable [TheScarastic]
+3b4588adaf94 udfps: Change window type to TYPE_DISPLAY_OVERLAY [TheScarastic]
+65317fa0c073 udfps: Implement default udfps hbm provider [LuK1337]
+fa367f3cb3ac udfps: Trigger onFingerDown with regular action down events too [Arian]
+3f9fde8b583a udfps: Restore illumination dot for global hbm [Arian]
+
+* frameworks/native
+ad69bfcc9f CompositionEngine: Request device composition for the Udfps touched layer [daniml3]
+a6e2381912 surfaceflinger: Add support for Udfps extension lib [Pierre-Hugues Husson]
+
+====================
+     2022-08-20    
 ====================
 * device/xiaomi/davinci
+c954532 Revert "davinci: Import decommonized cnss-daemon" [Arian]
 a06f546 davinci: Use GetPreviewImageData shim for com.qti.node.watermark [daniml3]
 
 * device/xiaomi/sm6150-common
-e97eb66c Revert "sm6150-common: hidl: Update factory version to v2.2" [Arian]
-ac37c7ba Revert "sm6150-common: hidl: Update uceservice HAL to 2.3" [Arian]
-0ae2d862 Revert "sm6150-common: WifiOverlay: Align config.xml with AOSP" [Arian]
-7bd01963 Revert "sm6150-common: WifiOverlay: Update from sweet V13.0.8.0.SKFMIXM" [Arian]
-9f3b4e50 Revert "sm6150-common: gps: Update to LA.UM.9.1.r1-11200-SMxxx0.0" [Arian]
-a7223209 Revert "sm6150-common: Update blobs from sweet V13.0.8.0.SKFMIXM" [Arian]
+4ce9b869 Revert "sm6150-common: Decommonize cnss-daemon" [Arian]
+0d2face2 sm6150-common: Improve camera shim [Arian]
 c4f19714 sm6150-common: Add GetPreviewImageData shim for camera [daniml3]
 816cf6a1 sm6150-common: Use LLVM binutils and LLVM integrated assembler [Arian]
 c027a3e4 sm6150-common: Preopt SystemUI for AOSP builds. [Jiakai Zhang]
 a90cd875 sm6150-common: Add a system property for System UI compiler filter. [Jiakai Zhang]
 37edd932 sm6150-common: Disable LE audio related profiles for sunfish [Alice Kuo]
+
+====================
+     2022-08-19    
+====================
+* device/xiaomi/sm6150-common
+09b9b46f sm6150-common: Use the ?= operator so BT properties can be overridden [Sal Savage]
+c7bf0ce6 sm6150-common: Set default the Bluetooth class of device [Sal Savage]
+7e7d7f7d sm6150-common: Update LE Audio profile properties to match spec and implementation [Sal Savage]
+77256f49 sm6150-common: Enable bluetooth profiles with product.prop [Sal Savage]
+a2af0b07 sm6150-common: Drop audio.a2dp.default [Arian]
+684970d7 sm6150-common: gps: Fix usage of or operator on booleans [Arian]
 
 * kernel/xiaomi/sm6150
 ef1a8a0f7acc ASoC: Fix overflow error in routing driver [Soumya Managoli]
@@ -66,25 +88,6 @@ d81c8a20ebc2 ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Disable
 ecb1387ee4a6 fortify: Explicitly disable Clang support [Kees Cook]
 9e977c1d80bc arm64: Change .weak to SYM_FUNC_START_WEAK_PI for arch/arm64/lib/mem*.S [Fangrui Song]
 8c7ebd2e7ee2 arm64/crypto: remove non-standard notation [Nick Desaulniers]
-
-====================
-     2022-08-18    
-====================
-* device/qcom/sepolicy
-c820ce6a Revert "Selinux: add vendor_perfetto_dump domain" [Arian]
-
-* device/xiaomi/sm6150-common
-09b9b46f sm6150-common: Use the ?= operator so BT properties can be overridden [Sal Savage]
-c7bf0ce6 sm6150-common: Set default the Bluetooth class of device [Sal Savage]
-7e7d7f7d sm6150-common: Update LE Audio profile properties to match spec and implementation [Sal Savage]
-77256f49 sm6150-common: Enable bluetooth profiles with product.prop [Sal Savage]
-a2af0b07 sm6150-common: Drop audio.a2dp.default [Arian]
-684970d7 sm6150-common: gps: Fix usage of or operator on booleans [Arian]
-
-* external/tinycompress
-2f35a16 tinycompress: Conditionally enable extended compress format [Michael Bestas]
-
-* kernel/xiaomi/sm6150
 4b55c894f40b arm64: vdso: remove commas between macro name and arguments [Jian Cai]
 cabae6cf8935 Kbuild: do not emit debug info for assembly with LLVM_IAS=1 [Nick Desaulniers]
 967232816e2a BACKPORT: kbuild: support LLVM=1 to switch the default tools to Clang/LLVM [Masahiro Yamada]
@@ -97,15 +100,6 @@ a81c3530698d BACKPORT: net: wan: wanxl: use $(M68KCC) instead of $(M68KAS) for r
 f9ff745e3a1e BACKPORT: Documentation/llvm: fix the name of llvm-size [Fangrui Song]
 b302d55d4ea1 BACKPORT: Documentation/llvm: add documentation on building w/ Clang/LLVM [Nick Desaulniers]
 
-* packages/apps/Settings
-b6369f0760 Settings: Put device info header above "Basic info" [LuK1337]
-d72994ccf0 Allow the user to change the BackupTransport [Torsten Grote]
-
-* system/sepolicy
-62d19435c private: Exempt system_app from adbd_config_prop neverallow [Nolen Johnson]
-850e47593 sepolicy: Add sdcard_posix_contextmount_type attribute [LuK1337]
-170cd4f06 Give mediaprovider_app mlstrustedsubject [Aaron Kling]
-
 * vendor/lineage
 7b16e027 set privapp permission enforcement to log [Arian]
 e7fe1b0a adb insecure by default [Scott Mertz]
@@ -114,7 +108,7 @@ e7fe1b0a adb insecure by default [Scott Mertz]
 7b0835c Remove ndk_platform backend. Use the ndk backend. [Jiyong Park]
 
 ====================
-     2022-08-17    
+     2022-08-18    
 ====================
 * build/make
 d7eed00dc4 tools: Let adb secure check depend on "==0" rather than "!=1" [LibXZR]
@@ -179,6 +173,12 @@ da0448c5f soong: Add PathForSourceRelaxed [Sam Mortimer]
 f2c9d1525 Add dumpvars for WITH_SU and WITH_GMS [Abhisek Devkota]
 e4b63ab74 soong: Add LINEAGE_VERSION to dumpvars [Rashed Abdel-Tawab]
 
+* device/qcom/sepolicy
+c820ce6a Revert "Selinux: add vendor_perfetto_dump domain" [Arian]
+
+* external/tinycompress
+2f35a16 tinycompress: Conditionally enable extended compress format [Michael Bestas]
+
 * hardware/libhardware
 5ea7624e audio: Add audio amplifier HAL [Ethan Chen]
 
@@ -196,7 +196,14 @@ cbd48b1 Remove ndk_platform backend. Use the ndk backend. [Jiyong Park]
 f57c361 Updated to 17-Aug-2022 12:16 UTC [Kevin F. Haggerty]
 9d9d4f7 Updated aosp-minimal to 17-Aug-2022 12:01 UTC [Tim Schumacher]
 
+* packages/apps/Settings
+b6369f0760 Settings: Put device info header above "Basic info" [LuK1337]
+d72994ccf0 Allow the user to change the BackupTransport [Torsten Grote]
+
 * system/sepolicy
+62d19435c private: Exempt system_app from adbd_config_prop neverallow [Nolen Johnson]
+850e47593 sepolicy: Add sdcard_posix_contextmount_type attribute [LuK1337]
+170cd4f06 Give mediaprovider_app mlstrustedsubject [Aaron Kling]
 608b4701c sepolicy: Allow recovery to alter / [Gabriele M]
 6fc1c42fc sepolicy: whitelist recovery from node creation neverallow [Alessandro Astone]
 
@@ -206,14 +213,13 @@ f57c361 Updated to 17-Aug-2022 12:16 UTC [Kevin F. Haggerty]
 3a464d6e config: Update clang version to clang-r450784d [Arian]
 
 ====================
-     2022-08-16    
+     2022-08-17    
 ====================
 * lineage/hudson
 44fa83d hudson: Promote z2_plus to 19.1 [Davide Garberi]
 
 * lineage/mirror
 754e774 Updated aosp-minimal to 16-Aug-2022 12:01 UTC [Tim Schumacher]
-4eee8a9 Updated aosp-minimal to 15-Aug-2022 22:46 UTC [Tim Schumacher]
 
 * lineage/wiki
 83012f09 wiki: upgrade: We need USB debugging! [Michael W]
@@ -221,10 +227,13 @@ f57c361 Updated to 17-Aug-2022 12:16 UTC [Kevin F. Haggerty]
 84e56e34 wiki: devices: z2_plus: Promote to 19.1 [Davide Garberi]
 
 ====================
+     2022-08-16    
+====================
+* lineage/mirror
+4eee8a9 Updated aosp-minimal to 15-Aug-2022 22:46 UTC [Tim Schumacher]
+
+====================
      2022-08-15    
-====================
-====================
-     2022-08-14    
 ====================
 * lineage/hudson
 6e07199 hudson: promote kiev, nairo, racer to 19.1 [Andrew Hexen]
@@ -235,14 +244,4 @@ f57c361 Updated to 17-Aug-2022 12:16 UTC [Kevin F. Haggerty]
 * lineage/wiki
 d7e512b0 wiki: correctly describe 5G tech as NR [Andrew Hexen]
 5ba439a2 wiki: devices: kiev, nairo, racer: promote to 19.1 [Andrew Hexen]
-
-====================
-     2022-08-13    
-====================
-* lineage/wiki
-8d7786dc wiki: alioth: add alternative way to verify model [althafvly]
-
-* vendor/lineage
-5dfc89a4 kernel: Always build dtb targets before dtbo.img [Michael Bestas]
-319d4c4e kernel: Add support for vendor_boot image header version 4 [Michael Bestas]
 
