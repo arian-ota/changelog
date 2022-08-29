@@ -1,0 +1,206 @@
+====================
+     2022-08-29    
+====================
+* device/xiaomi/renoir
+36f82fa renoir: overlay: Drop statusbar height overlay [Arian]
+9760e31 Revert "renoir: overlay: Update statusbar padding" [Arian]
+5166578 Revert "Revert "Revert "Revert "renoir: overlay-lineage: Disable proximity usage during doze"""" [Arian]
+538edbf tmp [Arian]
+
+* device/xiaomi/sm8350-common
+ed468980 sm8350-common: sepolicy: Route labels accorting to VTS checks [Giovanni Ricca]
+6f70f174 sm8350-common: sepolicy: Label camera props [ItsVixano]
+90249c2d sm8350-common: sepolicy: Nuke duplicate wakeup nodes [Giovanni Ricca]
+c0dec059 sm8350-common: sepolicy: Allow apps and camera HAL access to secure ADSP domain [Albert I]
+e2f10df7 sm8350-common: sepolicy: Allow neural networks HAL to read ADSP properties [Albert I]
+05f135af sm8350-common: Make fastrpc_shell_3 publicly available [dianlujitao]
+df1d98b9 sm8350-common: vibrator: Update effect names [Arian]
+803244a6 sm8350-common: Switch to /vendor_dlkm for kernel modules [Alexander Koskovich]
+098fcc2b sm8350-common: Update to Boot Control HAL v1.2 [Alexander Koskovich]
+9de0b9d4 sm8350-common: gpt-utils: Update PTN_SWAP_LIST and handle multiimg(oem/qti), [Siddeswar Aluganti]
+af27a276 sm8350-common: gpt-utils: Do fsync after writing partition entries [Benergy Meenan Ravuri]
+12dd5bc6 sm8350-common: gpt-utils: Add product to ab partition list [Arian]
+3f45e9bc sm8350-common: gpt-utils: Drop unused sparse_crc32 [Arian]
+22ec043b sm8350-common: bootctrl: Remove bootctrl.xiaomi_sm8350 target [Michael Bestas]
+41ec941a sm8350-common: Set max_retry_alloc_output_timeout to 0 [LuK1337]
+0638df6e sm8350-common: Automatically add apk/jar/vintf fragments to PRODUCT_PACKAGES [Michael Bestas]
+1dc58e06 sm8350-common: gps: Revert oem changes [Giovanni Ricca]
+53d30346 sm8350-common: gps: Update to LA.UM.9.14.r1-19200.02-LAHAINA.QSSI13.0 [Giovanni Ricca]
+2fba59e4 sm8350-common: Update WCNSS_qcom_cfg.ini from odin V13.1.22.8.22.DEV [Giovanni Ricca]
+a5746e83 sm8350-common: rootdir: Update init.qti.kernel.rc from odin V13.1.22.8.22.DEV [Giovanni Ricca]
+5984e198 sm8350-common: rootdir: Update kernel post boot scripts from odin V13.1.22.8.22.DEV [Arian]
+e5a6ceb1 sm8350-common: Fix build error [Soumil Shah]
+c8362b28 sm8350-common: Prebuilt liba2dpoffload [Giovanni Ricca]
+df12885f sm8350-commom: Update blobs to odin V13.0.5.1.45.DEV [Giovanni Ricca]
+430ec0d3 sm8350-common: Update blobs to Android 12 [Giovanni Ricca]
+db100317 sm8350-common: Add udfps handler lib [Arian]
+66803ffa sm6150-common: Move to common fingerprint HIDL [Bruno Martins]
+a02883d9 sm8350-common: Drop lineage fod HAL [Arian]
+6907d714 sm8350-common: Move to common Xiaomi powershare HIDL [Giovanni Ricca]
+d5a5b0a2 sm8350-common: Build common iFAA service [Giovanni Ricca]
+e52ad3fe sm8350-common: Build mtdservice interface lib from source [Sebastiano Barezzi]
+a35af54e sm8350-common: Switch to source-built mlipay interface [Bruno Martins]
+226a5ba9 sm8350-common: Move DTC_EXT definition to vendor/lineage [Alexander Koskovich]
+ba95fbfe sm8350-common: Move LLVM=1 and LLVM_IAS=1 to BoardConfigKernel [Alexander Koskovich]
+331ccce2 Revert "sm6250-common: overlay-lineage: set config_haveNotch overlay to true" [Bruno Martins]
+f693b2ae sm8350-common: Drop all component overrides [Alexander Koskovich]
+bd7c9117 sm8350-common: Drop QTI camera device usage [Sebastiano Barezzi]
+5b7cfdfb sm8350-common: Drop support for Snapdragon Camera [Alexander Koskovich]
+b62c7e2f sm8350-common: Remove CLANG compile flag [Georg Veichtlbauer]
+101ec391 sm8350-common: Move ueventd.qcom.rc to /vendor/etc. [Alexander Koskovich]
+cdf5d253 sm8350-common: Inherit launch_with_vendor_ramdisk for vAB [althafvly]
+091c4c91 sm8350-common: vAB: Move GSI AVB keys to /vendor_boot [Alexander Koskovich]
+4ee63952 sm8350-common: vAB: Move recovery resources to /vendor_boot [Alexander Koskovich]
+3e90f54c sm8350-common: Build needed HIDL libs into vendor [LuK1337]
+d765c4fe sm8350-common: Move to AOSP NXP NFC HAL [Sebastiano Barezzi]
+c196b230 sm8350-common: Update USB HAL to V1.3 implementation [Albert Wang]
+7c8cff00 sm8350-common: Update clearkey plugin to drm HAL v1.4 [Edwin Wong]
+473320a3 sm8350-common: overlay: Enable haptic text cursor [Michael Wright]
+3fcb6938 sm8350-common: Unpin updatable-media from memory [Santiago Seifert]
+e93750ac sm8350-common: Remove odex/oat files from pinner list. [Nicolas Geoffray]
+f7df3ffe sm8350-common: Update SurfaceFlinger pin on all targets [Kevin Jeon]
+7d9b23b0 sm8350-common: Modify Vulkan and OpenGL version to 2020-03-01 [linjoey]
+1a01160a sm8350-common: Add OpenGL ES and update Vulkan dEQP feature flags [Alastair Donaldson]
+3e417ed6 sm8350-common: Set manufacturer soc property [Arvind Kumar]
+fe6d64db sm8350-common: sepolicy: Attach vendor_property_type to properties. [Inseob Kim]
+cc5550c8 sm8350-common: Switch to SYSTEM_EXT_{PUBLIC,PRIVATE}_SEPOLICY_DIRS [Michael Bestas]
+dee4ee7b sm8350-common: Use BOARD_VENDOR_SEPOLICY_DIRS [Felix]
+44fa6315 sm8350-common: Allow ELF prebuilts in PRODUCT_COPY_FILES. [Roger Ellis]
+1b685dbc sm8350-common: Specify version for aidl_interface explicitly [Jeongik Cha]
+a64abcb7 sm8350-common: Sort blobs list /w sort-blobs-list.py [LuK1337]
+12b22bfe sm8350-common: Add support for low power adaptive control feature [xiaowang]
+8bb69046 sm8350-common: Remove libfastcvopt from module [Giovanni Ricca]
+9aa00a55 sm8350-common: Drop updatable GPU drivers [Alexander Koskovich]
+83baf2b3 sm8350-common: Drop audio.a2dp.default [hpnightowl]
+554f3169 sm8350-common: audio: Nuke misoundfx effects [Sebastiano Barezzi]
+8c38b65f sm8350-common: hal: audio: Update gain to 84 for WSA MCS devices [Laxminath Kasam]
+dbb8b462 sm8350-common: hal: set valid and supported channel mask for earpiece [Anver sadhique]
+cb78e076 sm8350-common: configs: Add Stereo config channel support to usb surround sound [Lakshman Chaluvaraju]
+8578c54b sm8350-common: audio: Don't advertise vorbis offloading support [LuK1337]
+dd54d84f sm8350-common: audio: Drop LHDC audio format [Arian]
+65604695 Partially revert "sm8350-common: audio: remove unsupported configuration options" [Arian]
+c2e6077c sm8350-common: Drop audio_configs.xml [Arian]
+397523e9 sm8350-common: rootdir: Remove duplicate "start logd" [stic-server-open]
+31624119 sm8350-common: Enforce vendor tree presence [Christopher N. Hesse]
+cd8d088c sm8350-common: Generate the apex image. [Nicolas Geoffray]
+5f8fe280 sm8350-common: Use randomly generated camera config [1/2] [althafvly]
+07f2ac93 sm8350-common: Go away Megvii [1/2] [Sebastiano Barezzi]
+c1801698 sm8350-common: Copy snapdragon color libs config from display HAL [Arian]
+9cce7a6d sm8350-common: Copy powerhint.xml from power HAL [Arian]
+5a1fa600 sm8350-common: Remove virtual framebuffer. [Alexander Koskovich]
+caaa6afe sm8350-common: Revert Xiaomi cpuset changes [Arian]
+b0fed8b2 sm8350-common: rootdir: Configure input boost for shima [Arian]
+611c35bd sm8350-common: rootdir: Drop powerkey input boost [Arian]
+eb8b12de sm8350-common: rootdir: Prefer s2idle over deep for lahaina [Giovanni Ricca]
+83662ab9 sm8350-common: rootdir: Add shima and yupik kernel post_boot scripts [Giovanni Ricca]
+e5413336 sm8350-common: rootdir: Remove IO read_ahead_kb tune [Randall Huang]
+163cec32 Revert "sm8350-common: let init do read ahead configuration" [Arian]
+8a5471e4 sm8350-common: Commonize Display calibration configs [Giovanni Ricca]
+ba1fac34 fixup! sm8350-common: sepolicy: Label more wakeup nodes [Giovanni Ricca]
+834d1211 sm8350-common: Don't explicitly build fs_config_files [Arian]
+
+* frameworks/base
+d89a1d619a8b debug [Arian]
+
+* packages/apps/Settings
+8d7adc064d debug [Arian]
+
+====================
+     2022-08-28    
+====================
+* device/xiaomi/renoir
+ae2a302 disable hotword [Arian]
+64aa09b renoir: overlay: Update statusbar padding [Adithya R]
+00a9827 Revert "Revert "Revert "renoir: overlay-lineage: Disable proximity usage during doze""" [Arian]
+0c51936 renoir: Automatically add apk/jar/vintf fragments to PRODUCT_PACKAGES [Michael Bestas]
+0654627 Revert "renoir: Move to source built liba2dpoffload" [Giovanni Ricca]
+781f1e9 renoir: Update from V13.1.22.8.22.DEV [Arian]
+8ac8434 renoir: Move to AOSP NXP NFC HAL [Giovanni Ricca]
+0d17148 renoir: Move to common Xiaomi fingerprint HIDL [Giovanni Ricca]
+39e0ea0 renoir: overlay: Update deprecated screen power items [Georg Veichtlbauer]
+01fe072 renoir: overlay: Set physical location of side fps [althafvly]
+64bece4 renoir: overlay: Set fingerprint sensor location [althafvly]
+3c2708c renoir: Use randomly generated camera config [2/2] [althafvly]
+45f3684 renoir: Go away Megvii [2/2] [Sebastiano Barezzi]
+a0e276f renoir: Remove duplicate libmialgo_pureShot [ItsVixano]
+17e4ac0 renoir: Drop non-QDCM display configs [Sebastiano Barezzi]
+
+* kernel/xiaomi/sm8350
+099902bd8239 Revert "supply: qti_battery_charger: Squashed revert of xiaomi property addition" [Arian]
+3671d643cf69 power: supply: qti: Fix real_type detection with A12 firmware [Adithya R]
+183effde0486 Revert "[TMP] Revert "net_cnss2: Update xiaomi firmware loading changes from odin-r-oss"" [Arian]
+1175496b3471 soc: qcom: smp2p_sleepstate: Add suspend delay Add delay in smp2p_sleepstate suspend path to prevent wakeup loop with non wakeup streaming from sensors. This delay should be the maximum time for sensors samples in flight to be drained. [Chris Lew]
+
+* lineage/wiki
+bf725ae5 wiki: sumire: profile -> profiles [Sebastiano Barezzi]
+
+====================
+     2022-08-27    
+====================
+* frameworks/base
+33a0c1ca661a SystemUI: VolumeDialogImpl: notifyVisible after the volume panel is fully hidden [Jesse Chan]
+e26a2ead9dc1 SystemUI: VolumeDialogImpl: Move the MediaOutputDialog above status bar [Arian]
+e2c024f96fe0 SystemUI: VolumeDialogImpl: Show output button if there is an active stream [Arian]
+
+* lineage/wiki
+ffbd89fb wiki: Unify boot stack flashing instructions [LuK1337]
+2e8b87be xz2c: Remove sjllls from list of maintainers [Danny Trunk]
+c792e49b aurora: Remove sjllls from list of maintainers [Danny Trunk]
+b3f39eb5 akatsuki: Remove sjllls from list of maintainers [Danny Trunk]
+b2df0b75 akari: Remove sjllls from list of maintainers [Danny Trunk]
+
+* packages/apps/LineageParts
+40dc883 LineageParts: Buttons: Remove split screen option [Michael W]
+a29884a LineageParts: Rewrite ButtonSettings to support feature exclusion [Michael W]
+74bb6e4 ButtonSettings: Simplify code [Michael W]
+b74bbdb ButtonSettings: Fix forgotten usage of a local variable [Michael W]
+
+====================
+     2022-08-26    
+====================
+* lineage/wiki
+25710cc2 wiki: Require dtbo flash for OnePlus SM8250 [LuK1337]
+
+* vendor/lineage
+cff7740a sensitive_pn: Updates to USA list [Nicholas Merill]
+
+====================
+     2022-08-25    
+====================
+* lineage/hudson
+a47dece Endless Eight IX [LuK1337]
+21ebc82 Regenerate device dependency mappings [Michael Bestas]
+
+* lineage/wiki
+c7c6d591 wiki: Bump OnePlus SM8250 [LuK1337]
+aace5ff0 wiki: Unify firmware upgrade pages for OnePlus SM8250 [LuK1337]
+14347d33 wiki: Restructure and complement computer requirements [Michael W]
+
+* packages/apps/Updater
+6af703b Updater: README: Update android studio instructions [althafvly]
+
+====================
+     2022-08-24    
+====================
+* lineage/wiki
+b8c2adee Wiki: on heimdall page: /s/Windows user/Windows users/ [Neel Chauhan]
+ba002f43 wiki: Commonize vendor_boot and dtbo install instruction [althafvly]
+
+* packages/apps/Seedvault
+2b2bf5b Merge branch 'android12' of https://github.com/seedvault-app/seedvault into lineage-19.1 [Michael Bestas]
+
+====================
+     2022-08-23    
+====================
+* device/nubia/TP1803
+d201ab6 TP1803: Add check for existence of radio firmware files [Erfan Abdi]
+
+* lineage/wiki
+53efb60a build: deps: GKI needs libelf-dev [Nolen Johnson]
+
+* packages/apps/DeskClock
+2241bd78b DeskClock: Stop editing time when pausing the app [Michael W]
+
+* packages/apps/Trebuchet
+feb0f005f2 Trebuchet: Don't show split screen options ... [Michael W]
+
