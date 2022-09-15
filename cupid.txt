@@ -1,52 +1,132 @@
 ====================
-     2022-08-05    
+     2022-09-15    
 ====================
 * device/xiaomi/sm8450-common
-7fffb758 sm8450-common: rootdir: Overwrite audio service [Arian]
-45717e22 sm8450-common: Build libcodec2_soft_common.vendor for dolby [Arian]
-c2855f7f sm8450-common: Build more from source [Arian]
-c1a66a81 sm8450-common: Drop unused authsecret interface [Arian]
-afeb10ac sm8450-common: Build WiFi hal from source [Arian]
-397f6eec sm8450-common: Enable 64bit audio HAL [Arian]
-7a8890ec sm8450-common: Build AOSP services and interfaces from source if possible [Arian]
-fa9554cf sm8450-common: Disable prebuilt kernel headers for now [Arian]
-6c5af2ec sm8450-common: Copy permissions from frameworks/native [Arian]
-28603aee sm8450-common: Sectionize proprietary-files.txt [Arian]
-8232d933 sm8450-common: Move to hex partition sizes [Arian]
+6629c91 sm8450-common: udfps: Handle fingerprint enroll vendor code [Arian]
 
-* hardware/interfaces
-9cbc17dec audio: Support 64bit configuration on 32+64bit compatible OS [Carter Hsu]
+* vendor/qcom/opensource/audio-kernel
+64ff44aa asoc: Import xiaomi changes [Arian]
+9295a906 Import cs35l41 codec [Arian]
+
+* vendor/qcom/opensource/camera-kernel
+cddd813724fb cam_req_mgr: Increase max events [Arian]
+e726b3bd388e cam_req_mgr: Increase watchdog timeout and max retry attempts [Arian]
+47e08b13ad03 cam_icp: Increase cmd and msg sizes [Arian]
+7b88585272b9 cam_isp: Skip pausing timer when notify_timer doesn't exist [Arian]
+e183980f60cd cam_sensor_utils: Add CAM_VANA1 to vreg name enum [Arian]
+cf5db7cefe3b cam_ois: Import xiaomi changes [Arian]
+d269f9e07090 cam_csiphy: Modify cdr delay reg for xiaomi l2 (zeus) [Arian]
+023edf50111f cam_csiphy: Always stop cpas on shutdown [Arian]
+5b72c5843259 cam_isp: Set rdi_only_ctx to false on stop [Arian]
+68f253e02b6d cam_isp: Avoid race condition in tasklet start and stop [Arian]
+f275b85591ad cam_isp: Try to recover bubble if request can be re-applied [Arian]
+086ac0598885 cam_cpas: Retry getting slice desc [Arian]
+fa974105d4e2 camera: Optimize hang detect for CAM_ISP [Arian]
+20fa6c64fb23 cam_sensor: Fix sensor id read issue [wangshuo18]
+93ac02004535 msm: camera: csiphy: Enhance csiphy logs [Jigar Agrawal]
+f31f06c6fbeb msm: camera: isp: Update last applied scratch configuration for sfe [Depeng Shao]
+05b60070bad7 msm: camera: isp: Add support for IFE scratch buffer [Karthik Anantha Ram]
+b2a0968cdfc9 msm: camera: cdm: check irq status on hang detection [Shardul Bankar]
+d260f8c49386 msm: camera: cdm: Fix incorrect condition in cdm code [Jigar Agrawal]
+48ee4c6abf47 msm: camera: isp: Handle deferred buf done for bubble case [Depeng Shao]
+7b3c1dade1c3 msm: camera: isp: Handle IRQ delays for offline streams [Karthik Anantha Ram]
+c4fb4c1bab74 msm: camera: isp: Add more deferred buf done support [Depeng Shao]
+5f145c59332c msm: camera: icp: Fix HFI init sequence [Karthik Anantha Ram]
+05411f995b27 msm: camera: common: Dynamically allocated flush request array [sokchetra eung]
+
+* vendor/qcom/opensource/mmrm-driver
+d0a8947 Add test [Arian]
+
+* vendor/qcom/opensource/wlan/qcacld-3.0
+716ec2ea6 Enable CONFIG_CNSS_QCA6490 [Arian]
+
+====================
+     2022-09-14    
+====================
+====================
+     2022-09-13    
+====================
+* build/make
+3cf51722e Allow to opt out from kernel header replacements [Arian]
+
+* build/soong
+e21c2c00a Don't replace device and qti kernel headers with generated_kernel_headers [Arian]
+dfeea41fe Add perl to allowed host tools [Arian]
+
+* hardware/qcom-caf/bootctrl
+8666f7b bootctrl: Enabling bootctrl for gvmq beased on property [Tabassum Tabassum]
+4860c75 Bootctrl: Replace usage of ro.build.product with ro.board.platform [Huang Li]
+78bc36a Handle "multiimgoem", "multiimgqti" partitions. [Siddeswar Aluganti]
+
+* vendor/lineage
+fb458dce qcom: Add taro platform [Arian]
+d5ba6c1d Allow to opt out from lineage kernel build [Arian]
+
+* vendor/qcom/opensource/data-ipa-cfg-mgr
+03c80bc data-ipa-cfg-mgr: Remove unused variables [Edwin Moquete]
+
+====================
+     2022-09-12    
+====================
+* lineage/hudson
+e8dd1cb Regenerate device dependency mappings [razorloves]
+
+* lineage/wiki
+ffc27930 wiki: Add Xiaomi SDM710 family [Sebastiano Barezzi]
+d2e79677 wiki: Add support for A-only retrofit dynamic partitions [Sebastiano Barezzi]
+
+====================
+     2022-09-11    
+====================
+* lineage/hudson
+802f8af hudson: Add Xiaomi SDM710 family to devices.json [Sebastiano Barezzi]
+
+* packages/apps/Settings
+a91a546c8a Make bluetooth not discoverable via large screen deep link flow [Jason Chiu]
+
+====================
+     2022-09-10    
+====================
+* build/make
+d3e95e2ac Bump Security String to 2022-09-05 [Kevin F. Haggerty]
+
+* frameworks/base
+d42ec4c0e5ad Remove package name from SafetyNet logs [Manjeet Rulhania]
+f27493ca3218 Fix duplicate permission privilege escalation [Manjeet Rulhania]
+
+* lineage/hudson
+e299e3c hudson: A bird, a reptile and a star walks into a bar... [Sebastiano Barezzi]
+
+* lineage/wiki
+f0ba54e3 wiki: sake: Add new maintainer [Davide Garberi]
+
+====================
+     2022-09-09    
+====================
+* device/xiaomi/sm8450-common
+05f9132 sm8450-common: udfps: Rework a bit and enable local hbm via disp_param [Arian]
+
+* frameworks/base
+16a2ea48ae33 Don't pass non slider adj. as user interactions [Fiona Campbell]
 
 * hardware/xiaomi
-3468a5d megvii: Return a char pointer for some stubs instead [Tim Schumacher]
-aa3c0f9 Reland "megvii: Initial stub libraries" [Sebastiano Barezzi]
+a27ab6c hidl: biometrics: More debug [Arian]
+d785ca4 sensors: Simplify udfps state node reading [Arian]
+9bce937 sensors: Add udfps long press sensor [Cosmin Tanislav]
+08bcf44 sensors: Fix locking around setOperationMode and activate [Cosmin Tanislav]
+4cb09a7 sensors: Move one shot sensor out of main class [Cosmin Tanislav]
+f313831 sensors: Make sensor set mode operation function virtual [Cosmin Tanislav]
+2de0933 sensors: Make sensor flush function virtual [Cosmin Tanislav]
+4930f49 sensors: Make sensor run function virtual [Cosmin Tanislav]
+d20163d sensors: Make sensor batch function virtual [Cosmin Tanislav]
+20027ab Add dummy sensors sub HAL [Cosmin Tanislav]
+6582ce4 hidl: sensors: Standardize xiaomi pickup sensor [Cosmin Tanislav]
+98a1755 hidl: sensors: Avoid target name conflicts [Cosmin Tanislav]
+5fc4861 hidl: sensors: Import 2.X sensors hal proxy [Cosmin Tanislav]
+9312c86 hidl: sensors: Change default applicable license to Android-Apache-2.0 [Arian]
+51bd3c8 hidl: sensors: Import 2.1 sensors multihal [Cosmin Tanislav]
+c08b665 hidl: biometrics: Extend UdfpsHandler with onAcquired and cancel methods [Arian]
 
-====================
-     2022-08-04    
-====================
-* device/xiaomi/sm8450-common
-051cead1 sm8450-common: Exclude qca6490.ko from recovery kernel modules [Arian]
-32bfa42a sm8450-common: Move to kernel-platform kernel setup [Arian]
-76fcd33e sm8450-common: Use cupid kernel repository [Arian]
-d305a25c sm8450-common: Drop board platform check from kernel platform [Arian]
-29c6ace9 sm8450-common: Import kernel-platform configs [Arian]
-d10580df sm8450-common: overlay: Decrease minimum allowed brightness [Arian]
+* kernel_platform/msm-kernel
+2db617ff0080 touchscreen: fts_spi: Update [Arian]
 
-====================
-     2022-08-03    
-====================
-* device/xiaomi/sm8450-common
-be19738f sm8450-common: Set lineage version as fingerprint for mdtoops [Arian]
-
-====================
-     2022-08-02    
-====================
-====================
-     2022-08-01    
-====================
-====================
-     2022-07-31    
-====================
-====================
-     2022-07-30    
-====================
