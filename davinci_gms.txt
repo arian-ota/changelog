@@ -1,0 +1,133 @@
+====================
+     2022-11-15    
+====================
+* device/xiaomi/davinci
+05c931f davinci: overlay: Configure aux camera for Aperture [LuK1337]
+4e3e3f2 davinci: Support UDFPS on AoD [Cosmin Tanislav]
+
+* device/xiaomi/sm6150-common
+e1946840 sm6150-common: Move to legacy-um qcom sepolicy [Arian]
+9ef008f3 sm6150-common: overlay: Configure aux camera for Aperture [LuK1337]
+29e221ca sm6150-common: Migrate vendor.camera.aux.packagelist to sdk overlay [LuK1337]
+5104523f sm6150-common: udfps: Set fod status based on vendor acquired and cancel [Arian]
+bb8d9f49 sm6150-common: sepolicy: Label UDFPS state node [Bruno Martins]
+4e8f1f1f sm6150-common: Remove bdroid_buildcfg.h [Michael Bestas]
+ac80e30d Revert "sm6150-common: Use LLVM binutils and LLVM integrated assembler" [Nolen Johnson]
+543d7ac0 Revert "sm6150-common: Decommonize cnss-daemon" [Arian]
+3f2881cb sm6150-common: Move to common libpiex_shim [Arian]
+2a63fa8c sm6150-common: Improve camera shim [Arian]
+
+* kernel/xiaomi/sm6150
+aaddebdeee13 input: goodix: Don't suspend when system is waking up [Andrzej Perczak]
+8d835c0a90ec input: touchscreen: goodix_driver_gt9886: Don't resume for fod status if it didn't change [Arian]
+7e65ea891d01 input: touchscreen: goodix_driver_gt9886: Report fp_state to sysfs [Arian]
+
+* tools/buildscript
+c8f3b42 Revert "Include mainline modules" [Arian]
+3eaa87f Include mainline modules [Arian]
+cae3e8c Set variables for GMS build [Arian]
+
+* vendor/translations
+25b280f Convert motor translations to RRO [Arian]
+
+====================
+     2022-11-14    
+====================
+* kernel/xiaomi/sm6150
+bccd7c6ece85 cert host tools: Stop complaining about deprecated OpenSSL functions [Linus Torvalds]
+581eae558509 kbuild: use HOSTLDFLAGS for single .c executables [Robin Jarry]
+
+====================
+     2022-11-13    
+====================
+* lineage/wiki
+61aec135 devices: wahoo: Update maintainers [Nolen Johnson]
+
+* packages/apps/Aperture
+c97b7ea Aperture: Remove unnecessary type declarations in CameraManager [LuK1337]
+
+====================
+     2022-11-12    
+====================
+* frameworks/base
+3c11d465b61c SystemUI: Disable clock auto hide feature for QS [LuK1337]
+
+* packages/apps/Aperture
+d2c2858 Aperture: Override navigationBarColor for main activity theme [LuK1337]
+f270639 Aperture: Use context instead of activity ref in CameraManager [Dhina17]
+
+====================
+     2022-11-11    
+====================
+* external/chromium-webview/patches
+0b6b763 Update Chromium Webview to 107.0.5304.105 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm
+c14dd13 Update Chromium Webview arm prebuilt to 107.0.5304.105 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm64
+ac62795 Update Chromium Webview arm64 prebuilt to 107.0.5304.105 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86
+b3d865d Update Chromium Webview x86 prebuilt to 107.0.5304.105 [Kevin F. Haggerty]
+
+* lineage/scripts
+19fdf91 build-webview: Update default webview to 107.0.5304.105 [Kevin F. Haggerty]
+
+====================
+     2022-11-10    
+====================
+* hardware/lineage/compat
+e4fbaa3 compat: Provide a libip_checksum shim [Nolen Johnson]
+
+====================
+     2022-11-09    
+====================
+* device/qcom/sepolicy
+c8bde922 Merge tag 'LA.QSSI.13.0.r1-07500-qssi.0' into staging/lineage-20.0_merge-LA.QSSI.13.0.r1-07500-qssi.0 [Michael Bestas]
+
+* device/qcom/sepolicy_vndr
+949c7ae0 Merge tag 'LA.VENDOR.1.0.r1-18000-WAIPIO.QSSI13.0' into staging/lineage-20.0_merge-LA.VENDOR.1.0.r1-18000-WAIPIO.QSSI13.0 [Michael Bestas]
+
+* device/qcom/sepolicy_vndr-legacy-um
+1f482dc8 Merge tag 'LA.UM.9.14.r1-20700-LAHAINA.QSSI13.0' into staging/lineage-20.0_merge-LA.UM.9.14.r1-20700-LAHAINA.QSSI13.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8150/media
+655d01bdb Merge tag 'LA.UM.9.1.r1-12800-SMxxx0.QSSI13.0' into staging/lineage-20.0_merge-LA.UM.9.1.r1-12800-SMxxx0.QSSI13.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8250/media
+cbad831bb Merge tag 'LA.UM.9.12.r1-14800-SMxx50.QSSI13.0' into staging/lineage-20.0_merge-LA.UM.9.12.r1-14800-SMxx50.QSSI13.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8350/audio
+938d3ff4cd Merge tag 'LA.UM.9.14.r1-20700-LAHAINA.QSSI13.0' into staging/lineage-20.0_merge-LA.UM.9.14.r1-20700-LAHAINA.QSSI13.0 [Michael Bestas]
+
+* hardware/qcom-caf/wlan
+b8cec96 Merge tag 'LA.VENDOR.1.0.r1-18000-WAIPIO.QSSI13.0' into staging/lineage-20.0_merge-LA.VENDOR.1.0.r1-18000-WAIPIO.QSSI13.0 [Michael Bestas]
+
+* lineage/wiki
+4b56dace devices: a52q has 4GB variants [Simon1511]
+
+* packages/apps/Aperture
+1181e20 Aperture: Undefine testInstrumentationRunner [Sebastiano Barezzi]
+f5a9a78 Aperture: Move .dev suffix to debug build type configuration [Sebastiano Barezzi]
+f0b4640 Aperture: Use `getByName` instead of `named` in build.gradle.kts [Sebastiano Barezzi]
+
+* vendor/codeaurora/telephony
+1b5c864 Merge tag 'LA.QSSI.13.0.r1-07500-qssi.0' into staging/lineage-20.0_merge-LA.QSSI.13.0.r1-07500-qssi.0 [Michael Bestas]
+
+* vendor/lineage
+d944f6d0 vars: Update qcom tags [Michael Bestas]
+d4e3779b vars: RIP floral [Michael Bestas]
+878415d3 vars: cleanup [Michael Bestas]
+0e2eb1fb vars: Update kernel for November 2022 & add gs201 [Michael Bestas]
+7c406448 vars: November 2022 Security Update [Michael Bestas]
+
+* vendor/qcom/opensource/commonsys/display
+e2fac95 Merge tag 'LA.QSSI.13.0.r1-07500-qssi.0' into staging/lineage-20.0_merge-LA.QSSI.13.0.r1-07500-qssi.0 [Michael Bestas]
+
+* vendor/qcom/opensource/data-ipa-cfg-mgr
+92f1c7b data-ipa-cfg-mgr: Remove unused variables [Edwin Moquete]
+
+* vendor/qcom/opensource/power
+a145632 Merge tag 'LA.VENDOR.1.0.r1-18000-WAIPIO.QSSI13.0' into staging/lineage-20.0_merge-LA.VENDOR.1.0.r1-18000-WAIPIO.QSSI13.0 [Michael Bestas]
+
