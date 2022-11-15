@@ -1,247 +1,144 @@
 ====================
-     2022-08-21    
-====================
-* frameworks/base
-1b8233e40be3 udfps: Make pressed udfp view configurable [TheScarastic]
-3b4588adaf94 udfps: Change window type to TYPE_DISPLAY_OVERLAY [TheScarastic]
-65317fa0c073 udfps: Implement default udfps hbm provider [LuK1337]
-fa367f3cb3ac udfps: Trigger onFingerDown with regular action down events too [Arian]
-3f9fde8b583a udfps: Restore illumination dot for global hbm [Arian]
-
-* frameworks/native
-ad69bfcc9f CompositionEngine: Request device composition for the Udfps touched layer [daniml3]
-a6e2381912 surfaceflinger: Add support for Udfps extension lib [Pierre-Hugues Husson]
-
-====================
-     2022-08-20    
+     2022-11-15    
 ====================
 * device/xiaomi/davinci
-c954532 Revert "davinci: Import decommonized cnss-daemon" [Arian]
-a06f546 davinci: Use GetPreviewImageData shim for com.qti.node.watermark [daniml3]
+05c931f davinci: overlay: Configure aux camera for Aperture [LuK1337]
+4e3e3f2 davinci: Support UDFPS on AoD [Cosmin Tanislav]
 
 * device/xiaomi/sm6150-common
-4ce9b869 Revert "sm6150-common: Decommonize cnss-daemon" [Arian]
-0d2face2 sm6150-common: Improve camera shim [Arian]
-c4f19714 sm6150-common: Add GetPreviewImageData shim for camera [daniml3]
-816cf6a1 sm6150-common: Use LLVM binutils and LLVM integrated assembler [Arian]
-c027a3e4 sm6150-common: Preopt SystemUI for AOSP builds. [Jiakai Zhang]
-a90cd875 sm6150-common: Add a system property for System UI compiler filter. [Jiakai Zhang]
-37edd932 sm6150-common: Disable LE audio related profiles for sunfish [Alice Kuo]
-
-====================
-     2022-08-19    
-====================
-* device/xiaomi/sm6150-common
-09b9b46f sm6150-common: Use the ?= operator so BT properties can be overridden [Sal Savage]
-c7bf0ce6 sm6150-common: Set default the Bluetooth class of device [Sal Savage]
-7e7d7f7d sm6150-common: Update LE Audio profile properties to match spec and implementation [Sal Savage]
-77256f49 sm6150-common: Enable bluetooth profiles with product.prop [Sal Savage]
-a2af0b07 sm6150-common: Drop audio.a2dp.default [Arian]
-684970d7 sm6150-common: gps: Fix usage of or operator on booleans [Arian]
+e1946840 sm6150-common: Move to legacy-um qcom sepolicy [Arian]
+9ef008f3 sm6150-common: overlay: Configure aux camera for Aperture [LuK1337]
+29e221ca sm6150-common: Migrate vendor.camera.aux.packagelist to sdk overlay [LuK1337]
+5104523f sm6150-common: udfps: Set fod status based on vendor acquired and cancel [Arian]
+bb8d9f49 sm6150-common: sepolicy: Label UDFPS state node [Bruno Martins]
+4e8f1f1f sm6150-common: Remove bdroid_buildcfg.h [Michael Bestas]
+ac80e30d Revert "sm6150-common: Use LLVM binutils and LLVM integrated assembler" [Nolen Johnson]
+543d7ac0 Revert "sm6150-common: Decommonize cnss-daemon" [Arian]
+3f2881cb sm6150-common: Move to common libpiex_shim [Arian]
+2a63fa8c sm6150-common: Improve camera shim [Arian]
 
 * kernel/xiaomi/sm6150
-ef1a8a0f7acc ASoC: Fix overflow error in routing driver [Soumya Managoli]
-498ae989feb9 usb: fix undefined behavior caused by zero-length array [Jimmy Hu]
-0a78b32f6ad1 BACKPORT: msm: adsprpc: Allocate buffer taking NULL byte into consideration [Jeya R]
-25ff933c3d00 char: adsprpc: fix global-out-of-bounds error [JJ Lee]
-8d583efd243c usb: f_fs: Avoid invalid pointer access in ffs_fs_get_tree [Pratham Pratap]
-fec1fe825984 mmc: sdhci-msm: Fix array-index-out-of-bounds [Ivan Vecera]
-6a0d2dea023a mmc: sdio: Fix strlcpy usage [Nathan Chancellor]
-870ab0cd9be9 msm: camera: Fix trivial misleading indentation warnings [Sultan Alsawaf]
-d5b8423460c6 lib/nlattr.c: Fix warning due to incorrect strlen() variable type [Sultan Alsawaf]
-41b68ea43226 msm: vidc: Fix uninitialized tag_data usage [Sultan Alsawaf]
-a93ba1736d62 ASoC: msm-pcm-routing-v2: Fix non-blocking if-statement warning [Sultan Alsawaf]
-88a2bb10580a ASoC: dsp: msm-dts-srs-tm-config: Fix trivial unguarded pr_debug() [Sultan Alsawaf]
-b3d932d9b8af ASoC: dsp: amrwb_in: Fix AUDIO_GET_AMRWB_ENC_CONFIG ioctl [Sultan Alsawaf]
-445944f3a591 msm: ipa: Fix size check in ipa_debugfs_enable_disable_drop_stats() [Sultan Alsawaf]
-bc370cc28f57 msm: ipa: Refactor buffer size check in ipa3_write() [Sultan Alsawaf]
-45ed5e70b0ad msm_geni_serial: Fix format specifier warnings due to transposed args [Sultan Alsawaf]
-060636eb2f9e thermal: tsens: Fix exported function marked as static [Sultan Alsawaf]
-4550df7256cb smb5-lib: Fix misleading indentation warning due to missing braces [Sultan Alsawaf]
-d488484e3204 msm: ipa3: Fix non-atomic read on atomic_t variable [Sultan Alsawaf]
-fa538f28734a msm: ipa3: Fix format specifier warnings [Sultan Alsawaf]
-f15dd8d918e4 cnss_utils: Fix unused function warnings when CONFIG_CNSS_TIMESYNC=n [Sultan Alsawaf]
-947f58a3f2dc msm: npu: Fix format specifier warnings [Sultan Alsawaf]
-3fd3b010a511 msm: camera: Remove nonsensical register reads in cam_vfe_fe_reg_dump() [Sultan Alsawaf]
-52131db9e45b msm: camera: Fix misleading indentation warnings due to missing braces [Sultan Alsawaf]
-dcd0ef1ed05f arm64: arch_timer: Fix unused function warnings when OOL_WORKAROUND=n [Sultan Alsawaf]
-a5cf3cbb46da mhi: core: Fix unchecked must_check sysfs_create_group() return value [Sultan Alsawaf]
-fde511fafb7b mhi: core: Fix unchecked must_check mhi_read_reg_field() return value [Sultan Alsawaf]
-2b5bdc5959a2 mhi: core: Fix format specifier warnings [Sultan Alsawaf]
-85e3164769d1 msm: camera: icp: fix -Wunsequenced [Nick Desaulniers]
-bf57d5b9f288 kconfig: fix -Wmisleading-indentation [Nick Desaulniers]
-02877d8e0602 msm: camera: isp: fix -Wpointer-to-int-cast [Nick Desaulniers]
-9ab4d9b2907e msm: camera: icp: fix -Wunsequenced [Nick Desaulniers]
-40755411a12e soc: qcom: spcom: fix section mismatch warning [Nick Desaulniers]
-7cb6d1f595d2 Revert "arm64: spinlock: Drop the prfm from arch_spin_trylock" [Nick Desaulniers]
-7a542c656c85 Revert "selinux: Relocate ss_initialized and selinux_enforcing to separate 4k" [Nick Desaulniers]
-b5a205264b02 Revert "RTIC: Move selinux_state to a separate 4k" [Volodymyr Zhdanov]
-1ecbdfed1c0e Revert "ANDROID: HACK: arm64, LLVMLinux: use -mno-implicit-float" [Danny Lin]
-0ad14d675fd3 Makefile: Remove obsolete -fno-builtin flag [Danny Lin]
-c8b681b453b3 arm64: make label allocation style consistent in tishift [Jason A. Donenfeld]
-c1d6c3d3da78 arm64: Implement __lshrti3 library function [Jason A. Donenfeld]
-cd0cc1fc447f arm64: support __int128 with clang [Jason A. Donenfeld]
-443a2ca17d60 arm64: support __int128 on gcc 5+ [Jason A. Donenfeld]
-4044562669ee scripts: Remove gcc-wrapper.py [Nathan Chancellor]
-d3669e23d6a5 Makefile.lib: Stop calling size_append [Julian Liu]
-d81c8a20ebc2 ARM64: configs: {davinci,phoenix,sweet,toco,tucana,violet}: Disable CONFIG_FORTIFY_SOURCE [Greg Kroah-Hartman]
-ecb1387ee4a6 fortify: Explicitly disable Clang support [Kees Cook]
-9e977c1d80bc arm64: Change .weak to SYM_FUNC_START_WEAK_PI for arch/arm64/lib/mem*.S [Fangrui Song]
-8c7ebd2e7ee2 arm64/crypto: remove non-standard notation [Nick Desaulniers]
-4b55c894f40b arm64: vdso: remove commas between macro name and arguments [Jian Cai]
-cabae6cf8935 Kbuild: do not emit debug info for assembly with LLVM_IAS=1 [Nick Desaulniers]
-967232816e2a BACKPORT: kbuild: support LLVM=1 to switch the default tools to Clang/LLVM [Masahiro Yamada]
-610f30fc16cb BACKPORT: kbuild: replace AS=clang with LLVM_IAS=1 [Masahiro Yamada]
-8a75e7b1a592 BACKPORT: kbuild: remove AS variable [Masahiro Yamada]
-c36ac017694d BACKPORT: kbuild: Add ability to test Clang's integrated assembler [Nathan Chancellor]
-5b4aa138c0d7 BACKPORT: x86/boot: kbuild: allow readelf executable to be specified [Dmitry Golovin]
-a81c3530698d BACKPORT: net: wan: wanxl: use $(M68KCC) instead of $(M68KAS) for rebuilding firmware [Masahiro Yamada]
-5d2842597cc2 BACKPORT: net: wan: wanxl: use allow to pass CROSS_COMPILE_M68k for rebuilding firmware [Masahiro Yamada]
-f9ff745e3a1e BACKPORT: Documentation/llvm: fix the name of llvm-size [Fangrui Song]
-b302d55d4ea1 BACKPORT: Documentation/llvm: add documentation on building w/ Clang/LLVM [Nick Desaulniers]
-
-* vendor/lineage
-7b16e027 set privapp permission enforcement to log [Arian]
-e7fe1b0a adb insecure by default [Scott Mertz]
-
-* vendor/qcom/opensource/vibrator
-7b0835c Remove ndk_platform backend. Use the ndk backend. [Jiyong Park]
+aaddebdeee13 input: goodix: Don't suspend when system is waking up [Andrzej Perczak]
+8d835c0a90ec input: touchscreen: goodix_driver_gt9886: Don't resume for fod status if it didn't change [Arian]
+7e65ea891d01 input: touchscreen: goodix_driver_gt9886: Report fp_state to sysfs [Arian]
+bccd7c6ece85 cert host tools: Stop complaining about deprecated OpenSSL functions [Linus Torvalds]
+581eae558509 kbuild: use HOSTLDFLAGS for single .c executables [Robin Jarry]
 
 ====================
-     2022-08-18    
+     2022-11-14    
 ====================
-* build/make
-d7eed00dc4 tools: Let adb secure check depend on "==0" rather than "!=1" [LibXZR]
-281990b1bb Disable Traceur for non eng-builds [Aaron Kling]
-884241b49d releasetools: Unconditionally store recovery.img in non-A/B OTA [LuK1337]
-d10d237c41 releasetools: Fallback to calculated fp if partition fp is missing [Aaron Kling]
-23ffc4f567 build: Respect fs_config when generating recovery ramdisk [lambdadroid]
-9f3165be15 Add support for separate kernels for boot and recovery [2/2] [marcost2]
-98de19e109 soong: Add ability to build scudo-free 32-bit libc variant. [Quallenauge]
-f3aac9dc50 build: Add support for device tree in boot.img [David Ng]
-56066f6180 Add BOARD_CUSTOM_BOOTIMG_MK support [Ricardo Cerqueira]
-6c4aea572a core: Allow overriding device/model/name properties [LuK1337]
-a516596482 core: Add support for overriding build.prop settings [Koushik Dutta]
-06ac7d7a0a build: Squash of allowing a device to generically define its own headers [Ricardo Cerqueira]
-b80bd78cc7 Add build support for XZ ramdisks [Luca Stefani]
-73e7a2dede Fix recovery image generation with LZ4 compressed ramdisk [Arne Coucheron]
-f30d8aa89d releasetools: Add script to sign zips [Gabriele M]
-572bb6306d releasetools: support reading release keys out of some sort of command [Tom Powell]
-47549323db All operating systems are beautiful [Christopher N. Hesse]
-6164f99eb3 releasetools: do not remove dynamic partitions in system-only builds [Peter Cai]
-ad8182d9cf Unset BOARD_EXT4_SHARE_DUP_BLOCKS [LuK1337]
-4e75bf8027 build_image: Allow disabling custom inode count calculation [Christian Oder]
-5be7a57145 Remove unused locale data for recovery [Alessandro Astone]
-c01c379064 releasetools: Use the first entry of a mount point when reading fstab [Brint E. Kriebel]
-9514aba16f Edify: Add abort message for bootloader asserts [Matt Mower]
-b903db5d73 ota: Disable downgrade check [Andrew Dodd]
-3b6a02e8ef Add blank_unblank_on_init to PRIVATE_RECOVERY_UI_PROPERTIES [Michael Bestas]
-28f6d23db9 Allow setting the recovery density separately from the aapt config [Chirayu Desai]
-91049f7b4c build: Separate commands in recovery foreach loops [Matt Mower]
-2f17c27d3f build: recovery: Support adding device-specific items [Tom Marshall]
-efc9b20884 releasetools: ota_from_target_files: add FullOTA_PostValidate [M1cha]
-50c3d2e4b5 Add missing languages [Michael W]
-3e3ea992cc Don't enable ADB by default on userdebug builds [Michael Bestas]
-310a17bc29 Don't make recovery patch for devices with prebuilt vendor [TheScarastic]
-693172fbf9 Move recovery-from-boot.p from /system to /vendor [dianlujitao]
-37d1212ee3 Allow override of device asserts, including multi-device support. [Steve Kondik]
-767c7ef5f3 build: Automatically replace old-style kernel header includes with new header lib [Rashed Abdel-Tawab]
-8af8421ec4 Add extra variables to _readonly_late_variables [dianlujitao]
-40f2c338bd Add roomservice [Koushik Dutta]
-812be3feab build: Add Lineage build support [Luca Stefani]
-ce3837ff2b Source lineage specific envsetup [Michael Bestas]
-340d2a04b9 envsetup: export ANDROID_BUILD_TOP earlier [Chirayu Desai]
-0d52861631 build: Include vendor/extra/BoardConfigExtra.mk if available [Steve Kondik]
+* lineage/wiki
+61aec135 devices: wahoo: Update maintainers [Nolen Johnson]
 
-* build/soong
-5707349f2 dumpvars: Replace ATV and Automotive vars [Bruno Martins]
-cf9dd3e18 sandbox_linux: set CCACHE_DIR as a writable path [daniml3]
-6aba1d9e9 check_boot_jars: Add nvidia packages to whitelist [LuK1337]
-fd550d519 cleanbuild: Add `recovery_kernel` to installclean files [Jarl-Penguin]
-596c5a836 Add Init_rc to Product_variables.Eng [dianlujitao]
-5edc985ad Be more explicit about GMS dumpvars [Nolen Johnson]
-f7e573f1a check_boot_jars: Add IFAA Manager to whitelist [Michael Bestas]
-c038295b8 Add exported-to-kati namespaces to root namespace [LuK1337]
-0a36b0190 Add ability to enable scudo-free 32-bit libc variant. [Quallenauge]
-fd3d3e035 Replace qti_kernel_headers with generated_kernel_headers [Nolen Johnson]
-4cd6a41c9 Add qcom.fmradio and org.codeaurora.internal to allowlist [Scott Lobdell]
-78b745cad Replace device_kernel_headers with generated_kernel_headers [Chirayu Desai]
-f051ce9ed soong: allow overriding header files [Jan Altensen]
-fe1f5151a cleanbuild: Add `install` to installclean files [LuK1337]
-da0448c5f soong: Add PathForSourceRelaxed [Sam Mortimer]
-1a8cd5d2e cleanbuild: add *.zip.sha256sum to installclean_files [Julian Veit]
-f2c9d1525 Add dumpvars for WITH_SU and WITH_GMS [Abhisek Devkota]
-e4b63ab74 soong: Add LINEAGE_VERSION to dumpvars [Rashed Abdel-Tawab]
+====================
+     2022-11-13    
+====================
+* packages/apps/Aperture
+c97b7ea Aperture: Remove unnecessary type declarations in CameraManager [LuK1337]
+d2c2858 Aperture: Override navigationBarColor for main activity theme [LuK1337]
+f270639 Aperture: Use context instead of activity ref in CameraManager [Dhina17]
 
+====================
+     2022-11-12    
+====================
+* external/chromium-webview/patches
+0b6b763 Update Chromium Webview to 107.0.5304.105 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm
+c14dd13 Update Chromium Webview arm prebuilt to 107.0.5304.105 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm64
+ac62795 Update Chromium Webview arm64 prebuilt to 107.0.5304.105 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86
+b3d865d Update Chromium Webview x86 prebuilt to 107.0.5304.105 [Kevin F. Haggerty]
+
+* frameworks/base
+3c11d465b61c SystemUI: Disable clock auto hide feature for QS [LuK1337]
+
+====================
+     2022-11-11    
+====================
+* hardware/lineage/compat
+e4fbaa3 compat: Provide a libip_checksum shim [Nolen Johnson]
+
+* lineage/scripts
+19fdf91 build-webview: Update default webview to 107.0.5304.105 [Kevin F. Haggerty]
+
+====================
+     2022-11-10    
+====================
 * device/qcom/sepolicy
-c820ce6a Revert "Selinux: add vendor_perfetto_dump domain" [Arian]
+c8bde922 Merge tag 'LA.QSSI.13.0.r1-07500-qssi.0' into staging/lineage-20.0_merge-LA.QSSI.13.0.r1-07500-qssi.0 [Michael Bestas]
 
-* external/tinycompress
-2f35a16 tinycompress: Conditionally enable extended compress format [Michael Bestas]
+* device/qcom/sepolicy_vndr
+949c7ae0 Merge tag 'LA.VENDOR.1.0.r1-18000-WAIPIO.QSSI13.0' into staging/lineage-20.0_merge-LA.VENDOR.1.0.r1-18000-WAIPIO.QSSI13.0 [Michael Bestas]
 
-* hardware/libhardware
-5ea7624e audio: Add audio amplifier HAL [Ethan Chen]
+* device/qcom/sepolicy_vndr-legacy-um
+1f482dc8 Merge tag 'LA.UM.9.14.r1-20700-LAHAINA.QSSI13.0' into staging/lineage-20.0_merge-LA.UM.9.14.r1-20700-LAHAINA.QSSI13.0 [Michael Bestas]
 
-* hardware/qcom-caf/sm8150/audio
-ffac3914 Remove ndk_platform backend. Use the ndk backend. [Jiyong Park]
+* hardware/qcom-caf/sm8150/media
+655d01bdb Merge tag 'LA.UM.9.1.r1-12800-SMxxx0.QSSI13.0' into staging/lineage-20.0_merge-LA.UM.9.1.r1-12800-SMxxx0.QSSI13.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8250/media
+cbad831bb Merge tag 'LA.UM.9.12.r1-14800-SMxx50.QSSI13.0' into staging/lineage-20.0_merge-LA.UM.9.12.r1-14800-SMxx50.QSSI13.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8350/audio
+938d3ff4cd Merge tag 'LA.UM.9.14.r1-20700-LAHAINA.QSSI13.0' into staging/lineage-20.0_merge-LA.UM.9.14.r1-20700-LAHAINA.QSSI13.0 [Michael Bestas]
 
 * hardware/qcom-caf/wlan
-d72d364 wlan: Fix compile issue for wpa_supplicant_8_lib [Manjunatha Madana]
+b8cec96 Merge tag 'LA.VENDOR.1.0.r1-18000-WAIPIO.QSSI13.0' into staging/lineage-20.0_merge-LA.VENDOR.1.0.r1-18000-WAIPIO.QSSI13.0 [Michael Bestas]
 
-* hardware/xiaomi
-cbd48b1 Remove ndk_platform backend. Use the ndk backend. [Jiyong Park]
+* lineage/wiki
+4b56dace devices: a52q has 4GB variants [Simon1511]
 
-* lineage/mirror
-8498efe Updated to 17-Aug-2022 12:35 UTC [Kevin F. Haggerty]
-f57c361 Updated to 17-Aug-2022 12:16 UTC [Kevin F. Haggerty]
-9d9d4f7 Updated aosp-minimal to 17-Aug-2022 12:01 UTC [Tim Schumacher]
+* packages/apps/Aperture
+1181e20 Aperture: Undefine testInstrumentationRunner [Sebastiano Barezzi]
+f5a9a78 Aperture: Move .dev suffix to debug build type configuration [Sebastiano Barezzi]
+f0b4640 Aperture: Use `getByName` instead of `named` in build.gradle.kts [Sebastiano Barezzi]
 
-* packages/apps/Settings
-b6369f0760 Settings: Put device info header above "Basic info" [LuK1337]
-d72994ccf0 Allow the user to change the BackupTransport [Torsten Grote]
-
-* system/sepolicy
-62d19435c private: Exempt system_app from adbd_config_prop neverallow [Nolen Johnson]
-850e47593 sepolicy: Add sdcard_posix_contextmount_type attribute [LuK1337]
-170cd4f06 Give mediaprovider_app mlstrustedsubject [Aaron Kling]
-608b4701c sepolicy: Allow recovery to alter / [Gabriele M]
-6fc1c42fc sepolicy: whitelist recovery from node creation neverallow [Alessandro Astone]
+* vendor/codeaurora/telephony
+1b5c864 Merge tag 'LA.QSSI.13.0.r1-07500-qssi.0' into staging/lineage-20.0_merge-LA.QSSI.13.0.r1-07500-qssi.0 [Michael Bestas]
 
 * vendor/lineage
-1f0cab60 soong: generator: Replace android.SourceDepTag usage with IsSourceDepTagWithOutputTag [Arian]
-9d42d6f4 Lineage 20.0 [Arian]
-3a464d6e config: Update clang version to clang-r450784d [Arian]
+d944f6d0 vars: Update qcom tags [Michael Bestas]
+
+* vendor/qcom/opensource/commonsys/display
+e2fac95 Merge tag 'LA.QSSI.13.0.r1-07500-qssi.0' into staging/lineage-20.0_merge-LA.QSSI.13.0.r1-07500-qssi.0 [Michael Bestas]
+
+* vendor/qcom/opensource/data-ipa-cfg-mgr
+92f1c7b data-ipa-cfg-mgr: Remove unused variables [Edwin Moquete]
+
+* vendor/qcom/opensource/power
+a145632 Merge tag 'LA.VENDOR.1.0.r1-18000-WAIPIO.QSSI13.0' into staging/lineage-20.0_merge-LA.VENDOR.1.0.r1-18000-WAIPIO.QSSI13.0 [Michael Bestas]
 
 ====================
-     2022-08-17    
+     2022-11-09    
 ====================
-* lineage/hudson
-44fa83d hudson: Promote z2_plus to 19.1 [Davide Garberi]
+* android
+5539bd1 manifest: November 2022 Security Update [Michael Bestas]
 
-* lineage/mirror
-754e774 Updated aosp-minimal to 16-Aug-2022 12:01 UTC [Tim Schumacher]
+* build/make
+d55245155 Merge tag 'android-13.0.0_r13' into staging/lineage-20.0_merge-android-13.0.0_r13 [Michael Bestas]
 
-* lineage/wiki
-83012f09 wiki: upgrade: We need USB debugging! [Michael W]
-965e32cc pages: emulator: Only mention supported GSI/EMU arch [Nolen Johnson]
-84e56e34 wiki: devices: z2_plus: Promote to 19.1 [Davide Garberi]
+* frameworks/av
+6eb2eeaed9 Merge tag 'android-13.0.0_r13' into staging/lineage-20.0_merge-android-13.0.0_r13 [Michael Bestas]
 
-====================
-     2022-08-16    
-====================
-* lineage/mirror
-4eee8a9 Updated aosp-minimal to 15-Aug-2022 22:46 UTC [Tim Schumacher]
+* frameworks/base
+5999fb0e5a99 Merge tag 'android-13.0.0_r13' into staging/lineage-20.0_merge-android-13.0.0_r13 [Michael Bestas]
 
-====================
-     2022-08-15    
-====================
-* lineage/hudson
-6e07199 hudson: promote kiev, nairo, racer to 19.1 [Andrew Hexen]
+* packages/modules/Wifi
+921d27b420 Merge tag 'android-13.0.0_r13' into staging/lineage-20.0_merge-android-13.0.0_r13 [Michael Bestas]
 
-* lineage/mirror
-3116d04 Updated lineage-minimal to 14-Aug-2022 12:01 UTC [Tim Schumacher]
+* packages/providers/TelephonyProvider
+57c33261 Merge tag 'android-13.0.0_r13' into staging/lineage-20.0_merge-android-13.0.0_r13 [Michael Bestas]
 
-* lineage/wiki
-d7e512b0 wiki: correctly describe 5G tech as NR [Andrew Hexen]
-5ba439a2 wiki: devices: kiev, nairo, racer: promote to 19.1 [Andrew Hexen]
+* packages/services/Telecomm
+81f158770 Merge tag 'android-13.0.0_r13' into staging/lineage-20.0_merge-android-13.0.0_r13 [Michael Bestas]
+
+* vendor/lineage
+d4e3779b vars: RIP floral [Michael Bestas]
+878415d3 vars: cleanup [Michael Bestas]
+0e2eb1fb vars: Update kernel for November 2022 & add gs201 [Michael Bestas]
+7c406448 vars: November 2022 Security Update [Michael Bestas]
 
