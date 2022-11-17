@@ -1,0 +1,152 @@
+====================
+     2022-11-17    
+====================
+* build/make
+203b4c96a Replace old kernel header deps with device_kernel_headers when kernel platform is used [Arian]
+
+* build/soong
+64f437c6e Replace qti_kernel_headers with device_kernel_headers [Arian]
+f0c2d831e Add perl to allowed host tools [Arian]
+
+* device/qcom/sepolicy_vndr
+d92da8ea sepolicy_vndr: Remove unrecognized characters [Albert Tang]
+5f19a0c7 sepolicy_vndr: qva: Update QTI USB HAL to v1.3 [Alexander Koskovich]
+4363f891 sepolicy_vndr: qva: Allow vendor_cnd to read wifi_hal_prop [Arian]
+99ebbbda sepolicy_vndr: generic: Add app_data_file_type to vendor_radio_data_file [Arian]
+67ade618 sepolicy_vndr: generic: Fix compilation issues for newer upgrade [Himanshu Agrawal]
+8570911f sepolicy_vndr: Switch to SYSTEM_EXT_{PUBLIC,PRIVATE}_SEPOLICY_DIRS [Michael Bestas]
+2231e608 sepolicy_vndr: Switch to BOARD_VENDOR_SEPOLICY_DIRS [Aayush Gupta]
+146a3ea3 sepolicy_vndr: Include Lineage-specific QCOM sepolicy [Pig]
+f1f93fd8 sepolicy_vndr: Remove QCOM guards [Pig]
+
+* device/xiaomi/cupid
+dbe809b cupid: Opt out of EPPE [Michael Bestas]
+
+* device/xiaomi/sm8450-common
+8bad081cf sm8450-common: prebuilt kernel and china blobs [Arian]
+
+* external/tinycompress
+7195698 tinycompress: Add support for compress_set_codec_params API [Ritu Sharma]
+
+* hardware/xiaomi
+b5167f2 hidl: biometrics: More debug [Arian]
+bb8c110 sensors: Simplify udfps state node reading [Arian]
+462ed3c sensors: Add udfps long press sensor [Cosmin Tanislav]
+52dfcf6 sensors: Fix locking around setOperationMode and activate [Cosmin Tanislav]
+9c43125 sensors: Move one shot sensor out of main class [Cosmin Tanislav]
+864e49b sensors: Make sensor set mode operation function virtual [Cosmin Tanislav]
+1fae268 sensors: Make sensor flush function virtual [Cosmin Tanislav]
+1022bc6 sensors: Make sensor run function virtual [Cosmin Tanislav]
+1a7e936 sensors: Make sensor batch function virtual [Cosmin Tanislav]
+3b323a7 Add dummy sensors sub HAL [Cosmin Tanislav]
+40dd2e4 hidl: sensors: Standardize xiaomi pickup sensor [Cosmin Tanislav]
+1b15de1 hidl: sensors: Avoid target name conflicts [Cosmin Tanislav]
+76aed62 hidl: sensors: Import 2.X sensors hal proxy [Cosmin Tanislav]
+54180f7 hidl: sensors: Change default applicable license to Android-Apache-2.0 [Arian]
+6bf5e5c hidl: sensors: Import 2.1 sensors multihal [Cosmin Tanislav]
+
+* vendor/lineage
+91136555 adb insecure by default [Scott Mertz]
+1dd2ca8b Allow to opt out from lineage kernel build [Arian]
+f911d34d qcom: Add taro platform [Arian]
+
+* vendor/qcom/opensource/interfaces
+88f8a87 Add reversed perf 2.3 interface [Arian]
+
+====================
+     2022-11-16    
+====================
+* build/make
+f57d0bee5 fixup! Compute the needed shared libs for otatools. [Aaron Kling]
+
+* device/qcom/sepolicy_vndr-legacy-um
+21e3e186 legacy: Restore `generic` hal_usb rules [OnlyTomInSecond]
+
+* external/gptfdisk
+2912864 Fix hybrid MBR recognition on --android-dump [3l H4ck3r C0mf0r7]
+
+* frameworks/base
+3caf7f8e0239 Fallback ESC to BACK [Aaron Kling]
+
+====================
+     2022-11-15    
+====================
+* device/xiaomi/davinci
+05c931f davinci: overlay: Configure aux camera for Aperture [LuK1337]
+4e3e3f2 davinci: Support UDFPS on AoD [Cosmin Tanislav]
+
+* device/xiaomi/sm6150-common
+e1946840 sm6150-common: Move to legacy-um qcom sepolicy [Arian]
+9ef008f3 sm6150-common: overlay: Configure aux camera for Aperture [LuK1337]
+29e221ca sm6150-common: Migrate vendor.camera.aux.packagelist to sdk overlay [LuK1337]
+5104523f sm6150-common: udfps: Set fod status based on vendor acquired and cancel [Arian]
+bb8d9f49 sm6150-common: sepolicy: Label UDFPS state node [Bruno Martins]
+4e8f1f1f sm6150-common: Remove bdroid_buildcfg.h [Michael Bestas]
+ac80e30d Revert "sm6150-common: Use LLVM binutils and LLVM integrated assembler" [Nolen Johnson]
+543d7ac0 Revert "sm6150-common: Decommonize cnss-daemon" [Arian]
+3f2881cb sm6150-common: Move to common libpiex_shim [Arian]
+2a63fa8c sm6150-common: Improve camera shim [Arian]
+
+* kernel/xiaomi/sm6150
+aaddebdeee13 input: goodix: Don't suspend when system is waking up [Andrzej Perczak]
+8d835c0a90ec input: touchscreen: goodix_driver_gt9886: Don't resume for fod status if it didn't change [Arian]
+7e65ea891d01 input: touchscreen: goodix_driver_gt9886: Report fp_state to sysfs [Arian]
+bccd7c6ece85 cert host tools: Stop complaining about deprecated OpenSSL functions [Linus Torvalds]
+581eae558509 kbuild: use HOSTLDFLAGS for single .c executables [Robin Jarry]
+
+* packages/apps/Updater
+59c5c5f Updater: Add POST_NOTIFICATIONS permission & pre-grant it [Dil3mm4]
+
+* tools/buildscript
+3eaa87f Include mainline modules [Arian]
+cae3e8c Set variables for GMS build [Arian]
+
+* vendor/translations
+25b280f Convert motor translations to RRO [Arian]
+
+====================
+     2022-11-14    
+====================
+* vendor/lineage
+41abb0b9 kernel: Allow devices to opt-in for full LLVM build [Michael Bestas]
+
+====================
+     2022-11-13    
+====================
+* lineage/wiki
+61aec135 devices: wahoo: Update maintainers [Nolen Johnson]
+
+* packages/apps/Aperture
+c97b7ea Aperture: Remove unnecessary type declarations in CameraManager [LuK1337]
+
+====================
+     2022-11-12    
+====================
+* frameworks/base
+3c11d465b61c SystemUI: Disable clock auto hide feature for QS [LuK1337]
+
+* packages/apps/Aperture
+d2c2858 Aperture: Override navigationBarColor for main activity theme [LuK1337]
+f270639 Aperture: Use context instead of activity ref in CameraManager [Dhina17]
+
+====================
+     2022-11-11    
+====================
+* external/chromium-webview/patches
+0b6b763 Update Chromium Webview to 107.0.5304.105 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm
+c14dd13 Update Chromium Webview arm prebuilt to 107.0.5304.105 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm64
+ac62795 Update Chromium Webview arm64 prebuilt to 107.0.5304.105 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86
+b3d865d Update Chromium Webview x86 prebuilt to 107.0.5304.105 [Kevin F. Haggerty]
+
+* hardware/lineage/compat
+e4fbaa3 compat: Provide a libip_checksum shim [Nolen Johnson]
+
+* lineage/scripts
+19fdf91 build-webview: Update default webview to 107.0.5304.105 [Kevin F. Haggerty]
+
