@@ -84,9 +84,6 @@ eacb600 X_X [Nolen Johnson]
 * lineage/wiki
 1a382605 devices: wade: Set reboot_recovery to fastboot_boot [Nolen Johnson]
 
-* tools/repohooks
-ffb3d1c Add placeholder REPO_PATH for preupload hooks [Daniel Mentz]
-
 ====================
      2022-12-28    
 ====================
@@ -95,6 +92,9 @@ ffb3d1c Add placeholder REPO_PATH for preupload hooks [Daniel Mentz]
 
 * lineage/website
 0dda79d HowTo-SELinux: Improve App labeling [Luca Stefani]
+
+* tools/repohooks
+ffb3d1c Add placeholder REPO_PATH for preupload hooks [Daniel Mentz]
 
 ====================
      2022-12-27    
