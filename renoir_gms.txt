@@ -1,28 +1,59 @@
 ====================
+     2023-01-02    
+====================
+* device/xiaomi/haydn
+a1a5741 haydn: Set stock TARGET_DEVICE and TARGET_PRODUCT [Arian]
+bd3e53e haydn: Update blobs to V13.0.4.0.SKKMIXM [Arian]
+
+* device/xiaomi/lisa
+538a5af lisa: Set stock TARGET_DEVICE and TARGET_PRODUCT [Arian]
+e9f39de lisa: Update blobs to V13.0.8.0.SKOMIXM [Giovanni Ricca]
+
+* device/xiaomi/renoir
+251ae6a renoir: Set stock fingerprint, description and product [Arian]
+f8752fb renoir: Update blobs to V13.0.9.0.SKIMIXM [Arian]
+
+* lineage/wiki
+75f437ee wiki: devices: Add Xiaomi sm8350 devices (lisa, renoir, haydn) [Giovanni Ricca]
+
+* vendor/firmware
+7af5db8 renoir: Update to V13.0.9.0.SKIMIXM [Arian]
+
+* vendor/xiaomi
+188d9c9c renoir: Update from V13.0.9.0.SKIMIXM [Arian]
+62cf6398 lisa: Update from V13.0.8.0.SKOMIXM [Arian]
+625993dc haydn: Update from V13.0.4.0.SKKMIXM [Arian]
+fc31d57a sm8350-common: Update from haydn V13.0.4.0.SKKMIXM [Arian]
+
+====================
      2023-01-01    
 ====================
-* kernel/xiaomi/sm8350
-ffcc7e712cdc arm64: configs: xiaomi: Enable CONFIG_EXFAT_FS [Sandeep Patil]
+* device/xiaomi/sm8350-common
+38b417d sm8350-common: overlay: Enable protected buffers for wifi display [Arian]
+
+* lineage/hudson
+074030c hudson: Add Xiaomi SM8350 family to lineage-19.1 weekly builds [Arian]
+
+* lineage/wiki
+eaeb9a83 Add Qualcomm Snapdragon 780G 5G [Arian]
+9543ec0d Rename Snapdragon 778 to 778G [Arian]
+
+* vendor/firmware
+0a0d211 haydn: Update to V13.0.4.0.SKKMIXM [Giovanni Ricca]
 
 ====================
      2022-12-31    
 ====================
-* device/xiaomi/haydn
-5258056 haydn: Update blobs to V13.0.4.0.SKKMIXM [Arian]
-
 * device/xiaomi/lisa
-212c594 lisa: Update blobs to V13.0.8.0.SKOMIXM [Giovanni Ricca]
 2804833 lisa: Disable UBWC for WFD [Alexander Winkowski]
 
-* device/xiaomi/renoir
-d039dec renoir: Set stock fingerprint, description and product [Arian]
-2c6b877 renoir: Declare proprietary files source as V13.0.8.0.SKIMIXM [Arian]
-
 * device/xiaomi/sm8350-common
-f52a3d0 sm8350-common: overlay: Enable protected buffers for wifi display [Arian]
 91909d8 sm8350-common: Update blobs to haydn V13.0.4.0.SKKMIXM [Giovanni Ricca]
 f964734 sm8350-common: Enable WFD property "persist.debug.wfd.enable". [Alexander Koskovich]
 58e993f sm8350-common: overlay: Remove "SIM x is HD capable" message [Dyneteve]
+
+* kernel/xiaomi/sm8350
+ffcc7e712cdc arm64: configs: xiaomi: Enable CONFIG_EXFAT_FS [Sandeep Patil]
 
 * lineage/hudson
 dc6850f Reduce experimental targets list [LuK1337]
@@ -31,17 +62,14 @@ dc6850f Reduce experimental targets list [LuK1337]
 c1d9ada Changelog 27 [Nolen Johnson]
 
 * lineage/wiki
+6825f99a wiki: Replace universal adb drivers [Michael W]
+fbd46fea wiki: Add trailing zero to branch names treewide [LuK1337]
 0263845d devices: Use separate bootloader unlock guide for FP3/FP4 [Michael Bestas]
 a58fe629 devices: Add Fairphone 4 [Michael Bestas]
 235a0614 Initial batch of 20 promotions [Nolen Johnson]
 a0e4afb8 X_X [Nolen Johnson]
 61dae577 wiki: Get jquery from a CDN [Michael W]
 7f2c3d00 wiki: contributors: Regenerate list [Michael W]
-
-* vendor/xiaomi
-15b8e814 lisa: Update from V13.0.8.0.SKOMIXM [Arian]
-b5621234 haydn: Update from haydn V13.0.4.0.SKKMIXM [Arian]
-af2c8ae5 sm8350-common: Update from V13.0.4.0.SKKMIXM [Arian]
 
 ====================
      2022-12-30    
@@ -53,9 +81,6 @@ eacb600 X_X [Nolen Johnson]
 ====================
      2022-12-29    
 ====================
-* lineage/website
-0dda79d HowTo-SELinux: Improve App labeling [Luca Stefani]
-
 * lineage/wiki
 1a382605 devices: wade: Set reboot_recovery to fastboot_boot [Nolen Johnson]
 
@@ -68,9 +93,12 @@ ffb3d1c Add placeholder REPO_PATH for preupload hooks [Daniel Mentz]
 * lineage/mirror
 1f796cd Updated aosp-minimal to 28-Dec-2022 13:01 UTC [Tim Schumacher]
 
+* lineage/website
+0dda79d HowTo-SELinux: Improve App labeling [Luca Stefani]
+
 ====================
      2022-12-27    
 ====================
-====================
-     2022-12-26    
-====================
+* vendor/firmware
+ff021b9 lisa: Update to V13.0.8.0.SKOMIXM [Giovanni Ricca]
+
