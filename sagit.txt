@@ -1,0 +1,157 @@
+====================
+     2023-01-03    
+====================
+* device/xiaomi/msm8998-common
+cf25294f msm8998-common: Update sha1sum of libdpmframework after moving to common libcutils shim [Arian]
+1b7cadb7 msm8998-common: Bringup camera without vndk-ext [Arian]
+5b4887d8 msm8998-common: Drop vndk-ext and friends [Arian]
+2c6239ec msm8998-common: Use piex shim from hardware/lineage/compat [Bruno Martins]
+678255a6 msm8998-common: Shorten the avoidance of duplicated added dependencies [Arian]
+a3d01494 msm8998-common: Prevent adding same dependency twice in blob_fixup [LuK1337]
+c1e63d0c msm8998-common: Bringup camera for T [Bruno Martins]
+b2abd901 msm8998-common: Fixed status bar glitch for apps that access internal resource dimen [shawnlin]
+eae79696 msm8998-common: Set status_bar_height to 32dp [LiMee233]
+e20b45f5 msm8998-common: releasetools: Make re.search work on python3 [Alessandro Astone]
+43b767c9 msm8998-common: Drop vendor.camera.aux.packagelist [Michael Bestas]
+299523be msm8998-common: Move system.prop to system_ext.prop [Michael Bestas]
+26a7f65a msm8998-common: Sort blobs list [Michael Bestas]
+3410700c msm8998-common: doze: Fix compilation for QPR1 merge [Bruno Martins]
+7b90568b msm8998-common: audio: fix VTS [Alexander Martinz]
+869a2d0d msm8998-common: switch to threaded Skia render engine backend [Timi Rautamäki]
+9d3f5d9f msm8998-common: Remove bdroid_buildcfg.h [Michael Bestas]
+ecfeca55 msm8998-common: Set block_binder_thread_on_incoming_calls in product.prop [Bruno Martins]
+95ac470d msm8998-common: Enforce EPPE [Nolen Johnson]
+9f3f16e7 msm8998-common: Drop config_setColorTransformAccelerated [Georg Veichtlbauer]
+87ff77d9 msm8998-common: ueventd: Set permissions for KGSL sysfs node [Mohammed Mirza Mandayappurath Manzoor]
+24345ce4 msm8998-common: wifi: Configure correct overlay configuration. [Les Lee]
+5aab72f7 msm8998-common: Enable zygote critical window [Woody Lin]
+5d933223 msm8998-common: Unpin updatable-media from memory [Santiago Seifert]
+9aa41606 msm8998-common: Migrate to AIDL ClearKey DRM HAL [Bruno Martins]
+a0460fe0 msm8998-common: Drop default DRM service [Bruno Martins]
+8a6a8889 msm8998-common: Replace BTM_DEF_LOCAL_NAME with a sysprop [Sal Savage]
+bcd4501c msm8998-common: Migrate to *.prop [Nolen Johnson]
+1e0caab0 msm8998-common: Drop component overrides [Bruno Martins]
+4463f278 msm8998-common: Move Bluetooth power config away from overlay [eorg Veichtlbauer]
+cc7f22d8 msm8998-common: overlay: Remove BT related configs [Bruno Martins]
+bace3122 msm8998-common: Disable LE audio related profiles [Alice Kuo]
+a8e3556a msm8998-common: Use the ?= operator so BT properties can be overridden [Sal Savage]
+d3756bfe msm8998-common: Set default the Bluetooth class of device [Sal Savage]
+1825edb5 msm8998-common: Update LE Audio profile properties to match spec and implementation [Sal Savage]
+ab7c19d5 msm8998-common: Move BT profiles props to vendor [Alexander Koskovich]
+ec921c72 msm8998-common: Enable bluetooth profiles with product.prop [Sal Savage]
+c6a759b6 msm8998-common: Switch BtAudio to AIDL [Josh Wu]
+df15d76f msm8998-common: Use bluetooth.audio@2.1 [Jakub Pawlowski]
+41e0812d msm8998-common: Move to libcutils shim in hardware/lineage/compat [Nolen Johnson]
+64ed2165 msm8998-common: Move to libgui shim in hardware/lineage/compat [Nolen Johnson]
+79849a0f msm8998-common: Migrate to libui shim in hardware/lineage/compat [Bruno Martins]
+12a2485a msm8998-common: Removed audio A2dp from device.mk [Etienne Ruffieux]
+
+* device/xiaomi/sagit
+a0583a9 sagit: overlay-lineage: Indicate that device has front facing fps [Bruno Martins]
+af3b326 sagit: Remove libpowermanager dependency on libgf_hal.so [Arian]
+2c81be9 sagit: Disallow aux cam usage for Zoom [jabashque]
+34d4a96 sagit: Disallow aux cam usage for Telegram / Telegram X [LuK1337]
+c6980a2 sagit: overlay-lineage: Configure aux camera for Aperture [LuK1337]
+6aad5aa sagit: Sort blobs list [Michael Bestas]
+c013824 sagit: Set a default Settings.Global.DEVICE_NAME [LuK1337]
+cbcb145 sagit: Replace BTM_DEF_LOCAL_NAME with a sysprop [Sal Savage]
+c8f96c1 sagit: Migrate to vendor.prop [Michael Bestas]
+
+* kernel/xiaomi/msm8998
+6a3046fcf7fc Merge remote-tracking branch 'msm8998/lineage-20' into lineage-20 [Michael Bestas]
+
+* vendor/xiaomi/msm8998-common
+8bc821c msm8998-common: Reextract lib-imsvideocodec.so [Arian]
+d91d481 msm8998-common: Bringup camera without vndk-ext [Arian]
+479b408 msm8998-common: Move to libcutils shim in hardware/lineage/compat [Nolen Johnson]
+a57c271 Import from lineage-19.1 @ fdec4c44c4c6dea7abff95d9a7c2ef233ed6a4f7 [Michael Bestas]
+c82a3ae Initial empty repository [Michael Bestas]
+
+* vendor/xiaomi/sagit
+896b386 Import from lineage-19.1 @ fdec4c44c4c6dea7abff95d9a7c2ef233ed6a4f7 [Michael Bestas]
+c82a3ae Initial empty repository [Michael Bestas]
+
+====================
+     2023-01-02    
+====================
+* lineage/wiki
+339b16d2 wiki: devices: add Demon000 as a dubai maintainer [Marc Bourgoin]
+eaeb9a83 Add Qualcomm Snapdragon 780G 5G [Arian]
+9543ec0d Rename Snapdragon 778 to 778G [Arian]
+
+* packages/apps/Aperture
+619ccc5 Aperture: Keep screen on while in CameraActivity [LuK1337]
+
+====================
+     2023-01-01    
+====================
+* lineage/wiki
+6825f99a wiki: Replace universal adb drivers [Michael W]
+fbd46fea wiki: Add trailing zero to branch names treewide [LuK1337]
+
+====================
+     2022-12-31    
+====================
+* lineage/hudson
+dc6850f Reduce experimental targets list [LuK1337]
+
+* lineage/website
+829460e www: Don't link to crowdin directly [Michael W]
+19b0093 blog: Changelog-27: Fix indentation in Recorder app changelog [LuK1337]
+1d96fda blog: Changelog-27: Fix stray `)` character [LuK1337]
+c1d9ada Changelog 27 [Nolen Johnson]
+
+* lineage/wiki
+0263845d devices: Use separate bootloader unlock guide for FP3/FP4 [Michael Bestas]
+a58fe629 devices: Add Fairphone 4 [Michael Bestas]
+235a0614 Initial batch of 20 promotions [Nolen Johnson]
+a0e4afb8 X_X [Nolen Johnson]
+61dae577 wiki: Get jquery from a CDN [Michael W]
+7f2c3d00 wiki: contributors: Regenerate list [Michael W]
+
+* packages/apps/DeskClock
+349682458 DeskClock: Add FLAG_IMMUTABLE flag to PendingIntent [Michael Bestas]
+
+* packages/modules/Bluetooth
+3496ca860b legacy: Split header for hci legacy definitions [Christian Hoffmann]
+
+====================
+     2022-12-30    
+====================
+* frameworks/base
+202ef84d307b IllustrationPreference: Hide illustration when we fail to play anim [LuK1337]
+
+* lineage/hudson
+5205533 A Fair crack at android 13 [Michael Bestas]
+eacb600 X_X [Nolen Johnson]
+
+* packages/apps/Aperture
+8508621 Aperture: Ask for GPS permissions on first launch and enable if granted [Chirayu Desai]
+
+* packages/apps/Settings
+1449a7ed0d Settings: Pass empty lottie resource for quickly open camera animation [LuK1337]
+
+====================
+     2022-12-29    
+====================
+* lineage/website
+0dda79d HowTo-SELinux: Improve App labeling [Luca Stefani]
+
+* lineage/wiki
+1a382605 devices: wade: Set reboot_recovery to fastboot_boot [Nolen Johnson]
+
+====================
+     2022-12-28    
+====================
+* build/make
+dd97cd639 Add e2fsck/resize2fs/tune2fs to recovery/vendor_ramdisk [Michael Bestas]
+
+* frameworks/base
+8658042a3c1c SystemUI: Align QS header with status bar [cjh1249131356]
+
+* lineage/mirror
+1f796cd Updated aosp-minimal to 28-Dec-2022 13:01 UTC [Tim Schumacher]
+
+* packages/apps/Etar
+b332cffd Override androidx.startup.InitializationProvider authority name [Michael Bestas]
+
