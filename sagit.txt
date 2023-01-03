@@ -60,6 +60,9 @@ c8f96c1 sagit: Migrate to vendor.prop [Michael Bestas]
 * kernel/xiaomi/msm8998
 6a3046fcf7fc Merge remote-tracking branch 'msm8998/lineage-20' into lineage-20 [Michael Bestas]
 
+* tools/buildscript
+4a7c196 Run gh repo set-default before gh release create [Arian]
+
 * vendor/xiaomi/msm8998-common
 8bc821c msm8998-common: Reextract lib-imsvideocodec.so [Arian]
 d91d481 msm8998-common: Bringup camera without vndk-ext [Arian]
