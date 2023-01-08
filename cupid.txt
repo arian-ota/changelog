@@ -1,0 +1,301 @@
+====================
+     2023-01-08    
+====================
+* device/xiaomi/sm8450-common
+ffe7e24 sort bloblist [Arian]
+24b2981 import qti telephony stuff [Arian]
+
+* vendor/qcom/proprietary/devicetree
+4a342677ea97 waipio-pcie: Disable qcom,pcie@1c08000 and qcom,pcie1_msi@17110040 [Arian]
+
+====================
+     2023-01-07    
+====================
+* build/make
+9389085fc Replace old kernel header deps with device_kernel_headers when kernel platform is used [Arian]
+
+* build/soong
+895f77b84 Replace qti_kernel_headers with device_kernel_headers [Arian]
+f0d8da6c3 Add perl to allowed host tools [Arian]
+
+* device/xiaomi/cupid
+addecea cupid: Enable 60 fps video in aperture [Arian]
+7c5cf3f cupid: overlay: Configure aux camera for Aperture [LuK1337]
+
+* device/xiaomi/sm8450-common
+f9962cb sm8450-common: Only ship with disabled A2DP offload configuration [Bruno Martins]
+c090fd5 sm8450-common: Update overlays from V14.0.22.12.5.DEV [Arian]
+b736523 sm8450-common: Re-beautify overlays [Arian]
+f8e54a7 sm8450-common: beautify_root: Add space before closing elements [Arian]
+bce740f sm8450-common: rro_overlays: Drop _Sys suffix [Arian]
+8d73ed6 sm8450-common: beautify_rro: Merge mulitline strings into one line with \n [Arian]
+5953788 sm8450-common: beautify_rro: Fix getting name if format is set before name [Arian]
+00675aa sm8450-common: beautify_rro: Avoid using carrier values [Arian]
+308e9dc sm8450-common: beautify_rro: Don't sort non-resource overlays [Arian]
+f0f275e sm8450-common: beautify_rro: Handle arrays [Arian]
+b35b18c sm8450-common: beautify_rro: Fix sorting lines numerically [Arian]
+31e8139 sm8450-common: Update blobs from V14.0.22.12.5.DEV [Arian]
+
+* kernel_platform/build
+e1a094d android: merge_dtbs: Respect miboard-id while merging [Arian]
+
+* kernel_platform/msm-kernel
+1742833758b4 Configure cupid config [Arian]
+5745f624e1dc Add cupid config based on waipio [Arian]
+5f9794b80b6a soc: qcom: smp2p_sleepstate: Decrease wakeup event length [Arian]
+b1ecdb6a15bc media: rc: Update xiaomi changes from ziyi-s-oss [Arian]
+5f708a11b3c4 media: rc: Import xiaomi changes from zeus-s-oss [Arian]
+e731017da1b9 nfc: Update xiaomi changes from ziyi-s-oss [Arian]
+1375cdadb000 nfc: qti: Import xiaomi changes from zeus-s-oss [Arian]
+50c807df04b5 leds: Update aw22xxx from ziyi-s-oss [Arian]
+3a0739ec44be leds: Import aw22xxx driver [Arian]
+fa6fc1b93ae2 thermal: Update changes from ziyi-s-oss [Arian]
+69b7b9728771 thermal: Import xiaomi changes from zeus-s-oss [Arian]
+7cd3ad16deed spi: spi-msm-geni: Increase xfer timeout [Arian]
+860b099c195e regulator: Update changes from ziyi-s-oss [Arian]
+ede1724bd9e6 regulator: Import wl2866d driver from zeus-s-oss [Arian]
+8bc104561e9f power: Update changes from ziyi-s-oss [Arian]
+dd9abcc56cf0 power: supply: Import xiaomi changes from zeus-s-oss [Arian]
+589b7e762e5c power: reset: Import xiaomi changes from zeus-s-oss [Arian]
+766ace46ef3e usb: Update changes from ziyi-s-oss [Arian]
+2e281c8ef195 usb: Import xiaomi changes from zeus-s-oss [Arian]
+b267a0874fc1 scsi: ufs: Reset ICE register after host controller reset [Arian]
+0340e2a16aad net: wireless: cnss2: Update changes from ziyi-s-oss [Arian]
+98188bca9ab9 net: wireless: cnss2: Import xiaomi changes from zeus-s-oss [Arian]
+a981117c7d90 mtd: Update changes from ziyi-s-oss [Arian]
+127e9abef022 Import xiaomi mtd changes from zeus-s-oss [Arian]
+3cd90250f8be input: touchscreen: xiaomi: Update from ziyi-s-oss [Arian]
+d263d549ad54 input: touchscreen: fts_spi: Fail probe if panel can't be found [Arian]
+13ce6ff5af01 input: touchscreen: fts_spi: Update from ziyi-s-oss [Arian]
+c39c5e6d4594 input: touchscreen: Import fts_spi driver from zeus-s-oss [Arian]
+7863d346dead input: misc: Update aw86927 and aw8697 drivers from ziyi-s-oss [Arian]
+b0d0734b3799 input: misc: Imort aw86927_haptic driver from zeus-s-oss [Arian]
+fb9483b44f6f input: misc: Import aw8698_haptic driver from zeus-s-oss [Arian]
+cae5f541dfb7 input: Import stmvl53l5 driver from zeus-s-oss [Arian]
+95d4af51ca95 input: fingerprint: Import goodix_fod driver from zeus-s-oss [Arian]
+41e56f9bbaf3 misc: Introduce simplified xiaomi hardware identification driver [Arian]
+
+* packages/apps/Aperture
+c313c1b Aperture: Override LocationListener methods w/o defaults for pre-R API [LuK1337]
+
+* vendor/lineage
+0889b4eb Allow to opt out from lineage kernel build [Arian]
+14fd33ed qcom: Add taro platform [Arian]
+
+* vendor/qcom/opensource/audio-kernel
+b3932f0a Kernel: Xiaomi kernel changes for Xiaomi Civi 2 Android S [jiahao]
+
+* vendor/qcom/opensource/camera-kernel
+4ab62b63 cam_req_mgr: Increase max events [Arian]
+5deae587 cam_req_mgr: Increase watchdog timeout and max retry attempts [Arian]
+e8edf870 cam_icp: Increase cmd and msg sizes [Arian]
+c1965569 cam_sensor_utils: Add CAM_VANA1 to vreg name enum [Arian]
+a6bbf390 cam_ois: Import xiaomi changes [Arian]
+99b81d19 cam_csiphy: Modify cdr delay reg for xiaomi l2 (zeus) [Arian]
+d2d128a4 cam_csiphy: Always stop cpas on shutdown [Arian]
+4440ba1c cam_isp: Set rdi_only_ctx to false on stop [Arian]
+566fc91b cam_isp: Avoid race condition in tasklet start and stop [Arian]
+45cbeb9e cam_isp: Try to recover bubble if request can be re-applied [Arian]
+61f43e25 cam_cpas: Retry getting slice desc [Arian]
+baf459b9 camera: Optimize hang detect for CAM_ISP [Arian]
+751ce5a6 cam_sensor: Fix sensor id read issue [wangshuo18]
+
+* vendor/qcom/opensource/display-drivers
+b9791f49 Import xiaomi changes from ziyi-s-oss [Arian]
+
+* vendor/qcom/opensource/wlan/qcacld-3.0
+5545562b9 qcacld-3.0: Enable CONFIG_CNSS_QCA6490 in qca6490 config file [Mohammed Siddiq]
+
+* vendor/qcom/proprietary/audio-devicetree
+9344afe Add support for cupid and zeus [Arian]
+9b2e151 LA.VENDOR.1.0.r1-15600-WAIPIO.0 [Arian]
+5401177 LA.VENDOR.1.0.r1-14200-WAIPIO.0 [Arian]
+
+* vendor/qcom/proprietary/camera-devicetree
+d825fe1 Add support for cupid and zeus [Arian]
+b589cd4 CAMERA.LA.2.0.r1-06600-WAIPIO.0 [Arian]
+97fe73f CAMERA.LA.2.0.r1-05900-WAIPIO.0 [Arian]
+
+* vendor/qcom/proprietary/cvp-devicetree
+f0ab1a7 LA.VENDOR.1.0.r1-15600-WAIPIO.0 [Arian]
+6c4355a LA.VENDOR.1.0.r1-14200-WAIPIO.0 [Arian]
+
+* vendor/qcom/proprietary/devicetree
+3c16180c3eec Remove synaptics,tcm-i2c from xiaomi-sm8450-common overlay [Arian]
+0de47c015d26 Update from V14.0.22.12.5.DEV [Arian]
+4679b151326b Import Xiaomi changes from zeus-s-oss [Arian]
+60e953424a39 KERNEL.PLATFORM.1.0.r1-10700-kernel.0 [Arian]
+ad2ec9e330b1 KERNEL.PLATFORM.1.0.r1-09700-kernel.0 [Arian]
+
+* vendor/qcom/proprietary/display-devicetree
+e747679 Add support for cupid and zeus [Arian]
+8b59e5e DISPLAY.LA.2.0.r1-07500-WAIPIO.0 [Arian]
+60ada4a DISPLAY.LA.2.0.r1-06900-WAIPIO.0 [Arian]
+
+* vendor/qcom/proprietary/mmrm-devicetree
+bf2a15d VIDEO.LA.2.0.r1-05100-WAIPIO.0 [Arian]
+18d9f1f VIDEO.LA.2.0.r1-04400-WAIPIO.0 [Arian]
+
+* vendor/qcom/proprietary/video-devicetree
+0637fae VIDEO.LA.2.0.r1-05100-WAIPIO.0 [Arian]
+83e9125 VIDEO.LA.2.0.r1-04400-WAIPIO.0 [Arian]
+
+====================
+     2023-01-06    
+====================
+* lineage/wiki
+d8afec0b wiki: devices: Add Xiaomi sm8350 devices (lisa, renoir, haydn) [Giovanni Ricca]
+
+* packages/apps/Aperture
+785ac30 Aperture: Dedup some permissions stuff [Sebastiano Barezzi]
+
+====================
+     2023-01-05    
+====================
+* device/xiaomi/msm8998-common
+31fc669b msm8998-common: Move to common Xiaomi fingerprint HIDL [Sebastiano Barezzi]
+061bab98 msm8998-common: Move to common IFAAService [Sebastiano Barezzi]
+95499013 msm8998-common: Build mtdservice interface lib from source [Sebastiano Barezzi]
+b7a6f538 msm8998-common: Switch to source-built mlipay interface [Bruno Martins]
+266a030a msm8998-common: Add hardware/xiaomi to Soong namespaces [Sebastiano Barezzi]
+b9770641 msm8998-common: Add hardware/xiaomi to lineage.dependencies [Sebastiano Barezzi]
+bc602345 msm8998-common: Update sha1sum of libdpmframework after moving to common libcutils shim [Arian]
+c0b0d6fc msm8998-common: Bringup camera without vndk-ext [Arian]
+
+* lineage/hudson
+465f261 hudson: Add Xiaomi SM8350 family to lineage-19.1 weekly builds [Arian]
+
+* lineage/wiki
+e8977896 wiki: add firmware requirement warning for motorola sm7250 [Andrew Hexen]
+
+====================
+     2023-01-04    
+====================
+* device/xiaomi/msm8998-common
+93c18a21 msm8998-common: Drop vndk-ext and friends [Arian]
+7edcd005 msm8998-common: Use piex shim from hardware/lineage/compat [Bruno Martins]
+c28e729e msm8998-common: Shorten the avoidance of duplicated added dependencies [Arian]
+f791f0b7 msm8998-common: Prevent adding same dependency twice in blob_fixup [LuK1337]
+34e368d1 msm8998-common: Bringup camera for T [Bruno Martins]
+c22acf64 msm8998-common: releasetools: Make re.search work on python3 [Alessandro Astone]
+b5f4dd19 msm8998-common: Drop vendor.camera.aux.packagelist [Michael Bestas]
+b660fe25 msm8998-common: Move system.prop to system_ext.prop [Michael Bestas]
+f908cbd1 msm8998-common: Sort blobs list [Michael Bestas]
+5a01192b msm8998-common: doze: Fix compilation for QPR1 merge [Bruno Martins]
+1b1ab1d1 msm8998-common: audio: fix VTS [Alexander Martinz]
+6edf6f90 msm8998-common: switch to threaded Skia render engine backend [Timi Rautamäki]
+38764100 msm8998-common: Remove bdroid_buildcfg.h [Michael Bestas]
+20ee950c msm8998-common: Set block_binder_thread_on_incoming_calls in product.prop [Bruno Martins]
+1f931988 msm8998-common: Enforce EPPE [Nolen Johnson]
+84382324 msm8998-common: Drop config_setColorTransformAccelerated [Georg Veichtlbauer]
+2ed531cb msm8998-common: ueventd: Set permissions for KGSL sysfs node [Mohammed Mirza Mandayappurath Manzoor]
+7b54b236 msm8998-common: wifi: Configure correct overlay configuration. [Les Lee]
+151f484e msm8998-common: Enable zygote critical window [Woody Lin]
+64adaa55 msm8998-common: Unpin updatable-media from memory [Santiago Seifert]
+9a42d240 msm8998-common: Migrate to AIDL ClearKey DRM HAL [Bruno Martins]
+bca452a6 msm8998-common: Drop default DRM service [Bruno Martins]
+df3b7a8c msm8998-common: Replace BTM_DEF_LOCAL_NAME with a sysprop [Sal Savage]
+881f5827 msm8998-common: Migrate to *.prop [Nolen Johnson]
+af970efb msm8998-common: Drop component overrides [Bruno Martins]
+c5a39e96 msm8998-common: Move Bluetooth power config away from overlay [Georg Veichtlbauer]
+
+* device/xiaomi/sagit
+3d78781 sagit: Change default wifi ssid to "MI 6" [Arian]
+809fea3 sagit: overlay-lineage: Indicate that device has front facing fps [Bruno Martins]
+d1c37b9 sagit: Remove libpowermanager dependency on libgf_hal.so [Arian]
+8362eb0 sagit: Disallow aux cam usage for Zoom [jabashque]
+88ec85e sagit: Disallow aux cam usage for Telegram / Telegram X [LuK1337]
+a33ca16 sagit: overlay-lineage: Configure aux camera for Aperture [LuK1337]
+87c0ee9 sagit: Sort blobs list [Michael Bestas]
+d588c85 sagit: Migrate to vendor.prop [Michael Bestas]
+
+* lineage/crowdin
+f91a5bc config: lineage-20.0_aosp: Update for qpr1 [Michael Bestas]
+
+* lineage/scripts
+aacffc6 update-device-vars: Add a sleep to avoid 429: Too Many Requests [Chirayu Desai]
+
+* lineage/wiki
+c617afc1 tama: Promote to 20 [Danny Trunk]
+33a7a5c0 wiki: Add custom FW update guide for OPlus devices [LuK1337]
+
+* packages/apps/LineageParts
+635ac7b LineageParts: Change text color of notification light speed settings [Arian]
+
+* tools/buildscript
+4a7c196 Run gh repo set-default before gh release create [Arian]
+
+* vendor/crowdin
+9459431 Updates for qpr1 [Michael Bestas]
+
+* vendor/xiaomi/msm8998-common
+d233519 msm8998-common: Build mtdservice interface lib from source [Sebastiano Barezzi]
+e3d0cb3 msm8998-common: Switch to source-built mlipay interface [Bruno Martins]
+8bc821c msm8998-common: Reextract lib-imsvideocodec.so [Arian]
+d91d481 msm8998-common: Bringup camera without vndk-ext [Arian]
+479b408 msm8998-common: Move to libcutils shim in hardware/lineage/compat [Nolen Johnson]
+
+* vendor/xiaomi/sagit
+90dba2a sagit: Remove libpowermanager dependency on libgf_hal.so [Arian]
+
+====================
+     2023-01-03    
+====================
+* device/xiaomi/msm8998-common
+cc7f22d8 msm8998-common: overlay: Remove BT related configs [Bruno Martins]
+bace3122 msm8998-common: Disable LE audio related profiles [Alice Kuo]
+a8e3556a msm8998-common: Use the ?= operator so BT properties can be overridden [Sal Savage]
+d3756bfe msm8998-common: Set default the Bluetooth class of device [Sal Savage]
+1825edb5 msm8998-common: Update LE Audio profile properties to match spec and implementation [Sal Savage]
+ab7c19d5 msm8998-common: Move BT profiles props to vendor [Alexander Koskovich]
+ec921c72 msm8998-common: Enable bluetooth profiles with product.prop [Sal Savage]
+c6a759b6 msm8998-common: Switch BtAudio to AIDL [Josh Wu]
+df15d76f msm8998-common: Use bluetooth.audio@2.1 [Jakub Pawlowski]
+41e0812d msm8998-common: Move to libcutils shim in hardware/lineage/compat [Nolen Johnson]
+64ed2165 msm8998-common: Move to libgui shim in hardware/lineage/compat [Nolen Johnson]
+79849a0f msm8998-common: Migrate to libui shim in hardware/lineage/compat [Bruno Martins]
+12a2485a msm8998-common: Removed audio A2dp from device.mk [Etienne Ruffieux]
+
+* kernel/xiaomi/msm8998
+6a3046fcf7fc Merge remote-tracking branch 'msm8998/lineage-20' into lineage-20 [Michael Bestas]
+
+* lineage/hudson
+9a63fd1 hudson: Promote tama to 20 [Danny Trunk]
+
+* lineage/wiki
+6237d41e wiki: devices: Fixup GPU model for lavender [Aaradhay]
+
+* packages/apps/Aperture
+b4af850 Aperture: Ask for GPS permission only on the first launch [LuK1337]
+d3755e4 Aperture: Make sure grant results is not empty [TheScarastic]
+51a756a Aperture: Migrate to ActivityResultContracts.RequestMultiplePermissions [LuK1337]
+
+* packages/apps/Etar
+dffa3aca remove duplicated check for allowed reminders and availability [Jonas Häusler]
+362b9bd6 Fix drawing of all-day events #1287. [Robert Zenz]
+5ddf4ff3 New version 1.0.33 [Jochen Sprickerhof]
+1e3e8f1d Add aarGen dependency to app build [Jochen Sprickerhof]
+c32d7a96 New version 1.0.31 [Gitsaibot]
+
+* vendor/lineage
+3c1a3961 charger: Ensure every generated image is 8-bit [Luca Stefani]
+
+* vendor/xiaomi/msm8998-common
+a57c271 Import from lineage-19.1 @ fdec4c44c4c6dea7abff95d9a7c2ef233ed6a4f7 [Michael Bestas]
+c82a3ae Initial empty repository [Michael Bestas]
+
+* vendor/xiaomi/sagit
+896b386 Import from lineage-19.1 @ fdec4c44c4c6dea7abff95d9a7c2ef233ed6a4f7 [Michael Bestas]
+c82a3ae Initial empty repository [Michael Bestas]
+
+====================
+     2023-01-02    
+====================
+* lineage/wiki
+339b16d2 wiki: devices: add Demon000 as a dubai maintainer [Marc Bourgoin]
+eaeb9a83 Add Qualcomm Snapdragon 780G 5G [Arian]
+9543ec0d Rename Snapdragon 778 to 778G [Arian]
+
+* packages/apps/Aperture
+619ccc5 Aperture: Keep screen on while in CameraActivity [LuK1337]
+
