@@ -1,0 +1,141 @@
+====================
+     2023-01-28    
+====================
+* build/make
+ae5e0d617 Replace old kernel header deps with device_kernel_headers when kernel platform is used [Arian]
+
+* build/soong
+45dbb7d81 Replace qti_kernel_headers with device_kernel_headers [Arian]
+f588f3916 Add perl to allowed host tools [Arian]
+
+* device/xiaomi/sm8450-common
+f72702b sm8450-common: Drop LC3 and LHDC from audio policy config [Arian]
+e274fe7 Revert "sm8450-common: Only ship with disabled A2DP offload configuration" [Arian]
+
+* lineage/hudson
+bcd5808 hudson: Promote nx563j to 20.0 [Cyborg2017]
+5c11e80 hudson: Promote nx611j to 20.0 [Cyborg2017]
+d9611e2 hudson: Promote bq msm8953 devices to 20 [jmpfbmx]
+
+* lineage/wiki
+39fc4209 wiki: Consolidate GPU models [Sebastiano Barezzi]
+7bbbc386 wiki: Z00L: Use the new GPU data format [Sebastiano Barezzi]
+809a96bc wiki: Give the same treatment as SoC for GPU data [Sebastiano Barezzi]
+7e6f5300 wiki: Dockerfile: Make it work [Sebastiano Barezzi]
+046bdf24 wiki: devices: Promote bq msm8953 devices to 20 [jmpfbmx]
+
+* vendor/lineage
+b128faaa Allow to opt out from lineage kernel build [Arian]
+f433bde7 qcom: Add taro platform [Arian]
+8c75a4aa Helplines: Improve Bulgarian helplines [Alexander K]
+
+====================
+     2023-01-27    
+====================
+* packages/apps/Aperture
+c754f66 Aperture: Use a proper divider [Sebastiano Barezzi]
+80c8de1 Aperture: Enable translucent navigation bar in settings [LuK1337]
+cc3d0e2 Aperture: Draw under display cutouts [Sebastiano Barezzi]
+205364a Aperture: Simplify camera mode buttons themes [Sebastiano Barezzi]
+ccb8028 Aperture: Don't set Roboto Mono everywhere [Sebastiano Barezzi]
+3d2073f Aperture: Give light theme on settings for light mode users [Sebastiano Barezzi]
+72781eb Aperture: Get proper M3 dialogs in settings [Sebastiano Barezzi]
+6523bb6 Aperture: Set status bar background color to transparent in settings [Sebastiano Barezzi]
+f8a86a0 Aperture: Get dynamic colors going [Sebastiano Barezzi]
+
+====================
+     2023-01-26    
+====================
+* packages/apps/Aperture
+bcf92fd Aperture: Fix InflateParams warning [Sebastiano Barezzi]
+3900cfe Aperture: LensSelectorLayout: Add JVM overloads for optional fields [Sebastiano Barezzi]
+24cc0dc Aperture: Remove useless activity themes parent definition [Sebastiano Barezzi]
+8089e17 Aperture: Remove unused colors [Sebastiano Barezzi]
+
+====================
+     2023-01-25    
+====================
+* device/nubia/TP1803
+531b1a87 TP1803: Only ship with disabled A2DP offload configuration [Bruno Martins]
+5f94d712 TP1803: Fix disabling A2DP offload [Michael Bestas]
+8390a6e0 TP1803: Remove references to a2dp module [Aaron Kling]
+
+* device/xiaomi/sm6150-common
+6aeda1d sm6150-common: Import missing libril-qc-hal-qmi dependency from surya V13.0.4.0.SJGEUXM [basamaryan]
+ccdd0d1 sm6150-common: Set PRODUCT_SET_DEBUGFS_RESTRICTIONS [Hridya Valsaraju]
+064da8c Revert "sm6150-common: Remove TARGET_*_PROP flags" [Bruno Martins]
+
+* packages/apps/Aperture
+47cafc3 Aperture: Remove duplicate deps from libs [LuK1337]
+1aea671 Aperture: Parse camera facing from CameraX CameraInfo [Sebastiano Barezzi]
+c6f8ca2 Aperture: Use intrinsicZoomRatio from CameraX CameraInfo [LuK1337]
+53cb58d Aperture: Update CameraX to 1.3.0-alpha03 [LuK1337]
+a0548a1 Aperture: Update dependencies [LuK1337]
+d06cea9 Aperture: Update Gradle and AGP [LuK1337]
+
+====================
+     2023-01-24    
+====================
+* device/xiaomi/davinci
+5366668 davinci: hidl: Commonize target-level version [Arian]
+
+* device/xiaomi/sm6150-common
+ff070b4 sm6150-common: hidl: Add xiaomi framework compatibility matrix [Arian]
+e73017a sm6150-common: Include qcom and lineage framework compatibility matrix [Arian]
+794e70c sm6150-common: hidl: Commonize target-level version [Arian]
+
+* lineage/mirror
+0309fce Updated aosp-minimal to 24-Jan-2023 13:01 UTC [Tim Schumacher]
+
+* packages/apps/LineageCustomizer
+449b597 LineageCustomizer: Remove minSdkVersion/targetSdkVersion [Michael Bestas]
+08ff9a2 LineageCustomizer: Convert to Android.bp [Michael Bestas]
+
+* system/core
+958198596 liblp: Allow to flash on bigger block device [me-cafebabe]
+
+====================
+     2023-01-23    
+====================
+* device/xiaomi/sm6150-common
+f6c10f9 sm6150-common: Drop aptx blobs [Alexander Martinz]
+fbe9a0b sm6150-common: audio: Don't advertise aptX TWS in audio policy config [Arian]
+
+* lineage/mirror
+2c8ed77 Updated lineage-minimal to 23-Jan-2023 13:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+8316251e pages: gapps: ] -> | [Nolen Johnson]
+208f20c5 devices: Promote g12 [Nolen Johnson]
+f34fe7f1 pages: gapps: Add ATV 20.0 builds [Nolen Johnson]
+
+====================
+     2023-01-22    
+====================
+* device/xiaomi/sm6150-common
+c1b280b sm6150-common: sepolicy: Label more wakeup nodes [basamaryan]
+
+* lineage/hudson
+3ae0505 AM-not-so-logical lives on [Nolen Johnson]
+a5d8f3f wahoooooooo! [Nolen Johnson]
+
+* lineage/mirror
+31ac9c6 Updated aosp-minimal to 22-Jan-2023 13:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+da46d389 Promote wahoo family [Nolen Johnson]
+
+* packages/apps/DeskClock
+7b2140c2a DeskClock: Add newline at file ends [Michael W]
+94509b5d7 DeskClock: Fixes for landscape [Michael W]
+13fec0916 DeskClock: Moar Timers! [Michael W]
+39849cc57 DeskClock: Add gradle [Michael W]
+1a5536083 DeskClock: Get rid of percentlayout [Michael W]
+a4c8487f8 DeskClock: Redesign Ringtone Picker [Michael W]
+
+* vendor/lineage
+f4ca355c Use a RegEx to get carrier instead of XML parsing [Alexander Grund]
+173af3e2 Include `carrier=` in carrier match string [Alexander Grund]
+faca8c64 Fix custom_apns script [Alexander Grund]
+ba14020f kernel: Force disable LLVM CUDA [Alessandro Astone]
+
