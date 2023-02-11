@@ -1,5 +1,17 @@
 ====================
-     2023-02-09    
+     2023-02-11    
+====================
+* device/xiaomi/sm8450-common
+9491b08 sm8450-common: Sort proprietary-files.txt [Arian]
+511be7c sm8450-common: Update blobs from V14.0.2.0.TLCMIXM [Arian]
+bb41f75 sm8450-common: Enable gms PREMIER_TIER again [Arian]
+eb160fd sm8450-common: Update QtiTelephony.apk from V14.0.2.0.TLCMIXM [Arian]
+3c1d927 sm8450-common: Update ims.apk from V14.0.2.0.TLCMIXM [Arian]
+be42b91 Revert "sm8450-common: Pin ims.apk from V13.0.27.0.SLCEUXM" [Arian]
+c503618 sm8450-common: Set board api level to 31 [Arian]
+
+====================
+     2023-02-10    
 ====================
 * device/xiaomi/sm8450-common
 73a6c8e sm8450-common: Pin ims.apk from V13.0.27.0.SLCEUXM [Arian]
@@ -11,7 +23,7 @@ c8f31fd sm8450-common: Drop 32-bit RIL blobs [Arian]
 be4a131 sm8450-common: Merge telephony blobs sections [Arian]
 
 ====================
-     2023-02-08    
+     2023-02-09    
 ====================
 * build/make
 bf4dcc564 Replace old kernel header deps with device_kernel_headers when kernel platform is used [Arian]
@@ -26,6 +38,13 @@ ec58490 sm8450-common: Import qti-telephony-common.jar [Arian]
 9fc8421 sm8450-common: Import telephony_injection from stock [Arian]
 d107316 sm8450-common: beautify_rros: Only remove files without resources if the file contains resources [Arian]
 
+* vendor/lineage
+5a07debe Allow to opt out from lineage kernel build [Arian]
+1e574f14 qcom: Add taro platform [Arian]
+
+====================
+     2023-02-08    
+====================
 * lineage/mirror
 76dca64 Updated to 08-Feb-2023 13:01 UTC [Tim Schumacher]
 
@@ -38,18 +57,20 @@ a290b23 Aperture: Reformat code [LuK1337]
 c02cafd Aperture: Add support for Assistant actions [Alexander Martinz]
 d5ed0c1 Aperture: Use ?attr/isLightTheme for light status bar [Sebastiano Barezzi]
 
-* vendor/lineage
-5a07debe Allow to opt out from lineage kernel build [Arian]
-1e574f14 qcom: Add taro platform [Arian]
-
 ====================
      2023-02-07    
 ====================
+* lineage/hudson
+a18ebf8 hudson: build gtowifi [Han Sol Jin]
+
 * lineage/mirror
 541dbd4 Updated to 07-Feb-2023 13:01 UTC [Tim Schumacher]
 
 * lineage/wiki
 ae29bc40 wiki: dubai: add dtbo to installation instructions [Marc Bourgoin]
+f076f0e5 wiki: Add boot+vbmeta flashing to OnePlus 7 series devices [LuK1337]
+3676d9b3 devices: Import gtowifi [Han Sol Jin]
+ad63cc5c wiki: Add Xperia 5 II (pdx206) [kyasu]
 
 ====================
      2023-02-06    
@@ -61,13 +82,16 @@ d5d1085af5 audio: hal: msm8974: msm8952-mtp/sku(m/1/2) switch to internal_codec 
 f3de73c950 audio: Add support for msm8920-sku7-snd-card [MrArtemSid]
 
 * lineage/hudson
-a18ebf8 hudson: build gtowifi [Han Sol Jin]
 d2dfcd0 hudson: Add Xperia 5 II [kyasu]
 
-* lineage/wiki
-f076f0e5 wiki: Add boot+vbmeta flashing to OnePlus 7 series devices [LuK1337]
-3676d9b3 devices: Import gtowifi [Han Sol Jin]
-ad63cc5c wiki: Add Xperia 5 II (pdx206) [kyasu]
+* lineage/mirror
+85b5c4e Updated to 05-Feb-2023 18:37 UTC [Kevin F. Haggerty]
+f66a28b Updated to 05-Feb-2023 17:49 UTC [Kevin F. Haggerty]
+
+* packages/apps/Aperture
+8361807 Aperture: Fix photo -> video shutter button color transition [Sebastiano Barezzi]
+c9a4dc6 Aperture: Make video duration text more readable [LuK1337]
+2fe339d Aperture: Use M3 colors for shutter button [Giovanni Ricca]
 
 ====================
      2023-02-05    
@@ -76,30 +100,15 @@ ad63cc5c wiki: Add Xperia 5 II (pdx206) [kyasu]
 f623e7b hudson: Add Redmi Note 9 (merlinx) [Matsvei Niaverau]
 
 * lineage/mirror
-85b5c4e Updated to 05-Feb-2023 18:37 UTC [Kevin F. Haggerty]
-f66a28b Updated to 05-Feb-2023 17:49 UTC [Kevin F. Haggerty]
 6544c84 Updated to 05-Feb-2023 15:56 UTC [Kevin F. Haggerty]
+339e1eb Updated to 04-Feb-2023 18:45 UTC [Kevin F. Haggerty]
+93be86a Updated to 04-Feb-2023 18:06 UTC [Kevin F. Haggerty]
+49f6746 Updated to 04-Feb-2023 17:30 UTC [Kevin F. Haggerty]
 
 * lineage/wiki
 c624d30e wiki: Add Redmi Note 9 (merlinx) [Matsvei Niaverau]
-
-* packages/apps/Aperture
-8361807 Aperture: Fix photo -> video shutter button color transition [Sebastiano Barezzi]
-c9a4dc6 Aperture: Make video duration text more readable [LuK1337]
-2fe339d Aperture: Use M3 colors for shutter button [Giovanni Ricca]
 
 * packages/modules/Bluetooth
 e7f12ea3db gd: hci: Ignore unexpected status events [Peter Cai]
 f5d0da4869 Additionally check le_set_event_mask command resturn status with UNSUPPORTED_LMP_OR_LL_PARAMETER [tzu-hsien.huang]
 
-====================
-     2023-02-04    
-====================
-* lineage/mirror
-339e1eb Updated to 04-Feb-2023 18:45 UTC [Kevin F. Haggerty]
-93be86a Updated to 04-Feb-2023 18:06 UTC [Kevin F. Haggerty]
-49f6746 Updated to 04-Feb-2023 17:30 UTC [Kevin F. Haggerty]
-
-====================
-     2023-02-03    
-====================
