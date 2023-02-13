@@ -1,20 +1,27 @@
 ====================
-     2023-02-11    
+     2023-02-13    
 ====================
 * device/xiaomi/sm8450-common
-9491b08 sm8450-common: Sort proprietary-files.txt [Arian]
-511be7c sm8450-common: Update blobs from V14.0.2.0.TLCMIXM [Arian]
-bb41f75 sm8450-common: Enable gms PREMIER_TIER again [Arian]
-eb160fd sm8450-common: Update QtiTelephony.apk from V14.0.2.0.TLCMIXM [Arian]
-3c1d927 sm8450-common: Update ims.apk from V14.0.2.0.TLCMIXM [Arian]
-be42b91 Revert "sm8450-common: Pin ims.apk from V13.0.27.0.SLCEUXM" [Arian]
-c503618 sm8450-common: Set board api level to 31 [Arian]
+b1a7597 sm8450-common: Update and patch QtiTelephony.apk from V14.0.2.0.TLCMIXM [Arian]
+f0432ea sm8450-common: Update and patch ims.apk from V14.0.2.0.TLCMIXM [Arian]
+8e696cd sm8450-common: Set board api level to 31 [Arian]
+002c2d6 sm8450-common: Sort proprietary-files.txt [Arian]
+7413aa3 sm8450-common: Update blobs from V14.0.2.0.TLCMIXM [Arian]
+dc0f899 sm8450-common: Enable gms PREMIER_TIER again [Arian]
 
+* packages/apps/Jelly
+eb25eb8 Jelly: Fix infinite immersive mode prompt [Rushab Shah]
+
+====================
+     2023-02-12    
+====================
+====================
+     2023-02-11    
+====================
 ====================
      2023-02-10    
 ====================
 * device/xiaomi/sm8450-common
-73a6c8e sm8450-common: Pin ims.apk from V13.0.27.0.SLCEUXM [Arian]
 a1c5bc4 sm8450-common: Drop unnecessary system ril interfaces [Arian]
 e24a6c6 sm8450-common: Add ril uim blobs [Arian]
 4a8a82a sm8450-common: Move qrtr-ns to qrtr section [Arian]
@@ -71,44 +78,4 @@ ae29bc40 wiki: dubai: add dtbo to installation instructions [Marc Bourgoin]
 f076f0e5 wiki: Add boot+vbmeta flashing to OnePlus 7 series devices [LuK1337]
 3676d9b3 devices: Import gtowifi [Han Sol Jin]
 ad63cc5c wiki: Add Xperia 5 II (pdx206) [kyasu]
-
-====================
-     2023-02-06    
-====================
-* hardware/qcom-caf/msm8953/audio
-550559a89f audio: hal: msm8974: Add support for msm8917-sku5-snd-card [me-cafebabe]
-43db6a413e audio: hal: msm8974: Allow to override mixer file name with prop [me-cafebabe]
-d5d1085af5 audio: hal: msm8974: msm8952-mtp/sku(m/1/2) switch to internal_codec [MrArtemSid]
-f3de73c950 audio: Add support for msm8920-sku7-snd-card [MrArtemSid]
-
-* lineage/hudson
-d2dfcd0 hudson: Add Xperia 5 II [kyasu]
-
-* lineage/mirror
-85b5c4e Updated to 05-Feb-2023 18:37 UTC [Kevin F. Haggerty]
-f66a28b Updated to 05-Feb-2023 17:49 UTC [Kevin F. Haggerty]
-
-* packages/apps/Aperture
-8361807 Aperture: Fix photo -> video shutter button color transition [Sebastiano Barezzi]
-c9a4dc6 Aperture: Make video duration text more readable [LuK1337]
-2fe339d Aperture: Use M3 colors for shutter button [Giovanni Ricca]
-
-====================
-     2023-02-05    
-====================
-* lineage/hudson
-f623e7b hudson: Add Redmi Note 9 (merlinx) [Matsvei Niaverau]
-
-* lineage/mirror
-6544c84 Updated to 05-Feb-2023 15:56 UTC [Kevin F. Haggerty]
-339e1eb Updated to 04-Feb-2023 18:45 UTC [Kevin F. Haggerty]
-93be86a Updated to 04-Feb-2023 18:06 UTC [Kevin F. Haggerty]
-49f6746 Updated to 04-Feb-2023 17:30 UTC [Kevin F. Haggerty]
-
-* lineage/wiki
-c624d30e wiki: Add Redmi Note 9 (merlinx) [Matsvei Niaverau]
-
-* packages/modules/Bluetooth
-e7f12ea3db gd: hci: Ignore unexpected status events [Peter Cai]
-f5d0da4869 Additionally check le_set_event_mask command resturn status with UNSUPPORTED_LMP_OR_LL_PARAMETER [tzu-hsien.huang]
 
