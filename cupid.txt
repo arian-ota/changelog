@@ -1,81 +1,137 @@
 ====================
-     2023-02-13    
-====================
-* device/xiaomi/sm8450-common
-b1a7597 sm8450-common: Update and patch QtiTelephony.apk from V14.0.2.0.TLCMIXM [Arian]
-f0432ea sm8450-common: Update and patch ims.apk from V14.0.2.0.TLCMIXM [Arian]
-8e696cd sm8450-common: Set board api level to 31 [Arian]
-002c2d6 sm8450-common: Sort proprietary-files.txt [Arian]
-7413aa3 sm8450-common: Update blobs from V14.0.2.0.TLCMIXM [Arian]
-dc0f899 sm8450-common: Enable gms PREMIER_TIER again [Arian]
-
-* packages/apps/Jelly
-eb25eb8 Jelly: Fix infinite immersive mode prompt [Rushab Shah]
-
-====================
-     2023-02-12    
-====================
-====================
-     2023-02-11    
-====================
-====================
-     2023-02-10    
-====================
-* device/xiaomi/sm8450-common
-a1c5bc4 sm8450-common: Drop unnecessary system ril interfaces [Arian]
-e24a6c6 sm8450-common: Add ril uim blobs [Arian]
-4a8a82a sm8450-common: Move qrtr-ns to qrtr section [Arian]
-23e2650 sm8450-common: Move qti system_ext sysconfig to QMI section [Arian]
-c8f31fd sm8450-common: Drop 32-bit RIL blobs [Arian]
-be4a131 sm8450-common: Merge telephony blobs sections [Arian]
-
-====================
-     2023-02-09    
+     2023-03-07    
 ====================
 * build/make
-bf4dcc564 Replace old kernel header deps with device_kernel_headers when kernel platform is used [Arian]
+ed53b587d Replace old kernel header deps with device_kernel_headers when kernel platform is used [Arian]
 
 * build/soong
-0395e4f06 Replace qti_kernel_headers with device_kernel_headers [Arian]
-ba50a947d Add perl to allowed host tools [Arian]
+405972d3e Replace qti_kernel_headers with device_kernel_headers [Arian]
+616b9bf73 Add perl to allowed host tools [Arian]
+
+* device/lineage/atv
+4240149 Set product wide volume levels [Aaron Kling]
 
 * device/xiaomi/sm8450-common
-ec58490 sm8450-common: Import qti-telephony-common.jar [Arian]
-6c3a1e9 sm8450-common: Reduce Telephony injections [Cosmin Tanislav]
-9fc8421 sm8450-common: Import telephony_injection from stock [Arian]
-d107316 sm8450-common: beautify_rros: Only remove files without resources if the file contains resources [Arian]
+78b93b0 sm8450-common: sepolicy: Adjust permissions on displayfeature sysfs for fingerprint hal [Arian]
+9839ee3 sm8450-common: sepolicy: Allow init to set more vendor properties [Arian]
+603929c sm8450-common: Set audio flags [Arian]
+22e9e61 sm8450-common: Add vendor classes into qti-telephony-common.jar [Cosmin Tanislav]
+0150805 sm8450-common: Provide modules for audio HAL [Arian]
+fa51567 sm8450-common: Initial sepolicy and enforcing selinux [Arian]
+653248e sm8450-common: Cleanup unnecessary proprietary blobs [Arian]
+e6c8e58 sm8450-common: Copy keystore app attest permission from fw/native [Arian]
 
-* vendor/lineage
-5a07debe Allow to opt out from lineage kernel build [Arian]
-1e574f14 qcom: Add taro platform [Arian]
+* hardware/qcom-caf/sm8450/display
+7d84090e gralloc: Conditionally revert changes related to gralloc struct [Luofan Chen]
 
-====================
-     2023-02-08    
-====================
-* lineage/mirror
-76dca64 Updated to 08-Feb-2023 13:01 UTC [Tim Schumacher]
+* lineage/hudson
+866d9fb [TEMP] Revert "hudson: Ship vela" [0xCAFEBABE]
 
 * lineage/wiki
-3d72a370 wiki: gtowifi: add sanity checks for later revision models [Han Sol Jin]
+2ae20ab4 [TEMP] wiki: devices: Unship vela for now [me-cafebabe]
 
 * packages/apps/Aperture
-5003810 Aperture: Redo settings appbar using M3 guidelines [Sebastiano Barezzi]
-a290b23 Aperture: Reformat code [LuK1337]
-c02cafd Aperture: Add support for Assistant actions [Alexander Martinz]
-d5ed0c1 Aperture: Use ?attr/isLightTheme for light status bar [Sebastiano Barezzi]
+18ade39 Revert "Aperture: Update dependencies" [Arian]
+
+* vendor/lineage
+8eb1f3a1 Allow to opt out from lineage kernel build [Arian]
+
+* vendor/qcom/opensource/display-drivers
+5f879d97 mmm_color_format: Avoid Unannotated fall-through [Arian]
 
 ====================
-     2023-02-07    
+     2023-03-06    
+====================
+* lineage/wiki
+41a9d088 wiki: Remove opproduct from OPlus SM8150 dynamic fw update instructions [LuK1337]
+
+* vendor/lineage
+1fa2c753 apn: fix AMC APN [Arbri Çoçka]
+
+====================
+     2023-03-05    
 ====================
 * lineage/hudson
-a18ebf8 hudson: build gtowifi [Han Sol Jin]
-
-* lineage/mirror
-541dbd4 Updated to 07-Feb-2023 13:01 UTC [Tim Schumacher]
+a6a84e2 Revert "Unship OP8350" [Albert Tang]
 
 * lineage/wiki
-ae29bc40 wiki: dubai: add dtbo to installation instructions [Marc Bourgoin]
-f076f0e5 wiki: Add boot+vbmeta flashing to OnePlus 7 series devices [LuK1337]
-3676d9b3 devices: Import gtowifi [Han Sol Jin]
-ad63cc5c wiki: Add Xperia 5 II (pdx206) [kyasu]
+bc33f612 wiki: Ship OP8350 with updated requirements [Albert Tang]
+
+* packages/apps/Aperture
+ccb9039 Aperture: Use WiFi QR parsing implementation from ZXing [LuK1337]
+0fe6fad Aperture: Animate SecondaryTopBarButton's verticalBias on rotation [LuK1337]
+
+* vendor/lineage
+7395c7f5 roomservice: Use mirror manifest instead of search API [LuK1337]
+
+====================
+     2023-03-04    
+====================
+* lineage/hudson
+7eb12d1 hudson: Promote Mi8917 & Mi8937 & Mi439 to lineage-20 [me-cafebabe]
+
+* lineage/wiki
+db328624 wiki: devices: Mi8917/Mi8937/Mi439: Promote to lineage-20 [me-cafebabe]
+
+* vendor/nxp/nfc
+7cfaa9b nfc: Import vendor/nxp/secure_element soong namespace [LuK1337]
+
+* vendor/nxp/secure_element
+c1327d2 secure_element: Guard with soong namespace [LuK1337]
+
+====================
+     2023-03-03    
+====================
+* lineage/hudson
+6bf21d8 hudson: Ship vela [me-cafebabe]
+
+* lineage/wiki
+b765b608 wiki: devices: 20.0 -> 20 [razorloves]
+84a87388 wiki: devices: Add Xiaomi MI CC9 Meitu Edition (vela) [me-cafebabe]
+bf86f6ae wiki: devices: Promote berlna to 20 [Andrew Hexen]
+
+* system/core
+942dd2ac9 first_stage_mount: Skip dm-verity setup if AVB is not enabled [me-cafebabe]
+
+* vendor/lineage
+62c13743 kernel: Check HIP support of clang before disabling it [dianlujitao]
+
+====================
+     2023-03-02    
+====================
+* device/lineage/sepolicy
+f2a0bad common: trust: Add sepolicy for dwc3 usb_data_enabled [LuK1337]
+
+* device/qcom/sepolicy_vndr-legacy-um
+2cd1c0b2 generic: lito: Add audio wakeup nodes for lito [MajorP93]
+
+* lineage/hudson
+98d177e hudson: Promote berlna to 20 [Andrew Hexen]
+c85633a hudson: first new LG device to go official in 6 years [Han Sol Jin]
+af430d3 hudson: Add Redmi 9 (lancelot) [Matsvei Niaverau]
+
+* lineage/wiki
+8ee3ee46 wiki: add specific firmware versions and instructions for surya [Willy Gardiol]
+6256a240 wiki: Update URLs for new download portal [LuK1337]
+732450ee wiki: Add Redmi 9 (lancelot) [Matsvei Niaverau]
+1c97d6f4 wiki: Promote X00TD to 20.0 [Vivekachooz]
+
+* vendor/lineage
+ef686781 kernel: Force disable LLVM HIP [dianlujitao]
+
+====================
+     2023-03-01    
+====================
+* frameworks/base
+f58169380588 SystemUI: Fix position and orientation of arrow keys in navbar [Wolfram Liebchen]
+
+* lineage/hudson
+2e6d472 hudson: Promote X00TD to 20.0 [Vivekachooz]
+
+* lineage/wiki
+9e4c1d39 devices: joan/h932: initial commit [Han Sol Jin]
+18d09e4e wiki: Simplify Samsung flashing instructions [LuK1337]
+
+* packages/apps/Seedvault
+06dc304 Merge branch 'android13' of https://github.com/seedvault-app/seedvault into lineage-20.0 [Michael Bestas]
 
