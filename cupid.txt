@@ -1,137 +1,115 @@
 ====================
-     2023-03-07    
+     2023-03-16    
 ====================
-* build/make
-ed53b587d Replace old kernel header deps with device_kernel_headers when kernel platform is used [Arian]
-
-* build/soong
-405972d3e Replace qti_kernel_headers with device_kernel_headers [Arian]
-616b9bf73 Add perl to allowed host tools [Arian]
-
-* device/lineage/atv
-4240149 Set product wide volume levels [Aaron Kling]
-
 * device/xiaomi/sm8450-common
-78b93b0 sm8450-common: sepolicy: Adjust permissions on displayfeature sysfs for fingerprint hal [Arian]
-9839ee3 sm8450-common: sepolicy: Allow init to set more vendor properties [Arian]
-603929c sm8450-common: Set audio flags [Arian]
-22e9e61 sm8450-common: Add vendor classes into qti-telephony-common.jar [Cosmin Tanislav]
-0150805 sm8450-common: Provide modules for audio HAL [Arian]
-fa51567 sm8450-common: Initial sepolicy and enforcing selinux [Arian]
-653248e sm8450-common: Cleanup unnecessary proprietary blobs [Arian]
-e6c8e58 sm8450-common: Copy keystore app attest permission from fw/native [Arian]
+4036cff sm8450-common: sepolicy: Label camera libs as same process hal files [Arian]
+081bf7d sm8450-common: Import more xiaomi camera libraries [Arian]
+
+====================
+     2023-03-15    
+====================
+* device/xiaomi/sm8450-common
+5343cbb sm8450-common: Add back 32 bit display blobs [Arian]
+
+* frameworks/av
+966aae39fb SessionConfigurationUtils: Allow privileged camera apps to create raw streams for raw capable cameras [Arian]
+
+* frameworks/base
+4ae78da65548 Camera: Expose aux camera if packagename is null [wbs306]
 
 * hardware/qcom-caf/sm8450/display
-7d84090e gralloc: Conditionally revert changes related to gralloc struct [Luofan Chen]
+b3c28012 gralloc: Conditionally revert changes related to gralloc struct [Luofan Chen]
 
-* lineage/hudson
-866d9fb [TEMP] Revert "hudson: Ship vela" [0xCAFEBABE]
+* kernel_platform/msm-kernel
+25f3bbf5a756 input: touchscreen: fts_spi: Fix compilation after mayfly-s-oss updates [Arian]
+
+====================
+     2023-03-14    
+====================
+* android
+d49b6e3 manifest: Sync x86_64 webview prebuilts again [Kevin F. Haggerty]
+
+* build/make
+893c21fa6 Replace old kernel header deps with device_kernel_headers when kernel platform is used [Arian]
+
+* build/soong
+088251a9e Replace qti_kernel_headers with device_kernel_headers [Arian]
+e9d36fd2e Add perl to allowed host tools [Arian]
+
+* external/chromium-webview/prebuilt/arm64
+8b850a5 Update Chromium Webview arm64 prebuilt to 111.0.5563.58 [Kevin F. Haggerty]
+
+* hardware/interfaces
+bc07302e9 frameworks: Update HIDL overrideFormat from HAL [Abhijit Trivedi]
+
+* lineage/mirror
+9bf3f98 Updated to 14-Mar-2023 10:09 UTC [Kevin F. Haggerty]
+e8bc699 Updated to 14-Mar-2023 09:51 UTC [Kevin F. Haggerty]
 
 * lineage/wiki
-2ae20ab4 [TEMP] wiki: devices: Unship vela for now [me-cafebabe]
+2fdbf9cb wiki: templates: Enable git-lfs in repo init [Kevin F. Haggerty]
+621ef2aa Revert "[TEMP] wiki: devices: Unship vela for now" [0xCAFEBABE]
 
 * packages/apps/Aperture
-18ade39 Revert "Aperture: Update dependencies" [Arian]
+423e6b8 Aperture: Upgrade AGP to 7.4.2 [Sebastiano Barezzi]
+582b552 Aperture: Comply with Camera Intents tests [Sebastiano Barezzi]
+
+* packages/apps/Jelly
+6f3bccb Jelly: Fix infinite immersive mode prompt [Rushab Shah]
 
 * vendor/lineage
-8eb1f3a1 Allow to opt out from lineage kernel build [Arian]
-
-* vendor/qcom/opensource/display-drivers
-5f879d97 mmm_color_format: Avoid Unannotated fall-through [Arian]
+6f57156c Allow to opt out from lineage kernel build [Arian]
 
 ====================
-     2023-03-06    
-====================
-* lineage/wiki
-41a9d088 wiki: Remove opproduct from OPlus SM8150 dynamic fw update instructions [LuK1337]
-
-* vendor/lineage
-1fa2c753 apn: fix AMC APN [Arbri Çoçka]
-
-====================
-     2023-03-05    
-====================
-* lineage/hudson
-a6a84e2 Revert "Unship OP8350" [Albert Tang]
-
-* lineage/wiki
-bc33f612 wiki: Ship OP8350 with updated requirements [Albert Tang]
-
-* packages/apps/Aperture
-ccb9039 Aperture: Use WiFi QR parsing implementation from ZXing [LuK1337]
-0fe6fad Aperture: Animate SecondaryTopBarButton's verticalBias on rotation [LuK1337]
-
-* vendor/lineage
-7395c7f5 roomservice: Use mirror manifest instead of search API [LuK1337]
-
-====================
-     2023-03-04    
-====================
-* lineage/hudson
-7eb12d1 hudson: Promote Mi8917 & Mi8937 & Mi439 to lineage-20 [me-cafebabe]
-
-* lineage/wiki
-db328624 wiki: devices: Mi8917/Mi8937/Mi439: Promote to lineage-20 [me-cafebabe]
-
-* vendor/nxp/nfc
-7cfaa9b nfc: Import vendor/nxp/secure_element soong namespace [LuK1337]
-
-* vendor/nxp/secure_element
-c1327d2 secure_element: Guard with soong namespace [LuK1337]
-
-====================
-     2023-03-03    
-====================
-* lineage/hudson
-6bf21d8 hudson: Ship vela [me-cafebabe]
-
-* lineage/wiki
-b765b608 wiki: devices: 20.0 -> 20 [razorloves]
-84a87388 wiki: devices: Add Xiaomi MI CC9 Meitu Edition (vela) [me-cafebabe]
-bf86f6ae wiki: devices: Promote berlna to 20 [Andrew Hexen]
-
-* system/core
-942dd2ac9 first_stage_mount: Skip dm-verity setup if AVB is not enabled [me-cafebabe]
-
-* vendor/lineage
-62c13743 kernel: Check HIP support of clang before disabling it [dianlujitao]
-
-====================
-     2023-03-02    
-====================
-* device/lineage/sepolicy
-f2a0bad common: trust: Add sepolicy for dwc3 usb_data_enabled [LuK1337]
-
-* device/qcom/sepolicy_vndr-legacy-um
-2cd1c0b2 generic: lito: Add audio wakeup nodes for lito [MajorP93]
-
-* lineage/hudson
-98d177e hudson: Promote berlna to 20 [Andrew Hexen]
-c85633a hudson: first new LG device to go official in 6 years [Han Sol Jin]
-af430d3 hudson: Add Redmi 9 (lancelot) [Matsvei Niaverau]
-
-* lineage/wiki
-8ee3ee46 wiki: add specific firmware versions and instructions for surya [Willy Gardiol]
-6256a240 wiki: Update URLs for new download portal [LuK1337]
-732450ee wiki: Add Redmi 9 (lancelot) [Matsvei Niaverau]
-1c97d6f4 wiki: Promote X00TD to 20.0 [Vivekachooz]
-
-* vendor/lineage
-ef686781 kernel: Force disable LLVM HIP [dianlujitao]
-
-====================
-     2023-03-01    
+     2023-03-13    
 ====================
 * frameworks/base
-f58169380588 SystemUI: Fix position and orientation of arrow keys in navbar [Wolfram Liebchen]
+0c2cadbd7823 SystemUI: Update string for add tiles with one click [mydongistiny]
+6150a1492949 SystemUI: Allow user to add/remove QS with one click [Andrzej Ressel]
+e0e6ca77cdfd Toast app icon display is inconsistent for system apps [Edward Savage-Jones]
+e3c78f56e93d SystemUI: Fix uneven DND icon padding in status bar [Ido Ben-Hur]
 
 * lineage/hudson
-2e6d472 hudson: Promote X00TD to 20.0 [Vivekachooz]
+52f8531 Revert "[TEMP] Revert "hudson: Ship vela"" [0xCAFEBABE]
+
+* lineage/mirror
+0ca7451 Updated aosp-minimal to 13-Mar-2023 13:01 UTC [Tim Schumacher]
+
+====================
+     2023-03-12    
+====================
+* frameworks/base
+90d682654818 Remove sensitive info from SUPL requests [Tommy Webb]
+
+* lineage/crowdin
+4038d83 crowdin: Add --generate_wiki_list [Michael W]
 
 * lineage/wiki
-9e4c1d39 devices: joan/h932: initial commit [Han Sol Jin]
-18d09e4e wiki: Simplify Samsung flashing instructions [LuK1337]
+6ac5a54d wiki: Fix avicii current_branch [KakatkarAkshay]
+dc1b129f wiki: Regenerate proofreaders [Michael W]
 
-* packages/apps/Seedvault
-06dc304 Merge branch 'android13' of https://github.com/seedvault-app/seedvault into lineage-20.0 [Michael Bestas]
+====================
+     2023-03-11    
+====================
+* external/chromium-webview/prebuilt/arm64
+9bd56e2 Import Chromium Webview arm64 prebuilt 109.0.5414.118 [Chirayu Desai]
+d158282 Set up lfs [Michael Bestas]
+91aa269 Initial empty repository [Michael Bestas]
+
+* lineage/mirror
+5cc6076 Updated to 10-Mar-2023 22:28 UTC [Kevin F. Haggerty]
+
+* lineage/wiki
+fcdc3931 wiki: Add missing 18.1 to the contributors page [razorloves]
+4abd65dd wiki: Apply required changes for reviving avicii to 20 [MajorP93]
+
+====================
+     2023-03-10    
+====================
+* external/chromium-webview/patches
+ca03b97 Update Chromium Webview to 111.0.5563.58 [Kevin F. Haggerty]
+
+* lineage/mirror
+9559de7 Updated aosp-minimal to 10-Mar-2023 13:02 UTC [Tim Schumacher]
+bf33b2a Updated to 10-Mar-2023 13:01 UTC [Tim Schumacher]
 
