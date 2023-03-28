@@ -1,0 +1,184 @@
+====================
+     2023-03-28    
+====================
+* device/xiaomi/renoir
+6096c8a renoir: Patch xiaomi camera libraries [Sebastiano Barezzi]
+
+* device/xiaomi/sm8350-common
+60d397f sm8350-common: sepolicy: Label camera libraries as same process hal files [Arian]
+5808058 sm8350-common: Build graphics allocator 3.0 interface to vendor [Arian]
+
+====================
+     2023-03-27    
+====================
+====================
+     2023-03-26    
+====================
+====================
+     2023-03-25    
+====================
+====================
+     2023-03-24    
+====================
+* device/xiaomi/renoir
+2fabcca renoir: Add cameraperf manifest entry [Arian]
+
+* device/xiaomi/sm8350-common
+2bbe2fa sm8350-common: hidl: Add cameraperf to framework compatibility matrix [Arian]
+648eec7 sm8350-common: sepolicy: Add camera perf and postproc hwservice [Arian]
+825cef9 sm8350-common: Switch to camera.xiaomi.so [Arian]
+55384c6 sm8350-common: Import public.libraries.txt from haydn V14.0.3.0.TKKMIXM [Arian]
+
+* frameworks/av
+8cf3c6fc37 SessionConfigurationUtils: Allow privileged camera apps to create raw streams for raw capable cameras [Arian]
+
+* frameworks/base
+6df4cd6a9cc8 Camera: Expose aux camera if packagename is null [wbs306]
+
+* hardware/interfaces
+7fda46e28 frameworks: Update HIDL overrideFormat from HAL [Abhijit Trivedi]
+
+* packages/apps/ThemePicker
+a546ebb5 ThemePicker: Show our apps in icon previews [Demon000]
+0931026e ThemePicker: Unify font/icon label sizes and scroll the text [Ido Ben-Hur]
+b3d40e73 ThemePicker: Fixup font and icon picking wrong user ID [Ido Ben-Hur]
+05583727 ThemePicker: Vertically center the text of customization options [Ido Ben-Hur]
+a562c1ff ThemePicker: Fix crash when applying default icon pack [Adithya R]
+040ac388 ThemePicker: Don't setEnabledExclusiveInCategory for default icon pack [palaych]
+b6aad8f3 ThemePicker: Bring back fonts, icon pack, shape customization [Anay Wadhera]
+
+* packages/overlays/Lineage
+6958fdb overlays: IconPack: Rename config_signalXPath [Adithya R]
+
+* vendor/lineage
+9c3435c6 config: Drop ThemePicker icon pack overlays [Tim Zimmermann]
+1bb974d9 config: Build icon pack overlays [SamarV-121]
+
+* vendor/partner_gms
+bc8c297 gms: products: Exclude Google Meet [Nolen Johnson]
+
+====================
+     2023-03-23    
+====================
+* frameworks/base
+f0a3206c661c Apply monet to fingerprint authentication ripple animation [SagarMakhar]
+47d0eb865158 SystemUI: Follow light/dark theme in new QS footer actions [Tim Zimmermann]
+337589eea76f SystemUI: Follow light/dark theme in SplitShade Header [ReallySnow]
+24865069aa21 Automatic translation import [Michael Bestas]
+
+* lineage-sdk
+8eb16e55 Automatic translation import [Michael Bestas]
+
+* lineage/crowdin
+de63b5e config: lineage-20.0: Add ThemesStub [Michael Bestas]
+
+* packages/apps/Aperture
+b382a88 Automatic translation import [Michael Bestas]
+
+* packages/apps/Backgrounds
+0dc1e51 Automatic translation import [Michael Bestas]
+
+* packages/apps/Camera2
+930eb893f Automatic translation import [Michael Bestas]
+
+* packages/apps/DeskClock
+b2d7e2750 Automatic translation import [Michael Bestas]
+
+* packages/apps/Dialer
+cb85765ff Automatic translation import [Michael Bestas]
+
+* packages/apps/DocumentsUI
+9266bb7d7 Automatic translation import [Michael Bestas]
+
+* packages/apps/Eleven
+58686f2 Automatic translation import [Michael Bestas]
+
+* packages/apps/Etar
+9c02b466 Automatic translation import [Michael Bestas]
+
+* packages/apps/FlipFlap
+a83f2a0 Automatic translation import [Michael Bestas]
+
+* packages/apps/Jelly
+e91ead6 Automatic translation import [Michael Bestas]
+
+* packages/apps/LineageParts
+06765db Automatic translation import [Michael Bestas]
+
+* packages/apps/Recorder
+5b1b693 Automatic translation import [Michael Bestas]
+
+* packages/apps/Settings
+0fe6935bfa Revert "Bring back font and icon shape customization" [SamarV-121]
+b2fd24899b Settings: Fixup start padding for battery usage graph [Adithya R]
+89d6b2734c Automatic translation import [Michael Bestas]
+
+* packages/apps/SetupWizard
+78b01d5 Automatic translation import [Michael Bestas]
+
+* packages/apps/ThemePicker
+432425cd ThemePicker: Remove beta tag for themed icons [Pranav Vashi]
+b802039e Automatic translation import [Michael Bestas]
+
+* packages/apps/Trebuchet
+d4f81d3f25 Automatic translation import [Michael Bestas]
+
+* packages/apps/Updater
+e83f74a Automatic translation import [Michael Bestas]
+
+* packages/inputmethods/LatinIME
+b7aee515e Fix spellcheck on sentence end [icburns]
+60285ccac Automatic translation import [Michael Bestas]
+
+* packages/overlays/Lineage
+53c60f8 IconPack*: Remove ThemePicker overlays [Tim Zimmermann]
+0aa451c IconPack*: Google Apps -> AOSP Apps [Tim Zimmermann]
+57303b6 IconPack{Kai,Victor}: Fix clock icon [DarkJoker360]
+f8c3e77 IconPack{Sam,Victor}: Inverse vol collapse/expand anim path data [Dhina17]
+9fc58ab overlays: Fix background colouring for settings themed icons [Adithya R]
+1b7449a SystemUI: Fix size of icon of vibrate ringer mode for additional icon packs [Volodymyr Zhdanov]
+8759c47 overlays: Import icon pack overlays [SamarV-121]
+
+* packages/resources/devicesettings
+146952e Automatic translation import [Michael Bestas]
+
+* vendor/partner_gms
+971e5c1 gms: products: Cut videos from full target [Nolen Johnson]
+563f6ad gms: overlays: GmsDocumentsUIOverlay: Set as much to use FilesGoogle as we can [Nolen Johnson]
+debbce4 gms: apps: GoogleRestore: State optional-libraries in use [Bruno Martins]
+e43ad3d gms: apps_go: FilesGoogle: State optional-libraries in use [Nolen Johnson]
+efbe93c gms: Stop relying on exported vars for ATV and Automotive targets [Bruno Martins]
+8ddd688 gms: Make DeskClock/Calendar icons live [Nolen Johnson]
+cbb10ff gms: apps: AndroidSystemIntelligence: Override Pixel version [Nolen Johnson]
+d9d2f46 gms: Move backup provider overlay to an RRO package [Alexander Koskovich]
+8b56f50 gms: products: Exclude system items from artifact path requirement [Nolen Johnson]
+8e9bc07 gms: Override LineageOS apps with their GMS counterparts [Nolen Johnson]
+10aaedc gms: products: Introduce gms_minimal (non-GO) product [Nolen Johnson]
+a184ac9 gms: products: Build FilesGoogle for all variants [Nolen Johnson]
+12ba475 gms: products: Don't build reference packages [Nolen Johnson]
+755e99f gms: Convert der files from module to file copy [Nolen Johnson]
+7c3ed16 gms: Guard against WITH_GMS_{CAR,TV} [Nolen Johnson]
+094dbdb gms: Import from gms-oem-T-13-202301.zip [El Goog]
+
+* vendor/qcom/opensource/fm-commonsys
+3605f79 Automatic translation import [Michael Bestas]
+
+====================
+     2023-03-22    
+====================
+* frameworks/base
+741dcffec14c fixup! Keyguard: Add option to scramble pin layout when unlocking (2/2). [Tommy Webb]
+
+* frameworks/native
+94dd1b1bda inputflinger: allow disabling input devices via idc [Billy Laws]
+
+* packages/apps/ThemePicker
+a76cd30b Remove custom themes stub from package query allowlist [Michael Bestas]
+d7a85a95 stub: Import extra color bundles from TQ1A.221205.011 [Michael Bestas]
+
+* packages/overlays/Lineage
+292b54e Remove themes stub [Michael Bestas]
+
+* vendor/lineage
+3450d31d Switch to AOSP themes stub package [Michael Bestas]
+
