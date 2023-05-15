@@ -1,113 +1,137 @@
 ====================
-     2023-03-16    
+     2023-05-15    
 ====================
+* device/xiaomi/renoir
+f354997 renoir: Switch to xiaomi vibrator aidl [Arian]
+
+* device/xiaomi/sm8350-common
+1bf81bd sm8350-common: Switch to xiaomi vibrator aidl [Arian]
+
 * device/xiaomi/sm8450-common
-4036cff sm8450-common: sepolicy: Label camera libs as same process hal files [Arian]
-081bf7d sm8450-common: Import more xiaomi camera libraries [Arian]
+16e38ccca sm8450-common: Switch to xiaomi vibrator aidl [Arian]
+82fb33ace sm8450-common: Restructure proprietary-files.txt and build health from source [Arian]
+
+* hardware/xiaomi
+ef70bc3 sensors: Handle fod press status without coordinates [Arian]
+5044265 sensors: Add udfps long press sensor [Cosmin Tanislav]
+95b65b6 sensors: Fix locking around setOperationMode and activate [Cosmin Tanislav]
+d1b6eea sensors: Move one shot sensor out of main class [Cosmin Tanislav]
+d631c28 sensors: Make sensor set mode operation function virtual [Cosmin Tanislav]
+c6970d1 sensors: Make sensor flush function virtual [Cosmin Tanislav]
+d894fea sensors: Make sensor run function virtual [Cosmin Tanislav]
+b7f2105 sensors: Make sensor batch function virtual [Cosmin Tanislav]
+c67fac0 Add dummy sensors sub HAL [Cosmin Tanislav]
+ccb5fe5 vibrator: effect: Read vibration fifo data from vendor [Arian]
+c95efc4 vibrator: Hook USE_EFFECT_STREAM up [Arian]
+e9b5f11 vibrator: Add support for aw8697_haptic input device [Arian]
+ceb427d vibrator: Add support for aw8624_haptic input device [Arian]
+878dd8b vibrator: aidl: Simplify soc check and drop prop dep [Pig]
+636ee2f vibrator: Rename to avoid conflicts [Arian]
+41020b5 vibrator: Import from LA.VENDOR.13.2.0.r1-15400-KAILUA.QSSI14.0 [Arian]
 
 ====================
-     2023-03-15    
+     2023-05-14    
 ====================
-* device/xiaomi/sm8450-common
-5343cbb sm8450-common: Add back 32 bit display blobs [Arian]
-
-* frameworks/av
-966aae39fb SessionConfigurationUtils: Allow privileged camera apps to create raw streams for raw capable cameras [Arian]
-
-* frameworks/base
-4ae78da65548 Camera: Expose aux camera if packagename is null [wbs306]
-
-* hardware/qcom-caf/sm8450/display
-b3c28012 gralloc: Conditionally revert changes related to gralloc struct [Luofan Chen]
-
-* kernel_platform/msm-kernel
-25f3bbf5a756 input: touchscreen: fts_spi: Fix compilation after mayfly-s-oss updates [Arian]
-
-====================
-     2023-03-14    
-====================
-* android
-d49b6e3 manifest: Sync x86_64 webview prebuilts again [Kevin F. Haggerty]
-
 * build/make
-893c21fa6 Replace old kernel header deps with device_kernel_headers when kernel platform is used [Arian]
+7ea0536a2 Replace old kernel header deps with device_kernel_headers when kernel platform is used [Arian]
 
 * build/soong
-088251a9e Replace qti_kernel_headers with device_kernel_headers [Arian]
-e9d36fd2e Add perl to allowed host tools [Arian]
+93591e31b Replace qti_kernel_headers with device_kernel_headers [Arian]
+ed46406f5 Add perl to allowed host tools [Arian]
 
-* external/chromium-webview/prebuilt/arm64
-8b850a5 Update Chromium Webview arm64 prebuilt to 111.0.5563.58 [Kevin F. Haggerty]
+* device/xiaomi/sm8350-common
+3364309 sm8350-common: sepolicy: Allow platform app to find SoterService [chaptsand]
+
+* device/xiaomi/sm8450-common
+2a1c458ae sm8450-common: Automatically add apk/jar/vintf fragments to PRODUCT_PACKAGES [Michael Bestas]
+b00483695 sm8450-common: Add DSP section [Arian]
+a7c2d4d9c sm8450-common: Add missing 32-bit libs [Arian]
+7a06ef4cf sm8450-common: Add 32-bit RIL blobs [Arian]
+cc097713b sm8450-common: Add back 32-bit libs and reorganize [Arian]
+3656bfc6c sm8450-common: media: Update from V14.0.3.0.TLCMIXM [Arian]
+1c766a926 sm8450-common: beautify_rro: Ignore all values- folders [Arian]
+b22eacc39 sm8450-common: Fix user builds [Jens Reidel]
+
+* frameworks/av
+c65b605dff SessionConfigurationUtils: Allow privileged camera apps to create raw streams for raw capable cameras [Arian]
+
+* frameworks/base
+0153ad3263ac Camera: Expose aux camera if packagename is null [wbs306]
+
+* frameworks/opt/telephony
+a292c548c1 Enable vendor Telephony plugin: MSIM Changes [Sneh Bansal]
+29eec5d506 Skip sending duplicate requests [Sandeep Gutta]
+119023154a Start using inject framework support [Sandeep Gutta]
+bb01ffb15d Reset data activity after traffic status poll stops [Mengjun Leng]
+44c0872ef9 Make a few  members of DSM overridable and accessible [Mengjun Leng]
+f072b63359 Add provision to override CellularNetworkService [Sneh Bansal]
+c33cc32059 Disable proguard for CellularNetworkServiceProvider [Avinash Nalluri]
 
 * hardware/interfaces
-bc07302e9 frameworks: Update HIDL overrideFormat from HAL [Abhijit Trivedi]
-
-* lineage/mirror
-9bf3f98 Updated to 14-Mar-2023 10:09 UTC [Kevin F. Haggerty]
-e8bc699 Updated to 14-Mar-2023 09:51 UTC [Kevin F. Haggerty]
-
-* lineage/wiki
-2fdbf9cb wiki: templates: Enable git-lfs in repo init [Kevin F. Haggerty]
-621ef2aa Revert "[TEMP] wiki: devices: Unship vela for now" [0xCAFEBABE]
-
-* packages/apps/Aperture
-423e6b8 Aperture: Upgrade AGP to 7.4.2 [Sebastiano Barezzi]
-582b552 Aperture: Comply with Camera Intents tests [Sebastiano Barezzi]
-
-* packages/apps/Jelly
-6f3bccb Jelly: Fix infinite immersive mode prompt [Rushab Shah]
+ea21fd2dd frameworks: Update HIDL overrideFormat from HAL [Abhijit Trivedi]
 
 * vendor/lineage
-6f57156c Allow to opt out from lineage kernel build [Arian]
+bb58230e Allow to opt out from lineage kernel build [Arian]
 
 ====================
-     2023-03-13    
+     2023-05-13    
 ====================
-* lineage/hudson
-52f8531 Revert "[TEMP] Revert "hudson: Ship vela"" [0xCAFEBABE]
+====================
+     2023-05-12    
+====================
+====================
+     2023-05-11    
+====================
+* device/xiaomi/sm8450-common
+406c950e4 sm8450-common: beautify_rro: Use xmlstarlet to remove comments [Arian]
+
+* device/xiaomi/zeus
+8af5f27 zeus: Add support for udfps long press sensor [Cosmin Tanislav]
+a459081 zeus: overlay: Add fingerprint overlays [Arian]
+f34a076 zeus: overlay: Allow switching between 60Hz and 120Hz [Cosmin Tanislav]
+e5380c9 zeus: overlay: Add corner content padding [Arian]
+91253b5 zeus: overlay: Import display cutout and rounded corner configurations [Arian]
+71c104c zeus: overlay: Import power_profile from V14.0.7.0.TLBMIXM [Arian]
+a1a9f92 zeus: Add ZeusWifiOverlay [Roshan Pius]
+e52b631 zeus: overlay: Set default Settings.Global.DEVICE_NAME according to MIUI [LuK1337]
+cacb2aa zeus: Configure screen density [Arian]
+55a2b8d zeus: Add board-info.txt [Michael Bestas]
+f90d217 zeus: Initial device tree [Arian]
+bb8446c zeus: Add spec info about Xiaomi 12 Pro [Arian]
+e32a7b1 Initial commit [Arian]
 
 * lineage/mirror
-0ca7451 Updated aosp-minimal to 13-Mar-2023 13:01 UTC [Tim Schumacher]
-
-====================
-     2023-03-12    
-====================
-* frameworks/base
-0c2cadbd7823 SystemUI: Update string for add tiles with one click [mydongistiny]
-6150a1492949 SystemUI: Allow user to add/remove QS with one click [Andrzej Ressel]
-e0e6ca77cdfd Toast app icon display is inconsistent for system apps [Edward Savage-Jones]
-e3c78f56e93d SystemUI: Fix uneven DND icon padding in status bar [Ido Ben-Hur]
-90d682654818 Remove sensitive info from SUPL requests [Tommy Webb]
-
-* lineage/crowdin
-4038d83 crowdin: Add --generate_wiki_list [Michael W]
+fbd1b8c Updated aosp-minimal to 11-May-2023 12:01 UTC [Tim Schumacher]
 
 * lineage/wiki
-6ac5a54d wiki: Fix avicii current_branch [KakatkarAkshay]
-dc1b129f wiki: Regenerate proofreaders [Michael W]
+be5ed7c4 wiki: Sync committers/reviewers table with Gerrit [LuK1337]
+
+* vendor/firmware
+c6b38ec FP4: FP4.SP28.B.065.20230420 [Michael Bestas]
 
 ====================
-     2023-03-11    
+     2023-05-10    
 ====================
-* external/chromium-webview/prebuilt/arm64
-9bd56e2 Import Chromium Webview arm64 prebuilt 109.0.5414.118 [Chirayu Desai]
-d158282 Set up lfs [Michael Bestas]
-91aa269 Initial empty repository [Michael Bestas]
+* device/qcom/sepolicy_vndr-legacy-um
+181fd5be bengal: Label emmc discard_max_bytes sysfs [Michael Bestas]
+be8afb70 qva: label bengal extcon [Michael Bestas]
 
 * lineage/mirror
-5cc6076 Updated to 10-Mar-2023 22:28 UTC [Kevin F. Haggerty]
+c736b27 Updated aosp-minimal to 10-May-2023 12:01 UTC [Tim Schumacher]
+
+====================
+     2023-05-09    
+====================
+* device/xiaomi/davinci
+a258cd8 davinci: Import decommonized liboemcrypto [basamaryan]
+1a445f6 davinci: overlay: Drop deprecated config_udfpsHbmType [Michael Bestas]
+92becd7 fixup! davinci: init: Override system_ext props too [basamaryan]
 
 * lineage/wiki
-fcdc3931 wiki: Add missing 18.1 to the contributors page [razorloves]
-4abd65dd wiki: Apply required changes for reviving avicii to 20 [MajorP93]
+3b00b933 wiki: Drop therubyracer, use Ruby 3.0 [Albert Tang]
+4b12a8a1 wiki: devices: Update device picture for Mi439 [me-cafebabe]
+ae730ca8 wiki: devices: Update device picture for Mi8917 & Mi8937 [me-cafebabe]
 
-====================
-     2023-03-10    
-====================
-* external/chromium-webview/patches
-ca03b97 Update Chromium Webview to 111.0.5563.58 [Kevin F. Haggerty]
-
-* lineage/mirror
-9559de7 Updated aosp-minimal to 10-Mar-2023 13:02 UTC [Tim Schumacher]
-bf33b2a Updated to 10-Mar-2023 13:01 UTC [Tim Schumacher]
+* vendor/xiaomi/davinci
+5284594 davinci: Import decommonized liboemcrypto [basamaryan]
 
