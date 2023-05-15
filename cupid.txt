@@ -1,4 +1,35 @@
 ====================
+     2023-05-15    
+====================
+* device/xiaomi/renoir
+f354997 renoir: Switch to xiaomi vibrator aidl [Arian]
+
+* device/xiaomi/sm8350-common
+1bf81bd sm8350-common: Switch to xiaomi vibrator aidl [Arian]
+
+* device/xiaomi/sm8450-common
+16e38ccca sm8450-common: Switch to xiaomi vibrator aidl [Arian]
+82fb33ace sm8450-common: Restructure proprietary-files.txt and build health from source [Arian]
+
+* hardware/xiaomi
+ef70bc3 sensors: Handle fod press status without coordinates [Arian]
+5044265 sensors: Add udfps long press sensor [Cosmin Tanislav]
+95b65b6 sensors: Fix locking around setOperationMode and activate [Cosmin Tanislav]
+d1b6eea sensors: Move one shot sensor out of main class [Cosmin Tanislav]
+d631c28 sensors: Make sensor set mode operation function virtual [Cosmin Tanislav]
+c6970d1 sensors: Make sensor flush function virtual [Cosmin Tanislav]
+d894fea sensors: Make sensor run function virtual [Cosmin Tanislav]
+b7f2105 sensors: Make sensor batch function virtual [Cosmin Tanislav]
+c67fac0 Add dummy sensors sub HAL [Cosmin Tanislav]
+ccb5fe5 vibrator: effect: Read vibration fifo data from vendor [Arian]
+c95efc4 vibrator: Hook USE_EFFECT_STREAM up [Arian]
+e9b5f11 vibrator: Add support for aw8697_haptic input device [Arian]
+ceb427d vibrator: Add support for aw8624_haptic input device [Arian]
+878dd8b vibrator: aidl: Simplify soc check and drop prop dep [Pig]
+636ee2f vibrator: Rename to avoid conflicts [Arian]
+41020b5 vibrator: Import from LA.VENDOR.13.2.0.r1-15400-KAILUA.QSSI14.0 [Arian]
+
+====================
      2023-05-14    
 ====================
 * build/make
@@ -8,8 +39,10 @@
 93591e31b Replace qti_kernel_headers with device_kernel_headers [Arian]
 ed46406f5 Add perl to allowed host tools [Arian]
 
+* device/xiaomi/sm8350-common
+3364309 sm8350-common: sepolicy: Allow platform app to find SoterService [chaptsand]
+
 * device/xiaomi/sm8450-common
-f22e10ffc sm8450-common: Restructure proprietary-files.txt and build health from source [Arian]
 2a1c458ae sm8450-common: Automatically add apk/jar/vintf fragments to PRODUCT_PACKAGES [Michael Bestas]
 b00483695 sm8450-common: Add DSP section [Arian]
 a7c2d4d9c sm8450-common: Add missing 32-bit libs [Arian]
@@ -36,17 +69,6 @@ c33cc32059 Disable proguard for CellularNetworkServiceProvider [Avinash Nalluri]
 
 * hardware/interfaces
 ea21fd2dd frameworks: Update HIDL overrideFormat from HAL [Abhijit Trivedi]
-
-* hardware/xiaomi
-265db5f sensors: Handle fod press status without coordinates [Arian]
-3e5b94f sensors: Add udfps long press sensor [Cosmin Tanislav]
-59036aa sensors: Fix locking around setOperationMode and activate [Cosmin Tanislav]
-fcb872b sensors: Move one shot sensor out of main class [Cosmin Tanislav]
-d13697d sensors: Make sensor set mode operation function virtual [Cosmin Tanislav]
-c47f363 sensors: Make sensor flush function virtual [Cosmin Tanislav]
-4144680 sensors: Make sensor run function virtual [Cosmin Tanislav]
-30f7d3e sensors: Make sensor batch function virtual [Cosmin Tanislav]
-3746172 Add dummy sensors sub HAL [Cosmin Tanislav]
 
 * vendor/lineage
 bb58230e Allow to opt out from lineage kernel build [Arian]
@@ -100,31 +122,16 @@ c736b27 Updated aosp-minimal to 10-May-2023 12:01 UTC [Tim Schumacher]
 ====================
      2023-05-09    
 ====================
-* lineage/wiki
-3b00b933 wiki: Drop therubyracer, use Ruby 3.0 [Albert Tang]
-4b12a8a1 wiki: devices: Update device picture for Mi439 [me-cafebabe]
-ae730ca8 wiki: devices: Update device picture for Mi8917 & Mi8937 [me-cafebabe]
-
-====================
-     2023-05-08    
-====================
 * device/xiaomi/davinci
 a258cd8 davinci: Import decommonized liboemcrypto [basamaryan]
 1a445f6 davinci: overlay: Drop deprecated config_udfpsHbmType [Michael Bestas]
 92becd7 fixup! davinci: init: Override system_ext props too [basamaryan]
 
-* device/xiaomi/sm6150-common
-d1ca5aa sm6150-common: Update blobs from sweet V14.0.2.0.TKFMIXM [basamaryan]
-e3e3a72 sm6150-common: Fix libGLESv2_adreno.so symlink [ad1tyas1ngh]
-48ceaf7 sm6150-common: Kang libril-qc-hal-qmi.so from Redmi Note 10 [raghavt20]
-15a9c8c sm6150-common: Decommonize liboemcrypto [raghavt20]
-
-* lineage/scripts
-c21ef2e build-webview: Update default webview to 113.0.5672.77 [Kevin F. Haggerty]
+* lineage/wiki
+3b00b933 wiki: Drop therubyracer, use Ruby 3.0 [Albert Tang]
+4b12a8a1 wiki: devices: Update device picture for Mi439 [me-cafebabe]
+ae730ca8 wiki: devices: Update device picture for Mi8917 & Mi8937 [me-cafebabe]
 
 * vendor/xiaomi/davinci
 5284594 davinci: Import decommonized liboemcrypto [basamaryan]
-
-* vendor/xiaomi/sm6150-common
-8dd380f sm6150-common: Update blobs from sweet V14.0.2.0.TKFMIXM [basamaryan]
 
