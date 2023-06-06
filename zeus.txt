@@ -1,148 +1,139 @@
 ====================
+     2023-06-06    
+====================
+* build/make
+a7d46b6a7 Replace old kernel header deps with device_kernel_headers when kernel platform is used [Arian]
+
+* build/soong
+feb10a916 Replace qti_kernel_headers with device_kernel_headers [Arian]
+120d04582 Add perl to allowed host tools [Arian]
+
+* device/xiaomi/sm8450-common
+dfd376cb2 sm8450-common: Import touchfeature [Arian]
+5c691b8f7 TMP hello zeus [Arian]
+
+* external/chromium-webview/patches
+d295af1 Update Chromium Webview to 114.0.5735.58 [Kevin F. Haggerty]
+
+* frameworks/av
+90862edba2 SessionConfigurationUtils: Allow privileged camera apps to create raw streams for raw capable cameras [Arian]
+
+* frameworks/base
+30658830a9f4 Camera: Expose aux camera if packagename is null [wbs306]
+
+* frameworks/opt/telephony
+f385dadba9 Enable vendor Telephony plugin: MSIM Changes [Sneh Bansal]
+b256c96284 Skip sending duplicate requests [Sandeep Gutta]
+022b258a1f Start using inject framework support [Sandeep Gutta]
+ebc5cec55c Reset data activity after traffic status poll stops [Mengjun Leng]
+6c0ce31b4d Make a few  members of DSM overridable and accessible [Mengjun Leng]
+262db48f59 Add provision to override CellularNetworkService [Sneh Bansal]
+abf63876b2 Disable proguard for CellularNetworkServiceProvider [Avinash Nalluri]
+
+* hardware/interfaces
+58a748d32 frameworks: Update HIDL overrideFormat from HAL [Abhijit Trivedi]
+
+* hardware/qcom-caf/sm8450/display
+b0515f809 gralloc: Conditionally revert changes related to gralloc struct [Luofan Chen]
+
+* hardware/xiaomi
+504c4af vibrator: Don't support compose effects if primitve_duration node does not exist [Arian]
+134f4ea vibrator: effect: Read vibration fifo data from vendor [Arian]
+5e0deb6 vibrator: Hook USE_EFFECT_STREAM up [Arian]
+b5e430b vibrator: Add support for aw8697_haptic input device [Arian]
+eab7aca vibrator: Add support for aw8624_haptic input device [Arian]
+65d2fca vibrator: aidl: Simplify soc check and drop prop dep [Pig]
+5242a61 vibrator: Rename to avoid conflicts [Arian]
+1b57808 vibrator: Import from LA.VENDOR.13.2.0.r1-15400-KAILUA.QSSI14.0 [Arian]
+6bae4f7 sensors: Handle fod press status without coordinates [Arian]
+d5f2504 sensors: Add udfps long press sensor [Cosmin Tanislav]
+9d4af0e sensors: Fix locking around setOperationMode and activate [Cosmin Tanislav]
+e38bc72 sensors: Move one shot sensor out of main class [Cosmin Tanislav]
+0cc36d1 sensors: Make sensor set mode operation function virtual [Cosmin Tanislav]
+bf13158 sensors: Make sensor flush function virtual [Cosmin Tanislav]
+4beae5b sensors: Make sensor run function virtual [Cosmin Tanislav]
+f95a19b sensors: Make sensor batch function virtual [Cosmin Tanislav]
+f023eb0 Add dummy sensors sub HAL [Cosmin Tanislav]
+
+* vendor/lineage
+1b96793b adb insecure by default [Scott Mertz]
+730466a1 Allow to opt out from lineage kernel build [Arian]
+
+====================
+     2023-06-05    
+====================
+* device/xiaomi/cupid
+32f8622 cupid: Import decommonized blobs [Arian]
+
+* lineage/hudson
+4c8a45c Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/wiki
+d8a0bb1e wiki: Add display refresh rate to some devices [Michael Bestas]
+c9c369cc wiki: Improve screen data [Michael W]
+f7500bf6 wiki: Split FP3 and FP3+ [Michael W]
+
+* packages/apps/Aperture
+00ac9b1 Aperture: Align versions of all Kotlin components [LuK1337]
+bc3d67a Aperture: Downgrade com.google.android.material:material to 1.9.0 [LuK1337]
+e16427b Aperture: Regenerate blueprints [LuK1337]
+
+====================
      2023-06-04    
 ====================
-* device/nubia/TP1803
-de085fc2 TP1803: Sort proprietary-files.txt [Arian]
-73ff8592 TP1803: Redefine bluetooth a2dp offload capabilities [Arian]
-db76bc9a TP1803: audio: Don't advertise aptX TWS, aptX adaptive and celt in audio policy config [Arian]
-0abe8134 TP1803: properties: Remove unused persist.bluetooth.a2dp_offload.cap property [Edwin Moquete]
-38a9578a Revert "TP1803: Only ship with disabled A2DP offload configuration" [Arian]
-77d4e375 TP1803: hwc: Disable SF composition prediction model. [Pullakavi Srinivas]
-6063585f TP1803: Automatically add apk/jar/vintf fragments to PRODUCT_PACKAGES [Michael Bestas]
-91a9d542 TP1803: Add system prefix to proprietary libraries in /system [Arian]
-3ed11659 TP1803: Move ueventd.qcom.rc to /vendor/etc. [Alexander Koskovich]
-c3ef86e5 TP1803: Set PRODUCT_SET_DEBUGFS_RESTRICTIONS [Hridya Valsaraju]
-d6db299b TP1803: WifiOverlay: Enable set channel on NDP setup [Nate Jiang]
-0123f03e TP1803: WifiOverlay: Configure correct overlay configuration. [Les Lee]
-95e8b464 TP1803: Enable zygote critical window [Woody Lin]
-b436b8c9 TP1803: AOSP WFD doesn't support protected Wi-Fi Display buffers [Nolen Johnson]
-c697699c TP1803: Move qti_whitelist.xml to /system_ext [Michael Bestas]
-4318dfe9 TP1803: Drop component overrides [Bruno Martins]
-4cd45d9b TP1803: overlay: Remove BT related configs [Bruno Martins]
-b8213350 TP1803: Move BT profiles props to vendor [Alexander Koskovich]
-9ebc273a TP1803: Make trust use dwc3 usb_data_enabled [LuK1337]
-
-* device/xiaomi/davinci
-f810fd3 davinci: Set no_sehash_xattr on /mnt/vendor/persist [LuK1337]
-
 * device/xiaomi/sm6150-common
-d33100a7 sm6150-common: Move more RIL properties to vendor [Arian]
-59a08277 sm6150-common: Move default network property to vendor partition [Jayachandran C]
-9105ae0e sm6150-common: Drop unused RIL properties [Arian]
-b4283e91 Revert "sm6150-common: Force restorecon for /mnt/vendor/persist" [Arian]
-7b94e9bf sm6150-common: rootdir: Set up fingerprint nodes for phoenix. [Gagan Malvi]
-d69d1021 Revert "sm6150-common: parts: Enable doze_status on screen off" [danielml]
-29f446dc sm6150-common: sepolicy: Rename sys.panel.display to vendor.panel.display [danielml]
-522ccd1e sm6150-common: sepolicy: Drop camera.sensor* properties [Sebastiano Barezzi]
-fa6e7626 sm6150-common: sepolicy: Bringup property_contexts for Android 13 [Sebastiano Barezzi]
-8659e3d0 sm6150-common: sepolicy: Remove no longer existing properties [danielml]
-83ef2f9c sm6150-common: Add back ro.vendor.extension_library definition [Weikai Kong]
-5e25ab1d sm6150-common: libqti-perfd-client: Move to C [Sebastiano Barezzi]
-e627953e sm6150-common: libqti-perfd-client: return a dummy value [Chenyang Zhong]
-0c1107cb sm6150-common: libqti-perfd-client: Remove namespace declaration [Bruno Martins]
-9d0ba10e sm6150-common: Create dummy libqti-perfd-client [Lucchetto]
-50cc8f5a sm6150-common: overlay: Enable multiple vibration strength levels support [Michael Bestas]
-48cae664 sm6150-common: sepolicy: Label fpc wakeup node [basamaryan]
-e847ac3b sm6150-common: Drop vestigial FM board-flags [Nolen Johnson]
-cba84b83 sm6150-common: Remove max ZRAM compression streams setting [Georg Veichtlbauer]
-88b69be3 sm6150-common: init: Don't mount TraceFS twice. [Alexander Koskovich]
-a42a21bb sm6150-common: overlay: Drop MMS user agent overlays [SebaUbuntu]
-d3815dc9 sm6150-common: overlay: Don't pin camera app in memory [Danny Lin]
-65f33496 sm6150-common: overlay: Set preferred refresh rate on keyguard to 60 [Arian]
-dbdb70ac sm6150-common: Disable Skia tracing by default [Jun Wang]
-87320fdb sm6150-common: Disable continuous transaction tracing on all build types [SamarV-121]
-0bd5d02b sm6150-common: Enable GL comp backpressure [Ady Abraham]
-0b9591f8 sm6150-common: Remove obsolete debug.sf.disable_backpressure [SamarV-121]
-e6630bae sm6150-common: Disable SF client composition cache [Alex Sarraf]
-904d0520 sm6150-common: Disable EGL image tracking [Danny Lin]
-be8d0f02 sm6150-common: Don't latch unsignal buffers [Midas Chien]
-bb60b16e sm6150-common: Uprev bluetooth audio HIDL impl to 2.1 [Sebastiano Barezzi]
 b2babf01 sm6150-common: Make trust use dwc3 usb_data_enabled [LuK1337]
 
 * device/xiaomi/sweet
 885a5d0 Revert "sweet: Add headphone button jack keylayout" [basamaryan]
 
-* hardware/qcom-caf/common
-2705439 common: Add QTI vpp 1.1-1.4 to prebuilt HIDL interfaces [Arian]
+* external/chromium-webview/prebuilt/arm
+f3c702d Update Chromium Webview arm prebuilt to 114.0.5735.58 [Kevin F. Haggerty]
 
-* hardware/qcom-caf/sm8450/audio
-a45e5b42 hal: add support to read all available capabilities [Zhou Song]
+* external/chromium-webview/prebuilt/arm64
+9b88696 Update Chromium Webview arm64 prebuilt to 114.0.5735.58 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86
+d4b9aa8 Update Chromium Webview x86 prebuilt to 114.0.5735.58 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86_64
+40ce5f5 Update Chromium Webview x86_64 prebuilt to 114.0.5735.58 [Kevin F. Haggerty]
 
 * kernel/xiaomi/sm6150
-59766b5edc3c drivers: input: fts_521: Report fp_state to sysfs [Henrique Pereira]
-8a6c895aee35 drivers: camera: Lock the cci_dev mutex before doing cci reads/writes [danielml]
-a5b1b04fec52 drivers: camera: cam_csiphy: Import Xiaomi's csiphy_3ph_v1_2_reg for sweet [danielml]
-cf47116c0a92 ARM64: qcom: xiaomi: sweet: Update the HBM commands from MIUI 14.0.2.0 [danielml]
-ec193d39acfb Revert "input: fingerprint: fpc_tee: Undefine FPC_DRM_INTERFACE_WA" [basamaryan]
-80800b6b5db7 Merge branch 'lineage-20' of github.com:LineageOS/android_kernel_qcom_sm8150 into HEAD [Arian]
+80800b6b5db7f Merge branch 'lineage-20' of github.com:LineageOS/android_kernel_qcom_sm8150 into HEAD [Arian]
 
-* lineage/wiki
-43b7cfba wiki: devices: Revive davinci [Arian]
+* packages/apps/DeskClock
+576768082 DeskClock: Integrate ScreensaverSettings better with Settings [Michael W]
+2016f0343 DeskClock: Fix wrong screensaver clock style being displayed [Michael W]
+c3763b44a DeskClock: Another round of cleanups [Michael W]
+6461b8ee7 Fixed warning: 'invalidate(Int, Int, Int, Int): Unit' is deprecated. Deprecated in Java [Ryan O'Leary]
+
+* packages/apps/Eleven
+12a099c Eleven: Rest of today's cleanup [Michael W]
+57dd974 fixup! Eleven: Replace ViewPager with ViewPager2 [Michael W]
+4676d8c Eleven: Replace deprecated setTargetFragment() [Michael W]
+f6cc073 Eleven: Replace ViewPager with ViewPager2 [Michael W]
+7bc1a16 Eleven: Replace some AsyncTasks [Michael W]
+fbec428 Eleven: Show empty message after clearing all [Michael W]
+9563ef1 Eleven: ImageCache: Also catch IllegalArgumentException [Michael W]
 
 * vendor/qcom/opensource/display-drivers
 974a6228 mmm_color_format: Avoid Unannotated fall-through [Arian]
 
-* vendor/qcom/proprietary/display-devicetree
-4b1e77d Revert "rollback l3 to zeus-s-oss" [Arian]
-
 ====================
      2023-06-03    
 ====================
-* kernel_platform/msm-kernel
-96e0b9d81456 Revert "bsp headers" [Arian]
-fc127af235ba bsp headers [Arian]
-d753fc94c787 input: touchscreen: xiaomi: Implement resolution_factor [Arian]
-
-* vendor/qcom/proprietary/display-devicetree
-3966ef6 rollback l3 to zeus-s-oss [Arian]
+* frameworks/base
+f726f1cc684f Request correct rendering type for EGL config [Andrii Chepurnyi]
 
 ====================
      2023-06-02    
 ====================
-* build/make
-3128e6017 Replace old kernel header deps with device_kernel_headers when kernel platform is used [Arian]
-
-* build/soong
-8977934bb Replace qti_kernel_headers with device_kernel_headers [Arian]
-82a0c2007 Add perl to allowed host tools [Arian]
-
-* frameworks/av
-6cf6074032 SessionConfigurationUtils: Allow privileged camera apps to create raw streams for raw capable cameras [Arian]
+* device/lineage/sepolicy
+cb32675 sepolicy: Move rw_dir_file/create_dir_file macros to public [LuK1337]
 
 * frameworks/base
-440ab2c8557b Camera: Expose aux camera if packagename is null [wbs306]
 1734d454b048 Automatic translation import [LineageOS Infra]
-
-* frameworks/opt/telephony
-becacdce23 Enable vendor Telephony plugin: MSIM Changes [Sneh Bansal]
-dfa60cf250 Skip sending duplicate requests [Sandeep Gutta]
-eb8c7d9ba1 Start using inject framework support [Sandeep Gutta]
-a4b8505cab Reset data activity after traffic status poll stops [Mengjun Leng]
-e86fad3519 Make a few  members of DSM overridable and accessible [Mengjun Leng]
-f539f561ca Add provision to override CellularNetworkService [Sneh Bansal]
-6b1f01130f Disable proguard for CellularNetworkServiceProvider [Avinash Nalluri]
-
-* hardware/interfaces
-c8d14de86 frameworks: Update HIDL overrideFormat from HAL [Abhijit Trivedi]
-
-* hardware/xiaomi
-c1a82e8 vibrator: Don't support compose effects if primitve_duration node does not exist [Arian]
-30a4fd7 vibrator: effect: Read vibration fifo data from vendor [Arian]
-0368712 vibrator: Hook USE_EFFECT_STREAM up [Arian]
-215fc90 vibrator: Add support for aw8697_haptic input device [Arian]
-d11a272 vibrator: Add support for aw8624_haptic input device [Arian]
-8c339a0 vibrator: aidl: Simplify soc check and drop prop dep [Pig]
-282f534 vibrator: Rename to avoid conflicts [Arian]
-f1b1fdb vibrator: Import from LA.VENDOR.13.2.0.r1-15400-KAILUA.QSSI14.0 [Arian]
-5e9774e sensors: Handle fod press status without coordinates [Arian]
-c7f0668 sensors: Add udfps long press sensor [Cosmin Tanislav]
-381fa8f sensors: Fix locking around setOperationMode and activate [Cosmin Tanislav]
-dadd2c7 sensors: Move one shot sensor out of main class [Cosmin Tanislav]
-70e38d6 sensors: Make sensor set mode operation function virtual [Cosmin Tanislav]
-33c1991 sensors: Make sensor flush function virtual [Cosmin Tanislav]
-53a3d54 sensors: Make sensor run function virtual [Cosmin Tanislav]
-c329333 sensors: Make sensor batch function virtual [Cosmin Tanislav]
-fc5d7e7 Add dummy sensors sub HAL [Cosmin Tanislav]
 
 * kernel_platform/msm-kernel
 ea2e674e04b0 soc: qcom: panel_event_notifier: Add new events from mayfly-s-oss [Arian]
@@ -156,6 +147,12 @@ ebcc200bc444 Kernel: Xiaomi kernel changes for Xiaomi 12 Pro and Xiaomi 12 Andro
 
 * lineage-sdk
 cd2c9124 Automatic translation import [LineageOS Infra]
+
+* lineage/mirror
+8d5021d Updated aosp-minimal to 02-Jun-2023 12:01 UTC [Tim Schumacher]
+
+* lineage/scripts
+1907996 build-webview: Update default webview to 114.0.5735.58 [Kevin F. Haggerty]
 
 * packages/apps/Aperture
 b09c4d5 Automatic translation import [LineageOS Infra]
@@ -234,9 +231,6 @@ e0c738d Automatic translation import [LineageOS Infra]
 
 * vendor/crowdin
 b37f283 Automatic translation import [LineageOS Infra]
-
-* vendor/lineage
-2376ed81 Allow to opt out from lineage kernel build [Arian]
 
 * vendor/qcom/opensource/audio-kernel
 8b67dd57 Kernel: Xiaomi kernel changes for Xiaomi Civi 2 Android S [jiahao]
@@ -326,13 +320,4 @@ cc02dda sweet: Update kernel defconfig [basamaryan]
 * vendor/partner_modules
 3eb786c modules: Remove unrecognized blueprints [Nolen Johnson]
 70c9ff4 Import from mainline_t_2023_may_t1006563.zip [El Goog]
-
-====================
-     2023-05-30    
-====================
-====================
-     2023-05-29    
-====================
-* packages/apps/Gallery2
-28a7edf3a Gallery2: Switch to MediaStore.ACTION_REVIEW [LuK1337]
 
