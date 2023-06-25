@@ -1,323 +1,91 @@
 ====================
-     2023-06-06    
+     2023-06-25    
+====================
+* device/xiaomi/sm8450-common
+3af6cfbf3 fixup! TMP hello zeus [Arian]
+42d6b092d sm8450-common: Import touch_report service [Arian]
+8d5e03969 Revert "sm8450-common: Import touchfeature" [Arian]
+1b9e8617a sm8450-common: sepolicy: Add new fingerprint rules [Arian]
+3e96d83b2 sm8450-common: sepolicy: Add policy for touch_report [Arian]
+07accbd28 sm8450-common: hidl: Add mi fx tunnel service to hidl manifest [Arian]
+
+* device/xiaomi/zeus
+e4b7be7 zeus: Enable 60 fps video in aperture [Arian]
+fcea68b zeus: overlay: Configure aux camera for Aperture [LuK1337]
+73f71d5 zeus: Pin fingeprint blobs from V13.0.10.0.SLBEUXM [Arian]
+
+====================
+     2023-06-24    
+====================
+====================
+     2023-06-23    
+====================
+====================
+     2023-06-22    
+====================
+====================
+     2023-06-21    
+====================
+* frameworks/base
+96b12f340bbd fixup! SystemUI: Make the volume dialog expandable [Sebastiano Barezzi]
+
+====================
+     2023-06-20    
 ====================
 * build/make
-a7d46b6a7 Replace old kernel header deps with device_kernel_headers when kernel platform is used [Arian]
+4e8a20afc Replace old kernel header deps with device_kernel_headers when kernel platform is used [Arian]
 
 * build/soong
-feb10a916 Replace qti_kernel_headers with device_kernel_headers [Arian]
-120d04582 Add perl to allowed host tools [Arian]
+64f50a103 Replace qti_kernel_headers with device_kernel_headers [Arian]
+dbf787ceb Add perl to allowed host tools [Arian]
 
-* device/xiaomi/sm8450-common
-dfd376cb2 sm8450-common: Import touchfeature [Arian]
-5c691b8f7 TMP hello zeus [Arian]
-
-* external/chromium-webview/patches
-d295af1 Update Chromium Webview to 114.0.5735.58 [Kevin F. Haggerty]
+* device/xiaomi/zeus
+b5ee541 zeus: Import missing fingerprint blob [Arian]
 
 * frameworks/av
-90862edba2 SessionConfigurationUtils: Allow privileged camera apps to create raw streams for raw capable cameras [Arian]
-
-* frameworks/base
-30658830a9f4 Camera: Expose aux camera if packagename is null [wbs306]
+2893ec9213 SessionConfigurationUtils: Allow privileged camera apps to create raw streams for raw capable cameras [Arian]
 
 * frameworks/opt/telephony
-f385dadba9 Enable vendor Telephony plugin: MSIM Changes [Sneh Bansal]
-b256c96284 Skip sending duplicate requests [Sandeep Gutta]
-022b258a1f Start using inject framework support [Sandeep Gutta]
-ebc5cec55c Reset data activity after traffic status poll stops [Mengjun Leng]
-6c0ce31b4d Make a few  members of DSM overridable and accessible [Mengjun Leng]
-262db48f59 Add provision to override CellularNetworkService [Sneh Bansal]
-abf63876b2 Disable proguard for CellularNetworkServiceProvider [Avinash Nalluri]
+8f4c96f88b Enable vendor Telephony plugin: MSIM Changes [Sneh Bansal]
+94378b7925 Skip sending duplicate requests [Sandeep Gutta]
+340c24e155 Start using inject framework support [Sandeep Gutta]
+8c4f684279 Reset data activity after traffic status poll stops [Mengjun Leng]
+9f9506b643 Make a few  members of DSM overridable and accessible [Mengjun Leng]
+6ee56ccb42 Add provision to override CellularNetworkService [Sneh Bansal]
+243ea2f2df Disable proguard for CellularNetworkServiceProvider [Avinash Nalluri]
 
 * hardware/interfaces
-58a748d32 frameworks: Update HIDL overrideFormat from HAL [Abhijit Trivedi]
-
-* hardware/qcom-caf/sm8450/display
-b0515f809 gralloc: Conditionally revert changes related to gralloc struct [Luofan Chen]
+18991dd0e frameworks: Update HIDL overrideFormat from HAL [Abhijit Trivedi]
 
 * hardware/xiaomi
-504c4af vibrator: Don't support compose effects if primitve_duration node does not exist [Arian]
-134f4ea vibrator: effect: Read vibration fifo data from vendor [Arian]
-5e0deb6 vibrator: Hook USE_EFFECT_STREAM up [Arian]
-b5e430b vibrator: Add support for aw8697_haptic input device [Arian]
-eab7aca vibrator: Add support for aw8624_haptic input device [Arian]
-65d2fca vibrator: aidl: Simplify soc check and drop prop dep [Pig]
-5242a61 vibrator: Rename to avoid conflicts [Arian]
-1b57808 vibrator: Import from LA.VENDOR.13.2.0.r1-15400-KAILUA.QSSI14.0 [Arian]
-6bae4f7 sensors: Handle fod press status without coordinates [Arian]
-d5f2504 sensors: Add udfps long press sensor [Cosmin Tanislav]
-9d4af0e sensors: Fix locking around setOperationMode and activate [Cosmin Tanislav]
-e38bc72 sensors: Move one shot sensor out of main class [Cosmin Tanislav]
-0cc36d1 sensors: Make sensor set mode operation function virtual [Cosmin Tanislav]
-bf13158 sensors: Make sensor flush function virtual [Cosmin Tanislav]
-4beae5b sensors: Make sensor run function virtual [Cosmin Tanislav]
-f95a19b sensors: Make sensor batch function virtual [Cosmin Tanislav]
-f023eb0 Add dummy sensors sub HAL [Cosmin Tanislav]
+0aa8cd7 vibrator: Don't support compose effects if primitve_duration node does not exist [Arian]
+c02ef0f vibrator: effect: Read vibration fifo data from vendor [Arian]
+aaf0211 vibrator: Hook USE_EFFECT_STREAM up [Arian]
+5b52fa7 vibrator: Add support for aw8697_haptic input device [Arian]
+7b03547 vibrator: Add support for aw8624_haptic input device [Arian]
+a852d17 vibrator: aidl: Simplify soc check and drop prop dep [Pig]
+0c37ac1 vibrator: Rename to avoid conflicts [Arian]
+8de30ec vibrator: Import from LA.VENDOR.13.2.0.r1-15400-KAILUA.QSSI14.0 [Arian]
+5c913c0 sensors: Handle fod press status without coordinates [Arian]
+4556b13 sensors: Add udfps long press sensor [Cosmin Tanislav]
+f8b3066 sensors: Fix locking around setOperationMode and activate [Cosmin Tanislav]
+4a8cadc sensors: Move one shot sensor out of main class [Cosmin Tanislav]
+cd75359 sensors: Make sensor set mode operation function virtual [Cosmin Tanislav]
+b468ea8 sensors: Make sensor flush function virtual [Cosmin Tanislav]
+6a74885 sensors: Make sensor run function virtual [Cosmin Tanislav]
+47ae488 sensors: Make sensor batch function virtual [Cosmin Tanislav]
+f50ad2e Add dummy sensors sub HAL [Cosmin Tanislav]
+
+* lineage/mirror
+4a05e3b Updated lineage-minimal to 19-Jun-2023 12:01 UTC [Tim Schumacher]
 
 * vendor/lineage
-1b96793b adb insecure by default [Scott Mertz]
-730466a1 Allow to opt out from lineage kernel build [Arian]
+5c46358f Allow to opt out from lineage kernel build [Arian]
+9748294a adb insecure by default [Scott Mertz]
 
 ====================
-     2023-06-05    
+     2023-06-19    
 ====================
-* device/xiaomi/cupid
-32f8622 cupid: Import decommonized blobs [Arian]
-
 * lineage/hudson
-4c8a45c Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/wiki
-d8a0bb1e wiki: Add display refresh rate to some devices [Michael Bestas]
-c9c369cc wiki: Improve screen data [Michael W]
-f7500bf6 wiki: Split FP3 and FP3+ [Michael W]
-
-* packages/apps/Aperture
-00ac9b1 Aperture: Align versions of all Kotlin components [LuK1337]
-bc3d67a Aperture: Downgrade com.google.android.material:material to 1.9.0 [LuK1337]
-e16427b Aperture: Regenerate blueprints [LuK1337]
-
-====================
-     2023-06-04    
-====================
-* device/xiaomi/sm6150-common
-b2babf01 sm6150-common: Make trust use dwc3 usb_data_enabled [LuK1337]
-
-* device/xiaomi/sweet
-885a5d0 Revert "sweet: Add headphone button jack keylayout" [basamaryan]
-
-* external/chromium-webview/prebuilt/arm
-f3c702d Update Chromium Webview arm prebuilt to 114.0.5735.58 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/arm64
-9b88696 Update Chromium Webview arm64 prebuilt to 114.0.5735.58 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86
-d4b9aa8 Update Chromium Webview x86 prebuilt to 114.0.5735.58 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86_64
-40ce5f5 Update Chromium Webview x86_64 prebuilt to 114.0.5735.58 [Kevin F. Haggerty]
-
-* kernel/xiaomi/sm6150
-80800b6b5db7f Merge branch 'lineage-20' of github.com:LineageOS/android_kernel_qcom_sm8150 into HEAD [Arian]
-
-* packages/apps/DeskClock
-576768082 DeskClock: Integrate ScreensaverSettings better with Settings [Michael W]
-2016f0343 DeskClock: Fix wrong screensaver clock style being displayed [Michael W]
-c3763b44a DeskClock: Another round of cleanups [Michael W]
-6461b8ee7 Fixed warning: 'invalidate(Int, Int, Int, Int): Unit' is deprecated. Deprecated in Java [Ryan O'Leary]
-
-* packages/apps/Eleven
-12a099c Eleven: Rest of today's cleanup [Michael W]
-57dd974 fixup! Eleven: Replace ViewPager with ViewPager2 [Michael W]
-4676d8c Eleven: Replace deprecated setTargetFragment() [Michael W]
-f6cc073 Eleven: Replace ViewPager with ViewPager2 [Michael W]
-7bc1a16 Eleven: Replace some AsyncTasks [Michael W]
-fbec428 Eleven: Show empty message after clearing all [Michael W]
-9563ef1 Eleven: ImageCache: Also catch IllegalArgumentException [Michael W]
-
-* vendor/qcom/opensource/display-drivers
-974a6228 mmm_color_format: Avoid Unannotated fall-through [Arian]
-
-====================
-     2023-06-03    
-====================
-* frameworks/base
-f726f1cc684f Request correct rendering type for EGL config [Andrii Chepurnyi]
-
-====================
-     2023-06-02    
-====================
-* device/lineage/sepolicy
-cb32675 sepolicy: Move rw_dir_file/create_dir_file macros to public [LuK1337]
-
-* frameworks/base
-1734d454b048 Automatic translation import [LineageOS Infra]
-
-* kernel_platform/msm-kernel
-ea2e674e04b0 soc: qcom: panel_event_notifier: Add new events from mayfly-s-oss [Arian]
-850f7bd44826 input: touchscreen: xiaomi: Update from ziyi-s-oss [Arian]
-c776f042f8c6 input: touchscreen: fts_spi: Fail probe if panel can't be found [Arian]
-a79259970b6d input: touchscreen: fts_spi: Update from ziyi-s-oss [Arian]
-346ba9e7a582 input: touchscreen: Enable FTS and xiaomi touch driver [Arian]
-39a95e2ae129 misc: Introduce simplified xiaomi hardware identification driver [Arian]
-c2a1eb6357e1 Update cupid and zeus configs to KERNEL.PLATFORM.1.0.r1-09700-kernel.0 [Arian]
-ebcc200bc444 Kernel: Xiaomi kernel changes for Xiaomi 12 Pro and Xiaomi 12 Android S [bsp-open]
-
-* lineage-sdk
-cd2c9124 Automatic translation import [LineageOS Infra]
-
-* lineage/mirror
-8d5021d Updated aosp-minimal to 02-Jun-2023 12:01 UTC [Tim Schumacher]
-
-* lineage/scripts
-1907996 build-webview: Update default webview to 114.0.5735.58 [Kevin F. Haggerty]
-
-* packages/apps/Aperture
-b09c4d5 Automatic translation import [LineageOS Infra]
-
-* packages/apps/AudioFX
-7ee2d3e Automatic translation import [LineageOS Infra]
-
-* packages/apps/Backgrounds
-1ae77fc Automatic translation import [LineageOS Infra]
-
-* packages/apps/Camera2
-ecb7ba868 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Contacts
-919d3b0ee Automatic translation import [LineageOS Infra]
-
-* packages/apps/DeskClock
-5ca861ba2 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Dialer
-c9a2adef4 Automatic translation import [LineageOS Infra]
-
-* packages/apps/DocumentsUI
-4573e013d Automatic translation import [LineageOS Infra]
-
-* packages/apps/Eleven
-2c33621 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Etar
-525bcdab Automatic translation import [LineageOS Infra]
-
-* packages/apps/FlipFlap
-0ede0d1 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Jelly
-d34afa9 Automatic translation import [LineageOS Infra]
-
-* packages/apps/LineageParts
-72fa10b Automatic translation import [LineageOS Infra]
-
-* packages/apps/Messaging
-4d715a4 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Profiles
-863fb59 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Recorder
-c9c065c Automatic translation import [LineageOS Infra]
-
-* packages/apps/Settings
-57eedae526 Automatic translation import [LineageOS Infra]
-
-* packages/apps/SetupWizard
-8813787 Automatic translation import [LineageOS Infra]
-
-* packages/apps/ThemePicker
-13e7289f Automatic translation import [LineageOS Infra]
-
-* packages/apps/Trebuchet
-5f84630f06 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Updater
-0b5e925 Automatic translation import [LineageOS Infra]
-
-* packages/inputmethods/LatinIME
-cf8040894 Automatic translation import [LineageOS Infra]
-
-* packages/providers/DownloadProvider
-dedc5768 Automatic translation import [LineageOS Infra]
-
-* packages/resources/devicesettings
-2d7ff42 Automatic translation import [LineageOS Infra]
-
-* packages/services/Mms
-e0c738d Automatic translation import [LineageOS Infra]
-
-* vendor/crowdin
-b37f283 Automatic translation import [LineageOS Infra]
-
-* vendor/qcom/opensource/audio-kernel
-8b67dd57 Kernel: Xiaomi kernel changes for Xiaomi Civi 2 Android S [jiahao]
-
-* vendor/qcom/opensource/camera-kernel
-40c7dbac cam_req_mgr: Increase max events [Arian]
-a95b3228 cam_req_mgr: Increase watchdog timeout and max retry attempts [Arian]
-ba403b28 cam_icp: Increase cmd and msg sizes [Arian]
-db2d0525 cam_sensor_utils: Add CAM_VANA1 to vreg name enum [Arian]
-a2f33d48 cam_ois: Import xiaomi changes [Arian]
-39e47196 cam_csiphy: Modify cdr delay reg for xiaomi l2 (zeus) [Arian]
-2e014b1e cam_csiphy: Always stop cpas on shutdown [Arian]
-7e476bd2 cam_isp: Set rdi_only_ctx to false on stop [Arian]
-515f47ab cam_isp: Avoid race condition in tasklet start and stop [Arian]
-59ebe77d cam_isp: Try to recover bubble if request can be re-applied [Arian]
-e93bcd5e cam_cpas: Retry getting slice desc [Arian]
-85f31ab0 camera: Optimize hang detect for CAM_ISP [Arian]
-9e4f015c cam_sensor: Fix sensor id read issue [wangshuo18]
-
-* vendor/qcom/opensource/display-drivers
-eee6c09b Import xiaomi changes from ziyi-s-oss [Arian]
-
-* vendor/qcom/opensource/fm-commonsys
-ca59183 Automatic translation import [LineageOS Infra]
-
-* vendor/qcom/opensource/wlan/qcacld-3.0
-910c6fd0e qcacld-3.0: Enable CONFIG_CNSS_QCA6490 in qca6490 config file [Mohammed Siddiq]
-
-* vendor/qcom/proprietary/audio-devicetree
-fce23ff Add support for cupid and zeus [Arian]
-
-* vendor/qcom/proprietary/camera-devicetree
-d2bfba3 Add support for cupid and zeus [Arian]
-
-* vendor/qcom/proprietary/devicetree
-70f07cb1ee06 Import Xiaomi changes from zeus-s-oss [Arian]
-
-* vendor/qcom/proprietary/display-devicetree
-c96047e Add support for cupid and zeus [Arian]
-
-====================
-     2023-06-01    
-====================
-* device/lineage/sepolicy
-f89399c qcom: Sort sepolicy.mk m4defs [Michael Bestas]
-650a44a common: Label ro.vendor.fm.use_audio_session [Michael Bestas]
-9d955c9 sepolicy: Introduce rw_dir_file()/create_dir_file() macros [LuK1337]
-8c84475 qcom: Drop untrusted app policies [Han Wang]
-
-* device/qcom/sepolicy_vndr-legacy-um
-6bf88aac legacy: Guard debugfs rules [Michael Bestas]
-
-* device/xiaomi/sweet
-9a6491a sweet: Drop BUILD_BROKEN_DUP_RULES [basamaryan]
-140b13e sweet: Add lineage dependencies [Arian]
-4b21fbe sweet: Go away Megvii [Sebastiano Barezzi]
-e8b0ea0 sweet: Switch to kernel config fragment [Arian]
-7d09356 sweet: Override doze mode support [danielml]
-c1b697f sweet: sepolicy: Address more battery secret denials [Adithya R]
-7c4b20b sweet: sepolicy: Label elliptic ultrasound property [Zinadin Zidan]
-f20c87a sweet: sepolicy: Bring up property contexts for android 13 [basamaryan]
-a878240 sweet: Relax timers for automatic refresh rate switching [Park Ju Hyung]
-a50f2c8 sweet: Enable content detection for refresh rate switching [AdarshGrewal]
-778a6b6 sweet: overlay: Configure RefreshRate brightness thresholds [althafvly]
-96e11b1 sweet: Reduce the list of pinned acdb files [daniml3]
-0e30c90 sweet: Import decommonized liboemcrypto [basamaryan]
-0f6d083 sweet: audio: Fix mic volume [Pranav Vashi]
-ad44892 sweet: Update mixer_paths_idp.xml from MIUI V14.0.2.0.TKFMIXM [basamaryan]
-ceb7742 sweet: init: Update fingerprints [basamaryan]
-b9d56fb sweet: Update the s5kgw3 camera libraries from MIUI V14.0.1.0.TKFINXM [basamaryan]
-6624825 sweet: Update blobs from MIUI V14.0.2.0.TKFMIXM [basamaryan]
-77afd4a sweet: Add spec info about Redmi Note 10 Pro/Pro Max [basamaryan]
-1322779 fixup! sweet: overlay: Set physical power button and fps location [AdarshGrewal]
-400d8f9 sweet: overlay: Adjust status bar padding [basamaryan]
-cc02dda sweet: Update kernel defconfig [basamaryan]
-7a7d5a6 sweet: Drop redundant fluence properties [basamaryan]
-
-* lineage/wiki
-822044f8 wiki: Make sure that "#id" is at the end of device_link [Outvi V]
-
-====================
-     2023-05-31    
-====================
-* lineage/mirror
-176d0c9 Updated aosp-minimal to 31-May-2023 12:01 UTC [Tim Schumacher]
-
-* vendor/partner_modules
-3eb786c modules: Remove unrecognized blueprints [Nolen Johnson]
-70c9ff4 Import from mainline_t_2023_may_t1006563.zip [El Goog]
+307cbfe Regenerate device dependency mappings [LineageOS Infra]
 
