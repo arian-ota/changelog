@@ -1,0 +1,91 @@
+====================
+     2023-06-25    
+====================
+* device/xiaomi/sm8450-common
+3af6cfbf3 fixup! TMP hello zeus [Arian]
+42d6b092d sm8450-common: Import touch_report service [Arian]
+8d5e03969 Revert "sm8450-common: Import touchfeature" [Arian]
+1b9e8617a sm8450-common: sepolicy: Add new fingerprint rules [Arian]
+3e96d83b2 sm8450-common: sepolicy: Add policy for touch_report [Arian]
+07accbd28 sm8450-common: hidl: Add mi fx tunnel service to hidl manifest [Arian]
+
+* device/xiaomi/zeus
+e4b7be7 zeus: Enable 60 fps video in aperture [Arian]
+fcea68b zeus: overlay: Configure aux camera for Aperture [LuK1337]
+73f71d5 zeus: Pin fingeprint blobs from V13.0.10.0.SLBEUXM [Arian]
+
+====================
+     2023-06-24    
+====================
+====================
+     2023-06-23    
+====================
+====================
+     2023-06-22    
+====================
+====================
+     2023-06-21    
+====================
+* frameworks/base
+96b12f340bbd fixup! SystemUI: Make the volume dialog expandable [Sebastiano Barezzi]
+
+====================
+     2023-06-20    
+====================
+* build/make
+4e8a20afc Replace old kernel header deps with device_kernel_headers when kernel platform is used [Arian]
+
+* build/soong
+64f50a103 Replace qti_kernel_headers with device_kernel_headers [Arian]
+dbf787ceb Add perl to allowed host tools [Arian]
+
+* device/xiaomi/zeus
+b5ee541 zeus: Import missing fingerprint blob [Arian]
+
+* frameworks/av
+2893ec9213 SessionConfigurationUtils: Allow privileged camera apps to create raw streams for raw capable cameras [Arian]
+
+* frameworks/opt/telephony
+8f4c96f88b Enable vendor Telephony plugin: MSIM Changes [Sneh Bansal]
+94378b7925 Skip sending duplicate requests [Sandeep Gutta]
+340c24e155 Start using inject framework support [Sandeep Gutta]
+8c4f684279 Reset data activity after traffic status poll stops [Mengjun Leng]
+9f9506b643 Make a few  members of DSM overridable and accessible [Mengjun Leng]
+6ee56ccb42 Add provision to override CellularNetworkService [Sneh Bansal]
+243ea2f2df Disable proguard for CellularNetworkServiceProvider [Avinash Nalluri]
+
+* hardware/interfaces
+18991dd0e frameworks: Update HIDL overrideFormat from HAL [Abhijit Trivedi]
+
+* hardware/xiaomi
+0aa8cd7 vibrator: Don't support compose effects if primitve_duration node does not exist [Arian]
+c02ef0f vibrator: effect: Read vibration fifo data from vendor [Arian]
+aaf0211 vibrator: Hook USE_EFFECT_STREAM up [Arian]
+5b52fa7 vibrator: Add support for aw8697_haptic input device [Arian]
+7b03547 vibrator: Add support for aw8624_haptic input device [Arian]
+a852d17 vibrator: aidl: Simplify soc check and drop prop dep [Pig]
+0c37ac1 vibrator: Rename to avoid conflicts [Arian]
+8de30ec vibrator: Import from LA.VENDOR.13.2.0.r1-15400-KAILUA.QSSI14.0 [Arian]
+5c913c0 sensors: Handle fod press status without coordinates [Arian]
+4556b13 sensors: Add udfps long press sensor [Cosmin Tanislav]
+f8b3066 sensors: Fix locking around setOperationMode and activate [Cosmin Tanislav]
+4a8cadc sensors: Move one shot sensor out of main class [Cosmin Tanislav]
+cd75359 sensors: Make sensor set mode operation function virtual [Cosmin Tanislav]
+b468ea8 sensors: Make sensor flush function virtual [Cosmin Tanislav]
+6a74885 sensors: Make sensor run function virtual [Cosmin Tanislav]
+47ae488 sensors: Make sensor batch function virtual [Cosmin Tanislav]
+f50ad2e Add dummy sensors sub HAL [Cosmin Tanislav]
+
+* lineage/mirror
+4a05e3b Updated lineage-minimal to 19-Jun-2023 12:01 UTC [Tim Schumacher]
+
+* vendor/lineage
+5c46358f Allow to opt out from lineage kernel build [Arian]
+9748294a adb insecure by default [Scott Mertz]
+
+====================
+     2023-06-19    
+====================
+* lineage/hudson
+307cbfe Regenerate device dependency mappings [LineageOS Infra]
+
