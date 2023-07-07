@@ -1,263 +1,50 @@
 ====================
-     2023-06-04    
+     2023-07-07    
 ====================
+* device/qcom/sepolicy_vndr-legacy-um
+d3bb0d05 sepolicy: Allow GNSS HAL to read xtra control property [Arian]
+
 * device/xiaomi/davinci
-3ba9f94 davinci: Add cust to super partition devices [Arian]
-2cdac6b davinci: Commonize fstab [Arian]
-9eb522d davinci: Commonize flash block size, cache and userdata filesystem types [Arian]
-7fb00e7 davinci: Commonize BOARD_USES_METADATA_PARTITION [Arian]
-a112038 davinci: Switch to dynamic partitions [Arian]
+8e9c5f5 davinci: Set hardware revision property [Arian]
+aa229c4 davinci: Replace BTM_DEF_LOCAL_NAME with a sysprop [Arian]
+4f24d3f davinci: Add RROs for setting correct device name and hotspot ssid [AdarshGrewal]
+41afa34 davinci: overlay: Remove Xiaomi from default hotspot ssid [Arian]
+cbb1eec davinci: Set stock TARGET_PRODUCT and PRODUCT_SYSTEM_NAME [Arian]
+f581e61 davinci: Set build fingerprint to global miui one [Arian]
+14ad292 davinci: Get rid of libinit [Arian]
+1781d5d davinci: overlay: Disable NFC apps for Indian devices [AdarshGrewal]
+40b14de davinci: Rework NFC SKU setup [Arian]
+0047cee davinci: Remove unneeded NFC packages [Georg Veichtlbauer]
 
 * device/xiaomi/sm6150-common
-87a669d2 sm6150-common: Commonize flash block size, cache and userdata filesystem types [Arian]
-95a7c8b0 sm6150-common: Use FBE v2 [Arian]
-02d6d1f9 sm6150-common: Support adoptable storage encryption [Jaegeuk Kim]
-340fa0f2 sm6150-common: Use the new volume metadata encryption method [Arian]
-3f86370e sm6150-common: rootdir: Remove vbmeta_system from fstab [raghavt20]
-6dcaec20 sm6150-common: rootdir: Set no_sehash_xattr on /mnt/vendor/persist [LuK1337]
-2aa86ce1 sm6150-common: rootdir: Check persist [Arian]
-09d47b9a sm6150-common: rootdir: Drop zram from fstab.default and fstab.emmc [Arian]
-b974fd5d sm6150-common: rootdir: Add odm to fstab [Arian]
-03976511 sm6150-common: rootdir: Import dynamic non-ab fstabs from LA.UM.9.1.r1-13500-SMxxx0.QSSI13.0 [Arian]
-85266a3f sm6150-common: rootdir: Don't specify fstab path unnecessarily [Arian]
-6de01435 sm6150-common: Fix IMS symlink as per dynamic partitions [Debayan Kar]
-a06edd35 sm6150-comomn: Enable metadata uses flag [Arvind Kumar]
-610b65fd sm6150-common: sepolicy: Label cust, system and vendor block devices as system_block_device [Arian]
-38cae3f2 sm6150-common: Build and enable fastbootd [Alessandro Astone]
-39107fa4 sm6150-common: Commonize dynamic partitions [Arian]
-0b570f9a sm6150-common: Move more RIL properties to vendor [Arian]
-59a08277 sm6150-common: Move default network property to vendor partition [Jayachandran C]
-9105ae0e sm6150-common: Drop unused RIL properties [Arian]
-b4283e91 Revert "sm6150-common: Force restorecon for /mnt/vendor/persist" [Arian]
-7b94e9bf sm6150-common: rootdir: Set up fingerprint nodes for phoenix. [Gagan Malvi]
-d69d1021 Revert "sm6150-common: parts: Enable doze_status on screen off" [danielml]
-29f446dc sm6150-common: sepolicy: Rename sys.panel.display to vendor.panel.display [danielml]
-522ccd1e sm6150-common: sepolicy: Drop camera.sensor* properties [Sebastiano Barezzi]
-fa6e7626 sm6150-common: sepolicy: Bringup property_contexts for Android 13 [Sebastiano Barezzi]
-8659e3d0 sm6150-common: sepolicy: Remove no longer existing properties [danielml]
-83ef2f9c sm6150-common: Add back ro.vendor.extension_library definition [Weikai Kong]
-5e25ab1d sm6150-common: libqti-perfd-client: Move to C [Sebastiano Barezzi]
-e627953e sm6150-common: libqti-perfd-client: return a dummy value [Chenyang Zhong]
-0c1107cb sm6150-common: libqti-perfd-client: Remove namespace declaration [Bruno Martins]
-9d0ba10e sm6150-common: Create dummy libqti-perfd-client [Lucchetto]
-50cc8f5a sm6150-common: overlay: Enable multiple vibration strength levels support [Michael Bestas]
-48cae664 sm6150-common: sepolicy: Label fpc wakeup node [basamaryan]
-e847ac3b sm6150-common: Drop vestigial FM board-flags [Nolen Johnson]
-cba84b83 sm6150-common: Remove max ZRAM compression streams setting [Georg Veichtlbauer]
-88b69be3 sm6150-common: init: Don't mount TraceFS twice. [Alexander Koskovich]
-a42a21bb sm6150-common: overlay: Drop MMS user agent overlays [SebaUbuntu]
-d3815dc9 sm6150-common: overlay: Don't pin camera app in memory [Danny Lin]
-65f33496 sm6150-common: overlay: Set preferred refresh rate on keyguard to 60 [Arian]
-dbdb70ac sm6150-common: Disable Skia tracing by default [Jun Wang]
-87320fdb sm6150-common: Disable continuous transaction tracing on all build types [SamarV-121]
-0bd5d02b sm6150-common: Enable GL comp backpressure [Ady Abraham]
-0b9591f8 sm6150-common: Remove obsolete debug.sf.disable_backpressure [SamarV-121]
-e6630bae sm6150-common: Disable SF client composition cache [Alex Sarraf]
-904d0520 sm6150-common: Disable EGL image tracking [Danny Lin]
-be8d0f02 sm6150-common: Don't latch unsignal buffers [Midas Chien]
-bb60b16e sm6150-common: Uprev bluetooth audio HIDL impl to 2.1 [Sebastiano Barezzi]
-b2babf01 sm6150-common: Make trust use dwc3 usb_data_enabled [LuK1337]
-
-* device/xiaomi/sweet
-885a5d0 Revert "sweet: Add headphone button jack keylayout" [basamaryan]
-
-* hardware/qcom-caf/common
-2705439 common: Add QTI vpp 1.1-1.4 to prebuilt HIDL interfaces [Arian]
-
-* kernel/qcom/sm8150
-6c90e6ef25587 ext4: Add no_sehash_xattr mount option [LuK1337]
-dbcb1743fb60d BACKPORT: ext4: add handling for extended mount options [Harshad Shirwadkar]
+760cd1ad sm6150-common: Build Lineage Health HAL [Michael Bestas]
+99b0fe1f sm6150-common: ueventd: Remove all permissions from /sys/devices/soc0/serial_number [Michael Bestas]
+62eb68fc sm6150-common: Implement xtra-daemon control via property [Michael Bestas]
 
 * kernel/xiaomi/sm6150
-1623293c08a0d Merge ../../qcom/sm8150 into HEAD [Arian]
-6c90e6ef25587 ext4: Add no_sehash_xattr mount option [LuK1337]
-dbcb1743fb60d BACKPORT: ext4: add handling for extended mount options [Harshad Shirwadkar]
-fdc8805e3b1b8 fixup! ARM64: configs: sdmsteppe: Enable wireguard [Arian]
-ac4e20e22b00a ARM64: configs: sdmsteppe: Enable CONFIG_INITRAMFS_IGNORE_SKIP_FLAG [Sebastiano Barezzi]
-909d3bac1d6f5 init: Add CONFIG_INITRAMFS_IGNORE_SKIP_FLAG [Sebastiano Barezzi]
-731398d3d6eaa ARM64: dts: qcom: xiaomi: Move all devices to second stage init [Sebastiano Barezzi]
-40d9756135f70 drivers: input: fts_521: Report fp_state to sysfs [Henrique Pereira]
-118779fd08367 drivers: camera: Lock the cci_dev mutex before doing cci reads/writes [danielml]
-514705b5b35eb drivers: camera: cam_csiphy: Import Xiaomi's csiphy_3ph_v1_2_reg for sweet [danielml]
-e90fe3650a0cd ARM64: dts: qcom: xiaomi: sweet: Update the HBM commands from MIUI 14.0.2.0 [danielml]
-ec193d39acfbf Revert "input: fingerprint: fpc_tee: Undefine FPC_DRM_INTERFACE_WA" [basamaryan]
-80800b6b5db7f Merge branch 'lineage-20' of github.com:LineageOS/android_kernel_qcom_sm8150 into HEAD [Arian]
-
-* lineage/wiki
-30eca1e8 wiki: devices: Revive davinci [Arian]
-
-* packages/apps/DeskClock
-576768082 DeskClock: Integrate ScreensaverSettings better with Settings [Michael W]
-2016f0343 DeskClock: Fix wrong screensaver clock style being displayed [Michael W]
-c3763b44a DeskClock: Another round of cleanups [Michael W]
-6461b8ee7 Fixed warning: 'invalidate(Int, Int, Int, Int): Unit' is deprecated. Deprecated in Java [Ryan O'Leary]
-
-* packages/apps/Eleven
-12a099c Eleven: Rest of today's cleanup [Michael W]
-57dd974 fixup! Eleven: Replace ViewPager with ViewPager2 [Michael W]
-4676d8c Eleven: Replace deprecated setTargetFragment() [Michael W]
-f6cc073 Eleven: Replace ViewPager with ViewPager2 [Michael W]
-7bc1a16 Eleven: Replace some AsyncTasks [Michael W]
-fbec428 Eleven: Show empty message after clearing all [Michael W]
-9563ef1 Eleven: ImageCache: Also catch IllegalArgumentException [Michael W]
+e35af61d435c8 arm64: configs: davinci: Use HWC version as SKU [Arian]
+75d4c6786f9a0 proc: Add option to use HWC value as SKU version [Arian]
+0ccbb5e31da1d Merge commit 'refs/changes/22/358122/2' of https://github.com/LineageOS/android_kernel_qcom_sm8150 into HEAD [Arian]
 
 ====================
-     2023-06-03    
+     2023-07-06    
 ====================
 ====================
-     2023-06-02    
+     2023-07-05    
 ====================
-* device/lineage/sepolicy
-cb32675 sepolicy: Move rw_dir_file/create_dir_file macros to public [LuK1337]
-
-* lineage/mirror
-8d5021d Updated aosp-minimal to 02-Jun-2023 12:01 UTC [Tim Schumacher]
+* kernel/xiaomi/sm8350
+2da618c42b36 power: supply: qti_battery_charger: Move xiaomi adapter definitions to header [TheStrechh]
+dd5b5d246484 fixup! power: supply: qti_battery_charger: Return charge counter in uAh [TheStrechh]
 
 ====================
-     2023-06-01    
+     2023-07-04    
 ====================
-* device/xiaomi/sweet
-9a6491a sweet: Drop BUILD_BROKEN_DUP_RULES [basamaryan]
-140b13e sweet: Add lineage dependencies [Arian]
-4b21fbe sweet: Go away Megvii [Sebastiano Barezzi]
-e8b0ea0 sweet: Switch to kernel config fragment [Arian]
-7d09356 sweet: Override doze mode support [danielml]
-c1b697f sweet: sepolicy: Address more battery secret denials [Adithya R]
-7c4b20b sweet: sepolicy: Label elliptic ultrasound property [Zinadin Zidan]
-f20c87a sweet: sepolicy: Bring up property contexts for android 13 [basamaryan]
-a878240 sweet: Relax timers for automatic refresh rate switching [Park Ju Hyung]
-a50f2c8 sweet: Enable content detection for refresh rate switching [AdarshGrewal]
-778a6b6 sweet: overlay: Configure RefreshRate brightness thresholds [althafvly]
-96e11b1 sweet: Reduce the list of pinned acdb files [daniml3]
-0e30c90 sweet: Import decommonized liboemcrypto [basamaryan]
-0f6d083 sweet: audio: Fix mic volume [Pranav Vashi]
-ad44892 sweet: Update mixer_paths_idp.xml from MIUI V14.0.2.0.TKFMIXM [basamaryan]
-ceb7742 sweet: init: Update fingerprints [basamaryan]
-b9d56fb sweet: Update the s5kgw3 camera libraries from MIUI V14.0.1.0.TKFINXM [basamaryan]
-6624825 sweet: Update blobs from MIUI V14.0.2.0.TKFMIXM [basamaryan]
-77afd4a sweet: Add spec info about Redmi Note 10 Pro/Pro Max [basamaryan]
-1322779 fixup! sweet: overlay: Set physical power button and fps location [AdarshGrewal]
-400d8f9 sweet: overlay: Adjust status bar padding [basamaryan]
-cc02dda sweet: Update kernel defconfig [basamaryan]
-7a7d5a6 sweet: Drop redundant fluence properties [basamaryan]
-
-* frameworks/base
-1734d454b048 Automatic translation import [LineageOS Infra]
-
-* lineage-sdk
-cd2c9124 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Aperture
-b09c4d5 Automatic translation import [LineageOS Infra]
-
-* packages/apps/AudioFX
-7ee2d3e Automatic translation import [LineageOS Infra]
-
-* packages/apps/Backgrounds
-1ae77fc Automatic translation import [LineageOS Infra]
-
-* packages/apps/Camera2
-ecb7ba868 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Contacts
-919d3b0ee Automatic translation import [LineageOS Infra]
-
-* packages/apps/DeskClock
-5ca861ba2 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Dialer
-c9a2adef4 Automatic translation import [LineageOS Infra]
-
-* packages/apps/DocumentsUI
-4573e013d Automatic translation import [LineageOS Infra]
-
-* packages/apps/Eleven
-2c33621 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Etar
-525bcdab Automatic translation import [LineageOS Infra]
-
-* packages/apps/FlipFlap
-0ede0d1 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Jelly
-d34afa9 Automatic translation import [LineageOS Infra]
-
-* packages/apps/LineageParts
-72fa10b Automatic translation import [LineageOS Infra]
-
-* packages/apps/Messaging
-4d715a4 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Profiles
-863fb59 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Recorder
-c9c065c Automatic translation import [LineageOS Infra]
-
-* packages/apps/Settings
-57eedae526 Automatic translation import [LineageOS Infra]
-
-* packages/apps/SetupWizard
-8813787 Automatic translation import [LineageOS Infra]
-
-* packages/apps/ThemePicker
-13e7289f Automatic translation import [LineageOS Infra]
-
-* packages/apps/Trebuchet
-5f84630f06 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Updater
-0b5e925 Automatic translation import [LineageOS Infra]
-
-* packages/inputmethods/LatinIME
-cf8040894 Automatic translation import [LineageOS Infra]
-
-* packages/providers/DownloadProvider
-dedc5768 Automatic translation import [LineageOS Infra]
-
-* packages/resources/devicesettings
-2d7ff42 Automatic translation import [LineageOS Infra]
-
-* packages/services/Mms
-e0c738d Automatic translation import [LineageOS Infra]
-
-* vendor/crowdin
-b37f283 Automatic translation import [LineageOS Infra]
-
-* vendor/qcom/opensource/fm-commonsys
-ca59183 Automatic translation import [LineageOS Infra]
-
 ====================
-     2023-05-31    
+     2023-07-03    
 ====================
-* device/lineage/sepolicy
-f89399c qcom: Sort sepolicy.mk m4defs [Michael Bestas]
-650a44a common: Label ro.vendor.fm.use_audio_session [Michael Bestas]
-9d955c9 sepolicy: Introduce rw_dir_file()/create_dir_file() macros [LuK1337]
-8c84475 qcom: Drop untrusted app policies [Han Wang]
-
-* device/qcom/sepolicy_vndr-legacy-um
-6bf88aac legacy: Guard debugfs rules [Michael Bestas]
-
-* lineage/mirror
-176d0c9 Updated aosp-minimal to 31-May-2023 12:01 UTC [Tim Schumacher]
-
-* lineage/wiki
-822044f8 wiki: Make sure that "#id" is at the end of device_link [Outvi V]
-
-* vendor/partner_modules
-3eb786c modules: Remove unrecognized blueprints [Nolen Johnson]
-
 ====================
-     2023-05-30    
+     2023-07-02    
 ====================
-* vendor/partner_modules
-70c9ff4 Import from mainline_t_2023_may_t1006563.zip [El Goog]
-
 ====================
-     2023-05-29    
+     2023-07-01    
 ====================
-* packages/apps/Gallery2
-28a7edf3a Gallery2: Switch to MediaStore.ACTION_REVIEW [LuK1337]
-
