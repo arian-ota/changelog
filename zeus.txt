@@ -1,91 +1,195 @@
 ====================
-     2023-06-25    
-====================
-* device/xiaomi/sm8450-common
-3af6cfbf3 fixup! TMP hello zeus [Arian]
-42d6b092d sm8450-common: Import touch_report service [Arian]
-8d5e03969 Revert "sm8450-common: Import touchfeature" [Arian]
-1b9e8617a sm8450-common: sepolicy: Add new fingerprint rules [Arian]
-3e96d83b2 sm8450-common: sepolicy: Add policy for touch_report [Arian]
-07accbd28 sm8450-common: hidl: Add mi fx tunnel service to hidl manifest [Arian]
-
-* device/xiaomi/zeus
-e4b7be7 zeus: Enable 60 fps video in aperture [Arian]
-fcea68b zeus: overlay: Configure aux camera for Aperture [LuK1337]
-73f71d5 zeus: Pin fingeprint blobs from V13.0.10.0.SLBEUXM [Arian]
-
-====================
-     2023-06-24    
-====================
-====================
-     2023-06-23    
-====================
-====================
-     2023-06-22    
-====================
-====================
-     2023-06-21    
-====================
-* frameworks/base
-96b12f340bbd fixup! SystemUI: Make the volume dialog expandable [Sebastiano Barezzi]
-
-====================
-     2023-06-20    
+     2023-08-19    
 ====================
 * build/make
-4e8a20afc Replace old kernel header deps with device_kernel_headers when kernel platform is used [Arian]
-
-* build/soong
-64f50a103 Replace qti_kernel_headers with device_kernel_headers [Arian]
-dbf787ceb Add perl to allowed host tools [Arian]
-
-* device/xiaomi/zeus
-b5ee541 zeus: Import missing fingerprint blob [Arian]
+c8e4873db Replace old kernel header deps with device_kernel_headers when kernel platform is used [Arian]
 
 * frameworks/av
-2893ec9213 SessionConfigurationUtils: Allow privileged camera apps to create raw streams for raw capable cameras [Arian]
+55235fc23a SessionConfigurationUtils: Allow privileged camera apps to create raw streams for raw capable cameras [Arian]
+
+* frameworks/base
+7ed29e2a8ac7 gmscompat: also spoof props for samsung/sec apps [Francescodario Cuzzocrea]
+b2d12f474040 gmscompat: Make CTS/Play Integrity pass again [Dyneteve]
+befb38f748c1 gmscompat: Use Nexus 6P fingerprint for CTS/Integrity [Dyneteve]
+26a5e2e893ce gmscompat: Apply the SafetyNet workaround to Play Store aswell [Dyneteve]
+4499697be68c Limit SafetyNet workarounds to unstable GMS process [Danny Lin]
+49c4ba55b05a AttestationHooks: Set shipping level to 32 for devices >=33 [Anirudh Gupta]
+becfda2ee1c6 keystore: Block key attestation for SafetyNet [Danny Lin]
+3f5545efcea9 Alter model name to avoid SafetyNet HW attestation enforcement [Danny Lin]
+2e3e8b5ca897 Camera: Expose aux camera if packagename is null [wbs306]
 
 * frameworks/opt/telephony
-8f4c96f88b Enable vendor Telephony plugin: MSIM Changes [Sneh Bansal]
-94378b7925 Skip sending duplicate requests [Sandeep Gutta]
-340c24e155 Start using inject framework support [Sandeep Gutta]
-8c4f684279 Reset data activity after traffic status poll stops [Mengjun Leng]
-9f9506b643 Make a few  members of DSM overridable and accessible [Mengjun Leng]
-6ee56ccb42 Add provision to override CellularNetworkService [Sneh Bansal]
-243ea2f2df Disable proguard for CellularNetworkServiceProvider [Avinash Nalluri]
+b762fd8772 Enable vendor Telephony plugin: MSIM Changes [Sneh Bansal]
+098adba74c Skip sending duplicate requests [Sandeep Gutta]
+374647efd3 Start using inject framework support [Sandeep Gutta]
+c5ed92091c Reset data activity after traffic status poll stops [Mengjun Leng]
+b51e3c87d9 Make a few  members of DSM overridable and accessible [Mengjun Leng]
+fcfa142988 Add provision to override CellularNetworkService [Sneh Bansal]
+c1bd9dcd85 Disable proguard for CellularNetworkServiceProvider [Avinash Nalluri]
 
 * hardware/interfaces
-18991dd0e frameworks: Update HIDL overrideFormat from HAL [Abhijit Trivedi]
+64b43974d frameworks: Update HIDL overrideFormat from HAL [Abhijit Trivedi]
+
+* hardware/qcom-caf/sm8450/display
+1159457b7c Revert "display: Remove dependencies of display specific kernel headers" [Arian]
 
 * hardware/xiaomi
-0aa8cd7 vibrator: Don't support compose effects if primitve_duration node does not exist [Arian]
-c02ef0f vibrator: effect: Read vibration fifo data from vendor [Arian]
-aaf0211 vibrator: Hook USE_EFFECT_STREAM up [Arian]
-5b52fa7 vibrator: Add support for aw8697_haptic input device [Arian]
-7b03547 vibrator: Add support for aw8624_haptic input device [Arian]
-a852d17 vibrator: aidl: Simplify soc check and drop prop dep [Pig]
-0c37ac1 vibrator: Rename to avoid conflicts [Arian]
-8de30ec vibrator: Import from LA.VENDOR.13.2.0.r1-15400-KAILUA.QSSI14.0 [Arian]
-5c913c0 sensors: Handle fod press status without coordinates [Arian]
-4556b13 sensors: Add udfps long press sensor [Cosmin Tanislav]
-f8b3066 sensors: Fix locking around setOperationMode and activate [Cosmin Tanislav]
-4a8cadc sensors: Move one shot sensor out of main class [Cosmin Tanislav]
-cd75359 sensors: Make sensor set mode operation function virtual [Cosmin Tanislav]
-b468ea8 sensors: Make sensor flush function virtual [Cosmin Tanislav]
-6a74885 sensors: Make sensor run function virtual [Cosmin Tanislav]
-47ae488 sensors: Make sensor batch function virtual [Cosmin Tanislav]
-f50ad2e Add dummy sensors sub HAL [Cosmin Tanislav]
+6a37bd6 sensors: Handle fod press status without coordinates [Arian]
+e1842c5 sensors: Add udfps long press sensor [Cosmin Tanislav]
+bc26006 sensors: Fix locking around setOperationMode and activate [Cosmin Tanislav]
+8cfc557 sensors: Move one shot sensor out of main class [Cosmin Tanislav]
+eb9e3ca sensors: Make sensor set mode operation function virtual [Cosmin Tanislav]
+aac718a sensors: Make sensor flush function virtual [Cosmin Tanislav]
+fd61ba5 sensors: Make sensor run function virtual [Cosmin Tanislav]
+0fc9315 sensors: Make sensor batch function virtual [Cosmin Tanislav]
+2075c3e Add dummy sensors sub HAL [Cosmin Tanislav]
 
 * lineage/mirror
-4a05e3b Updated lineage-minimal to 19-Jun-2023 12:01 UTC [Tim Schumacher]
+39f79b8 Updated aosp-minimal to 18-Aug-2023 12:01 UTC [Tim Schumacher]
 
 * vendor/lineage
-5c46358f Allow to opt out from lineage kernel build [Arian]
-9748294a adb insecure by default [Scott Mertz]
+a7c7b77c Allow to opt out from lineage kernel build [Arian]
+
+* vendor/qcom/proprietary/audio-devicetree
+7f0d68e Add support for cupid and zeus [Arian]
+
+* vendor/qcom/proprietary/camera-devicetree
+1e8c506 Add qcom,csiphy-v2.1.0-xiaomi-l2 for zeus [Arian]
+8dc6f19 Add support for cupid and zeus [Arian]
+
+* vendor/qcom/proprietary/devicetree
+996e0e266f0e Add support for cupid and zeus [Arian]
+
+* vendor/qcom/proprietary/display-devicetree
+8a0ffd61 Add support for cupid and zeus [Arian]
 
 ====================
-     2023-06-19    
+     2023-08-18    
 ====================
 * lineage/hudson
-307cbfe Regenerate device dependency mappings [LineageOS Infra]
+761e197 *picks up a lyre* [Ramii Ahmed]
+d697282 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+ff678d1 Updated aosp-minimal to 17-Aug-2023 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+c88845ee wiki: Promote apollon to 20 [Ramii Ahmed]
+
+====================
+     2023-08-17    
+====================
+* bootable/recovery
+e5c3f128 recovery: Bypass reboot prompt for sideload-auto-reboot [Joseph Annareddy]
+
+* lineage/hudson
+dcf0f96 First Mars Landing Trip [FlowerSea0208]
+
+* lineage/mirror
+b1b2dec Updated aosp-minimal to 16-Aug-2023 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+3004a3a6 wiki: mars: Remove screen density [LuK1337]
+25f4033d wiki: devices: Add Xiaomi Mi 11 Pro (mars) [FlowerSea0208]
+39c9412f wiki: Implement device filters [LuK1337]
+
+* packages/modules/Bluetooth
+01681e8cc8 btm: allow BTM_VSC_CHIP_CAPABILITY_RSP_LEN_M_RELEASE to be adjustable [Geel]
+
+* vendor/firmware
+929dbd1 apollon: initial import [Ramii Ahmed]
+
+====================
+     2023-08-16    
+====================
+* frameworks/base
+774dd86630e0 Automatic translation import [LineageOS Infra]
+
+* kernel/xiaomi/sm8350
+4b5f30dffe32 power: supply: qti_battery_charger: change the measuring unit of TIME_TO_FULL_AVG property [FlowerSea0208]
+
+* lineage/hudson
+92d7d7a hudson: Promote miatoll to 20 [Alexander Winkowski]
+1a32b9e Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/wiki
+08e8ce59 wiki: Calculate display density automatically [LuK1337]
+757a75d4 wiki: Correct screen size example in adding_device.md [LuK1337]
+8b809755 wiki: Promote miatoll to 20 [Alexander Winkowski]
+e8628784 wiki: devices: Only provide screen size in inches [Michael W]
+
+* packages/apps/AudioFX
+46d2a90 Automatic translation import [LineageOS Infra]
+
+* packages/apps/DocumentsUI
+2151e4d3a Automatic translation import [LineageOS Infra]
+
+* packages/apps/Etar
+ae54f856 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Jelly
+a9e129c Automatic translation import [LineageOS Infra]
+
+* packages/apps/LineageParts
+1016bed Automatic translation import [LineageOS Infra]
+
+* packages/apps/Settings
+3d46c19f94 Automatic translation import [LineageOS Infra]
+
+* packages/apps/SetupWizard
+6ab8d24 Automatic translation import [LineageOS Infra]
+
+* packages/resources/devicesettings
+9e32847 Automatic translation import [LineageOS Infra]
+
+* vendor/crowdin
+bd62f78 Automatic translation import [LineageOS Infra]
+
+* vendor/firmware
+51c5944 mars: Import firmware from V14.0.4.0.TKAMIXM [Flower sea]
+
+====================
+     2023-08-15    
+====================
+* frameworks/opt/telephony
+8c4c75ac97 RadioMessagingProxy: Fix sending CDMA IMS SMS [Paul Keith]
+
+* lineage/hudson
+eab179c hudson: Promote Zuk Z2 to 20 [Davide Garberi]
+
+* lineage/wiki
+5db10b44 wiki: Fix wording on devices page [razorloves]
+
+* packages/apps/TvSettings
+083d46871 fixup! HDMI CEC: Add volume preference [Aaron Kling]
+
+====================
+     2023-08-14    
+====================
+* hardware/qcom-caf/thermal
+15fa387 thermal_hal: Update skin temperature threshold for sdm845 [LuK1337]
+
+* lineage/hudson
+745520d Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+a50d5f0 Updated to 13-Aug-2023 13:02 UTC [Kevin F. Haggerty]
+a1b3be1 Updated to 13-Aug-2023 12:38 UTC [Kevin F. Haggerty]
+3653be0 Updated lineage-minimal to 13-Aug-2023 12:01 UTC [Tim Schumacher]
+
+====================
+     2023-08-13    
+====================
+* lineage/hudson
+571555f Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+ad179a2 Updated to 12-Aug-2023 15:30 UTC [Kevin F. Haggerty]
+
+* lineage/wiki
+07063f2b wiki: Update z2_plus unlock instructions [Davide Garberi]
+73977986 wiki: Promote Zuk Z2 to 20 [Davide Garberi]
+
+* vendor/firmware
+d4b5bb6 felix: TQ3C.230805.001.A3 [Michael Bestas]
 
