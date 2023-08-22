@@ -1,0 +1,281 @@
+====================
+     2023-08-22    
+====================
+* device/xiaomi/davinci
+eb03f65 davinci: Drop duplicates from proprietary-files.txt [basamaryan]
+
+* device/xiaomi/sm6150-common
+5d9b716f9 sm6150-common: livedisplay: Make supported interfaces configurable [Arian]
+87ab8162d sm6150-common: Assert the goodix ts on sweet [danielml]
+e8a34b098 sm6150-common: Use FUSE passthrough by default [Alessio Balsini]
+8563c5735 sm6150-common: Enable casefolding support on userdata [Daniel Rosenberg]
+b74503cd6 sm6150-common: Drop duplicated vendor.qti.ims.rcsconfig entry in proprietary-files.txt [basamaryan]
+10425fe8d sm6150-common: rootdir: Add metadata to recovery.fstab [Arian]
+
+* device/xiaomi/sm8350-common
+c823e71 sm8350-common: Update blobs to haydn V14.0.6.0.TKKMIXM [Giovanni Ricca]
+2ed6166 fixup! sm8350-common: Configure common Powershare HIDL [Arian]
+b042c89 sm8350-common: Include vendor/debugfs.config [LuK1337]
+dac515e sm8350-common: Set PRODUCT_SET_DEBUGFS_RESTRICTIONS [Hridya Valsaraju]
+22f550f sm8350-common: Build Lineage Health HAL [Michael Bestas]
+547958b fixup! sm8350-common: Update display blobs from Sony Xperia 1 III (XQ-BC72) 61.2.A.0.410 [Giovanni Ricca]
+ba4dd1f sm8350-common: ueventd: Remove all permissions from /sys/devices/soc0/serial_number [Michael Bestas]
+3017c24 sm8350-common: Implement xtra-daemon control via property [Michael Bestas]
+a82c5a3 sm8350-common: gps: Remove all Wno-error flags [Michael Bestas]
+77d363c sm8350-common: gps: Implement list empty error code for msg_q [Albert I]
+356462e sm8350-common: gps: Address logical-op-parentheses warning [Albert I]
+e05f48f sm8350-common: gps: Reorder initializations list to satisfy warnings [Albert I]
+c3b3bc2 sm8350-common: gps: Resolve unused parameter warnings [Michael Bestas]
+65180b6 sm8350-common: Remove unneeded NFC package [Georg Veichtlbauer]
+1967ec2 sm8350-common: gpt-utils: Check ufs device first before checking partition names [Luofan Chen]
+9dae849 fixup! gpt-utils: Update PTN_SWAP_LIST and handle multiimg(oem/qti) [Bruno Martins]
+
+* kernel/qcom/sm8150
+347877e176016 Revert "mm: backing-dev: Take a reference to the bdi in use to prevent UAF" [Arian]
+
+* kernel/xiaomi/sm6150
+7c208b64343dd Merge branch 'lineage-20' of github.com:LineageOS/android_kernel_qcom_sm8150 into HEAD [Arian]
+a34d3e23e26c7 arm64: kernel: Fix mismerge in apply_ssbd [Alexander Winkowski]
+383e03968ba71 Revert "ANDROID: HACK: arm64, LLVMLinux: replace prfm instruction in spin_lock_prefetch()" [Danny Lin]
+f4485e77ff851 Revert "LLVMLINUX: DO-NOT-UPSTREAM arm64, LLVMLinux: prfm" [Danny Lin]
+8c602d3cb0a0a UPSTREAM: mm: fix unexpected zeroed page mapping with zram swap [Minchan Kim]
+e71d0c861f5cb thermal: fix lockdep splat from qcom driver [Miguel de Dios]
+2d77eff5cfd01 drivers: cpuidle: lpm-levels: Correct missing list initialize [Maria Yu]
+a1c63b08672ac ANDROID: fuse: Allocate zeroed memory for canonical path [Biao Li]
+2bdd1d820a649 drivers: input: fts_521: Report fp_state to sysfs [Henrique Pereira]
+405c271fbc367 drivers: touchscreen: gt9896: Create a is_goodix_ts param [danielml]
+6702a758ea118 drivers: camera: Lock the cci_dev mutex before doing cci reads/writes [danielml]
+c228b1212b51f drivers: camera: cam_csiphy: Import Xiaomi's csiphy_3ph_v1_2_reg for sweet [danielml]
+e09b425a78a2b ARM64: dts: qcom: xiaomi: sweet: Update the HBM commands from MIUI 14.0.2.0 [danielml]
+6a0ab00ca11df Revert "input: fingerprint: fpc_tee: Undefine FPC_DRM_INTERFACE_WA" [basamaryan]
+9f51f2cb562cb ARM64: configs: sdmsteppe: Remove sdcardfs [Daniel Rosenberg]
+1ac475cc6c9f8 ARM64: configs: sdmsteppe: Enable Unicode [Daniel Rosenberg]
+59de680d4acde ANDROID: fs/fuse: Keep FUSE file times consistent with lower file [Alessio Balsini]
+2d8dc9e5ed5a3 UPSTREAM: fuse: fix matching of FUSE_DEV_IOC_CLONE command [Alessio Balsini]
+70bb24095b506 ANDROID: fuse/passthrough: API V2 with __u32 open argument [Alessio Balsini]
+347877e176016 Revert "mm: backing-dev: Take a reference to the bdi in use to prevent UAF" [Arian]
+da97f1e07f34d FROMLIST: fuse: Introduce passthrough for mmap [Alessio Balsini]
+0a8a19d9c777d FROMLIST: fuse: Use daemon creds in passthrough mode [Alessio Balsini]
+936d3bd8246d8 FROMLIST: fuse: Handle asynchronous read and write in passthrough [Alessio Balsini]
+4a8398f169b78 FROMLIST: fuse: Introduce synchronous read and write for passthrough [Alessio Balsini]
+096f9a02f677a FROMLIST: fuse: Passthrough initialization and release [Alessio Balsini]
+2b291de8f992e FROMLIST: fuse: Definitions and ioctl for passthrough [Alessio Balsini]
+07e24b7e68afe FROMLIST: fuse: 32-bit user space ioctl compat for fuse device [Alessio Balsini]
+d7839d83b1128 FROMLIST: fs: Generic function to convert iocb to rw flags [Alessio Balsini]
+d902f78a0a5e0 BACKPORT: fs: align IOCB_* flags with RWF_* flags [Alessio Balsini]
+467f8d31f2b96 UPSTREAM: fs: add RWF_APPEND [Alessio Balsini]
+
+* kernel/xiaomi/sm8350
+4309de83550d arm64: dts: lahaina: Drop 90Hz timings [FlowerSea0208]
+83d0d77bd9fe techpack: camera: ois: Update from odin-r-oss [Flower sea]
+1b7949b1010e fixup! techpack: camera: Add wait for macro camera on K9E and M20 [Giovanni Ricca]
+4ae98a95d286 Revert "arm64: configs: xiaomi: Enable mmhardware detection for redwood" [Giovanni Ricca]
+5b1c510c856e fixup! misc: Import mmhardware detection [Giovanni Ricca]
+
+* lineage/hudson
+a8fbf98 From Anchiano to Clos Lucé... [Arian]
+
+* vendor/xiaomi/sm8350-common
+862e3a9 sm8350-common: Update from haydn V14.0.6.0.TKKMIXM [AdarshGrewal]
+
+====================
+     2023-08-21    
+====================
+* device/xiaomi/davinci
+da9befe davinci: Set hardware revision property [Arian]
+41f7bfd davinci: Replace BTM_DEF_LOCAL_NAME with a sysprop [Arian]
+2678e09 davinci: Add RROs for setting correct device name and hotspot ssid [AdarshGrewal]
+fc3b1b4 davinci: overlay: Remove Xiaomi from default hotspot ssid [Arian]
+18cdc18 davinci: Set stock TARGET_PRODUCT and PRODUCT_SYSTEM_NAME [Arian]
+93c2d94 davinci: Set build fingerprint to global miui one [Arian]
+4696e2d davinci: Get rid of libinit [Arian]
+159120d davinci: Move sku version setup to kernel [Arian]
+
+* device/xiaomi/sm6150-common
+c919ac797 sm6150-common: rootdir: Set no_sehash_xattr on /mnt/vendor/persist [LuK1337]
+630f53930 sm6150-common: Build Lineage Health HAL [Michael Bestas]
+4bc7f3e65 sm6150-common: ueventd: Remove all permissions from /sys/devices/soc0/serial_number [Michael Bestas]
+07d61f185 sm6150-common: Implement xtra-daemon control via property [Michael Bestas]
+0fb6b30d1 sm6150-common: gps: Remove all Wno-error flags [Michael Bestas]
+9a20a6514 sm6150-common: gps: Implement list empty error code for msg_q [Albert I]
+452ebe1a6 sm6150-common: gps: Address logical-op-parentheses warning [Albert I]
+3ac812ed0 sm6150-common: gps: Reorder initializations list to satisfy warnings [Albert I]
+15a7ec7e3 sm6150-common: gps: Resolve unused parameter warnings [Michael Bestas]
+6d7b2f198 sm6150-common: overlay-lineage: Add reboot to fastbootd [LuK1337]
+cc633a099 sm6150-common: sepolicy: Label /dev/block/mmcblk0p1 as sdcard block device [danielml]
+cae03c13c sm6150-common: Fix BOARD_FLASH_BLOCK_SIZE [LuK1337]
+7ee23154d sm6150-common: Commonize flash block size, cache and userdata filesystem types [Arian]
+1fc4297c0 sm6150-common: Use FBE v2 [Arian]
+a07e5e276 sm6150-common: Support adoptable storage encryption [Jaegeuk Kim]
+7524cc06e sm6150-common: Use the new volume metadata encryption method [Arian]
+8a68a965a sm6150-common: rootdir: Add sdcard1 and usbotg mount to recovery.fstab [basamaryan]
+43a2d997b sm6150-common: rootdir: Remove vbmeta_system from fstab [raghavt20]
+e31a6e10d sm6150-common: rootdir: Check persist [Arian]
+21d67b2b7 sm6150-common: rootdir: Drop zram from fstab.default and fstab.emmc [Arian]
+650cb7d95 sm6150-common: rootdir: Add odm to fstab [Arian]
+da5988598 sm6150-common: rootdir: Import dynamic non-ab fstabs from LA.UM.9.1.r1-13500-SMxxx0.QSSI13.0 [Arian]
+dc321889f sm6150-common: rootdir: Don't specify fstab path unnecessarily [Arian]
+a8e2b710c sm6150-common: Fix IMS symlink as per dynamic partitions [Debayan Kar]
+4dd672514 sm6150-comomn: Enable metadata uses flag [Arvind Kumar]
+ffd0ded68 sm6150-common: sepolicy: Label cust, system and vendor block devices as system_block_device [Arian]
+187d4ed71 sm6150-common: Build and enable fastbootd [Alessandro Astone]
+e78669021 sm6150-common: Commonize dynamic partitions [Arian]
+dedce30a1 sm6150-common: Remove deprecated TARGET_KERNEL_APPEND_DTB [Sam Mortimer]
+
+* kernel/xiaomi/sm6150
+59ae6fa57ace7 arm64: configs: davinci: Use HWC version as product SKU [Arian]
+c15deef92dc3a proc: Add option to use HWC value as SKU and product SKU [Arian]
+b7e8f94456f07 ext4: Add no_sehash_xattr mount option [LuK1337]
+912a3b30abaa4 BACKPORT: ext4: add handling for extended mount options [Harshad Shirwadkar]
+fc6b55585bfc6 fixup! ARM64: configs: sdmsteppe: Enable wireguard [Arian]
+2fb66e37f0800 ARM64: configs: sdmsteppe: Enable CONFIG_INITRAMFS_IGNORE_SKIP_FLAG [Sebastiano Barezzi]
+142f75245e775 init: Add CONFIG_INITRAMFS_IGNORE_SKIP_FLAG [Sebastiano Barezzi]
+2e896e0323d1b ARM64: dts: qcom: xiaomi: Move all devices to second stage init [Sebastiano Barezzi]
+074f927e9e257 Merge branch 'lineage-20' of github.com:LineageOS/android_kernel_qcom_sm8150 into HEAD [Arian]
+
+* lineage/wiki
+17197258 wiki: devices: Revive davinci [Arian]
+044d906d wiki: Unify popup open/close behavior [LuK1337]
+
+====================
+     2023-08-20    
+====================
+* device/xiaomi/cupid
+27bc12c cupid: Declare source of extracted files [Arian]
+
+* device/xiaomi/sm8450-common
+98e90f836 sm8450-common: Add hotword enrollment blobs [Arian]
+98494bf9d sm8450-common: Declare source of extracted files and set vendor spl [Arian]
+6a8fb7f63 sm8450-common: Build libvolumelistener from source [Arian]
+
+* device/xiaomi/zeus
+4b791f5 zeus: Set stock build fingerprint and description [Arian]
+7923cbf zeus: Declare source of extracted files [Arian]
+
+* lineage/mirror
+8c910aa Updated aosp-minimal to 19-Aug-2023 12:01 UTC [Tim Schumacher]
+
+* packages/apps/Aperture
+1b56acc Aperture: Remove useless no-action-bar style items from camera theme [Sebastiano Barezzi]
+6d2cd0b Aperture: Fix some Android Studio warnings [Sebastiano Barezzi]
+
+* vendor/xiaomi/cupid
+b31a678 cupid: Initial import from V14.0.4.0.TLCMIXM [Arian]
+
+* vendor/xiaomi/sm8450-common
+2033372 sm8450-common: Add hotword enrollment blobs [Arian]
+a398942 sm8450-common: Initial import from zeus V14.0.8.0.TLBMIXM [Arian]
+
+* vendor/xiaomi/zeus
+e6b6ccf zeus: Initial import from V14.0.8.0.TLBMIXM [Arian]
+
+====================
+     2023-08-19    
+====================
+* lineage/hudson
+e82ffc3 "why won't you die" [Nolen Johnson]
+
+* lineage/mirror
+39f79b8 Updated aosp-minimal to 18-Aug-2023 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+87897485 wiki: Migrate Xiaomi 8996 format_on_upgrade flag to fbe [LuK1337]
+605fc2fe devices: Promote the LG G5/G6/V20 families [Nolen Johnson]
+
+====================
+     2023-08-18    
+====================
+* lineage/hudson
+761e197 *picks up a lyre* [Ramii Ahmed]
+d697282 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+ff678d1 Updated aosp-minimal to 17-Aug-2023 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+c88845ee wiki: Promote apollon to 20 [Ramii Ahmed]
+3004a3a6 wiki: mars: Remove screen density [LuK1337]
+
+====================
+     2023-08-17    
+====================
+* bootable/recovery
+e5c3f128c recovery: Bypass reboot prompt for sideload-auto-reboot [Joseph Annareddy]
+
+* lineage/hudson
+dcf0f96 First Mars Landing Trip [FlowerSea0208]
+
+* lineage/mirror
+b1b2dec Updated aosp-minimal to 16-Aug-2023 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+25f4033d wiki: devices: Add Xiaomi Mi 11 Pro (mars) [FlowerSea0208]
+39c9412f wiki: Implement device filters [LuK1337]
+
+* packages/modules/Bluetooth
+01681e8cc8 btm: allow BTM_VSC_CHIP_CAPABILITY_RSP_LEN_M_RELEASE to be adjustable [Geel]
+
+* vendor/firmware
+929dbd1 apollon: initial import [Ramii Ahmed]
+
+====================
+     2023-08-16    
+====================
+* external/chromium-webview/prebuilt/arm
+9792d33 Update Chromium Webview arm prebuilt to 116.0.5845.92 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm64
+8760bd6 Update Chromium Webview arm64 prebuilt to 116.0.5845.92 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86
+9adf3cd Update Chromium Webview x86 prebuilt to 116.0.5845.92 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86_64
+9b1673b Update Chromium Webview x86_64 prebuilt to 116.0.5845.92 [Kevin F. Haggerty]
+
+* frameworks/base
+774dd86630e0 Automatic translation import [LineageOS Infra]
+
+* kernel/xiaomi/sm8350
+4b5f30dffe32 power: supply: qti_battery_charger: change the measuring unit of TIME_TO_FULL_AVG property [FlowerSea0208]
+
+* lineage/hudson
+92d7d7a hudson: Promote miatoll to 20 [Alexander Winkowski]
+1a32b9e Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/wiki
+08e8ce59 wiki: Calculate display density automatically [LuK1337]
+757a75d4 wiki: Correct screen size example in adding_device.md [LuK1337]
+8b809755 wiki: Promote miatoll to 20 [Alexander Winkowski]
+e8628784 wiki: devices: Only provide screen size in inches [Michael W]
+
+* packages/apps/AudioFX
+46d2a90 Automatic translation import [LineageOS Infra]
+
+* packages/apps/DocumentsUI
+2151e4d3a Automatic translation import [LineageOS Infra]
+
+* packages/apps/Etar
+ae54f856 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Jelly
+a9e129c Automatic translation import [LineageOS Infra]
+
+* packages/apps/LineageParts
+1016bed Automatic translation import [LineageOS Infra]
+
+* packages/apps/Settings
+3d46c19f94 Automatic translation import [LineageOS Infra]
+
+* packages/apps/SetupWizard
+6ab8d24 Automatic translation import [LineageOS Infra]
+
+* packages/resources/devicesettings
+9e32847 Automatic translation import [LineageOS Infra]
+
+* vendor/crowdin
+bd62f78 Automatic translation import [LineageOS Infra]
+
+* vendor/firmware
+51c5944 mars: Import firmware from V14.0.4.0.TKAMIXM [Flower sea]
+
