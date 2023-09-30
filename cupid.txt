@@ -1,130 +1,257 @@
 ====================
-     2023-07-09    
+     2023-09-30    
 ====================
+* device/xiaomi/cupid
+041f33b cupid: Decommonize camera blobs [Arian]
+
 * device/xiaomi/sm8450-common
-d5656c5cd sm8450-common: Build libchrome from source [Arian]
-e1cde1fde sm8450-common: Import missing graphics properties from zeus V14.0.7.0.TLBMIXM [Arian]
-ab6551f0f sm8450-common: udfps: Notify goodix HAL on fod_press_status changes [Arian]
+7d3c4f70b sm8450-common: Decommonize camera blobs [Arian]
+2d26a79df sm8450-common: Switch to defconfig fragments [Arian]
 
 * device/xiaomi/zeus
-0602fcc zeus: Add goodix_fod blobs too [Arian]
-c0b75ca zeus: Unpin fingerprint blobs [Arian]
-
-* packages/apps/Settings
-328f9afad1 Revert "display: Add custom screen resolution setting" [Arian]
-
-====================
-     2023-07-08    
-====================
-* build/make
-61a4f380f Replace old kernel header deps with device_kernel_headers when kernel platform is used [Arian]
-
-* build/soong
-e8e930d5c Replace qti_kernel_headers with device_kernel_headers [Arian]
-d7570bd01 Add perl to allowed host tools [Arian]
+9c28929 zeus: Decommonize camera blobs [Arian]
 
 * frameworks/av
-67795af3de SessionConfigurationUtils: Allow privileged camera apps to create raw streams for raw capable cameras [Arian]
+72e2c1f623 codec2: Change a Info print into Verbose [Shrikara B]
+255ea9b596 CCodec: Use pipelineRoom only for HW decoder [Shrikara B]
+69e5a6ff2c [WA] Codec2: queue a empty work to HAL to wake up allocation thread [Jiajia Cong]
+d25e9e766d CCodec: Control the inputs to avoid pipeline overflow [Shrikara B]
+34632dcf80 codec2: Use numClientBuffers to control the pipeline [Shrikara B]
+dceb7d9e9e SessionConfigurationUtils: Allow privileged camera apps to create raw streams for raw capable cameras [Arian]
 
 * frameworks/base
-137b047e6ef5 Camera: Expose aux camera if packagename is null [wbs306]
+2816c03823bc gmscompat: Spoof user/release-keys build [Arian]
+248f89d0b37a gmscompat: Make CTS/Play Integrity pass again [Dyneteve]
+2b9c21af4aca gmscompat: Use Nexus 6P fingerprint for CTS/Integrity [Dyneteve]
+4c716d6b3dc3 gmscompat: Apply the SafetyNet workaround to Play Store aswell [Dyneteve]
+5bfaafb6a6ef Limit SafetyNet workarounds to unstable GMS process [Danny Lin]
+653f27eee620 AttestationHooks: Set shipping level to 32 for devices >=33 [Anirudh Gupta]
+f090f60b996a keystore: Block key attestation for SafetyNet [Danny Lin]
+90d1cae24c53 Alter model name to avoid SafetyNet HW attestation enforcement [Danny Lin]
+6a7e1b1eea42 Camera: Expose aux camera if packagename is null [wbs306]
 
 * frameworks/opt/telephony
-3893f07e5f Enable vendor Telephony plugin: MSIM Changes [Sneh Bansal]
-87f51f86d5 Skip sending duplicate requests [Sandeep Gutta]
-0a0be98870 Start using inject framework support [Sandeep Gutta]
-92a34eb335 Reset data activity after traffic status poll stops [Mengjun Leng]
-bec5a77761 Make a few  members of DSM overridable and accessible [Mengjun Leng]
-f4be7b3e64 Add provision to override CellularNetworkService [Sneh Bansal]
-3e2db6c6f4 Disable proguard for CellularNetworkServiceProvider [Avinash Nalluri]
-
-* hardware/interfaces
-e8474d833 frameworks: Update HIDL overrideFormat from HAL [Abhijit Trivedi]
+7fb55294e0 Enable vendor Telephony plugin: MSIM Changes [Sneh Bansal]
+8ec98fc85f Skip sending duplicate requests [Sandeep Gutta]
+5b79d9bec9 Start using inject framework support [Sandeep Gutta]
+aa768394c2 Reset data activity after traffic status poll stops [Mengjun Leng]
+c3608028fe Make a few  members of DSM overridable and accessible [Mengjun Leng]
+ea75ed32f2 Add provision to override CellularNetworkService [Sneh Bansal]
+78ea9fa376 Disable proguard for CellularNetworkServiceProvider [Avinash Nalluri]
 
 * hardware/xiaomi
-917e2ba vibrator: Don't support compose effects if primitve_duration node does not exist [Arian]
-0a4cc05 vibrator: effect: Read vibration fifo data from vendor [Arian]
-ec87a26 vibrator: Hook USE_EFFECT_STREAM up [Arian]
-90f881f vibrator: Add support for aw8697_haptic input device [Arian]
-71903c3 vibrator: Add support for aw8624_haptic input device [Arian]
-99027ea vibrator: aidl: Simplify soc check and drop prop dep [Pig]
-4690d71 vibrator: Rename to avoid conflicts [Arian]
-213558d vibrator: Import from LA.VENDOR.13.2.0.r1-15400-KAILUA.QSSI14.0 [Arian]
-195de52 sensors: Handle fod press status without coordinates [Arian]
-9585e97 sensors: Add udfps long press sensor [Cosmin Tanislav]
-d14d302 sensors: Fix locking around setOperationMode and activate [Cosmin Tanislav]
-3779bbf sensors: Move one shot sensor out of main class [Cosmin Tanislav]
-f38d7c9 sensors: Make sensor set mode operation function virtual [Cosmin Tanislav]
-2ba978a sensors: Make sensor flush function virtual [Cosmin Tanislav]
-7059a56 sensors: Make sensor run function virtual [Cosmin Tanislav]
-192eae1 sensors: Make sensor batch function virtual [Cosmin Tanislav]
-aea70dd Add dummy sensors sub HAL [Cosmin Tanislav]
+1a44ac3 sensors: Handle fod press status without coordinates [Arian]
+fc9ab05 sensors: Add udfps long press sensor [Cosmin Tanislav]
+12d65bd sensors: Fix locking around setOperationMode and activate [Cosmin Tanislav]
+58649fc sensors: Move one shot sensor out of main class [Cosmin Tanislav]
+1e81a39 sensors: Make sensor set mode operation function virtual [Cosmin Tanislav]
+4d023cb sensors: Make sensor flush function virtual [Cosmin Tanislav]
+9bef1b1 sensors: Make sensor run function virtual [Cosmin Tanislav]
+a75b275 sensors: Make sensor batch function virtual [Cosmin Tanislav]
+888a8ad Add dummy sensors sub HAL [Cosmin Tanislav]
 
-* lineage/mirror
-7d94ee5 Updated to 07-Jul-2023 12:56 UTC [Kevin F. Haggerty]
-
-* lineage/scripts
-3951b65 pixel: Support wifi only devices [Chirayu Desai]
-
-* packages/apps/Settings
-7e89d579e3 display: Add custom screen resolution setting [Luofan Chen]
+* kernel/xiaomi/sm8450
+f99e5a97f201 Merge tag 'KERNEL.PLATFORM.1.0.r1-16200-kernel.0' of https://git.codelinaro.org/clo/la/kernel/msm-5.10 into HEAD [Arian]
+58bf28a9962c ARM64: configs: gki: Switch to thin LTO [Arian]
+c609b7845cdb ARM64: configs: xiaomi: Build separated soc-dtb and board-dtbos [Cyan_Hsieh]
+19329ca4b6ed ARM64: configs: Add cupid and zeus config [Arian]
+dad424a3ec07 ARM64: dts: vendor: Add symlink to sm8450-devicetrees [Bruno Martins]
+a47f89ba1770 Revert "msm: ADSPRPC: Check PD status before attach request" [freak07]
+205f29fefaf2 soc: qcom: smp2p_sleepstate: Decrease wakeup event length [Arian]
+1d0c1b72b788 media: rc: Import xiaomi changes from mayfly-s-oss [Arian]
+dbdbde426ce3 nfc: qti: Import xiaomi changes from mayfly-s-oss [Arian]
+99164ff9c3bc leds: Import aw22xxx driver from mayfly-s-oss [Arian]
+5d815d4691a3 thermal: Drop unused variables [Arian]
+1375a0897e07 thermal: Import xiaomi changes from ziyi-s-oss [Arian]
+fa531a96e72e spi: spi-msm-geni: Increase xfer timeout [Arian]
+a7c48a450ad5 regulator: Import wl2866d driver from mayfly-s-oss [Arian]
+865189773272 power: supply: qti_battery_charger: Return time to full in seconds [FlowerSea0208]
+673ce5fe3e57 power: supply: qti_battery_charger: Return charge counter in uAh [ArianK16a]
+11c0e12335af Revert "power: supply: qti_battery_charger: Add extcon support" [Arian]
+93e28b5067d1 Revert "power: qti_typec_class: Add typec class support for micro USB" [Arian]
+8593eb0520d5 Revert "power: supply: qti_battery_charger: Add dynamic uusb detection" [Arian]
+e85e71a62bab power: supply: qti_battery_charger: Import xiaomi changes [Arian]
+c30aad79248d power: supply: qti_battery_charger: Create header for defines, enums and structs [Arian]
+cd9f14b3a5df power: reset: Import xiaomi changes from mayfly-s-oss [Arian]
+7c365b821db1 usb: Import xiaomi changes from mayfly-s-oss [Arian]
+a26c3a7691db net: wireless: cnss2: Import xiaomi changes from mayfly-s-oss [Arian]
+aec3697cbeb6 Import xiaomi mtd changes from mayfly-s-oss [Arian]
+14ceb03d0058 touchscreen: fts_spi: Fix potential buffer overflows [Arian]
+0657c23b3dc8 input: touchscreen: fts_spi: Remove unused get_slot_trackingId method [Arian]
+289e0396b80e input: touchscreen: fts_spi: Change fts_enable_click_touch_raw to return int [Arian]
+38dbc3930f2b input: touchscreen: fts_spi: Move back to enable_clicktouch_raw [Arian]
+6ca64f088c2d input: touchscreen: fts_spi: Revert knock_data to touch raw data [Arian]
+6607c00ccf45 input: touchscreen: fts_spi: Implement THP support [Arian]
+41f961ed74d2 input: touchscreen: fts_spi: Update headers according to driver changes [Arian]
+3b0955c146bb input: touchscreen: fts_spi: Add missing cmd_fifo device attr [Arian]
+bbd7cb514dff input: touchscreen: fts_spi: Guard touch_irq_boost [Arian]
+ad818c014c2f input: touchscreen: xiaomi: Implement touch_thp_mem_notify [Arian]
+8c146f0b5b68 input: touchscreen: xiaomi: Implement touch_thp_film [Arian]
+3371c782ee78 input: touchscreen: xiaomi: Implement palm_sensor_data [Arian]
+612b064a0207 Revert "input: touchscreen: xiaomi: Change enable_touch_raw to work with int" [Arian]
+b545cbb82cf6 Revert "input: touchscreen: xiaomi: Drop clicktouch_raw" [Arian]
+2662c0696859 input: touchscreen: xiaomi: Implement tp_hal_version [Arian]
+2cac29818fbe input: touchscreen: xiaomi: Align mutexes consistently [Arian]
+1803c80428dc input: touchscreen: xiaomi: Implement touch_irq_no [Arian]
+40393ccccd86 input: touchscreen: xiaomi: Implement finger_status [Arian]
+81a2937a5338 input: touchscreen: xiaomi: Implement touch_active_status [Arian]
+042d03c01cd3 input: touchscreen: xiaomi: Add XIAOMI_TOUCH_UTC_PRINT [Arian]
+960b737bcecf input: touchscreen: xiaomi: Add more THP mode types [Arian]
+5249746b8d18 input: touchscreen: xiaomi: Change enable_touch_raw to work with int [Arian]
+b5657430ba1d input: touchscreen: xiaomi: Implement thp_cmd_data [Arian]
+907aa15d8bf7 input: touchscreen: xiaomi: Move xiaomi_touch_set_suspend_state up [Arian]
+1ce15ed0642a input: touchscreen: xiaomi: Drop clicktouch_raw [Arian]
+8b679faec915 input: touchscreen: xiaomi: Implement resolution_factor [Arian]
+6f4027018516 input: touchscreen: fts_spi: Update from mayfly-s-oss [Arian]
+0bff241a348c input: touchscreen: Import fts_spi driver from zeus-s-oss [Arian]
+9995221e0c6c input: touchscreen: Import xiaomi touch driver from mayfly-s-oss [Arian]
+1a11353499dd input: misc: Imort aw86927_haptic driver from mayfly-s-oss [Arian]
+0a6244b67b81 input: misc: Import aw8698_haptic driver from mayfly-s-oss [Arian]
+86f970fc15f4 input: Import stmvl53l5 driver from zeus-s-oss [Arian]
+1f18641b1810 input: fingerprint: Import goodix_fod driver from mayfly-s-oss [Arian]
+23305c250e5e misc: Introduce simplified xiaomi hardware identification driver [Arian]
+8b0348f93e47 BACKPORT: UPSTREAM: kbuild: rename cmd_{bzip2,lzma,lzo,lz4,xzkern,zstd22} [Masahiro Yamada]
+2bcbd6810174 BACKPORT: scripts/Makefile.clang: default to LLVM_IAS=1 [Nick Desaulniers]
+51f0a41efe1e UPSTREAM: Makefile: infer --target from ARCH for CC=clang [Nick Desaulniers]
+6fb835678483 BACKPORT: Makefile: move initial clang flag handling into scripts/Makefile.clang [Nick Desaulniers]
+a9ee015a93e1 UPSTREAM: kbuild: warn if a different compiler is used for external module builds [Masahiro Yamada]
+e6d4af536d51 UPSTREAM: kbuild: split cc-option and friends to scripts/Makefile.compiler [Masahiro Yamada]
+411bc7b0b9f7 UPSTREAM: kbuild: replace sed with $(subst ) or $(patsubst ) [Masahiro Yamada]
+28dc15dba274 UPSTREAM: Makefile: Only specify '--prefix=' when building with clang + GNU as [Nathan Chancellor]
+08610ef3aa1a UPSTREAM: Makefile: Remove '--gcc-toolchain' flag [Nathan Chancellor]
+5436f2c88356 UPSTREAM: Makefile: Remove # characters from compiler string [Nathan Chancellor]
+400df134164d UPSTREAM: Makefile: reuse CC_VERSION_TEXT [Nick Desaulniers]
+2845e7356307 BACKPORT: kbuild: prefix $(srctree)/ to some included Makefiles [Masahiro Yamada]
+eca04eb3166e UPSTREAM: kbuild: remove ld-version macro [Masahiro Yamada]
+3c39d4ffa653 UPSTREAM: kbuild: collect minimum tool versions into scripts/min-tool-version.sh [Masahiro Yamada]
+a21601e8b3fd UPSTREAM: kbuild: fix ld-version.sh to not be affected by locale [Masahiro Yamada]
+79fcbacabb83 UPSTREAM: kbuild: Fix ld-version.sh script if LLD was built with LLD_VENDOR [Bernhard Rosenkränzer]
+55c2002f2318 BACKPORT: kbuild: check the minimum linker version in Kconfig [Masahiro Yamada]
+9552e18bfd1e UPSTREAM: kbuild: check the minimum compiler version in Kconfig [Masahiro Yamada]
+9da8b0c74ef3 UPSTREAM: kbuild: LD_VERSION redenomination [Masahiro Yamada]
+2336a2934bbb Merge tag 'ASB-2023-09-05_12-5.10' of https://android.googlesource.com/kernel/common into HEAD [Arian]
+a115ee4dc80f hwtracing: coresight: Fix potential buffer overflow [Arian]
+edf694cf382e dtc: Silence warnings by default [Danny Lin]
+d38635e88770 arch: arm64: dts: Exclude standard dts if vendor dts exists [Cosmin Tanislav]
+591a57bdfb35 ALSA: compress: Avoid leaking CONFIG_AUDIO_QGKI to user-space [Bruno Martins]
+3c61ddd485bb ALSA: compress: Add support to send codec specific data [Meng Wang]
+8a5c85e3f48b Makefile: export headers from certain external modules [SGCMarkus]
 
 * vendor/lineage
-f8a70bc2 Allow to opt out from lineage kernel build [Arian]
+d3ee6581 android: merge_dtbs: Respect miboard-id while merging [Arian]
 
-* vendor/qcom/opensource/audio-hal/st-hal-ar
-9fcb3bc Revert "st-hal-ar: switch to libpal_headers include for different pal sources" [Arian]
-
-* vendor/qcom/opensource/display-drivers
-a8603137 Update xiaomi changes from ziyi-s-oss [Arian]
-2495d332 Import xiaomi changes from zeus-s-oss [Arian]
-0991d801 mmm_color_format: Avoid Unannotated fall-through [Arian]
-
-* vendor/qcom/proprietary/devicetree
-69030a9f65f5 Update from mayfly-s-oss [Arian]
+* vendor/qcom/opensource/data-ipa-cfg-mgr
+3c0a7c4 ipacm: Address ipacm start failure [dianlujitao]
 
 ====================
-     2023-07-07    
+     2023-09-29    
 ====================
-* lineage/wiki
-fa214ad7 wiki: Add descending sort GET params to MTG AFH URL [LuK1337]
+* hardware/lineage/interfaces
+6721624 gnss: properly terminate nmea-messages if they aren't already [Joel Stein]
 
 ====================
-     2023-07-06    
+     2023-09-28    
 ====================
-* lineage/hudson
-97a757a hudson: Promote Redmi 7/Y3 to 20 [Dhina17]
-5018292 Disable caprip builds for now [Michael Bestas]
-06dd02d Regenerate device dependency mappings [LineageOS Infra]
+* hardware/qcom-caf/sm8450/audio/agm
+7eef7a9 Merge tag 'LA.VENDOR.1.0.r1-23000-WAIPIO.QSSI13.0' into staging/lineage-20.0_merge-LA.VENDOR.1.0.r1-23000-WAIPIO.QSSI13.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8450/audio/pal
+0ad33447 Merge tag 'LA.VENDOR.1.0.r1-23000-WAIPIO.QSSI13.0' into staging/lineage-20.0_merge-LA.VENDOR.1.0.r1-23000-WAIPIO.QSSI13.0 [Michael Bestas]
+
+* hardware/qcom-caf/thermal
+e9893f5 Merge tag 'LA.VENDOR.1.0.r1-23000-WAIPIO.QSSI13.0' into staging/lineage-20.0_merge-LA.VENDOR.1.0.r1-23000-WAIPIO.QSSI13.0 [Michael Bestas]
+
+* hardware/qcom-caf/wlan
+eb98f40 Merge tag 'LA.VENDOR.1.0.r1-23000-WAIPIO.QSSI13.0' into staging/lineage-20.0_merge-LA.VENDOR.1.0.r1-23000-WAIPIO.QSSI13.0 [Michael Bestas]
+
+* lineage/mirror
+d9af665 Updated aosp-minimal to 27-Sep-2023 12:02 UTC [Tim Schumacher]
+
+* vendor/firmware
+7bbb92d lemonadep: Import firmware from OOS 13.1.0.591(EX01) [LuK1337]
+5d40357 lemonade: Import firmware from OOS 13.1.0.591(EX01) [LuK1337]
+
+====================
+     2023-09-27    
+====================
+* kernel/qcom/msm8998
+61d15fb7e312 q6lsm: Address use after free for mmap handle. [Soumya Managoli]
+1b91a6075264 msm-pcm-host-voice: Check validity of session idx [Soumya Managoli]
+264e08cc0266 ASoC: msm-pcm-voip: Avoid integer underflow [Soumya Managoli]
+
+* packages/apps/Dialer
+f8781e650 fixup! Dialer: Style AudioRouteSelector [Michael W]
+2e6928fbe Dialer: Refactor FilteredNumbersUtil [Michael W]
 
 * vendor/lineage
-6e3be516 vars: Pixel Tablet [Michael Bestas]
+147545ac qcom: Add parrot platform [HeroBuxx]
 
 ====================
-     2023-07-05    
+     2023-09-26    
 ====================
-* frameworks/base
-6cc26342a05a WiredAccessoryManager: Add support for DP audio [LuK1337]
+* android
+a8a6ffb September 2023 Security update 2 [Michael Bestas]
+
+* device/xiaomi/sm8450-common
+d9976fa80 sm8450-common: Pass TARGET_PRODUCT variable to kernel flags [Arian]
+1b17cc111 sm8450-common: Move away from kernelplatform [Arian]
+
+* hardware/lineage/compat
+d549dba compat: Add GNSS interface type shim [R0rt1z2]
+aea5a5f compat: Add libsensor -> libsensorndkbridge wrapper [Sebastiano Barezzi]
+ac25b3e compat: libc: Convert to Android.bp [me-cafebabe]
+ca8a756 compat: libc: Add pthread_mutex_destroy hack for camera [Nich]
+ae85aa2 compat: libc: Trim down pthread_cond_timedwait hack [Nich]
+5c6ed67 compat: libc: compile shim with GCC again.. [Nich]
+53e071b compat: libc: Specific naming of libc shim library [Nich]
+33327b6 compat: libc: Bring libc hax inline with the latest sources [Nich]
+3825e72 compat: libc: Transition to OSS libc shim [Arne Coucheron]
+
+* kernel/xiaomi/sm8450-devicetrees
+d6b77f6e display: Disable < 60 fps for zeus and set proper framerate for 10 and 1 hz [Arian]
+6ffe8ccb display: Add support for cupid and zeus [Arian]
+
+* kernel/xiaomi/sm8450-modules
+0242862986 Revert "audio-kernel: Define TARGET_PRODUCT" [Arian]
 
 * lineage/hudson
-54296c2 Regenerate device dependency mappings [LineageOS Infra]
+f452240 Regenerate device dependency mappings [LineageOS Infra]
+
+* vendor/lineage
+d8e9159e vars: September 2023 Security update 2 [Tommy Webb]
 
 ====================
-     2023-07-04    
+     2023-09-25    
 ====================
-* lineage/mirror
-9d524c5 Updated to 03-Jul-2023 14:40 UTC [Kevin F. Haggerty]
+* kernel/xiaomi/sm6150
+1edfbd7510e55 arm64: configs: sweet: Enable ln8000 charger [basamaryan]
+a7ef0e007492e drivers: power: supply: Import ln8000 charger [basamaryan]
+1b3a525796a53 ARM64: dts: qcom: xiaomi: sweet: Add ln8000_charger [basamaryan]
+23e2e02d62f40 ARM64: dts: qcom: xiaomi: sweet: Update sunwoda batterydata [basamaryan]
+
+* kernel/xiaomi/sm8450-modules
+d3e817f952 fixup! qcom: Remove build timestamp injection on every build [Arian]
+bdd4d37a6a change qcacld module name [Arian]
+
+* lineage/charter
+a5453bc charter: Make LineageOS Recovery the defacto solution [Sebastiano Barezzi]
+d49c42a exemptions: Generizie LGE FDE [Nolen Johnson]
+
+* lineage/hudson
+2f3ca59 hudson: Remove remaining `"lineage_recovery": true` [Sebastiano Barezzi]
+
+* packages/inputmethods/LatinIME
+c27689d5d fixup! LatinIME: Add option to always show the emoji key [LuK1337]
+3c15ad302 fixup! LatinIME: Add number row option [LuK1337]
+
+====================
+     2023-09-24    
+====================
+* lineage/hudson
+74aba39 Nothing to be found here [x0x00044]
 
 * lineage/wiki
-4b681a5c wiki: Promote Redmi 7/Y3 to 20 [Dhina17]
-
-====================
-     2023-07-03    
-====================
-* packages/apps/Aperture
-6aa5ea8 Aperture: Make the supported quality list an unordered map [Sebastiano Barezzi]
-2d52dfb Aperture: Frame rates lists should be unordered sets [Sebastiano Barezzi]
-957d8a2 Aperture: Framerate -> frame rate [Sebastiano Barezzi]
-afc2753 Aperture: Dedup secondary top bar attributes into theme [Sebastiano Barezzi]
-5f4883a Aperture: Update CameraX to 1.3.0-beta01 [LuK1337]
+71e9fe7d wiki: Add Spacewar [x0x00044]
+c7b6cc86 wiki: Don't index quirks in the search engines [LuK1337]
+28ec88ea wiki: Exclude quirks from search [LuK1337]
 
