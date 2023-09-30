@@ -152,9 +152,6 @@ d3ee6581 android: merge_dtbs: Respect miboard-id while merging [Arian]
 ====================
      2023-09-28    
 ====================
-* lineage/mirror
-d9af665 Updated aosp-minimal to 27-Sep-2023 12:02 UTC [Tim Schumacher]
-
 * vendor/firmware
 7bbb92d lemonadep: Import firmware from OOS 13.1.0.591(EX01) [LuK1337]
 5d40357 lemonade: Import firmware from OOS 13.1.0.591(EX01) [LuK1337]
@@ -178,6 +175,9 @@ eb98f40 Merge tag 'LA.VENDOR.1.0.r1-23000-WAIPIO.QSSI13.0' into staging/lineage-
 61d15fb7e312 q6lsm: Address use after free for mmap handle. [Soumya Managoli]
 1b91a6075264 msm-pcm-host-voice: Check validity of session idx [Soumya Managoli]
 264e08cc0266 ASoC: msm-pcm-voip: Avoid integer underflow [Soumya Managoli]
+
+* lineage/mirror
+d9af665 Updated aosp-minimal to 27-Sep-2023 12:02 UTC [Tim Schumacher]
 
 * packages/apps/Dialer
 f8781e650 fixup! Dialer: Style AudioRouteSelector [Michael W]
