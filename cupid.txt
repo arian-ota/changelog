@@ -1,257 +1,288 @@
 ====================
-     2023-09-30    
+     2023-10-09    
 ====================
-* device/xiaomi/cupid
-041f33b cupid: Decommonize camera blobs [Arian]
+* device/xiaomi/miuicamera-cupid
+821bb17 Adjust for cupid [Arian]
+1441e5b Allow camera app to execute files from it's data [Arian]
+
+* device/xiaomi/miuicamera-zeus
+1441e5b Allow camera app to execute files from it's data [Arian]
 
 * device/xiaomi/sm8450-common
-7d3c4f70b sm8450-common: Decommonize camera blobs [Arian]
-2d26a79df sm8450-common: Switch to defconfig fragments [Arian]
+82192ff69 sm8450-common: Enable camera override format from reserved [Arian]
 
 * device/xiaomi/zeus
-9c28929 zeus: Decommonize camera blobs [Arian]
+71588bb zeus: overlay: Disable smooth display settings in favor of min/max settings [Arian]
 
 * frameworks/av
-72e2c1f623 codec2: Change a Info print into Verbose [Shrikara B]
-255ea9b596 CCodec: Use pipelineRoom only for HW decoder [Shrikara B]
-69e5a6ff2c [WA] Codec2: queue a empty work to HAL to wake up allocation thread [Jiajia Cong]
-d25e9e766d CCodec: Control the inputs to avoid pipeline overflow [Shrikara B]
-34632dcf80 codec2: Use numClientBuffers to control the pipeline [Shrikara B]
-dceb7d9e9e SessionConfigurationUtils: Allow privileged camera apps to create raw streams for raw capable cameras [Arian]
+6b7e50eba6 codec2: Change a Info print into Verbose [Shrikara B]
+566a5f492f CCodec: Use pipelineRoom only for HW decoder [Shrikara B]
+d0454e5213 [WA] Codec2: queue a empty work to HAL to wake up allocation thread [Jiajia Cong]
+29d577905c CCodec: Control the inputs to avoid pipeline overflow [Shrikara B]
+8f58600cfb codec2: Use numClientBuffers to control the pipeline [Shrikara B]
+3144f4cbd4 SessionConfigurationUtils: Allow privileged camera apps to create raw streams for raw capable cameras [Arian]
 
 * frameworks/base
-2816c03823bc gmscompat: Spoof user/release-keys build [Arian]
-248f89d0b37a gmscompat: Make CTS/Play Integrity pass again [Dyneteve]
-2b9c21af4aca gmscompat: Use Nexus 6P fingerprint for CTS/Integrity [Dyneteve]
-4c716d6b3dc3 gmscompat: Apply the SafetyNet workaround to Play Store aswell [Dyneteve]
-5bfaafb6a6ef Limit SafetyNet workarounds to unstable GMS process [Danny Lin]
-653f27eee620 AttestationHooks: Set shipping level to 32 for devices >=33 [Anirudh Gupta]
-f090f60b996a keystore: Block key attestation for SafetyNet [Danny Lin]
-90d1cae24c53 Alter model name to avoid SafetyNet HW attestation enforcement [Danny Lin]
-6a7e1b1eea42 Camera: Expose aux camera if packagename is null [wbs306]
+41276359f6d8 gmscompat: Spoof user/release-keys build [Arian]
+44effb4c5fce gmscompat: Make CTS/Play Integrity pass again [Dyneteve]
+aa04320fc56c gmscompat: Use Nexus 6P fingerprint for CTS/Integrity [Dyneteve]
+cc0ce000e7d5 gmscompat: Apply the SafetyNet workaround to Play Store aswell [Dyneteve]
+6f9d53ddbb73 Limit SafetyNet workarounds to unstable GMS process [Danny Lin]
+ef3c85422f27 AttestationHooks: Set shipping level to 32 for devices >=33 [Anirudh Gupta]
+e2affb6610f9 keystore: Block key attestation for SafetyNet [Danny Lin]
+8facee355a99 Alter model name to avoid SafetyNet HW attestation enforcement [Danny Lin]
+7b560442a0d9 Camera: Expose aux camera if packagename is null [wbs306]
+4ff273ebe993 Merge tag 'android-security-13.0.0_r10' of https://android.googlesource.com/platform/frameworks/base into staging/lineage-20.0_merge_android-security-13.0.0_r10 [Kevin F. Haggerty]
+76a563b9c4a2 Report success on every fingerprint removal [Kishan Dudhatra]
 
 * frameworks/opt/telephony
-7fb55294e0 Enable vendor Telephony plugin: MSIM Changes [Sneh Bansal]
-8ec98fc85f Skip sending duplicate requests [Sandeep Gutta]
-5b79d9bec9 Start using inject framework support [Sandeep Gutta]
-aa768394c2 Reset data activity after traffic status poll stops [Mengjun Leng]
-c3608028fe Make a few  members of DSM overridable and accessible [Mengjun Leng]
-ea75ed32f2 Add provision to override CellularNetworkService [Sneh Bansal]
-78ea9fa376 Disable proguard for CellularNetworkServiceProvider [Avinash Nalluri]
+ca5f26a03d Enable vendor Telephony plugin: MSIM Changes [Sneh Bansal]
+6c24a3dd3e Skip sending duplicate requests [Sandeep Gutta]
+d1d082efda Start using inject framework support [Sandeep Gutta]
+3d628ca8d0 Reset data activity after traffic status poll stops [Mengjun Leng]
+da2ca983ab Make a few  members of DSM overridable and accessible [Mengjun Leng]
+667aa73d45 Add provision to override CellularNetworkService [Sneh Bansal]
+3c9e7ff326 Disable proguard for CellularNetworkServiceProvider [Avinash Nalluri]
 
 * hardware/xiaomi
-1a44ac3 sensors: Handle fod press status without coordinates [Arian]
-fc9ab05 sensors: Add udfps long press sensor [Cosmin Tanislav]
-12d65bd sensors: Fix locking around setOperationMode and activate [Cosmin Tanislav]
-58649fc sensors: Move one shot sensor out of main class [Cosmin Tanislav]
-1e81a39 sensors: Make sensor set mode operation function virtual [Cosmin Tanislav]
-4d023cb sensors: Make sensor flush function virtual [Cosmin Tanislav]
-9bef1b1 sensors: Make sensor run function virtual [Cosmin Tanislav]
-a75b275 sensors: Make sensor batch function virtual [Cosmin Tanislav]
-888a8ad Add dummy sensors sub HAL [Cosmin Tanislav]
+58ec3cc sensors: Handle fod press status without coordinates [Arian]
+cfc8bb6 sensors: Add udfps long press sensor [Cosmin Tanislav]
+399f062 sensors: Fix locking around setOperationMode and activate [Cosmin Tanislav]
+02fd936 sensors: Move one shot sensor out of main class [Cosmin Tanislav]
+5cc964b sensors: Make sensor set mode operation function virtual [Cosmin Tanislav]
+ee20fa3 sensors: Make sensor flush function virtual [Cosmin Tanislav]
+996d527 sensors: Make sensor run function virtual [Cosmin Tanislav]
+11a33e6 sensors: Make sensor batch function virtual [Cosmin Tanislav]
+e37d3eb Add dummy sensors sub HAL [Cosmin Tanislav]
 
 * kernel/xiaomi/sm8450
-f99e5a97f201 Merge tag 'KERNEL.PLATFORM.1.0.r1-16200-kernel.0' of https://git.codelinaro.org/clo/la/kernel/msm-5.10 into HEAD [Arian]
-58bf28a9962c ARM64: configs: gki: Switch to thin LTO [Arian]
-c609b7845cdb ARM64: configs: xiaomi: Build separated soc-dtb and board-dtbos [Cyan_Hsieh]
-19329ca4b6ed ARM64: configs: Add cupid and zeus config [Arian]
-dad424a3ec07 ARM64: dts: vendor: Add symlink to sm8450-devicetrees [Bruno Martins]
-a47f89ba1770 Revert "msm: ADSPRPC: Check PD status before attach request" [freak07]
-205f29fefaf2 soc: qcom: smp2p_sleepstate: Decrease wakeup event length [Arian]
-1d0c1b72b788 media: rc: Import xiaomi changes from mayfly-s-oss [Arian]
-dbdbde426ce3 nfc: qti: Import xiaomi changes from mayfly-s-oss [Arian]
-99164ff9c3bc leds: Import aw22xxx driver from mayfly-s-oss [Arian]
-5d815d4691a3 thermal: Drop unused variables [Arian]
-1375a0897e07 thermal: Import xiaomi changes from ziyi-s-oss [Arian]
-fa531a96e72e spi: spi-msm-geni: Increase xfer timeout [Arian]
-a7c48a450ad5 regulator: Import wl2866d driver from mayfly-s-oss [Arian]
-865189773272 power: supply: qti_battery_charger: Return time to full in seconds [FlowerSea0208]
-673ce5fe3e57 power: supply: qti_battery_charger: Return charge counter in uAh [ArianK16a]
-11c0e12335af Revert "power: supply: qti_battery_charger: Add extcon support" [Arian]
-93e28b5067d1 Revert "power: qti_typec_class: Add typec class support for micro USB" [Arian]
-8593eb0520d5 Revert "power: supply: qti_battery_charger: Add dynamic uusb detection" [Arian]
-e85e71a62bab power: supply: qti_battery_charger: Import xiaomi changes [Arian]
-c30aad79248d power: supply: qti_battery_charger: Create header for defines, enums and structs [Arian]
-cd9f14b3a5df power: reset: Import xiaomi changes from mayfly-s-oss [Arian]
-7c365b821db1 usb: Import xiaomi changes from mayfly-s-oss [Arian]
-a26c3a7691db net: wireless: cnss2: Import xiaomi changes from mayfly-s-oss [Arian]
-aec3697cbeb6 Import xiaomi mtd changes from mayfly-s-oss [Arian]
-14ceb03d0058 touchscreen: fts_spi: Fix potential buffer overflows [Arian]
-0657c23b3dc8 input: touchscreen: fts_spi: Remove unused get_slot_trackingId method [Arian]
-289e0396b80e input: touchscreen: fts_spi: Change fts_enable_click_touch_raw to return int [Arian]
-38dbc3930f2b input: touchscreen: fts_spi: Move back to enable_clicktouch_raw [Arian]
-6ca64f088c2d input: touchscreen: fts_spi: Revert knock_data to touch raw data [Arian]
-6607c00ccf45 input: touchscreen: fts_spi: Implement THP support [Arian]
-41f961ed74d2 input: touchscreen: fts_spi: Update headers according to driver changes [Arian]
-3b0955c146bb input: touchscreen: fts_spi: Add missing cmd_fifo device attr [Arian]
-bbd7cb514dff input: touchscreen: fts_spi: Guard touch_irq_boost [Arian]
-ad818c014c2f input: touchscreen: xiaomi: Implement touch_thp_mem_notify [Arian]
-8c146f0b5b68 input: touchscreen: xiaomi: Implement touch_thp_film [Arian]
-3371c782ee78 input: touchscreen: xiaomi: Implement palm_sensor_data [Arian]
-612b064a0207 Revert "input: touchscreen: xiaomi: Change enable_touch_raw to work with int" [Arian]
-b545cbb82cf6 Revert "input: touchscreen: xiaomi: Drop clicktouch_raw" [Arian]
-2662c0696859 input: touchscreen: xiaomi: Implement tp_hal_version [Arian]
-2cac29818fbe input: touchscreen: xiaomi: Align mutexes consistently [Arian]
-1803c80428dc input: touchscreen: xiaomi: Implement touch_irq_no [Arian]
-40393ccccd86 input: touchscreen: xiaomi: Implement finger_status [Arian]
-81a2937a5338 input: touchscreen: xiaomi: Implement touch_active_status [Arian]
-042d03c01cd3 input: touchscreen: xiaomi: Add XIAOMI_TOUCH_UTC_PRINT [Arian]
-960b737bcecf input: touchscreen: xiaomi: Add more THP mode types [Arian]
-5249746b8d18 input: touchscreen: xiaomi: Change enable_touch_raw to work with int [Arian]
-b5657430ba1d input: touchscreen: xiaomi: Implement thp_cmd_data [Arian]
-907aa15d8bf7 input: touchscreen: xiaomi: Move xiaomi_touch_set_suspend_state up [Arian]
-1ce15ed0642a input: touchscreen: xiaomi: Drop clicktouch_raw [Arian]
-8b679faec915 input: touchscreen: xiaomi: Implement resolution_factor [Arian]
-6f4027018516 input: touchscreen: fts_spi: Update from mayfly-s-oss [Arian]
-0bff241a348c input: touchscreen: Import fts_spi driver from zeus-s-oss [Arian]
-9995221e0c6c input: touchscreen: Import xiaomi touch driver from mayfly-s-oss [Arian]
-1a11353499dd input: misc: Imort aw86927_haptic driver from mayfly-s-oss [Arian]
-0a6244b67b81 input: misc: Import aw8698_haptic driver from mayfly-s-oss [Arian]
-86f970fc15f4 input: Import stmvl53l5 driver from zeus-s-oss [Arian]
-1f18641b1810 input: fingerprint: Import goodix_fod driver from mayfly-s-oss [Arian]
-23305c250e5e misc: Introduce simplified xiaomi hardware identification driver [Arian]
-8b0348f93e47 BACKPORT: UPSTREAM: kbuild: rename cmd_{bzip2,lzma,lzo,lz4,xzkern,zstd22} [Masahiro Yamada]
-2bcbd6810174 BACKPORT: scripts/Makefile.clang: default to LLVM_IAS=1 [Nick Desaulniers]
-51f0a41efe1e UPSTREAM: Makefile: infer --target from ARCH for CC=clang [Nick Desaulniers]
-6fb835678483 BACKPORT: Makefile: move initial clang flag handling into scripts/Makefile.clang [Nick Desaulniers]
-a9ee015a93e1 UPSTREAM: kbuild: warn if a different compiler is used for external module builds [Masahiro Yamada]
-e6d4af536d51 UPSTREAM: kbuild: split cc-option and friends to scripts/Makefile.compiler [Masahiro Yamada]
-411bc7b0b9f7 UPSTREAM: kbuild: replace sed with $(subst ) or $(patsubst ) [Masahiro Yamada]
-28dc15dba274 UPSTREAM: Makefile: Only specify '--prefix=' when building with clang + GNU as [Nathan Chancellor]
-08610ef3aa1a UPSTREAM: Makefile: Remove '--gcc-toolchain' flag [Nathan Chancellor]
-5436f2c88356 UPSTREAM: Makefile: Remove # characters from compiler string [Nathan Chancellor]
-400df134164d UPSTREAM: Makefile: reuse CC_VERSION_TEXT [Nick Desaulniers]
-2845e7356307 BACKPORT: kbuild: prefix $(srctree)/ to some included Makefiles [Masahiro Yamada]
-eca04eb3166e UPSTREAM: kbuild: remove ld-version macro [Masahiro Yamada]
-3c39d4ffa653 UPSTREAM: kbuild: collect minimum tool versions into scripts/min-tool-version.sh [Masahiro Yamada]
-a21601e8b3fd UPSTREAM: kbuild: fix ld-version.sh to not be affected by locale [Masahiro Yamada]
-79fcbacabb83 UPSTREAM: kbuild: Fix ld-version.sh script if LLD was built with LLD_VENDOR [Bernhard Rosenkränzer]
-55c2002f2318 BACKPORT: kbuild: check the minimum linker version in Kconfig [Masahiro Yamada]
-9552e18bfd1e UPSTREAM: kbuild: check the minimum compiler version in Kconfig [Masahiro Yamada]
-9da8b0c74ef3 UPSTREAM: kbuild: LD_VERSION redenomination [Masahiro Yamada]
-2336a2934bbb Merge tag 'ASB-2023-09-05_12-5.10' of https://android.googlesource.com/kernel/common into HEAD [Arian]
-a115ee4dc80f hwtracing: coresight: Fix potential buffer overflow [Arian]
-edf694cf382e dtc: Silence warnings by default [Danny Lin]
-d38635e88770 arch: arm64: dts: Exclude standard dts if vendor dts exists [Cosmin Tanislav]
-591a57bdfb35 ALSA: compress: Avoid leaking CONFIG_AUDIO_QGKI to user-space [Bruno Martins]
-3c61ddd485bb ALSA: compress: Add support to send codec specific data [Meng Wang]
-8a5c85e3f48b Makefile: export headers from certain external modules [SGCMarkus]
-
-* vendor/lineage
-d3ee6581 android: merge_dtbs: Respect miboard-id while merging [Arian]
-
-* vendor/qcom/opensource/data-ipa-cfg-mgr
-3c0a7c4 ipacm: Address ipacm start failure [dianlujitao]
-
-====================
-     2023-09-29    
-====================
-* hardware/lineage/interfaces
-6721624 gnss: properly terminate nmea-messages if they aren't already [Joel Stein]
-
-====================
-     2023-09-28    
-====================
-* hardware/qcom-caf/sm8450/audio/agm
-7eef7a9 Merge tag 'LA.VENDOR.1.0.r1-23000-WAIPIO.QSSI13.0' into staging/lineage-20.0_merge-LA.VENDOR.1.0.r1-23000-WAIPIO.QSSI13.0 [Michael Bestas]
-
-* hardware/qcom-caf/sm8450/audio/pal
-0ad33447 Merge tag 'LA.VENDOR.1.0.r1-23000-WAIPIO.QSSI13.0' into staging/lineage-20.0_merge-LA.VENDOR.1.0.r1-23000-WAIPIO.QSSI13.0 [Michael Bestas]
-
-* hardware/qcom-caf/thermal
-e9893f5 Merge tag 'LA.VENDOR.1.0.r1-23000-WAIPIO.QSSI13.0' into staging/lineage-20.0_merge-LA.VENDOR.1.0.r1-23000-WAIPIO.QSSI13.0 [Michael Bestas]
-
-* hardware/qcom-caf/wlan
-eb98f40 Merge tag 'LA.VENDOR.1.0.r1-23000-WAIPIO.QSSI13.0' into staging/lineage-20.0_merge-LA.VENDOR.1.0.r1-23000-WAIPIO.QSSI13.0 [Michael Bestas]
-
-* lineage/mirror
-d9af665 Updated aosp-minimal to 27-Sep-2023 12:02 UTC [Tim Schumacher]
-
-* vendor/firmware
-7bbb92d lemonadep: Import firmware from OOS 13.1.0.591(EX01) [LuK1337]
-5d40357 lemonade: Import firmware from OOS 13.1.0.591(EX01) [LuK1337]
-
-====================
-     2023-09-27    
-====================
-* kernel/qcom/msm8998
-61d15fb7e312 q6lsm: Address use after free for mmap handle. [Soumya Managoli]
-1b91a6075264 msm-pcm-host-voice: Check validity of session idx [Soumya Managoli]
-264e08cc0266 ASoC: msm-pcm-voip: Avoid integer underflow [Soumya Managoli]
-
-* packages/apps/Dialer
-f8781e650 fixup! Dialer: Style AudioRouteSelector [Michael W]
-2e6928fbe Dialer: Refactor FilteredNumbersUtil [Michael W]
-
-* vendor/lineage
-147545ac qcom: Add parrot platform [HeroBuxx]
-
-====================
-     2023-09-26    
-====================
-* android
-a8a6ffb September 2023 Security update 2 [Michael Bestas]
-
-* device/xiaomi/sm8450-common
-d9976fa80 sm8450-common: Pass TARGET_PRODUCT variable to kernel flags [Arian]
-1b17cc111 sm8450-common: Move away from kernelplatform [Arian]
-
-* hardware/lineage/compat
-d549dba compat: Add GNSS interface type shim [R0rt1z2]
-aea5a5f compat: Add libsensor -> libsensorndkbridge wrapper [Sebastiano Barezzi]
-ac25b3e compat: libc: Convert to Android.bp [me-cafebabe]
-ca8a756 compat: libc: Add pthread_mutex_destroy hack for camera [Nich]
-ae85aa2 compat: libc: Trim down pthread_cond_timedwait hack [Nich]
-5c6ed67 compat: libc: compile shim with GCC again.. [Nich]
-53e071b compat: libc: Specific naming of libc shim library [Nich]
-33327b6 compat: libc: Bring libc hax inline with the latest sources [Nich]
-3825e72 compat: libc: Transition to OSS libc shim [Arne Coucheron]
+2aa9592b6829 fixup! ARM64: configs: Add cupid and zeus config [Arian]
+e44ba27abdab Merge tag 'ASB-2023-10-06_12-5.10' of https://android.googlesource.com/kernel/common into HEAD [Arian]
+097dec28897e fixup! usb: Import xiaomi changes from mayfly-s-oss [Arian]
+7091504ad02a fixup! usb: Import xiaomi changes from mayfly-s-oss [Arian]
 
 * kernel/xiaomi/sm8450-devicetrees
-d6b77f6e display: Disable < 60 fps for zeus and set proper framerate for 10 and 1 hz [Arian]
-6ffe8ccb display: Add support for cupid and zeus [Arian]
-
-* kernel/xiaomi/sm8450-modules
-0242862986 Revert "audio-kernel: Define TARGET_PRODUCT" [Arian]
-
-* lineage/hudson
-f452240 Regenerate device dependency mappings [LineageOS Infra]
+71593da3 display: Set proper framerate for 10 and 1 hz on zeus [Arian]
 
 * vendor/lineage
-d8e9159e vars: September 2023 Security update 2 [Tommy Webb]
+e719107a android: merge_dtbs: Respect miboard-id while merging [Arian]
+fea85da7 vendor/lineage: Hookup TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED [Rohit Sekhar]
+
+* vendor/xiaomi/cupid
+af2e29f cupid: Decommonize camera blobs [Arian]
+
+* vendor/xiaomi/sm8450-common
+7be58ef sm8450-common: Decommonize camera blobs [Arian]
+
+* vendor/xiaomi/zeus
+ebf3b7a zeus: Decommonize camera blobs [Arian]
 
 ====================
-     2023-09-25    
+     2023-10-08    
 ====================
-* kernel/xiaomi/sm6150
-1edfbd7510e55 arm64: configs: sweet: Enable ln8000 charger [basamaryan]
-a7ef0e007492e drivers: power: supply: Import ln8000 charger [basamaryan]
-1b3a525796a53 ARM64: dts: qcom: xiaomi: sweet: Add ln8000_charger [basamaryan]
-23e2e02d62f40 ARM64: dts: qcom: xiaomi: sweet: Update sunwoda batterydata [basamaryan]
+* packages/apps/Jelly
+3248b14 Jelly: Don't use ktx extension to set OnBackPressedCallback [Luca Stefani]
+90608ab Jelly: Move HttpURLConnection.getCharset to an extension [Sebastiano Barezzi]
+56552b4 Jelly: Redo reach mode configuration [Sebastiano Barezzi]
+da90d8e Jelly: Use SAM conversion where possible [Sebastiano Barezzi]
+2d94d8d Jelly: Use onBackPressedDispatcher [Luca Stefani]
+1d1497c Jelly: Show secure lock icon as soon as we know URL is https [Luca Stefani]
+cddade0 Jelly: Decrease search bar font size [Luca Stefani]
+8ffaefc Jelly: Adjust search bar image layout starts [Luca Stefani]
+e683af0 Jelly: Per website location perm [Luca Stefani]
+25ae4e5 Jelly: Update AGP to 8.1.2 [Sebastiano Barezzi]
 
-* kernel/xiaomi/sm8450-modules
-d3e817f952 fixup! qcom: Remove build timestamp injection on every build [Arian]
-bdd4d37a6a change qcacld module name [Arian]
+* packages/apps/SetupWizard
+0e05ffc SuW: Make restore apps and data subtitle generic [Bruno Martins]
+a40c802 SuW: Add lockscreen setup title string for "device" product type [Bruno Martins]
 
-* lineage/charter
-a5453bc charter: Make LineageOS Recovery the defacto solution [Sebastiano Barezzi]
-d49c42a exemptions: Generizie LGE FDE [Nolen Johnson]
+====================
+     2023-10-07    
+====================
+* build/make
+055b7692f Bump Security String to 2023-10-06 [Kevin F. Haggerty]
 
 * lineage/hudson
-2f3ca59 hudson: Remove remaining `"lineage_recovery": true` [Sebastiano Barezzi]
-
-* packages/inputmethods/LatinIME
-c27689d5d fixup! LatinIME: Add option to always show the emoji key [LuK1337]
-3c15ad302 fixup! LatinIME: Add number row option [LuK1337]
-
-====================
-     2023-09-24    
-====================
-* lineage/hudson
-74aba39 Nothing to be found here [x0x00044]
+48e88e5 Regenerate device dependency mappings [LineageOS Infra]
+9218d84 hudson: Split rosemary [Matsvei Niaverau]
 
 * lineage/wiki
-71e9fe7d wiki: Add Spacewar [x0x00044]
-c7b6cc86 wiki: Don't index quirks in the search engines [LuK1337]
-28ec88ea wiki: Exclude quirks from search [LuK1337]
+212c5d9c wiki: Split rosemary [Matsvei Niaverau]
+d6c9b04b wiki: Lint check yml files [LuK1337]
+
+* vendor/firmware
+6427ab9 mars: Updated from miui_STARGlobal_V14.0.5.0.TKAMIXM [FlowerSea0208]
+
+====================
+     2023-10-06    
+====================
+* android
+b55bc9d Track our own fork(s) for 2023-10 ASB patching [Kevin F. Haggerty]
+
+* frameworks/native
+ec3038704f Merge tag 'android-security-13.0.0_r10' of https://android.googlesource.com/platform/frameworks/native into staging/lineage-20.0_merge_android-security-13.0.0_r10 [Kevin F. Haggerty]
+
+* lineage/mirror
+d123dea Updated to 06-Oct-2023 16:14 UTC [Kevin F. Haggerty]
+e36a6be Updated to 06-Oct-2023 15:35 UTC [Kevin F. Haggerty]
+7c6ac32 Updated to 06-Oct-2023 15:20 UTC [Kevin F. Haggerty]
+
+* lineage/wiki
+66c5d584 devices: berlin: Require T firmware [Nolen Johnson]
+8dd15928 wiki: Document python-is-pythonX in build guide [LuK1337]
+
+* packages/apps/Settings
+cbb7cf3ba7 Merge tag 'android-security-13.0.0_r10' of https://android.googlesource.com/platform/packages/apps/Settings into staging/lineage-20.0_merge_android-security-13.0.0_r10 [Kevin F. Haggerty]
+
+* packages/modules/Bluetooth
+106e1c4814 Merge tag 'android-security-13.0.0_r10' of https://android.googlesource.com/platform/packages/modules/Bluetooth into staging/lineage-20.0_merge_android-security-13.0.0_r10 [Kevin F. Haggerty]
+
+* packages/modules/Wifi
+e6037c2d84 Merge tag 'android-security-13.0.0_r10' of https://android.googlesource.com/platform/packages/modules/Wifi into staging/lineage-20.0_merge_android-security-13.0.0_r10 [Kevin F. Haggerty]
+40d5e72faa Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/modules/Wifi into staging/lineage-20.0_merge_android-security-13.0.0_r10 [Kevin F. Haggerty]
+
+* packages/providers/MediaProvider
+81d8a4aae Merge tag 'android-security-13.0.0_r10' of https://android.googlesource.com/platform/packages/providers/MediaProvider into staging/lineage-20.0_merge_android-security-13.0.0_r10 [Kevin F. Haggerty]
+
+* packages/services/Telecomm
+c8b247abc Merge tag 'android-security-13.0.0_r10' of https://android.googlesource.com/platform/packages/services/Telecomm into staging/lineage-20.0_merge_android-security-13.0.0_r10 [Kevin F. Haggerty]
+30416a4c0 Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/services/Telecomm into staging/lineage-20.0_merge_android-security-13.0.0_r10 [Kevin F. Haggerty]
+
+* tools/apksig
+6447768 Merge tag 'android-security-13.0.0_r10' of https://android.googlesource.com/platform/tools/apksig into staging/lineage-20.0_merge_android-security-13.0.0_r10 [Kevin F. Haggerty]
+a970c24 Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/tools/apksig into staging/lineage-20.0_merge_android-security-13.0.0_r10 [Kevin F. Haggerty]
+
+* vendor/firmware
+3118e1d dubai: Update firmware from 13 T1RD33.116-33-3 fe936 c0109 [Marc Bourgoin]
+
+* vendor/lineage
+589f0cad kernel: Use lz4 from Google prebuilts [LuK1337]
+
+====================
+     2023-10-05    
+====================
+* device/google/atv
+f40342f atv: Build SettingsIntelligence [Nolen Johnson]
+
+* device/xiaomi/sm6150-common
+828234a sm6150-common: sepolicy: Drop duplicated wakeup node [basamaryan]
+
+* lineage/mirror
+a1488db aosp-minimal: Android 14 [Chirayu Desai]
+
+* packages/apps/Aperture
+1004933 Aperture: Swap HDR off drawable with a smaller one [Sebastiano Barezzi]
+
+* packages/apps/Jelly
+6acf56a Jelly: Update Gradle to 8.4 [Sebastiano Barezzi]
+
+* vendor/lineage
+62dd5baa lineage: Use 'intermediates-dir-for' for bootanimation src [Chippa-a]
+
+====================
+     2023-10-04    
+====================
+* kernel/nubia/sm8150
+9bbb2734c4ff Merge remote-tracking branch 'sm8150/lineage-20' into lineage-20 [Nolen Johnson]
+
+* lineage-sdk
+e2d1d6a3 LineageSettingsProvider: Allow to set a default for QS brightness slider [Bruno Martins]
+
+* lineage/wiki
+c305f51c wiki: Add bug report link to device info [LuK1337]
+
+* packages/apps/Aperture
+da28f76 Aperture: Drop android.nonTransitiveRClass [Sebastiano Barezzi]
+05e87f6 Aperture: Enable setup-java@v3 cache [LuK1337]
+4bf39d5 Aperture: Update AGP to 8.1.2 [Sebastiano Barezzi]
+413eca7 Aperture: Update Gradle to 8.3 [Sebastiano Barezzi]
+0c14d6a Aperture: Move data classes and enum classes to models package [Sebastiano Barezzi]
+5bdaf99 Aperture: Remove unused import [Sebastiano Barezzi]
+4b40d87 Aperture: CapturePreviewLayout: Remove callback defined in XML layout [Sebastiano Barezzi]
+c3c6a81 Aperture: Hook up video mirror mode [Sebastiano Barezzi]
+
+* packages/apps/Jelly
+6b308e0 Jelly: Move Baidu suggestion provider to HTTPS [Sebastiano Barezzi]
+5355fde Jelly: Remove custom parser for Brave [Sebastiano Barezzi]
+212c262 Jelly: Drop Google encrypted [Sebastiano Barezzi]
+aa11787 Jelly: Enable setup-java@v3 cache [LuK1337]
+72890bc Jelly: Fix custom app links [LuK1337]
+6ff463d Jelly: Add .dev suffix to debug build type configuration [Sebastiano Barezzi]
+a1c391e Jelly: Register shortcuts programatically [LuK1337]
+a2336dd Jelly: Remove hardcoded application id where possible [LuK1337]
+
+* packages/apps/LineageParts
+aa0a6d8 LineageParts: Add exported flags in manifest [Michael Bestas]
+3fc8f08 LineageParts: Remove minSdkVersion/targetSdkVersion [Michael Bestas]
+26cc229 LineageParts: Apply formatting to AndroidManifest [Michael W]
+
+* packages/apps/Recorder
+3b626a4 Recorder: Enable setup-java@v3 cache [LuK1337]
+f119808 Recorder: Remove not needed & 0xff [Luca Stefani]
+4d384f8 Recorder: Use Math.abs() instead of manually inverting sign [LuK1337]
+12f51ca Recorder: Write the actual buffer rather then expected size [Luca Stefani]
+54bf14b Recorder: Bump to latest stable AGP & Gradle versions [Aayush Gupta]
+
+* packages/apps/Settings
+e89246a486 Settings: Udfps: Use same ambient config logic as others [Michael W]
+
+* packages/modules/Permission
+bdd390442 PermissionController: Don't redeclare ids [Michael W]
+
+* system/sepolicy
+65ac550f6 Revert "DO NOT MERGE Revert "Hide ro.debuggable and ro.secure from ephemeral and isolated applications"" [Michael Bestas]
+9692d63a5 Revert "DO NOT MERGE Revert "Drop back-compatibility for hiding ro.debuggable and ro.secure"" [Michael Bestas]
+a680bef68 Revert "DO NOT MERGE Revert "Disallow untrusted apps to read ro.debuggable and ro.secure"" [Michael Bestas]
+
+* vendor/firmware
+3bc1036 martini: Import firmware from OOS 13.1.0.592(EX01) [Michael Bestas]
+
+* vendor/lineage
+303692b9 config: Opt-in for Go-variant of SystemUI on Go-enabled targets [Bruno Martins]
+a4c44269 config: Move TrebuchetOverlay to common_mobile [Bruno Martins]
+
+====================
+     2023-10-03    
+====================
+* build/make
+90ee6ceb5 Revert "Add missing languages" [Bruno Martins]
+
+* external/libxml2
+be61fdb3 Merge tag 'android-security-13.0.0_r10' of https://android.googlesource.com/platform/external/libxml2 into staging/lineage-20.0_merge_android-security-13.0.0_r10 [Kevin F. Haggerty]
+720e9196 Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/external/libxml2 into staging/lineage-20.0_merge_android-security-13.0.0_r10 [Kevin F. Haggerty]
+
+* hardware/lineage/compat
+015d90b libbase: Shim old StartsWith function prototype [bengris32]
+
+* packages/apps/Aperture
+b349c8a Aperture: Hook up video dynamic range [Sebastiano Barezzi]
+4d1eedf Aperture: Hook up gerrit-vote action [LuK1337]
+
+* packages/apps/Jelly
+6bfa087 Jelly: Add GitHub Actions [LuK1337]
+
+* packages/apps/Messaging
+eefa13f Fix crash on forwarding messages [Tommy Webb]
+
+* packages/apps/Recorder
+ef513e8 Recorder: Add GitHub Actions [LuK1337]
+7ce9ce8 Recorder: Use generateBp plugin [LuK1337]
+8c8858f Recorder: Add .dev suffix to debug build type configuration [Sebastiano Barezzi]
+1c8070e Recorder: Convert gradle scripts to kotlin [LuK1337]
+
+* packages/apps/Settings
+3df94352d6 AirplaneModePreferenceController: Fix NPE when toggle is hidden [Bruno Martins]
+
+* packages/apps/Trebuchet
+8c54c247d0 TrebuchetQuickstepGo: Select proper launcher manifest [Bruno Martins]
+
+* vendor/firmware
+c331254 axolotl: update to 20230815 [Alexander Martinz]
+
+* vendor/lineage
+f4b51c1f overlay: Remove obsolete overlays [Bruno Martins]
+b7a552da config: Add LineageOS specific languages via CUSTOM_LOCALES [Bruno Martins]
+
+* vendor/partner_gms
+d45252d gms: Do not ship WebViewGoogle [Bruno Martins]
 
