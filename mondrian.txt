@@ -1,0 +1,234 @@
+====================
+     2023-11-18    
+====================
+* device/xiaomi/mondrian
+b5ec5f8 mondrian: Enable xiaomi vibrator effects on common qti vibrator hal [Arian]
+5f32d33 mondrian: overlay: Set keyguard bottom margin [Ayush Dubey]
+
+* device/xiaomi/sm8450-common
+631c8bd28 sm8450-common: Include cvp-kernel [Arian]
+fcd82b03c Revert "sm8450-common: Move away from kernelplatform" [Arian]
+7c7777e9d Revert "sm8450-common: Pass TARGET_PRODUCT variable to kernel flags" [Arian]
+d3ca7d8ec Revert "sm8450-common: Switch to defconfig fragments" [Arian]
+8725cb291 sm8450-common: udfps: Update fod on command [Arian]
+4dce2b8b0 sm8450-common: Extract blobs from mondrian V14.0.5.0.TMNMIXM [Arian]
+c82ce5815 sm8450-common: Build libqti_vndfwk_detect.vendor [Arian]
+fd8ac53fc sm8450-common: rootdir: Update touch_report from mondrian V14.0.5.0.TMNMIXM [Arian]
+888a1a67b sm8450-common: wifi: Update from mondrian V14.0.5.0.TMNMIXM [Arian]
+f12f11cea sm8450-common: media: Update from mondrian V14.0.5.0.TMNMIXM [Arian]
+0bf9ae2eb sm8450-common: sepolicy: Update from mondrian V14.0.5.0.TMNMIXM [Arian]
+c3248ad1b sm8450-common: Add cape media configs [Arian]
+2041da4b8 sm8450-common: Add cape manifest [Arian]
+
+* hardware/xiaomi
+beed0ad vibrator: effect: Read vibration fifo data from vendor [Arian]
+a5d77c5 Import qti vibrator effect and rename [Arian]
+
+* kernel_platform/msm-kernel
+241cf04d68d6 misc: hwid: Add codenames [Arian]
+5fb6b782dc44 input: misc: qcom-hv-haptics: Import xiaomi changes from garnet-t-oss [Arian]
+a4ba876b2cbc Revert "input: misc: qcom-hv-haptics: Import xiaomi changes from yudi-t-oss" [Arian]
+a068878c309c misc: hwid: Add more project id's [Arian]
+a7a665e20f39 net: wireless: cnss2: Import xiaomi changes from garnet-t-oss [Arian]
+98710c9ce686 Revert "net: wireless: cnss2: Import xiaomi changes from mayfly-s-oss" [Arian]
+
+* vendor/lineage
+bda6f8af Revert "adb insecure by default" [Arian]
+
+* vendor/qcom/opensource/display-drivers
+ff85a765 mmm_color_format: Avoid Unannotated fall-through [Arian]
+d7ba6767 Disable mi display pwrkey callback [Arian]
+d2ecbae3 Update from garnet-t-oss [Arian]
+
+====================
+     2023-11-17    
+====================
+* device/xiaomi/mondrian
+c2b6bdb fixup! mondrian: overlay: Add fingerprint overlays [Arian]
+7d8b961 mondrian: overlay: Configure Aperture [Tadi]
+
+* frameworks/base
+6c7905b9794e Revert "core: pm: Allow wildcard in RRO system property value checks" [Arian]
+
+* vendor/qcom/opensource/camera-kernel
+614434e3 Revert "msm: camera: flash: Add support for flash stream off" [Jens Reidel]
+7134163f Revert "msm: camera: flash: Reenabling Enable and Disable regulator support for PMIC flash" [Jens Reidel]
+6bdf2151 Revert "msm: camera: flash: Proper handling of epcr reqs" [Jens Reidel]
+
+* vendor/qcom/proprietary/audio-devicetree
+f6b6dab Decommonize swr haptics disable [Arian]
+
+* vendor/qcom/proprietary/camera-devicetree
+3bce02e Add support for mondrian from MIUI V14.0.5.0.TMNMIXM [Arian]
+
+* vendor/qcom/proprietary/devicetree
+28f7dd68b4fa Update from mondrian MIUI V14.0.5.0.TMNMIXM [Arian]
+9f3fde3994ab Disable build except for cupid, zeus and mondrian [Arian]
+
+====================
+     2023-11-16    
+====================
+* device/xiaomi/mondrian
+5931bcf mondrian: Add more blobs [Arian]
+dd978cd mondrian: Fixup camera blobs [Arian]
+576356f mondrian: Disable EPPE [Arian]
+
+* device/xiaomi/sm8450-common
+bcdeee3d4 sm8450-common: rootdir: Update init.qcom.early_boot.sh from marble V14.0.9.0.TMREUXM [Jens Reidel]
+b9617be7a sm8450-common: Add mixer_paths_ukee_mtp.xml from marble V14.0.9.0.TMREUXM [Jens Reidel]
+302f7ebd0 sm8450-common: Copy audio configs to sku_ukee too [Jens Reidel]
+6892d3a8e sm8450-common: Add support for marble [Jens Reidel]
+
+* hardware/qcom-caf/sm8450/display
+c5c954bca9 Revert "display: Remove dependencies of display specific kernel headers" [Arian]
+
+* kernel_platform/msm-kernel
+db2f8dba692e input: misc: qcom-hv-haptics: Import xiaomi changes from yudi-t-oss [Arian]
+ea76d13ed829 soc: qcom: fsa4480: Use mmhardware [Arian]
+7f6a0760c6c3 misc: Import mmhardware [Arian]
+e6a62204def2 power: supply: qti_battery_charger: Abuse secondary touch panel notifier for charge notifier [Arian]
+ca50473468aa qcom: panel_event_notifier: Checkout symbols to mayfly-s-oss [Arian]
+9c88f4b8028b sched: walt: Import touch_irq_boost from yudi-t-oss [Arian]
+08fc4a91c626 ARM64: configs: mondrian: Enable goodix 9916 driver [Arian]
+53731a3dcb7f input: touchscreen: goodix_9916: Load on mondrian [Arian]
+043022e673d3 input: touchscreen: Import goodix_9916 from yudi-t-oss [Arian]
+4dccfc9c4438 tmp mondrian [Arian]
+
+* vendor/qcom/opensource/audio-kernel
+27d9c53c8ec6 Define TARGET_PRODUCT [Arian]
+
+* vendor/qcom/proprietary/audio-devicetree
+9802158 Add support for mondrian [Arian]
+
+====================
+     2023-11-15    
+====================
+* build/make
+50927a8d6 Replace old kernel header deps with device_kernel_headers when kernel platform is used [Arian]
+
+* build/soong
+1a12e931c Make device_kernel_headers available to vendor. [AdarshGrewal]
+e49c0570c Replace qti_kernel_headers with device_kernel_headers [Arian]
+5039a535a Add perl to allowed host tools [Arian]
+
+* frameworks/av
+216aeafc1b codec2: Change a Info print into Verbose [Shrikara B]
+053c434e51 CCodec: Use pipelineRoom only for HW decoder [Shrikara B]
+5cec2b72d0 [WA] Codec2: queue a empty work to HAL to wake up allocation thread [Jiajia Cong]
+771a2e4819 CCodec: Control the inputs to avoid pipeline overflow [Shrikara B]
+fd11c19253 codec2: Use numClientBuffers to control the pipeline [Shrikara B]
+7f71e4c2ad SessionConfigurationUtils: Allow privileged camera apps to create raw streams for raw capable cameras [Arian]
+
+* frameworks/base
+fb6ff250042f gmscompat: Switch to asus X00HD fingeprint [Arian]
+336b13d4523c gmscompat: Make CTS/Play Integrity pass again [Dyneteve]
+1244abddf80b gmscompat: Use Nexus 6P fingerprint for CTS/Integrity [Dyneteve]
+aee28894c576 gmscompat: Apply the SafetyNet workaround to Play Store aswell [Dyneteve]
+5a4441eaf61f Limit SafetyNet workarounds to unstable GMS process [Danny Lin]
+48473f58eccd AttestationHooks: Set shipping level to 32 for devices >=33 [Anirudh Gupta]
+fb92e1587d2a keystore: Block key attestation for SafetyNet [Danny Lin]
+4d4e5f7445c8 Alter model name to avoid SafetyNet HW attestation enforcement [Danny Lin]
+3f093d3187e3 Camera: Expose aux camera if packagename is null [wbs306]
+
+* frameworks/opt/telephony
+25c2ce74f8 Enable vendor Telephony plugin: MSIM Changes [Sneh Bansal]
+a9590d8ffa Skip sending duplicate requests [Sandeep Gutta]
+3fdd0e02dc Start using inject framework support [Sandeep Gutta]
+7280b4c135 Reset data activity after traffic status poll stops [Mengjun Leng]
+98a0e502f6 Make a few  members of DSM overridable and accessible [Mengjun Leng]
+18dcb6f7b7 Add provision to override CellularNetworkService [Sneh Bansal]
+36aac52f83 Disable proguard for CellularNetworkServiceProvider [Avinash Nalluri]
+
+* hardware/xiaomi
+a2b76ca sensors: Handle fod press status without coordinates [Arian]
+cf2b6b4 sensors: Add udfps long press sensor [Cosmin Tanislav]
+8118073 sensors: Fix locking around setOperationMode and activate [Cosmin Tanislav]
+05a7fb5 sensors: Move one shot sensor out of main class [Cosmin Tanislav]
+cbfd2d0 sensors: Make sensor set mode operation function virtual [Cosmin Tanislav]
+c9d27c9 sensors: Make sensor flush function virtual [Cosmin Tanislav]
+19001f6 sensors: Make sensor run function virtual [Cosmin Tanislav]
+9c91aa2 sensors: Make sensor batch function virtual [Cosmin Tanislav]
+304db2b Add dummy sensors sub HAL [Cosmin Tanislav]
+
+* kernel_platform/msm-kernel
+eaef0d7c6f5f Configure mondrian [Arian]
+67d68fbec730 Add mondrian config based on waipio [Arian]
+
+* vendor/lineage
+8d8acd7e adb insecure by default [Scott Mertz]
+bcb5152d Allow to opt out from lineage kernel build [Arian]
+8d971f3f android: merge_dtbs: Respect miboard-id while merging [Arian]
+
+* vendor/qcom/proprietary/devicetree
+f9892f746a60 Disable build for thor, unicorn and mayfly [Arian]
+45d44f0dff3a Add support for mayfly, mondrian, thor and unicorn [Arian]
+
+* vendor/qcom/proprietary/display-devicetree
+0809615d fixup! Add support for thor, unicorn, mondrian and mayfly [Arian]
+173043bc disable build for thor, mayfly and unicorn [Arian]
+3b25cb40 Add support for thor, unicorn, mondrian and mayfly [Arian]
+
+====================
+     2023-11-14    
+====================
+* hardware/xiaomi
+6386a23 xiaomi: Keep a single clang-format in rootdir [Sebastiano Barezzi]
+
+* lineage/mirror
+d236bf0 Updated lineage-minimal to 13-Nov-2023 13:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+cd88ba2e wiki: Make gapps mention in install instructions less confusing [LuK1337]
+4b4b582a wiki: Promote gauguin to 20 [Hridaya Prajapati]
+
+====================
+     2023-11-13    
+====================
+* device/qcom/sepolicy-legacy-um
+dcc4d5a0 sepolicy: Remove duplicate hwservice_contexts [Bruno Martins]
+
+* frameworks/base
+b2a98be76f14 Merge tag 'android-13.0.0_r83' into staging/lineage-20.0_merge-android-13.0.0_r83 [Michael Bestas]
+
+* lineage/hudson
+c421d0c Regenerate device dependency mappings [LineageOS Infra]
+cf350bc updater: gauguin: Append "5G" to the IN/GL variants [Hridaya Prajapati]
+0f6f50b don't leave gauguin alone.. [Hridaya Prajapati]
+
+* lineage/wiki
+f3c992fa wiki: devices: Add Xiaomi Mi MIX 3 (perseus) [Andrey Sprynga]
+
+* packages/apps/KeyChain
+d90f056 Merge tag 'android-13.0.0_r83' into staging/lineage-20.0_merge-android-13.0.0_r83 [Michael Bestas]
+
+* packages/services/Telecomm
+d906200c4 Merge tag 'android-13.0.0_r83' into staging/lineage-20.0_merge-android-13.0.0_r83 [Michael Bestas]
+
+* vendor/firmware
+87bb779 sunfish: TQ3A.230805.001.S1 [Michael Bestas]
+
+====================
+     2023-11-12    
+====================
+* device/nubia/TP1803
+38d11ba5 TP1803: vndk: Move v28 libc++ to a subfolder [Arian]
+
+* kernel/qcom/sm8350
+23d03fa257af qseecom: Add flush_work based on flag [Monika Singh]
+c5394cf2770b asoc: holi: address checkpatch error and warning [George Gao]
+f286b6fbf383 techpack: audio: Resolve duplicate symbols [Alexander Winkowski]
+eab4fed06061 power: supply: smb5-iio: Add missing braces in smb5_iio_get_prop() [Alexander Winkowski]
+1ecb1c7ff0af techpack: camera: Add missing braces in cam_ope_mgr_create_kmd_buf() [Alexander Winkowski]
+e0ff2552067c net: cnss_prealloc: Fix indentation in status_show() [Alexander Winkowski]
+f505148fb16a usb: dwc3: Fix indentation in __dwc3_gadget_ep_set_halt() [Alexander Winkowski]
+6728e0cbe6f7 techpack: audio: Fix indentation in wsa881x_visense_adc_ctrl() [Alexander Winkowski]
+5c89784e473c Makefile: Enable misleading indentation warning [Alexander Winkowski]
+5ab20a193318 thermal: tsens: Fix exported function marked as static [Sultan Alsawaf]
+
+* lineage/hudson
+96dff7b Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/scripts
+adaacc6 device-deps-regenerator: Ignore Pixel 8 common repos [Michael Bestas]
+62ffe61 device-deps-regenerator: Ignore sm8450/sm8550-devicetrees [Michael Bestas]
+
