@@ -1,27 +1,136 @@
 ====================
-     2023-11-25    
+     2023-12-12    
 ====================
-* vendor/qcom/proprietary/audio-devicetree
-eb6dd54 Reverse more from stock [Arian]
-
-* vendor/qcom/proprietary/devicetree
-745de6fb9fe5 fixup! Update from mondrian MIUI V14.0.5.0.TMNMIXM [Arian]
+* device/xiaomi/sm8450-common
+b8065006c modules from mondrian [Arian]
 
 ====================
-     2023-11-24    
+     2023-12-11    
 ====================
 ====================
-     2023-11-23    
+     2023-12-10    
 ====================
 ====================
-     2023-11-22    
+     2023-12-09    
 ====================
+* device/xiaomi/sm8450-common
+5e3617bed Revert "Revert "sm8450-common: Switch to defconfig fragments"" [Arian]
+7f48d6862 Revert "Revert "sm8450-common: Pass TARGET_PRODUCT variable to kernel flags"" [Arian]
+c407aff0f Revert "Revert "sm8450-common: Move away from kernelplatform"" [Arian]
+3157fa2a8 Revert "sm8450-common: Include cvp-kernel" [Arian]
+
+* frameworks/av
+3a6637372f codec2: Change a Info print into Verbose [Shrikara B]
+a4ff8c629d CCodec: Use pipelineRoom only for HW decoder [Shrikara B]
+5558539ca2 [WA] Codec2: queue a empty work to HAL to wake up allocation thread [Jiajia Cong]
+288f01ece5 CCodec: Control the inputs to avoid pipeline overflow [Shrikara B]
+e7564cb2ca codec2: Use numClientBuffers to control the pipeline [Shrikara B]
+d1f6fcb96c SessionConfigurationUtils: Allow privileged camera apps to create raw streams for raw capable cameras [Arian]
+
+* frameworks/base
+df68e2c03964 Camera: Expose aux camera if packagename is null [wbs306]
+
+* frameworks/opt/telephony
+86b0e90aae Enable vendor Telephony plugin: MSIM Changes [Sneh Bansal]
+ce1be2f0e3 Skip sending duplicate requests [Sandeep Gutta]
+76c41dbc6d Start using inject framework support [Sandeep Gutta]
+10308a2448 Reset data activity after traffic status poll stops [Mengjun Leng]
+b94b7d4bb2 Make a few  members of DSM overridable and accessible [Mengjun Leng]
+9240ed79cd Add provision to override CellularNetworkService [Sneh Bansal]
+750a124c33 Disable proguard for CellularNetworkServiceProvider [Avinash Nalluri]
+
+* hardware/xiaomi
+e77e33d vibrator: effect: Read vibration fifo data from vendor [Arian]
+721c332 Import qti vibrator effect and rename [Arian]
+39a05cb sensors: Handle fod press status without coordinates [Arian]
+3404cc8 sensors: Add udfps long press sensor [Cosmin Tanislav]
+4d9c82e sensors: Fix locking around setOperationMode and activate [Cosmin Tanislav]
+01dd674 sensors: Move one shot sensor out of main class [Cosmin Tanislav]
+1b2ffa0 sensors: Make sensor set mode operation function virtual [Cosmin Tanislav]
+f742d14 sensors: Make sensor flush function virtual [Cosmin Tanislav]
+d261140 sensors: Make sensor run function virtual [Cosmin Tanislav]
+20d27f2 sensors: Make sensor batch function virtual [Cosmin Tanislav]
+90b2724 Add dummy sensors sub HAL [Cosmin Tanislav]
+
+* kernel/xiaomi/sm8450
+a61feba7a1b1 ARM64: configs: Add mondrian config [Arian]
+229af9e5d6ea ARM64: configs: xiaomi: Decommonize some configs and disable SPSS [Arian]
+034d6a2f98d8 [WIP] input: touchscreen: xiaomi: Reverse from stock module [kxxt]
+c7851b0ef9a9 input: touchsreen: xiaomi: Import updated header from M11 [Arian]
+84cd59d77e75 [WIP] input: touchscreen: goodix_9916: Reverse from stock module [kxxt]
+d35a6e78b559 input: touchscreen: goodix_9916: Import new touch headers from M11 [Arian]
+b2d1b615cac2 input: touchscreen: Import goodix_9916 from yudi-t-oss [Arian]
+4457e6233939 input: misc: qcom-hv-haptics: Import changes from mondrian-s-oss [Arian]
+f84ab0467d46 input: misc: Checkout qcom-hv-haptics to 43425e23eccc9ef731f6859480bc562f54833c78 [Arian]
+4ea38b99428c net: wireless: cnss2: Update xiaomi changes from garnet-t-oss [Arian]
+6eaf94088033 soc: qcom: fsa4480: Use mmhardware [Arian]
+62b7ac252b54 misc: Import mmhardware [Arian]
+a9b10c124784 misc: hwid: Add more project id's and their codenames [Arian]
+cf0ad8d4535b power: supply: xiaomi: Support WIRELESS_REVERSE_CLOSE [Arian]
+44c7b61736ce misc: Import wl2866d from mondrian-s-oss [Arian]
+b0dabcc8ba3c input: fingerprint: Import goodix_fod_G3S from mondrian-s-oss [Arian]
+
+* kernel/xiaomi/sm8450-devicetrees
+7541787c camera-devicetree: Add support for mondrian from MIUI V14.0.5.0.TMNMIXM [Arian]
+d6e4d690 audio-devicetree: Match mondrian V14.0.5.0.TMNMIXM [Arian]
+e5cfd7e2 audio-devicetree: Add support for mondrian [Arian]
+a786eb81 audio-devicetree: Decommonize swr haptics disable [Arian]
+3b340861 display-devicetree: Match mondrian V14.0.5.0.TMNMIXM [Arian]
+18c44bc3 display-devicetree: Disable build for thor, mayfly and unicorn [Arian]
+d7352238 display-devicetree: Add support for thor, unicorn, mondrian and mayfly [Arian]
+53c7aa6c Update from mondrian MIUI V14.0.5.0.TMNMIXM [Arian]
+d6e93911 Disable build except for cupid, zeus and mondrian [Arian]
+eae2d76b Disable build for thor, unicorn and mayfly [Arian]
+b99d6c2a Add support for mayfly, mondrian, thor and unicorn [Arian]
+
+* kernel/xiaomi/sm8450-modules
+4e736bc2c6 display-drivers: Set mi panel_state to on in dsi_display_enable as seen in stock driver [Arian]
+aadad079f4 [WIP] display-drivers: Implement auto gamma update as seen in stock driver [Arian]
+78cbc228e6 display-drivers: Enable more whitebuf changes for M11A as seen in stock driver [Arian]
+0850ba9e71 display-drivers; Update aa_alpha_M11A_PANEL_PA from stock driver [kxxt]
+f81ecb2712 display-drivers: Disable mi display pwrkey callback to fix compile [Arian]
+37d320161b display-drivers: Update from garnet-t-oss [Arian]
+d5f8c2fadb Import xiaomi changes from garnet-t-oss [Arian]
+4bdb7b385b Revert "msm: camera: flash: Add support for flash stream off" [Jens Reidel]
+fbda5df497 Revert "msm: camera: flash: Reenabling Enable and Disable regulator support for PMIC flash" [Jens Reidel]
+58fc0e0bcc Revert "msm: camera: flash: Proper handling of epcr reqs" [Jens Reidel]
+b4c2a4e8c2 old camera-kernel [Arian]
+80120ed1aa audio-kernel: Update xiaomi changes from garnet-t-oss [Arian]
+
+* lineage/wiki
+3a25407f wiki: Explain sideloading addons better for lineage recovery devices [LuK1337]
+
+* packages/apps/DeskClock
+ff75c523c DeskClock: Add preview image to screensaver [Greg Ross]
+
+* vendor/lineage
+ad1c2c78 android: merge_dtbs: Respect miboard-id while merging [Arian]
+
 ====================
-     2023-11-21    
+     2023-12-08    
 ====================
+* lineage/mirror
+b918a13 Updated aosp-minimal to 08-Dec-2023 13:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+e16deafe wiki: fix flame battery capacity [Polarian]
+b2f82044 wiki: Set no_oem_unlock_switch=true for s3ve3g [LuK1337]
+
 ====================
-     2023-11-20    
+     2023-12-07    
 ====================
+* lineage/mirror
+0866b1b Updated to 07-Dec-2023 13:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+a23d663e Revert "devices: river: Stop advertising support for -05" [Nolen Johnson]
+880c7583 devices: river: Stop advertising support for -05 [Nolen Johnson]
+
 ====================
-     2023-11-19    
+     2023-12-06    
 ====================
+* lineage/scripts
+2554899 pixel: extract-utils firmware handling integration [Michael Bestas]
+110f13c motorola: Add info dump script [Michael Bestas]
+5b191d8 motorola: Import star extract script [Michael Bestas]
+
