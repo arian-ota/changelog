@@ -1,9 +1,26 @@
 ====================
+     2023-12-13    
+====================
+* device/xiaomi/mondrian
+915af95 mondrian: overlay: Configure power button and fingerprint screen location [Arian]
+8f3da08 mondrian: Drop unnecessary vibrator effects [Arian]
+b472093 mondrian: Move audio firmware to proper section [Arian]
+
+* device/xiaomi/sm8450-common
+48a593c6a sm8450-common: overlay: Enable multiple vibration strength levels support [Michael Bestas]
+443b024e0 sm8450-common: modules from mondrian [Arian]
+
+* frameworks/base
+b434bd6e7bd8 udfps: Scale coordinates on action down events [Arian]
+e1b824686891 udfps: Trigger onFingerDown with regular action down events too [Arian]
+
+* kernel/xiaomi/sm8450
+32f7bbb12470 fixup! ARM64: configs: Add mondrian config [Arian]
+13d04c9d90c1 arm64: Add config option for wl2866d camera [Arian]
+
+====================
      2023-12-12    
 ====================
-* device/xiaomi/sm8450-common
-b8065006c modules from mondrian [Arian]
-
 ====================
      2023-12-11    
 ====================
@@ -125,12 +142,4 @@ b2f82044 wiki: Set no_oem_unlock_switch=true for s3ve3g [LuK1337]
 * lineage/wiki
 a23d663e Revert "devices: river: Stop advertising support for -05" [Nolen Johnson]
 880c7583 devices: river: Stop advertising support for -05 [Nolen Johnson]
-
-====================
-     2023-12-06    
-====================
-* lineage/scripts
-2554899 pixel: extract-utils firmware handling integration [Michael Bestas]
-110f13c motorola: Add info dump script [Michael Bestas]
-5b191d8 motorola: Import star extract script [Michael Bestas]
 
