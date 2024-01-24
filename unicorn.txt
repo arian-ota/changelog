@@ -1,0 +1,78 @@
+====================
+     2024-01-24    
+====================
+* device/xiaomi/sm8450-common
+21e4e6457 fixup! sm8450-common: Extract from unicorn [Arian]
+85f829b3c sm8450-common: modules from unicorn [Arian]
+df439096b sm8450-common: Extract from unicorn [Arian]
+5aca2b2f2 sm8450-common: Decommonize sensor configs [Arian]
+2c6296b45 sm8450-common: Decommonize ADSP modules [Arian]
+6df83125c sm8450-common: Add support for unicorn [Arian]
+060050c47 Revert "sm8450-common: audio: Update mixer_paths_waipio_mtp from mondrian V14.0.5.0.TMNMIXM" [Arian]
+
+* kernel/xiaomi/sm8450
+6c45dd74c61a Revert "input: touchsreen: xiaomi: Import updated header from M11" [Arian]
+bee7daeb5ba2 Revert "[WIP] input: touchscreen: xiaomi: Reverse from stock module" [Arian]
+2ca15c45bef9 Revert "remove verbose debug logging" [Arian]
+653b0c721e36 drivers: input: misc: aw86927_haptic: Replace mtk with qcom properties [TheStrechh]
+95e24c052a4c ARM64: configs: Add unicorn config [Arian]
+
+* kernel/xiaomi/sm8450-devicetrees
+66d69b8e2342 partially revert 53c7aa6cf67e067538baa3bf5e1e84f42178cfee to match unicorn [Arian]
+b15301781e14 fixup! fixup! audio-devicetree: Add support for mayfly, unicorn and thor [Arian]
+f999031a2710 fixup! audio-devicetree: Add support for mayfly, unicorn and thor [Arian]
+22abd123a412 fixup! camera-devicetree: Add support for thor, zizha, diting, mayfly, unicorn and mondrian from ziyi-s-oss [Arian]
+4739c8e4a779 fixup! display-devicetree: Add support for thor, unicorn, mondrian and mayfly [Arian]
+79b26a250f9b camera-devicetree: Disable build for diting and zizhan [Arian]
+00ea26a773de camera-devicetree: Add support for thor, zizha, diting, mayfly, unicorn and mondrian from ziyi-s-oss [Arian]
+9f6369021979 audio-devicetree: Add support for mayfly, unicorn and thor [Arian]
+584f074b1bb7 Revert "display-devicetree: Disable build for thor, mayfly and unicorn" [Arian]
+c7aea7534541 qcom: Enable mayfly, unicorn and thor [Arian]
+
+* kernel/xiaomi/sm8450-modules
+98c79be3fd Revert "audio-kernel: Update xiaomi changes from garnet-t-oss" [Arian]
+3ed05f8559 Revert "audio-kernel: Enable CS35L41" [Arian]
+ebb2a56b38 audio-kernel: Enable CS35L41 [Arian]
+
+====================
+     2024-01-23    
+====================
+====================
+     2024-01-22    
+====================
+====================
+     2024-01-21    
+====================
+* kernel/xiaomi/sm8350
+15bd509f8c26 drivers: input: goodix_tee: Disable Navigation events and key maps [Divyanshu-Modi]
+ee20620c4381 drivers: power: Import redwood changes [TheStrechh]
+ad0603efd61e arm64: dts: yupik: Increase minimum backlight level for M20 panel [TheStrechh]
+ab146c0cf1cd drivers: input: misc: aw86927_haptic: Replace mtk with qcom properties [TheStrechh]
+
+====================
+     2024-01-20    
+====================
+* hardware/xiaomi
+f78fb9e sensors: Handle fod press status without coordinates [Arian]
+8e7fa59 sensors: Add udfps long press sensor [Cosmin Tanislav]
+d756bca sensors: Fix locking around setOperationMode and activate [Cosmin Tanislav]
+977aa45 sensors: Move one shot sensor out of main class [Cosmin Tanislav]
+bf691c0 sensors: Make sensor set mode operation function virtual [Cosmin Tanislav]
+814ebe8 sensors: Make sensor flush function virtual [Cosmin Tanislav]
+12958f1 sensors: Make sensor run function virtual [Cosmin Tanislav]
+2132d3a sensors: Make sensor batch function virtual [Cosmin Tanislav]
+ddbda11 Add dummy sensors sub HAL [Cosmin Tanislav]
+cf41643 vintf: Add common xiaomi framework compatibility matrix [Arian]
+
+* packages/resources/devicesettings
+48c1907 devicesettings: Import popupcamera strings [Arian]
+
+====================
+     2024-01-19    
+====================
+* kernel/xiaomi/sm8450
+c69404225e79 remove verbose debug logging [Levi Zim]
+
+====================
+     2024-01-18    
+====================
