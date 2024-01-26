@@ -1,0 +1,150 @@
+====================
+     2024-01-26    
+====================
+* device/xiaomi/renoir
+516969d renoir: Setup firmware extraction [LuK1337]
+15e25ea renoir: Update blobs from V14.0.7.0.TKIMIXM [Giovanni Ricca]
+346645b renoir: Remove duplicated libcamxswispiqmodule.so [Retypolkg]
+d47ddfb renoir: Remove duplicated display configs [Giovanni Ricca]
+
+* device/xiaomi/sm8350-common
+4fc85b3 sm8350-common: Update from haydn V14.0.7.0.TKKMIXM [AdarshGrewal]
+d5ee527 sm8350-common: audio: Nuke unsupported haptics output configuration [EcrosoftXiao]
+ebeaeb8 sm8350-common: Remove libtinyxml [ralph950412]
+a11e612 sm8350-common: Use FUSE passthrough by default [Alessio Balsini]
+b3bc76f sm8350-common: Replace direct pid writes with setting task profiles for audio interfaces [Suren Baghdasaryan]
+bfb6cba sm8350-common: Remove some camera-daemon commands [Rick Yiu]
+c8e1015 sm8350-common: Add firmware extraction support [Michael Bestas]
+f6f40b7 sm8350-common: Keep building health HIDL interface lib in vendor [Sebastiano Barezzi]
+4aca996 sm8350-common: Move to QTI health AIDL service [Bruno Martins]
+a7f178a sm8350-common: Build android.frameworks.sensorservice@1.0.vendor [LuK1337]
+f2b025a sm8350-common: Add vendor.nxp.nxpnfc_aidl.INxpNfc/default [LuK1337]
+c2e9369 sm8350-common: Build Widevine DRM HAL dependencies [Bruno Martins]
+700c7f3 sm8350-common: Migrate to AIDL ClearKey DRM HAL [Bruno Martins]
+6998158 sm8350-common: Add prebuilt protobuf 3.9.1 to vendor partition. [Krzysztof Kosiński]
+
+* frameworks/base
+7d4d1096df53 BootAnimation: Check for resolution override [Aaron Kling]
+d28a35e6d568 Don't fail setDeviceConnectionState if not implemented in hal [Aaron Kling]
+
+* kernel/xiaomi/sm8350
+bf02ffbf25f8 input: touchscreen: focaltech_3658u: Fix prototype error [Arian]
+
+* lineage/wiki
+01424fab templates: recovery_install_amlogic_update: Use official super_empty [Nolen Johnson]
+9f715cb2 templates: recovery_install_amlogic_update: Rafactor install process [Nolen Johnson]
+
+* system/sepolicy
+5db7fd62a sepolicy: Allow fsck_untrusted to be sys_admin [someone5678]
+896af0dfa private: Exempt system_app from adbd_config_prop neverallow [Nolen Johnson]
+59e43f3e1 sepolicy: Fix sdcardd rules [Sevenrock]
+44feb20ce Give mediaprovider_app mlstrustedsubject [Aaron Kling]
+3086f6319 sepolicy: Add sdcard_posix_contextmount_type attribute [LuK1337]
+a5d5ece74 Label system properties to config audio codec priority [Michael Bestas]
+43642c63b sepolicy: Allow recovery to alter / [Gabriele M]
+f495817b9 sepolicy: whitelist recovery from node creation neverallow [Alessandro Astone]
+
+* vendor/xiaomi/renoir
+a0954b6 renoir: Import firmware from V14.0.7.0.TKIMIXM [Arian]
+0816fa0 renoir: Update blobs from V14.0.7.0.TKIMIXM [Arian]
+1dcac0a renoir: Remove duplicated display configs [Arian]
+89f84c7 renoir: Import sm8350-common namespace [Arian]
+
+====================
+     2024-01-25    
+====================
+====================
+     2024-01-24    
+====================
+====================
+     2024-01-23    
+====================
+* device/google/atv
+a876b76 Revert "Removing references to arm7 emulator targets." [Nolen Johnson]
+
+* device/qcom/sepolicy_vndr/legacy-um
+ae5e5f8fd sdm710: Label sysfs_ssr_toggle [Michael Bestas]
+ec23bda8a sdm710: Label persist block device [Ivan Vecera]
+
+* frameworks/base
+4ff8a2ed701b fixup! SystemUI: Register content observer for clock AM/PM style [Dhina17]
+
+* lineage/wiki
+1874dc42 wiki: add Lineage-20.0 to the emulator supported versions list [Jake Florence]
+
+====================
+     2024-01-22    
+====================
+* android
+1c1690a Revert "Revert "manifest: Switch to our fork of packages/services/Car"" [Bruno Martins]
+
+* device/lineage/atv
+3a460bc atv: Move standalone RRO packages to a separate dir [Bruno Martins]
+
+* device/lineage/car
+b588ae4 car: Convert current overlays into standalone RRO packages [Bruno Martins]
+
+* device/lineage/sepolicy
+ac2362b common: Grant adbroot access to package manager [Bruno Martins]
+
+* lineage/wiki
+c910ed01 devices: m5*: SW5 -> SW4 [Nolen Johnson]
+9e6b6ead wiki: Add a file with GitHub usernames mapping [LuK1337]
+
+* packages/modules/adb
+88411b79 adb_root: Handle Automotive builds usecase [Bruno Martins]
+
+====================
+     2024-01-21    
+====================
+* android
+3496bd6 Revert "manifest: Switch to our fork of packages/services/Car" [Sebastiano Barezzi]
+
+* lineage/wiki
+65b679d2 wiki: Remove checksums from copy partitions instructions [LuK1337]
+
+* packages/apps/Aperture
+032a39b Aperture: Update dependencies [LuK1337]
+c1fa5fb Aperture: Address missing opt-in decorator warning in getMode() [LuK1337]
+
+====================
+     2024-01-20    
+====================
+* android
+4439ba2 manifest: Switch to our fork of packages/services/Car [Bruno Martins]
+7fc623e lineage: Enable generic car device tree [Bruno Martins]
+
+* build/soong
+5619d0d9f dumpvars: PRODUCT_IS_AUTO -> PRODUCT_IS_AUTOMOTIVE [Bruno Martins]
+
+* device/lineage/car
+d8ef5ac Revert "Override forced orientation and enable rotation by default" [Bruno Martins]
+bc57ffa Revert "car: Set PRODUCT_IS_AUTO to true" [Bruno Martins]
+
+* hardware/xiaomi
+cf41643 vintf: Add common xiaomi framework compatibility matrix [Arian]
+
+* packages/apps/Aperture
+b4a5ee6 Automatic translation import [LineageOS Infra]
+
+* packages/apps/ExactCalculator
+c63de70 ExactCalculator: Run `./gradlew generateBp` [LuK1337]
+
+* packages/apps/Jelly
+39793db Automatic translation import [LineageOS Infra]
+f9ef099 Jelly: Override CarHTMLViewer [Bruno Martins]
+eb312e2 Jelly: Run `./gradlew app:generateBp` [Luca Stefani]
+
+* packages/apps/Updater
+27af047 Updater: Override SystemUpdater [Bruno Martins]
+
+* packages/services/Car
+18275d558e car_product: Only include test packages on eng builds [Bruno Martins]
+
+* vendor/lineage
+24d1e5ac config: Commonize stuff based on PRODUCT_IS_* flag [Bruno Martins]
+0b72bc3e car: Include ExactCalculator and Jelly on Automotive builds [Bruno Martins]
+603d1727 config: Do not ship Parts and SuW on Automotive builds [Bruno Martins]
+7cb63b96 config/common_car: Remove car_product inheritance [Bruno Martins]
+1f1e4dbf partner_gms: PRODUCT_IS_AUTO -> PRODUCT_IS_AUTOMOTIVE [Bruno Martins]
+
