@@ -1,78 +1,86 @@
 ====================
-     2024-01-24    
+     2024-02-14    
 ====================
+* device/qcom/sepolicy
+2fa70a47 Revert "sepolicy:qcc: switch to platform app" [Arian]
+
 * device/xiaomi/sm8450-common
-21e4e6457 fixup! sm8450-common: Extract from unicorn [Arian]
-85f829b3c sm8450-common: modules from unicorn [Arian]
-df439096b sm8450-common: Extract from unicorn [Arian]
-5aca2b2f2 sm8450-common: Decommonize sensor configs [Arian]
-2c6296b45 sm8450-common: Decommonize ADSP modules [Arian]
-6df83125c sm8450-common: Add support for unicorn [Arian]
-060050c47 Revert "sm8450-common: audio: Update mixer_paths_waipio_mtp from mondrian V14.0.5.0.TMNMIXM" [Arian]
+4400652b4 sm8450-common: Reserve osme space on system partitions [Arian]
+584052d92 fixup! [WIP] sm8450-common: Add qcc system blobs [Arian]
+9d120db44 [WIP] sm8450-common: Add qcc system blobs [Arian]
+ab80138ef sm8450-common: Drop oss lmkd libs [Arian]
+029563609 sm8450-common: Build qcom soundfx effects from source [Arian]
+1875e19e7 sm8450-common: Drop proprietary libdrmutils [Arian]
+6f5006604 sm8450-common: Build qti thermal HAL from source [Arian]
+a3ab77e48 fixup! sm8450-common: Kang display blobs from eqs [Arian]
+725f6c247 sm8450-common: Cleanup media section and build oss ones [Arian]
+b7a2cb1f7 sm8450-common: Reorder and cleanup some blobs [Arian]
 
 * kernel/xiaomi/sm8450
-6c45dd74c61a Revert "input: touchsreen: xiaomi: Import updated header from M11" [Arian]
-bee7daeb5ba2 Revert "[WIP] input: touchscreen: xiaomi: Reverse from stock module" [Arian]
-2ca15c45bef9 Revert "remove verbose debug logging" [Arian]
-653b0c721e36 drivers: input: misc: aw86927_haptic: Replace mtk with qcom properties [TheStrechh]
-95e24c052a4c ARM64: configs: Add unicorn config [Arian]
-
-* kernel/xiaomi/sm8450-devicetrees
-66d69b8e2342 partially revert 53c7aa6cf67e067538baa3bf5e1e84f42178cfee to match unicorn [Arian]
-b15301781e14 fixup! fixup! audio-devicetree: Add support for mayfly, unicorn and thor [Arian]
-f999031a2710 fixup! audio-devicetree: Add support for mayfly, unicorn and thor [Arian]
-22abd123a412 fixup! camera-devicetree: Add support for thor, zizha, diting, mayfly, unicorn and mondrian from ziyi-s-oss [Arian]
-4739c8e4a779 fixup! display-devicetree: Add support for thor, unicorn, mondrian and mayfly [Arian]
-79b26a250f9b camera-devicetree: Disable build for diting and zizhan [Arian]
-00ea26a773de camera-devicetree: Add support for thor, zizha, diting, mayfly, unicorn and mondrian from ziyi-s-oss [Arian]
-9f6369021979 audio-devicetree: Add support for mayfly, unicorn and thor [Arian]
-584f074b1bb7 Revert "display-devicetree: Disable build for thor, mayfly and unicorn" [Arian]
-c7aea7534541 qcom: Enable mayfly, unicorn and thor [Arian]
-
-* kernel/xiaomi/sm8450-modules
-98c79be3fd Revert "audio-kernel: Update xiaomi changes from garnet-t-oss" [Arian]
-3ed05f8559 Revert "audio-kernel: Enable CS35L41" [Arian]
-ebb2a56b38 audio-kernel: Enable CS35L41 [Arian]
+665ab11365a5 Revert "input: touchsreen: xiaomi: Import updated header from M11" [Arian]
+e4244c1ac5a5 Revert "[WIP] input: touchscreen: xiaomi: Reverse from stock module" [Arian]
+72367f2d3b08 Revert "remove verbose debug logging" [Arian]
+eebc8084eb38 Revert "fixup! [WIP] input: touchscreen: xiaomi: Reverse from stock module" [Arian]
 
 ====================
-     2024-01-23    
+     2024-02-13    
 ====================
 ====================
-     2024-01-22    
+     2024-02-12    
 ====================
 ====================
-     2024-01-21    
+     2024-02-11    
 ====================
-* kernel/xiaomi/sm8350
-15bd509f8c26 drivers: input: goodix_tee: Disable Navigation events and key maps [Divyanshu-Modi]
-ee20620c4381 drivers: power: Import redwood changes [TheStrechh]
-ad0603efd61e arm64: dts: yupik: Increase minimum backlight level for M20 panel [TheStrechh]
-ab146c0cf1cd drivers: input: misc: aw86927_haptic: Replace mtk with qcom properties [TheStrechh]
-
 ====================
-     2024-01-20    
+     2024-02-10    
 ====================
-* hardware/xiaomi
-f78fb9e sensors: Handle fod press status without coordinates [Arian]
-8e7fa59 sensors: Add udfps long press sensor [Cosmin Tanislav]
-d756bca sensors: Fix locking around setOperationMode and activate [Cosmin Tanislav]
-977aa45 sensors: Move one shot sensor out of main class [Cosmin Tanislav]
-bf691c0 sensors: Make sensor set mode operation function virtual [Cosmin Tanislav]
-814ebe8 sensors: Make sensor flush function virtual [Cosmin Tanislav]
-12958f1 sensors: Make sensor run function virtual [Cosmin Tanislav]
-2132d3a sensors: Make sensor batch function virtual [Cosmin Tanislav]
-ddbda11 Add dummy sensors sub HAL [Cosmin Tanislav]
-cf41643 vintf: Add common xiaomi framework compatibility matrix [Arian]
-
-* packages/resources/devicesettings
-48c1907 devicesettings: Import popupcamera strings [Arian]
-
 ====================
-     2024-01-19    
+     2024-02-09    
+====================
+====================
+     2024-02-08    
 ====================
 * kernel/xiaomi/sm8450
-c69404225e79 remove verbose debug logging [Levi Zim]
+f62256aee5e9 fixup! [WIP] input: touchscreen: xiaomi: Reverse from stock module [Arian]
+314174d8d180 remove verbose debug logging [Levi Zim]
+0cc3a287d0ee [WIP] input: touchscreen: xiaomi: Reverse from stock module [kxxt]
+1edc158c09a4 input: touchsreen: xiaomi: Import updated header from M11 [Arian]
+eb7dee464abe input: touchscreen: xiaomi: Implement touch_thp_mem_notify [Arian]
+377143da7db9 input: touchscreen: xiaomi: Implement touch_thp_film [Arian]
+0dd3f538a308 input: touchscreen: xiaomi: Implement palm_sensor_data [Arian]
+e1d6e7415e4a Revert "input: touchscreen: xiaomi: Change enable_touch_raw to work with int" [Arian]
+0ddb02d61239 Revert "input: touchscreen: xiaomi: Drop clicktouch_raw" [Arian]
+390328887c9e input: touchscreen: xiaomi: Implement tp_hal_version [Arian]
+9366245e7042 input: touchscreen: xiaomi: Align mutexes consistently [Arian]
+cb3f54b82b8a input: touchscreen: xiaomi: Implement touch_irq_no [Arian]
+ac3fedf1d560 input: touchscreen: xiaomi: Implement finger_status [Arian]
+26b790f84fca input: touchscreen: xiaomi: Implement touch_active_status [Arian]
+f78171df419f input: touchscreen: xiaomi: Add XIAOMI_TOUCH_UTC_PRINT [Arian]
+db7da710822f input: touchscreen: xiaomi: Add more THP mode types [Arian]
+aa590ad570e1 input: touchscreen: xiaomi: Change enable_touch_raw to work with int [Arian]
+366c760f4474 input: touchscreen: xiaomi: Implement thp_cmd_data [Arian]
+f5737c8c0126 input: touchscreen: xiaomi: Move xiaomi_touch_set_suspend_state up [Arian]
+7a674d263bba input: touchscreen: xiaomi: Drop clicktouch_raw [Arian]
+c6e28c90d474 input: touchscreen: xiaomi: Implement resolution_factor [Arian]
+bb9622858665 input: touchscreen: xiaomi: clang-format [Arian]
+5d23f0a74dca Revert "input: touchscreen: xiaomi: Implement resolution_factor" [Arian]
+a4e0eb72d5c5 Revert "input: touchscreen: xiaomi: Drop clicktouch_raw" [Arian]
+2ed6645e7170 Revert "input: touchscreen: xiaomi: Move xiaomi_touch_set_suspend_state up" [Arian]
+8095c0d5f854 Revert "input: touchscreen: xiaomi: Implement thp_cmd_data" [Arian]
+6210a34ae253 Revert "input: touchscreen: xiaomi: Change enable_touch_raw to work with int" [Arian]
+90e1be823492 Revert "input: touchscreen: xiaomi: Add more THP mode types" [Arian]
+e07a03e4cf95 Revert "input: touchscreen: xiaomi: Add XIAOMI_TOUCH_UTC_PRINT" [Arian]
+ad62e4cb4f4b Revert "input: touchscreen: xiaomi: Implement touch_active_status" [Arian]
+7d7aa23c4fd9 Revert "input: touchscreen: xiaomi: Implement finger_status" [Arian]
+30af2a6f064f Revert "input: touchscreen: xiaomi: Implement touch_irq_no" [Arian]
+78bf60af8d7d Revert "input: touchscreen: xiaomi: Align mutexes consistently" [Arian]
+951786c1d73b Revert "input: touchscreen: xiaomi: Implement tp_hal_version" [Arian]
+44b2844d686d Revert "Revert "input: touchscreen: xiaomi: Drop clicktouch_raw"" [Arian]
+bf4e35dea245 Revert "Revert "input: touchscreen: xiaomi: Change enable_touch_raw to work with int"" [Arian]
+0db2d68e984a Revert "input: touchscreen: xiaomi: Implement palm_sensor_data" [Arian]
+a64ad30f0e08 Revert "input: touchscreen: xiaomi: Implement touch_thp_film" [Arian]
+40b9b32fc94b Revert "input: touchscreen: xiaomi: Implement touch_thp_mem_notify" [Arian]
+bd18f9c01fd9 Revert "input: touchsreen: xiaomi: Import updated header from M11" [Arian]
+aa9ea51a1254 Revert "[WIP] input: touchscreen: xiaomi: Reverse from stock module" [Arian]
+d326c6af918e Revert "remove verbose debug logging" [Arian]
 
-====================
-     2024-01-18    
-====================
