@@ -1,0 +1,131 @@
+====================
+     2024-03-07    
+====================
+* device/xiaomi/cupid
+c5bfb72 unicorn: Update blobs from V816.0.3.0.ULCEUXM [Arian]
+1b07318 cupid: Add goodix_fod module [Arian]
+d40c990 zeus: Decommonize sensors configs [Arian]
+29d3408 cupid: Decommonize ADSP modules [Arian]
+2affea6 cupid: Import decommonized libQnnHtpAltPrepV69Stub.so [Arian]
+815fe0a cupid: Setup firmware extraction [LuK1337]
+2002f5c cupid: Move to QTI health AIDL service [Bruno Martins]
+4206a7c cupid: cleanup blobs [Arian]
+04edb16 cupid: Decommonize audio HAL [Arian]
+49db1b2 cupid: Decommonize AGM [Arian]
+e315d7b cupid: Add regulator, touch, haptics and audio kernel modules [Arian]
+
+* device/xiaomi/mondrian
+a4d3e52 mondrian: Add goodix_fod kernel module [Arian]
+
+* device/xiaomi/sm8450-common
+07fbee9a fixup! sm8450-common: Allow choosing NFC supported SKUs [Arian]
+1cecfcff sm8450-common: Move default network property to vendor partition [Jayachandran C]
+dee81dfd sm8450-common: Enable usage of dex2oat64 [David Sehr]
+85a8a1ba sm8450-common: overlay: Drop MMS user agent overlays [SebaUbuntu]
+30b84f82 sm8450-common: overlay: Unpin updatable-media from memory [Santiago Seifert]
+0c1ddaf8 sm8450-common: overlay: Remove odex/oat files from pinner list [Nicolas Geoffray]
+7dcdd398 sm8450-common: overlay: Update SurfaceFlinger pin on all targets [Kevin Jeon]
+c943c2e3 sm8450-common: overlay: Set shutdown battery temperature [Arian]
+d98cbb40 sm8450-common: overlay: Update from unicorn V816.0.3.0.ULECNXM [Arian]
+bfe01229 sm8450-common: overlay: Add WifiResTarget_cape [Arian]
+73cdad0c sm8450-common: overlay: Import xiaomi wifi changes for taro [Arian]
+e97f9654 sm8450-common: overlay: Restrict WifiResTarget to taro [Arian]
+862e9768 sm8450-common: Build Lineage Health HAL [Michael Bestas]
+846eabaf sm8450-common: Build Lineage PowerShare HAL [Jens Reidel]
+59f1b800 sm8450-common: Drop unused powershare label [Arian]
+061b1ef2 sm8450-common: Decommonize goodix_fod.ko [Jens Reidel]
+956161f6 sm8450-common: Address marble denials [Jens Reidel]
+47fd7f99 sm8450-common: Address marble fingerprint denials [Jens Reidel]
+0281924a sm8450-common: Allow choosing NFC supported SKUs [Jens Reidel]
+efc3a9b8 sm8450-common: keylayout: Disable single tap on fingerprint sensor [Jens Reidel]
+cc66dc7b sm8450-common: Import fingerprint sensor keylayouts from marble V14.0.9.0.TMREUXM [Jens Reidel]
+2c66faf9 sm8450-common: hidl: Add fingerprint extension HAL [Jens Reidel]
+c33a07e4 sm8450-common: rootdir: Set more fingerprint permissions [Jens Reidel]
+
+* device/xiaomi/zeus
+093af00 zeus: Decommonize CIT sensors [Arian]
+7b0224c fixup! zeus: Update blobs from V816.0.2.0.ULBCNXM [Arian]
+d36bb42 zeus: Drop vm-bootsys image [Arian]
+9cf6756 zeus: Add goodix_fod module [Arian]
+6d152df zeus: Update blobs from V816.0.2.0.ULBCNXM [Arian]
+21f3f7b zeus: Decommonize sensors configs [Arian]
+dafe64f zeus: Decommonize ADSP modules [Arian]
+
+* hardware/xiaomi
+b7cbb86 sensors: Handle fod press status without coordinates [Arian]
+879d4bc sensors: Add udfps long press sensor [Cosmin Tanislav]
+cc409d3 sensors: Fix locking around setOperationMode and activate [Cosmin Tanislav]
+65a0c23 sensors: Move one shot sensor out of main class [Cosmin Tanislav]
+73eb227 sensors: Make sensor set mode operation function virtual [Cosmin Tanislav]
+ad2378b sensors: Make sensor flush function virtual [Cosmin Tanislav]
+832786b sensors: Make sensor run function virtual [Cosmin Tanislav]
+3560b89 sensors: Make sensor batch function virtual [Cosmin Tanislav]
+e3d6260 Add dummy sensors sub HAL [Cosmin Tanislav]
+e5a9512 vintf: Add fpc and goodix 1.0 extensions to fcm [Arian]
+c682da8 vintf: Add fingerprint extension to common fcm [Jens Reidel]
+
+* kernel/xiaomi/sm8450-modules
+e71a77c8710b msm: camera: flash: Proper QueryCapV1 Handling [Abhilash Mahapatra]
+35f643e2bd9e Revert "Revert "msm: camera: flash: Proper handling of epcr reqs"" [Arian]
+06ba5bee79e2 Revert "Revert "msm: camera: flash: Reenabling Enable and Disable regulator support for PMIC flash"" [Arian]
+5da0351ac95a Revert "Revert "msm: camera: flash: Add support for flash stream off"" [Arian]
+29790320a051 camera_sensor_utils: Add support for WL2866D [Arian]
+
+====================
+     2024-03-06    
+====================
+====================
+     2024-03-05    
+====================
+* device/xiaomi/mondrian
+6851f07 mondrian: Decommonize cit sensor [Arian]
+41b305e mondrian: Add touch module to second stage modules [Arian]
+63ddcb3 monrian: overlay: Set battery capacity properly for global devices [Arian]
+ca4d394 mondrian: overlay: Remove dsp. prefix from audio and video power profiles [Arian]
+6039991 mondrian: Update from V816.0.3.0.UMNMIXM [Arian]
+1f54b89 mondrian: Import decommonized libQnnHtpAltPrepV69Stub.so [Arian]
+cf5ab98 mondrian: Setup firmware extraction [LuK1337]
+2cf2eb2 mondrian: Move to QTI health AIDL service [Bruno Martins]
+
+* device/xiaomi/sm8450-common
+bf0302e8 sm8450-common: Decommonize cit sensors [Arian]
+f5dd5cce sm8450-common: Drop goodix_core.ko kernel module [Arian]
+
+* device/xiaomi/unicorn
+9cc963e unicorn: Drop local audio configs [Arian]
+c8d51d7 fixup! unicorn: Add spec info about Xiaomi 12S Pro [Arian]
+
+* device/xiaomi/zeus
+d41ef24 zeus: Import decommonized libQnnHtpAltPrepV69Stub.so [Arian]
+713e594 zeus: Setup firmware extraction [LuK1337]
+d8e2bd2 zeus: Move to QTI health AIDL service [Bruno Martins]
+c0d8e54 zeus: cleanup blobs [Arian]
+8113cfd zeus: Decommonize audio HAL [Arian]
+f5af450 zeus: Decommonize AGM [Arian]
+91824d8 zeus: Decommonize touch_report [Arian]
+af0daa6 zeus: Add regulator, touch, haptics and audio kernel modules [Arian]
+
+* kernel/xiaomi/sm8450
+7e5022c6bfda wl2866d: Add missing function prototypes [Arian]
+1fd20e5724ad input: touchscreen: goodix_9916: Add missing function prototypes [Arian]
+
+* kernel/xiaomi/sm8450-devicetrees
+d4b36574 display-devicetree: Bump minimal brightness for mondrian [Arian]
+e40776e3 display-devicetree: Update marble nolp command from monrian V816.0.3.0.UMNMIXM [Arian]
+858f648f display-devicetree: Add qcom,mdss-dsi-nolp-command-update for mondrian [Arian]
+
+====================
+     2024-03-04    
+====================
+====================
+     2024-03-03    
+====================
+====================
+     2024-03-02    
+====================
+====================
+     2024-03-01    
+====================
+* kernel/xiaomi/sm8450-devicetrees
+55b67721 devicetree: Update marble eusb2-repeater peripheral mode seq [Jens Reidel]
+
