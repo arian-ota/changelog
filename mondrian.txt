@@ -1,8 +1,43 @@
 ====================
-     2024-03-14    
+     2024-03-18    
 ====================
 * device/xiaomi/sm8450-common
-52e4d7271 sm8450-common: udfps: I hate fpc [Arian]
+040734060 sm8450-common: config: Update sf duration to 15.6 ms [Akhil Jaiswal]
+6e1038652 sm8450-common: config: Move from phase offsets to work durations [Alex Sarraf]
+7fdf86a72 sm8450-common: udfps: Don't try to read with a negative length [Arian]
+6cccab763 sm8450-common: udfps: Enable fod_status on finger down events instead for fpc_fod [kxxt]
+
+* hardware/xiaomi
+d26269b hidl: biometrics: fingerprint: Add enroll methods to udfps handler [Arian]
+
+* kernel/xiaomi/sm8450-modules
+105ca49537c7 Revert "disp: msm: sde: wait for pending vsync event in encoder disable" [Arian]
+bc2993d2832c Revert "disp: msm: sde: wait for pending vsync event on pm_suspend" [Arian]
+cb0b5d87cfd6 Revert "disp: msm: sde: move some frame_events from crtc commit to event thread" [Arian]
+23484e348e96 Revert "disp: msm: dp: modify hdcp wait loop to not add to cpu load" [Arian]
+
+====================
+     2024-03-17    
+====================
+====================
+     2024-03-16    
+====================
+====================
+     2024-03-15    
+====================
+* device/xiaomi/cupid
+7234a07 cupid: overlay: Decommonize brightness overlays [Arian]
+df21c33 cupid: overlay: Beautify FrameworksResCupid [Arian]
+66c3cd2 cupid: Import displayconfig to control HBM [Arian]
+
+* device/xiaomi/mondrian
+620f0b6 mondrian: overlay: Decommonize brightness overlays [Arian]
+41a1561 mondrian: Import displayconfig to control HBM [Arian]
+
+* device/xiaomi/sm8450-common
+09188e3f5 sm8450-common: Add support for thor [Jens Reidel]
+642a2c1cf sm8450-common: udfps: Disable HBM directly on successfull authentication [Arian]
+c181cc568 sm8450-common: overlay: Decommonize brightness overlays [Arian]
 d1b52bf0a sm8450-common: udfps: Change verbose logging to DEBUG [Arian]
 e7fd11482 sm8450-common: udfps: Inform hwmodule about press coordinates [Arian]
 f417b314c sm8450-common: udfps: Use 110 nit fod when the brightness is low [Arian]
@@ -16,7 +51,13 @@ b32b6cc1f sm8450-common: udfps: Drop unnecessary setFingerDown on cancel [Arian]
 7094e196c sm8450-common: udfps: Enable HBM via disp_feature [Arian]
 f8e3dd5aa sm8450-common: udfps: Keep fod_status enabled during enroll [Arian]
 
+* device/xiaomi/unicorn
+6b04d7e unicorn: overlay: Decommonize brightness overlays [Arian]
+6c8046b unicorn: Import displayconfig to control HBM [Arian]
+
 * device/xiaomi/zeus
+76f7cac zeus: overlay: Decommonize brightness overlays [Arian]
+e743534 zeus: Import displayconfig to control HBM [Arian]
 f8de7d5 fixup! zeus: cleanup blobs [Arian]
 
 * frameworks/base
@@ -152,17 +193,26 @@ eb019986 cape-pinctrl: Add thor uart pins [Arian]
 758b09c5ddc8 display: mi_disp: Allow partial reads [Arian]
 242555c91f15 display: mi_disp: Move fod_ui_ready_state to uapi headers [Arian]
 
-* lineage/hudson
-d54da98 Listen To Them; They're Dying, rtwo! Curse My Metal Body, I Wasn't Fast Enough! [Marc Bourgoin]
-
 * lineage/wiki
 b5350e97 wiki: Add Motorola edge 40 pro / moto X40 / edge+ (2023) [Marc Bourgoin]
 
 * vendor/lineage
 1d90e25a android: merge_dtbs: Respect miboard-id while merging [Arian]
 
+* vendor/xiaomi/cupid
+9abd1e5 cupid: Import displayconfig to control HBM [Arian]
+
+* vendor/xiaomi/mondrian
+658de6b mondrian: Import displayconfig to control HBM [Arian]
+
+* vendor/xiaomi/unicorn
+ad3cb04 unicorn: Import displayconfig to control HBM [Arian]
+
+* vendor/xiaomi/zeus
+0254915 zeus: Import displayconfig to control HBM [Arian]
+
 ====================
-     2024-03-13    
+     2024-03-14    
 ====================
 * device/xiaomi/sm8450-common
 f878c5c12 sm8450-common: sepolicy: Add rules for fpc fod [kxxt]
@@ -174,6 +224,19 @@ e15f516b6 sm8450-common: display: Set debug.sf.auto_latch_unsignaled to 0 [Alex 
 119782045 sm8450-common: Disable redir_party_num [Andrzej Perczak]
 ebf2df472 fixup! sm8450-common: overlay: Update from unicorn V816.0.3.0.ULECNXM [Arian]
 
+* lineage/hudson
+d54da98 Listen To Them; They're Dying, rtwo! Curse My Metal Body, I Wasn't Fast Enough! [Marc Bourgoin]
+
+* vendor/xiaomi/sm8450-common
+2fdc977 sm8450-common: Disable redir_party_num [Andrzej Perczak]
+
+====================
+     2024-03-13    
+====================
+* device/xiaomi/sm8450-common
+ec6e0653d sm8450-common: Pin hotword blobs from global rom [Arian]
+1169aee15 sm8450-common: sepolicy: Relax xiaomi camera postproc rules [Arian]
+
 * kernel/xiaomi/sm8450-devicetrees
 af0f3b4c qcom: Build dtbos inline [Aaron Kling]
 2af1fceb Add 'qcom/video/' from commit 'e714f340cf0f89292e239aa61b4d46bcf8b02d2d' [Arian]
@@ -183,17 +246,14 @@ ecbff50b Add 'qcom/display/' from commit 'e67350bb03f423f3f243da976f4875c908515c
 43dff211 Add 'qcom/cvp/' from commit '4efcada65dcc99973361f00fa217d505a6b73332' [Arian]
 45d72fd7 Add 'qcom/camera/' from commit '1d693f07b5936abbca9670e6ced33cd09a11bc71' [Arian]
 0b70f725 Add 'qcom/audio/' from commit '1577f7c52b9f8ab17097946a6710b0512165ed78' [Arian]
+a3153273 LA.VENDOR.1.0.r1-23100-WAIPIO.QSSI14.0 [Arian]
 
 * vendor/xiaomi/sm8450-common
-2fdc977 sm8450-common: Disable redir_party_num [Andrzej Perczak]
+c787ca3 sm8450-common: Add hotword blobs from cupid V816.0.3.0.ULCEUXM [Arian]
 
 ====================
      2024-03-12    
 ====================
-* device/xiaomi/sm8450-common
-ec6e0653d sm8450-common: Pin hotword blobs from global rom [Arian]
-1169aee15 sm8450-common: sepolicy: Relax xiaomi camera postproc rules [Arian]
-
 * device/xiaomi/unicorn
 1ca2cf7 unicorn: Add goodix_fod module [Arian]
 
@@ -220,201 +280,6 @@ ab2d0d72523a Revert "power: supply: qti_battery_charger: Return time to full in 
 cfaf154469b1 Revert "Revert "Revert "power: qti_typec_class: Add typec class support for micro USB""" [Arian]
 73a3068d2d58 Revert "Revert "Revert "power: supply: qti_battery_charger: Add dynamic uusb detection""" [Arian]
 
-* kernel/xiaomi/sm8450-devicetrees
-a3153273 LA.VENDOR.1.0.r1-23100-WAIPIO.QSSI14.0 [Arian]
-
-* vendor/xiaomi/sm8450-common
-c787ca3 sm8450-common: Add hotword blobs from cupid V816.0.3.0.ULCEUXM [Arian]
-
-====================
-     2024-03-11    
-====================
-* kernel/xiaomi/sm8450
-16baeed55de2 ARM64: configs: Add mayfly config [FlowerSea0208]
-
-* lineage/hudson
-2c86508 She's not Xena [Aaron Kling]
-d70c0e9 He prefers Star-Lord [Aaron Kling]
-80c5e22 Someone go resuscitate Paul [Aaron Kling]
-
-* lineage/wiki
-44b8edc6 wiki: Fix typo in sif install warning [Gérard Parat]
-1e96d3b5 wiki: Don't rely on GitHub for hosting images [LuK1337]
-ba2b1cc5 wiki: sif: step3.png -> step3.jpg [LuK1337]
-216834cc devices: sif: Better handle images [Nolen Johnson]
-7bda62ab devices: Import the NVIDIA SHIELD TV (2019) | 20 [Nolen Johnson]
-69427ba8 devices: Reship Nvidia T186 targets on 20 [Aaron Kling]
-eaf05846 devices: Promote Nvidia T210 targets to 20 [Aaron Kling]
-10a332c9 wiki: installation package -> zip file [Michael W]
-
-* packages/apps/Dialer
-42f9b006d Dialer: implement vvm_type_advvm (AT&T VVM) [Joel Beckmeyer]
-
 * vendor/lineage
 2a348e8e repopick: Use `number` instead of `id` for error msgs [LuK1337]
-d5031df4 overlay: enable VVM for Boost and other ATT MVNOs [Joel Beckmeyer]
-
-====================
-     2024-03-10    
-====================
-* lineage/hudson
-6605086 Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/mirror
-bba5c90 Updated to 09-Mar-2024 18:18 UTC [Kevin F. Haggerty]
-
-* lineage/wiki
-2d1e0467 wiki: Make fw note (not) show when the requirement is already met [Michael W]
-
-* vendor/xiaomi/sm8450-common
-a1dcd9d sm8450-common: Add support for mayfly [Flower Sea]
-
-====================
-     2024-03-09    
-====================
-* lineage/mirror
-e0c6796 Updated lineage-minimal to 09-Mar-2024 13:01 UTC [Tim Schumacher]
-46ab853 Updated to 08-Mar-2024 20:40 UTC [Aaron Kling]
-
-* lineage/wiki
-244f242b wiki: require either Android 13 or 14 firmware for A52/A52s/A72/A73 [Simon1511]
-
-* packages/apps/Dialer
-0f6deb18a Dialer: show blocked calls in call log [Joel Beckmeyer]
-
-* packages/apps/SimpleSettingsConfig
-f5620aa Convert to set settings instead of deviceconfig [Aaron Kling]
-6d87e7a Rebrand to SimpleSettingsConfig [Aaron Kling]
-
-====================
-     2024-03-08    
-====================
-* android
-56bf1c3 lineage: Enable SimpleSettingsConfig [Aaron Kling]
-
-* device/xiaomi/cupid
-63f9905 fixup! cupid: cleanup blobs [Arian]
-15a0190 cupid: Decommonize CIT sensors [Arian]
-6f0543c cupid: Update blobs from cupid V816.0.3.0.ULCEUXM [Arian]
-1b07318 cupid: Add goodix_fod module [Arian]
-d40c990 zeus: Decommonize sensors configs [Arian]
-29d3408 cupid: Decommonize ADSP modules [Arian]
-2affea6 cupid: Import decommonized libQnnHtpAltPrepV69Stub.so [Arian]
-815fe0a cupid: Setup firmware extraction [LuK1337]
-2002f5c cupid: Move to QTI health AIDL service [Bruno Martins]
-4206a7c cupid: cleanup blobs [Arian]
-04edb16 cupid: Decommonize audio HAL [Arian]
-49db1b2 cupid: Decommonize AGM [Arian]
-e315d7b cupid: Add regulator, touch, haptics and audio kernel modules [Arian]
-
-* device/xiaomi/marble
-0fbfa43 marble: Decommonize cit sensor [Jens Reidel]
-8224a88 marble: Extract from V816.0.3.0.UMRMIXM [Jens Reidel]
-cd8e760 marble: Setup firmware extraction [LuK1337]
-8a4091c marble: Move to QTI health AIDL service [Bruno Martins]
-518ca6a marble: Cleanup blobs [Jens Reidel]
-ed3cf29 marble: Decommonize audio HAL completely [Jens Reidel]
-268f5ea marble: Decommonize AGM [Jens Reidel]
-e375dd1 marble: Define device specific kernel modules [Jens Reidel]
-27818f4 marble: Disable NFC for marblein [Jens Reidel]
-6e6048f marble: Set name to Redmi Note 12 Turbo on Chinese phones [Jens Reidel]
-afe199d marble: Set default bluetooth device name [Jens Reidel]
-e804f87 marble: Drop unnecessary vibrator effects [Arian]
-adf0764 marble: Enable xiaomi vibrator effects on common qti vibrator hal [Arian]
-5cba1dd marble: Fixup camera blobs [Arian]
-b4769a8 marble: Disable EPPE [Arian]
-fcc8828 marble: Initial proprietary-files.txt [Jens Reidel]
-2f2df42 marble: Set stock build fingerprint and description [Arian]
-5a3188d marble: Import mod_device property [Arian]
-8a531fe marble: Enable 60 fps video in aperture [Arian]
-6f74777 marble: overlay: Configure aux camera for Aperture [LuK1337]
-84f01b3 marble: overlay: Set physical location of side fps [althafvly]
-e42fa80 marble: overlay: Set fingerprint sensor location [althafvly]
-ba6a7a9 marble: overlay: Configure fingerprint sensor [Jens Reidel]
-7e4f143 marble: overlay: Allow switching between 60Hz and 120Hz [Cosmin Tanislav]
-944c188 marble: overlay: Add corner content padding [Arian]
-c49dc9f marble: overlay: Import display cutout and rounded corner configurations [Arian]
-4c6ff2e marble: overlay: Import power_profile from V816.0.3.0.UMRMIXM [Arian]
-
-* device/xiaomi/miuicamera-cupid
-f720a9e Update from cupid V816.0.3.0.ULCEUXM [Arian]
-
-* device/xiaomi/mondrian
-a4d3e52 mondrian: Add goodix_fod kernel module [Arian]
-
-* device/xiaomi/sm8450-common
-965601504 sm8450-common: Add support for mayfly [Flower sea]
-52a5b1fd7 sm8450-common: overlay: Enable burn in protection [Arian]
-07fbee9ac fixup! sm8450-common: Allow choosing NFC supported SKUs [Arian]
-1cecfcffd sm8450-common: Move default network property to vendor partition [Jayachandran C]
-dee81dfda sm8450-common: Enable usage of dex2oat64 [David Sehr]
-85a8a1ba5 sm8450-common: overlay: Drop MMS user agent overlays [SebaUbuntu]
-30b84f821 sm8450-common: overlay: Unpin updatable-media from memory [Santiago Seifert]
-0c1ddaf8e sm8450-common: overlay: Remove odex/oat files from pinner list [Nicolas Geoffray]
-7dcdd3983 sm8450-common: overlay: Update SurfaceFlinger pin on all targets [Kevin Jeon]
-c943c2e35 sm8450-common: overlay: Set shutdown battery temperature [Arian]
-d98cbb40d sm8450-common: overlay: Update from unicorn V816.0.3.0.ULECNXM [Arian]
-bfe012296 sm8450-common: overlay: Add WifiResTarget_cape [Arian]
-73cdad0c6 sm8450-common: overlay: Import xiaomi wifi changes for taro [Arian]
-e97f96541 sm8450-common: overlay: Restrict WifiResTarget to taro [Arian]
-862e97680 sm8450-common: Build Lineage Health HAL [Michael Bestas]
-846eabaff sm8450-common: Build Lineage PowerShare HAL [Jens Reidel]
-59f1b800f sm8450-common: Drop unused powershare label [Arian]
-061b1ef2f sm8450-common: Decommonize goodix_fod.ko [Jens Reidel]
-956161f60 sm8450-common: Address marble denials [Jens Reidel]
-47fd7f99c sm8450-common: Address marble fingerprint denials [Jens Reidel]
-0281924a8 sm8450-common: Allow choosing NFC supported SKUs [Jens Reidel]
-
-* device/xiaomi/unicorn
-1ee9310 fixup! unicorn: cleanup blobs [Arian]
-
-* device/xiaomi/zeus
-093af00 zeus: Decommonize CIT sensors [Arian]
-7b0224c fixup! zeus: Update blobs from V816.0.2.0.ULBCNXM [Arian]
-d36bb42 zeus: Drop vm-bootsys image [Arian]
-9cf6756 zeus: Add goodix_fod module [Arian]
-6d152df zeus: Update blobs from V816.0.2.0.ULBCNXM [Arian]
-21f3f7b zeus: Decommonize sensors configs [Arian]
-dafe64f zeus: Decommonize ADSP modules [Arian]
-
-* hardware/xiaomi
-e5a9512 vintf: Add fpc and goodix 1.0 extensions to fcm [Arian]
-c682da8 vintf: Add fingerprint extension to common fcm [Jens Reidel]
-
-* kernel/qcom/msm8998
-e3f16f32dd4d BACKPORT: Bluetooth: hci_sock: Correctly bounds check and pad HCI_MON_NEW_INDEX name [Kees Cook]
-af001b9a4ed9 Bluetooth: hci_sock: fix slab oob read in create_monitor_event [Edward AD]
-3d129c2c52ce string: uninline memcpy_and_pad [Guenter Roeck]
-603fe30acf57 string.h: un-fortify memcpy_and_pad [Martin Wilck]
-02205a347c40 BACKPORT: string.h: add memcpy_and_pad() [Martin Wilck]
-
-* kernel/xiaomi/sm8450-modules
-e71a77c8710b msm: camera: flash: Proper QueryCapV1 Handling [Abhilash Mahapatra]
-35f643e2bd9e Revert "Revert "msm: camera: flash: Proper handling of epcr reqs"" [Arian]
-06ba5bee79e2 Revert "Revert "msm: camera: flash: Reenabling Enable and Disable regulator support for PMIC flash"" [Arian]
-5da0351ac95a Revert "Revert "msm: camera: flash: Add support for flash stream off"" [Arian]
-
-* vendor/lineage
-8e49671f config: Build simple Settings provisioning service [Aaron Kling]
-
-* vendor/xiaomi/cupid
-ab3f5a9 cupid: Initial import from V816.0.3.0.ULCEUXM [Arian]
-
-* vendor/xiaomi/marble
-818927c marble: Initial import from V816.0.3.0.UMRMIXM [Jens Reidel]
-
-* vendor/xiaomi/miuicamera-cupid
-f1c2abd Import MiuiCamera from V816.0.3.0.ULCEUXM [Arian]
-
-* vendor/xiaomi/mondrian
-aebb451 mondrian: Initial import from V816.0.3.0.UMNMIXM [Arian]
-
-* vendor/xiaomi/sm8450-common
-cbbd15d sm8450-common: Initial import from unicorn V816.0.3.0.ULECNXM [Arian]
-
-* vendor/xiaomi/unicorn
-3f19b57 unicorn: Initial import from V816.0.3.0.ULECNXM [Arian]
-
-* vendor/xiaomi/zeus
-53c1ae6 zeus: Initial import from V816.0.2.0.ULBCNXM [Arian]
 
