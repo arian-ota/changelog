@@ -1,285 +1,181 @@
 ====================
-     2024-03-18    
+     2024-04-09    
 ====================
 * device/xiaomi/sm8450-common
-040734060 sm8450-common: config: Update sf duration to 15.6 ms [Akhil Jaiswal]
-6e1038652 sm8450-common: config: Move from phase offsets to work durations [Alex Sarraf]
-7fdf86a72 sm8450-common: udfps: Don't try to read with a negative length [Arian]
-6cccab763 sm8450-common: udfps: Enable fod_status on finger down events instead for fpc_fod [kxxt]
-
-* hardware/xiaomi
-d26269b hidl: biometrics: fingerprint: Add enroll methods to udfps handler [Arian]
-
-* kernel/xiaomi/sm8450-modules
-105ca49537c7 Revert "disp: msm: sde: wait for pending vsync event in encoder disable" [Arian]
-bc2993d2832c Revert "disp: msm: sde: wait for pending vsync event on pm_suspend" [Arian]
-cb0b5d87cfd6 Revert "disp: msm: sde: move some frame_events from crtc commit to event thread" [Arian]
-23484e348e96 Revert "disp: msm: dp: modify hdcp wait loop to not add to cpu load" [Arian]
-
-====================
-     2024-03-17    
-====================
-====================
-     2024-03-16    
-====================
-====================
-     2024-03-15    
-====================
-* device/xiaomi/cupid
-7234a07 cupid: overlay: Decommonize brightness overlays [Arian]
-df21c33 cupid: overlay: Beautify FrameworksResCupid [Arian]
-66c3cd2 cupid: Import displayconfig to control HBM [Arian]
-
-* device/xiaomi/mondrian
-620f0b6 mondrian: overlay: Decommonize brightness overlays [Arian]
-41a1561 mondrian: Import displayconfig to control HBM [Arian]
-
-* device/xiaomi/sm8450-common
-09188e3f5 sm8450-common: Add support for thor [Jens Reidel]
-642a2c1cf sm8450-common: udfps: Disable HBM directly on successfull authentication [Arian]
-c181cc568 sm8450-common: overlay: Decommonize brightness overlays [Arian]
-d1b52bf0a sm8450-common: udfps: Change verbose logging to DEBUG [Arian]
-e7fd11482 sm8450-common: udfps: Inform hwmodule about press coordinates [Arian]
-f417b314c sm8450-common: udfps: Use 110 nit fod when the brightness is low [Arian]
-59c6cc7ed sm8450-common: udfps: Add comments about setFingerDown usage [Arian]
-b32b6cc1f sm8450-common: udfps: Drop unnecessary setFingerDown on cancel [Arian]
-32bc15823 sm8450-common: udfps: Defer extCmd until fod ui is ready [Arian]
-65492157e sm8450-common: udfps: Move HBM requests to fod press status listener [Arian]
-2fa9fa15e sm8450-common: udfps: Correct vendorCodes [Arian]
-34d1f560c sm8450-common: udfps: Improve fod press poll logging [Arian]
-107d61a6b sm8450-common: udfps: Use MI_DISP_PRIMARY as touch id [Arian]
-7094e196c sm8450-common: udfps: Enable HBM via disp_feature [Arian]
-f8e3dd5aa sm8450-common: udfps: Keep fod_status enabled during enroll [Arian]
-
-* device/xiaomi/unicorn
-6b04d7e unicorn: overlay: Decommonize brightness overlays [Arian]
-6c8046b unicorn: Import displayconfig to control HBM [Arian]
-
-* device/xiaomi/zeus
-76f7cac zeus: overlay: Decommonize brightness overlays [Arian]
-e743534 zeus: Import displayconfig to control HBM [Arian]
-f8de7d5 fixup! zeus: cleanup blobs [Arian]
+5162cd9cf sm8450-common: Update patched telephony apks from V816.0.3.0.ULFMIXM [Arian]
+a38c43e8c sm8450-common: Drop unused qti-telephony-common.jar [Arian]
+88aa39273 sm8450-common: Update sf durations from Pixel 5 [Arian]
+e9ca57e2e sm8450-common: overlay: Enable battery cycle count [Michael Bestas]
+867459e8e sm8450-common: Use libgrpc++_unsecure from stock [Jens Reidel]
+e914e0a32 sm8450-common: Pin qcc-trd from unicorn V816.0.3.0.ULECNXM [Arian]
+55bf58a29 sm8450-common: Automatically add apk/jar/vintf fragments to PRODUCT_PACKAGES [Michael Bestas]
+9c3ba600e sm8450-common: media: Update from V816.0.3.0.ULFMIXM [Arian]
+6e6c6d514 sm8450-common: Update blobs from V816.0.3.0.ULFMIXM [Arian]
 
 * frameworks/base
-8f0b391b31d7 Fix default values for 5G Ultra Wideband icon carrier config keys [Vala Zadeh]
-a65fa67ec715 Add 5G Ultra Wideband icon carrier config keys [Vala Zadeh]
+c90f75c491ee Fix default values for 5G Ultra Wideband icon carrier config keys [Vala Zadeh]
+d211cc89c220 Add 5G Ultra Wideband icon carrier config keys [Vala Zadeh]
 
 * hardware/xiaomi
-57fa07a sensors: Handle fod press status without coordinates [Arian]
-b3ecea6 sensors: Add udfps long press sensor [Cosmin Tanislav]
-aefa510 sensors: Fix locking around setOperationMode and activate [Cosmin Tanislav]
-ba91056 sensors: Move one shot sensor out of main class [Cosmin Tanislav]
-d19cdbb sensors: Make sensor set mode operation function virtual [Cosmin Tanislav]
-57c7863 sensors: Make sensor flush function virtual [Cosmin Tanislav]
-c61ed10 sensors: Make sensor run function virtual [Cosmin Tanislav]
-a65e8fe sensors: Make sensor batch function virtual [Cosmin Tanislav]
-91291b2 Add dummy sensors sub HAL [Cosmin Tanislav]
+76a99d5 hidl: biometrics: fingerprint: Add enroll methods to udfps handler [Arian]
+6897c21 sensors: Handle fod press status without coordinates [Arian]
+6e06a90 sensors: Add udfps long press sensor [Cosmin Tanislav]
+267dd49 sensors: Fix locking around setOperationMode and activate [Cosmin Tanislav]
+1634249 sensors: Move one shot sensor out of main class [Cosmin Tanislav]
+548a532 sensors: Make sensor set mode operation function virtual [Cosmin Tanislav]
+1c167b2 sensors: Make sensor flush function virtual [Cosmin Tanislav]
+f092ef1 sensors: Make sensor run function virtual [Cosmin Tanislav]
+81e90b8 sensors: Make sensor batch function virtual [Cosmin Tanislav]
+0e1034f Add dummy sensors sub HAL [Cosmin Tanislav]
 
 * kernel/xiaomi/sm8450
-c0661c5fcde3 input: touchscreen: xiaomi: Get rid of notify buf spam [Arian]
-9f0a32e5ddd6 input: touchscreen: goodix_9916: Don't notify about fod presses when fod_status is off [Arian]
-
-* kernel/xiaomi/sm8450-devicetrees
-07c98896 display: Bump minimal brightness to 8 for all our devices [Arian]
-71338bba display: Correct physical panel dimensions for our devices [Arian]
-a79eac1d display: marble: Update nolp and doze commands from marble V816.0.3.0.UMRMIXM [Jens Reidel]
-8402c4f7 display: marble: Update nolp command from mondrian V816.0.3.0.UMNMIXM [Arian]
-de70ac92 display: marble: Update from unicorn V816.0.3.0.ULECNXM [Arian]
-4ee6985e display: marble: Disable 30Hz timing [Jens Reidel]
-5dc0e08b display: marble: Update gamma switch commands from unicorn V816.0.3.0.ULECNXM [Arian]
-a82ca932 display: Add support for POCO F5/Redmi Note 12 Turbo (marble|M16T) [Arian]
-2573f90e display: mondrian: Add qcom,mdss-dsi-nolp-command-update from mondrian V816.0.3.0.UMNMIXM [Arian]
-b556f2ce display: mondrian: Commonize lp and local hbm commands for all timings [Arian]
-6e2de989 display: mondrian: Update from V14.0.5.0.TMNMIXM [Arian]
-7a367fd7 display: Add support for POCO F5 Pro/Redmi K60 (mondrian|M11A) [Arian]
-74985268 display: mayfly: Drop 90Hz timing [FlowerSea0208]
-9b6696ea display: Add support for Xiaomi 12S (mayfly|L3S) [Arian]
-ef6bbe9e display: zizhan: Update from unicorn V816.0.3.0.ULECNXM [Arian]
-dbf0c267 display: Add support for Xiaomi MIX Fold 2 (zizhan|L18) [Arian]
-daa61e51 display: unicorn: Update from unicorn V816.0.3.0.ULECNXM [Arian]
-619f7ed7 display: Add support for Xiaomi 12S Pro (unicorn|L2S) [Arian]
-7ca10e09 display: thor: Update from unicorn V816.0.3.0.ULECNXM [Arian]
-d9976f6c display: Add support for Xiaomi 12S Ultra (thor|L1) [Arian]
-5542f7ef display: Add miboard id to cape reference board [Arian]
-296c23a9 display: cape: Enable sde wakup with touch [Arian]
-e5bb3691 display: cape: Enlarge disp rdump region [Arian]
-c9273edb display: cupid: Nuke 90Hz timing [Kujou Yuko]
-e90e3b3b display: Add support for Xiaomi 12 (cupid|L3) [Arian]
-463fc06b display: zeus: Set proper framerate for 10 and 1 hz [Arian]
-bde3f727 display: Add support for Xiaomi 12 Pro (zeus|L1) [Arian]
-8d7ad3f2 display: Add miboard id to waipio reference board [Arian]
-0e69aae5 display: waipio: Enable sde wakup with touch [Arian]
-4b2fd950 display: waipio: Enlarge disp rdump region [Arian]
-3f141865 display: waipio: Add vci panel regulator [Arian]
-0a4b1aed camera: Add support for POCO F5/Redmi Note 12 Turbo (marble|M16T) [Arian]
-697fb5ed camera: Add support for POCO F5 Pro/Redmi K60 (mondrian|M11A) [Arian]
-a5d9a6f5 camera: Add support for Xiaomi 12S (mayfly|L3S) [Arian]
-6329f02f camera: Add support for Xiaomi 12 Ultra (thor|L1) [Arian]
-8fb0f2c7 camera: Add support for Xiaomi 12S Pro (unicorn|L2S) [Arian]
-fac85503 camera: Add support for Xiaomi 12 (cupid|L3) [Arian]
-1e3ba880 camera: Add support for Xiaomi 12 Pro (zeus|L1) [Arian]
-10a10915 camera: Update iova memory regions for cape [Arian]
-0c84839d camera: Decommonize active and suspend rst0 from waipio-camera [Arian]
-ab72b83d camera: Add miboard id to cape, ukee and waipio reference boards [Arian]
-6fc231d0 audio: Add support for POCO F5/Redmi Note 12 Turbo (marble|M16T) [Arian]
-891e5766 audio: Add support for POCO F5 Pro/Redmi K60 (mondrian|M11A) [Arian]
-1294124d audio: Add support for Xiaomi 12S (mayfly|L3S) [Arian]
-a332ba4e audio: Add support for Xiaomi 12S Ultra (thor|L1) [Arian]
-d7f787a8 audio: Add support for Xiaomi 12S Pro (unicorn|L2S) [Arian]
-42214759 audio: Add support for Xiaomi 12 (cupid|L3) [Arian]
-2cff1ef7 audio: Add support for Xiaomi 12 Pro (zeus|L2) [Arian]
-28d8beea audio: Add miboard id to cape, ukee and waipio reference boards [Arian]
-57c1bbe4 audio: Add xiaomi-sm8450-common configuration [Arian]
-ea504086 Add support for POCO F5/Redmi Note 12 Turbo (marble|M16T) [Arian]
-a6a849f2 Add xiaomi-sm7475-common configuration [Arian]
-95e8564e Add support for POCO F5 Pro/Redmi K60 (mondrian|M11A) [Arian]
-51208bae Add support for Xiaomi 12S (mayfly|L3S) [Arian]
-66f0afbe Add support for Xiaomi 12S Ultra (thor|L1) [Arian]
-2b48b025 Add support for Xiaomi 12S Pro (unicorn|L2S) [Arian]
-3cbf411d Add xiaomi-sm8475-common configuration [Arian]
-79d2e066 Add support for Xiaomi 12 (cupid|L3) [Arian]
-ce9398ac Add support for Xiaomi 12 Pro (zeus|L2) [Arian]
-25f807c7 Add xiaomi-sm8450-common configuration [Arian]
-365b1f73 waipio: Disable qcom,fsa4480-i2c [Arian]
-d1f16f12 waipio: Disable qbt handler [Arian]
-348eea39 waipio: Enable nv-mac [Arian]
-616b44f5 waipio: Adjust wlan aon and dig config [Arian]
-1cd1940c waipio: Adjust high bus bandwidth voting data [Arian]
-2b65f316 waipio: Add rf clk3 clocks to qca6490 [Arian]
-588031f3 waipio: Disable ramoops memory region [Arian]
-85c087f2 waipio: Enlarge adsp and xbl ramdump memory regions [Arian]
-16334407 waipio: Disable trust ui and oem vm memory regions [Arian]
-05676f98 waipio: Disable spss remote processor [Jens Reidel]
-3f96ad31 waipio: Add i2c 0-4 aliases [Arian]
-3d77e1fe waipio: Remove mem-offline [Arian]
-ff83fa99 waipio-usb: Remove edu_enable_reg [Arian]
-6ec643b7 waipio-thermal: Remove {cx,mx}_sdpm [Arian]
-6fdef0e0 waipio-thermal-overlay: Remove xo-therm [Arian]
-d72f3ed0 waipio-regulators: Add ldoc11 regulator [Arian]
-2af61763 waipio-pmic-overlay: Move tof therm to pm8350b [Arian]
-34e681c3 waipio-pmic-overlay: Decomonize thermal zones [Arian]
-f822c051 waipio-pmic-overlay: Add pwrkey bark [Arian]
-dbe02506 waipio-pm8008: Adjust regulator voltages [Arian]
-28b815cc waipio-pinctrl: Decrease drive strength on tert tdm clk active [Arian]
-b471152d waipio-pinctrl: Enable pull down on usb3phy portselect default [Arian]
-9af4cd72 waipio-pinctrl: Add zeus, cupid and thor uart pins [Arian]
-6803d700 waipio-pcie: Disable pcie1 and pcie1_msi [Arian]
-39181f63 Add miboard-id to waipio reference boards [Arian]
-a40db348 pmk8350: Remove xo-therm [Arian]
-e105fefa pm8350c: Disable qcom,hw-strobe-gpios [Arian]
-4539fcc7 pm8350b: Disable thermal-sensors for socd [Arian]
-956fc5f1 pm8350b: Decrease initial resonance period for LRA actuator [Arian]
-663eb603 pm8350b: Decrease qcom hv-haptics max voltage [Arian]
-31875fc3 cape: Disable rtc6226 [Arian]
-b999b560 cape: Disable ramoops region [Arian]
-f3ff12cf cape: Add i2c{0-5} aliases [Arian]
-9991fffb cape: Disable mem-offline [Arian]
-998f4c4b cape: Disable spss remote processor [Arian]
-b5351266 cape-usb: Set maximum-speed to high-speed [Arian]
-64fab39c cape-usb: Disable USB2 HW LPM for gadget mode [Arian]
-839ee86b cape-usb: Disable display port [Arian]
-5a5150cf cape-reserved-memory: Disable trusted ui vm region [Arian]
-67e3a026 cape-reserved-memory: Enlarge adsp and xbl ramdump regions [Arian]
-cad47d20 cape-regulators: Add ldoc1, ldoc11 and ldoh4 regulators [Arian]
-fa04b9c2 cape-pmic-overlay: Add pwrkey bark [Arian]
-1cb5e866 cape-pmic-overlay: Move tof therm to pm8350b [Arian]
-7fc3143a cape-pmic-overlay: Decommonize thermal zones [Arian]
-eb019986 cape-pinctrl: Add thor uart pins [Arian]
-15151f0c cape-pinctrl: Enable pull down on usb3phy portselect default [Arian]
-5d1ff18f cape-pinctrl: Enable pull down on tert dtm dout active [Arian]
-05287cdc Add miboard-id to cape reference boards [Arian]
-
-* kernel/xiaomi/sm8450-modules
-758b09c5ddc8 display: mi_disp: Allow partial reads [Arian]
-242555c91f15 display: mi_disp: Move fod_ui_ready_state to uapi headers [Arian]
-
-* lineage/wiki
-b5350e97 wiki: Add Motorola edge 40 pro / moto X40 / edge+ (2023) [Marc Bourgoin]
-
-* vendor/lineage
-1d90e25a android: merge_dtbs: Respect miboard-id while merging [Arian]
-
-* vendor/xiaomi/cupid
-9abd1e5 cupid: Import displayconfig to control HBM [Arian]
-
-* vendor/xiaomi/mondrian
-658de6b mondrian: Import displayconfig to control HBM [Arian]
-
-* vendor/xiaomi/unicorn
-ad3cb04 unicorn: Import displayconfig to control HBM [Arian]
-
-* vendor/xiaomi/zeus
-0254915 zeus: Import displayconfig to control HBM [Arian]
-
-====================
-     2024-03-14    
-====================
-* device/xiaomi/sm8450-common
-f878c5c12 sm8450-common: sepolicy: Add rules for fpc fod [kxxt]
-27225fbb4 sm8450-common: Set radio build profile to u-stable [Arian]
-e0cb42b53 sm8450-common: Enable radio ecc_cloud [Arian]
-408542875 sm8450-common: Enable TDES support when Keymaster 4.0 is enabled [Zhen Kong]
-e15f516b6 sm8450-common: display: Set debug.sf.auto_latch_unsignaled to 0 [Alex Sarraf]
-7fbd00784 sm8450-common: Disable frame rate override feature [Edwin Moquete]
-119782045 sm8450-common: Disable redir_party_num [Andrzej Perczak]
-ebf2df472 fixup! sm8450-common: overlay: Update from unicorn V816.0.3.0.ULECNXM [Arian]
+488220a96312 fixup! input: touchscreen: fts_spi: Don't notify about fod presses when fod_status is off [Arian]
+68425f1f285d input: touchscreen: goodix_9916: Only accept fod downup when fod_status is 1 or 2 [Arian]
+d5aeaf8c6a43 input: touchscreen: goodix_9916: Don't report special fod events [Arian]
 
 * lineage/hudson
-d54da98 Listen To Them; They're Dying, rtwo! Curse My Metal Body, I Wasn't Fast Enough! [Marc Bourgoin]
-
-* vendor/xiaomi/sm8450-common
-2fdc977 sm8450-common: Disable redir_party_num [Andrzej Perczak]
-
-====================
-     2024-03-13    
-====================
-* device/xiaomi/sm8450-common
-ec6e0653d sm8450-common: Pin hotword blobs from global rom [Arian]
-1169aee15 sm8450-common: sepolicy: Relax xiaomi camera postproc rules [Arian]
-
-* kernel/xiaomi/sm8450-devicetrees
-af0f3b4c qcom: Build dtbos inline [Aaron Kling]
-2af1fceb Add 'qcom/video/' from commit 'e714f340cf0f89292e239aa61b4d46bcf8b02d2d' [Arian]
-29dc3a0f Add 'qcom/mmrm/' from commit 'af7bafc2498b275b824be0fd03d6b3ba94c3da3e' [Arian]
-52bbfe73 Add 'qcom/eva/' from commit 'a3153273860440c57849947e04d27a6b804f6823' [Arian]
-ecbff50b Add 'qcom/display/' from commit 'e67350bb03f423f3f243da976f4875c908515cb2' [Arian]
-43dff211 Add 'qcom/cvp/' from commit '4efcada65dcc99973361f00fa217d505a6b73332' [Arian]
-45d72fd7 Add 'qcom/camera/' from commit '1d693f07b5936abbca9670e6ced33cd09a11bc71' [Arian]
-0b70f725 Add 'qcom/audio/' from commit '1577f7c52b9f8ab17097946a6710b0512165ed78' [Arian]
-a3153273 LA.VENDOR.1.0.r1-23100-WAIPIO.QSSI14.0 [Arian]
-
-* vendor/xiaomi/sm8450-common
-c787ca3 sm8450-common: Add hotword blobs from cupid V816.0.3.0.ULCEUXM [Arian]
-
-====================
-     2024-03-12    
-====================
-* device/xiaomi/unicorn
-1ca2cf7 unicorn: Add goodix_fod module [Arian]
-
-* kernel/xiaomi/sm8450
-7d48f2e60dfc power: supply: qti_battery_charger: Return time to full in seconds [FlowerSea0208]
-4b94e446292b power: supply: qti_battery_charger: Return charge counter in uAh [ArianK16a]
-d99634e46b20 power: supply: qti_battery_charger: Add missing type specifiers [Arian]
-1a9e3ac11249 power: supply: qti_battery_charger: Add support for 33W reverse wireless charging [Arian]
-f3cb9d990466 power: supply: qti_battery_charger: Add support for display port [Arian]
-7b2f64f7e3d6 power: supply: qti_battery_charger: Add config to match m81 module [Arian]
-da9d65d7d626 power: supply: qti_battery_charger: Replace MI_CHARGE_PROPERTY with MI_WLS_REVERSE_CHG_ONLY [Arian]
-c4330a4567a1 power: supply: xiaomi: Support WIRELESS_REVERSE_CLOSE [Arian]
-34048701f8e7 power: supply: qti_battery_charger: Update from garnet-t-oss [Arian]
-767b25eb7937 power: supply: qti_battery_charger: Import xiaomi changes [Arian]
-251df3c54268 Revert "power: supply: qti_battery_charger: Import xiaomi changes" [Arian]
-145d64879692 Revert "power: supply: qti_battery_charger: Add missing type specifiers" [Arian]
-d7bba7e99af5 Revert "Revert "power: supply: qti_battery_charger: Add dynamic uusb detection"" [Arian]
-6fe6715daeaa Revert "Revert "power: qti_typec_class: Add typec class support for micro USB"" [Arian]
-77d6eb5df3af Revert "Revert "power: supply: qti_battery_charger: Add extcon support"" [Arian]
-262f162ec98d Revert "power: supply: qti_battery_charger: Return charge counter in uAh" [Arian]
-ab2d0d72523a Revert "power: supply: qti_battery_charger: Return time to full in seconds" [Arian]
-53e8ef8f8f17 Revert "power: supply: xiaomi: Support WIRELESS_REVERSE_CLOSE" [Arian]
-58bbdb142fe5 Revert "Revert "Revert "power: supply: qti_battery_charger: Add extcon support""" [Arian]
-cfaf154469b1 Revert "Revert "Revert "power: qti_typec_class: Add typec class support for micro USB""" [Arian]
-73a3068d2d58 Revert "Revert "Revert "power: supply: qti_battery_charger: Add dynamic uusb detection""" [Arian]
+8efa88c Regenerate device dependency mappings [LineageOS Infra]
 
 * vendor/lineage
-2a348e8e repopick: Use `number` instead of `id` for error msgs [LuK1337]
+c7237ea5 android: merge_dtbs: Respect miboard-id while merging [Arian]
+8bda0bf6 products: lineage_{gsi,sdk}_tv*: Remove TARGET_USES_64_BIT_BINDER [Kilian von Pflugk]
+
+* vendor/xiaomi/sm8450-common
+de1f46c sm8450-common: Update patched telephony apks from V816.0.3.0.ULFMIXM [Arian]
+6eaec7b sm8450-common: Drop unused qti-telephony-common [Arian]
+39a2ee5 sm8450-common: Use libgrpc++_unsecure from stock [Jens Reidel]
+52b39e1 sm8450-common: Pin qcc-trd from unicorn V816.0.3.0.ULECNXM [Arian]
+47bd4ba sm8450-common: Update blobs from V816.0.3.0.ULFMIXM [Arian]
+
+====================
+     2024-04-08    
+====================
+* lineage/hudson
+542791f Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+a3cea8b Updated to 07-Apr-2024 20:24 UTC [Kevin F. Haggerty]
+
+* lineage/wiki
+2783dc46 wiki: update ota_extractor path [Landry GAIFFE]
+
+====================
+     2024-04-07    
+====================
+* device/lineage/sepolicy
+65533b5 qcom: Allow CAF FM radio app to read ro.vendor.fm.use_audio_session [Bruno Martins]
+
+====================
+     2024-04-06    
+====================
+* device/qcom/sepolicy_vndr/sm8450
+7381bc84b sepolicy_vndr: update sepolicy for health HAL service [Fenglin Wu]
+
+* lineage/hudson
+b8d42cb Regenerate device dependency mappings [LineageOS Infra]
+
+* vendor/lineage
+f2a488f0 bootanimation: Refinements [Asher Simonds]
+
+====================
+     2024-04-05    
+====================
+* packages/apps/DocumentsUI
+92695f936 Fix zip archive interactions [Tommy Webb]
+
+* packages/apps/Jelly
+a75728a Jelly: Switch to AlertDialog [Sebastiano Barezzi]
+
+====================
+     2024-04-04    
+====================
+* hardware/qcom/sm7250/display
+9efc03c0 config: Cleanup dead targets [Michael Bestas]
+
+* lineage/mirror
+99ce110 Updated aosp-minimal to 04-Apr-2024 12:02 UTC [Tim Schumacher]
+
+* system/core
+6a7e4a76b init: Remove encryption=DeleteIfNecessary from /data/misc/bootanim [Michael Bestas]
+
+====================
+     2024-04-03    
+====================
+* android
+0ddac72 manifest: April 2024 Security update [Michael Bestas]
+
+* build/make
+2638b6557f Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
+
+* device/qcom/sepolicy-legacy-um
+b7e999e5 sepolicy: fix domain for com.qualcomm.telephony [Ankit Siddhapura]
+
+* frameworks/av
+c2809dba0d Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
+
+* frameworks/base
+be7b8918ca64 Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
+bf5884b17133 Screenrecord: Fix notifications not being dismissed [Ido Ben-Hur]
+e0c2544b24ab Screenrecord: Add delete action to the notification [Sourajit Karmakar]
+cf766fff723c Screenrecord: Dismiss notification on stop [Lostark13]
+8e4f219a5f93 Screenrecord: Save preferences for permission dialog [Pranav Vashi]
+059325b87a6a Screenrecord: Add an option to use HEVC [Ido Ben-Hur]
+cf4e36897340 Screenrecord: Allow to reduce 3 second screen record timer [maitreya29]
+d8795dbbca98 Screenrecord: Add an option to record for longer [Ido Ben-Hur]
+5b9226e3398f Screenrecord: Make low quality bitrate scalable per device [Ido Ben-Hur]
+3aa2098c9b69 Screenrecord: Save and load set preferences [Ido Ben-Hur]
+d50e8d6c6065 Screenrecord: Remember last used blinking dot position [Ido Ben-Hur]
+78bc8dea0deb Screenrecord: add blinking stop dot and low quality options [ezio84]
+c4053e85dce4 Screenrecord: Allow to select AVC codec profile level [iusmac]
+dc1c7bf0da01 Screenrecord: Allow limiting the max framerate [Kuba Wojciechowski]
+39e6e6a662dd core: BatteryManager: Add few more Battery broadcast intents [Jyotiraditya Panda]
+125409c11027 fixup! frameworks: Add device controls shortcut to power menu [Michael Bestas]
+385d4cec4fa5 fixup! frameworks: Add more power menu customizations [Michael Bestas]
+8013f67c2029 fixup! frameworks: Add support for advanced restart options [Michael Bestas]
+f423f8badea4 fixup! SystemUI: advanced reboot: set maxElementsWrap [Michael Bestas]
+41acd95c4c4e fixup! SystemUI: Register content observer for clock position [Michael Bestas]
+0eb0dae59cd3 fixup! SystemUI: Port brightness slider changes [Michael Bestas]
+9d55d4dc65f7 fixup! DozeSensors: only use proximity sensor if supported [Michael Bestas]
+2701e6c800b4 fixup! SystemUI: Allow ignoring IWlan status in the mobile icon pipeline [Michael Bestas]
+f0c541d8f602 fixup! udfps: Make pressed udfp view configurable [Michael Bestas]
+9964716363aa fixup! SystemUI: Add UDFPS framework dimming support [Michael Bestas]
+aad94b4357b1 fixup! SystemUI: Add Profiles tile [Michael Bestas]
+f01df1f3861d fixup! SystemUI: Add VPN tile [Michael Bestas]
+1b82cf6b201e fixup! SystemUI: Add Lineage statusbar item holder [Oliver Scott]
+443eac9421da fixup! SystemUI: Add double tap to sleep gesture [Oliver Scott]
+0a3ea240ec62 fixup! SystemUI: Bringup tuner statusbar changes [Oliver Scott]
+2d6153511135 fixup! SystemUI: Add USB Tether tile [Oliver Scott]
+fb772f4d38a9 fixup! SystemUI: Add Sync tile [Oliver Scott]
+4d58cb18382e fixup! SystemUI: Add reading mode tile [Oliver Scott]
+170164402c33 fixup! SystemUI: Add powershare QS tile [Oliver Scott]
+cf321c6d8ad4 fixup! SystemUI: Add heads up tile [Oliver Scott]
+43d54f59f068 fixup! SystemUI: Add caffeine QS tile [Oliver Scott]
+d02a1713d97b fixup! SystemUI: Add AmbientDisplay tile [Oliver Scott]
+7dec343cf711 fixup! SystemUI: Add AOD QS tile [Oliver Scott]
+02339c2fbb07 SystemUI: Refactor the WiFi & Cellular QS tiles [Tommaso Fonda]
+429f5d1407d5 Reapply "SystemUI: Allow Wi-Fi/cell tiles to co-exist with provider model" [Danny Lin]
+033d5caad51b Reapply "SystemUI: Restore wifi and cellular QS tiles" [Michael Bestas]
+
+* hardware/interfaces
+f130a1c1d Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
+
+* lineage/mirror
+801833c Updated aosp-minimal to 03-Apr-2024 12:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+a2f058f7 wiki: Only skip fw req in upgrade guides [LuK1337]
+
+* packages/apps/Settings
+8a6ec377630 Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
+e1cea87cc61 Make battery cycle count configurable and disable it by default [Michael Bestas]
+1a1486fd7da Hide unavailable battery info [Michael Bestas]
+911d6d222b0 Settings: deviceinfo: Extend Battery info page [Jyotiraditya Panda]
+781740000ba Make battery info configurable and enable it by default [Michael Bestas]
+
+* packages/apps/Trebuchet
+15baf96e46 Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas]
+
+* vendor/lineage
+04cde9d0 vars: Remove msm-4.9/msm-4.14/gs201 kernels [Michael Bestas]
+cb8d5206 vars: April 2024 Security update [Chirayu Desai]
 
