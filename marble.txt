@@ -1,0 +1,179 @@
+====================
+     2024-10-24    
+====================
+* device/xiaomi/sm8450-common
+fd90bbd7ab sm8450-common: Add missing xiaomi ecc list to vendor [Arian]
+
+* vendor/lineage
+f10a4328 android: merge_dtbs: Respect miboard-id while merging [Arian]
+
+* vendor/xiaomi/sm8450-common
+77a16359d sm8450-common: Add missing xiaomi ecc list to vendor [Arian]
+
+====================
+     2024-10-23    
+====================
+* device/xiaomi/marble
+80274b8 marble: Drop libQnnHtpV69 [Jens Reidel]
+4ac71f6 marble: Update blobs from V816.0.9.0.UMRMIXM [Jens Reidel]
+
+* device/xiaomi/sm8450-common
+195b7eea5c sm8450-common: Import missing AtFwd2 app [Arian]
+
+* lineage/hudson
+0790396 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+820b119 Updated aosp-minimal to 22-Oct-2024 12:02 UTC [Tim Schumacher]
+
+* vendor/xiaomi/marble
+3b4c887 marble: Drop libQnnHtpV69 [Jens Reidel]
+4fa6d5b marble: Re-extract [Jens Reidel]
+
+* vendor/xiaomi/sm8450-common
+06f4c0af8 sm8450-common: Import missing AtFwd2 app [Arian]
+
+====================
+     2024-10-22    
+====================
+* device/xiaomi/zizhan
+5a10aa0 zizhan: Update blobs from V816.0.12.0.ULRCNXM [Jens Reidel]
+
+* lineage/hudson
+56efcc7 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/wiki
+b1b4b994 wiki: Set recovery_reboot to fastboot_menu for FP3 [LuK1337]
+
+* packages/apps/AudioFX
+74e43b3 AudioFX: Convert tests to Android.bp [Michael Bestas]
+
+* packages/apps/Glimpse
+9f8dd1b Glimpse: Add android.intent.category.DEFAULT to main intent filter [Arian]
+2fe9b54 Glimpse: Replace deprecated .reuse/dep5 with REUSE.toml [Michael Bestas]
+
+* packages/apps/Jelly
+7f10fb5 Jelly: Replace deprecated .reuse/dep5 with REUSE.toml [Michael Bestas]
+
+* packages/apps/LineageParts
+36c4d2d LineageParts: Replace deprecated .reuse/dep5 with REUSE.toml [Michael Bestas]
+2fe6265 LineageParts: Switch to SPDX copyright headers [Michael Bestas]
+
+* packages/apps/Recorder
+cd59833 Recorder: Replace deprecated .reuse/dep5 with REUSE.toml [Michael Bestas]
+
+* packages/apps/SetupWizard
+139ed34 SetupWizard: Replace deprecated .reuse/dep5 with REUSE.toml [Michael Bestas]
+
+* tools/buildscript
+866b944 don't explicity build additional images [Arian]
+
+* vendor/xiaomi/zizhan
+186e5f4 zizhan: Sync vendor with device tree [Jens Reidel]
+
+====================
+     2024-10-21    
+====================
+====================
+     2024-10-20    
+====================
+* device/xiaomi/sm6150-common
+9146d14 sm6150-common: overlay-lineage: Disable turbulence noise [basamaryan]
+
+* lineage/mirror
+9b1e806 Updated aosp-minimal to 19-Oct-2024 12:01 UTC [Tim Schumacher]
+
+* system/netd
+dbc81b7c VPN-covered DNS traffic may not fall through [Tommy Webb]
+3356838e Revert "Prevent DNS traffic from bypassing lockdown VPNs" [Tommy Webb]
+
+====================
+     2024-10-19    
+====================
+* bootable/recovery
+8d9befac recovery_ui: Opt-out battery monitoring on battery-less devices [Yumi Yukimura]
+
+* device/lineage/sepolicy
+3a02308 sepolicy: Label `ro.recovery.batteryless` property [Yumi Yukimura]
+
+* frameworks/base
+ed631e825692 base: Allow disabling turbulence noise after clicking the play button [Ido Ben-Hur]
+9dc0556ffa7e fixup! Implement backup/restore for network policy [Oliver Scott]
+7dba506a0e0f Restrict apps without INTERNET permission [Tommy Webb]
+ff5ecdfec979 fixup! Firewall: Network access toggle support [Oliver Scott]
+
+* lineage/mirror
+5c70fb7 Updated aosp-minimal to 18-Oct-2024 12:02 UTC [Tim Schumacher]
+
+* lineage/wiki
+ab95fb77 wiki: Add /verify link to the verifying_builds.md page [LuK1337]
+
+* packages/apps/Aperture
+3d6eb26 Aperture: Replace deprecated .reuse/dep5 with REUSE.toml [Michael Bestas]
+
+* packages/apps/AudioFX
+4df6600 AudioFX: Fix tests build [Michael Bestas]
+
+* packages/apps/Backgrounds
+07226fe Backgrounds: Make it REUSE compatible [Michael Bestas]
+
+* packages/apps/ExactCalculator
+7f55495 ExactCalculator: Set sdk_version to 34 [Aayush Gupta]
+
+* packages/apps/Glimpse
+718ed7c Glimpse: Sort items based on modification time [Wolfram Liebchen]
+
+* packages/inputmethods/LatinIME
+65719899d LatinIME: Remove Android.mk usage [Michael Bestas]
+
+* vendor/lineage
+08343528 overlay: SimpleDeviceConfig: Adjust values for SeedVault Backup usage [Torsten Grote]
+76efcbeb overlay: Use autofill compatibility mode for browsers [Tommy Webb]
+f887bc5a kernel: Add `{recovery}kernelconfig` [Sebastiano Barezzi]
+0fd22538 kernel: Clean headers installed in uapi/asm as well [khalvat-M]
+
+====================
+     2024-10-18    
+====================
+* device/xiaomi/haydn
+6a36d9d haydn: Fix soname [AdarshGrewal]
+3d64a40 haydn: Disable ELF checks for certain libraries [Michael Bestas]
+8b50d83 haydn: Drop 32 bit camera blobs [AdarshGrewal]
+442da7a haydn: Decommonize citsensorservice stack [AdarshGrewal]
+
+* hardware/qcom-caf/sm8450/display
+f3207cf9f9 composer: Separate rc and xml from service [Michael Bestas]
+
+* lineage/mirror
+cea6a44 Updated aosp-minimal to 17-Oct-2024 12:02 UTC [Tim Schumacher]
+
+* packages/apps/Recorder
+19e2baa Revert "Recorder: Use medium localized datetime for filename" [Outvi V]
+
+* vendor/lineage
+56216180 config: common: Build nano_recovery [Yumi Yukimura]
+
+* vendor/xiaomi/haydn
+65e5736 haydn: Fix soname [AdarshGrewal]
+af68f03 haydn: Disable ELF checks for certain libraries [Michael Bestas]
+657c301 haydn: Drop 32 bit camera blobs [AdarshGrewal]
+00a205e haydn: Add missing libaudioparsers [AdarshGrewal]
+f21bd83 haydn: Decommonize citsensorservice stack [AdarshGrewal]
+d904718 haydn: Enable elf checks [AdarshGrewal]
+5809c1e sm8350-common: Add vendor soong imports to extract [Aaron Kling]
+
+* vendor/xiaomi/sm8350-common
+811ffa2 sm8350-common: Enable ELF checks for libwfdmmsrc_proprietary [Michael Bestas]
+67bda29 sm8350-common: Import missing 64-bit wfd lib [FlowerSea0208]
+d0fa91b sm8350-common: Import missing 32-bit blobs [FlowerSea0208]
+b77f1ce sm8350-common: Decommonize citsensorservice [FlowerSea0208]
+438aa9b sm8350-common: Patch libwfdservice to resolve duplicate dependencies [Michael Bestas]
+c89e310 sm8350-common: Disable ELF checks for certain libraries [Michael Bestas]
+da5e369 sm8350-common: skip dependencies which aren't defined in .bp [Cosmin Tanislav]
+d4c787f sm8350-common: fix QCOM WFD ELF checks [Michael Bestas]
+321054b sm8350-common: fix vendor.qti.imsrtpservice@3.0 ELF checks [Cosmin Tanislav]
+7a56d03 sm8350-common: fix com.qualcomm.qti.dpm.api@1.0 ELF checks [Cosmin Tanislav]
+ee28ab2 sm8350-common: Enable elf checks [Aaron Kling]
+8073583 sm8350-common: Add vendor soong imports to extract [Aaron Kling]
+93bd13c sm8350-common: Build xiaomi-telephony-stub [danielml]
+
