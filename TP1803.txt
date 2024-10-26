@@ -1,0 +1,780 @@
+====================
+     2024-10-26    
+====================
+* device/nubia/TP1803
+4341f48 TP1803: Move to python based extract-utils and patchelf blobs [Arian]
+4fd6a5f TP1803: Use standard firmware names [Arian]
+891c752 TP1803: Prevent adding libgui_shim twice to lib-imsvideocodec [Arian]
+1563729 TP1803: Use old libsnsapi for all camera blobs [Arian]
+edb57f9 TP1803: Shim libwvdrmengine.so with libcrypto_shim too [Arian]
+68a4398 TP1803: Enable elfchecks for libc28 and fix soname [Arian]
+aeba490 TP1803: Fix soname of fingeprint hwmodule [Arian]
+f4c048f TP1803: Fixup data xmls [Arian]
+b933105 TP1803: Fix soname of com.qti.sensor.tp1803_imx586.so [Arian]
+0e61980 TP1803: Avoid replacing both libqdMetaData deps with libcomparetf2 on camera.qcom.so [Arian]
+05290fe TP1803: Fix soname of libsnsv28.so [Arian]
+0b135e3 TP1803: Fixup non-versioned protobuf package name too [Arian]
+4f44b98 TP1803: Add missing 32-bit libraries [basamaryan]
+eb19760 TP1803: Do not manually build dependencies [Cosmin Tanislav]
+2cdfed7 TP1803: Libraries are now automatically added to PRODUCT_PACKAGES [Michael Bestas]
+a23f275 TP1803: Disable ELF checks for certain libraries [Michael Bestas]
+246060f TP1803: Skip dependencies which aren't defined in .bp [Cosmin Tanislav]
+69bf228 TP1803: Fix module dependencies for renamed packages [Arian]
+1a2bef5 TP1803: Add vendor soong imports to extract [Aaron Kling]
+fb8fd03 TP1803: Enable elf checks [Aaron Kling]
+73d855e TP1803: Update blobs from NX627J V321 [Arian]
+f76c1ae TP1803: Remove software OMX blobs [Bruno Martins]
+ed945e2 TP1803: Use AOSP default Codec2/OMX ranks [Michael Bestas]
+ea475fd TP1803: Remove software omx codec references [Aaron Kling]
+bb97223 TP1803: Switch to QTI Memtrack AIDL HAL [Yumi Yukimura]
+
+* device/xiaomi/sm8450-common
+68a4d767 sm8450-common: media: Drop android version check for netflix bsp property [Arian]
+c9e15c17 sm8450-common: Move to Xiaomi fingerprint AIDL [basamaryan]
+
+* device/xiaomi/unicorn
+0cf11ac unicorn: Kang touchscreen firmware from thor V816.0.10.0.ULACNXM [Arian]
+
+* device/xiaomi/zeus
+ca6bb6d zeus: Kang touchscreen firmware from thor V816.0.10.0.ULACNXM [Arian]
+
+* hardware/qcom-caf/sm8150/media
+230adb972d conf_files: Remove software OMX blobs [Bruno Martins]
+e8c9145a62 conf_files: Remove software omx codec references [Aaron Kling]
+
+* kernel/xiaomi/sm8450-devicetrees
+0cabfc45 {unicorn, zeus}: Use L1 fts firmware which disabled THP completely [Arian]
+
+* prebuilts/extract-tools
+15f6a3e Add patchelf 0.18.0 [Arian]
+
+* tools/extract-utils
+60db3d1 extract_utils: Don't filter firmware by section for makefile writing [Arian]
+0127c49 extract_utils: Extract destination of firmware partitions too [Arian]
+
+* vendor/nubia/TP1803
+6f231846 TP1803: Move to python based extract-utils and patchelf blobs [Arian]
+fb5a71e1 TP1803: Use standard firmware names [Arian]
+ec4fd508 TP1803: Use old libsnsapi for all camera blobs [Arian]
+4843e09b TP1803: Shim libwvdrmengine.so with libcrypto_shim too [Arian]
+0d082040 TP1803: Fix soname of fingeprint hwmodule [Arian]
+1a43be2d TP1803: Fixup data xmls [Arian]
+57be150e TP1803: Fix soname of com.qti.sensor.tp1803_imx586.so [Arian]
+09ab2148 TP1803: Fix soname of libsnsv28.so [Arian]
+fbae9c63 TP1803: Fixup non-versioned protobuf package name too [Arian]
+f8d2a2fe TP1803: Add missing 32-bit libraries [basamaryan]
+8e2249a9 TP1803: Enable elf checks [Arian]
+2b8847eb TP1803: Update blobs from NX627J V321 [Arian]
+f41392c8 TP1803: Disable xml fixing [Arian]
+cfedd608 TP1803: Remove software OMX blobs [Bruno Martins]
+1e7c8489 TP1803: Change file permissions in proprietary/*/bin/ [Arian]
+
+* vendor/xiaomi/unicorn
+42fb29c unicorn: Kang touchscreen firmware from thor V816.0.10.0.ULACNXM [Arian]
+
+* vendor/xiaomi/zeus
+74edeb3 zeus: Kang touchscreen firmware from thor V816.0.10.0.ULACNXM [Arian]
+
+====================
+     2024-10-25    
+====================
+* device/nubia/TP1803
+196218c TP1803: Add shim for missing symbol in lib-imsvt.so [Danny Trunk]
+
+* device/xiaomi/cupid
+844296c cupid: Switch to python extract-utils [Arian]
+
+* device/xiaomi/mondrian
+fe68bcb mondrian: Switch to python extract-utils [Arian]
+c1aedae Revert "mondrian: Rename audio.primary.taro to audio.primary.taro-mondrian to avoid conflicts" [Arian]
+
+* device/xiaomi/sm8450-common
+f95b64de Revert "sm8450-common: Commonize udfps doze sensor type" [Arian]
+4aa45d62 sm8450-common: Allow gettid syscall for wfdhdcphalservice [Arian]
+cdd6f0de sm8450-common: Switch to python extract-utils [Arian]
+
+* device/xiaomi/unicorn
+ebe49e8 unicorn: Switch to python extract-utils [Arian]
+9694362 Revert "unicorn: Rename audio.primary.taro to audio.primary.taro-unicorn to avoid conflicts" [Arian]
+
+* device/xiaomi/zeus
+d0a5735 zeus: Switch to python extract-utils [Arian]
+
+* hardware/lineage/compat
+85993ce compat: Provide {libbinder,libhidlbase,libutils}-v32 [kyasu]
+
+* hardware/xiaomi
+fdddef2 aidl: fingerprint: Initial Xiaomi implementation [Fabian Leutenegger]
+9e89257 aidl: fingerprint: Initial stub service [Tim Zimmermann]
+103bab3 fingerprint: Move UDFPS handler and extension out of HIDL [basamaryan]
+
+* lineage/mirror
+26cd33f Updated aosp-minimal to 25-Oct-2024 12:02 UTC [Tim Schumacher]
+
+* lineage/wiki
+66237dba pages: gapps: Correct dot version for 19.1 [Nolen Johnson]
+
+* packages/apps/LineageParts
+1f4fe32 LineageParts: Set fitsSystemWindows to true for PartsActivity [LuK1337]
+
+* packages/apps/Settings
+e4b3a5835f4 Settings: Set correct category and styling for google and digital wellbeing [shoya0x00]
+cc197f403e4 Revert "[Sim UI enhancement] remove the "Tap to show info"" [althafvly]
+a59710648db Make battery cycle count configurable and disable it by default [Michael Bestas]
+ff000afcad9 Hide unavailable battery info [Michael Bestas]
+7d6af248bfc Settings: deviceinfo: Extend Battery info page [Jyotiraditya Panda]
+32537c0cfbb Make battery info configurable and enable it by default [Michael Bestas]
+da270f9fa13 DynamicDenylistManager shall not exist [Tommy Webb]
+c0725de2d09 FingerprintSettings: Add proximity check awareness if supported [Bruno Martins]
+2da2ec0395d Settings: Hide Flashlight [Michael W]
+746c5738cbb Settings: make sure Wifi exists before adding controllers [Timi Rautamäki]
+f33e8f00c3f Settings: Add private dns icon [penglezos]
+cb4551203a1 Settings: Add charging control part [Danny Trunk]
+56f9b53aa0f Add Cloudflare DNS as a private DNS provider [Chirayu Desai]
+1c55576337c Settings: Add switch preference for AGPS [juwei]
+7410e8742c6 Properly set Wi-Fi Privacy spinner initial state [Tommy Webb]
+75b993ab592 Settings: Pass empty lottie resource for quickly open camera animation [LuK1337]
+f1ce66758b7 Settings: Good news, `encryptable=footer` is broken [Michael W]
+24abb4f5ac4 Settings: Add toggle for heads up notifications [Michael Bestas]
+8b03dbdbee5 KeyboardSettings: Add a RemotePreference for device-specific panel [Bruno Martins]
+2b4208ba484 Settings: Add battery and notification lights settings [Sam Mortimer]
+339aa781a79 Settings: gestures: Add page for Screen-Off UDFPS [Cosmin Tanislav]
+be0be1f547f Hide the "Show the vibrate icon in the Status Bar" setting [Chirayu Desai]
+61719239fa9 Settings: Add preference for one shot auto-brightness [Cédric Bellegarde]
+7a1d2bb2636 Settings: Hide settings that don't work when taskbar is enabled [LuK1337]
+3af1cb3d673 Settings: Add min refresh rate list preference [LuK1337]
+f9a40571041 Settings: Add peak refresh rate list preference [Michael Bestas]
+eeac2b8f4c8 Settings: Display: Add High Touch Polling Rate Support [Ramii Ahmed]
+7b6251325b7 Settings: Show single-touch wakeup setting on rear & front fps devices [Terminator-J]
+c56b21910b8 Hide SFPS wakeup setting when it's not supported [Michael Bestas]
+881c801e64c Hide fingerprint settings help if URL is empty [Michael Bestas]
+72e64a7fd41 fingerprint: Rework enrollment screen [Bruno Martins]
+5680f3f9dd0 fingerprint: hide link icon when there's no link [Timi Rautamäki]
+82201255719 Settings: Add FastCharge preference into Battery settings [Bruno Martins]
+5a9f8188dc3 Settings: Add an option to force pre-O apps to use full screen aspect ratio [Jesse Chan]
+d238eb0ab40 Settings: Add setup UI for minimum delay between an app's notification sounds [Danny Baumann]
+180969ff17d Settings: display: Add wake on plug switch [Jon Evans]
+d19b7cc1fec Settings: Add proximity check on wake preference [Bruno Martins]
+9dfd2d86262 Settings: Add high touch sensitivity and touchscreen hovering toggles [LuK1337]
+ac0a813011f POLICY_REJECT_ALL restricts all network access [Tommy Webb]
+6b68075767c Settings: Move SIM restrictions currently applied to per-app data usage [Bruno Martins]
+679f7051c85 AppDataUsage: Handle apps without INTERNET permission [Oliver Scott]
+9e77479883d Settings: Add support for allowing/disallowing apps on cellular, vpn and wifi networks [Oliver Scott]
+5f9367f7ddf Settings: Add support for allowing/disallowing apps on restricted networks [Sam Mortimer]
+551d0a5fb30 Settings: Add option to scramble pin layout when unlocking (1/2). [Adnan]
+70e41c7a257 Settings: Add hotspot setting to allow VPN upstreams [Sam Mortimer]
+f0d36b8f956 Settings: Only show gesture navigation if device has a software nav bar [Rashed Abdel-Tawab]
+066aca6f52d Settings: Allow devices to provide remote gesture preferences [Bruno Martins]
+897be6f76a1 Settings: gesture: Add LineageParts touchscreen gesture settings [Zhao Wei Liew]
+645bf12d4f0 Remove useless USB page header [Michael Bestas]
+06884e6f9d9 Settings: Add double tap to sleep preference [Rashed Abdel-Tawab]
+282aaa9c2b6 get outer NFC preference to listen for changes [inthewaves]
+a11294901b5 Fix inconsistent USB preference screen title [Danny Lin]
+438a0825fe6 Settings: Add livedisplay preference screen [Paul Keith]
+6ee00c8ce90 Handle mobile data on internet page during setup [Alexander Koskovich]
+b3c3cdfbf48 Settings: Network setup UI changes for SUW [Michael Bestas]
+3ce2befcb89 Settings: use Glif themed button bar [Timi Rautamäki]
+9e0c4326325 Settings: Implement hide gestural navigation hint bar [Jesse Chan]
+7d434c91e34 Settings: Add a RemotePreference for device-specific doze settings [Steve Kondik]
+27b6142e9e0 Settings: Hide unsupported USB modes automatically [Wang Han]
+7a82d1308ed Settings: Check if we have any color modes declared in overlay [Luca Stefani]
+c141746f35d Settings: Forward port pattern visibility settings (2/2) [Michael Bestas]
+1aa106b02b6 Settings: Forward port lock pattern grid size (2/2) [Michael Bestas]
+d9c793e9c62 Settings: Fix the failing strings [Michael Bestas]
+25e59205b92 Settings: Add LineageParts charging sound settings preference [Sam Mortimer]
+a29dca94cd9 Don't reset A2DP offload when disabling developer settings [Michael Bestas]
+73e3b3163f7 One does not simply become a Developer [Chirayu Desai]
+4dc0fb03861 Settings: Add LineageOS legal info [Roman Birg]
+dadafd414c9 Settings: Hide "Mainline module version" preference [Michael Bestas]
+7a3b7c03a96 Add toggle to enable ADB root [Luca Stefani]
+26278c69bbd BasebandVersionPreferenceController: Trim baseband if needed [Bruno Martins]
+8fad6715487 Settings: Add rotation settings [Steve Kondik]
+f9d78c1627a Settings: Depend on LineagePreferenceLib [LuK1337]
+0fbb0f46ea6 Settings: Add LineageOS entries into device info [LuK1337]
+e1462a81093 Settings: Depend on lineage platform library [Sam Mortimer]
+01aaf83cb8f Settings: Put device info header above "Basic info" [LuK1337]
+ed6eaec85ab Allow the user to change the BackupTransport [Torsten Grote]
+
+* vendor/lineage
+a0a20ad5 android: merge_dtbs: Respect miboard-id while merging [Arian]
+
+* vendor/nubia/TP1803
+edf37a8c TP1803: Shim libwvhidl with libcrypto_shim [Michael Bestas]
+cc8149e3 TP1803: Add shim for missing symbol in lib-imsvt.so [Danny Trunk]
+
+* vendor/xiaomi/cupid
+2c6fba7 cupid: Switch to python extract-utils [Arian]
+
+* vendor/xiaomi/mondrian
+6395b5b mondrian: Switch to python extract-utils [Arian]
+621d1e1 Revert "mondrian: Rename audio.primary.taro to audio.primary.taro-mondrian to avoid conflicts" [Arian]
+
+* vendor/xiaomi/sm8450-common
+d6c597f sm8450-common: Allow gettid syscall for wfdhdcphalservice [Arian]
+e3af4af sm8450-common: Switch to python extract-utils [Arian]
+
+* vendor/xiaomi/unicorn
+8e92783 unicorn: Switch to python extract-utils [Arian]
+1708f3e Revert "unicorn: Rename audio.primary.taro to audio.primary.taro-unicorn to avoid conflicts" [Arian]
+
+* vendor/xiaomi/zeus
+5572b4c zeus: Switch to python extract-utils [Arian]
+
+====================
+     2024-10-24    
+====================
+* device/xiaomi/cupid
+8e4c10e cupid: Disable stock fingeprint for now [Arian]
+e3746e5 cupid: overlay: Update pixel pitch [Beverly]
+53d8d95 cupid: Move to Xiaomi fingerprint AIDL [basamaryan]
+
+* device/xiaomi/sm8450-common
+2bf1639a sm8450-common: Shim WFD with libgui_shim/libinput_shim [LuK1337]
+4cc4c746 sm8450-common: Sync extract scripts with 22 templates [Michael Bestas]
+d199b6dc sm8450-common: Allow setsockopt syscall for qcom c2audio [Arian]
+182f9960 sm8450-common: Allow gettid syscall for atfwd@2.0 [Arian]
+12bdfc38 sm8450-common: Use libhidlbase_shim for vendor.libdpmframework [Arian]
+968f5296 sm8450-common: Switch to AIDL USB HALs [Michael Bestas]
+c594e1c3 sm8450-common: Switch to AIDL thermal HAL [Michael Bestas]
+77af6658 sm8450-common: Add missing xiaomi ecc list to vendor [Arian]
+
+* device/xiaomi/zeus
+4f55b85 Revert "zeus: Rename audio.primary.taro to audio.primary.taro-zeus to avoid conflicts" [Arian]
+
+* lineage/mirror
+a2a1197 Updated to 24-Oct-2024 12:01 UTC [Tim Schumacher]
+
+* vendor/qcom/opensource/usb
+c781963 usb: Set permissions for common USB toggle paths [LuK1337]
+
+* vendor/xiaomi/sm8450-common
+2a714ca sm8450-common: Shim WFD with libgui_shim/libinput_shim [LuK1337]
+011cb85 sm8450-common: Allow setsockopt syscall for qcom c2audio [Arian]
+988a094 sm8450-common: Allow gettid syscall for atfwd@2.0 [Arian]
+761a344 sm8450-common: Use libhidlbase_shim for vendor.libdpmframework [Arian]
+77a1635 sm8450-common: Add missing xiaomi ecc list to vendor [Arian]
+
+* vendor/xiaomi/zeus
+42ddf2a Revert "zeus: Rename audio.primary.taro to audio.primary.taro-zeus to avoid conflicts" [Arian]
+
+====================
+     2024-10-23    
+====================
+* build/make
+3544cf4eda Fix printf usage in _wrap_build() [Alexander Koskovich]
+
+* device/nubia/TP1803
+41294e7 TP1803: Sync extract scripts with 22 templates [Michael Bestas]
+6284bd4 TP1803: Shim widevine with libcrypto_shim [Michael Bestas]
+
+* device/xiaomi/marble
+80274b8 marble: Drop libQnnHtpV69 [Jens Reidel]
+4ac71f6 marble: Update blobs from V816.0.9.0.UMRMIXM [Jens Reidel]
+
+* device/xiaomi/sm8450-common
+195b7eea sm8450-common: Import missing AtFwd2 app [Arian]
+
+* frameworks/base
+984605c54eae Stop domain verification delegated from UIDs blocked by network policy [Oliver Scott]
+22bce8f3ef4e ATV: Display battery notifications [Aaron Kling]
+46227ca8e478 [1/2] Add battery info to tvsettings device info [Aaron Kling]
+b0ada2fd613f fixup! Update the cutout side override doc to encourage all side override [Aaron Kling]
+2e2074b9b513 webkit: SystemImpl: Filter out unavailable providers [LuK1337]
+6c3d80c7dc4c SystemUI: Add support for udfps dim layer [pjgowtham]
+9196493e6cb3 Clear caller identity before updating restrictions [Tommy Webb]
+
+* hardware/interfaces
+27f13c15c9 Override AIDL CAS HAL if HIDL is built [Alexander Koskovich]
+
+* hardware/qcom-caf/sm8450/audio/primary-hal
+52106c210 hal: Move audio primary HAL guard [Bruno Martins]
+b23ae05ef hal: Guard primary audio HAL in case target provides prebuilt [Bruno Martins]
+
+* lineage-sdk
+f7c44fc8 Clear restricted networking mode allowlist [Oliver Scott]
+
+* lineage/hudson
+0790396 Regenerate device dependency mappings [LineageOS Infra]
+
+* packages/modules/Connectivity
+16c0a402ce netd: Require 4.19+ for programs using connect/recvmsg/sendmsg hooks [LuK1337]
+89c6bb621e netd: Limit V specific bpf progs to kernel 4.14+ [Aaron Kling]
+f014a72b60 netd: Remove <4.14 kernel restrictions [Michael Bestas]
+293e6bb267 netbpfload: Support <4.14 kernels [Michael Bestas]
+383439c350 netbpfload: Relax kernel version requirement [Nanhumly]
+4076dc5ad5 TrafficStats: Stop the spam [Subhajeet Muhuri]
+49dd361c12 Always register network policy callback [Tommy Webb]
+00e4c0b4f0 Always drop non-VPN ingress in lockdown mode [Oliver Scott]
+a82ed97f52 Use BPF to block socket creation when restricted [Tommy Webb]
+1f684d0ff3 Firewall: Transport-based toggle support (3/3) [Tommy Webb]
+
+* vendor/partner_gms
+279e3d1 gms: Do not show the deferred notification after setup [Alexander Koskovich]
+
+* vendor/xiaomi/marble
+3b4c887 marble: Drop libQnnHtpV69 [Jens Reidel]
+4fa6d5b marble: Re-extract [Jens Reidel]
+
+* vendor/xiaomi/sm8450-common
+06f4c0a sm8450-common: Import missing AtFwd2 app [Arian]
+
+====================
+     2024-10-22    
+====================
+* build/soong
+a3336a40f gen_build_prop: Stop overriding ro.build.display.id for non-user builds [basamaryan]
+
+* device/xiaomi/mondrian
+0dbe734 mondrian: Disable stock fingeprint for now [Arian]
+3ec5b65 mondrian: overlay: Update pixel pitch [Beverly]
+72c79ff mondrian: Move to Xiaomi fingerprint AIDL [basamaryan]
+
+* frameworks/base
+181ae682e023 base: Allow disabling turbulence noise after clicking the play button [Ido Ben-Hur]
+dda0e44eb48e pm: actually check fs verity support [Thomas Makin]
+cfeda568c6d0 HidlFingerprintSensorConfig: UNKNOWN -> UNDER_DISPLAY_OPTICAL [LuK1337]
+5a2213aca586 HidlFingerprintSensorConfig: Add support for HIDL workaround props [LuK1337]
+f1f43c03e678 SystemUI: screenshot: close QS after launching long screenshot activity [LuK1337]
+8d950ae9d6e1 SystemUI: screenshot: disable magnification for partial screenshots [Cosmin Tanislav]
+53eeb677a0ad SystemUI: screenshot: add extra crop boundaries [Cosmin Tanislav]
+a86bdde994a7 SystemUI: screenshot: remove duplicate clamping on move action [Cosmin Tanislav]
+cf5560c39bef SystemUI: screenshot: open long screenshot activity for partial screenshots [Cosmin Tanislav]
+69ad8358986d Implement edge long swipe gesture to new back gesture affordance [someone5678]
+0e641e755eaf Fix screen can not be switched issue [Bo Liang]
+0fd27bbeb795 Fallback BUTTON_SELECT to BACK [Aaron Kling]
+725dd4716a4b camera2: allow access to CaptureRequest.mLogicalCameraSettings [Cosmin Tanislav]
+d6a462c97f27 Fix default values for 5G Ultra Wideband icon carrier config keys [Vala Zadeh]
+e06d205c52d9 Add 5G Ultra Wideband icon carrier config keys [Vala Zadeh]
+af9fae6d398d SystemUI: Allow skipping mirroring confirmation dialog [Sebastiano Barezzi]
+a4cf2958bb41 keylayouts: Nintendo ProCon: Map it like stock does [Nolen Johnson]
+157604598519 WiredAccessoryManager: replace every non digit character [Francesco "Dil3mm4" Manzo]
+283871d1024e SystemUI: Remove icon tint for user switch items in global actions [Dhina17]
+691f94a38308 SystemUI: Use grid view for user switch in global actions [Dhina17]
+1c7165d9eda8 SystemUI: Match keyguard carrier text font with system [Dhina17]
+609cdf80df32 SystemUI: Update QS header fields text appearance on theme change [Dhina17]
+26dba1c88749 SystemUI: Use correct back drawable for 2-button nav [Dhina17]
+6a52d1d6c769 Screenrecord: Fix notifications not being dismissed [Ido Ben-Hur]
+f01d26cee75e Screenrecord: Add delete action to the notification [Sourajit Karmakar]
+214b9123d93a Screenrecord: Dismiss notification on stop [Lostark13]
+6d52f44b27d9 Screenrecord: Save preferences for permission dialog [Pranav Vashi]
+04ac182cb87d Screenrecord: Add an option to use HEVC [Ido Ben-Hur]
+669af1f49620 Screenrecord: Allow to reduce 3 second screen record timer [maitreya29]
+c83b707dbcce Screenrecord: Add an option to record for longer [Ido Ben-Hur]
+c23ad98ee640 Screenrecord: Make low quality bitrate scalable per device [Ido Ben-Hur]
+d741d722b01e Screenrecord: Save and load set preferences [Ido Ben-Hur]
+532ee0af3840 Screenrecord: Remember last used blinking dot position [Ido Ben-Hur]
+b073114956e6 Screenrecord: add blinking stop dot and low quality options [ezio84]
+c594eccda32f Screenrecord: Allow to select AVC codec profile level [iusmac]
+11ca88c624cd Screenrecord: Allow limiting the max framerate [Kuba Wojciechowski]
+bb0c8128e917 BatteryService: Expose [maximum|design] capacity API [Jyotiraditya Panda]
+e753b1c5047b BatteryService: Typo fix ("Charing" -> "Charging") [Jyotiraditya Panda]
+a9d1131e8922 Settings: Always show package name in installed app details [Michael Bestas]
+7905881a44b3 usb: Show charging notification only if power brick is disconnected [Adithya R]
+717a8db87eaf Allow signature spoofing for microG Companion/Services [LuK1337]
+a7378389829f Add nvidia profile manager [Aaron Kling]
+6cd1f0e13f31 Add nvcpl hook interfaces [Aaron Kling]
+d214367f4243 SystemUI: Allow enabling lockscreen rotation by default [Michael Bestas]
+7cb973f03df5 SystemUI: advanced reboot: set maxElementsWrap [Timi Rautamäki]
+e7ef7fd66a83 SystemUI: don't show screenshot button on TV [Timi Rautamäki]
+f49d54d1e939 SystemUI: make powermenu usable on TV [Timi Rautamäki]
+7c0107605e09 SystemUI: fix global_actions_power_dialog_flow formatting [Timi Rautamäki]
+2021e0827267 SettingsLib: Use framework resource for headline font [Adithya R]
+b43f7c0a9c3a PhoneWindowManager: Pass correct assistInvocationType for KEYCODE_ASSIST [Dhina17]
+4c9e9e1a6a36 camera: Skip HFR checks for privileged apps. [Sai Kumar Sanagavarapu]
+1d1882fe5c87 Camera: Skip stream size check for whitelisted apps. [Gaoxiang Chen]
+cddbe42017eb camera: Support exposing aux camera to apps [Sauhard Pande]
+9eed3121d4ab BootAnimation: Check for resolution override [Aaron Kling]
+df6f409c49af Don't fail setDeviceConnectionState if not implemented in hal [Aaron Kling]
+541d243256ac SystemUI: Fix uneven volume icon padding in status bar [Danny Lin]
+e91db01bebde SystemUI: Hide notifications when quickly expanding QS [Adithya R]
+ac66dfbec676 SystemUI: Check if primitive vibrations are supported in new quick affordances [Fabian Leutenegger]
+fd8fe4bd8a38 services: fix quickswitch with gesture pill disabled [nift4]
+173cdb42fe61 SystemServer: only enable fd leak tracker on eng [Simao Gomes Viana]
+f98bc4a08d5b fw/b: Add support for runtime toggle of navbar [Bruno Martins]
+032250f4e3cc camera2: Add methods for backward compatibility [Ihor Ivanov]
+db7b2f8dbb07 AudioService: Remove Analog Dock from fixed-volume devices [Vachounet]
+c45e31867ee8 BatteryService: Add support for battery Moto Mods [Vachounet]
+2bdaeef2596a Report success on every fingerprint removal [Kishan Dudhatra]
+fec884eae26f AutofillManager: Make userdebug default to NO_LOGGING [LuK1337]
+8c7631aa89c3 core: pm: Allow wildcard in RRO system property value checks [Luca Stefani]
+49eeebf9a901 core: pm: Use checkRequiredSystemProperties from FrameworkParsingPackageUtils [Luca Stefani]
+2c3cfc4081f9 SystemUI: fix missing rotate suggestion in 2 button nav mode [nift4]
+63ced639e6a8 SystemUI: show ime switcher + cursor keys if we have space [nift4]
+1770a5f88c25 PhoneWindowManager: only handle long press on back key if using it [nift4]
+c322cbd353f6 VolumeDialogImpl: Update rows when adding one while the panel is showing [Arian]
+fd74b077ca8d VolumeDialogImpl: Ignore external layout direction changes [danielml]
+1512587e2328 VolumeDialogImpl: Add STREAM_NOTIFICATION row [LuK1337]
+e0aaa4f379d0 SystemUI: screenshot: Add delete action chip intent [ganeshi4u]
+0bf7aab4f148 SystemUI: Check whether the selected WFD route is available [Weijie Wang]
+9741a1682787 SystemUI: SideFpsEventHandler: Don't crash without FingerprintManager [Michael W]
+0c74c32dbe34 DozeSensors: only use proximity sensor if supported [Demon000]
+a1c2ac82c540 InputDevices: Fix Hungarian language overlay [Sean McCreary]
+715752a5e031 MetaKeyKeyListener: Disable locking of toggled modifier keys [Sean McCreary]
+f8ef2415235f SystemUI: Make battery clickable again [Michael W]
+fe8ec5f8f264 PhoneWindowManager: Fix wakeup and long-press actions of assistant key [kyasu]
+1d95bc31ece6 SystemUI: React to PrivacyConfig changes properly [Tommy Webb]
+e9c90b0c52ba JobScheduler: Respect allow-in-power-save perm [Tommy Webb]
+8999428a3817 Increase maximum password length to 64 [Oliver Scott]
+8acffdf2ce90 SystemUI: Restore 14 QPR1 FingerprintInteractiveToAuth handling [LuK1337]
+5fdce570b9d4 SystemUI: Add FingerprintInteractiveToAuthProvider implementation [Adithya R]
+2b0153c6db33 SystemUI: Don't require AOD for screen off UDFPS [LuK1337]
+8cbeb08e234c Apply monet to fingerprint authentication ripple animation [SagarMakhar]
+ab33b004ead8 SystemUI: Update string for add tiles with one click [mydongistiny]
+991e96478509 SystemUI: Allow user to add/remove QS with one click [Andrzej Ressel]
+596861f03184 SystemUI: Fix uneven DND icon padding in status bar [Ido Ben-Hur]
+e17ac11c0849 GnssLocationProvider: Implement xtra-daemon toggle [Michael Bestas]
+a8a1eba438cb GnssLocationProvider: Implement PSDS periodic download toggle [Michael Bestas]
+edda89d861db GnssLocationProvider: Disable AGPS by default, it'll be enabled in SetupWizard [Chirayu Desai]
+82aa36504e38 Ignore AGPS toggle during user-initiated emergency calls [Chirayu Desai]
+c04f83f0f791 Remove sensitive info from SUPL requests [Tommy Webb]
+be49d5b48bdd AlertWindowNotification: Correctly load app label [HZ]
+a61ca1ff7429 toast: fix bg color not changing with theme change [SuperDroidBond]
+7ebb11d71e11 SystemUI: Add double tap to sleep gesture [Rashed Abdel-Tawab]
+35944b92e022 SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod [maxwen]
+ca9ccd27cb97 Fallback ESC to BACK [Aaron Kling]
+caafb87a5d09 SystemUI: Network Traffic [1/3] [Sam Mortimer]
+a7816be2219d Support per-UID VPN lockdown policy [Tommy Webb]
+d65915c8e638 Revert "Remove dependency on IME subtype from TSMS" [Michael Bestas]
+45cbec45645a Camera button support [HazouPH]
+5eaede1fac9b PhoneWindowManager: Add support for back key long press customization [LuK1337]
+2367425e858b fw/b: Allow customisation of navbar app switch long press action [Sam Mortimer]
+6b3be18e10f3 PhoneWindowManager: Implement press home to answer call [Oleksandr Byelkin]
+094a9e3ce15b PhoneWindowManager: Tap volume buttons to answer call [martincz]
+4c0d0cf41bf1 fw/b: Implement device hardware wake keys support [LuK1337]
+dd0c904ba127 fw/b: Implement hardware keys custom rebinding [Phil Tunstall]
+deb0acd337ea fw/b: Re-introduce keyboard backlight brightness control [Bruno Martins]
+d0b6a1b77f6f PowerManager: Allow to distinguish different keypresses [Corinna Vinschen]
+6829f53627b5 PowerManagerService: Allow to light up buttons only when pressed [Anas Karbila]
+c2d29863e958 fw/b: Button backlight brightness [Ricardo Cerqueira]
+cf253743ca29 PackageManager: Allow build-time disabling of components [Pawit Pornkitprasan]
+8c5dbd8c1764 SystemUI: Add support for clock auto-hiding [Cédric Bellegarde]
+fd7778c0e7ad SystemUI: Make the volume dialog expandable [Arian]
+f83a8e0c1a1c SystemUI: runtime configurable audio panel location [a.derendyaev]
+751ca3056175 SystemUI: volume dialog: Align padding/margin for left and right [Arian]
+2d88da44662e VolumeDialogImpl: Handle the outmost row with respect to left gravity [Arian]
+4ec89a1f2eff VolumeDialogImpl: Respect left gravity in ringer drawer [Arian]
+60b5f72a6344 VolumeDialogImpl: Set touchable region properly for left gravity [Arian]
+ea151943d12d VolumeDialogImpl: Drop unnecessary layout gravity defines and handle left [Arian]
+38ebf6ee9510 VolumeDialogImpl: Fix cut layout when on setup or lock task mode [jhenrique09]
+788126c4ef74 udfps: Make pressed udfps view configurable [TheScarastic]
+994201d0eedc udfps: Restore illumination dot for global hbm [Arian]
+b5ab51a1e785 Forward port 'Swap volume buttons' (1/3) [nadlabak]
+f74e546ca36e Forward port CM Screen Security settings (1/2) [Michael Bestas]
+7ec29ef9a529 Implement click to take partial screenshot [1/3] [Jesse Chan]
+94ca412602a7 Screenshot: Append app name to filename [ezio84]
+7457afa269bc Restrict apps without INTERNET permission [Tommy Webb]
+b4c3f3ee20ee Firewall: Transport-based toggle support (1/3) [Oliver Scott]
+e758a4097353 Firewall: Migrate to POLICY_REJECT_ALL [Tommy Webb]
+d192e7090df5 fixup! Firewall: Network access toggle support [Oliver Scott]
+5e23d82b0324 Firewall: Network access toggle support [Oliver Scott]
+e5a628a7305f fixup! Implement backup/restore for network policy [Oliver Scott]
+a47ea6a193a1 Implement backup/restore for network policy [Oliver Scott]
+8dacadc8a986 Split network policy XML parsing into read/write helper functions [Oliver Scott]
+7b1f5054b5e7 SystemUI: Bring in drawable for statusbar firewall toggle [Michael Bestas]
+e79948485c1a Implement firewall status bar indicator [Oliver Scott]
+c4d4c68de0d3 Settings.Global: Add UIDS_ALLOWED_ON_RESTRICTED_NETWORKS [Chirayu Desai]
+692e1ca696de Download: Add support to manually pause/resume download [qqzhou]
+420428eea1c8 SystemUI: Bring back good ol' circle battery style [Luca Stefani]
+ed6dfb2d92ab SystemUI: Clock AM/PM style customization [Michael Bestas]
+91bd0ac292ab SystemUI: Clock position customization [Luca Stefani]
+ba4f4448c02f SystemUI: doze: add config for long press sensors that need a proximity check [Cosmin Tanislav]
+47b13078664c SystemUI: doze: add config for double tap sensors that need a proximity check [Cosmin Tanislav]
+7389f839472c Partially revert "Assume sensors perform prox check" [Cosmin Tanislav]
+3c2a5dcbebec core: Fix uninitialized settings in NotificationAttentionHelper [LuK1337]
+cefd5bab0535 frameworks/base: Lights notifications brightness support [Adrian DC]
+b802d8428403 frameworks/base: Battery and Notification Lights [Sam Mortimer]
+8024044f194a SystemUI: add left and right virtual buttons while typing [Roman Birg]
+c6d6fddc7422 base: ChooserActivity: Don't show image edit button on multiple targets [Aayush Gupta]
+dc26fe41a24e Don't skip theme application if it's already current [Michael Bestas]
+2c62ec1ddf6a SystemUI: screenshot: open the screenshot instead of edit [Timi Rautamäki]
+86d3fe49618a SystemUI: Add left padding for keyguard slices [LuK1337]
+62ed5423e9a0 AutoBrightness: Add support for one shot auto-brightness [Cédric Bellegarde]
+b3426e6c970a SystemUI: Make isLargeScreen() use correct API for getting window metrics [LuK1337]
+36e9bcd8f2c6 SystemUI: Add API for runtime taskbar config [Danny Lin]
+e6bbee061c1f SystemUI: Port brightness slider changes [Alberto97]
+8a6bb1e172ce SystemUI: Fix alarm icon [Michael W]
+3d3630cccf47 VolumeDialogImpl: Don't hide the default stream when adjusting the music stream [Arian]
+ed363e1faae7 Introduce high touch polling rate feature control [Ramii Ahmed]
+981515dd7c38 Keyguard: don't use large clock on landscape [Timi Rautamäki]
+44dcf3bbc0ea SystemUI: add FloatingRotationButton for hw-key devices [Michal Pražák]
+1385dceff7c2 SystemUI: Use AVCProfileMain for screen recorder [Arne Coucheron]
+e78f4727298e frameworks: Add device controls shortcut to power menu [LuK1337]
+cc4ce4594ac6 frameworks: Add more power menu customizations [Gegham Zakaryan]
+8f15efb62259 frameworks: Add support for advanced restart options [Michael Bestas]
+daa3f488a695 SystemUI: Don't store pending ControlAction if the device is locked [LuK1337]
+19af01d6a336 webkit: SystemImpl: Make systemIsDebuggable() check IS_ENG as well [LuK1337]
+2ed0433bd4f7 Enable Binder Proxy Tracking by Uid only on eng builds [dianlujitao]
+5f3a953fc828 Don't pass repeated back key events to app if custom action is set up [LuK1337]
+ed6d36816ad9 PhoneWindowManager: Allow torch and track skip during ambient display [ezio84]
+a8ff075fea75 Long-press power while display is off for torch [beanstown106]
+c7403675a608 PhoneWindowManager: add LineageButtons volumekey hook [Simon Shields]
+c6463668d92e Fix bug Device that can't support adoptable storage cannot read the sdcard. [sangho.yoon]
+ce6d85757892 VolumeDialogImpl: Don't vibrate when volume dialog is not visible [LuK1337]
+8a72f6f0a438 Add an option to force pre-O apps to use full screen aspect ratio [Jesse Chan]
+8dc4e3e8a289 Support enforcing a minimum delay between notification sounds of an app. [Danny Baumann]
+35174dd72f6b PowerManagerService: Wake on plug (1/2) [Jon Evans]
+2e14c97b4369 PowerManager: Add proximity check on wake [Bruno Martins]
+8bca45451c69 Add high touch sensitivity and hovering to InputService [Danesh M]
+fc6d35b2229e Allow lid to send a generic COVER_CHANGED broadcast [jrior001]
+468522ec016f UsbDeviceManager: Delay MSG_UPDATE_SCREEN_LOCK message [LuK1337]
+2ef5700e8534 SystemUI: Fix the unlock sound played repeatedly [Shufeng Hou]
+02df6c47d3eb Sharesheet: Display two rows of max ranked targets [LuK1337]
+e34f1c2a6d2c Keyguard: Add option to scramble pin layout when unlocking (2/2). [Adnan]
+4e2db027bc1d SystemUI: Dismiss keyguard on boot if disabled by current profile [Gabriele M]
+f51dd29a598e Exempt location packages from location indicators [Chirayu Desai]
+39f26f29811f SystemUI: Add quick settings pull down with one finger [Roman Birg]
+7f3767bb52ae SystemUI: Implement hide gestural navigation hint bar [Jesse Chan]
+a79fa1140ff4 SystemUI: Add navbar layout inversion content observer [LuK1337]
+7bd8f37d9900 RotationLockTile: Open LineageParts rotation settings [DroidFreak32]
+19713519ea3a SystemUI: Enable cast tile without Wi-Fi connection [nift4]
+009274c85fce SystemUI: DreamTile: Enable for everyone [Ido Ben-Hur]
+f1357f2e584d SystemUI: Add VPN tile [Danny Baumann]
+76d2a7ce5d00 SystemUI: Add Profiles tile [Roman Birg]
+bfb550a19256 SystemUI: Enable NFC tile [Tim Schumacher]
+1452bb276619 SystemUI: Internet tile: Allow long-pressing on mobile network [Michael W]
+4810742fe51f SystemUI: Expose legacy Wi-Fi and cellular data QS tiles [Danny Lin]
+4795069cb1b6 SystemUI: Allow Wi-Fi/cell tiles to co-exist with provider model [Danny Lin]
+6405ce911d84 Revert "[DO NOT MERGE] Make sure WiFi and Cell tiles are not created in Provider Model" [Danny Lin]
+5bb3cea10ed2 SystemUI: Restore wifi and cellular QS tiles [Michael Bestas]
+57e53b78efbb SystemUI: Add reading mode tile [Joey]
+0286d0fdf063 SystemUI: Add powershare QS tile [Linux4]
+c213d596b336 SystemUI: Add AOD QS tile [Marko Man]
+490975c69cde SystemUI: Add USB Tether tile [BestPig]
+2fdf728af643 SystemUI: Add AmbientDisplay tile [Adnan Begovic]
+79afa2013797 SystemUI: Add Sync tile [Altaf-Mahdi]
+a57251d50bfd SystemUI: Add heads up tile [Michael Bestas]
+f5ff088ccc92 SystemUI: Add caffeine QS tile [Keith Mok]
+d01af5fbc377 SystemUI: Add Lineage statusbar item holder [Sam Mortimer]
+c99562675780 SystemUI: tuner: Migrate to M3 switch [Dhina17]
+212a786d5445 SystemUI: Expose VPN icon to allow toggling [Bruno Martins]
+1c4f36e143ac SystemUI: Bring in drawables for statusbar icon toggles [althafvly]
+433b170dec7e SystemUI: Split status bar icon controls for vibrate and mute [althafvly]
+1c609d97857c SystemUI: Status bar tuner improvements [Rashed Abdel-Tawab]
+
+* hardware/lineage/compat
+f7f5e57 compat: libinput: Provide KeyEvent fromNative/toNative JNI methods [LuK1337]
+
+* hardware/qcom-caf/sm8450/audio/primary-hal
+33665f8e9 configs: Allow setsockopt syscall for qcom c2audio [Arian]
+
+* lineage-sdk
+d4dc1a3f sdk: Introduce config_enableAdvancedRotationSettings [Michael Bestas]
+
+* lineage/hudson
+56efcc7 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+820b119 Updated aosp-minimal to 22-Oct-2024 12:02 UTC [Tim Schumacher]
+
+* lineage/wiki
+b1b4b994 wiki: Set recovery_reboot to fastboot_menu for FP3 [LuK1337]
+
+* packages/apps/AudioFX
+74e43b3 AudioFX: Convert tests to Android.bp [Michael Bestas]
+
+* packages/apps/Glimpse
+9f8dd1b Glimpse: Add android.intent.category.DEFAULT to main intent filter [Arian]
+2fe9b54 Glimpse: Replace deprecated .reuse/dep5 with REUSE.toml [Michael Bestas]
+
+* packages/apps/Jelly
+7f10fb5 Jelly: Replace deprecated .reuse/dep5 with REUSE.toml [Michael Bestas]
+
+* packages/apps/LineageParts
+36c4d2d LineageParts: Replace deprecated .reuse/dep5 with REUSE.toml [Michael Bestas]
+2fe6265 LineageParts: Switch to SPDX copyright headers [Michael Bestas]
+
+* packages/apps/Recorder
+cd59833 Recorder: Replace deprecated .reuse/dep5 with REUSE.toml [Michael Bestas]
+
+* packages/apps/Settings
+0052a226a6e Settings: Bring in the new icon [Asher Simonds]
+
+* packages/apps/SetupWizard
+139ed34 SetupWizard: Replace deprecated .reuse/dep5 with REUSE.toml [Michael Bestas]
+
+* packages/apps/Trebuchet
+55d66a2021 fixup! Properly expose GridOptionsProvider [Michael Bestas]
+66bf46d3bd fixup! Fix All Apps header protection and spacing again [Michael Bestas]
+cff78378e2 Trebuchet: Let's keep 2-button nav alive for a little longer [nift4]
+fde90ebea8 Trebuchet: Fix Taskbar{Model,View}CallbacksFactory instantiation [Sebastiano Barezzi]
+eea26b7a15 RecentsView: Unconditionally hide split option for Go-enabled targets [Bruno Martins]
+17c63451a5 SettingsActivity: Hide home screen rotation pref if not supported [Bruno Martins]
+eefe87f824 Hide scrollbar when searching All Apps [Tommy Webb]
+0bbe5660ec Launcher3: Ability to toggle themed icons for all apps [Trishiraj]
+dc333504d6 Trebuchet: Fix sorting in zh-Hans-CN [dantmnf]
+dec158c55c Trebuchet: Allow changing app suggestion settings [Alexander Koskovich]
+fcf3014836 Skip glitchy search animation [Tommy Webb]
+241c87a4a9 Fix All Apps header protection and spacing again [Tommy Webb]
+3f7059ce47 Disable all caps from Personal and Work tabs [Michael Bestas]
+e8899c8d7a Launcher3: Fix gesture navigation fail to move to bottom [Yingren Wang]
+5b8c7901c2 Launcher3: Do not attach cleanupScreenshot() to frame update event [LibXZR]
+f420faba2d Launcher3: Increase end padding for search bar UI [Pranav Vashi]
+a5a7c37573 Add support for toggling taskbar [Danny Lin]
+02cf1173dd Trebuchet: implement hidden & protected apps [Joey]
+998dd02f65 Trebuchet: Adjust the icon size to the grid size [daniml3]
+65d43db4fa QuickStep: Google Feed integration [Edward Cross]
+48f41fe0f6 Launcher3: Reduce app label text size [Danny Lin]
+e90a23190b Update search icon to match Settings [Michael Bestas]
+f276569faf Fix search bar UI in All Apps [Michael Bestas]
+fd60a13245 Improve search bar UI in All Apps [Danny Lin]
+da1b84b51e Workspace: Allow resizing any widget [Nebojsa Cvetkovic]
+a3dbcf31f7 Trebuchet: add toggle for desktop and drawer labels [Joey]
+521a6b1fdb Trebuchet: allow disabling workspace edit [Joey]
+c7dfb2ae6d Launcher3: SwitchPreference -> SwitchPreferenceCompat [Ido Ben-Hur]
+eec0d7623d Launcher: Fix all apps view not dismissing [Timi Rautamäki]
+b102066617 Expose themed icon setting in ThemePicker [Danny Lin]
+c5c6ba29c9 Properly expose GridOptionsProvider [Luca Stefani]
+1713de7582 Disable QSB on first screen by default [Arne Coucheron]
+20f9318339 TrebuchetGo: Add Go specific default workspace [Bruno Martins]
+f7598f1e3d Launcher3: Add 2x2 workspace grid option [Danny Lin]
+810077b479 Trebuchet: Add 5x6, 5x7 and 6x6 default workspaces [dwardo]
+02519a729f Replace 4x4 grid option with a 4x5 one [Arne Coucheron]
+74d0e5c6ff LineageOS default workspace tablet changes [Michael Bestas]
+53afa6117e Trebuchet: Update default workspace [Bruno Martins]
+
+* system/sepolicy
+ff88cafb1 Resolve neverallow in retrofit devices [Michael Bestas]
+de94936f7 Add property to disable APCF extended features [me-cafebabe]
+
+* tools/buildscript
+866b944 don't explicity build additional images [Arian]
+
+* tools/extract-utils
+c2aa242 extract_utils: add support for factory proprietary file [Cosmin Tanislav]
+8f77789 extract_utils: add extract function for copying pixel fimware [Cosmin Tanislav]
+5d1c7c2 extract_utils: add extract function for extracting pixel factory images [Cosmin Tanislav]
+5defe2b extract_utils: do not base firmware copy decision on isinstance [Cosmin Tanislav]
+f405d5d extract_utils: refactor partition and files retrieval [Cosmin Tanislav]
+1e9045e extract_utils: refactor extract functions handling [Cosmin Tanislav]
+4930b6f extract_utils: add script for converting to python dump structure [Cosmin Tanislav]
+fb093b2 extract_utils: use git repo when patching [Cosmin Tanislav]
+
+* vendor/lineage
+3d33aaee kernel: Add rust prebuilts to path [Aaron Kling]
+
+* vendor/partner_gms
+421da49 gms: overlay: Hide DocumentsUI from the launcher [Nolen Johnson]
+7face5e gms: Add GmsConfigOverlayDocumentsUI [Alexander Koskovich]
+d486a1f apps: Let Chrome64 also override Jelly [Bruno Martins]
+2c68ea9 gms: Fix 64bit-only builds [Bruno Martins]
+20f6e33 products: gms_minimal: Make it more minimal [Nolen Johnson]
+9e51161 gms: apps: Add some additional privapp perms [Nolen Johnson]
+0289f33 gms: products: minimal: Drop GWP [Nolen Johnson]
+81d1d45 gms: products: Fixup generic targets artifact path requirements [Nolen Johnson]
+cdcc811 gms: PRODUCT_IS_AUTO -> PRODUCT_IS_AUTOMOTIVE [Bruno Martins]
+200d003 gms: products: Stop settings SUW theme property [Nolen Johnson]
+9848ee2 gms: apps: Photos: Override Glimpse [Nolen Johnson]
+337e28f gms: products: Build GmsConfigOverlayASI unconditionally [Nolen Johnson]
+5dfbaf7 gms: products: Don't build SwitchAccess [Nolen Johnson]
+6224251 gms: products: Invert comms suite check [Nolen Johnson]
+72d4e60 gms: Split product enforcement list for minimal and full GMS [Nolen Johnson]
+4b584fa gms: products: Only include comms suite on telephony devices [Nolen Johnson]
+9cb05b4 permissions: Add missing priv-app permissions for EmergencyInfoGms [Bruno Martins]
+f4c2fe9 gms: products: Allow SUW to rotate on tablets [Nolen Johnson]
+d5ffa14 gms: Don't include personal safety apps on minimal targets [Nolen Johnson]
+5b6287a gms: products: Don't include Drive by default [Nolen Johnson]
+dcafd2e gms: products: Cut videos from full target [Nolen Johnson]
+ee47bd5 gms: overlays: GmsDocumentsUIOverlay: Set as much to use FilesGoogle as we can [Nolen Johnson]
+a9a74bd gms: apps: GoogleRestore: State optional-libraries in use [Bruno Martins]
+ed5c677 gms: Stop relying on exported vars for ATV and Automotive targets [Bruno Martins]
+62e2361 gms: Make DeskClock/Calendar icons live [Nolen Johnson]
+e1c3c24 gms: apps: AndroidSystemIntelligence: Override Pixel version [Nolen Johnson]
+a468c2b gms: Move backup provider overlay to an RRO package [Nolen Johnson]
+08393a9 gms: products: Exclude system items from artifact path requirement [Nolen Johnson]
+1f06fe3 gms: Override LineageOS apps with their GMS counterparts [Nolen Johnson]
+9c39e5e gms: products: Introduce gms_minimal (non-GO) product [Nolen Johnson]
+c815dbe gms: products: Don't build reference packages [Nolen Johnson]
+7f6a2f9 gms: Convert der files from module to file copy [Nolen Johnson]
+3316e50 gms: Guard against WITH_GMS_{CAR,TV} [Nolen Johnson]
+0ad0c3f gms: Import from gms-oem-V-15-202409.zip [Nolen Johnson]
+
+====================
+     2024-10-21    
+====================
+* device/xiaomi/unicorn
+dcc7d93 unicorn: Disable stock fingeprint for now [Arian]
+736e9ea unicorn: overlay: Update pixel pitch [Beverly]
+f9fbfa8 unicorn: Move to Xiaomi fingerprint AIDL [basamaryan]
+
+* device/xiaomi/zeus
+e25375b zeus: Disable stock fingeprint for now [Arian]
+54cd8e7 zeus: overlay: Update pixel pitch [Beverly]
+08d036d zeus: Move to Xiaomi fingerprint AIDL [basamaryan]
+
+* tools/extract-utils
+539f47b extract_utils: allow any extension for non-ELF bin files [Cosmin Tanislav]
+b9978df extract_utils: simplify RRO path computations [Cosmin Tanislav]
+7482f17 extract_utils: pass optional arguments via kwargs [Cosmin Tanislav]
+9c1d9df extract_utils: allow empty rel_path and regex for generated proprietary files [Cosmin Tanislav]
+6d7ae1e extract_utils: move vendor rel sub path to ProprietaryFile class [Cosmin Tanislav]
+96af7ca extract_utils: fix single file patching example [Cosmin Tanislav]
+0e95b78 extract_utils: remove another unused path import [Cosmin Tanislav]
+153e2d6 extract_utils: fix f-string without placeholders [Cosmin Tanislav]
+3492802 extract_utils: fix line parsing for skip files [Cosmin Tanislav]
+ea45d3c extract_utils: fix fnmatch call for comment-less proprietary files [Cosmin Tanislav]
+0b52876 extract_utils: remove TODOs for partition-less files [Cosmin Tanislav]
+b04c5f1 extract-utils: remove unused path import [Cosmin Tanislav]
+3fa2621 extract_utils: Add libs_proto_21_12 example to templates [LuK1337]
+1c34415 extract_utils: make use of os.DirEntry methods [Cosmin Tanislav]
+
+* vendor/crowdin
+9332ac8 rm -rf [Michael Bestas]
+
+====================
+     2024-10-20    
+====================
+* build/make
+003635c95e core/Makefile: Fix filenames with commas [Aaron Kling]
+c6d0aca4bd Add TARGET_RECOVERY_DEFAULT_TOUCH_ROTATION flag [LuK1337]
+54a8532cb4 core: Allow overriding device/model/name/fingerprint properties [LuK1337]
+
+* build/soong
+03a92d7ad gen_build_prop: Set ro.lineage.device [Michael Bestas]
+
+* hardware/lineage/compat
+98f409f compat: Provide libui-v30 [LuK1337]
+
+* packages/apps/Messaging
+c0b2a2c Remove README [Michael Bestas]
+96ef363 Messaging: Fix handling of default SMS app [Ido Ben-Hur]
+
+* packages/apps/ThemePicker
+9664d8aa ThemePicker: Allow text scroll in options title [Ido Ben-Hur]
+a92d58ad ThemePicker: Use the new material switch to match with settings [Ido Ben-Hur]
+28d78dc5 ThemePicker: Many UI / layout consistency fixes & improvements [Ido Ben-Hur]
+dc1263a5 ThemePicker: Apply window insets to fragments [LuK1337]
+34f601c1 ThemePicker: Show our apps in icon previews [Demon000]
+316b3ffe ThemePicker: Vertically center the text of customization options [Ido Ben-Hur]
+2889bb40 ThemePicker: Bring back fonts, icon pack, shape customization [Anay Wadhera]
+
+* packages/modules/adb
+163d0f0b Add ADB root service changes [LuK1337]
+
+* system/sepolicy
+6bff0893b Label ro.audio.usb.period_us [Jindong Yue]
+2b04325af Add tests for merged {hw,}service_context files [LuK1337]
+adc5019ef sepolicy: allow fastbootd to operate devpts [Randall Huang]
+dbe5a290e sepolicy: Allow fsck_untrusted to be sys_admin [someone5678]
+40cd4e19b private: Exempt system_app from adbd_config_prop neverallow [Nolen Johnson]
+cb5fcd0ea sepolicy: Fix sdcardd rules [Sevenrock]
+ded16491b Give mediaprovider_app mlstrustedsubject [Aaron Kling]
+73db85c52 sepolicy: Add sdcard_posix_contextmount_type attribute [LuK1337]
+063c317b5 Label system properties to config audio codec priority [Michael Bestas]
+3253f6a26 sepolicy: Allow recovery to alter / [Gabriele M]
+37fac63e7 sepolicy: whitelist recovery from node creation neverallow [Alessandro Astone]
+
+* tools/extract-utils
+5e91c61 extract_utils: Add sub_dir() to the sh_binary builder [Alexander Koskovich]
+05e3c7f extract_utils: Add function to fixup v21.12 protobuf library suffix [Alexander Koskovich]
+7b716c0 extract_utils: Allow passing custom device_rel_path for modules [Alexander Koskovich]
+5298aaa extract_utils: Make --section accept a pattern [LuK1337]
+41780c0 extract_utils: Create vendor path on process() [Alexander Koskovich]
+d309f52 extract_utils: Fix write_product_copy_files check for no files to copy [Alexander Koskovich]
+78830d1 extract-utils: Ensure that install_symlink names are always unique [kyasu]
+624b2da extract_utils: templates: Properly symlink to python scripts [basamaryan]
+
+* vendor/lineage
+70ca038f release: Set Pixel values [Michael Bestas]
+a3187b9f release: Declare missing Pixel flags [Michael Bestas]
+619b34e0 common: Remove date UTC prop override key [Michael Bestas]
+
