@@ -1,0 +1,228 @@
+====================
+     2025-01-28    
+====================
+* device/xiaomi/mayfly
+177e7b9 mayfly: Switch to source-built fx.tunnel interface [FlowerSea0208]
+a766318 mayfly: Adjust override prop key names [LuK1337]
+0cbb83d mayfly: Commonize kernel module load list [Arian]
+4fc1af5 mayfly: Remove unused Android.mk [Michael Bestas]
+866a98d mayfly: overlay: Drop brightness backlight/nit mapping [Arian]
+9fd1fd8 mayfly: overlay: Nfc: Add targetName and move to vendor [Luofan Chen]
+f85c772 mayfly: Use common lib_fixups [LuK1337]
+b452dc9 mayfly: Update blobs and firmware from V816.0.14.0.ULTCNXM [Arian]
+b788105 mayfly: Switch to python extract-utils [Arian]
+919da7a mayfly: overlay: Update pixel pitch [Beverly]
+4aaa8a9 mayfly: Move to Xiaomi fingerprint AIDL [basamaryan]
+4152262 Revert "mayfly: Rename audio.primary.taro to audio.primary.taro-mayfly to avoid conflicts" [Arian]
+
+* lineage/mirror
+889acbd Updated to 27-Jan-2025 13:01 UTC [Tim Schumacher]
+
+* vendor/lineage
+5854d194 android: merge_dtbs: Respect miboard-id while merging [Arian]
+
+* vendor/xiaomi/mayfly
+937baa8 mayfly: Switch to source-built fx.tunnel interface [FlowerSea0208]
+04a682d mayfly: Re-extract from V816.0.14.0.ULTCNXM [Arian]
+
+====================
+     2025-01-27    
+====================
+* kernel/xiaomi/sm8450
+4e1607caf9af input: touchscreen: xiaomi: Commonize touch mode get/set between ioctl and sysfs nodes [Arian]
+
+* lineage/hudson
+e27ac81 It's a 3 to survive yet again! [Bharath]
+
+* lineage/mirror
+ad6f4d1 Updated to 26-Jan-2025 13:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+894c4ff1 wiki: devices: Promote FP3 to 22.1 [Bharath]
+
+* packages/apps/Glimpse
+7a8535c Glimpse: Lowercase cursor column names [Luca Stefani]
+2fca29d Glimpse: Fix-up albums query [Luca Stefani]
+945ac7e Glimpse: Use SharingStarted.Eagerly for ParsedIntent dependent flows [LuK1337]
+
+* packages/apps/LineageParts
+b524188 LineageParts: Fix overlapping interval seekbar texts in RTL [Dhina17]
+
+* packages/apps/Twelve
+1d86b88 Twelve: Use library icon from design specifications [Joey]
+96ce1b5 Twelve: Add play next and add to queue in AlbumFragment [Joey]
+03e781f Twelve: AlbumViewModel: Cleanup code [Sebastiano Barezzi]
+e3f69e7 Twelve: Fix playlist toolbar menu XML file name [Sebastiano Barezzi]
+2d5f3a7 Twelve: Allow to reset local media playback stats from Settings [Joey]
+ef70df1 Twelve: SubsonicDataSource: Suppress unchecked cast lint [Luca Stefani]
+3a2be98 Twelve: Unify suppress lint labels [Luca Stefani]
+6b31559 Twelve: Nicer media item bottom sheet dialog padding values [Sebastiano Barezzi]
+3289cf3 Twelve: Get rid of media type prefix for media items [Sebastiano Barezzi]
+06d6573 Twelve: Add `http://ip` example to malformed provider uri msg [LuK1337]
+
+* tools/extract-utils
+70997b4 extract_utils: fix rules for QDSP6 blobs [dianlujitao]
+
+====================
+     2025-01-26    
+====================
+* hardware/qcom-caf/common
+f7e3ba2 common: Enable master side content protection with soong [Giovanni Ricca]
+
+* hardware/qcom-caf/sm8450/data-ipa-cfg-mgr
+49d1cfc ipanat: Remove test/Android.mk [Michael Bestas]
+
+* lineage/wiki
+dfb67d03 wiki: Add step to install instructions to not trigger FRP [Michael W]
+efd54e51 wiki: Add search navigation by keys [Michael W]
+8c39be4e wiki: Update jekyll-search [Michael W]
+503224fe wiki: Use more space for search results [Michael W]
+
+* packages/apps/Glimpse
+5f912f2 Glimpse: Fix media loading for wildcard mime type in PickerActivity [LuK1337]
+
+* vendor/qcom/opensource/core-utils-vendor
+115dcd7 qspaframework: Convert to blueprint [Michael Bestas]
+
+* vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um
+59ed5d3 ipanat: Remove test/Android.mk [Michael Bestas]
+
+* vendor/qcom/opensource/dataservices
+b141057 datatop: Fix -Wstrict-prototypes errors [Michael Bestas]
+53082e4 datatop: Convert to blueprint [Michael Bestas]
+
+====================
+     2025-01-25    
+====================
+* external/chromium-webview/prebuilt/arm
+14c6dd7 Update Chromium Webview arm prebuilt to 132.0.6834.122 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm64
+4f52cbf Update Chromium Webview arm64 prebuilt to 132.0.6834.122 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86
+750817b Update Chromium Webview x86 prebuilt to 132.0.6834.122 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86_64
+9b01a3c Update Chromium Webview x86_64 prebuilt to 132.0.6834.122 [Kevin F. Haggerty]
+
+* frameworks/base
+4a4a4ebf19ab Biometrics: Allow disabling of fingerprint cleanups [Quallenauge]
+
+* hardware/lineage/compat
+85d5c13 Introduce libnativehelper shim [Stricted]
+
+* lineage/mirror
+f88614e Updated aosp-minimal to 24-Jan-2025 13:02 UTC [Tim Schumacher]
+
+* packages/apps/Car/Settings
+a486d48a9 fixup! Hardcode default pattern size [Cosmin Tanislav]
+
+* packages/overlays/Lineage
+d723f75 overlays: IconPack: Set config_bottomDialogCornerRadius to 16dp [LuK1337]
+
+====================
+     2025-01-24    
+====================
+* device/xiaomi/sm6150-common
+3327c15d sm6150-common: Uprev audio HAL to V7 [Tim Zimmermann]
+591293ec sm6150-common: add "can-swap-width-height" for video codecs [wenchangliu]
+975692a8 sm6150-common: Move input surface to CCodec [Pawin Vongmasa]
+344199bf sm6150-common: remove OMX [dianlujitao]
+495c6699 sm6150-common: media: Import Codec2 configs [basamaryan]
+
+* device/xiaomi/sm8450-common
+0da0932ce sm8450-common: Build and configure xiaomi touch hal [Arian]
+
+* external/chromium-webview/patches
+8854626 Update Chromium Webview to 132.0.6834.122 [Kevin F. Haggerty]
+
+* kernel/qcom/sm8350
+e21e264ca9a6 usb: dwc3: msm: Enforce usb_data_enabled by blocking role switches [Sultan Alsawaf]
+c22c572f8618 usb: dwc3: dwc3-msm-core: Reject incompatible role/mode request [Pavankumar Kondeti]
+8f05d443e4cf usb: dwc3: dwc3-msm: Save dr_mode from DWC3 core node into mdwc [Wesley Cheng]
+5c0c40f02858 Revert "usb: dwc3: Handle charging behavior when usb data is disabled" [Tommy Webb]
+
+* kernel/xiaomi/sm6150
+09b0954ecb46 touchscreen: {f4_goodix_driver_gt9886, fts_52}: Add void argument to old-style prototype functions [DrB1shop]
+
+* kernel/xiaomi/sm8450
+2843e622d354 WIP input: touchscreen: fts_spi: Implement high touch polling rate support [Arian]
+34854b9873a1 input: touchscreen: synaptics_s3907: Implement high touch polling rate support [Arian]
+30cf937f1784 input: touchscreen: goodix_berlin_driver: Implement high touch polling rate support [Arian]
+6dcaecf440df input: touchscreen: xiaomi: Add sysfs node for report rate [Arian]
+
+* lineage/scripts
+78bbda3 build-webview: Update default webview to 132.0.6834.122 [Kevin F. Haggerty]
+
+* lineage/wiki
+26790841 wiki: libvirt-qemu: No longer have to select Swiftshader manually [Yumi Yukimura]
+
+* tools/extract-utils
+a5549b0 extract_utils: fix printing of single path as multiple [Nolen Johnson]
+
+====================
+     2025-01-23    
+====================
+* device/xiaomi/sm6150-common
+d63c6379 sm6150-common: Switch to common lights HAL [LuK1337]
+12ceb529 sm6150-common: Move WfdCommon boot jar declaration to vendor [LuK1337]
+
+* device/xiaomi/sweet
+d32a1a9 sweet: Disable OMX service [Michael Bestas]
+
+* lineage/hudson
+b5f2e7d Ah, it's Nothing... [Wiktor Rudzki]
+
+* lineage/wiki
+17929cfe wiki: Get rid of "Sensor hub" peripheral [LuK1337]
+b0047c8b wiki: Get rid of "Gesture sensor" peripheral [LuK1337]
+669ff8a2 wiki: Bring back Spacewar with 22.1 [Wiktor Rudzki]
+
+* packages/apps/Twelve
+6442d14 Twelve: Fixup custom command calls [Sebastiano Barezzi]
+cd4dd1b Twelve: Freeze some state flows [Luca Stefani]
+c19abb1 Twelve: Don't state mediaStoreProviders [Luca Stefani]
+1a20f00 Twelve: Don't stop visualizer if it never started [Luca Stefani]
+976d08f Twelve: Fix unlucky progress slider out-of-range values [Sebastiano Barezzi]
+6407263 Twelve: Remove some useless overloads and better providers manager code [Sebastiano Barezzi]
+123b719 Twelve: Reformat code [Sebastiano Barezzi]
+2966626 Twelve: Remember chosen provider [Timi]
+93c79c0 Twelve: Add media item dialog shortcut in now playing fragment [Sebastiano Barezzi]
+db8f797 Twelve: Smarter thumbnail management [Sebastiano Barezzi]
+0b2f5f8 Twelve: Add shuffle play [Timi]
+
+* vendor/lineage
+1c00116c fixup! roomservice: Skip setting revision if it's the same as default [Patrick Gaskin]
+
+* vendor/xiaomi/sm6150-common
+743f021 sm6150-common: remove OMX [basamaryan]
+333b276 sm6150-common: Move WfdCommon boot jar declaration to vendor [LuK1337]
+
+====================
+     2025-01-22    
+====================
+* device/nubia/TP1803
+3fe7e1a TP1803: Allow to access bootable/deprecated-ota targets [Kelvin Zhang]
+
+* hardware/lineage/interfaces
+96271f0 health: Change return type when we fail the sysfs read/write [Michael Bestas]
+6656659 health: Don't loop through charging nodes if a custom one is set [Michael Bestas]
+
+* lineage/hudson
+c680f60 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+d5bc033 Updated to 21-Jan-2025 13:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+1b9b2997 templates: device_build_before_init: Add lz4 to deps [Nolen Johnson]
+
+* packages/apps/Twelve
+fa70c24 Twelve: Redo progress slider animators [Sebastiano Barezzi]
+2611970 Twelve: Stop using BitmapFactory [Sebastiano Barezzi]
+74c9f14 Twelve: NowPlayingViewModel: Fix audio initial value [Sebastiano Barezzi]
+
+* vendor/lineage
+caae0703 roomservice: Skip setting revision if it's the same as default [LuK1337]
+
