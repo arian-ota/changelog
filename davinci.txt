@@ -1,0 +1,783 @@
+====================
+     2025-04-06    
+====================
+* device/xiaomi/sm8450-common
+774c017 sm8450-common: Drop gralloc priv handle configuration [Arian]
+4430dd4 sm8450-common: media: Update from cupid OS2.0.1.0.VLCMIXM [Arian]
+564b229 sm8450-common: Build QtiTelephonyCompat [danielml]
+7a0c311 sm8450-common: Update blobs from cupid OS2.0.1.0.VLCMIXM [Arian]
+55bc269 sm8450-common: Update blobs from cupid V816.0.10.0.ULCMIXM [Arian]
+ca8c10a sm8450-common: Add libwfdservice_shim for WFD [LuK1337]
+
+* hardware/lineage/compat
+d4bc391 compat: Get rid of libwfdservice_shim versioning [LuK1337]
+
+* hardware/qcom-caf/common
+cd6c6a9 qcril-database: Add host tool to generate qcrilNr.db from migrations [Arian]
+27d45fb qcom: Declare hidl_vendor_qti_hardware_limits_interface [Bruno Martins]
+
+* lineage/hudson
+04f0829 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/scripts
+d096ced device-deps-regenerator: Ignore sm8650/sm8750-devicetrees [LuK1337]
+
+* packages/apps/Trebuchet
+267a49d077 fixup! Trebuchet: Implement gesture hint toggle [LuK1337]
+
+* tools/extract-utils
+5673d64 extract_utils: Add support to create filegroups of proprietary files [Arian]
+
+* vendor/lineage
+ae2f5b65 kernel: use DTBS_OUT variable [Cosmin Tanislav]
+
+* vendor/xiaomi/sm8450-common
+d211cdf sm8450-common: libwfdservice_shim_v1 -> libwfdservice_shim [LuK1337]
+
+====================
+     2025-04-05    
+====================
+* build/make
+bdf3474394 fixup! Reland: Verify init scripts for correctness during build [Aaron Kling]
+
+* frameworks/native
+f66aeb1372 libgui: Add guards around mPictureProfileHandle [LuK1337]
+
+* hardware/qcom-caf/bt
+4ddafd4 bt: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/msm8953/media
+0830d8af9 media: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/msm8996/media
+d549d5044 media: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/msm8998/media
+f5b08c7c8 media: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/sdm660/media
+8a4196643 media: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/sdm845/display
+e1621443f9 display: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/sdm845/media
+b25d89b25 media: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/sm8150/display
+ae05a54563 display: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/sm8150/media
+cfb417ad7 media: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/sm8250/display
+41b4cae8e5 display: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/sm8250/media
+df5d631bd media: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/sm8350/display
+655ba7a150 display: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/sm8450/display
+68c0f43190 display: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/sm8550/display
+d1371ff554 display: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/sm8650/display
+c302392b85 display: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom/bt
+9776886 bt: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom/camera
+0cc221a camera: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom/gps
+df8f5e3 gps: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom/media
+5abb1e65f media: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom/sdm845/display
+7a467ab8 display: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom/sdm845/gps
+841eb90 gps: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom/sm7250/display
+d6b531ed display: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom/sm7250/gps
+deffe91 gps: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom/sm8150/display
+1eac7ca6 display: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom/sm8150/gps
+1395200 gps: Remove CleanSpec.mk [Michael Bestas]
+
+* packages/apps/Messaging
+3c107a2 Messaging: Migrate attachments to MediaStore [Michael W]
+
+* vendor/lineage
+d0143f4b vars: Update qcom tags [Michael Bestas]
+
+====================
+     2025-04-04    
+====================
+* device/xiaomi/renoir
+f673c3b renoir: Shim camera libs [Bruno Martins]
+
+* device/xiaomi/sm8450-common
+b88b0f4 sm8450-common: Enable ELF checks for libwpa_client dependent libs [Michael Bestas]
+8859f26 sm8450-common: Don't explicitly set as an AB target [basamaryan]
+58a8963 sm8450-common: rootdir: Add "system" group to Audio HAL [feiyuchen]
+
+* device/xiaomi/zeus
+0180af5 zeus: Enable elfchecks for camera libs [LuK1337]
+
+* hardware/lineage/compat
+0e5e76e compat: Add libwfdservice_shim [LuK1337]
+
+* lineage/crowdin
+19c2351 Fix LINEAGE_CROWDIN_BASE_PATH variable names in README [LuK1337]
+
+* lineage/hudson
+87afb47 Regenerate device dependency mappings [LineageOS Infra]
+
+* vendor/lineage
+67492332 soong: move EGL display array config to select [Michael Bestas]
+
+* vendor/xiaomi/renoir
+49625c0 renoir: Shim camera libs [Bruno Martins]
+
+* vendor/xiaomi/sm8450-common
+22a4311 sm8450-common: Build QtiTelephonyCompat [danielml]
+15971a0 sm8450-common: Update blobs from cupid OS2.0.1.0.VLCMIXM [Arian]
+8457fa2 sm8450-common: Update blobs from cupid V816.0.10.0.ULCMIXM [Arian]
+415c59a sm8450-common: Add libwfdservice_shim_v1 for WFD [LuK1337]
+5636c1b sm8450-common: Enable ELF checks for libwpa_client dependent libs [Michael Bestas]
+
+* vendor/xiaomi/zeus
+9940a7e zeus: Enable elfchecks for camera libs [LuK1337]
+
+====================
+     2025-04-03    
+====================
+* device/xiaomi/mondrian
+030406f mondrian: move vibrator effect stream config to select [Cosmin Tanislav]
+f55f4d1 mondrian: audio: Use dual-mic config as default for voice input [danielml]
+
+* device/xiaomi/zeus
+3d86411 zeus: audio: Use dual-mic config as default for voice input [danielml]
+
+* kernel/xiaomi/sm8450
+d14eb477b8cd input: touchscreen: xiaomi: Commonize touch mode get/set between ioctl and sysfs nodes [Arian]
+c0ceabd2c1ba WIP input: touchscreen: fts_spi: Implement high touch polling rate support [Arian]
+3a09bec6ea84 input: touchscreen: synaptics_s3907: Implement high touch polling rate support [Arian]
+d45812d6dd14 input: touchscreen: goodix_berlin_driver: Implement high touch polling rate support [Arian]
+41a89a6350b3 input: touchscreen: xiaomi: Add sysfs node for report rate [Arian]
+328bdec5111c input: touchscreen: goodix_berlin_driver: Get rid of enable/disable_irq_wake [Arian]
+03177ecc785a input: touchscreen: xiaomi: Initialize suspended and fod_finger_state variables [Arian]
+5be4ec38ff3c input: touchscreen: xiaomi: Keep gestures enabled in nonui mode [Arian]
+40a6ac356bfd input: touchscreen: goodix_berlin_driver: Check reset result in gesture work [Arian]
+b00b2b965b8d input: touchscreen: goodix_berlin_driver: Return proper errors when entering gesture mode [Arian]
+7f74965a6e4f fixup! input: touchscreen: xiaomi: Take over nonui mode handling [Arian]
+4f4bd9bacf25 input: touchscreen: xiaomi: Transfer gesture state on fold events [Arian]
+a3b4cd7cd5fd ARM64: configs: xiaomi: Commonize wl2866d regulator module [Arian]
+9e80ae96c241 misc: Rename ldo wl2866d driver [Arian]
+d86223f7ba7c fixup! ARM64: configs: xiaomi: Commonize most drivers [Arian]
+ccd7719bd31a input: fingerprint: goodix_tee: Fix duplicate input_free_device call [Jens Reidel]
+72c3f1487696 input: touchscreen: xiaomi: Take over nonui mode handling [Arian]
+b108fe77825d input: touchscreen: fst2: Move to new xiaomi-touch driver [Arian]
+07db07716844 input: touchscreen: xiaomi: Add support for fold_status [Arian]
+78c7bc5f60a3 input: touchscreen: fts_spi: Register xiaomi touch as secondary if built as secondary module [Arian]
+370326af0b97 input: touchscreen: goodix_berlin_driver: Implement matching on touchscreen identification GPIO [Jens Reidel]
+83d2f92fc74a Revert "input: touchscreen: goodix_berlin_driver: Support A/B panel detection" [Jens Reidel]
+24dd3dee754d input: misc: aw86927_haptic: Rename driver to avoid load failure along aw8622x_haptic [Arian]
+a5681bb994a1 input: misc: aw86927: Change aw86297 compatible to include the actual name [Arian]
+86dea62584f7 Drop aw8697 driver, aw86927 should support it already [Arian]
+9a907d033434 input: touchscreen: xiaomi: Introduce fod_finger_state node [Arian]
+942c6f3d5020 fixup! input: touchscreen: Add xiaomi touch driver as common user space interface [Arian]
+c93a8cae248b HACK: Revert "of: property: fix typo in io-channels" [Jens Reidel]
+1ff8f7995927 drivers: power: supply: xiaomi: bq27z561: Compare against correct enum [Jens Reidel]
+df4694eca0cd input: touchscreen: synaptics_s3907: Move to new minimal xiaomi-touch implementation [Arian]
+9c9ce1ff21c3 input: touchscreen: fts_spi: Move to new minimal xiaomi-touch implementation [Arian]
+dcba9a3e73f9 input: touchscreen: goodix_berlin_driver: Implement gestures via xiaomi touch [Arian]
+a34b8bff780f input: touchscreen: xiaomi: Register panel event notifier [Arian]
+d1ae27fcfb75 input: touchscreen: Add xiaomi touch driver as common user space interface [Arian]
+54d07d9ebec6 input: touchscreen: Kill xiaomi_touch [Arian]
+c1e7ed1e135f Revert "input: touchscreen: goodix_berlin_driver: Add xiaomi touch integration" [Arian]
+19550fa3ffde Revert "input: touchscreen: goodix_berlin_driver: Implement gestures via xiaomi touch" [Arian]
+676f9c66be7f Revert "input: touchscreen: goodix_berlin_driver: Implement fod downup xiaomi touch action" [Arian]
+25dca331d441 mtdoops: Compare mtd dump reasons against correct enum [Arian]
+1b34e23776ba input: fingerprint: Drop unnecesary goodix fingerprint driver copies [Arian]
+3ddc3ad12ee7 ARM64: configs: xiaomi: Use goodix_tee driver for everyone [Arian]
+8985d77d6486 input: fingerprint: goodix_tee: Add support for more supply configs [Jens Reidel]
+64caeee51271 ARM64: configs: xiaomi: Commonize most drivers [Arian]
+02c9ae4aaef7 input: touchscreen: fts_spi: Ignore fod down gestures in resumed state [Arian]
+a02e6d52c25c tmp goodix debug [Arian]
+9ac5df16e9ae module.list.msm.waipio: Remove modules that depend on debugfs [Jens Reidel]
+d9fdd13452eb modules.list.msm.waipio: Remove modules which are not built [Arian]
+781afcbb054e modules.list.msm.waipio: Add hwid.ko to modules [Arian]
+28b51176d07f ARM64: configs: xiaomi: Build separated soc-dtb and board-dtbos [Cyan_Hsieh]
+e4305fb2d60d ARM64: configs: Add configs for Xiaomi SM8450 devices [Arian]
+2adeb4ffa76d soc: qcom: smp2p_sleepstate: Decrease wakeup event length [Arian]
+1abf41d576d6 spi: spi-msm-geni: Increase xfer timeout [Arian]
+c906ed35cf86 usb: typec: tcpc: Make it compile [Jens Reidel]
+7a6f3f8e7693 include: qti_power_supply_iio: Import Xiaomi charger defines from yudi-t-oss [Jens Reidel]
+bf567575d687 power: supply: Import xiaomi power supply drivers from yudi-t-oss [Jens Reidel]
+fc366dee5269 power: supply: qti_battery_charger: Return time to full in seconds [FlowerSea0208]
+7a6dbfe8bce1 power: supply: qti_battery_charger: Return charge counter in uAh [ArianK16a]
+c8d79e3ff6c0 power: supply: qti_battery_charger: Add missing type specifiers [Arian]
+22084d1c5e00 power: supply: qti_battery_charger: Add support for 33W reverse wireless charging [Arian]
+111ee2fd6367 power: supply: qti_battery_charger: Add support for display port [Arian]
+a90078988c12 power: supply: qti_battery_charger: Add config to match m81 module [Arian]
+b581e0f442a7 power: supply: qti_battery_charger: Replace MI_CHARGE_PROPERTY with MI_WLS_REVERSE_CHG_ONLY [Arian]
+f84f3431522a power: supply: xiaomi: Support WIRELESS_REVERSE_CLOSE [Arian]
+f330a8c27f2d power: supply: qti_battery_charger: Update from garnet-t-oss [Arian]
+1e54356ecd47 power: supply: qti_battery_charger: Import xiaomi changes [Arian]
+2c90c6b69028 power: supply: qti_battery_charger: Create header for defines, enums and structs [Arian]
+be096cb711d8 power: reset: Import xiaomi changes from mayfly-s-oss [Arian]
+374d64f5f204 usb: Import xiaomi changes from mayfly-s-oss [Arian]
+df02b3f8e0be soc: qcom: icnss2: Import Xiaomi changes from garnet-t-oss [Jens Reidel]
+221883441a84 net: wireless: cnss2: Update xiaomi changes from garnet-t-oss [Arian]
+196b93207c88 net: wireless: cnss2: Import xiaomi changes from mayfly-s-oss [Arian]
+4e9382824c22 Import xiaomi mtd changes from mayfly-s-oss [Arian]
+5bae95cbabff soc: qcom: fsa4480: Add Xiaomi power supply integration [Jens Reidel]
+5f28405c9abe soc: qcom: fsa4480: Use mmhardware [Arian]
+c98d200d298c misc: Import mmhardware [Arian]
+8dc4b77294bd leds: Import aw22xxx driver from mayfly-s-oss [Arian]
+85db39c2cd52 media: rc: ir-spi: enlarge transmit buffer [Ivan Vecera]
+6e5c652e24c9 media: Import xiaomi camera ispv3 driver [Jens Reidel]
+c46ad73c0dbe thermal: Drop unused variables [Arian]
+4e51960bc485 thermal: mi_thermal_interface: Add prototypes to function declarations and add missing type specifiers [Arian]
+4c01e90e9c0c thermal: Import xiaomi changes from ziyi-s-oss [Arian]
+3cc06a1b419c wl2866d: Add missing function prototypes [Arian]
+7bba423cd0e1 misc: Import wl2866d from mondrian-s-oss [Arian]
+e869a2f30ed7 regulator: Import wl2866d driver from mayfly-s-oss [Arian]
+a9322b4be858 input: synaptics_s3907: Reverse firmware selection logic from ziyi [Jens Reidel]
+4d42c140754a input: synaptics_s3907: Make it compile [Jens Reidel]
+9d5597e6193b input: synaptics_s3907: Remove spi pinctrl setup logic [Jens Reidel]
+6931333a925b input: touchscreen: Import synaptics_s3907 driver from yuechu-t-oss [Jens Reidel]
+874b628e891c input: touchscreen: fst2: Add xiaomi touchfeature [Jens Reidel]
+482b65d6abac input: touchscreen: fst2: Adapt to match zizhan [Jens Reidel]
+7a3f76c21afb input: touchscreen: Import fst2 driver from google kernel modules and adjust build [Jens Reidel]
+ae5a7762fe27 input: touchscreen: goodix_berlin_driver: Implement fod downup xiaomi touch action [Arian]
+b923d33aedad input: touchscreen: goodix_berlin_driver: Implement gestures via xiaomi touch [Arian]
+f048f0a8fa9a input: touchscreen: goodix_berlin_driver: Add xiaomi touch integration [Jens Reidel]
+40e7b76e238d input: touchscreen: goodix_berlin_driver: Add support to disable rawdata mode on thp enabled devices [Arian]
+b0648d06aa82 input: touchscreen: goodix_berlin_driver: Introduce a power workqueue for suspend/resume [Arian]
+b635178b925b input: touchscreen: goodix_berlin_driver: Enter suspend in LP mode [Arian]
+e18e7578f1c9 input: touchscreen: goodix_berlin_driver: Resume on early resume notification [Arian]
+81dc01b0b62d input: touchscreen: goodix_berlin_driver: Get IC type from matched compatible [Jens Reidel]
+5bb9e5da7746 input: touchscreen: goodix_berlin_driver: Support A/B panel detection [Jens Reidel]
+4a214bc39ce2 input: touchscreen: goodix_berlin_driver: Add support for super resolution IC configs [Jens Reidel]
+0497a16b23a6 input: touchscreen: goodix_berlin_driver: Always enable panel event notifier [Jens Reidel]
+e314d93fe492 input: touchscreen: goodix_berlin_driver: Enable gesture module [Jens Reidel]
+b3ba87fd05af input: touchscreen: goodix_berlin_driver: Replacing disable_irq with disable_irq_nosync [Simranjeet Thind]
+cdd7eaf9a2f9 input: touchscreen: goodix_berlin_driver: Sleep 100ms after reset operation [Yu Wu]
+64b2e726ec78 input: touchscreen: fts_spi: Add support for building as secondary touch [Jens Reidel]
+f6b3f762f1cb input: touchscreen: fts_spi: Disable gestures on nonui values 1 and 2 [Arian]
+8b9be044a5db input: touchscreen: fts_spi: Re-enable simplified support for thp fod downup [Arian]
+42b4134c37f1 input: touchscreen: fts_spi: Only notify sysfs on double click events [Arian]
+430484d48d3e input: touchscreen: fts_spi: Cleanup fod related code [Arian]
+d608bc873379 input: touchscreen: fts_spi: Implement single tap gesture command and drop aod_status [Arian]
+ae34e9ba9f03 input: touchscreen: fts_spi: Implement fod longpress command [Arian]
+f12c0a835543 input: touchscreen: fts_spi: Remove fod singletap and longpress gesture enabling based on fod_status [Arian]
+4b8c48fb30a9 input: touchscreen: fts_spi: Cleanup low power gesture entering in fts_mode_handler [Arian]
+13c03085bd9d input: touchscreen: fts_spi: Use fts_fingerprint_is_enable for fod_status checks where possible [Arian]
+d607cd12ba31 input: touchscreen: fts_spi: Get rid of factory code [Arian]
+ba60b483263d input: touchscreen: fts_spi: Add support for avdd-gpio [Jens Reidel]
+867b64d952e8 input: touchscreen: fts_spi: Add support for diting [Jens Reidel]
+e1c09a45ffe6 input: touchscreen: fts_spi: Don't notify about fod presses when fod_status is off [Arian]
+e52c78b046b3 input: touchscreen: fts_spi: Change enable_touch_raw argument to int [Arian]
+421e4eb75810 input: touchscreen: fts_spi: Add prototypes to function declarations and add missing type specifiers [Arian]
+4ec3778316f7 input: touchscreen: fts_spi: Fix potential buffer overflows [Arian]
+cea5b6ac429b input: touchscreen: fts_spi: Remove unused get_slot_trackingId method [Arian]
+d460068d1080 input: touchscreen: fts_spi: Change fts_enable_click_touch_raw to return int [Arian]
+35e1a7f44718 input: touchscreen: fts_spi: Move back to enable_clicktouch_raw [Arian]
+f6cfa3c186c4 input: touchscreen: fts_spi: Revert knock_data to touch raw data [Arian]
+fc2086d939f4 input: touchscreen: fts_spi: Implement THP support [Arian]
+0087504b1be0 input: touchscreen: fts_spi: Update headers according to driver changes [Arian]
+51c641b6a8b0 input: touchscreen: fts_spi: Add missing cmd_fifo device attr [Arian]
+ccf3ee98b582 input: touchscreen: fts_spi: Guard touch_irq_boost [Arian]
+4b81c1948d16 input: touchscreen: Import fts_spi driver from mayfly-s-oss [Arian]
+939aa5b3d9f0 input: touchscreen: xiaomi: Report proper pending gesture events [Arian]
+0a9339f0fedd input: touchscreen: Create exported xiaomi touch header [Arian]
+551874b7a427 input: touchscreen: xiaomi: Try all panels when getting gesture enabled value [Jens Reidel]
+9cbfbbe86c58 input: touchscreen: xiaomi: Notify both panels of gesture commands [Jens Reidel]
+36a242ea43a4 input: touchscreen: xiaomi: Fix touch id assertion bounds [Jens Reidel]
+7e56b916606b input: touchscreen: xiaomi: Avoid NPE if getModeValue is not registered [Jens Reidel]
+157cd8bcfd7f input: touchscreen: xiaomi: Notify sysfs when sensor enabled state changes [Arian]
+d0ead5c995cd input: touchscreen: xiaomi: Add enable node for double tap sensor [Arian]
+0b5fe7c37973 input: touchscreen: xiaomi: Add double tap gesture sysfs notify node [Fabian Leutenegger]
+e1f910c34c0d input: touchscreen: xiaomi: Add singletap gesture command [Arian]
+32ab43c2b36f input: touchscreen: xiaomi: Add fod_longpress gesture command [Arian]
+d74c85af2c80 input: touchscreen: xiaomi: Get rid of notify buf spam [Arian]
+355b3f7c00c4 input: touchscreen: xiaomi: Add prototypes to function declarations [Arian]
+451c76b8d790 [WIP] input: touchscreen: xiaomi: Reverse from stock module [kxxt]
+4582671204d6 Revert "input: touchscreen: xiaomi: Implement touch_thp_film" [Arian]
+2795f60e15b7 input: touchsreen: xiaomi: Import updated header from M11 [Arian]
+b172c2a7a5e0 input: touchscreen: xiaomi: Implement touch_thp_mem_notify [Arian]
+61594171df18 input: touchscreen: xiaomi: Implement touch_thp_film [Arian]
+7d6cbcaf31a9 input: touchscreen: xiaomi: Implement palm_sensor_data [Arian]
+ae5cac9b6829 Revert "input: touchscreen: xiaomi: Change enable_touch_raw to work with int" [Arian]
+f5da8e43222e Revert "input: touchscreen: xiaomi: Drop clicktouch_raw" [Arian]
+a44339074acb input: touchscreen: xiaomi: Implement tp_hal_version [Arian]
+4559e75850e5 input: touchscreen: xiaomi: Implement touch_irq_no [Arian]
+f9efe4362de6 input: touchscreen: xiaomi: Implement finger_status [Arian]
+d5cf1d2386e1 input: touchscreen: xiaomi: Implement touch_active_status [Arian]
+31db04bd7229 input: touchscreen: xiaomi: Add XIAOMI_TOUCH_UTC_PRINT [Arian]
+d6a620b68eff input: touchscreen: xiaomi: Add more THP mode types [Arian]
+deaba664068c input: touchscreen: xiaomi: Change enable_touch_raw to work with int [Arian]
+3192184a0f3d input: touchscreen: xiaomi: Implement thp_cmd_data [Arian]
+0bdd6420c67d input: touchscreen: xiaomi: Move xiaomi_touch_set_suspend_state up [Arian]
+e1c9c9118010 input: touchscreen: xiaomi: Drop clicktouch_raw [Arian]
+da96cd6f90aa input: touchscreen: xiaomi: Implement resolution_factor [Arian]
+485132b416e5 input: touchscreen: Import xiaomi touch driver from mayfly-s-oss [Arian]
+40951acb4a2b input: misc: qcom-hv-haptics: Add support for garnet [Jens Reidel]
+b8db54690883 input: misc: qcom-hv-haptics: Import changes from yudi-t-oss [Jens Reidel]
+be951f1dcb7a input: misc: Import aw8622x_haptic driver from ziyi-s-oss [Jens Reidel]
+36e01e7cc07b input: misc: aw86927_haptic: Replace mtk with qcom properties [TheStrechh]
+69097aa4fe25 input: misc: Imort aw86927_haptic driver from mayfly-s-oss [Arian]
+1611dcaea096 input: misc: Import aw8698_haptic driver from mayfly-s-oss [Arian]
+4743c325144c input: Import stmvl53l5 driver from garnet-t-oss [Jens Reidel]
+85f0b11f02d0 input: goodix_tee: Disable Navigation events and key maps [Divyanshu-Modi]
+1c4992a57362 input: fingerprint: Add goodix_tee driver [Jens Reidel]
+fa95049bd43d input: fingerprint: Import goodix_3626 from marble-s-oss [Jens Reidel]
+2f07b57dfdde input: fingerprint: Import fpc_1540 from marble-s-oss [Jens Reidel]
+a4a78ef2bce3 input: fingerprint: goodix_fod: Fix duplicate input_free_device call [Jens Reidel]
+c3609e00611c input: fingerprint: goodix_fod: Add support for more supply configs [Jens Reidel]
+856ca28a79fa input: fingerprint: Import goodix_fod driver from mayfly-s-oss [Arian]
+5538a612271a misc: Introduce simplified xiaomi hardware identification driver [Arian]
+
+* kernel/xiaomi/sm8450-devicetrees
+18b6efe8 Revert "ARM: dts: msm: increase smem memory to 44k" [Arian]
+17c2f4e1 display: diting: Match wait after pulling down reset GPIO with stock [Jens Reidel]
+6aee73ca diting: Fixup touchscreen identification GPIO logic [Jens Reidel]
+fdf25ec2 Modify aw8697 properties to work with aw86927 driver [Arian]
+698cdf72 unicorn: Disable qcom-hv-haptics [Arian]
+b88693f2 unicorn: Change awinic aw86297 compatible [Arian]
+1ce118b5 display: ziyi: Fix panel lists for charge screen and xiaomi touch [Jens Reidel]
+e0f1e922 Move to new xiaomi-touch driver [Arian]
+cf0e0390 Standardize supply named for goodix fingerprint [Arian]
+2bf135ea {unicorn, zeus}: Use L1 fts firmware which disabled THP completely [Arian]
+cb43baae mondrian: Declare that our firmware enables thp [Arian]
+4cb1ad1b {unicorn, zeus}: Disable thp [Arian]
+c6b94491 mondrian: Use Qualcomm's goodix berlin driver [Arian]
+c1ceece1 diting: Use Qualcomm's goodix berlin driver, standard fts_spi compatible [Jens Reidel]
+2e47c20f marble: Use Qualcomm's goodix berlin driver [Jens Reidel]
+2f6ab8a4 zizhan: Use fts_spi driver for secondary panel [Jens Reidel]
+be304cf0 Move to upstream ir-spi-led driver [Arian]
+edb31744 mondrian: Fix goodix fingerprint supply name [Arian]
+44e0ec7f display: diting: Update nolp and doze commands from diting V816.0.4.0.ULFMIXM [Jens Reidel]
+d7bf308f display: diting: Bump minimal brightness to 8 [Jens Reidel]
+117381f0 display: diting: Correct physical panel dimensions [Jens Reidel]
+d3028655 display: Add support for Xiaomi 12T Pro / Redmi K50 Ultra (diting|L12) [Jens Reidel]
+42c4dc90 camera: Add support for Xiaomi 12T Pro / Redmi K50 Ultra (diting|L12) [Jens Reidel]
+7c4e55b3 audio: Add support for Xiaomi 12T Pro / Redmi K50 Ultra (diting|L12) [Jens Reidel]
+121f5f95 diting-sm8475: Update host param override seq from V816.0.4.0.UMRMIXM [Jens Reidel]
+6ad957ba Add support for Xiaomi 12T Pro / Redmi K50 Ultra (diting|L12) [Jens Reidel]
+19b7feca audio: Add support for Xiaomi 13 Lite/Civi 2 (ziyi|L9S) [Jens Reidel]
+122824b1 audio: Add miboard id to diwali reference board [Jens Reidel]
+3af2bce4 display: ziyi: Bump minimal brightness to 8 [Jens Reidel]
+60915f77 display: ziyi: Correct physical panel dimensions [Jens Reidel]
+a2cd0024 display: Reverse ziyi display changes and add L9S 42 02 0C panel support [Jens Reidel]
+eb9b29b4 display: Add support for Xiaomi 13 Lite/Civi 2 (ziyi|L9S) [Jens Reidel]
+5413d185 display: Remove diwali reference touchscreens from IDP [Jens Reidel]
+38e7403b camera: ziyi: Add cam_vio supply to actuator0 [Jens Reidel]
+d782e9de camera: Add support for Xiaomi 13 Lite/Civi 2 (ziyi|L9S) [Jens Reidel]
+3b632e7b camera: Add miboard id to diwali reference board [Jens Reidel]
+0664d42c Add support for Xiaomi 13 Lite/Civi 2 (ziyi|L9S) [Jens Reidel]
+f214924b xiaomi-sm7450-common: Increase volume up debounce interval [Jens Reidel]
+59175be5 Add xiaomi-sm7450-common configuration [Jens Reidel]
+ac0e9077 diwali-regulators: Set pm8350c_l6 and pm8350c_l9 to fixed 2.8V [Jens Reidel]
+4aa05ff5 diwali-regulators: Add pm8350c_l2 regulator [Jens Reidel]
+ea2dbfc3 diwali-qupv3: Enable qupv3_se1_i2c and qupv3_se3_i2c [Jens Reidel]
+5ef8b8f3 diwali-usb: Limit to USB 2 [Jens Reidel]
+f836e654 diwali-reserved-memory: Enlarge and move adsp reserved memory [Jens Reidel]
+fc17645a diwali-reserved-memory: Enlarge and move xbl_ramdump_mem [Jens Reidel]
+994009ec diwali-pmic-overlay: Drop pm7325 ADC thermal zones [Jens Reidel]
+f30dbd4b diwali-pmic-overlay: Add bark pwrkeys [Jens Reidel]
+37d4345c diwali-pmic-overlay: Use pm8008 instead of pm8010 [Jens Reidel]
+b45151dc diwali-pinctrl: Use gpio 143 instead of 122 for usb 3 phy portselect [Jens Reidel]
+c91ac32e diwali-pinctrl: Use gpio 46 instead of 17 for touchscreens [Jens Reidel]
+8ba6f823 diwali-idp: Disable SD card slot [Jens Reidel]
+6435ba9c diwali: Add microdump modem [Jens Reidel]
+f512c4f3 diwali: Add i2c 0-5 aliases [Jens Reidel]
+72fa3eb1 diwali: Disable ramoops memory region [Jens Reidel]
+291c73f8 diwali: Set qcom,use-power-supply [Jens Reidel]
+9ff4b563 diwali: Enable nv-mac [Jens Reidel]
+2df7b2b9 diwali: Bump sram size [Jens Reidel]
+1d37cc6e Remove touchscreens from diwali reference boards [Jens Reidel]
+7ec29e34 Add miboard id to diwali reference board [Jens Reidel]
+7878a452 zizhan-sm8475-pinctrl: Set tert_tdm_clk_active strength to 6mA [Jens Reidel]
+2b530979 zizhan-sm8475: Configure hv-haptics [Jens Reidel]
+b4eded5d camera: Add support for Xiaomi MIX Fold 2 (zizhan|L18) [Jens Reidel]
+022b0221 audio: Add support for Xiaomi MIX Fold 2 (zizhan|L18) [Jens Reidel]
+7ac694e7 Add support for Xiaomi MIX Fold 2 (zizhan|L18) [Jens Reidel]
+442a0719 display: Bump minimal brightness to 8 for all our devices [Arian]
+1453ae76 display: Correct physical panel dimensions for our devices [Arian]
+9431c46f display: marble: Update nolp and doze commands from marble V816.0.3.0.UMRMIXM [Jens Reidel]
+b32ca083 display: marble: Update nolp command from mondrian V816.0.3.0.UMNMIXM [Arian]
+8cf30fd1 display: marble: Update from unicorn V816.0.3.0.ULECNXM [Arian]
+0efb9b3a display: marble: Disable 30Hz timing [Jens Reidel]
+a7b409ea display: marble: Update gamma switch commands from unicorn V816.0.3.0.ULECNXM [Arian]
+6f5b0a92 display: Add support for POCO F5/Redmi Note 12 Turbo (marble|M16T) [Arian]
+89d73ef9 display: mondrian: Add qcom,mdss-dsi-nolp-command-update from mondrian V816.0.3.0.UMNMIXM [Arian]
+dc1815ee display: mondrian: Commonize lp and local hbm commands for all timings [Arian]
+b87ecbce display: mondrian: Update from V14.0.5.0.TMNMIXM [Arian]
+b721dd84 display: Add support for POCO F5 Pro/Redmi K60 (mondrian|M11A) [Arian]
+325fd3c7 display: mayfly: Drop 90Hz timing [FlowerSea0208]
+61999491 display: Add support for Xiaomi 12S (mayfly|L3S) [Arian]
+b422fc98 display: zizhan: Update from unicorn V816.0.3.0.ULECNXM [Arian]
+f943030c display: Add support for Xiaomi MIX Fold 2 (zizhan|L18) [Arian]
+c3991c20 display: unicorn: Update from unicorn V816.0.3.0.ULECNXM [Arian]
+c78073d8 display: Add support for Xiaomi 12S Pro (unicorn|L2S) [Arian]
+b95c1fac display: thor: Update from unicorn V816.0.3.0.ULECNXM [Arian]
+7a276581 display: Add support for Xiaomi 12S Ultra (thor|L1) [Arian]
+224a1609 display: Add miboard id to cape reference board [Arian]
+59d147b4 display: cape: Enable sde wakup with touch [Arian]
+dc60da5b display: cape: Enlarge disp rdump region [Arian]
+8620e7f2 display: cupid: Nuke 90Hz timing [Kujou Yuko]
+d1098e35 display: Add support for Xiaomi 12 (cupid|L3) [Arian]
+6b515387 display: Add support for Xiaomi 12 Pro (zeus|L1) [Arian]
+c96e60d8 display: Add miboard id to waipio reference board [Arian]
+696935b4 display: waipio: Enable sde wakup with touch [Arian]
+d03de76e display: waipio: Enlarge disp rdump region [Arian]
+a883ca5f display: waipio: Add vci panel regulator [Arian]
+cd265c21 camera: Add support for POCO F5/Redmi Note 12 Turbo (marble|M16T) [Arian]
+9c9f7927 camera: Add support for POCO F5 Pro/Redmi K60 (mondrian|M11A) [Arian]
+04047a15 camera: Add support for Xiaomi 12S (mayfly|L3S) [Arian]
+7ab63e00 camera: Add support for Xiaomi 12 Ultra (thor|L1) [Arian]
+c32706da camera: Add support for Xiaomi 12S Pro (unicorn|L2S) [Arian]
+4f2f6e4f camera: Add support for Xiaomi 12 (cupid|L3) [Arian]
+8335a849 camera: Add support for Xiaomi 12 Pro (zeus|L1) [Arian]
+3476818c camera: Update iova memory regions for cape [Arian]
+9c2d4172 camera: Decommonize active and suspend rst0 from waipio-camera [Arian]
+9e3f43d4 camera: Add miboard id to cape, ukee and waipio reference boards [Arian]
+e0d88ba2 audio: Add support for POCO F5/Redmi Note 12 Turbo (marble|M16T) [Arian]
+9236aa93 audio: Add support for POCO F5 Pro/Redmi K60 (mondrian|M11A) [Arian]
+2b5ea0bd audio: Add support for Xiaomi 12S (mayfly|L3S) [Arian]
+17b00d16 audio: Add support for Xiaomi 12S Ultra (thor|L1) [Arian]
+d9796481 audio: Add support for Xiaomi 12S Pro (unicorn|L2S) [Arian]
+0b690417 audio: Add support for Xiaomi 12 (cupid|L3) [Arian]
+6ddcca5f audio: Add support for Xiaomi 12 Pro (zeus|L2) [Arian]
+46084328 audio: Add miboard id to cape, ukee and waipio reference boards [Arian]
+1eac8143 audio: Add xiaomi-sm8450-common configuration [Arian]
+8391693a Add support for POCO F5/Redmi Note 12 Turbo (marble|M16T) [Arian]
+fb0c9cad xiaomi-sm7475-common: Add lra-f0 settings to hv-haptics [Jens Reidel]
+2f4ac3d2 Add xiaomi-sm7475-common configuration [Arian]
+fa115c50 Add support for POCO F5 Pro/Redmi K60 (mondrian|M11A) [Arian]
+83f72d68 Add support for Xiaomi 12S (mayfly|L3S) [Arian]
+6debccca Add support for Xiaomi 12S Ultra (thor|L1) [Arian]
+25ee283c Add support for Xiaomi 12S Pro (unicorn|L2S) [Arian]
+371652c0 Add xiaomi-sm8475-common configuration [Arian]
+ff049d60 Add support for Xiaomi 12 (cupid|L3) [Arian]
+53eed1f4 Add support for Xiaomi 12 Pro (zeus|L2) [Arian]
+0d0772eb Add xiaomi-sm8450-common configuration [Arian]
+5bcaeb71 waipio: Disable qcom,fsa4480-i2c [Arian]
+5a984623 waipio: Disable qbt handler [Arian]
+ca734cfa waipio: Enable nv-mac [Arian]
+9a6307c2 waipio: Adjust wlan aon and dig config [Arian]
+f8964926 waipio: Adjust high bus bandwidth voting data [Arian]
+7196acae waipio: Add rf clk3 clocks to qca6490 [Arian]
+59b1cc0f waipio: Disable ramoops memory region [Arian]
+588008cb waipio: Enlarge adsp and xbl ramdump memory regions [Arian]
+fb52848e waipio: Disable trust ui and oem vm memory regions [Arian]
+5892bae1 waipio: Disable spss remote processor [Jens Reidel]
+fa7b15ab waipio: Add i2c 0-4 aliases [Arian]
+e2cb0dff waipio: Remove mem-offline [Arian]
+c9243170 waipio-usb: Remove edu_enable_reg [Arian]
+aa293564 waipio-thermal: Remove {cx,mx}_sdpm [Arian]
+7e03619c waipio-thermal-overlay: Remove xo-therm [Arian]
+7122487c waipio-regulators: Add ldoc11 regulator [Arian]
+b1e00509 waipio-pmic-overlay: Move tof therm to pm8350b [Arian]
+a3df0845 waipio-pmic-overlay: Decomonize thermal zones [Arian]
+059fe34a waipio-pmic-overlay: Add pwrkey bark [Arian]
+18765067 waipio-pm8008: Adjust regulator voltages [Arian]
+30068a40 waipio-pinctrl: Decrease drive strength on tert tdm clk active [Arian]
+32b5ad55 waipio-pinctrl: Enable pull down on usb3phy portselect default [Arian]
+94306c24 waipio-pinctrl: Add zeus, cupid and thor uart pins [Arian]
+2a1b00bd waipio-pcie: Disable pcie1 and pcie1_msi [Arian]
+f1e6fb23 Add miboard-id to waipio reference boards [Arian]
+552769e7 pmk8350: Remove xo-therm [Arian]
+97b2603b pm8350c: Disable qcom,hw-strobe-gpios [Arian]
+24bd6c21 pm8350b: Disable thermal-sensors for socd [Arian]
+dcffcc29 pm8350b: Decrease initial resonance period for LRA actuator [Arian]
+94b7af06 pm8350b: Decrease qcom hv-haptics max voltage [Arian]
+ff16a173 cape: Disable rtc6226 [Arian]
+4e76564b cape: Disable ramoops region [Arian]
+d5669f60 cape: Add i2c{0-5} aliases [Arian]
+b069285b cape: Disable mem-offline [Arian]
+2f83a0d9 cape: Disable spss remote processor [Arian]
+de38b216 cape-usb: Set maximum-speed to high-speed [Arian]
+2063d860 cape-usb: Disable USB2 HW LPM for gadget mode [Arian]
+f40ef82a cape-usb: Disable display port [Arian]
+cdd3216c cape-reserved-memory: Disable trusted ui vm region [Arian]
+4a84948b cape-reserved-memory: Enlarge adsp and xbl ramdump regions [Arian]
+bcc2dcc3 cape-regulators: Add ldoc1, ldoc11 and ldoh4 regulators [Arian]
+9807160d cape-pmic-overlay: Add pwrkey bark [Arian]
+7b9f84b6 cape-pmic-overlay: Move tof therm to pm8350b [Arian]
+e39a98ff cape-pmic-overlay: Decommonize thermal zones [Arian]
+a255662d cape-pinctrl: Add thor uart pins [Arian]
+a9595947 cape-pinctrl: Enable pull down on usb3phy portselect default [Arian]
+1e4cb829 cape-pinctrl: Enable pull down on tert dtm dout active [Arian]
+952d25ee Add miboard-id to cape reference boards [Arian]
+
+* kernel/xiaomi/sm8450-modules
+1063509b8d mi_disp_file: Get rid of extensive debug logging on partial reads [Arian]
+1efacc318f audio-kernel: codecs: cs35l43: Don't export symbols from wm_adsp copy [Arian]
+7c743960c9 audio-kernel: codecs: cs35l41: Don't export symbols from wm_adsp copy [Arian]
+16f161f29a Add .clang-format from kernel [Arian]
+65dad32214 Add support for dagda and taranis as alternative codenames for zeus and thor [Arian]
+3a43203419 display-drivers: mi_disp: Only enable debugfs if supported [Jens Reidel]
+d485238780 display-drivers: Disable regulators before freeing them in sde deinit [Jens Reidel]
+9ad5b74250 camera-kernel: Use CONFIG_LDO_WL2866D instead of CONFIG_WL2866D [Jens Reidel]
+973e872d9d display-drivers: Add support for L9S_42_02_0C panel [Jens Reidel]
+c3ca251fe2 display: mi_disp: Allow partial reads [Arian]
+2331727f1b display: mi_disp: Move fod_ui_ready_state to uapi headers [Arian]
+b6ac96fd11 disp: msm: dp: modify hdcp wait loop to not add to cpu load [Andrew Bartfeld]
+44af67958d disp: msm: sde: wait for pending vsync event on pm_suspend [Mahadevan]
+323fcd4ec6 disp: msm: sde: wait for pending vsync event in encoder disable [Raviteja Tamatam]
+3f4f18071a display-drivers: Skip setting doze brightness if panel is not initialized [Pzqqt]
+b7092db9d0 display-drivers: mi_disp: Optimize for marble's 36_0d_0b screen panel [Pzqqt]
+4d04bc35cc display-drivers: Optimize for marble's 36_02_0a screen panel [Pzqqt]
+ec9c5eb951 display-drivers: Add missing function prototypes [Jens Reidel]
+bac474212c display-drivers: Set mi panel_state to on in dsi_display_enable as seen in stock driver [Arian]
+f8cae82a79 display-drivers: Implement auto gamma update as seen in stock driver [Arian]
+9959ae35f0 display-drivers: Enable more whitebuf changes for M11A as seen in stock driver [Arian]
+610060df2d display-drivers; Update aa_alpha_M11A_PANEL_PA from stock driver [kxxt]
+b3411ce3aa display-drivers: Disable mi display pwrkey callback to fix compile [Arian]
+56fab5185d display-drivers: Update from garnet-t-oss [Arian]
+8dc1983194 display-drivers: Import xiaomi changes from ziyi-s-oss [Arian]
+d59c45572c camera-kernel: Add CAM_CLK to vreg names [Jens Reidel]
+57aeb8a3f3 camera-kernel: Raise workqueue task count to 120 [Jens Reidel]
+1a9e3e4ea3 camera-kernel: Increase camera icp context count to 80 [Jens Reidel]
+16464080da camera-kernel: Support firmware downloads on sem1217s and rumbas4h [Jens Reidel]
+816543b74b camera-kernel: Add support for cam ispv3 [Jens Reidel]
+8969915c6c camera-kernel: Increase csid reset timeout [Jens Reidel]
+6c62586986 camera-kernel: Replace CONFIG_S12B with hwid check [Jens Reidel]
+9e309acacd camera-kernel: Support s12b cam_vana1 voltage override [Jens Reidel]
+f25ea7a9d3 camera-kernel: Zero out timestamp on ife init for zizhan [Jens Reidel]
+9e2182edf1 camera-kernel: Handle ziyi flash driver on chinese units [Jens Reidel]
+8ffab55a8c camera-kernel: Handle ziyi flash sources on global units [Jens Reidel]
+15995c1726 camera_sensor_utils: Add support for WL2866D [Arian]
+e5ffe7953c camera-kernel: Add support for m16t csiphy [Jens Reidel]
+137209ce97 cam_ois: Update from garnet-t-oss [Arian]
+da799081c5 cam_csiphy: Add support for several more xiaomi devices [Arian]
+2677a74e53 cam_req_mgr: Increase max events [Arian]
+cee78d322d cam_req_mgr: Increase watchdog timeout and max retry attempts [Arian]
+f0694679ac cam_icp: Increase cmd and msg sizes [Arian]
+02be59c2c6 cam_sensor_utils: Add CAM_VANA1 to vreg name enum [Arian]
+d9cee9053a cam_ois: Import xiaomi changes [Arian]
+ba08d98761 cam_csiphy: Modify cdr delay reg for xiaomi l2 (zeus) [Arian]
+b6e978583b cam_csiphy: Always stop cpas on shutdown [Arian]
+731f4f4033 cam_isp: Set rdi_only_ctx to false on stop [Arian]
+9b5e276bce cam_isp: Avoid race condition in tasklet start and stop [Arian]
+55c7eca86c cam_isp: Try to recover bubble if request can be re-applied [Arian]
+9c83a6767a cam_cpas: Retry getting slice desc [Arian]
+fc609df597 camera: Optimize hang detect for CAM_ISP [Arian]
+a21d4ba031 cam_sensor: Fix sensor id read issue [wangshuo18]
+232f9c34f9 asoc: waipio: Report correct key code of headset buttons [dianlujitao]
+5634983008 qcom: Remove build timestamp injection on every build [Pranav Vashi]
+876b5bbea7 audio-kernel: Import xiaomi changes from garnet-t-oss [Arian]
+f3941e391b Android.bp: Import xiaomi sm8450 kernel namespace instead [Arian]
+
+* lineage/wiki
+c91aaf5c wiki: Introduce stock_is_not_android [Nolen Johnson]
+
+* tools/extract-utils
+caf3702 extract_utils: additional proprietary files and copy files guard example [Sebastiano Barezzi]
+
+* vendor/lineage
+45b504a7 soong: move nvidia enhancements config to select [Michael Bestas]
+
+* vendor/xiaomi/mondrian
+44db3e1 mondrian: Build audio HAL from source [Arian]
+
+* vendor/xiaomi/zeus
+c27ae29 zeus: Build audio HAL from source [Arian]
+9a4fad5 zeus: Shim camera libs [Bruno Martins]
+
+====================
+     2025-04-02    
+====================
+* android
+f1595b4 Switch to blueprint chromium webview module [Andy CrossGate Yan]
+
+* frameworks/base
+b375e14c78cc HintManagerService: Generate dummy mSupportInfo for non power AIDL devices [electimon]
+
+* hardware/qcom-caf/common
+08c1456 qcom: Add support for UM 6.1 platform [chandu078]
+51c6df9 common: Move QTI surfaceflinger extensions to select [Michael Bestas]
+
+* hardware/qcom-caf/sm8450/audio/primary-hal
+b3ba68f8b fixup! audio-ar: compilation fix for KS sync path change. [Michael Bestas]
+
+* lineage/hudson
+f36c3a5 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+fc3f07d Updated to 01-Apr-2025 22:01 UTC [Tim Schumacher]
+
+* packages/apps/Trebuchet
+0b3de9cd4d Add a phony target for Launcher3QuickStep [Luca Stefani]
+
+* packages/apps/Twelve
+5c642b8 Twelve: Implement MediaStore rescan button [Sebastiano Barezzi]
+662b706 Twelve: IntentsViewModel: Drop manual media type handling [Sebastiano Barezzi]
+8ad2cd6 Twelve: Add FileDataSource [Sebastiano Barezzi]
+be66ca6 Twelve: MediaStoreDataSource: Allow null album and artist [Sebastiano Barezzi]
+22c11f9 Twelve: Rename local provider to MediaStore [Sebastiano Barezzi]
+480ecc7 Twelve: Refactor data sources [Sebastiano Barezzi]
+49edc91 Twelve: Handle unknown ProviderIdentifier [Luca Stefani]
+
+* packages/modules/Bluetooth
+e4a0db09d0 BluetoothAdapter: Check constructor for null first [Luofan Chen]
+
+* vendor/lineage
+c3c770de soong: move QTI surfaceflinger config to select [Michael Bestas]
+
+====================
+     2025-04-01    
+====================
+* device/xiaomi/sm8350-common
+ba9b775 sm8350-common: Enable ELF checks for libwpa_client dependent libs [Michael Bestas]
+163777f sm8350-common: Don't explicitly set as an AB target [basamaryan]
+102054b sm8350-common: Drop PRODUCT_PACKAGES_DEBUG entry [Nolen Johnson]
+eb3c37a sm8350-common: switch to common QCOM AIDL bootctrl HAL [Cosmin Tanislav]
+7acd607 sm8350-common: overlay: Remove config_cellBroadcastAppLinks [x0x00044]
+09f4530 sm8350-common: rootdir: Add "system" group to Audio HAL [feiyuchen]
+e247a8f sm8350-common: rootdir: Optimize for Spatial Audio [Andy Hung]
+5a8515c sm8350-common: rootdir: Enable RT priority inheritance [Andy Hung]
+7204976 sm8350-common: rootdir: add context_hub into audio hal group [emilchung]
+fb32cd3 sm8350-common: Remove vendor RenderScript implementation. [Alexander Koskovich]
+3fc3cca sm8350-common: Enabling sound trigger V2_3 [Yung Ti Su]
+e514d5d sm8350-common: hidl: Unset kernel target level [Giovanni Ricca]
+1525a08 sm8350-common: Use the common Xiaomi FCM [basamaryan]
+e505b0b sm8350-common: Inherit from QTI FCM [Bruno Martins]
+f02a3ab sm8350-common: Use the common device compatibility matrix from QCOM [Bruno Martins]
+592f3fe sm8350-common: Add feature flag for IPSEC_TUNNEL_MIGRATION [Yan Yan]
+25e5c62 sm8350-common: manifest: Bump target-level to 6 [Yumi Yukimura]
+
+* lineage/mirror
+ca37e33 Updated aosp-minimal to 31-Mar-2025 22:01 UTC [Tim Schumacher]
+
+* packages/apps/TvSettings
+181d55cb2 TvSettings: Fix energy optimization setting [Timi]
+
+* vendor/lineage
+2ef0da69 soong: drop librmnetctl config [Michael Bestas]
+6df271a0 soong: move extended compress format config to select [Michael Bestas]
+
+* vendor/partner_gms
+dc9c7dd gms: Don't include Maps on tablets [Nolen Johnson]
+
+====================
+     2025-03-31    
+====================
+* android
+7914330 manifest: Remove Android.mk guards for sm8450/sm8550/sm8650 [Michael Bestas]
+f7953c9 qcom: Add pineapple HALs [David Wronek]
+
+* device/qcom/sepolicy_vndr/legacy-um
+332cd9619 sepolicy_vndr: Add permission for USB HAL to access usb sysfs nodes [Udipto Goswami]
+6f328d030 Merge tag 'LA.UM.9.14.r1-26000-LAHAINA.QSSI15.0' into staging/lineage-22.2_merge-LA.UM.9.14.r1-26000-LAHAINA.QSSI15.0 [Michael Bestas]
+
+* device/qcom/sepolicy_vndr/sm8650
+2ef3528c9 sepolicy_vndr: Switch to BOARD_VENDOR_SEPOLICY_DIRS [Aayush Gupta]
+06a25b85e sepolicy: Update paths for new repository location [Michael Bestas]
+ec27984b9 sepolicy_vndr: Remove QCOM guards [Pig]
+ba6cdf819 Add .gitupstream file [Chirayu Desai]
+
+* device/xiaomi/mondrian
+b123788 mondrian: Shim camera libs [Bruno Martins]
+
+* frameworks/base
+7cf77b2dae18 Allow screen unpinning on devices without navbar [Utkarsh Gupta]
+
+* hardware/qcom-caf/common
+dc8bc23 common: remove the wifi.keystore entry [Shashank Sivakumar]
+
+* hardware/qcom-caf/sm8650/audio/agm
+2364e44 AGMIPC@1.0-impl/libagm: exclude from OSS builds [SGCMarkus]
+bf1a5c8 Add .gitupstream file [Chirayu Desai]
+
+* hardware/qcom-caf/sm8650/audio/pal
+8c81569f Add .gitupstream file [Chirayu Desai]
+
+* hardware/qcom-caf/sm8650/audio/primary-hal
+304cea0c2 adsprpcd: Drop dependency on proprietary headers and fix build errors [LuK1337]
+1332002d1 Add .gitupstream file [Chirayu Desai]
+
+* hardware/qcom-caf/sm8650/data-ipa-cfg-mgr
+e9144a71 data-ipa-cfg-mgr: Disable all the debugging [Bruno Martins]
+23beaf0f ipacm: Get rid of `using namespace std;` [Yumi Yukimura]
+95e5be83 ipacm: Remove dependencies of ipa specific qti kernel headers [chandu078]
+b3572391 data-ipa-cfg-mgr: Import hardware/qcom-caf/sm8650 namespace [Michael Bestas]
+be213503 ipacm: Remove compilation dependency for in_addr_t on bionic [Praveen Kurapati]
+7d79b8b3 ipacm: Address ipacm start failure [dianlujitao]
+590ab483 data-ipa-cfg-mgr: Remove verbose cflag [Luca Stefani]
+5a92c874 data-ipa-cfg-mgr: Define soong namespace [razorloves]
+9b1f2405 Add .gitupstream file [Chirayu Desai]
+
+* hardware/qcom-caf/sm8650/dataipa
+ef175ed2 dataipa: Disable all the debugging [Bruno Martins]
+14949a99 ipanat: Remove dependencies of ipa specific qti kernel headers [chandu078]
+e6a47c58 dataipa: libipanat: Ignore all errors [Bruno Martins]
+e77bdc98 dataipa: Disable kernel modules and tests [Michael Bestas]
+903f50c1 Add .gitupstream file [Michael Bestas]
+
+* hardware/qcom-caf/sm8650/display
+fc6abd0c17 composer: Separate rc and xml from service [Michael Bestas]
+183784d22b composer: Replace writepid with task_profiles command for cgroup migration [Suren Baghdasaryan]
+12500ce6f7 HWC: Implement getdisplayconfigurations API [Yashovardhan Bhatt]
+88a79f93b0 gralloc: Fix retrieving metadata state [Bruno Martins]
+c39af46f00 display: fix remaining code issues [chandu078]
+1fb434d3d9 display: silence format compilation issues [chandu078]
+2339836714 display: Remove dependencies of display specific kernel headers [chandu078]
+76a8325c73 gralloc: drop unused variables [Anay Wadhera]
+78ef95b540 gralloc: drop prebuilt libvmmem dependency and use dlopen instead [SGCMarkus]
+a467c75ca2 gralloc: replace proprietary libvmmem_headers with reversed vmmem.h [SGCMarkus]
+9274ce440c display: Define init script modules properly. [Alexander Koskovich]
+10b160959e display: s/PRODUCT_PROPERTY_OVERRIDES/PRODUCT_VENDOR_PROPERTIES/g [Alexander Koskovich]
+db039d5ac3 Fix -Wformat errors with explicit void* -> char* cast. [Stephen Hines]
+024215d5ee display: Fix conflicting soong_namespace imports [Bruno Martins]
+12a58d987f display: config: Use project pathmap [chandu078]
+90ef109c3f display: Use project pathmap [Ethan Chen]
+7f51101257 Add .gitupstream file [Chirayu Desai]
+
+* kernel/qcom/sm8150
+bec38fea6929 Revert "ANDROID: modpost: add an exception for CFI stubs" [Alexander Winkowski]
+fe5ed3f60973 ANDROID: Update CFI patchset from android11-5.4 [Alexander Winkowski]
+87fac1be3de7 ANDROID: adding __nocfi to cpuidle_enter_state [rogercl.yang]
+c0c1d17620fa ANDROID: arm64: Fix the address of ftrace_call compiled with CFI_CLANG [Ben Dai]
+bda1ae2888f9 ANDROID: arm64: add __va_function [Sami Tolvanen]
+
+* lineage/hudson
+313a821 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+9490028 Updated to 30-Mar-2025 22:01 UTC [Tim Schumacher]
+
+* packages/apps/Messaging
+906ee2f fixup! Messaging: Fix javadoc [Tommy Webb]
+8796975 Messaging: Messages are highly important [Tommy Webb]
+
+* packages/apps/Trebuchet
+cdf6fd335c Hide app search results of profiles in quiet mode [Oliver Scott]
+480d4cc8e9 Implement private space access when hidden [Oliver Scott]
+
+* vendor/lineage
+e19f41f9 soong: move vibrator effect stream config to select [Cosmin Tanislav]
+1477c8d3 config: Add vendor.lineage.health V2 [Michael Bestas]
+8fbefea5 soong: Implement charge limit mode [Oliver Scott]
+
+* vendor/xiaomi/mondrian
+dd0fd14 mondrian: Shim camera libs [Bruno Martins]
+
