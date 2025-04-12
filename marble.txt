@@ -1,0 +1,376 @@
+====================
+     2025-04-12    
+====================
+* device/xiaomi/cupid
+f548593 Revert "cupid: overlay: Drop brightness backlight/nit mapping" [Arian]
+
+* device/xiaomi/marble
+8130e81 marble: light: Switch to shared_ptr to avoid memory leaks [Arian]
+499da60 marble: audio: Use EC enabled streams hotword capture and single mic in lp mode [Arian]
+ca09304 marble: audio: Enable volume set param for compressed, pcm offload and voip streams [Arian]
+54e59ad marble: audio: Enable speaker protection [Arian]
+d2b86d8 marble: audio: Bump speaker samplerate to 96000 [Arian]
+806413d marble: audio: Switch handset, speaker and wired audio out to 24/32bit [Arian]
+ee74549 marble: audio: Use speaker-dmic-endfire for calls [Arian]
+f2778c0 marble: audio: Use handset-dmic-endfire as default handset mic [Arian]
+9a335be marble: audio: Use deep buffer calibration for voice recognition streams [Arian]
+38c46ef marble: audio: Change backend of some devices to tdm [Arian]
+6d5d50c marble: audio: Apply xiaomi mixer path changes [Arian]
+b359a0b marble: Import audio configs from LA.VENDOR.1.0.r1-26900-WAIPIO.QSSI15.0 [Arian]
+91b6293 marble: Move acdbdata to waipio_mtp and drop unused ones [Arian]
+9f62306 marble: Drop prebuilt audio configs and blobs [Arian]
+c1d5f28 marble: overlay: Align auto brightness config comments with AOSP [Arian]
+3aa9fd9 marble: overlay: Commonize several auto brightness configs [Arian]
+571cefa marble: Remove unused Android.mk [Michael Bestas]
+4d8260d marble: move vibrator effect stream config to select [Cosmin Tanislav]
+475bb6b marble: Shim camera libs [Bruno Martins]
+4331322 marble: Enable elfchecks for camera libs [LuK1337]
+18baf75 marble: Adjust override prop key names [LuK1337]
+315503a Revert "marble: Disable stock fingerprint for now" [Arian]
+e8e6b0f fixup! marble: Switch to python extract-utils [Arian]
+
+* device/xiaomi/mayfly
+140cba9 mayfly: light: Switch to shared_ptr to avoid memory leaks [Arian]
+537d87b Revert "mayfly: overlay: Drop brightness backlight/nit mapping" [Arian]
+
+* device/xiaomi/mondrian
+b3fa374 Revert "mondrian: overlay: Drop brightness backlight/nit mapping" [Arian]
+d1143e7 mondrian: Update blobs and firmware from OS2.0.5.0.VMNMIXM [Arian]
+dae73e8 mondrian: audio: Use EC enabled streams hotword capture and single mic in lp mode [Arian]
+cf4af7b mondrian: audio: Enable volume set param for compressed, pcm offload and voip streams [Arian]
+41d40ca mondrian: audio: Enable speaker protection [Arian]
+e5b68f6 mondrian: audio: Switch handset, speaker and wired audio out to 24/32bit [Arian]
+70d6372 mondrian: audio: Use speaker-dmic-endfire for calls [Arian]
+8224325 mondrian: audio: Use handset-dmic-endfire as default handset mic [Arian]
+8f2053c mondrian: audio: Use deep buffer calibration for voice recognition streams [Arian]
+1dc50bf mondrian: audio: Change backend of some devices to tdm [Arian]
+c404ae4 mondrian: audio: Apply xiaomi mixer path changes [Arian]
+
+* device/xiaomi/unicorn
+5d12fca Update proprietary-firmware.txt [明宇]
+3e2fc40 Revert "unicorn: overlay: Drop brightness backlight/nit mapping" [Arian]
+
+* device/xiaomi/zeus
+7fbcccf Revert "zeus: overlay: Drop brightness backlight/nit mapping" [Arian]
+f58a7af zeus: Update blobs and firmware from OS2.0.4.0.VLBMIXM [Arian]
+4a39a3c zeus: Enable ultrasound proximity sensor in audio hal [Arian]
+4187504 zeus: audio: Remove unsupported ultrasound device key vectors [Arian]
+fb7743c zeus: audio: Add ultrasound rx stream usecase key vector [Arian]
+1548a1e zeus: audio: Enable and configure external echo cancellation [Arian]
+0ec53ae zeus: audio: Switch handset, speaker and wired audio out to 24bit [Arian]
+e243a4e zeus: audio: Use speaker-dmic-endfire for calls [Arian]
+9603452 zeus: audio: Use handset-dmic-endfire as default handset mic [Arian]
+b767cba zeus: audio: Use deep buffer calibration for voice recognition streams [Arian]
+e003069 zeus: audio: Change backend of some devices to tdm [Arian]
+9e36d8e zeus: audio: Apply xiaomi mixer path changes [Arian]
+
+* vendor/xiaomi/marble
+3a20953 marble: Move acdbdata to waipio_mtp and drop unused ones [Arian]
+c1b4b74 marble: Drop prebuilt audio configs and blobs [Arian]
+747ad60 marble: Shim camera libs [Bruno Martins]
+2598806 marble: Enable elfchecks for camera libs [LuK1337]
+
+====================
+     2025-04-11    
+====================
+====================
+     2025-04-10    
+====================
+====================
+     2025-04-09    
+====================
+* device/xiaomi/cupid
+985aa10 cupid: Update blobs and firmware from OS2.0.4.0.VLBMIXM [Arian]
+7f5c686 cupid: Enable ultrasound proximity sensor in audio hal [Arian]
+235d632 cupid: audio: Use dual-mic config as default for voice input [danielml]
+
+* device/xiaomi/mayfly
+6b734dd mayfly: Enable ultrasound proximity sensor in audio hal [Arian]
+e5ec5ed mayfly: audio: Use dual-mic config as default for voice input [danielml]
+
+* device/xiaomi/unicorn
+5d4b5c8 unicorn: Update blobs and firmware from OS2.0.5.0.VLECNXM [Arian]
+3a86749 unicorn: Update the release date [Zhang Zhe]
+356a870 unicorn: Enable ultrasound proximity sensor in audio hal [Arian]
+95e90b0 unicorn: audio: Use dual-mic config as default for voice input [danielml]
+
+====================
+     2025-04-08    
+====================
+* device/xiaomi/cupid
+e864dc8 cupid: audio: Apply xiaomi changes from V816.0.10.0.ULCMIXM [Arian]
+4c608f2 cupid: Import audio configs from LA.VENDOR.1.0.r1-26900-WAIPIO.QSSI15.0 [Arian]
+83ab5a5 cupid: Move acdbdata to waipio_mtp and add missing ones [Arian]
+cfd36cc cupid: Drop prebuilt audio configs and blobs [Arian]
+e721357 cupid: overlay: Commonize several auto brightness configs [Arian]
+69f075a cupid: Enable elfchecks for camera libs [LuK1337]
+0e34da3 cupid: Shim camera libs [Bruno Martins]
+
+* device/xiaomi/mayfly
+661c50a mayfly: audio: Apply xiaomi changes from V816.0.14.0.ULTCNXM [Arian]
+80616f6 mayfly: Import audio configs from LA.VENDOR.1.0.r1-26900-WAIPIO.QSSI15.0 [Arian]
+b48a0f5 mayfly: Move acdbdata to waipio_mtp and add missing ones [Arian]
+20581cc mayfly: Drop prebuilt audio configs and blobs [Arian]
+a72bd6d mayfly: overlay: Update status bar height comments [Arian]
+f59b732 mayfly: overlay: Drop old config_udfps_illumination_transition_ms [Arian]
+f96b0ad mayfly: overlay: Commonize several auto brightness configs [Arian]
+b6e659c mayfly: Enable elfchecks for camera libs [LuK1337]
+1cc9d5b mayfly: Shim camera libs [Bruno Martins]
+
+* device/xiaomi/mondrian
+a6a252e mondrian: Import audio configs from LA.VENDOR.1.0.r1-26900-WAIPIO.QSSI15.0 [Arian]
+b93e1b8 mondrian: Move acdbdata to waipio_mtp and drop unused ones [Arian]
+d356a82 mondrian: Drop prebuilt audio configs and blobs [Arian]
+5af966c mondrian: overlay: Commonize several auto brightness configs [Arian]
+695cebb mondrian: overlay: Drop brightness backlight/nit mapping [Arian]
+e0a8a4e mondrian: Remove unused Android.mk [Michael Bestas]
+
+* device/xiaomi/sm8450-common
+29b9440e sm8450-common: Modify maxGamma value of short-term model [Cindy Chung]
+3ac38acd sm8450-common: update darkening light debounce to 2s [Peter Lin]
+73fb6c1d sm8450-common: Config: Update Auto Brightness debounce and ambient threshold setting [SianyiHuang]
+009fdb82 sm8450-common: Copy card-defs and microphone_characteristics XMLs from audio HAL [Arian]
+b49a17b7 sm8450-common: Remove unnecessary display board flags [Arian]
+9fbdb69e sm8450-common: Drop gralloc priv handle configuration [Arian]
+3228e254 sm8450-common: media: Update from cupid OS2.0.1.0.VLCMIXM [Arian]
+ffbd61fc sm8450-common: Build QtiTelephonyCompat [danielml]
+d01a75fc sm8450-common: Update blobs from cupid OS2.0.1.0.VLCMIXM [Arian]
+
+* device/xiaomi/unicorn
+64be0ef unicorn: audio: Apply xiaomi changes from V816.0.10.0.ULECNXM [Arian]
+6c988e5 unicorn: Import audio configs from LA.VENDOR.1.0.r1-26900-WAIPIO.QSSI15.0 [Arian]
+0adb448 unicorn: Move acdbdata to waipio_mtp and add missing ones [Arian]
+90b3ed4 unicorn: Drop prebuilt audio configs and blobs [Arian]
+32b645c unicorn: overlay: Commonize several auto brightness configs [Arian]
+19f3b43 unicorn: overlay: Drop brightness backlight/nit mapping [Arian]
+f94fc94 unicorn: Remove unused Android.mk [Michael Bestas]
+d356775 unicorn: Enable elfchecks for camera libs [LuK1337]
+47a59e9 unicorn: Shim camera libs [Bruno Martins]
+9fae8c6 unicorn: Adjust override prop key names [LuK1337]
+
+* device/xiaomi/zeus
+d06f866 zeus: Import audio configs from LA.VENDOR.1.0.r1-26900-WAIPIO.QSSI15.0 [Arian]
+e55f752 zeus: Move acdbdata to waipio_mtp and add missing ones [Arian]
+b77bf20 zeus: Drop prebuilt audio configs and blobs [Arian]
+47e4f65 zeus: overlay: Commonize several auto brightness configs [Arian]
+352cb45 zeus: overlay: Drop brightness backlight/nit mapping [Arian]
+cc920c9 zeus: Remove unused Android.mk [Michael Bestas]
+
+* hardware/qcom-caf/sm8450/audio/pal
+085519e8 Implement speaker protection profiles [Arian]
+af5be51c SpeakerProtection: Send speaker operation mode to VI module [Arian]
+9e962b1c WIP implement ultrasound rampdown support [Arian]
+b920974e PayloadBuilder: Populate key vector for ultrasound RX [Arian]
+
+* hardware/qcom-caf/sm8450/audio/primary-hal
+7174bc727 hal: Add ultrasound proximity support [Arian]
+
+* lineage/wiki
+7bf8f080 wiki: Use fastboot reboot-recovery for Xiaomi SM8450 [Arian]
+4f439f42 Allow lineage-22.2 branches [Arian]
+39d3804a devices: Promote cupid, mayfly, mondrian, unicorn and zeus to lineage-22.2 [Arian]
+351801e5 devices: Promote diting to lineage-22.1 [Jens Reidel]
+581e5d38 devices: Promote ziyi to lineage-22.1 [Jens Reidel]
+824a5206 devices: Promote thor to lineage-22.1 [Jens Reidel]
+229ad170 devices: Promote marble to lineage-22.1 [Jens Reidel]
+e16371bc devices: Promote cupid, mondrian, unicorn and zeus to lineage-22.1 [Arian]
+7ccb979d wiki: devices: Add POCO F5 Pro / Redmi K60 (mondrian) [Arian]
+2726eeaf wiki: devices: Add Xiaomi 12(S) Pro (unicorn & zeus) [Arian]
+7a3fcc35 wiki: devices: Add Xiaomi 13 Lite / Civi 2 (ziyi) [Jens Reidel]
+9cff1c16 wiki: devices: Add Xiaomi 12T Pro / Redmi K50 Ultra (diting) [Jens Reidel]
+b5f79a8b wiki: devices: Add Xiaomi 12S Ultra (thor) [Jens Reidel]
+a0651aa3 wiki: devices: Add Xiaomi POCO F5 / Redmi Note 12 Turbo (marble) [Jens Reidel]
+33d438c1 wiki: devices: Add Xiaomi 12 (cupid) [Arian]
+1c40b9b8 wiki: devices: Add Xiaomi 12S (mayfly) [FlowerSea0208]
+33a86951 wiki: devices: Add Xiaomi MIX Fold 2 (zizhan) [Jens Reidel]
+b0f48c53 wiki: schema: Add SM7450 and Adreno 644 [Jens Reidel]
+85606284 wiki: schema: Add SM7475 and Adreno 725 [Jens Reidel]
+c4d1ba7b wiki: schema: Add CPU cores of SM8450/8475/7475 [Jens Reidel]
+856dc192 Display only devices using Xiaomi SM8450 kernel [Jens Reidel]
+b967faa2 Update download URL [Jens Reidel]
+a4641ee4 Change sitemap url [Jens Reidel]
+9b2e3b12 Replace source links with our GitHub organization [Jens Reidel]
+cea97ff5 Update GitHub actions [Jens Reidel]
+b79e34c2 Update gems so it works with latest ruby [Jens Reidel]
+
+* vendor/lineage
+53cb3ac3 android: merge_dtbs: Respect oem specific extra ids [Arian]
+
+* vendor/xiaomi/cupid
+6e2e3ae cupid: Update blobs and firmware from OS2.0.4.0.VLBMIXM [Arian]
+59c8722 cupid: Move acdbdata to waipio_mtp and add missing ones [Arian]
+52865d2 cupid: Drop prebuilt audio configs and blobs [Arian]
+b3b165f cupid: Enable elfchecks for camera libs [LuK1337]
+ee4f438 cupid: Shim camera libs [Bruno Martins]
+
+* vendor/xiaomi/mayfly
+d767566 mayfly: Move acdbdata to waipio_mtp and add missing ones [Arian]
+7789097 mayfly: Drop prebuilt audio configs and blobs [Arian]
+dc757d0 mayfly: Enable elfchecks for camera libs [LuK1337]
+1b628df mayfly: Shim camera libs [Bruno Martins]
+
+* vendor/xiaomi/mondrian
+4e53057 mondrian: Update blobs and firmware from OS2.0.5.0.VMNMIXM [Arian]
+
+* vendor/xiaomi/sm8450-common
+533925b fixup! sm8450-common: Update blobs from cupid OS2.0.1.0.VLCMIXM [Arian]
+
+* vendor/xiaomi/unicorn
+7805983 unicorn: Update blobs and firmware from OS2.0.5.0.VLECNXM [Arian]
+82d225c unicorn: Move acdbdata to waipio_mtp and add missing ones [Arian]
+ca351eb unicorn: Drop prebuilt audio configs and blobs [Arian]
+615fd72 unicorn: Enable elfchecks for camera libs [LuK1337]
+2573d93 unicorn: Shim camera libs [Bruno Martins]
+
+* vendor/xiaomi/zeus
+84f2d7a zeus: Update blobs and firmware from OS2.0.4.0.VLBMIXM [Arian]
+
+====================
+     2025-04-07    
+====================
+* device/xiaomi/sm6150-common
+76f1128 sm6150-common: rootdir: Add "system" group to Audio HAL [feiyuchen]
+ae0cb60 sm6150-common: rootdir: Optimize for Spatial Audio [Andy Hung]
+c27e418 sm6150-common: rootdir: Enable RT priority inheritance [Andy Hung]
+a0c8839 sm6150-common: rootdir: add context_hub into audio hal group [emilchung]
+
+* device/xiaomi/sm8450-common
+55bc2698 sm8450-common: Update blobs from cupid V816.0.10.0.ULCMIXM [Arian]
+ca8c10ae sm8450-common: Add libwfdservice_shim for WFD [LuK1337]
+
+* hardware/qcom-caf/common
+2692eb2 qcril-database: Add host tool to generate qcrilNr.db from migrations [Arian]
+27d45fb qcom: Declare hidl_vendor_qti_hardware_limits_interface [Bruno Martins]
+
+* hardware/qcom-caf/sm8150/display
+70c19dbbfd fixup! gralloc: fix RAW(10|12) alignment when using the camera [Skyblueborb]
+
+* hardware/xiaomi
+3a4813d interfaces: Add prebuilt hidl interfaces declarations [Arian]
+
+* lineage/hudson
+73f1755 Regenerate device dependency mappings [LineageOS Infra]
+2ca6a4c Bump tokay exp [LuK1337]
+
+* lineage/mirror
+7b62061 Updated to 06-Apr-2025 22:01 UTC [Tim Schumacher]
+
+* tools/buildscript
+a1511cd Copy images on release [Arian]
+3d833fc re-use project variable in telegram messages [Arian]
+09383ce Drop DEBUG_BUILD [Arian]
+dc15198 Drop sourceforge [Arian]
+43fbec9 Drop signing support [Arian]
+
+* tools/extract-utils
+b059613 extract_utils: Add support to create filegroups of proprietary files [Arian]
+
+* vendor/lineage
+16075eab kernel: Use correct recovery modules.load variable [Aaron Kling]
+
+* vendor/xiaomi/sm8450-common
+d211cdf sm8450-common: libwfdservice_shim_v1 -> libwfdservice_shim [LuK1337]
+
+* vendor/xiaomi/zeus
+f82a15e zeus: Add missing acdbdata [Arian]
+
+====================
+     2025-04-06    
+====================
+* build/make
+bdf3474394 fixup! Reland: Verify init scripts for correctness during build [Aaron Kling]
+
+* build/soong
+d5c9d6498 Rust: Use nehalem cpu-target when building with sandybridge arch variant [hmtheboy154]
+
+* hardware/lineage/compat
+d4bc391 compat: Get rid of libwfdservice_shim versioning [LuK1337]
+
+* hardware/qcom-caf/bt
+4ddafd4 bt: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/msm8953/media
+0830d8af9 media: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/msm8996/media
+d549d5044 media: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/msm8998/media
+f5b08c7c8 media: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/sdm660/media
+8a4196643 media: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/sdm845/display
+e1621443f9 display: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/sdm845/media
+b25d89b25 media: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/sm8150/display
+ae05a54563 display: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/sm8150/media
+cfb417ad7 media: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/sm8250/display
+41b4cae8e5 display: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/sm8250/media
+df5d631bd media: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/sm8350/display
+655ba7a150 display: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/sm8450/display
+68c0f43190 display: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/sm8550/display
+d1371ff554 display: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom-caf/sm8650/display
+c302392b85 display: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom/bt
+9776886 bt: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom/camera
+0cc221a camera: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom/gps
+df8f5e3 gps: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom/media
+5abb1e65f media: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom/sdm845/display
+7a467ab8 display: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom/sdm845/gps
+841eb90 gps: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom/sm7250/display
+d6b531ed display: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom/sm7250/gps
+deffe91 gps: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom/sm8150/display
+1eac7ca6 display: Remove CleanSpec.mk [Michael Bestas]
+
+* hardware/qcom/sm8150/gps
+1395200 gps: Remove CleanSpec.mk [Michael Bestas]
+
+* lineage/hudson
+04f0829 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/scripts
+d096ced device-deps-regenerator: Ignore sm8650/sm8750-devicetrees [LuK1337]
+
+* packages/apps/Trebuchet
+267a49d077 fixup! Trebuchet: Implement gesture hint toggle [LuK1337]
+
+* vendor/lineage
+ae2f5b65 kernel: use DTBS_OUT variable [Cosmin Tanislav]
+d0143f4b vars: Update qcom tags [Michael Bestas]
+
