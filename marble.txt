@@ -66,7 +66,8 @@ e003069 zeus: audio: Change backend of some devices to tdm [Arian]
 9e36d8e zeus: audio: Apply xiaomi mixer path changes [Arian]
 
 * kernel/xiaomi/sm8450
-c4b4a3a2cac6 driver: power: supply: Add support for blank status and cctog xiaomi properties [Arian]
+4fdc2b477d23 power: supply: qti_battery_charger: Add support for blank status and cctog xiaomi properties [Arian]
+b64238844eab power: supply: qti_battery_charger: Drop fixed wls start property for non-m81 chargers [Arian]
 6e63781765b7 Revert "tmp goodix debug" [Arian]
 
 * vendor/xiaomi/marble
@@ -178,10 +179,6 @@ ae0cb60 sm6150-common: rootdir: Optimize for Spatial Audio [Andy Hung]
 c27e418 sm6150-common: rootdir: Enable RT priority inheritance [Andy Hung]
 a0c8839 sm6150-common: rootdir: add context_hub into audio hal group [emilchung]
 
-* device/xiaomi/sm8450-common
-55bc2698 sm8450-common: Update blobs from cupid V816.0.10.0.ULCMIXM [Arian]
-ca8c10ae sm8450-common: Add libwfdservice_shim for WFD [LuK1337]
-
 * device/xiaomi/unicorn
 64be0ef unicorn: audio: Apply xiaomi changes from V816.0.10.0.ULECNXM [Arian]
 6c988e5 unicorn: Import audio configs from LA.VENDOR.1.0.r1-26900-WAIPIO.QSSI15.0 [Arian]
@@ -288,6 +285,10 @@ bdf3474394 fixup! Reland: Verify init scripts for correctness during build [Aaro
 
 * build/soong
 d5c9d6498 Rust: Use nehalem cpu-target when building with sandybridge arch variant [hmtheboy154]
+
+* device/xiaomi/sm8450-common
+55bc2698 sm8450-common: Update blobs from cupid V816.0.10.0.ULCMIXM [Arian]
+ca8c10ae sm8450-common: Add libwfdservice_shim for WFD [LuK1337]
 
 * hardware/lineage/compat
 d4bc391 compat: Get rid of libwfdservice_shim versioning [LuK1337]
