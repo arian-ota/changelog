@@ -5,20 +5,20 @@
 f548593 Revert "cupid: overlay: Drop brightness backlight/nit mapping" [Arian]
 
 * device/xiaomi/marble
-0e0e830 fixup! marble: Move acdbdata to waipio_mtp and drop unused ones [Arian]
-8130e81 marble: light: Switch to shared_ptr to avoid memory leaks [Arian]
-499da60 marble: audio: Use EC enabled streams hotword capture and single mic in lp mode [Arian]
-ca09304 marble: audio: Enable volume set param for compressed, pcm offload and voip streams [Arian]
-54e59ad marble: audio: Enable speaker protection [Arian]
-d2b86d8 marble: audio: Bump speaker samplerate to 96000 [Arian]
-806413d marble: audio: Switch handset, speaker and wired audio out to 24/32bit [Arian]
-ee74549 marble: audio: Use speaker-dmic-endfire for calls [Arian]
-f2778c0 marble: audio: Use handset-dmic-endfire as default handset mic [Arian]
-9a335be marble: audio: Use deep buffer calibration for voice recognition streams [Arian]
-38c46ef marble: audio: Change backend of some devices to tdm [Arian]
-6d5d50c marble: audio: Apply xiaomi mixer path changes [Arian]
-b359a0b marble: Import audio configs from LA.VENDOR.1.0.r1-26900-WAIPIO.QSSI15.0 [Arian]
-91b6293 marble: Move acdbdata to waipio_mtp and drop unused ones [Arian]
+01c38c9 marble: Update blobs and firmware from OS2.0.1.0.VMRMIXM [Arian]
+5bb71a8 marble: light: Switch to shared_ptr to avoid memory leaks [Arian]
+353033a marble: audio: Use EC enabled streams hotword capture and single mic in lp mode [Arian]
+11a6639 marble: audio: Enable volume set param for compressed, pcm offload and voip streams [Arian]
+cd32284 marble: audio: Enable speaker protection [Arian]
+145808d marble: audio: Bump speaker samplerate to 96000 [Arian]
+6a3718c marble: audio: Switch handset, speaker and wired audio out to 24/32bit [Arian]
+4786748 marble: audio: Use speaker-dmic-endfire for calls [Arian]
+2144e88 marble: audio: Use handset-dmic-endfire as default handset mic [Arian]
+5663f6b marble: audio: Use deep buffer calibration for voice recognition streams [Arian]
+0a228d6 marble: audio: Change backend of some devices to tdm [Arian]
+35a811a marble: audio: Apply xiaomi mixer path changes [Arian]
+28e8fed marble: Import audio configs from LA.VENDOR.1.0.r1-26900-WAIPIO.QSSI15.0 [Arian]
+3a7209e marble: Move acdbdata to waipio_mtp and drop unused ones [Arian]
 9f62306 marble: Drop prebuilt audio configs and blobs [Arian]
 c1d5f28 marble: overlay: Align auto brightness config comments with AOSP [Arian]
 3aa9fd9 marble: overlay: Commonize several auto brightness configs [Arian]
@@ -65,9 +65,13 @@ b767cba zeus: audio: Use deep buffer calibration for voice recognition streams [
 e003069 zeus: audio: Change backend of some devices to tdm [Arian]
 9e36d8e zeus: audio: Apply xiaomi mixer path changes [Arian]
 
+* kernel/xiaomi/sm8450
+c4b4a3a2cac6 driver: power: supply: Add support for blank status and cctog xiaomi properties [Arian]
+6e63781765b7 Revert "tmp goodix debug" [Arian]
+
 * vendor/xiaomi/marble
-a218315 fixup! marble: Move acdbdata to waipio_mtp and drop unused ones [Arian]
-3a20953 marble: Move acdbdata to waipio_mtp and drop unused ones [Arian]
+b30040b marble: Update blobs and firmware from OS2.0.1.0.VMRMIXM [Arian]
+6f60ed1 marble: Move acdbdata to waipio_mtp and drop unused ones [Arian]
 c1b4b74 marble: Drop prebuilt audio configs and blobs [Arian]
 747ad60 marble: Shim camera libs [Bruno Martins]
 2598806 marble: Enable elfchecks for camera libs [LuK1337]
@@ -99,6 +103,56 @@ e5ec5ed mayfly: audio: Use dual-mic config as default for voice input [danielml]
 ====================
      2025-04-08    
 ====================
+* device/xiaomi/sm8450-common
+29b9440e sm8450-common: Modify maxGamma value of short-term model [Cindy Chung]
+3ac38acd sm8450-common: update darkening light debounce to 2s [Peter Lin]
+73fb6c1d sm8450-common: Config: Update Auto Brightness debounce and ambient threshold setting [SianyiHuang]
+009fdb82 sm8450-common: Copy card-defs and microphone_characteristics XMLs from audio HAL [Arian]
+b49a17b7 sm8450-common: Remove unnecessary display board flags [Arian]
+9fbdb69e sm8450-common: Drop gralloc priv handle configuration [Arian]
+3228e254 sm8450-common: media: Update from cupid OS2.0.1.0.VLCMIXM [Arian]
+ffbd61fc sm8450-common: Build QtiTelephonyCompat [danielml]
+d01a75fc sm8450-common: Update blobs from cupid OS2.0.1.0.VLCMIXM [Arian]
+
+* hardware/qcom-caf/sm8450/audio/pal
+085519e8 Implement speaker protection profiles [Arian]
+af5be51c SpeakerProtection: Send speaker operation mode to VI module [Arian]
+9e962b1c WIP implement ultrasound rampdown support [Arian]
+b920974e PayloadBuilder: Populate key vector for ultrasound RX [Arian]
+
+* hardware/qcom-caf/sm8450/audio/primary-hal
+7174bc727 hal: Add ultrasound proximity support [Arian]
+
+* vendor/lineage
+53cb3ac3 android: merge_dtbs: Respect oem specific extra ids [Arian]
+
+* vendor/xiaomi/cupid
+6e2e3ae cupid: Update blobs and firmware from OS2.0.4.0.VLBMIXM [Arian]
+
+* vendor/xiaomi/mondrian
+4e53057 mondrian: Update blobs and firmware from OS2.0.5.0.VMNMIXM [Arian]
+
+* vendor/xiaomi/sm8450-common
+533925b fixup! sm8450-common: Update blobs from cupid OS2.0.1.0.VLCMIXM [Arian]
+
+* vendor/xiaomi/unicorn
+7805983 unicorn: Update blobs and firmware from OS2.0.5.0.VLECNXM [Arian]
+
+* vendor/xiaomi/zeus
+84f2d7a zeus: Update blobs and firmware from OS2.0.4.0.VLBMIXM [Arian]
+
+====================
+     2025-04-07    
+====================
+* device/xiaomi/cupid
+e864dc8 cupid: audio: Apply xiaomi changes from V816.0.10.0.ULCMIXM [Arian]
+4c608f2 cupid: Import audio configs from LA.VENDOR.1.0.r1-26900-WAIPIO.QSSI15.0 [Arian]
+83ab5a5 cupid: Move acdbdata to waipio_mtp and add missing ones [Arian]
+cfd36cc cupid: Drop prebuilt audio configs and blobs [Arian]
+e721357 cupid: overlay: Commonize several auto brightness configs [Arian]
+69f075a cupid: Enable elfchecks for camera libs [LuK1337]
+0e34da3 cupid: Shim camera libs [Bruno Martins]
+
 * device/xiaomi/mayfly
 661c50a mayfly: audio: Apply xiaomi changes from V816.0.14.0.ULTCNXM [Arian]
 80616f6 mayfly: Import audio configs from LA.VENDOR.1.0.r1-26900-WAIPIO.QSSI15.0 [Arian]
@@ -118,16 +172,15 @@ d356a82 mondrian: Drop prebuilt audio configs and blobs [Arian]
 695cebb mondrian: overlay: Drop brightness backlight/nit mapping [Arian]
 e0a8a4e mondrian: Remove unused Android.mk [Michael Bestas]
 
+* device/xiaomi/sm6150-common
+76f1128 sm6150-common: rootdir: Add "system" group to Audio HAL [feiyuchen]
+ae0cb60 sm6150-common: rootdir: Optimize for Spatial Audio [Andy Hung]
+c27e418 sm6150-common: rootdir: Enable RT priority inheritance [Andy Hung]
+a0c8839 sm6150-common: rootdir: add context_hub into audio hal group [emilchung]
+
 * device/xiaomi/sm8450-common
-29b9440e sm8450-common: Modify maxGamma value of short-term model [Cindy Chung]
-3ac38acd sm8450-common: update darkening light debounce to 2s [Peter Lin]
-73fb6c1d sm8450-common: Config: Update Auto Brightness debounce and ambient threshold setting [SianyiHuang]
-009fdb82 sm8450-common: Copy card-defs and microphone_characteristics XMLs from audio HAL [Arian]
-b49a17b7 sm8450-common: Remove unnecessary display board flags [Arian]
-9fbdb69e sm8450-common: Drop gralloc priv handle configuration [Arian]
-3228e254 sm8450-common: media: Update from cupid OS2.0.1.0.VLCMIXM [Arian]
-ffbd61fc sm8450-common: Build QtiTelephonyCompat [danielml]
-d01a75fc sm8450-common: Update blobs from cupid OS2.0.1.0.VLCMIXM [Arian]
+55bc2698 sm8450-common: Update blobs from cupid V816.0.10.0.ULCMIXM [Arian]
+ca8c10ae sm8450-common: Add libwfdservice_shim for WFD [LuK1337]
 
 * device/xiaomi/unicorn
 64be0ef unicorn: audio: Apply xiaomi changes from V816.0.10.0.ULECNXM [Arian]
@@ -137,6 +190,9 @@ d01a75fc sm8450-common: Update blobs from cupid OS2.0.1.0.VLCMIXM [Arian]
 32b645c unicorn: overlay: Commonize several auto brightness configs [Arian]
 19f3b43 unicorn: overlay: Drop brightness backlight/nit mapping [Arian]
 f94fc94 unicorn: Remove unused Android.mk [Michael Bestas]
+d356775 unicorn: Enable elfchecks for camera libs [LuK1337]
+47a59e9 unicorn: Shim camera libs [Bruno Martins]
+9fae8c6 unicorn: Adjust override prop key names [LuK1337]
 
 * device/xiaomi/zeus
 d06f866 zeus: Import audio configs from LA.VENDOR.1.0.r1-26900-WAIPIO.QSSI15.0 [Arian]
@@ -146,14 +202,18 @@ b77bf20 zeus: Drop prebuilt audio configs and blobs [Arian]
 352cb45 zeus: overlay: Drop brightness backlight/nit mapping [Arian]
 cc920c9 zeus: Remove unused Android.mk [Michael Bestas]
 
-* hardware/qcom-caf/sm8450/audio/pal
-085519e8 Implement speaker protection profiles [Arian]
-af5be51c SpeakerProtection: Send speaker operation mode to VI module [Arian]
-9e962b1c WIP implement ultrasound rampdown support [Arian]
-b920974e PayloadBuilder: Populate key vector for ultrasound RX [Arian]
+* hardware/qcom-caf/common
+2692eb2 qcril-database: Add host tool to generate qcrilNr.db from migrations [Arian]
 
-* hardware/qcom-caf/sm8450/audio/primary-hal
-7174bc727 hal: Add ultrasound proximity support [Arian]
+* hardware/xiaomi
+3a4813d interfaces: Add prebuilt hidl interfaces declarations [Arian]
+
+* lineage/hudson
+73f1755 Regenerate device dependency mappings [LineageOS Infra]
+2ca6a4c Bump tokay exp [LuK1337]
+
+* lineage/mirror
+7b62061 Updated to 06-Apr-2025 22:01 UTC [Tim Schumacher]
 
 * lineage/wiki
 7bf8f080 wiki: Use fastboot reboot-recovery for Xiaomi SM8450 [Arian]
@@ -183,74 +243,6 @@ a4641ee4 Change sitemap url [Jens Reidel]
 cea97ff5 Update GitHub actions [Jens Reidel]
 b79e34c2 Update gems so it works with latest ruby [Jens Reidel]
 
-* vendor/lineage
-53cb3ac3 android: merge_dtbs: Respect oem specific extra ids [Arian]
-
-* vendor/xiaomi/cupid
-6e2e3ae cupid: Update blobs and firmware from OS2.0.4.0.VLBMIXM [Arian]
-
-* vendor/xiaomi/mayfly
-d767566 mayfly: Move acdbdata to waipio_mtp and add missing ones [Arian]
-7789097 mayfly: Drop prebuilt audio configs and blobs [Arian]
-dc757d0 mayfly: Enable elfchecks for camera libs [LuK1337]
-1b628df mayfly: Shim camera libs [Bruno Martins]
-
-* vendor/xiaomi/mondrian
-4e53057 mondrian: Update blobs and firmware from OS2.0.5.0.VMNMIXM [Arian]
-
-* vendor/xiaomi/sm8450-common
-533925b fixup! sm8450-common: Update blobs from cupid OS2.0.1.0.VLCMIXM [Arian]
-
-* vendor/xiaomi/unicorn
-7805983 unicorn: Update blobs and firmware from OS2.0.5.0.VLECNXM [Arian]
-
-* vendor/xiaomi/zeus
-84f2d7a zeus: Update blobs and firmware from OS2.0.4.0.VLBMIXM [Arian]
-
-====================
-     2025-04-07    
-====================
-* device/xiaomi/cupid
-e864dc8 cupid: audio: Apply xiaomi changes from V816.0.10.0.ULCMIXM [Arian]
-4c608f2 cupid: Import audio configs from LA.VENDOR.1.0.r1-26900-WAIPIO.QSSI15.0 [Arian]
-83ab5a5 cupid: Move acdbdata to waipio_mtp and add missing ones [Arian]
-cfd36cc cupid: Drop prebuilt audio configs and blobs [Arian]
-e721357 cupid: overlay: Commonize several auto brightness configs [Arian]
-69f075a cupid: Enable elfchecks for camera libs [LuK1337]
-0e34da3 cupid: Shim camera libs [Bruno Martins]
-
-* device/xiaomi/sm6150-common
-76f1128 sm6150-common: rootdir: Add "system" group to Audio HAL [feiyuchen]
-ae0cb60 sm6150-common: rootdir: Optimize for Spatial Audio [Andy Hung]
-c27e418 sm6150-common: rootdir: Enable RT priority inheritance [Andy Hung]
-a0c8839 sm6150-common: rootdir: add context_hub into audio hal group [emilchung]
-
-* device/xiaomi/sm8450-common
-55bc2698 sm8450-common: Update blobs from cupid V816.0.10.0.ULCMIXM [Arian]
-ca8c10ae sm8450-common: Add libwfdservice_shim for WFD [LuK1337]
-
-* device/xiaomi/unicorn
-d356775 unicorn: Enable elfchecks for camera libs [LuK1337]
-47a59e9 unicorn: Shim camera libs [Bruno Martins]
-9fae8c6 unicorn: Adjust override prop key names [LuK1337]
-
-* hardware/qcom-caf/common
-2692eb2 qcril-database: Add host tool to generate qcrilNr.db from migrations [Arian]
-27d45fb qcom: Declare hidl_vendor_qti_hardware_limits_interface [Bruno Martins]
-
-* hardware/qcom-caf/sm8150/display
-70c19dbbfd fixup! gralloc: fix RAW(10|12) alignment when using the camera [Skyblueborb]
-
-* hardware/xiaomi
-3a4813d interfaces: Add prebuilt hidl interfaces declarations [Arian]
-
-* lineage/hudson
-73f1755 Regenerate device dependency mappings [LineageOS Infra]
-2ca6a4c Bump tokay exp [LuK1337]
-
-* lineage/mirror
-7b62061 Updated to 06-Apr-2025 22:01 UTC [Tim Schumacher]
-
 * tools/buildscript
 a1511cd Copy images on release [Arian]
 3d833fc re-use project variable in telegram messages [Arian]
@@ -269,6 +261,12 @@ b059613 extract_utils: Add support to create filegroups of proprietary files [Ar
 52865d2 cupid: Drop prebuilt audio configs and blobs [Arian]
 b3b165f cupid: Enable elfchecks for camera libs [LuK1337]
 ee4f438 cupid: Shim camera libs [Bruno Martins]
+
+* vendor/xiaomi/mayfly
+d767566 mayfly: Move acdbdata to waipio_mtp and add missing ones [Arian]
+7789097 mayfly: Drop prebuilt audio configs and blobs [Arian]
+dc757d0 mayfly: Enable elfchecks for camera libs [LuK1337]
+1b628df mayfly: Shim camera libs [Bruno Martins]
 
 * vendor/xiaomi/sm8450-common
 d211cdf sm8450-common: libwfdservice_shim_v1 -> libwfdservice_shim [LuK1337]
@@ -297,6 +295,9 @@ d4bc391 compat: Get rid of libwfdservice_shim versioning [LuK1337]
 * hardware/qcom-caf/bt
 4ddafd4 bt: Remove CleanSpec.mk [Michael Bestas]
 
+* hardware/qcom-caf/common
+27d45fb qcom: Declare hidl_vendor_qti_hardware_limits_interface [Bruno Martins]
+
 * hardware/qcom-caf/msm8953/media
 0830d8af9 media: Remove CleanSpec.mk [Michael Bestas]
 
@@ -316,6 +317,7 @@ e1621443f9 display: Remove CleanSpec.mk [Michael Bestas]
 b25d89b25 media: Remove CleanSpec.mk [Michael Bestas]
 
 * hardware/qcom-caf/sm8150/display
+70c19dbbfd fixup! gralloc: fix RAW(10|12) alignment when using the camera [Skyblueborb]
 ae05a54563 display: Remove CleanSpec.mk [Michael Bestas]
 
 * hardware/qcom-caf/sm8150/media
