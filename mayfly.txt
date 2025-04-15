@@ -1,0 +1,326 @@
+====================
+     2025-04-15    
+====================
+* device/xiaomi/mayfly
+99ed25f mayfly: Update blobs and firmware from OS2.0.5.0.VLTCNXM [Arian]
+3dea1b8 mayfly: Enable ultrasound proximity sensor in audio hal [Arian]
+91ae22a mayfly: audio: Configure unprocessed handset mic [Arian]
+461755c mayfly: audio: Use EC enabled streams hotword capture and single mic in lp mode [Arian]
+45be767 mayfly: audio: Enable volume set param for compressed, pcm offload and voip streams [Arian]
+6726cad mayfly: audio: Enable speaker protection [Arian]
+d6d86f0 mayfly: audio: Bump speaker samplerate to 96000 [Arian]
+fe55247 mayfly: audio: Switch handset, speaker and wired audio out to 24/32bit [Arian]
+7b22388 mayfly: audio: Use speaker-dmic-endfire for calls [Arian]
+191a3a1 mayfly: audio: Use handset-dmic-endfire as default handset mic [Arian]
+24b7d1a mayfly: audio: Use deep buffer calibration for voice recognition streams [Arian]
+f537911 mayfly: audio: Change backend of some devices to tdm [Arian]
+3c33099 mayfly: audio: Apply xiaomi mixer path changes [Arian]
+ba62753 mayfly: Import audio configs from LA.VENDOR.1.0.r1-26900-WAIPIO.QSSI15.0 [Arian]
+54d8592 mayfly: Move acdbdata to waipio_mtp and add missing ones [Arian]
+e3cad95 mayfly: Drop prebuilt audio configs and blobs [Arian]
+de2dd1a mayfly: Update blobs and firmware from OS2.0.4.0.VLTCNXM [Arian]
+03b9da0 mayfly: Update display ids after display-drivers change [Adithya R]
+c649815 mayfly: Move displayconfig to vendor [Arian]
+72cacb6 mayfly: Drop unused xiaomi mdss display config [Arian]
+55f5e6a mayfly: light: Switch to shared_ptr to avoid memory leaks [Arian]
+8e1c58d Revert "mayfly: overlay: Drop brightness backlight/nit mapping" [Arian]
+
+* device/xiaomi/mondrian
+988fb69 Revert "mondrian: audio: Use deep buffer calibration for voice recognition streams" [Arian]
+b4f5f69 tmp marble things? [Arian]
+
+* hardware/qcom-caf/sm8450/audio/pal
+6a21c4fc Revert "Add some debugging" [Arian]
+dbc1a87e Revert "Add aw re value support" [Arian]
+59b3aadb Revert "fixup! Add aw re value support" [Arian]
+bb5d3b06 fixup! Add aw re value support [Arian]
+
+* vendor/xiaomi/mayfly
+ed46979 mayfly: Update blobs and firmware from OS2.0.5.0.VLTCNXM [Arian]
+
+====================
+     2025-04-14    
+====================
+* device/xiaomi/cupid
+b738523 cupid: Update display ids after display-drivers change [Adithya R]
+1bbc181 cupid: Drop unused xiaomi mdss display config [Arian]
+
+* device/xiaomi/marble
+1dd483b marble: audio: Configure unprocessed handset mic [Arian]
+e13825b marble: Update display ids after display-drivers change [Adithya R]
+3026228 marble: Move displayconfig to vendor [Arian]
+7dc6ea0 marble: Drop unused xiaomi mdss display config [Arian]
+8615e69 marble: Drop prebuilt libdisplayconfig.qti [Arian]
+
+* device/xiaomi/mondrian
+1882469 mondrian: Update display ids after display-drivers change [Adithya R]
+bc4931e mondrian: Drop unused xiaomi mdss display config [Arian]
+
+* device/xiaomi/sm8450-common
+888a6bea sm8450-common: audio: Add AUDIO_FORMAT_PCM_FLOAT support to usb_surround_sound and record_24 [Arian]
+7e0353ca sm8450-common: audio: Drop unused raw mixPort [Arian]
+86c7b164 sm8450-common: audio: configs: taro: remove direct flag for VOIP RX [Vaibhav Raut]
+2d9e06ce sm8450-common: audio: hal: Remove compress passthrough profile for HDMI [Faiz Nabi Kuchay]
+35e128b7 sm8450-common: audio: hal: set valid and supported channel mask for earpiece [Jaideep Sharma]
+
+* device/xiaomi/unicorn
+9b2d93b unicorn: Update display ids after display-drivers change [Adithya R]
+4aba868 unicorn: Drop unused xiaomi mdss display config [Arian]
+
+* device/xiaomi/zeus
+9e7c719 Reapply "tmp" [Arian]
+69ffcd6 Revert "tmp" [Arian]
+227dcb5 tmp [Arian]
+411efd6 mondrian: audio: Use EC enabled streams hotword capture and single mic in lp mode [Arian]
+02bf3ca mondrian: audio: Enable volume set param for compressed, pcm offload and voip streams [Arian]
+fd0bd94 mondrian: audio: Change backend of some devices to tdm [Arian]
+b2bfd69 zeus: audio: Use separate calibration for bluetooth a2dp low latency [Arian]
+5f74e23 unicorn: Update display ids after display-drivers change [Adithya R]
+7d86028 zeus: Drop unused xiaomi mdss display config [Arian]
+
+* frameworks/base
+ed3e555d9e2c Revert "fw/b: Add NotificationGroup class for use by lineage sdk system profiles" [Luca Stefani]
+
+* hardware/qcom-caf/sm8450/audio/pal
+a1f58186 Revert "Device: Add support to enable/disable awinic smart pa" [Arian]
+11423830 Add aw re value support [Arian]
+3d3220dc Add some debugging [Arian]
+85476074 Device: Add support to enable/disable awinic smart pa [Arian]
+1677783a Implement speaker protection profiles [Arian]
+bfb0857a SpeakerProtection: Send speaker operation mode to VI module [Arian]
+d93734e4 WIP implement ultrasound rampdown support [Arian]
+af49eb98 PayloadBuilder: Populate key vector for ultrasound RX [Arian]
+
+* hardware/qcom-caf/sm8450/audio/primary-hal
+2f737d4ec hal: Add ultrasound proximity support [Arian]
+
+* kernel/xiaomi/sm6150
+2e9a6452048d ARM64: dts: qcom: xiaomi: Move violet dtsi to subdir [Yumi Yukimura]
+9b344adcace6 Merge remote-tracking branch 'sm8150/lineage-20' into lineage-22.2 [basamaryan]
+
+* lineage-sdk
+a9f9b20d Move NotificationGroup to lineage-sdk [Luca Stefani]
+
+* lineage/hudson
+1bf9498 Nokia 660 tree is no longer hot trash! [Nolen Johnson]
+
+* lineage/wiki
+9b050b4e devices: Revive Nokia 660 [Nolen Johnson]
+ea84805d Promote mi845 [Bruno Martins]
+
+* vendor/lineage
+2c28c06f android: merge_dtbs: Respect oem specific extra ids [Arian]
+
+* vendor/xiaomi/cupid
+65d5a61 cupid: Update display ids after display-drivers change [Adithya R]
+7c5846f cupid: Drop unused xiaomi mdss display config [Arian]
+
+* vendor/xiaomi/marble
+2255c04 marble: Update display ids after display-drivers change [Adithya R]
+893f748 marble: Move displayconfig to vendor [Arian]
+c6e575f marble: Drop unused xiaomi mdss display config [Arian]
+fc608c0 marble: Drop prebuilt libdisplayconfig.qti [Arian]
+
+* vendor/xiaomi/mayfly
+d7d2c22 mayfly: Update blobs and firmware from OS2.0.4.0.VLTCNXM [Arian]
+11590a4 mayfly: Update display ids after display-drivers change [Adithya R]
+d891efe mayfly: Move displayconfig to vendor [Arian]
+5c8b7d8 mayfly: Drop unused xiaomi mdss display config [Arian]
+
+* vendor/xiaomi/mondrian
+8c0814b mondrian: Update display ids after display-drivers change [Adithya R]
+1bf6619 mondrian: Drop unused xiaomi mdss display config [Arian]
+
+* vendor/xiaomi/unicorn
+c140780 unicorn: Update display ids after display-drivers change [Adithya R]
+ab6933b unicorn: Drop unused xiaomi mdss display config [Arian]
+
+* vendor/xiaomi/zeus
+415e333 unicorn: Update display ids after display-drivers change [Adithya R]
+eba8daa zeus: Drop unused xiaomi mdss display config [Arian]
+
+====================
+     2025-04-13    
+====================
+* lineage-sdk
+dea5d334 health: Select correct provider on init [LuK1337]
+
+* lineage/hudson
+7698d14 Promote mi845 [Bruno Martins]
+ede96a2 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+a7d4d38 Updated to 12-Apr-2025 22:01 UTC [Tim Schumacher]
+
+* packages/apps/LineageParts
+1150e9c LineageParts: Improve text readability in the light settings dialog [Tommaso Fonda]
+
+====================
+     2025-04-12    
+====================
+* device/xiaomi/cupid
+f548593 Revert "cupid: overlay: Drop brightness backlight/nit mapping" [Arian]
+
+* device/xiaomi/marble
+5e1d05f marble: Update blobs and firmware from OS2.0.1.0.VMRMIXM [Arian]
+531b5eb marble: light: Switch to shared_ptr to avoid memory leaks [Arian]
+28ab3ff marble: audio: Use EC enabled streams hotword capture and single mic in lp mode [Arian]
+a9fbda0 marble: audio: Enable volume set param for compressed, pcm offload and voip streams [Arian]
+f62fe81 marble: audio: Enable speaker protection [Arian]
+c48e1ef marble: audio: Bump speaker samplerate to 96000 [Arian]
+28e3e32 marble: audio: Switch handset, speaker and wired audio out to 24/32bit [Arian]
+06ede06 marble: audio: Use speaker-dmic-endfire for calls [Arian]
+44c89fa marble: audio: Use handset-dmic-endfire as default handset mic [Arian]
+c6f9a1e marble: audio: Use deep buffer calibration for voice recognition streams [Arian]
+778837f marble: audio: Change backend of some devices to tdm [Arian]
+5e2152f marble: audio: Apply xiaomi mixer path changes [Arian]
+307b7c0 marble: Import audio configs from LA.VENDOR.1.0.r1-26900-WAIPIO.QSSI15.0 [Arian]
+fac1edd marble: Move acdbdata to ukee_mtp and drop unused ones [Arian]
+9f62306 marble: Drop prebuilt audio configs and blobs [Arian]
+c1d5f28 marble: overlay: Align auto brightness config comments with AOSP [Arian]
+3aa9fd9 marble: overlay: Commonize several auto brightness configs [Arian]
+571cefa marble: Remove unused Android.mk [Michael Bestas]
+4d8260d marble: move vibrator effect stream config to select [Cosmin Tanislav]
+475bb6b marble: Shim camera libs [Bruno Martins]
+4331322 marble: Enable elfchecks for camera libs [LuK1337]
+18baf75 marble: Adjust override prop key names [LuK1337]
+315503a Revert "marble: Disable stock fingerprint for now" [Arian]
+e8e6b0f fixup! marble: Switch to python extract-utils [Arian]
+
+* device/xiaomi/mondrian
+b3fa374 Revert "mondrian: overlay: Drop brightness backlight/nit mapping" [Arian]
+d1143e7 mondrian: Update blobs and firmware from OS2.0.5.0.VMNMIXM [Arian]
+dae73e8 mondrian: audio: Use EC enabled streams hotword capture and single mic in lp mode [Arian]
+cf4af7b mondrian: audio: Enable volume set param for compressed, pcm offload and voip streams [Arian]
+41d40ca mondrian: audio: Enable speaker protection [Arian]
+e5b68f6 mondrian: audio: Switch handset, speaker and wired audio out to 24/32bit [Arian]
+
+* device/xiaomi/unicorn
+b1d7f3f unicorn: Add missing AB flag to vm-bootsys.img [明宇]
+3e2fc40 Revert "unicorn: overlay: Drop brightness backlight/nit mapping" [Arian]
+
+* device/xiaomi/zeus
+7fbcccf Revert "zeus: overlay: Drop brightness backlight/nit mapping" [Arian]
+
+* kernel/qcom/sm8150
+7dc0bdd7736e Revert "mm: change max readahead size to 512KB" [Jaegeuk Kim]
+bbece1c2c1f7 leds: qpnp-vibrator-ldo: Fix return value of qpnp_vib_store_vmax() [me-cafebabe]
+
+* kernel/xiaomi/sm6150
+7dc0bdd7736e Revert "mm: change max readahead size to 512KB" [Jaegeuk Kim]
+bbece1c2c1f7 leds: qpnp-vibrator-ldo: Fix return value of qpnp_vib_store_vmax() [me-cafebabe]
+
+* kernel/xiaomi/sm8450
+7ab14c93f6da power: supply: qti_battery_charger: Add support for blank status and cctog xiaomi properties [Arian]
+074a4a1260eb power: supply: qti_battery_charger: Drop fixed wls start property for non-m81 chargers [Arian]
+d9bae1583bdc Revert "tmp goodix debug" [Arian]
+
+* lineage/hudson
+c360e34 hudson: Promote dre to 22.2 [Albert Tang]
+ef402a0 One last vanilla ice cream [Michael Bestas]
+
+* lineage/mirror
+79b3c19 Updated aosp-minimal to 12-Apr-2025 10:01 UTC [Tim Schumacher]
+3701fa4 Updated aosp-minimal to 11-Apr-2025 22:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+c2efb6e3 wiki: Use wider gap in "Upgrade to a higher version of LineageOS" label [LuK1337]
+2eec7eed wiki: Hide upgrade guides when uniq(versions -> vec<int>) <= 1 [LuK1337]
+3fa6be17 wiki: Merge math related plugins into jekyll-math [LuK1337]
+302c2d67 wiki: Add XT2083-3 to guamp variant 2 [LuK1337]
+7c2c1fc2 wiki: devices: Promote dre to 22.2 [Albert Tang]
+ac7be8bd wiki: Initial promotions to 22.2 [LuK1337]
+540dc4ba wiki: Add 22.2 [LuK1337]
+
+* vendor/xiaomi/marble
+d52cc61 marble: Update blobs and firmware from OS2.0.1.0.VMRMIXM [Arian]
+c13b43d marble: Move acdbdata to ukee_mtp and drop unused ones [Arian]
+c1b4b74 marble: Drop prebuilt audio configs and blobs [Arian]
+747ad60 marble: Shim camera libs [Bruno Martins]
+2598806 marble: Enable elfchecks for camera libs [LuK1337]
+
+====================
+     2025-04-11    
+====================
+* android
+3e32007 manifest: April 2025 Security Update [Michael Bestas]
+
+* build/make
+a9f9659db8 Merge tag 'android-15.0.0_r26' into staging/lineage-22.2_merge-android-15.0.0_r26 [Michael Bestas]
+
+* device/xiaomi/mondrian
+70d6372 mondrian: audio: Use speaker-dmic-endfire for calls [Arian]
+8224325 mondrian: audio: Use handset-dmic-endfire as default handset mic [Arian]
+8f2053c mondrian: audio: Use deep buffer calibration for voice recognition streams [Arian]
+1dc50bf mondrian: audio: Change backend of some devices to tdm [Arian]
+c404ae4 mondrian: audio: Apply xiaomi mixer path changes [Arian]
+
+* device/xiaomi/zeus
+f58a7af zeus: Update blobs and firmware from OS2.0.4.0.VLBMIXM [Arian]
+4a39a3c zeus: Enable ultrasound proximity sensor in audio hal [Arian]
+4187504 zeus: audio: Remove unsupported ultrasound device key vectors [Arian]
+fb7743c zeus: audio: Add ultrasound rx stream usecase key vector [Arian]
+1548a1e zeus: audio: Enable and configure external echo cancellation [Arian]
+0ec53ae zeus: audio: Switch handset, speaker and wired audio out to 24bit [Arian]
+e243a4e zeus: audio: Use speaker-dmic-endfire for calls [Arian]
+9603452 zeus: audio: Use handset-dmic-endfire as default handset mic [Arian]
+b767cba zeus: audio: Use deep buffer calibration for voice recognition streams [Arian]
+e003069 zeus: audio: Change backend of some devices to tdm [Arian]
+9e36d8e zeus: audio: Apply xiaomi mixer path changes [Arian]
+
+* frameworks/base
+5f1e902f62dc Merge tag 'android-15.0.0_r26' into staging/lineage-22.2_merge-android-15.0.0_r26 [Michael Bestas]
+
+* frameworks/native
+e6c237786b Merge tag 'android-15.0.0_r26' into staging/lineage-22.2_merge-android-15.0.0_r26 [Michael Bestas]
+
+* hardware/google/graphics/common
+ae5904b Merge tag 'android-15.0.0_r26' into staging/lineage-22.2_merge-android-15.0.0_r26 [Michael Bestas]
+
+* hardware/qcom-caf/common
+06ab24e qcom: Declare hidl_vendor_qti_hardware_sigma_miracast_interface [Bharath]
+
+* lineage/mirror
+6f2c748 Updated aosp-minimal to 11-Apr-2025 10:01 UTC [Tim Schumacher]
+
+* packages/apps/Camelot
+aa5e487 Use string "Share" for sharing, instead of "Send" [Chirayu Desai]
+
+* packages/apps/DocumentsUI
+96f7c36cd Merge tag 'android-15.0.0_r26' into staging/lineage-22.2_merge-android-15.0.0_r26 [Michael Bestas]
+
+* packages/apps/Settings
+4c979a6c9dd Merge tag 'android-15.0.0_r26' into staging/lineage-22.2_merge-android-15.0.0_r26 [Michael Bestas]
+
+* packages/services/Telecomm
+7465b153c Merge tag 'android-15.0.0_r26' into staging/lineage-22.2_merge-android-15.0.0_r26 [Michael Bestas]
+
+* packages/services/Telephony
+8ce662782 Merge tag 'android-15.0.0_r26' into staging/lineage-22.2_merge-android-15.0.0_r26 [Michael Bestas]
+
+* vendor/lineage
+a699cdec release: Sync flag_values with BP1A.250405.007 [Michael Bestas]
+bbf3a3c7 vars: April 2025 Security update [Chirayu Desai]
+
+====================
+     2025-04-10    
+====================
+* device/nubia/TP1803
+7090d32 TP1803: Lower DPI [Nolen Johnson]
+
+* hardware/qcom-caf/sm8650/display
+781c9338ff display: Remove smmu-proxy and ubwcp headers defaults [chandu078]
+2c620d7154 gralloc: Add UBWCPLib header [chandu078]
+
+* lineage/mirror
+2b38f48 Updated to 09-Apr-2025 22:01 UTC [Tim Schumacher]
+
+====================
+     2025-04-09    
+====================
+* hardware/lineage/interfaces
+a7d52a8 aidl: light: Add support for upstream LED timed mode [Michael Bestas]
+
+* lineage/mirror
+cdbb33e Updated aosp-minimal to 08-Apr-2025 22:02 UTC [Tim Schumacher]
+
