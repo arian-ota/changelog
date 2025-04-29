@@ -2,10 +2,7 @@
      2025-04-29    
 ====================
 * device/xiaomi/davinci
-7342129 davinci: Move nfc configs to vendor repo and add libnfc-nxp_RF.conf [Arian]
-17b3ddb davinci: overlay: Nfc: Add targetName and move to vendor [Luofan Chen]
-99398a8 davinci: overlay: Enable secure NFC functionality [Omkar Chandorkar]
-de55bd4 davinci: Import secure element and esepowermanager blobs [Arian]
+3661408 Revert "davinci: Build AIDL NXP NFC HAL" [Arian]
 
 * hardware/qcom-caf/sm8450/audio/pal
 abfb07f8 Implement speaker protection profiles [Arian]
@@ -15,6 +12,7 @@ abfb07f8 Implement speaker protection profiles [Arian]
 f27e1a409 hal: Add ultrasound proximity support [Arian]
 
 * kernel/xiaomi/sm6150
+a8bf27b72f9f Revert "arm64: configs: davinci: Use HWC version as SKU as well" [Arian]
 93bab1a03be1 arm64: configs: davinci: Use HWC version as SKU as well [Arian]
 
 ====================
