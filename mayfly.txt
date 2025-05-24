@@ -1,345 +1,824 @@
 ====================
-     2025-04-16    
+     2025-05-24    
 ====================
 * device/xiaomi/cupid
-6c856db cupid: Update display ids after display-drivers change [Adithya R]
-58ffc1f cupid: Drop unused xiaomi mdss display config [Arian]
-03edd99 cupid: Update blobs and firmware from OS2.0.1.0.VLCMIXM [Arian]
-6ff3cd7 cupid: Enable ultrasound proximity sensor in audio hal [Arian]
-4215c2e cupid: audio: Remove unsupported ultrasound device key vectors [Arian]
-a31f405 cupid: audio: Add ultrasound rx stream usecase key vector [Arian]
-816d08e cupid: audio: Enable and configure external echo cancellation [Arian]
-b3faac3 cupid: audio: Use EC enabled streams for hotword capture and single mic in lp mode [Arian]
-4418b8d cupid: audio: Use separate calibration for bluetooth a2dp low latency [Arian]
-dbd478c cupid: audio: Switch handset, speaker and wired audio out to 24bit [Arian]
-786b7af cupid: audio: Use default handset mic for raw streams [Arian]
-b72f1f9 cupid: audio: Use speaker-dmic-endfire for calls [Arian]
-0b7f2bf cupid: audio: Use handset-dmic-endfire as default handset mic [Arian]
-7ff841a cupid: audio: Use deep buffer calibration for voice recognition streams [Arian]
-e7266f8 cupid: audio: Change backend of some devices to tdm [Arian]
-4bfe041 cupid: audio: Apply xiaomi mixer path changes [Arian]
-9aa0369 cupid: Import audio configs from LA.VENDOR.1.0.r1-26900-WAIPIO.QSSI15.0 [Arian]
-101d946 cupid: Move acdbdata to waipio_mtp and add missing ones [Arian]
-0167cc2 cupid: Drop prebuilt audio configs and blobs [Arian]
+01b849d cupid: Commonize adreno gmu and sqe firmware [Arian]
+c56c2a5 cupid: Update blobs and firmware from OS2.0.3.0.VLCMIXM [Arian]
+
+* device/xiaomi/diting
+3d33d05 diting: Commonize adreno gmu and sqe firmware [Arian]
+88da4ed diting: Add missing AB flag to vm-bootsys.img [明宇]
+de186df diting: Update blobs and firmware from OS2.0.1.0.VLFMIXM [Arian]
+67cb9b1 diting: audio: Enable and configure external echo cancellation [Arian]
+5a52f8b diting: audio: Switch handset, speaker and wired audio out to 24bit [Arian]
+205e3d5 diting: audio: Use EC enabled streams for hotword capture and single mic in lp mode [Arian]
+beb6afe diting: audio: Use separate calibration for bluetooth a2dp low latency [Arian]
+db56bc4 diting: audio: Use default handset mic for raw streams [Arian]
+408cdbc diting: audio: Use speaker-dmic-endfire for calls [Arian]
+4886f83 diting: audio: Use handset-dmic-endfire as default handset mic [Arian]
+be0f0bc diting: audio: Use deep buffer calibration for voice recognition streams [Arian]
+63c1819 diting: audio: Change backend of some devices to tdm [Arian]
+17e4c21 diting: audio: Apply xiaomi mixer path changes [Arian]
+e48c060 diting: Import audio configs from LA.VENDOR.1.0.r1-26900-WAIPIO.QSSI15.0 [Arian]
+38d437e diting: Move acdbdata to waipio_mtp and add missing ones [Arian]
+02731ef diting: Drop prebuilt audio configs and blobs [Arian]
+ad0f1c5 diting: Adjust override prop key names [LuK1337]
+cc49d1b diting: overlay: remove redundant brightness config [linpeter]
+25c0f1c diting: overlay: Commonize several auto brightness configs [Arian]
+040afc0 diting: Enable elfchecks for camera libs [LuK1337]
+4b604fb diting: Shim camera libs [Bruno Martins]
+d2c255b diting: move vibrator effect stream config to select [Cosmin Tanislav]
+38adc60 diting: Enable xiaomi vibrator effects on common qti vibrator hal [Arian]
+ee93519 diting: overlay: Set keyguard bottom margin [Ayush Dubey]
+4bbbf03 diting: Set HWC-specific properties [Jens Reidel]
+da98191 diting: Remove unused Android.mk [Michael Bestas]
+d533815 diting: Commonize kernel module load list [Jens Reidel]
+77bbaea diting: overlay: Drop old config_udfps_illumination_transition_ms [Arian]
+61f8713 diting: overlay: Nfc: Add targetName and move to vendor [Luofan Chen]
+3ee9c11 diting: Use common lib_fixups [LuK1337]
+60c99c1 diting: Switch to python extract-utils [Arian]
 
 * device/xiaomi/marble
-eee6437 marble: Update display ids after display-drivers change [Adithya R]
-803dc4c marble: Move displayconfig to vendor [Arian]
-1b0ba18 marble: Drop unused xiaomi mdss display config [Arian]
-a1a8ec1 marble: Drop prebuilt libdisplayconfig.qti [Arian]
-6179628 marble: Update blobs and firmware from OS2.0.1.0.VMRMIXM [Arian]
-7429977 marble: audio: Enable volume set param for compressed, pcm offload and voip streams [Arian]
-675dfae marble: audio: Enable speaker protection [Arian]
-326ae57 marble: audio: Bump speaker samplerate to 96000 [Arian]
-6fba67f marble: audio: Switch handset, speaker and wired audio out to 24/32bit [Arian]
-6be88fe marble: audio: Use EC enabled streams for hotword capture and single mic in lp mode [Arian]
-9b98701 marble: audio: Use separate calibration for bluetooth a2dp low latency [Arian]
-35b4a4d marble: audio: Use default handset mic for raw streams [Arian]
-7af128e marble: audio: Use speaker-dmic-endfire for calls [Arian]
-3e2488d marble: audio: Use handset-dmic-endfire as default handset mic [Arian]
-8742e96 marble: audio: Use deep buffer calibration for voice recognition streams [Arian]
-71ced1d marble: audio: Change backend of some devices to tdm [Arian]
-0c55ce7 marble: audio: Apply xiaomi mixer path changes [Arian]
-a923e8d marble: Import audio configs from LA.VENDOR.1.0.r1-26900-WAIPIO.QSSI15.0 [Arian]
-1e5d9ec marble: Move acdbdata to ukee_mtp and drop unused ones [Arian]
-5a0a4d2 marble: Drop prebuilt audio configs and blobs [Arian]
+520c130 marble: Commonize adreno gmu and sqe firmware [Arian]
 
 * device/xiaomi/mayfly
-7edf8cb mayfly: Update blobs and firmware from OS2.0.5.0.VLTCNXM [Arian]
-d90ab06 mayfly: Enable ultrasound proximity sensor in audio hal [Arian]
-fa93ede mayfly: audio: Remove unsupported ultrasound device key vectors [Arian]
-0fcce85 mayfly: audio: Add ultrasound rx stream usecase key vector [Arian]
-08aa625 mayfly: audio: Enable volume set param for compressed, pcm offload and voip streams [Arian]
-0a9cf32 mayfly: audio: Enable speaker protection [Arian]
-55da3a9 mayfly: audio: Bump speaker samplerate to 96000 [Arian]
-dcbded5 mayfly: audio: Switch handset, speaker and wired audio out to 24/32bit [Arian]
-c350e47 mayfly: audio: Use EC enabled streams for hotword capture and single mic in lp mode [Arian]
-f46222c mayfly: audio: Use separate calibration for bluetooth a2dp low latency [Arian]
-f3d064e mayfly: audio: Use default handset mic for raw streams [Arian]
-2c1f2f5 mayfly: audio: Use speaker-dmic-endfire for calls [Arian]
-cd1f2f5 mayfly: audio: Use handset-dmic-endfire as default handset mic [Arian]
-5bfe58c mayfly: audio: Use deep buffer calibration for voice recognition streams [Arian]
-5163b92 mayfly: audio: Change backend of some devices to tdm [Arian]
-1ed8043 mayfly: audio: Apply xiaomi mixer path changes [Arian]
-109012b mayfly: Import audio configs from LA.VENDOR.1.0.r1-26900-WAIPIO.QSSI15.0 [Arian]
-8863546 mayfly: Move acdbdata to waipio_mtp and add missing ones [Arian]
-b8c8aaf mayfly: Drop prebuilt audio configs and blobs [Arian]
+ff69918 mayfly: Notify raw light sensor about display brightness/freq changes [Arian]
+88c661d Revert "mayfly: Introduce sensor notifier extension to report raw brightness" [Arian]
+e40b75c mayfly: Commonize adreno gmu and sqe firmware and drop unused zap firmware files [Arian]
 
 * device/xiaomi/mondrian
-278ac28 mondrian: Update display ids after display-drivers change [Adithya R]
-0b50d8c mondrian: Drop unused xiaomi mdss display config [Arian]
-c7e284d mondrian: Update blobs and firmware from OS2.0.5.0.VMNMIXM [Arian]
-0f20d48 mondrian: audio: Enable volume set param for compressed, pcm offload and voip streams [Arian]
-3a54ad3 mondrian: audio: Enable speaker protection [Arian]
-6f44ab1 mondrian: audio: Switch handset, speaker and wired audio out to 24/32bit [Arian]
-6dfa89d mondrian: audio: Use EC enabled streams for hotword capture and single mic in lp mode [Arian]
-3ca2657 mondrian: audio: Use separate calibration for bluetooth a2dp low latency [Arian]
-0745d77 mondrian: audio: Use default handset mic for raw streams [Arian]
-b3ba301 mondrian: audio: Use speaker-dmic-endfire for calls [Arian]
-e98dd01 mondrian: audio: Use handset-dmic-endfire as default handset mic [Arian]
-627bfb0 mondrian: audio: Use deep buffer calibration for voice recognition streams [Arian]
-8806af6 mondrian: audio: Change backend of some devices to tdm [Arian]
-cebc321 mondrian: audio: Apply xiaomi mixer path changes [Arian]
-88f64c3 mondrian: Import audio configs from LA.VENDOR.1.0.r1-26900-WAIPIO.QSSI15.0 [Arian]
-6089f08 mondrian: Move acdbdata to waipio_mtp and drop unused ones [Arian]
-3e20b09 mondrian: Drop prebuilt audio configs and blobs [Arian]
+a181e43 mondrian: Commonize adreno gmu and sqe firmware [Arian]
+
+* device/xiaomi/sm8450-common
+054d774b sm8450-common: Copy media related audio configs from audio hal [Arian]
+42189a97 sm8450-common: Commonize adreno gmu and sqe firmware [Arian]
+41a41fa6 sm8450-common: udfps: Disable lhbm when authentication is finished [Arian]
+e1e1cafc sm8450-common: udfps: s/hander/handler [Sebastiano Barezzi]
+55ddb607 sm8450-common: Update blobs from cupid OS2.0.3.0.VLCMIXM [Arian]
+64403a20 sm8450-common: Add dual AP/STA to wifi hal interface combinations [Arian]
+
+* device/xiaomi/thor
+e3d1131 thor: Commonize adreno gmu and sqe firmware [Arian]
+db6255b thor: Enable elfchecks for camera libs [LuK1337]
+39dd39f thor: Shim camera libs [Bruno Martins]
+88d7432 thor: Add dependency on sm8450-common [Arian]
+7b80885 thor: Strip debug sections of libxmi_high_dynamic_range_cdsp.so [Arian]
+d30bdb8 thor: Update blobs and firmware from OS2.0.12.0.VLACNXM [Jens Reidel]
+d8f4092 thor: Adjust override prop key names [LuK1337]
+6fd85b1 thor: Switch to PowerShare AIDL [Bruno Martins]
+a0e4b56 thor: Update display ids after display-drivers change [Adithya R]
+36abe52 thor: Drop unused xiaomi mdss display config [Arian]
+02633df thor: Enable ultrasound proximity sensor in audio hal [Arian]
+4d4e08f thor: audio: Remove unsupported ultrasound device key vectors [Arian]
+4207a5d thor: audio: Add ultrasound rx stream usecase key vector [Arian]
+20f8de9 thor: audio: Enable and configure external echo cancellation [Arian]
+675881c thor: audio: Switch handset, speaker and wired audio out to 24bit [Arian]
+a78cc60 thor: audio: Use EC enabled streams for hotword capture and single mic in lp mode [Arian]
+e257ba1 thor: audio: Use separate calibration for bluetooth a2dp low latency [Arian]
+03be9ed thor: audio: Use default handset mic for raw streams [Arian]
+3e7cecb thor: audio: Use speaker-dmic-endfire for calls [Arian]
+3e2b93a thor: audio: Use handset-dmic-endfire as default handset mic [Arian]
+9868b02 thor: audio: Use deep buffer calibration for voice recognition streams [Arian]
+46a328a thor: audio: Change backend of some devices to tdm [Arian]
+1e37dbb thor: audio: Apply xiaomi mixer path changes [Arian]
+9af6948 thor: Import audio configs from LA.VENDOR.1.0.r1-26900-WAIPIO.QSSI15.0 [Arian]
+734a4ae thor: Move acdbdata to waipio_mtp and add missing ones [Arian]
+612a89e thor: Drop prebuilt audio configs and blobs [Arian]
+a6124b2 thor: Add missing AB flag to vm-bootsys.img [明宇]
+644947f thor: overlay: Commonize several auto brightness configs [Arian]
+7604ba1 thor: overlay: remove redundant brightness config [linpeter]
+f7746ab thor: Remove unused Android.mk [Michael Bestas]
+9b2fcec thor: Mostly commonize kernel modules [Jens Reidel]
+1df29c5 thor: overlay: Drop old config_udfps_illumination_transition_ms [Arian]
+b8f632e thor: overlay: Nfc: Add targetName and move to vendor [Luofan Chen]
+6c8686c thor: Use common lib_fixups [LuK1337]
+78840d6 thor: Switch to python extract-utils [Arian]
 
 * device/xiaomi/unicorn
-d9130b2 unicorn: Update display ids after display-drivers change [Adithya R]
-e1576de unicorn: Drop unused xiaomi mdss display config [Arian]
-5841c34 unicorn: Update blobs and firmware from OS2.0.5.0.VLECNXM [Arian]
-6955087 unicorn: Enable ultrasound proximity sensor in audio hal [Arian]
-13d28da unicorn: audio: Remove unsupported ultrasound device key vectors [Arian]
-956a510 unicorn: audio: Add ultrasound rx stream usecase key vector [Arian]
-d5fd115 unicorn: audio: Enable and configure external echo cancellation [Arian]
-363f661 unicorn: audio: Switch handset, speaker and wired audio out to 24bit [Arian]
-1ff1a19 unicorn: audio: Use EC enabled streams for hotword capture and single mic in lp mode [Arian]
-84e08b7 unicorn: audio: Use separate calibration for bluetooth a2dp low latency [Arian]
-fe4b67b unicorn: audio: Use default handset mic for raw streams [Arian]
-8b5560c unicorn: audio: Use speaker-dmic-endfire for calls [Arian]
-42a932e unicorn: audio: Use handset-dmic-endfire as default handset mic [Arian]
-e92a8da unicorn: audio: Use deep buffer calibration for voice recognition streams [Arian]
-af137ee unicorn: audio: Change backend of some devices to tdm [Arian]
-637c6a3 unicorn: audio: Apply xiaomi mixer path changes [Arian]
-97764db unicorn: Import audio configs from LA.VENDOR.1.0.r1-26900-WAIPIO.QSSI15.0 [Arian]
-1050058 unicorn: Move acdbdata to waipio_mtp and add missing ones [Arian]
-1bf09c3 unicorn: Drop prebuilt audio configs and blobs [Arian]
+4001d07 unicorn: Commonize adreno gmu and sqe firmware [Arian]
 
 * device/xiaomi/zeus
-ca4bdc7b zeus: Update display ids after display-drivers change [Adithya R]
-c15f97a9 zeus: Drop unused xiaomi mdss display config [Arian]
-b6b27d7e zeus: Update blobs and firmware from OS2.0.4.0.VLBMIXM [Arian]
-85d07ac1 zeus: Enable ultrasound proximity sensor in audio hal [Arian]
-5012b8fc zeus: audio: Remove unsupported ultrasound device key vectors [Arian]
-84ed02cc zeus: audio: Add ultrasound rx stream usecase key vector [Arian]
-d186d326 zeus: audio: Enable and configure external echo cancellation [Arian]
-ebe96f8f zeus: audio: Switch handset, speaker and wired audio out to 24bit [Arian]
-d5109697 zeus: audio: Use EC enabled streams for hotword capture and single mic in lp mode [Arian]
-91ec248c zeus: audio: Use separate calibration for bluetooth a2dp low latency [Arian]
-85ac8ae5 zeus: audio: Use default handset mic for raw streams [Arian]
-925e82c8 zeus: audio: Use speaker-dmic-endfire for calls [Arian]
-9ade309e zeus: audio: Use handset-dmic-endfire as default handset mic [Arian]
-ca9f1f08 zeus: audio: Use deep buffer calibration for voice recognition streams [Arian]
-89260cf9 zeus: audio: Change backend of some devices to tdm [Arian]
-69bba649 zeus: audio: Apply xiaomi mixer path changes [Arian]
-53a2d8a3 zeus: Import audio configs from LA.VENDOR.1.0.r1-26900-WAIPIO.QSSI15.0 [Arian]
-16729197 zeus: Move acdbdata to waipio_mtp and add missing ones [Arian]
-651095d9 zeus: Drop prebuilt audio configs and blobs [Arian]
+ce2db95 zeus: Declare support for barometer and hifi sensors [Jens Reidel]
+eaae12f zeus: Commonize adreno gmu and sqe firmware [Arian]
 
-* hardware/qcom-caf/sm8450/audio/pal
-6a21c4fc Revert "Add some debugging" [Arian]
-dbc1a87e Revert "Add aw re value support" [Arian]
-59b3aadb Revert "fixup! Add aw re value support" [Arian]
-bb5d3b06 fixup! Add aw re value support [Arian]
-
-* vendor/xiaomi/cupid
-dec8178 cupid: Update display ids after display-drivers change [Adithya R]
-da148af cupid: Drop unused xiaomi mdss display config [Arian]
-e0504ee cupid: Update blobs and firmware from OS2.0.1.0.VLCMIXM [Arian]
-
-* vendor/xiaomi/mayfly
-ed46979 mayfly: Update blobs and firmware from OS2.0.5.0.VLTCNXM [Arian]
-
-====================
-     2025-04-15    
-====================
-* device/xiaomi/mayfly
-b0c37be mayfly: Update blobs and firmware from OS2.0.4.0.VLTCNXM [Arian]
-7cc6cd3 mayfly: Update display ids after display-drivers change [Adithya R]
-1b92e1b mayfly: Move displayconfig to vendor [Arian]
-de687ee mayfly: Drop unused xiaomi mdss display config [Arian]
-7235c11 mayfly: light: Switch to shared_ptr to avoid memory leaks [Arian]
-
-====================
-     2025-04-14    
-====================
-* device/xiaomi/sm8450-common
-888a6beaf sm8450-common: audio: Add AUDIO_FORMAT_PCM_FLOAT support to usb_surround_sound and record_24 [Arian]
-7e0353ca0 sm8450-common: audio: Drop unused raw mixPort [Arian]
-86c7b1643 sm8450-common: audio: configs: taro: remove direct flag for VOIP RX [Vaibhav Raut]
-2d9e06ce5 sm8450-common: audio: hal: Remove compress passthrough profile for HDMI [Faiz Nabi Kuchay]
-35e128b72 sm8450-common: audio: hal: set valid and supported channel mask for earpiece [Jaideep Sharma]
-
-* frameworks/base
-ed3e555d9e2c Revert "fw/b: Add NotificationGroup class for use by lineage sdk system profiles" [Luca Stefani]
-
-* hardware/qcom-caf/sm8450/audio/pal
-a1f58186 Revert "Device: Add support to enable/disable awinic smart pa" [Arian]
-11423830 Add aw re value support [Arian]
-3d3220dc Add some debugging [Arian]
-85476074 Device: Add support to enable/disable awinic smart pa [Arian]
-1677783a Implement speaker protection profiles [Arian]
-bfb0857a SpeakerProtection: Send speaker operation mode to VI module [Arian]
-d93734e4 WIP implement ultrasound rampdown support [Arian]
-af49eb98 PayloadBuilder: Populate key vector for ultrasound RX [Arian]
-
-* hardware/qcom-caf/sm8450/audio/primary-hal
-2f737d4ec hal: Add ultrasound proximity support [Arian]
-
-* kernel/xiaomi/sm6150
-2e9a6452048d ARM64: dts: qcom: xiaomi: Move violet dtsi to subdir [Yumi Yukimura]
-9b344adcace6 Merge remote-tracking branch 'sm8150/lineage-20' into lineage-22.2 [basamaryan]
-
-* lineage-sdk
-a9f9b20d Move NotificationGroup to lineage-sdk [Luca Stefani]
-
-* lineage/hudson
-1bf9498 Nokia 660 tree is no longer hot trash! [Nolen Johnson]
-7698d14 Promote mi845 [Bruno Martins]
-
-* lineage/wiki
-9b050b4e devices: Revive Nokia 660 [Nolen Johnson]
-ea84805d Promote mi845 [Bruno Martins]
-
-* vendor/lineage
-2c28c06f android: merge_dtbs: Respect oem specific extra ids [Arian]
-
-* vendor/xiaomi/marble
-2255c04 marble: Update display ids after display-drivers change [Adithya R]
-893f748 marble: Move displayconfig to vendor [Arian]
-c6e575f marble: Drop unused xiaomi mdss display config [Arian]
-fc608c0 marble: Drop prebuilt libdisplayconfig.qti [Arian]
-
-* vendor/xiaomi/mayfly
-d7d2c22 mayfly: Update blobs and firmware from OS2.0.4.0.VLTCNXM [Arian]
-11590a4 mayfly: Update display ids after display-drivers change [Adithya R]
-d891efe mayfly: Move displayconfig to vendor [Arian]
-5c8b7d8 mayfly: Drop unused xiaomi mdss display config [Arian]
-
-* vendor/xiaomi/mondrian
-8c0814b mondrian: Update display ids after display-drivers change [Adithya R]
-1bf6619 mondrian: Drop unused xiaomi mdss display config [Arian]
-
-* vendor/xiaomi/unicorn
-c140780 unicorn: Update display ids after display-drivers change [Adithya R]
-ab6933b unicorn: Drop unused xiaomi mdss display config [Arian]
-
-* vendor/xiaomi/zeus
-415e333 unicorn: Update display ids after display-drivers change [Adithya R]
-eba8daa zeus: Drop unused xiaomi mdss display config [Arian]
-
-====================
-     2025-04-13    
-====================
-* lineage-sdk
-dea5d334 health: Select correct provider on init [LuK1337]
-
-* lineage/hudson
-ede96a2 Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/mirror
-a7d4d38 Updated to 12-Apr-2025 22:01 UTC [Tim Schumacher]
-
-* packages/apps/LineageParts
-1150e9c LineageParts: Improve text readability in the light settings dialog [Tommaso Fonda]
-
-====================
-     2025-04-12    
-====================
-* device/xiaomi/marble
-bcf1af1 marble: light: Switch to shared_ptr to avoid memory leaks [Arian]
-9c258b5 marble: overlay: Align auto brightness config comments with AOSP [Arian]
-bc67f86 marble: overlay: Commonize several auto brightness configs [Arian]
-c84b975 marble: overlay: remove redundant brightness config [linpeter]
-0bc50be marble: Remove unused Android.mk [Michael Bestas]
-17a904b marble: move vibrator effect stream config to select [Cosmin Tanislav]
-bcc9be8 marble: Shim camera libs [Bruno Martins]
-b6963d9 marble: Enable elfchecks for camera libs [LuK1337]
-0e812e9 marble: Adjust override prop key names [LuK1337]
-
-* device/xiaomi/unicorn
-f99d65e unicorn: Add missing AB flag to vm-bootsys.img [明宇]
-
-* kernel/qcom/sm8150
-7dc0bdd7736e Revert "mm: change max readahead size to 512KB" [Jaegeuk Kim]
-bbece1c2c1f7 leds: qpnp-vibrator-ldo: Fix return value of qpnp_vib_store_vmax() [me-cafebabe]
-
-* kernel/xiaomi/sm6150
-7dc0bdd7736e Revert "mm: change max readahead size to 512KB" [Jaegeuk Kim]
-bbece1c2c1f7 leds: qpnp-vibrator-ldo: Fix return value of qpnp_vib_store_vmax() [me-cafebabe]
+* device/xiaomi/zizhan
+6090c85 zizhan: Commonize adreno gmu and sqe firmware [Arian]
+8569f57 zizhan: Declare support for hifi sensors [Jens Reidel]
+10f87f4 zizhan: Add dependency on sm8450-common [Arian]
+d32572b zizhan: Migrate sensor-notifer config to soong_config_set [Arian]
+a77e20b zizhan: move vibrator effect stream config to select [Cosmin Tanislav]
+668f3ad zizhan: overlay: remove redundant brightness config [linpeter]
+4e55a17 zizhan: Strip debug sections of libxmi_high_dynamic_range_cdsp.so [Arian]
+06b8f50 zizhan: Add missing AB flag to vm-bootsys.img [明宇]
+26dcbc3 zizhan: Update display ids after display-drivers change [Adithya R]
+f1119da zizhan: Import input port associations configuration from OS2.0.10.0.VLRCNXM [Arian]
+a400326 zizhan: Import display layout configuration from zizhan OS2.0.10.0.VLRCNXM [Arian]
+c75409b zizhan: Drop unused xiaomi mdss display config [Arian]
+444c2a1 zizhan: audio: Remove unsupported ultrasound device key vectors [Arian]
+81c9a8a zizhan: audio: Add ultrasound rx stream usecase key vector [Arian]
+82eecf0 zizhan: audio: Enable and configure external echo cancellation [Arian]
+2ee7400 zizhan: audio: Switch handset, speaker and wired audio out to 24bit [Arian]
+acc9012 zizhan: audio: Use EC enabled streams for hotword capture and single mic in lp mode [Arian]
+7ce4778 zizhan: audio: Use separate calibration for bluetooth a2dp low latency [Arian]
+6d037b1 zizhan: audio: Use default handset mic for raw streams [Arian]
+7cc7c8c zizhan: audio: Use speaker-dmic-endfire for calls [Arian]
+ccc3989 zizhan: audio: Use handset-dmic-endfire as default handset mic [Arian]
+2d1e33f zizhan: audio: Use deep buffer calibration for voice recognition streams [Arian]
+c9dc6d1 zizhan: audio: Change backend of some devices to tdm [Arian]
+90df498 zizhan: audio: Apply xiaomi mixer path changes [Arian]
+035041c zizhan: Import audio configs from LA.VENDOR.1.0.r1-26900-WAIPIO.QSSI15.0 [Arian]
+256c001 zizhan: Move acdbdata to waipio_mtp and drop unused ones [Arian]
 
 * kernel/xiaomi/sm8450
-7ab14c93f6da power: supply: qti_battery_charger: Add support for blank status and cctog xiaomi properties [Arian]
-074a4a1260eb power: supply: qti_battery_charger: Drop fixed wls start property for non-m81 chargers [Arian]
-d9bae1583bdc Revert "tmp goodix debug" [Arian]
+5e527d5c0bb1 modules.list.msm.waipio: Remove modules that depend on debugfs [Jens Reidel]
+a1576060e73e modules.list.msm.waipio: Remove modules which are not built [Arian]
+b25296dc2bbf modules.list.msm.waipio: Add hwid.ko to modules [Arian]
+b465ecc2beaf ARM64: configs: Add configs for Xiaomi SM8450 devices [Arian]
+d496b6cfc2dd soc: qcom: smp2p_sleepstate: Decrease wakeup event length [Arian]
+43460ea7f581 spi: spi-msm-geni: Increase xfer timeout [Arian]
+9fcb5e58d32f usb: typec: tcpc: Make it compile [Jens Reidel]
+43b5caf2c6ad include: qti_power_supply_iio: Import Xiaomi charger defines from yudi-t-oss [Jens Reidel]
+75613f20cb90 power: supply: xiaomi: bq27z561: Compare against correct enum [Jens Reidel]
+d9381c919c3b power: supply: Import xiaomi power supply drivers from yudi-t-oss [Jens Reidel]
+30d04bb95698 power: supply: qti_battery_charger: Add support for blank status and cctog xiaomi properties [Arian]
+35e155db136d power: supply: qti_battery_charger: Drop fixed wls start property for non-m81 chargers [Arian]
+c61288f90881 power: supply: qti_battery_charger: Return time to full in seconds [FlowerSea0208]
+b18a34f5760e power: supply: qti_battery_charger: Return charge counter in uAh [ArianK16a]
+b7e9c84622c6 power: supply: qti_battery_charger: Add missing type specifiers [Arian]
+dd5ffdbacaa6 power: supply: qti_battery_charger: Add support for 33W reverse wireless charging [Arian]
+e50e6f6f8c0b power: supply: qti_battery_charger: Add support for display port [Arian]
+abadc4cee4bb power: supply: qti_battery_charger: Add config to match m81 module [Arian]
+86583a0139dc power: supply: qti_battery_charger: Replace MI_CHARGE_PROPERTY with MI_WLS_REVERSE_CHG_ONLY [Arian]
+f25e3fe1e795 power: supply: xiaomi: Support WIRELESS_REVERSE_CLOSE [Arian]
+fb72d7f7b954 power: supply: qti_battery_charger: Update from garnet-t-oss [Arian]
+f255fc19d509 power: supply: qti_battery_charger: Import xiaomi changes [Arian]
+bd55c64f6e87 power: supply: qti_battery_charger: Create header for defines, enums and structs [Arian]
+e77cf3fdf816 power: reset: Import xiaomi changes from mayfly-s-oss [Arian]
+697757f95e9a usb: Import xiaomi changes from mayfly-s-oss [Arian]
+e47788698f37 soc: qcom: fsa4480: Add Xiaomi power supply integration [Jens Reidel]
+b0d3e061e104 soc: qcom: icnss2: Load xiaomis per-device tuned bdf and regdb files [Jens Reidel]
+b0f86cdbedbe net: wireless: cnss2: Handle not provisioned mac address [Arian]
+8e69f26d113a net: wireless: cnss2: Load xiaomis per-device tuned bdf and regdb files [Arian]
+aea66fe46a3d mtdoops: Compare mtd dump reasons against correct enum [Arian]
+a1dd8ff10629 Import xiaomi mtd changes from mayfly-s-oss [Arian]
+f6bf654becd8 media: rc: ir-spi: enlarge transmit buffer [Ivan Vecera]
+fd14cc6f4bfa media: Import xiaomi camera ispv3 driver [Jens Reidel]
+9563b39d80b9 thermal: Drop unused variables [Arian]
+09bcc1fa1088 thermal: mi_thermal_interface: Add prototypes to function declarations and add missing type specifiers [Arian]
+6e8d2e5530a4 thermal: Import xiaomi changes from ziyi-s-oss [Arian]
+ade9673050ed wl2866d: Add missing function prototypes [Arian]
+44cc9926ec2e misc: Rename ldo wl2866d driver [Arian]
+7d875d43b737 misc: Import wl2866d from mondrian-s-oss [Arian]
+d6591f543a85 regulator: Import wl2866d driver from mayfly-s-oss [Arian]
+aa1fa12965a4 input: touchscreen: xiaomi: Commonize touch mode get/set between ioctl and sysfs nodes [Arian]
+646330078d72 input: touchscreen: synaptics_s3907: Implement high touch polling rate support [Arian]
+9ea974cbdfb1 input: touchscreen: goodix_berlin_driver: Implement high touch polling rate support [Arian]
+6202bd380e6c input: touchscreen: xiaomi: Add sysfs node for report rate [Arian]
+b012298e44d7 input: touchscreen: xiaomi: Initialize suspended and fod_finger_state variables [Arian]
+d0c091254048 input: touchscreen: xiaomi: Keep gestures enabled in nonui mode [Arian]
+ec4b97b48e96 input: touchscreen: xiaomi: Transfer gesture state on fold events [Arian]
+1f6d1d5b4e3e input: touchscreen: xiaomi: Take over nonui mode handling [Arian]
+229c81b6556b input: touchscreen: fst2: Move to new xiaomi-touch driver [Arian]
+c8e30b922130 input: touchscreen: xiaomi: Add support for fold_status [Arian]
+36154b1b5d19 input: touchscreen: fts_spi: Register xiaomi touch as secondary if built as secondary module [Arian]
+d412ed4f5d8a input: touchscreen: xiaomi: Introduce fod_finger_state node [Arian]
+5d809e8b8c2f input: touchscreen: synaptics_s3907: Move to new minimal xiaomi-touch implementation [Arian]
+30828ac1fd3d input: touchscreen: fts_spi: Move to new minimal xiaomi-touch implementation [Arian]
+bb05c60598d9 input: touchscreen: goodix_berlin_driver: Implement gestures via xiaomi touch [Arian]
+493b6f09e397 input: touchscreen: xiaomi: Register panel event notifier [Arian]
+510f82297001 input: touchscreen: Add xiaomi touch driver as common user space interface [Arian]
+8ec60be2a2e1 input: synaptics_s3907: Reverse firmware selection logic from ziyi [Jens Reidel]
+975cad18d018 input: synaptics_s3907: Make it compile [Jens Reidel]
+dcbc8a2f3c4e input: synaptics_s3907: Remove spi pinctrl setup logic [Jens Reidel]
+4d16c8cdd930 input: touchscreen: Import synaptics_s3907 driver from yuechu-t-oss [Jens Reidel]
+a1d263f825fc input: touchscreen: fst2: Add xiaomi touchfeature [Jens Reidel]
+2ce3aefb58dd input: touchscreen: fst2: Adapt to match zizhan [Jens Reidel]
+2bc60d9e25c0 input: touchscreen: Import fst2 driver from google kernel modules and adjust build [Jens Reidel]
+edc334762ce9 input: touchscreen: goodix_berlin_driver: Add support to disable rawdata mode on thp enabled devices [Arian]
+2816ce93db0d input: touchscreen: goodix_berlin_driver: Introduce a power workqueue for suspend/resume [Arian]
+e1878d5d4f6a input: touchscreen: goodix_berlin_driver: Enter suspend in LP mode [Arian]
+9e2780b409e4 input: touchscreen: goodix_berlin_driver: Resume on early resume notification [Arian]
+8530d65e6d2a input: touchscreen: goodix_berlin_driver: Get IC type from matched compatible [Jens Reidel]
+06caebf4764e input: touchscreen: goodix_berlin_driver: Implement matching on touchscreen identification GPIO [Jens Reidel]
+64a1e6a0ea01 input: touchscreen: goodix_berlin_driver: Add support for super resolution IC configs [Jens Reidel]
+e15b17ee01c2 input: touchscreen: goodix_berlin_driver: Always enable panel event notifier [Jens Reidel]
+eb42eda66856 input: touchscreen: goodix_berlin_driver: Enable gesture module [Jens Reidel]
+a8347741a380 input: touchscreen: goodix_berlin_driver: Replace DEVICE_ATTR() with __ATTR() [Rohith Iyer]
+672731aecd00 input: touchscreen: goodix_berlin_driver: Replacing disable_irq with disable_irq_nosync [Simranjeet Thind]
+c643ffb84a79 input: touchscreen: goodix_berlin_driver: Sleep 100ms after reset operation [Yu Wu]
+dda41c839e63 input: touchscreen: fts_spi: Ignore fod down gestures in resumed state [Arian]
+b727f6e7b075 input: touchscreen: fts_spi: Add support for building as secondary touch [Jens Reidel]
+523517599c78 input: touchscreen: fts_spi: Disable gestures on nonui values 1 and 2 [Arian]
+b8d3c0e7ace2 input: touchscreen: fts_spi: Re-enable simplified support for thp fod downup [Arian]
+e43533bcde73 input: touchscreen: fts_spi: Only notify sysfs on double click events [Arian]
+8d70aeef1118 input: touchscreen: fts_spi: Cleanup fod related code [Arian]
+a6f068b15896 input: touchscreen: fts_spi: Implement single tap gesture command and drop aod_status [Arian]
+c4cbb3e1c072 input: touchscreen: fts_spi: Implement fod longpress command [Arian]
+b6d6ce03c587 input: touchscreen: fts_spi: Remove fod singletap and longpress gesture enabling based on fod_status [Arian]
+60cb9eff56a7 input: touchscreen: fts_spi: Cleanup low power gesture entering in fts_mode_handler [Arian]
+02c9bcfe2e90 input: touchscreen: fts_spi: Use fts_fingerprint_is_enable for fod_status checks where possible [Arian]
+5e697411b628 input: touchscreen: fts_spi: Get rid of factory code [Arian]
+20484549ad0f input: touchscreen: fts_spi: Add support for avdd-gpio [Jens Reidel]
+4e6744e0bfb2 input: touchscreen: fts_spi: Add support for diting [Jens Reidel]
+6e3c1c49a7eb input: touchscreen: fts_spi: Don't notify about fod presses when fod_status is off [Arian]
+16ff6f25fac8 input: touchscreen: fts_spi: Change enable_touch_raw argument to int [Arian]
+b6f6efc83506 input: touchscreen: fts_spi: Add prototypes to function declarations and add missing type specifiers [Arian]
+084f4c67c476 input: touchscreen: fts_spi: Fix potential buffer overflows [Arian]
+3129ac48e461 input: touchscreen: fts_spi: Remove unused get_slot_trackingId method [Arian]
+55a07575cb24 input: touchscreen: fts_spi: Change fts_enable_click_touch_raw to return int [Arian]
+816e6c84451c input: touchscreen: fts_spi: Move back to enable_clicktouch_raw [Arian]
+783a90aae070 input: touchscreen: fts_spi: Revert knock_data to touch raw data [Arian]
+b6462812f11c input: touchscreen: fts_spi: Implement THP support [Arian]
+11c813085748 input: touchscreen: fts_spi: Update headers according to driver changes [Arian]
+eec7c232ca1e input: touchscreen: fts_spi: Add missing cmd_fifo device attr [Arian]
+fb74b09d4ae0 input: touchscreen: fts_spi: Guard touch_irq_boost [Arian]
+cc3c1543ee25 input: touchscreen: Import fts_spi driver from mayfly-s-oss [Arian]
+3ef0865b614d input: misc: qcom-hv-haptics: Add support for garnet [Jens Reidel]
+40852c79aca8 input: misc: qcom-hv-haptics: Import changes from yudi-t-oss [Jens Reidel]
+8764a0baab0a input: misc: Import aw8622x_haptic driver from ziyi-s-oss [Jens Reidel]
+e81f519baf61 input: misc: aw86927_haptic: Rename driver to avoid load failure along aw8622x_haptic [Arian]
+0812782a89b7 input: misc: aw86927_haptic: Change aw86297 compatible to include the actual name [Arian]
+5f845ad7a720 input: misc: aw86927_haptic: Replace mtk with qcom properties [TheStrechh]
+98ad050786e2 input: misc: Imort aw86927_haptic driver from mayfly-s-oss [Arian]
+4016203aa75b input: Import stmvl53l5 driver from garnet-t-oss [Jens Reidel]
+89000cb5e634 input: fingerprint: goodix_tee: Fix duplicate input_free_device call [Jens Reidel]
+5e7e896b7d3b input: fingerprint: goodix_tee: Add support for more supply configs [Jens Reidel]
+eb425cb602ff input: fingerprint: goodix_tee: Disable Navigation events and key maps [Divyanshu-Modi]
+bf4341bb8e21 input: fingerprint: Add goodix_tee driver [Jens Reidel]
+47b586a6376b input: fingerprint: Import fpc_1540 from marble-s-oss [Jens Reidel]
+0755bdf1763a misc: Introduce simplified xiaomi hardware identification driver [Arian]
 
-* lineage/hudson
-c360e34 hudson: Promote dre to 22.2 [Albert Tang]
-ef402a0 One last vanilla ice cream [Michael Bestas]
+* vendor/xiaomi/cupid
+33d82cd cupid: Commonize adreno gmu and sqe firmware [Arian]
+6e11e19 cupid: Update blobs and firmware from OS2.0.3.0.VLCMIXM [Arian]
 
-* lineage/mirror
-79b3c19 Updated aosp-minimal to 12-Apr-2025 10:01 UTC [Tim Schumacher]
-3701fa4 Updated aosp-minimal to 11-Apr-2025 22:01 UTC [Tim Schumacher]
+* vendor/xiaomi/diting
+f806a6c diting: Initial import from OS2.0.1.0.VLFMIXM [Arian]
+1a29a9f diting: Set up LFS [Michael Bestas]
+a440f84 diting: Initial empty repository [Arian]
+
+* vendor/xiaomi/mayfly
+ba1d4e4 mayfly: Initial import from OS2.0.5.0.VLTCNXM [Arian]
+6997dd6 mayfly: Set up LFS [Michael Bestas]
+a97f5d7 mayfly: Initial empty repository [Arian]
+
+* vendor/xiaomi/mondrian
+4081869 mondrian: Commonize adreno gmu and sqe firmware [Arian]
+
+* vendor/xiaomi/sm8450-common
+3ce97b1 sm8450-common: Commonize adreno gmu and sqe firmware [Arian]
+428ee88 sm8450-common: Update blobs from cupid OS2.0.3.0.VLCMIXM [Arian]
+
+* vendor/xiaomi/thor
+ce1810a thor: Initial import from OS2.0.12.0.VLACNXM [Arian]
+9a48568 thor: Set up LFS [Michael Bestas]
+23c9927 thor: Initial empty repository [Arian]
+
+* vendor/xiaomi/unicorn
+e379b41 unicorn: Intial import from OS2.0.5.0.VLECNXM [Arian]
+90561fd unicorn: Set up LFS [Michael Bestas]
+4aa607f unicorn: Initial empty repository [Arian]
+
+* vendor/xiaomi/zeus
+a92d620 zeus: Initial import from OS2.0.4.0.VLBMIXM [Arian]
+12f55de zeus: Set up LFS [Michael Bestas]
+a006469 zeus: Initial empty repository [Arian]
+
+* vendor/xiaomi/zizhan
+7185e70 zizhan: Commonize adreno gmu and sqe firmware [Arian]
+567a954 zizhan: Initial import from OS2.0.10.0.VLRCNXM [Arian]
+8b6f8e9 zizhan: Set up LFS [Michael Bestas]
+c4d7f9e zizhan: Initial empty repository [Arian]
+
+====================
+     2025-05-23    
+====================
+* device/qcom/sepolicy_vndr/sm8450
+c9a013cd9 Revert "sepolicy_vndr: Allow USB HAL to access udc sysfs nodes" [Michael Bestas]
+
+* hardware/qcom-caf/sm8450/audio/pal
+81cb5878 Session: Allow to set initial master gain for stereo streams [Arian]
+aa487ecb Session: Correct volume payload size [Arian]
+73283996 PayloadBuilder: Populate key vector for ultrasound RX [Arian]
+
+* hardware/qcom-caf/sm8450/audio/primary-hal
+26beab5a7 hal: Add ultrasound proximity support [Arian]
+
+* hardware/qcom-caf/sm8650/audio/pal
+15de8ad1 pal: fix constructor reordering [Cosmin Tanislav]
+0b9aaf4b pal: fix redefinition of MS_PER_SEC / US_PER_SEC [Cosmin Tanislav]
+252a4c8d pal: update SoundTriggerUtils.h [Cosmin Tanislav]
+864ba0a1 pal: update VoiceUIInterface.h [Cosmin Tanislav]
+a1f4a481 pal: add reversed VUIInterfaceProxy.h [Cosmin Tanislav]
+16270b27 Partially revert "pal: add support for library based vui interfaces" [Cosmin Tanislav]
+2a167809 pal: fix usage of enum as boolean [Cosmin Tanislav]
+48aa67b2 pal: fix usage of typedef without a name [Cosmin Tanislav]
+4f99041d pal: fix redefinition of epoll_event [Cosmin Tanislav]
+c57a8c4d pal: disable audio feature stats support [Cosmin Tanislav]
+62e2b06b pal: disable mem logger support [Cosmin Tanislav]
+16559c56 pal: Allow opting-out for libar-pal and pal_ipc_server [Bruno Martins]
+582b4bd2 Add peripheralstate and libvui_dmgr headers [anonymix007]
+fb7e0594 Include generated kernel headers for adsp_sleepmon.h [Cosmin Tanislav]
+445b2e44 Fix compilation errors [Bruno Martins]
+7328ea62 Add missing sampling rates [Cosmin Tanislav]
+79b4a80b Add capi_v2.h from AudioReach [Cosmin Tanislav]
+d05c1434 Add kvh2xml.h from AudioReach [Cosmin Tanislav]
+d2c587be Add missing libarosal_headers dependencies [Cosmin Tanislav]
+f65fdb05 Disable 32 bit variant of libar-pal for 64 bit audio [Arian]
+0f5fddf9 Disable 32 bit variants of audio libraries for 64 bit audio targets [Arian]
+3fe3cc82 pal: Unset LOCAL_USE_VNDK [Bruno Martins]
+9616479a Revert "pal: Use ListenSoundModelLib.h from header library" [Albert Tang]
+587cdb99 pal: Expose more headers under libarpal_headers module [SGCMarkus]
+c155bbd5 ipc: Update own paths [Bruno Martins]
+49e496e6 libpalclient: Do not error on unused parameters, variables and format [SGCMarkus]
+
+* hardware/qcom-caf/sm8650/audio/primary-hal
+e15acd263 adsprpcd: Separate rc from service [chandu078]
+cddecdcb3 hal: Guard primary audio HAL in case target provides prebuilt [Bruno Martins]
+b9ff64f46 Disable 32 bit variants of audio libraries for 64 bit audio targets [Arian]
+99c2d17a2 hal: Replace direct pid writes with setting task profiles for audio interfaces [Suren Baghdasaryan]
+b43d4fd47 hal: Add dependency on libarpal_headers [Bruno Martins]
+0acb79a02 hal: Enforce -Wno-format [chandu078]
+14ba768df adsprpcd: Import missing string.h header [chandu078]
+
+* hardware/qcom-caf/wlan
+d1a10c3 Merge tag 'LA.VENDOR.14.3.0.r1-20500-lanai.QSSI15.0' into staging/lineage-22.2_merge-LA.VENDOR.14.3.0.r1-20500-lanai.QSSI15.0 [Michael Bestas]
+
+* hardware/xiaomi
+3bb5582 udfpshandler: Add authentication succeeded/failed notifications [Arian]
+0b8722e udfpshandler: Provide default noop implementations of functions [Arian]
 
 * lineage/wiki
-c2efb6e3 wiki: Use wider gap in "Upgrade to a higher version of LineageOS" label [LuK1337]
-2eec7eed wiki: Hide upgrade guides when uniq(versions -> vec<int>) <= 1 [LuK1337]
-3fa6be17 wiki: Merge math related plugins into jekyll-math [LuK1337]
-302c2d67 wiki: Add XT2083-3 to guamp variant 2 [LuK1337]
-7c2c1fc2 wiki: devices: Promote dre to 22.2 [Albert Tang]
-ac7be8bd wiki: Initial promotions to 22.2 [LuK1337]
-540dc4ba wiki: Add 22.2 [LuK1337]
+040925b5 wiki: Make note about collecting logs more clear and prominent [Inhishonor]
+c1ff31b4 wiki: Add a note about cloning from gerrit [Inhishonor]
+2636dd1c wiki: Sync list of supported Adreno GPUs with wikipedia [Jens Reidel]
+58504968 wiki: Remove usage of not existing Kryo 780 cpu [Arian]
 
-* vendor/xiaomi/marble
-d52cc61 marble: Update blobs and firmware from OS2.0.1.0.VMRMIXM [Arian]
-c13b43d marble: Move acdbdata to ukee_mtp and drop unused ones [Arian]
-c1b4b74 marble: Drop prebuilt audio configs and blobs [Arian]
-747ad60 marble: Shim camera libs [Bruno Martins]
-2598806 marble: Enable elfchecks for camera libs [LuK1337]
+* vendor/xiaomi/renoir
+581c3b2 renoir: Enable ELF Checks where is possible [Giovanni Ricca]
 
 ====================
-     2025-04-11    
+     2025-05-22    
 ====================
 * android
-3e32007 manifest: April 2025 Security Update [Michael Bestas]
+5aacf38 qcom: Track audioreach graphservices repo for kalama [Bruno Martins]
 
-* build/make
-a9f9659db8 Merge tag 'android-15.0.0_r26' into staging/lineage-22.2_merge-android-15.0.0_r26 [Michael Bestas]
+* device/xiaomi/lisa
+71e57a7 lisa: Update blobs to OS2.0.1.0.UKOMIXM [Giovanni Ricca]
 
-* frameworks/base
-5f1e902f62dc Merge tag 'android-15.0.0_r26' into staging/lineage-22.2_merge-android-15.0.0_r26 [Michael Bestas]
-
-* frameworks/native
-e6c237786b Merge tag 'android-15.0.0_r26' into staging/lineage-22.2_merge-android-15.0.0_r26 [Michael Bestas]
-
-* hardware/google/graphics/common
-ae5904b Merge tag 'android-15.0.0_r26' into staging/lineage-22.2_merge-android-15.0.0_r26 [Michael Bestas]
-
-* hardware/qcom-caf/common
-06ab24e qcom: Declare hidl_vendor_qti_hardware_sigma_miracast_interface [Bharath]
+* lineage/hudson
+b555490 Vice City [Michael Bestas]
+d72b25c More Gs [Michael Bestas]
+12bf515 hudson: Revive oscar [Vivekachooz]
 
 * lineage/mirror
-6f2c748 Updated aosp-minimal to 11-Apr-2025 10:01 UTC [Tim Schumacher]
+1001292 Updated to 21-May-2025 22:01 UTC [Tim Schumacher]
 
-* packages/apps/Camelot
-aa5e487 Use string "Share" for sharing, instead of "Send" [Chirayu Desai]
+* lineage/wiki
+26fa657a wiki: Add miami [Michael Bestas]
+efef7eb1 wiki: Add some moto sm6375 devices [Michael Bestas]
+01759ae5 wiki: Add links to Discord in all `Get Assistance` sections [Inhishonor]
+bb399d02 wiki: Fix punctuation in faq [Inhishonor]
+5a2f5987 wiki: add note that github previews only work on main branch [Inhishonor]
+e1c7b6c5 wiki: Revive oscar [Vivekachooz]
 
-* packages/apps/DocumentsUI
-96f7c36cd Merge tag 'android-15.0.0_r26' into staging/lineage-22.2_merge-android-15.0.0_r26 [Michael Bestas]
-
-* packages/apps/Settings
-4c979a6c9dd Merge tag 'android-15.0.0_r26' into staging/lineage-22.2_merge-android-15.0.0_r26 [Michael Bestas]
-
-* packages/services/Telecomm
-7465b153c Merge tag 'android-15.0.0_r26' into staging/lineage-22.2_merge-android-15.0.0_r26 [Michael Bestas]
-
-* packages/services/Telephony
-8ce662782 Merge tag 'android-15.0.0_r26' into staging/lineage-22.2_merge-android-15.0.0_r26 [Michael Bestas]
-
-* vendor/lineage
-a699cdec release: Sync flag_values with BP1A.250405.007 [Michael Bestas]
-bbf3a3c7 vars: April 2025 Security update [Chirayu Desai]
+* vendor/xiaomi/lisa
+7b45bd5 lisa: Update blobs to OS2.0.1.0.UKOMIXM [Giovanni Ricca]
 
 ====================
-     2025-04-10    
+     2025-05-21    
 ====================
-* device/nubia/TP1803
-7090d32 TP1803: Lower DPI [Nolen Johnson]
+* device/xiaomi/sm8350-common
+f8ec030a sm8350-common: Migrate Lineage Health to soong_config_set [Bruno Martins]
+7870caaa sm8350-common: Migrate powershare to soong_config_set [Michael Bestas]
+f2da317a sm8350-common: gps: Remove CleanSpec.mk [Michael Bestas]
+4682d90b sm8350-common: qcril-database: Add migration to turn off redir_party_num [Arian]
 
-* hardware/qcom-caf/sm8650/display
-781c9338ff display: Remove smmu-proxy and ubwcp headers defaults [chandu078]
-2c620d7154 gralloc: Add UBWCPLib header [chandu078]
+* lineage/wiki
+e1b060a2 devices: moto_msm8998: Remove quirks! [Nolen Johnson]
 
-* lineage/mirror
-2b38f48 Updated to 09-Apr-2025 22:01 UTC [Tim Schumacher]
+* packages/apps/Twelve
+3a9bc09 Twelve: Use TwelveRenderersFactory also for local player [Luca Stefani]
+ae26c35 Twelve: Go back to default LoadControl [Luca Stefani]
+d8525b1 Twelve: Add back MIDI support [Luca Stefani]
+dbd8eb9 Twelve: Let ExoPlayer generate an audio session ID for us [Sebastiano Barezzi]
+12701a5 Twelve: Go back to default renderers factory [Sebastiano Barezzi]
+d9d1270 Twelve: Update AGP to 8.10.0 [Luca Stefani]
+
+====================
+     2025-05-20    
+====================
+* device/qcom/sepolicy
+f68f84eb Merge tag 'LA.QSSI.15.0.r1-15400-qssi.0' into staging/lineage-22.2_merge-LA.QSSI.15.0.r1-15400-qssi.0 [Michael Bestas]
+
+* device/qcom/sepolicy_vndr/sm8450
+92847aac1 Merge tag 'LA.VENDOR.1.0.r1-27400-WAIPIO.QSSI16.0' into staging/lineage-22.2_merge-LA.VENDOR.1.0.r1-27400-WAIPIO.QSSI16.0 [Michael Bestas]
+
+* device/xiaomi/cupid
+6474b24 cupid: Enable ultrasound proximity sensor in audio hal [Arian]
+03c700d cupid: Group blob fixups adding libprocessgroup_shim [Arian]
+
+* device/xiaomi/marble
+92d497c marble: Add dependency on sm8450-common [Arian]
+
+* device/xiaomi/mayfly
+7c8110f mayfly: Add dependency on sm8450-common [Arian]
+a007833 mayfly: move vibrator effect stream config to select [Cosmin Tanislav]
+9cd163c mayfly: Strip debug sections of libxmi_high_dynamic_range_cdsp.so [Arian]
+2a9ad88 mayfly: Increase initial stereo master volume [Arian]
+5acf221 mayfly: Migrate sensor-notifer config to soong_config_set [Arian]
+df3c111 mayfly: Switch to PowerShare AIDL [Bruno Martins]
+1deaf5d mayfly: Update blobs and firmware from OS2.0.5.0.VLTCNXM [Arian]
+9d1d5ee mayfly: Enable ultrasound proximity sensor in audio hal [Arian]
+2658414 mayfly: Add aw_cali.bin firmware symlink [dianlujitao]
+b952865 mayfly: audio: Remove unsupported ultrasound device key vectors [Arian]
+8c4b8dc mayfly: audio: Add ultrasound rx stream usecase key vector [Arian]
+b0880af mayfly: audio: Enable volume set param for compressed, pcm offload and voip streams [Arian]
+
+* device/xiaomi/mondrian
+6daf034 mondrian: Increase initial stereo master volume [Arian]
+3cb3874 mondrian: Group blob fixups adding libprocessgroup_shim [Arian]
+
+* device/xiaomi/renoir
+1c42f4c renoir: Enable ELF Checks where is possible [Giovanni Ricca]
+
+* device/xiaomi/sm8350-common
+06b38176 sm8350-common: Generate qcrilNr.db during build [Arian]
+d9d8ba43 sm8350-common: Add libwfdservice_shim for WFD [LuK1337]
+7b444f56 sm8350-common: Update blobs from haydn V816.0.18.0.UKKMIXM [Arian]
+
+* device/xiaomi/sm8450-common
+6d768aca sm8450-common: gps: Remove CleanSpec.mk [Michael Bestas]
+
+* device/xiaomi/unicorn
+9dd76ee unicorn: Add dependency on sm8450-common [Arian]
+3940298 unicorn: Strip debug sections of libxmi_high_dynamic_range_cdsp.so [Arian]
+
+* device/xiaomi/zeus
+d2fcc74 zeus: Add dependency on sm8450-common [Arian]
+d763032 zeus: Strip debug sections of libxmi_high_dynamic_range_cdsp.so [Arian]
+
+* device/xiaomi/ziyi
+15c008b ziyi: Add dependency on sm8450-common [Arian]
+5b97793 ziyi: Strip debug sections of libxmi_high_dynamic_range_cdsp.so [Arian]
+194ef76 ziyi: Update blobs and firmware from OS2.0.3.0.VLLMIXM [Jens Reidel]
+4e46e8b ziyi: Update display ids after display-drivers change [Adithya R]
+9616ed2 ziyi: Drop unused xiaomi mdss display configs [Arian]
+6e2a268 ziyi: Add aw_cali.bin firmware symlink [dianlujitao]
+d0124f9 ziyi: audio: Enable volume set param for compressed, pcm offload and voip streams [Arian]
+cecb317 ziyi: audio: Switch handset, speaker and wired audio out to 24/32bit [Arian]
+8b2fa23 ziyi: audio: Use EC enabled streams for hotword capture and single mic in lp mode [Arian]
+6b3e4ba ziyi: audio: Use separate calibration for bluetooth a2dp low latency [Arian]
+37aaba9 ziyi: audio: Use speaker-dmic-endfire for calls [Arian]
+c58814b ziyi: audio: Use handset-dmic-endfire as default handset mic [Arian]
+5a5f697 ziyi: audio: Use deep buffer calibration for voice recognition streams [Arian]
+d626778 ziyi: audio: Change backend of some devices [Arian]
+62d617e ziyi: audio: Apply xiaomi mixer path changes [Arian]
+067f4c1 ziyi: Import audio configs from LA.VENDOR.1.0.r1-26900-WAIPIO.QSSI15.0 [Arian]
+b996420 ziyi: Move acdbdata to waipio_mtp and add missing ones [Arian]
+1fb9010 ziyi: Drop prebuilt audio configs and blobs [Arian]
+b11383d ziyi: overlay: Commonize several auto brightness configs [Arian]
+897f992 ziyi: overlay: remove redundant brightness config [linpeter]
+6c142ed ziyi: Enable elfchecks for camera libs [LuK1337]
+437c86d ziyi: Shim camera libs [Bruno Martins]
+7c3dd57 ziyi: Adjust override prop key names [LuK1337]
+e652662 ziyi: overlay: Set keyguard bottom margin [Ayush Dubey]
+31cdc75 ziyi: Set HWC-specific properties [Jens Reidel]
+d9f0cb7 ziyi: Remove unused Android.mk [Michael Bestas]
+647df3e ziyi: Commonize a few kernel modules [Jens Reidel]
+c654125 ziyi: overlay: Drop old config_udfps_illumination_transition_ms [Arian]
+98b1589 ziyi: overlay: Nfc: Add targetName and move to vendor [Luofan Chen]
+302ee00 ziyi: Use common lib_fixups [LuK1337]
+cd50855 ziyi: Switch to python extract-utils [Arian]
+aba495b ziyi: overlay: Update pixel pitch [Beverly]
+a8818b7 ziyi: Move to Xiaomi fingerprint AIDL [basamaryan]
+930cd76 ziyi: Update blobs and firmware from V816.0.11.0.ULLMIXM [Jens Reidel]
+072f63a ziyi: Remove 32-bit libQnnHtpV69Skel from vendor/lib64/camera [Arian]
+8a4f9f4 ziyi: Switch to source-built fx.tunnel interface [FlowerSea0208]
+0f7b715 ziyi: Disable ELF checks for some camera libraries [Arian]
+e868590 ziyi: Move sensors hals.conf back to vendor repo [Arian]
+00d1686 ziyi: Sync extract scripts with templates [Michael Bestas]
+ad63488 ziyi: Libraries are now automatically added to PRODUCT_PACKAGES [Michael Bestas]
+233087d ziyi: Skip dependencies which aren't defined in .bp [Cosmin Tanislav]
+8d938f5 ziyi: Disable elf checks for some audio libraries [Arian]
+d37f9f2 ziyi: Commonize most audio blobs [Arian]
+3bb2544 ziyi: Fix sonames of extracted blobs [Arian]
+75f7284 ziyi: Add vendor soong imports to extract [Aaron Kling]
+a797d20 ziyi: Commonize audio related media_codecs [Arian]
+bfdd33f ziyi: Patch libcamximageformatutils to get rid of ndk_platform qti display config dependency [Arian]
+72ea05a ziyi: overlay: Add physical button/sensor locations [Josh Tsuji]
+d1e1983 ziyi: overlay: Move UDFPS enroll radius to settings [Omkar Chandorkar]
+caf8da3 ziyi: Partially revert "Move to QTI health AIDL service" [Sebastiano Barezzi]
+e61c659 ziyi: Drop prebuilt libmemunreachable.so [Arian]
+c4b1878 ziyi: Drop some audio libs which are built from source now [Arian]
+c451999 ziyi: Get rid of 32 bit blobs [Arian]
+16a4451 ziyi: Don't provide a module for libssccalapi@2.0 [Arian]
+e85369c ziyi: Introduce sensor notifier extension to report raw brightness [Arian]
+a1cafa9 ziyi: Drop xiaomi citsensorservice [Arian]
+8e48626 ziyi: Drop COMMON_LUNCH_CHOICES [Michael Bestas]
+9ba996a ziyi: Add chinese camera sensor libraries [Jens Reidel]
+6a8668f ziyi: Update blobs from V816.0.6.0.ULLMIXM [Jens Reidel]
+385eb08 ziyi: overlay: Enable secure NFC functionality [Omkar Chandorkar]
+a21b669 ziyi: Add missing kvh2xml.xml [Arian]
+be81dfc ziyi: Update blobs from V816.0.5.0.ULLEUXM [Jens Reidel]
+f36bb5e ziyi: Decommonize NFC configs [Jens Reidel]
+2360bda ziyi: Add regulator, touch, haptics and audio kernel modules [Arian]
+9e065b6 ziyi: Move to QTI health AIDL service [Bruno Martins]
+85ee875 ziyi: Initial proprietary-files.txt [Jens Reidel]
+
+* device/xiaomi/zizhan
+16e3e00 zizhan: Drop prebuilt audio configs and blobs [Arian]
+35dcf58 zizhan: Update blobs and firmware from OS2.0.8.0.VLRCNXM [Jens Reidel]
+f4b4095 zizhan: overlay: Commonize several auto brightness configs [Arian]
+ee9e0dd zizhan: Enable elfchecks for camera libs [LuK1337]
+bf06069 zizhan: Shim camera libs [Bruno Martins]
+6020a8a zizhan: Move to Xiaomi fingerprint AIDL [basamaryan]
+9dab461 zizhan: sensors: Add fold status notifier [Arian]
+a455e42 zizhan: Adjust override prop key names [LuK1337]
+1e2610f zizhan: Update blobs and firmware from V816.0.13.0.ULRCNXM [Arian]
+5b812b5 zizhan: Commonize kernel module load list [Arian]
+278f2cb zizhan: Remove unused Android.mk [Michael Bestas]
+983a675 zizhan: overlay: Nfc: Add targetName and move to vendor [Luofan Chen]
+fe88e8f zizhan: Switch to python extract-utils [Arian]
+6706ea5 zizhan: Update blobs from V816.0.12.0.ULRCNXM [Jens Reidel]
+fbfea73 zizhan: Remove 32-bit libQnnHtpV69Skel from vendor/lib64/camera [Arian]
+2b98e00 zizhan: Switch to source-built fx.tunnel interface [FlowerSea0208]
+0552ffb zizhan: Update blobs from V816.0.11.0.ULRCNXM [Jens Reidel]
+8255de1 zizhan: Disable ELF checks for some camera libraries [Arian]
+04cfef3 zizhan: Sync extract scripts with templates [Michael Bestas]
+659b8ff zizhan: Libraries are now automatically added to PRODUCT_PACKAGES [Michael Bestas]
+55a56f1 zizhan: Skip dependencies which aren't defined in .bp [Cosmin Tanislav]
+c5dfc79 zizhan: Disable elf checks for some audio libraries [Arian]
+63c8c9f zizhan: Commonize most audio blobs [Arian]
+58f42c0 zizhan: Fix sonames of extracted blobs [Arian]
+949b21a zizhan: Add vendor soong imports to extract [Aaron Kling]
+fc5f5d3 zizhan: Enable light sensor notifier [Jens Reidel]
+57dcc38 zizhan: Drop COMMON_LUNCH_CHOICES [Michael Bestas]
+a651bcf zizhan: Expose aux cameras to Aperture [Jens Reidel]
+0d7ec74 zizhan: Add regulator, touch, haptics and audio kernel modules [Arian]
+8a95372 zizhan: Setup firmware extraction [LuK1337]
+d26212b zizhan: Enable xiaomi vibrator effects on common qti vibrator hal [Arian]
+5ae215c zizhan: Initial proprietary-files.txt [Jens Reidel]
+95d7f83 zizhan: overlay: Enable secure NFC functionality [Omkar Chandorkar]
+bbe25a9 zizhan: Add fold-related overlays [Jens Reidel]
+3843708 zizhan: overlay: Decommonize brightness overlays [Arian]
+cc830d0 zizhan: Rotate inner panel by 270 degrees [Jens Reidel]
+fe986a6 zizhan: Fix rotation in recovery [Jens Reidel]
+e8ee075 zizhan: Declare hinge angle sensor [Jens Reidel]
+981399e zizhan: Set brightness on secondary display via HWC [Jens Reidel]
+a97bc0c zizhan: Import display configurations from V816.0.9.0.ULRCNXM [Jens Reidel]
+
+* hardware/qcom-caf/sm8450/audio/agm
+9b860b3 Merge tag 'LA.VENDOR.1.0.r1-27400-WAIPIO.QSSI16.0' into staging/lineage-22.2_merge-LA.VENDOR.1.0.r1-27400-WAIPIO.QSSI16.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8450/audio/pal
+616210a5 Merge tag 'LA.VENDOR.1.0.r1-27400-WAIPIO.QSSI16.0' into staging/lineage-22.2_merge-LA.VENDOR.1.0.r1-27400-WAIPIO.QSSI16.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8450/audio/primary-hal
+6989c11d4 Merge tag 'LA.VENDOR.1.0.r1-27400-WAIPIO.QSSI16.0' into staging/lineage-22.2_merge-LA.VENDOR.1.0.r1-27400-WAIPIO.QSSI16.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8450/data-ipa-cfg-mgr
+f2a1700d Merge tag 'LA.VENDOR.1.0.r1-27400-WAIPIO.QSSI16.0' into staging/lineage-22.2_merge-LA.VENDOR.1.0.r1-27400-WAIPIO.QSSI16.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8650/audio/pal
+2949c6b1 Merge tag 'AUDIO.LA.9.0.r1-08500-lanai.0' into staging/lineage-22.2_merge-AUDIO.LA.9.0.r1-08500-lanai.0 [Michael Bestas]
+
+* hardware/qcom-caf/sm8650/audio/primary-hal
+74c5b209c Merge tag 'AUDIO.LA.9.0.r1-08500-lanai.0' into staging/lineage-22.2_merge-AUDIO.LA.9.0.r1-08500-lanai.0 [Michael Bestas]
+
+* hardware/qcom-caf/thermal
+8d270eb Merge tag 'LA.VENDOR.14.3.0.r1-20500-lanai.QSSI15.0' into staging/lineage-22.2_merge-LA.VENDOR.14.3.0.r1-20500-lanai.QSSI15.0 [Michael Bestas]
+
+* kernel/qcom/sm8450
+37118018bd89 power: supply: qti_battery_charger: Fix charging_enabled node disabled state [Michael Bestas]
+
+* kernel/xiaomi/sm8450
+37118018bd89 power: supply: qti_battery_charger: Fix charging_enabled node disabled state [Michael Bestas]
+
+* lineage/hudson
+cc886b8 hudson: Promote nx563j to 22.2 [Vladimir Mikhailov]
+
+* lineage/wiki
+20040549 wiki: Remove -d from logcat how-to [LuK1337]
+6b53a859 wiki: Add note to enable github settings for deploying with pages. [Inhishonor]
+236b1ac7 wiki: Remove extra comma [Inhishonor]
+2503f9fc wiki: Change http -> https for github pages [Inhishonor]
+78c99e90 wiki: Promote nx563j to 22.2 [Vladimir Mikhailov]
+
+* tools/buildscript
+1b1523f copy adb pubkey [Arian]
+
+* vendor/qcom/opensource/commonsys-intf/display
+6f18a906 Merge tag 'LA.QSSI.15.0.r1-15400-qssi.0' into staging/lineage-22.2_merge-LA.QSSI.15.0.r1-15400-qssi.0 [Michael Bestas]
+
+* vendor/qcom/opensource/commonsys/fm
+ff598ac Merge tag 'LA.QSSI.15.0.r1-15400-qssi.0' into staging/lineage-22.2_merge-LA.QSSI.15.0.r1-15400-qssi.0 [Michael Bestas]
+
+* vendor/qcom/opensource/usb
+8aad768 Merge tag 'LA.VENDOR.14.3.0.r1-20500-lanai.QSSI15.0' into staging/lineage-22.2_merge-LA.VENDOR.14.3.0.r1-20500-lanai.QSSI15.0 [Michael Bestas]
+
+* vendor/xiaomi/cupid
+0b1f7e4 cupid: Initial import from OS2.0.1.0.VLCMIXM [Arian]
+
+* vendor/xiaomi/sm8350-common
+4a8b6c53 sm8350-common: Generate qcrilNr.db during build [Arian]
+9b3f47e2 sm8350-common: Add libwfdservice_shim for WFD [LuK1337]
+ae3559bc sm8350-common: Update blobs from haydn V816.0.18.0.UKKMIXM [Arian]
+
+* vendor/xiaomi/ziyi
+e9e728b ziyi: Update blobs from OS2.0.3.0.VLLMIXM [Jens Reidel]
+
+====================
+     2025-05-19    
+====================
+* device/xiaomi/marble
+8fbc0ab marble: Fix wrong format specifier in libgf_hal.so [Arian]
+5461104 marble: Migrate sensor-notifer config to soong_config_set [Arian]
+e44dab4 marble: Update display ids after display-drivers change [Adithya R]
+302e57a marble: Move displayconfig to vendor [Arian]
+70a5356 marble: Drop unused xiaomi mdss display config [Arian]
+563271d marble: Drop prebuilt libdisplayconfig.qti [Arian]
+1fcc45f marble: Update blobs and firmware from OS2.0.1.0.VMRMIXM [Arian]
+fc15cd5 marble: Add aw_cali.bin firmware symlink [dianlujitao]
+9d1906f marble: Increase initial stereo master volume [Arian]
+22071c2 marble: audio: Enable volume set param for compressed, pcm offload and voip streams [Arian]
+
+* device/xiaomi/mondrian
+762650a mondrian: Reformat extract-files.py [Arian]
+ef24e37 mondrian: Remove patchelf version override [Arian]
+0b4c876 mondrian: Add missing AB flag to vm-bootsys.img [明宇]
+
+* device/xiaomi/thor
+7380c00 thor: overlay: Update pixel pitch [Beverly]
+3fc8979 thor: Move to Xiaomi fingerprint AIDL [basamaryan]
+001ed5b thor: Update blobs and firmware from V816.0.14.0.ULACNXM [Jens Reidel]
+3fc4e32 thor: Remove 32-bit libQnnHtpV69Skel from vendor/lib64/camera [Arian]
+6b76ced thor: Switch to source-built fx.tunnel interface [FlowerSea0208]
+5b37365 thor: Declare support for barometer and hifi sensors [Jens Reidel]
+f24d9fe thor: Enable concurrent camera support [Jens Reidel]
+9c7dd5c thor: Update blobs from V816.0.8.0.ULACNXM [Jens Reidel]
+a977545 thor: Update blobs from V816.0.7.0.ULACNXM [Jens Reidel]
+4cd9e8a thor: Disable ELF checks for some camera libraries [Arian]
+515f9d9 thor: Move sensors hals.conf back to vendor repo [Arian]
+9c183ab thor: Sync extract scripts with templates [Michael Bestas]
+5ed4141 thor: Libraries are now automatically added to PRODUCT_PACKAGES [Michael Bestas]
+ecec212 thor: Skip dependencies which aren't defined in .bp [Cosmin Tanislav]
+0284bf4 thor: Disable elf checks for some audio libraries [Arian]
+36d638f thor: Commonize most audio blobs [Arian]
+d2c1dc6 thor: Fix sonames of extracted blobs [Arian]
+acb265e thor: Add vendor soong imports to extract [Aaron Kling]
+e1f2400 thor: Decommonize building powershare hal [Arian]
+ee71890 thor: Commonize audio related media_codecs [Arian]
+bb18f11 thor: Patch libcamximageformatutils to get rid of ndk_platform qti display config dependency [Arian]
+006da3d thor: overlay: Add physical button/sensor locations [Josh Tsuji]
+f09cae7 thor: overlay: Move UDFPS enroll radius to settings [Omkar Chandorkar]
+ec6a042 thor: Partially revert "Move to QTI health AIDL service" [Sebastiano Barezzi]
+be13ee5 thor: Drop prebuilt libmemunreachable.so [Arian]
+ec1cbca thor: Drop some audio libs which are built from source now [Arian]
+5fc4ceb thor: Get rid of 32 bit blobs [Arian]
+4eaeae6 thor: Don't provide a module for libssccalapi@2.0 [Arian]
+e816dab thor: Drop xiaomi citsensorservice and enable light sensor notifier [Arian]
+d2ed25a thor: Drop COMMON_LUNCH_CHOICES [Michael Bestas]
+58ccd67 thor: overlay: Enable secure NFC functionality [Omkar Chandorkar]
+4a8c319 thor: Add missing kvh2xml.xml [Arian]
+f19b168 thor: Decommonize NFC configs [Jens Reidel]
+a0a9fe6 thor: Decommonize libssccalapi@2.0 [Jens Reidel]
+eaf737b thor: overlay: Decommonize brightness overlays [Arian]
+d0a80a4 thor: Setup firmware extraction [LuK1337]
+25fdcd5 thor: Move to QTI health AIDL service [Bruno Martins]
+12383ed thor: Add regulator, touch, haptics and audio kernel modules [Arian]
+ea2970e thor: Initial proprietary-files.txt [Jens Reidel]
+
+* lineage/hudson
+52c6ea3 moto-sm7250 is finally getting some love [basamaryan]
+
+* lineage/wiki
+78671aeb wiki: Revive moto-sm7250 [basamaryan]
+33e20755 wiki: managers -> Managers [LuK1337]
+f0797187 wiki: Add link to translation managers [Inhishonor]
+
+* vendor/xiaomi/marble
+2a9de81 marble: Fix wrong format specifier in libgf_hal.so [Arian]
+
+====================
+     2025-05-18    
+====================
+* device/xiaomi/sm6150-common
+5482050 sm6150-common: gps: Avoid access of deprecated LocUnorderedSetMap entry [yingjiew]
+3ab2987 sm6150-common: Migrate Lineage Health to soong_config_set [Bruno Martins]
+
+* hardware/qcom-caf/wlan
+79444fd wcnss-service: Allow using WCNSS QMI without building with BSP [Ricky Cheung]
+
+* kernel/qcom/sm8350
+4a527b37031e power: supply: qti_battery_charger: Fix charging_enabled node disabled state [Michael Bestas]
+801da2ad39a4 ANDROID: Fix compilation error with huge_pmd_share() [Lokesh Gidra]
+822149ba00b6 BACKPORT: mm/gup: Remove enfornced COW mechanism [Peter Xu]
+3d6559b6094a UPSTREAM: mm/userfaultfd: selftests: fix memory corruption with thp enabled [Peter Xu]
+7174d6f00c7c UPSTREAM: mm/shmem: use page_mapping() to detect page cache for uffd continue [Peter Xu]
+4a02a5091b9d UPSTREAM: mm/userfaultfd: fix memory corruption due to writeprotect [Nadav Amit]
+b863f7b8bb5f UPSTREAM: mm: hugetlb: add missing cache flushing in hugetlb_unshare_all_pmds() [Baolin Wang]
+5fe446d24aff BACKPORT: userfaultfd: wp: declare _UFFDIO_WRITEPROTECT conditionally [Peter Xu]
+f222b766fa60 BACKPORT: mm, mempolicy: fix up gup usage in lookup_node [Michal Hocko]
+1034902c6e3f UPSTREAM: mm/mempolicy: Allow lookup_node() to handle fatal signal [Peter Xu]
+8bd06762ffd1 UPSTREAM: mm/gup: Let __get_user_pages_locked() return -EINTR for fatal signal [Hillf Danton]
+a72e5a6a8f39 UPSTREAM: mm/gup: fix fixup_user_fault() on multiple retries [Peter Xu]
+79349abdcc34 UPSTREAM: mm/gup: Mark lock taken only after a successful retake [Peter Xu]
+d67c1f72708e UPSTREAM: mm/userfaultfd: honor FAULT_FLAG_KILLABLE in fault path [Peter Xu]
+0529ca25cc37 UPSTREAM: mm/gup: allow to react to fatal signals [Peter Xu]
+bd681203996a UPSTREAM: mm/gup: allow VM_FAULT_RETRY for multiple times [Peter Xu]
+fc21d37d4f6c UPSTREAM: mm: allow VM_FAULT_RETRY for multiple times [Peter Xu]
+dc8785e15077 UPSTREAM: mm: introduce FAULT_FLAG_INTERRUPTIBLE [Peter Xu]
+3e0bb70e9d77 UPSTREAM: mm: introduce FAULT_FLAG_DEFAULT [Peter Xu]
+5fba9974b1ab UPSTREAM: userfaultfd: don't retake mmap_sem to emulate NOPAGE [Peter Xu]
+dfe073b49928 UPSTREAM: mm: return faster for non-fatal signals in user mode faults [Peter Xu]
+458283bfa473 UPSTREAM: sh/mm: use helper fault_signal_pending() [Peter Xu]
+4d0a46ae52dc UPSTREAM: powerpc/mm: use helper fault_signal_pending() [Peter Xu]
+f12e48dfb373 UPSTREAM: arm64/mm: use helper fault_signal_pending() [Peter Xu]
+1aa7b112e3a9 UPSTREAM: arc/mm: use helper fault_signal_pending() [Peter Xu]
+3504e9c3511b UPSTREAM: x86/mm: use helper fault_signal_pending() [Peter Xu]
+e26a7db9abe7 BACKPORT: mm: introduce fault_signal_pending() [Peter Xu]
+9fb281590a03 UPSTREAM: mm/gup: fix __get_user_pages() on fault retry of hugetlb [Peter Xu]
+635fb82d074f UPSTREAM: mm/gup: rename "nonblocking" to "locked" where proper [Peter Xu]
+825bacd07b32 BACKPORT: FROMGIT: userfaultfd: fix UFFDIO_CONTINUE ioctl request definition [Gleb Fotengauer-Malinovskiy]
+8cbececc45b2 FROMGIT: userfaultfd/selftests: exercise minor fault handling shmem support [Axel Rasmussen]
+958319fefcb3 BACKPORT: FROMGIT: userfaultfd/selftests: reinitialize test context in each test [Axel Rasmussen]
+f852d39c08ab FROMGIT: userfaultfd/selftests: create alias mappings in the shmem test [Axel Rasmussen]
+3aaf80e85f65 FROMGIT: userfaultfd/selftests: use memfd_create for shmem test type [Axel Rasmussen]
+f98960cd4be8 BACKPORT: FROMGIT: userfaultfd/shmem: modify shmem_mfill_atomic_pte to use install_pte() [Axel Rasmussen]
+5679fd2c2b3e BACKPORT: FROMGIT: userfaultfd/shmem: advertise shmem minor fault support [Axel Rasmussen]
+ef31d0b42c04 BACKPORT: FROMGIT: userfaultfd/shmem: support UFFDIO_CONTINUE for shmem [Axel Rasmussen]
+ec166f77f98e BACKPORT: FROMGIT: userfaultfd/shmem: support minor fault registration for shmem [Axel Rasmussen]
+c374e699af74 BACKPORT: FROMGIT: userfaultfd/shmem: combine shmem_{mcopy_atomic,mfill_zeropage}_pte [Axel Rasmussen]
+af9759f100d2 BACKPORT: FROMGIT: userfaultfd/selftests: unify error handling [Peter Xu]
+87f0b565c169 BACKPORT: FROMGIT: userfaultfd/selftests: only dump counts if mode enabled [Peter Xu]
+ce0a7ce64dd7 BACKPORT: userfaultfd/selftests: add test exercising minor fault handling [Axel Rasmussen]
+238aff8de570 BACKPORT: userfaultfd: selftests: add write-protect test [Lokesh Gidra]
+b148186e40ed BACKPORT: userfaultfd: selftests: refactor statistics [Peter Xu]
+9ade12757182 Revert "BACKPORT: FROMGIT: userfaultfd/selftests: add test exercising minor fault handling" [Lokesh Gidra]
+20c5c31e6e41 Revert "BACKPORT: FROMGIT: userfaultfd: support minor fault handling for shmem" [Lokesh Gidra]
+59a9ac69f84b Revert "FROMGIT: userfaultfd/selftests: use memfd_create for shmem test type" [Lokesh Gidra]
+5d844e34c5de Revert "FROMGIT: userfaultfd/selftests: create alias mappings in the shmem test" [Lokesh Gidra]
+56ccf7d575b0 Revert "BACKPORT: FROMGIT: userfaultfd/selftests: reinitialize test context in each test" [Lokesh Gidra]
+542ffaa634ae Revert "BACKPORT: FROMGIT: userfaultfd/selftests: exercise minor fault handling shmem support" [Lokesh Gidra]
+41c5a9900955 Revert "FROMLIST: userfaultfd/shmem: fix minor fault page leak" [Lokesh Gidra]
+d28487ec26bd BACKPORT: userfaultfd: wp: add helper for writeprotect check [Shaohua Li]
+50873dd8ff51 UPSTREAM: mm/mremap: don't account pages in vma_to_resize() [Dmitry Safonov]
+2af548dd4474 BACKPORT: FROMLIST: Revert "mremap: don't allow MREMAP_DONTUNMAP on special_mappings and aio" [Brian Geffon]
+7629defaa9ea FROMLIST: mm: Extend MREMAP_DONTUNMAP to non-anonymous mappings [Brian Geffon]
+13575f869d48 UPSTREAM: mremap: don't allow MREMAP_DONTUNMAP on special_mappings and aio [Dmitry Safonov]
+958bc1f59944 BACKPORT: mm/mremap: for MREMAP_DONTUNMAP check security_vm_enough_memory_mm() [Dmitry Safonov]
+9274b888a18e UPSTREAM: tools headers UAPI: Sync linux/mman.h with the kernel [Arnaldo Carvalho de Melo]
+33293c4df939 UPSTREAM: userfaultfd: fix remap event with MREMAP_DONTUNMAP [Brian Geffon]
+f1934d352ac3 UPSTREAM: mm: Fix MREMAP_DONTUNMAP accounting on VMA merge [Brian Geffon]
+a3967e5ebec0 UPSTREAM: mm/mremap: add MREMAP_DONTUNMAP to mremap() [Brian Geffon]
+91e49e5534a8 ANDROID: userfaultfd: Fix untag pointer in userfaultfd_continue() [Orson Zhai]
+3c4f4023a871 FROMLIST: userfaultfd/shmem: fix minor fault page leak [Axel Rasmussen]
+baf24c949af6 BACKPORT: FROMLIST: userfaultfd/hugetlbfs: Fix minor fault page leak [Peter Xu]
+30cd89e37158 BACKPORT: FROMGIT: userfaultfd/selftests: drop VERIFY check in locking_thread [Peter Xu]
+88407480bb5f FROMGIT: userfaultfd/selftests: remove the time() check on delayed uffd [Peter Xu]
+c21e5dd2d667 FROMGIT: userfaultfd/selftests: use user mode only [Peter Xu]
+3325f0ceafc6 BACKPORT: FROMGIT: userfaultfd/selftests: exercise minor fault handling shmem support [Axel Rasmussen]
+9302deed1ab6 BACKPORT: FROMGIT: userfaultfd/selftests: reinitialize test context in each test [Axel Rasmussen]
+7e738f2d9a16 FROMGIT: userfaultfd/selftests: create alias mappings in the shmem test [Axel Rasmussen]
+195eef95ec85 FROMGIT: userfaultfd/selftests: use memfd_create for shmem test type [Axel Rasmussen]
+1999a272c624 BACKPORT: FROMGIT: userfaultfd: support minor fault handling for shmem [Axel Rasmussen]
+05004f09919c BACKPORT: FROMGIT: userfaultfd/selftests: add test exercising minor fault handling [Axel Rasmussen]
+e896f54b5e1b BACKPORT: FROMGIT: userfaultfd: update documentation to describe minor fault handling [Axel Rasmussen]
+5d62f07fffb5 BACKPORT: FROMGIT: userfaultfd: add UFFDIO_CONTINUE ioctl [Axel Rasmussen]
+0bea3b8d35f8 BACKPORT: FROMGIT: userfaultfd: hugetlbfs: only compile UFFD helpers if config enabled [Axel Rasmussen]
+84c481c8547c FROMGIT: userfaultfd: disable huge PMD sharing for MINOR registered VMAs [Axel Rasmussen]
+59e978522db0 BACKPORT: FROMGIT: userfaultfd: add minor fault registration mode [Axel Rasmussen]
+5f1b26c2cdf9 BACKPORT: FROMGIT: hugetlb/userfaultfd: unshare all pmds for hugetlbfs when register wp [Peter Xu]
+abc495fa9d09 FROMGIT: mm/hugetlb: move flush_hugetlb_tlb_range() into hugetlb.h [Peter Xu]
+245a106b014e FROMGIT: mm/hugetlb: fix build with !ARCH_WANT_HUGE_PMD_SHARE [Peter Xu]
+a7279b33857e BACKPORT: FROMGIT: hugetlb/userfaultfd: forbid huge pmd sharing when uffd enabled [Peter Xu]
+c7752494925a BACKPORT: FROMGIT: hugetlb: pass vma into huge_pte_alloc() and huge_pmd_share() [Peter Xu]
+346a6836ed4e UPSTREAM: selftests/vm/.gitignore: add mremap_dontunmap [John Hubbard]
+c16d9b836592 FROMLIST: selftests: Add a MREMAP_DONTUNMAP selftest for shmem [Brian Geffon]
+7d28c2850006 UPSTREAM: selftests: add MREMAP_DONTUNMAP selftest [Brian Geffon]
+5b40652054ea qcedev: Fix excessive logging on DRM playback [Alexander Winkowski]
+20e2af2352e8 usb: dwc3: gadget: Fix break condition in gadget state [Shashikala Katthi]
+9f07178ded9e Revert "usb: dwc3: Increase DWC3 controller halt timeout" [Alexander Winkowski]
+6544d65e83ea Revert "Revert "Revert "8250: add support for ASIX devices with a FIFO bug""" [Michael Bestas]
+bbcf9da13a5a Merge tag 'ASB-2025-05-05_11-5.4' of https://android.googlesource.com/kernel/common into android13-5.4-lahaina [Michael Bestas]
+
+* kernel/qcom/sm8450
+a41b13bfbfb6 Merge tag 'ASB-2025-05-05_12-5.10' of https://android.googlesource.com/kernel/common into android13-5.10-waipio [Michael Bestas]
+
+* kernel/xiaomi/sm8450
+a41b13bfbfb6 Merge tag 'ASB-2025-05-05_12-5.10' of https://android.googlesource.com/kernel/common into android13-5.10-waipio [Michael Bestas]
+
+* packages/apps/Messaging
+8af1282 Messaging: Remove setHost() logic [Michael W]
+6161d0f Messaging: Get rid of everything around the local apn database [Michael W]
+aad904a Messaging: Use Start and End instead of Left and Right [Michael W]
+2f9b138 Messaging: Remove unused or not required classes and methods [Michael W]
+f0b25f0 Messaging: Remove unused resources [Michael W]
+c4bbba9 Messaging: We don't need to check for verbose logging everywhere [Michael W]
+8613b6b Messaging: Fix wrong super() call [Michael W]
+9fd4fa6 Messaging: Explicitly specify Locale where needed [Michael W]
+37e5757 Messaging: Extend AppCompatImageView instead of ImageView [Michael W]
+7acbc6a Messaging: No need to access private color members [Michael W]
+37ac798 Messaging: Remove VisibleForAnimation [Michael W]
 
