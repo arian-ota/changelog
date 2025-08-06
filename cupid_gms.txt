@@ -1,0 +1,156 @@
+====================
+     2025-08-06    
+====================
+* device/fairphone/FP6
+76047078 FP6: Fix wfdhdcphalservice [Arian]
+
+* device/xiaomi/diting
+5f9e45b diting: Update blobs and firmware from OS2.0.4.0.VLFMIXM [Arian]
+
+* device/xiaomi/sm8450-common
+62b6eab5 sm8450-common: Don't explicitly build libwfdaac_vendor [Arian]
+810e5ed5 sm8450-common: Don't explicitly build android.hardware.wifi.hostapd@1.0.vendor [Arian]
+c1b811f3 sm8450-common: Update blobs from diting OS2.0.4.0.VLFMIXM [Arian]
+
+* kernel/xiaomi/sm8450
+5570c55414f0 Merge branch 'lineage-20' of https://github.com/LineageOS/android_kernel_qcom_sm8450 into HEAD [Arian]
+
+* kernel/xiaomi/sm8450-modules
+eeab9528c7 Merge branch 'lineage-20' of https://github.com/LineageOS/android_kernel_qcom_sm8450-modules into HEAD [Arian]
+
+* vendor/xiaomi/diting
+1375d92 diting: Update blobs and firmware from OS2.0.4.0.VLFMIXM [Arian]
+
+* vendor/xiaomi/sm8450-common
+136d193f sm8450-common: Update blobs from diting OS2.0.4.0.VLFMIXM [Arian]
+
+====================
+     2025-08-05    
+====================
+* vendor/lineage
+cb1091b3 Update APN settings for Odido/T-Mobile NL [Yannick Binnenweg]
+
+====================
+     2025-08-04    
+====================
+* device/qcom/sepolicy_vndr/legacy-um
+d94d104a8 sepolicy: holi: Label pmr735a power supply nodes [LuK1337]
+
+====================
+     2025-08-03    
+====================
+====================
+     2025-08-02    
+====================
+* lineage-sdk
+68106a63 Automatic translation import [LineageOS Infra]
+
+* lineage/wiki
+9fe2afe2 wiki: Switch Oxygen Updater download URL from Google Play to GitHub [LuK1337]
+
+* packages/apps/Aperture
+7f948a8 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Catapult
+47bb118 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Dialer
+71be01105 Automatic translation import [LineageOS Infra]
+
+* packages/apps/DocumentsUI
+f7d17ba4d Automatic translation import [LineageOS Infra]
+
+* packages/apps/Etar
+d312f415 Automatic translation import [LineageOS Infra]
+
+* packages/apps/FMRadio
+0823949 Automatic translation import [LineageOS Infra]
+
+* packages/apps/FlipFlap
+638533e Automatic translation import [LineageOS Infra]
+
+* packages/apps/Glimpse
+01654bb Automatic translation import [LineageOS Infra]
+
+* packages/apps/Jelly
+aad4d12 Automatic translation import [LineageOS Infra]
+
+* packages/apps/LineageParts
+564c276 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Messaging
+e5e9566 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Recorder
+0c8bad3 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Settings
+608e3772fa6 Automatic translation import [LineageOS Infra]
+
+* packages/apps/SetupWizard
+06bff70 Automatic translation import [LineageOS Infra]
+
+* packages/apps/ThemePicker
+5228c51f Automatic translation import [LineageOS Infra]
+
+* packages/apps/Trebuchet
+7c5366bda3 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Twelve
+397c8ca Automatic translation import [LineageOS Infra]
+8b48e37 Twelve: Fix typo in string name [Inhishonor]
+
+* packages/apps/Updater
+a689cb3 Automatic translation import [LineageOS Infra]
+
+* packages/inputmethods/LatinIME
+34ff6b224 Automatic translation import [LineageOS Infra]
+
+* packages/providers/DownloadProvider
+723daf60 Automatic translation import [LineageOS Infra]
+
+* packages/resources/devicesettings
+85e6e4a Automatic translation import [LineageOS Infra]
+
+* vendor/crowdin
+ddd8d75 Automatic translation import [LineageOS Infra]
+
+* vendor/qcom/opensource/commonsys/fm
+6f3546e Automatic translation import [LineageOS Infra]
+
+====================
+     2025-08-01    
+====================
+* device/fairphone/FP6
+8eeae00f WIP FP6: Add more RIL blobs [Arian]
+7fbdde56 FP6: Move mwqem blobs to CNE section [Arian]
+6793fd0c FP6: Merge CNE and DPM sections [Arian]
+
+* lineage/wiki
+f844c2d8 wiki: Improve wording and commands in blob extraction [Inhishonor]
+e01bffa4 wiki: Fix wording in brotli archive extraction [Inhishonor]
+
+====================
+     2025-07-31    
+====================
+* device/fairphone/FP6
+e5d17401 FP6: Move qrtr blobs to QMI and display sections [Arian]
+c9769ec4 FP6: Add smc invoke blob section [Arian]
+c0a53b73 Revert "tmp" [Arian]
+0764ea85 tmp [Arian]
+ea1dd091 FP6: Add QesdkSysService [Arian]
+0beac84e FP6: Add missing dataservices manifest [Arian]
+d3aa2647 FP6: Add qti perf2 blobs [Arian]
+25428f0e FP6: Add missing camera libs [Antoine C.]
+0e79b8ec FP6: Drop blob patches for unshipped blobs [Arian]
+234f7e6f FP6: Add cne app jni lib [Arian]
+85db7726 FP6: Fix extraction of acdbdata [Arian]
+45e3cbb1 FP6: Import QESDK blobs [Arian]
+
+* hardware/qcom-caf/sm8750/display/core
+100ac95 Revert "Revert^2 "sdm: add support for DS merge mode"" [LuK1337]
+
+* lineage/wiki
+8532bf27 wiki: Remove links to OnePlus softwareupgrade page [LuK1337]
+75f7b3d3 wiki: Link to the latest payload-dumper-go release [LuK1337]
+
