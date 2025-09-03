@@ -1,249 +1,256 @@
 ====================
-     2025-08-19    
+     2025-09-03    
 ====================
 * device/fairphone/FP6
-0d3e4594 fixup! FP6: Initial proprietary files listing [Arian]
-9761eaa3 FP6: sepolicy: Allow ueventd to load aw882xx calibration file [dianlujitao]
-b9ea769b FP6: Add aw_cali.bin firmware symlink [dianlujitao]
-655ca59d Revert "FP6: overlay: Enable lineage peak refresh rate switch instead of aosp smooth display setting" [Arian]
-21db8a21 Revert "[TMP] FP6: Add prebuilt libsdmcore for now" [Arian]
-8805b1fd FP6: Copy displayconfig to another display id [Arian]
-a527c64a FP6: overlay: Add some rounded corner content padding [Arian]
-4ee5b91f FP6: overlay: Refine display cutout region [Arian]
-a9f6c1dd FP6: overlay: Configure power button and fingerprint location [Arian]
-5ebeff0d fixup! FP6: Add double tap to wake [Arian]
-ac938901 Revert "FP6: vintf: Remove qti cacert hidl" [Arian]
-1c9e2e3f FP6: Update blobs from FP6.QREL.15.122.0.20250718182448_VS1E-factory.zip [Arian]
-65c088b8 Revert "[TMP] FP6: Set selinux to permissive" [Arian]
-fa3bddbb FP6: sepolicy: Allow power hal to write touchscreen sysfs files [Arian]
-14f616b1 FP6: sepolicy: Label touchscreen sysfs nodes [Arian]
-56b49a8f FP6: sepolicy: Allow sensors hal to set fp prop [Arian]
-f986c523 FP6: sepolicy: Move emkit/info lable to genfscon [Arian]
-36e0ff36 FP6: sepolicy: Label fingerprint hal and add focaltech rules [Arian]
-535b4db9 FP6: sepolicy: Label more properties [Arian]
-ac788f36 FP6: sepolicy: Label aw_vibrator [Arian]
-da99b37f FP6: sepolicy: Add emkit sepolicy for sensors [Arian]
-27eb9d47 FP6: sepolicy: Allow nfc hal to set vendor.nfc.* properties [Arian]
-e5e80272 [WIP] FP6: sepolicy: Import camera related rules from device/qcom/sepolicy_vndr [Arian]
-1b8a1d2f FP6: sepolicy: Import samsung sec sepolicy from vendor/samsung_slsi/nfc [Arian]
-8702316d FP6: sepolicy: Import wlan mac sepolicy from vendor/fairphone/common [Arian]
-04623dae FP6: sepolicy: Import tctd sepolicy from vendor/fairphone/common [Arian]
-7ef7190f FP6: Include sepolicy [Arian]
-7477eded Revert "FP6: Move more radio properties to vendor" [Arian]
-c0015090 fixup! FP6: Add double tap to wake [Arian]
-96580791 Revert "FP6: Remove unused vibrator driver" [Arian]
-0ded9f51 fixup! FP6: Sort and cleanup build properties [Arian]
-
-* device/qcom/sepolicy_vndr/sm8650
-55e6ad76c fairphone memes [Arian]
-
-* hardware/qcom-caf/common
-138353b common: Guard full PPDETuningCfg struct [Alexander Koskovich]
-
-* hardware/qcom-caf/sm8650/display
-ebfa425b82 Revert "display: silence format compilation issues" [Arian]
-
-* kernel/fairphone/sm7635
-5557713e321b Revert "FP6: Make vendor driver HAL-compatible" [Arian]
-
-* kernel/fairphone/sm7635-devicetrees
-27d441f5 Enable aw882xx calibration for channels 0 and 1 [Arian]
-aab402da Nuke 90hz timing [Arian]
-
-* kernel/fairphone/sm7635-modules
-5ad6d42517 audio-kernel: codecs: aw882xx: Load calibration file through firmware class [dianlujitao]
-54c56423b3 audio-kernel: codecs: aw882xx: Enable calibration reading [Pavel Dubrova]
-e031acbea6 audio-kernel: codecs: aw882xx: dos2unix [Arian]
-
-* vendor/qcom/opensource/commonsys-intf/display
-582750cd commonsys: Guard new changes to PPDETuningCfg struct [Alexander Koskovich]
-bbec10d5 commonsys: Expand DE struct to support new parameters [yadwan]
-
-* vendor/qcom/opensource/vibrator
-76c0d8c fairphone vibrator memes [chuanzhi.shao]
+967ec1b1 FP6: Add system_dlkm modprobe script [Arian]
 
 ====================
-     2025-08-18    
+     2025-09-02    
 ====================
-* device/fairphone/FP6
-7273036d FP6: Drop fairphone touch/idle timer modifications [Arian]
-4d03a0f4 FP6: Move more radio properties to vendor [Arian]
-dd78161d FP6: Add debug IMS props to workaround CarrierConfig restrictions [LuK1337]
-e180204a FP6: Move default network property to vendor partition [Jayachandran C]
-b9afd055 FP6: Sort and cleanup build properties [Arian]
-02ae9d84 fixup! FP6: Enable QSPA Framework [Arian]
-11bdd906 FP6: Drop qcom composer extension configuration files [Arian]
-787f8680 [TMP] FP6: Disable peach_v2 and wcn6450 qcacld for now [Arian]
-027f427c [TMP] FP6: Disable kernel lto [Arian]
-3ef64c72 [TMP] FP6: Set selinux to permissive [Arian]
-61d46c00 [TMP] FP6: Add prebuilt libsdmcore for now [Arian]
-7713ef2b FP6: overlay: Enable 60 fps fhd video recording for front and primary back camera [Arian]
-b0146774 FP6: overlay: Configure aux camera for Aperture [LuK1337]
-7b42e8db FP6: Drop aux camera package allowlist [Arian]
-5a4657cf FP6: overlay: Enable lineage peak refresh rate switch instead of aosp smooth display setting [Arian]
-848dde3b FP6: overlay: Enable smooth display setting [Arian]
-17cb25d6 FP6: Enable FP rom property for camera HAL [Antoine C.]
-2e62a698 FP6: Enable qti value adds for system [Arian]
-5d20b667 FP6: Remove unused vibrator driver [Antoine C.]
-def64c1c FP6: Add double tap to wake [Antoine C.]
-e419c78c FP6: rootdir: Import qcom init from android.hardware.audio.service_64.rc [Arian]
-2654836b FP6: rootdir: Import fairphone changes to init.target.rc [Arian]
-12316fd6 FP6: Stop building agmipc service and enable agm hidl [Arian]
-f697604c FP6: modules: Load eswin_ts in recovery [Arian]
-c72ca8c7 FP6: Copy attestion permission [Arian]
-37528cd1 FP6: Copy verified_boot permission [Arian]
-0eed728b FP6: Copy multitouch jazzhand permission [Arian]
-91e4259a FP6: Add feature flag for IPSEC_TUNNEL_MIGRATION [Yan Yan]
-4cae618b FP6: Copy ipsec_tunnels permission [Arian]
-acaf1383 FP6: Build qcom telephony packages and copy permissions [Arian]
-f4798903 FP6: Copy NFC permissions [Arian]
-b26bb28d FP6: Copy keystore app attest key permission [Arian]
-b1c81f7b FP6: Copy fingerprint permissions [Arian]
-750c877d FP6: Include qcom usb init scripts and copy permissions [Arian]
-ba2fe9d1 [WIP] FP6: Change ueventd location [Arian]
-12b990c4 FP6: Copy sku_volcano sensor permissions [Arian]
-df4504c0 FP6: Build IPACM [Arian]
-ca8e0e9f FP6: Build sensors multihal [Arian]
-bfdb3be6 FP6: Build QTI power service [Arian]
-0c0aa9c9 FP6: Build QTI health service [Arian]
-c6320c8a FP6: Build and enable fastbootd [Alessandro Astone]
-7528167c FP6: Build qti display demura service [Arian]
-ddebef0e FP6: Add qti media init scripts [Arian]
-a9408f69 FP6: Build QTI Thermal AIDL HAL [Yumi Yukimura]
-f43ff443 FP6: Build qti usb and gadget HAL [Arian]
-c359e4a3 FP6: rootdir: Import qti kernel init scripts [Arian]
-a4239c0e FP6: Build common QTI vibrator HAL [Michael Bestas]
-483e3dfa FP6: Add hwservicemanager, allocator service to the device. [Siddeswar Aluganti]
-ac57035a FP6: Add vndservicemanager explicitly [Smita Ghosh]
-d6464718 FP6: Drop duplicated hdcp_qseecom_dlkm and add it to recovery modules for msm_drm [Arian]
-d01b7058 FP6: Import config.fs from LA.VENDOR.14.3.12.r1-01300-lanai.QSSI15.0 [Arian]
-0423038d FP6: Copy graphics permissions [Arian]
-044cf134 FP6: Build clearkey drm service [Arian]
-f6d97a50 FP6: Build qcom display hal [Arian]
-f9a9d524 FP6: Copy camera permissions [Arian]
-2b20f521 FP6: Build bluetooth audio impl and copy bluetooth permissions [Arian]
-477d72f0 FP6: Redefine bluetooth a2dp offload capabilities [Arian]
-6916ab8a FP6: audio: Don't advertise unsupported BT A2DP formats in audio policy config [Arian]
-46e34195 FP6: audio: Drop bluetooth_qti audio policies [Arian]
-3651b35d FP6: audio: Import fairphone changes to audio policy configuration [Arian]
-d352c100 FP6: Import volcano audio_policy_configuration [Arian]
-dfe5d963 FP6: audio: Disable native speaker protection [Pavel Dubrova]
-f8716e8a FP6: audio: Import fairphone changes from FP6.QREL.15.91.0 [Arian]
-7f4bbc78 FP6: Import pal audio configs for volcano_mtp [Arian]
-3797a768 FP6: Copy google media codecs from frameworks/av [Arian]
-57efcca6 FP6: Configure and build qcom audio HAL [Arian]
-547f659c FP6: Implement xtra-daemon control via property [Michael Bestas]
-85fb3c25 FP6: gps: Lower debug level [Michael Bestas]
-243ce90f FP6: gps: Disable xtwifi location services [TheStrix]
-9a0a810b FP6: Build GNSS HAL from source and import configs from stock [Arian]
-929ed3c6 FP6: gps: Convert remaining Android.mk to bp [Michael Bestas]
-4065ce84 FP6: gps: Remove unused implementations [Michael Bestas]
-50d63b65 FP6: gps: Fix unqualified-std-cast-call warning [Yi Kong]
-18cccc5d FP6: gps: Fix -Wbitwise-instead-of-logical [Pirama Arumuga Nainar]
-9175f65b FP6: gps: Fix non-ASCII character in gps.conf [dianlujitao]
-2c0900f9 FP6: Import gps from LA.VENDOR.14.3.0.r1-20200-lanai.0 [Arian]
-30d0403d FP6: Switch to QTI Memtrack AIDL HAL [Yumi Yukimura]
-3bbd6a51 FP6: Allow rt_tgsigqueueinfo syscall for wfdhdcphalservice [Arian]
-bc8c58da FP6: Enable QSPA Framework [Karra Harshitha]
-bc7a256b FP6: Enable elfchecks for camera libs [LuK1337]
-96a8b954 FP6: fix dependencies on multiple AIDL versions [Cosmin Tanislav]
-2fabdc78 FP6: Resolve missing symbols on libqcodec2_core [Bruno Martins]
-16c8cbea FP6: Use libhidlbase_shim for vendor.libdpmframework [Arian]
-3ec66a23 FP6: Initial proprietary files listing [Arian]
-510faaa0 [WIP] FP6: Fix media settings xml [Arian]
-de39ac89 [WIP] FP6: Import properties from stock [Arian]
-f7d3aca8 FP6: vintf: Remove qti cacert hidl [Arian]
-58ff2c8e FP6: vintf: Remove NXP NFC and secure element [Arian]
-0423c83c FP6: vintf: Add fcm for tcl camera algoservice [Arian]
-067ee996 FP6: Import qcom common rootdir files from LA.VENDOR.14.3.0.r1-21700-lanai.0 [Arian]
-46cc39de FP6: Import volcano rootdir files from LA.VENDOR.14.3.0.r1-21700-lanai.0 [Arian]
-42935526 FP6: overlay: Import runtime resource overlays [Arian]
-19ece615 FP6: Set screen density to xxxhdpi [Arian]
-9dedb48d FP6: Create mountpoints in vendor [Arian]
-7335e870 FP6: Build qti common boot control HAL [Arian]
-02d56fa1 FP6: Include common qualcomm symlinks [Arian]
-ee053726 FP6: Create WLAN symlinks [Arian]
-7872a41c FP6: wlan: Read MAC address from file [Arian]
-ad3e6cfe FP6: Build wlan service and import configs from LA.VENDOR.14.3.0.r1-21700-lanai.0 [Arian]
-9813a8cc FP6: Set vendor security patch level [Arian]
-fced8b40 FP6: Include qcom common sepolicy [Arian]
-bee3f408 FP6: Setup VINTF manifests [Arian]
-bc110240 FP6: Configure recovery and include fstab from volcano LA.VENDOR.14.3.0.r1-21700-lanai.0 [Arian]
-225e8ef6 FP6: Move GSI AVB keys to /vendor_boot [Alexander Koskovich]
-5efb2df3 FP6: Disable rild [Arian]
-7e3af7d0 FP6: Enable qcom hardware repos [Arian]
-fe232bc0 FP6: Set init_boot header version to 4 [Arian]
-7bb2ec26 FP6: Setup virtual A/B partitions [Arian]
-c139d060 FP6: Set shipping board and product api level [Arian]
-90516e24 FP6: Configure vbmeta image and disable verification [Arian]
-18dd8778 FP6: Configure kernel modules and import module load files from stock [Arian]
-9f872aee FP6: Configure kernel and boot image [Arian]
-cd66f79d FP6: Define brand/model/name for attestation [Arian]
-1e22f451 FP6: Inherit common partition reserved sizes [Michael Bestas]
-87dbd63d FP6: Configure partitions [Arian]
-bb8c6eec FP6: Add board-info.txt [Michael Bestas]
-e6844ae0 FP6: Don't include bootloader [Arian]
-9f24cd06 FP6: Configure bootloader and board names [Arian]
-534d5f2a FP6: Don't explicitly include updatable_apex.mk [basamaryan]
-17a3eb3e FP6: Set cpu variant to kryo as kryo300 is not supported [Arian]
-
-====================
-     2025-08-17    
-====================
-====================
-     2025-08-16    
-====================
-* kernel/fairphone/sm7635
-2003b805ba59 FP6: Make vendor driver HAL-compatible [Antoine C.]
-
-====================
-     2025-08-15    
-====================
-====================
-     2025-08-14    
-====================
-* lineage/mirror
-357e63f Updated to 13-Aug-2025 22:01 UTC [Tim Schumacher]
-
-====================
-     2025-08-13    
-====================
-* device/xiaomi/cupid
-67cb0f90 cupid: ELF checks are enabled by default [Michael Bestas]
-
-* device/xiaomi/diting
-1cec44b diting: ELF checks are enabled by default [Michael Bestas]
-
-* device/xiaomi/marble
-a096a2f marble: ELF checks are enabled by default [Michael Bestas]
-
-* device/xiaomi/mayfly
-eccfd14 mayfly: ELF checks are enabled by default [Michael Bestas]
-
-* device/xiaomi/mondrian
-1fb9ac0 mondrian: ELF checks are enabled by default [Michael Bestas]
-
-* device/xiaomi/sm8450-common
-4ad7a1a7 sm8450-common: ELF checks are enabled by default [Michael Bestas]
-
-* device/xiaomi/thor
-6ed4fd4 thor: ELF checks are enabled by default [Michael Bestas]
-
 * device/xiaomi/unicorn
-229643f unicorn: ELF checks are enabled by default [Michael Bestas]
-
-* device/xiaomi/zeus
-cb60a4f zeus: ELF checks are enabled by default [Michael Bestas]
+a91b8fe unicorn: Update blobs and firmware from OS2.0.205.0.VLECNXM [Arian]
 
 * device/xiaomi/zizhan
-0b5dcea zizhan: ELF checks are enabled by default [Michael Bestas]
+328c527 zizhan: Update blobs and firmware from OS2.0.203.0.VLRCNXM [Arian]
+
+* lineage/mirror
+111f0d8 Updated to 02-Sep-2025 10:01 UTC [Tim Schumacher]
 
 * lineage/wiki
-60e568ed wiki: Update Pong battery tech and models [chandu078]
+10e564b3 wiki: Allow 15 fw for FP5 [Michael Bestas]
+
+* vendor/xiaomi/unicorn
+6d5f48f unicorn: Update blobs and firmware from OS2.0.205.0.VLECNXM [Arian]
+
+* vendor/xiaomi/zizhan
+90572fd zizhan: Update blobs and firmware from OS2.0.203.0.VLRCNXM [Arian]
+
+====================
+     2025-09-01    
+====================
+* android
+8eb98ef lineage: Remove Android.mk guard for msm8953 [Yumi Yukimura]
+
+* frameworks/base
+6fa82a0c4c58 Automatic translation import [LineageOS Infra]
+
+* hardware/qcom-caf/msm8953/display
+fd1cfe095f Convert remaining Android.mk to blueprint [Michael Bestas]
+c337f56f09 sdm: Convert hwcomposer.qcom to soong [Michael Bestas]
+f6e4d6dd2d hwc2,libdisplayconfig: Remove libhwbinder/libhidltransport deps [Steven Moreland]
+
+* lineage-sdk
+2700b684 Automatic translation import [LineageOS Infra]
+
+* lineage/hudson
+43a9eb8 hudson: Add Motorola moto g Stylus 5G [Vivekachooz]
+
+* lineage/wiki
+d85dd7a1 wiki: Add Motorola moto g Stylus 5G [Vivekachooz]
+
+* packages/apps/Aperture
+98000dc Automatic translation import [LineageOS Infra]
+
+* packages/apps/AudioFX
+28ddf22 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Backgrounds
+3cdba90 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Camelot
+cbb578e Automatic translation import [LineageOS Infra]
+
+* packages/apps/DeskClock
+c1f46efda Automatic translation import [LineageOS Infra]
+
+* packages/apps/Dialer
+4dc5fd426 Automatic translation import [LineageOS Infra]
+
+* packages/apps/DocumentsUI
+0cc2e0784 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Etar
+8e1aa092 Automatic translation import [LineageOS Infra]
+
+* packages/apps/FMRadio
+4d4f98b Automatic translation import [LineageOS Infra]
+
+* packages/apps/FlipFlap
+e7ffef4 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Glimpse
+7bd917b Automatic translation import [LineageOS Infra]
+
+* packages/apps/Jelly
+751734f Automatic translation import [LineageOS Infra]
+
+* packages/apps/LineageParts
+a069cf5 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Messaging
+f624ed2 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Recorder
+4bf7948 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Settings
+e27df4fd449 Automatic translation import [LineageOS Infra]
 
 * packages/apps/SetupWizard
-00fff59 SetupWizard: Update wizard scripts for 15 [LuK1337]
+f129f96 Automatic translation import [LineageOS Infra]
+
+* packages/apps/ThemePicker
+236070cc Automatic translation import [LineageOS Infra]
 
 * packages/apps/Trebuchet
-30555e28c9 Launcher3: Add permission for contextual search [Pranav Vashi]
+e1f28ba23e Automatic translation import [LineageOS Infra]
+
+* packages/apps/Twelve
+3bfeb98 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Updater
+77a204b Automatic translation import [LineageOS Infra]
+
+* packages/inputmethods/LatinIME
+001e9c673 Automatic translation import [LineageOS Infra]
+
+* packages/providers/DownloadProvider
+eb2ea389 Automatic translation import [LineageOS Infra]
+
+* packages/resources/devicesettings
+65352f2 Automatic translation import [LineageOS Infra]
+
+* tools/extract-utils
+01769aa extract_utils: support `REQUIRED` for bin/lib targets [LuK1337]
+
+* vendor/qcom/opensource/commonsys/fm
+0d72753 Automatic translation import [LineageOS Infra]
+
+====================
+     2025-08-31    
+====================
+* android
+e22380c lineage: Remove Android.mk guard for sdm660 [LuK1337]
+
+* hardware/lineage/interfaces
+eaa88af livedisplay: sysfs: chown on init [Marc Bourgoin]
+
+====================
+     2025-08-30    
+====================
+* device/lineage/sepolicy
+65e58b0 common: Label AIDL camera provider HAL [Skyblueborb]
+
+* hardware/lineage/interfaces
+7cb075b camera: aidl: Remove `in_`/`out_` prefixes [LuK1337]
+7fbd870 camera: aidl: Use std::to_string() for int -> std::string [LuK1337]
+1d5d332 camera: aidl: Remap camera IDs by property if it is defined [Ivan Vecera]
+d26191b camera: aidl: Maintain set of non-external cameras [Ivan Vecera]
+bdb296c camera: aidl: Implement camera device/provider HALs [Tim Zimmermann]
+
+* hardware/qcom-caf/msm8953/audio
+f9ff4f29d8 hal: Convert audio extensions to blueprint [Michael Bestas]
+06e04121b0 ssr: Fix building with OSS materials [Ricardo Cerqueira]
+ca80109167 hal: Convert primary HAL to blueprint [Michael Bestas]
+2ebe70ccf5 hal: Remove unused libmaxxaudio extension [Michael Bestas]
+17df495cc9 hal: Remove feature manager leftovers [Michael Bestas]
+dd04d990e3 audio: Remove all unsupported platforms & flags [Michael Bestas]
+0ad6d8609e hal: audio_extn: Add argument to pthread routines [danielml]
+
+* hardware/qcom-caf/msm8953/display
+fe4a261599 Convert libsdmcore to blueprint [LuK1337]
+f39a4b3c74 Convert libgrallocutils and gpu_tonemapper to blueprint [EndCredits]
+
+* hardware/qcom-caf/msm8953/media
+96c795630 media: Drop libsidebandstreamhandle [Michael Bestas]
+04ae4677a mm-core: Convert to blueprint [Michael Bestas]
+4f587831d mm-core: Remove unused files & flags [Michael Bestas]
+cc7368494 mm-video-v4l2: Convert to blueprint [Michael Bestas]
+9ac70bfd1 mm-video-v4l2: vidc: Drop support for hypervisor [Michael Bestas]
+48f646f00 mm-video-v4l2: Remove SW OMX codecs, unused files & flags [Michael Bestas]
+1e364f623 libstagefrighthw: Convert to blueprint [Michael Bestas]
+4650bb660 libc2dcolorconvert: Cleanup dependencies & convert to blueprint [Michael Bestas]
+4bead8455 media: Remove autoconf/automake configuration [Michael Bestas]
+c8ef43894 Revert "libaac: Add test code for AAC encoder and decoder" [Indranil]
+
+* lineage/wiki
+3095fc64 wiki: Add OnePlus 6/7/8/9 series T-Mobile variants [LuK1337]
+
+====================
+     2025-08-29    
+====================
+* hardware/qcom-caf/sdm660/audio
+56d409bb00 hal: Convert audio extensions to blueprint [Michael Bestas]
+35ace1eff9 hal: Convert primary HAL to blueprint [Michael Bestas]
+0cebbf74fc hal: Remove unused libmaxxaudio extension [Michael Bestas]
+47e9fbc135 hal: Remove feature manager leftovers [Michael Bestas]
+cfe3b51bd1 audio: Remove all unsupported platforms & flags [Michael Bestas]
+b35e1f579d hal: audio_extn: Add argument to pthread routines [danielml]
+
+* lineage/hudson
+88904d7 hudson: Add Motorola Moto G Stylus 5G 2022 (milanf) [AnierinB]
+
+* lineage/mirror
+a39cfbd Updated to 29-Aug-2025 10:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+bac888e3 wiki: Regenerate pages/info/milanf.md [LuK1337]
+f4eaab3e wiki: device_install: Remove abnormal large gap [razorloves]
+de536e17 wiki: Add Motorola Moto G Stylus 5G 2022 (milanf) [AnierinB]
+
+====================
+     2025-08-28    
+====================
+* device/xiaomi/mayfly
+915ebbb mayfly: Update blobs and firmware from OS2.0.204.0.VLTCNXM [Arian]
+
+* device/xiaomi/mondrian
+54f4a19 mondrian: Update blobs and firmware from OS2.0.203.0.VMNMIXM [Arian]
+
+* device/xiaomi/thor
+21bfc2b thor: Update blobs and firmware from OS2.0.205.0.VLACNXM [Arian]
+
+* device/xiaomi/unicorn
+b5792a7 unicorn: Update blobs and firmware from OS2.0.203.0.VLECNXM [Arian]
+
+* hardware/qcom-caf/sm8450/display
+b44742b27d gralloc: avoid calling property_get() on every buffer allocation [Cosmin Tanislav]
+
+* hardware/qcom-caf/sm8550/display
+ccdf85d10d gralloc: avoid calling property_get() on every buffer allocation [Cosmin Tanislav]
+
+* hardware/qcom-caf/sm8650/display
+4d9c891907 gralloc: avoid calling property_get() on every buffer allocation [Cosmin Tanislav]
+
+* kernel/qcom/sm8650
+507304822058 Revert "PCI/PM: Observe reset delay irrespective of bridge_d3" [Park Ju Hyung]
+
+* kernel/qcom/sm8650-devicetrees
+330b078a ARM: dts: msm: Add device_type property for pcie nodes [Prudhvi Yarlagadda]
+
+* lineage/hudson
+c8f857a best vietnamese gaming phone [Tuan Anh]
+
+* lineage/wiki
+b2448054 wiki: Use correct before_install for bangkk/fogo/fogos/miami [LuK1337]
+b42731b1 wiki: Use correct before_install for moto-6225 [LuK1337]
+8a781182 wiki: devices: Add Vsmart Joy 3 (casuarina) [Tuan Anh]
+727c22d0 wiki: schema: Add Vsmart in the list [Tuan Anh]
+
+* packages/apps/Settings
+63fe7e22856 Settings: DevicePicker: Adapt to S style [ReallySnow]
+b55b67e5e8c SlicesDatabaseHelper: Use Build.VERSION.INCREMENTAL [jhenrique09]
+5f7b269313d Settings: fix typo in settings namespace for qr scanner on ls [maxwen]
+
+* vendor/xiaomi/mayfly
+efea339 mayfly: Update blobs and firmware from OS2.0.204.0.VLTCNXM [Arian]
+
+* vendor/xiaomi/mondrian
+da8a760 mondrian: Update blobs and firmware from OS2.0.203.0.VMNMIXM [Arian]
+
+* vendor/xiaomi/thor
+4d0c10e thor: Update blobs and firmware from OS2.0.205.0.VLACNXM [Arian]
+
+* vendor/xiaomi/unicorn
+a1a639e unicorn: Update blobs and firmware from OS2.0.203.0.VLECNXM [Arian]
 
