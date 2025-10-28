@@ -1,293 +1,474 @@
 ====================
-     2025-09-27    
+     2025-10-28    
 ====================
-* device/xiaomi/sm8450-common
-dd444e2d9 sm8450-common: taro: Move soc model property to qcv utils [Benergy Meenan Ravuri]
-fa0c08d6d sm8450-common: taro: Set SoC manufacturer and model properties [Roopesh Nataraja]
-3c2451156 sm8450-common: Import missing permission for QCC app [Fiqri Ardyansyah]
-5f7fddd1c sm8450-common: overlay: Bring back QTI UIM GBA package [Fiqri Ardyansyah]
-
-* hardware/lineage/interfaces
-01b0b5b sensors: Add a sensors 2.0 -> 1.0 subhal wrapper [bengris32]
+* device/fairphone/FP6
+dc110b2 FP6: Switch to NCM USB tethering [LuK1337]
+0664a22 fixup! FP6: Build qti common boot control HAL [Arian]
+c7326a5 [TMP] FP6: Disable kernel lto [Arian]
+6876082 FP6: overlay: Declare alert slider position [Arian]
+0863d3d FP6: Build and configure common alert slider KeyHandler [Arian]
+a9ad07e FP6: Add keylayout for fairphone moments switch [Antoine C.]
+4fcf869 FP6: Add support for toggling fast charge [Tim Zimmermann]
+130cae1 FP6: Enable ELF checks for audio blobs [Arian]
+50ca4ea FP6: Migrate QTI power HAL to soong_config_set [Michael Bestas]
+47dce37 FP6: Update WFD system blobs from dada OS2.0.217.0.WOCMIXM [basamaryan]
+fac7e94 FP6: split up WiFi Display sections [Cosmin Tanislav]
+1742dfa FP6: Address missing libbinder symbols [Michael Bestas]
+d0eff58 FP6: modules: Load adsp_loader_dlkm for battery status in recovery [pjgowtham]
+1ed3431 FP6: modules: Sort module load lists [Arian]
+059dd30 FP6: rootdir: Unmount /firmware after fastbootd starts [LuK1337]
+5818076 FP6: rootdir: Fix battery and USB OTG detection [ghostrider-reborn]
+cc37532 FP6: Build Lineage Health HAL [Michael Bestas]
+4035480 FP6: Enable camera override format from reserved [Arian]
+00bcff4 FP6: Disable virtual AB compression [Arian]
+e6e07b8 FP6: modules: Move eswin_ts to second stage modules [Arian]
+9de2439 FP6: modules: Move hdcp_qseecom_dlkm to second stage modules [Arian]
+cfad3c2 FP6: Simplify kernel modules list [Arian]
+052a2f8 FP6: overlay: Enable multiple vibration strength levels support [Michael Bestas]
+119184f FP6: overlay: Move rro packages to vendor partition [xboxfanj]
+8029214 FP6: enable e-SIM support [Alexander Martinz]
+65aa8bd FP6: qcril-database: Add migration to turn off poweron_opt [Anand S]
+01b4836 FP6: Reorder initial qcril db to avoid insertion before creation [Arian]
+d4ad93f FP6: Generate qcrilNr.db during build [Arian]
+e95f325 FP6: Add system_dlkm modprobe script [Arian]
+40d5c59 FP6: Include firmware [Arian]
+e7aeaab FP6: Drop unused lpa interface permission [Arian]
+6f7844c FP6: Drop qti fingerprint interface permission [Arian]
+2f06c87 FP6: overlay: Enable battery cycle count [Michael Bestas]
+736aa3d FP6: Add data connectionfatory manifest [Arian]
+5b59e23 FP6: overlay: Disable telephony injection [Arian]
+84bec38 FP6: Drop explicit building of libpalclient [Arian]
+0bcaac0 FP6: Build libhfp_pal [Arian]
+5ac3326 FP6: Add carrier config app [Arian]
+a532d2c FP6: sepolicy: Allow ueventd to load aw882xx calibration file [dianlujitao]
+333303c FP6: Add aw_cali.bin firmware symlink [dianlujitao]
+1ffbf15 FP6: Copy displayconfig to another display id [Arian]
+62ca893 FP6: overlay: Add some rounded corner content padding [Arian]
+4ed65cd FP6: overlay: Refine display cutout region [Arian]
+9f7647b FP6: overlay: Configure power button and fingerprint location [Arian]
+df828dc Revert "FP6: vintf: Remove qti cacert hidl" [Arian]
+9716467 FP6: Update blobs from FP6.QREL.15.122.0.20250718182448_VS1E-factory.zip [Arian]
+929024e FP6: sepolicy: Label missing wakeup sysfs nodes [Arian]
+ccb64b3 FP6: sepolicy: Allow power hal to write touchscreen sysfs files [Arian]
+4cffa65 FP6: sepolicy: Label touchscreen sysfs nodes [Arian]
+7db0b38 FP6: sepolicy: Allow sensors hal to set fp prop [Arian]
+2ccbda7 FP6: sepolicy: Move emkit/info lable to genfscon [Arian]
+50397dc FP6: sepolicy: Label fingerprint hal and add focaltech rules [Arian]
+1127291 FP6: sepolicy: Label more properties [Arian]
+10d52ee FP6: sepolicy: Label aw_vibrator [Arian]
+5980f63 FP6: sepolicy: Add emkit sepolicy for sensors [Arian]
+565c759 FP6: sepolicy: Allow nfc hal to set vendor.nfc.* properties [Arian]
+5d49b06 FP6: sepolicy: Remove unused hal_ispenc attribute [Arian]
+b823b30 FP6: sepolicy: Run algoservice as hal_camera_default [Arian]
+4ef610a FP6: sepolicy: Import camera related rules from device/qcom/sepolicy_vndr [Arian]
+ec7e0f9 FP6: sepolicy: Import samsung sec sepolicy from vendor/samsung_slsi/nfc [Arian]
+8e2a5cf FP6: sepolicy: Import wlan mac sepolicy from vendor/fairphone/common [Arian]
+9c5caec FP6: sepolicy: Import tctd sepolicy from vendor/fairphone/common [Arian]
+941aaa9 FP6: Include sepolicy [Arian]
+ace67de FP6: Drop qcom composer extension configuration files [Arian]
+63ef586 FP6: overlay: Enable 60 fps fhd video recording for front and primary back camera [Arian]
+a33dbfc FP6: overlay: Configure aux camera for Aperture [LuK1337]
+3cae2ce FP6: overlay: Enable smooth display setting [Arian]
+eb8c4f6 FP6: Remove unused vibrator driver [Antoine C.]
+1344044 FP6: Add double tap to wake [Antoine C.]
+a5a11a6 FP6: rootdir: Import qcom init from android.hardware.audio.service_64.rc [Arian]
+cd4b162 FP6: rootdir: Import fairphone changes to init.target.rc [Arian]
+fcecaf3 FP6: Stop building agmipc service and enable agm hidl [Arian]
+8d65755 FP6: modules: Load eswin_ts in recovery [Arian]
+c955c75 FP6: Copy attestion permission [Arian]
+d6f31eb FP6: Copy verified_boot permission [Arian]
+7a12238 FP6: Copy multitouch jazzhand permission [Arian]
+99728c7 FP6: Add feature flag for IPSEC_TUNNEL_MIGRATION [Yan Yan]
+e451b3e FP6: Copy ipsec_tunnels permission [Arian]
+92bc776 FP6: Build qcom telephony packages and copy permissions [Arian]
+b831fb2 FP6: Copy NFC permissions [Arian]
+cfc8be2 FP6: Copy keystore app attest key permission [Arian]
+5d25372 FP6: Copy fingerprint permissions [Arian]
+8c93a67 FP6: Include qcom usb init scripts and copy permissions [Arian]
+9940f34 FP6: Copy sku_volcano sensor permissions [Arian]
+762c75b FP6: Build IPACM [Arian]
+c81e57f FP6: Build sensors multihal [Arian]
+9eb54af FP6: Build QTI power service [Arian]
+8069fcd FP6: Build QTI health service [Arian]
+fd09aeb FP6: Build and enable fastbootd [Alessandro Astone]
+04e3066 FP6: Build qti display demura service [Arian]
+7149f0f FP6: Add qti media init scripts [Arian]
+e8bc00c FP6: Build QTI Thermal AIDL HAL [Yumi Yukimura]
+ac6d837 FP6: Build qti usb and gadget HAL [Arian]
+8fe8529 FP6: rootdir: Import qti kernel init scripts [Arian]
+f387b9b FP6: Build common QTI vibrator HAL [Michael Bestas]
+e0e9789 FP6: Add hwservicemanager, allocator service to the device. [Siddeswar Aluganti]
+152e38a FP6: Add vndservicemanager explicitly [Smita Ghosh]
+37f303d FP6: Drop duplicated hdcp_qseecom_dlkm and add it to recovery modules for msm_drm [Arian]
+4b962ab FP6: Import config.fs from LA.VENDOR.14.3.12.r1-01300-lanai.QSSI15.0 [Arian]
+929a9db FP6: Copy graphics permissions [Arian]
+e584182 FP6: Build clearkey drm service [Arian]
+2884a45 FP6: Build qcom display hal [Arian]
+2e264db FP6: Copy camera permissions [Arian]
+2a50958 FP6: Build bluetooth audio impl and copy bluetooth permissions [Arian]
+bdb05bb FP6: Redefine bluetooth a2dp offload capabilities [Arian]
+4d10231 FP6: audio: Don't advertise unsupported BT A2DP formats in audio policy config [Arian]
+ee48a67 FP6: audio: Drop bluetooth_qti audio policies [Arian]
+6af5839 FP6: audio: Import fairphone changes to audio policy configuration [Arian]
+976b1f8 FP6: Import volcano audio_policy_configuration [Arian]
+46ffdd3 FP6: audio: Disable native speaker protection [Pavel Dubrova]
+bc4fa26 FP6: audio: Import fairphone changes from FP6.QREL.15.91.0 [Arian]
+331cb08 FP6: Import pal audio configs for volcano_mtp [Arian]
+df10183 FP6: Copy google media codecs from frameworks/av [Arian]
+e3bbe0b FP6: Configure and build qcom audio HAL [Arian]
+081c81b FP6: Implement xtra-daemon control via property [Michael Bestas]
+995533b FP6: gps: Lower debug level [Michael Bestas]
+5169bad FP6: gps: Disable xtwifi location services [TheStrix]
+d77eb1f FP6: Build GNSS HAL from source and import configs from stock [Arian]
+a162ea3 FP6: gps: Convert remaining Android.mk to bp [Michael Bestas]
+13fc097 FP6: gps: Remove unused implementations [Michael Bestas]
+a595d4e FP6: gps: Fix unqualified-std-cast-call warning [Yi Kong]
+ab245e2 FP6: gps: Fix -Wbitwise-instead-of-logical [Pirama Arumuga Nainar]
+e77b4e1 FP6: gps: Fix non-ASCII character in gps.conf [dianlujitao]
+586039d FP6: Import gps from LA.VENDOR.14.3.0.r1-20200-lanai.0 [Arian]
+19e8afe FP6: Switch to QTI Memtrack AIDL HAL [Yumi Yukimura]
+b375780 FP6: Allow rt_tgsigqueueinfo syscall for wfdhdcphalservice [Arian]
+c6655ca FP6: Enable QSPA Framework [Karra Harshitha]
+83f4922 FP6: Enable elfchecks for camera libs [LuK1337]
+d3bee55 FP6: fix dependencies on multiple AIDL versions [Cosmin Tanislav]
+fd41918 FP6: Resolve missing symbols on libqcodec2_core [Bruno Martins]
+5e59aae FP6: Use libhidlbase_shim for vendor.libdpmframework [Arian]
+58edcc6 FP6: Initial proprietary files listing [Arian]
+eb87d32 FP6: Drop fairphone touch/idle timer modifications [Arian]
+c4e8213 FP6: Add debug IMS props to workaround CarrierConfig restrictions [LuK1337]
+e8f54c8 FP6: Move default network property to vendor partition [Jayachandran C]
+f35cab5 FP6: Load volcano_v1 media profiles [Arian]
+979585e FP6: Import properties from stock [Arian]
+6cec3b9 FP6: vintf: Remove qti cacert hidl [Arian]
+cce1496 FP6: vintf: Remove NXP NFC and secure element [Arian]
+a0ecebd FP6: vintf: Add fcm for tcl camera algoservice [Arian]
+a7ef034 FP6: Import qcom common rootdir files from LA.VENDOR.14.3.0.r1-21700-lanai.0 [Arian]
+ab2d458 FP6: Import volcano rootdir files from LA.VENDOR.14.3.0.r1-21700-lanai.0 [Arian]
+5f8f6c7 FP6: overlay: Import runtime resource overlays [Arian]
+326f117 FP6: Set screen density to xxxhdpi [Arian]
+a29641e FP6: Create mountpoints in vendor [Arian]
+e8baac7 FP6: Build qti common boot control HAL [Arian]
+61416e3 FP6: Include common qualcomm symlinks [Arian]
+ffa1393 FP6: Create WLAN symlinks [Arian]
+fc39777 FP6: wlan: Read MAC address from file [Arian]
+4b25b6c FP6: Build wlan service and import configs from LA.VENDOR.14.3.0.r1-21700-lanai.0 [Arian]
+9f469b9 FP6: Set vendor security patch level [Arian]
+ed0c48d FP6: Include qcom common sepolicy [Arian]
+76a528d FP6: Setup VINTF manifests [Arian]
+e90d060 FP6: Configure recovery and include fstab from volcano LA.VENDOR.14.3.0.r1-21700-lanai.0 [Arian]
+adfc0d2 FP6: Move GSI AVB keys to /vendor_boot [Alexander Koskovich]
+ce449b6 FP6: Disable rild [Arian]
+1fb4ef6 FP6: Enable qcom hardware repos [Arian]
+3c71344 FP6: Set init_boot header version to 4 [Arian]
+c62e1c5 FP6: Setup virtual A/B partitions [Arian]
+9bee996 FP6: Set shipping board and product api level [Arian]
+795df5e FP6: Configure vbmeta image and disable verification [Arian]
+331a649 FP6: Configure kernel modules and import module load files from stock [Arian]
 
 * kernel/fairphone/sm7635
-8ef072059b55 Merge commit 'refs/changes/97/452397/1' of https://github.com/LineageOS/android_kernel_qcom_sm8650 into HEAD [Arian]
+c4dd531da8ea Merge commit 'refs/changes/35/456835/1' of https://github.com/LineageOS/android_kernel_qcom_sm8650 into HEAD [Arian]
+cc99b1dad8fb misc: haptic_hv: Support wav_id 0 to stop vibrating [Tim Zimmermann]
+354cd876273c defconfig: fps: Enable crypto config for volcano [Abhinav Gupta]
+0a53543835e5 [FPS-3002] Device wakes when reaching 80%, using Battery Protect . [xianzhu.zhang]
+65130ad824bd [FPS-2629]tof:fix crash issue  ###%%%comment:tof:fix crash issue  ###%%%bug number:FPS-2629  ###%%%product name:FP Spring  ###%%%Root Cause:tof:fix crash issue  ###%%%Root Cause Detail:tof:fix crash issue  ###%%%Test_Suggestion:test camera  ###%%%Test_Report:PASS  ###%%%Bug category:Platform  ###%%%Module_Impact:NO  ###%%%Solution:NO  ###%%%Pre_build:YES  ###%%%CodeReviewModule:Camera-system  ###%%%Highlight:NO  ###%%%author email:jinghuang@tcl.com [jinghuang]
+2af879313b97 Revert "[FPS-2629]tof:fix crash issue  ###%%%comment:tof:fix crash issue  ###%%%bug number:FPS-2629  ###%%%product name:FP Spring  ###%%%Root Cause:tof:fix crash issue  ###%%%Root Cause Detail:tof:fix crash issue  ###%%%Test_Suggestion:test camera  ###%%%Test_Report:PASS  ###%%%Bug category:Platform  ###%%%Module_Impact:NO  ###%%%Solution:NO  ###%%%Pre_build:YES  ###%%%CodeReviewModule:Camera-system  ###%%%Highlight:NO  ###%%%author email:jinghuang@tcl.com" [晶 黄]
+064f9478bf25 [FPS-2629]tof:fix crash issue  ###%%%comment:tof:fix crash issue  ###%%%bug number:FPS-2629  ###%%%product name:FP Spring  ###%%%Root Cause:tof:fix crash issue  ###%%%Root Cause Detail:tof:fix crash issue  ###%%%Test_Suggestion:test camera  ###%%%Test_Report:PASS  ###%%%Bug category:Platform  ###%%%Module_Impact:NO  ###%%%Solution:NO  ###%%%Pre_build:YES  ###%%%CodeReviewModule:Camera-system  ###%%%Highlight:NO  ###%%%author email:jinghuang@tcl.com [jinghuang]
+4ba3becc5a2c FPS-2597 [MMI][CU & MINI][EfuseCheck] dump is enable[4] [tianwen.zhang]
+b7ceb16c33fb [FPS-2372] Add SIM card tray detect node [changyuan1.zhou]
+a676f97d38fa Revert "[FPS-1152] add some log vibrator in order to get the bootup log" [Zhibang XU]
+e031d09c83a5 Revert "[FPS-1152] add some vibrator log only for test." [Zhibang XU]
+23e4b0efae9e [FPS-2638][3/2]change max charge current to 5800mA. [xianzhu.zhang]
+044f0345d491 [FPS-2638][2/2]change max charge current to 5800mA. [xianzhu.zhang]
+4609f25ed24e [FPS-1152] add some log vibrator in order to get the bootup log [zhibangxu]
+c4ee4d863dbb [FPS-2034][2/2] Battery Protect does not work . [xianzhu.zhang]
+cee67e82d479 [FPS-2299][2/2] Limit charge speed to 4A when screen on . [xianzhu.zhang]
+77343398bdae [FPS-924] : [FPS][Switch Key]Need a node to get the switch key state [lin.jiang]
+e5d980ef2fc2 import from pineapple for r00020 upgrade [android-t1]
+d63c2bc61d40 [FPS-1952][2/2] add the battery charging disable node . [xianzhu.zhang]
+40e8c561e441 [FPS-38] : [FPS][FP-Spring]NPI_DOWN driver 2/2 [lin.jiang]
+6f5a96140cf3 [FPS-1152] add some vibrator log only for test. [zhibangxu]
+2119947122d4 [FPS-1034] [2/2] Battery Charging Speed Options . [xianzhu.zhang]
+8622f1fd2a06 Revert "VTS black test 2" [睿 唐]
+4acc5fb6b33b [FPS-39][FP-Spring]emkit add node [1/3] [binsu]
+efd7d0f59251 VTS black test 2 [bo.yu]
+d072df9e9d1e [FPS-184][2/2]USB Water detection function-BSP . [xianzhu.zhang]
+0b5b08810f4d [FPS-639] [FPS] Modify for hw_version node[1/1] [binsu]
+48075650fb9a [FPS-639] [FPS] Add hw_version node[2/2] [binsu]
+d8abc338b60a [FPS-822] add emkit information for sensors [2/3] [zhibangxu]
+918fde4fdfa6 [FPS-773]fix crash for  tof [jinghuang]
+47525e3a7e2f [FPS-619] [1/3] ESWIN TP add TP suspend and resume (drm notifier) [changyuan1.zhou]
+7cc2784294d1 [FPS-671] add fw_reload and delay to prevent tp can't touch [changyuan1.zhou]
+f6e9fba12a92 [FPS-671][2/2] device goes suspend and can't wake up [changyuan1.zhou]
+d91954fafc04 [FPS-619] remove ESWIN TP log info [changyuan1.zhou]
+291b60e563f9 [FPS-713] update the gain to reduce voltage [mingwu.zhang]
+0c1651bf2f66 [FPS-619] [1/2]Temporary modification ESWIN TP driver update [changyuan1.zhou]
+dc1f88fbab90 [FPS-37][FP-Spring] FP bringup driver [mingpeng.mao]
+4c0cf4c6c9e1 FPS-643 [1]User variant build error [liquan.zhou]
+fff8383e1c53 [FPS-39][FP-Spring]emkit bring up [1/2] [binsu]
+22216fb22898 [FPS-627][1/2][Driver]Create TypeC CC orientation node. [xianzhu.zhang]
+4cf6e86ade0d fix build error [android-t1]
+3f7cb5da4a77 [FPS-619] [1/2]ESWIN TP driver update [changyuan1.zhou]
+c4bb120deff7 [FPS-23] [1/2]ESWIN TP bring up [changyuan1.zhou]
+f233e36ec9cd [FPS-32] [FP-Spring]Audio bring up [4/9] [bo.yu]
+0849598e9b4a [FPS-440]add apply cali data for tof stmvl53l1. [jinghuang]
+c2acd4588015 [FPS-40][2/2] Disable charging with USB. [xianzhu.zhang]
+b5202969eec7 [FPS-24] [1/3]Virbator bring up for kernel [mingwu.zhang]
+a1a16c4c787a [FPS-440]add tof stmvl53l1. [jinghuang]
+073cc2551729 [FPS-426] [2/2]add FPS sku 600  dts. [xianzhu.zhang]
+0cd996daa144 [FPS-281] FPS product customization [yi.fan]
+455f694400e2 Rename sm8650 to sm7635 [Arian]
 
 * kernel/fairphone/sm7635-modules
-87f5e78bc3e fixup! Rename sm8650-modules to sm7635-modules [Arian]
-bd15f451ce7 Merge commit 'refs/changes/11/452411/2' of https://github.com/LineageOS/android_kernel_qcom_sm8650-modules into HEAD [Arian]
-ee39700e2a6 [FPS-2254][display]Add AOD code to branch_rc[2/2] [mingpeng.mao]
-0f50a55485c audio-kernel: codecs: aw882xx: Load calibration file through firmware class [dianlujitao]
-d8e9e67430e audio-kernel: codecs: aw882xx: Enable calibration reading [Pavel Dubrova]
-4fdfea218bc audio-kernel: codecs: aw882xx: dos2unix [Arian]
-42d75e2dbf0 touch-drivers: eswin_touch: Introduce a power workqueue to handle suspend/resume notifications [Arian]
-f542d41f0e3 samsung_slsi: Add missing cflags [Arian]
-1578f605060 touch-drivers: Add goodix_ts_proc to goodix_ts objects [Arian]
-0b836f76a6c touch-drivers: Fix eswin_ts objects file extension [Arian]
-1fa57574074 bt-kernel: Fix compilation of soundwire [Arian]
-7791f061f1b Export audio-kernel bindings [Arian]
-f4e01b62172 [FPS-2772] TP driver add fw version check, upgrade fw when fw version is different. [changyuan1.zhou]
-c8d56987bc2 [FPS-2536] System/ADB shell will reboot after make a voip/phone call [changyuan1.zhou]
-16809ad6cde [FPS-2292]ESWIN tp driver add clear touch points and reset function [changyuan1.zhou]
-4f32c6c2418 [FPS-2292][2/2] ESWIN TP firmware update to v2456 & tp driver update [changyuan1.zhou]
-c82f3a96640 [FPS-23] ESWIN TP driver add charger notifier and write cmd when screen on [changyuan1.zhou]
-ffdaf843c5a [FPS-1891] Double-Tap should supported in AOD mode [changyuan1.zhou]
-3d6c8218b08 [FPS-23] ESWIN TP driver update [changyuan1.zhou]
-df4dbcff7cc [FPS-619][1/2] ESWIN TP driver add driver node [changyuan1.zhou]
-07e2da2865c [FPS-619][1/2] ESWIN TP add force baseline [changyuan1.zhou]
-6b94388251c [FPS-39][FP-Spring]emkit add node [2/3] [binsu]
-a7ec253d994 [FPS-619] ESWIN TP remove debug log [changyuan1.zhou]
-801457075a3 [FPS-619] ESWIN TP release all touch when screen off [changyuan1.zhou]
-c65160738d5 [FPS-619] ESWIN TP driver update and add heart-beat function [changyuan1.zhou]
-e1c05e3eb03 [FPS-619] [3/3] ESWIN TP add TP suspend and resume (drm notifier) [changyuan1.zhou]
-7cf9a32448b [FPS-23] [1/3]add TP suspend and resume [changyuan1.zhou]
-d2175446691 [FPS-23] [3/3]TP bring up [changyuan1.zhou]
-482643ead4d bt-kernel: Add more configs to Makefile [Arian]
-a77cde8ca29 samsung_slsi: nfc: Add FP6 configs to Makefile [Arian]
-517096be7fb [FPS-146][FP-Spring] NFC Bring up (06/12) [yingsen.zhang]
-3ed78380a08 [FPS-281] FPS product customization [yi.fan]
-a89d47257fb import from pineapple for r00020 upgrade [android-t1]
-e0903212312 fix build error [android-t1]
-e0e5d3ac0f4 [FPS-281] FPS product customization [yi.fan]
-f12e274d58e [FPS-281] FPS product customization [yi.fan]
-622f5427293 [FPS-281] FPS product customization [Yi FAN]
-e70daafad3e [FPS-281] FPS product customization [yi.fan]
-388bfece666 [FPS-281] FPS product customization [yi.fan]
-7944d4a4aa8 [FPS-281] FPS product customization [yi.fan]
-3f770825f36 [FPS-281] FPS product customization [yi.fan]
-dd4212d5c55 [FPS-281] FPS product customization [yi.fan]
-69a26b2c068 [FPS-281] FPS product customization [yi.fan]
-3d6db967b2b [FPS-281] FPS product customization [yi.fan]
-de37f9e48e8 Revert "Revert "[FPS-2505] All frame rates use the same mipi clk[2/2]"" [明鹏 毛]
-dbe1ccce6ee Revert "[FPS-2505] All frame rates use the same mipi clk[2/2]" [睿 唐]
-49726029af0 [FPS-2505] All frame rates use the same mipi clk[2/2] [mingpeng.mao]
-d4a835dd777 [FPS-2525][2/3] Config 10bit DSC panel [changyuan1.zhou]
-396dbde881f [FPS-1265][2/2] Modify OLED kernel power on timing t1 [changyuan1.zhou]
-c6f27be9a95 [FPS-1934][OLED] del 1hz and add 10hz [2/2] [“mingpeng.mao”]
-40aa5ba6041 [FPS-942] [1/2]Modify horizontal strips appear on screen. [changyuan1.zhou]
-ff3f11dde16 [FPS-1089][OLED] Optimize some frame rates based on 120hz [2/2] [“mingpeng.mao”]
-3197c97d76b [FPS-1309][OLED] Fix screen display related issues[3/3] [“mingpeng.mao”]
-46d59cecab4 [FPS-1089][OLED] Fix refresh rate not same with settings[2/3] [“mingpeng.mao”]
-50085f3aaf9 [FPS-22] OLED kernel power on&off timing modify [changyuan1.zhou]
-118699c052d [FPS-22][OLED] Add Dimming Setting[1/3] [“mingpeng.mao”]
-f17a98e75e2 [FPS-619][2/2] ESWIN TP add force baseline [changyuan1.zhou]
-b99fc6e5a54 [FPS-39][FP-Spring]emkit add node [3/3] [binsu]
-fcdb492210b [FPS-786]Add node to ctrl backlight curve mapping for debug [changyuan1.zhou]
-0a931c5c6ce [FPS-22] Add project macro & Add log temporarily for debugging [changyuan1.zhou]
-ca0cff8c76b [FPS-649] Dynamic fps adaptation[2/3] [mingpeng.mao]
-74b64bb92d0 [FPS-786] Backlight curve mapping. [changyuan1.zhou]
-a69dc06cc70 [FPS-22][2/2] config max brightness to 4094 [changyuan1.zhou]
-a4b08af5e40 [FPS-22] [2/3]OLED bring up [changyuan1.zhou]
-58ccc0d42c9 [FPS-281] FPS product customization [Yi FAN]
-35c280c07ba [FPS-281] FPS product customization [yi.fan]
-8ac36d1851d [FPS-281] FPS product customization [yi.fan]
-aaa958db170 [FPS-281] FPS product customization [yi.fan]
-bbe6b9908a8 [FPS-281] FPS product customization [yi.fan]
-e0b1c719cc6 [FPS-2869]ois:upgrade fw version:from 0x0201  to  0x0302   for ois dw9784  ###%%%comment:upgrade fw version:from 0x0201  to  0x0302   for ois dw9784  ###%%%bug number:FPS-2869  ###%%%product name:FP Spring  ###%%%Root Cause:upgrade fw version:from 0x0201  to  0x0302   for ois dw9784  ###%%%Root Cause Detail:upgrade fw version:from 0x0201  to  0x0302   for ois dw9784  ###%%%Test_Suggestion:test camera  ###%%%Test_Report:PASS  ###%%%Bug category:Platform  ###%%%Module_Impact:NO  ###%%%Solution:NO  ###%%%Pre_build:YES  ###%%%CodeReviewModule:Camera-system  ###%%%Highlight:NO  ###%%%author email:jinghuang@tcl.com [晶 黄]
-449100bd5f1 msm: camera: vfe: Check upper bound for mux_rsrc [Pranav Sanwal]
-16ef5d3ec0d msm: camera: cpas: Check upper bound for mnoc idx [Pranav Sanwal]
-9a0be64bbbc [FPS-871]improve af settle time for fps project [jinghuang]
-1f7190cd284 [FPS-562]modify log level for isp [jinghuang]
-0d1634938e9 [FPS-562]ois fw update ,when flash all erase [jinghuang]
-2c641fd95b2 [FPS-562]ois fw version:0x0201  ###%%%comment:ois fw version:0x0201  ###%%%bug number:FPS-562  ###%%%product name:FP Spring  ###%%%Root Cause:ois calibration:ois fw version:0x0201  ###%%%Root Cause Detail:ois fw version:0x0201  ###%%%Test_Suggestion:test camera  ###%%%Test_Report:PASS  ###%%%Bug category:Platform  ###%%%Module_Impact:NO  ###%%%Solution:NO  ###%%%Pre_build:YES  ###%%%CodeReviewModule:Camera-system  ###%%%Highlight:NO  ###%%%author email:jinghuang@tcl.com [jinghuang]
-870b7a65228 [FPS-562]ois work should cam_ois_state =CAM_OIS_CONFIG,move it here. [jinghuang]
-49266443a0e [FPS-562]add calibration function for ois dw9784 [jinghuang]
-1e86c2b0b4b [FPS-562]add ois dw9784 for project [jinghuang]
-741deef6b4c [FPS-439] uw sensor otp update [chengming.xiang]
-4ac3b4b2114 [FPS-439]add deviceinfo Node for camera mmi [chengming.xiang]
-837b1f46959 [FPS-281] FPS product customization [Yi FAN]
-628ddd933a3 [FPS-281] FPS product customization [yi.fan]
-46a6295e51f fix build error [android-t1]
-506ac2dfa01 [FPS-281] FPS product customization [yi.fan]
-a0561099a86 [FPS-1450]　DVT2-1 HAC 验证参数 [4/6] audio-kernel [bo.yu]
-c6deb1e7570 Revert "[FPS-1450]　DVT2-1 HAC 验证参数 [3/5] audio kernel" [Bo YU]
-50fb330e6a1 [FPS-1450]　DVT2-1 HAC 验证参数 [3/5] audio kernel [bo.yu]
-fc8f294a5bf Revert "VTS black test 3" [睿 唐]
-5ee8d45d4c6 VTS black test 3 [bo.yu]
-4927b168fdb [FPS-32][FP-Spring]Audio bring up [26/9] [bo.yu]
-4aa378e76a4 fix build error [android-t1]
-e1b07d911de [FPS-32] [FP-Spring]Audio bring up [5/9] [bo.yu]
-8135742255c [FPS-281] FPS product customization [yi.fan]
-56bc3060aff Import fairphone sm7635 kernel namespace [Arian]
-6287d81c58a Rename sm8650-modules to sm7635-modules [Arian]
-982313720b6 Add 'samsung_slsi/nfc/' from commit '9a75946ffc4318d18331950a4d27618ea858c56b' [Arian]
+faadf1321e Merge commit 'refs/changes/45/456845/1' of https://github.com/LineageOS/android_kernel_qcom_sm8650-modules into HEAD [Arian]
+4710c16569 touch-drivers: Guard MIN and MAX macros [Arian]
+8be74793a4 [FPS-2254][display]Add AOD code to branch_rc[2/2] [mingpeng.mao]
+183602cfaf audio-kernel: codecs: aw882xx: Load calibration file through firmware class [dianlujitao]
+9b678a6438 audio-kernel: codecs: aw882xx: Enable calibration reading [Pavel Dubrova]
+7c0cbf68ee audio-kernel: codecs: aw882xx: dos2unix [Arian]
+e2e102731e touch-drivers: eswin_touch: Introduce a power workqueue to handle suspend/resume notifications [Arian]
+45f7fd0712 samsung_slsi: Add missing cflags [Arian]
+d4a0afdb58 touch-drivers: Add goodix_ts_proc to goodix_ts objects [Arian]
+9bd4a9904f touch-drivers: Fix eswin_ts objects file extension [Arian]
+9344a124af bt-kernel: Fix compilation of soundwire [Arian]
+a4f4795f76 Export audio-kernel bindings [Arian]
+ded3fc2768 [FPS-2772] TP driver add fw version check, upgrade fw when fw version is different. [changyuan1.zhou]
+b09dc92ebc [FPS-2536] System/ADB shell will reboot after make a voip/phone call [changyuan1.zhou]
+a821e992dd [FPS-2292]ESWIN tp driver add clear touch points and reset function [changyuan1.zhou]
+117a5d6820 [FPS-2292][2/2] ESWIN TP firmware update to v2456 & tp driver update [changyuan1.zhou]
+6e6e908201 [FPS-23] ESWIN TP driver add charger notifier and write cmd when screen on [changyuan1.zhou]
+a68e9d7179 [FPS-1891] Double-Tap should supported in AOD mode [changyuan1.zhou]
+2483b51235 [FPS-23] ESWIN TP driver update [changyuan1.zhou]
+67468e87e6 [FPS-619][1/2] ESWIN TP driver add driver node [changyuan1.zhou]
+762f9e59c8 [FPS-619][1/2] ESWIN TP add force baseline [changyuan1.zhou]
+b0a5a5a4b5 [FPS-39][FP-Spring]emkit add node [2/3] [binsu]
+7eb09b239c [FPS-619] ESWIN TP remove debug log [changyuan1.zhou]
+f04e240cf3 [FPS-619] ESWIN TP release all touch when screen off [changyuan1.zhou]
+3a30772138 [FPS-619] ESWIN TP driver update and add heart-beat function [changyuan1.zhou]
+b12ab6bd38 [FPS-619] [3/3] ESWIN TP add TP suspend and resume (drm notifier) [changyuan1.zhou]
+ebaea3a292 [FPS-23] [1/3]add TP suspend and resume [changyuan1.zhou]
+311a3014ce [FPS-23] [3/3]TP bring up [changyuan1.zhou]
+dacaed5f37 bt-kernel: Add more configs to Makefile [Arian]
+c86889d5a7 samsung_slsi: nfc: Add FP6 configs to Makefile [Arian]
+99fd1661fc [FPS-146][FP-Spring] NFC Bring up (06/12) [yingsen.zhang]
+602e7ba853 [FPS-281] FPS product customization [yi.fan]
+f7a97c59ba import from pineapple for r00020 upgrade [android-t1]
+22aa689bd4 fix build error [android-t1]
+158af330af [FPS-281] FPS product customization [yi.fan]
+d2f2f202ce [FPS-281] FPS product customization [yi.fan]
+71d3bc9b5e [FPS-281] FPS product customization [Yi FAN]
+18188d1fd1 [FPS-281] FPS product customization [yi.fan]
+051be36638 [FPS-281] FPS product customization [yi.fan]
+95f2161c47 [FPS-281] FPS product customization [yi.fan]
+fe87873042 [FPS-281] FPS product customization [yi.fan]
+32ed91c3a9 [FPS-281] FPS product customization [yi.fan]
+a80b82f125 [FPS-281] FPS product customization [yi.fan]
+ae5d5fd65e [FPS-281] FPS product customization [yi.fan]
+025bd24e5f Revert "Revert "[FPS-2505] All frame rates use the same mipi clk[2/2]"" [明鹏 毛]
+f34fd53912 Revert "[FPS-2505] All frame rates use the same mipi clk[2/2]" [睿 唐]
+688b376041 [FPS-2505] All frame rates use the same mipi clk[2/2] [mingpeng.mao]
+ce7e0370a0 [FPS-2525][2/3] Config 10bit DSC panel [changyuan1.zhou]
+ecf714f46c [FPS-1265][2/2] Modify OLED kernel power on timing t1 [changyuan1.zhou]
+f913e3ac98 [FPS-1934][OLED] del 1hz and add 10hz [2/2] [“mingpeng.mao”]
+8935e44204 [FPS-942] [1/2]Modify horizontal strips appear on screen. [changyuan1.zhou]
+15b150063f [FPS-1089][OLED] Optimize some frame rates based on 120hz [2/2] [“mingpeng.mao”]
+690d937eb4 [FPS-1309][OLED] Fix screen display related issues[3/3] [“mingpeng.mao”]
+469713be30 [FPS-1089][OLED] Fix refresh rate not same with settings[2/3] [“mingpeng.mao”]
+e80eb3d234 [FPS-22] OLED kernel power on&off timing modify [changyuan1.zhou]
+bf90ccd1f1 [FPS-22][OLED] Add Dimming Setting[1/3] [“mingpeng.mao”]
+1da42cd9f6 [FPS-619][2/2] ESWIN TP add force baseline [changyuan1.zhou]
+47ee7a37ee [FPS-39][FP-Spring]emkit add node [3/3] [binsu]
+8ec70c80b8 [FPS-786]Add node to ctrl backlight curve mapping for debug [changyuan1.zhou]
+6f56c7375e [FPS-22] Add project macro & Add log temporarily for debugging [changyuan1.zhou]
+53e67ad7a2 [FPS-649] Dynamic fps adaptation[2/3] [mingpeng.mao]
+8bc2ca451f [FPS-786] Backlight curve mapping. [changyuan1.zhou]
+9c158da2ee [FPS-22][2/2] config max brightness to 4094 [changyuan1.zhou]
+1739ffbc73 [FPS-22] [2/3]OLED bring up [changyuan1.zhou]
+03e8ed2135 [FPS-281] FPS product customization [Yi FAN]
+cab00ee94c [FPS-281] FPS product customization [yi.fan]
+d589d445be [FPS-281] FPS product customization [yi.fan]
+04db46f863 [FPS-281] FPS product customization [yi.fan]
+90c456eeaf [FPS-281] FPS product customization [yi.fan]
+cca9326358 [FPS-2869]ois:upgrade fw version:from 0x0201  to  0x0302   for ois dw9784  ###%%%comment:upgrade fw version:from 0x0201  to  0x0302   for ois dw9784  ###%%%bug number:FPS-2869  ###%%%product name:FP Spring  ###%%%Root Cause:upgrade fw version:from 0x0201  to  0x0302   for ois dw9784  ###%%%Root Cause Detail:upgrade fw version:from 0x0201  to  0x0302   for ois dw9784  ###%%%Test_Suggestion:test camera  ###%%%Test_Report:PASS  ###%%%Bug category:Platform  ###%%%Module_Impact:NO  ###%%%Solution:NO  ###%%%Pre_build:YES  ###%%%CodeReviewModule:Camera-system  ###%%%Highlight:NO  ###%%%author email:jinghuang@tcl.com [晶 黄]
+73f8f4ea0c msm: camera: vfe: Check upper bound for mux_rsrc [Pranav Sanwal]
+0223081932 msm: camera: cpas: Check upper bound for mnoc idx [Pranav Sanwal]
+60c9cdbf84 [FPS-871]improve af settle time for fps project [jinghuang]
+48dd3fd1f6 [FPS-562]modify log level for isp [jinghuang]
+431526db18 [FPS-562]ois fw update ,when flash all erase [jinghuang]
+89f6fd3495 [FPS-562]ois fw version:0x0201  ###%%%comment:ois fw version:0x0201  ###%%%bug number:FPS-562  ###%%%product name:FP Spring  ###%%%Root Cause:ois calibration:ois fw version:0x0201  ###%%%Root Cause Detail:ois fw version:0x0201  ###%%%Test_Suggestion:test camera  ###%%%Test_Report:PASS  ###%%%Bug category:Platform  ###%%%Module_Impact:NO  ###%%%Solution:NO  ###%%%Pre_build:YES  ###%%%CodeReviewModule:Camera-system  ###%%%Highlight:NO  ###%%%author email:jinghuang@tcl.com [jinghuang]
+d7fc702421 [FPS-562]ois work should cam_ois_state =CAM_OIS_CONFIG,move it here. [jinghuang]
+1a9f346829 [FPS-562]add calibration function for ois dw9784 [jinghuang]
+bb4316969c [FPS-562]add ois dw9784 for project [jinghuang]
+f39f3256aa [FPS-439] uw sensor otp update [chengming.xiang]
+03dc432369 [FPS-439]add deviceinfo Node for camera mmi [chengming.xiang]
+0888b72fed [FPS-281] FPS product customization [Yi FAN]
+f005ef6d66 [FPS-281] FPS product customization [yi.fan]
+a8835d2039 fix build error [android-t1]
+bec0d40285 [FPS-281] FPS product customization [yi.fan]
+61aa7fb083 [FPS-1450]　DVT2-1 HAC 验证参数 [4/6] audio-kernel [bo.yu]
+d9ece7ac86 Revert "[FPS-1450]　DVT2-1 HAC 验证参数 [3/5] audio kernel" [Bo YU]
+54c0e9e126 [FPS-1450]　DVT2-1 HAC 验证参数 [3/5] audio kernel [bo.yu]
+8b25f4ffec Revert "VTS black test 3" [睿 唐]
+6aebb0ed5b VTS black test 3 [bo.yu]
+103e04bb82 [FPS-32][FP-Spring]Audio bring up [26/9] [bo.yu]
+70ee99b5bd fix build error [android-t1]
+711ccd5adb [FPS-32] [FP-Spring]Audio bring up [5/9] [bo.yu]
+32dce8b210 [FPS-281] FPS product customization [yi.fan]
+ce3e080d14 Import fairphone sm7635 kernel namespace [Arian]
+0db0570feb Rename sm8650-modules to sm7635-modules [Arian]
+2b835f6e2f Add 'samsung_slsi/nfc/' from commit '9a75946ffc4318d18331950a4d27618ea858c56b' [Arian]
 
-* lineage/mirror
-6140202 Updated lineage-minimal to 26-Sep-2025 22:02 UTC [Tim Schumacher]
+* system/core
+bef62be9f Revert "Remove space check from overlayfs test" [LuK1337]
 
-* packages/apps/FMRadio
-7e89b01 FmService: Set RECEIVER_NOT_EXPORTED [Cyber Knight]
+* vendor/qcom/opensource/vibrator
+a362998 vibrator: Add support for aw-haptic-hv [Arian]
 
-* packages/apps/Jelly
-2d8559b Jelly: Load scripts once [Luca Stefani]
-67d7b58 Jelly: Implement Web Share API [SaeedDev94]
+====================
+     2025-10-27    
+====================
+* device/xiaomi/sm8450-common
+da8f1abaf sm8450-common: Update blobs and firmware from OS2.0.204.0.VLFMIXM [Arian]
+74187ce0f sm8450-common: Decommonize vendor security patch level [Arian]
+ae65f2d33 sm8450-common: Align verified boot algorithms and rollback indices with stock [Arian]
+abbcdffed sm8450-common: Use vendor enhanced media codecs for cape and taro [Arian]
+aab9c9b56 sm8450-common: Remove software OMX blobs [Bruno Martins]
+56fe494cc sm8450-common: sepolicy: Allow camera HAL to find quickcamera HAL [Fiqri Ardyansyah]
+d097013a6 sm8450-common: sepolicy: Correct audio hal socket rules and use unix_socket_connect macro [Arian]
+e454f298c sm8450-common: sepolicy: Drop unused thermal_zone87 temp label [Fiqri Ardyansyah]
+464774b50 sm8450-common: sepolicy: Cleanup audio related policies [Fiqri Ardyansyah]
+f346ffe78 sm8450-common: sepolicy: Drop unused Goodix touchscreen wakeup label [Fiqri Ardyansyah]
+1920c12a0 sm8450-common: sepolicy: Cleanup batterysecret rules using wakelock_use macro [Arian]
+61617bb99 sm8450-common: sepolicy: Drop unused qcom-battery sysfs rules [Fiqri Ardyansyah]
+e6ff015fa sm8450-common: Set executable permission on extract-files.py [Arian]
 
-* vendor/lineage-priv
-a094e40 Add Android 16 keys [Arian]
-2ba5da2 lineage-priv-template: Add Android 16 keys [LuK1337]
-11d5a0e lineage-priv-template: Skip dirs ending in .apk [LuK1337]
+* vendor/lineage
+a13626ad apn: Add finetwork [Arian]
 
 * vendor/xiaomi/sm8450-common
-807c31b3 sm8450-common: Import missing permission for QCC app [Fiqri Ardyansyah]
+32bf6adf sm8450-common: Update blobs and firmware from OS2.0.204.0.VLFMIXM [Arian]
+19b51ae0 sm8450-common: Use vendor enhanced media codecs for cape and taro [Arian]
+3f682985 sm8450-common: Remove software OMX blobs [Bruno Martins]
 
 ====================
-     2025-09-26    
+     2025-10-26    
 ====================
-* lineage/mirror
-196583b Updated to 26-Sep-2025 11:59 UTC [Michael Bestas]
+* device/xiaomi/diting
+31d6d82 diting: Update blobs and firmware from OS2.0.204.0.VLFMIXM [Arian]
 
 * lineage/wiki
-cd0ce91f wiki: Swap aston.png to one that matches other OnePlus devices [LuK1337]
-0c5e7876 wiki: Add OnePlus 12R (aston) [inferno0230]
+ce1c8fe8 wiki: Add wikipedia links to IMS quirk description [LuK1337]
+
+* vendor/xiaomi/diting
+c5b8e35 diting: Update blobs and firmware from OS2.0.204.0.VLFMIXM [Arian]
 
 ====================
-     2025-09-25    
+     2025-10-25    
 ====================
-* lineage/hudson
-7455f3c aston joins the race [inferno0230]
-8fe97e9 benz joins the race [inferno0230]
-70fa364 NB1 = NoBody wAnts [Tuan Anh]
+* device/xiaomi/cupid
+705a1c8 cupid: Update blobs and firmware from OS2.0.204.0.VLCMIXM [Arian]
+9c167a8 cupid: Decommonize vendor security patch level [Arian]
+
+* device/xiaomi/diting
+8c33463 diting: Decommonize vendor security patch level [Arian]
+
+* device/xiaomi/marble
+c0d95a2 marble: Update blobs and firmware from OS2.0.209.0.VMRMIXM [Arian]
+81d15f2 marble: Decommonize vendor security patch level [Arian]
+
+* device/xiaomi/mayfly
+8d0a212 mayfly: Update blobs and firmware from OS2.0.206.0.VLTCNXM [Arian]
+5fde607 mayfly: Decommonize vendor security patch level [Arian]
+
+* device/xiaomi/mondrian
+5899661 mondrian: Update blobs and firmware from OS2.0.207.0.VMNMIXM [Arian]
+23cc187 mondrian: Decommonize vendor security patch level [Arian]
+
+* device/xiaomi/thor
+868e745 thor: Update blobs and firmware from OS2.0.207.0.VLACNXM [Arian]
+349913e thor: Decommonize vendor security patch level [Arian]
+
+* device/xiaomi/zeus
+9e11077 zeus: Update blobs and firmware from OS2.0.205.0.VLBMIXM [Arian]
+333b49a zeus: Decommonize vendor security patch level [Arian]
+
+* device/xiaomi/zizhan
+b6cef28 zizhan: Update blobs and firmware from OS2.0.206.0.VLRCNXM [Arian]
+fa84f16 zizhan: Decommonize vendor security patch level [Arian]
+
+* lineage/rootdir
+a828a6e Pick 457885 [LuK1337]
 
 * lineage/wiki
-afba45b7 wiki: Add OnePlus Nord CE4 (benz) [inferno0230]
+773dd834 firmware_update_oplus: Filter out oplusstanvbk for tablets [Bruno Martins]
 
-* packages/apps/FMRadio
-4372899 FMRadio: Start ForegroundService with a type [Cyber Knight]
+* vendor/lineage
+13c54044 apns: Add KKTCell APNs [Atakan]
+7f2f42fc apns: Update APNs of Turkish carriers [Atakan]
+327eacaf apns: Add Altel and Tele2 [tejas101k]
 
-* packages/apps/Glimpse
-fa8b084 Automatic translation import [LineageOS Infra]
+* vendor/xiaomi/cupid
+39f4083 cupid: Update blobs and firmware from OS2.0.204.0.VLCMIXM [Arian]
 
-* packages/apps/Jelly
-fe57ec1 Jelly: Update generatebp to v1.28 [Sebastiano Barezzi]
-16c2153 Jelly: Update AGP [Sebastiano Barezzi]
-2a0c520 Automatic translation import [LineageOS Infra]
+* vendor/xiaomi/marble
+ef3b9a1 marble: Update blobs and firmware from OS2.0.209.0.VMRMIXM [Arian]
 
-* packages/apps/Twelve
-17169d4 Automatic translation import [LineageOS Infra]
+* vendor/xiaomi/mayfly
+3c8705e mayfly: Update blobs and firmware from OS2.0.206.0.VLTCNXM [Arian]
+
+* vendor/xiaomi/mondrian
+957ec67 mondrian: Update blobs and firmware from OS2.0.207.0.VMNMIXM [Arian]
+
+* vendor/xiaomi/thor
+7446a85 thor: Update blobs and firmware from OS2.0.207.0.VLACNXM [Arian]
+
+* vendor/xiaomi/zeus
+21cbccc zeus: Update blobs and firmware from OS2.0.205.0.VLBMIXM [Arian]
+
+* vendor/xiaomi/zizhan
+e3533d1 zizhan: Update blobs and firmware from OS2.0.206.0.VLRCNXM [Arian]
 
 ====================
-     2025-09-24    
+     2025-10-24    
 ====================
-* lineage/crowdin
-3fd82ce config: lineage-23.0: Add Etar lineage strings [Michael Bestas]
-a1a8b68 config: lineage-23.0: Move Etar translations to vendor/crowdin [Michael Bestas]
-1ab912a config: Initial lineage-23.0 changes [Michael Bestas]
+* device/xiaomi/unicorn
+aee8499 unicorn: Decommonize vendor security patch level [Arian]
 
 * lineage/wiki
-92b8aaab wiki: Promote NB1 to 22.2 [Tuan Anh]
-df7977dc wiki: Add instructions to install/upgrade from a non A/B RDAP to A/B RDAP build [Tuan Anh]
+b064a6b3 wiki: Improve bootloop definition [Inhishonor]
+f9bc0a98 wiki: Add definitions for ASB and QPR to glossary [Inhishonor]
 
-* packages/apps/Camelot
-b6cff9a Camelot: Update generatebp to v1.28 [Sebastiano Barezzi]
-bcfa1a7 Camelot: Update Gradle wrapper and AGP [Sebastiano Barezzi]
-
-* packages/apps/Catapult
-cde6f68 Catapult: Update generatebp to v1.28 [Sebastiano Barezzi]
-ca5d356 Catapult: Update AGP [Sebastiano Barezzi]
-
-* packages/apps/Glimpse
-b810f35 Glimpse: Update generatebp to v1.28 [Sebastiano Barezzi]
-
-* packages/apps/Twelve
-adc7d1b Twelve: Update generatebp to v1.28 [Sebastiano Barezzi]
-48e5a66 Twelve: `kapt` -> `kotlin-kapt` [Sebastiano Barezzi]
-2829464 Twelve: Update Gradle wrapper and AGP [Sebastiano Barezzi]
+* vendor/lineage
+48692af5 apns: Update Vodafone DE [Tim Zimmermann]
 
 ====================
-     2025-09-23    
+     2025-10-23    
 ====================
-* lineage/hudson
-4e4ffbf Regenerate device dependency mappings [LuK1337]
-
-* lineage/website
-24be82e www: Add discord logo to footer [Inhishonor]
+* hardware/lineage/interfaces
+7d86725 livedisplay: sysfs: chown on boot as well [Giovanni Ricca]
+3530226 livedisplay: sysfs: Remove non-standard paths [Michael Bestas]
 
 ====================
-     2025-09-22    
+     2025-10-22    
 ====================
-* bootable/recovery
-16fcc1ff recovery: Extend A/B downgrades for older SPL [pjgowtham]
-
 * device/xiaomi/sm8450-common
-2955fd415 sm8450-common: BLE: Max GATT connections as a central are increased to 10 [Nitin Shivpure]
-af9e05395 sm8450-common: Bluetooth: Disable HID Device Profile [Sai Aravind Chakravarthy Gosamsetti]
-551f5c26d sm8450-common: BT: Enable Battery Service profile (BAS) [Sai Aravind Chakravarthy Gosamsetti]
-29f826c70 sm8450-common: HFP: AG: Enable AptX voice power management prop [Satish Kumar Kodishala]
-070a1507c sm8450-common: Bluetooth: Changing vendor ID as QTI for Device ID Profile [Pragati]
-c35d8403e sm8450-common: Le-Audio: Enable C-I-S->SCO sync for Android-V targets. [Satheesh Kumar Pallemoni]
-3f98fe5ab sm8450-common: BT-Intf: Enable LEAudio swb bydefault for all Android-V upgrades. [Satheesh Kumar Pallemoni]
-98a54a147 sm8450-common: Set Class of device from property [Venkata Jagadeesh Garaga]
-e81a75ff0 sm8450-common: BT-Intf: Enable LEAudio bydefault for all Android-V upgrades. [Satheesh Kumar Pallemoni]
-0b2f23290 sm8450-common: BT-interfaces: Don't enable ASHA for all chipsets. [Satheesh Kumar Pallemoni]
-589d6fd39 sm8450-common: Enable AptX voice property [Satish Kumar Kodishala]
-a486baa76 sm8450-common: BT: Enable PBAP SIM feature [Nitin Shivpure]
-aad700a2c sm8450-common: Enable LE audio offload support property [Satish Kumar Kodishala]
-bb03bd715 sm8450-common: BT: Move SAP server property to system ext [Katta Karthik Reddy]
-1f397c3d4 sm8450-common: Enable bluetooth asha central profile from vendor.prop [Arian]
-2126d513f sm8450-common: Enable bluetooth sap server profile [Arian]
-56fa2736b sm8450-common: Enable bluetooth avrcp controller profile [Arian]
-ff8ae6684 Revert "sm8450-common: Move BT profiles props to vendor" [Arian]
-ea8611a38 sm8450-common: configs: taro: remove direct flag for VOIP RX [Vaibhav Raut]
-b1fde9da1 Revert "sm8450-common: audio: Add stereo out to supported VOIP RX channels" [Arian]
+c795e36cb sm8450-common: config: Enable HW Rounded corner [Ravi Ranjan]
+a99e505f0 sm8450-common: Drop unused gpt-utils configuration to use BSG framework [Fiqri Ardyansyah]
+88259af92 sm8450-common: rootdir: Enable WLAN SSR recovery [Arian]
+
+* device/xiaomi/unicorn
+ac44aa1 unicorn: Update blobs and firmware from OS2.0.208.0.VLECNXM [Arian]
+
+* kernel/xiaomi/sm8450
+520237e1ac18 net: wireless: cnss2: Implement sysfs show for recovery [Arian]
+992742f9cdcc Merge branch 'lineage-20' of https://github.com/LineageOS/android_kernel_qcom_sm8450 into HEAD [Arian]
 
 * lineage/hudson
-018ba04 Regenerate device dependency mappings [LineageOS Infra]
+ed5ac0b 彩虹 [inferno0230]
 
 * lineage/wiki
-71946437 wiki: Sort waffle's peripherals [LuK1337]
+4c0d20cd wiki: Add OnePlus Pad Pro/2 (caihong) [inferno0230]
+e6ff66cd wiki: Add POCO F6 Pro / Redmi K70 (vermeer) [Lunark :3]
 
-* packages/apps/Jelly
-504ab40 Jelly: Bump Kotlin to 1.9.23 [Sebastiano Barezzi]
-eca8410 Jelly: Update gradle-generatebp to 1.26 [Luca Stefani]
-1f01f61 Jelly: Update Gradle wrapper and AGP [Sebastiano Barezzi]
-3bb9fdb Jelly: Sync up Gradle setup with Twelve & co. [Sebastiano Barezzi]
-d7059db Jelly: Move KAPT block to the right place [Sebastiano Barezzi]
-0a8e529 Jelly: Specify KAPT version and add all plugins to classpath [Sebastiano Barezzi]
-
-====================
-     2025-09-21    
-====================
-* kernel/fairphone/sm7635
-b0c72430f83d Merge tag 'ASB-2025-09-05_14-6.1' of https://android.googlesource.com/kernel/common into lineage-22.2 [chandu078]
-8ae5d57b39a2 Merge branch 'android14-6.1-lts' of https://android.googlesource.com/kernel/common into lineage-22.2 [chandu078]
-c5c4ae3f9547 Merge tag 'KERNEL.PLATFORM.3.0.r1-12500-kernel.0' of https://git.codelinaro.org/clo/la/kernel/qcom into lineage-22.2 [chandu078]
-
-* kernel/fairphone/sm7635-modules
-a9316039630 qcom: dataipa: Fix trace includes path [chandu078]
-951f16b6322 qcom: dataipa: Replace `GSI_CHAN_DIR_TO_GSI` with `CHAN_DIR_TO_GSI` [chandu078]
-bba5acceb1c Merge tag 'LA.VENDOR.14.3.0.r1-22200-lanai.QSSI16.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into lineage-22.2 [chandu078]
-04f7b67229a Merge tag 'LA.VENDOR.14.3.0.r1-22200-lanai.QSSI16.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn into lineage-22.2 [chandu078]
-885d7734b89 Merge tag 'LA.VENDOR.14.3.0.r1-22200-lanai.QSSI16.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/platform into lineage-22.2 [chandu078]
-a7c4fd0b23b Merge tag 'LA.VENDOR.14.3.0.r1-22200-lanai.QSSI16.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/fw-api into lineage-22.2 [chandu078]
-4535e8ddcaf Merge tag 'DISPLAY.LA.4.0.r2-09500-lanai.0' of https://git.codelinaro.org/clo/la/platform/vendor/opensource/display-drivers into lineage-22.2 [chandu078]
-c91756451f1 Merge tag 'LA.VENDOR.14.3.0.r1-22200-lanai.QSSI16.0' of https://git.codelinaro.org/clo/la/platform/vendor/opensource/dataipa into lineage-22.2 [chandu078]
-42af405f48b Merge tag 'CAMERA.LA.4.0.r2-08700-lanai.0' of https://git.codelinaro.org/clo/la/platform/vendor/opensource/camera-kernel into lineage-22.2 [chandu078]
-
-* kernel/qcom/sm8650
-e56b38fe8455 videodev2: Use <linux/time.h> for struct timespec [chandu078]
-b0c72430f83d Merge tag 'ASB-2025-09-05_14-6.1' of https://android.googlesource.com/kernel/common into lineage-22.2 [chandu078]
-8ae5d57b39a2 Merge branch 'android14-6.1-lts' of https://android.googlesource.com/kernel/common into lineage-22.2 [chandu078]
-c5c4ae3f9547 Merge tag 'KERNEL.PLATFORM.3.0.r1-12500-kernel.0' of https://git.codelinaro.org/clo/la/kernel/qcom into lineage-22.2 [chandu078]
-
-* kernel/qcom/sm8650-modules
-a394f95b11 qcom: dataipa: Fix trace includes path [chandu078]
-3100b652d5 qcom: dataipa: Replace `GSI_CHAN_DIR_TO_GSI` to `CHAN_DIR_TO_GSI` [chandu078]
-bba5acceb1 Merge tag 'LA.VENDOR.14.3.0.r1-22200-lanai.QSSI16.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into lineage-22.2 [chandu078]
-04f7b67229 Merge tag 'LA.VENDOR.14.3.0.r1-22200-lanai.QSSI16.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn into lineage-22.2 [chandu078]
-885d7734b8 Merge tag 'LA.VENDOR.14.3.0.r1-22200-lanai.QSSI16.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/platform into lineage-22.2 [chandu078]
-a7c4fd0b23 Merge tag 'LA.VENDOR.14.3.0.r1-22200-lanai.QSSI16.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/fw-api into lineage-22.2 [chandu078]
-4535e8ddca Merge tag 'DISPLAY.LA.4.0.r2-09500-lanai.0' of https://git.codelinaro.org/clo/la/platform/vendor/opensource/display-drivers into lineage-22.2 [chandu078]
-c91756451f Merge tag 'LA.VENDOR.14.3.0.r1-22200-lanai.QSSI16.0' of https://git.codelinaro.org/clo/la/platform/vendor/opensource/dataipa into lineage-22.2 [chandu078]
-42af405f48 Merge tag 'CAMERA.LA.4.0.r2-08700-lanai.0' of https://git.codelinaro.org/clo/la/platform/vendor/opensource/camera-kernel into lineage-22.2 [chandu078]
-
-* lineage/mirror
-e8d5c3e Updated to 20-Sep-2025 22:01 UTC [Tim Schumacher]
-
-* packages/apps/Catapult
-1986457 Catapult: Sync up Gradle setup with Twelve & co. [Sebastiano Barezzi]
-38dc5a4 Catapult: Update Gradle wrapper and AGP [Sebastiano Barezzi]
-1190f61 Catapult: Update card move overlay drawable dimens [Timi]
-
-* packages/apps/Glimpse
-a09a223 Glimpse: Update Gradle wrapper and AGP [Sebastiano Barezzi]
+* vendor/xiaomi/unicorn
+42472c3 unicorn: Update blobs and firmware from OS2.0.208.0.VLECNXM [Arian]
 
