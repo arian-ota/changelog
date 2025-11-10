@@ -1,0 +1,98 @@
+====================
+     2025-11-10    
+====================
+* device/xiaomi/mayfly
+9883597 mayfly: Update blobs and firmware from OS2.0.207.0.VLTCNXM [Arian]
+
+* device/xiaomi/sm8450-common
+c7c8116aa sm8450-common: sepolicy: Label more spi sysfs wakeup nodes [Arian]
+890a6928f sm8450-common: sepolicy: Fix fpc fingerprint sysfs wakeup label [Arian]
+a4bc96c86 sm8450-common: sensors: Add support for secondary display in AodNotifier [Arian]
+
+* device/xiaomi/zizhan
+6a1a255 zizhan: Shim camera.xiaomi.so with libui-v34 [mikoker]
+
+* kernel/xiaomi/sm8450-modules
+024a12d23e display-drivers: Disable xiaomi layer handling [Arian]
+
+* vendor/xiaomi/mayfly
+b067b9b mayfly: Update blobs and firmware from OS2.0.207.0.VLTCNXM [Arian]
+
+* vendor/xiaomi/zizhan
+60fdecd zizhan: Shim camera.xiaomi.so with libui-v34 [mikoker]
+
+====================
+     2025-11-09    
+====================
+====================
+     2025-11-08    
+====================
+====================
+     2025-11-07    
+====================
+* device/fairphone/FP6
+2d9260d7 [TMP] FP6: Disable kernel lto [Arian]
+925d23f8 FP6: overlay: Declare alert slider position [Arian]
+35cff1cb FP6: Build and configure common alert slider KeyHandler [Arian]
+bf1fca10 FP6: Add keylayout for fairphone moments switch [Antoine C.]
+8cceb4f7 FP6: overlay: Enable camera toggle support [basamaryan]
+
+* device/xiaomi/sm8350-common
+d84a180 sm8350-common: overlay: Enable camera toggle support [basamaryan]
+
+* kernel/xiaomi/sm8450
+eef0c924b39f input: touchscreen: fts_spi: Implement high touch polling rate support [Arian]
+
+====================
+     2025-11-06    
+====================
+* kernel/xiaomi/sm8450
+2972e1ff3b1b power: supply: qti_battery_charger: Add batt_sn, max_life_{vol,temp} and over_vol_duration nodes [Fiqri Ardyansyah]
+
+* lineage/wiki
+13276f2b wiki: Update maintainer list for guacamole [Nick Reuter]
+fb603bed wiki: Update maintainer list for dre [Nick Reuter]
+e56f46d5 wiki: Sync upgrade with download instructions [LuK1337]
+
+* packages/apps/Launcher3
+47681de972 Launcher3: Add resource to enable rotation by default [AnierinB]
+
+* system/core
+038874556 Revert "Remove space check from overlayfs test" [LuK1337]
+
+====================
+     2025-11-05    
+====================
+* device/xiaomi/marble
+401a4fb marble: Update blobs and firmware from OS2.0.210.0.VMRMIXM [Arian]
+
+* lineage/scripts
+953b0b1 scripts: Add collect-kernel-module-deps.py [Yumi Yukimura]
+
+* vendor/xiaomi/marble
+183d54a marble: Update blobs and firmware from OS2.0.210.0.VMRMIXM [Arian]
+
+====================
+     2025-11-04    
+====================
+* hardware/qcom-caf/thermal-legacy-um
+5429698 thermal-hal: Update skin temperature threshold for msmnile [Nick Reuter]
+
+* lineage/hudson
+8cf57eb hudson: Promote Galaxy A71 to 23.0 [Haky86]
+
+* lineage/wiki
+718fb6c8 wiki: Fix wipe-frp/reboot commands [LuK1337]
+9c17c895 fixup! wiki: Add a faq about fixing frp [Tuan Anh]
+bc27c3aa wiki: Add a faq about fixing frp [Inhishonor]
+eea58c65 wiki: Add faq's for gapps questions [Inhishonor]
+cf4c291e wiki: Promote Galaxy A71 to 23.0 [Haky86]
+
+* packages/apps/LineageParts
+ce809c3 Regenerate contributors cloud (2025-11-02) [Kevin F. Haggerty]
+
+* vendor/lineage
+d1862412 wipe-frp: Allow overriding FRP_BLOCK [LuK1337]
+45094fba apns: Add APN for Netgsm [Doğancan yılmazer]
+2426bf9c kernel: Satisfy Rust bindgen for v6.12 [Sebastiano Barezzi]
+
