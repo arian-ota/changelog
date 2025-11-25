@@ -1,0 +1,277 @@
+====================
+     2025-11-25    
+====================
+* device/fairphone/FP6
+0c17043d FP6: CONFIG_IEEE80211AX -> WIFI_FEATURE_HOSTAPD_11AX [LuK1337]
+
+* device/xiaomi/sm8450-common
+37b4c3c22 sm8450-common: Shim WFD with libinput_shim [LuK1337]
+
+* lineage/mirror
+2074512 Updated to 25-Nov-2025 11:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+4b134c26 wiki: Update gauguin maintainer list [Penguin766]
+
+* packages/apps/LineageParts
+9b51410 LineageParts: M3E love for everyone [Bruno Martins]
+f74caaf LineageParts: Add MD3 styling to Trust notification [pnguyen879]
+
+* vendor/xiaomi/sm8450-common
+4450ec57 sm8450-common: Shim WFD with libinput_shim [LuK1337]
+
+====================
+     2025-11-24    
+====================
+* device/qcom/sepolicy-legacy-um
+b28a32c4 legacy: Grant sys_module cap for correct wifi/wigig domains [LuK1337]
+a6b7ae68 legacy: Disallow system_server from loading kernel modules [LuK1337]
+
+* device/qcom/sepolicy_vndr/legacy-um
+ac205a3f1 legacy: Grant sys_module cap for correct wifi/wigig domains [LuK1337]
+f06f20f3a legacy: Disallow system_server from loading kernel modules [LuK1337]
+
+* device/xiaomi/unicorn
+da9cff4 unicorn: Update blobs and firmware from OS2.0.209.0.VLECNXM [Arian]
+
+* frameworks/base
+6597f50c74cf aconfig: Use old storage if /metadata is not available [LuK1337]
+
+* lineage-sdk
+4325b396 LineagePreferenceLib: Adapt to Material 3 Expressive [Bruno Martins]
+
+* lineage/wiki
+444f8d07 devices: dre: Promote to 23.0 [Nick Reuter]
+
+* vendor/xiaomi/unicorn
+0868235 unicorn: Update blobs and firmware from OS2.0.209.0.VLECNXM [Arian]
+
+====================
+     2025-11-23    
+====================
+* frameworks/base
+8f914a68bf01 fixup! frameworks: Add support for advanced restart options [LuK1337]
+c0b184f6514e fixup! fw/b: Implement hardware keys custom rebinding [ExtremeXT]
+9d9cd1aa66be Revert "hw key rebind hax" [ExtremeXT]
+a7c2d2d52798 SystemUI: screenshot: close QS after launching long screenshot activity [LuK1337]
+00b1aab476b6 SystemUI: screenshot: open long screenshot activity for partial screenshots [Cosmin Tanislav]
+439cdda5e3ec fixup! SystemUIProxy: Add injectPress() [ExtremeXT]
+582a256048d3 fixup! SystemUIProxy: Add injectLongPress() [ExtremeXT]
+b93944540a6f KeyguardPreviewSmartspaceViewBinder: Fix NPE [ExtremeXT]
+44cc3c4dd14b fixup! SystemUI: Clock position customization [ExtremeXT]
+acea7854a591 fixup! SystemUIProxy: Add injectLongPress() [Michael Bestas]
+0848ae15c8ab fixup! SystemUIProxy: Add injectPress() [Michael Bestas]
+134241697b80 fixup! SystemUIProxy: Add injectLongPress() [Michael Bestas]
+fd41268b141f fixup! SystemUI: Make the volume dialog expandable [Michael Bestas]
+7660f1a45059 fixup! Configurable 0, 90, 180 and 270 degree rotation [Michael Bestas]
+cc7f06cd0252 fixup! SystemUI: Fix constraints for keyguard slice view [Michael Bestas]
+297b2b89d0e4 fixup! Configurable 0, 90, 180 and 270 degree rotation [Michael Bestas]
+221caaa1dbf4 fixup! SystemUI: Add heads up tile [Michael Bestas]
+772ca0d7b164 hw key rebind hax [Michael Bestas]
+5f4c3263c867 fixup! PowerManager: Add proximity check on wake [Michael Bestas]
+869c9072746e fixup! Implement click to take partial screenshot [1/3] [LuK1337]
+
+* hardware/lineage/compat
+df00450 libinput: Provide A16 QPR0 android::MotionEvent::initialize() symbol [LuK1337]
+
+* lineage-sdk
+60d0477f LineagePreferenceLib: RIP DropDownPreference type [Bruno Martins]
+
+* packages/apps/LineageParts
+31662bd ChargingControlSettings: Ditch DropDownPreference and use ListPreference [Bruno Martins]
+5b14bf8 LineageParts: Set group key for contributors cloud IA [LuK1337]
+
+* packages/apps/Settings
+e83804a3ff4 MainlineModuleVersionPreference: Fully hide if intent is null [LuK1337]
+
+* vendor/lineage
+3d718535 soong: generator: Update for BP3A [Thomas Turner]
+941a06c3 release: Drop remaining Pixel flags [Michael Bestas]
+
+====================
+     2025-11-22    
+====================
+* build/make
+b5b08ea3df Exclude perf-setup-sh from userdebug builds [Michael Bestas]
+
+* device/qcom/sepolicy_vndr/sm8450
+e7ae865d6 Revert "sepolicy_vndr: Allow init/vendor_init to write proc firmware config" [Bruno Martins]
+ada6615b4 Revert "sepolicy_vndr: Label proc firmware config node" [Bruno Martins]
+3cf5bcbc1 BOARD_SYSTEM_EXT_PREBUILT_DIR is obsolete. Use BOARD_SYSTEM_EXT_SEPOLICY_PREBUILT_DIRS [Ankit Lathiya]
+
+* device/qcom/sepolicy_vndr/sm8550
+43b25fe0a Revert "sepolicy_vndr: Allow init/vendor_init to write proc firmware config" [Bruno Martins]
+a1e8f8d4d Revert "sepolicy_vndr: Label proc firmware config node" [Bruno Martins]
+
+* device/qcom/sepolicy_vndr/sm8650
+e5685aa34 Revert "sepolicy_vndr: Allow init/vendor_init to write proc firmware config" [Bruno Martins]
+f321a0428 Revert "sepolicy_vndr: Label proc firmware config node" [Bruno Martins]
+2c8325953 BOARD_SYSTEM_EXT_PREBUILT_DIR is obsolete. Use BOARD_SYSTEM_EXT_SEPOLICY_PREBUILT_DIRS [Ankit Lathiya]
+
+* device/qcom/sepolicy_vndr/sm8750
+dd8ebd72c BOARD_SYSTEM_EXT_PREBUILT_DIR is obsolete. Use BOARD_SYSTEM_EXT_SEPOLICY_PREBUILT_DIRS [Ankit Lathiya]
+
+* packages/apps/Launcher3
+f57ffae18f Launcher3: Fix Taskbar{Model,View}CallbacksFactory instantiation [Sebastiano Barezzi]
+
+* packages/apps/Seedvault
+dfb9c91b Seedvault: Use colorError from appcompat [Michael Bestas]
+ddb05a01 Move LocalContactsBackup to system_ext [Michael Bestas]
+
+* packages/apps/Settings
+829c17e0e09 ImeiInfoPreferenceController: Fix NPE [ExtremeXT]
+16d80a9adae fixup! Settings: Network setup UI changes for SUW [ExtremeXT]
+
+* vendor/lineage
+e3ce9650 config: Add libzstd.so to artifact path requirement allowlist [Michael Bestas]
+9796a5f1 vars: November 2025 Pixel Update [Michael Bestas]
+421dffa9 vars: October 2025 Pixel Update [Michael Bestas]
+
+====================
+     2025-11-21    
+====================
+* android
+6953beb manifest: Temporarily track lineage-23.0 branch for lineage repos [Michael Bestas]
+dad1615 manifest: Unfork repositories with no changes [Michael Bestas]
+c5472c7 manifest: LineageOS 23.1 [Michael Bestas]
+aceea98 manifest: September 2025 Quarterly Platform Release and Security update [Thomas Turner]
+
+* build/make
+ed851bfc88 Merge tag 'android-16.0.0_r3' into staging/lineage-23.0_merge-android-16.0.0_r3 [Michael Bestas]
+ebb2d13f06 Reapply "Drop legacy vboot support." [Michael Bestas]
+
+* build/soong
+89d78cff8 Merge tag 'android-16.0.0_r3' into staging/lineage-23.0_merge-android-16.0.0_r3 [Michael Bestas]
+06b3fec92 Revert "install_symlink: Make symlink target configurable" [Michael Bestas]
+e4ce33d02 Reapply "Clear as much of cc.Module as possible after GenerateBuildActions" [Michael Bestas]
+388f8209b Revert "rust: config: Fix missing CPU variant LD flags in Rust" [Michael Bestas]
+
+* device/qcom/sepolicy_vndr/sm8550
+c2a16e970 BOARD_SYSTEM_EXT_PREBUILT_DIR is obsolete. Use BOARD_SYSTEM_EXT_SEPOLICY_PREBUILT_DIRS [Ankit Lathiya]
+
+* external/vim
+f31199df8 Merge tag 'v9.1.1919' of https://github.com/vim/vim into lineage-23.0 [Thomas Turner]
+
+* external/zstd
+614a5b7f Merge tag 'android-16.0.0_r3' into staging/lineage-23.0_merge-android-16.0.0_r3 [Michael Bestas]
+
+* frameworks/base
+67065048ae1c Revert "Stop domain verification delegated from UIDs blocked by network policy" [Michael Bestas]
+
+* hardware/interfaces
+04420276f1 Merge tag 'android-16.0.0_r3' into staging/lineage-23.0_merge-android-16.0.0_r3 [Michael Bestas]
+
+* hardware/lineage/compat
+9dfd6a3 libui-v34: Depend on android.hardware.graphics.common-V7 [Michael Bestas]
+
+* packages/apps/Aperture
+5dff58d Aperture: Use colorError from appcompat [Michael Bestas]
+
+* packages/apps/Launcher3
+944ad0f378 fixup! RecentsView: Unconditionally hide split option for Go-enabled targets [Michael Bestas]
+c3ae03e0bb fixup! Launcher3: Implement gesture hint toggle [Michael Bestas]
+cd9abfa55f fixup! Launcher3: Implement taskbar toggle [Michael Bestas]
+55d3b22b43 fixup! Launcher3: Implement gesture hint toggle [Michael Bestas]
+189b4eab8f Launcher3: Add resource to enable rotation by default [AnierinB]
+1f606393de Automatic translation import [LineageOS Infra]
+45cdbd79de Automatic translation import [LineageOS Infra]
+0655d3a47c Trebuchet: Use HiddenAppsFilter for all apps list [LuK1337]
+09bb8e546c Launcher3: Add tools namespace for tools:replace [Cosmin Tanislav]
+1dc66d3f9b Launcher3: Add permission for contextual search [Pranav Vashi]
+cb0690e131 Launcher3: Make taskbar start aligned in all grid sizes [Michael Bestas]
+8f2079f1cb Launcher3: Hide 2x2 grid from foldables [Michael Bestas]
+d98a022b0d Launcher3: Make landscape tablet taskbar start aligned [Han Sol Jin]
+23cc7079ca Launcher3: implement hidden & protected apps [Joey]
+9ad74c8ff6 Launcher3: Implement auto open keyboard in drawer setting [Frederico Silva]
+d6cc896ad1 Launcher3: Ability to toggle themed icons for all apps [Trishiraj]
+d1ed327d5c Launcher3: Allow changing app suggestion settings [Alexander Koskovich]
+be3fd9c98a Launcher3: Rework home button double tap handling [LuK1337]
+99dd14d9f9 Launcher3: Use match_parent for navigation button dimensions [LuK1337]
+12c1bfecba Hide app search results of profiles in quiet mode [Oliver Scott]
+c0d48da0fe Implement private space access when hidden [Oliver Scott]
+d61316eb0b Launcher3: Restart when FORCE_SHOW_NAVBAR changes [LuK1337]
+bbb06f3c16 Launcher3: Add hasNavigationBar() check [LuK1337]
+c3618e4d9d Launcher3: Implement gesture hint toggle [LuK1337]
+67002a2ed9 Launcher3: Implement taskbar toggle [LuK1337]
+79a8174f46 Launcher3: Make portrait tablet taskbar start aligned [LuK1337]
+6d3271be94 Launcher3: Implement taskbar navbar inversion [LuK1337]
+
+* packages/apps/Recorder
+aeeafd6 Recorder: colorAccent -> colorSecondary [Michael Bestas]
+
+* packages/apps/Settings
+20a8b119ce6 Settings: Switch back to udfps_enroll_enrolling_non_scroll layout [LuK1337]
+6f417d00c6e Settings: Disable clipping in biometrics_glif_content [LuK1337]
+07c26fc129d Automatic translation import [LineageOS Infra]
+86fcc737013 Settings: DevicePicker: Adapt to S style [ReallySnow]
+5d179dd6a67 SlicesDatabaseHelper: Use Build.VERSION.INCREMENTAL [jhenrique09]
+ab05e1ad6fa Settings: fix typo in settings namespace for qr scanner on ls [maxwen]
+bc90949fcd0 Partially revert "[Settings] Start SettingsDumpService to dump the db log after the db is" [ExactExampl]
+f3ec7dcf608 Fix development color mode preference [Alexander Martinz]
+fe3d0a55a9d Biometrics: Pass halHandlesDisplayTouches to FingerprintSensorPropertiesInternal [Bruno Martins]
+34a4030586e Settings: Only show gesture navigation if device has a software nav bar [Rashed Abdel-Tawab]
+b751fb14d54 Add a mobile data toggle for setup [Alexander Koskovich]
+474f85d4485 Settings: Make SIM toggle unchangable when not supported [LuK1337]
+6ffcfa22f27 BatteryTip: Hide Learn more button if URL is empty [Michael Bestas]
+f2506f25e8f Fix background data clobbering other policies [Tommy Webb]
+a5e148d77eb Settings: support black theme for dark mode [2/4] [Jesse Chan]
+312fc484a0c Settings: Place and order Google & Digital Wellbeing [Michael W]
+5014e87bd53 Settings: Move Google Setting way down [Michael W]
+3c7ecbf694a Settings: Set correct categories for GMS top level activities [shoya0x00]
+c224fa0c0f6 Revert "[Sim UI enhancement] remove the "Tap to show info"" [althafvly]
+b2bcbe0a19f Make battery cycle count configurable and disable it by default [Michael Bestas]
+183827ac726 Hide unavailable battery info [Michael Bestas]
+ef03bb60fdf Settings: deviceinfo: Extend Battery info page [Jyotiraditya Panda]
+2d93083dab5 Make battery info configurable and enable it by default [Michael Bestas]
+9b644b8988e DynamicDenylistManager shall not exist [Tommy Webb]
+d21d21d75b0 FingerprintSettings: Add proximity check awareness if supported [Bruno Martins]
+3326494aedf Settings: Hide Flashlight [Michael W]
+b60f0c78516 Settings: make sure Wifi exists before adding controllers [Timi Rautamäki]
+58aee9094b5 Settings: Add private dns icon [penglezos]
+b4dc56ab4fa Settings: Add lineagehealth IFastCharge interface support [LuK1337]
+df20072afc5 Settings: Add charging control part [Danny Trunk]
+c6fd195581a Add Cloudflare DNS as a private DNS provider [Chirayu Desai]
+7c64b227bde Settings: Add switch preference for AGPS [juwei]
+9683721c5e6 Settings: Good news, `encryptable=footer` is broken [Michael W]
+c8bcf93f9e2 Settings: Add toggle for heads up notifications [Michael Bestas]
+
+* packages/modules/adb
+f0af4a04 adbd: Fix adbd_flags_c_lib dependency [Michael Bestas]
+
+* system/core
+9c5c0bad9 Revert "Remove libkeyutils" [Michael Bestas]
+
+* system/media
+ac4cefe4 Merge tag 'android-16.0.0_r3' into staging/lineage-23.0_merge-android-16.0.0_r3 [Michael Bestas]
+
+* vendor/qcom/opensource/commonsys-intf/display
+b5d8740b composer3: Depend on android.hardware.graphics.common-V7 [Michael Bestas]
+
+====================
+     2025-11-20    
+====================
+* device/xiaomi/mondrian
+0377ab6 mondrian: Update blobs and firmware from OS2.0.208.0.VMNMIXM [Arian]
+
+* lineage/wiki
+3a49e26d wiki: quirks: encryption: Fix typo [Ferdinand Saurenbach]
+
+* vendor/xiaomi/mondrian
+daa1fdc mondrian: Update blobs and firmware from OS2.0.208.0.VMNMIXM [Arian]
+
+====================
+     2025-11-19    
+====================
+* external/vim
+ed4af756c patch 9.1.1919: tabpanel: cannot handle mouse clicks in command line [Hirohito Higashi]
+040a47a47 runtime(netrw): Use proper UNC notation for temp files [Miguel Barro]
+c2cc63ec7 runtime(compiler): expand errorformats in maven compiler [Konfekt]
+d284277be runtime(doc): Remove :runtime completion (#11447) todo item [Doug Kearns]
+
+* lineage/hudson
+661ad5b hudson: Promote dre to 23.0 [Nick Reuter]
+
+* lineage/mirror
+78d0a5a Updated aosp-minimal to 19-Nov-2025 11:02 UTC [Tim Schumacher]
+8c18f7d Updated aosp-minimal to 18-Nov-2025 23:01 UTC [Tim Schumacher]
+
