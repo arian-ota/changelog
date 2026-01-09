@@ -1,242 +1,407 @@
 ====================
-     2025-12-14    
+     2026-01-10    
 ====================
 * build/make
-ab6280fa2a Don't enforce vintf kernel requirements when building without LTO [Chirayu Desai]
+544ae377aa Don't enforce vintf kernel requirements when building without LTO [Chirayu Desai]
 
 * device/fairphone/FP6
-8cb7f691 [TMP] FP6: Disable kernel lto [Arian]
-25eaa362 FP6: Build pvmfw partition [Vincent Vidal]
-c7db0c1d FP6: Allow to provide custom AVB keys and build an enabled vbmeta.img [Arian]
-575e886b FP6: Sign init_boot with SHA256_RSA4096 key [Vincent Vidal]
+0bf1af0e Revert "fixup! FP6: Add support for toggling fast charge" [Arian]
+6a8471fa [TMP] FP6: Disable kernel lto [Arian]
+
+* device/xiaomi/sm6150-common
+76df1d9 Revert "sm6150-common: Allow to access bootable/deprecated-ota targets" [Arian]
+
+* hardware/lineage/compat
+3f824e3 libbase: Shim old WriteStringToFd function prototype [Frost]
 
 * kernel/fairphone/sm7635
-00258462d6fe fixup! Merge branch 'android14-6.1-lts' of https://android.googlesource.com/kernel/common into HEAD [Arian]
-aea6fd83462c Merge commit 'refs/changes/94/463294/2' of https://github.com/LineageOS/android_kernel_qcom_sm8650 into HEAD [Arian]
+faf99dab3888 misc: haptic_hv: Support wav_id 0 to stop vibrating [Tim Zimmermann]
+591f9b192b48 defconfig: fps: Enable crypto config for volcano [Abhinav Gupta]
+63fc9e644e67 [FPS-3002] Device wakes when reaching 80%, using Battery Protect . [xianzhu.zhang]
+27bb6ab15ac6 [FPS-2629]tof:fix crash issue  ###%%%comment:tof:fix crash issue  ###%%%bug number:FPS-2629  ###%%%product name:FP Spring  ###%%%Root Cause:tof:fix crash issue  ###%%%Root Cause Detail:tof:fix crash issue  ###%%%Test_Suggestion:test camera  ###%%%Test_Report:PASS  ###%%%Bug category:Platform  ###%%%Module_Impact:NO  ###%%%Solution:NO  ###%%%Pre_build:YES  ###%%%CodeReviewModule:Camera-system  ###%%%Highlight:NO  ###%%%author email:jinghuang@tcl.com [jinghuang]
+407de714daa9 Revert "[FPS-2629]tof:fix crash issue  ###%%%comment:tof:fix crash issue  ###%%%bug number:FPS-2629  ###%%%product name:FP Spring  ###%%%Root Cause:tof:fix crash issue  ###%%%Root Cause Detail:tof:fix crash issue  ###%%%Test_Suggestion:test camera  ###%%%Test_Report:PASS  ###%%%Bug category:Platform  ###%%%Module_Impact:NO  ###%%%Solution:NO  ###%%%Pre_build:YES  ###%%%CodeReviewModule:Camera-system  ###%%%Highlight:NO  ###%%%author email:jinghuang@tcl.com" [晶 黄]
+470148d7da9a [FPS-2629]tof:fix crash issue  ###%%%comment:tof:fix crash issue  ###%%%bug number:FPS-2629  ###%%%product name:FP Spring  ###%%%Root Cause:tof:fix crash issue  ###%%%Root Cause Detail:tof:fix crash issue  ###%%%Test_Suggestion:test camera  ###%%%Test_Report:PASS  ###%%%Bug category:Platform  ###%%%Module_Impact:NO  ###%%%Solution:NO  ###%%%Pre_build:YES  ###%%%CodeReviewModule:Camera-system  ###%%%Highlight:NO  ###%%%author email:jinghuang@tcl.com [jinghuang]
+bc92dafee230 FPS-2597 [MMI][CU & MINI][EfuseCheck] dump is enable[4] [tianwen.zhang]
+3c72f191c0b3 [FPS-2372] Add SIM card tray detect node [changyuan1.zhou]
+c99a613a1aa8 Revert "[FPS-1152] add some log vibrator in order to get the bootup log" [Zhibang XU]
+cc6ef5ec06cb Revert "[FPS-1152] add some vibrator log only for test." [Zhibang XU]
+750c117f04e9 [FPS-2638][3/2]change max charge current to 5800mA. [xianzhu.zhang]
+b280188f6df5 [FPS-2638][2/2]change max charge current to 5800mA. [xianzhu.zhang]
+d127e9efd0f1 [FPS-1152] add some log vibrator in order to get the bootup log [zhibangxu]
+0d8190cd226a [FPS-2034][2/2] Battery Protect does not work . [xianzhu.zhang]
+288e7d9840f5 [FPS-2299][2/2] Limit charge speed to 4A when screen on . [xianzhu.zhang]
+141240bd7ee5 [FPS-924] : [FPS][Switch Key]Need a node to get the switch key state [lin.jiang]
+9a45baee59e1 import from pineapple for r00020 upgrade [android-t1]
+aad5ac8323ae [FPS-1952][2/2] add the battery charging disable node . [xianzhu.zhang]
+e84970076d27 [FPS-38] : [FPS][FP-Spring]NPI_DOWN driver 2/2 [lin.jiang]
+c3f33cad4327 [FPS-1152] add some vibrator log only for test. [zhibangxu]
+660ec44c7630 [FPS-1034] [2/2] Battery Charging Speed Options . [xianzhu.zhang]
+e440efa40688 Revert "VTS black test 2" [睿 唐]
+1efcfe548d57 [FPS-39][FP-Spring]emkit add node [1/3] [binsu]
+e1b3537ebced VTS black test 2 [bo.yu]
+c65c39ce92ec [FPS-184][2/2]USB Water detection function-BSP . [xianzhu.zhang]
+0147afce060c [FPS-639] [FPS] Modify for hw_version node[1/1] [binsu]
+6ae2431f3473 [FPS-639] [FPS] Add hw_version node[2/2] [binsu]
+cfa86ee4188e [FPS-822] add emkit information for sensors [2/3] [zhibangxu]
+5c00103a665a [FPS-773]fix crash for  tof [jinghuang]
+eb4023c5226a [FPS-619] [1/3] ESWIN TP add TP suspend and resume (drm notifier) [changyuan1.zhou]
+fb94b32c08e7 [FPS-671] add fw_reload and delay to prevent tp can't touch [changyuan1.zhou]
+4f25e86d3071 [FPS-671][2/2] device goes suspend and can't wake up [changyuan1.zhou]
+ed664fb21bfe [FPS-619] remove ESWIN TP log info [changyuan1.zhou]
+2481cd7eb451 [FPS-713] update the gain to reduce voltage [mingwu.zhang]
+ef8ba88490c6 [FPS-619] [1/2]Temporary modification ESWIN TP driver update [changyuan1.zhou]
+3f827a770e24 [FPS-37][FP-Spring] FP bringup driver [mingpeng.mao]
+957c3a5b4170 FPS-643 [1]User variant build error [liquan.zhou]
+c0cd8f982d3b [FPS-39][FP-Spring]emkit bring up [1/2] [binsu]
+9501f65bee9a [FPS-627][1/2][Driver]Create TypeC CC orientation node. [xianzhu.zhang]
+6b90f096c146 fix build error [android-t1]
+591e96dfd398 [FPS-619] [1/2]ESWIN TP driver update [changyuan1.zhou]
+b0cbf239231b [FPS-23] [1/2]ESWIN TP bring up [changyuan1.zhou]
+f427a6b01a4e [FPS-32] [FP-Spring]Audio bring up [4/9] [bo.yu]
+8d3a26e57b06 [FPS-440]add apply cali data for tof stmvl53l1. [jinghuang]
+8601682a22ff [FPS-40][2/2] Disable charging with USB. [xianzhu.zhang]
+0aa70f7425bb [FPS-24] [1/3]Virbator bring up for kernel [mingwu.zhang]
+e86eb3336c7a [FPS-440]add tof stmvl53l1. [jinghuang]
+54c938d035ee [FPS-426] [2/2]add FPS sku 600  dts. [xianzhu.zhang]
+9d27d89953b2 [FPS-281] FPS product customization [yi.fan]
+643eed31ab01 Rename sm8650 to sm7635 [Arian]
 
-* kernel/qcom/sm8650
-eea004ecfc4c Merge branch 'android14-6.1-lts' of https://android.googlesource.com/kernel/common into HEAD [chandu078]
+* kernel/fairphone/sm7635-modules
+8ca3179612 touch-drivers: Guard MIN and MAX macros [Arian]
+0db0189edb [FPS-2254][display]Add AOD code to branch_rc[2/2] [mingpeng.mao]
+3b721e5433 audio-kernel: codecs: aw882xx: Load calibration file through firmware class [dianlujitao]
+09d785d872 audio-kernel: codecs: aw882xx: Enable calibration reading [Pavel Dubrova]
+13f5df61d2 audio-kernel: codecs: aw882xx: dos2unix [Arian]
+700142b913 touch-drivers: eswin_touch: Introduce a power workqueue to handle suspend/resume notifications [Arian]
+8f03df3224 samsung_slsi: Add missing cflags [Arian]
+e33769420d touch-drivers: Add goodix_ts_proc to goodix_ts objects [Arian]
+90e4ddf88c touch-drivers: Fix eswin_ts objects file extension [Arian]
+179749e1fd bt-kernel: Fix compilation of soundwire [Arian]
+10e93c8ecd Export audio-kernel bindings [Arian]
+d869f40d06 [FPS-2772] TP driver add fw version check, upgrade fw when fw version is different. [changyuan1.zhou]
+3e32679306 [FPS-2536] System/ADB shell will reboot after make a voip/phone call [changyuan1.zhou]
+20f5329b90 [FPS-2292]ESWIN tp driver add clear touch points and reset function [changyuan1.zhou]
+eff4061f92 [FPS-2292][2/2] ESWIN TP firmware update to v2456 & tp driver update [changyuan1.zhou]
+13ec284bfb [FPS-23] ESWIN TP driver add charger notifier and write cmd when screen on [changyuan1.zhou]
+cd3cedb21e [FPS-1891] Double-Tap should supported in AOD mode [changyuan1.zhou]
+9d8a098302 [FPS-23] ESWIN TP driver update [changyuan1.zhou]
+1e11e152bd [FPS-619][1/2] ESWIN TP driver add driver node [changyuan1.zhou]
+88ee59a3e4 [FPS-619][1/2] ESWIN TP add force baseline [changyuan1.zhou]
+0be6f11602 [FPS-39][FP-Spring]emkit add node [2/3] [binsu]
+51f5db86b3 [FPS-619] ESWIN TP remove debug log [changyuan1.zhou]
+b0cb0501c8 [FPS-619] ESWIN TP release all touch when screen off [changyuan1.zhou]
+1511ac8710 [FPS-619] ESWIN TP driver update and add heart-beat function [changyuan1.zhou]
+b20e881d15 [FPS-619] [3/3] ESWIN TP add TP suspend and resume (drm notifier) [changyuan1.zhou]
+883ba6dfbe [FPS-23] [1/3]add TP suspend and resume [changyuan1.zhou]
+3e84170323 [FPS-23] [3/3]TP bring up [changyuan1.zhou]
+8191b89d77 bt-kernel: Add more configs to Makefile [Arian]
+c8287f9572 samsung_slsi: nfc: Add FP6 configs to Makefile [Arian]
+ffd6932a50 [FPS-146][FP-Spring] NFC Bring up (06/12) [yingsen.zhang]
+065c64512e [FPS-281] FPS product customization [yi.fan]
+e0133fd756 import from pineapple for r00020 upgrade [android-t1]
+1255fca36a fix build error [android-t1]
+c5adf37f9d [FPS-281] FPS product customization [yi.fan]
+2aba3d4d91 [FPS-281] FPS product customization [yi.fan]
+3d43e9e373 [FPS-281] FPS product customization [Yi FAN]
+1ab2854368 [FPS-281] FPS product customization [yi.fan]
+9fc9f434fc [FPS-281] FPS product customization [yi.fan]
+52c5f894d2 [FPS-281] FPS product customization [yi.fan]
+116111184c [FPS-281] FPS product customization [yi.fan]
+9641002255 [FPS-281] FPS product customization [yi.fan]
+b42b427684 [FPS-281] FPS product customization [yi.fan]
+bffab07e4e [FPS-281] FPS product customization [yi.fan]
+5656846a29 Revert "Revert "[FPS-2505] All frame rates use the same mipi clk[2/2]"" [明鹏 毛]
+b26423e3ca Revert "[FPS-2505] All frame rates use the same mipi clk[2/2]" [睿 唐]
+4732a590aa [FPS-2505] All frame rates use the same mipi clk[2/2] [mingpeng.mao]
+2ecd576cc6 [FPS-2525][2/3] Config 10bit DSC panel [changyuan1.zhou]
+788f699f1f [FPS-1265][2/2] Modify OLED kernel power on timing t1 [changyuan1.zhou]
+d0f6995428 [FPS-1934][OLED] del 1hz and add 10hz [2/2] [“mingpeng.mao”]
+627c13b2b8 [FPS-942] [1/2]Modify horizontal strips appear on screen. [changyuan1.zhou]
+c928607549 [FPS-1089][OLED] Optimize some frame rates based on 120hz [2/2] [“mingpeng.mao”]
+2cb1e38d6f [FPS-1309][OLED] Fix screen display related issues[3/3] [“mingpeng.mao”]
+761a171ad7 [FPS-1089][OLED] Fix refresh rate not same with settings[2/3] [“mingpeng.mao”]
+5857986491 [FPS-22] OLED kernel power on&off timing modify [changyuan1.zhou]
+2607752b00 [FPS-22][OLED] Add Dimming Setting[1/3] [“mingpeng.mao”]
+1327d84a60 [FPS-619][2/2] ESWIN TP add force baseline [changyuan1.zhou]
+347005d73b [FPS-39][FP-Spring]emkit add node [3/3] [binsu]
+cd91fadba9 [FPS-786]Add node to ctrl backlight curve mapping for debug [changyuan1.zhou]
+7512a943a6 [FPS-22] Add project macro & Add log temporarily for debugging [changyuan1.zhou]
+faf4590995 [FPS-649] Dynamic fps adaptation[2/3] [mingpeng.mao]
+96449d302a [FPS-786] Backlight curve mapping. [changyuan1.zhou]
+346b6f56ec [FPS-22][2/2] config max brightness to 4094 [changyuan1.zhou]
+6a6738b4aa [FPS-22] [2/3]OLED bring up [changyuan1.zhou]
+fca864fcfd [FPS-281] FPS product customization [Yi FAN]
+bef52c7a4a [FPS-281] FPS product customization [yi.fan]
+e536db40fc [FPS-281] FPS product customization [yi.fan]
+f6d8f1228c [FPS-281] FPS product customization [yi.fan]
+2c8f9f4f8e [FPS-281] FPS product customization [yi.fan]
+1b7dbd7cca [FPS-2869]ois:upgrade fw version:from 0x0201  to  0x0302   for ois dw9784  ###%%%comment:upgrade fw version:from 0x0201  to  0x0302   for ois dw9784  ###%%%bug number:FPS-2869  ###%%%product name:FP Spring  ###%%%Root Cause:upgrade fw version:from 0x0201  to  0x0302   for ois dw9784  ###%%%Root Cause Detail:upgrade fw version:from 0x0201  to  0x0302   for ois dw9784  ###%%%Test_Suggestion:test camera  ###%%%Test_Report:PASS  ###%%%Bug category:Platform  ###%%%Module_Impact:NO  ###%%%Solution:NO  ###%%%Pre_build:YES  ###%%%CodeReviewModule:Camera-system  ###%%%Highlight:NO  ###%%%author email:jinghuang@tcl.com [晶 黄]
+c28b242064 msm: camera: vfe: Check upper bound for mux_rsrc [Pranav Sanwal]
+b776a7a02e msm: camera: cpas: Check upper bound for mnoc idx [Pranav Sanwal]
+6da1d77315 [FPS-871]improve af settle time for fps project [jinghuang]
+8a0ddb4efb [FPS-562]modify log level for isp [jinghuang]
+2fc531ea51 [FPS-562]ois fw update ,when flash all erase [jinghuang]
+0b79621f49 [FPS-562]ois fw version:0x0201  ###%%%comment:ois fw version:0x0201  ###%%%bug number:FPS-562  ###%%%product name:FP Spring  ###%%%Root Cause:ois calibration:ois fw version:0x0201  ###%%%Root Cause Detail:ois fw version:0x0201  ###%%%Test_Suggestion:test camera  ###%%%Test_Report:PASS  ###%%%Bug category:Platform  ###%%%Module_Impact:NO  ###%%%Solution:NO  ###%%%Pre_build:YES  ###%%%CodeReviewModule:Camera-system  ###%%%Highlight:NO  ###%%%author email:jinghuang@tcl.com [jinghuang]
+615847e000 [FPS-562]ois work should cam_ois_state =CAM_OIS_CONFIG,move it here. [jinghuang]
+beae71d7b4 [FPS-562]add calibration function for ois dw9784 [jinghuang]
+942f6f8c42 [FPS-562]add ois dw9784 for project [jinghuang]
+21551d4b3e [FPS-439] uw sensor otp update [chengming.xiang]
+03b1f815f6 [FPS-439]add deviceinfo Node for camera mmi [chengming.xiang]
+4b24e8d8fb [FPS-281] FPS product customization [Yi FAN]
+e085738c3d [FPS-281] FPS product customization [yi.fan]
+926e26115d fix build error [android-t1]
+7d51c04bb9 [FPS-281] FPS product customization [yi.fan]
+91a0a3c20d [FPS-1450]　DVT2-1 HAC 验证参数 [4/6] audio-kernel [bo.yu]
+130bf6a699 Revert "[FPS-1450]　DVT2-1 HAC 验证参数 [3/5] audio kernel" [Bo YU]
+fa25e077a3 [FPS-1450]　DVT2-1 HAC 验证参数 [3/5] audio kernel [bo.yu]
+faa21f3e65 Revert "VTS black test 3" [睿 唐]
+83fb1baf16 VTS black test 3 [bo.yu]
+8ed23665b0 [FPS-32][FP-Spring]Audio bring up [26/9] [bo.yu]
+cfdbd96160 fix build error [android-t1]
+477008133e [FPS-32] [FP-Spring]Audio bring up [5/9] [bo.yu]
+a5236d6c5f [FPS-281] FPS product customization [yi.fan]
+4be1efb257 Import fairphone sm7635 kernel namespace [Arian]
+f99adcd4e7 Rename sm8650-modules to sm7635-modules [Arian]
+f20644e41c Add 'samsung_slsi/nfc/' from commit '9a75946ffc4318d18331950a4d27618ea858c56b' [Arian]
+
+* packages/apps/Launcher3
+5835c223d0 Workspace: Allow resizing any widget [Nebojsa Cvetkovic]
+d289cf3eda Launcher3: add toggle for desktop and drawer labels [Joey]
+16d1a418f9 Launcher3: allow disabling workspace edit [Joey]
+
+* vendor/extra
+65dc438 Move pixel-goodies to vendor [Arian]
+
+* vendor/fairphone/FP6
+853a871 FP6: Patch some blobs to depend on libtinyxml2-v34.so [Michael Bestas]
+71c19e2 FP6: Rename vendor libtensorflowlite_c.so [Michael Bestas]
+5001f59 FP6: Patch qccsyshal to load versioned libprotobuf [Michael Bestas]
+f9fd007 FP6: Use libprotobuf-cpp-{lite,full}-21.7 from hardware/lineage/compat [Michael Bestas]
+7047e94 FP6: Build libvui_intf from source [Michael Bestas]
+0dc30cb FP6: Update to FP6.QREL.15.162.0 [Michael Bestas]
+
+* vendor/google/pixel-goodies
+f02c991 Update from blazer-bp4a.251205.006.e1-factory-d00380e5.zip [Arian]
+8494cd4 Import proprietary files from caiman-bp3a.251105.015-factory-443a364b.zip [Arian]
+fcf9eb0 Set relative device path to vendor repo for extract utils [Arian]
+
+* vendor/lineage-priv
+6008b6a Generate com.android.telephonycore.certificate [Arian]
+f017f1a lineage-priv-template: Override mainline bluetooth signature [Luca Stefani]
+9c7dfd8 lineage-priv-template: Add new Android 16 QPR2 key [Nolen Johnson]
 
 ====================
-     2025-12-13    
+     2026-01-09    
 ====================
+* device/xiaomi/zizhan
+690b39d zizhan: Update blobs and firmware from OS2.0.208.0.VLRCNXM [Arian]
+
+* kernel/xiaomi/sm8450
+27f6dac10ed1 input: touchscreen: synaptics_s3907: Guard MAX/MIN to avoid redefinitions [Arian]
+e93fbba77636 input: misc: aw86297_haptic: Guard MIN to avoid redefinitions [Arian]
+8d3e3d3bbdd1 Merge branch 'lineage-20' of https://github.com/LineageOS/android_kernel_qcom_sm8450 into HEAD [Arian]
+
+* kernel/xiaomi/sm8450-modules
+680ad625e1 Merge branch 'lineage-20' of https://github.com/LineageOS/android_kernel_qcom_sm8450-modules into HEAD [Arian]
+
+* lineage-sdk
+246f0b5a Revert "LineagePreferenceLib: Ensure the preference is available before replacing" [LuK1337]
+
 * lineage/hudson
-d5f8948 hudson: Include SoC brand name in r8q's name [CmdCtrlDevic3]
-d1ff400 hudson: Add Galaxy S20 FE (Exynos) [CmdCtrlDevic3]
-8b286fc Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/scripts
-2d06b78 reuse_helper: Handle mk files [Michael Bestas]
-
-* tools/extract-utils
-b254929 extract_utils: support merging multiple blob fixups [LuK1337]
-
-====================
-     2025-12-12    
-====================
-* frameworks/base
-4a71c2303d7e VolumeDialog: Add support for left gravity [Pranav Vashi]
-5331a425fd02 SettingsLib: Prevent NPE for fragments without divider [Pranav Vashi]
+3eec203 Regenerate device dependency mappings [LineageOS Infra]
 
 * lineage/mirror
-80ed326 Updated to 11-Dec-2025 23:01 UTC [Tim Schumacher]
+a8aea8d Updated to 08-Jan-2026 23:01 UTC [Tim Schumacher]
 
 * lineage/wiki
-7274f2d3 wiki: Include SoC brand name in r8q's name [CmdCtrlDevic3]
-6d184432 wiki: Align r8q with r8s [CmdCtrlDevic3]
-86d1f432 wiki: Add Galaxy S20 FE (Exynos) [CmdCtrlDevic3]
-
-* tools/extract-utils
-ef0ffef extract_utils: bp_builder: use existing `target` element if possible [LuK1337]
-
-====================
-     2025-12-11    
-====================
-* hardware/qcom-caf/sm8350/audio
-c1c4d03601 hal: Fix lvimfs log message [Michael Bestas]
-
-* lineage/hudson
-dc400bb after like a year, we figured out the stupid BSOD issue [Nolen Johnson]
-8b55b34 Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/rootdir
-619426f 460727 is merged [LuK1337]
-
-* lineage/wiki
-33a6888b devices: Promote moto_sm8250 to 23.0 [Nolen Johnson]
-
-* system/core
-e11efa2f7 Revert "fs_mgr: Remove blatant references to retrofit dynamic partitions." [Nolen Johnson]
-a455deab9 Revert "liblp: Remove auto slot suffixing support." [Nolen Johnson]
-6ef0e53ef Revert "Remove Virtual A/B retrofit support." [Nolen Johnson]
-8f004ba8d Revert "Remove support for separate A and B super partitions." [Nolen Johnson]
-
-====================
-     2025-12-10    
-====================
-* lineage/wiki
-f322d788 templates: before_build_init: apt get u-boot dep [Nolen Johnson]
-64b06f2a devices: Add the Google Jamboard | 22 [Nolen Johnson]
-
-* system/core
-8fa09499c fastboot: Reimplement zero_packet check [Giovanni Ricca]
-
-====================
-     2025-12-09    
-====================
-* device/qcom/sepolicy_vndr/legacy-um
-492c88574 sepolicy: Label qcom,dp_display wakeup node [dianlujitao]
-
-* lineage/hudson
-17139ba rescuing the Jamboard from Google's dumpster [Nolen Johnson]
-cfe0708 Regenerate device dependency mappings [LineageOS Infra]
-
-* packages/apps/SetupWizard
-aa537d7 SetupWizard: Drop CDMA remnants [Michael Bestas]
-
-* packages/apps/TvSystemUI
-4f5a0eb Revert "Remove volumePanelFlag from VolumeDialogImpl call" [Aaron Kling]
-
-* tools/extract-utils
-bb4f248 extract_utils: allow passing proprietary files to ExtractUtilsModule [Cosmin Tanislav]
-c6385ca extract_utils: add support for virtual proprietary files [Cosmin Tanislav]
-640c56e extract_utils: add support for 7z extraction [Cosmin Tanislav]
-70d8244 extract_utils: fix multiple backing up prints [Cosmin Tanislav]
-bd8e6c5 extract_utils: makefiles: fix typing [Cosmin Tanislav]
-ab812ca extract_utils: fixups: fix typing [Cosmin Tanislav]
-4de9d94 extract_utils: fixups_lib: fix typing [Cosmin Tanislav]
-0ea30ed extract_utils: fixups_blob: fix typing [Cosmin Tanislav]
-cac372e extract_utils: elf: fix typing [Cosmin Tanislav]
-2347a5a extract_utils: elf_parser: fix typing [Cosmin Tanislav]
-39d6754 extract_utils: file: fix typing [Cosmin Tanislav]
-f642e54 extract_utils: bp_encoder: fix typing [Cosmin Tanislav]
-73daa05 extract_utils: bp_builder: fix typing [Cosmin Tanislav]
-c2c84dd extract_utils: extract_misc: fix typing [Cosmin Tanislav]
-138ce00 extract_utils: extract_super_retrofit: fix typing [Cosmin Tanislav]
-3a4836c extract_utils: lp: fix typing [Cosmin Tanislav]
-77fb6c7 extract_utils: module: fix typing [Cosmin Tanislav]
-70c4f35 extract_utils: main: fix typing [Cosmin Tanislav]
-97c5f8f extract_utils: extract_star: fix typing [Cosmin Tanislav]
-6d7abf6 extract_utils: extract_pixel: fix typing [Cosmin Tanislav]
-115cdec extract_utils: extract: fix typing [Cosmin Tanislav]
-4fb32ae extract_utils: utils: fix typing [Cosmin Tanislav]
-e19e99c extract_utils: source: fix typing [Cosmin Tanislav]
-0db42ca extract_utils: fix reverse patch application [Cosmin Tanislav]
-f51fdd4 extract_utils: unpack old dictionary extract fns in ExtractUtilsModule [Cosmin Tanislav]
-7b5ccb8 extract_utils: fix backup copy check [Cosmin Tanislav]
-f0e115f extract_utils: rename root_path to printable_path and move to a property [Cosmin Tanislav]
-
-* vendor/xiaomi/thor
-efbf483 thor: Update blobs and firmware from OS2.0.210.0.VLACNXM [Arian]
-
-====================
-     2025-12-08    
-====================
-* device/fairphone/FP6
-54867041 remove lineage.dependencies for now [Arian]
-73d79844 FP6: Update some soong config variables to bool type [Yumi Yukimura]
-077adae2 FP6: Shim WFD with libinput_shim [LuK1337]
-58f4b3d4 FP6: Enable blurs [Lucas Dupin]
-c0943519 FP6: Update to FP6.QREL.15.151.0 [Michael Bestas]
-edc31cfc FP6: Switch screen density to 440 dpi [Michael Bestas]
-a547e6e3 FP6: gps: Remove CleanSpec.mk [Michael Bestas]
-abb4c573 FP6: Build SEC NFC HAL from source [Michael Bestas]
-d1e04ec9 FP6: Remove vendor/lineage device framework matrix inclusion [LuK1337]
-8d641019 FP6: CONFIG_IEEE80211AX -> WIFI_FEATURE_HOSTAPD_11AX [LuK1337]
-763ce27b FP6: overlay: Declare alert slider position [Arian]
-401f9971 FP6: Build and configure common alert slider KeyHandler [Arian]
-8618698b FP6: Add keylayout for fairphone moments switch [Antoine C.]
-0a416a5a FP6: Fix ext kernel module ordering [Arian]
-a471de66 FP6: rootdir: Add sdcard1 and usbotg to recovery fstab [someone5678]
-918d7038 FP6: Switch to NCM USB tethering [LuK1337]
-b147e0d8 FP6: Add support for toggling fast charge [Tim Zimmermann]
-37076872 FP6: Enable ELF checks for audio blobs [Arian]
-d558195a FP6: Migrate QTI power HAL to soong_config_set [Michael Bestas]
-d0ff6467 FP6: Update WFD system blobs from dada OS2.0.217.0.WOCMIXM [basamaryan]
-507a81a2 FP6: split up WiFi Display sections [Cosmin Tanislav]
-58c616e7 FP6: Address missing libbinder symbols [Michael Bestas]
-b926fda5 FP6: rootdir: Unmount /firmware after fastbootd starts [LuK1337]
-f03f1f1e FP6: rootdir: Fix battery and USB OTG detection [ghostrider-reborn]
-87776e52 FP6: Build Lineage Health HAL [Michael Bestas]
-11f41d16 FP6: Enable camera override format from reserved [Arian]
-11dd6e4b FP6: Disable virtual AB compression [Arian]
-82b1748c FP6: overlay: Enable multiple vibration strength levels support [Michael Bestas]
-72fac53a FP6: overlay: Move rro packages to vendor partition [xboxfanj]
-4be52464 FP6: enable e-SIM support [Alexander Martinz]
-0371fa3e FP6: qcril-database: Add migration to turn off poweron_opt [Anand S]
-ea514039 FP6: Generate qcrilNr.db during build [Arian]
-e0b13d88 FP6: Add system_dlkm modprobe script [Arian]
-3b19c1c4 FP6: Include firmware [Arian]
-b758070a FP6: Drop unused lpa interface permission [Arian]
-1a78e942 FP6: Drop qti fingerprint interface permission [Arian]
-71d3f2e1 FP6: overlay: Enable battery cycle count [Michael Bestas]
-464187d2 FP6: Add data connectionfatory manifest [Arian]
-3f190bce FP6: overlay: Disable telephony injection [Arian]
-29704a99 FP6: Drop explicit building of libpalclient [Arian]
-5dc2f7ab FP6: Build libhfp_pal [Arian]
-030ef81c FP6: Add carrier config app [Arian]
-03046091 FP6: sepolicy: Allow ueventd to load aw882xx calibration file [dianlujitao]
-6126a391 FP6: Add aw_cali.bin firmware symlink [dianlujitao]
-7e1d6d95 FP6: Copy displayconfig to another display id [Arian]
-597e077c FP6: overlay: Add some rounded corner content padding [Arian]
-3a1f5516 FP6: overlay: Refine display cutout region [Arian]
-7886bf68 FP6: overlay: Configure power button and fingerprint location [Arian]
-817e2658 Revert "FP6: vintf: Remove qti cacert hidl" [Arian]
-cf3fa445 FP6: Update blobs from FP6.QREL.15.122.0.20250718182448_VS1E-factory.zip [Arian]
-08873367 FP6: sepolicy: Label missing wakeup sysfs nodes [Arian]
-7c79efc0 FP6: sepolicy: Allow power hal to write touchscreen sysfs files [Arian]
-016b9603 FP6: sepolicy: Label touchscreen sysfs nodes [Arian]
-189df790 FP6: sepolicy: Allow sensors hal to set fp prop [Arian]
-29180b4a FP6: sepolicy: Move emkit/info lable to genfscon [Arian]
-6322ce62 FP6: sepolicy: Label fingerprint hal and add focaltech rules [Arian]
-bcaf250a FP6: sepolicy: Label more properties [Arian]
-dd23ce52 FP6: sepolicy: Label aw_vibrator [Arian]
-b0452555 FP6: sepolicy: Add emkit sepolicy for sensors [Arian]
-
-* device/qcom/sepolicy-legacy-um
-8204f3a2 legacy: Label timeservice app with user=system [LuK1337]
-
-* hardware/qcom-caf/sm8350/display
-e9bbe9a980 qmaa: Fix soong namespace imports [Michael Bestas]
-
-* hardware/qcom-caf/sm8450/display
-c2d198689a qmaa: Fix soong namespace imports [Michael Bestas]
-
-* hardware/qcom-caf/sm8550/display
-3415b63c43 qmaa: Fix soong namespace imports [Michael Bestas]
-
-* hardware/qcom-caf/sm8650/display
-fe52304de7 qmaa: Fix soong namespace imports [Michael Bestas]
-
-* hardware/qcom-caf/sm8750/display/hal
-424f8972c9 qmaa: Fix soong namespace imports [Michael Bestas]
-
-* hardware/xiaomi
-04c945f sensors: Lazily open the enable stream [SkyMinus]
-
-* lineage/hudson
-b55947d hudson: Add Motorola Edge 2024 to the build roster [Nick Reuter]
-
-* lineage/mirror
-d2060d6 Updated to 07-Dec-2025 23:01 UTC [Tim Schumacher]
-
-* lineage/rootdir
-8dc5cd3 Use manifest PS6 [LuK1337]
-9fdd6e0 Pick 463871, 463786 [LuK1337]
-
-* lineage/wiki
-d7ef709c wiki: Add Motorola Edge 2024 (avatrn) [Nick Reuter]
+aee498ff wiki: Fix validate.rb parallel execution exit status [LuK1337]
+9fdbe1fb wiki: Add OnePlus Nord 5 [grepfox]
+ebcb9e06 devices: aml*: Rework install instructions [Nolen Johnson]
 
 * packages/apps/LineageParts
-3af1d69 LineageParts: Update LiveDisplay color profiles to match AOSP [Nick Reuter]
-9dfa879 StatusBarSettings: Add setting for brightness slider position [Pranav Vashi]
-d2778c1 SettingsPreferenceFragment: Defer applying divider [Bruno Martins]
-ff1e836 LineageParts: M3E love for everyone [Bruno Martins]
-63c39cc ButtonSettings: Switch volume panel position to a ListPreference [Bruno Martins]
+cee1d9e LineageParts: Disable resource shrinking [Michael Bestas]
 
-* packages/apps/Settings
-1d4f5fd1342 Settings: Promote external doze settings to first class [Nick Reuter]
+* vendor/xiaomi/zizhan
+cacce7c zizhan: Update blobs and firmware from OS2.0.208.0.VLRCNXM [Arian]
+
+====================
+     2026-01-08    
+====================
+* device/xiaomi/cupid
+6522f15 cupid: Update blobs and firmware from OS2.0.208.0.VLCMIXM [Arian]
+
+* device/xiaomi/diting
+f57ac15 diting: Update blobs and firmware from OS2.0.206.0.VLFMIXM [Arian]
+
+* device/xiaomi/marble
+ba6f99d marble: Update blobs and firmware from OS2.0.216.0.VMRMIXM [Arian]
+
+* device/xiaomi/mayfly
+f4323ed mayfly: Update blobs and firmware from OS2.0.209.0.VLTCNXM [Arian]
+
+* device/xiaomi/mondrian
+a331d29 mondrian: Update blobs and firmware from OS2.0.209.0.VMNMIXM [Arian]
+
+* device/xiaomi/sm8450-common
+c1bfa828e sm8450-common: Update blobs from diting OS2.0.206.0.VLFMIXM [Arian]
+
+* device/xiaomi/thor
+d95bcf7 thor: Update blobs and firmware from OS2.0.212.0.VLACNXM [Arian]
+
+* device/xiaomi/unicorn
+4f75939 unicorn: Update blobs and firmware from OS2.0.211.0.VLECNXM [Arian]
+
+* device/xiaomi/zeus
+4fe5be9 zeus: Update blobs and firmware from OS2.0.208.0.VLBMIXM [Arian]
+
+* kernel/fairphone/sm7635
+5c3c2e7ebbe9 Merge tag 'ASB-2026-01-05_14-6.1' of https://android.googlesource.com/kernel/common into HEAD [chandu078]
+2132f747a118 Merge branch 'android14-6.1-lts' of https://android.googlesource.com/kernel/common into HEAD [chandu078]
+
+* kernel/xiaomi/sm8450-devicetrees
+ad224ee4 display: marble: Update from marble OS2.0.210.0.VMRMIXM [Fiqri Ardyansyah]
+86f77b0b marble-sm7475: Set shutdown voltage to 3.35V [Fiqri Ardyansyah]
+
+* lineage/hudson
+d91422d hudson: heard lexus was missing out [grepfox]
+
+* lineage/scripts
+e1726c4 dev: rro: Read statement's module the safe way [LuK1337]
+
+* lineage/wiki
+e61989ca wiki: False -> false, True -> true [LuK1337]
+86b5adae fixup! wiki: Merge the developer information page into contributing page [LuK1337]
+
+* vendor/xiaomi/cupid
+2715433 cupid: Update blobs and firmware from OS2.0.208.0.VLCMIXM [Arian]
+
+* vendor/xiaomi/diting
+e304177 diting: Update blobs and firmware from OS2.0.206.0.VLFMIXM [Arian]
+
+* vendor/xiaomi/marble
+af90cb3 marble: Update blobs and firmware from OS2.0.216.0.VMRMIXM [Arian]
+
+* vendor/xiaomi/mayfly
+7e473c5 mayfly: Update blobs and firmware from OS2.0.209.0.VLTCNXM [Arian]
+
+* vendor/xiaomi/mondrian
+a763ca6 mondrian: Update blobs and firmware from OS2.0.209.0.VMNMIXM [Arian]
+
+* vendor/xiaomi/sm8450-common
+a37602e5 sm8450-common: Update blobs from diting OS2.0.206.0.VLFMIXM [Arian]
+
+* vendor/xiaomi/thor
+100db37 thor: Update blobs and firmware from OS2.0.212.0.VLACNXM [Arian]
+
+* vendor/xiaomi/unicorn
+7f3a1e8 unicorn: Update blobs and firmware from OS2.0.211.0.VLECNXM [Arian]
+
+* vendor/xiaomi/zeus
+ec00dcf zeus: Update blobs and firmware from OS2.0.208.0.VLBMIXM [Arian]
+
+====================
+     2026-01-07    
+====================
+* kernel/fairphone/sm7635
+41988e6131a3 Merge tag 'KERNEL.PLATFORM.3.0.r1-13000-kernel.0' of https://git.codelinaro.org/clo/la/kernel/qcom into HEAD [chandu078]
+
+* kernel/fairphone/sm7635-modules
+9536ab0933 Merge tag 'LA.VENDOR.14.3.0.r1-22800-lanai.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into HEAD [chandu078]
+0dd570fa18 Merge tag 'LA.VENDOR.14.3.0.r1-22800-lanai.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn into HEAD [chandu078]
+d407819e8f Merge tag 'LA.VENDOR.14.3.0.r1-22800-lanai.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/platform into HEAD [chandu078]
+ed70e3b17c Merge tag 'LA.VENDOR.14.3.0.r1-22800-lanai.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/fw-api into HEAD [chandu078]
+3892d1aeea Merge tag 'DISPLAY.LA.4.0.r2-09900-lanai.0' of https://git.codelinaro.org/clo/la/platform/vendor/opensource/display-drivers into HEAD [chandu078]
+a5eaf2d722 Merge tag 'LA.VENDOR.14.3.0.r1-22800-lanai.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/opensource/dataipa into HEAD [chandu078]
+172424d73e Merge tag 'CAMERA.LA.4.0.r2-09200-lanai.0' of https://git.codelinaro.org/clo/la/platform/vendor/opensource/camera-kernel into HEAD [chandu078]
+e393d80fe6 Merge tag 'AUDIO.LA.9.0.r1-08900-lanai.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom/opensource/audio-kernel-ar into HEAD [chandu078]
+
+* kernel/qcom/msm8998
+596d99a850e2 Merge tag 'LA.UM.7.2.c25-12100-sdm660.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into android13-4.4-msm8998 [Michael Bestas]
+
+* lineage/rootdir
+32c5c9d Pick 467733 [LuK1337]
+
+* lineage/scripts
+ed6aa8f dev: Run ruff format [LuK1337]
+49e3179 dev: utils: Fix missing Callable import [LuK1337]
+bf863d6 dev: rro: Support adding custom package paths [LuK1337]
+cff2b44 dev: rro: Beautify overlay packages smarter [LuK1337]
+d0512fd dev: rro: Support `targetName` overlay attr [LuK1337]
+
+* packages/apps/AudioFX
+6fb1a15 AudioFX: Optimize and shrink resources [Luca Stefani]
+
+* packages/apps/LineageParts
+32166c6 LineageParts: Optimize and shrink resources [Luca Stefani]
+72a98bc LineageParts: Convert resource switch statements to if-else [Michael Bestas]
 
 * vendor/lineage
-01e88e9d vars: Winter cleanup [Michael Bestas]
+d14b6ac7 config: Stop building icon packs & shapes [Michael Bestas]
+5f8609d3 aconfig: Disable notification_background_tint_optimization [ralph950412]
+afc13791 release: disable new dozing keyguard states [John Galt]
+2ee15b6a config: Switch to glif_expressive SUW theme [Michael Bestas]
+e1915d06 config: tablet: Disable desktop windowing mode [Bruno Martins]
+286e2798 release: Bump Security String to 2026-01-01 [Michael Bestas]
+
+* vendor/qcom/opensource/power
+4914c6f config: lahaina: Remove duplicate camera 30FPS SHDR hint [Michael Bestas]
+
+====================
+     2026-01-06    
+====================
+* lineage-sdk
+ebd1b718 health: Catch all exceptions in fastcharge handleSettingChange [Michael Bestas]
+
+* lineage/hudson
+92072ae Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/rootdir
+9ac90bc 466048, 466949, 464978 are merged [LuK1337]
+
+* lineage/scripts
+0679aa1 scripts: add tarball manifest matcher [Cosmin Tanislav]
+7d410ac scripts: add aconfig extractor [Cosmin Tanislav]
+d86de17 scripts: add developer tools [Cosmin Tanislav]
+
+* packages/modules/Connectivity
+8e92e094e9 NetBpfLoad: Relax 5.10 kernel requirement [Michael Bestas]
+
+====================
+     2026-01-05    
+====================
+* frameworks/base
+88cbd50f42df fixup! Firewall: Transport-based toggle support (1/3) [Luca Stefani]
+356f43abeec4 toast: fix bg color not changing with theme change [SuperDroidBond]
+90c39d1477ad AlertWindowNotification: Correctly load app label [HZ]
+170c4347fa25 Stop domain verification delegated from UIDs blocked by network policy [Oliver Scott]
+79fb642f6eaf aconfig: Use old storage if /metadata is not available [LuK1337]
+4238ce2cc7b4 SystemUI: Bring back good ol' circle battery style once again [LuK1337]
+
+* lineage/hudson
+0bd7232 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+551dfcf Updated to 04-Jan-2026 11:01 UTC [Tim Schumacher]
+
+====================
+     2026-01-04    
+====================
+* bootable/recovery
+833e2948 recovery: Fix scrolling when touch is rotated [AnierinB]
+
+* lineage/hudson
+4a204d7 Regenerate device dependency mappings [LineageOS Infra]
+93a2136 hudson: Add OnePlus 13R / Ace 5 [chandu078]
+691b00a gunnar: Promote to 23.0 [Albert Tang]
+
+* lineage/rootdir
+e4696d5 Revert "Use deployment mode for bundle install" [LuK1337]
+1e64b5c Let's not pretend I use real docker [LuK1337]
+
+* lineage/website
+18f1b58 Make local bundle/vendor install of Jekyll easier [Phyks (Lucas Verney)]
+
+* lineage/wiki
+b129d43e wiki: Add OnePlus 13R / Ace 5 [chandu078]
+dbdf2537 devices: gunnar: Promote to 23.0 [Albert Tang]
 
