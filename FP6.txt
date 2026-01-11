@@ -1,18 +1,27 @@
 ====================
-     2026-01-10    
+     2026-01-11    
 ====================
 * build/make
-544ae377aa Don't enforce vintf kernel requirements when building without LTO [Chirayu Desai]
+4b5d5ec057 Don't enforce vintf kernel requirements when building without LTO [Chirayu Desai]
+
+* device/xiaomi/sm6150-common
+8dcde5f Revert "sm6150-common: Allow to access bootable/deprecated-ota targets" [Arian]
+
+* hardware/qcom-caf/sm8550/audio/agm
+26046b32 agm: Fix format specifiers [Michael Bestas]
+
+* lineage/hudson
+e00b818 Regenerate device dependency mappings [LineageOS Infra]
+
+====================
+     2026-01-10    
+====================
+* android
+8ffba21 manifest: Track system_extras once again [Nolen Johnson]
 
 * device/fairphone/FP6
 0bf1af0e Revert "fixup! FP6: Add support for toggling fast charge" [Arian]
 6a8471fa [TMP] FP6: Disable kernel lto [Arian]
-
-* device/xiaomi/sm6150-common
-76df1d9 Revert "sm6150-common: Allow to access bootable/deprecated-ota targets" [Arian]
-
-* hardware/lineage/compat
-3f824e3 libbase: Shim old WriteStringToFd function prototype [Frost]
 
 * kernel/fairphone/sm7635
 faf99dab3888 misc: haptic_hv: Support wav_id 0 to stop vibrating [Tim Zimmermann]
@@ -164,10 +173,120 @@ a5236d6c5f [FPS-281] FPS product customization [yi.fan]
 f99adcd4e7 Rename sm8650-modules to sm7635-modules [Arian]
 f20644e41c Add 'samsung_slsi/nfc/' from commit '9a75946ffc4318d18331950a4d27618ea858c56b' [Arian]
 
+* lineage/mirror
+e7787e1 Updated to 09-Jan-2026 23:01 UTC [Tim Schumacher]
+
 * packages/apps/Launcher3
+93dcabcf4c Launcher3: Hide keyboard when transitioning to home screen [Pranav Vashi]
+c00aff0c33 Launcher3: Fixed keyboard disappear on empty search [MrSluffy]
+65d0b9175c Launcher3: Improve search bar header protection [Adithya R]
+aa60699938 Launcher3: Restart when FORCE_SHOW_NAVBAR changes [LuK1337]
+bc00d576f7 Launcher3: Add hasNavigationBar() check [LuK1337]
+1ec8ad48cd Launcher3: Add resource to allow rotation [AnierinB]
+987bba72ee SettingsActivity: Make it expressive [Bruno Martins]
+0033ae110f Launcher3: Change number of rows that deskclock widget occupies [LuK1337]
+b05fa47f12 Automatic translation import [LineageOS Infra]
+1330334573 Automatic translation import [LineageOS Infra]
+2f529029d4 Launcher3: Add permission for contextual search [Pranav Vashi]
+830cd16a20 Launcher3: Fix Taskbar{Model,View}CallbacksFactory instantiation [Sebastiano Barezzi]
+7dd35ee008 Launcher3: implement hidden & protected apps [Joey]
+fa785b3713 Launcher3: Implement auto open keyboard in drawer setting [Frederico Silva]
+c4eb7a50e2 Launcher3: Ability to toggle themed icons for all apps [Trishiraj]
+1ce18d1f5d Launcher3: Allow changing app suggestion settings [Alexander Koskovich]
+189a363522 Launcher3: Use match_parent for navigation button dimensions [LuK1337]
+1ebdbd3cdc Hide app search results of profiles in quiet mode [Oliver Scott]
+983b3f2031 Implement private space access when hidden [Oliver Scott]
+831641cfda Launcher3: Implement gesture hint toggle [LuK1337]
+5cad6d511c Launcher3: Implement taskbar toggle [LuK1337]
+73d2773657 Launcher3: Make taskbar start aligned in all grid sizes [Michael Bestas]
+6af034f89a Launcher3: Make tablet taskbar start aligned [LuK1337]
+5673b88d39 Launcher3: Handle home button double taps [LuK1337]
+cc642d2c97 Launcher3: Inject events for taskbar long press actions [LuK1337]
+6200e93932 Launcher3: Fix taskbar/3 button navigation SUW height [Michael Bestas]
+cf90dcabe6 QuickStep: Google Feed integration [Edward Cross]
 5835c223d0 Workspace: Allow resizing any widget [Nebojsa Cvetkovic]
 d289cf3eda Launcher3: add toggle for desktop and drawer labels [Joey]
 16d1a418f9 Launcher3: allow disabling workspace edit [Joey]
+
+* packages/apps/Settings
+6c8dd7e20a4 fixup! Fix background data clobbering other policies [Luca Stefani]
+1d8d2af8f49 Settings: Only show gesture navigation if device has a software nav bar [Rashed Abdel-Tawab]
+16558d301ea Reapply "Settings: Protect sensitive data on the about phone" [althafvly]
+53016ff6e23 Settings: Forward port pattern visibility settings (2/2) [Michael Bestas]
+c238346f766 Settings: Forward port lock pattern grid size (2/2) [Michael Bestas]
+838cf92f601 Settings: Switch back to udfps_enroll_enrolling_non_scroll layout [LuK1337]
+93d1797d80c Settings: Disable clipping in biometrics_glif_content [LuK1337]
+0253972a5d2 Automatic translation import [LineageOS Infra]
+40b436aa2ba Settings: Promote external doze settings to first class [Nick Reuter]
+f5b18b6d2c0 ImeiInfoPreferenceController: Fix NPE [ExtremeXT]
+f33ab28772f SlicesDatabaseHelper: Use Build.VERSION.INCREMENTAL [jhenrique09]
+8ee1ba4f249 Settings: fix typo in settings namespace for qr scanner on ls [maxwen]
+6aa9addb2e7 Partially revert "[Settings] Start SettingsDumpService to dump the db log after the db is" [ExactExampl]
+e76306caa62 Biometrics: Pass halHandlesDisplayTouches to FingerprintSensorPropertiesInternal [Bruno Martins]
+5b8e5cb632d Add a mobile data toggle for setup [Alexander Koskovich]
+9cb74eb1624 Settings: Make SIM toggle unchangable when not supported [LuK1337]
+34f80dc7d9c BatteryTip: Hide Learn more button if URL is empty [Michael Bestas]
+7608fd29c4a Fix background data clobbering other policies [Tommy Webb]
+6bef93b6540 Settings: support black theme for dark mode [2/4] [Jesse Chan]
+7bbfc5a77b1 Make battery cycle count configurable and disable it by default [Michael Bestas]
+a5c0346e3b3 Hide unavailable battery info [Michael Bestas]
+4c2027bfd34 Settings: deviceinfo: Extend Battery info page [Jyotiraditya Panda]
+e4cb36dc95f Make battery info configurable and enable it by default [Michael Bestas]
+d8aee118b80 Settings: Hide Flashlight [Michael W]
+eb7983dbd2d Settings: make sure Wifi exists before adding controllers [Timi Rautamäki]
+56074aa3f71 Settings: Add private dns icon [penglezos]
+934895a8e5f Settings: Add lineagehealth IFastCharge interface support [LuK1337]
+edf2ac3ce76 Settings: Add charging control part [Danny Trunk]
+004c5bd561c Add Cloudflare DNS as a private DNS provider [Chirayu Desai]
+456a2668a90 Settings: Add switch preference for AGPS [juwei]
+9353b2ebc53 Settings: Good news, `encryptable=footer` is broken [Michael W]
+910d851cb52 Settings: Add toggle for heads up notifications [Michael Bestas]
+e2e8fd1da13 KeyboardSettings: Add a RemotePreference for device-specific panel [Bruno Martins]
+e57c84efeaa Settings: Add battery and notification lights settings [Sam Mortimer]
+78c8269006e Hide the "Show the vibrate icon in the Status Bar" setting [Chirayu Desai]
+1e1032e2d13 Settings: Add preference for one shot auto-brightness [Cédric Bellegarde]
+29af9fd4041 Settings: Add min refresh rate list preference [LuK1337]
+59b62080168 Settings: Add peak refresh rate list preference [Michael Bestas]
+ca4ce21e29f Settings: Display: Add High Touch Polling Rate Support [Ramii Ahmed]
+9aa83928047 Hide fingerprint settings help if URL is empty [Michael Bestas]
+43e30396c7c Settings: Show single-touch wakeup setting on rear & front fps devices [Terminator-J]
+e2e54d51dcd Hide SFPS wakeup setting when it's not supported [Michael Bestas]
+702fcfae260 fingerprint: Rework enrollment screen [Bruno Martins]
+bb9153744a8 Settings: Add an option to force pre-O apps to use full screen aspect ratio [Jesse Chan]
+8d99454a0d4 Settings: display: Add wake on plug switch [Jon Evans]
+7a30fac41f7 Settings: Add proximity check on wake preference [Bruno Martins]
+b6d94d733b7 Settings: Add high touch sensitivity and touchscreen hovering toggles [LuK1337]
+ccb7f73bf9b DynamicDenylistManager shall not exist [Tommy Webb]
+c987327166a POLICY_REJECT_ALL restricts all network access [Tommy Webb]
+c5ca7fc3daf AppDataUsage: Handle apps without INTERNET permission [Oliver Scott]
+0f6d9e52784 Settings: Add support for allowing/disallowing apps on cellular, vpn and wifi networks [Oliver Scott]
+dccf2918ae3 Settings: Add support for allowing/disallowing apps on restricted networks [Sam Mortimer]
+e173808b16f Settings: Add option to scramble pin layout when unlocking (1/2). [Adnan]
+ed9d8f54410 Settings: Add hotspot setting to allow VPN upstreams [Sam Mortimer]
+dc224f75750 Remove useless USB page header [Michael Bestas]
+1b66c11badb Settings: Add double tap to sleep preference [Rashed Abdel-Tawab]
+6f104aaa9b9 get outer NFC preference to listen for changes [inthewaves]
+5f8b7659a2e Fix inconsistent USB preference screen title [Danny Lin]
+b85a1018da9 Handle mobile data on internet page during setup [Alexander Koskovich]
+9c59236dfb6 Settings: Network setup UI changes for SUW [Michael Bestas]
+acee7a31925 Settings: use Glif themed button bar [Timi Rautamäki]
+4ea6e6fd224 Settings: Implement hide gestural navigation hint bar [Jesse Chan]
+587a438ad68 Settings: Hide unsupported USB modes automatically [Wang Han]
+fbbe80e0098 Settings: Check if we have any color modes declared in overlay [Luca Stefani]
+34318396b42 Settings: Fix the failing strings [Michael Bestas]
+ac2cf53a910 Settings: Add LineageParts charging sound settings preference [Sam Mortimer]
+3d1769ffb6a Don't reset A2DP offload when disabling developer settings [Michael Bestas]
+4b8be2472c8 Display: Assign a key to color preference category [Bruno Martins]
+a13ae1e8b35 Settings: Move Google Setting way down [Michael W]
+49e52e92bfb One does not simply become a Developer [Chirayu Desai]
+b5ffeca9210 Settings: Add LineageOS legal info [Roman Birg]
+fca0a753850 Settings: Reset tether offload developer setting correctly [Adithya R]
+
+* system/extras
+52c6bff46 Revert "lpmake: Remove --auto-slot-suffixing support." [Terminator-J]
+
+* tools/buildscript
+d19b23e Support lineage properties in product/etc/build.prop too [Arian]
 
 * vendor/extra
 65dc438 Move pixel-goodies to vendor [Arian]
@@ -196,6 +315,9 @@ f017f1a lineage-priv-template: Override mainline bluetooth signature [Luca Stefa
 * device/xiaomi/zizhan
 690b39d zizhan: Update blobs and firmware from OS2.0.208.0.VLRCNXM [Arian]
 
+* hardware/lineage/compat
+3f824e3 libbase: Shim old WriteStringToFd function prototype [Frost]
+
 * kernel/xiaomi/sm8450
 27f6dac10ed1 input: touchscreen: synaptics_s3907: Guard MAX/MIN to avoid redefinitions [Arian]
 e93fbba77636 input: misc: aw86297_haptic: Guard MIN to avoid redefinitions [Arian]
@@ -217,9 +339,6 @@ a8aea8d Updated to 08-Jan-2026 23:01 UTC [Tim Schumacher]
 aee498ff wiki: Fix validate.rb parallel execution exit status [LuK1337]
 9fdbe1fb wiki: Add OnePlus Nord 5 [grepfox]
 ebcb9e06 devices: aml*: Rework install instructions [Nolen Johnson]
-
-* packages/apps/LineageParts
-cee1d9e LineageParts: Disable resource shrinking [Michael Bestas]
 
 * vendor/xiaomi/zizhan
 cacce7c zizhan: Update blobs and firmware from OS2.0.208.0.VLRCNXM [Arian]
@@ -254,23 +373,15 @@ d95bcf7 thor: Update blobs and firmware from OS2.0.212.0.VLACNXM [Arian]
 * device/xiaomi/zeus
 4fe5be9 zeus: Update blobs and firmware from OS2.0.208.0.VLBMIXM [Arian]
 
-* kernel/fairphone/sm7635
-5c3c2e7ebbe9 Merge tag 'ASB-2026-01-05_14-6.1' of https://android.googlesource.com/kernel/common into HEAD [chandu078]
-2132f747a118 Merge branch 'android14-6.1-lts' of https://android.googlesource.com/kernel/common into HEAD [chandu078]
-
-* kernel/xiaomi/sm8450-devicetrees
-ad224ee4 display: marble: Update from marble OS2.0.210.0.VMRMIXM [Fiqri Ardyansyah]
-86f77b0b marble-sm7475: Set shutdown voltage to 3.35V [Fiqri Ardyansyah]
-
 * lineage/hudson
 d91422d hudson: heard lexus was missing out [grepfox]
-
-* lineage/scripts
-e1726c4 dev: rro: Read statement's module the safe way [LuK1337]
 
 * lineage/wiki
 e61989ca wiki: False -> false, True -> true [LuK1337]
 86b5adae fixup! wiki: Merge the developer information page into contributing page [LuK1337]
+
+* packages/apps/LineageParts
+cee1d9e LineageParts: Disable resource shrinking [Michael Bestas]
 
 * vendor/xiaomi/cupid
 2715433 cupid: Update blobs and firmware from OS2.0.208.0.VLCMIXM [Arian]
@@ -303,39 +414,25 @@ ec00dcf zeus: Update blobs and firmware from OS2.0.208.0.VLBMIXM [Arian]
      2026-01-07    
 ====================
 * kernel/fairphone/sm7635
-41988e6131a3 Merge tag 'KERNEL.PLATFORM.3.0.r1-13000-kernel.0' of https://git.codelinaro.org/clo/la/kernel/qcom into HEAD [chandu078]
-
-* kernel/fairphone/sm7635-modules
-9536ab0933 Merge tag 'LA.VENDOR.14.3.0.r1-22800-lanai.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into HEAD [chandu078]
-0dd570fa18 Merge tag 'LA.VENDOR.14.3.0.r1-22800-lanai.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn into HEAD [chandu078]
-d407819e8f Merge tag 'LA.VENDOR.14.3.0.r1-22800-lanai.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/platform into HEAD [chandu078]
-ed70e3b17c Merge tag 'LA.VENDOR.14.3.0.r1-22800-lanai.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/fw-api into HEAD [chandu078]
-3892d1aeea Merge tag 'DISPLAY.LA.4.0.r2-09900-lanai.0' of https://git.codelinaro.org/clo/la/platform/vendor/opensource/display-drivers into HEAD [chandu078]
-a5eaf2d722 Merge tag 'LA.VENDOR.14.3.0.r1-22800-lanai.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/opensource/dataipa into HEAD [chandu078]
-172424d73e Merge tag 'CAMERA.LA.4.0.r2-09200-lanai.0' of https://git.codelinaro.org/clo/la/platform/vendor/opensource/camera-kernel into HEAD [chandu078]
-e393d80fe6 Merge tag 'AUDIO.LA.9.0.r1-08900-lanai.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom/opensource/audio-kernel-ar into HEAD [chandu078]
+5c3c2e7ebbe9 Merge tag 'ASB-2026-01-05_14-6.1' of https://android.googlesource.com/kernel/common into HEAD [chandu078]
+2132f747a118 Merge branch 'android14-6.1-lts' of https://android.googlesource.com/kernel/common into HEAD [chandu078]
 
 * kernel/qcom/msm8998
 596d99a850e2 Merge tag 'LA.UM.7.2.c25-12100-sdm660.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into android13-4.4-msm8998 [Michael Bestas]
 
-* lineage/rootdir
-32c5c9d Pick 467733 [LuK1337]
+* kernel/xiaomi/sm8450-devicetrees
+ad224ee4 display: marble: Update from marble OS2.0.210.0.VMRMIXM [Fiqri Ardyansyah]
+86f77b0b marble-sm7475: Set shutdown voltage to 3.35V [Fiqri Ardyansyah]
 
 * lineage/scripts
-ed6aa8f dev: Run ruff format [LuK1337]
-49e3179 dev: utils: Fix missing Callable import [LuK1337]
-bf863d6 dev: rro: Support adding custom package paths [LuK1337]
-cff2b44 dev: rro: Beautify overlay packages smarter [LuK1337]
-d0512fd dev: rro: Support `targetName` overlay attr [LuK1337]
-
-* packages/apps/AudioFX
-6fb1a15 AudioFX: Optimize and shrink resources [Luca Stefani]
+e1726c4 dev: rro: Read statement's module the safe way [LuK1337]
 
 * packages/apps/LineageParts
 32166c6 LineageParts: Optimize and shrink resources [Luca Stefani]
 72a98bc LineageParts: Convert resource switch statements to if-else [Michael Bestas]
 
 * vendor/lineage
+6df025f0 aconfig: enable media_controls_in_compose [Cosmin Tanislav]
 d14b6ac7 config: Stop building icon packs & shapes [Michael Bestas]
 5f8609d3 aconfig: Disable notification_background_tint_optimization [ralph950412]
 afc13791 release: disable new dozing keyguard states [John Galt]
@@ -349,19 +446,37 @@ e1915d06 config: tablet: Disable desktop windowing mode [Bruno Martins]
 ====================
      2026-01-06    
 ====================
+* kernel/fairphone/sm7635
+41988e6131a3 Merge tag 'KERNEL.PLATFORM.3.0.r1-13000-kernel.0' of https://git.codelinaro.org/clo/la/kernel/qcom into HEAD [chandu078]
+
+* kernel/fairphone/sm7635-modules
+9536ab0933 Merge tag 'LA.VENDOR.14.3.0.r1-22800-lanai.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into HEAD [chandu078]
+0dd570fa18 Merge tag 'LA.VENDOR.14.3.0.r1-22800-lanai.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn into HEAD [chandu078]
+d407819e8f Merge tag 'LA.VENDOR.14.3.0.r1-22800-lanai.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/platform into HEAD [chandu078]
+ed70e3b17c Merge tag 'LA.VENDOR.14.3.0.r1-22800-lanai.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/wlan/fw-api into HEAD [chandu078]
+3892d1aeea Merge tag 'DISPLAY.LA.4.0.r2-09900-lanai.0' of https://git.codelinaro.org/clo/la/platform/vendor/opensource/display-drivers into HEAD [chandu078]
+a5eaf2d722 Merge tag 'LA.VENDOR.14.3.0.r1-22800-lanai.QSSI15.0' of https://git.codelinaro.org/clo/la/platform/vendor/opensource/dataipa into HEAD [chandu078]
+172424d73e Merge tag 'CAMERA.LA.4.0.r2-09200-lanai.0' of https://git.codelinaro.org/clo/la/platform/vendor/opensource/camera-kernel into HEAD [chandu078]
+e393d80fe6 Merge tag 'AUDIO.LA.9.0.r1-08900-lanai.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom/opensource/audio-kernel-ar into HEAD [chandu078]
+
 * lineage-sdk
 ebd1b718 health: Catch all exceptions in fastcharge handleSettingChange [Michael Bestas]
 
 * lineage/hudson
 92072ae Regenerate device dependency mappings [LineageOS Infra]
 
-* lineage/rootdir
-9ac90bc 466048, 466949, 464978 are merged [LuK1337]
-
 * lineage/scripts
+ed6aa8f dev: Run ruff format [LuK1337]
+49e3179 dev: utils: Fix missing Callable import [LuK1337]
+bf863d6 dev: rro: Support adding custom package paths [LuK1337]
+cff2b44 dev: rro: Beautify overlay packages smarter [LuK1337]
+d0512fd dev: rro: Support `targetName` overlay attr [LuK1337]
 0679aa1 scripts: add tarball manifest matcher [Cosmin Tanislav]
 7d410ac scripts: add aconfig extractor [Cosmin Tanislav]
 d86de17 scripts: add developer tools [Cosmin Tanislav]
+
+* packages/apps/AudioFX
+6fb1a15 AudioFX: Optimize and shrink resources [Luca Stefani]
 
 * packages/modules/Connectivity
 8e92e094e9 NetBpfLoad: Relax 5.10 kernel requirement [Michael Bestas]
@@ -379,29 +494,4 @@ d86de17 scripts: add developer tools [Cosmin Tanislav]
 
 * lineage/hudson
 0bd7232 Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/mirror
-551dfcf Updated to 04-Jan-2026 11:01 UTC [Tim Schumacher]
-
-====================
-     2026-01-04    
-====================
-* bootable/recovery
-833e2948 recovery: Fix scrolling when touch is rotated [AnierinB]
-
-* lineage/hudson
-4a204d7 Regenerate device dependency mappings [LineageOS Infra]
-93a2136 hudson: Add OnePlus 13R / Ace 5 [chandu078]
-691b00a gunnar: Promote to 23.0 [Albert Tang]
-
-* lineage/rootdir
-e4696d5 Revert "Use deployment mode for bundle install" [LuK1337]
-1e64b5c Let's not pretend I use real docker [LuK1337]
-
-* lineage/website
-18f1b58 Make local bundle/vendor install of Jekyll easier [Phyks (Lucas Verney)]
-
-* lineage/wiki
-b129d43e wiki: Add OnePlus 13R / Ace 5 [chandu078]
-dbdf2537 devices: gunnar: Promote to 23.0 [Albert Tang]
 
