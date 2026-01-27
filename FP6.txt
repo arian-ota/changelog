@@ -1,428 +1,577 @@
 ====================
-     2026-01-20    
+     2026-01-27    
 ====================
-* device/xiaomi/cupid
-27df963 cupid: Get rid of camera module suffixes [Arian]
-
-* device/xiaomi/mayfly
-0565ea0 mayfly: Update blobs and firmware from OS3.0.2.0.VLTCNXM [Arian]
-
-* device/xiaomi/thor
-4711d32 thor: Update blobs and firmware from OS3.0.2.0.VLACNXM [Arian]
-
-* device/xiaomi/unicorn
-df6a11a unicorn: Update blobs and firmware from OS3.0.2.0.VLECNXM [Arian]
-
-* device/xiaomi/zeus
-1cffe9d zeus: Get rid of camera module suffixes [Arian]
-
-* device/xiaomi/zizhan
-8a30840 zizhan: Update blobs and firmware from OS3.0.3.0.VLRCNXM [Arian]
-
-* packages/apps/AlertSlider
-60475be KeyHandler: Ignore non-DND keyCodes [Arian]
-70a7e05 KeyHandler: Stop ignoring ACTION_UP events [Arian]
-d06f37c KeyHandler: Make allowed device names configurable [Arian]
-033363d KeyHandler: Make the supported positions configurable [Arian]
-e355dc1 overlay: Add lineage-sdk rro for KeyHandler [Arian]
-14b5f2a KeyHandler: Import translations from hardware/oplus [Arian]
-
-* vendor/xiaomi/cupid
-ef06f66 cupid: Get rid of camera module suffixes [Arian]
-21261f6 cupid: use file.dst for rfsa package names [LuK1337]
-
-* vendor/xiaomi/diting
-a3eea85 diting: use file.dst for rfsa package names [LuK1337]
-
-* vendor/xiaomi/marble
-a505f37 marble: use file.dst for rfsa package names [LuK1337]
-
-* vendor/xiaomi/mayfly
-3bf340c mayfly: Update blobs and firmware from OS3.0.2.0.VLTCNXM [Arian]
-f18fade mayfly: use file.dst for rfsa package names [LuK1337]
-
-* vendor/xiaomi/mondrian
-6b71c21 mondrian: use file.dst for rfsa package names [LuK1337]
-
-* vendor/xiaomi/thor
-9e5f44d thor: Update blobs and firmware from OS3.0.2.0.VLACNXM [Arian]
-1c1a2d1 thor: use file.dst for rfsa package names [LuK1337]
-
-* vendor/xiaomi/unicorn
-780c38b unicorn: Update blobs and firmware from OS3.0.2.0.VLECNXM [Arian]
-8f17679 unicorn: use file.dst for rfsa package names [LuK1337]
-
-* vendor/xiaomi/zeus
-4f0a0ae zeus: Get rid of camera module suffixes [Arian]
-11ff295 zeus: use file.dst for rfsa package names [LuK1337]
-
-* vendor/xiaomi/zizhan
-6d08684 zizhan: Update blobs and firmware from OS3.0.3.0.VLRCNXM [Arian]
-ecfe3c4 zizha: use file.dst for rfsa package names [LuK1337]
-
-====================
-     2026-01-19    
-====================
-====================
-     2026-01-18    
-====================
-* android
-23fab54 manifest: Track newer prebuilts/misc revision [Michael Bestas]
-
-* build/make
-8115d8ac1c Don't enforce vintf kernel requirements when building without LTO [Chirayu Desai]
-
 * device/fairphone/FP6
-88cad626 fixup! FP6: Build pvmfw partition [Arian]
+85803dd60 FP6: modules: The cover doesn't work when the phone suspond [zhibangxu]
+e2ceb6a04 FP6: sepolicy: [FPS-3505] android v vts test SuspendSepolicyTests: FAILED [xincheng5.zhao]
+eee71f9f4 FP6: sepolicy: [FPS-3583][2/4][MMI] Hall test failed,hall_status [chuanzhi.shao]
+1e8cc0b66 FP6: rootdir: [FPS-3583][1/4][MMI] Hall test failed,hall_status [chuanzhi.shao]
+0c034b052 FP6: rootdir: [FPS-3583][3/4][MMI] Hall test failed,hall_status [chuanzhi.shao]
+c1e309800 FP6: FPS-3327 [Google GMS][GTS_Root_13.0R2]GtsKeyMintAttestationTestCases [tianwen.zhang]
+46d8857a8 FP6: rootdir: [FPS-3395] Don't mount vm-system and vm-persist [liquan.zhou]
+178f1cefc FP6: Import qcom perf boosts into powerhint.json [Arian]
+98039eb16 FP6: Switch to libperfmgr [Arian]
+017916db7 FP6: Update sf duration to 12.3ms [Arian]
+9fcde92b2 Revert "FP6: config: Update sf duration to 15.6 ms" [Arian]
 
-* device/xiaomi/davinci
-f4f2716f davinci: motor: Use SimpleSummaryProvider for ListPreference [armdebug]
+* kernel/fairphone/sm7635
+2fe1e2c33a38 [FPS-3438][FPS][3/2]The cover doesn't work when the phone suspond [zhibangxu]
 
-* device/xiaomi/sm6150-common
-7f625f5 sm6150-common: Patch some blobs to depend on libtinyxml2-v34.so [Michael Bestas]
-9757e46 sm6150-common: Drop bootable/deprecated-ota from Android.bp [basamaryan]
-b6aa85d sm6150-common: display: Disable the property debug.sf.enable_gl_backpressure [quic_swarbu]
-0ac25a2 sm6150-common: Update work durations from kalama [basamaryan]
-8e4275f sm6150-common: overlay-lineage: Disable blurs by default [basamaryan]
+* kernel/fairphone/sm7635-devicetrees
+3091e7f5 [FPS-3438][FPS][3/1]The cover doesn't work when the phone suspond [zhibangxu]
 
-* frameworks/base
-1789e7e881c3 fixup! Firewall: Transport-based toggle support (1/3) [Luca Stefani]
-acab382e77c3 SystemUI: Add Lineage statusbar item holder [Sam Mortimer]
-6e26c1921249 WifiDisplayController: handle preexisting p2p connection status [Li Sun]
-179664f48779 services: core: wfd: extend check for qualcomm wfd jar [Alexander Martinz]
-d1cec3a84ba6 SystemUI: Check whether the selected WFD route is available [Weijie Wang]
-55110ba65808 Merge changes for launching wifidisplay from system settings [Indranil Chakraborty]
-c5c125bb2506 toast: fix bg color not changing with theme change [SuperDroidBond]
-e747fc71d456 SystemUI: Bring back good ol' circle battery style once again [LuK1337]
-6d8ed98603e5 VolumeDialog: Fix layout issues with left gravity [Dmitrii]
-547da6a870c3 Add gravity end to the volume dialog root view [Anton Potapov]
+* kernel/fairphone/sm7635-modules
+70dab22170 [FPS-3681] Wrong TP firmware version in *#*#02#*#* [changyuan1.zhou]
+fe3e6faf1b Revert "[FPS-2738][Google GMS][CTSV15.0R3][2/2]NFC Test ->Offhost card emulation reader tests fail" [海表 陆]
+
+* lineage/hudson
+cdb9b53 guess what TIME it is [pnguyen879]
 
 * lineage/mirror
-5e0410a Updated to 17-Jan-2026 11:01 UTC [Tim Schumacher]
-
-* packages/apps/AlertSlider
-dcea6b2 KeyHandler: Remove oplus specific tri-state-key-calibrate [Arian]
-a8edb42 Add soong namespace [Arian]
-5b8e73b KeyHandler: Use SimpleSummaryProvider for ListPreference [armdebug]
-436048e KeyHandler: Optimize and shrink resources [Luca Stefani]
-ef8119f KeyHandler: Pulse doze when showing slider notification dialog [Ido Ben-Hur]
-a072f27 KeyHandler: Make AlertSliderDialog respect screen rotation [Ido Ben-Hur]
-f7d8d76 KeyHandler: Initial support for UI notifications [Nick Reuter]
-4ec1ae8 Run `pre-commit run --all` [LuK1337]
-cd2e777 KeyHandler: Apply Expressive theme [Bruno Martins]
-a988577 KeyHandler: Convert for M3E support [Bruno Martins]
-f5c2382 KeyHandler: Modernize ButtonSettings [Bruno Martins]
-97ced54 KeyHandler: Switch to SwitchPreferenceCompat [Bruno Martins]
-05f6580 pre-commit: Enable clang-format [LuK1337]
-beeb12f Introduce pre-commit & GitHub Actions for it [LuK1337]
-
-* tools/buildscript
-7eca970 Upload all relevant images for a-only devices too [Arian]
-02bc33d Add init_boot and vbmeta images to release on ab devices [Arian]
-
-====================
-     2026-01-17    
-====================
-* device/xiaomi/sm6150-common
-cd7ed86 sm6150-common: overlay: Reduce blur radius [basamaryan]
-2ba5bd1 sm6150-common: overlay: Disable high performance transitions [me-cafebabe]
-1b0a5ef sm6150-common: Enable blurs [Lucas Dupin]
-475ad2d sm6150-common: parts: Apply Expressive theme [Bruno Martins]
-9833cc7 sm6150-common: parts: Convert for M3E support [Bruno Martins]
-acc0ce0 sm6150-common: Shim WFD with libinput_shim [LuK1337]
-06e4fdd sm6150-common: Update some soong config variables to bool type [Yumi Yukimura]
-e1e57ac sm6150-common: Include libdpps [Sebastiano Barezzi]
-5436a32 sm6150-common: Run sort-blobs-list.py [basamaryan]
-
-* external/wpa_supplicant_8
-8a9d0a55 external: wpa_supplicant: Switch to the real boolean values in Soong config [Yumi Yukimura]
-
-* lineage-sdk
-04737817 LineageSettings: Allow disabling window blurs by default [Michael Bestas]
+e9547ed Updated to 26-Jan-2026 23:01 UTC [Tim Schumacher]
 
 * lineage/wiki
-7772f420 wiki: Add Sony Xperia 1 IV/5 IV [Tuan Anh]
+e24fc7f0 fixup! devices: Promote timelm to 23.0 [pnguyen879]
+08fbcb80 devices: Promote timelm to 23.0 [pnguyen879]
 
-* prebuilts/misc
-79b3682 Use older libprotobuf-cpp-{lite,full}-21.12 [Michael Bestas]
-
-* vendor/lineage
-5fcbd317 config: Stop building icon packs & shapes [Michael Bestas]
-1b9dda08 aconfig: Disable notification_background_tint_optimization [ralph950412]
-e603db99 release: disable new dozing keyguard states [John Galt]
-9b1f66dc config: tablet: Disable desktop windowing mode on internal displays [Bruno Martins]
+* vendor/fairphone/FP6
+9e31464 FP6: Drop qcom perf stack [Arian]
 
 ====================
-     2026-01-16    
+     2026-01-26    
 ====================
 * device/lineage/sepolicy
-96bb6d0 sepolicy: label more sched sysctl toggles [basamaryan]
-
-* device/xiaomi/sm6150-common
-0dbad11 sm6150-common: parts: Run clang-format [basamaryan]
-972fe5f sm6150-common: Drop libvulkan target that is built by default [Michael Bestas]
-
-* external/dng_sdk
-c2298b9 dng_area_task: Provide backwards compatibility with legacy blobs [Bruno Martins]
-69f7e3d libbng_sdk: Make it available to vendor again [Bruno Martins]
-
-* external/libjxl
-b1da369a libjxl: Make it available to vendor [imranpopz]
+75ead3e sepolicy: qcom: Silence serial_number denials [Machad3x]
+98788c2 sepolicy: Allow linkerconfig to kill itself [Nolen Johnson]
+abbe687 sepolicy: Allow toolbox to terminate itself [Nolen Johnson]
+44e9951 sepolicy: shut up odrefresh [Han Sol Jin]
+aa1352b sepolicy: Add policy to silence flags_health_check denials [Ethan Chen]
 
 * frameworks/base
-ab2595f2bdde AlertWindowNotification: Correctly load app label [HZ]
-f10a8856637f Stop domain verification delegated from UIDs blocked by network policy [Oliver Scott]
-3528d46375ee aconfig: Use old storage if /metadata is not available [LuK1337]
-c32d801fb6a8 Fix HDMI CEC volume control setting being ignored [João Oliveira]
-32f4bbaf1892 Biometrics: Allow disabling of fingerprint cleanups [Quallenauge]
-8736740eca9e Allow BAL for usb debugging notifications [Christian Hoffmann]
-425caeabb728 SystemUI: Make battery clickable again [Ido Ben-Hur]
-7296655c0e69 Forward port CM Screen Security settings (1/2) [Michael Bestas]
-d63a62031ea7 Grant CAPTURE_AUDIO_OUTPUT permission for media uid [LuK1337]
-b9dbf37fc445 SystemUI: Don't remove keyguard slice view [LuK1337]
-c6bf595878df SystemUI: Fix constraints for keyguard slice view [LuK1337]
-9319a81c5f5d SystemUI: Add KeyguardSliceViewSection to split shade blueprint [LuK1337]
-e40af0dbfeba SystemUI: Fix media section constraints with Smartspace disabled [LuK1337]
-5d45d3eac3ba SystemUI: fix Keyguard slice [Fred Underwood]
-9610f4ef6321 Automatic translation import [LineageOS Infra]
-a120a4aefde4 Automatic translation import [LineageOS Infra]
-ebfce6b4bf89 Automatic translation import [LineageOS Infra]
-8f29442fe28a SystemUI: Fix system animation disable checks [Dhina17]
-6bdfb0aba434 usb: Show charging notification only if power brick is disconnected [Adithya R]
-fb50a8185638 services: fix quickswitch with gesture pill disabled [nift4]
-88d7cca1d1cd Correction in logic of roundend size calculation of SD card [Chetan Gurjar]
-702a79d5ba47 DisplayCutout: fully animate camera protection [Cosmin Tanislav]
-efcb448b71dd SettingsLib: Use framework resource for headline font [Adithya R]
-56f19c46f989 Enable backup service by default for all users [Oliver Scott]
-c73387eaafc5 Quick Settings power menu uses keyguard show state [Tommy Webb]
-4686429d773d QSLongPressEffect: Provide a fallback for devices with no primitives [Ido Ben-Hur]
-646a76b96443 SystemUI: Check if primitive vibrations are supported in new quick affordances [Fabian Leutenegger]
-8f654db021c7 InternetDialog: Add missing setOnClickListener for data toggle [Pranav Vashi]
-1482a9dba0ed SystemUI: Allow skipping mirroring confirmation dialog [Sebastiano Barezzi]
-9dda482da53d SystemUI: Add customization to show battery percent [Pranav Vashi]
-5b0fc66aa700 SystemUI: Re-implement clock auto-hiding feature [Bruno Martins]
-71e774539fa3 SystemUI: Clock AM/PM style customization [Michael Bestas]
-ee79fef38eac SystemUI: Clock position customization [Luca Stefani]
-5148237c2349 Screenrecord: Save preferences for permission dialog [Pranav Vashi]
-5943d49172a1 Screenrecord: Hide HEVC option when no HW codec is available [Ido Ben-Hur]
-4166bbc7fe21 Screenrecord: Add an option to use HEVC [Ido Ben-Hur]
-375a7f556126 Screenrecord: Allow to reduce 3 second screen record timer [maitreya29]
-b572ceff16d4 Screenrecord: Add an option to record for longer [Ido Ben-Hur]
-de7ade8338cb Screenrecord: Make low quality bitrate scalable per device [Ido Ben-Hur]
-016daedac789 Screenrecord: add low quality option [ezio84]
-347b373f3972 Screenrecord: Allow to select AVC codec profile level [iusmac]
-05ed9c71d3c4 Screenrecord: Allow limiting the max framerate [Kuba Wojciechowski]
-d60e28b1999e Screenrecord: Use AVCProfileMain [Arne Coucheron]
-c3034b30dd59 SystemUI: Fix burn-in translations not applying to keyguard slices [Andy CrossGate Yan]
-12509179b618 FingerprintUtils: Migrate old fp config xml to new one on HIDL/AIDL switch [Luofan Chen]
-ec85dd613471 HidlFingerprintSensorConfig: UNKNOWN -> UNDER_DISPLAY_OPTICAL [LuK1337]
-3b98dcfe8d58 HidlFingerprintSensorConfig: Add support for HIDL workaround props [LuK1337]
-233dde604169 SystemUI: Add support for udfps dim layer [pjgowtham]
-c40184d20301 udfps: Make pressed udfps view configurable [TheScarastic]
-a9bf111de405 udfps: Restore illumination dot for global hbm [Arian]
-b037470a19d3 MetaKeyKeyListener: Disable locking of toggled modifier keys [Sean McCreary]
-a09729edc8d8 base: Allow disabling turbulence noise after clicking the play button [Ido Ben-Hur]
-547c1b087106 fixup! Update the cutout side override doc to encourage all side override [Aaron Kling]
-cc206fc23a61 SettingsLib: Always show package name in installed app details [Michael Bestas]
-6372e235ba94 SystemUI: Add double tap to sleep gesture [Rashed Abdel-Tawab]
-300357b404fa Fallback BUTTON_SELECT to BACK [Aaron Kling]
-cd20fdf06041 Fallback ESC to BACK [Aaron Kling]
-c4fea2266ce7 keylayouts: Nintendo ProCon: Map it like stock does [Nolen Johnson]
-f73560410105 Add nvidia profile manager [Aaron Kling]
-f91a3480afd3 Add nvcpl hook interfaces [Aaron Kling]
-063714e8b6c9 Keyguard: Hide battery indication on battery-less devices [Bruno Martins]
-29b3b226d562 ATV: Display battery notifications [Aaron Kling]
-c64a1cde0b01 SystemUI: don't show screenshot button on TV [Timi Rautamäki]
-2199383b1d63 frameworks: Add device controls shortcut to power menu [LuK1337]
-038e5e066aed frameworks: Add more power menu customizations [Gegham Zakaryan]
-efade7e0bf3d frameworks: Add support for advanced restart options [Michael Bestas]
-4427d1128122 Fix ever-growing AppOpItem string representation [Tommy Webb]
-3904ca69f70e webkit: SystemImpl: Filter out unavailable providers [LuK1337]
-f5684edd8932 PhoneWindowManager: Restore haptic feedback for physical nav keys [LuK1337]
-33fd8a5df980 PhoneWindowManager: Add support for back key long press customization [LuK1337]
-0d84febce54b Implement edge long swipe gesture to new back gesture affordance [someone5678]
-16a91df186a0 PhoneWindowManager: Implement press home to answer call [Oleksandr Byelkin]
-fbc92d47677a PhoneWindowManager: Tap volume buttons to answer call [martincz]
-0869a5e3eb49 fw/b: Implement device hardware wake keys support [LuK1337]
-c756a96587b3 fw/b: Allow customisation of navbar app switch long press action [Sam Mortimer]
-3ecd6e45a470 fw/b: Implement hardware keys custom rebinding [Phil Tunstall]
+ee998e0796c0 Support volume up/down to mute [Aaron Kling]
 
-* kernel/xiaomi/sm6150
-ce245adaca57 Merge remote-tracking branch 'sm8150/lineage-20' into lineage-23.0 [basamaryan]
+* hardware/qcom-caf/common
+dae46e3 libqti-perfd-client: Implement camera perf hints [Arian]
+
+* hardware/qcom-caf/thermal
+181d4d6 thermal-hal: Update skin temperature values for kalama and crow [chandu078]
 
 * lineage/wiki
-61b7f13b wiki: Update hotdogb maintainer list [Onelots]
+d2990d7b wiki: Update SSH host key error handling [Alvin Zhu]
 
-* vendor/xiaomi/sm6150-common
-37b8330 sm6150-common: Patch some blobs to depend on libtinyxml2-v34.so [Michael Bestas]
-77a1314 sm6150-common: Include libdpps [Sebastiano Barezzi]
+* packages/apps/TvSettings
+01f7b09b0 TvSettings: Support two button mute [Aaron Kling]
+09ca07296 TvSettings: Check for null HdmiControlManager [Timi]
+3067c451e HDMI CEC: Add volume preference [Aaron Kling]
+d095e3c75 Show input settings on cec playback devices [Aaron Kling]
+
+* packages/apps/Twelve
+4af3c74 Twelve: SubsonicDataSource: Add scrobble [Sebastiano Barezzi]
+215d7c6 Twelve: Merge `onAudioPlayed` and `broadcastPlaybackStartFromAudio` [Sebastiano Barezzi]
+f4a600e Twelve: Use widget style attributes where possible [Sebastiano Barezzi]
+a4646ec Twelve: ListItem: Use text appearance theme attribute [Sebastiano Barezzi]
+c3aee1b Twelve: SettingsLib: Reformat code [Sebastiano Barezzi]
+a4090b7 Twelve: Reformat code [Sebastiano Barezzi]
 
 ====================
-     2026-01-15    
+     2026-01-25    
 ====================
 * device/qcom/sepolicy_vndr/legacy-um
-a1a44fbb1 Fix the AVC denial issue [Parushuram bada]
+32aefa594 sepolicy_vndr: Add SePolicy rules for new wfd AIDL service [Amit Agrawal]
 
 * device/qcom/sepolicy_vndr/sm8450
-9d4b97198 Fix the AVC denial issue [Parushuram bada]
+ce9bc1dc5 sepolicy_vndr: Add SePolicy rules for new wfd AIDL service [Amit Agrawal]
 
 * device/qcom/sepolicy_vndr/sm8550
-ec7f7b6a8 sepolicy_vndr: Add permission to write kmsg in vendor_qti_init_shell [Naman Jain]
-8ac95060d Fix the AVC denial issue [Parushuram bada]
+155be9396 sepolicy_vndr: Add SePolicy rules for new wfd AIDL service [Amit Agrawal]
 
-* device/qcom/sepolicy_vndr/sm8750
-4d2c01b88 sepolicy_vndr: Add permission to write kmsg in vendor_qti_init_shell [Naman Jain]
-fe8fc376d Fix the AVC denial issue [Parushuram bada]
+* hardware/lineage/compat
+f895522 compat: Provide libaudioutils shim [Bruno Martins]
+
+* hardware/qcom-caf/sm8550/audio/agm
+10316d1c agm: Fix format specifiers [Michael Bestas]
+9b7c6f5e agm: Fix static analysis issues & warnings [Aravind Siddappaji]
+a8ce2a71 fixup! plugins: tinyalsa: fix build [Bruno Martins]
+513dae6e AGM:  Fixes to prevent warnings 	- Fixed Typecasting 	- Fixed Format Specifier for logs 	- Misc Fixes to prevent warnings [Manan Jain]
+
+* hardware/qcom-caf/sm8750/audio/agm
+4ce90e27 agm: Fix format specifiers [Michael Bestas]
+16205b07 agm: Fix static analysis issues & warnings [Aravind Siddappaji]
+07fe7e48 fixup! plugins: tinyalsa: fix build [Bruno Martins]
+a59ae324 AGM:  Fixes to prevent warnings 	- Fixed Typecasting 	- Fixed Format Specifier for logs 	- Misc Fixes to prevent warnings [Manan Jain]
+
+* hardware/qcom-caf/sm8750/audio/pal
+7f00b3556 plugins: customva_intf: Fix format specifiers [Cosmin Tanislav]
+f60184718 pal/plugins: Fix static analysis issues & warnings [Aravind Siddappaji]
+b60259f09 Fixed compiler warnings for audio-core-auto.lnx.1.0 [Ashwin Srirankan]
+a048bf1aa Handle compiler warning treated as error [Vaidegi Balakrishnan]
+
+* hardware/qcom-caf/sm8750/display/core
+2318000 Partial apply: "display-core: fix clang issues" [Rohit Kumar]
+905402f display-core: fix qssi 16.1.1 tag update compiler issues [Vishalteja Kosana]
+
+* hardware/qcom-caf/sm8750/display/hal
+8f0658c383 gralloc: Fix format specifiers [Bruno Martins]
+32eeea7096 gralloc: Fix compilation error for incorrect format specifier. [Avdhesh Singh Chauhan]
+7859ccb636 display: fix qssi 16.1.1 tag update compiler issues [Vishalteja Kosana]
+
+* lineage/hudson
+f4f49c7 hudson: Revive scorpio [Onelots]
 
 * lineage/wiki
-a75e3735 snippets: recovery_reboot: Clarify how to navigate fastboot menu [Nolen Johnson]
-42985276 templates: device_install: Be more explicit about side-button navigation [Nolen Johnson]
+f99c66de devices: Promote scorpio to 22.2 [Onelots]
+5969a8d3 wiki: troika: Update maintainers [Thomas Turner]
 
-* packages/services/Car
-a1d31456ff dewd: Fix broken makefile [Nolen Johnson]
+* tools/extract-utils
+48bb722 extract_utils: use copy.deepcopy() for merging fixups [LuK1337]
 
 ====================
-     2026-01-14    
+     2026-01-24    
 ====================
+* device/fairphone/FP6
+da5f3613a FP6: overlay: Declare alert slider position [Arian]
+62e4837e5 FP6: Build and configure common alert slider KeyHandler [Arian]
+8f30e6a2f FP6: Add keylayout for fairphone moments switch [Antoine C.]
+942d2dc93 FP6: KeyHandler: Ignore non-DND keyCodes [Arian]
+62078a191 FP6: KeyHandler: Stop ignoring ACTION_UP events [Arian]
+e46668ff4 FP6: KeyHandler: Make allowed device names configurable [Arian]
+bd9ad59d5 FP6: KeyHandler: Make the supported positions configurable [Arian]
+2c2359eea FP6: overlay: Add lineage-sdk rro for KeyHandler [Arian]
+188519598 FP6: KeyHandler: Remove oplus specific tri-state-key-calibrate [Arian]
+802eaddae FP6: KeyHandler: Move alert slider strings to devicesettings [Michael Bestas]
+909ed878d FP6: KeyHandler: Fix alert slider scaling upon resolution changes [Bruno Martins]
+037282efa FP6: KeyHandler: Use SimpleSummaryProvider for ListPreference [armdebug]
+0ba8a91ab FP6: KeyHandler: Optimize and shrink resources [Luca Stefani]
+97addeea4 FP6: KeyHandler: Pulse doze when showing slider notification dialog [Ido Ben-Hur]
+dc2cb0f19 FP6: KeyHandler: Make AlertSliderDialog respect screen rotation [Ido Ben-Hur]
+d96574ccb FP6: KeyHandler: Initial support for UI notifications [Nick Reuter]
+fe3d673ec FP6: KeyHandler: Run `pre-commit run --all` [LuK1337]
+afd1d8017 FP6: KeyHandler: Apply Expressive theme [Bruno Martins]
+642e93f27 FP6: KeyHandler: Convert for M3E support [Bruno Martins]
+289c4d92e FP6: KeyHandler: Modernize ButtonSettings [Bruno Martins]
+963fd516d FP6: KeyHandler: Switch to SwitchPreferenceCompat [Bruno Martins]
+f2335bc44 FP6: KeyHandler: Populate tri-state-key state on boot [dianlujitao]
+4c2797f97 FP6: KeyHandler: Run bpfix [Mashopy]
+0703ed85c FP6: KeyHandler: Enable use_resource_processor for all sysui deps [Peter Kalauskas]
+7840b7d4d FP6: KeyHandler: Simplify input device name resolution [LuK1337]
+8e8d3ea5c FP6: KeyHandler: Use property access syntax for zen mode [LuK1337]
+5a8f4f961 FP6: KeyHandler: Fix compilation for QPR1 merge [Bruno Martins]
+454d1c59c FP6: KeyHandler: Add 'None' alert slider mode [xchgrbprsp]
+411359c71 FP6: KeyHandler: Use VibrationAttributes.USAGE_HARDWARE_FEEDBACK [LuK1337]
+3c2c07b6f FP6: KeyHandler: Use property access syntax when possible [LuK1337]
+08deca1b1 FP6: KeyHandler: Null assert on getSystemService() [LuK1337]
+62df37eff FP6: KeyHandler: Simplify boolean check [LuK1337]
+b4d33c53f FP6: KeyHandler: Remove unused/unnecessary imports [LuK1337]
+36d67154a FP6: KeyHandler: Don't ignore oplus,tri-state-key [LuK1337]
+f81390b4d FP6: KeyHandler: Wait for zen mode change before setting ringer mode [LuK1337]
+4853e48f2 FP6: KeyHandler: Remove BootCompletedReceiver [LuK1337]
+fe77eee8a FP6: KeyHandler: Adjust for Oplus [LuK1337]
+851bbf841 FP6: KeyHandler: Update to S [Bruno Martins]
+acfa0e724 FP6: KeyHandler: Drop dependency on org.lineageos.platform.internal [LuK1337]
+f1c3bcd3f FP6: KeyHandler: Integrate in tri-state-key handling via UEventObserver API [Timi Rautamäki]
+6698f35f7 FP6: KeyHandler: Add more modes [Timi Rautamäki]
+3db630059 FP6: KeyHandler: Add customization options [Timi Rautamäki]
+2ffc9b76b FP6: KeyHandler: Java -> Kotlin [LuK1337]
+168e0e900 FP6: KeyHandler: Switch to blueprint [Daniel Jacob Chittoor]
+84699f87e FP6: KeyHandler: Use HEAVY_CLICK for MODE_NORMAL_EFFECT [LuK1337]
+6f3ed07b2 FP6: KeyHandler: Do nothing when action != ACTION_DOWN [LuK1337]
+9868bb204 FP6: KeyHandler: Use mode specific vibration effects [LuK1337]
+d6cfa2755 FP6: KeyHandler: Use VibrationEffect [Ashwin R C]
+b7bdf7a4d FP6: KeyHandler: Set LOCAL_PRIVATE_PLATFORM_APIS [Anton Hansson]
+24d85717c FP6: Add a KeyHandler for tri-state-key events [Luca Stefani]
+bc7af1b50 FP6: sepolicy: Cleanup & format [Michael Bestas]
+1f2bbd188 FP6: rootdir: Cleanup init.target.rc [Michael Bestas]
+2ae035f97 FP6: overlay: Convert config_screenBrightnessDoze to float [Edwin Moquete]
+8095ad8b2 FP6: Set BOOT_SECURITY_PATCH [Chirayu Desai]
+9069a7922 FP6: config: Update sf duration to 15.6 ms [Akhil Jaiswal]
+97f184ba9 FP6: Patch some blobs to depend on libtinyxml2-v34.so [Michael Bestas]
+3b294b0f3 FP6: Rename vendor libtensorflowlite_c.so [Michael Bestas]
+f031f6ae9 FP6: Patch qccsyshal to load versioned libprotobuf [Michael Bestas]
+adef8f125 FP6: Use libprotobuf-cpp-{lite,full}-21.7 from hardware/lineage/compat [Michael Bestas]
+dd72c270a FP6: Build missing lib{customva,hotword}_intf libs [Michael Bestas]
+7eddd7cd8 FP6: Build libvui_intf from source [Michael Bestas]
+edaf5de0d FP6: Update to FP6.QREL.15.162.0 [Michael Bestas]
+37c945c99 FP6: Build pvmfw partition [Vincent Vidal]
+ee977e9d3 FP6: Sign init_boot with SHA256_RSA4096 key [Vincent Vidal]
+0a96fafc4 FP6: Update some soong config variables to bool type [Yumi Yukimura]
+e2ad7a573 FP6: Shim WFD with libinput_shim [LuK1337]
+8c183065e FP6: Enable blurs [Lucas Dupin]
+4067e2b0e FP6: Update to FP6.QREL.15.151.0 [Michael Bestas]
+e4417a98c FP6: Switch screen density to 440 dpi [Michael Bestas]
+73c2b9d01 FP6: gps: Remove CleanSpec.mk [Michael Bestas]
+9218f7664 FP6: Build SEC NFC HAL from source [Michael Bestas]
+6a8f318e0 FP6: Remove vendor/lineage device framework matrix inclusion [LuK1337]
+7fa8e10ed FP6: CONFIG_IEEE80211AX -> WIFI_FEATURE_HOSTAPD_11AX [LuK1337]
+951149712 FP6: Fix ext kernel module ordering [Arian]
+ff908e603 FP6: rootdir: Add sdcard1 and usbotg to recovery fstab [someone5678]
+122e80da4 FP6: Switch to NCM USB tethering [LuK1337]
+290b06d77 FP6: Add support for toggling fast charge [Tim Zimmermann]
+fada5f1c7 FP6: Enable ELF checks for audio blobs [Arian]
+71f32157f FP6: Migrate QTI power HAL to soong_config_set [Michael Bestas]
+87f64a51b FP6: Update WFD system blobs from dada OS2.0.217.0.WOCMIXM [basamaryan]
+9bee2a5b6 FP6: split up WiFi Display sections [Cosmin Tanislav]
+642421f26 FP6: Address missing libbinder symbols [Michael Bestas]
+45f40ebe1 FP6: rootdir: Unmount /firmware after fastbootd starts [LuK1337]
+7b6a0d7be FP6: rootdir: Fix battery and USB OTG detection [ghostrider-reborn]
+da4ed765d FP6: Build Lineage Health HAL [Michael Bestas]
+37ace9600 FP6: Enable camera override format from reserved [Arian]
+120ccc83f FP6: Disable virtual AB compression [Arian]
+31e0de8d8 FP6: overlay: Enable multiple vibration strength levels support [Michael Bestas]
+b84123550 FP6: overlay: Move rro packages to vendor partition [xboxfanj]
+294874004 FP6: enable e-SIM support [Alexander Martinz]
+44428cfef FP6: qcril-database: Add migration to turn off poweron_opt [Anand S]
+b6b7adba6 FP6: Generate qcrilNr.db during build [Arian]
+cd4bcf727 FP6: Add system_dlkm modprobe script [Arian]
+a0d8e5bae FP6: Include firmware [Arian]
+f736cbba2 FP6: Drop unused lpa interface permission [Arian]
+af18f0f63 FP6: Drop qti fingerprint interface permission [Arian]
+8f9d2e507 FP6: overlay: Enable battery cycle count [Michael Bestas]
+7ef133f57 FP6: Add data connectionfatory manifest [Arian]
+3da4691a1 FP6: overlay: Disable telephony injection [Arian]
+a5730ef40 FP6: Drop explicit building of libpalclient [Arian]
+7874f205a FP6: Build libhfp_pal [Arian]
+66cd10687 FP6: Add carrier config app [Arian]
+e051d9b15 FP6: sepolicy: Allow ueventd to load aw882xx calibration file [dianlujitao]
+f4e3c85cf FP6: Add aw_cali.bin firmware symlink [dianlujitao]
+e248da8c7 FP6: Copy displayconfig to another display id [Arian]
+f8b6d6fc9 FP6: overlay: Add some rounded corner content padding [Arian]
+f5f109c6e FP6: overlay: Refine display cutout region [Arian]
+5f826c044 FP6: overlay: Configure power button and fingerprint location [Arian]
+5f99396c3 Revert "FP6: vintf: Remove qti cacert hidl" [Arian]
+bdd9bb6fd FP6: Update blobs from FP6.QREL.15.122.0.20250718182448_VS1E-factory.zip [Arian]
+3828b4739 FP6: sepolicy: Label missing wakeup sysfs nodes [Arian]
+4f6d444c8 FP6: sepolicy: Allow power hal to write touchscreen sysfs files [Arian]
+9523b7a60 FP6: sepolicy: Label touchscreen sysfs nodes [Arian]
+3825101ac FP6: sepolicy: Allow sensors hal to set fp prop [Arian]
+ee515a0b9 FP6: sepolicy: Move emkit/info lable to genfscon [Arian]
+fc78b8ab9 FP6: sepolicy: Label fingerprint hal and add focaltech rules [Arian]
+8eeabc4f7 FP6: sepolicy: Label more properties [Arian]
+48ec99287 FP6: sepolicy: Label aw_vibrator [Arian]
+bd2378cc0 FP6: sepolicy: Add emkit sepolicy for sensors [Arian]
+f9f2861e1 FP6: sepolicy: Remove unused hal_ispenc attribute [Arian]
+abfb2dfcd FP6: sepolicy: Run algoservice as hal_camera_default [Arian]
+a1ec69347 FP6: sepolicy: Import camera related rules from device/qcom/sepolicy_vndr [Arian]
+5f1dd7f81 FP6: sepolicy: Import samsung sec sepolicy from vendor/samsung_slsi/nfc [Arian]
+56a0e2a90 FP6: sepolicy: Import wlan mac sepolicy from vendor/fairphone/common [Arian]
+3bed6e18c FP6: sepolicy: Import tctd sepolicy from vendor/fairphone/common [Arian]
+00cf29001 FP6: Include sepolicy [Arian]
+8774cf419 FP6: Drop qcom composer extension configuration files [Arian]
+a1b7395ab FP6: overlay: Enable 60 fps fhd video recording for front and primary back camera [Arian]
+4d49e3b08 FP6: overlay: Configure aux camera for Aperture [LuK1337]
+56c624600 FP6: overlay: Enable smooth display setting [Arian]
+4e7ff18c1 FP6: Add double tap to wake [Antoine C.]
+313db7c25 FP6: rootdir: Import qcom init from android.hardware.audio.service_64.rc [Arian]
+e30cce95f FP6: rootdir: Import fairphone changes to init.target.rc [Arian]
+92f73f026 FP6: Stop building agmipc service and enable agm hidl [Arian]
+762a89edc FP6: Copy attestion permission [Arian]
+e4e6abd96 FP6: Copy verified_boot permission [Arian]
+a230f4504 FP6: Copy multitouch jazzhand permission [Arian]
+24470495f FP6: Add feature flag for IPSEC_TUNNEL_MIGRATION [Yan Yan]
+149f0519a FP6: Copy ipsec_tunnels permission [Arian]
+64f3cd555 FP6: Build qcom telephony packages and copy permissions [Arian]
+f603c8f0b FP6: Copy NFC permissions [Arian]
+4c085a56d FP6: Copy keystore app attest key permission [Arian]
+baa37ba8e FP6: Copy fingerprint permissions [Arian]
+c2f62c898 FP6: Include qcom usb init scripts and copy permissions [Arian]
+713d5acd3 FP6: Copy sku_volcano sensor permissions [Arian]
+f2d35d398 FP6: Build IPACM [Arian]
+99315d61d FP6: Build sensors multihal [Arian]
+8b9e4724b FP6: Build QTI power service [Arian]
+84b155431 FP6: Build QTI health service [Arian]
+693686e16 FP6: Build and enable fastbootd [Alessandro Astone]
+6a1f50eeb FP6: Build qti display demura service [Arian]
+aa1c242fd FP6: Add qti media init scripts [Arian]
+5687f201b FP6: Build QTI Thermal AIDL HAL [Yumi Yukimura]
+99fd5f993 FP6: Build qti usb and gadget HAL [Arian]
+e7d05a537 FP6: rootdir: Import qti kernel init scripts [Arian]
+2d18b6a06 FP6: Build common QTI vibrator HAL [Michael Bestas]
+ada94d20a FP6: Add hwservicemanager, allocator service to the device. [Siddeswar Aluganti]
+265eed772 FP6: Add vndservicemanager explicitly [Smita Ghosh]
+075f9b4fc FP6: Import config.fs from LA.VENDOR.14.3.12.r1-01300-lanai.QSSI15.0 [Arian]
+15a876daa FP6: Copy graphics permissions [Arian]
+d0eb98930 FP6: Build clearkey drm service [Arian]
+180589842 FP6: Build qcom display hal [Arian]
+68083c098 FP6: Copy camera permissions [Arian]
+cfb7a9f63 FP6: Build bluetooth audio impl and copy bluetooth permissions [Arian]
+4afd90a83 FP6: Redefine bluetooth a2dp offload capabilities [Arian]
+7d9ff8f61 FP6: audio: Don't advertise unsupported BT A2DP formats in audio policy config [Arian]
+639b0b1a6 FP6: audio: Drop bluetooth_qti audio policies [Arian]
+613a2b9ac FP6: audio: Import fairphone changes to audio policy configuration [Arian]
+faf2d2c60 FP6: Import volcano audio_policy_configuration [Arian]
+11924b3a7 FP6: audio: Disable native speaker protection [Pavel Dubrova]
+a09c68aad FP6: audio: Import fairphone changes from FP6.QREL.15.91.0 [Arian]
+fef238dd5 FP6: Import pal audio configs for volcano_mtp [Arian]
+a4d504ee0 FP6: Copy google media codecs from frameworks/av [Arian]
+8341adaa5 FP6: Configure and build qcom audio HAL [Arian]
+01b8fe02f FP6: Implement xtra-daemon control via property [Michael Bestas]
+f7df5027b FP6: gps: Lower debug level [Michael Bestas]
+a8b01fba0 FP6: gps: Disable xtwifi location services [TheStrix]
+3339a8581 FP6: Build GNSS HAL from source and import configs from stock [Arian]
+e487f9be3 FP6: gps: Convert remaining Android.mk to bp [Michael Bestas]
+8aef6b9ac FP6: gps: Remove unused implementations [Michael Bestas]
+f99f13358 FP6: gps: Fix unqualified-std-cast-call warning [Yi Kong]
+db78c0633 FP6: gps: Fix -Wbitwise-instead-of-logical [Pirama Arumuga Nainar]
+49b696db9 FP6: gps: Fix non-ASCII character in gps.conf [dianlujitao]
+d52dda985 FP6: Import gps from LA.VENDOR.14.3.0.r1-20200-lanai.0 [Arian]
+0da3cb9f9 FP6: Switch to QTI Memtrack AIDL HAL [Yumi Yukimura]
+536f8d3cf FP6: Allow rt_tgsigqueueinfo syscall for wfdhdcphalservice [Arian]
+953fdf9b0 FP6: Enable QSPA Framework [Karra Harshitha]
+b8a887e8f FP6: Enable elfchecks for camera libs [LuK1337]
+7c93ac429 FP6: fix dependencies on multiple AIDL versions [Cosmin Tanislav]
+ba7ffbc97 FP6: Resolve missing symbols on libqcodec2_core [Bruno Martins]
+497cb4cc8 FP6: Use libhidlbase_shim for vendor.libdpmframework [Arian]
+15a028a47 FP6: Initial proprietary files listing [Arian]
+7faf37b9b FP6: Drop fairphone touch/idle timer modifications [Arian]
+d4a094821 FP6: Add debug IMS props to workaround CarrierConfig restrictions [LuK1337]
+ca7b67801 FP6: Move default network property to vendor partition [Jayachandran C]
+ec5c75dfb FP6: Load volcano_v1 media profiles [Arian]
+0f8448c3f FP6: Import properties from stock [Arian]
+0a5b6c773 FP6: vintf: Remove qti cacert hidl [Arian]
+5763f62fe FP6: vintf: Remove NXP NFC and secure element [Arian]
+87f227593 FP6: vintf: Add fcm for tcl camera algoservice [Arian]
+d582ee60e FP6: Import qcom common rootdir files from LA.VENDOR.14.3.0.r1-21700-lanai.0 [Arian]
+7f907ea2e FP6: Import volcano rootdir files from LA.VENDOR.14.3.0.r1-21700-lanai.0 [Arian]
+797b84991 FP6: overlay: Import runtime resource overlays [Arian]
+ce0e5182a FP6: Set screen density to xxxhdpi [Arian]
+edf633623 FP6: Create mountpoints in vendor [Arian]
+3d98c0455 FP6: Build qti common boot control HAL [Arian]
+0e2aff2a4 FP6: Include common qualcomm symlinks [Arian]
+0ffc84cfa FP6: Create WLAN symlinks [Arian]
+ef0491d43 FP6: wlan: Read MAC address from file [Arian]
+9eeb7046a FP6: Build wlan service and import configs from LA.VENDOR.14.3.0.r1-21700-lanai.0 [Arian]
+64a321b5f FP6: Set vendor security patch level [Arian]
+73fb6da6a FP6: Include qcom common sepolicy [Arian]
+80472bfdf FP6: Setup VINTF manifests [Arian]
+4df174039 FP6: Configure recovery and include fstab from volcano LA.VENDOR.14.3.0.r1-21700-lanai.0 [Arian]
+d1abe3ac5 FP6: Move GSI AVB keys to /vendor_boot [Alexander Koskovich]
+b910f50ed FP6: Disable rild [Arian]
+13a2e4c38 FP6: Enable qcom hardware repos [Arian]
+f1f70a2d6 FP6: Set init_boot header version to 4 [Arian]
+a0f0d40a3 FP6: Setup virtual A/B partitions [Arian]
+0623971ab FP6: Set shipping board and product api level [Arian]
+a7cc974c0 FP6: Configure vbmeta image and disable verification [Arian]
+2cad56b81 FP6: modules: Load adsp_loader_dlkm for battery status in recovery [pjgowtham]
+fd2cc76c2 FP6: modules: Remove unused vibrator driver [Antoine C.]
+a74c9b53f FP6: modules: Move eswin_ts to second stage modules [Arian]
+a39c7f2be FP6: modules: Move hdcp_qseecom_dlkm to second stage modules [Arian]
+c755ea327 FP6: modules: Sort module load lists [Arian]
+bca5a5612 FP6: modules: Simplify kernel modules list [Arian]
+da4ebe248 FP6: Configure kernel modules and import module load files from stock [Arian]
+c270ab43b FP6: Configure kernel and boot image [Arian]
+5c101ae75 FP6: Define brand/model/name for attestation [Arian]
+432ef1edc FP6: Inherit common partition reserved sizes [Michael Bestas]
+f6096ff27 FP6: Configure partitions [Arian]
+4ebe20fd3 FP6: Don't include bootloader [Arian]
+95f934ebe FP6: Configure bootloader and board names [Arian]
+
+* kernel/fairphone/sm7635-devicetrees
+963720b8 Skip building non-fps overlays [Arian]
+13504b17 FP6: Register switch input as dedicated device [Antoine C.]
+503e9378 [FPS-2197][display] Fix the lag issue at 90hz [mingpeng.mao]
+acf4e3f4 [FPS-2254][display]Add AOD code to branch_rc[1/2] [mingpeng.mao]
+4a6af5e2 Enable aw882xx calibration for channels 0 and 1 [Arian]
+4f76bfdf Nuke 90hz timing [Arian]
+b730bf3d [FPS-146][FP-Spring] NFC Bring up (08/12) [yingsen.zhang]
+030b4055 Revert "Revert "[FPS-2505] All frame rates use the same mipi clk[1/2]"" [明鹏 毛]
+7d81e1e7 Revert "[FPS-2505] All frame rates use the same mipi clk[1/2]" [睿 唐]
+6a1d4758 [FPS-2505] All frame rates use the same mipi clk[1/2] [mingpeng.mao]
+68c2f2b2 [FPS-2505] Fix the display issue [“mingpeng.mao”]
+19bf2e2f [FPS-2525][1/3] Config 10bit DSC panel [changyuan1.zhou]
+8e9d2f09 [FPS-1934][OLED] del 1hz and add 10hz [1/2] [“mingpeng.mao”]
+f49321e3 [FPS-22] change HDR parameters accodring to panel characteristics [changyuan1.zhou]
+b932302c [FPS-1089][OLED] Optimize some frame rates based on 120hz [1/2] [“mingpeng.mao”]
+a29e8d00 [FPS-1309][OLED] Fix screen display related issues[2/3] [“mingpeng.mao”]
+663c02b1 Revert "Revert "[FPS-1089][OLED] Fix refresh rate not same with settings[3/3]"" [睿 唐]
+eb111f52 Revert "[FPS-1089][OLED] Fix refresh rate not same with settings[3/3]" [睿 唐]
+fb7a5e72 [FPS-1089][OLED] Fix refresh rate not same with settings[3/3] [“mingpeng.mao”]
+b00908a0 [FPS-911] CTS HDR display test failed [changyuan1.zhou]
+0b7e7572 [FPS-1088][OLED] Add 30hz and 1hz to support AOD and IDLE [“mingpeng.mao”]
+10c2f6f2 [FPS-22][OLED] Add Dimming Setting[3/3] [“mingpeng.mao”]
+8a282c66 [FPS-926] Fix ynamic fps switching failure [mingpeng.mao]
+617267e9 [FPS-649] Dynamic fps adaptation[1/3] [mingpeng.mao]
+171b0c1e [FPS-22][1/2] config max brightness to 4094 [changyuan1.zhou]
+e3514abd [FPS-619] [2/3] ESWIN TP add TP suspend and resume (drm notifier) [changyuan1.zhou]
+bca87332 [FPS-649] [1/1] Modify the panel mipi tranfer time per frame. [xianzhu.zhang]
+51ece144 [FPS-649] Set TE frame rate to 60hz[2/2] [mingpeng.mao]
+34fad471 [FPS-649] Fix system stuck issues[2/2] [mingpeng.mao]
+6fb8550c [FPS-22] add screen size [changyuan1.zhou]
+b58812c0 [FPS-23] [2/3]add TP suspend and resume [changyuan1.zhou]
+37546558 [FPS-22] [1/2]Display issue modified && uefi oled bring up [changyuan1.zhou]
+51a3f1d0 [FPS-22] [1/3]OLED bring up [changyuan1.zhou]
+4f447182 [1 of 2][FPS-437]modify imx896 cam_vaf 3.3v [binchang.liang]
+2ec8f845 [FPS-439]correct orientation of s5kkd1 front camera [binchang.liang]
+3e6ebcd4 [1 of 2][FPS-437]add imx896 af [binchang.liang]
+7b39d224 [FPS-439] update lens parameter [chengming.xiang]
+f6982c60 [FPS-562]config af_vdd to 3.2V. [jinghuang]
+a6794848 [1 of 2][FPS-437]add imx896 eeprom [binchang.liang]
+a12e4ba0 [FPS-439]add s5kkd1 eeprom [chengming.xiang]
+3a4adb50 [FPS-562]add ois dw9784 for project [jinghuang]
+1c43ca61 [FPS-439] Add macro camera & mtf tuning parameter [chengming.xiang]
+e200d1c4 [2 of 2][FPS-441]Flashlight LED bring up [binchang.liang]
+c9af8313 [FPS-439]update uw dvdd config [chengming.xiang]
+7c51b4a0 [1 of 2][FPS-437]modify imx896 bring up [binchang.liang]
+a840bf0a [1 of 2][FPS-437]add imx896 camera driver config [binchang.liang]
+5b6bd491 [FPS-439]add s5kkd1 & ov13b10 [chengming.xiang]
+1676c562 [FPS-583][2/2] pm8008 bringup. [xianzhu.zhang]
+66fab93b [FPS-439]add s5kkd1 & ov13b10 [chengming.xiang]
+d660ca98 [FPS-440]add tof stmvl53l1. [jinghuang]
+27608273 [FPS-1450]　DVT2-1 HAC 验证参数 [1/6] audio-devicetree [bo.yu]
+c809fa72 Revert "[FPS-1450]　DVT2-1 HAC 验证参数 [1/5] dtsi" [Bo YU]
+0c04e2e8 [FPS-1450]　DVT2-1 HAC 验证参数 [1/5] dtsi [bo.yu]
+64ec7102 [FPS-32][FP-Spring]Audio bring up [25/9] [bo.yu]
+6bf99ad0 [FPS-32][FP-Spring]Audio bring up [10/9] [bo.yu]
+09923a5d [FPS-32][FP-Spring]Audio bring up [1/9] [bo.yu]
+2609c046 FPS-426 [BringUp]#2 Remove unused audio devices [liquan.zhou]
+97c2c17c [FPS-2059] [MMI][Hac]Obvious current noise can be heard in hearing aids [bo.yu]
+809430d4 FPS-2233 [System]Alipay scan code is very laggy [tianwen.zhang]
+f8753b3a [FPS-1973] [FPS][BSP]SKU ID config 606 to V03 board for DVT2-2 [“chaoqun.ning]
+400255af [FPS-38] : [FPS][FP-Spring]NPI_DOWN driver 1/2 [lin.jiang]
+0d268f31 [FPS-1450]　DVT2-1 HAC 验证参数 [3/6] devicetree for 3 PA [bo.yu]
+355a836f [FPS-1045] TP spi cs and clk have drop [changyuan1.zhou]
+e1360c58 [FPS-1281] add sku id :605 [zhibangxu]
+40fc8aed [FPS-941] add SKU ID config 604 to V00C board for DVT1-2 . [xianzhu.zhang]
+2e06e266 [FPS-639] [FPS] Add hw_version node[1/2] [binsu]
+89e3f9c1 [FPS-644] [FPS] Modify for USB eye pattern [binsu]
+bb9bb91b [FPS-671]remove disauto-suspend [changyuan1.zhou]
+71f6c9bb [FPS-671][1/2] device goes suspend and can't wake up [changyuan1.zhou]
+acd8aaef [FPS-583] change pm8008 L7 supply headroom to 100mv, reduce BOB voltage to 3.52v. [xianzhu.zhang]
+244731be [FPS-619] [2/2]Temporary modification ESWIN TP driver update [changyuan1.zhou]
+59f96f36 [FPS-37][FP-Spring] FP bringup devicetree [mingpeng.mao]
+294b2d5d [FPS-39][FP-Spring]emkit bring up [2/2] [binsu]
+ec8695f1 [FPS-632] Add SKU 603Add SKU 603Add SKU 603 [mingwu.zhang]
+790b4315 [FPS-562]add ois dw9784 for project [jinghuang]
+08bbf970 [FPS-23] [2/2]ESWIN TP bring up [changyuan1.zhou]
+ca483bb3 FPS-51 [1]Enlarge efs size [liquan.zhou]
+d147a046 Revert "Revert "[1 of 2][FPS-437]config gpio27/28 as general IO"" [凡 胡]
+2b0f94c5 Revert "[1 of 2][FPS-437]config gpio27/28 as general IO" [凡 胡]
+463664c3 [1 of 2][FPS-437]config gpio27/28 as general IO [binchang.liang]
+1fd34530 [FPS-26] Change TF detect to high same as simcard [mingwu.zhang]
+37dedf13 [FPS-583][0/2] pm8008 bringup. [xianzhu.zhang]
+ec4e50cd [FPS-26] TP card bringup [mingwu.zhang]
+3388344d [FPS-583][1/2] pm8008 bringup. [xianzhu.zhang]
+e9c48542 [FPS-24] [2/3]Virbator bring up for kernel [mingwu.zhang]
+e9d7dd38 [FPS-23] [3/3]add TP suspend and resume [changyuan1.zhou]
+23a6e61a [FPS-23] [2/3]TP bring up [changyuan1.zhou]
+c623fb93 [FPS-426] [1/2]add FPS sku 600  dts. *Comment add FPS sku 600  dts. *Root Cause sku requirement *Solution create fps_overly folder and sku 600 dts. *Test Steps device can boot up *Test Result Pass [xianzhu.zhang]
+fe1e8b68 Include sm7635-modules instead of sm8650-modules [Arian]
+
+* packages/apps/TvSettings
+058571829 Allow disabling Frame Rate settings [Aaron Kling]
+e2acd714e Add battery info to tvsettings device info [Aaron Kling]
+e5e0b1779 TvSettings: Add Updater icon [Timi]
+e8c7f2241 TvSettings: Relocate Updater [Timi]
+b1678ad92 TvSettings: Move About to top of Device page [Timi]
+5164d2cea TvSettings: Update banner [Asher Simonds]
+31de9873a Implement long press power button settings [Timi Rautamäki]
+
+* packages/apps/Twelve
+1c07843 Twelve: Suppress PROVIDED_RUNTIME_TOO_LOW for PlaybackRequest [LuK1337]
+
+====================
+     2026-01-23    
+====================
+* lineage/crowdin
+eeb2099 config: Move alert slider strings to devicesettings [Michael Bestas]
+acace86 config: Initial lineage-23.2 changes [Michael Bestas]
+
+* packages/apps/Settings
+8eeb7a07ed3 TopLevelSettings: Fix homepage icons hiding on tablets [Amrit Ranjan]
+
+* packages/apps/Twelve
+9ac907c Twelve: Limit Jellyfin albums to 50 [Timi]
+13ee3c1 Twelve: Add most played suggestion for Jellyfin [Timi]
+e74114a fixup! Twelve: Fix post calls [Timi]
+b8cd259 Twelve: Notify Jellyfin of playback [Timi]
+
+* packages/resources/devicesettings
+5a84769 devicesettings: Import alert slider strings [Michael Bestas]
+
+====================
+     2026-01-22    
+====================
+* frameworks/av
+8e3f0f52e0 CAMX: CHI: Added support for handling jpeg debug data. [Abhinav sohane]
+
 * frameworks/base
-ce09de65b7d5 Forward port 'Swap volume buttons' (1/3) [nadlabak]
-23c0a5c19844 Allow signature spoofing for microG Companion/Services [LuK1337]
-456fccb0dfbc camera2: allow access to CaptureRequest.mLogicalCameraSettings [Cosmin Tanislav]
-a25a614c9663 camera: Skip HFR checks for privileged apps. [Sai Kumar Sanagavarapu]
-ea6d28e1f32c Camera: Skip stream size check for whitelisted apps. [Gaoxiang Chen]
-3d96e789391d camera: Support exposing aux camera to apps [Sauhard Pande]
-3775edea4b83 SystemUI: Allow to change brightness slider positioning in new compose QS [Abhay Singh Gill]
-2c1272258c4c SystemUI: Add tunable for showing brightness icon [Pranav Vashi]
-ad39fa1ed1a5 SystemUI: Add auto brightness toggle in brightness slider in new compose QS [rmp22]
-002a97c99265 SystemUI: Support black theme for dark mode [althafvly]
-44903d4d2097 BrightnessUtils: Conditionally disable gamma conversion for brightness slider [SagarMakhar]
-c923ae00b8cd Fix default values for 5G Ultra Wideband icon carrier config keys [Vala Zadeh]
-489f1a34eb0d Add 5G Ultra Wideband icon carrier config keys [Vala Zadeh]
-1fce4db65ba5 VolumeDialog: Add support for left gravity [Pranav Vashi]
-af86786c3c93 fw/b: Re-introduce keyboard backlight brightness control [Bruno Martins]
-12242157f1e1 PowerManager: Allow to distinguish different keypresses [Corinna Vinschen]
-ccb01dabf8d8 PowerManagerService: Allow to light up buttons only when pressed [Anas Karbila]
-41ffe69391e5 fw/b: Button backlight brightness [Ricardo Cerqueira]
-d0561ada315d fw/b: Add setting to allow tethering to use VPN upstreams [Oliver Scott]
-d458bb2e074d BatteryService: Expose [maximum|design] capacity API [Jyotiraditya Panda]
-71e97195e4fc Biometrics: Hook up support for halHandlesDisplayTouches prop [Bruno Martins]
-bc48bf59e0a3 SystemUIProxy: Add onLongPressKeyEvent() [LuK1337]
-05256ab0688c core: pm: Allow wildcard in RRO system property value checks [Luca Stefani]
-729f76571ddf core: pm: Use checkRequiredSystemProperties from FrameworkParsingPackageUtils [Luca Stefani]
-993400c1ab99 SystemUI: SideFpsEventHandler: Don't crash without FingerprintManager [Michael W]
-b4855a2cf12d DozeSensors: only use proximity sensor if supported [Demon000]
-4ce4c27336d7 JobScheduler: Respect allow-in-power-save perm [Tommy Webb]
-b0317c86caa8 Increase maximum password length to 64 [Oliver Scott]
-1e10bcc04a1e SystemUI: Restore 14 QPR1 FingerprintInteractiveToAuth handling [LuK1337]
-31c67dc39746 SystemUI: Add FingerprintInteractiveToAuthProvider implementation [Adithya R]
-90f04ff9a0df Apply monet to fingerprint authentication ripple animation [SagarMakhar]
-b37a4181fb12 GnssLocationProvider: Implement xtra-daemon toggle [Michael Bestas]
-48b6c0f0ba34 GnssLocationProvider: Implement PSDS periodic download toggle [Michael Bestas]
-15353650f18c GnssLocationProvider: Disable AGPS by default, it'll be enabled in SetupWizard [Chirayu Desai]
-2a4b3d3ab879 Ignore AGPS toggle during user-initiated emergency calls [Chirayu Desai]
-4ca7b6bd8948 Remove sensitive info from SUPL requests [Tommy Webb]
-4eb06a9f1244 SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod [maxwen]
-c071e6b37e70 Support per-UID VPN lockdown policy [Tommy Webb]
-3b8e8a45e022 Revert "Remove dependency on IME subtype from TSMS" [Michael Bestas]
-af176656da86 SystemUI: screenshot: Add delete action chip intent [ganeshi4u]
-26d2836c04fe SystemUI: screenshot: disable magnification for partial screenshots [Cosmin Tanislav]
-44860c1ba2b8 SystemUI: screenshot: close QS after launching long screenshot activity [LuK1337]
-214a8cf015bd SystemUI: screenshot: open long screenshot activity for partial screenshots [Cosmin Tanislav]
-94f95a96226d SystemUI: screenshot: add extra crop boundaries [Cosmin Tanislav]
-22773a366977 SystemUI: screenshot: remove duplicate clamping on move action [Cosmin Tanislav]
-d3b7acee932b Implement click to take partial screenshot [1/3] [Jesse Chan]
-287701e69321 Screenshot: Append app name to filename [ezio84]
-084f59e70eee Do not run POLICY_REJECT_ALL migration in Restore [Tommy Webb]
-f6d38d3d550a Firewall: Migrate to POLICY_REJECT_ALL [Tommy Webb]
-650395a8cd18 Restrict apps without INTERNET permission [Tommy Webb]
-b24c703a8e36 Firewall: Transport-based toggle support (1/3) [Oliver Scott]
-30ba0181f776 Firewall: Network access toggle support [Oliver Scott]
-4caf84e44658 Implement backup/restore for network policy [Oliver Scott]
-918d30d0218f Split network policy XML parsing into read/write helper functions [Oliver Scott]
-f14e79bd915d SystemUI: Bring in drawable for statusbar firewall toggle [Michael Bestas]
-f50541c2173f Implement firewall status bar indicator [Oliver Scott]
-b4f6cca2baa0 Settings.Global: Add UIDS_ALLOWED_ON_RESTRICTED_NETWORKS [Chirayu Desai]
-31dfc874409b Download: Add support to manually pause/resume download [qqzhou]
-ca12cade50cd SystemUI: doze: add config for long press sensors that need a proximity check [Cosmin Tanislav]
-64dc998a4b52 SystemUI: doze: add config for double tap sensors that need a proximity check [Cosmin Tanislav]
-7e600b5115f7 Partially revert "Assume sensors perform prox check" [Cosmin Tanislav]
-6ef461a1b876 core: Fix uninitialized settings in NotificationAttentionHelper [LuK1337]
-f82b4cba10b5 frameworks/base: Lights notifications brightness support [Adrian DC]
-288c9d0aec18 frameworks/base: Battery and Notification Lights [Sam Mortimer]
-d00d05dbffca base: ChooserActivity: Don't show image edit button on multiple targets [Aayush Gupta]
-a2dda1fe5329 Don't skip theme application if it's already current [Michael Bestas]
-554c0a482395 SystemUI: screenshot: open the screenshot instead of edit [Timi Rautamäki]
-42701f5106da SystemUI: Add left padding for keyguard slices [LuK1337]
-0f6daa7efe7e AutoBrightness: Add support for one shot auto-brightness [Cédric Bellegarde]
-c55841ca1423 SystemUI: Make isLargeScreen() use correct API for getting window metrics [LuK1337]
-a3ea811f3d00 Introduce high touch polling rate feature control [Ramii Ahmed]
-a77e052bfffc PhoneWindowManager: Allow torch and track skip during ambient display [ezio84]
-fc7dd7298207 Long-press power while display is off for torch [beanstown106]
-18ef2a263ba2 PhoneWindowManager: add LineageButtons volumekey hook [Simon Shields]
-3232ac5d21c1 Fix bug Device that can't support adoptable storage cannot read the sdcard. [sangho.yoon]
-1c603a0d1a98 Add an option to force pre-O apps to use full screen aspect ratio [Jesse Chan]
-73e583cee506 PowerManagerService: Wake on plug (1/2) [Jon Evans]
-496ec603d1fe PowerManager: Add proximity check on wake [Bruno Martins]
-c068a5209401 Add high touch sensitivity and hovering to InputService [Danesh M]
-59ca0263f90c Allow lid to send a generic COVER_CHANGED broadcast [jrior001]
-cd73cec6a210 UsbDeviceManager: Delay MSG_UPDATE_SCREEN_LOCK message [LuK1337]
-6075bc1b6d41 SystemUI: Fix the unlock sound played repeatedly [Shufeng Hou]
-429b626de088 Sharesheet: Display two rows of max ranked targets [LuK1337]
-c3fc7b81b352 Keyguard: Add option to scramble pin layout when unlocking (2/2). [Adnan]
-b0bc3a35fac5 Exempt location packages from location indicators [Chirayu Desai]
-84f6d917a319 SystemUI: Add quick settings pull down with one finger [Roman Birg]
-0f1a3608c496 SystemUI: tiles: Preload icon drawable for Modes tile [Pranav Vashi]
-2d768dd95551 SystemUI: Allow disabling QS tiles long click effect for specific tiles [Ido Ben-Hur]
-a195b2efbcda RotationLockTile: Open LineageParts rotation settings [DroidFreak32]
-131c1c1ca07a SystemUI: Enable cast tile without Wi-Fi connection [nift4]
-64d85307777d SystemUI: DreamTile: Enable for everyone [Ido Ben-Hur]
-4858ca6099d4 SystemUI: Add VPN tile [Danny Baumann]
-3211ac64cfe9 SystemUI: Add Profiles tile [Roman Birg]
-6662872c5679 SystemUI: Enable NFC tile [Tim Schumacher]
-e9473593aa02 SystemUI: Internet tile: Allow long-pressing on mobile network [Michael W]
-7a2a4b1ecf3d SystemUI: Add reading mode tile [Joey]
-74b809e8f996 SystemUI: Add powershare QS tile [Linux4]
-28da6126a3ad SystemUI: Add AOD QS tile [Marko Man]
-9cc1b9691df2 SystemUI: Add USB Tether tile [BestPig]
-f27bf0e8bbf4 SystemUI: Add AmbientDisplay tile [Adnan Begovic]
-cd19bf30150a SystemUI: Add Sync tile [Altaf-Mahdi]
-7e6956c864fc SystemUI: Add heads up tile [Michael Bestas]
-678d358d0f8f SystemUI: Add caffeine QS tile [Keith Mok]
-e3eb78d53d58 SystemUI: Enable landscape lockscreen flag [Michael Bestas]
-bf16338aa9ba SystemUI: Expose VPN icon to allow toggling [Bruno Martins]
-bcb6723e9967 SystemUI: Bring in drawables for statusbar icon toggles [althafvly]
-d1b61fdb5f95 SystemUI: Split status bar icon controls for vibrate and mute [althafvly]
-4d5727292985 SystemUI: Status bar tuner improvements [Rashed Abdel-Tawab]
-3066eb31d279 power: Extend custom charging sounds [Bruno Martins]
-2ba4e057260f power: Keep file scheme when not using content URI [Han Wang]
-9b15f14acf34 power: Respect global vibration setting for charging sounds [Michael Bestas]
-7d0877a62001 power: Explicitly check for silent ringtone [Sam Mortimer]
-78bda06f71ef Allow adjusting screen density to smaller sizes. [Danny Baumann]
-c4955f5df697 SystemUI: Show bluetooth battery level [LuK1337]
-343157976e43 core: Implement ADBRootService [LuK1337]
-fd0bf5b2468b Fallback to global actions if assistant is not available [LuK1337]
-95b60dc03d6d SystemUI: Add support for persistent usb drive notification. [Adnan Begovic]
-9ab1318683f7 SystemUI: Allow snoozing SD card notification unconditionally [LuK1337]
-d30cfca4fd8e SystemUI: Allow privileged system apps to access screenshot service [Danny Lin]
-e343c4b97511 core: Expose method to start assistant through Binder [Danny Lin]
-b18975b94c14 Allow adjusting progress on touch events. [Danny Baumann]
-926d2ad96de2 SystemUI: handle camera launch gesture from keyhandler [Roman Birg]
-04eb48aaccdd Support for device specific key handlers [Bruno Martins]
-38205fb69db1 Framework: Volume key cursor control [Konsta]
-af2e01221539 SystemUI: Allow toggling lockscreen rotation [Dan Pasanen]
-0358129f612a Configurable 0, 90, 180 and 270 degree rotation [Ricardo Cerqueira]
-02bc7a6e1546 WiredAccessoryManager: replace every non digit character [Francesco "Dil3mm4" Manzo]
-67b58d5d6076 WiredAccessoryManager: support for DP/HDMI display on soc:qcom,msm-ext-disp. [Sai Priyanka Thirukkovela]
-3dbe11f34ff3 Force using WiredAccessoryObserver for DisplayPort [Harold Tan]
-a0b0c4984e17 WiredAccessoryManager: Update stream index assignment [Harold Tan]
-8a1505ba09d7 WiredAccessoryManager: use dev index from UEventInfo to form devPath [Harold Tan]
-53f8d12e11e8 WiredAccessoryManager: Update display port device index [Aniket Kumar Lata]
-2faf1d80fe7e WiredAccessoryManager: support for multiple display ports [Vignesh Kulothungan]
-e4f7176116eb audio: update WiredAccessoryManager to use ExtconUEventObserver based on events available [Dhananjay Kumar]
-7c883f18de01 WiredAccessoryManager: Support for multiple extconn devices [Haynes Mathew George]
-b80a79551440 WiredAccessoryManager: update extcon file paths [Aalique Grahame]
-a69fb2f497fa WiredAccessoryManager: Add support for DisplayPort Audio [Revathi Uddaraju]
+e3a7a509ea85 SystemUI: QSFragmentCompose: wrap mediaHost.hostView in a FrameLayout [Cosmin Tanislav]
+5277aa9b597e fixup! SystemUI: Bring back good ol' circle battery style once again [LuK1337]
+472b9a235e59 SystemUI: ToastUI: Fixup toast theme again [Ido Ben-Hur]
+5a82a79a3d95 toast: fix bg color not changing with theme change [SuperDroidBond]
+
+* kernel/nubia/sm8150
+4fe9cde8a4c10 Merge remote-tracking branch 'sm8150/lineage-20' into HEAD [Nolen Johnson]
+
+* lineage/crowdin
+c957283 gerrit: Fix invalid escape sequence warning [Michael Bestas]
+79b7b3c utils: Base path env var is mandatory [Michael Bestas]
+
+* lineage/hudson
+5c79dd1 Regenerate device dependency mappings [LineageOS Infra]
+
+* packages/apps/Seedvault
+7bc83258 Merge tag '16-5.8' of https://github.com/seedvault-app/seedvault into lineage-23.0 [Michael Bestas]
+
+* packages/apps/WallpaperPicker2
+3a776967e WallpaperPicker2: Collapse wallpaper picker button by default [Michael Bestas]
 
 * vendor/lineage
-d47e478e vars: January 2026 Pixel Update [Michael Bestas]
+f46dc723 aconfig: Enable qs_split_internet_tile [Michael Bestas]
+2dd10ea6 backuptool: Check build.prop in system and product locations [Christian Hoffmann]
+
+====================
+     2026-01-21    
+====================
+* android
+c62329b manifest: Switch to our forks of external/{dng_sdk,libjxl} [basamaryan]
+
+* external/libjxl
+4365ed52 libjxl: Make it available to vendor [imranpopz]
+
+* kernel/nubia/sm8150
+694585a55caa3 UPSTREAM: f2fs: fix UAF in f2fs_available_free_memory [Dongliang Mu]
+212f6697ff903 BACKPORT: f2fs: allow to change discard policy based on cached discard cmds [Sahitya Tummala]
+d46308861ebb7 UPSTREAM: bpf: Fix out of bounds access from invalid *_or_null type verification [Daniel Borkmann]
+1f4e254c69f89 ANDROID: dm-bow: Protect Ranges fetched and erased from the RB tree [Lee Jones]
+735ecd664ee66 msm: ipa2: Add check to validate rule_cnt [Praveen Kurapati]
+4ebc0b008ba55 BACKPORT: net: sched: rename qdisc_destroy() to qdisc_put() [Vlad Buslov]
+60892bd7ee5c7 UPSTREAM: net: core: netlink: add helper refcount dec and lock function [Vlad Buslov]
+78441c47084e1 UPSTREAM: net: Add rtnl_lock_killable() [Kirill Tkhai]
+58134a379da0b FROMGIT: media: venus: hfi: add a check to handle OOB in sfr region [Vikash Garodia]
+38a7adca5a1a6 FROMGIT: media: venus: hfi: add check to handle incorrect queue size [Vikash Garodia]
+25d92bdd393e6 msm: npu: Fix use after free issue [Gao Wang]
+78253f5d48dcf qcacld-3.0: Correcting the TSInfo structure size according to the Spec [Dharmendra Tiwari]
+b3bd5598c5c11 UPSTREAM: vsock/virtio: Initialization of the dangling pointer occurring in vsk->trans [Hyunwoo Kim]
+06906ab788325 UPSTREAM: binder: use cred instead of task for getsecid [Todd Kjos]
+59fa169e96a8a UPSTREAM: security: Add a cred_getsecid hook [Matthew Garrett]
+bd2566e8a8fb3 BACKPORT: file: let pick_file() tell caller it's done [Christian Brauner]
+
+* kernel/qcom/sm8150
+694585a55caa UPSTREAM: f2fs: fix UAF in f2fs_available_free_memory [Dongliang Mu]
+212f6697ff90 BACKPORT: f2fs: allow to change discard policy based on cached discard cmds [Sahitya Tummala]
+d46308861ebb UPSTREAM: bpf: Fix out of bounds access from invalid *_or_null type verification [Daniel Borkmann]
+1f4e254c69f8 ANDROID: dm-bow: Protect Ranges fetched and erased from the RB tree [Lee Jones]
+735ecd664ee6 msm: ipa2: Add check to validate rule_cnt [Praveen Kurapati]
+4ebc0b008ba5 BACKPORT: net: sched: rename qdisc_destroy() to qdisc_put() [Vlad Buslov]
+60892bd7ee5c UPSTREAM: net: core: netlink: add helper refcount dec and lock function [Vlad Buslov]
+78441c47084e UPSTREAM: net: Add rtnl_lock_killable() [Kirill Tkhai]
+58134a379da0 FROMGIT: media: venus: hfi: add a check to handle OOB in sfr region [Vikash Garodia]
+38a7adca5a1a FROMGIT: media: venus: hfi: add check to handle incorrect queue size [Vikash Garodia]
+25d92bdd393e msm: npu: Fix use after free issue [Gao Wang]
+78253f5d48dc qcacld-3.0: Correcting the TSInfo structure size according to the Spec [Dharmendra Tiwari]
+b3bd5598c5c1 UPSTREAM: vsock/virtio: Initialization of the dangling pointer occurring in vsk->trans [Hyunwoo Kim]
+06906ab78832 UPSTREAM: binder: use cred instead of task for getsecid [Todd Kjos]
+59fa169e96a8 UPSTREAM: security: Add a cred_getsecid hook [Matthew Garrett]
+bd2566e8a8fb BACKPORT: file: let pick_file() tell caller it's done [Christian Brauner]
+
+* kernel/qcom/sm8450
+565c97bd2a0c Partially revert "UPSTREAM: fs: fd tables have to be multiples of BITS_PER_LONG" [Michael Bestas]
+
+* lineage/mirror
+eb26919 Updated lineage-minimal to 21-Jan-2026 11:02 UTC [Tim Schumacher]
+7413912 Updated to 20-Jan-2026 23:01 UTC [Tim Schumacher]
+
+* lineage/scripts
+ebcd894 dev: rro: Ignore pseudolocale directories [Michael Bestas]
+9e30a53 dev: rro: Map more google packages [Michael Bestas]
+7e55c6a dev: rro: Use apk file name as the RRO package name [Leviscape]
 
