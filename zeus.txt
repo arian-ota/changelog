@@ -1,0 +1,375 @@
+====================
+     2026-02-03    
+====================
+* device/xiaomi/cupid
+5c41db1 cupid: Update blobs and firmware from OS2.0.209.0.VLCMIXM [Arian]
+
+* device/xiaomi/miuicamera-cupid
+df2f324 Update miuicamera from cupid OS2.0.209.0.VLCMIXM [Arian]
+
+* device/xiaomi/thor
+0e9c70d thor: Update blobs and firmware from OS3.0.2.0.VLACNXM [Arian]
+
+* device/xiaomi/unicorn
+2fe9396 unicorn: Update blobs and firmware from OS3.0.2.0.VLECNXM [Arian]
+
+* device/xiaomi/zeus
+6096f2f zeus: Update blobs and firmware from OS2.0.209.0.VLBMIXM [Arian]
+
+* device/xiaomi/zizhan
+e3cdb0c zizhan: Update blobs and firmware from OS3.0.3.0.VLRCNXM [Arian]
+
+* kernel/fairphone/sm7635
+d92a447af995 Merge commit 'refs/changes/31/472531/1' of https://github.com/LineageOS/android_kernel_qcom_sm8650 into HEAD [Arian]
+a4341b4cb9f1 Merge tag 'ASB-2026-02-02_14-6.1' of https://android.googlesource.com/kernel/common into HEAD [chandu078]
+
+* kernel/xiaomi/sm8450
+a021efc1827b Merge commit 'refs/changes/30/472530/1' of https://github.com/LineageOS/android_kernel_qcom_sm8450 into HEAD [Arian]
+313dfdb07e51 Merge branch 'lineage-20' of https://github.com/LineageOS/android_kernel_qcom_sm8450 into HEAD [Arian]
+e047e811f982 Merge tag 'ASB-2026-02-02_12-5.10' of https://android.googlesource.com/kernel/common into android13-5.10-waipio [Michael Bestas]
+
+* kernel/xiaomi/sm8450-devicetrees
+d2094148 dsi-panel-m11a-42-02-0a-dsc-cmd: Update commands from OS3.0.2.0.VLECNXM [Arian]
+0352c548 dsi-panel-l2-38-0c-0a-dsc-cmd: Update commands from OS3.0.2.0.VLECNXM [Arian]
+8276dfda dsi-panel-l2s-38-0c-0a-dsc-cmd: Update commands from OS3.0.2.0.VLECNXM [Arian]
+1ac94f08 dsi-panel-l1-38-0c-0a-dsc-cmd: Update commands from OS3.0.2.0.VLECNXM [Arian]
+ffb43b1a xiaomi: Increase volumeup debounce interval as seen on OS3.0.2.0.VLECNXM [Arian]
+bd311219 camera: diting: Drop l2s camera compatible [Arian]
+
+* packages/apps/Settings
+a458b678b78 fixup! Settings: Add peak refresh rate list preference [LuK1337]
+
+* packages/apps/ThemePicker
+ee35af2a ThemePicker: Reimplement font picker [sidharthify]
+
+* vendor/extra
+0e930cc Move pixel-goodies again [Arian]
+
+* vendor/lineage
+bb344130 release: Bump Security String to 2026-02-01 [Nolen Johnson]
+
+* vendor/pixel-goodies
+548b6a8 fixup! FontGoogleSansOverlay: Switch to GoogleSansFlex for lockscreen clock [Arian]
+5c676d9 Drop GoogleSansFlex-Regular [basamaryan]
+bf7c83c FontGoogleSansOverlay: Switch to GoogleSansFlex for lockscreen clock [Cyber Knight]
+0d2a953 SystemUIResPixelClocks: Drop old clocks from plugin allowlist [Arian]
+93540c8 fonts: updatee xml from blazer-bp4a.260105.004.e1 [Arian]
+99a9206 Update blobs from blazer-bp4a.260105.004.e1 [Arian]
+d45eef7 Import proprietary files from blazer-bp4a.251205.006.e1-factory-d00380e5 [Arian]
+5e199c7 Import pixel-goodies setup [Arian]
+6ad08a5 Initial pixel-goodies repository [Arian]
+
+* vendor/xiaomi/cupid
+2d4509e cupid: Update blobs and firmware from OS2.0.209.0.VLCMIXM [Arian]
+
+* vendor/xiaomi/mayfly
+e312ef9 mayfly: Update blobs and firmware from OS3.0.2.0.VLTCNXM [Arian]
+
+* vendor/xiaomi/miuicamera-cupid
+a8c7cbc Update miuicamera from cupid OS2.0.209.0.VLCMIXM [Arian]
+
+* vendor/xiaomi/thor
+f91de3f thor: Update blobs and firmware from OS3.0.2.0.VLACNXM [Arian]
+
+* vendor/xiaomi/unicorn
+e21d488 unicorn: Update blobs and firmware from OS3.0.2.0.VLECNXM [Arian]
+
+* vendor/xiaomi/zeus
+c35efd8 zeus: Update blobs and firmware from OS2.0.209.0.VLBMIXM [Arian]
+
+* vendor/xiaomi/zizhan
+ecb5573 zizhan: Update blobs and firmware from OS3.0.3.0.VLRCNXM [Arian]
+
+====================
+     2026-02-02    
+====================
+* frameworks/base
+4ce2b6890ffe Automatic translation import [LineageOS Infra]
+
+* kernel/fairphone/sm7635
+0ddae4186735 ANDROID: GKI: update the pixel ABI symbol list [Jia-Shiuan Chen]
+
+* lineage-sdk
+bb723392 Automatic translation import [LineageOS Infra]
+
+* lineage/crowdin
+2cd36db crowdin: Allow specifying `uploader` filter for abandon/submit/vote [LuK1337]
+
+* packages/apps/Aperture
+a6b04d7 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Backgrounds
+6a1594c Automatic translation import [LineageOS Infra]
+
+* packages/apps/Camelot
+d45e0f1 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Catapult
+f325f5c Automatic translation import [LineageOS Infra]
+
+* packages/apps/Contacts
+53143a497 Automatic translation import [LineageOS Infra]
+
+* packages/apps/DeskClock
+2b68c47a5 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Dialer
+c14692d97 Automatic translation import [LineageOS Infra]
+
+* packages/apps/DocumentsUI
+9c611a323 Automatic translation import [LineageOS Infra]
+
+* packages/apps/FMRadio
+33c8d2a Automatic translation import [LineageOS Infra]
+
+* packages/apps/FlipFlap
+13b16b6 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Glimpse
+e483915 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Jelly
+25a414a Automatic translation import [LineageOS Infra]
+
+* packages/apps/Launcher3
+428be54cc1 Automatic translation import [LineageOS Infra]
+
+* packages/apps/LineageParts
+48ff9f5 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Messaging
+0965ba5 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Profiles
+63699e7 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Recorder
+0f5b121 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Settings
+e7232d11039 Automatic translation import [LineageOS Infra]
+
+* packages/apps/SetupWizard
+6753414 Automatic translation import [LineageOS Infra]
+
+* packages/apps/ThemePicker
+aa907206 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Twelve
+9fe7ee0 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Updater
+6910ef9 Automatic translation import [LineageOS Infra]
+
+* packages/inputmethods/LatinIME
+7ef9404d0 Automatic translation import [LineageOS Infra]
+
+* packages/providers/DownloadProvider
+5883c33c Automatic translation import [LineageOS Infra]
+
+* packages/resources/devicesettings
+979533e Automatic translation import [LineageOS Infra]
+
+* packages/services/Mms
+f9a8450 Automatic translation import [LineageOS Infra]
+
+* vendor/crowdin
+8c444dd Automatic translation import [LineageOS Infra]
+
+* vendor/qcom/opensource/commonsys/fm
+5e72484 Automatic translation import [LineageOS Infra]
+
+====================
+     2026-02-01    
+====================
+* frameworks/base
+8c1b42361434 fixup! webkit: SystemImpl: Filter out unavailable providers [LuK1337]
+
+* kernel/fairphone/sm7635
+023c2e74b2b7 Merge branch 'android14-6.1-lts' of https://android.googlesource.com/kernel/common into HEAD [chandu078]
+478ca7133d0e ANDROID: dm-bow: ignore discard in CHECKPOINT state [Lianwei Wang]
+3927018b9421 ANDROID: dm-bow: serialize state changes with completion of writes [Matt Wagantall]
+
+* kernel/qcom/sm8650
+023c2e74b2b7 Merge branch 'android14-6.1-lts' of https://android.googlesource.com/kernel/common into HEAD [chandu078]
+
+* lineage/scripts
+df4b7f3 config-fs-gen: Cast vendor UID to int [LuK1337]
+
+* lineage/wiki
+26793621 templates: device_specific: flox*: Increase waiting time to 15m [Nolen Johnson]
+
+====================
+     2026-01-31    
+====================
+* device/lineage/car
+0f3b402 car: Tidy up the makefiles [Yumi Yukimura]
+5fed345 car: Copy preinstalled-packages xml from cuttlefish instead [Yumi Yukimura]
+2a06941 car: Switch to `device/google_car/common/sepolicy` [Yumi Yukimura]
+6b4a57c car: Remove `persist.bluetooth.enablenewavrcp` property override [Yumi Yukimura]
+0e48a3b car: Remove `init.bootstat.rc` copy rule [Yumi Yukimura]
+
+* lineage/wiki
+73946f00 wiki: Fix com.android.appsearch.apk signing instructions [LuK1337]
+
+* system/update_engine
+fc83053a Use ro.build.type in HardwareAndroid::AllowDowngrade() [LuK1337]
+
+====================
+     2026-01-30    
+====================
+* device/xiaomi/cupid
+e03ca5e cupid: audio: Fix invalid voice recognition stream KVs [Arian]
+
+* device/xiaomi/diting
+052dfff diting: audio: Fix invalid voice recognition stream KVs [Arian]
+
+* device/xiaomi/marble
+0cbd025 marble: audio: Fix invalid voice recognition stream KVs [Arian]
+
+* device/xiaomi/mayfly
+3c8ecce mayfly: audio: Fix invalid voice recognition stream KVs [Arian]
+
+* device/xiaomi/mondrian
+101c3cb mondrian: audio: Fix invalid voice recognition stream KVs [Arian]
+
+* device/xiaomi/thor
+67072a4 thor: audio: Fix invalid voice recognition stream KVs [Arian]
+
+* device/xiaomi/unicorn
+45f1585 unicorn: audio: Fix invalid voice recognition stream KVs [Arian]
+
+* device/xiaomi/zeus
+50e3f73 zeus: audio: Fix invalid voice recognition stream KVs [Arian]
+
+* device/xiaomi/zizhan
+ab6aeeb zizhan: audio: Fix invalid voice recognition stream KVs [Arian]
+
+* kernel/fairphone/sm7635
+defbecba6f63 ANDROID: ABI: Add to QCOM symbols list [Madhu Ananthula]
+
+* packages/apps/Twelve
+0a30b67 Twelve: Don't suppress PROVIDED_RUNTIME_TOO_LOW [Luca Stefani]
+0a66ff8 Twelve: Implement fullscreen mode [Sebastiano Barezzi]
+e1e2ccb Twelve: MediaStoreDataSource: `AudioColumns._ID` -> `BaseColumns._ID` [Luca Stefani]
+
+* packages/services/Car
+c57a9da5c8 car_product: displaycompat: Add to soong namespaces [Yumi Yukimura]
+
+* vendor/lineage
+83501f18 overlay: tablet: Update lockscreen widget feature config for 16 QPR2 [Yumi Yukimura]
+
+====================
+     2026-01-29    
+====================
+* device/xiaomi/cupid
+77b1c19 cupid: Patch some blobs to depend on libtinyxml2-v34.so [Michael Bestas]
+
+* device/xiaomi/diting
+fc3cbac diting: Update some soong config variables to bool type [Yumi Yukimura]
+07fe892 diting: Patch some blobs to depend on libtinyxml2-v34.so [Michael Bestas]
+
+* device/xiaomi/marble
+856babe marble: Update some soong config variables to bool type [Yumi Yukimura]
+24acf48 marble: Patch some blobs to depend on libtinyxml2-v34.so [Michael Bestas]
+
+* device/xiaomi/mayfly
+4da5cd6 mayfly: Update some soong config variables to bool type [Yumi Yukimura]
+3edac1a mayfly: Patch some blobs to depend on libtinyxml2-v34.so [Michael Bestas]
+6fa4595 mayfly: Drop unnecessary prebuilt camera libs [Arian]
+
+* device/xiaomi/mondrian
+0c7b4bf mondrian: Update some soong config variables to bool type [Yumi Yukimura]
+c9422c4 mondrian: Patch some blobs to depend on libtinyxml2-v34.so [Michael Bestas]
+
+* device/xiaomi/sm8450-common
+1159a6a02 sm8450-common: Patch some blobs to depend on libtinyxml2-v34.so [Michael Bestas]
+3f3cb432b sm8450-common: Patch qccsyshal to load versioned libprotobuf [Michael Bestas]
+
+* device/xiaomi/thor
+e35c511 thor: Patch some blobs to depend on libtinyxml2-v34.so [Michael Bestas]
+
+* device/xiaomi/unicorn
+3da75ed unicorn: Patch some blobs to depend on libtinyxml2-v34.so [Michael Bestas]
+
+* device/xiaomi/zeus
+21906da zeus: Patch some blobs to depend on libtinyxml2-v34.so [Michael Bestas]
+
+* device/xiaomi/zizhan
+43be4a2 zizhan: Update some soong config variables to bool type [Yumi Yukimura]
+b988c28 zizhan: Patch some blobs to depend on libtinyxml2-v34.so [Michael Bestas]
+
+* hardware/lineage/interfaces
+e0bbf71 livedisplay: sdm: Update default PA on setDisplayMode [LuK1337]
+
+* packages/apps/ExactCalculator
+4053832 ExactCalculator: Clean up unused and redundant code [Inhishonor]
+a9ce2ab ExactCalculator: Migrate to Material 3 Expressive [Inhishonor]
+49d72c0 ExactCalculator: Don't use BuildConfig [Luca Stefani]
+
+* packages/apps/Twelve
+246ec61 Twelve: LibraryFragment: Remove icons from the tab layout [Sebastiano Barezzi]
+fea1570 Twelve: MainFragment: Implement insets handling [Sebastiano Barezzi]
+9a91496 Twelve: Rework now playing navigation [Sebastiano Barezzi]
+21b67c8 Twelve: Fixed now playing bar [Sebastiano Barezzi]
+34462f5 Twelve: DisplayAwareGridLayoutManager: Actually use the display density [Sebastiano Barezzi]
+
+* vendor/xiaomi/cupid
+ecef9a3 cupid: Patch some blobs to depend on libtinyxml2-v34.so [Michael Bestas]
+
+* vendor/xiaomi/diting
+01d8ba6 diting: Patch some blobs to depend on libtinyxml2-v34.so [Michael Bestas]
+
+* vendor/xiaomi/marble
+ab62fda marble: Patch some blobs to depend on libtinyxml2-v34.so [Michael Bestas]
+
+* vendor/xiaomi/mayfly
+ebec45b mayfly: Patch some blobs to depend on libtinyxml2-v34.so [Michael Bestas]
+60fa177 mayfly: Drop unnecessary prebuilt camera libs [Arian]
+
+* vendor/xiaomi/mondrian
+d3a55a4 mondrian: Patch some blobs to depend on libtinyxml2-v34.so [Michael Bestas]
+
+* vendor/xiaomi/sm8450-common
+c4e04612 sm8450-common: Patch some blobs to depend on libtinyxml2-v34.so [Michael Bestas]
+9654d56e sm8450-common: Patch qccsyshal to load versioned libprotobuf [Michael Bestas]
+
+* vendor/xiaomi/thor
+5ec2831 thor: Patch some blobs to depend on libtinyxml2-v34.so [Michael Bestas]
+
+* vendor/xiaomi/unicorn
+4e21c73 unicorn: Patch some blobs to depend on libtinyxml2-v34.so [Michael Bestas]
+
+* vendor/xiaomi/zeus
+441a358 zeus: Patch some blobs to depend on libtinyxml2-v34.so [Michael Bestas]
+
+* vendor/xiaomi/zizhan
+baad0c4 zizhan: Patch some blobs to depend on libtinyxml2-v34.so [Michael Bestas]
+
+====================
+     2026-01-28    
+====================
+* device/lineage/sepolicy
+8bd9ddd qcom: Allow postinstall to read xbl_config_[ab] [LuK1337]
+
+* kernel/fairphone/sm7635
+28238b5ea70e ANDROID: GKI: Update transsion symbol list [qiwu.chen]
+3240c9f88e3a ANDROID: mm: Add vendor hook to adjust memory reclamation based on tune swappiness [qiwu.chen]
+
+* packages/apps/ExactCalculator
+236308d ExactCalculator: Update generatebp to v1.31 [Inhishonor]
+d2a810c ExactCalculator: Update Gradle Wrapper to 9.21 [Inhishonor]
+
+* packages/apps/SimpleSettingsConfig
+d63949d Allow "lineage" settings to be set [Nolen Johnson]
+
+* packages/apps/Twelve
+34c38ed Twelve: Migrate to Material 3 Expressive [Inhishonor]
+452bf54 Twelve: SettingsLib: Migrate to Material 3 Expressive [Inhishonor]
+da69026 Twelve: Fix typo [Sebastiano Barezzi]
+7c81d0a Twelve: Jellyfin: Rename PlaybackRequest to PlaybackStartInfo [Luca Stefani]
+5aee8ec Twelve: Jellyfin: Be smart when creating playlists [Luca Stefani]
+
+* vendor/apn
+0762fe5 apn: Make it REUSE compatible [Michael Bestas]
+
