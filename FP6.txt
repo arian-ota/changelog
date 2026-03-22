@@ -1,126 +1,477 @@
 ====================
-     2026-03-01    
+     2026-03-22    
 ====================
 * device/fairphone/FP6
-c6e525b75 fixup! FP6: Update to FP6.QREL.15.176.0 [Arian]
-6a67db414 FP6: Import missing libjnihelper.so for CACertService app [Fiqri Ardyansyah]
-284eca9a7 FP6: Fix section of libpal_net_if [Arian]
-ccfc6d1b4 FP6: power: Update powerhint.json [Arian]
+28067fcb8 FP6: overlay: Don't show operator name in status bar [Arian]
+0d54e2960 FP6: overlay: Switch to AOSP CarrierConfig and extract overlay from CustomerCarrierConfig [Arian]
 
-* hardware/qcom-caf/common
-d8fede7 libqti-perfd-client: Implement camera perf hints [Arian]
+* kernel/fairphone/sm7635
+2c41b45c0c38 input: gpio-keys: add support for oneshot on change keys [Arian]
+0d8da80d209d input: gpio-keys: add support for oneshot keys [Cosmin Tanislav]
 
-* lineage/hudson
-4107ad8 RIP 23.0 [LuK1337]
-
-* lineage/wiki
-9ee79441 wiki: RIP 23.0 [LuK1337]
-
-* vendor/fairphone/FP6
-307bfd6 FP6: Update to FP6.QREL.15.176.0 [Michael Bestas]
-871a6ad FP6: Import missing libjnihelper.so for CACertService app [Fiqri Ardyansyah]
-
-====================
-     2026-02-28    
-====================
-* device/xiaomi/diting
-fc8a50e diting: Update blobs and firmware from OS3.0.1.0.VLFMIXM [Arian]
-
-* device/xiaomi/sm8450-common
-8f70579c3 sm8450-common: Update blobs from diting OS3.0.1.0.VLFMIXM [Arian]
-728f6be33 sm8450-common: Import missing libjnihelper.so for CACertService app [Fiqri Ardyansyah]
-72f79ab1f sm8450-common: Fix sections of ca cert blobs [Arian]
-
-* hardware/qcom-caf/common
-0b13366 common: Don't hardcode data-ipa-cfg-mgr soong namespace for UM 5.10+ [LuK1337]
+* kernel/fairphone/sm7635-devicetrees
+3b72f5e5 fpv6-switch-key: Declare as oneshot-on-change key [Arian]
 
 * lineage/hudson
-63836c0 Regenerate device dependency mappings [LineageOS Infra]
+8661b7c Regenerate device dependency mappings [LineageOS Infra]
 
 * lineage/mirror
-49bc680 Updated to 27-Feb-2026 23:01 UTC [Tim Schumacher]
+faf4956 Updated to 21-Mar-2026 23:01 UTC [Tim Schumacher]
+
+====================
+     2026-03-21    
+====================
+* device/xiaomi/mayfly
+626bf2d8 mayfly: light: Use stack alloc for _oem_msg to avoid memory leaks [Fiqri Ardyansyah]
+
+* kernel/qcom/sm8450
+5ea441287b28 Reapply "f2fs: reduce expensive checkpoint trigger frequency" [Chao Yu]
+c6e4651d2a7d Reapply "f2fs: remove unneeded check condition in __f2fs_setxattr()" [Chao Yu]
+5c0c0d3374ff Reapply "f2fs: fix to update i_ctime in __f2fs_setxattr()" [Chao Yu]
+
+* kernel/xiaomi/sm8450
+38c6baf4bb72 Merge branch 'lineage-20' of https://github.com/LineageOS/android_kernel_qcom_sm8450 into HEAD [Arian]
+5ea441287b28 Reapply "f2fs: reduce expensive checkpoint trigger frequency" [Chao Yu]
+c6e4651d2a7d Reapply "f2fs: remove unneeded check condition in __f2fs_setxattr()" [Chao Yu]
+5c0c0d3374ff Reapply "f2fs: fix to update i_ctime in __f2fs_setxattr()" [Chao Yu]
+
+* lineage/mirror
+ddc19c3 Updated to 20-Mar-2026 23:01 UTC [Tim Schumacher]
 
 * lineage/wiki
-a81d703c wiki: Update required fw version for benz and salami [inferno0230]
+f76a08b4 wiki: adding_device: Use relative_url [Nicholas Lim]
+99ba7068 wiki: flash_tools: Use relative_url [Nicholas Lim]
+96d02930 wiki: contributing: Use relative_url [Nicholas Lim]
+1e559bb6 wiki: Migrate infra issues tracker to github [LuK1337]
+
+* packages/apps/Twelve
+3e64426 Twelve: Fix a bug related to DataSources and database access [Sebastiano Barezzi]
+ab1a106 Twelve: Sync dependencies to 16 QPR2 [Sebastiano Barezzi]
+102a1f1 Twelve: Update generatebp to v1.31 [LuK1337]
+a583373 Twelve: Update Gradle wrapper, AGP and Kotlin version [Sebastiano Barezzi]
+
+====================
+     2026-03-20    
+====================
+* frameworks/base
+3ca5f9315f72 SystemUIProxy: Add onSleepEvent [Luca Stefani]
+
+* lineage/hudson
+81c529b Regenerate device dependency mappings [LineageOS Infra]
 
 * packages/apps/Launcher3
-a5bbefd64d Launcher3: Ensure order of TaskbarNavLayoutter buttons is correct [LuK1337]
+acc8c18451 Launcher3: Double tap on home screen to turn off screen [Thecrazyskull]
 
-* tools/extract-utils
-246c7c0 extract_utils: allow filename only symlink [LuK1337]
-
-* vendor/xiaomi/diting
-f38a7b8 diting: Update blobs and firmware from OS3.0.1.0.VLFMIXM [Arian]
-
-* vendor/xiaomi/sm8450-common
-d48f43e0 sm8450-common: Update blobs from diting OS3.0.1.0.VLFMIXM [Arian]
-e2c4d145 sm8450-common: Import missing libjnihelper.so for CACertService app [Fiqri Ardyansyah]
-35ce8607 sm8450-common: Unpin CACertService [Arian]
-bf30fc03 sm8450-common: Kang libpal_net_if.so from ingot-user 14 UKQ1.240227.165 release-keys [Arian]
+* vendor/apn
+a3490d2 apn: Add Vi India APN [techyminati]
+0e7e14c apn: Update BSNL 4G APN Config [techyminati]
 
 ====================
-     2026-02-27    
+     2026-03-19    
 ====================
+* android
+0b44d85 manifest: Fork a few more Car repos [Nolen Johnson]
+
+* device/generic/car
+1d1e612 car_emulator_vendor: Fix artifact path violation [Akash Suresh]
+dab86f4 car: emulator: rotary: Drop non-existent packages [Nolen Johnson]
+957af2b car: Drop references to dead vndk-sp [Nolen Johnson]
+62dcff1 car: emulator: bluetooth: Use android.hardware.bluetooth.audio@2.1 [Nolen Johnson]
+
+* device/xiaomi/cupid
+7cbfefd cupid: Commonize udfps sensor configuration [Arian]
+6bb38c5 cupid: Import xiaomi fp location and size properties [Arian]
+
+* device/xiaomi/diting
+fe98c07 diting: Commonize udfps sensor configuration [Arian]
+30ebeb6 diting: Import xiaomi fp location and size properties [Arian]
+d4b1a39 diting: Update blobs and firmware from OS3.0.3.0.VLFMIXM [Arian]
+
+* device/xiaomi/mayfly
+b664d941 mayfly: Commonize udfps sensor configuration [Arian]
+66bfafe4 mayfly: Import xiaomi fp location and size properties [Arian]
+
+* device/xiaomi/mondrian
+b26405f6 mondrian: Commonize udfps sensor configuration [Arian]
+54867edd mondrian: Import xiaomi fp location and size properties [Arian]
+
+* device/xiaomi/sm8450-common
+dc02816f3 sm8450-common: Enable fp screen off unlock feature [Vincent Wang]
+3bd659313 sm8450-common: Add support for udfps long press sensor [Demon000]
+0cd98aafa sm8450-common: sensors: Use stack alloc for _oem_msg to avoid memory leaks [Fiqri Ardyansyah]
+97d888186 sm8450-common: sensors: Increase padding of _oem_msg struct to 264 bytes [Fiqri Ardyansyah]
+c11735e48 sm8450-common: Update blobs from diting OS3.0.3.0.VLFMIXM [Arian]
+
+* device/xiaomi/thor
+fd9410f thor: Commonize udfps sensor configuration [Arian]
+17c2216 thor: Import xiaomi fp location and size properties [Arian]
+
+* device/xiaomi/unicorn
+060cb2f4 unicorn: Commonize udfps sensor configuration [Arian]
+
+* device/xiaomi/zeus
+dc63c8be zeus: Commonize udfps sensor configuration [Arian]
+9768ed88 zeus: Import xiaomi fp location and size properties [Arian]
+
 * lineage/hudson
-dc7e476 the TIME was ticking too fast [pnguyen879]
+8aca706 Regenerate device dependency mappings [LineageOS Infra]
 
 * lineage/mirror
-acd2f39 Updated to 26-Feb-2026 11:01 UTC [Tim Schumacher]
+2c2f0c1 Updated lineage-minimal to 18-Mar-2026 23:02 UTC [Tim Schumacher]
+bf59c44 Updated to 18-Mar-2026 23:01 UTC [Tim Schumacher]
 
 * lineage/wiki
-f64a0da6 devices: Promote timelm to 23.2 [pnguyen879]
+5f23c2a2 wiki: Slap `is_unlockable: false` on gta4xlswifi [LuK1337]
 
-* packages/apps/ExactCalculator
-c9b0487 ExactCalculator: Swap dec_point and digit_zero [LuK1337]
+* packages/apps/Car/References
+9b8ad66 references: dewd: Drop non-existent packages [Nolen Johnson]
 
-* vendor/apn
-fe64e68 apn: Update Netgsm [Doğancan yılmazer]
+* packages/services/Car
+77cfd1e704 Dedupliate curl [Nolen Johnson]
+
+* vendor/pixel-goodies
+127b07d Cleanup google sans clock and make it a regular overlay [Arian]
+11327d0 Drop GoogleSans [basamaryan]
+0781e11 fonts: Fix google-sans customization injection check [basamaryan]
+
+* vendor/xiaomi/diting
+a0002f7 diting: Update blobs and firmware from OS3.0.3.0.VLFMIXM [Arian]
 
 ====================
-     2026-02-26    
+     2026-03-18    
 ====================
-* lineage/wiki
-3ae43c10 wiki: Add Web Flash Tools instructions [Nicholas Lim]
-
-====================
-     2026-02-25    
-====================
-* build/soong
-82dec4967 check_boot_jars: Add MTK packages to whitelist [Nolen Johnson]
+* hardware/knowles/athletico/sound_trigger_hal
+16e4d7f sound_trigger: iaxxx: Fix OOB read in callback message parsing [Nolen Johnson]
 
 * lineage/hudson
-68bd8d0 hudson: rosemary goes 23.2! [Matsvei Niaverau]
+714d7cb Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+f3e6687 Updated to 17-Mar-2026 23:01 UTC [Tim Schumacher]
+
+* lineage/scripts
+ed3277b device-deps-regenerator: Ignore laguna/muzel [LuK1337]
+f43bd8f pixel: Add initial dev scripts [Michael Bestas]
+f9e6c57 dev: sepolicy: always place attributes in their own file [Cosmin Tanislav]
+9e88f8f dev: rro: refactor name handling [Cosmin Tanislav]
+2014bbe dev: rro: add script for printing packages [Cosmin Tanislav]
+4662a0e dev: rro: print some messages only with --verbose [Cosmin Tanislav]
+89f0dc6 dev: rro: print error even if the undetermined priority resources are equal [Cosmin Tanislav]
+983f046 dev: rro: compare AOSP overlay against meta [Cosmin Tanislav]
+959b3a7 dev: rro: do not remove identical resources if shadowed resources were kept [Cosmin Tanislav]
+80aa796 dev: rro: use DefaultDict for resource_map [Cosmin Tanislav]
+3885514 dev: rro: print device as part of messages [Cosmin Tanislav]
+b0677c0 dev: rro: parse manifest tree only once [Cosmin Tanislav]
+1d06fad dev: rro: remove overlays after parsing [Cosmin Tanislav]
+a7f5a48 dev: rro: do not error out on exclude [Cosmin Tanislav]
+70984e3 dev: rro: add some verbose output [Cosmin Tanislav]
+aa8931e dev: beautify_rro: write meta [Cosmin Tanislav]
+794f838 dev: rro: use a single class for meta [Cosmin Tanislav]
+0e08275 dev: rro: do not return original values from simplify / fixup [Cosmin Tanislav]
+c559165 dev: rro: propagate original device in meta [Cosmin Tanislav]
+75e998b dev: rro: properly handle meta data [Cosmin Tanislav]
+d92044c dev: rro: beautify multiple directories at once [Cosmin Tanislav]
+d106e90 dev: commonize_rro: print error on partial commonization [Cosmin Tanislav]
+6980538 dev: apk: decode dynamic attributes [Cosmin Tanislav]
+4fc949c dev: rro: remove package_name from resource arguments [Cosmin Tanislav]
+8540ff7 dev: rro: introduce package id map [Cosmin Tanislav]
+f38a36b dev: rro: reference_pacakge_id -> reference_package_id [Cosmin Tanislav]
+fc8df02 dev: rro: store devices an overlay applies to in meta [Cosmin Tanislav]
+7a6d0eb dev: rro: refactor resource entries [Cosmin Tanislav]
+25408fe dev: rro: refactor overlays [Cosmin Tanislav]
+1dada25 dev: rro: refactor ResourceMap to turn indices into a loop, add PackageDirNamesIndex to avoid re-iterating over them [Cosmin Tanislav]
+25a722d dev: rro: keep indices on commonize [Cosmin Tanislav]
+69ad277 dev: rro: split up Resource, XMLResource, RawResource, ResourceMap and utils [Cosmin Tanislav]
+fa173d2 dev: rro: use dir names and resource names in all cases [Cosmin Tanislav]
+9436952 dev: rro: remove lazy init [Cosmin Tanislav]
+11870b3 dev: rro: keep naming consistent and pass by name [Cosmin Tanislav]
+88d00c5 dev: rro: clean up overlay_resource_fixup_from_package() [Cosmin Tanislav]
+b5d96c1 dev: rro: provide proper sorting across split resource paths [Cosmin Tanislav]
+9f9d0ea dev: rro: do not re-create resource when not needed [Cosmin Tanislav]
+7b4c454 dev: rro: only parse directories inside res that are overlayed [Cosmin Tanislav]
+52f0bcf dev: rro: remove duplicated default directory check [Cosmin Tanislav]
+6b609fb dev: rro: remove dir_name updating [Cosmin Tanislav]
+939c556 dev: rro: rel_dir_path -> dir_name [Cosmin Tanislav]
+c135617 dev: rro: optimize relative path finding [Cosmin Tanislav]
+fd2b50b dev: rro: remove defaults from parse_package_resources_dir() [Cosmin Tanislav]
+fb12ac6 dev: beautify_rro: move parse_overlay() outside of beautify_rro_main() [Cosmin Tanislav]
+a22f910 dev: rro: remove unused raw resource copy [Cosmin Tanislav]
+7b9d165 dev: rro: roll index addition for performance [Cosmin Tanislav]
+4068030 dev: rro: do not create pseudolocales on each iteration [Cosmin Tanislav]
+c105d52 dev: rro: do not read raw resources from target packages [Cosmin Tanislav]
+fdcee15 dev: rro: move tag / attrib fixup into package fixup [Cosmin Tanislav]
+8d3e2ec dev: rro: clean up attrib fixup [Cosmin Tanislav]
+b8f76cf dev: rro: remove discard support [Cosmin Tanislav]
+00824d3 dev: rro: improve resource references setup [Cosmin Tanislav]
+c20bd30 dev: rro: use defaultdict and build indices ahead of time where possible [Cosmin Tanislav]
+9f7be1a dev: rro: use all.update() in add_many() [Cosmin Tanislav]
+f8d14ba dev: rro: improve by queries type safety [Cosmin Tanislav]
+c2e9089 dev: rro: do not call getprevious() [Cosmin Tanislav]
+06bd7fe dev: rro: cache strings used in parse_xml_resources() [Cosmin Tanislav]
+7ba6e16 dev: rro: remove call to etree.cleanup_namespaces() [Cosmin Tanislav]
+597395e dev: rro: run referenced resource check for raw resources too [Cosmin Tanislav]
+7ee97f3 dev: rro: let overlay_resources_process() keep referenced resoruces [Cosmin Tanislav]
+68c421b dev: rro: optimize resource writing [Cosmin Tanislav]
+abe545a dev: generate_rro: reuse APK output path [Cosmin Tanislav]
+19012ec dev: rro: remove unused ResourceMap methods [Cosmin Tanislav]
+ad4d411 dev: rro: do not create a new ResourceMap just to check if a resource is in it [Cosmin Tanislav]
+6dc5cd7 dev: rro: find missing resources only from default values [Cosmin Tanislav]
+0b8c0ed dev: rro: optimize identical resource finding [Cosmin Tanislav]
+5c5305e dev: rro: parse all values only for beautify [Cosmin Tanislav]
+9e09917 dev: rro: use set for checking if XML tag should be skipped [Cosmin Tanislav]
+95e3346 dev: rro: document undetermined_resource_priorities [Cosmin Tanislav]
+31782e3 dev: rro: cache referenced resource keeping [Cosmin Tanislav]
+7bac089 dev: rro: keep referenced resources when missing or identical [Cosmin Tanislav]
+4f922e8 dev: rro: optimize stripping rel dir qualifiers [Cosmin Tanislav]
+416020a dev: rro: stable sort for package resources with same characteristics [Cosmin Tanislav]
+2a42bd7 dev: rro: use set methods for commonizing resources [Cosmin Tanislav]
+82b48c2 dev: rro: strip extra newlines from XML string when debugging [Cosmin Tanislav]
+ee65789 dev: rro: automatically create indices [Cosmin Tanislav]
+973fa6f dev: rro: do not uselessly return passed in ResourceMap [Cosmin Tanislav]
+d21d54f dev: rro: improve string handling [Cosmin Tanislav]
+e7253bc dev: rro: get rid of set addition overhead [Cosmin Tanislav]
+b09573c dev: rro: fix get_target_package_resources() typing [Cosmin Tanislav]
+4577396 dev: rro: cache results of parsing a single resource dir [Cosmin Tanislav]
+0d30bd8 dev: rro: allow adding many resources at a time [Cosmin Tanislav]
+0d673c9 dev: rro: remove unqualified resources finding [Cosmin Tanislav]
+a6efdcf dev: rro: fix sorting based on comments presence [Cosmin Tanislav]
+eaeb99a dev: rro: always parse all resources [Cosmin Tanislav]
+4d6bbda dev: rro: allow caching package map [Cosmin Tanislav]
+d2ea06d dev: process_rro: remove spammy print [Michael Bestas]
+8dd3a02 dev: rro: pick a target package even if no resources match [Cosmin Tanislav]
+42e02f0 dev: rro: remove apk output path on excluded packages [Cosmin Tanislav]
+c8abc01 dev: rro: do not error out on undetermined resource [Cosmin Tanislav]
+991b66a dev: rro: automatically shadow undetermined priorities with same value [Cosmin Tanislav]
+6c116a9 dev: commonize_rro: remove extra prints [Cosmin Tanislav]
+54e1860 dev: rro: implement identical removal for top-level overlays with commonized overlays [Cosmin Tanislav]
+de501d5 dev: rro: clarify preferred resource naming [Cosmin Tanislav]
+0f1bb9a dev: rro: clarify preferred packages list [Cosmin Tanislav]
+7d5f2e2 dev: rro: unify resource mapping [Cosmin Tanislav]
+482bb55 dev: rro: remove shadowed printing [Cosmin Tanislav]
+8062fc7 dev: rro: cache some often used variables [Cosmin Tanislav]
+1a23f91 dev: rro: remove unused overlay_resources_remove_add() [Cosmin Tanislav]
+269d080 dev: rro: store raw resource file_name as name [Cosmin Tanislav]
+a48efdb dev: rro: add back identical resource removal [Cosmin Tanislav]
+c1d6a29 dev: rro: unindent remove_rro_resources() section guarded by package_resources [Cosmin Tanislav]
+346683f dev: rro: make args non-optional in remove_rro_resources() [Cosmin Tanislav]
+4a14494 dev: generate_rro: fix output path removal [Cosmin Tanislav]
+bd3a316 dev: rro: reimplement priority-based resource removal [Cosmin Tanislav]
+3e4b5ac dev: beautify_rro: beautify_overlay -> write_beautified_overlay [Cosmin Tanislav]
+9012624 dev: beautify_rro: split parsing and beautifying step [Cosmin Tanislav]
+bd2fce1 dev: beautify_rro: do not store unused statement [Cosmin Tanislav]
+0aef2a2 dev: rro: centralize error for empty resources [Cosmin Tanislav]
+8704e4c dev: rro: centralize allowing missing target packages in get_rro_target_package_resources() [Cosmin Tanislav]
+42e4ce0 dev: rro: remove unused remove_resources argument from parse_overlay_resources() [Cosmin Tanislav]
+66e9180 dev: rro: split up parse_rro() [Cosmin Tanislav]
+9bed7f5 dev: generate_rro: extract directly to output dir [Cosmin Tanislav]
+915848d dev: rro: simplify assert [Cosmin Tanislav]
+4f7272c dev: rro: split out target package resources finding [Cosmin Tanislav]
+a0bde30 dev: rro: do AOSP RRO package / target package check earlier [Cosmin Tanislav]
+1898471 dev: rro: pass resources directly to parse_rro() [Cosmin Tanislav]
+91a39c4 dev: rro: overlay_resources -> resources [Cosmin Tanislav]
+53670ef dev: rro: temporarily remove shadowed / identical resources removal [Cosmin Tanislav]
+3dd4f3b dev: rro: do not assume AOSP RRO manifest or resources name [Cosmin Tanislav]
+a55e029 dev: rro: reuse RESOURCES_DIR [Cosmin Tanislav]
+6c969ae dev: rro: pass resources path to parse_rro() [Cosmin Tanislav]
+40f6dcc dev: rro: pass manifest path to parse_rro() [Cosmin Tanislav]
+0e4aaef dev: rro: aosp_rro_android_bp_path -> aosp_rro_android_bp_dir [Cosmin Tanislav]
+f526724 dev: rro: explicitly pass manifest_name and resources_dir [Cosmin Tanislav]
+55adf3b dev: rro: fixup resource from target package earlier [Cosmin Tanislav]
+e07e3df dev: rro: fixup resource tags before removing resources [Cosmin Tanislav]
+4e433d8 dev: rro: reuse overlay Android.bp parsing logic [Cosmin Tanislav]
+78563c4 dev: rro: reuse ANDROID_MANIFEST_NAME [Cosmin Tanislav]
+a2d44d1 dev: generate_rro: wrap main logic in function [Cosmin Tanislav]
+dfdba88 dev: rro: make identical resources removal opt-in [Cosmin Tanislav]
+ad9c17e dev: rro: remove useless call to set() [Cosmin Tanislav]
+02ce62c dev: beautify_rro: split up overlay processing into a separate function [Cosmin Tanislav]
+08e2d6e dev: rro: keep dimen item attributes in most commonly used order [Cosmin Tanislav]
+35cfe8e dev: rro: fix shadowing if priority is different [Cosmin Tanislav]
+679d5c5 dev: rro: fixup type and format from package resource [Cosmin Tanislav]
+190f069 dev: apk: output format="float" for dimensions [Cosmin Tanislav]
+7fbc189 dev: rro: do not fixup node tags from type [Cosmin Tanislav]
+51b9722 dev: commonize_rro: check references when commonizing resources [Cosmin Tanislav]
+22735ab dev: rro: also check element tail when finding references [Cosmin Tanislav]
+639a3c6 dev: commonize_rro: avoid re-processing things [Cosmin Tanislav]
+5d6c867 dev: commonize_rro: only commonize if overlay attrs match [Cosmin Tanislav]
+dc44eab dev: commonize_rro: do not re-assign overlay_path as Path [Cosmin Tanislav]
+754072b dev: commonize_rro: get manifest / resource dirs from BP statement [Cosmin Tanislav]
+a39a314 dev: beautify_rro: convert overlay path to an actual Path [Cosmin Tanislav]
+8c40f3f dev: beautify_rro: do not alias overlay data [Cosmin Tanislav]
+b58c5af dev: beautify_rro: unindent BP parsing loop [Cosmin Tanislav]
+3feee14 dev: beautify_rro: dir_path -> overlay_dir as dir_path was not actually a Path [Cosmin Tanislav]
+9dc6c72 dev: beautify_rro: avoid re-processing things [Cosmin Tanislav]
+e8e48c2 dev: beautify_rro: store partition in overlay data [Cosmin Tanislav]
+3c4fdfe dev: beautify_rro: simplify ignore packages parsing [Cosmin Tanislav]
+79c48f3 dev: beautify_rro: simplify using a dataclass [Cosmin Tanislav]
+fc711a2 dev: rro: only remove shadowed resources from overlays with the same attributes [Cosmin Tanislav]
+516e2ef dev: rro: only pass target package resources map to parse_rro() for shadowing [Cosmin Tanislav]
+585ff5b dev: rro: add pattern support for resource matching [Cosmin Tanislav]
+b70a933 dev: rro: optimize keep / remove resource matching [Cosmin Tanislav]
+8236a03 dev: rro: add --keep-resource to keep not found resources [Cosmin Tanislav]
+b784378 dev: rro: is_resource_removed() -> is_resource_in_entries() [Cosmin Tanislav]
+6de6213 dev: rro: split --remove-resource parsing logic into separate function [Cosmin Tanislav]
+6808a8a dev: beautify_rro: wrap main logic in function [Cosmin Tanislav]
+e7518e7 dev: rro: add --dump option to find overlays and frameworks from dump [Cosmin Tanislav]
+af9c5b4 dev: rro: replace device name when commonizing [Cosmin Tanislav]
+bd521be dev: rro: implement commonize_rro [Cosmin Tanislav]
+248f937 dev: rro: beautify_rro: access statement name directly [Cosmin Tanislav]
+b947d41 dev: rro: decode XMLResource in unicode while printing [Cosmin Tanislav]
+1d72ae2 dev: rro: define RawResource __repr__ [Cosmin Tanislav]
+ce78f16 dev: rro: generate_rro: use pathlib [Cosmin Tanislav]
+04641e3 dev: rro: remove entire overlay when beautifying [Cosmin Tanislav]
+df7850e dev: rro: move prefix preserving out of write_rro() [Cosmin Tanislav]
+59912e5 dev: rro: hardcode manifest and resources when writing RRO [Cosmin Tanislav]
+ab9e103 dev: rro: fix parse_overlay_manifest() typing [Cosmin Tanislav]
+dd9c784 dev: rro: separate RRO parsing from RRO writing [Cosmin Tanislav]
+cbeaf8b dev: rro: move resource split out of parse_rro() [Cosmin Tanislav]
+478f504 dev: rro: remove RRO name printing from shadowed resources [Cosmin Tanislav]
+abf5d1b dev: rro: move check_rro_matches_aosp() call out of parse_rro() [Cosmin Tanislav]
+c121bb5 dev: rro: simplify type correct print [Cosmin Tanislav]
+8381cf4 dev: rro: fix parse_package_manifest() typing [Cosmin Tanislav]
+e45a47b dev: rro: add device name when renaming auto-generated RROs [Cosmin Tanislav]
+c6cbc21 dev: rro: store original name, package and target package [Cosmin Tanislav]
+3b367bd dev: rro: move overlay/package exclusion out of process_rro() [Cosmin Tanislav]
+2d46bad dev: rro: support addition semantics [Cosmin Tanislav]
+e865219 dev: rro: improve bp function semantics [Cosmin Tanislav]
+66b4a7f dev: rro: simplify get_target_packages() [Cosmin Tanislav]
+f7ced03 dev: rro: simplify get_app_package_name() [Cosmin Tanislav]
+d173d30 dev: rro: use _ for unused parse_overlay_manifest() returns [Cosmin Tanislav]
+41ee5f9 dev: implement resource extractor [Cosmin Tanislav]
+24bd718 dev: rro: framework-res -> FrameworkRes [Cosmin Tanislav]
+b4c9ed6 dev: rro: avoid XMLSyntaxError in raw files [Cosmin Tanislav]
+3ba7661 dev: rro: remove hardcoded SystemUI-res mapping [Cosmin Tanislav]
+4765bc5 dev: rro: do not allow android libraries to be overlayed [Cosmin Tanislav]
+1cd12cf dev: rro: determine target package uniqueness by resource dirs [Cosmin Tanislav]
+d7f9894 dev: rro: fix sorting logic [Cosmin Tanislav]
+29da711 dev: rro: simplify target package finding logic [Cosmin Tanislav]
+4f226d2 dev: rro: look for unqualified resources too when calculating matching resources [Cosmin Tanislav]
+d694d35 dev: rro: rewrite all logic [Cosmin Tanislav]
+16297a0 dev: rro: unify reserved prefix reading [Cosmin Tanislav]
+951bf88 dev: rro: remove useless continue [Cosmin Tanislav]
+46c25f5 dev: rro: make tracking shadowed resources more logical [Cosmin Tanislav]
+91e1d57 dev: rro: move generate_rro() to process_rro.py [Cosmin Tanislav]
+960816d dev: rro: implement resource representation for debugging [Cosmin Tanislav]
+a6346b7 dev: rro: implement resource equality check [Cosmin Tanislav]
+aee491e dev: rro: remove unused resource rel_path field [Cosmin Tanislav]
+b159b88 dev: rro: normalize removal of translatable [Cosmin Tanislav]
+fa042b2 dev: rro: Cover more pseudolocale directories [Michael Bestas]
+295ee1c dev: rro: sort raw resources when printing [Cosmin Tanislav]
+eb87617 dev: rro: print missing raw resources by the full relative path [Cosmin Tanislav]
+d2da3a8 dev: rro: refactor resource removal and add support for per-package resource removal [Cosmin Tanislav]
+1df28c1 dev: rro: add support for preventing generation of overlays [Cosmin Tanislav]
+80bebf5 dev: rro: check if raw resources are referenced before removing [Cosmin Tanislav]
+743f0ea dev: rro: check that raw resources rel paths are 3 parts long [Cosmin Tanislav]
+50cd381 dev: rro: refactor raw resources handling to find identical ones [Cosmin Tanislav]
+f208570 dev: rro: skip values- from being added to raw resources [Cosmin Tanislav]
+60b20ac dev: rro: remove raw resources too [Cosmin Tanislav]
+cb5ddb5 dev: rro: add option to keep overlays for missing target packages [Cosmin Tanislav]
+70bd070 dev: rro: add option to remove resources [Cosmin Tanislav]
+88413b4 dev: rro: resources: simplify write_xml_resources() [Cosmin Tanislav]
+17fde4d dev: rro: resources: fix resources typing [Cosmin Tanislav]
+89b5405 dev: rro: manifest: fix target_package typing [Cosmin Tanislav]
+5b7a74d dev: rro: resources: fix target_packages typing [Cosmin Tanislav]
+be02caf dev: rro: beautify_rro: fix typing [Cosmin Tanislav]
+c2a78d3 dev: rro: target_package: fix typing [Cosmin Tanislav]
+b948fc2 dev: rro: bp: utils: fix typing [Cosmin Tanislav]
+7239a60 dev: rro: bp: add typings for some bp modules [Cosmin Tanislav]
+bc81698 dev: rro: fix possibly unbounded name [Cosmin Tanislav]
+6905522 dev: rro: fix xml_element_canonical_str() typing [Cosmin Tanislav]
+8e87089 dev: rro: fix read/write_raw_resources() typing [Cosmin Tanislav]
+b2d0ab4 dev: rro: resources: fix lxml typing [Cosmin Tanislav]
+e321f98 dev: rro: fix xml_attrib_matches() typing [Cosmin Tanislav]
+4d41f10 dev: rro: refactor referenced resources location [Cosmin Tanislav]
+ef64c09 dev: rro: implement resource shadowing across multiple RROs [Cosmin Tanislav]
+cccdec2 dev: rro: max_matching_resources -> best_matching_resources for uniformity [Cosmin Tanislav]
+3a472bb dev: rro: expand get_target_package_resources() result inline [Cosmin Tanislav]
+6d180b5 dev: rro: add oem partition to list [Cosmin Tanislav]
+ee794ad dev: rro: use hardcoded table in get_partition_specific() for simplicity [Cosmin Tanislav]
+1ea89b1 dev: rro: skip public.xml files [Cosmin Tanislav]
+d2d9987 dev: rro: normalize strings [Cosmin Tanislav]
+d63e27e dev: rro: remove msgid attribute from all nodes [Cosmin Tanislav]
+4e44c22 dev: rro: skip values-en-rXC pseude-locale [Cosmin Tanislav]
+135546d dev: rro: normalize dimens text [Cosmin Tanislav]
+044a5a5 dev: rro: implement AOSP overlay detection [Cosmin Tanislav]
+4a82dae dev: rro: fix wrong types by looking at type attribute too [Cosmin Tanislav]
+df71c6d dev: rro: hack around wrong @* references [Cosmin Tanislav]
+a613376 dev: rro: remove resources from output not from overlay [Cosmin Tanislav]
+81d24a0 dev: rro: pass the already known RRO name to generate_rro() [Cosmin Tanislav]
+f55b26d dev: rro: keep resources referenced by AndroidManifest.xml [Cosmin Tanislav]
+834b5de dev: rro: fixup wrong type resources automatically [Cosmin Tanislav]
+fe8a331 dev: rro: check element references against attribs [Cosmin Tanislav]
+39160af dev: rro: split up package resource finding into a separate function [Cosmin Tanislav]
+f48c5e0 dev: rro: split up reference name building into a separate function [Cosmin Tanislav]
+687a704 dev: rro: parse all raw resources [Cosmin Tanislav]
+a33eabc dev: rro: disable resource already found message [Cosmin Tanislav]
+2844685 dev: rro: resolve resources provided by local_libs [Cosmin Tanislav]
+7702ecc dev: rro: fix resolving filegroup manifests [Cosmin Tanislav]
+949f7fc dev: rro: fix max_matching_resources logic [Cosmin Tanislav]
+7db898d dev: rro: remove unused argument from get_target_package_resources() [Cosmin Tanislav]
+dd52ffa dev: rro: simplify auto-generated RRO names [Cosmin Tanislav]
 
 * lineage/wiki
-22b7fb19 wiki: Promote rosemary to 23.2 [Matsvei Niaverau]
+ce5ab56d wiki: Add Realme unlock guide for chinese devices [Giovanni Ricca]
 
 ====================
-     2026-02-24    
+     2026-03-17    
 ====================
+* device/xiaomi/marble
+4a1b0ce marble: light: Use stack alloc for _oem_msg to avoid memory leaks [Fiqri Ardyansyah]
+
 * lineage/hudson
-92a8961 Better late than never [Sebastiano Barezzi]
-d60dd76 fly before may [Arian]
+bc44a79 Regenerate device dependency mappings [LineageOS Infra]
 
-* lineage/wiki
-1449c96d wiki: Add docker compose file [Nicholas Lim]
-80725b1c wiki: Promote apollon, lmi, munch and thyme to 23.2 [Sebastiano Barezzi]
-02ba5b54 wiki: Cleanup Xiaomi SM8250 maintainers [Sebastiano Barezzi]
-222eb880 wiki: Promote mayfly to lineage-23.2 [Arian]
+* lineage/mirror
+ef60913 Updated to 17-Mar-2026 11:01 UTC [Tim Schumacher]
+f38322d Updated to 16-Mar-2026 23:01 UTC [Tim Schumacher]
+
+====================
+     2026-03-16    
+====================
+* frameworks/base
+ee7811df7c47 Automatic translation import [LineageOS Infra]
+
+* lineage-sdk
+34b988e2 Automatic translation import [LineageOS Infra]
+
+* lineage/mirror
+e9811ed Updated to 16-Mar-2026 11:01 UTC [Tim Schumacher]
+
+* packages/apps/Aperture
+1604f24 Automatic translation import [LineageOS Infra]
+
+* packages/apps/AudioFX
+19b3cde Automatic translation import [LineageOS Infra]
+
+* packages/apps/Camelot
+87b816c Automatic translation import [LineageOS Infra]
 
 * packages/apps/Glimpse
-4263e73 Glimpse: Reformat code [Sebastiano Barezzi]
-3435a3c Glimpse: Add support for motion photos [Luca Stefani]
+72a1550 Automatic translation import [LineageOS Infra]
 
-====================
-     2026-02-23    
-====================
-* lineage/hudson
-da91b76 Regenerate device dependency mappings [LineageOS Infra]
-2e0103a hudson: Add Galaxy Tab S6 Lite 2024 Wi-Fi (gta4xlswifi) [Tim Zimmermann]
+* packages/apps/Launcher3
+64794259a8 Automatic translation import [LineageOS Infra]
 
-* lineage/wiki
-2d73bceb wiki: devices: Add Galaxy Tab S6 Lite 2024 Wi-Fi (gta4xlswifi) [Tim Zimmermann]
+* packages/apps/LineageParts
+95ed575 Automatic translation import [LineageOS Infra]
 
-* vendor/apn
-1ba16ff apn: CN: Kill `3gwap` APN for China Unicom [Nanhumly]
+* packages/apps/Settings
+5f715dbea5e Automatic translation import [LineageOS Infra]
+
+* packages/apps/ThemePicker
+ad498d14 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Twelve
+849cf62 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Updater
+51d9ca7 Automatic translation import [LineageOS Infra]
+
+* packages/resources/devicesettings
+a004aae Automatic translation import [LineageOS Infra]
+
+* vendor/crowdin
+3476fdc Automatic translation import [LineageOS Infra]
+
+* vendor/lineage
+150b6b62 common.mk: Use prebuilt_addon_d for installing 50-lineage.sh [Akash Suresh]
 
