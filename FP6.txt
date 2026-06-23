@@ -1,204 +1,126 @@
 ====================
-     2026-06-11    
-====================
-* device/lineage/sepolicy
-ebc3e00 common: Label ro.config.force_multi_window prop [Thomas Makin]
-
-* device/qcom/sepolicy_vndr/sm8550
-8f57f3c91 kalama: vendor: Simplify read_ahead_kb labeling [Nolen Johnson]
-
-* frameworks/base
-299aa25d5817 wm: don't disable rot hint on low_ram [Thomas Makin]
-
-* lineage/hudson
-18236e4 Regenerate device dependency mappings [LineageOS Infra]
-
-====================
-     2026-06-10    
-====================
-* device/qcom/sepolicy_vndr/sm8550
-668af8021 kalama: vendor: Label another variant of qupv3_2_geni_se wakeup node [Nolen Johnson]
-f86e763a9 kalama: vendor: Handle TEE luns [Nolen Johnson]
-
-* device/qcom/sepolicy_vndr/sm8750
-39d4b1bf3 sun: vendor: Label another variant of qupv3_2_geni_se wakeup node [Nolen Johnson]
-35766024b sun: vendor: Match SDHCI read_ahead_kb nodes are well [Nolen Johnson]
-a0dc8c7e6 sun: vendor: Handle TEE luns [Nolen Johnson]
-
-* lineage/hudson
-e91ea2c Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/wiki
-67eab3dd devices: wade: I guess some Android 12 firmwares are locked [Nolen Johnson]
-cae76f87 wiki: deviceinfo: Display device.yml URL [LuK1337]
-
-====================
-     2026-06-09    
-====================
-* lineage/scripts
-555516d shipper: Add comment with used git hashes [LuK1337]
-
-* lineage/wiki
-330cecd6 wiki: Add wiki->gh mapping for pdx224 maintainer [LuK1337]
-
-* packages/apps/ExactCalculator
-af4a939 ExactCalculator: Auto scale button text size programatically [LuK1337]
-
-* vendor/qcom/opensource/commonsys/fm
-6f6d91c FM: Request POST_NOTIFICATIONS permission [Alexis Borovik]
-
-====================
-     2026-06-08    
-====================
-* device/lineage/sepolicy
-2e6e60f libperfmgr: Allow powerhal to access thermal service [armdebug]
-
-* device/xiaomi/diting
-67165b2 diting: Update blobs and firmware from OS3.0.4.0.VLFMIXM [Arian]
-
-* device/xiaomi/marble
-1084339 marble: Update blobs and firmware from OS3.0.4.0.VMRMIXM [Arian]
-
-* device/xiaomi/sm8450-common
-7a2eaf494 sm8450-common: Update blobs from diting OS3.0.4.0.VLFMIXM [Arian]
-
-* frameworks/base
-20590ca55ca6 fixup! Implement click to take partial screenshot [1/3] [LuK1337]
-
-* lineage/hudson
-139ea8b Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/mirror
-394398d Updated lineage-minimal to 07-Jun-2026 22:01 UTC [Tim Schumacher]
-921fb96 Updated to 07-Jun-2026 22:01 UTC [Tim Schumacher]
-
-* lineage/wiki
-8b213ad5 wiki: Add wiki->gh mapping for Q25 maintainer [LuK1337]
-4ccd1852 wiki: Add wiki->gh mapping for nio maintainer [LuK1337]
-b015df8f wiki: Add wiki->gh mapping for gauguin maintainer [LuK1337]
-11002099 fixup! wiki: makinbacon github username mapping [LuK1337]
-5ec8000b wiki: makinbacon github username mapping [Nolen Johnson]
-
-* packages/apps/SetupWizard
-46ff92a SetupWizard: Convert resource switch statements to if-else [Michael Bestas]
-
-* vendor/fairphone/FP6
-c11f363d FP6: Update to FP6.QREL.16.69.0 [Michael Bestas]
-101b7888 FP6: Add missing WFD VINTF fragment [Michael Bestas]
-d31b5593 FP6: Remove unused WFD blobs [Michael Bestas]
-
-* vendor/xiaomi/diting
-b15f4be diting: Update blobs and firmware from OS3.0.4.0.VLFMIXM [Arian]
-
-* vendor/xiaomi/marble
-b86988f marble: Update blobs and firmware from OS3.0.4.0.VMRMIXM [Arian]
-
-* vendor/xiaomi/sm8450-common
-ec93fb51 sm8450-common: Update blobs from diting OS3.0.4.0.VLFMIXM [Arian]
-
-====================
-     2026-06-07    
-====================
-* lineage/wiki
-0dc42653 wiki: Provide universal binary for macOS Heimdall [LuK1337]
-837e47c1 wiki: Document Gerrit gh oauth [LuK1337]
-
-* packages/apps/Aperture
-87b7443 Aperture: Upload non-zipped artifact [LuK1337]
-
-* packages/apps/Camelot
-03d0096 Camelot: Upload non-zipped artifact [LuK1337]
-
-* packages/apps/DeskClock
-0256948e3 DeskClock: Upload non-zipped artifact [LuK1337]
-
-* packages/apps/Glimpse
-5f78ee9 Glimpse: Upload non-zipped artifact [LuK1337]
-
-* packages/apps/Jelly
-3d2c7aa Jelly: Upload non-zipped artifact [LuK1337]
-
-* packages/apps/Recorder
-8f15cb3 Recorder: Upload non-zipped artifact [LuK1337]
-
-* packages/apps/Twelve
-3961c5c Twelve: Upload non-zipped artifact [LuK1337]
-
-====================
-     2026-06-06    
-====================
-* lineage/mirror
-d7ec83b Updated aosp-minimal to 06-Jun-2026 10:02 UTC [Tim Schumacher]
-6554b05 Updated to 05-Jun-2026 22:01 UTC [Tim Schumacher]
-
-====================
-     2026-06-05    
+     2026-06-23    
 ====================
 * device/fairphone/FP6
-cbf96c36a FP6: Add missing WFD VINTF fragment [Michael Bestas]
-407e58fce FP6: Remove unused WFD blobs [Michael Bestas]
-b65de78f3 Revert "FP6: KeyHandler: Stop ignoring ACTION_UP events" [Arian]
+cf7836d FP6: Disable all CLO-specific perf features [Arian]
+1cb17f4 FP6: Silence perf spam on boot [Arian]
+7febfae FP6: Remove PASR leftovers [Arian]
+118b7dc Revert "FP6: Switch to libperfmgr" [Arian]
+9b35650 FP6: Drop duplicated gh_mem_notifier from second stage modules [Arian]
+d9b3df1 FP6: Correct lineage dependencies target paths [AnonAlly]
+
+* kernel/fairphone/sm7635
+04c1c327dbae Remove qc mem offline driver. [Yiqiang Feng]
+
+* kernel/fairphone/sm7635-devicetrees
+62fae85d8 qcom: Delete mem-offline node to fully disable PASR [Sultan Alsawaf]
+
+* lineage/hudson
+000d18a hudson: NOT OJ [Nick Reuter]
+
+* lineage/wiki
+c31e5385 wiki: pdx225/pdx235 Flash vendor_boot first [LuK1337]
+
+* vendor/fairphone/FP6
+64f6692e FP6: Disable all CLO-specific perf features [Arian]
+984d3e76 FP6: Silence perf spam on boot [Arian]
+fd990fe3 Revert "FP6: Switch to libperfmgr" [Arian]
+
+====================
+     2026-06-22    
+====================
+* lineage/wiki
+2392c022 wiki: berlna: Fix wrong image [razorloves]
+
+====================
+     2026-06-21    
+====================
+* external/v4l2_codec2
+16700e0 Use the output pixel format requested by the decoder when available [Aaron Kling]
+0cd9abd Add P010 support [Aaron Kling]
+711990c V4L2DecodeInterface: Properly fetch default codec profile [Aaron Kling]
+e18bf52 Convert v4l2 hevc levels to c2 hevc levels [Aaron Kling]
 
 * frameworks/base
-ab7e823728b1 DO NOT MERGE: Enforce suspend restrictions in startOp and noteOp paths [Evan Severson]
-75d3a337f28d Enforce package name length limits in PackagePolicy setters. [Pavel Grafov]
-0425af96e568 Skip serialization of huge vibration effects in NotificationChannel [Matías Hernández]
-3893596933d7 Block adding toast windows to non-empty tokens. [Jeff DeCew]
-47ee871a2c26 Validate package ID range in LoadedArsc [Yurii Zubrytskyi]
-badeb01005fc Check caller for clearDeveloperVerificationExperiment [Song Chun Fan]
-b37bfa71978a Check caller for addDeveloperVerificationExperiment [Song Chun Fan]
-a5b07a84aa17 Compare period character as well during wildcard matching [Sanjana Sunil]
-1e1feb46c899 Map animation delegate to the transition instead of plumbing it [Evan Rosky]
-f5ad102f7d9d Prevent configAtEnd dispatching to finishing AR [Hongwei Wang]
-3e004709f768 Validate max proxy string length for proxySpec and exclusionList using PolicySizeVerifier. [Gabriel-Radu Ilca]
-3ab099d21f51 RESTRICT AUTOMERGE Require to be bound with non-pinned visible window [Achim Thesmann]
-de675fea004a Make sure we properly validate the XML attr size [Yurii Zubrytskyi]
-6db300a1b557 On face auth success, verify the face auth'd user is the current user [Beverly]
-a5b1a12c6c2c Add StorageManager.convert() check earlier in the stack so the command fails early instead of crashing system later. [Anagha Sasikumar]
-942bc27603ab Quick fix for WCLS security vulnerability. [Yutong Zhang]
-5de9a310dbdd Validate ResStringPool_header.styleCount [Mark Punzalan]
-1d7806bd1844 Don't allow hiding critical apps. [Pavel Grafov]
-e797c701057b Allow default per-thread and per-process OnHeaderDecodedListeners [Leah Rumancik]
-faca54c7ef74 Remove multi user flag reference [Reema Bajwa]
-771a6e02db61 Fix Tapjacking caused by touch slipping out of letterbox [Nan Wu]
-0b4a6fe65fa4 Checking userId in com.android.server.pm.ComputerEngine#resolveContentProvider [h00013079]
-9cdb6c222c92 Hide non system overlay window immediately if it is animating exit [Riddle Hsu]
-71bb580416d6 Apply visibility policy to window state surface [Riddle Hsu]
-5ba5fb4a4a07 Start a new transition to ignore split-enter from a malformed transition [Winson Chung]
-9815a601491a Fix bugs caused on package update events [Reema Bajwa]
-456e9d1c550a Catch uncaught IllegalStateException [Aaron Okano]
+c8f2005b5ed6 Allow overriding Wi-Fi and Bluetooth MAC addresses [Torsten Grote]
 
-* hardware/lineage/interfaces
-bd63dfb light: Optionally snap RGB to the nearest pure color [basamaryan]
+* hardware/qcom-caf/sdm660/audio
+90647c475f post_proc: Correct libvolumelistener include_dirs [Michael Bestas]
 
-* lineage-sdk
-fc3781e8 LightsCapabilities: Add LIGHTS_NO_BRIGHTNESS_CONTROL [basamaryan]
+* lineage/hudson
+0e08719 resurrect that which should be dead [Nolen Johnson]
 
-* packages/apps/DocumentsUI
-e04bcc52b Use signature-based trust for package name overrides [Himanshu Arora]
+* lineage/wiki
+6a245504 wiki: Use correct name for Google Messages [charcoalpt]
 
-* packages/apps/Etar
-29025dd0 Etar: ./gradlew generateBp [LuK1337]
-aa98f381 Merge tag 'v1.0.56' of https://github.com/Etar-Group/Etar-Calendar into lineage-23.2 [LuK1337]
-2b8e1430 Translated using Weblate (German) [Gitsaibot]
-747c6055 Translated using Weblate (Romanian) [Igor Sorocean]
-f7e91a90 Translated using Weblate (Latvian) [Edgars Andersons]
-f3e80108 Translated using Weblate (Russian) [solokot]
-a3be564a Translated using Weblate (Chinese (Simplified Han script)) [大王叫我来巡山]
-25111d58 Translated using Weblate (Dutch) [Stephan Paternotte]
-0156ce42 Translated using Weblate (Czech) [Fjuro]
-90348e01 Translated using Weblate (Turkish) [Oğuz Ersen]
-c277c6b9 Translated using Weblate (Korean) [on9686]
+* packages/apps/Settings
+45da074de55 Require "tap to show" in SIM settings [Torsten Grote]
+de893ecedc5 Hide Wi-Fi and Bluetooth MAC addresses in About Phone [Torsten Grote]
 
-* packages/apps/Launcher3
-20c30fd816 Introduce LauncherProcessImageListener for downscaling images in Launcher. [Adnan Begovic]
+====================
+     2026-06-20    
+====================
+* hardware/lineage/compat
+6450d58 compat: Introduce libtinyxml2 v36 [chandu078]
+f13c559 compat: Provide libbluetooth_audio_session_aidl shim [chandu078]
 
-* packages/apps/LineageParts
-b0a4974 Lights: Hide brightness controls when the device has none [basamaryan]
+* hardware/oplus
+9d95a60 interfaces: Introduce vendor.oplus.hardware.pogo_keyboard V1 [Bruno Martins]
+560694b interfaces: Introduce vendor.oplus.hardware.secure_element V1 [Bruno Martins]
+9c5ca49 interfaces: Introduce vendor.oplus.hardware.cameraextension V1 [Bruno Martins]
+d71141b interfaces: Add vendor.oplus.hardware.subsys_radio V1-V9 [kmiit]
+fd8e9ee interfaces: Add vendor.oplus.hardware.appradioaidl V1 [kmiit]
+7cf2c79 interfaces: Add vendor.oplus.hardware.communicationcenter V1-V2 [kmiit]
+6f95595 interfaces: Add vendor.oplus.hardware.ims V1 [kmiit]
+4859a03 interfaces: Add vendor.oplus.hardware.sendextcamcmd V1-V2 [kmiit]
+ac0fae8 interfaces: Add vendor.oplus.hardware.camera.aon V1 [kmiit]
+24c9330 interfaces: Add vendor.oplus.hardware.cammidasservice V1 [kmiit]
+ffaa133 interfaces: Add vendor.oplus.hardware.camera_rfi V1-V3 [kmiit]
+237ee05 interfaces: Add vendor.oplus.hardware.cwb AIDL(V1-V2) and HIDL(@1.0) [kmiit]
+e40947a interfaces: Add vendor.oplus.hardware.subsys_imsrtp V1 [kmiit]
+6d2d3cb interfaces: Add vendor.oplus.hardware.subsys V1-V5 [Kmiit]
+0aba2f2 interfaces: Provide some ndk_platform libs as aliases [Bruno Martins]
 
-* packages/modules/Bluetooth
-58cc83ed88 Avoid buffer overflow [Bhakthavatsala Raghavendra]
-af510af1d9 Handle LE Secure Connections Passkey Display/Notification [Brian Delwiche]
-12053d5b8f sdp: Validate buffer length in sdpu_build_attrib_seq [Archie Pusaka]
-2782874aef Remove flag reboke_permission_on_unbond [Kyunglyul Hyun]
+* lineage/mirror
+8fd1615 Updated to 20-Jun-2026 10:01 UTC [Tim Schumacher]
+
+====================
+     2026-06-19    
+====================
+* lineage/hudson
+658a0d3 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+94ee717 Updated to 18-Jun-2026 22:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+0b748d6a devices: Promote LGE MSM8996 to 22.2 [Nolen Johnson]
+
+* vendor/apn
+8b06f42 apns: Add IMS routing for Bangladesh operators [Md. Abdullah Al Mamun]
+
+====================
+     2026-06-18    
+====================
+* lineage/wiki
+4c2b5cfe wiki: Add wiki->gh mapping for lemonade maintainer [LuK1337]
+
+====================
+     2026-06-17    
+====================
+* device/xiaomi/zeus
+d9daddec zeus: Update blobs and firmware from OS3.0.4.0.VLBMIXM [Arian]
+
+* frameworks/base
+cb76c383ab73 [AAPM] Check radio interface for 2G availability. [Hani Kazmi]
+
+* lineage/mirror
+edabe06 Updated aosp-minimal to 17-Jun-2026 05:00 UTC [Tim Schumacher]
+
+* lineage/wiki
+507a3742 wiki: s/and connect USB cable to PC/then connect USB cable to PC/ [Andrew Sayers]
+ca979b23 wiki: bluetooth: 5 -> 5.0 [Onelots]
+
+* vendor/xiaomi/zeus
+b5fb69d zeus: Update blobs and firmware from OS3.0.4.0.VLBMIXM [Arian]
 
