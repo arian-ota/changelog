@@ -2,12 +2,18 @@
      2026-06-23    
 ====================
 * device/fairphone/FP6
-cf7836d FP6: Disable all CLO-specific perf features [Arian]
-1cb17f4 FP6: Silence perf spam on boot [Arian]
-7febfae FP6: Remove PASR leftovers [Arian]
-118b7dc Revert "FP6: Switch to libperfmgr" [Arian]
-9b35650 FP6: Drop duplicated gh_mem_notifier from second stage modules [Arian]
-d9b3df1 FP6: Correct lineage dependencies target paths [AnonAlly]
+5580164b KeyHandler: Add support to toggle torch [Arian]
+7aa3160b KeyHandler: Add background transition animation [Arian]
+2b41ce32 KeyHandler: Implement fade in/out animation [Arian]
+cf7836d8 FP6: Disable all CLO-specific perf features [Arian]
+1cb17f47 FP6: Silence perf spam on boot [Arian]
+7febfaec FP6: Remove PASR leftovers [Arian]
+118b7dcc Revert "FP6: Switch to libperfmgr" [Arian]
+9b35650d FP6: Drop duplicated gh_mem_notifier from second stage modules [Arian]
+d9b3df1e FP6: Correct lineage dependencies target paths [AnonAlly]
+
+* hardware/oplus
+9813a9d KeyHandler: Add support to toggle torch [Arian]
 
 * kernel/fairphone/sm7635
 04c1c327dbae Remove qc mem offline driver. [Yiqiang Feng]
@@ -15,11 +21,8 @@ d9b3df1 FP6: Correct lineage dependencies target paths [AnonAlly]
 * kernel/fairphone/sm7635-devicetrees
 62fae85d8 qcom: Delete mem-offline node to fully disable PASR [Sultan Alsawaf]
 
-* lineage/hudson
-000d18a hudson: NOT OJ [Nick Reuter]
-
-* lineage/wiki
-c31e5385 wiki: pdx225/pdx235 Flash vendor_boot first [LuK1337]
+* packages/resources/devicesettings
+9d82204 Add alert slider torch strings [Arian]
 
 * vendor/fairphone/FP6
 64f6692e FP6: Disable all CLO-specific perf features [Arian]
@@ -29,7 +32,11 @@ fd990fe3 Revert "FP6: Switch to libperfmgr" [Arian]
 ====================
      2026-06-22    
 ====================
+* lineage/hudson
+000d18a hudson: NOT OJ [Nick Reuter]
+
 * lineage/wiki
+c31e5385 wiki: pdx225/pdx235 Flash vendor_boot first [LuK1337]
 2392c022 wiki: berlna: Fix wrong image [razorloves]
 
 ====================
@@ -110,9 +117,6 @@ e40947a interfaces: Add vendor.oplus.hardware.subsys_imsrtp V1 [kmiit]
 ====================
 * device/xiaomi/zeus
 d9daddec zeus: Update blobs and firmware from OS3.0.4.0.VLBMIXM [Arian]
-
-* frameworks/base
-cb76c383ab73 [AAPM] Check radio interface for 2G availability. [Hani Kazmi]
 
 * lineage/mirror
 edabe06 Updated aosp-minimal to 17-Jun-2026 05:00 UTC [Tim Schumacher]
