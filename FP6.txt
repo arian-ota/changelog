@@ -1,7 +1,9 @@
 ====================
-     2026-06-23    
+     2026-06-24    
 ====================
 * device/fairphone/FP6
+27a6cd0e FP6: Allow surfaceflinger to use the big cluster during interaction [Arian]
+2dd2c9c5 FP6: Remove virtual framebuffer [Alexander Koskovich]
 5580164b KeyHandler: Add support to toggle torch [Arian]
 7aa3160b KeyHandler: Add background transition animation [Arian]
 2b41ce32 KeyHandler: Implement fade in/out animation [Arian]
@@ -10,7 +12,6 @@ cf7836d8 FP6: Disable all CLO-specific perf features [Arian]
 7febfaec FP6: Remove PASR leftovers [Arian]
 118b7dcc Revert "FP6: Switch to libperfmgr" [Arian]
 9b35650d FP6: Drop duplicated gh_mem_notifier from second stage modules [Arian]
-d9b3df1e FP6: Correct lineage dependencies target paths [AnonAlly]
 
 * hardware/oplus
 9813a9d KeyHandler: Add support to toggle torch [Arian]
@@ -25,19 +26,31 @@ d9b3df1e FP6: Correct lineage dependencies target paths [AnonAlly]
 9d82204 Add alert slider torch strings [Arian]
 
 * vendor/fairphone/FP6
+da4437a5 FP6: Allow surfaceflinger to use the big cluster during interaction [Arian]
 64f6692e FP6: Disable all CLO-specific perf features [Arian]
 984d3e76 FP6: Silence perf spam on boot [Arian]
-fd990fe3 Revert "FP6: Switch to libperfmgr" [Arian]
 
 ====================
-     2026-06-22    
+     2026-06-23    
 ====================
+* device/fairphone/FP6
+d9b3df1e FP6: Correct lineage dependencies target paths [AnonAlly]
+
 * lineage/hudson
 000d18a hudson: NOT OJ [Nick Reuter]
 
 * lineage/wiki
 c31e5385 wiki: pdx225/pdx235 Flash vendor_boot first [LuK1337]
+
+* vendor/fairphone/FP6
+fd990fe3 Revert "FP6: Switch to libperfmgr" [Arian]
+
+====================
+     2026-06-22    
+====================
+* lineage/wiki
 2392c022 wiki: berlna: Fix wrong image [razorloves]
+6a245504 wiki: Use correct name for Google Messages [charcoalpt]
 
 ====================
      2026-06-21    
@@ -51,14 +64,15 @@ e18bf52 Convert v4l2 hevc levels to c2 hevc levels [Aaron Kling]
 * frameworks/base
 c8f2005b5ed6 Allow overriding Wi-Fi and Bluetooth MAC addresses [Torsten Grote]
 
+* hardware/lineage/compat
+6450d58 compat: Introduce libtinyxml2 v36 [chandu078]
+f13c559 compat: Provide libbluetooth_audio_session_aidl shim [chandu078]
+
 * hardware/qcom-caf/sdm660/audio
 90647c475f post_proc: Correct libvolumelistener include_dirs [Michael Bestas]
 
 * lineage/hudson
 0e08719 resurrect that which should be dead [Nolen Johnson]
-
-* lineage/wiki
-6a245504 wiki: Use correct name for Google Messages [charcoalpt]
 
 * packages/apps/Settings
 45da074de55 Require "tap to show" in SIM settings [Torsten Grote]
@@ -67,10 +81,6 @@ de893ecedc5 Hide Wi-Fi and Bluetooth MAC addresses in About Phone [Torsten Grote
 ====================
      2026-06-20    
 ====================
-* hardware/lineage/compat
-6450d58 compat: Introduce libtinyxml2 v36 [chandu078]
-f13c559 compat: Provide libbluetooth_audio_session_aidl shim [chandu078]
-
 * hardware/oplus
 9d95a60 interfaces: Introduce vendor.oplus.hardware.pogo_keyboard V1 [Bruno Martins]
 560694b interfaces: Introduce vendor.oplus.hardware.secure_element V1 [Bruno Martins]
@@ -109,21 +119,12 @@ e40947a interfaces: Add vendor.oplus.hardware.subsys_imsrtp V1 [kmiit]
 ====================
      2026-06-18    
 ====================
-* lineage/wiki
-4c2b5cfe wiki: Add wiki->gh mapping for lemonade maintainer [LuK1337]
-
-====================
-     2026-06-17    
-====================
 * device/xiaomi/zeus
 d9daddec zeus: Update blobs and firmware from OS3.0.4.0.VLBMIXM [Arian]
 
-* lineage/mirror
-edabe06 Updated aosp-minimal to 17-Jun-2026 05:00 UTC [Tim Schumacher]
-
 * lineage/wiki
+4c2b5cfe wiki: Add wiki->gh mapping for lemonade maintainer [LuK1337]
 507a3742 wiki: s/and connect USB cable to PC/then connect USB cable to PC/ [Andrew Sayers]
-ca979b23 wiki: bluetooth: 5 -> 5.0 [Onelots]
 
 * vendor/xiaomi/zeus
 b5fb69d zeus: Update blobs and firmware from OS3.0.4.0.VLBMIXM [Arian]
