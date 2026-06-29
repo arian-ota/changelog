@@ -1,131 +1,194 @@
 ====================
-     2026-06-24    
+     2026-06-29    
 ====================
 * device/fairphone/FP6
-27a6cd0e FP6: Allow surfaceflinger to use the big cluster during interaction [Arian]
-2dd2c9c5 FP6: Remove virtual framebuffer [Alexander Koskovich]
-5580164b KeyHandler: Add support to toggle torch [Arian]
-7aa3160b KeyHandler: Add background transition animation [Arian]
-2b41ce32 KeyHandler: Implement fade in/out animation [Arian]
-cf7836d8 FP6: Disable all CLO-specific perf features [Arian]
-1cb17f47 FP6: Silence perf spam on boot [Arian]
-7febfaec FP6: Remove PASR leftovers [Arian]
-118b7dcc Revert "FP6: Switch to libperfmgr" [Arian]
-9b35650d FP6: Drop duplicated gh_mem_notifier from second stage modules [Arian]
+17d4c071 FP6: Allow surfaceflinger to use the big cluster [Arian]
 
+* device/xiaomi/unicorn
+3e07b6e7 unicorn: Update blobs and firmware from OS3.0.4.0.VLECNXM [Arian]
+
+* packages/modules/NetworkStack
+94e6208b2 Re-enable accept_ra_defrtr when IPv6 router recovers after lifetime 0 RA. [Johannes Ziemke]
+
+* vendor/xiaomi/unicorn
+cbad988 unicorn: Update blobs and firmware from OS3.0.4.0.VLECNXM [Arian]
+
+====================
+     2026-06-28    
+====================
+* device/fairphone/FP6
+ad183861 FP6: Disable all CLO-specific perf features [Arian]
+96c0ef54 FP6: Silence perf spam on boot [Arian]
+9d5400cf FP6: Remove PASR leftovers [Arian]
+df2ffc57 Revert "FP6: Switch to libperfmgr" [Arian]
+8d6b181a FP6: Set force_sysfs_fallback=1 sysctl via cmdline [dianlujitao]
+8716ed22 FP6: Remove virtual framebuffer [Alexander Koskovich]
+8ca1ead4 FP6: Update to FP6.QREL.16.82.0 [Arian]
+c62243a9 FP6: KeyHandler: Add support to toggle torch [Arian]
+
+* vendor/fairphone/FP6
+1fcb34f8 FP6: Disable all CLO-specific perf features [Arian]
+8670afb1 FP6: Silence perf spam on boot [Arian]
+f21f5625 Revert "FP6: Switch to libperfmgr" [Arian]
+42c7f04b FP6: Update to FP6.QREL.16.82.0 [Arian]
+
+====================
+     2026-06-27    
+====================
+====================
+     2026-06-26    
+====================
+* lineage/wiki
+f15ebfcd devices: Fix recovery partition name for FP6 [Arian]
+
+====================
+     2026-06-25    
+====================
+* device/fairphone/FP6
+5f40de18 FP6: KeyHandler: Add background transition animation [Arian]
+addd1a9b FP6: KeyHandler: Implement fade in/out animation [Arian]
+
+* lineage/wiki
+2cd119f8 wiki: Switch to showing the display name everywhere [Arian]
+44f98686 devices: Add Fairphone 6 [Arian]
+dcaaffcb devices: Nix DRG support [Nolen Johnson]
+eb957d9d devices: Rework DirtySanta installation instructions [Nolen Johnson]
+eee4cfda devices: Add G6 Engineering BL [Nolen Johnson]
+
+* packages/apps/Updater
+1b9564e Updater: Update server requirements in README [Arian]
+d18ae27 Updater: Stream A/B updates by default [pjgowtham]
+
+====================
+     2026-06-24    
+====================
 * hardware/oplus
 9813a9d KeyHandler: Add support to toggle torch [Arian]
 
-* kernel/fairphone/sm7635
-04c1c327dbae Remove qc mem offline driver. [Yiqiang Feng]
+* lineage/hudson
+bf5fb62 fair is foul no more, happy birthday to thee [Arian]
 
-* kernel/fairphone/sm7635-devicetrees
-62fae85d8 qcom: Delete mem-offline node to fully disable PASR [Sultan Alsawaf]
+* lineage/wiki
+c7c0ad4a wiki: Add wiki->gh mapping for Spacewar maintainer [LuK1337]
+b04ef291 wiki: Add ibiza [Onelots]
+
+* packages/apps/Updater
+a6c293f Updater: Update bug report url to github [Vivekachooz]
+330b008 Updater: Use verified icon for ZeroStatePreference [pjgowtham]
+34f63dc Updater: Hide ZeroStatePreference while check status is visible [pjgowtham]
+8f21f80 Updater: Make update check button tonal [pjgowtham]
+1f479e2 Updater: Add note about full install on update items [pjgowtham]
+d67eacb Updater: Show Android version and security patch for updates [pjgowtham]
+a0089a5 Updater: Format security patch without day [pjgowtham]
+41bc95f Updater: Show update size label in update items [pjgowtham]
+f594611 Updater: Show year for updates outside current year [pjgowtham]
+4fd617c Updater: Migrate to api/v2 [LuK1337]
+6c07fbe Updater: Remove unused dependencies and run generatebp [pjgowtham]
+08e9d3f Updater: Avoid showing ZeroStatePreference when checking updates [pjgowtham]
+aaa7ced UpdateList: Animate item visibility on expand/collapse [pjgowtham]
+7a7cc20 Updater: Fix crash when attempting to delete update [pjgowtham]
+c075068 Updater: Fix imported update persistence [pjgowtham]
+2f4d33d Updater: Update ZeroStatePreference strings [pjgowtham]
+e199665 Updater: Post-migration cleanup of UpdatesListAdapter [pjgowtham]
+8716db2 Updater: Modernize UpdatesListAdapter [pjgowtham]
+ffef50c Updater: Improve Utils.canInstall and migrate to InstallUtils [pjgowtham]
+0a5adc3 Updater: Create buttons layout for update item [pjgowtham]
+c0d4b7b Updater: Copy CollapseBar from TopIntroPreference [pjgowtham]
+46ead38 Updater: Import and utilize new vector assets for updater [pjgowtham]
+81ad4c6 Updater: Restrict duplicate link URL capture to exclude '>' [pjgowtham]
+bb56aaf Updater: apply smoothSeconds() to ETA calculation [pjgowtham]
+546074d Updater: Increase download chunk size to 32 KiB [pjgowtham]
+df1d457 Updater: Inline functions from Utils with single call site [pjgowtham]
+53d59d0 Updater: Use platform FileUtils for file copies [pjgowtham]
+ecd3038 Updater: Use ICU and java.time for date and ETA formatting [pjgowtham]
+ae2b383 Updater: Provide responsive wide screen split layout [pjgowtham]
+785566f Updater: Open downloads page instead of copying URL [pjgowtham]
+7aced18 Updater: Drop welcome and info dialogs [pjgowtham]
+da85723 Updater: Drop material library dependency [pjgowtham]
+d79f2dc Updater: Introduce UpdatesCheck [pjgowtham]
+0acda9b Updater: Add local Lottie composable [pjgowtham]
+d89fb03 Updater: Introduce DeviceInfoBanner [pjgowtham]
+575fc99 Updater: Move preferences entry and local update prefs to footer [pjgowtham]
+4abf31b Updater: Drop LocalBroadcastManager usage and its dependency [pjgowtham]
+5d14326 Updater: Drop no_new_updates_view [pjgowtham]
+b16cabd Updater: Drop update check result toasts [pjgowtham]
+703eaa4 Updater: Show install statuses in the scaffold title [pjgowtham]
+12f2c27 Updater: Cleanup uncrypt files on boot completed [pjgowtham]
+eefd3df Updater: Cleanup unused functions from Utils [pjgowtham]
+febc645 Updater: Wire up preferences screen and migrate settings access [pjgowtham]
+d2fa25d Updater: Introduce PreferencesActivity and PreferencesScreen [pjgowtham]
+97a4e44 Updater: Introduce preferences/app state layer and UpdatesCheckWorker [pjgowtham]
+13c3923 Updater: Drop explicit AppCompat dependency [pjgowtham]
+e59c857 Updater: Force enable expressive SPA theme [pjgowtham]
+4663a9f Updater: Adopt platform Settings navigation scaffold [pjgowtham]
+5a32051 Updater: Flatten activity hierarchy [pjgowtham]
+769909b Updater: Introduce UpdatesRepository and UpdatesViewModel [pjgowtham]
+599a38f Updater: Suppress PROVIDED_RUNTIME_TOO_LOW for NetworkUpdate [LuK1337]
+d305e12 Updater: Add network data source and bump minSdk to 33 [Luca Stefani]
+039d92f Updater: Add material 3 extended icons dependency [pjgowtham]
+def70e2 Updater: Add datastore dependency [pjgowtham]
+dbc8431 Updater: Add Kotlin serialization dependency and plugin [pjgowtham]
+37a0383 Updater: Add dependencies for OkHttp [Luca Stefani]
+e0ac185 Updater: Add Kotlin dependency for livedata [pjgowtham]
+33bdc21 Updater: Add kotlin dependency for WorkManager [pjgowtham]
+3a8cf9c Updater: Clear notification actions on download completion [pjgowtham]
+83a01dc Updater: Centralize notifications into NotificationHelper [pjgowtham]
+183357d Updater: Make refresh unavailable during update check [pjgowtham]
+80e6da4 Updater: Enforce compile-time database correctness [pjgowtham]
+5676e56 Updater: Consolidate into Kotlin data classes [pjgowtham]
+7e3df5a Updater: Prefer global string resources where available [pjgowtham]
+ccc7d4a Updater: Move pre-install checks out of the adapter into InstallUtils [pjgowtham]
+d1d3946 Updater: Introduce BatteryMonitor [pjgowtham]
+5471846 Updater: Introduce NetworkMonitor [pjgowtham]
+13675f2 Updater: Simplify isNetworkAvailable() in Utils [pjgowtham]
+2666646 Updater: Make download & resume buttons network-aware [pjgowtham]
+a90e054 Updater: Revise download and installation controls [pjgowtham]
+b53c8c3 Updater: Enforce single concurrent download [pjgowtham]
+c89a5e5 Updater: Use SettingsLib SettingsOpacity for disabled alpha [pjgowtham]
+91515d5 Updater: Provide extraction script to pull jars and utilize them for previews [pjgowtham]
+7ff07a3 Updater: Match the display_name with Settings [pjgowtham]
+96812be Updater: Bump compile sdk to 36 [pjgowtham]
+f20d34e Updater: Add compose dependencies and run generatebp [pjgowtham]
+35b3cf7 Updater: Include Settings Provider Activity - Privileged [pjgowtham]
+0efdacd Updater: Suppress known-safe R8 duplicate warnings [pjgowtham]
+f35d0ac Updater: Optimize and shrink resources [Luca Stefani]
+9911d82 Updater: Remove stale proguard rule [pjgowtham]
+819133e Updater: Remove unused android-library plugin [pjgowtham]
+5224da4 Updater: Update library versions from AOSP prebuilts and public stable [pjgowtham]
+3a006b3 Updater: Update generatebp to v1.31 [pjgowtham]
+1930cbc Updater: Update Gradle wrapper and AGP [pjgowtham]
+92bda47 Updater: Migrate generatebp to plugin declaration [pjgowtham]
+f55a66b Updater: Migrate to version catalog [pjgowtham]
+e148186 Updater: Display android security patch in default locale [pjgowtham]
+b916d74 Updater: Replace BuildInfoUtils and extend SettingsLib DeviceInfoUtils [pjgowtham]
+9e67a71 Updater: Introduce Kotlin [pjgowtham]
+84bf644 Updater: Remove redundant metered network warning checkbox [pjgowtham]
+e9d9bb6 Updater: Remove URL Copied toast message [pjgowtham]
+8966525 Updater: Fix pending reboot state not shown [pjgowtham]
+6b4af63 Updater: Remove config_hideRecoveryUpdate and "Update recovery" on AB [pjgowtham]
+b66b58c Updater: Fix duplicated and truncated date for local updates [pjgowtham]
 
 * packages/resources/devicesettings
 9d82204 Add alert slider torch strings [Arian]
-
-* vendor/fairphone/FP6
-da4437a5 FP6: Allow surfaceflinger to use the big cluster during interaction [Arian]
-64f6692e FP6: Disable all CLO-specific perf features [Arian]
-984d3e76 FP6: Silence perf spam on boot [Arian]
 
 ====================
      2026-06-23    
 ====================
 * device/fairphone/FP6
+9b35650d FP6: Drop duplicated gh_mem_notifier from second stage modules [Arian]
 d9b3df1e FP6: Correct lineage dependencies target paths [AnonAlly]
+
+* kernel/fairphone/sm7635
+04c1c327dbae Remove qc mem offline driver. [Yiqiang Feng]
 
 * lineage/hudson
 000d18a hudson: NOT OJ [Nick Reuter]
 
 * lineage/wiki
+98d61ea5 wiki: Remove duplicate xiaomi fw_update_success note [razorloves]
+4792aba2 wiki: Bump bronco's fw requirements [Nick Reuter]
+dd317a8a wiki: Update bronco maintainers [Nick Reuter]
+5a9c9981 wiki: Update supported models for bronco [Nick Reuter]
+880cc376 wiki: Promote bronco to 23.2 [Nick Reuter]
 c31e5385 wiki: pdx225/pdx235 Flash vendor_boot first [LuK1337]
-
-* vendor/fairphone/FP6
-fd990fe3 Revert "FP6: Switch to libperfmgr" [Arian]
-
-====================
-     2026-06-22    
-====================
-* lineage/wiki
-2392c022 wiki: berlna: Fix wrong image [razorloves]
-6a245504 wiki: Use correct name for Google Messages [charcoalpt]
-
-====================
-     2026-06-21    
-====================
-* external/v4l2_codec2
-16700e0 Use the output pixel format requested by the decoder when available [Aaron Kling]
-0cd9abd Add P010 support [Aaron Kling]
-711990c V4L2DecodeInterface: Properly fetch default codec profile [Aaron Kling]
-e18bf52 Convert v4l2 hevc levels to c2 hevc levels [Aaron Kling]
-
-* frameworks/base
-c8f2005b5ed6 Allow overriding Wi-Fi and Bluetooth MAC addresses [Torsten Grote]
-
-* hardware/lineage/compat
-6450d58 compat: Introduce libtinyxml2 v36 [chandu078]
-f13c559 compat: Provide libbluetooth_audio_session_aidl shim [chandu078]
-
-* hardware/qcom-caf/sdm660/audio
-90647c475f post_proc: Correct libvolumelistener include_dirs [Michael Bestas]
-
-* lineage/hudson
-0e08719 resurrect that which should be dead [Nolen Johnson]
-
-* packages/apps/Settings
-45da074de55 Require "tap to show" in SIM settings [Torsten Grote]
-de893ecedc5 Hide Wi-Fi and Bluetooth MAC addresses in About Phone [Torsten Grote]
-
-====================
-     2026-06-20    
-====================
-* hardware/oplus
-9d95a60 interfaces: Introduce vendor.oplus.hardware.pogo_keyboard V1 [Bruno Martins]
-560694b interfaces: Introduce vendor.oplus.hardware.secure_element V1 [Bruno Martins]
-9c5ca49 interfaces: Introduce vendor.oplus.hardware.cameraextension V1 [Bruno Martins]
-d71141b interfaces: Add vendor.oplus.hardware.subsys_radio V1-V9 [kmiit]
-fd8e9ee interfaces: Add vendor.oplus.hardware.appradioaidl V1 [kmiit]
-7cf2c79 interfaces: Add vendor.oplus.hardware.communicationcenter V1-V2 [kmiit]
-6f95595 interfaces: Add vendor.oplus.hardware.ims V1 [kmiit]
-4859a03 interfaces: Add vendor.oplus.hardware.sendextcamcmd V1-V2 [kmiit]
-ac0fae8 interfaces: Add vendor.oplus.hardware.camera.aon V1 [kmiit]
-24c9330 interfaces: Add vendor.oplus.hardware.cammidasservice V1 [kmiit]
-ffaa133 interfaces: Add vendor.oplus.hardware.camera_rfi V1-V3 [kmiit]
-237ee05 interfaces: Add vendor.oplus.hardware.cwb AIDL(V1-V2) and HIDL(@1.0) [kmiit]
-e40947a interfaces: Add vendor.oplus.hardware.subsys_imsrtp V1 [kmiit]
-6d2d3cb interfaces: Add vendor.oplus.hardware.subsys V1-V5 [Kmiit]
-0aba2f2 interfaces: Provide some ndk_platform libs as aliases [Bruno Martins]
-
-* lineage/mirror
-8fd1615 Updated to 20-Jun-2026 10:01 UTC [Tim Schumacher]
-
-====================
-     2026-06-19    
-====================
-* lineage/hudson
-658a0d3 Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/mirror
-94ee717 Updated to 18-Jun-2026 22:01 UTC [Tim Schumacher]
-
-* lineage/wiki
-0b748d6a devices: Promote LGE MSM8996 to 22.2 [Nolen Johnson]
-
-* vendor/apn
-8b06f42 apns: Add IMS routing for Bangladesh operators [Md. Abdullah Al Mamun]
-
-====================
-     2026-06-18    
-====================
-* device/xiaomi/zeus
-d9daddec zeus: Update blobs and firmware from OS3.0.4.0.VLBMIXM [Arian]
-
-* lineage/wiki
-4c2b5cfe wiki: Add wiki->gh mapping for lemonade maintainer [LuK1337]
-507a3742 wiki: s/and connect USB cable to PC/then connect USB cable to PC/ [Andrew Sayers]
-
-* vendor/xiaomi/zeus
-b5fb69d zeus: Update blobs and firmware from OS3.0.4.0.VLBMIXM [Arian]
 
