@@ -2,7 +2,8 @@
      2026-07-24    
 ====================
 * device/fairphone/FP6
-9fca99a5 Revert "TMP Use QMAA usb init for earlier logs" [Arian]
+099a1dbf FP6: audio: Use dual mic as handset mic by default [Arian]
+c167aaad FP6: Pin wifi firmware from FP6.QREL.15.176.0 [Arian]
 
 * kernel/fairphone/sm7635
 9207bb2e4e263 emkit_info: Stop hardcoding switch_state gpio number [Arian]
@@ -13,21 +14,27 @@
 * kernel/fairphone/sm7635-modules
 058fec167b qcom: datarmnet: Include feature flags from dataipa [dianlujitao]
 
+* vendor/fairphone/FP6
+6b652c44 FP6: Move system_dlkm_modprobe.sh to device tree [Alexander Koskovich]
+
 ====================
      2026-07-23    
 ====================
+* device/fairphone/FP6
+9fca99a5 Revert "TMP Use QMAA usb init for earlier logs" [Arian]
+
 ====================
      2026-07-22    
 ====================
 ====================
      2026-07-21    
 ====================
-* device/fairphone/FP6
-528bd940 FP6: Update system_dlkm modules according to GKI modules.bzl [Arian]
-
 ====================
      2026-07-20    
 ====================
+* device/fairphone/FP6
+528bd940 FP6: Update system_dlkm modules according to GKI modules.bzl [Arian]
+
 ====================
      2026-07-19    
 ====================
