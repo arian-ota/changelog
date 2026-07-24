@@ -1,131 +1,36 @@
 ====================
-     2026-07-16    
+     2026-07-24    
 ====================
 * device/fairphone/FP6
-6e0f9499 FP6: Drop hwkm [Arian]
-29b625cd Revert "TMP Drop msm_drm" [Arian]
-baa19781 FP6: Add clk-scmi module [Arian]
-eca184a2 TMP Drop msm_drm [Arian]
-a874b546 FP6: Move some modules to first stage [Arian]
-d2ee9ef9 Add back gunyah [Arian]
-c43e9f84 add back all vendor_dlkm [Arian]
+9fca99a5 Revert "TMP Use QMAA usb init for earlier logs" [Arian]
 
 * kernel/fairphone/sm7635
-e60f874ee380a Revert "Reapply "arm64: configs: FP6: Enable simple framebuffer"" [Arian]
-1594cc9a14479 drop unnecessary sysfb [Arian]
-f071e58b54785 drop bad hwkm config [Arian]
+9207bb2e4e263 emkit_info: Stop hardcoding switch_state gpio number [Arian]
 
 * kernel/fairphone/sm7635-devicetrees
-ce63b8914 Revert "ARM: dts: msm: Remove some redundant bootargs from pineapple" [Arian]
-34f821b8e Revert "ARM: dts: msm: remove dload,mode device for both pineapple/volcano" [Arian]
-6d909ce2a Revert "ARM: dts: msm: Remove MPAM node for pineapple" [Arian]
-7bd557ebf Revert "ARM: dts: msm: Add restrict_cma_redirect=false to the cmdline string" [Arian]
-5cf685853 Revert "Reapply "FP6: Setup simple-framebuffer"" [Arian]
-bddff53f6 Revert "Reapply "Don't reboot on panic"" [Arian]
-2279691a1 Revert "more loglevel" [Arian]
-23864f03c more loglevel [Arian]
-1557cec09 Revert "Reapply "qcom: Skip building some stuff not relevant for volcano"" [Arian]
-e8aeb04a8 Reapply "qcom: Skip building some stuff not relevant for volcano" [Arian]
-9beb08c0f Reapply "Don't reboot on panic" [Arian]
-cb6f96653 ARM: dts: msm: Add restrict_cma_redirect=false to the cmdline string [Bibek Kumar Patro]
-f50bdbc22 ARM: dts: msm: Remove MPAM node for pineapple [Huang Yiwei]
-0dab6cee7 ARM: dts: msm: remove dload,mode device for both pineapple/volcano [Mukesh Ojha]
-cc42ede27 ARM: dts: msm: Remove some redundant bootargs from pineapple [Mukesh Ojha]
-e8aaa5734 Revert "Reapply "volcano: ignore loglevel and printk.devkmsg=on"" [Arian]
+2abd88fb8 volcano-fpv6-switch-key: Declare gpio for emkit_info [Arian]
 
 * kernel/fairphone/sm7635-modules
-a0e8b83eec Revert "display-drivers: volcano: Disable drm sde vm" [Arian]
+058fec167b qcom: datarmnet: Include feature flags from dataipa [dianlujitao]
 
 ====================
-     2026-07-15    
+     2026-07-23    
+====================
+====================
+     2026-07-22    
+====================
+====================
+     2026-07-21    
 ====================
 * device/fairphone/FP6
-e2080598 sort vendor dlkm modules [Arian]
-73d2afbe Reapply "FP6: Drop pmic_glink" [Arian]
-7a8c5123 Revert "FP6: Drop pmic_glink" [Arian]
-825a9d40 FP6: Drop pmic_glink [Arian]
-6003430b FP6: Rename phy-qcom-ufs-qmp-v4-pineapple [Arian]
-fe197e88 FP6: Remove renamed crypto-qti.ko [Arian]
-b7dbdbda TMP FP6: Switch kernel to 6.6 [Alexander Koskovich]
-3d859e92 FP6: Drop more gunyah [Arian]
-7055beb8 FP6: Drop bwprof.ko [Arian]
-87b0e1cf FP6: Drop thermal minidump module [Arian]
-43a21f2c FP6: Drop snd-soc-hdmi-codec [Arian]
-fdd37294 FP6: Drop qpnp amoled module [Arian]
-e8161800 FP6: Drop qcom hv haptics [Arian]
-de87ad77 FP6: Drop more gunyah [Arian]
-d4cb33ba FP6: Drop f_fs_ipc_log.ko [Arian]
-c85fd8bb FP6: Drop vm dmesg dumper [Arian]
-6328ffa9 FP6: Drop coresight-hwevent.ko [Arian]
-7da4aa80 FP6: Drop qti-regmap-debugfs.ko [Arian]
-003f4a62 FP6: Drop gunyah [Arian]
-456123de FP6: Drop phy-qcom-ufs-qrbtc-sdm845.ko [Arian]
-dd084ef2 FP6: Drop icc-test.ko [Arian]
-45da7e8c FP6: Drop gh_cpusys_vm_mem_access.ko [Arian]
-d20967e5 FP6: modules: Drop debugcc modules [Arian]
-2eb8e066 FP6: modules: Drop unused touchscreen drivers [Arian]
-02b04324 FP6: modules: Drop cliffs modules [Arian]
-147b3558 FP6: Drop unused ubwcp module [Arian]
-ee9c96f9 FP6: Drop unused spu-kernel [Arian]
-be83d2b1 FP6: Drop unused synx-kernel [Arian]
-27643f9a FP6: Drop unused eva-kernel [Arian]
-
-* device/xiaomi/zizhan
-eb51c78 zizhan: Update blobs and firmware from OS3.0.8.0.VLRCNXM [Arian]
-
-* kernel/fairphone/sm7635
-a027a851262f9 drop upstream pmic_glink [Arian]
-23070adc956ad Reapply "arm64: configs: FP6: Enable simple framebuffer" [Arian]
-0bfc06f340a7d Revert "arm64: configs: FP6: Enable simple framebuffer" [Arian]
-35f60eb5cdb43 arm64: configs: pineapple: Enable more configs that used to be enabled [Arian]
-aa697275e35cc drivers: thermal: Add snapshot of thermal minidump driver [congying]
-02b45181b2924 arm64: configs: FP6: Enable simple framebuffer [Arian]
-ae0c7f7134305 video: fbdev: earlycon: Protect screen_info struct [Pavel Dubrova]
-8cfd45c373462 video: fbdev: earlycon: Fix compile warning [Konrad Dybcio]
-3b668e4ede368 video: fbdev: Bring in simplefb earlycon [Markuss Broks]
-a7341a21cac22 FROMLIST v2 fbdev/simplefb: Add support for interconnect paths [Luca Weiss]
-14e7bdd93e3bf FROMLIST v2 drm/sysfb: simpledrm: Add support for interconnect paths [Luca Weiss]
-
-* kernel/fairphone/sm7635-devicetrees
-bd1f442ed Reapply "volcano: ignore loglevel and printk.devkmsg=on" [Arian]
-8717d2cb8 Reapply "FP6: Setup simple-framebuffer" [Arian]
-02500d10e Revert "FP6: Setup simple-framebuffer" [Arian]
-8fe724d6e Revert "volcano: ignore loglevel and printk.devkmsg=on" [Arian]
-6c5a158f4 Revert "Don't reboot on panic" [Arian]
-f10e150c5 Don't reboot on panic [Arian]
-0d63d4308 Revert "qcom: Skip building some stuff not relevant for volcano" [Arian]
-4f84c3d73 volcano: ignore loglevel and printk.devkmsg=on [Arian]
-326eee58c FP6: Setup simple-framebuffer [Arian]
-
-* kernel/fairphone/sm7635-modules
-d80e95a395 display-drivers: volcano: Disable drm sde vm [Arian]
-112f9095c4 mmrm: Fix compilation errors [Bruce Levy]
-c392c0f5a4 mmrm: Use correct format specifiers [Mihir Ganu]
-
-* vendor/xiaomi/zizhan
-1c3eeeb zizhan: Update blobs and firmware from OS3.0.8.0.VLRCNXM [Arian]
+528bd940 FP6: Update system_dlkm modules according to GKI modules.bzl [Arian]
 
 ====================
-     2026-07-14    
-====================
-* kernel/fairphone/sm7635
-361c1a3504d3a FP6: enable qti thermal vendor hook [Arian]
-
-* kernel/fairphone/sm7635-devicetrees
-7daeaf06d ARM: dts: msm: Use correct bindings for PM8350c flash LED driver [Alexander Koskovich]
-
-* kernel/fairphone/sm7635-modules
-6436585a37 TMP linux-6.6 compilation fixes [Arian]
-
-====================
-     2026-07-13    
+     2026-07-20    
 ====================
 ====================
-     2026-07-12    
+     2026-07-19    
 ====================
 ====================
-     2026-07-11    
-====================
-====================
-     2026-07-10    
+     2026-07-18    
 ====================
